@@ -1,6 +1,7 @@
 "use strict";
 
 const fs = require("fs");
+const path = require("path");
 
 const octokit = require("./lib/octokit");
 const { JSDOM } = require("jsdom");
@@ -85,7 +86,7 @@ function generateFeed(scope, path, issues) {
   const feed = new Feed({
     title: `${scope}-relevant MDN issues`,
     description: `Issue filed on MDN Web Docs related to pages attached to technologies developed by ${scope}`,
-    link: `https://dontcallmedom.github.io/mdn-issue-by-spec/feeds/${path}.rss`,
+    link: `https://dontcallmedom.github.io/mdn-issue-by-spec/${path}.rss`,
     updated: new Date(issues.map(i => i.createdAt).sort().pop()),
     language: "en",
     author: {
@@ -152,6 +153,7 @@ async function mapIssuesToSpecs() {
 }
 
 (async function() {
+  fs.mkdirSync(path.join(__dirname, 'public'), {recursive: true});
   const specToIssues = await mapIssuesToSpecs();
   // group issues by org and by group
   let groups = {};
@@ -186,7 +188,7 @@ async function mapIssuesToSpecs() {
       // Generate feed
       const path = toSlug(name);
       const feed = generateFeed(name, path, collection[name]);
-      fs.writeFileSync("feeds/" + path + ".rss", feed.rss2());
+      fs.writeFileSync("public/" + path + ".rss", feed.rss2());
     }
   }
 })();
