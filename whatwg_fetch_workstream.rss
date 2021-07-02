@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>WHATWG Fetch Workstream-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_fetch_workstream.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG Fetch Workstream</description>
+        <lastBuildDate>Tue, 01 Jun 2021 14:47:27 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[fetch] Issue with "WindowOrWorkerGlobalScope.fetch()": Incomplete description for `TypeError` ]]></title>
+            <link>https://github.com/mdn/content/issues/5545</link>
+            <guid>https://github.com/mdn/content/issues/5545</guid>
+            <pubDate>Tue, 01 Jun 2021 14:47:27 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch">https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>In the page about the <code>fetch</code> method, I think the description of the <code>TypeError</code> exception is incomplete.</p>
+<p>At <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch#exceptions">https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch#exceptions</a> under <code>TypeError</code></p>
+<p>The description says:</p>
+<p><code>The specified URL string includes user credentials. This information should instead be provided using an Authorization header.</code></p>
+<h4>Specific section or headline?</h4>
+<p>At <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch#exceptions">https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch#exceptions</a> under <code>TypeError</code></p>
+<p>Corresponding to these source lines on github <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/windoworworkerglobalscope/fetch/index.html#L149-L151">fetch/index.html#L149-L151</a></p>
+<h4>What did you expect to see?</h4>
+<p>I think that it would be useful to mention that <code>fetch</code> can reject with a <code>TypeError</code> due to a ill-formed request or a network error.</p>
+<p>If I am reading it correctly, it is part of the spec <a rel="nofollow" href="https://fetch.spec.whatwg.org/#fetch-method">https://fetch.spec.whatwg.org/#fetch-method</a>:</p>
+<p>at step <code>2</code></p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="Let requestObject be the result of invoking the initial value of Request as constructor with input and init as arguments. If this throws an exception, reject p with it and return p.
+"><pre><code>Let requestObject be the result of invoking the initial value of Request as constructor with input and init as arguments. If this throws an exception, reject p with it and return p.
+</code></pre></div>
+<p>and <code>12.3</code></p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="If response is a network error, then reject p with a TypeError and terminate these substeps.
+"><pre><code>If response is a network error, then reject p with a TypeError and terminate these substeps.
+</code></pre></div>
+<p>Maybe something along these lines could work:</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="TypeError
+    There are several reason fetch can be interrupted with a `TypeError`:
+    - it was not possible to build a `Request` object with the provided parameters (e.g. malformed url)
+    - the request was interrupted due to a network error 
+    - ... other reasons for fetch to reject with TypeError ... 
+"><pre><code>TypeError
+    There are several reason fetch can be interrupted with a `TypeError`:
+    - it was not possible to build a `Request` object with the provided parameters (e.g. malformed url)
+    - the request was interrupted due to a network error 
+    - ... other reasons for fetch to reject with TypeError ... 
+</code></pre></div>
+<h4>Did you test this? If so, how?</h4>
+<p>In the developer console of <code>Microsoft Edge Version 91.0.864.37 (Official build) (64-bit)</code></p>
+<p>I made a <code>fetch</code> request to a <code>localhost</code> on a closed port and checked the rejection error</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="fetch(&quot;http://localhost:8080&quot;).catch(err =&gt; console.log(err));
+"><pre><code>fetch("http://localhost:8080").catch(err =&gt; console.log(err));
+</code></pre></div>
+<p>With result</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="&gt; TypeError: Failed to fetch
+"><pre><code>&gt; TypeError: Failed to fetch
+</code></pre></div>
+<p>Then I made a fetch request to a malformed url</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="fetch(&quot;k2143rjhttp://localhost:9999/hello&quot;).catch(err =&gt; console.log(err))
+"><pre><code>fetch("k2143rjhttp://localhost:9999/hello").catch(err =&gt; console.log(err))
+</code></pre></div>
+<p>With result</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="&gt; TypeError: Failed to fetch
+"><pre><code>&gt; TypeError: Failed to fetch
+</code></pre></div>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/windoworworkerglobalscope/fetch</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/windoworworkerglobalscope/fetch/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/windoworworkerglobalscope/fetch/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/94c536f9b3a50303a85e7963a4ff4958d1aec382/hovercard" href="https://github.com/mdn/content/commit/94c536f9b3a50303a85e7963a4ff4958d1aec382"><tt>94c536f</tt></a></li>
+<li>Document last modified: 2021-05-31T17:13:02.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[fetch] Content suggestion: Document Headers.forEach()]]></title>
+            <link>https://github.com/mdn/content/issues/3937</link>
+            <guid>https://github.com/mdn/content/issues/3937</guid>
+            <pubDate>Thu, 08 Apr 2021 10:01:22 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What is the new suggestion?</h2>
+<p>The <code>Headers.forEach( )</code> is missing documentation <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Headers">https://developer.mozilla.org/en-US/docs/Web/API/Headers</a></p>
+<h2>Why is it important or useful?</h2>
+<p>The callback seems to receive value, key instead of key, value. The programmer might or might not get this right without documentation. We need one page explaining the type of the forEach method. I imagine some page for a similar method could be used as a starting point. Might still take an hour or two to verify that this method follows te same behaviour. Adding this would reduce the amount of mistakes related to expecting the reversed callback argument order.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[fetch] Rationalize top-level Web API pages]]></title>
+            <link>https://github.com/mdn/content/issues/1579</link>
+            <guid>https://github.com/mdn/content/issues/1579</guid>
+            <pubDate>Mon, 10 Aug 2020 22:01:58 GMT</pubDate>
+            <content:encoded><![CDATA[<p>According to  <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="628812335" data-permission-text="Title is private" data-url="https://github.com/mdn/sprints/issues/3327" data-hovercard-type="issue" data-hovercard-url="/mdn/sprints/issues/3327/hovercard" href="https://github.com/mdn/sprints/issues/3327">mdn/sprints#3327</a> we have ~1100 pages directly under Web/API.</p>
+<p>I believe that every page directly under Web/API must be one of:</p>
+<ol>
+<li>an API overview page, e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API</a></li>
+<li>an interface page, e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/API/Request" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Request</a></li>
+<li>a dictionary page, e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/API/AesGcmParams" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AesGcmParams</a></li>
+</ol>
+<p>While it's hard to tell which pages are in group (1), a reasonable heuristic seems to be: if the title contains a space, the page is an API overview page. But that heuristic we have about 100 API overview pages, leaving about 1000 others.</p>
+<p>As far as I know, all the others ought to be either interface pages or dictionary pages, so ought to be listed in <a href="https://github.com/mdn/kumascript/blob/master/macros/GroupData.json">GroupData.json</a>. In fact, ~250 of these pages are not listed in GroupData.</p>
+<p>Additionally, some interfaces/dictionaries appear under more than one group in GroupData. I believe that this should not be allowed.</p>
+<p>So we should:</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> tag API overview pages, so we know exactly which ones they have</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> ensure all API overview pages have a corresponding entry in GroupData.json</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> tag all dictionary pages</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> ensure all dictionary pages are listed under an entry in GroupData.json</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> tag all interface pages</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> ensure all interface pages are listed under an entry in GroupData.json</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> relocate or delete any other pages that aren't in one of these three categories</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> remove any duplicate interface/dictionary entries from GroupData</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[fetch] .get() in Headers does not return all headers]]></title>
+            <link>https://github.com/mdn/content/issues/2244</link>
+            <guid>https://github.com/mdn/content/issues/2244</guid>
+            <pubDate>Sat, 26 Jan 2019 18:37:35 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>Request type</h1>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> New documentation</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Correction or update</li>
+</ul>
+<h2>Page to change</h2>
+<p>If this request relates to an existing article, please give its URL:<br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Headers">https://developer.mozilla.org/en-US/docs/Web/API/Headers</a></p>
+<h1>Details</h1>
+<p><em>Please describe the change you are requesting. If you know of technical experts who can review the change, please mention them.</em></p>
+<p>Try it out in a JS console:</p>
+<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="const test = new Headers();
+test.append(&quot;bla&quot;, 1);
+test.get();
+"><pre><span class="pl-k">const</span> <span class="pl-s1">test</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Headers</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">test</span><span class="pl-kos">.</span><span class="pl-en">append</span><span class="pl-kos">(</span><span class="pl-s">"bla"</span><span class="pl-kos">,</span> <span class="pl-c1">1</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">test</span><span class="pl-kos">.</span><span class="pl-en">get</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<p>Results in:</p>
+<blockquote>
+<p>TypeError: Not enough arguments to Headers.get.</p>
+</blockquote>
+<p>in Firefox 64</p>
+<p>or</p>
+<blockquote>
+<p>TypeError: Headers.get requires at least 1 argument, but only 0 were passed</p>
+</blockquote>
+<p>in Firefox 66</p>
+<p>Whereas <code> test.get("bla")</code> results in <code>1</code>, as expected.</p>
+<h2>Related issues</h2>
+<p>If this request relates to other issues in Bugzilla or GitHub, please provide links:</p>
+<p>I hope only the doc is wrong. I do not expect Firefox implements it in such a bluntly wrong way…</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

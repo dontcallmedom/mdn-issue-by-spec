@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>W3C Web Authentication Working Group-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_authentication_working_group.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Authentication Working Group</description>
+        <lastBuildDate>Thu, 25 Mar 2021 09:42:24 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[webauthn-3] Content bug: Missing documentation on WebAuthn Level 2 additions]]></title>
+            <link>https://github.com/mdn/content/issues/3488</link>
+            <guid>https://github.com/mdn/content/issues/3488</guid>
+            <pubDate>Thu, 25 Mar 2021 09:42:24 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorAttestationResponse">https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorAttestationResponse</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/authenticatorSelection">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/authenticatorSelection</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/attestation">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/attestation</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/extensions">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/extensions</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/getClientExtensionResults">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/getClientExtensionResults</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorResponse/clientDataJSON">https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorResponse/clientDataJSON</a></p>
+<h2>What is the problem?</h2>
+<p>The Web Authentication Level 2 specification introduces a number of changes that have not been reflected in the MDN documentation yet:</p>
+<ul>
+<li>AuthenticatorAttestationResponse.getAuthenticatorData(), AuthenticatorAttestationResponse.getPublicKey() and AuthenticatorAttestationResponse.getPublicKeyAlgorithm() aren't documented in <a href="https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorAttestationResponse" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorAttestationResponse</a></li>
+<li>the residentKey parameter of authenticatorSelection is not documented in<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/authenticatorSelection" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/authenticatorSelection</a></li>
+<li>the value "enterprise" is not documented in<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/attestation" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/attestation</a></li>
+<li>appid, appidExclude, credProps, largeBlob aren't documented in<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/extensions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/extensions</a></li>
+<li>conversely, authnSel, exts, uvi, loc, biometricPerfBounds are listed there, but have been removed from level 2</li>
+<li>none of the output extensions (not even the level 1)  are documented<br>
+in <a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/getClientExtensionResults" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/getClientExtensionResults</a></li>
+<li>the "crossOrigin" property of AuthenticatorResponse.clientDataJSON is<br>
+not documented in<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorResponse/clientDataJSON" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorResponse/clientDataJSON</a></li>
+<li>in that same page, tokenBindingId should be renamed tokenBinding</li>
+</ul>
+<p>(as initially <a href="https://lists.w3.org/Archives/Public/public-webauthn-adoption/2021Mar/0003.html" rel="nofollow">reported in the WebAuthn Adoption Community Group</a>)</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>WHATWG DOM Workstream-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_dom_workstream.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG DOM Workstream</description>
+        <lastBuildDate>Thu, 10 Jun 2021 17:13:57 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[dom] Event.composedPath() refers to nonexistent example]]></title>
+            <link>https://github.com/mdn/content/issues/5863</link>
+            <guid>https://github.com/mdn/content/issues/5863</guid>
+            <pubDate>Thu, 10 Jun 2021 17:13:57 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Event/composedPath">https://developer.mozilla.org/en-US/docs/Web/API/Event/composedPath</a> says:</p>
+<blockquote>
+<p>In our composed-composed-path example (see it live), we define two trivial custom elements,  and  ...</p>
+</blockquote>
+<p>...but "(see it live)" doesn't link to anything. I couldn't see anything likely in <a href="https://github.com/mdn/dom-examples/">https://github.com/mdn/dom-examples/</a>, maybe it's somewhere else, or maybe it's just gone?</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[dom] Issue with "Text": Unclear description of when multiple text nodes may be created]]></title>
+            <link>https://github.com/mdn/content/issues/5487</link>
+            <guid>https://github.com/mdn/content/issues/5487</guid>
+            <pubDate>Mon, 31 May 2021 03:17:02 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Text">https://developer.mozilla.org/en-US/docs/Web/API/Text</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The documentation for text node says:</p>
+<blockquote>
+<p>New documents have a single Text node for each block of text. Over time, more Text nodes may be created as the document's content changes.</p>
+</blockquote>
+<p>It's unclear whether this is something that the user "may" as in "is allowed to" do or if it is something a browser behavior that "may" as in "might" do as a result of changes to the document.</p>
+<h4>Specific section or headline?</h4>
+<p>The introduction part.</p>
+<h4>What did you expect to see?</h4>
+<p>If anyone knows more details about how and when multiple text nodes are created, it would be great to have that on this page.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>No, I'm not sure if it's referring to a browser trigger that can be triggered somehow or something a user can do.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/text</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Text" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Text</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/text/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/text/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/f2a9cd26197733d09c0547ce7d750c65ca59a812/hovercard" href="https://github.com/mdn/content/commit/f2a9cd26197733d09c0547ce7d750c65ca59a812"><tt>f2a9cd2</tt></a></li>
+<li>Document last modified: 2021-04-27T06:37:39.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[dom, web-bluetooth] Content bug: linking macros to Boolean shouldn't be {{domxref}}]]></title>
+            <link>https://github.com/mdn/content/issues/3898</link>
+            <guid>https://github.com/mdn/content/issues/3898</guid>
+            <pubDate>Wed, 07 Apr 2021 02:39:25 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
+<p>127 pages (mainly in the Web API references).</p>
+<p>For example:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/contains" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/contains</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth/requestDevice" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth/requestDevice</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/45" rel="nofollow">https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/45</a></li>
+</ul>
+<h2>Specific page section or heading?</h2>
+<p>Various sections in various reference pages.</p>
+<h2>What is the problem?</h2>
+<p>{{domxref("Boolean")}} is used in a lot of pages.<br>
+However I thought it should be {{jsxref("Boolean")}} because Boolean isn't an interface of Web API and actually the {{domxref("Boolean")}} is redirected to the JavaScript reference.</p>
+<p>This looks no problem due to redirecting, but it produces broken link in translation versions.</p>
+<p>However {{jsxref("Boolean")}} is also incorrect because many of Web APIs use boolean primitive, not a Boolean object.</p>
+<h2>What did you expect to see?</h2>
+<p>{{jsxref("Boolean")}}, or another way to show it is a boolean primitive correctly.</p>
+<h2>Did you test this? If so, how?</h2>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[dom] Content bug: space before </code> on many pages]]></title>
+            <link>https://github.com/mdn/content/issues/3386</link>
+            <guid>https://github.com/mdn/content/issues/3386</guid>
+            <pubDate>Mon, 22 Mar 2021 23:05:57 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
+<p>Lots of them!</p>
+<h2>Specific page section or heading?</h2>
+<p>Example: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Attr#properties">https://developer.mozilla.org/en-US/docs/Web/API/Attr#properties</a></p>
+<h2>What is the problem?</h2>
+<p>There's a space in the code instead of after it, so it shows <code>true </code> instead of <code>true</code>.</p>
+<p>Some cases fixed in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="838172376" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/3385" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/3385/hovercard" href="https://github.com/mdn/content/pull/3385">#3385</a>, but there are too many so I'm filing an issue instead.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[dom] Document CharacterData]]></title>
+            <link>https://github.com/mdn/content/issues/2396</link>
+            <guid>https://github.com/mdn/content/issues/2396</guid>
+            <pubDate>Tue, 16 Feb 2021 15:44:40 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/CharacterData">https://developer.mozilla.org/en-US/docs/Web/API/CharacterData</a> is incomplete. None of the sub pages exist but they should. CharacterData is a core DOM API that is well supported and that should have proper docs.</p>
+<p>This came up in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="809295065" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/2394" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/2394/hovercard" href="https://github.com/mdn/content/pull/2394">#2394</a> where I removed the weird NonDocumentTypeChildNode mixin, so don't worry about that anymore.</p>
+<p>CharacterData is the parent interface for Text, ProcessingInstruction, and Comment nodes, so when creating the pages and example code, you probably want to show how to use CharacterData methods like <code>appendData()</code> with something concrete like  <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Text">https://developer.mozilla.org/en-US/docs/Web/API/Text</a> nodes.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[dom] Issue with "Element.classList": Polyfill no longer working on IE 11]]></title>
+            <link>https://github.com/mdn/content/issues/2224</link>
+            <guid>https://github.com/mdn/content/issues/2224</guid>
+            <pubDate>Tue, 09 Feb 2021 18:56:26 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">https://developer.mozilla.org/en-US/docs/Web/API/Element/classList</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>I am experiencing a problem with <code>Element.classList.toggle</code>'s polyfill not working. The second argument, <code>force</code>, is ignored on IE 11. It seems like the polyfill may not be applied in this situation. I believe the example has worked in the past.</p>
+<p>This can also be reproduce by grabbing the most up-to-date polyfill snippet from MDN and running a basic example.</p>
+<h4>Specific section or headline?</h4>
+<p><code>#polyfill</code></p>
+<h4>What did you expect to see?</h4>
+<p>The <code>force</code> argument to work in IE 11.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>Build a test and open in a modern browser and IE 11. You would expect the element to remain red, but the class is instead removed (i.e. the element has no background.)</p>
+<div class="highlight highlight-text-html-basic position-relative" data-snippet-clipboard-copy-content="&lt;style&gt;
+  .red {
+    background: red;
+  }
+&lt;/style&gt;
+
+&lt;div class=&quot;red&quot;&gt;
+  Red
+&lt;/div&gt;
+
+&lt;script&gt;
+  /**
+   * [...]
+   * Polyfill from https://developer.mozilla.org/en-US/docs/Web/API/Element/classList#polyfill
+   */
+  document.querySelector(&quot;.red&quot;).classList.toggle(&quot;red&quot;, true);
+&lt;/script&gt;
+"><pre><span class="pl-kos">&lt;</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
+  .<span class="pl-c1">red</span> {
+    <span class="pl-c1">background</span><span class="pl-kos">:</span> red;
+  }
+<span class="pl-kos">&lt;/</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
+
+<span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">class</span>="<span class="pl-s">red</span>"<span class="pl-kos">&gt;</span>
+  Red
+<span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span>
+
+<span class="pl-kos">&lt;</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span>
+  <span class="pl-c">/**</span>
+<span class="pl-c">   * [...]</span>
+<span class="pl-c">   * Polyfill from https://developer.mozilla.org/en-US/docs/Web/API/Element/classList#polyfill</span>
+<span class="pl-c">   */</span>
+  <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">".red"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">classList</span><span class="pl-kos">.</span><span class="pl-en">toggle</span><span class="pl-kos">(</span><span class="pl-s">"red"</span><span class="pl-kos">,</span> <span class="pl-c1">true</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span></pre></div>
+<p>Related: <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="437292062" data-permission-text="Title is private" data-url="https://github.com/msn0/mdn-polyfills/issues/57" data-hovercard-type="issue" data-hovercard-url="/msn0/mdn-polyfills/issues/57/hovercard" href="https://github.com/msn0/mdn-polyfills/issues/57">msn0/mdn-polyfills#57</a></p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/element/classlist</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/classList</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/master/files/en-us/web/api/element/classlist/index.html">https://github.com/mdn/content/blob/master/files/en-us/web/api/element/classlist/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/068e0f6bfb252775eb9835632c3b0083259c9fcc/hovercard" href="https://github.com/mdn/content/commit/068e0f6bfb252775eb9835632c3b0083259c9fcc"><tt>068e0f6</tt></a></li>
+<li>Document last modified: 2021-01-25T04:06:51.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[dom] Browser Compatibility tables are unclear when support for an item has been removed]]></title>
+            <link>https://github.com/mdn/content/issues/2107</link>
+            <guid>https://github.com/mdn/content/issues/2107</guid>
+            <pubDate>Fri, 05 Feb 2021 12:29:59 GMT</pubDate>
+            <content:encoded><![CDATA[<p>This is <a rel="nofollow" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1417902">https://bugzilla.mozilla.org/show_bug.cgi?id=1417902</a> filed again for the new MDN setup.</p>
+<p>The problem is clearly illustrated by things that were in EdgeHTML (Edge 12-18) but are not in new Chromium-based Edge 79+:<br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/DocumentType#browser_compatibility">https://developer.mozilla.org/en-US/docs/Web/API/DocumentType#browser_compatibility</a></p>
+<p>It looks as though support was in Edge 12-79, but it was in Edge 12-18.</p>
+<p>cc <a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/Elchi3/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Elchi3">@Elchi3</a> <a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/ddbeck/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ddbeck">@ddbeck</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[dom] Issue with "Event.preventDefault()": displayWarning() example doesn't work with autofill]]></title>
+            <link>https://github.com/mdn/content/issues/1637</link>
+            <guid>https://github.com/mdn/content/issues/1637</guid>
+            <pubDate>Fri, 22 Jan 2021 19:23:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault">https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The displayWarning() example didn't work when I selected my capitalized name from my autofill list</p>
+<h4>Specific section or headline?</h4>
+<p>Stopping keystrokes from reaching an edit field &gt; Result</p>
+<h4>What did you expect to see?</h4>
+<p>A warning</p>
+<h4>Did you test this? If so, how?</h4>
+<ol>
+<li>Open Microsoft Edge (88.0.705.50)</li>
+<li>Go to <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault</a></li>
+<li>Scroll down to Stopping keystrokes from reaching an edit field &gt; Result</li>
+<li>Click the box and select an item with a capital letter</li>
+<li>Observe</li>
+</ol>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/event/preventdefault</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/master/files/en-us/web/api/event/preventdefault/index.html">https://github.com/mdn/content/blob/master/files/en-us/web/api/event/preventdefault/index.html</a></li>
+<li>Report started: 2021-01-22T19:11:57.555Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

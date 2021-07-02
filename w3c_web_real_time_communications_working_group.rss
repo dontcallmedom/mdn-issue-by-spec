@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>W3C Web Real-Time Communications Working Group-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_real_time_communications_working_group.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Real-Time Communications Working Group</description>
+        <lastBuildDate>Fri, 02 Jul 2021 14:33:12 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[webrtc] Issue with "RTCPeerConnection.generateCertificate() static fun…": (2 minor issues with the example provided)]]></title>
+            <link>https://github.com/mdn/content/issues/6527</link>
+            <guid>https://github.com/mdn/content/issues/6527</guid>
+            <pubDate>Fri, 02 Jul 2021 14:33:12 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/generateCertificate">https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/generateCertificate</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>In description, the example provided by RSASSA-PKCS1-v1_5 have 2 issues.<br>
+One of which is Uint8Array is written as UInt8Array.<br>
+The other was the naming of RSASSA-PKCS1-v1_5 which have an additional 0 making it RSASSA-PKCS1<strong>0</strong>-v1_5</p>
+<h4>Specific section or headline?</h4>
+<p>Description &gt; Standard configurations &gt; RSASSA-PKCS1-v1_5</p>
+<h4>What did you expect to see?</h4>
+<p>let stdRSACertificate = {<br>
+name: "RSASSA-PKCS1-v1_5",<br>
+modulusLength: 2048,<br>
+publicExponent: new Uint8Array([1, 0, 1]),<br>
+hash: "SHA-256"<br>
+};</p>
+<h4>Did you test this? If so, how?</h4>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/rtcpeerconnection/generatecertificate</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/generateCertificate" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/generateCertificate</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcpeerconnection/generatecertificate/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcpeerconnection/generatecertificate/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0f3c54f5a6cbbafbba3b8c7e2e045b67b26e9984/hovercard" href="https://github.com/mdn/content/commit/0f3c54f5a6cbbafbba3b8c7e2e045b67b26e9984"><tt>0f3c54f</tt></a></li>
+<li>Document last modified: 2021-06-19T03:49:37.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript, mediacapture-streams] Globally replace console.log() calls in all cases where console.error() should be used instead]]></title>
+            <link>https://github.com/mdn/content/issues/6117</link>
+            <guid>https://github.com/mdn/content/issues/6117</guid>
+            <pubDate>Fri, 18 Jun 2021 17:07:45 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
+
+<p>Lots of them!<br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia">https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise</a><br>
+...and many more!</p>
+<h2>Specific page section or heading?</h2>
+
+<p>getUserMedia: <em>Using the new API in older browsers</em><br>
+Promise: <em>Chained Promises</em></p>
+<h2>What is the problem?</h2>
+
+<p><code>console.log()</code> is frequently used for error handling on MDN pages, most commonly in a <code>try/catch</code> block, although <code>console.error()</code> should always be used for these cases.</p>
+<h2>What did you expect to see?</h2>
+
+<p>All errors to always be handled via <code>console.error()</code>.</p>
+<h2>Did you test this? If so, how?</h2>
+
+<p>No, I did not need to.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[mediacapture-streams] Issue with "MediaStreamTrack: ended event": (short summary here please)]]></title>
+            <link>https://github.com/mdn/content/issues/4939</link>
+            <guid>https://github.com/mdn/content/issues/4939</guid>
+            <pubDate>Wed, 12 May 2021 10:02:23 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/ended_event">https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/ended_event</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>It would be worth noting that this event is not fired when the user calls .stop() on the track.</p>
+<p>Also this page should include this information somehow in my Opinion:<br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack#events">https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack#events</a><br>
+ended<br>
+Sent when playback of the track ends <strong>(when the value readyState changes to ended)</strong>.<br>
+Also available using the onended event handler property.</p>
+<p>In the case of calling .stop() yourself, readyState DOES change to ended but the event is not fired.</p>
+<h4>Specific section or headline?</h4>
+<h4>What did you expect to see?</h4>
+<h4>Did you test this? If so, how?</h4>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/mediastreamtrack/ended_event</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/ended_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/ended_event</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/mediastreamtrack/ended_event/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/mediastreamtrack/ended_event/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/c016a6b893578b1f39794983682c6d9107910226/hovercard" href="https://github.com/mdn/content/commit/c016a6b893578b1f39794983682c6d9107910226"><tt>c016a6b</tt></a></li>
+<li>Document last modified: 2020-12-21T07:50:05.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[mediacapture-streams] Issue with "MediaStreamTrack": (short summary here please)]]></title>
+            <link>https://github.com/mdn/content/issues/4511</link>
+            <guid>https://github.com/mdn/content/issues/4511</guid>
+            <pubDate>Tue, 27 Apr 2021 04:36:25 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack">https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>Note: You can implement standard "mute" functionality by setting enabled to false, and unmute the media by setting it back to true again.</p>
+<h4>Specific section or headline?</h4>
+<p>MediaStreamTrack.muted</p>
+<h4>What did you expect to see?</h4>
+<p>Note: You can implement standard "unmute" functionality by setting muted to false, and mute the media by setting it back to true again.</p>
+<h4>Did you test this? If so, how?</h4>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/mediastreamtrack</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/mediastreamtrack/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/mediastreamtrack/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/dc9089417852530f233c345bd6821d6e06f11b1e/hovercard" href="https://github.com/mdn/content/commit/dc9089417852530f233c345bd6821d6e06f11b1e"><tt>dc90894</tt></a></li>
+<li>Document last modified: 2020-12-18T10:05:08.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[mediacapture-streams] Issue with "MediaTrackSupportedConstraints": Duplicated property definition]]></title>
+            <link>https://github.com/mdn/content/issues/3674</link>
+            <guid>https://github.com/mdn/content/issues/3674</guid>
+            <pubDate>Tue, 30 Mar 2021 14:45:58 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackSupportedConstraints">https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackSupportedConstraints</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The description for <code>displaySurface</code> is copied from <code>cursor</code></p>
+<h4>Specific section or headline?</h4>
+<p>section - <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackSupportedConstraints#properties_specific_to_shared_screen_tracks">https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackSupportedConstraints#properties_specific_to_shared_screen_tracks</a></p>
+<h4>What did you expect to see?</h4>
+<p>A description of the <code>displaySurface</code> property</p>
+<h4>Did you test this? If so, how?</h4>
+<p>No, I'm operating under the assumption both keys don't serve the same purpose of capturing the curosr.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/mediatracksupportedconstraints</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackSupportedConstraints" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackSupportedConstraints</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/mediatracksupportedconstraints/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/mediatracksupportedconstraints/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ebae941ef7f25004223dd69c7ddce904662a9ed4/hovercard" href="https://github.com/mdn/content/commit/ebae941ef7f25004223dd69c7ddce904662a9ed4"><tt>ebae941</tt></a></li>
+<li>Document last modified: 2021-01-07T02:08:07.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[screen-capture] displaySurface doc looks wrong]]></title>
+            <link>https://github.com/mdn/content/issues/1456</link>
+            <guid>https://github.com/mdn/content/issues/1456</guid>
+            <pubDate>Mon, 18 Jan 2021 15:39:25 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/simajzenman/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/simajzenman">@simajzenman</a> commented on <a href="https://github.com/mdn/sprints/issues/3878" data-hovercard-type="issue" data-hovercard-url="/mdn/sprints/issues/3878/hovercard">Tue Nov 10 2020</a></p>
+<h1>Request type</h1>
+
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Correction or update</li>
+</ul>
+<h1>Details</h1>
+
+<p>Hello Mozilla,</p>
+<p>I've seen in the page about MediaTrackConstraints.displaySurface (<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackConstraints/displaySurface">https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackConstraints/displaySurface</a>) that in the first paragraph, it says "is used to specify the type or types of display surfaces which getDisplayMedia() will let the user select among for sharing purposes.". As far as I know (and tested) there is no way to restrain the type of surface you want to allow in javascript on client side; displaySurface (as it is written in the same page) can be used to detect the type of surface for a current stream already going.</p>
+<p>If I am wrong, I first apologies for wasting your time and would be happy to have more info.<br>
+I also tried to edit it myself but couldn't for that paragraph</p>
+<p>In the meantime, if you know where I could find in the doc a way to identify the stream name(meaning if I share facebook tab browser, I should find "facebook" in the name of the current stream), it would really help me.</p>
+<p>Have a great one,<br>
+Simon</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webrtc] Issue with "RTCRtpSender.replaceTrack()": …]]></title>
+            <link>https://github.com/mdn/content/issues/1406</link>
+            <guid>https://github.com/mdn/content/issues/1406</guid>
+            <pubDate>Sun, 17 Jan 2021 17:37:46 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/replaceTrack">https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/replaceTrack</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>I don't think the example code is correct - it introduces "PCs" but what is this?</p>
+<p>// example to change video camera, suppose selected value saved into window.selectedCamera...</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="
+navigator.mediaDevices
+  .getUserMedia({
+    video: {
+      deviceId: {
+        exact: window.selectedCamera
+      }
+    }
+  })
+  .then(function(stream) {
+    let videoTrack = stream.getVideoTracks()[0];
+    PCs.forEach(function(pc) {
+      var sender = pc.getSenders().find(function(s) {
+        return s.track.kind == videoTrack.kind;
+      });
+      console.log('found sender:', sender);
+      sender.replaceTrack(videoTrack);
+    });
+  })
+  .catch(function(err) {
+    console.error('Error happens:', err);
+  });
+
+"><pre><code>
+navigator.mediaDevices
+  .getUserMedia({
+    video: {
+      deviceId: {
+        exact: window.selectedCamera
+      }
+    }
+  })
+  .then(function(stream) {
+    let videoTrack = stream.getVideoTracks()[0];
+    PCs.forEach(function(pc) {
+      var sender = pc.getSenders().find(function(s) {
+        return s.track.kind == videoTrack.kind;
+      });
+      console.log('found sender:', sender);
+      sender.replaceTrack(videoTrack);
+    });
+  })
+  .catch(function(err) {
+    console.error('Error happens:', err);
+  });
+
+</code></pre></div>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/rtcrtpsender/replacetrack</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/replaceTrack" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/replaceTrack</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/master/files/en-us/web/api/rtcrtpsender/replacetrack/index.html">https://github.com/mdn/content/blob/master/files/en-us/web/api/rtcrtpsender/replacetrack/index.html</a></li>
+<li>Report started: 2021-01-17T17:33:03.954Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[screen-capture, mediacapture-streams] MediaDevices.getDisplayMedia() ignores constraints in FF]]></title>
+            <link>https://github.com/mdn/content/issues/1830</link>
+            <guid>https://github.com/mdn/content/issues/1830</guid>
+            <pubDate>Mon, 10 Feb 2020 14:53:07 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>Request type</h1>
+
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Correction or update</li>
+</ul>
+<h1>Details</h1>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getDisplayMedia" rel="nofollow">MediaDevices.getDisplayMedia()</a> should accept <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackConstraints#Properties_of_shared_screen_tracks" rel="nofollow">MediaTrackConstraints</a> according to documentation:</p>
+<blockquote>
+<p>Either a Boolean (which indicates whether or not a video track is requested) or a MediaTrackConstraints object providing the constraints which must be met by the video track included in the returned MediaStream. If constraints are specified, a video track is inherently requested.</p>
+</blockquote>
+<p>However it does not and for example if you use this, it does not affect it at all:<br>
+<code>getDisplayMedia({ video: { cursor: 'never', displaySurface: 'browser' } })</code></p>
+<h1>Expected result</h1>
+
+<p>It should take constraints into account if I provide them (or at least allow to user to select desired one, it is not possible to select browser tab in FF atm [Chrome has this possibility in selection pop up]).</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webrtc] /en-US/docs/Web/API/RTCPeerConnection/icecandidate_event]]></title>
+            <link>https://github.com/mdn/content/issues/2450</link>
+            <guid>https://github.com/mdn/content/issues/2450</guid>
+            <pubDate>Sun, 24 Nov 2019 10:21:05 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>Request type</h1>
+
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> New documentation</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Correction or update</li>
+</ul>
+<h1>Details</h1>
+<p>See <a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/icecandidate_event" rel="nofollow">icecandidate event</a>.</p>
+<p>The code sample in "Sharing a new candidate" checks if event.candidate is truthy before delivering it to the remote peer. "Indicating the end of a generation of candidates" says that events where <code>event.candidate == ""</code> should be delivered, but <a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy" rel="nofollow">the empty string is falsy</a> in JavaScript and this signal would not be delivered. "Indicating that ICE gathering is complete" says that events where <code>event.complete == null</code> should not be delivered but then refers to the <code>event.candidate == true</code> test.</p>
+<p>There is clearly a nuance here that I'm missing, but in any case this may need to be clarified. An uninformed reader would form the conclusion that actually a <code>event.complete != null</code> test is needed.</p>
+<p>There's also mixed references to RTCPeerConnectionIceEvent (bluelinked) and RTCPeerIceCandidateEvent (redlinked), not sure if that's intentional.</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

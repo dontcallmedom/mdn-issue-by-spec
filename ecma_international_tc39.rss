@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Ecma International TC39-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
+        <lastBuildDate>Fri, 25 Jun 2021 15:06:51 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "Classes": Example under section 'Instance Properties' needs to be updated.]]></title>
+            <link>https://github.com/mdn/content/issues/6339</link>
+            <guid>https://github.com/mdn/content/issues/6339</guid>
+            <pubDate>Fri, 25 Jun 2021 15:06:51 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>Under the section 'Instance properties' , the example states that instance properties should be created by adding properties either to the 'Class name' like Person.sayHi() or on its prototype. But the entire reason for creating a class is that we do not have to worry about that ( dealing with elaborate syntaxes by using 'prototype's )</p>
+<h4>Specific section or headline?</h4>
+<p>Example under  'Instance properties'</p>
+<h4>What did you expect to see?</h4>
+<p>I expected to see an example where Static data properties and prototype data properties are defined inside the class itself and not outside of it. The usage of words 'static data properties and prototype data properties <strong><em>must be</em></strong> defined...' gives an impression that it is the only right way of declaring such properties.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>Declaring instance/ static variables inside the class is the newer way rather than defining it on 'prototypes'</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/classes</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/classes/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/classes/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/82515990ea50ba8689421e4fcb9cdf3d134d8fca/hovercard" href="https://github.com/mdn/content/commit/82515990ea50ba8689421e4fcb9cdf3d134d8fca"><tt>8251599</tt></a></li>
+<li>Document last modified: 2021-06-22T23:26:35.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript, mediacapture-streams] Globally replace console.log() calls in all cases where console.error() should be used instead]]></title>
+            <link>https://github.com/mdn/content/issues/6117</link>
+            <guid>https://github.com/mdn/content/issues/6117</guid>
+            <pubDate>Fri, 18 Jun 2021 17:07:45 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
+
+<p>Lots of them!<br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia">https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise</a><br>
+...and many more!</p>
+<h2>Specific page section or heading?</h2>
+
+<p>getUserMedia: <em>Using the new API in older browsers</em><br>
+Promise: <em>Chained Promises</em></p>
+<h2>What is the problem?</h2>
+
+<p><code>console.log()</code> is frequently used for error handling on MDN pages, most commonly in a <code>try/catch</code> block, although <code>console.error()</code> should always be used for these cases.</p>
+<h2>What did you expect to see?</h2>
+
+<p>All errors to always be handled via <code>console.error()</code>.</p>
+<h2>Did you test this? If so, how?</h2>
+
+<p>No, I did not need to.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "Function() constructor": definition for arg1, arg2, ... argN too restrictive compared to spec]]></title>
+            <link>https://github.com/mdn/content/issues/6000</link>
+            <guid>https://github.com/mdn/content/issues/6000</guid>
+            <pubDate>Mon, 14 Jun 2021 16:50:22 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/Function">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/Function</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The parameter part claims the values for <code>arg1, arg2, ... argN</code> can only be valid identifiers. However, per <a rel="nofollow" href="https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-createdynamicfunction">https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-createdynamicfunction</a>, it can be much more.</p>
+<h4>Specific section or headline?</h4>
+<p>"Parameters"</p>
+<h4>What did you expect to see?</h4>
+<p>Rephrase to the following to match FormalParameters grammar:</p>
+<blockquote>
+<p>Names to be used by the function as formal argument names. Each must be a string that corresponds to a valid JavaScript parameter (any of plain identifier, rest parameter, or destructed parameter, optionally with a default) or a list of such strings separated with a comma.</p>
+<p>As the members are parsed in the same way as that of function declaractions, whitespace and comments are accepted. For example: <code>"x", "theValue = 42", "[a, b] /* numbers */"</code>—or <code>"x, theValue = 42, [a, b] /* numbers */"</code>. (<code>"x, theValue = 42", "[a, b]"</code> is also correct, but it is very confusing to read.)</p>
+</blockquote>
+<p>I am unable to muster up the infrastructure to figure out what the compatibility is like, although I imagine it to be similar to the <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions</a> page. The related constructors of <code>GeneratorFunction</code> and <code>AsyncFunction</code> also need to be changed.</p>
+<h4>Did you test this? If so, how?</h4>
+<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="const sum = new Function('a', '...b', 'return a + b[0]');
+console.log(sum(2, 6));
+
+const sum2 = new Function('{a, b}, c = 0 /* optional */', 'return a + b + c');
+console.log(sum2({a: 2, b: 6}));
+"><pre><span class="pl-k">const</span> <span class="pl-s1">sum</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Function</span><span class="pl-kos">(</span><span class="pl-s">'a'</span><span class="pl-kos">,</span> <span class="pl-s">'...b'</span><span class="pl-kos">,</span> <span class="pl-s">'return a + b[0]'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">sum</span><span class="pl-kos">(</span><span class="pl-c1">2</span><span class="pl-kos">,</span> <span class="pl-c1">6</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+<span class="pl-k">const</span> <span class="pl-s1">sum2</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Function</span><span class="pl-kos">(</span><span class="pl-s">'{a, b}, c = 0 /* optional */'</span><span class="pl-kos">,</span> <span class="pl-s">'return a + b + c'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">sum2</span><span class="pl-kos">(</span><span class="pl-kos">{</span><span class="pl-c1">a</span>: <span class="pl-c1">2</span><span class="pl-kos">,</span> <span class="pl-c1">b</span>: <span class="pl-c1">6</span><span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/global_objects/function/function</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/Function" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/Function</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/function/function/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/function/function/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/13360cbad46b4ce6457f80492d73d2efd252e8a9/hovercard" href="https://github.com/mdn/content/commit/13360cbad46b4ce6457f80492d73d2efd252e8a9"><tt>13360cb</tt></a></li>
+<li>Document last modified: 2021-05-05T10:31:52.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "this": lack of an article about the 'Execution context'. ]]></title>
+            <link>https://github.com/mdn/content/issues/5006</link>
+            <guid>https://github.com/mdn/content/issues/5006</guid>
+            <pubDate>Fri, 14 May 2021 18:14:38 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>I didn't know where exactly to post the issue. I went for "this" cause the value of "this" is strictly related to the execution context.</p>
+<h4>Specific section or headline?</h4>
+<h4>What did you expect to see?</h4>
+<h4>Did you test this? If so, how?</h4>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/operators/this</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/this/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/this/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/13360cbad46b4ce6457f80492d73d2efd252e8a9/hovercard" href="https://github.com/mdn/content/commit/13360cbad46b4ce6457f80492d73d2efd252e8a9"><tt>13360cb</tt></a></li>
+<li>Document last modified: 2021-05-05T10:31:52.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "Array": Documentation seems unclear and maybe contradicting itself]]></title>
+            <link>https://github.com/mdn/content/issues/4968</link>
+            <guid>https://github.com/mdn/content/issues/4968</guid>
+            <pubDate>Thu, 13 May 2021 10:01:48 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array</a></p>
+<h4>Specific section or headline?</h4>
+<p>The second paragraph of "Description" section says "Arrays cannot use strings as element indexes (as in an associative array) but must use integers."</p>
+<p>The bottom of the "Accessing array elements" section says "But it's also possible to quote the array indexes as well (e.g., years['2'] instead of years[2]), although it's not necessary."</p>
+<p>Right after that one, it says "The 2 in years[2] is coerced into a string by the JavaScript engine through an implicit toString conversion."</p>
+<p>So, first it says ~"no strings, must be ints", then says ~"it's okay to use a string it's just not necessary."  Then it says ~"if you use ints they are coerced into strings anyway." Seems inconsistent/unclear, to me.</p>
+<p>I'm not confused with how to use Arrays in JavaScript, but I'm confused by this documentation's explanation.</p>
+<p>And, saying the string coercion is "an implicit toString conversion" as an explanation of why '2' and '02' will not be the same result is unclear. I think it's saying an explicit toString conversion is a an actual conversion similar to `Number('02') which would be the same result even with multiple zeroes were in the string's front. Perhaps "implicit" is the right word for the not-really-converting-to-a-number, but, it doesn't seem so to me. I think the point they were trying to make is it's not really coercing the string to a number so that's a "gotcha" to look out for.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/global_objects/array</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/array/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/array/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/13360cbad46b4ce6457f80492d73d2efd252e8a9/hovercard" href="https://github.com/mdn/content/commit/13360cbad46b4ce6457f80492d73d2efd252e8a9"><tt>13360cb</tt></a></li>
+<li>Document last modified: 2021-05-05T10:31:52.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "export": (export from)]]></title>
+            <link>https://github.com/mdn/content/issues/4811</link>
+            <guid>https://github.com/mdn/content/issues/4811</guid>
+            <pubDate>Sat, 08 May 2021 09:25:02 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export#re-exporting_aggregating">https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export#re-exporting_aggregating</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>This can be achieved with the "export from" syntax:</p>
+<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="export { default as function1,
+         function2 } from 'bar.js';
+"><pre><span class="pl-k">export</span> <span class="pl-kos">{</span> <span class="pl-s1">default</span> <span class="pl-k">as</span> <span class="pl-s1">function1</span><span class="pl-kos">,</span>
+         <span class="pl-s1">function2</span> <span class="pl-kos">}</span> <span class="pl-k">from</span> <span class="pl-s">'bar.js'</span><span class="pl-kos">;</span></pre></div>
+<p>Which is comparable to a combination of import and export:</p>
+<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="import { default as function1,
+         function2 } from 'bar.js';
+export { function1 as default, function2 };
+"><pre><span class="pl-k">import</span> <span class="pl-kos">{</span> <span class="pl-s1">default</span> <span class="pl-k">as</span> <span class="pl-s1">function1</span><span class="pl-kos">,</span>
+         <span class="pl-s1">function2</span> <span class="pl-kos">}</span> <span class="pl-k">from</span> <span class="pl-s">'bar.js'</span><span class="pl-kos">;</span>
+<span class="pl-k">export</span> <span class="pl-kos">{</span> <span class="pl-s1">function1</span> <span class="pl-k">as</span> <span class="pl-s1">default</span><span class="pl-kos">,</span> <span class="pl-s1">function2</span> <span class="pl-kos">}</span><span class="pl-kos">;</span></pre></div>
+<h4>Specific section or headline?</h4>
+<p>re-exporting_aggregating</p>
+<h4>What did you expect to see?</h4>
+<p>function1 will not export as default，here should be</p>
+<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="import { default as function1,
+         function2 } from 'bar.js';
+export { function1 , function2 };
+"><pre><span class="pl-k">import</span> <span class="pl-kos">{</span> <span class="pl-s1">default</span> <span class="pl-k">as</span> <span class="pl-s1">function1</span><span class="pl-kos">,</span>
+         <span class="pl-s1">function2</span> <span class="pl-kos">}</span> <span class="pl-k">from</span> <span class="pl-s">'bar.js'</span><span class="pl-kos">;</span>
+<span class="pl-k">export</span> <span class="pl-kos">{</span> <span class="pl-s1">function1</span> <span class="pl-kos">,</span> <span class="pl-s1">function2</span> <span class="pl-kos">}</span><span class="pl-kos">;</span></pre></div>
+<h4>Did you test this? If so, how?</h4>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/statements/export</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/export/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/export/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/13360cbad46b4ce6457f80492d73d2efd252e8a9/hovercard" href="https://github.com/mdn/content/commit/13360cbad46b4ce6457f80492d73d2efd252e8a9"><tt>13360cb</tt></a></li>
+<li>Document last modified: 2021-05-05T10:31:52.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Beginner-Understanding "Issue" with "Logical AND (&&)": the short circuit evaluation and the way the operator returns the value of one of the two operands could be _maybe_ explained in a more beginner-friendly way.]]></title>
+            <link>https://github.com/mdn/content/issues/4218</link>
+            <guid>https://github.com/mdn/content/issues/4218</guid>
+            <pubDate>Sun, 18 Apr 2021 12:40:39 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>No one information is incorrect or incomplete, but it was for me also not really helpful to understand the way &amp;&amp; returns the values of its operands.</p>
+<h4>Specific section or headline?</h4>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND#description">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND#description</a></p>
+<p>"Description<br>
+If expr1 can be converted to true, returns expr2; else, returns expr1."</p>
+<h4>What did you expect to see?</h4>
+<p>I was working on understanding the meaning of this JSX element and above all of the &amp;&amp; operator as used here:</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="const tasty = (
+  &lt;ul&gt;
+    &lt;li&gt;Applesauce&lt;/li&gt;
+    { !baby &amp;&amp; &lt;li&gt;Pizza&lt;/li&gt; }
+    { age &gt; 15 &amp;&amp; &lt;li&gt;Brussels Sprouts&lt;/li&gt; }
+    { age &gt; 20 &amp;&amp; &lt;li&gt;Oysters&lt;/li&gt; }
+    { age &gt; 25 &amp;&amp; &lt;li&gt;Grappa&lt;/li&gt; }
+  &lt;/ul&gt;
+);
+"><pre><code>const tasty = (
+  &lt;ul&gt;
+    &lt;li&gt;Applesauce&lt;/li&gt;
+    { !baby &amp;&amp; &lt;li&gt;Pizza&lt;/li&gt; }
+    { age &gt; 15 &amp;&amp; &lt;li&gt;Brussels Sprouts&lt;/li&gt; }
+    { age &gt; 20 &amp;&amp; &lt;li&gt;Oysters&lt;/li&gt; }
+    { age &gt; 25 &amp;&amp; &lt;li&gt;Grappa&lt;/li&gt; }
+  &lt;/ul&gt;
+);
+</code></pre></div>
+<p>To reapeat-understand the use of &amp;&amp; in this code I went first to the page of MDN for &amp;&amp; and I didn't get it.</p>
+<p>As a second reference I use normally Flanagan "The Definitive Guide of Javascript" - The &amp;&amp; is explained in the pages 84-85 (4.10.1 Logical AND (&amp;&amp;)).</p>
+<p>Flanagan takes a little more space to explain it but it makes it understandable also for beginners.</p>
+<p>Sorry, that I can't help in elaborate a possible alternative explanation of the &amp;&amp;.</p>
+<h4>Did you test this? If so, how?</h4>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/operators/logical_and</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/logical_and/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/logical_and/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/020083cf88b0d52a6f07a3d86823592f82bfcaa7/hovercard" href="https://github.com/mdn/content/commit/020083cf88b0d52a6f07a3d86823592f82bfcaa7"><tt>020083c</tt></a></li>
+<li>Document last modified: 2021-04-06T10:44:09.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "getter": inline code examples are unusually hard to read]]></title>
+            <link>https://github.com/mdn/content/issues/3955</link>
+            <guid>https://github.com/mdn/content/issues/3955</guid>
+            <pubDate>Fri, 09 Apr 2021 05:15:10 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The inline code examples in this list item are unusually hard to parse:</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/3911927/114128538-31b5af80-98c2-11eb-8ed0-4a4a65c50622.png"><img src="https://user-images.githubusercontent.com/3911927/114128538-31b5af80-98c2-11eb-8ed0-4a4a65c50622.png" alt="Screen Shot 2021-04-08 at 11 27 36 PM" style="max-width:100%;"></a></p>
+<p>I think it's because both examples are composed mostly of parens/braces, presented <em>inside a parenthetical</em>, and (on my Macbook) wrap. It's just a perfect storm.</p>
+<h4>Specific section or headline?</h4>
+<p>Description (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get#description" rel="nofollow">link</a>)</p>
+<h4>What did you expect to see?</h4>
+<p>I think it'd be clearer to present them in a block-formatted chunk. That could be problematic inside a list, though.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>No.</p>
+<p>I'm willing to open a PR but I don't know how to preview the final render, and I'm not familiar enough with MDN's formatting styleguide (which I did check) to know what formatting options are available. I could not make this edit blind, and would need to guess-and-test before committing.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/functions/get</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/functions/get/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/functions/get/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/6fe447217e08a28cf17b8896545f98d098582ac3/hovercard" href="https://github.com/mdn/content/commit/6fe447217e08a28cf17b8896545f98d098582ac3"><tt>6fe4472</tt></a></li>
+<li>Document last modified: 2021-02-19T20:01:33.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Expanation of concept of detaching for ArrayBuffers]]></title>
+            <link>https://github.com/mdn/content/issues/3797</link>
+            <guid>https://github.com/mdn/content/issues/3797</guid>
+            <pubDate>Sat, 03 Apr 2021 13:09:30 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What is the new suggestion?</h2>
+<p>I propose to add a section with explanation of the term "detaching" regarding the ArrayBuffers.</p>
+<h2>Why is it important or useful?</h2>
+<p>It is hard to fully understand documentation without explanation of this term. For example it is used on page <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer" rel="nofollow">SharedArrayBuffer</a>. I think that for a lot of people this term is just a mystery</p>
+<h2>Other supporting information</h2>
+<p><a href="https://github.com/domenic/proposal-arraybuffer-transfer#detaching-and-transferring">https://github.com/domenic/proposal-arraybuffer-transfer#detaching-and-transferring</a><br>
+<a rel="nofollow" href="https://tc39.es/ecma262/#sec-detacharraybuffer">https://tc39.es/ecma262/#sec-detacharraybuffer</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "Conditional (ternary) operator": (short summary here please)]]></title>
+            <link>https://github.com/mdn/content/issues/3775</link>
+            <guid>https://github.com/mdn/content/issues/3775</guid>
+            <pubDate>Fri, 02 Apr 2021 10:45:07 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The statement that the "[ternary] operator is frequently used as a shortcut for the if statement"</p>
+<h4>Specific section or headline?</h4>
+<h4>What did you expect to see?</h4>
+<p>The "[ternary] operator is frequently used as a shortcut for an if/else structure"</p>
+<h4>Did you test this? If so, how?</h4>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/operators/conditional_operator</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/conditional_operator/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/conditional_operator/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/3b80812a1d4f68e57f35fca763f50bf3e5dfe997/hovercard" href="https://github.com/mdn/content/commit/3b80812a1d4f68e57f35fca763f50bf3e5dfe997"><tt>3b80812</tt></a></li>
+<li>Document last modified: 2021-02-19T19:57:02.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] javascript.builtins.String - String conversion]]></title>
+            <link>https://github.com/mdn/content/issues/5007</link>
+            <guid>https://github.com/mdn/content/issues/5007</guid>
+            <pubDate>Sun, 28 Mar 2021 02:30:25 GMT</pubDate>
+            <content:encoded><![CDATA[
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="let outputStrings = []
+for (let i = 0, n = inputValues.length; i &lt; n; ++i) {
+  outputStrings.push(String(inputValues[i]));
+}
+"><pre><span class="pl-k">let</span> <span class="pl-s1">outputStrings</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-kos">]</span>
+<span class="pl-k">for</span> <span class="pl-kos">(</span><span class="pl-k">let</span> <span class="pl-s1">i</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-s1">n</span> <span class="pl-c1">=</span> <span class="pl-s1">inputValues</span><span class="pl-kos">.</span><span class="pl-c1">length</span><span class="pl-kos">;</span> <span class="pl-s1">i</span> <span class="pl-c1">&lt;</span> <span class="pl-s1">n</span><span class="pl-kos">;</span> <span class="pl-c1">++</span><span class="pl-s1">i</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-s1">outputStrings</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-v">String</span><span class="pl-kos">(</span><span class="pl-s1">inputValues</span><span class="pl-kos">[</span><span class="pl-s1">i</span><span class="pl-kos">]</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span></pre></div>
+<p>I am not sure what the purpose of the example is?</p>
+<h4>What did you expect to see?</h4>
+<p><code>String(undefined) String(null) String(Symbol())</code> or something.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>yes, there is  a error. <code>ReferenceError: inputValues is not defined</code></p>
+
+<details>
+<summary>MDN page report details</summary>
+<ul>
+<li>Query: <code>javascript.builtins.String</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String</a></li>
+<li>Report started: 2021-03-28T02:04:08.526Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] [JavaScript] Document “AsyncGenerator” & “AsyncGeneratorFunction”]]></title>
+            <link>https://github.com/mdn/content/issues/2803</link>
+            <guid>https://github.com/mdn/content/issues/2803</guid>
+            <pubDate>Tue, 02 Mar 2021 12:34:52 GMT</pubDate>
+            <content:encoded><![CDATA[<h1><g-emoji class="g-emoji" alias="ledger" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d2.png">📒</g-emoji> JavaScript Reference Docs Problem</h1>
+<h2>Location</h2>
+<p><em>Section of the site where the content exists</em></p>
+<p>Affected URL(s):</p>
+<ul>
+<li>[RED] <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#control_abstraction" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#control_abstraction</a></li>
+<li>[RED] <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects#control_abstraction_objects" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects#control_abstraction_objects</a></li>
+<li>[404] <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncGenerator" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncGenerator</a></li>
+<li>[404] <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncGeneratorFunction" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncGeneratorFunction</a></li>
+</ul>
+<h2>Description</h2>
+<p><em>Concise explanation of the problem</em></p>
+<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects#control_abstraction_objects" rel="nofollow">“Control abstraction objects” section</a> of the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects" rel="nofollow">“Standard built-in objects” page</a> is missing pages for the <a href="https://tc39.es/ecma262/#sec-asyncgenerator-objects" rel="nofollow"><code>AsyncGenerator</code></a> and <a href="https://tc39.es/ecma262/#sec-asyncgeneratorfunction-objects" rel="nofollow"><code>AsyncGeneratorFunction</code></a> objects. Having these documents available is important because they would be needed in order for <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="805511339" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/2248" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/2248/hovercard" href="https://github.com/mdn/content/issues/2248">#2248</a> to move towards completion.</p>
+<hr>
+
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> I would like to work on this issue and<br>
+submit a pull request.</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Show version of spec that introduces feature]]></title>
+            <link>https://github.com/mdn/content/issues/2787</link>
+            <guid>https://github.com/mdn/content/issues/2787</guid>
+            <pubDate>Mon, 01 Mar 2021 22:52:25 GMT</pubDate>
+            <content:encoded><![CDATA[<p>It would be nice for MDN not just to link to the spec for a JS feature, but to note which version of the spec it was approved in. The reason is that sometimes tools will say that they are compatible with a spec version, but I can't tell what features that includes.</p>
+<p>Real world example:</p>
+<p>SonarQube's JS plugin says it supports ES 2019: <a href="https://github.com/SonarSource/SonarJS/tree/6.5.0.13383#features">https://github.com/SonarSource/SonarJS/tree/6.5.0.13383#features</a>. But it's failing to parse optional chaining syntax. I go to MDN to see if I can figure out if optional chaining was from ES2018 or 2019 or 2020: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining</a>, but don't see anything.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "Function": There no longer seems to be any treatment for constructor functions]]></title>
+            <link>https://github.com/mdn/content/issues/2599</link>
+            <guid>https://github.com/mdn/content/issues/2599</guid>
+            <pubDate>Tue, 23 Feb 2021 03:40:51 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>Where did the description of constructor functions go? I'm not referring to Class constructors, I'm referring to function declarations used as constructor functions for creating objects.</p>
+<h4>Specific section or headline?</h4>
+<p>Constructor Function</p>
+<h4>What did you expect to see?</h4>
+<p>How to use a function declaration as a constructor function.</p>
+<h4>Did you test this? If so, how?</h4>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/global_objects/function</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/function/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/function/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/3b80812a1d4f68e57f35fca763f50bf3e5dfe997/hovercard" href="https://github.com/mdn/content/commit/3b80812a1d4f68e57f35fca763f50bf3e5dfe997"><tt>3b80812</tt></a></li>
+<li>Document last modified: 2021-02-19T19:57:02.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Make sure pages for features on WindowOrWorkerGlobalScope describe the correct means of accessing]]></title>
+            <link>https://github.com/mdn/content/issues/2427</link>
+            <guid>https://github.com/mdn/content/issues/2427</guid>
+            <pubDate>Wed, 17 Feb 2021 18:23:39 GMT</pubDate>
+            <content:encoded><![CDATA[<p>Best described with Philip's quote from <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="798245847" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/1940" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/1940/hovercard" href="https://github.com/mdn/content/issues/1940">#1940</a>. This issue is about making soure the descriptions are clear. It takes no position on the suggestion to put the referenced items under <code>Global_Obects/</code>.</p>
+<blockquote>
+<p>For all of the methods on WindowOrWorkerGlobalScope, I believe invoking them directly as fetch() rather than self.fetch() is idiomatic. They are: atob(), btoa(), clearInterval(), clearTimeout(), createImageBitmap(), fetch(), queueMicrotask(), setInterval(), setTimeout().</p>
+<p>For attributes, while they can be accessed directly, I think for at least these it's more idiomatic to access them via the global object, because it makes it clear they're not local variables: self.crossOriginIsolated, self.isSecureContext, self.origin.</p>
+<p>Then there's caches and indexedDB, where I suspect there's more variation in style. I'd certainly write indexedDB.open(...), but the example uses window.indexedDB.open('toDoList').</p>
+<p>On the URL, another option would be /api/Global_Objects/fetch, more analogous to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt</a></p>
+<p>I think that looking at the members of Window and WorkerGlobalScope will reveal more tricky cases. I think especially a method like window.resizeTo(), which it can be invoked as just resizeTo(), would not be great to give the same treatment as fetch().</p>
+</blockquote>
+<p>Here's the start of a list. I do not claim it is complete.</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> atob()</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> btoa()</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> clearInterval()</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> clearTimeout()</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> createImageBitmap()</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> fetch()</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> queueMicrotask()</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> setInterval()</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> setTimeout()</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> crossOriginIsolated</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> isSecureContext</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> origin</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> resizeTo</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "Promise": Code used to demonstrate Chaining is misleading for new coders]]></title>
+            <link>https://github.com/mdn/content/issues/2303</link>
+            <guid>https://github.com/mdn/content/issues/2303</guid>
+            <pubDate>Fri, 12 Feb 2021 01:14:58 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The code sample for Chained Promises.</p>
+<p>creates a new Promise on the fly and then uses direct call back functions for both resolve and reject handlers. That code sample was read by an new coder who completely misunderstood the intent and wrote this question on StackOverflow: <a rel="nofollow" href="https://stackoverflow.com/questions/66164973/promise-chain-does-not-wait-until-other-promise-is-resolved#66165074">https://stackoverflow.com/questions/66164973/promise-chain-does-not-wait-until-other-promise-is-resolved#66165074</a></p>
+<p>A synopsis of the question's code follows:</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="function displayAll() {
+    var myPromise = (new Promise(display1))
+    .then((new Promise(display2))
+    .then((new Promise(display3))
+    .then(display4)));
+}
+"><pre><code>function displayAll() {
+    var myPromise = (new Promise(display1))
+    .then((new Promise(display2))
+    .then((new Promise(display3))
+    .then(display4)));
+}
+</code></pre></div>
+<p>And the demo code on MDN:</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="const myPromise =
+  (new Promise(myExecutorFunc))
+  .then(handleFulfilledA,handleRejectedA)
+  .then(handleFulfilledB,handleRejectedB)
+  .then(handleFulfilledC,handleRejectedC);
+"><pre><code>const myPromise =
+  (new Promise(myExecutorFunc))
+  .then(handleFulfilledA,handleRejectedA)
+  .then(handleFulfilledB,handleRejectedB)
+  .then(handleFulfilledC,handleRejectedC);
+</code></pre></div>
+<h4>Specific section or headline?</h4>
+<p>Chained Promises</p>
+<h4>What did you expect to see?</h4>
+<p>To better demonstrate how Chained promises are used in the wild, it would be more productive/instructive to separate all the move parts. Something along the lines of the <a href="">Promise Constructor</a> sample code as a starting point.</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="const promise1 = new Promise((resolve, reject) =&gt; {
+  setTimeout(() =&gt; {
+    resolve('foo');
+  }, 300);
+});
+"><pre><code>const promise1 = new Promise((resolve, reject) =&gt; {
+  setTimeout(() =&gt; {
+    resolve('foo');
+  }, 300);
+});
+</code></pre></div>
+<p>Followed by the chaining thus:</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="promise1
+   .then((value) =&gt; { return value + ' and bar'; })
+   .then((value) =&gt; { return value + ' and bar again'; })
+   .then((value) =&gt; { return value + ' and again'; })
+   .then((value) =&gt; { return value + ' and again'; })
+   .then((value) =&gt; { console.log(value) });
+"><pre><code>promise1
+   .then((value) =&gt; { return value + ' and bar'; })
+   .then((value) =&gt; { return value + ' and bar again'; })
+   .then((value) =&gt; { return value + ' and again'; })
+   .then((value) =&gt; { return value + ' and again'; })
+   .then((value) =&gt; { console.log(value) });
+</code></pre></div>
+<p>While this code is more verbose than it needs to be, it is clear a function is required as the parameter(s).</p>
+<h4>Did you test this? If so, how?</h4>
+<p>The StackOverflow question indicates this causes some confusion.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/global_objects/promise</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/master/files/en-us/web/javascript/reference/global_objects/promise/index.html">https://github.com/mdn/content/blob/master/files/en-us/web/javascript/reference/global_objects/promise/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/c45665984d990171c7a1b269f0074c34ddfb3d02/hovercard" href="https://github.com/mdn/content/commit/c45665984d990171c7a1b269f0074c34ddfb3d02"><tt>c456659</tt></a></li>
+<li>Document last modified: 2021-01-22T08:11:48.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Are there really two different ways of handling two-digit years?]]></title>
+            <link>https://github.com/mdn/content/issues/1461</link>
+            <guid>https://github.com/mdn/content/issues/1461</guid>
+            <pubDate>Mon, 18 Jan 2021 15:44:01 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/nickshanks/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/nickshanks">@nickshanks</a> commented on <a href="https://github.com/mdn/sprints/issues/3860" data-hovercard-type="issue" data-hovercard-url="/mdn/sprints/issues/3860/hovercard">Wed Nov 04 2020</a></p>
+<h2>URL(s)</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#Compatibility_notes" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#Compatibility_notes</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#Two_digit_years_map_to_1900_%E2%80%93_1999" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#Two_digit_years_map_to_1900_–_1999</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setYear#Description" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setYear#Description</a></li>
+</ul>
+<h2>Request type</h2>
+
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> New documentation</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Correction or update</li>
+</ul>
+<h2>Details</h2>
+<p>The Date class page and the setYear page both say two-digit years are parsed as an offset to the year 1900 (formerly, in the H3: "Two digit years map to 1900 – 1999")<br>
+The Date.parse page says that <code>Date.parse()</code> and <code>new Date()</code> use values 50-99 to mean 1950-1999 and 0-49 to mean 2000-2049. Thus this apparently differs from how <code>Date.prototype.setYear()</code> handles two-digit years.</p>
+<p>Are the two implementations of two-digit-year handling actually divergent? If so, why isn't this made explicit in the documentation for both functions? If not, I presume the documentation for setYear(), on both the setYear page and the class page, is incorrect.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Where is the page for Function.prototype.prototype?]]></title>
+            <link>https://github.com/mdn/content/issues/1449</link>
+            <guid>https://github.com/mdn/content/issues/1449</guid>
+            <pubDate>Mon, 18 Jan 2021 15:22:21 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/ugultopu/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ugultopu">@ugultopu</a> commented on <a href="https://github.com/mdn/sprints/issues/3936" data-hovercard-type="issue" data-hovercard-url="/mdn/sprints/issues/3936/hovercard">Tue Dec 01 2020</a></p>
+<p>The <code>prototype</code> instance property on a function instance allows that function to be used as a constructor. Although the <code>prototype</code> property is mentioned in the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new" rel="nofollow">new operator</a> page as:</p>
+<blockquote>
+<p>You can add a shared property to a previously defined object type by using the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype" rel="nofollow">Function.prototype</a> property. This defines a property that is shared by all objects created with that function, rather than by just one instance of the object type. The following code adds a color property with value "original color" to all objects of type Car, and then overwrites that value with the string "black" only in the instance object car1. For more information, see <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype" rel="nofollow">prototype</a>.</p>
+</blockquote>
+<p>Both links point to the same URL which goes to nowhere. That is, the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype" rel="nofollow">Function.prototype</a> page is not present and it simply redirects to the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" rel="nofollow">Function</a> page.</p>
+<p>This is a big omission if I'm not missing something.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "Remainder (%)": …]]></title>
+            <link>https://github.com/mdn/content/issues/961</link>
+            <guid>https://github.com/mdn/content/issues/961</guid>
+            <pubDate>Tue, 05 Jan 2021 15:27:32 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>"Note that while in most languages, ‘%’ is a remainder operator, in some (e.g. Python, Perl) it is a modulo operator. For positive values, the two are equivalent, but when the dividend and divisor are of different signs, they give different results. To obtain a modulo in JavaScript"</p>
+<h4>Specific section or headline?</h4>
+<p>Remainder (%)</p>
+<h4>What did you expect to see?</h4>
+<p>Instead of: "For positive values, the two are equivalent, but when the dividend and divisor are of different signs, they give different results."<br>
+It should say: "For two values of the same sign, the two are equivalent, but when the dividend and divisor are of different signs, they give different results."</p>
+<p>It would also be helpful for some explanation of what the actual difference between the remainder and modulus <em>are,</em> or at least a link to one. This is the best explanation for the difference, in JS, that I've found: <a rel="nofollow" href="https://2ality.com/2019/08/remainder-vs-modulo.html">https://2ality.com/2019/08/remainder-vs-modulo.html</a></p>
+<h4>Did you test this? If so, how?</h4>
+<p>Yes. I ran a number of manual modulus and remainder calculations in Node v14, and confirmed that modulus and remainder produce the same results if both operands are negative.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/operators/remainder</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/master/files/en-us/web/javascript/reference/operators/remainder/index.html">https://github.com/mdn/content/blob/master/files/en-us/web/javascript/reference/operators/remainder/index.html</a></li>
+<li>Report started: 2021-01-05T14:45:59.304Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] "await" is not always a keyword]]></title>
+            <link>https://github.com/mdn/content/issues/887</link>
+            <guid>https://github.com/mdn/content/issues/887</guid>
+            <pubDate>Sun, 03 Jan 2021 20:50:54 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>Has a box that says:</p>
+<blockquote>
+<p>The await keyword is only valid inside async functions. If you use it outside of an async function's body, you will get a SyntaxError.</p>
+</blockquote>
+<p>It's not generally true that "outside of an async function's body, you will get a SyntaxError". Generally the word <code>async</code> will be parsed as an identifier.  (Maybe <a href="https://tc39.es/ecma262/#_ref_15481" rel="nofollow">modules are an exception</a>?)</p>
+<h4>Specific section or headline?</h4>
+<p>In the <strong>Description</strong></p>
+<h4>Did you test this? If so, how?</h4>
+<p>This is entirely legal syntax:</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="function await() { return 42 }
+
+function g() { return await `abc` }
+
+console.log(g())
+"><pre><code>function await() { return 42 }
+
+function g() { return await `abc` }
+
+console.log(g())
+</code></pre></div>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/statements/async_function</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/master/files/en-us/web/javascript/reference/statements/async_function/index.html">https://github.com/mdn/content/blob/master/files/en-us/web/javascript/reference/statements/async_function/index.html</a></li>
+<li>Report started: 2021-01-03T20:27:00.236Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "static": …]]></title>
+            <link>https://github.com/mdn/content/issues/309</link>
+            <guid>https://github.com/mdn/content/issues/309</guid>
+            <pubDate>Wed, 16 Dec 2020 16:59:53 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>Static class fields should not yet be documented without a disclaimer.</p>
+<h4>Specific section or headline?</h4>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static#Using_static_members_in_classes">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static#Using_static_members_in_classes</a></p>
+<h4>What did you expect to see?</h4>
+<p>The same disclaimer that is in the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields" rel="nofollow">public class fields</a> documentation:</p>
+<blockquote>
+<p>This page describes experimental features.</p>
+<p>Both Public and private field declarations are an experimental feature (stage 3) proposed at TC39, the JavaScript standards committee.</p>
+<p>Support in browsers is limited, but the feature can be used through a build step with systems like Babel. See the compat information below.</p>
+</blockquote>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/classes/static</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/master/files/en-us/web/javascript/reference/classes/static/index.html">https://github.com/mdn/content/blob/master/files/en-us/web/javascript/reference/classes/static/index.html</a></li>
+<li>Report started: 2020-12-16T14:16:55.769Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "super": …]]></title>
+            <link>https://github.com/mdn/content/issues/208</link>
+            <guid>https://github.com/mdn/content/issues/208</guid>
+            <pubDate>Tue, 15 Dec 2020 02:21:12 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>Incomplete</p>
+<h4>Specific section or headline?</h4>
+<p><code>super</code> does not work as expected with <code>extends</code> when designing "mixin" composition. It does not follow traditional dynamic language semantics for <code>super</code>; especially in respect to Smalltalk definition of <code>super</code>.</p>
+<h4>What did you expect to see?</h4>
+<p>See comments IN:<br>
+<a rel="nofollow" href="https://stackoverflow.com/questions/64395149/how-is-the-value-of-super-determined-compared-to-this/65298925#65298925">https://stackoverflow.com/questions/64395149/how-is-the-value-of-super-determined-compared-to-this/65298925#65298925</a></p>
+<h4>Did you test this? If so, how?</h4>
+<p>See comments and details in:<br>
+<a rel="nofollow" href="https://stackoverflow.com/questions/64395149/how-is-the-value-of-super-determined-compared-to-this/65298925#65298925">https://stackoverflow.com/questions/64395149/how-is-the-value-of-super-determined-compared-to-this/65298925#65298925</a></p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/operators/super</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/master/files/en-us/web/javascript/reference/operators/super/index.html">https://github.com/mdn/content/blob/master/files/en-us/web/javascript/reference/operators/super/index.html</a></li>
+<li>Report started: 2020-12-15T02:18:19.476Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Suggestions for the MDN content on bigints]]></title>
+            <link>https://github.com/mdn/content/issues/1623</link>
+            <guid>https://github.com/mdn/content/issues/1623</guid>
+            <pubDate>Sun, 05 Jul 2020 11:05:03 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>Request type</h1>
+
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Please close this issue, I accidentally submitted it without adding any details</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> New documentation</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Correction or update</li>
+</ul>
+<h1>Details</h1>
+<ul>
+<li>Currently the content on bigints is here: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt</a>
+<ul>
+<li>The intro gives a slightly wrong impression: “<code>BigInt</code> is a built-in object that provides a way to represent whole numbers [...]”. I’d emphasize that this object <em>complements</em> primitive bigint values and is the source of their methods.</li>
+<li>Is there a better location for this content – a page that focuses on bigints as primitive values?</li>
+</ul>
+</li>
+<li>Page <a href="https://developer.mozilla.org/en-US/docs/Glossary/BigInt" rel="nofollow">https://developer.mozilla.org/en-US/docs/Glossary/BigInt</a>
+<ul>
+<li>“The JavaScript data structure: <code>BigInt</code>”: <code>BigInt</code> is not a data structure!</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] /en-US/docs/Web/JavaScript/Reference/Statements/var]]></title>
+            <link>https://github.com/mdn/content/issues/1796</link>
+            <guid>https://github.com/mdn/content/issues/1796</guid>
+            <pubDate>Wed, 01 Apr 2020 11:43:25 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>Request type</h1>
+
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Please close this issue, I accidentally submitted it without adding any details</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> New documentation</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Correction or update</li>
+</ul>
+<h1>Details</h1>
+<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#var_hoisting" rel="nofollow">var hoisting paragraph</a> might not be clear enough, may even be confusing.<br>
+According to the paragraph:<br>
+<em>"Because variable declarations <strong>(and declarations in general)</strong> are processed before any code is executed, declaring a variable anywhere in the code is equivalent to declaring it at the top. <strong>This also means that a variable can appear to be used before it's declared. This behavior is called "hoisting", as it appears that the variable declaration is moved to the top of the function or global code.</strong>"</em></p>
+<p>A reader may think that, since <strong>both var and let</strong> varaibles' declarations are processed before any code is executed, both of them will be <strong>hoisted</strong>. We know this is not true.</p>
+<p>One more misleading statement from this paragraph:<br>
+<em>"It's important to point out that the <strong>hoisting will affect the variable declaration, but not its value's initialization</strong>. The value will be indeed assigned when the assignment statement is reached:"</em></p>
+<p>Again, in reality, it <strong>does</strong> affect variable (implicit) initialization. Variables defined with <strong>var will be initialized</strong> with "undefined" value and we will be able to use them before <strong>explicit initialization (definition)</strong>.</p>
+<p>Let variables <strong>will also be declared at the start of their scope (block in their case)</strong> but will NOT be initialized (will be in temporal dead zone until their definition). Therefore, since only <strong>declaration</strong>, but not <strong>implicit declaration</strong> happens, we consider <strong>let variables not to be hoisted</strong>.</p>
+<p>Please, see <a href="https://dmitripavlutin.com/variables-lifecycle-and-why-let-is-not-hoisted/" rel="nofollow">this article</a> for more information (credits to Dmitri Pavlutin).</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Document async iterators and generators]]></title>
+            <link>https://github.com/mdn/content/issues/2248</link>
+            <guid>https://github.com/mdn/content/issues/2248</guid>
+            <pubDate>Fri, 08 Feb 2019 17:10:50 GMT</pubDate>
+            <content:encoded><![CDATA[<p>Cross-filed from <a rel="nofollow" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1483152">https://bugzilla.mozilla.org/show_bug.cgi?id=1483152</a></p>
+<p>Documentation for <a rel="nofollow" href="https://tc39.github.io/proposal-async-iteration/">https://tc39.github.io/proposal-async-iteration/</a><br>
+(this shipped in Firefox 57, see bug 1352312)</p>
+<h2>Iteration protocol reference page:</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols</a> needs to talk about the async iteration protocol.</li>
+</ul>
+<h2>Symbol.asyncIterator</h2>
+<ul>
+<li>Docs could probably be derived from Symbol.iterator <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/iterator" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/iterator</a></li>
+<li>It's already listed on the Symbol page: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol#Well-known_symbols" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol#Well-known_symbols</a></li>
+<li>New page to be created here: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/asyncIterator" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/asyncIterator</a></li>
+<li>Compat data update here: <a href="https://github.com/mdn/browser-compat-data/blob/master/javascript/builtins/Symbol.json#L58">https://github.com/mdn/browser-compat-data/blob/master/javascript/builtins/Symbol.json#L58</a></li>
+<li>New interactive example here: <a href="https://github.com/mdn/interactive-examples/tree/master/live-examples/js-examples/symbol">https://github.com/mdn/interactive-examples/tree/master/live-examples/js-examples/symbol</a></li>
+</ul>
+<h2>for-await-of</h2>
+<ul>
+<li>Needs to be listed here: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements#Iterations" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements#Iterations</a></li>
+<li>New reference page here: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await-of" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await-of</a></li>
+<li>New compat data entry here: <a href="https://github.com/mdn/browser-compat-data/blob/master/javascript/statements.json">https://github.com/mdn/browser-compat-data/blob/master/javascript/statements.json</a></li>
+<li>New interactive example here: <a href="https://github.com/mdn/interactive-examples/tree/master/live-examples/js-examples/statement">https://github.com/mdn/interactive-examples/tree/master/live-examples/js-examples/statement</a></li>
+</ul>
+<h2>Async generators</h2>
+<p>We have <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function</a>*, maybe it would be worth doing an extra reference page about async function* ? Then you would create e.g. <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function</a>* maybe. Also add compat data and interactive example again, like for the other two above.</p>
+<h2>APIs that use async iterators / generators</h2>
+<p>I don't know all the APIs that use async iteration, but it seems like Streams are async iterables, so it might be interesting to look into our streams docs and update them if necessary <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Streams_API">https://developer.mozilla.org/en-US/docs/Web/API/Streams_API</a></p>
+<h2>Guide page updates</h2>
+<ul>
+<li>We have <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_generators" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_generators</a></li>
+<li>Unfortunately we have no dedicated guide page yet on async JS programming. We want to create that at some point, though. See <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1305261" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=1305261</a></li>
+<li>More brainstorming on that here: <a href="https://docs.google.com/document/d/1ko8Xt5JaFVuXjEOHSyhw8MaxKPTbKiX6Qc7EXtczKUA/edit?ts=5b55b98b#heading=h.5tv0p4d6vqmu" rel="nofollow">https://docs.google.com/document/d/1ko8Xt5JaFVuXjEOHSyhw8MaxKPTbKiX6Qc7EXtczKUA/edit?ts=5b55b98b#heading=h.5tv0p4d6vqmu</a></li>
+</ul>
+<h2>Misc</h2>
+<ul>
+<li>Joe Medley contributed this: <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="341102008" data-permission-text="Title is private" data-url="https://github.com/mdn/interactive-examples/issues/1036" data-hovercard-type="pull_request" data-hovercard-url="/mdn/interactive-examples/pull/1036/hovercard" href="https://github.com/mdn/interactive-examples/pull/1036">mdn/interactive-examples#1036</a>, check if it is integrated nicely.</li>
+</ul>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

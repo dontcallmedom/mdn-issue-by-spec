@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>W3C Devices and Sensors Working Group-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_devices_and_sensors_working_group.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Devices and Sensors Working Group</description>
+        <lastBuildDate>Fri, 23 Apr 2021 02:57:45 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[orientation-event, compat] Content bug: Improve device/screen orientation event doc]]></title>
+            <link>https://github.com/mdn/content/issues/4400</link>
+            <guid>https://github.com/mdn/content/issues/4400</guid>
+            <pubDate>Fri, 23 Apr 2021 02:57:45 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
+<p>A number of docs related to device orientation</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/Events/Orientation_and_motion_data_explained" rel="nofollow">Orientation and motion data explained</a></p>
+<ul>
+<li>Still marked as draft</li>
+<li>Does not cover DeviceMotion frame.</li>
+<li>Explains only the absolute frame, not the relative frame.</li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/Events/Detecting_device_orientation" rel="nofollow">Web APIs &gt; Detecting device orientation</a></p>
+<ul>
+<li>
+<p>needs better linking to above doc.</p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/ondeviceorientationabsolute" rel="nofollow">Window.ondeviceorientationabsolute</a> - corresponding docs missing. Looks like this is absolute-only version of orientation relative to earth frame, based on compass.</p>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/deviceorientation_event" rel="nofollow">Window.deviceorientation_event</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/ondeviceorientation" rel="nofollow">Window.ondeviceorientation</a></p>
+<ul>
+<li>Marked experimental, but looks like the main API</li>
+<li>Documented as relative to earth frame, but has absolute and relative value. Various docs indicate it is not standardised and some systems do relative, some absolute. Not clear what relative "means". So basically need to find out what relative means and what systems support what behaviour.</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/orientation" rel="nofollow">Window.orientationchange</a> (also the event). This is the angle relative to the natural device orientation of the screen. So relative to the deviceorientation.</p>
+<ul>
+<li>Marked as deprecated, but not clear what should be used?</li>
+<li>There is also <a href="https://developer.mozilla.org/en-US/docs/Web/API/Screen/onorientationchange" rel="nofollow">Screen.onorientationchange</a> that is also deprecated and FF only.</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Managing_screen_orientation" rel="nofollow">CSS Object Model (CSSOM) &gt; Managing screen orientation</a> - this looks OK but refers to deprecated <a href="https://developer.mozilla.org/en-US/docs/Web/API/Screen/onorientationchange" rel="nofollow">Screen.onorientationchange</a></p>
+</li>
+</ul>
+<h3>Other relevant docs:</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/devicemotion_event" rel="nofollow">Window.devicemotion_event</a> (and friends)</li>
+<li><a href="https://developers.google.com/web/fundamentals/native-hardware/device-orientation" rel="nofollow">Google doc on topic</a><br>
+Anyway,</li>
+<li><a href="https://developers.google.com/web/updates/2016/03/device-orientation-changes" rel="nofollow">Chrome 50 info on change that confuses me</a></li>
+<li><a href="https://marmelab.com/blog/2020/02/05/getting-the-ball-rolling-with-devicemotion.html" rel="nofollow">Pretty cool tute</a></li>
+</ul>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

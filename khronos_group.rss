@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Khronos Group-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/khronos_group.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Khronos Group</description>
+        <lastBuildDate>Wed, 28 Apr 2021 05:05:07 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[webgl2] Issue with "WebGL2RenderingContext.getBufferSubData()": Argument 3 does not implement interface ArrayBufferView]]></title>
+            <link>https://github.com/mdn/content/issues/4539</link>
+            <guid>https://github.com/mdn/content/issues/4539</guid>
+            <pubDate>Wed, 28 Apr 2021 05:05:07 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The <code>dstData</code> argument of type <code>ArrayBuffer</code> doesn't work and results in this error:</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="Uncaught TypeError: WebGL2RenderingContext.getBufferSubData: Argument 3 does not implement interface ArrayBufferView.
+"><pre><code>Uncaught TypeError: WebGL2RenderingContext.getBufferSubData: Argument 3 does not implement interface ArrayBufferView.
+</code></pre></div>
+<h4>Specific section or headline?</h4>
+<p>Parameters and Examples</p>
+<h4>What did you expect to see?</h4>
+<p>Data from the buffer</p>
+<h4>Did you test this? If so, how?</h4>
+<p>Example code:</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="let canvas = document.createElement(&quot;canvas&quot;);
+let gl = canvas.getContext(&quot;webgl2&quot;);
+let position_buffer = gl.createBuffer();
+gl.bindBuffer(gl.ARRAY_BUFFER, position_buffer);
+let positions = [
+    -1.0, 1.0, 0.0,
+    1.0, 1.0, 0.0,
+    -1.0, -1.0, 0.0,
+    1.0, -1.0, 0.0,
+    1.0, 1.0, 0.0,
+    -1.0, -1.0, 0.0
+];
+gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(positions), gl.STATIC_DRAW);
+
+let arrBuffer = new ArrayBuffer(positions.length * Float32Array.BYTES_PER_ELEMENT);
+gl.getBufferSubData(gl.ARRAY_BUFFER, 0, arrBuffer);
+"><pre><code>let canvas = document.createElement("canvas");
+let gl = canvas.getContext("webgl2");
+let position_buffer = gl.createBuffer();
+gl.bindBuffer(gl.ARRAY_BUFFER, position_buffer);
+let positions = [
+    -1.0, 1.0, 0.0,
+    1.0, 1.0, 0.0,
+    -1.0, -1.0, 0.0,
+    1.0, -1.0, 0.0,
+    1.0, 1.0, 0.0,
+    -1.0, -1.0, 0.0
+];
+gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(positions), gl.STATIC_DRAW);
+
+let arrBuffer = new ArrayBuffer(positions.length * Float32Array.BYTES_PER_ELEMENT);
+gl.getBufferSubData(gl.ARRAY_BUFFER, 0, arrBuffer);
+</code></pre></div>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/webgl2renderingcontext/getbuffersubdata</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/getbuffersubdata/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/getbuffersubdata/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/63c69f3c933acbea9bfb24d359a7d2ffdb3c0bea/hovercard" href="https://github.com/mdn/content/commit/63c69f3c933acbea9bfb24d359a7d2ffdb3c0bea"><tt>63c69f3</tt></a></li>
+<li>Document last modified: 2021-02-19T19:51:22.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webgl2] Issue with "WebGL2RenderingContext.getBufferSubData()": Example is not working.]]></title>
+            <link>https://github.com/mdn/content/issues/3829</link>
+            <guid>https://github.com/mdn/content/issues/3829</guid>
+            <pubDate>Mon, 05 Apr 2021 02:07:24 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The Examples section is wrong, this is not how this method is used.</p>
+<h4>Specific section or headline?</h4>
+<p>This example will throw because <code>dstData</code> <strong>must</strong> be an ArrayBufferView, it can't be a bare ArrayBuffer.<br>
+But even though I'm not an expert myself in the subject matter, it seems the whole example isn't a good example of how this method should be used.</p>
+<h4>What did you expect to see?</h4>
+<p>A real good example of how and when to use this method. It seems <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/WebGL_best_practices#non-blocking_async_data_downloadreadback">https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/WebGL_best_practices#non-blocking_async_data_downloadreadback</a> has a better (at least working) example, but maybe it does more than required? I can't really judge that.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>I read <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/#3.7.3" rel="nofollow">the specs</a> and tested in both Firefox and Chrome.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/webgl2renderingcontext/getbuffersubdata</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/getbuffersubdata/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/getbuffersubdata/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/63c69f3c933acbea9bfb24d359a7d2ffdb3c0bea/hovercard" href="https://github.com/mdn/content/commit/63c69f3c933acbea9bfb24d359a7d2ffdb3c0bea"><tt>63c69f3</tt></a></li>
+<li>Document last modified: 2021-02-19T19:51:22.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webgl1] Issue with "WebGLRenderingContext.drawElements()": …]]></title>
+            <link>https://github.com/mdn/content/issues/813</link>
+            <guid>https://github.com/mdn/content/issues/813</guid>
+            <pubDate>Thu, 31 Dec 2020 23:56:41 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/drawElements">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/drawElements</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The documentation states:</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="count
+    A GLsizei specifying the number of elements to be rendered.
+"><pre><code>count
+    A GLsizei specifying the number of elements to be rendered.
+</code></pre></div>
+<p>But "elements" isn't clear. If I am trying to draw a single gl.TRIANGLE, is it expecting that argument to be 1 (if elements means triangles) or 3 (if elements means indices)?</p>
+<h4>Specific section or headline?</h4>
+<p>count</p>
+<h4>What did you expect to see?</h4>
+<p>More precise wording to understand what the function is expecting</p>
+<h4>Did you test this? If so, how?</h4>
+<p>I have a bug that's related, but because this is unclear I have to test both possibilities each time while testing for my bug.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/webglrenderingcontext/drawelements</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/drawElements" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/drawElements</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/master/files/en-us/web/api/webglrenderingcontext/drawelements/index.html">https://github.com/mdn/content/blob/master/files/en-us/web/api/webglrenderingcontext/drawelements/index.html</a></li>
+<li>Report started: 2020-12-31T23:54:07.085Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
