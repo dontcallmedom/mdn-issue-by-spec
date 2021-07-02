@@ -6,6 +6,11 @@ const octokit = require("./lib/octokit");
 const { JSDOM } = require("jsdom");
 const bcd = require('@mdn/browser-compat-data');
 const browserSpecs = require("browser-specs");
+const {Feed} = require("feed");
+
+const toSlug = title => title.replace(/([A-Z])/g, s => s.toLowerCase())
+        .replace(/[^a-z0-9]/g, '_')
+        .replace(/_+/g, '_');
 
 
 const issueQuery = `
@@ -13,10 +18,15 @@ const issueQuery = `
     repository(owner: "mdn", name: "content") {
       issues(first: 100, after: $cursor, states: [OPEN]) {
         nodes {
+          title
           bodyHTML
           createdAt
           number
           url
+          author {
+            login
+            url
+          }
         }
         pageInfo {
           hasNextPage
@@ -71,8 +81,34 @@ function findRelatedMDNPages(issue) {
   return pages;
 }
 
+function generateFeed(scope, path, issues) {
+  const feed = new Feed({
+    title: `${scope}-relevant MDN issues`,
+    description: `Issue filed on MDN Web Docs related to pages attached to technologies developed by ${scope}`,
+    link: `https://dontcallmedom.github.io/mdn-issue-by-spec/feeds/${path}.rss`,
+    updated: new Date(issues.map(i => i.createdAt).sort().pop()),
+    language: "en",
+    author: {
+      name: "mdn-issue-by-spec",
+      link: "https://github.com/dontcallmedom/mdn-issue-by-spec"
+    }
+  });
+  issues.forEach(issue => {
+    feed.addItem({
+      title: issue.title,
+      id: issue.url,
+      link: issue.url,
+      content: issue.bodyHTML,
+      author: [
+        {name: issue.author.login, link: issue.author.url}
+      ],
+      date: new Date(issue.createdAt)
+    });
+  });
+  return feed;
+}
 
-(async function() {
+async function mapIssuesToSpecs() {
   let pageMap = mapPagesToSpec(bcd);
   let pages = {};
   let specs = {};
@@ -106,14 +142,52 @@ function findRelatedMDNPages(issue) {
       console.error(`No matching spec for ${spec_url} from ${p} found in browser-specs`);
       return;
     }
-    specs[spec.shortname] = specs[spec.shortname] ?? [];
-    specs[spec.shortname].push(pages[p]);
-  });
-  Object.keys(specs).forEach(s => {
-    specs[s] = specs[s].sort((a, b) => a.created_at - b.created_at);
+    specs[spec.shortname] = specs[spec.shortname] ?? spec;
+    specs[spec.shortname].issues = specs[spec.shortname].issues ?? [];
+    specs[spec.shortname].issues = specs[spec.shortname].issues.concat(pages[p]);
   });
   fs.writeFileSync("unknownpages.json", JSON.stringify(unknownPages, null, 2));
   fs.writeFileSync("nomatch.json", JSON.stringify(noMatch, null, 2));
-  fs.writeFileSync("byspec.json", JSON.stringify(specs, null, 2));
+  return specs;
+}
+
+(async function() {
+  const specToIssues = await mapIssuesToSpecs();
+  // group issues by org and by group
+  let groups = {};
+  let orgs = {};
+  for (let spec of Object.values(specToIssues)) {
+    for (let group of spec.groups) {
+      const name = `${spec.organization} ${group.name}`;
+      if (!groups[name]) {
+        groups[name] = [];
+      }
+      if (!orgs[spec.organization]) {
+        orgs[spec.organization] = [];
+      }
+      groups[name] = groups[name].concat(spec.issues);
+      orgs[spec.organization] = orgs[spec.organization].concat(spec.issues);
+    }
+  }
+  for (let collection of [groups, orgs]) {
+    for (let name of Object.keys(collection)) {
+      // Remove duplicates and label titles
+      collection[name] = collection[name].filter((issue, index, arr) => arr.findIndex(i => issue.number === i.number) === index)
+        .map(issue => {
+          const relevantSpecs = Object.values(specToIssues)
+                .filter(spec => spec.issues.find(i => i.number === issue.number))
+                .map(spec => spec.shortname);
+          return {
+            ...issue,
+            title: `[${relevantSpecs.join(', ')}] ${issue.title}`
+          };
+        })
+        .sort((a,b) => b.createdAt.localeCompare(a.createdAt));
+      // Generate feed
+      const path = toSlug(name);
+      const feed = generateFeed(name, path, collection[name]);
+      fs.writeFileSync("feeds/" + path + ".rss", feed.rss2());
+    }
+  }
 })();
 
