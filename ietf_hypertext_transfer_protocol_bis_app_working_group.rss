@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>IETF Hypertext Transfer Protocol Bis APP Working Group-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ietf_hypertext_transfer_protocol_bis_app_working_group.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by IETF Hypertext Transfer Protocol Bis APP Working Group</description>
+        <lastBuildDate>Wed, 21 Apr 2021 13:02:54 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[rfc7232] Issue with "If-None-Match": (short summary here please)]]></title>
+            <link>https://github.com/mdn/content/issues/4343</link>
+            <guid>https://github.com/mdn/content/issues/4343</guid>
+            <pubDate>Wed, 21 Apr 2021 13:02:54 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>Apache reverse proxies will append "-gzip" suffix to well-formed <code>ETag</code> headers when gzip-encoding content, but they do not remove them from <code>If-None-Match</code> headers.  See <a rel="nofollow" href="https://bz.apache.org/bugzilla/show_bug.cgi?id=39727">https://bz.apache.org/bugzilla/show_bug.cgi?id=39727</a></p>
+<p>There are good reasons for this, since gzip-encoding the content will affect how range requests can be used.  But server software that compares If-None-Match headers in requests with ETags may need to account for this.</p>
+<h4>Specific section or headline?</h4>
+<p>Unsure.</p>
+<h4>What did you expect to see?</h4>
+<p>It should be mentioned somewhere.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>I cam across this while working on server code.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/http/headers/if-none-match</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/if-none-match/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/if-none-match/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/f6f11d2a249520f01bad93d7c4a5e5cdf6ed914a/hovercard" href="https://github.com/mdn/content/commit/f6f11d2a249520f01bad93d7c4a5e5cdf6ed914a"><tt>f6f11d2</tt></a></li>
+<li>Document last modified: 2021-02-19T19:33:30.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
