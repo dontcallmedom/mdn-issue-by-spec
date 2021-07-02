@@ -1,0 +1,30 @@
+name: Update RSS Feeds
+
+on:
+  schedule:
+    - cron: '30 * * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@master
+
+    - name: Setup node.js
+      uses: actions/setup-node@master
+    - name: Install dependencies
+      run: npm install
+    - name: Create config file
+      run: |
+        echo '{"ghToken":"${{ secrets.GITHUB_TOKEN }}"}' > config.json
+
+    - name: Generate feeds
+      run: node index.js
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/main'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
