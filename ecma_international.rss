@@ -15,7 +15,7 @@
             <pubDate>Sat, 03 Jul 2021 11:47:14 GMT</pubDate>
             <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN#the_necessity_of_an_isnan_function">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN#the_necessity_of_an_isnan_function</a></p>
 <h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>In the section section "The necessity of an isNaN function" we can deduce, that <code>isNaN</code> function is necessary, because you can't receive <code>true</code> when comparing a value to <code>NaN</code>.<br>
+<p>From the section section "The necessity of an isNaN function" we can deduce, that <code>isNaN</code> function is necessary, because you can't receive <code>true</code> when comparing a value to <code>NaN</code>.<br>
 I think that reasoning is flawed, because a direct comparison is not the only way of determining the value.<br>
 Because <code>NaN</code> has a special behavior, that it is not equal to itself, we can use it to determine, if a value is a <code>NaN</code> or not:</p>
 <div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="value !== value
@@ -31,7 +31,7 @@ Because <code>NaN</code> has a special behavior, that it is not equal to itself,
 <p>I don't know, what was the true intention of that section: showing, why we truly <em>need</em> the <code>isNaN</code> function (which I think is a false premise), or explaining the special behavior when comparing with <code>NaN</code>. Either way, I think it is better to reword/rebuild this section.<br>
 My suggestion is to change that section into a warning, to be aware that any comparison with <code>NaN</code> returns <code>false</code>.</p>
 <h4>Did you test this? If so, how?</h4>
-<p>Not really needed, but you can see, from this code, that you could implement your own <code>isNaN</code> or <code>Number.isNaN</code>, so they are not strictly necessary. But they are still good to have.</p>
+<p>Not really needed, but from this code you can see, that you could implement your own <code>isNaN</code> or <code>Number.isNaN</code>, so they are not strictly necessary. But they are still good to have.</p>
 <div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="function getTester(fn1, fn2) {
 	return function (v) {
 		var result1, result2, error1, error2
@@ -50,9 +50,11 @@ My suggestion is to change that section into a warning, to be aware that any com
 	}
 }
 
-var testIsNaN = getTester(isNaN, v =&gt; { v = +v; return v !== v })
-var testNumberIsNaN = getTester(Number.isNaN, v =&gt; v !== v)
+var myIsNaN = v =&gt; { v = +v; return v !== v }
+var myNumberIsNaN = v =&gt; v !== v
 
+var testIsNaN = getTester(isNaN, myIsNaN)
+var testNumberIsNaN = getTester(Number.isNaN, myNumberIsNaN)
 var test = v =&gt; testIsNaN(v) &amp;&amp; testNumberIsNaN(v)
 
 console.log([
@@ -63,6 +65,7 @@ console.log([
 	NaN,
 	{},
 	{valueOf: () =&gt; '1'},
+	{valueOf: Math.random},
 	Symbol(),
 ].every(test))
 "><pre><span class="pl-k">function</span> <span class="pl-en">getTester</span><span class="pl-kos">(</span><span class="pl-s1">fn1</span><span class="pl-kos">,</span> <span class="pl-s1">fn2</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
@@ -83,9 +86,11 @@ console.log([
 	<span class="pl-kos">}</span>
 <span class="pl-kos">}</span>
 
-<span class="pl-k">var</span> <span class="pl-s1">testIsNaN</span> <span class="pl-c1">=</span> <span class="pl-en">getTester</span><span class="pl-kos">(</span><span class="pl-s1">isNaN</span><span class="pl-kos">,</span> <span class="pl-s1">v</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span> <span class="pl-s1">v</span> <span class="pl-c1">=</span> <span class="pl-c1">+</span><span class="pl-s1">v</span><span class="pl-kos">;</span> <span class="pl-k">return</span> <span class="pl-s1">v</span> <span class="pl-c1">!==</span> <span class="pl-s1">v</span> <span class="pl-kos">}</span><span class="pl-kos">)</span>
-<span class="pl-k">var</span> <span class="pl-s1">testNumberIsNaN</span> <span class="pl-c1">=</span> <span class="pl-en">getTester</span><span class="pl-kos">(</span><span class="pl-v">Number</span><span class="pl-kos">.</span><span class="pl-c1">isNaN</span><span class="pl-kos">,</span> <span class="pl-s1">v</span> <span class="pl-c1">=&gt;</span> <span class="pl-s1">v</span> <span class="pl-c1">!==</span> <span class="pl-s1">v</span><span class="pl-kos">)</span>
+<span class="pl-k">var</span> <span class="pl-en">myIsNaN</span> <span class="pl-c1">=</span> <span class="pl-s1">v</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span> <span class="pl-s1">v</span> <span class="pl-c1">=</span> <span class="pl-c1">+</span><span class="pl-s1">v</span><span class="pl-kos">;</span> <span class="pl-k">return</span> <span class="pl-s1">v</span> <span class="pl-c1">!==</span> <span class="pl-s1">v</span> <span class="pl-kos">}</span>
+<span class="pl-k">var</span> <span class="pl-en">myNumberIsNaN</span> <span class="pl-c1">=</span> <span class="pl-s1">v</span> <span class="pl-c1">=&gt;</span> <span class="pl-s1">v</span> <span class="pl-c1">!==</span> <span class="pl-s1">v</span>
 
+<span class="pl-k">var</span> <span class="pl-s1">testIsNaN</span> <span class="pl-c1">=</span> <span class="pl-en">getTester</span><span class="pl-kos">(</span><span class="pl-s1">isNaN</span><span class="pl-kos">,</span> <span class="pl-en">myIsNaN</span><span class="pl-kos">)</span>
+<span class="pl-k">var</span> <span class="pl-s1">testNumberIsNaN</span> <span class="pl-c1">=</span> <span class="pl-en">getTester</span><span class="pl-kos">(</span><span class="pl-v">Number</span><span class="pl-kos">.</span><span class="pl-c1">isNaN</span><span class="pl-kos">,</span> <span class="pl-en">myNumberIsNaN</span><span class="pl-kos">)</span>
 <span class="pl-k">var</span> <span class="pl-en">test</span> <span class="pl-c1">=</span> <span class="pl-s1">v</span> <span class="pl-c1">=&gt;</span> <span class="pl-s1">testIsNaN</span><span class="pl-kos">(</span><span class="pl-s1">v</span><span class="pl-kos">)</span> <span class="pl-c1">&amp;&amp;</span> <span class="pl-s1">testNumberIsNaN</span><span class="pl-kos">(</span><span class="pl-s1">v</span><span class="pl-kos">)</span>
 
 <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-kos">[</span>
@@ -96,6 +101,7 @@ console.log([
 	<span class="pl-v">NaN</span><span class="pl-kos">,</span>
 	<span class="pl-kos">{</span><span class="pl-kos">}</span><span class="pl-kos">,</span>
 	<span class="pl-kos">{</span><span class="pl-en">valueOf</span>: <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-s">'1'</span><span class="pl-kos">}</span><span class="pl-kos">,</span>
+	<span class="pl-kos">{</span><span class="pl-c1">valueOf</span>: <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-c1">random</span><span class="pl-kos">}</span><span class="pl-kos">,</span>
 	<span class="pl-v">Symbol</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">,</span>
 <span class="pl-kos">]</span><span class="pl-kos">.</span><span class="pl-en">every</span><span class="pl-kos">(</span><span class="pl-en">test</span><span class="pl-kos">)</span><span class="pl-kos">)</span></pre></div>
 
