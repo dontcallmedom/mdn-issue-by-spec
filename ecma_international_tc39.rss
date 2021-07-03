@@ -4,10 +4,42 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Fri, 02 Jul 2021 10:18:30 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 03 Jul 2021 07:09:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "Functions": (short summary here please)]]></title>
+            <link>https://github.com/mdn/content/issues/6545</link>
+            <guid>https://github.com/mdn/content/issues/6545</guid>
+            <pubDate>Sat, 03 Jul 2021 07:09:55 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>Concept about the hoisting is incomplete</p>
+<h4>Specific section or headline?</h4>
+<p>Function expressions are not hoisted onto the beginning of the scope, therefore they cannot be used before they appear in the code.</p>
+<h4>What did you expect to see?</h4>
+<p>Function expressions are also hoisted onto the beginning of the scope.<br>
+I do expect these concepts.<br>
+Concept of Hoisting for functions , what happens when have same name variable and functions and others concepts like this.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>On visual studio in javaScript file.</p>
+<p>console.log (xyz());   // allowed<br>
+function xyz(){<br>
+return "allowed";<br>
+}</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/functions</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/functions/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/functions/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/13360cbad46b4ce6457f80492d73d2efd252e8a9/hovercard" href="https://github.com/mdn/content/commit/13360cbad46b4ce6457f80492d73d2efd252e8a9"><tt>13360cb</tt></a></li>
+<li>Document last modified: 2021-05-05T10:31:52.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Issue with "Promise": (using the terms "resolved" and "fulfilled")]]></title>
             <link>https://github.com/mdn/content/issues/6521</link>
