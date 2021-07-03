@@ -14,12 +14,8 @@
             <guid>https://github.com/mdn/content/issues/6551</guid>
             <pubDate>Sat, 03 Jul 2021 11:47:14 GMT</pubDate>
             <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN#the_necessity_of_an_isnan_function">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN#the_necessity_of_an_isnan_function</a></p>
-<details><summary>MDN Content page report details</summary>* Folder: `en-us/web/javascript/reference/global_objects/isnan`* MDN URL: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN* GitHub URL: https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/isnan/index.html* Last commit: https://github.com/mdn/content/commit/13360cbad46b4ce6457f80492d73d2efd252e8a9* Document last modified: 2021-05-05T10:31:52.000Z</details>
-<blockquote>
-<h3>The necessity of an isNaN function</h3>
-<p>Unlike all other possible values in JavaScript, it is not possible to use the equality operators (== and ===) to compare a value against NaN to determine whether the value is NaN or not, because both NaN == NaN and NaN === NaN evaluate to false. Hence, the necessity of an isNaN function.</p>
-</blockquote>
-<p>In this section we can read, that <code>isNaN</code> function is necessary, because you can't receive <code>true</code> when comparing a value to <code>NaN</code>.<br>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>In the section section "The necessity of an isNaN function" we can deduce, that <code>isNaN</code> function is necessary, because you can't receive <code>true</code> when comparing a value to <code>NaN</code>.<br>
 I think that reasoning is flawed, because a direct comparison is not the only way of determining the value.<br>
 Because <code>NaN</code> has a special behavior, that it is not equal to itself, we can use it to determine, if a value is a <code>NaN</code> or not:</p>
 <div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="value !== value
@@ -29,8 +25,90 @@ Because <code>NaN</code> has a special behavior, that it is not equal to itself,
 <span class="pl-c">// or</span>
 <span class="pl-c1">+</span><span class="pl-s1">value</span> <span class="pl-c1">!==</span> <span class="pl-c1">+</span><span class="pl-s1">value</span> <span class="pl-c">// if we want to be more in line with `isNaN`</span></pre></div>
 <p>And to my knowledge, <code>NaN</code> is the only value with that property.</p>
-<p>I don't know, what was the true intention of that section: showing, why we truly <em>need</em> the <code>isNaN</code> function, or explaining the special behavior when comparing with <code>NaN</code>. Either way, I think it is better to reword/rebuild this section.<br>
-My suggestion is to change that section into a warning, to be aware that any comparison with <code>NaN</code> returns <code>false</code>.</p>]]></content:encoded>
+<h4>Specific section or headline?</h4>
+<p>The necessity of an isNaN function</p>
+<h4>What did you expect to see?</h4>
+<p>I don't know, what was the true intention of that section: showing, why we truly <em>need</em> the <code>isNaN</code> function (which I think is a false premise), or explaining the special behavior when comparing with <code>NaN</code>. Either way, I think it is better to reword/rebuild this section.<br>
+My suggestion is to change that section into a warning, to be aware that any comparison with <code>NaN</code> returns <code>false</code>.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>Not really needed, but you can see, from this code, that you could implement your own <code>isNaN</code> or <code>Number.isNaN</code>, so they are not strictly necessary. But they are still good to have.</p>
+<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="function getTester(fn1, fn2) {
+	return function (v) {
+		var result1, result2, error1, error2
+
+		try { result1 = fn1(v) }
+		catch (e) { error1 = e }
+
+		try { result2 = fn2(v) }
+		catch (e) { error2 = e }
+
+		if (error1 || error2)
+			return error1 &amp;&amp; error2 &amp;&amp;
+				error1.name === error2.name &amp;&amp;
+				error1.message === error2.message
+		else return result1 === result2
+	}
+}
+
+var testIsNaN = getTester(isNaN, v =&gt; { v = +v; return v !== v })
+var testNumberIsNaN = getTester(Number.isNaN, v =&gt; v !== v)
+
+var test = v =&gt; testIsNaN(v) &amp;&amp; testNumberIsNaN(v)
+
+console.log([
+	1,
+	'1',
+	1n,
+	'a',
+	NaN,
+	{},
+	{valueOf: () =&gt; '1'},
+	Symbol(),
+].every(test))
+"><pre><span class="pl-k">function</span> <span class="pl-en">getTester</span><span class="pl-kos">(</span><span class="pl-s1">fn1</span><span class="pl-kos">,</span> <span class="pl-s1">fn2</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+	<span class="pl-k">return</span> <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-s1">v</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+		<span class="pl-k">var</span> <span class="pl-s1">result1</span><span class="pl-kos">,</span> <span class="pl-s1">result2</span><span class="pl-kos">,</span> <span class="pl-s1">error1</span><span class="pl-kos">,</span> <span class="pl-s1">error2</span>
+
+		<span class="pl-k">try</span> <span class="pl-kos">{</span> <span class="pl-s1">result1</span> <span class="pl-c1">=</span> <span class="pl-s1">fn1</span><span class="pl-kos">(</span><span class="pl-s1">v</span><span class="pl-kos">)</span> <span class="pl-kos">}</span>
+		<span class="pl-k">catch</span> <span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span> <span class="pl-kos">{</span> <span class="pl-s1">error1</span> <span class="pl-c1">=</span> <span class="pl-s1">e</span> <span class="pl-kos">}</span>
+
+		<span class="pl-k">try</span> <span class="pl-kos">{</span> <span class="pl-s1">result2</span> <span class="pl-c1">=</span> <span class="pl-s1">fn2</span><span class="pl-kos">(</span><span class="pl-s1">v</span><span class="pl-kos">)</span> <span class="pl-kos">}</span>
+		<span class="pl-k">catch</span> <span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span> <span class="pl-kos">{</span> <span class="pl-s1">error2</span> <span class="pl-c1">=</span> <span class="pl-s1">e</span> <span class="pl-kos">}</span>
+
+		<span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">error1</span> <span class="pl-c1">||</span> <span class="pl-s1">error2</span><span class="pl-kos">)</span>
+			<span class="pl-k">return</span> <span class="pl-s1">error1</span> <span class="pl-c1">&amp;&amp;</span> <span class="pl-s1">error2</span> <span class="pl-c1">&amp;&amp;</span>
+				<span class="pl-s1">error1</span><span class="pl-kos">.</span><span class="pl-c1">name</span> <span class="pl-c1">===</span> <span class="pl-s1">error2</span><span class="pl-kos">.</span><span class="pl-c1">name</span> <span class="pl-c1">&amp;&amp;</span>
+				<span class="pl-s1">error1</span><span class="pl-kos">.</span><span class="pl-c1">message</span> <span class="pl-c1">===</span> <span class="pl-s1">error2</span><span class="pl-kos">.</span><span class="pl-c1">message</span>
+		<span class="pl-k">else</span> <span class="pl-k">return</span> <span class="pl-s1">result1</span> <span class="pl-c1">===</span> <span class="pl-s1">result2</span>
+	<span class="pl-kos">}</span>
+<span class="pl-kos">}</span>
+
+<span class="pl-k">var</span> <span class="pl-s1">testIsNaN</span> <span class="pl-c1">=</span> <span class="pl-en">getTester</span><span class="pl-kos">(</span><span class="pl-s1">isNaN</span><span class="pl-kos">,</span> <span class="pl-s1">v</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span> <span class="pl-s1">v</span> <span class="pl-c1">=</span> <span class="pl-c1">+</span><span class="pl-s1">v</span><span class="pl-kos">;</span> <span class="pl-k">return</span> <span class="pl-s1">v</span> <span class="pl-c1">!==</span> <span class="pl-s1">v</span> <span class="pl-kos">}</span><span class="pl-kos">)</span>
+<span class="pl-k">var</span> <span class="pl-s1">testNumberIsNaN</span> <span class="pl-c1">=</span> <span class="pl-en">getTester</span><span class="pl-kos">(</span><span class="pl-v">Number</span><span class="pl-kos">.</span><span class="pl-c1">isNaN</span><span class="pl-kos">,</span> <span class="pl-s1">v</span> <span class="pl-c1">=&gt;</span> <span class="pl-s1">v</span> <span class="pl-c1">!==</span> <span class="pl-s1">v</span><span class="pl-kos">)</span>
+
+<span class="pl-k">var</span> <span class="pl-en">test</span> <span class="pl-c1">=</span> <span class="pl-s1">v</span> <span class="pl-c1">=&gt;</span> <span class="pl-s1">testIsNaN</span><span class="pl-kos">(</span><span class="pl-s1">v</span><span class="pl-kos">)</span> <span class="pl-c1">&amp;&amp;</span> <span class="pl-s1">testNumberIsNaN</span><span class="pl-kos">(</span><span class="pl-s1">v</span><span class="pl-kos">)</span>
+
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-kos">[</span>
+	<span class="pl-c1">1</span><span class="pl-kos">,</span>
+	<span class="pl-s">'1'</span><span class="pl-kos">,</span>
+	<span class="pl-c1">1n</span><span class="pl-kos">,</span>
+	<span class="pl-s">'a'</span><span class="pl-kos">,</span>
+	<span class="pl-v">NaN</span><span class="pl-kos">,</span>
+	<span class="pl-kos">{</span><span class="pl-kos">}</span><span class="pl-kos">,</span>
+	<span class="pl-kos">{</span><span class="pl-en">valueOf</span>: <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-s">'1'</span><span class="pl-kos">}</span><span class="pl-kos">,</span>
+	<span class="pl-v">Symbol</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">,</span>
+<span class="pl-kos">]</span><span class="pl-kos">.</span><span class="pl-en">every</span><span class="pl-kos">(</span><span class="pl-en">test</span><span class="pl-kos">)</span><span class="pl-kos">)</span></pre></div>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/global_objects/isnan</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/isnan/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/isnan/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/13360cbad46b4ce6457f80492d73d2efd252e8a9/hovercard" href="https://github.com/mdn/content/commit/13360cbad46b4ce6457f80492d73d2efd252e8a9"><tt>13360cb</tt></a></li>
+<li>Document last modified: 2021-05-05T10:31:52.000Z</li>
+</ul>
+</details>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[ecmascript] Issue with "Functions": (short summary here please)]]></title>
