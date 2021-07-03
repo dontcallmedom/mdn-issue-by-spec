@@ -4,10 +4,38 @@
         <title>W3C Web Performance Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_performance_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Performance Working Group</description>
-        <lastBuildDate>Thu, 01 Jul 2021 12:05:43 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 03 Jul 2021 18:50:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[user-timing-2] Issue with "performance.measure()": missing note about DOMException: "An invalid or illegal string was specified"]]></title>
+            <link>https://github.com/mdn/content/issues/6563</link>
+            <guid>https://github.com/mdn/content/issues/6563</guid>
+            <pubDate>Sat, 03 Jul 2021 18:50:22 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Performance/measure">https://developer.mozilla.org/en-US/docs/Web/API/Performance/measure</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>There is no list of exceptions this function can throw.</p>
+<h4>Specific section or headline?</h4>
+<p>Exceptions</p>
+<h4>What did you expect to see?</h4>
+<p>Documentation of the exceptions this function can throw.</p>
+<h4>Did you test this? If so, how?</h4>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="performance.measure(&quot;somename&quot;, &quot;mark_that_does_not_exist&quot;);
+"><pre><code>performance.measure("somename", "mark_that_does_not_exist");
+</code></pre></div>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/performance/measure</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Performance/measure" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Performance/measure</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/performance/measure/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/performance/measure/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e5c00d7f90e16029d1c96e7541aac3a9d1a09a31/hovercard" href="https://github.com/mdn/content/commit/e5c00d7f90e16029d1c96e7541aac3a9d1a09a31"><tt>e5c00d7</tt></a></li>
+<li>Document last modified: 2021-06-15T07:53:19.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[page-visibility-2] Issue with "Document: visibilitychange event": Support by Chrome needs updating]]></title>
             <link>https://github.com/mdn/content/issues/6492</link>
