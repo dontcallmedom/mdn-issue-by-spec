@@ -4,10 +4,33 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Sat, 03 Jul 2021 07:09:55 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 03 Jul 2021 11:47:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "isNaN()": Regarding the argumentation of the section "The necessity of an isNaN function"]]></title>
+            <link>https://github.com/mdn/content/issues/6551</link>
+            <guid>https://github.com/mdn/content/issues/6551</guid>
+            <pubDate>Sat, 03 Jul 2021 11:47:14 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN####">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN####</a> What information was incorrect, unhelpful, or incomplete?#### Specific section or headline?#### What did you expect to see?#### Did you test this? If so, how?</p><details><summary>MDN Content page report details</summary>* Folder: <code>en-us/web/javascript/reference/global_objects/isnan</code>* MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN</a>* GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/isnan/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/isnan/index.html</a>* Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/13360cbad46b4ce6457f80492d73d2efd252e8a9/hovercard" href="https://github.com/mdn/content/commit/13360cbad46b4ce6457f80492d73d2efd252e8a9"><tt>13360cb</tt></a>* Document last modified: 2021-05-05T10:31:52.000Z</details><p></p>
+<blockquote>
+<h3>The necessity of an isNaN function</h3>
+<p>Unlike all other possible values in JavaScript, it is not possible to use the equality operators (== and ===) to compare a value against NaN to determine whether the value is NaN or not, because both NaN == NaN and NaN === NaN evaluate to false. Hence, the necessity of an isNaN function.</p>
+</blockquote>
+<p>In this section we can read, that <code>isNaN</code> function is necessary, because you can't receive <code>true</code> when comparing a value to <code>NaN</code>.<br>
+I think that reasoning is flawed, because a direct comparison is not the only way of determining the value.<br>
+Because <code>NaN</code> has a special behavior, that it is not equal to itself, we can use it to determine, if a value is a <code>NaN</code> or not:</p>
+<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="value !== value
+// or
++value !== +value // if we want to be more in line with `isNaN`
+"><pre><span class="pl-s1">value</span> <span class="pl-c1">!==</span> <span class="pl-s1">value</span>
+<span class="pl-c">// or</span>
+<span class="pl-c1">+</span><span class="pl-s1">value</span> <span class="pl-c1">!==</span> <span class="pl-c1">+</span><span class="pl-s1">value</span> <span class="pl-c">// if we want to be more in line with `isNaN`</span></pre></div>
+<p>And to my knowledge, <code>NaN</code> is the only value with that property.</p>
+<p>I don't know, what was the true intention of that section: showing, why we truly <em>need</em> the <code>isNaN</code> function, or explaining the special behavior when comparing with <code>NaN</code>. Either way, I think it is better to reword/rebuild this section.<br>
+My suggestion is to change that section into a warning, to be aware that any comparison with <code>NaN</code> returns <code>false</code>.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Issue with "Functions": (short summary here please)]]></title>
             <link>https://github.com/mdn/content/issues/6545</link>
