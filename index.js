@@ -14,6 +14,8 @@ const toSlug = title => title.replace(/([A-Z])/g, s => s.toLowerCase())
         .replace(/_+/g, '_');
 
 
+const arrayify = x => Array.isArray(x) ? x : [x];
+
 const issueQuery = `
   query ($cursor: String){
     repository(owner: "mdn", name: "content") {
@@ -59,11 +61,11 @@ function mapPagesToSpec(bcd) {
   for(let area of Object.values(bcd)) {
     for (let data of Object.values(area)) {
       if (data?.__compat?.mdn_url) {
-        map[data.__compat.mdn_url] = data.__compat.spec_url;
+        map[data.__compat.mdn_url] = arrayify(data.__compat.spec_url);
       }
       for (let subdata of Object.values(data)) {
         if (subdata?.__compat?.mdn_url) {
-          map[subdata.__compat.mdn_url] = subdata.__compat.spec_url;
+          map[subdata.__compat.mdn_url] = arrayify(subdata.__compat.spec_url);
         }
       }
     }
@@ -133,20 +135,27 @@ async function mapIssuesToSpecs() {
       noMatch[p] = pages[p];
       return;
     }
-    const spec_url = pageMap[page_url];
-    if (!spec_url || !spec_url.startsWith) {
-      console.error(`No matching spec entry for ${page_url} found in BCD`);
+    const spec_urls = pageMap[page_url];
+    if (!spec_urls || !spec_urls.length) {
+      console.error(`No matching entry for ${page_url} found in BCD`);
       return;
     }
-    const spec = browserSpecs.find(s => spec_url.startsWith(s.url) || spec_url.startsWith(s.series.nightlyUrl)  || spec_url.startsWith(s.nightly.url));
-    if (!spec) {
-      console.error(`No matching spec for ${spec_url} from ${p} found in browser-specs`);
-      return;
+    for (let spec_url of spec_urls) {
+      if (!spec_url) {
+        console.error(`No matching spec URL for ${page_url} found in BCD`);
+        return;
+      }
+      const spec = browserSpecs.find(s => spec_url.startsWith(s.url) || spec_url.startsWith(s.series.nightlyUrl)  || spec_url.startsWith(s.nightly.url));
+      if (!spec) {
+        console.error(`No matching spec for ${spec_url} from ${p} found in browser-specs`);
+        return;
+      }
+      specs[spec.shortname] = specs[spec.shortname] ?? spec;
+      specs[spec.shortname].issues = specs[spec.shortname].issues ?? [];
+      specs[spec.shortname].issues = specs[spec.shortname].issues.concat(pages[p]);
     }
-    specs[spec.shortname] = specs[spec.shortname] ?? spec;
-    specs[spec.shortname].issues = specs[spec.shortname].issues ?? [];
-    specs[spec.shortname].issues = specs[spec.shortname].issues.concat(pages[p]);
   });
+
   fs.writeFileSync("unknownpages.json", JSON.stringify(unknownPages, null, 2));
   fs.writeFileSync("nomatch.json", JSON.stringify(noMatch, null, 2));
   return specs;
