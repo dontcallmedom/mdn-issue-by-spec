@@ -106,35 +106,6 @@ yari-demos.prod.mdn.mozit.cloud’s server IP address could not be found.</p>
 <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/CSS/RegisterProperty">https://developer.mozilla.org/en-US/docs/Web/API/CSS/RegisterProperty</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[page-visibility-2] Issue with "Document: visibilitychange event": Support by Chrome needs updating]]></title>
-            <link>https://github.com/mdn/content/issues/6492</link>
-            <guid>https://github.com/mdn/content/issues/6492</guid>
-            <pubDate>Thu, 01 Jul 2021 12:05:43 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilitychange_event">https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilitychange_event</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<blockquote>
-<p>This event fires with a visibilityState of hidden when a user <strong>navigates to a new page</strong>, switches tabs, closes the tab, minimizes or closes the browser, or, on mobile, switches from the browser to a different app. Transitioning to hidden is the last event that's reliably observable by the page, so developers should treat it as the likely end of the user's session (for example, for sending analytics data).<br>
-This section outlines the event should fire when a user navigates to a new page, however this behaviour is not observed by chrome.</p>
-</blockquote>
-<h4>Specific section or headline?</h4>
-<p>The specific mention of the event firing when a user navigates to a new page.</p>
-<h4>What did you expect to see?</h4>
-<p>The docs should be changed to reflect the fact that chrome supports the event, but does not fire this (nor pagehidden), when a user navigates away from a site.</p>
-<h4>Did you test this? If so, how?</h4>
-<p>Added an event listener for the visibilitychange event and noticed it does not fire on navigation away. Checked behaviour on Firefox and Safari as well. Firefox fires the event in this scenario, Safari does not. This matches what is outlined in the Browser Compatibility table for both</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/document/visibilitychange_event</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilitychange_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilitychange_event</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/document/visibilitychange_event/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/document/visibilitychange_event/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/08ffa1cfe66b247c7ee41b6ea0f36d82fb61b519/hovercard" href="https://github.com/mdn/content/commit/08ffa1cfe66b247c7ee41b6ea0f36d82fb61b519"><tt>08ffa1c</tt></a></li>
-<li>Document last modified: 2021-06-12T21:13:26.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[user-timing-2] Issue with "performance.measure()": (short summary here please)]]></title>
             <link>https://github.com/mdn/content/issues/6441</link>
             <guid>https://github.com/mdn/content/issues/6441</guid>
