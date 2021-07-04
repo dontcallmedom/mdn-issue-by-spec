@@ -128,5 +128,20 @@ But even though I'm not an expert myself in the subject matter, it seems the who
 </ul>
 </details>]]></content:encoded>
         </item>
+        <item>
+            <title><![CDATA[[webgl1, webgl2] https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bindFramebuffer]]></title>
+            <link>https://github.com/mdn/content/issues/1578</link>
+            <guid>https://github.com/mdn/content/issues/1578</guid>
+            <pubDate>Wed, 12 Aug 2020 15:26:43 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>Request type</h1>
+
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Please close this issue, I accidentally submitted it without adding any details</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> New documentation</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Correction or update</li>
+</ul>
+<h1>Details</h1>
+<p>The documentation page for <code>gl.bindFramebuffer</code> (<a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bindFramebuffer" rel="nofollow">here</a>) does not make it clear that in order to bind the default framebuffer (to render to the screen), you would do <code>gl.bindFramebuffer(gl.FRAMEBUFFER, null)</code>. This is an important use case of this function, and it should be documented.</p>]]></content:encoded>
+        </item>
     </channel>
 </rss>

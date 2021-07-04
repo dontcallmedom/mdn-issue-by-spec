@@ -135,6 +135,78 @@ The example kind of misleading since it's not how you would typically use nested
 <p>In the <code>font-stretch</code> page the live sample is broken: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-stretch#setting_font_stretch_percentages">https://developer.mozilla.org/en-US/docs/Web/CSS/font-stretch#setting_font_stretch_percentages</a>.</p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[[html, selectors-4] Issue with ":target" and Web Components]]></title>
+            <link>https://github.com/mdn/content/issues/4604</link>
+            <guid>https://github.com/mdn/content/issues/4604</guid>
+            <pubDate>Thu, 29 Apr 2021 19:29:23 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:target">https://developer.mozilla.org/en-US/docs/Web/CSS/:target</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>Let's assume you have this Web Component:</p>
+<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="
+let template = `
+	&lt;div&gt;
+		&lt;a href=&quot;#message&quot;&gt;Make the message red&lt;/a&gt;
+		&lt;h2 id=&quot;message&quot;&gt;Message in a bottle&lt;/h2&gt;
+	&lt;/div&gt;
+	&lt;style&gt;
+		#message:target {
+			color: red;
+		}
+	&lt;/style&gt;
+`;
+
+customElements.define('my-component', class myElement extends HTMLElement {
+	constructor() {
+		super();
+		let shadowRoot = this.attachShadow({ mode: 'open' });
+		shadowRoot.innerHTML = template;
+	}
+});
+"><pre><span class="pl-k">let</span> <span class="pl-s1">template</span> <span class="pl-c1">=</span> <span class="pl-s">`</span>
+<span class="pl-s">	&lt;div&gt;</span>
+<span class="pl-s">		&lt;a href="#message"&gt;Make the message red&lt;/a&gt;</span>
+<span class="pl-s">		&lt;h2 id="message"&gt;Message in a bottle&lt;/h2&gt;</span>
+<span class="pl-s">	&lt;/div&gt;</span>
+<span class="pl-s">	&lt;style&gt;</span>
+<span class="pl-s">		#message:target {</span>
+<span class="pl-s">			color: red;</span>
+<span class="pl-s">		}</span>
+<span class="pl-s">	&lt;/style&gt;</span>
+<span class="pl-s">`</span><span class="pl-kos">;</span>
+
+<span class="pl-s1">customElements</span><span class="pl-kos">.</span><span class="pl-en">define</span><span class="pl-kos">(</span><span class="pl-s">'my-component'</span><span class="pl-kos">,</span> <span class="pl-k">class</span> <span class="pl-s1">myElement</span> <span class="pl-k">extends</span> <span class="pl-v">HTMLElement</span> <span class="pl-kos">{</span>
+	<span class="pl-en">constructor</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+		<span class="pl-smi">super</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+		<span class="pl-k">let</span> <span class="pl-s1">shadowRoot</span> <span class="pl-c1">=</span> <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-en">attachShadow</span><span class="pl-kos">(</span><span class="pl-kos">{</span> <span class="pl-c1">mode</span>: <span class="pl-s">'open'</span> <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+		<span class="pl-s1">shadowRoot</span><span class="pl-kos">.</span><span class="pl-c1">innerHTML</span> <span class="pl-c1">=</span> <span class="pl-s1">template</span><span class="pl-kos">;</span>
+	<span class="pl-kos">}</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<p>This code fails to work because the event <code>:target</code> is missing in the root of the shadow.</p>
+<h4>Specific section or headline?</h4>
+<h4>What did you expect to see?</h4>
+<p>I expected that  <code>:target</code> would work inside the web components.<br>
+I expect the message to run red when clicking on the link.</p>
+<h4>Did you test this? If so, how?</h4>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/css/_colon_target</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:target" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:target</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_target/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_target/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/f4fb4c2d90a134366c280eec6cb599825981ad5d/hovercard" href="https://github.com/mdn/content/commit/f4fb4c2d90a134366c280eec6cb599825981ad5d"><tt>f4fb4c2</tt></a></li>
+<li>Document last modified: 2021-03-15T17:55:56.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[html, cssom-view-1] Window.open() needs an overhaul]]></title>
+            <link>https://github.com/mdn/content/issues/4583</link>
+            <guid>https://github.com/mdn/content/issues/4583</guid>
+            <pubDate>Thu, 29 Apr 2021 05:03:41 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Window/open">https://developer.mozilla.org/en-US/docs/Web/API/Window/open</a> is long, rambling, and very out of date. It needs a brave person to work out what a page on this feature should contain in 2021.</p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[[cssom-view-1] Issue with "Window.devicePixelRatio": (short summary here please)]]></title>
             <link>https://github.com/mdn/content/issues/4478</link>
             <guid>https://github.com/mdn/content/issues/4478</guid>
@@ -264,7 +336,7 @@ Safari has an issue whereby unordered lists with a list-style value of none appl
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-sizing-4] Content bug: Sidebar "Related Topics" no longer shows any specific related topics on CSS pages]]></title>
+            <title><![CDATA[[css-fonts-5, css-sizing-4] Content bug: Sidebar "Related Topics" no longer shows any specific related topics on CSS pages]]></title>
             <link>https://github.com/mdn/content/issues/3827</link>
             <guid>https://github.com/mdn/content/issues/3827</guid>
             <pubDate>Mon, 05 Apr 2021 00:32:29 GMT</pubDate>
