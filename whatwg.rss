@@ -4,10 +4,20 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Tue, 06 Jul 2021 06:31:49 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 06 Jul 2021 07:29:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] CustomElementRegistry needs updating]]></title>
+            <link>https://github.com/mdn/content/issues/6617</link>
+            <guid>https://github.com/mdn/content/issues/6617</guid>
+            <pubDate>Tue, 06 Jul 2021 07:29:36 GMT</pubDate>
+            <content:encoded><![CDATA[<p>I've been documenting ElementInternals, in the process of this I think that the documentation we have for custom elements may need some updating. In particular I noticed that <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry">https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry</a> includes no information about the disable internals, or disable shadow booleans.</p>
+<p><a rel="nofollow" href="https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-disable-internals">https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-disable-internals</a></p>
+<p>I think it would probably be worth someone taking a look at this content and seeing what else needs updating.</p>
+<p>Once updated it would be good to link this to the information about attachInternals in /Web/API/Element/attachInternals</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[console] Issue with "console", how does number formatting work? Number formatting doesn't work on Chrome.]]></title>
             <link>https://github.com/mdn/content/issues/6614</link>
