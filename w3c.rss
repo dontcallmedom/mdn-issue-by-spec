@@ -4,10 +4,66 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Mon, 05 Jul 2021 09:53:27 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 06 Jul 2021 12:40:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[uievents] Issue with "MouseEvent.ctrlKey": 'command' instead of 'control' for Mac keyboards]]></title>
+            <link>https://github.com/mdn/content/issues/6624</link>
+            <guid>https://github.com/mdn/content/issues/6624</guid>
+            <pubDate>Tue, 06 Jul 2021 12:40:16 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/ctrlKey">https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/ctrlKey</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>As explained already in the title, the key corresponding to 'ctrl' on Windows/Linux is "command" on Mac.</p>
+<h4>Specific section or headline?</h4>
+<p>The very first "Note" at the top of the page.</p>
+<h4>What did you expect to see?</h4>
+<p>"Command", instead of "Control"</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/mouseevent/ctrlkey</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/ctrlKey" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/ctrlKey</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/mouseevent/ctrlkey/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/mouseevent/ctrlkey/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/19f75559a3df713dd1487807a4bbd84a9e3fd62e/hovercard" href="https://github.com/mdn/content/commit/19f75559a3df713dd1487807a4bbd84a9e3fd62e"><tt>19f7555</tt></a></li>
+<li>Document last modified: 2021-06-14T14:36:19.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[selection-api] Issue with "Selection.setBaseAndExtent()": behaviour on text nodes]]></title>
+            <link>https://github.com/mdn/content/issues/6623</link>
+            <guid>https://github.com/mdn/content/issues/6623</guid>
+            <pubDate>Tue, 06 Jul 2021 12:24:35 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Selection/setBaseAndExtent">https://developer.mozilla.org/en-US/docs/Web/API/Selection/setBaseAndExtent</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>If the argument anchorNode/focusNode is a text node, the corresponding offset is the index of the character.</p>
+<h4>Did you test this? If so, how?</h4>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="var node = document.querySelector('.anything') //select an empty node!
+node.textContent = &quot;hello world!&quot;
+var tnode = node.childNodes[0]
+var sel = window.getSelection()
+sel.setBaseAndExtent(tnode, 0, tnode, 5) // this should select 'hello'
+"><pre><code>var node = document.querySelector('.anything') //select an empty node!
+node.textContent = "hello world!"
+var tnode = node.childNodes[0]
+var sel = window.getSelection()
+sel.setBaseAndExtent(tnode, 0, tnode, 5) // this should select 'hello'
+</code></pre></div>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/selection/setbaseandextent</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Selection/setBaseAndExtent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Selection/setBaseAndExtent</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/selection/setbaseandextent/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/selection/setbaseandextent/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/65b5fed3c37fd772df9f018d2ad013ef46ccdaa6/hovercard" href="https://github.com/mdn/content/commit/65b5fed3c37fd772df9f018d2ad013ef46ccdaa6"><tt>65b5fed</tt></a></li>
+<li>Document last modified: 2021-06-16T06:29:37.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[webdriver2] Issue with "WebDriver":  Broken/Missing links]]></title>
             <link>https://github.com/mdn/content/issues/6593</link>
