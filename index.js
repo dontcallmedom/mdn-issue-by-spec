@@ -84,6 +84,16 @@ function findRelatedMDNPages(issue) {
   return pages;
 }
 
+function generateMarkdown(scope, issues) {
+  return `# ${scope}-relevant MDN issues
+
+[Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by ${scope}.
+
+${issues.map(issue => `* [${issue.title}](${issue.url}) (${issue.createdAt})
+  `).join("\n")}
+`;
+}
+
 function generateFeed(scope, path, issues) {
   const feed = new Feed({
     title: `${scope}-relevant MDN issues`,
@@ -180,6 +190,8 @@ async function mapIssuesToSpecs() {
       orgs[spec.organization] = orgs[spec.organization].concat(spec.issues);
     }
   }
+
+  let index = [];
   for (let collection of [groups, orgs]) {
     for (let name of Object.keys(collection)) {
       // Remove duplicates and label titles
@@ -198,7 +210,23 @@ async function mapIssuesToSpecs() {
       const path = toSlug(name);
       const feed = generateFeed(name, path, collection[name]);
       fs.writeFileSync("public/" + path + ".rss", feed.rss2());
+      fs.writeFileSync("public/" + path + ".json", feed.json1());
+
+      const markdown = generateMarkdown(name, collection[name]);
+      fs.writeFileSync("public/" + path + ".md", markdown);
+
+      index.push({name, path});
     }
+    index.sort((a, b) => a.name.localeCompare(b.name));
+    const README = `
+# MDN Web Docs Issues grouped by the spec they relate to
+
+This repository collects information on MDN Web Docs issues and group them based on the specifications they relate to and the orgs / groups that produce these specifications.
+
+${index.map(({name, path}) => `* [${name}](${path}.md) [![RSS feed for ${name}-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](${path}.rss)`).join("\n")}
+`;
+    fs.writeFileSync("public/README.md", README);
+
   }
 })();
 
