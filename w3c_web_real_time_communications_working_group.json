@@ -1,0 +1,111 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "W3C Web Real-Time Communications Working Group-relevant MDN issues",
+    "home_page_url": "https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_real_time_communications_working_group.rss",
+    "description": "Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Real-Time Communications Working Group",
+    "author": {
+        "name": "mdn-issue-by-spec",
+        "url": "https://github.com/dontcallmedom/mdn-issue-by-spec"
+    },
+    "items": [
+        {
+            "id": "https://github.com/mdn/content/issues/6527",
+            "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/generateCertificate\">https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/generateCertificate</a></p>\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<p>In description, the example provided by RSASSA-PKCS1-v1_5 have 2 issues.<br>\nOne of which is Uint8Array is written as UInt8Array.<br>\nThe other was the naming of RSASSA-PKCS1-v1_5 which have an additional 0 making it RSASSA-PKCS1<strong>0</strong>-v1_5</p>\n<h4>Specific section or headline?</h4>\n<p>Description &gt; Standard configurations &gt; RSASSA-PKCS1-v1_5</p>\n<h4>What did you expect to see?</h4>\n<p>let stdRSACertificate = {<br>\nname: \"RSASSA-PKCS1-v1_5\",<br>\nmodulusLength: 2048,<br>\npublicExponent: new Uint8Array([1, 0, 1]),<br>\nhash: \"SHA-256\"<br>\n};</p>\n<h4>Did you test this? If so, how?</h4>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul>\n<li>Folder: <code>en-us/web/api/rtcpeerconnection/generatecertificate</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/generateCertificate\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/generateCertificate</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcpeerconnection/generatecertificate/index.html\">https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcpeerconnection/generatecertificate/index.html</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/0f3c54f5a6cbbafbba3b8c7e2e045b67b26e9984/hovercard\" href=\"https://github.com/mdn/content/commit/0f3c54f5a6cbbafbba3b8c7e2e045b67b26e9984\"><tt>0f3c54f</tt></a></li>\n<li>Document last modified: 2021-06-19T03:49:37.000Z</li>\n</ul>\n</details>",
+            "url": "https://github.com/mdn/content/issues/6527",
+            "title": "[webrtc] Issue with \"RTCPeerConnection.generateCertificate() static fun…\": (2 minor issues with the example provided)",
+            "date_modified": "2021-07-02T14:33:12.000Z",
+            "author": {
+                "name": "nwnisworking",
+                "url": "https://github.com/nwnisworking"
+            }
+        },
+        {
+            "id": "https://github.com/mdn/content/issues/6117",
+            "content_html": "<h2>What page(s) did you find the problem on?</h2>\n\n<p>Lots of them!<br>\n<a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia\">https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia</a><br>\n<a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise\">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise</a><br>\n...and many more!</p>\n<h2>Specific page section or heading?</h2>\n\n<p>getUserMedia: <em>Using the new API in older browsers</em><br>\nPromise: <em>Chained Promises</em></p>\n<h2>What is the problem?</h2>\n\n<p><code>console.log()</code> is frequently used for error handling on MDN pages, most commonly in a <code>try/catch</code> block, although <code>console.error()</code> should always be used for these cases.</p>\n<h2>What did you expect to see?</h2>\n\n<p>All errors to always be handled via <code>console.error()</code>.</p>\n<h2>Did you test this? If so, how?</h2>\n\n<p>No, I did not need to.</p>",
+            "url": "https://github.com/mdn/content/issues/6117",
+            "title": "[ecmascript, mediacapture-streams] Globally replace console.log() calls in all cases where console.error() should be used instead",
+            "date_modified": "2021-06-18T17:07:45.000Z",
+            "author": {
+                "name": "JavascriptLearner815",
+                "url": "https://github.com/JavascriptLearner815"
+            }
+        },
+        {
+            "id": "https://github.com/mdn/content/issues/4939",
+            "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/ended_event\">https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/ended_event</a></p>\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<p>It would be worth noting that this event is not fired when the user calls .stop() on the track.</p>\n<p>Also this page should include this information somehow in my Opinion:<br>\n<a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack#events\">https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack#events</a><br>\nended<br>\nSent when playback of the track ends <strong>(when the value readyState changes to ended)</strong>.<br>\nAlso available using the onended event handler property.</p>\n<p>In the case of calling .stop() yourself, readyState DOES change to ended but the event is not fired.</p>\n<h4>Specific section or headline?</h4>\n<h4>What did you expect to see?</h4>\n<h4>Did you test this? If so, how?</h4>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul>\n<li>Folder: <code>en-us/web/api/mediastreamtrack/ended_event</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/ended_event\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/ended_event</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/api/mediastreamtrack/ended_event/index.html\">https://github.com/mdn/content/blob/main/files/en-us/web/api/mediastreamtrack/ended_event/index.html</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/c016a6b893578b1f39794983682c6d9107910226/hovercard\" href=\"https://github.com/mdn/content/commit/c016a6b893578b1f39794983682c6d9107910226\"><tt>c016a6b</tt></a></li>\n<li>Document last modified: 2020-12-21T07:50:05.000Z</li>\n</ul>\n</details>",
+            "url": "https://github.com/mdn/content/issues/4939",
+            "title": "[mediacapture-streams] Issue with \"MediaStreamTrack: ended event\": (short summary here please)",
+            "date_modified": "2021-05-12T10:02:23.000Z",
+            "author": {
+                "name": "receter",
+                "url": "https://github.com/receter"
+            }
+        },
+        {
+            "id": "https://github.com/mdn/content/issues/4511",
+            "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack\">https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack</a></p>\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<p>Note: You can implement standard \"mute\" functionality by setting enabled to false, and unmute the media by setting it back to true again.</p>\n<h4>Specific section or headline?</h4>\n<p>MediaStreamTrack.muted</p>\n<h4>What did you expect to see?</h4>\n<p>Note: You can implement standard \"unmute\" functionality by setting muted to false, and mute the media by setting it back to true again.</p>\n<h4>Did you test this? If so, how?</h4>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul>\n<li>Folder: <code>en-us/web/api/mediastreamtrack</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/api/mediastreamtrack/index.html\">https://github.com/mdn/content/blob/main/files/en-us/web/api/mediastreamtrack/index.html</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/dc9089417852530f233c345bd6821d6e06f11b1e/hovercard\" href=\"https://github.com/mdn/content/commit/dc9089417852530f233c345bd6821d6e06f11b1e\"><tt>dc90894</tt></a></li>\n<li>Document last modified: 2020-12-18T10:05:08.000Z</li>\n</ul>\n</details>",
+            "url": "https://github.com/mdn/content/issues/4511",
+            "title": "[mediacapture-streams] Issue with \"MediaStreamTrack\": (short summary here please)",
+            "date_modified": "2021-04-27T04:36:25.000Z",
+            "author": {
+                "name": "frontendDevNat",
+                "url": "https://github.com/frontendDevNat"
+            }
+        },
+        {
+            "id": "https://github.com/mdn/content/issues/3674",
+            "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackSupportedConstraints\">https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackSupportedConstraints</a></p>\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<p>The description for <code>displaySurface</code> is copied from <code>cursor</code></p>\n<h4>Specific section or headline?</h4>\n<p>section - <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackSupportedConstraints#properties_specific_to_shared_screen_tracks\">https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackSupportedConstraints#properties_specific_to_shared_screen_tracks</a></p>\n<h4>What did you expect to see?</h4>\n<p>A description of the <code>displaySurface</code> property</p>\n<h4>Did you test this? If so, how?</h4>\n<p>No, I'm operating under the assumption both keys don't serve the same purpose of capturing the curosr.</p>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul>\n<li>Folder: <code>en-us/web/api/mediatracksupportedconstraints</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackSupportedConstraints\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackSupportedConstraints</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/api/mediatracksupportedconstraints/index.html\">https://github.com/mdn/content/blob/main/files/en-us/web/api/mediatracksupportedconstraints/index.html</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/ebae941ef7f25004223dd69c7ddce904662a9ed4/hovercard\" href=\"https://github.com/mdn/content/commit/ebae941ef7f25004223dd69c7ddce904662a9ed4\"><tt>ebae941</tt></a></li>\n<li>Document last modified: 2021-01-07T02:08:07.000Z</li>\n</ul>\n</details>",
+            "url": "https://github.com/mdn/content/issues/3674",
+            "title": "[mediacapture-streams] Issue with \"MediaTrackSupportedConstraints\": Duplicated property definition",
+            "date_modified": "2021-03-30T14:45:58.000Z",
+            "author": {
+                "name": "cameronthrntn",
+                "url": "https://github.com/cameronthrntn"
+            }
+        },
+        {
+            "id": "https://github.com/mdn/content/issues/1456",
+            "content_html": "<p><a class=\"user-mention\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/simajzenman/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/simajzenman\">@simajzenman</a> commented on <a href=\"https://github.com/mdn/sprints/issues/3878\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/sprints/issues/3878/hovercard\">Tue Nov 10 2020</a></p>\n<h1>Request type</h1>\n\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Correction or update</li>\n</ul>\n<h1>Details</h1>\n\n<p>Hello Mozilla,</p>\n<p>I've seen in the page about MediaTrackConstraints.displaySurface (<a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackConstraints/displaySurface\">https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackConstraints/displaySurface</a>) that in the first paragraph, it says \"is used to specify the type or types of display surfaces which getDisplayMedia() will let the user select among for sharing purposes.\". As far as I know (and tested) there is no way to restrain the type of surface you want to allow in javascript on client side; displaySurface (as it is written in the same page) can be used to detect the type of surface for a current stream already going.</p>\n<p>If I am wrong, I first apologies for wasting your time and would be happy to have more info.<br>\nI also tried to edit it myself but couldn't for that paragraph</p>\n<p>In the meantime, if you know where I could find in the doc a way to identify the stream name(meaning if I share facebook tab browser, I should find \"facebook\" in the name of the current stream), it would really help me.</p>\n<p>Have a great one,<br>\nSimon</p>",
+            "url": "https://github.com/mdn/content/issues/1456",
+            "title": "[screen-capture] displaySurface doc looks wrong",
+            "date_modified": "2021-01-18T15:39:25.000Z",
+            "author": {
+                "name": "chrisdavidmills",
+                "url": "https://github.com/chrisdavidmills"
+            }
+        },
+        {
+            "id": "https://github.com/mdn/content/issues/1406",
+            "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/replaceTrack\">https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/replaceTrack</a></p>\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<p>I don't think the example code is correct - it introduces \"PCs\" but what is this?</p>\n<p>// example to change video camera, suppose selected value saved into window.selectedCamera...</p>\n<div class=\"snippet-clipboard-content position-relative\" data-snippet-clipboard-copy-content=\"\nnavigator.mediaDevices\n  .getUserMedia({\n    video: {\n      deviceId: {\n        exact: window.selectedCamera\n      }\n    }\n  })\n  .then(function(stream) {\n    let videoTrack = stream.getVideoTracks()[0];\n    PCs.forEach(function(pc) {\n      var sender = pc.getSenders().find(function(s) {\n        return s.track.kind == videoTrack.kind;\n      });\n      console.log('found sender:', sender);\n      sender.replaceTrack(videoTrack);\n    });\n  })\n  .catch(function(err) {\n    console.error('Error happens:', err);\n  });\n\n\"><pre><code>\nnavigator.mediaDevices\n  .getUserMedia({\n    video: {\n      deviceId: {\n        exact: window.selectedCamera\n      }\n    }\n  })\n  .then(function(stream) {\n    let videoTrack = stream.getVideoTracks()[0];\n    PCs.forEach(function(pc) {\n      var sender = pc.getSenders().find(function(s) {\n        return s.track.kind == videoTrack.kind;\n      });\n      console.log('found sender:', sender);\n      sender.replaceTrack(videoTrack);\n    });\n  })\n  .catch(function(err) {\n    console.error('Error happens:', err);\n  });\n\n</code></pre></div>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul>\n<li>Folder: <code>en-us/web/api/rtcrtpsender/replacetrack</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/replaceTrack\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/replaceTrack</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/master/files/en-us/web/api/rtcrtpsender/replacetrack/index.html\">https://github.com/mdn/content/blob/master/files/en-us/web/api/rtcrtpsender/replacetrack/index.html</a></li>\n<li>Report started: 2021-01-17T17:33:03.954Z</li>\n</ul>\n</details>",
+            "url": "https://github.com/mdn/content/issues/1406",
+            "title": "[webrtc] Issue with \"RTCRtpSender.replaceTrack()\": …",
+            "date_modified": "2021-01-17T17:37:46.000Z",
+            "author": {
+                "name": "Abe2021",
+                "url": "https://github.com/Abe2021"
+            }
+        },
+        {
+            "id": "https://github.com/mdn/content/issues/1830",
+            "content_html": "<h1>Request type</h1>\n\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Correction or update</li>\n</ul>\n<h1>Details</h1>\n\n<p><a href=\"https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getDisplayMedia\" rel=\"nofollow\">MediaDevices.getDisplayMedia()</a> should accept <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackConstraints#Properties_of_shared_screen_tracks\" rel=\"nofollow\">MediaTrackConstraints</a> according to documentation:</p>\n<blockquote>\n<p>Either a Boolean (which indicates whether or not a video track is requested) or a MediaTrackConstraints object providing the constraints which must be met by the video track included in the returned MediaStream. If constraints are specified, a video track is inherently requested.</p>\n</blockquote>\n<p>However it does not and for example if you use this, it does not affect it at all:<br>\n<code>getDisplayMedia({ video: { cursor: 'never', displaySurface: 'browser' } })</code></p>\n<h1>Expected result</h1>\n\n<p>It should take constraints into account if I provide them (or at least allow to user to select desired one, it is not possible to select browser tab in FF atm [Chrome has this possibility in selection pop up]).</p>",
+            "url": "https://github.com/mdn/content/issues/1830",
+            "title": "[screen-capture, mediacapture-streams] MediaDevices.getDisplayMedia() ignores constraints in FF",
+            "date_modified": "2020-02-10T14:53:07.000Z",
+            "author": {
+                "name": "zemiacsik",
+                "url": "https://github.com/zemiacsik"
+            }
+        },
+        {
+            "id": "https://github.com/mdn/content/issues/2450",
+            "content_html": "<h1>Request type</h1>\n\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> New documentation</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Correction or update</li>\n</ul>\n<h1>Details</h1>\n<p>See <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/icecandidate_event\" rel=\"nofollow\">icecandidate event</a>.</p>\n<p>The code sample in \"Sharing a new candidate\" checks if event.candidate is truthy before delivering it to the remote peer. \"Indicating the end of a generation of candidates\" says that events where <code>event.candidate == \"\"</code> should be delivered, but <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/Falsy\" rel=\"nofollow\">the empty string is falsy</a> in JavaScript and this signal would not be delivered. \"Indicating that ICE gathering is complete\" says that events where <code>event.complete == null</code> should not be delivered but then refers to the <code>event.candidate == true</code> test.</p>\n<p>There is clearly a nuance here that I'm missing, but in any case this may need to be clarified. An uninformed reader would form the conclusion that actually a <code>event.complete != null</code> test is needed.</p>\n<p>There's also mixed references to RTCPeerConnectionIceEvent (bluelinked) and RTCPeerIceCandidateEvent (redlinked), not sure if that's intentional.</p>",
+            "url": "https://github.com/mdn/content/issues/2450",
+            "title": "[webrtc] /en-US/docs/Web/API/RTCPeerConnection/icecandidate_event",
+            "date_modified": "2019-11-24T10:21:05.000Z",
+            "author": {
+                "name": "bardiharborow",
+                "url": "https://github.com/bardiharborow"
+            }
+        }
+    ]
+}

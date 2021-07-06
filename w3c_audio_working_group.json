@@ -1,0 +1,56 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "W3C Audio Working Group-relevant MDN issues",
+    "home_page_url": "https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_audio_working_group.rss",
+    "description": "Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Audio Working Group",
+    "author": {
+        "name": "mdn-issue-by-spec",
+        "url": "https://github.com/dontcallmedom/mdn-issue-by-spec"
+    },
+    "items": [
+        {
+            "id": "https://github.com/mdn/content/issues/4468",
+            "content_html": "<p><a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/AudioListener\">https://developer.mozilla.org/en-US/docs/Web/API/AudioListener</a></p>\n<p>As discussed in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"865738850\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/4401\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/4401/hovercard?comment_id=619372451&amp;comment_type=review_comment\" href=\"https://github.com/mdn/content/pull/4401#discussion_r619372451\">#4401 (comment)</a> <code>AudioListener</code> and all the attributes link to the same example <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/PannerNode#examples\">https://developer.mozilla.org/en-US/docs/Web/API/PannerNode#examples</a></p>\n<p>This is not actually all that relevant to all the attributes, and is probably more comprehensive than required at this level. It would be better to have small focussed example for each of these and cross link to the example as a see also.</p>",
+            "url": "https://github.com/mdn/content/issues/4468",
+            "title": "[webaudio] Content bug: AudioListener and attributes need better examples. ",
+            "date_modified": "2021-04-26T03:22:48.000Z",
+            "author": {
+                "name": "hamishwillee",
+                "url": "https://github.com/hamishwillee"
+            }
+        },
+        {
+            "id": "https://github.com/mdn/content/issues/3569",
+            "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/MIDIMessageEvent\">https://developer.mozilla.org/en-US/docs/Web/API/MIDIMessageEvent</a></p>\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<p>This code snippet at the end of the article invokes a deprecated method:</p>\n<p>// Printing all messages to console<br>\nnavigator.requestMIDIAccess().then(midiAccess =&gt; {<br>\nArray.from(midiAccess.inputs).forEach(input =&gt; {<br>\ninput[1].onmidimessage = (msg) =&gt; { console.log(msg); }<br>\n})<br>\n});</p>\n<h4>Specific section or headline?</h4>\n<p>Examples</p>\n<h4>What did you expect to see?</h4>\n<p>a snippet that will work in my browser or a link to how to construct a well formed expression to do as much. My chrome version is Version 89.0.4389.90 (Official Build) (64-bit)</p>\n<h4>Did you test this? If so, how?</h4>\n<p>copy and pasted in console and this was the output:</p>\n<p>VM38:1 [Deprecation] Web MIDI will ask a permission to use even if the sysex is not specified in the MIDIOptions since around M82, around May 2020. See <a rel=\"nofollow\" href=\"https://www.chromestatus.com/feature/5138066234671104\">https://www.chromestatus.com/feature/5138066234671104</a> for more details.</p>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul>\n<li>Folder: <code>en-us/web/api/midimessageevent</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/MIDIMessageEvent\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/MIDIMessageEvent</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/api/midimessageevent/index.html\">https://github.com/mdn/content/blob/main/files/en-us/web/api/midimessageevent/index.html</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/63c69f3c933acbea9bfb24d359a7d2ffdb3c0bea/hovercard\" href=\"https://github.com/mdn/content/commit/63c69f3c933acbea9bfb24d359a7d2ffdb3c0bea\"><tt>63c69f3</tt></a></li>\n<li>Document last modified: 2021-02-19T19:51:22.000Z</li>\n</ul>\n</details>",
+            "url": "https://github.com/mdn/content/issues/3569",
+            "title": "[webmidi] Issue with \"MIDIMessageEvent\": deprecated example method ",
+            "date_modified": "2021-03-27T17:06:36.000Z",
+            "author": {
+                "name": "cafeTechne",
+                "url": "https://github.com/cafeTechne"
+            }
+        },
+        {
+            "id": "https://github.com/mdn/content/issues/3435",
+            "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/PeriodicWave\">https://developer.mozilla.org/en-US/docs/Web/API/PeriodicWave</a></p>\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<p>\"\\left(a+bi\\right)e^{i} , \\left(c+di\\right)e^{2i} , \\left(f+gi\\right)e^{3i}\" appears on this page, which is unreadable. It looks a bit like LaTeX, presumably this was once turned into a math image?</p>\n<h4>Specific section or headline?</h4>\n<ul>\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Web/API/PeriodicWave#example\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/PeriodicWave#example</a></li>\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/hypot\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/hypot</a></li>\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt</a></li>\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI</a></li>\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform</a></li>\n</ul>\n<h4>What did you expect to see?</h4>\n<p>No expectations, just not this :)</p>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul>\n<li>Folder: <code>en-us/web/api/periodicwave</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/PeriodicWave\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/PeriodicWave</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/api/periodicwave/index.html\">https://github.com/mdn/content/blob/main/files/en-us/web/api/periodicwave/index.html</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/babc0473793bbe3cfa66cd96fae7f84348be373b/hovercard\" href=\"https://github.com/mdn/content/commit/babc0473793bbe3cfa66cd96fae7f84348be373b\"><tt>babc047</tt></a></li>\n<li>Document last modified: 2021-02-08T10:05:46.000Z</li>\n</ul>\n</details>",
+            "url": "https://github.com/mdn/content/issues/3435",
+            "title": "[webaudio] Some pages show raw math syntax (LaTeX?)",
+            "date_modified": "2021-03-24T10:23:01.000Z",
+            "author": {
+                "name": "foolip",
+                "url": "https://github.com/foolip"
+            }
+        },
+        {
+            "id": "https://github.com/mdn/content/issues/1296",
+            "content_html": "<p><a class=\"user-mention\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/VoloshchenkoAl/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/VoloshchenkoAl\">@VoloshchenkoAl</a> commented on <a href=\"https://github.com/mdn/webaudio-examples/issues/46\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/webaudio-examples/issues/46/hovercard\">Wed Jan 13 2021</a></p>\n<p>I have started to learn about <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode\" rel=\"nofollow\">OscillatorNode</a>, and find out that it is difficult to understand how the frequency and type of Oscillator affects a sound wave.</p>\n<p>Is it a good idea to add visualization for OscillatorNode documentation? It will help to better understand how OscillatorNode works.</p>\n<p>Example of visualization — <a rel=\"nofollow\" href=\"https://codepen.io/VoloshchenkoAl/pen/gOwdpKx\">https://codepen.io/VoloshchenkoAl/pen/gOwdpKx</a></p>",
+            "url": "https://github.com/mdn/content/issues/1296",
+            "title": "[webaudio] Visualization for OscillatorNode",
+            "date_modified": "2021-01-14T10:42:13.000Z",
+            "author": {
+                "name": "chrisdavidmills",
+                "url": "https://github.com/chrisdavidmills"
+            }
+        }
+    ]
+}

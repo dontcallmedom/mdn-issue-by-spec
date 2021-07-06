@@ -1,0 +1,23 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "IETF Applications Area Working Group APP Working Group-relevant MDN issues",
+    "home_page_url": "https://dontcallmedom.github.io/mdn-issue-by-spec/ietf_applications_area_working_group_app_working_group.rss",
+    "description": "Issue filed on MDN Web Docs related to pages attached to technologies developed by IETF Applications Area Working Group APP Working Group",
+    "author": {
+        "name": "mdn-issue-by-spec",
+        "url": "https://github.com/dontcallmedom/mdn-issue-by-spec"
+    },
+    "items": [
+        {
+            "id": "https://github.com/mdn/content/issues/6470",
+            "content_html": "\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<p>In the example below, it shows the UPV6 for X-Forwarded-For header within brackets. I believe that is incorrect for X-Forwarded-For but correct for the Forwarded header:</p>\n<p>X-Forwarded-For: 192.0.2.43, \"[2001:db8:cafe::17]\"<br>\nForwarded: for=192.0.2.43, for=\"[2001:db8:cafe::17]\"</p>\n<h4>What did you expect to see?</h4>\n<p>X-Forwarded-For: 192.0.2.43, 2001:db8:cafe::17<br>\nForwarded: for=192.0.2.43, for=\"[2001:db8:cafe::17]\"</p>\n\n<details>\n<summary>MDN page report details</summary>\n<ul>\n<li>Query: <code>http.headers.Forwarded</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Forwarded\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Forwarded</a></li>\n<li>Report started: 2021-06-29T20:52:07.834Z</li>\n</ul>\n</details>",
+            "url": "https://github.com/mdn/content/issues/6470",
+            "title": "[rfc7239] http.headers.Forwarded - The example looks incorrect",
+            "date_modified": "2021-06-29T21:03:09.000Z",
+            "author": {
+                "name": "prezaei",
+                "url": "https://github.com/prezaei"
+            }
+        }
+    ]
+}

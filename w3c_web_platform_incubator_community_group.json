@@ -1,0 +1,45 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "W3C Web Platform Incubator Community Group-relevant MDN issues",
+    "home_page_url": "https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_platform_incubator_community_group.rss",
+    "description": "Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Platform Incubator Community Group",
+    "author": {
+        "name": "mdn-issue-by-spec",
+        "url": "https://github.com/dontcallmedom/mdn-issue-by-spec"
+    },
+    "items": [
+        {
+            "id": "https://github.com/mdn/content/issues/6101",
+            "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/onvoiceschanged\">https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/onvoiceschanged</a></p>\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<p>onvoicechanged LIB.. while I reading about it there is lot of value in there, but in my VS code I access only 19 values only</p>\n<h4>Specific section or headline?</h4>\n<p>WEB SPEECH API</p>\n<h4>What did you expect to see?</h4>\n<p>Wanna to access all the value in onvoicechanged</p>\n<h4>Did you test this? If so, how?</h4>\n<p>Yes , through VC code<br>\n// Init voices array<br>\nlet voices = [];</p>\n<p>const getVoices = () =&gt; {<br>\nvoices = synth.getVoices();<br>\nconsole.log(voices);<br>\n// Loop through voices and create an option for each one<br>\nvoices.forEach(voice =&gt; {<br>\n//  Create option Element<br>\nconst option = document.createElement(<code>option</code>);<br>\n// Fill option with voice and language<br>\noption.textContent = voice.name + <code>(${voice.lang})</code>;</p>\n<div class=\"snippet-clipboard-content position-relative\" data-snippet-clipboard-copy-content=\"    // Set needed option attributes\n    option.setAttribute(`data-lang`, voice.lang);\n    option.setAttribute(`data-name`, voice.name);\n\n    voiceSelect.appendChild(option);\n})\n\"><pre><code>    // Set needed option attributes\n    option.setAttribute(`data-lang`, voice.lang);\n    option.setAttribute(`data-name`, voice.name);\n\n    voiceSelect.appendChild(option);\n})\n</code></pre></div>\n<p>}<br>\ngetVoices();<br>\nif (synth.onvoiceschanged !== undefined) {<br>\nsynth.onvoiceschanged = getVoices;<br>\n}</p>\n<p>this. is the code I used to do</p>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul>\n<li>Folder: <code>en-us/web/api/speechsynthesis/onvoiceschanged</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/onvoiceschanged\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/onvoiceschanged</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/api/speechsynthesis/onvoiceschanged/index.html\">https://github.com/mdn/content/blob/main/files/en-us/web/api/speechsynthesis/onvoiceschanged/index.html</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/0d5312d317fb301c56441905dc84e1f902cb7046/hovercard\" href=\"https://github.com/mdn/content/commit/0d5312d317fb301c56441905dc84e1f902cb7046\"><tt>0d5312d</tt></a></li>\n<li>Document last modified: 2021-06-01T06:05:06.000Z</li>\n</ul>\n</details>",
+            "url": "https://github.com/mdn/content/issues/6101",
+            "title": "[speech-api] Issue with \"SpeechSynthesis.onvoiceschanged\": (short summary here please)",
+            "date_modified": "2021-06-18T08:46:08.000Z",
+            "author": {
+                "name": "Karthiseeni",
+                "url": "https://github.com/Karthiseeni"
+            }
+        },
+        {
+            "id": "https://github.com/mdn/content/issues/5457",
+            "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFlags/exclusive\">https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFlags/exclusive</a></p>\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<p>define dirEntry  is type of  FileSystemDirectoryEntry;<br>\nthe condition that is file: exist, when i use  dirEntry .getFile(fileName.{create:true,exclusive :false}.function(fileEntry)=&gt;{<br>\nconsole.log(fileEntry);<br>\n});<br>\ni find this condition it cant create new file to cover origin file in this page api introduction;</p>\n<h4>Specific section or headline?</h4>\n<h4>What did you expect to see?</h4>\n<p>As the page says，when i use params ,it will cover origin file</p>\n<h4>Did you test this? If so, how?</h4>\n<p>the  dirEntry  is type of  FileSystemDirectoryEntry;<br>\ni use  dirEntry  .getFile(fileName.{create:true,exclusive :false}.function(fileEntry)=&gt;{<br>\nconsole.log(fileEntry);<br>\n});<br>\ni find this condition it cant create new file to cover origin file in this page api introduction;</p>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul>\n<li>Folder: <code>en-us/web/api/filesystemflags/exclusive</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFlags/exclusive\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFlags/exclusive</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/api/filesystemflags/exclusive/index.html\">https://github.com/mdn/content/blob/main/files/en-us/web/api/filesystemflags/exclusive/index.html</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/f6f11d2a249520f01bad93d7c4a5e5cdf6ed914a/hovercard\" href=\"https://github.com/mdn/content/commit/f6f11d2a249520f01bad93d7c4a5e5cdf6ed914a\"><tt>f6f11d2</tt></a></li>\n<li>Document last modified: 2021-02-19T19:33:30.000Z</li>\n</ul>\n</details>",
+            "url": "https://github.com/mdn/content/issues/5457",
+            "title": "[entries-api] Issue with \"FileSystemFlags.exclusive\": (short summary here please)",
+            "date_modified": "2021-05-29T15:23:34.000Z",
+            "author": {
+                "name": "wing-scud",
+                "url": "https://github.com/wing-scud"
+            }
+        },
+        {
+            "id": "https://github.com/mdn/content/issues/3013",
+            "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance/rate\">https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance/rate</a></p>\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<p>The html part of the demo is missing</p>\n<h4>What did you expect to see?</h4>\n<p>The full working demo</p>\n<h4>Did you test this? If so, how?</h4>\n<p>I recreated a working one here.<br>\n<a rel=\"nofollow\" href=\"https://jsfiddle.net/chrisribe/2wt0qn5f/18/\">https://jsfiddle.net/chrisribe/2wt0qn5f/18/</a></p>\n<p>I is based off of this github repo.<br>\n<a href=\"https://github.com/mdn/web-speech-api/tree/master/speak-easy-synthesis\">https://github.com/mdn/web-speech-api/tree/master/speak-easy-synthesis</a></p>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul>\n<li>Folder: <code>en-us/web/api/speechsynthesisutterance/rate</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance/rate\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance/rate</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/api/speechsynthesisutterance/rate/index.html\">https://github.com/mdn/content/blob/main/files/en-us/web/api/speechsynthesisutterance/rate/index.html</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/11a98a59fca5f2e448d9e4b70e3c8a538c47b201/hovercard\" href=\"https://github.com/mdn/content/commit/11a98a59fca5f2e448d9e4b70e3c8a538c47b201\"><tt>11a98a5</tt></a></li>\n<li>Document last modified: 2021-02-19T19:45:18.000Z</li>\n</ul>\n</details>",
+            "url": "https://github.com/mdn/content/issues/3013",
+            "title": "[speech-api] Issue with \"SpeechSynthesisUtterance.rate\": (demo is incomplete)",
+            "date_modified": "2021-03-10T23:00:08.000Z",
+            "author": {
+                "name": "chrisribe",
+                "url": "https://github.com/chrisribe"
+            }
+        }
+    ]
+}
