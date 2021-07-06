@@ -87,7 +87,7 @@ function findRelatedMDNPages(issue) {
 function generateMarkdown(scope, issues) {
   return `# ${scope}-relevant MDN issues
 
-[Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by ${scope}.
+[Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by ${scope}. [![RSS feed for ${scope}-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](${path}.rss)
 
 ${issues.map(issue => `* [${issue.title}](${issue.url}) (${issue.createdAt})
   `).join("\n")}
