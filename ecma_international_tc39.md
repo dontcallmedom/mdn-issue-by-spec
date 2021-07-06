@@ -1,6 +1,6 @@
 # Ecma International TC39-relevant MDN issues
 
-[Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39.
+[Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
 * [[ecmascript] Issue with "isNaN()": Regarding the argumentation of the section "The necessity of an isNaN function"](https://github.com/mdn/content/issues/6551) (2021-07-03T11:47:14Z)
   

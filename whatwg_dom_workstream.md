@@ -1,6 +1,6 @@
 # WHATWG DOM Workstream-relevant MDN issues
 
-[Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream.
+[Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
 * [[dom] Event.composedPath() refers to nonexistent example](https://github.com/mdn/content/issues/5863) (2021-06-10T17:13:57Z)
   

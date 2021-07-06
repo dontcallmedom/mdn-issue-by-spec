@@ -1,6 +1,6 @@
 # W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues
 
-[Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group.
+[Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
 * [[compositing-2] Issue with "mix-blend-mode": (short summary here please)](https://github.com/mdn/content/issues/6515) (2021-07-02T06:38:51Z)
   

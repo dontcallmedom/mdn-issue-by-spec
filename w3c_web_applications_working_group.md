@@ -1,6 +1,6 @@
 # W3C Web Applications Working Group-relevant MDN issues
 
-[Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group.
+[Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
 * [[clipboard-apis] Issue with "Clipboard.write()": example setClipboard reports an error](https://github.com/mdn/content/issues/5566) (2021-06-02T06:23:17Z)
   

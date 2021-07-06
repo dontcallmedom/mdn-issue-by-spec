@@ -1,6 +1,6 @@
 # WHATWG Fetch Workstream-relevant MDN issues
 
-[Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG Fetch Workstream.
+[Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG Fetch Workstream. [![RSS feed for WHATWG Fetch Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
 * [[fetch] Issue with "WindowOrWorkerGlobalScope.fetch()": Incomplete description for `TypeError` ](https://github.com/mdn/content/issues/5545) (2021-06-01T14:47:27Z)
   
