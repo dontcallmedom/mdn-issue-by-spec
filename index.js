@@ -215,7 +215,7 @@ async function mapIssuesToSpecs() {
       const markdown = generateMarkdown(name, collection[name]);
       fs.writeFileSync("public/" + path + ".md", markdown);
 
-      index.push({name, path});
+      index.push({name, path, count: collection[name].length});
     }
     index.sort((a, b) => a.name.localeCompare(b.name));
     const README = `
@@ -223,7 +223,7 @@ async function mapIssuesToSpecs() {
 
 This repository collects information on MDN Web Docs issues and group them based on the specifications they relate to and the orgs / groups that produce these specifications.
 
-${index.map(({name, path}) => `* [${name}](${path}.md) [![RSS feed for ${name}-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](${path}.rss)`).join("\n")}
+${index.map(({name, path, count}) => `* [${name}](${path}.md): ${count} issues [![RSS feed for ${name}-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](${path}.rss)`).join("\n")}
 `;
     fs.writeFileSync("public/README.md", README);
 
