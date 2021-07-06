@@ -4,8 +4,6 @@
 
 * [[html] CustomElementRegistry needs updating](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
   
-* [[html] Issue with "Worker": sidebar links are duplicated](https://github.com/mdn/content/issues/6408) (2021-06-27T22:49:02Z)
-  
 * [[html] Issue with "<input>: The Input (Form Input) element": Incorrect or ambiguous description of step attribute](https://github.com/mdn/content/issues/6393) (2021-06-27T14:44:26Z)
   
 * [[html] WindowOrWorkerGlobalScope call information on Window and WorkerGlobalScope is out of date](https://github.com/mdn/content/issues/6034) (2021-06-15T22:41:42Z)
