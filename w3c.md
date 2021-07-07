@@ -14,8 +14,6 @@
   
 * [[compositing-2] Issue with "mix-blend-mode": (short summary here please)](https://github.com/mdn/content/issues/6515) (2021-07-02T06:38:51Z)
   
-* [[css-properties-values-api-1] Content suggestion: Document CSS Property syntax strings](https://github.com/mdn/content/issues/6506) (2021-07-02T01:54:53Z)
-  
 * [[user-timing-2] Issue with "performance.measure()": (short summary here please)](https://github.com/mdn/content/issues/6441) (2021-06-29T03:24:17Z)
   
 * [[css-text-3] Issue with "hyphens": misleading use of &shy;](https://github.com/mdn/content/issues/6307) (2021-06-24T16:17:26Z)
