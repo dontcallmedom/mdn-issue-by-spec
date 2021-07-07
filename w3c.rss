@@ -119,38 +119,6 @@ sel.setBaseAndExtent(tnode, 0, tnode, 5) // this should select 'hello'
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[webrtc] Issue with "RTCPeerConnection.generateCertificate() static fun…": (2 minor issues with the example provided)]]></title>
-            <link>https://github.com/mdn/content/issues/6527</link>
-            <guid>https://github.com/mdn/content/issues/6527</guid>
-            <pubDate>Fri, 02 Jul 2021 14:33:12 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/generateCertificate">https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/generateCertificate</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>In description, the example provided by RSASSA-PKCS1-v1_5 have 2 issues.<br>
-One of which is Uint8Array is written as UInt8Array.<br>
-The other was the naming of RSASSA-PKCS1-v1_5 which have an additional 0 making it RSASSA-PKCS1<strong>0</strong>-v1_5</p>
-<h4>Specific section or headline?</h4>
-<p>Description &gt; Standard configurations &gt; RSASSA-PKCS1-v1_5</p>
-<h4>What did you expect to see?</h4>
-<p>let stdRSACertificate = {<br>
-name: "RSASSA-PKCS1-v1_5",<br>
-modulusLength: 2048,<br>
-publicExponent: new Uint8Array([1, 0, 1]),<br>
-hash: "SHA-256"<br>
-};</p>
-<h4>Did you test this? If so, how?</h4>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/rtcpeerconnection/generatecertificate</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/generateCertificate" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/generateCertificate</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcpeerconnection/generatecertificate/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcpeerconnection/generatecertificate/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0f3c54f5a6cbbafbba3b8c7e2e045b67b26e9984/hovercard" href="https://github.com/mdn/content/commit/0f3c54f5a6cbbafbba3b8c7e2e045b67b26e9984"><tt>0f3c54f</tt></a></li>
-<li>Document last modified: 2021-06-19T03:49:37.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[compositing-2] Issue with "mix-blend-mode": (short summary here please)]]></title>
             <link>https://github.com/mdn/content/issues/6515</link>
             <guid>https://github.com/mdn/content/issues/6515</guid>
