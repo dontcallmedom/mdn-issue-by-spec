@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] Issue with "Location: port": (short summary here please)](https://github.com/mdn/content/issues/6638) (2021-07-07T09:21:45Z)
-  
 * [[html] CustomElementRegistry needs updating](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
   
 * [[html] Issue with "<input>: The Input (Form Input) element": Incorrect or ambiguous description of step attribute](https://github.com/mdn/content/issues/6393) (2021-06-27T14:44:26Z)
