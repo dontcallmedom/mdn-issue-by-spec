@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[dom] Issue with "Introduction to events": (when an event is fired modern broser runs three phases not two)](https://github.com/mdn/content/issues/6657) (2021-07-07T21:16:29Z)
+  
 * [[dom] Event.composedPath() refers to nonexistent example](https://github.com/mdn/content/issues/5863) (2021-06-10T17:13:57Z)
   
 * [[dom] Issue with "Text": Unclear description of when multiple text nodes may be created](https://github.com/mdn/content/issues/5487) (2021-05-31T03:17:02Z)

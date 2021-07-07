@@ -4,10 +4,40 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Wed, 07 Jul 2021 14:37:43 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 07 Jul 2021 21:16:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[dom] Issue with "Introduction to events": (when an event is fired modern broser runs three phases not two)]]></title>
+            <link>https://github.com/mdn/content/issues/6657</link>
+            <guid>https://github.com/mdn/content/issues/6657</guid>
+            <pubDate>Wed, 07 Jul 2021 21:16:29 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events">https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>When the author said that modern browsers runs two phases (and not three) when an event is dispatched.<br>
+the capturing and bubbling phases <strong>does not include</strong> the target node.<br>
+it can lead the reader to misunderstand some MDN docs explanations, E.g: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation">https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation</a><br>
+the above link mentions the capturing and bubbling phases and if the reader has in mind that the target phase is part of the capturing and bubbling phases, it will misunderstand what that method does<br>
+<a rel="nofollow" href="https://dom.spec.whatwg.org/#dom-event-eventphase">https://dom.spec.whatwg.org/#dom-event-eventphase</a></p>
+<h4>Specific section or headline?</h4>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#bubbling_and_capturing_explained">https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#bubbling_and_capturing_explained</a></p>
+<h4>What did you expect to see?</h4>
+<p>When an event is fired on an element that has parent elements, modern browsers run three different phases — the capturing phase, the target phase and the bubbling phase.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>nope</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/learn/javascript/building_blocks/events</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events" rel="nofollow">https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/learn/javascript/building_blocks/events/index.html">https://github.com/mdn/content/blob/main/files/en-us/learn/javascript/building_blocks/events/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e65944bcaf4056b8e78144aa62309defc1f32791/hovercard" href="https://github.com/mdn/content/commit/e65944bcaf4056b8e78144aa62309defc1f32791"><tt>e65944b</tt></a></li>
+<li>Document last modified: 2021-06-08T12:51:38.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Issue with "GlobalEventHandlers.oninput": broken link to external reference]]></title>
             <link>https://github.com/mdn/content/issues/6646</link>
