@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[dom, selectors-4] Content suggestion: Example of :scope in element.querySelecotr()](https://github.com/mdn/content/issues/6676) (2021-07-08T12:03:13Z)
+  
 * [[compositing-2] Issue with "mix-blend-mode": (short summary here please)](https://github.com/mdn/content/issues/6515) (2021-07-02T06:38:51Z)
   
 * [[css-text-3] Issue with "hyphens": misleading use of &shy;](https://github.com/mdn/content/issues/6307) (2021-06-24T16:17:26Z)

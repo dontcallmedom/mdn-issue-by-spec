@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[dom, selectors-4] Content suggestion: Example of :scope in element.querySelecotr()](https://github.com/mdn/content/issues/6676) (2021-07-08T12:03:13Z)
+  
 * [[html] Issue with "WebSocket: error event": (short summary here please)](https://github.com/mdn/content/issues/6666) (2021-07-08T02:50:36Z)
   
 * [[dom] Issue with "Introduction to events": (when an event is fired modern broser runs three phases not two)](https://github.com/mdn/content/issues/6657) (2021-07-07T21:16:29Z)
