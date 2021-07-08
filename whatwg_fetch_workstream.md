@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG Fetch Workstream. [![RSS feed for WHATWG Fetch Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[fetch] Content bug: Broken link in Response.clone() documentation](https://github.com/mdn/content/issues/6671) (2021-07-08T10:15:24Z)
+  
 * [[fetch] Issue with "WindowOrWorkerGlobalScope.fetch()": Incomplete description for `TypeError` ](https://github.com/mdn/content/issues/5545) (2021-06-01T14:47:27Z)
   
 * [[fetch] Content suggestion: Document Headers.forEach()](https://github.com/mdn/content/issues/3937) (2021-04-08T10:01:22Z)
