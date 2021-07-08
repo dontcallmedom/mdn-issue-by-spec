@@ -100,8 +100,6 @@
   
 * [[media-capabilities] MediaCapabilitiesInfo is a dictionary in spec + Chrome but interface in Firefox](https://github.com/mdn/content/issues/1878) (2021-01-29T09:14:35Z)
   
-* [[css-multicol-2] Orphaned index item](https://github.com/mdn/content/issues/1508) (2021-01-19T22:40:48Z)
-  
 * [[user-timing-2] Update `performance.mark` article with User Timing Level 3 data](https://github.com/mdn/content/issues/1463) (2021-01-18T15:52:43Z)
   
 * [[screen-capture] displaySurface doc looks wrong](https://github.com/mdn/content/issues/1456) (2021-01-18T15:39:25Z)
