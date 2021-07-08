@@ -6,8 +6,6 @@
   
 * [[dom] Issue with "Introduction to events": (when an event is fired modern broser runs three phases not two)](https://github.com/mdn/content/issues/6657) (2021-07-07T21:16:29Z)
   
-* [[html] Issue with "GlobalEventHandlers.oninput": broken link to external reference](https://github.com/mdn/content/issues/6646) (2021-07-07T14:37:43Z)
-  
 * [[html] CustomElementRegistry needs updating](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
   
 * [[console] Issue with "console", how does number formatting work? Number formatting doesn't work on Chrome.](https://github.com/mdn/content/issues/6614) (2021-07-06T06:31:49Z)

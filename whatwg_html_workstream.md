@@ -4,8 +4,6 @@
 
 * [[html] Issue with "WebSocket: error event": (short summary here please)](https://github.com/mdn/content/issues/6666) (2021-07-08T02:50:36Z)
   
-* [[html] Issue with "GlobalEventHandlers.oninput": broken link to external reference](https://github.com/mdn/content/issues/6646) (2021-07-07T14:37:43Z)
-  
 * [[html] CustomElementRegistry needs updating](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
   
 * [[html] Issue with "<input>: The Input (Form Input) element": Incorrect or ambiguous description of step attribute](https://github.com/mdn/content/issues/6393) (2021-06-27T14:44:26Z)
