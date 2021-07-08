@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Issue with "WebSocket: error event": (short summary here please)](https://github.com/mdn/content/issues/6666) (2021-07-08T02:50:36Z)
+  
 * [[html] Issue with "GlobalEventHandlers.oninput": broken link to external reference](https://github.com/mdn/content/issues/6646) (2021-07-07T14:37:43Z)
   
 * [[html] CustomElementRegistry needs updating](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
