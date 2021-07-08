@@ -1779,41 +1779,6 @@ I also tried to edit it myself but couldn't for that paragraph</p>
 Simon</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[WebCryptoAPI] Update crypto.subtle.digest() example in to fix async/await usage problems]]></title>
-            <link>https://github.com/mdn/content/issues/1443</link>
-            <guid>https://github.com/mdn/content/issues/1443</guid>
-            <pubDate>Mon, 18 Jan 2021 15:16:31 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/bbrown-spsu/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/bbrown-spsu">@bbrown-spsu</a> commented on <a href="https://github.com/mdn/sprints/issues/3950" data-hovercard-type="issue" data-hovercard-url="/mdn/sprints/issues/3950/hovercard">Wed Dec 09 2020</a></p>
-<h1>Request type</h1>
-
-<ul class="contains-task-list">
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Please close this issue, I accidentally submitted it without adding any details</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> New documentation</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Correction or update</li>
-</ul>
-<h1>Details</h1>
-
-<p>The examples on this page will not run in Firefox 83.0 64 bit.  That appears to be because "await" is not within an async function on the next-to-last line.  The message I get is "Uncaught SyntaxError: await is only valid in async functions and async generators"</p>
-
-<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/digest">https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/digest</a></p>
-<hr>
-<p><a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/MendyBerger/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/MendyBerger">@MendyBerger</a> commented on <a href="https://github.com/mdn/sprints/issues/3950#issuecomment-748622874" data-hovercard-type="issue" data-hovercard-url="/mdn/sprints/issues/3950/hovercard">Sun Dec 20 2020</a></p>
-<p>As pointed out by <a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/bbrown-spsu/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/bbrown-spsu">@bbrown-spsu</a> this is because of an <code>await</code> that is not in an <code>async</code> function.</p>
-<p>What is the general rule when it come's to cases like this? Do we wrap it with an <code>async</code> <a href="https://developer.mozilla.org/en-US/docs/Glossary/IIFE" rel="nofollow">iife</a> (would probably bloat the code samples)? Do we assume that users will understand that they have to put it in an <code>async</code> function? Any other options?</p>
-<p>Worth pointing out that this is not an example that is meant to be run from withing the page like <code>interactive-examples</code>, but rather its a code sample.</p>
-<hr>
-<p><a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/bbrown-spsu/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/bbrown-spsu">@bbrown-spsu</a> commented on <a href="https://github.com/mdn/sprints/issues/3950#issuecomment-748624221" data-hovercard-type="issue" data-hovercard-url="/mdn/sprints/issues/3950/hovercard">Sun Dec 20 2020</a></p>
-<p>A couple of thoughts...</p>
-<ol>
-<li>"Assume users will understand..." is fraught with possibilities for badness.  People come to the examples because they <strong>do not</strong> understand.</li>
-<li>Bloated examples are better than obscure examples for the reason given above.</li>
-</ol>
-<p>I think the very minimum change would be a comment before the call: <code>// The code below must itself be within an async function.</code>  Better would be a real async function (not iife) called by a non-async function, in other words, something that could be clipped out and run.  It would double the length of the example, but more than double the usefulness of the example.</p>
-<hr>
-<p><a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/chrisdavidmills/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/chrisdavidmills">@chrisdavidmills</a> commented on <a href="https://github.com/mdn/sprints/issues/3950#issuecomment-748832933" data-hovercard-type="issue" data-hovercard-url="/mdn/sprints/issues/3950/hovercard">Mon Dec 21 2020</a></p>
-<p>I would be happy for you to fix them up so they are runnable at a basic level. I agree with <a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/bbrown-spsu/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/bbrown-spsu">@bbrown-spsu</a> here, and async/await is still fairly new.</p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[webrtc] Issue with "RTCRtpSender.replaceTrack()": …]]></title>
             <link>https://github.com/mdn/content/issues/1406</link>
             <guid>https://github.com/mdn/content/issues/1406</guid>

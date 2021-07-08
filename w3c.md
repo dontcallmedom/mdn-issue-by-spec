@@ -106,8 +106,6 @@
   
 * [[screen-capture] displaySurface doc looks wrong](https://github.com/mdn/content/issues/1456) (2021-01-18T15:39:25Z)
   
-* [[WebCryptoAPI] Update crypto.subtle.digest() example in to fix async/await usage problems](https://github.com/mdn/content/issues/1443) (2021-01-18T15:16:31Z)
-  
 * [[webrtc] Issue with "RTCRtpSender.replaceTrack()": …](https://github.com/mdn/content/issues/1406) (2021-01-17T17:37:46Z)
   
 * [[SVG11] Issue with "<foreignObject>": …](https://github.com/mdn/content/issues/1319) (2021-01-14T17:25:42Z)
