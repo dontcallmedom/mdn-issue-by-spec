@@ -4,8 +4,6 @@
 
 * [[service-workers-1, push-api] Issue with "ServiceWorkerRegistration": description for updateViaCache is missing](https://github.com/mdn/content/issues/6729) (2021-07-09T12:06:19Z)
   
-* [[FileAPI] Issue with "FileReader.readAsText()": loadend link is wrong](https://github.com/mdn/content/issues/6677) (2021-07-08T12:15:39Z)
-  
 * [[dom, selectors-4] Content suggestion: Example of :scope in element.querySelector()](https://github.com/mdn/content/issues/6676) (2021-07-08T12:03:13Z)
   
 * [[uievents] Issue with "MouseEvent.ctrlKey": 'command' instead of 'control' for Mac keyboards](https://github.com/mdn/content/issues/6624) (2021-07-06T12:40:16Z)
