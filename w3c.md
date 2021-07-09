@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[service-workers-1, push-api] Issue with "ServiceWorkerRegistration": description for updateViaCache is missing](https://github.com/mdn/content/issues/6729) (2021-07-09T12:06:19Z)
+  
 * [[FileAPI] Issue with "FileReader.readAsText()": loadend link is wrong](https://github.com/mdn/content/issues/6677) (2021-07-08T12:15:39Z)
   
 * [[dom, selectors-4] Content suggestion: Example of :scope in element.querySelector()](https://github.com/mdn/content/issues/6676) (2021-07-08T12:03:13Z)
