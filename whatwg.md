@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Issue with "Window.requestAnimationFrame()": Example does not demonstrate description in text](https://github.com/mdn/content/issues/6746) (2021-07-10T04:43:00Z)
+  
 * [[dom, selectors-4] Content suggestion: Example of :scope in element.querySelector()](https://github.com/mdn/content/issues/6676) (2021-07-08T12:03:13Z)
   
 * [[html] Issue with "WebSocket: error event": (short summary here please)](https://github.com/mdn/content/issues/6666) (2021-07-08T02:50:36Z)

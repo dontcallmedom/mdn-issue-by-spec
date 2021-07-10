@@ -4,10 +4,84 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Thu, 08 Jul 2021 12:03:13 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 10 Jul 2021 04:43:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Issue with "Window.requestAnimationFrame()": Example does not demonstrate description in text]]></title>
+            <link>https://github.com/mdn/content/issues/6746</link>
+            <guid>https://github.com/mdn/content/issues/6746</guid>
+            <pubDate>Sat, 10 Jul 2021 04:43:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame">https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The description of this function says:</p>
+<blockquote>
+<p>(in the code example below we only animate the frame when the timestamp changes, i.e. on the first callback)</p>
+</blockquote>
+<p>and</p>
+<blockquote>
+<p>Be sure to always use the first argument (or some other method for getting the current time) to calculate how much the animation will progress in a frame, otherwise the animation will run faster on high refresh rate screens. Check the example below for a way to do this.</p>
+</blockquote>
+<p>However, in the actual code, I don't see any test around the line that animates the object.</p>
+<h4>Specific section or headline?</h4>
+<p><code>element.style.transform = 'translateX(' + Math.min(0.1 * elapsed, 200) + 'px)';</code></p>
+<h4>What did you expect to see?</h4>
+<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="const element = document.getElementById('some-element-you-want-to-animate');
+let start, previousTimeStamp;
+
+function step(timestamp) {
+  if (start === undefined)
+    start = timestamp;
+  const elapsed = timestamp - start;
+  
+  if( previousTimeStamp !== timestamp ) {
+    // `Math.min()` is used here to make sure that the element stops at exactly 200px.
+    element.style.transform = 'translateX(' + Math.min(0.1 * elapsed, 200) + 'px)';
+  }
+
+  if (elapsed &lt; 2000) { // Stop the animation after 2 seconds
+    previousTimeStamp = timestamp
+    window.requestAnimationFrame(step);
+  }
+}
+
+window.requestAnimationFrame(step);
+"><pre><span class="pl-k">const</span> <span class="pl-s1">element</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">getElementById</span><span class="pl-kos">(</span><span class="pl-s">'some-element-you-want-to-animate'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">let</span> <span class="pl-s1">start</span><span class="pl-kos">,</span> <span class="pl-s1">previousTimeStamp</span><span class="pl-kos">;</span>
+
+<span class="pl-k">function</span> <span class="pl-en">step</span><span class="pl-kos">(</span><span class="pl-s1">timestamp</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">start</span> <span class="pl-c1">===</span> <span class="pl-c1">undefined</span><span class="pl-kos">)</span>
+    <span class="pl-s1">start</span> <span class="pl-c1">=</span> <span class="pl-s1">timestamp</span><span class="pl-kos">;</span>
+  <span class="pl-k">const</span> <span class="pl-s1">elapsed</span> <span class="pl-c1">=</span> <span class="pl-s1">timestamp</span> <span class="pl-c1">-</span> <span class="pl-s1">start</span><span class="pl-kos">;</span>
+  
+  <span class="pl-k">if</span><span class="pl-kos">(</span> <span class="pl-s1">previousTimeStamp</span> <span class="pl-c1">!==</span> <span class="pl-s1">timestamp</span> <span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    <span class="pl-c">// `Math.min()` is used here to make sure that the element stops at exactly 200px.</span>
+    <span class="pl-s1">element</span><span class="pl-kos">.</span><span class="pl-c1">style</span><span class="pl-kos">.</span><span class="pl-c1">transform</span> <span class="pl-c1">=</span> <span class="pl-s">'translateX('</span> <span class="pl-c1">+</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">min</span><span class="pl-kos">(</span><span class="pl-c1">0.1</span> <span class="pl-c1">*</span> <span class="pl-s1">elapsed</span><span class="pl-kos">,</span> <span class="pl-c1">200</span><span class="pl-kos">)</span> <span class="pl-c1">+</span> <span class="pl-s">'px)'</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span>
+
+  <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">elapsed</span> <span class="pl-c1">&lt;</span> <span class="pl-c1">2000</span><span class="pl-kos">)</span> <span class="pl-kos">{</span> <span class="pl-c">// Stop the animation after 2 seconds</span>
+    <span class="pl-s1">previousTimeStamp</span> <span class="pl-c1">=</span> <span class="pl-s1">timestamp</span>
+    <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-en">requestAnimationFrame</span><span class="pl-kos">(</span><span class="pl-s1">step</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span>
+<span class="pl-kos">}</span>
+
+<span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-en">requestAnimationFrame</span><span class="pl-kos">(</span><span class="pl-s1">step</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<h4>Did you test this? If so, how?</h4>
+<p><a rel="nofollow" href="https://codepen.io/tedmasterweb/pen/dyWpMev">https://codepen.io/tedmasterweb/pen/dyWpMev</a></p>
+<p>I have tested that the code provided works. I have not tested it against different refresh rates and depend on the documentation to be correct in this regard.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/window/requestanimationframe</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/requestanimationframe/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/requestanimationframe/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/64b0057f7238be9ad7a6f2f522efd8f5f7753095/hovercard" href="https://github.com/mdn/content/commit/64b0057f7238be9ad7a6f2f522efd8f5f7753095"><tt>64b0057</tt></a></li>
+<li>Document last modified: 2021-06-17T09:07:21.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[dom, selectors-4] Content suggestion: Example of :scope in element.querySelector()]]></title>
             <link>https://github.com/mdn/content/issues/6676</link>
