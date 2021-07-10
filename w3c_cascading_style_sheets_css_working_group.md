@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-text-3] Issue with "white-space": The PRE element itself seems to cause two line breaks](https://github.com/mdn/content/issues/6752) (2021-07-10T20:52:11Z)
+  
 * [[dom, selectors-4] Content suggestion: Example of :scope in element.querySelector()](https://github.com/mdn/content/issues/6676) (2021-07-08T12:03:13Z)
   
 * [[css-text-3] Issue with "hyphens": misleading use of &shy;](https://github.com/mdn/content/issues/6307) (2021-06-24T16:17:26Z)

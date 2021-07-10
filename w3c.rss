@@ -4,10 +4,51 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Fri, 09 Jul 2021 12:06:19 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 10 Jul 2021 20:52:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-text-3] Issue with "white-space": The PRE element itself seems to cause two line breaks]]></title>
+            <link>https://github.com/mdn/content/issues/6752</link>
+            <guid>https://github.com/mdn/content/issues/6752</guid>
+            <pubDate>Sat, 10 Jul 2021 20:52:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/white-space">https://developer.mozilla.org/en-US/docs/Web/CSS/white-space</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>It looks like only line breaks of content inside PRE elements are described, not the line breaks caused by the PRE element itself.</p>
+<h4>Specific section or headline?</h4>
+<p>No, nothing specific.</p>
+<h4>What did you expect to see?</h4>
+<p>I expected to see the line-breaking of the PRE element itself mentioned.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>Code:</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="&lt;body&gt;
+&lt;pre&gt;xxx&lt;/pre&gt;&lt;pre&gt;xxx&lt;/pre&gt;
+&lt;/body&gt;
+"><pre><code>&lt;body&gt;
+&lt;pre&gt;xxx&lt;/pre&gt;&lt;pre&gt;xxx&lt;/pre&gt;
+&lt;/body&gt;
+</code></pre></div>
+<p>Output (both Firefox and Chrome):</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="xxx
+
+xxx
+"><pre><code>xxx
+
+xxx
+</code></pre></div>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/css/white-space</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/white-space" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/white-space</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/white-space/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/css/white-space/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/69f5a958188c2c631e7b125992e3048625737ff1/hovercard" href="https://github.com/mdn/content/commit/69f5a958188c2c631e7b125992e3048625737ff1"><tt>69f5a95</tt></a></li>
+<li>Document last modified: 2021-06-29T03:43:37.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[service-workers-1, push-api] Issue with "ServiceWorkerRegistration": description for updateViaCache is missing]]></title>
             <link>https://github.com/mdn/content/issues/6729</link>
