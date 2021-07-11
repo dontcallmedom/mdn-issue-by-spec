@@ -6,8 +6,6 @@
   
 * [[mediacapture-streams] Issue with "MediaStreamTrack: ended event": (short summary here please)](https://github.com/mdn/content/issues/4939) (2021-05-12T10:02:23Z)
   
-* [[mediacapture-streams] Issue with "MediaStreamTrack": (short summary here please)](https://github.com/mdn/content/issues/4511) (2021-04-27T04:36:25Z)
-  
 * [[mediacapture-streams] Issue with "MediaTrackSupportedConstraints": Duplicated property definition](https://github.com/mdn/content/issues/3674) (2021-03-30T14:45:58Z)
   
 * [[screen-capture] displaySurface doc looks wrong](https://github.com/mdn/content/issues/1456) (2021-01-18T15:39:25Z)

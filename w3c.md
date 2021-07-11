@@ -48,8 +48,6 @@
   
 * [[html, cssom-view-1] Window.open() needs an overhaul](https://github.com/mdn/content/issues/4583) (2021-04-29T05:03:41Z)
   
-* [[mediacapture-streams] Issue with "MediaStreamTrack": (short summary here please)](https://github.com/mdn/content/issues/4511) (2021-04-27T04:36:25Z)
-  
 * [[cssom-view-1] Issue with "Window.devicePixelRatio": (short summary here please)](https://github.com/mdn/content/issues/4478) (2021-04-26T09:29:18Z)
   
 * [[webaudio] Content bug: AudioListener and attributes need better examples. ](https://github.com/mdn/content/issues/4468) (2021-04-26T03:22:48Z)
