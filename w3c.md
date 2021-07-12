@@ -80,8 +80,6 @@
   
 * [[webauthn-3] Content bug: Missing documentation on WebAuthn Level 2 additions](https://github.com/mdn/content/issues/3488) (2021-03-25T09:42:24Z)
   
-* [[webaudio] Some pages show raw math syntax (LaTeX?)](https://github.com/mdn/content/issues/3435) (2021-03-24T10:23:01Z)
-  
 * [[css-align-3] The "place-items" demo is confusing and therefore appears broken](https://github.com/mdn/content/issues/3427) (2021-03-24T02:36:56Z)
   
 * [[IndexedDB-3] Issue with "IDBRequest": please describe onupgradeneeded event](https://github.com/mdn/content/issues/3356) (2021-03-22T10:34:18Z)
