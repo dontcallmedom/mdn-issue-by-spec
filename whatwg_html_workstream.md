@@ -6,8 +6,6 @@
   
 * [[html] Issue with "Window.requestAnimationFrame()": Example does not demonstrate description in text](https://github.com/mdn/content/issues/6746) (2021-07-10T04:43:00Z)
   
-* [[html] Issue with "WebSocket: error event": (short summary here please)](https://github.com/mdn/content/issues/6666) (2021-07-08T02:50:36Z)
-  
 * [[html] CustomElementRegistry needs updating](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
   
 * [[html] Issue with "<input>: The Input (Form Input) element": Incorrect or ambiguous description of step attribute](https://github.com/mdn/content/issues/6393) (2021-06-27T14:44:26Z)
