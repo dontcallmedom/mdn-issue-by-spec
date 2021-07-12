@@ -12,8 +12,6 @@
   
 * [[ecmascript, mediacapture-streams] Globally replace console.log() calls in all cases where console.error() should be used instead](https://github.com/mdn/content/issues/6117) (2021-06-18T17:07:45Z)
   
-* [[ecmascript] Issue with "Function() constructor": definition for arg1, arg2, ... argN too restrictive compared to spec](https://github.com/mdn/content/issues/6000) (2021-06-14T16:50:22Z)
-  
 * [[ecmascript] Issue with "this": lack of an article about the 'Execution context'. ](https://github.com/mdn/content/issues/5006) (2021-05-14T18:14:38Z)
   
 * [[ecmascript] Issue with "Array": Documentation seems unclear and maybe contradicting itself](https://github.com/mdn/content/issues/4968) (2021-05-13T10:01:48Z)

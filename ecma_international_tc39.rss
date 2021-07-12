@@ -267,46 +267,6 @@ Promise: <em>Chained Promises</em></p>
 <p>No, I did not need to.</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[ecmascript] Issue with "Function() constructor": definition for arg1, arg2, ... argN too restrictive compared to spec]]></title>
-            <link>https://github.com/mdn/content/issues/6000</link>
-            <guid>https://github.com/mdn/content/issues/6000</guid>
-            <pubDate>Mon, 14 Jun 2021 16:50:22 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/Function">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/Function</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>The parameter part claims the values for <code>arg1, arg2, ... argN</code> can only be valid identifiers. However, per <a rel="nofollow" href="https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-createdynamicfunction">https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-createdynamicfunction</a>, it can be much more.</p>
-<h4>Specific section or headline?</h4>
-<p>"Parameters"</p>
-<h4>What did you expect to see?</h4>
-<p>Rephrase to the following to match FormalParameters grammar:</p>
-<blockquote>
-<p>Names to be used by the function as formal argument names. Each must be a string that corresponds to a valid JavaScript parameter (any of plain identifier, rest parameter, or destructed parameter, optionally with a default) or a list of such strings separated with a comma.</p>
-<p>As the members are parsed in the same way as that of function declaractions, whitespace and comments are accepted. For example: <code>"x", "theValue = 42", "[a, b] /* numbers */"</code>—or <code>"x, theValue = 42, [a, b] /* numbers */"</code>. (<code>"x, theValue = 42", "[a, b]"</code> is also correct, but it is very confusing to read.)</p>
-</blockquote>
-<p>I am unable to muster up the infrastructure to figure out what the compatibility is like, although I imagine it to be similar to the <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions</a> page. The related constructors of <code>GeneratorFunction</code> and <code>AsyncFunction</code> also need to be changed.</p>
-<h4>Did you test this? If so, how?</h4>
-<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="const sum = new Function('a', '...b', 'return a + b[0]');
-console.log(sum(2, 6));
-
-const sum2 = new Function('{a, b}, c = 0 /* optional */', 'return a + b + c');
-console.log(sum2({a: 2, b: 6}));
-"><pre><span class="pl-k">const</span> <span class="pl-s1">sum</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Function</span><span class="pl-kos">(</span><span class="pl-s">'a'</span><span class="pl-kos">,</span> <span class="pl-s">'...b'</span><span class="pl-kos">,</span> <span class="pl-s">'return a + b[0]'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">sum</span><span class="pl-kos">(</span><span class="pl-c1">2</span><span class="pl-kos">,</span> <span class="pl-c1">6</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-
-<span class="pl-k">const</span> <span class="pl-s1">sum2</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Function</span><span class="pl-kos">(</span><span class="pl-s">'{a, b}, c = 0 /* optional */'</span><span class="pl-kos">,</span> <span class="pl-s">'return a + b + c'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">sum2</span><span class="pl-kos">(</span><span class="pl-kos">{</span><span class="pl-c1">a</span>: <span class="pl-c1">2</span><span class="pl-kos">,</span> <span class="pl-c1">b</span>: <span class="pl-c1">6</span><span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/javascript/reference/global_objects/function/function</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/Function" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/Function</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/function/function/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/function/function/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/13360cbad46b4ce6457f80492d73d2efd252e8a9/hovercard" href="https://github.com/mdn/content/commit/13360cbad46b4ce6457f80492d73d2efd252e8a9"><tt>13360cb</tt></a></li>
-<li>Document last modified: 2021-05-05T10:31:52.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[ecmascript] Issue with "this": lack of an article about the 'Execution context'. ]]></title>
             <link>https://github.com/mdn/content/issues/5006</link>
             <guid>https://github.com/mdn/content/issues/5006</guid>
