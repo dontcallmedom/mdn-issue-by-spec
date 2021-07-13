@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] Issue with "<textarea>": (default display value is NOT block)](https://github.com/mdn/content/issues/6792) (2021-07-12T03:55:46Z)
-  
 * [[html] Issue with "Window.requestAnimationFrame()": Example does not demonstrate description in text](https://github.com/mdn/content/issues/6746) (2021-07-10T04:43:00Z)
   
 * [[html] CustomElementRegistry needs updating](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
