@@ -4,10 +4,28 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Sat, 10 Jul 2021 04:43:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 13 Jul 2021 13:35:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator]]></title>
+            <link>https://github.com/mdn/content/issues/6856</link>
+            <guid>https://github.com/mdn/content/issues/6856</guid>
+            <pubDate>Tue, 13 Jul 2021 13:35:32 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="808310647" data-permission-text="Title is private" data-url="https://github.com/mdn/browser-compat-data/issues/9125" data-hovercard-type="issue" data-hovercard-url="/mdn/browser-compat-data/issues/9125/hovercard" href="https://github.com/mdn/browser-compat-data/issues/9125">mdn/browser-compat-data#9125</a> is a long discussion about the peculiar cases of <code>Location</code>+<code>WorkerLocation</code> and <code>Navigator</code>+<code>WorkerNavigator</code>, which are the only APIs on the web platform where distinct interfaces are used to represent the "same" thing in window and worker contexts.</p>
+<p>For example, <code>navigator.userAgent</code> is available in both window and worker contexts, but <code>navigator</code> itself is a different kind of object. (This difference rarely matters in practice.)</p>
+<p>BCD will follow the structure of specs/implementations, but on MDN there's duplication that might be possible to avoid. These pairs of pages and their subpages should be considered for merging or cross-linking:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Navigator</a> + <a href="https://developer.mozilla.org/en-US/docs/Web/API/WorkerNavigator" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WorkerNavigator</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Location" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Location</a> + <a href="https://developer.mozilla.org/en-US/docs/Web/API/WorkerLocation" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WorkerLocation</a></li>
+</ul>
+<p>For <code>location</code> it's <em>probably</em> best to keep them separate since the worker variant is read-only. But <code>navigator</code> it's hard to see the usefulness of splits like this:<br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/languages">https://developer.mozilla.org/en-US/docs/Web/API/Navigator/languages</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/WorkerNavigator/languages">https://developer.mozilla.org/en-US/docs/Web/API/WorkerNavigator/languages</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/locks">https://developer.mozilla.org/en-US/docs/Web/API/Navigator/locks</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/WorkerNavigator/locks">https://developer.mozilla.org/en-US/docs/Web/API/WorkerNavigator/locks</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Issue with "Window.requestAnimationFrame()": Example does not demonstrate description in text]]></title>
             <link>https://github.com/mdn/content/issues/6746</link>
