@@ -4,8 +4,6 @@
 
 * [[dom, selectors-4] Content suggestion: Example of :scope in element.querySelector()](https://github.com/mdn/content/issues/6676) (2021-07-08T12:03:13Z)
   
-* [[dom] Issue with "Introduction to events": (when an event is fired modern broser runs three phases not two)](https://github.com/mdn/content/issues/6657) (2021-07-07T21:16:29Z)
-  
 * [[dom] Event.composedPath() refers to nonexistent example](https://github.com/mdn/content/issues/5863) (2021-06-10T17:13:57Z)
   
 * [[dom] Issue with "Text": Unclear description of when multiple text nodes may be created](https://github.com/mdn/content/issues/5487) (2021-05-31T03:17:02Z)

@@ -8,8 +8,6 @@
   
 * [[ecmascript] Issue with "Functions": (short summary here please)](https://github.com/mdn/content/issues/6545) (2021-07-03T07:09:55Z)
   
-* [[ecmascript] Issue with "Promise": (using the terms "resolved" and "fulfilled")](https://github.com/mdn/content/issues/6521) (2021-07-02T10:18:30Z)
-  
 * [[ecmascript] Issue with "Classes": Example under section 'Instance Properties' needs to be updated.](https://github.com/mdn/content/issues/6339) (2021-06-25T15:06:51Z)
   
 * [[ecmascript, mediacapture-streams] Globally replace console.log() calls in all cases where console.error() should be used instead](https://github.com/mdn/content/issues/6117) (2021-06-18T17:07:45Z)
