@@ -4,10 +4,37 @@
         <title>Khronos Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/khronos_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Khronos Group</description>
-        <lastBuildDate>Wed, 28 Apr 2021 05:05:07 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 15 Jul 2021 12:46:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[OES_texture_float_linear] Issue with "OES_texture_float_linear": not supported in iOS14]]></title>
+            <link>https://github.com/mdn/content/issues/6926</link>
+            <guid>https://github.com/mdn/content/issues/6926</guid>
+            <pubDate>Thu, 15 Jul 2021 12:46:47 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/OES_texture_float_linear">https://developer.mozilla.org/en-US/docs/Web/API/OES_texture_float_linear</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>Apparently, "OES_texture_float_linear" is not supported anymore in the latest iOS version.<br>
+<a rel="nofollow" href="https://developer.apple.com/forums/thread/675554">https://developer.apple.com/forums/thread/675554</a></p>
+<h4>What did you expect to see?</h4>
+<p>I assume this OS-related so maybe it would a nice addition to add a warning section to specify latest iOS version does not support this extension.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>In one of my latest project I made a canvas animation with ThreeJS and postprocessing shaders that was failing to render on the latest iOS 14 devices.</p>
+<p>After inspecting these devices with Browserstack I noticed a console warning issued by ThreeJS.</p>
+<p><code>[Warning] THREE.WebGLRenderer: OES_texture_float_linear extension not supported.</code></p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/oes_texture_float_linear</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/OES_texture_float_linear" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/OES_texture_float_linear</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/oes_texture_float_linear/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/oes_texture_float_linear/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/86b8b22f13d0185d97089c61d50a2229d22ddf4a/hovercard" href="https://github.com/mdn/content/commit/86b8b22f13d0185d97089c61d50a2229d22ddf4a"><tt>86b8b22</tt></a></li>
+<li>Document last modified: 2021-06-15T05:22:45.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[webgl2] Issue with "WebGL2RenderingContext.getBufferSubData()": Argument 3 does not implement interface ArrayBufferView]]></title>
             <link>https://github.com/mdn/content/issues/4539</link>
