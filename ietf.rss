@@ -4,33 +4,10 @@
         <title>IETF-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ietf.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by IETF</description>
-        <lastBuildDate>Tue, 29 Jun 2021 21:03:09 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 21 Apr 2021 13:02:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[rfc7239] http.headers.Forwarded - The example looks incorrect]]></title>
-            <link>https://github.com/mdn/content/issues/6470</link>
-            <guid>https://github.com/mdn/content/issues/6470</guid>
-            <pubDate>Tue, 29 Jun 2021 21:03:09 GMT</pubDate>
-            <content:encoded><![CDATA[
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>In the example below, it shows the UPV6 for X-Forwarded-For header within brackets. I believe that is incorrect for X-Forwarded-For but correct for the Forwarded header:</p>
-<p>X-Forwarded-For: 192.0.2.43, "[2001:db8:cafe::17]"<br>
-Forwarded: for=192.0.2.43, for="[2001:db8:cafe::17]"</p>
-<h4>What did you expect to see?</h4>
-<p>X-Forwarded-For: 192.0.2.43, 2001:db8:cafe::17<br>
-Forwarded: for=192.0.2.43, for="[2001:db8:cafe::17]"</p>
-
-<details>
-<summary>MDN page report details</summary>
-<ul>
-<li>Query: <code>http.headers.Forwarded</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Forwarded" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Forwarded</a></li>
-<li>Report started: 2021-06-29T20:52:07.834Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[rfc7232] Issue with "If-None-Match": (short summary here please)]]></title>
             <link>https://github.com/mdn/content/issues/4343</link>

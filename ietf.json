@@ -9,17 +9,6 @@
     },
     "items": [
         {
-            "id": "https://github.com/mdn/content/issues/6470",
-            "content_html": "\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<p>In the example below, it shows the UPV6 for X-Forwarded-For header within brackets. I believe that is incorrect for X-Forwarded-For but correct for the Forwarded header:</p>\n<p>X-Forwarded-For: 192.0.2.43, \"[2001:db8:cafe::17]\"<br>\nForwarded: for=192.0.2.43, for=\"[2001:db8:cafe::17]\"</p>\n<h4>What did you expect to see?</h4>\n<p>X-Forwarded-For: 192.0.2.43, 2001:db8:cafe::17<br>\nForwarded: for=192.0.2.43, for=\"[2001:db8:cafe::17]\"</p>\n\n<details>\n<summary>MDN page report details</summary>\n<ul>\n<li>Query: <code>http.headers.Forwarded</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Forwarded\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Forwarded</a></li>\n<li>Report started: 2021-06-29T20:52:07.834Z</li>\n</ul>\n</details>",
-            "url": "https://github.com/mdn/content/issues/6470",
-            "title": "[rfc7239] http.headers.Forwarded - The example looks incorrect",
-            "date_modified": "2021-06-29T21:03:09.000Z",
-            "author": {
-                "name": "prezaei",
-                "url": "https://github.com/prezaei"
-            }
-        },
-        {
             "id": "https://github.com/mdn/content/issues/4343",
             "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match\">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match</a></p>\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<p>Apache reverse proxies will append \"-gzip\" suffix to well-formed <code>ETag</code> headers when gzip-encoding content, but they do not remove them from <code>If-None-Match</code> headers.  See <a rel=\"nofollow\" href=\"https://bz.apache.org/bugzilla/show_bug.cgi?id=39727\">https://bz.apache.org/bugzilla/show_bug.cgi?id=39727</a></p>\n<p>There are good reasons for this, since gzip-encoding the content will affect how range requests can be used.  But server software that compares If-None-Match headers in requests with ETags may need to account for this.</p>\n<h4>Specific section or headline?</h4>\n<p>Unsure.</p>\n<h4>What did you expect to see?</h4>\n<p>It should be mentioned somewhere.</p>\n<h4>Did you test this? If so, how?</h4>\n<p>I cam across this while working on server code.</p>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul>\n<li>Folder: <code>en-us/web/http/headers/if-none-match</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/if-none-match/index.html\">https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/if-none-match/index.html</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/f6f11d2a249520f01bad93d7c4a5e5cdf6ed914a/hovercard\" href=\"https://github.com/mdn/content/commit/f6f11d2a249520f01bad93d7c4a5e5cdf6ed914a\"><tt>f6f11d2</tt></a></li>\n<li>Document last modified: 2021-02-19T19:33:30.000Z</li>\n</ul>\n</details>",
             "url": "https://github.com/mdn/content/issues/4343",

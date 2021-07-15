@@ -2,7 +2,5 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by IETF. [![RSS feed for IETF-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[rfc7239] http.headers.Forwarded - The example looks incorrect](https://github.com/mdn/content/issues/6470) (2021-06-29T21:03:09Z)
-  
 * [[rfc7232] Issue with "If-None-Match": (short summary here please)](https://github.com/mdn/content/issues/4343) (2021-04-21T13:02:54Z)
   
