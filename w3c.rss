@@ -4,10 +4,36 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Tue, 13 Jul 2021 13:35:32 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 15 Jul 2021 10:29:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[uievents] Issue with "KeyboardEvent.metaKey": I don't think this works on Firefox but is marked as compatible]]></title>
+            <link>https://github.com/mdn/content/issues/6918</link>
+            <guid>https://github.com/mdn/content/issues/6918</guid>
+            <pubDate>Thu, 15 Jul 2021 10:29:35 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/metaKey">https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/metaKey</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>Under broswer compatibility, Firefox gets a "yes". However, Firefox never returns MetaKey</p>
+<h4>Specific section or headline?</h4>
+<p>"Browser compatibility"</p>
+<h4>What did you expect to see?</h4>
+<p>"Firefox: No"</p>
+<h4>Did you test this? If so, how?</h4>
+<p>On my firesfox browser I try to pick up meta key presses (using the Windows key in combination with alt) and it never shows that metaKey is pressed, instead showing that alt is pressed with a code="OSLeft", key="OS"</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/keyboardevent/metakey</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/metaKey" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/metaKey</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/keyboardevent/metakey/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/keyboardevent/metakey/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/496619dff5c263692bc1ecddbf80541d51b784dc/hovercard" href="https://github.com/mdn/content/commit/496619dff5c263692bc1ecddbf80541d51b784dc"><tt>496619d</tt></a></li>
+<li>Document last modified: 2021-06-14T00:31:40.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator]]></title>
             <link>https://github.com/mdn/content/issues/6856</link>

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[uievents] Issue with "KeyboardEvent.metaKey": I don't think this works on Firefox but is marked as compatible](https://github.com/mdn/content/issues/6918) (2021-07-15T10:29:35Z)
+  
 * [[service-workers-1, push-api] Issue with "ServiceWorkerRegistration": description for updateViaCache is missing](https://github.com/mdn/content/issues/6729) (2021-07-09T12:06:19Z)
   
 * [[uievents] Issue with "MouseEvent.ctrlKey": 'command' instead of 'control' for Mac keyboards](https://github.com/mdn/content/issues/6624) (2021-07-06T12:40:16Z)

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[uievents] Issue with "KeyboardEvent.metaKey": I don't think this works on Firefox but is marked as compatible](https://github.com/mdn/content/issues/6918) (2021-07-15T10:29:35Z)
+  
 * [[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator](https://github.com/mdn/content/issues/6856) (2021-07-13T13:35:32Z)
   
 * [[css-images-3] Issue with "image-orientation": is the whole thing deprecated?](https://github.com/mdn/content/issues/6820) (2021-07-12T19:01:46Z)
