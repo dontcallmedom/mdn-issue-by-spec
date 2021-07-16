@@ -9,6 +9,17 @@
     },
     "items": [
         {
+            "id": "https://github.com/mdn/content/issues/6986",
+            "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink\">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink</a></p>\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<p>Two \"Specifications\" sections</p>\n<h4>Specific section or headline?</h4>\n<p>\"Specifications\"</p>\n<h4>What did you expect to see?</h4>\n<p>Only 1.</p>\n<h4>Did you test this? If so, how?</h4>\n<p>Viewed it.</p>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul>\n<li>Folder: <code>en-us/web/html/element/blink</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/html/element/blink/index.html\">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/blink/index.html</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/8d28de329fc4f723ad4362f0f703e46c4fa9e32d/hovercard\" href=\"https://github.com/mdn/content/commit/8d28de329fc4f723ad4362f0f703e46c4fa9e32d\"><tt>8d28de3</tt></a></li>\n<li>Document last modified: 2021-06-02T17:52:41.000Z</li>\n</ul>\n</details>",
+            "url": "https://github.com/mdn/content/issues/6986",
+            "title": "[html] Issue with \"<blink>: The Blinking Text element\": Two \"Specifications\" sections",
+            "date_modified": "2021-07-16T21:10:14.000Z",
+            "author": {
+                "name": "peterbe",
+                "url": "https://github.com/peterbe"
+            }
+        },
+        {
             "id": "https://github.com/mdn/content/issues/6970",
             "content_html": "<h2>What page(s) did you find the problem on?</h2>\n<p><a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams\">https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams</a></p>\n<h2>Specific page section or heading?</h2>\n<p>Parameters</p>\n<h2>What is the problem?</h2>\n<p>new URLSearchParams() also takes a FormData object as a parameter, which is not documented.</p>\n<h2>What did you expect to see?</h2>\n<p>Documentation what the init parameter can take.<br>\nMaybe I misunderstand something and the FormData type is a sequence of USVString pairs?<br>\nBut still this example code (down here) could be included.</p>\n<h2>Did you test this? If so, how?</h2>\n<p>You can use it that way to build a query string out of the FormData object.<br>\nThis works:</p>\n<div class=\"snippet-clipboard-content position-relative\" data-snippet-clipboard-copy-content=\"const form = document.querySelect(&quot;form&quot;);\nconst formData = new FormData(form);\nconst urlParams = new URLSearchParams(formData);\nconst queryString = urlParams.toString();\n\n\"><pre><code>const form = document.querySelect(\"form\");\nconst formData = new FormData(form);\nconst urlParams = new URLSearchParams(formData);\nconst queryString = urlParams.toString();\n\n</code></pre></div>",
             "url": "https://github.com/mdn/content/issues/6970",
