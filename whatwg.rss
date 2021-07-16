@@ -4,10 +4,40 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Tue, 13 Jul 2021 13:35:32 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 16 Jul 2021 11:35:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[url] Content bug: Possible parameters for URLSearchParams()]]></title>
+            <link>https://github.com/mdn/content/issues/6970</link>
+            <guid>https://github.com/mdn/content/issues/6970</guid>
+            <pubDate>Fri, 16 Jul 2021 11:35:35 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams">https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams</a></p>
+<h2>Specific page section or heading?</h2>
+<p>Parameters</p>
+<h2>What is the problem?</h2>
+<p>new URLSearchParams() also takes a FormData object as a parameter, which is not documented.</p>
+<h2>What did you expect to see?</h2>
+<p>Documentation what the init parameter can take.<br>
+Maybe I misunderstand something and the FormData type is a sequence of USVString pairs?<br>
+But still this example code (down here) could be included.</p>
+<h2>Did you test this? If so, how?</h2>
+<p>You can use it that way to build a query string out of the FormData object.<br>
+This works:</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="const form = document.querySelect(&quot;form&quot;);
+const formData = new FormData(form);
+const urlParams = new URLSearchParams(formData);
+const queryString = urlParams.toString();
+
+"><pre><code>const form = document.querySelect("form");
+const formData = new FormData(form);
+const urlParams = new URLSearchParams(formData);
+const queryString = urlParams.toString();
+
+</code></pre></div>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator]]></title>
             <link>https://github.com/mdn/content/issues/6856</link>
