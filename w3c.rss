@@ -16,7 +16,7 @@
             <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFileHandle">https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFileHandle</a></p>
 <h4>What information was incorrect, unhelpful, or incomplete?</h4>
 <p>getTheFile() function is incomeplete.</p>
-<p>It will accept pickerOpts as an argument, which is missing. Otherwise will get</p>
+<p>It will accept pickerOpts as an argument, which is missing or declare <strong>pickerOpts</strong>. Otherwise will get</p>
 <blockquote>
 <p>ReferenceError: pickerOpts is not defined</p>
 </blockquote>
@@ -54,9 +54,49 @@ The following asynchronous function presents a file picker and once a file is ch
   const fileData = await fileHandle.getFile();
 }
 </code></pre></div>
+<p>or</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="const pickerOpts = {
+  types: [
+    {
+      description: 'Images',
+      accept: {
+        'image/*': ['.png', '.gif', '.jpeg', '.jpg']
+      }
+    },
+  ],
+  excludeAcceptAllOption: true,
+  multiple: false
+};
+async function getTheFile() {
+  // open file picker
+  [fileHandle] = await window.showOpenFilePicker(pickerOpts);
+
+  // get file contents
+  const fileData = await fileHandle.getFile();
+}
+"><pre><code>const pickerOpts = {
+  types: [
+    {
+      description: 'Images',
+      accept: {
+        'image/*': ['.png', '.gif', '.jpeg', '.jpg']
+      }
+    },
+  ],
+  excludeAcceptAllOption: true,
+  multiple: false
+};
+async function getTheFile() {
+  // open file picker
+  [fileHandle] = await window.showOpenFilePicker(pickerOpts);
+
+  // get file contents
+  const fileData = await fileHandle.getFile();
+}
+</code></pre></div>
 <h4>Did you test this? If so, how?</h4>
 <p>Tried passing argument as below:</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="		                async function getTheFile() {
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="		                async function getTheFile(pickerOpts) {
 			                [fileHandle] = await window.showOpenFilePicker(pickerOpts);
 			                const fileData = await fileHandle.getFile();
 			                const contents = await fileData.text();
@@ -71,7 +111,7 @@ The following asynchronous function presents a file picker and once a file is ch
 					        excludeAcceptAllOption: true,
 				        });
                                }
-"><pre><code>		                async function getTheFile() {
+"><pre><code>		                async function getTheFile(pickerOpts) {
 			                [fileHandle] = await window.showOpenFilePicker(pickerOpts);
 			                const fileData = await fileHandle.getFile();
 			                const contents = await fileData.text();
