@@ -4,10 +4,86 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Sat, 03 Jul 2021 11:47:14 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 16 Jul 2021 02:13:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "new operator": Messed up formatting on one page]]></title>
+            <link>https://github.com/mdn/content/issues/6953</link>
+            <guid>https://github.com/mdn/content/issues/6953</guid>
+            <pubDate>Fri, 16 Jul 2021 02:13:46 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<blockquote>
+<p>Creating a user-defined object requires two steps:</p>
+<ol>
+<li>Define the object type by writing a function that specifies its name and properties. For example, a constructor function to  create an object <code>Foo</code> might look like this:</li>
+</ol>
+<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="function Foo(bar1, bar2) {
+      this.bar1 = bar1;
+      this.bar2 = bar2;
+    }
+"><pre><span class="pl-k">function</span> <span class="pl-v">Foo</span><span class="pl-kos">(</span><span class="pl-s1">bar1</span><span class="pl-kos">,</span> <span class="pl-s1">bar2</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+      <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">bar1</span> <span class="pl-c1">=</span> <span class="pl-s1">bar1</span><span class="pl-kos">;</span>
+      <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">bar2</span> <span class="pl-c1">=</span> <span class="pl-s1">bar2</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span></pre></div>
+</blockquote>
+<h4>Specific section or headline?</h4>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new#description" rel="nofollow">#description</a><br>
+<div class="border rounded-1 my-2">
+  <div class="f6 px-3 py-2 lh-condensed border-bottom color-bg-secondary">
+    <p class="mb-0 text-bold">
+      <a href="https://github.com/mdn/content/blob/1f4efe144bc9c2aad70d8aae3ed2f25d4da9a864/files/en-us/web/javascript/reference/operators/new/index.html#L55-L58">content/files/en-us/web/javascript/reference/operators/new/index.html</a>
+    </p>
+    <p class="mb-0 color-text-tertiary">
+        Lines 55 to 58
+      in
+      <a data-pjax="true" class="commit-tease-sha" href="/mdn/content/commit/1f4efe144bc9c2aad70d8aae3ed2f25d4da9a864">1f4efe1</a>
+    </p>
+    </div>
+    <div itemprop="text" class="blob-wrapper blob-wrapper-embedded data">
+    <table class="highlight tab-size mb-0 js-file-line-container" data-tab-size="8" data-paste-markdown-skip="">
+
+        <tbody><tr class="border-0">
+          <td id="L55" class="blob-num border-0 px-3 py-0 color-bg-primary js-line-number" data-line-number="55"></td>
+          <td id="LC55" class="blob-code border-0 px-3 py-0 color-bg-primary blob-code-inner js-file-line"> <span class="pl-kos">&lt;</span><span class="pl-ent">pre</span> <span class="pl-c1">class</span>="<span class="pl-s">brush: js</span>"<span class="pl-kos">&gt;</span>function Foo(bar1, bar2) { </td>
+        </tr>
+
+        <tr class="border-0">
+          <td id="L56" class="blob-num border-0 px-3 py-0 color-bg-primary js-line-number" data-line-number="56"></td>
+          <td id="LC56" class="blob-code border-0 px-3 py-0 color-bg-primary blob-code-inner js-file-line">   this.bar1 = bar1; </td>
+        </tr>
+
+        <tr class="border-0">
+          <td id="L57" class="blob-num border-0 px-3 py-0 color-bg-primary js-line-number" data-line-number="57"></td>
+          <td id="LC57" class="blob-code border-0 px-3 py-0 color-bg-primary blob-code-inner js-file-line">   this.bar2 = bar2; </td>
+        </tr>
+
+        <tr class="border-0">
+          <td id="L58" class="blob-num border-0 px-3 py-0 color-bg-primary js-line-number" data-line-number="58"></td>
+          <td id="LC58" class="blob-code border-0 px-3 py-0 color-bg-primary blob-code-inner js-file-line"> }<span class="pl-kos">&lt;/</span><span class="pl-ent">pre</span><span class="pl-kos">&gt;</span> </td>
+        </tr>
+    </tbody></table>
+  </div>
+</div>
+</p>
+<h4>What did you expect to see?</h4>
+<p>Normally formatted code that is consistent with the rest of the page</p>
+<h4>Did you test this? If so, how?</h4>
+<p>...</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/operators/new</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/new/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/new/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/1b532dac595c32a6f2dae046022c9ee75d206ef1/hovercard" href="https://github.com/mdn/content/commit/1b532dac595c32a6f2dae046022c9ee75d206ef1"><tt>1b532da</tt></a></li>
+<li>Document last modified: 2021-07-03T16:22:48.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Issue with "isNaN()": Regarding the argumentation of the section "The necessity of an isNaN function"]]></title>
             <link>https://github.com/mdn/content/issues/6551</link>
