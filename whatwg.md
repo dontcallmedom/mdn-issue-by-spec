@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] Issue with "<blink>: The Blinking Text element": Two "Specifications" sections](https://github.com/mdn/content/issues/6986) (2021-07-16T21:10:14Z)
-  
 * [[url] Content bug: Possible parameters for URLSearchParams()](https://github.com/mdn/content/issues/6970) (2021-07-16T11:35:35Z)
   
 * [[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator](https://github.com/mdn/content/issues/6856) (2021-07-13T13:35:32Z)
