@@ -4,10 +4,40 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Fri, 16 Jul 2021 11:35:35 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 17 Jul 2021 15:16:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Issue with "<var>: The Variable element": (short summary here please)]]></title>
+            <link>https://github.com/mdn/content/issues/6996</link>
+            <guid>https://github.com/mdn/content/issues/6996</guid>
+            <pubDate>Sat, 17 Jul 2021 15:16:27 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The example of overriding the browsers' applying the "italic" font-style to <var> by default looks like it's been copied and pasted from the later example of overriding the default styling of <var> (but keeping the italics).</var></var></p>
+<h4>Specific section or headline?</h4>
+<p>The wrong example is in Usage notes &gt; Default style</p>
+<p>The source example comes from Examples &gt; Overriding the default style</p>
+<h4>What did you expect to see?</h4>
+<p>Something like:</p>
+<p>var {<br>
+font-style: normal;<br>
+}</p>
+<h4>Did you test this? If so, how?</h4>
+<p>n/a</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/html/element/var</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/var/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/var/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/8d28de329fc4f723ad4362f0f703e46c4fa9e32d/hovercard" href="https://github.com/mdn/content/commit/8d28de329fc4f723ad4362f0f703e46c4fa9e32d"><tt>8d28de3</tt></a></li>
+<li>Document last modified: 2021-06-02T17:52:41.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[url] Content bug: Possible parameters for URLSearchParams()]]></title>
             <link>https://github.com/mdn/content/issues/6970</link>
