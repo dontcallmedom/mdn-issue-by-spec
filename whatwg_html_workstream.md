@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] Issue with "<var>: The Variable element": (short summary here please)](https://github.com/mdn/content/issues/6996) (2021-07-17T15:16:27Z)
+* [[html] Issue with "<var>: The Variable element": wrong example used](https://github.com/mdn/content/issues/6996) (2021-07-17T15:16:27Z)
   
 * [[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator](https://github.com/mdn/content/issues/6856) (2021-07-13T13:35:32Z)
   
