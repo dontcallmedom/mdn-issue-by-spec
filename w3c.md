@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[webaudio] Content bug: an formula broken](https://github.com/mdn/content/issues/7008) (2021-07-18T10:57:02Z)
+  
 * [[FileAPI] Issue with "FileReader.onerror": (Incomplete/Irrelevant Comment)](https://github.com/mdn/content/issues/6991) (2021-07-17T06:28:11Z)
   
 * [[file-system-access] Issue with "FileSystemFileHandle": (getTheFile() async function argument)](https://github.com/mdn/content/issues/6984) (2021-07-16T19:44:59Z)
