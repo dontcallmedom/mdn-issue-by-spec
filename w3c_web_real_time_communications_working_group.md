@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Real-Time Communications Working Group. [![RSS feed for W3C Web Real-Time Communications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[webrtc] Issue with "RTCPeerConnection": Methods section missing addTransceiver](https://github.com/mdn/content/issues/6962) (2021-07-16T09:17:19Z)
-  
 * [[ecmascript, mediacapture-streams] Globally replace console.log() calls in all cases where console.error() should be used instead](https://github.com/mdn/content/issues/6117) (2021-06-18T17:07:45Z)
   
 * [[mediacapture-streams] Issue with "MediaStreamTrack: ended event": (short summary here please)](https://github.com/mdn/content/issues/4939) (2021-05-12T10:02:23Z)

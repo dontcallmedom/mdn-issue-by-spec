@@ -6,8 +6,6 @@
   
 * [[file-system-access] Issue with "FileSystemFileHandle": (getTheFile() async function argument)](https://github.com/mdn/content/issues/6984) (2021-07-16T19:44:59Z)
   
-* [[webrtc] Issue with "RTCPeerConnection": Methods section missing addTransceiver](https://github.com/mdn/content/issues/6962) (2021-07-16T09:17:19Z)
-  
 * [[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator](https://github.com/mdn/content/issues/6856) (2021-07-13T13:35:32Z)
   
 * [[css-images-3] Issue with "image-orientation": is the whole thing deprecated?](https://github.com/mdn/content/issues/6820) (2021-07-12T19:01:46Z)
