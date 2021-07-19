@@ -86,17 +86,6 @@
             }
         },
         {
-            "id": "https://github.com/mdn/content/issues/3356",
-            "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest\">https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest</a></p>\n<p>please describe onupgradeneeded event because that exist on <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest\">https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest</a></p>",
-            "url": "https://github.com/mdn/content/issues/3356",
-            "title": "[IndexedDB-3] Issue with \"IDBRequest\": please describe onupgradeneeded event",
-            "date_modified": "2021-03-22T10:34:18.000Z",
-            "author": {
-                "name": "rootflood",
-                "url": "https://github.com/rootflood"
-            }
-        },
-        {
             "id": "https://github.com/mdn/content/issues/2309",
             "content_html": "<h1>Request type</h1>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Please close this issue, I accidentally submitted it without adding any details</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> New documentation</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Correction or update</li>\n</ul>\n<h1>Details</h1>\n<p>According to <a href=\"https://www.w3.org/TR/uievents/#event-type-focusin\" rel=\"nofollow\">W3C documentation on UI events</a>, the main feature of <code>focusin</code> and <code>focusout</code> events is that the <code>relatedTarget</code> property is set to the corresponding counter-element in the <code>FocusEvent</code> argument of these two events, whereas with <code>focus</code> and <code>blur</code> events, the <code>relatedTarget</code> property is always null.</p>\n<p>Shouldn't this important feature be mentioned in the docs of the corresponding MDN help pages?</p>\n<p><a href=\"https://www.google.com/search?q=blur+relatedtarget\" rel=\"nofollow\">Many people wonder</a> why the <code>relatedTarget</code> property is always <code>null</code> when they listen to <code>focus</code>/<code>blur</code>, not knowing there are <code>focusin</code>/<code>focusout</code> events available.</p>\n<p>I'd like to suggest to add this information (and \"see also\" references between these four events) to the corresponding MDN pages.</p>\n<h1>Related Pages on MDN</h1>\n<p><a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/Element/focusin_event\">https://developer.mozilla.org/en-US/docs/Web/API/Element/focusin_event</a><br>\n<a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/Element/focusout_event\">https://developer.mozilla.org/en-US/docs/Web/API/Element/focusout_event</a><br>\n<a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/Element/focus_event\">https://developer.mozilla.org/en-US/docs/Web/API/Element/focus_event</a><br>\n<a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event\">https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event</a></p>",
             "url": "https://github.com/mdn/content/issues/2309",

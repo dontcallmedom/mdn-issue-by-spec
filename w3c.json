@@ -482,17 +482,6 @@
             }
         },
         {
-            "id": "https://github.com/mdn/content/issues/3356",
-            "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest\">https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest</a></p>\n<p>please describe onupgradeneeded event because that exist on <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest\">https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest</a></p>",
-            "url": "https://github.com/mdn/content/issues/3356",
-            "title": "[IndexedDB-3] Issue with \"IDBRequest\": please describe onupgradeneeded event",
-            "date_modified": "2021-03-22T10:34:18.000Z",
-            "author": {
-                "name": "rootflood",
-                "url": "https://github.com/rootflood"
-            }
-        },
-        {
             "id": "https://github.com/mdn/content/issues/3276",
             "content_html": "<p>This came out of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"832622875\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/3180\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/3180/hovercard\" href=\"https://github.com/mdn/content/pull/3180\">#3180</a> .</p>\n<p>In the <code>ResizeObserver</code> API, the <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserverEntry/contentBoxSize\" rel=\"nofollow\"><code>ResizeObserverEntry.contentBoxSize</code></a> is an <a href=\"https://drafts.csswg.org/resize-observer/#dom-resizeobserverentry-contentboxsize\" rel=\"nofollow\">array of contentrects according to the specification</a>, but in Firefox it is implemented as a single contentrect (Firefox bug: <a rel=\"nofollow\" href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1689645\">https://bugzilla.mozilla.org/show_bug.cgi?id=1689645</a>).</p>\n<p>This isn't really documented anywhere. These pages use example code from dom-examples: <a href=\"https://mdn.github.io/dom-examples/resize-observer/resize-observer-text.html\" rel=\"nofollow\">one of these examples</a> has code to handle this difference, but <a href=\"https://mdn.github.io/dom-examples/resize-observer/resize-observer-border-radius.html\" rel=\"nofollow\">the other one doesn't</a> and will not work in Chrome.</p>\n<p>The page for <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserverEntry/contentBoxSize\" rel=\"nofollow\"><code>ResizeObserverEntry.contentBoxSize</code></a> is confusing: the intro paragraph says it's an array, but the \"Values\" section implies it's a single object.</p>\n<p>There's no mention of the Firefox incompatibility in BCD.</p>\n<p>We should:</p>\n<ul>\n<li>document the incompatibility in BCD</li>\n<li>make all examples, both in dom-examples and in the code samples pasted into MDN, work in both Firefox and Chrome</li>\n<li>make sure the MDN pages correctly document the standard</li>\n</ul>\n<p>I'm uncertain whether we should also include extra text in the MDN pages about the Firefox incompatibility. As a rule I think MDN should document the standard and leave browser incompatibilities to BCD. But maybe this is a significant enough thing that we should call it out in the docs pages.</p>",
             "url": "https://github.com/mdn/content/issues/3276",

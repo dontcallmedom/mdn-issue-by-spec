@@ -88,8 +88,6 @@
   
 * [[css-align-3] The "place-items" demo is confusing and therefore appears broken](https://github.com/mdn/content/issues/3427) (2021-03-24T02:36:56Z)
   
-* [[IndexedDB-3] Issue with "IDBRequest": please describe onupgradeneeded event](https://github.com/mdn/content/issues/3356) (2021-03-22T10:34:18Z)
-  
 * [[resize-observer-1] Document ResizeObserver compat](https://github.com/mdn/content/issues/3276) (2021-03-18T17:24:21Z)
   
 * [[svg-animations] Issue with "<set>": Seems to work with Firefox](https://github.com/mdn/content/issues/3231) (2021-03-17T14:52:27Z)
