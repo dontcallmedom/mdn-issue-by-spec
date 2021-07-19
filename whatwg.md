@@ -4,8 +4,6 @@
 
 * [[html] Issue with "<var>: The Variable element": wrong example used](https://github.com/mdn/content/issues/6996) (2021-07-17T15:16:27Z)
   
-* [[url] Content bug: Possible parameters for URLSearchParams()](https://github.com/mdn/content/issues/6970) (2021-07-16T11:35:35Z)
-  
 * [[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator](https://github.com/mdn/content/issues/6856) (2021-07-13T13:35:32Z)
   
 * [[html] Issue with "Window.requestAnimationFrame()": Example does not demonstrate description in text](https://github.com/mdn/content/issues/6746) (2021-07-10T04:43:00Z)
