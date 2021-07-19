@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Issue with "HTMLCanvasElement.toBlob()": (minor: docs do not list supported image types, nor mention fallback)](https://github.com/mdn/content/issues/7020) (2021-07-19T02:04:16Z)
+  
 * [[html] Issue with "<var>: The Variable element": wrong example used](https://github.com/mdn/content/issues/6996) (2021-07-17T15:16:27Z)
   
 * [[url] Content bug: Possible parameters for URLSearchParams()](https://github.com/mdn/content/issues/6970) (2021-07-16T11:35:35Z)

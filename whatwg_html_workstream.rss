@@ -4,10 +4,36 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Sat, 17 Jul 2021 15:16:27 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 19 Jul 2021 02:04:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Issue with "HTMLCanvasElement.toBlob()": (minor: docs do not list supported image types, nor mention fallback)]]></title>
+            <link>https://github.com/mdn/content/issues/7020</link>
+            <guid>https://github.com/mdn/content/issues/7020</guid>
+            <pubDate>Mon, 19 Jul 2021 02:04:16 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob">https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The section on the second argument (mimeType) does not mention that if the requested type is not supported, the fallback is "png".</p>
+<h4>Specific section or headline?</h4>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob#parameters">https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob#parameters</a></p>
+<h4>What did you expect to see?</h4>
+<p>A mention of the fact that various browsers will support different sets of types here, and that if the requested one is not supported it will fall back to png.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>Wrote a script that will try various conversion types on various browsers.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/htmlcanvaselement/toblob</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlcanvaselement/toblob/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlcanvaselement/toblob/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/106d7e1dfcd4068ff15b6c1cd887b7e4077701e7/hovercard" href="https://github.com/mdn/content/commit/106d7e1dfcd4068ff15b6c1cd887b7e4077701e7"><tt>106d7e1</tt></a></li>
+<li>Document last modified: 2021-06-13T08:47:42.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Issue with "<var>: The Variable element": wrong example used]]></title>
             <link>https://github.com/mdn/content/issues/6996</link>
