@@ -8,8 +8,6 @@
   
 * [[mediacapture-streams] Issue with "MediaDevices": (short summary here please)](https://github.com/mdn/content/issues/7125) (2021-07-21T12:22:21Z)
   
-* [[wai-aria-1.2] Element.ariaHasPopup: Values not recognised by screen readers](https://github.com/mdn/content/issues/7102) (2021-07-20T20:47:01Z)
-  
 * [[FileAPI] Issue with "FileReader.onerror": (Incomplete/Irrelevant Comment)](https://github.com/mdn/content/issues/6991) (2021-07-17T06:28:11Z)
   
 * [[file-system-access] Issue with "FileSystemFileHandle": (getTheFile() async function argument)](https://github.com/mdn/content/issues/6984) (2021-07-16T19:44:59Z)
