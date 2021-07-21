@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] Issue with "<var>: The Variable element": wrong example used](https://github.com/mdn/content/issues/6996) (2021-07-17T15:16:27Z)
-  
 * [[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator](https://github.com/mdn/content/issues/6856) (2021-07-13T13:35:32Z)
   
 * [[dom, selectors-4] Content suggestion: Example of :scope in element.querySelector()](https://github.com/mdn/content/issues/6676) (2021-07-08T12:03:13Z)
