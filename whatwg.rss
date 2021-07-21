@@ -4,10 +4,47 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Tue, 13 Jul 2021 13:35:32 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 21 Jul 2021 13:11:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Content bug: Mention that the `formdata` event allows modifying the form payload]]></title>
+            <link>https://github.com/mdn/content/issues/7129</link>
+            <guid>https://github.com/mdn/content/issues/7129</guid>
+            <pubDate>Wed, 21 Jul 2021 13:11:27 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/FormDataEvent">https://developer.mozilla.org/en-US/docs/Web/API/FormDataEvent</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects#using_a_formdata_event">https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects#using_a_formdata_event</a></p>
+
+<h2>What is the problem?</h2>
+<p>The descriptions of the <code>formdata</code> event mention it as a way to "quickly" obtain a <code>FormData</code> object with the same form entries that are being submitted. It fails to mention that modifications to the obtained <code>FormData</code> object from inside the event listener will affect the submitted form payload.</p>
+
+<h2>What did you expect to see?</h2>
+<p>Text mentioning that it's possible to modify the form payload in this way.</p>
+
+<h2>Did you test this? If so, how?</h2>
+<div class="highlight highlight-text-html-basic position-relative" data-snippet-clipboard-copy-content="&lt;form id=&quot;form&quot; action=&quot;&quot; method=&quot;GET&quot;&gt;
+&lt;p&gt;&lt;input type=&quot;submit&quot;&gt;&lt;/p&gt;
+&lt;/form&gt;
+
+&lt;script&gt;
+  document.getElementById(&quot;form&quot;).addEventListener(&quot;formdata&quot;, (evt) =&gt; {
+    evt.formData.append(&quot;a&quot;, &quot;b&quot;);
+  });
+&lt;/script&gt;
+"><pre><span class="pl-kos">&lt;</span><span class="pl-ent">form</span> <span class="pl-c1">id</span>="<span class="pl-s">form</span>" <span class="pl-c1">action</span>="" <span class="pl-c1">method</span>="<span class="pl-s">GET</span>"<span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">input</span> <span class="pl-c1">type</span>="<span class="pl-s">submit</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">form</span><span class="pl-kos">&gt;</span>
+
+<span class="pl-kos">&lt;</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span>
+  <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">getElementById</span><span class="pl-kos">(</span><span class="pl-s">"form"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"formdata"</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-s1">evt</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+    <span class="pl-s1">evt</span><span class="pl-kos">.</span><span class="pl-c1">formData</span><span class="pl-kos">.</span><span class="pl-en">append</span><span class="pl-kos">(</span><span class="pl-s">"a"</span><span class="pl-kos">,</span> <span class="pl-s">"b"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span></pre></div>
+<p>If the HTML above is served at, say, <a rel="nofollow" href="http://example.com/index.html">http://example.com/index.html</a>, clicking the submit button in browsers that support the <code>formdata</code> event will navigate to <a rel="nofollow" href="http://example.com/index.html?a=b">http://example.com/index.html?a=b</a> rather than to <a rel="nofollow" href="http://example.com/index.html?">http://example.com/index.html?</a>.</p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator]]></title>
             <link>https://github.com/mdn/content/issues/6856</link>
