@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[mediacapture-streams] Issue with "MediaDevices": (short summary here please)](https://github.com/mdn/content/issues/7125) (2021-07-21T12:22:21Z)
+  
 * [[wai-aria-1.2] Element.ariaHasPopup: Values not recognised by screen readers](https://github.com/mdn/content/issues/7102) (2021-07-20T20:47:01Z)
   
 * [[FileAPI] Issue with "FileReader.onerror": (Incomplete/Irrelevant Comment)](https://github.com/mdn/content/issues/6991) (2021-07-17T06:28:11Z)

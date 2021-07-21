@@ -4,10 +4,72 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Tue, 20 Jul 2021 20:47:01 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 21 Jul 2021 12:22:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[mediacapture-streams] Issue with "MediaDevices": (short summary here please)]]></title>
+            <link>https://github.com/mdn/content/issues/7125</link>
+            <guid>https://github.com/mdn/content/issues/7125</guid>
+            <pubDate>Wed, 21 Jul 2021 12:22:21 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices">https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The example used in this page throws an exception avoiding the written exceptions expected when an error occurs.</p>
+<h4>Specific section or headline?</h4>
+<p>I get the following on the console: Uncaught (in promise) TypeError: Cannot read property 'innerHTML' of null<br>
+at errorMsg</p>
+<h4>What did you expect to see?</h4>
+<p>The set of error defined from the catch:</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="if (error.name === &quot;ConstraintNotSatisfiedError&quot;) {
+          errorMsg(
+            &quot;The resolution &quot; +
+              constraints.video.width.exact +
+              &quot;x&quot; +
+              constraints.video.height.exact +
+              &quot; px is not supported by your device.&quot;
+          );
+        } else if (error.name === &quot;PermissionDeniedError&quot;) {
+          errorMsg(
+            &quot;Permissions have not been granted to use your camera and &quot; +
+              &quot;microphone, you need to allow the page access to your devices in &quot; +
+              &quot;order for the demo to work.&quot;
+          );
+        }
+        errorMsg(&quot;getUserMedia error: &quot; + error.name, error);
+      });
+"><pre><code>if (error.name === "ConstraintNotSatisfiedError") {
+          errorMsg(
+            "The resolution " +
+              constraints.video.width.exact +
+              "x" +
+              constraints.video.height.exact +
+              " px is not supported by your device."
+          );
+        } else if (error.name === "PermissionDeniedError") {
+          errorMsg(
+            "Permissions have not been granted to use your camera and " +
+              "microphone, you need to allow the page access to your devices in " +
+              "order for the demo to work."
+          );
+        }
+        errorMsg("getUserMedia error: " + error.name, error);
+      });
+</code></pre></div>
+<h4>Did you test this? If so, how?</h4>
+<p>I tried to run a different message with an else in the case the error the catch was looking was not found but the exception persists. I understand it has to do with the innerHTML not being defined. What I don't understand is why is it -null-...</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/mediadevices</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/mediadevices/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/mediadevices/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/51a70c224f882429168119989ea19ac3aeb60a02/hovercard" href="https://github.com/mdn/content/commit/51a70c224f882429168119989ea19ac3aeb60a02"><tt>51a70c2</tt></a></li>
+<li>Document last modified: 2021-06-14T11:27:10.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[wai-aria-1.2] Element.ariaHasPopup: Values not recognised by screen readers]]></title>
             <link>https://github.com/mdn/content/issues/7102</link>
