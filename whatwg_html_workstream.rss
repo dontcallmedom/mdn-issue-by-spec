@@ -4,10 +4,34 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Wed, 21 Jul 2021 13:11:27 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 21 Jul 2021 22:09:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Issue with "<form>": describe running javascript on submit: `onsubmit` and javascript pseudo-protocol]]></title>
+            <link>https://github.com/mdn/content/issues/7142</link>
+            <guid>https://github.com/mdn/content/issues/7142</guid>
+            <pubDate>Wed, 21 Jul 2021 22:09:52 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>I have been reading Stack Overflow for solutions to have a form run run javascript without refreshing the page. This is achieved by returning a javascript function in <code>onsubmit</code>, then the javascript function has to return false? <a rel="nofollow" href="https://stackoverflow.com/a/16262814">https://stackoverflow.com/a/16262814</a></p>
+<p>Also there is a method to do <code>action="javascript:function()"</code> that probably should be documented.</p>
+<p>There is also the solutions here <a rel="nofollow" href="https://stackoverflow.com/questions/12694984/make-form-run-a-javascript-function?noredirect=1&amp;lq=1">https://stackoverflow.com/questions/12694984/make-form-run-a-javascript-function?noredirect=1&amp;lq=1</a></p>
+<h4>Specific section or headline?</h4>
+<p>Attributes?</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/html/element/form</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/form/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/form/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/29af89a39b0da88877431c71e6c8de10e1dfb402/hovercard" href="https://github.com/mdn/content/commit/29af89a39b0da88877431c71e6c8de10e1dfb402"><tt>29af89a</tt></a></li>
+<li>Document last modified: 2021-06-30T01:12:54.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Content bug: Mention that the `formdata` event allows modifying the form payload]]></title>
             <link>https://github.com/mdn/content/issues/7129</link>
