@@ -20,3 +20,5 @@
   
 * [[dom] Issue with "Event.preventDefault()": displayWarning() example doesn't work with autofill](https://github.com/mdn/content/issues/1637) (2021-01-22T19:23:00Z)
   
+* [[dom] https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection - Left column lists incorrect properties and methods.](https://github.com/mdn/content/issues/7161) (2020-09-28T19:22:47Z)
+  
