@@ -9,17 +9,6 @@
     },
     "items": [
         {
-            "id": "https://github.com/mdn/content/issues/7141",
-            "content_html": "<h2>What page(s) did you find the problem on?</h2>\n<p><a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/PeriodicWave\">https://developer.mozilla.org/en-US/docs/Web/API/PeriodicWave</a></p>\n<h2>Specific page section or heading?</h2>\n<p>Example</p>\n<h2>What is the problem?</h2>\n<p>AudioContext.createPeriodicWave()</p>\n<p>Its link goes to <strong>Base</strong>AudioContext/createPeriodicWave#example.</p>\n<h2>What did you expect to see?</h2>\n<p>AudioContext.createPeriodicWave()<br>\n→<br>\nBaseAudioContext.createPeriodicWave()</p>\n<h2>Did you test this? If so, how?</h2>",
-            "url": "https://github.com/mdn/content/issues/7141",
-            "title": "[webaudio] Content bug: wrong word",
-            "date_modified": "2021-07-21T21:23:16.000Z",
-            "author": {
-                "name": "logic-finder",
-                "url": "https://github.com/logic-finder"
-            }
-        },
-        {
             "id": "https://github.com/mdn/content/issues/7138",
             "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register\">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register</a></p>\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<p>I assumed (wrongly) from this that registering an already-registered worker would be a no-op. It turns out that it at least causes a network request for the worker, and that request doesn't go via the cache even if you have <code>updateViaCache: 'all'</code> (which makes sense). So regardless of your update mode, not checking for an existing registration will cause extra server load.</p>\n<h4>Specific section or headline?</h4>\n<blockquote>\n<p>You can call this method unconditionally from the controlled page. I.e., you don't need to first check whether there's an active registration.</p>\n</blockquote>\n<h4>What did you expect to see?</h4>\n<p>More detailed info about why I might <em>want</em> to check for an existing registration, even if I don't <em>need</em> to.</p>\n<h4>Did you test this? If so, how?</h4>\n<p>Yes, looking at request headers in Fiddler.</p>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul>\n<li>Folder: <code>en-us/web/api/serviceworkercontainer/register</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkercontainer/register/index.html\">https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkercontainer/register/index.html</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/642d6eb7feb73e17cfc1ef61d3d09c2d200e65ca/hovercard\" href=\"https://github.com/mdn/content/commit/642d6eb7feb73e17cfc1ef61d3d09c2d200e65ca\"><tt>642d6eb</tt></a></li>\n<li>Document last modified: 2021-06-17T03:52:55.000Z</li>\n</ul>\n</details>",
             "url": "https://github.com/mdn/content/issues/7138",

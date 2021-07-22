@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[webaudio] Content bug: wrong word](https://github.com/mdn/content/issues/7141) (2021-07-21T21:23:16Z)
-  
 * [[service-workers-1] Issue with "ServiceWorkerContainer.register()": may be advisable to check for an existing registration](https://github.com/mdn/content/issues/7138) (2021-07-21T16:35:44Z)
   
 * [[mediacapture-streams] Issue with "MediaDevices": (short summary here please)](https://github.com/mdn/content/issues/7125) (2021-07-21T12:22:21Z)
