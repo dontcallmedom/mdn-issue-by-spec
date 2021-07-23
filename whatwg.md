@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Issue with "Path2D": Experimental notice should be gone.](https://github.com/mdn/content/issues/7208) (2021-07-23T21:18:51Z)
+  
 * [[html] Issue with "HTMLImageElement.srcset": Broken image link at end of document](https://github.com/mdn/content/issues/7201) (2021-07-23T14:06:00Z)
   
 * [[html] Issue with "<datalist>: The HTML Data List element": No arrow and list is not available unless double click](https://github.com/mdn/content/issues/7159) (2021-07-22T15:26:35Z)
