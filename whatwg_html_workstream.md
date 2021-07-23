@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Issue with "HTMLImageElement.srcset": Broken image link at end of document](https://github.com/mdn/content/issues/7201) (2021-07-23T14:06:00Z)
+  
 * [[html] Issue with "<datalist>: The HTML Data List element": No arrow and list is not available unless double click](https://github.com/mdn/content/issues/7159) (2021-07-22T15:26:35Z)
   
 * [[html] Issue with "<form>": describe running javascript on submit: `onsubmit` and javascript pseudo-protocol](https://github.com/mdn/content/issues/7142) (2021-07-21T22:09:52Z)
