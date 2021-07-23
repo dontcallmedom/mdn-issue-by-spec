@@ -4,10 +4,39 @@
         <title>W3C Web Applications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_applications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Applications Working Group</description>
-        <lastBuildDate>Thu, 22 Jul 2021 15:31:43 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 23 Jul 2021 09:00:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[uievents] Issue with "Element: mouseenter event": Event names are probably the wrong way round]]></title>
+            <link>https://github.com/mdn/content/issues/7185</link>
+            <guid>https://github.com/mdn/content/issues/7185</guid>
+            <pubDate>Fri, 23 Jul 2021 09:00:33 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseenter_event">https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseenter_event</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<h4>Specific section or headline?</h4>
+<p>On the mentioned page it says:</p>
+<blockquote>
+<p>A single <code>mouseover</code> event is sent to the deepest element of the DOM tree, then it bubbles up the hierarchy until it is canceled by a handler or reaches the root.<br>
+With deep hierarchies, the number of <code>mouseenter</code> events sent can be quite huge and cause significant performance problems. In such cases, it is better to listen for <code>mouseover</code> events.</p>
+</blockquote>
+<h4>What did you expect to see?</h4>
+<p>The first sentence seems to imply that the bubbling of the <code>mouseover</code> event causes more events than <code>mouseenter</code> which does not bubble. Therefore the two event names should be switched around in the second sentence.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>No</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/element/mouseenter_event</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseenter_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseenter_event</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/element/mouseenter_event/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/element/mouseenter_event/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/8455a83fd1ba95f5e8cb2fadebab82cd77111579/hovercard" href="https://github.com/mdn/content/commit/8455a83fd1ba95f5e8cb2fadebab82cd77111579"><tt>8455a83</tt></a></li>
+<li>Document last modified: 2021-06-12T21:26:13.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[IndexedDB-3] Issue with "IDBTransaction":Example needs explanation]]></title>
             <link>https://github.com/mdn/content/issues/7160</link>

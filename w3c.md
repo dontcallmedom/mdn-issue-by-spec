@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[uievents] Issue with "Element: mouseenter event": Event names are probably the wrong way round](https://github.com/mdn/content/issues/7185) (2021-07-23T09:00:33Z)
+  
 * [[IndexedDB-3] Issue with "IDBTransaction":Example needs explanation](https://github.com/mdn/content/issues/7160) (2021-07-22T15:31:43Z)
   
 * [[service-workers-1] Issue with "ServiceWorkerContainer.register()": may be advisable to check for an existing registration](https://github.com/mdn/content/issues/7138) (2021-07-21T16:35:44Z)
