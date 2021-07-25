@@ -74,7 +74,5 @@
   
 * [[html] Issue with "HTMLIFrameElement": …](https://github.com/mdn/content/issues/328) (2020-12-16T23:25:33Z)
   
-* [[html] https://developer.mozilla.org/en-US/docs/Web/API/Navigator](https://github.com/mdn/content/issues/1576) (2020-08-26T17:37:23Z)
-  
 * [[html] Disambiguate Exceptions Types and Exception Names Across MDN](https://github.com/mdn/content/issues/2212) (2019-07-25T14:35:31Z)
   

@@ -106,8 +106,6 @@
   
 * [[dom] https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection - Left column lists incorrect properties and methods.](https://github.com/mdn/content/issues/7161) (2020-09-28T19:22:47Z)
   
-* [[html] https://developer.mozilla.org/en-US/docs/Web/API/Navigator](https://github.com/mdn/content/issues/1576) (2020-08-26T17:37:23Z)
-  
 * [[fetch] Rationalize top-level Web API pages](https://github.com/mdn/content/issues/1579) (2020-08-10T22:01:58Z)
   
 * [[html] Disambiguate Exceptions Types and Exception Names Across MDN](https://github.com/mdn/content/issues/2212) (2019-07-25T14:35:31Z)
