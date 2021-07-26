@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-fonts-5, css-shapes-2, css-values-3, mediaqueries-4] [Markdown] [CSS] Handle `sup` and `sub` in the CSS docs](https://github.com/mdn/content/issues/7267) (2021-07-26T02:34:36Z)
+  
 * [[css-images-3] Issue with "image-orientation": is the whole thing deprecated?](https://github.com/mdn/content/issues/6820) (2021-07-12T19:01:46Z)
   
 * [[css-text-3] Issue with "white-space": The PRE element itself seems to cause two line breaks](https://github.com/mdn/content/issues/6752) (2021-07-10T20:52:11Z)

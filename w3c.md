@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-fonts-5, css-shapes-2, css-values-3, mediaqueries-4] [Markdown] [CSS] Handle `sup` and `sub` in the CSS docs](https://github.com/mdn/content/issues/7267) (2021-07-26T02:34:36Z)
+  
 * [[uievents] Issue with "Element: mouseenter event": Event names are probably the wrong way round](https://github.com/mdn/content/issues/7185) (2021-07-23T09:00:33Z)
   
 * [[IndexedDB-3] Issue with "IDBTransaction":Example needs explanation](https://github.com/mdn/content/issues/7160) (2021-07-22T15:31:43Z)
