@@ -4,8 +4,6 @@
 
 * [[html] Issue with "HTMLImageElement.srcset": Broken image link at end of document](https://github.com/mdn/content/issues/7201) (2021-07-23T14:06:00Z)
   
-* [[html] Issue with "<datalist>: The HTML Data List element": No arrow and list is not available unless double click](https://github.com/mdn/content/issues/7159) (2021-07-22T15:26:35Z)
-  
 * [[html] Issue with "<form>": describe running javascript on submit: `onsubmit` and javascript pseudo-protocol](https://github.com/mdn/content/issues/7142) (2021-07-21T22:09:52Z)
   
 * [[html] Content bug: Mention that the `formdata` event allows modifying the form payload](https://github.com/mdn/content/issues/7129) (2021-07-21T13:11:27Z)
