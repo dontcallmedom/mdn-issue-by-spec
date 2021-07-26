@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[ecmascript] Issue with "Array": (text overlap with Object.prototype.propertyIsEnumerable() link at 110% zoom on chrome )](https://github.com/mdn/content/issues/7149) (2021-07-22T06:40:28Z)
-  
 * [[ecmascript] Issue with "isNaN()": Regarding the argumentation of the section "The necessity of an isNaN function"](https://github.com/mdn/content/issues/6551) (2021-07-03T11:47:14Z)
   
 * [[ecmascript] Issue with "Functions": (short summary here please)](https://github.com/mdn/content/issues/6545) (2021-07-03T07:09:55Z)
