@@ -14,8 +14,6 @@
   
 * [[css-text-3] Issue with "hyphens": misleading use of &shy;](https://github.com/mdn/content/issues/6307) (2021-06-24T16:17:26Z)
   
-* [[css-sizing-3] Issue with "box-sizing": Confusing order of examples in css demo.](https://github.com/mdn/content/issues/6300) (2021-06-24T13:28:30Z)
-  
 * [[css-lists-3] Issue with "counter-reset": the example is a bit confusing](https://github.com/mdn/content/issues/6277) (2021-06-23T22:25:29Z)
   
 * [[css-fonts-5] Variable font examples can't download font (CORS error)](https://github.com/mdn/content/issues/5606) (2021-06-02T22:48:01Z)
