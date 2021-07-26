@@ -4,10 +4,37 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Mon, 26 Jul 2021 02:34:36 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 26 Jul 2021 15:37:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-text-3, css-logical-1] Issue with "text-align": Raise visibility of 'start' and 'end' values]]></title>
+            <link>https://github.com/mdn/content/issues/7295</link>
+            <guid>https://github.com/mdn/content/issues/7295</guid>
+            <pubDate>Mon, 26 Jul 2021 15:37:03 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">https://developer.mozilla.org/en-US/docs/Web/CSS/text-align</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>It would be helpful for internationalisation of the Web to encourage the use of 'start' and 'end' rather than 'left' and 'right', unless the latter are specifically required.</p>
+<h4>Specific section or headline?</h4>
+<p>It would be good to add text-align:start and text-align:end to the CSS Demo.<br>
+I would recommend moving those values to the top of the list in the Syntax section.<br>
+They are already at the head of the list in the Values section, which is great, but they are shown as experimental, whereas all major browsers support them now, and 'start' is even the CSS initial value.<br>
+Change the word 'Left' to 'Start' in the examples section.</p>
+<h4>Did you test this? If so, how?</h4>
+<p><a rel="nofollow" href="https://www.w3.org/International/i18n-tests/results/text-align#start">https://www.w3.org/International/i18n-tests/results/text-align#start</a></p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/css/text-align</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/text-align</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/text-align/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/css/text-align/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/8f68c9bf3da43d768420d3f4bec544d4412e53cf/hovercard" href="https://github.com/mdn/content/commit/8f68c9bf3da43d768420d3f4bec544d4412e53cf"><tt>8f68c9b</tt></a></li>
+<li>Document last modified: 2021-06-23T15:16:28.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-fonts-5, css-shapes-2, css-values-3, mediaqueries-4] [Markdown] [CSS] Handle `sup` and `sub` in the CSS docs]]></title>
             <link>https://github.com/mdn/content/issues/7267</link>
