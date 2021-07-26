@@ -4,43 +4,10 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Fri, 23 Jul 2021 08:38:13 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 22 Jul 2021 06:40:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript] Issue with "Object initializer": (short summary here please)]]></title>
-            <link>https://github.com/mdn/content/issues/7184</link>
-            <guid>https://github.com/mdn/content/issues/7184</guid>
-            <pubDate>Fri, 23 Jul 2021 08:38:13 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>it's not a mistake but I think this can be confusing or unhelpful</p>
-<h4>Specific section or headline?</h4>
-<p>Creating objects<br>
-<code> let object = { foo: 'bar', age: 42, baz: {myProp: 12} }</code><br>
-IN Accessing properties ------------ here----<br>
-`<br>
-object.foo // "bar"<br>
-object['age'] // 42</p>
-<p>object.foo = 'baz'      ======&gt; in this ligne it's  not accessing.<br>
-`</p>
-<h4>What did you expect to see?</h4>
-<p>maybe that's what we should add.<br>
-object.baz.myProp  // 12</p>
-<h4>Did you test this? If so, how?</h4>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/javascript/reference/operators/object_initializer</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/object_initializer/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/object_initializer/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cf607d68522cd35ee7670782d3ee3a361eaef2e4/hovercard" href="https://github.com/mdn/content/commit/cf607d68522cd35ee7670782d3ee3a361eaef2e4"><tt>cf607d6</tt></a></li>
-<li>Document last modified: 2021-07-20T18:47:57.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[ecmascript] Issue with "Array": (text overlap with Object.prototype.propertyIsEnumerable() link at 110% zoom on chrome )]]></title>
             <link>https://github.com/mdn/content/issues/7149</link>
