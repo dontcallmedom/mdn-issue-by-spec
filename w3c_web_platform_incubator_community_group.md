@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Platform Incubator Community Group. [![RSS feed for W3C Web Platform Incubator Community Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[speech-api] Issue with "SpeechRecognition.continuous": (continuous not working)](https://github.com/mdn/content/issues/7314) (2021-07-27T00:41:38Z)
+  
 * [[file-system-access] Issue with "FileSystemFileHandle": (getTheFile() async function argument)](https://github.com/mdn/content/issues/6984) (2021-07-16T19:44:59Z)
   
 * [[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator](https://github.com/mdn/content/issues/6856) (2021-07-13T13:35:32Z)
