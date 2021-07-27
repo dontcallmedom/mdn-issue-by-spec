@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Issue with "<template>: The Content Template element": (click event doesn't show an alert)](https://github.com/mdn/content/issues/7329) (2021-07-27T07:16:10Z)
+  
 * [[html] Content bug: `Worker.prototype.postMessage` is mistakenly said to block the receiving thread](https://github.com/mdn/content/issues/7315) (2021-07-27T01:10:16Z)
   
 * [[html] Issue with "<form>": describe running javascript on submit: `onsubmit` and javascript pseudo-protocol](https://github.com/mdn/content/issues/7142) (2021-07-21T22:09:52Z)
