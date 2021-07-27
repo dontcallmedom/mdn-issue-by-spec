@@ -36,11 +36,12 @@ for (let i = 0; i &lt; 10; i++) {
   <span class="pl-s1">worker</span><span class="pl-kos">.</span><span class="pl-en">postMessage</span><span class="pl-kos">(</span><span class="pl-s1">i</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
   <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"%s Message %d sent."</span><span class="pl-kos">,</span> <span class="pl-k">new</span> <span class="pl-v">Date</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">toISOString</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-s1">i</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 <span class="pl-kos">}</span></pre></div>
-<p>worker.js:</p>
-<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="self.onmessage = (evt) =&gt; {
+<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="// worker.js
+self.onmessage = (evt) =&gt; {
   console.log(&quot;%s Received message %d.&quot;, new Date().toISOString(), evt.data);
 };
-"><pre><span class="pl-s1">self</span><span class="pl-kos">.</span><span class="pl-en">onmessage</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">evt</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+"><pre><span class="pl-c">// worker.js</span>
+<span class="pl-s1">self</span><span class="pl-kos">.</span><span class="pl-en">onmessage</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">evt</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
   <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"%s Received message %d."</span><span class="pl-kos">,</span> <span class="pl-k">new</span> <span class="pl-v">Date</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">toISOString</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-s1">evt</span><span class="pl-kos">.</span><span class="pl-c1">data</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 <span class="pl-kos">}</span><span class="pl-kos">;</span></pre></div>
 <p>In my testing across different browsers, every single sent message was printed before the first received message, so <code>postMessage()</code> doesn't block the current thread.</p>]]></content:encoded>
