@@ -4,10 +4,22 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Wed, 21 Jul 2021 22:09:52 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 Jul 2021 22:00:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Content bug: constraint validation example/demo doesn't work]]></title>
+            <link>https://github.com/mdn/content/issues/7407</link>
+            <guid>https://github.com/mdn/content/issues/7407</guid>
+            <pubDate>Wed, 28 Jul 2021 22:00:59 GMT</pubDate>
+            <content:encoded><![CDATA[<p>This demo doesn't work: (it just shows the default validation failure message)</p>
+<p><a rel="nofollow" href="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/HTML/Element/input/_sample_.Client-side_validation.html?name=a">https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/HTML/Element/input/_sample_.Client-side_validation.html?name=a</a></p>
+<p>That demo is embedded in an iframe here:</p>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#example">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#example</a></p>
+<p>The demo fails to work because the html has an extra input element that shouldn't exist. It's an <code>&lt;input type="time" ...&gt;</code> element that's not even inside the form.</p>
+<p>I tried pausing javascript with the debugger, reloading, deleting that extraneous input element, then resuming javascript, and that made the validator message customizations work as described.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Issue with "<form>": describe running javascript on submit: `onsubmit` and javascript pseudo-protocol]]></title>
             <link>https://github.com/mdn/content/issues/7142</link>
