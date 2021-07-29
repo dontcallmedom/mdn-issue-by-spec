@@ -112,33 +112,6 @@ gl.getBufferSubData(gl.ARRAY_BUFFER, 0, arrBuffer);
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[webgl2] Issue with "WebGL2RenderingContext.getBufferSubData()": Example is not working.]]></title>
-            <link>https://github.com/mdn/content/issues/3829</link>
-            <guid>https://github.com/mdn/content/issues/3829</guid>
-            <pubDate>Mon, 05 Apr 2021 02:07:24 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>The Examples section is wrong, this is not how this method is used.</p>
-<h4>Specific section or headline?</h4>
-<p>This example will throw because <code>dstData</code> <strong>must</strong> be an ArrayBufferView, it can't be a bare ArrayBuffer.<br>
-But even though I'm not an expert myself in the subject matter, it seems the whole example isn't a good example of how this method should be used.</p>
-<h4>What did you expect to see?</h4>
-<p>A real good example of how and when to use this method. It seems <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/WebGL_best_practices#non-blocking_async_data_downloadreadback">https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/WebGL_best_practices#non-blocking_async_data_downloadreadback</a> has a better (at least working) example, but maybe it does more than required? I can't really judge that.</p>
-<h4>Did you test this? If so, how?</h4>
-<p>I read <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/#3.7.3" rel="nofollow">the specs</a> and tested in both Firefox and Chrome.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/webgl2renderingcontext/getbuffersubdata</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/getbuffersubdata/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/getbuffersubdata/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/63c69f3c933acbea9bfb24d359a7d2ffdb3c0bea/hovercard" href="https://github.com/mdn/content/commit/63c69f3c933acbea9bfb24d359a7d2ffdb3c0bea"><tt>63c69f3</tt></a></li>
-<li>Document last modified: 2021-02-19T19:51:22.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[webgl1] Issue with "WebGLRenderingContext.drawElements()": …]]></title>
             <link>https://github.com/mdn/content/issues/813</link>
             <guid>https://github.com/mdn/content/issues/813</guid>
