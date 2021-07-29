@@ -9,14 +9,14 @@
     },
     "items": [
         {
-            "id": "https://github.com/mdn/content/issues/7407",
-            "content_html": "<p>This demo doesn't work: (it just shows the default validation failure message)</p>\n<p><a rel=\"nofollow\" href=\"https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/HTML/Element/input/_sample_.Client-side_validation.html?name=a\">https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/HTML/Element/input/_sample_.Client-side_validation.html?name=a</a></p>\n<p>That demo is embedded in an iframe here:</p>\n<p><a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#example\">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#example</a></p>\n<p>The demo fails to work because the html has an extra input element that shouldn't exist. It's an <code>&lt;input type=\"time\" ...&gt;</code> element that's not even inside the form.</p>\n<p>I tried pausing javascript with the debugger, reloading, deleting that extraneous input element, then resuming javascript, and that made the validator message customizations work as described.</p>",
-            "url": "https://github.com/mdn/content/issues/7407",
-            "title": "[html] Content bug: constraint validation example/demo doesn't work",
-            "date_modified": "2021-07-28T22:00:59.000Z",
+            "id": "https://github.com/mdn/content/issues/7411",
+            "content_html": "<h2>What page(s) did you find the problem on?</h2>\n<p><a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/Window\">https://developer.mozilla.org/en-US/docs/Web/API/Window</a></p>\n<h2>What is the problem?</h2>\n<p>It should show <code>EventTarget &lt;- Window</code>.</p>\n<h2>Did you test this? If so, how?</h2>\n<div class=\"highlight highlight-source-js position-relative\" data-snippet-clipboard-copy-content=\"console.log(window.__proto__.__proto__.__proto__.constructor) // EventTarget\n\"><pre><span class=\"pl-smi\">console</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">log</span><span class=\"pl-kos\">(</span><span class=\"pl-smi\">window</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">__proto__</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">__proto__</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">__proto__</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">constructor</span><span class=\"pl-kos\">)</span> <span class=\"pl-c\">// EventTarget</span></pre></div>\n<hr>\n<p>How does one edit what the <code>{{InheritanceDiagram}}</code> shows?</p>",
+            "url": "https://github.com/mdn/content/issues/7411",
+            "title": "[html] InheritanceDiagram of Window is incorrect",
+            "date_modified": "2021-07-29T05:47:42.000Z",
             "author": {
-                "name": "JasonWoof",
-                "url": "https://github.com/JasonWoof"
+                "name": "trusktr",
+                "url": "https://github.com/trusktr"
             }
         },
         {

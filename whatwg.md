@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] Content bug: constraint validation example/demo doesn't work](https://github.com/mdn/content/issues/7407) (2021-07-28T22:00:59Z)
+* [[html] InheritanceDiagram of Window is incorrect](https://github.com/mdn/content/issues/7411) (2021-07-29T05:47:42Z)
   
 * [[html] Issue with "<form>": describe running javascript on submit: `onsubmit` and javascript pseudo-protocol](https://github.com/mdn/content/issues/7142) (2021-07-21T22:09:52Z)
   
