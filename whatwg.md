@@ -4,8 +4,6 @@
 
 * [[html] InheritanceDiagram of Window is incorrect](https://github.com/mdn/content/issues/7411) (2021-07-29T05:47:42Z)
   
-* [[html] Question on Tag omission for <p> tags](https://github.com/mdn/content/issues/7420) (2021-07-25T22:44:48Z)
-  
 * [[html] Issue with "<form>": describe running javascript on submit: `onsubmit` and javascript pseudo-protocol](https://github.com/mdn/content/issues/7142) (2021-07-21T22:09:52Z)
   
 * [[html] Content bug: Mention that the `formdata` event allows modifying the form payload](https://github.com/mdn/content/issues/7129) (2021-07-21T13:11:27Z)
