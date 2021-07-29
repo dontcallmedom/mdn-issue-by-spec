@@ -6,8 +6,6 @@
   
 * [[FileAPI] Issue with "FileReader.onerror": (Incomplete/Irrelevant Comment)](https://github.com/mdn/content/issues/6991) (2021-07-17T06:28:11Z)
   
-* [[service-workers-1, push-api] Issue with "ServiceWorkerRegistration": description for updateViaCache is missing](https://github.com/mdn/content/issues/6729) (2021-07-09T12:06:19Z)
-  
 * [[uievents] Issue with "MouseEvent.ctrlKey": 'command' instead of 'control' for Mac keyboards](https://github.com/mdn/content/issues/6624) (2021-07-06T12:40:16Z)
   
 * [[selection-api] Issue with "Selection.setBaseAndExtent()": behaviour on text nodes](https://github.com/mdn/content/issues/6623) (2021-07-06T12:24:35Z)
