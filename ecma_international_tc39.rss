@@ -604,29 +604,6 @@ submit a pull request.</li>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[ecmascript] Are there really two different ways of handling two-digit years?]]></title>
-            <link>https://github.com/mdn/content/issues/1461</link>
-            <guid>https://github.com/mdn/content/issues/1461</guid>
-            <pubDate>Mon, 18 Jan 2021 15:44:01 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/nickshanks/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/nickshanks">@nickshanks</a> commented on <a href="https://github.com/mdn/sprints/issues/3860" data-hovercard-type="issue" data-hovercard-url="/mdn/sprints/issues/3860/hovercard">Wed Nov 04 2020</a></p>
-<h2>URL(s)</h2>
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#Compatibility_notes" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#Compatibility_notes</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#Two_digit_years_map_to_1900_%E2%80%93_1999" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#Two_digit_years_map_to_1900_–_1999</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setYear#Description" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setYear#Description</a></li>
-</ul>
-<h2>Request type</h2>
-
-<ul class="contains-task-list">
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> New documentation</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Correction or update</li>
-</ul>
-<h2>Details</h2>
-<p>The Date class page and the setYear page both say two-digit years are parsed as an offset to the year 1900 (formerly, in the H3: "Two digit years map to 1900 – 1999")<br>
-The Date.parse page says that <code>Date.parse()</code> and <code>new Date()</code> use values 50-99 to mean 1950-1999 and 0-49 to mean 2000-2049. Thus this apparently differs from how <code>Date.prototype.setYear()</code> handles two-digit years.</p>
-<p>Are the two implementations of two-digit-year handling actually divergent? If so, why isn't this made explicit in the documentation for both functions? If not, I presume the documentation for setYear(), on both the setYear page and the class page, is incorrect.</p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[ecmascript] Where is the page for Function.prototype.prototype?]]></title>
             <link>https://github.com/mdn/content/issues/1449</link>
             <guid>https://github.com/mdn/content/issues/1449</guid>

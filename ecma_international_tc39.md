@@ -36,8 +36,6 @@
   
 * [[ecmascript] Issue with "Promise": Code used to demonstrate Chaining is misleading for new coders](https://github.com/mdn/content/issues/2303) (2021-02-12T01:14:58Z)
   
-* [[ecmascript] Are there really two different ways of handling two-digit years?](https://github.com/mdn/content/issues/1461) (2021-01-18T15:44:01Z)
-  
 * [[ecmascript] Where is the page for Function.prototype.prototype?](https://github.com/mdn/content/issues/1449) (2021-01-18T15:22:21Z)
   
 * [[ecmascript] Issue with "Remainder (%)": …](https://github.com/mdn/content/issues/961) (2021-01-05T15:27:32Z)
