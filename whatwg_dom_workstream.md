@@ -14,8 +14,6 @@
   
 * [[dom] Document CharacterData](https://github.com/mdn/content/issues/2396) (2021-02-16T15:44:40Z)
   
-* [[dom] Issue with "Element.classList": Polyfill no longer working on IE 11](https://github.com/mdn/content/issues/2224) (2021-02-09T18:56:26Z)
-  
 * [[dom] Browser Compatibility tables are unclear when support for an item has been removed](https://github.com/mdn/content/issues/2107) (2021-02-05T12:29:59Z)
   
 * [[dom] Issue with "Event.preventDefault()": displayWarning() example doesn't work with autofill](https://github.com/mdn/content/issues/1637) (2021-01-22T19:23:00Z)

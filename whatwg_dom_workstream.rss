@@ -110,68 +110,6 @@ However I thought it should be {{jsxref("Boolean")}} because Boolean isn't an in
 <p>CharacterData is the parent interface for Text, ProcessingInstruction, and Comment nodes, so when creating the pages and example code, you probably want to show how to use CharacterData methods like <code>appendData()</code> with something concrete like  <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Text">https://developer.mozilla.org/en-US/docs/Web/API/Text</a> nodes.</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[dom] Issue with "Element.classList": Polyfill no longer working on IE 11]]></title>
-            <link>https://github.com/mdn/content/issues/2224</link>
-            <guid>https://github.com/mdn/content/issues/2224</guid>
-            <pubDate>Tue, 09 Feb 2021 18:56:26 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">https://developer.mozilla.org/en-US/docs/Web/API/Element/classList</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>I am experiencing a problem with <code>Element.classList.toggle</code>'s polyfill not working. The second argument, <code>force</code>, is ignored on IE 11. It seems like the polyfill may not be applied in this situation. I believe the example has worked in the past.</p>
-<p>This can also be reproduce by grabbing the most up-to-date polyfill snippet from MDN and running a basic example.</p>
-<h4>Specific section or headline?</h4>
-<p><code>#polyfill</code></p>
-<h4>What did you expect to see?</h4>
-<p>The <code>force</code> argument to work in IE 11.</p>
-<h4>Did you test this? If so, how?</h4>
-<p>Build a test and open in a modern browser and IE 11. You would expect the element to remain red, but the class is instead removed (i.e. the element has no background.)</p>
-<div class="highlight highlight-text-html-basic position-relative" data-snippet-clipboard-copy-content="&lt;style&gt;
-  .red {
-    background: red;
-  }
-&lt;/style&gt;
-
-&lt;div class=&quot;red&quot;&gt;
-  Red
-&lt;/div&gt;
-
-&lt;script&gt;
-  /**
-   * [...]
-   * Polyfill from https://developer.mozilla.org/en-US/docs/Web/API/Element/classList#polyfill
-   */
-  document.querySelector(&quot;.red&quot;).classList.toggle(&quot;red&quot;, true);
-&lt;/script&gt;
-"><pre><span class="pl-kos">&lt;</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
-  .<span class="pl-c1">red</span> {
-    <span class="pl-c1">background</span><span class="pl-kos">:</span> red;
-  }
-<span class="pl-kos">&lt;/</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
-
-<span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">class</span>="<span class="pl-s">red</span>"<span class="pl-kos">&gt;</span>
-  Red
-<span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span>
-
-<span class="pl-kos">&lt;</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span>
-  <span class="pl-c">/**</span>
-<span class="pl-c">   * [...]</span>
-<span class="pl-c">   * Polyfill from https://developer.mozilla.org/en-US/docs/Web/API/Element/classList#polyfill</span>
-<span class="pl-c">   */</span>
-  <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">".red"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">classList</span><span class="pl-kos">.</span><span class="pl-en">toggle</span><span class="pl-kos">(</span><span class="pl-s">"red"</span><span class="pl-kos">,</span> <span class="pl-c1">true</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span></pre></div>
-<p>Related: <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="437292062" data-permission-text="Title is private" data-url="https://github.com/msn0/mdn-polyfills/issues/57" data-hovercard-type="issue" data-hovercard-url="/msn0/mdn-polyfills/issues/57/hovercard" href="https://github.com/msn0/mdn-polyfills/issues/57">msn0/mdn-polyfills#57</a></p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/element/classlist</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/classList</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/master/files/en-us/web/api/element/classlist/index.html">https://github.com/mdn/content/blob/master/files/en-us/web/api/element/classlist/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/068e0f6bfb252775eb9835632c3b0083259c9fcc/hovercard" href="https://github.com/mdn/content/commit/068e0f6bfb252775eb9835632c3b0083259c9fcc"><tt>068e0f6</tt></a></li>
-<li>Document last modified: 2021-01-25T04:06:51.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[dom] Browser Compatibility tables are unclear when support for an item has been removed]]></title>
             <link>https://github.com/mdn/content/issues/2107</link>
             <guid>https://github.com/mdn/content/issues/2107</guid>
