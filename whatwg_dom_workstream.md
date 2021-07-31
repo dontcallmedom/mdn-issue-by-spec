@@ -6,8 +6,6 @@
   
 * [[dom] Event.composedPath() refers to nonexistent example](https://github.com/mdn/content/issues/5863) (2021-06-10T17:13:57Z)
   
-* [[dom] Issue with "Text": Unclear description of when multiple text nodes may be created](https://github.com/mdn/content/issues/5487) (2021-05-31T03:17:02Z)
-  
 * [[dom, web-bluetooth] Content bug: linking macros to Boolean shouldn't be {{domxref}}](https://github.com/mdn/content/issues/3898) (2021-04-07T02:39:25Z)
   
 * [[dom] Content bug: space before </code> on many pages](https://github.com/mdn/content/issues/3386) (2021-03-22T23:05:57Z)
