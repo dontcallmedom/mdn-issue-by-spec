@@ -8,8 +8,6 @@
   
 * [[css-fonts-5, css-shapes-2, css-values-3, mediaqueries-4] [Markdown] [CSS] Handle `sup` and `sub` in the CSS docs](https://github.com/mdn/content/issues/7267) (2021-07-26T02:34:36Z)
   
-* [[css-images-3] Issue with "image-orientation": is the whole thing deprecated?](https://github.com/mdn/content/issues/6820) (2021-07-12T19:01:46Z)
-  
 * [[css-text-3] Issue with "white-space": The PRE element itself seems to cause two line breaks](https://github.com/mdn/content/issues/6752) (2021-07-10T20:52:11Z)
   
 * [[dom, selectors-4] Content suggestion: Example of :scope in element.querySelector()](https://github.com/mdn/content/issues/6676) (2021-07-08T12:03:13Z)
