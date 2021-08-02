@@ -36,8 +36,6 @@
   
 * [[user-timing-2] Issue with "performance.measure()": (short summary here please)](https://github.com/mdn/content/issues/6441) (2021-06-29T03:24:17Z)
   
-* [[css-text-3] Issue with "hyphens": misleading use of &shy;](https://github.com/mdn/content/issues/6307) (2021-06-24T16:17:26Z)
-  
 * [[css-lists-3] Issue with "counter-reset": the example is a bit confusing](https://github.com/mdn/content/issues/6277) (2021-06-23T22:25:29Z)
   
 * [[ecmascript, mediacapture-streams] Globally replace console.log() calls in all cases where console.error() should be used instead](https://github.com/mdn/content/issues/6117) (2021-06-18T17:07:45Z)

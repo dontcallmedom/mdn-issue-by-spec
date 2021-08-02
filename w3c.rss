@@ -630,32 +630,6 @@ sel.setBaseAndExtent(tnode, 0, tnode, 5) // this should select 'hello'
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-text-3] Issue with "hyphens": misleading use of &shy;]]></title>
-            <link>https://github.com/mdn/content/issues/6307</link>
-            <guid>https://github.com/mdn/content/issues/6307</guid>
-            <pubDate>Thu, 24 Jun 2021 16:17:26 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens">https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>The embedded demo at the top of the page uses the text "An extraordinarily long English word!" to demonstrate the <code>hyphens</code> CSS property. The demo includes a soft hyphen <code>&amp;shy;</code> inside the word "extraordinarily", but this is not mentioned anywhere in the explanatory text. It implies that the text in the demo is hyphenated purely by CSS.</p>
-<h4>Specific section or headline?</h4>
-<p>Embedded demo at the top of the page.</p>
-<h4>What did you expect to see?</h4>
-<p>Viewing the page in a browser which doesn't support <code>hyphens</code> (such as Edge 91) I would expect to see an unhyphenated piece of text, or a separate demo for <code>&amp;shy;</code>.</p>
-<h4>Did you test this? If so, how?</h4>
-<p>Visited in Edge 91. I removed the soft hyphen using dev tools; hyphenation no longer works in the demo.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/css/hyphens</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/hyphens/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/css/hyphens/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/8bc3398ff8f2f2f3c836825cf7adb3e325a811cc/hovercard" href="https://github.com/mdn/content/commit/8bc3398ff8f2f2f3c836825cf7adb3e325a811cc"><tt>8bc3398</tt></a></li>
-<li>Document last modified: 2021-06-17T02:43:53.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[css-lists-3] Issue with "counter-reset": the example is a bit confusing]]></title>
             <link>https://github.com/mdn/content/issues/6277</link>
             <guid>https://github.com/mdn/content/issues/6277</guid>

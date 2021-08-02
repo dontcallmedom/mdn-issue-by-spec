@@ -12,8 +12,6 @@
   
 * [[dom, selectors-4] Content suggestion: Example of :scope in element.querySelector()](https://github.com/mdn/content/issues/6676) (2021-07-08T12:03:13Z)
   
-* [[css-text-3] Issue with "hyphens": misleading use of &shy;](https://github.com/mdn/content/issues/6307) (2021-06-24T16:17:26Z)
-  
 * [[css-lists-3] Issue with "counter-reset": the example is a bit confusing](https://github.com/mdn/content/issues/6277) (2021-06-23T22:25:29Z)
   
 * [[css-fonts-5] Variable font examples can't download font (CORS error)](https://github.com/mdn/content/issues/5606) (2021-06-02T22:48:01Z)
