@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[compat] Issue with "Window: orientationchange event": (short summary here please)](https://github.com/mdn/content/issues/7524) (2021-08-02T22:14:45Z)
+  
 * [[html] Issue with "<form>": describe running javascript on submit: `onsubmit` and javascript pseudo-protocol](https://github.com/mdn/content/issues/7142) (2021-07-21T22:09:52Z)
   
 * [[html] Content bug: Mention that the `formdata` event allows modifying the form payload](https://github.com/mdn/content/issues/7129) (2021-07-21T13:11:27Z)
