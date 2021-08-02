@@ -4,10 +4,40 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Fri, 30 Jul 2021 11:44:03 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 02 Aug 2021 06:09:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[filter-effects-2] Issue with SVG elements "Related Topics": Elements' names are lower-cased]]></title>
+            <link>https://github.com/mdn/content/issues/7503</link>
+            <guid>https://github.com/mdn/content/issues/7503</guid>
+            <pubDate>Mon, 02 Aug 2021 06:09:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feImage">https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feImage</a> (and any other SVG element's page)</p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The left bar's "Related Topics" show all the name of related SVG elements lower-cased.<br>
+Case is important in SVG.</p>
+<h4>Specific section or headline?</h4>
+<p>The "Related Topics" section's macro (not sure where this lives exactly).</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7843391/127811787-0b66a617-a1f3-40c8-ac8f-79f5f758913e.png"><img width="246" alt="Screen Shot 2021-08-02 at 3 02 18 ⦿" src="https://user-images.githubusercontent.com/7843391/127811787-0b66a617-a1f3-40c8-ac8f-79f5f758913e.png" style="max-width:100%;"></a></p>
+<p>Note that the "SVG Elements" details section doesn't suffer from this issue.<br>
+<a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7843391/127811872-6e53c358-37e4-4cdf-b1e7-133cad4fa65d.png"><img width="193" alt="Screen Shot 2021-08-02 at 3 02 26 ⦿" src="https://user-images.githubusercontent.com/7843391/127811872-6e53c358-37e4-4cdf-b1e7-133cad4fa65d.png" style="max-width:100%;"></a></p>
+<h4>What did you expect to see?</h4>
+<p>The name of these related elements in camelCase, e.g &lt;fe<strong>B</strong>lend&gt; or &lt;fe<strong>C</strong>olor<strong>M</strong>atrix&gt; etc.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>N/A</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/svg/element/feimage</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feImage" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feImage</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/svg/element/feimage/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/svg/element/feimage/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/91456ead4017ad5b6c5be3cacc83cc72007483ca/hovercard" href="https://github.com/mdn/content/commit/91456ead4017ad5b6c5be3cacc83cc72007483ca"><tt>91456ea</tt></a></li>
+<li>Document last modified: 2021-06-10T20:25:11.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-sizing-3] Issue with "height": fit-content causes horizontal scroll on mobile]]></title>
             <link>https://github.com/mdn/content/issues/7456</link>
