@@ -4,10 +4,28 @@
         <title>IETF-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ietf.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by IETF</description>
-        <lastBuildDate>Wed, 21 Jul 2021 15:59:50 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 03 Aug 2021 06:51:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[rfc7230] Content bug: Timeout description for Keep-Alive HTTP header]]></title>
+            <link>https://github.com/mdn/content/issues/7539</link>
+            <guid>https://github.com/mdn/content/issues/7539</guid>
+            <pubDate>Tue, 03 Aug 2021 06:51:26 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
+
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Keep-Alive">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Keep-Alive</a></p>
+<h2>Specific page section or heading?</h2>
+
+<p>Directives</p>
+<h2>What is the problem?</h2>
+
+<p>The <code>timeout</code> parameter for the <code>Keep-Alive</code> header is described as "the <strong>minimum</strong> amount of time an idle connection has to be kept opened," but it is actually the <strong>maximum</strong></p>
+<h2>What did you expect to see?</h2>
+
+<p>The <code>timeout</code> parameter for the <code>Keep-Alive</code> header is meant to be "the <strong>maximum</strong> amount of time an idle connection has to be kept opened," not the minimum</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[rfc7230] Issue with "Trailer": page says all browsers are compatible but there is no way to use this feature]]></title>
             <link>https://github.com/mdn/content/issues/7137</link>
