@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[dom] Issue with "DOMTokenList.toggle()": (Output not specified)](https://github.com/mdn/content/issues/7559) (2021-08-03T19:07:12Z)
+  
 * [[html] Issue with "WindowOrWorkerGlobalScope.setTimeout()": (short summary here please)](https://github.com/mdn/content/issues/7553) (2021-08-03T16:54:31Z)
   
 * [[html] Issue with "<form>": describe running javascript on submit: `onsubmit` and javascript pseudo-protocol](https://github.com/mdn/content/issues/7142) (2021-07-21T22:09:52Z)
