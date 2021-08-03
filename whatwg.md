@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html, cssom-view-1, dom, uievents, FileAPI, WebIDL-1, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
+  
 * [[dom] Issue with "DOMTokenList.toggle()": (Output not specified)](https://github.com/mdn/content/issues/7559) (2021-08-03T19:07:12Z)
   
 * [[html] Issue with "WindowOrWorkerGlobalScope.setTimeout()": (short summary here please)](https://github.com/mdn/content/issues/7553) (2021-08-03T16:54:31Z)

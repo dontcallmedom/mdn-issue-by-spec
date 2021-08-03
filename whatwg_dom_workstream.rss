@@ -4,10 +4,33 @@
         <title>WHATWG DOM Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_dom_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG DOM Workstream</description>
-        <lastBuildDate>Tue, 03 Aug 2021 19:07:12 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 03 Aug 2021 21:17:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html, cssom-view-1, dom, uievents, FileAPI, WebIDL-1, pointerlock-2] Remove alert() from live samples]]></title>
+            <link>https://github.com/mdn/content/issues/7566</link>
+            <guid>https://github.com/mdn/content/issues/7566</guid>
+            <pubDate>Tue, 03 Aug 2021 21:17:44 GMT</pubDate>
+            <content:encoded><![CDATA[<p><code>window.alert()</code> doesn't work cross-origin in Chrome any more, meaning that any of our live samples that rely on <code>alert()</code> are now broken.</p>
+<p>See also <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="959310145" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/7553" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/7553/hovercard" href="https://github.com/mdn/content/issues/7553">#7553</a>.</p>
+<p>This is (I think) all the live samples in Web/API that use <code>alert()</code> in a live sample:</p>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/attr/localname">https://developer.mozilla.org/en-US/docs/Web/API/attr/localname</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/canvasrenderingcontext2d/addhitregion">https://developer.mozilla.org/en-US/docs/Web/API/canvasrenderingcontext2d/addhitregion</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/document/querycommandstate">https://developer.mozilla.org/en-US/docs/Web/API/document/querycommandstate</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/domexception/domexception">https://developer.mozilla.org/en-US/docs/Web/API/domexception/domexception</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/eventlistener">https://developer.mozilla.org/en-US/docs/Web/API/eventlistener</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/eventtarget/addeventlistener">https://developer.mozilla.org/en-US/docs/Web/API/eventtarget/addeventlistener</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/file/name">https://developer.mozilla.org/en-US/docs/Web/API/file/name</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/keyboardevent/metakey">https://developer.mozilla.org/en-US/docs/Web/API/keyboardevent/metakey</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/mouseevent">https://developer.mozilla.org/en-US/docs/Web/API/mouseevent</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/notifications_api/using_the_notifications_api">https://developer.mozilla.org/en-US/docs/Web/API/notifications_api/using_the_notifications_api</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/window/find">https://developer.mozilla.org/en-US/docs/Web/API/window/find</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/windoworworkerglobalscope/settimeout">https://developer.mozilla.org/en-US/docs/Web/API/windoworworkerglobalscope/settimeout</a> (fixed in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="959418868" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/7560" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/7560/hovercard" href="https://github.com/mdn/content/pull/7560">#7560</a>)</p>
+<p>(I might have missed some).</p>
+<p>We should replace all of these with some alternative. A common alternative is to write the output into an element in the example's document.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[dom] Issue with "DOMTokenList.toggle()": (Output not specified)]]></title>
             <link>https://github.com/mdn/content/issues/7559</link>
