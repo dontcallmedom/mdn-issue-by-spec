@@ -6,8 +6,6 @@
   
 * [[webaudio] GainNode article recommends against constructor usage](https://github.com/mdn/content/issues/7426) (2021-07-29T14:00:03Z)
   
-* [[css-fonts-5, css-shapes-2, css-values-3, mediaqueries-4] [Markdown] [CSS] Handle `sup` and `sub` in the CSS docs](https://github.com/mdn/content/issues/7267) (2021-07-26T02:34:36Z)
-  
 * [[IndexedDB-3] Issue with "IDBTransaction":Example needs explanation](https://github.com/mdn/content/issues/7160) (2021-07-22T15:31:43Z)
   
 * [[service-workers-1] Issue with "ServiceWorkerContainer.register()": may be advisable to check for an existing registration](https://github.com/mdn/content/issues/7138) (2021-07-21T16:35:44Z)

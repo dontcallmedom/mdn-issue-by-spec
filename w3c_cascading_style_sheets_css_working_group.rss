@@ -32,50 +32,6 @@
 <p>We should replace all of these with some alternative. A common alternative is to write the output into an element in the example's document.</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-fonts-5, css-shapes-2, css-values-3, mediaqueries-4] [Markdown] [CSS] Handle `sup` and `sub` in the CSS docs]]></title>
-            <link>https://github.com/mdn/content/issues/7267</link>
-            <guid>https://github.com/mdn/content/issues/7267</guid>
-            <pubDate>Mon, 26 Jul 2021 02:34:36 GMT</pubDate>
-            <content:encoded><![CDATA[<p>This is part of <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="917625317" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/5865" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/5865/hovercard" href="https://github.com/mdn/content/issues/5865">#5865</a>.</p>
-<p>The guide to <a href="https://developer.mozilla.org/en-US/docs/MDN/Contribute/Markdown_in_MDN#superscript_and_subscript" rel="nofollow">using Markdown in MDN</a> says:</p>
-<blockquote>
-<p>Writers will be able to use the HTML &lt;sup&gt; and &lt;sub&gt; elements if necessary, but should use alternatives if possible</p>
-</blockquote>
-<p>So we should look through the places in the CSS docs where we are using these elements, and decide whether it would be better to use one of the alternatives.</p>
-<p>Here's the list of pages that use <code>&lt;sub&gt;</code>:</p>
-<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/basic-shape">https://developer.mozilla.org/en-US/docs/Web/CSS/basic-shape</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/web/css/easing-function">https://developer.mozilla.org/en-US/docs/web/css/easing-function</a></p>
-<p>Here's the list of pages that use <code>&lt;sup&gt;</code>:</p>
-<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/basic-shape">https://developer.mozilla.org/en-US/docs/Web/CSS/basic-shape</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric">https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/integer">https://developer.mozilla.org/en-US/docs/Web/CSS/integer</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/ratio">https://developer.mozilla.org/en-US/docs/Web/CSS/ratio</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix()">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix()</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix3d()">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix3d()</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/perspective()">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/perspective()</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate()">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate()</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d()">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d()</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotatex()">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotatex()</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotatey()">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotatey()</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotatez()">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotatez()</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale()">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale()</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale3d()">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale3d()</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scalex()">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scalex()</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scaley()">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scaley()</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scalez()">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scalez()</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew()">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew()</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skewx()">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skewx()</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skewy()">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skewy()</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate()">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate()</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d()">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d()</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translatex()">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translatex()</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translatey()">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translatey()</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translatez()">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translatez()</a></p>
-<p>It's a matter of judgment in a lot of cases what to do. Previous PRs that do this for different areas of MDN:</p>
-<p><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="913747880" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/5766" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/5766/hovercard" href="https://github.com/mdn/content/pull/5766">#5766</a> (for Web/API)<br>
-<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="895814499" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/5128" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/5128/hovercard" href="https://github.com/mdn/content/pull/5128">#5128</a> (for JS)</p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[dom, selectors-4] Content suggestion: Example of :scope in element.querySelector()]]></title>
             <link>https://github.com/mdn/content/issues/6676</link>
             <guid>https://github.com/mdn/content/issues/6676</guid>
