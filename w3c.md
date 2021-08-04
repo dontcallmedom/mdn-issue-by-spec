@@ -102,8 +102,6 @@
   
 * [[cssom-view-1] Issue with "ScrollToOptions.behavior": Description of `auto` value is wrong, lacking historical `instant` value](https://github.com/mdn/content/issues/2719) (2021-02-26T16:41:38Z)
   
-* [[css-backgrounds-4] Discourage "color: transparent" for "background-clip: text" ](https://github.com/mdn/content/issues/2638) (2021-02-24T01:51:49Z)
-  
 * [[media-capabilities] MediaCapabilitiesInfo is a dictionary in spec + Chrome but interface in Firefox](https://github.com/mdn/content/issues/1878) (2021-01-29T09:14:35Z)
   
 * [[user-timing-2] Update `performance.mark` article with User Timing Level 3 data](https://github.com/mdn/content/issues/1463) (2021-01-18T15:52:43Z)

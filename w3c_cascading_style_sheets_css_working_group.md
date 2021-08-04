@@ -36,8 +36,6 @@
   
 * [[cssom-view-1] Issue with "ScrollToOptions.behavior": Description of `auto` value is wrong, lacking historical `instant` value](https://github.com/mdn/content/issues/2719) (2021-02-26T16:41:38Z)
   
-* [[css-backgrounds-4] Discourage "color: transparent" for "background-clip: text" ](https://github.com/mdn/content/issues/2638) (2021-02-24T01:51:49Z)
-  
 * [[cssom-view-1] Issue with "Window.devicePixelRatio": Code example does not match the relavent description perfectly.](https://github.com/mdn/content/issues/873) (2021-01-03T10:45:10Z)
   
 * [[cssom-view-1] Add a debounce example on the Window: resize event page](https://github.com/mdn/content/issues/1828) (2020-01-30T12:13:33Z)
