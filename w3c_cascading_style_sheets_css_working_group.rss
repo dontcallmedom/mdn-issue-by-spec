@@ -32,33 +32,6 @@
 <p>We should replace all of these with some alternative. A common alternative is to write the output into an element in the example's document.</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-sizing-3] Issue with "height": fit-content causes horizontal scroll on mobile]]></title>
-            <link>https://github.com/mdn/content/issues/7456</link>
-            <guid>https://github.com/mdn/content/issues/7456</guid>
-            <pubDate>Fri, 30 Jul 2021 11:44:03 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/height">https://developer.mozilla.org/en-US/docs/Web/CSS/height</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>Because fit-content contains several code elements, the line does not wrap on mobile.</p>
-<h4>Specific section or headline?</h4>
-<p>Values.</p>
-<h4>What did you expect to see?</h4>
-<p>Either a line break or rewording.</p>
-<h4>Did you test this? If so, how?</h4>
-<p>I opened the link in Fennec</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/css/height</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/height</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/height/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/css/height/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/69f5a958188c2c631e7b125992e3048625737ff1/hovercard" href="https://github.com/mdn/content/commit/69f5a958188c2c631e7b125992e3048625737ff1"><tt>69f5a95</tt></a></li>
-<li>Document last modified: 2021-06-29T03:43:37.000Z</li>
-</ul>
-</details>
-<p>CC <a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/schalkneethling/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/schalkneethling">@schalkneethling</a> Could also have impact on mdn-minimalist</p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[css-fonts-5, css-shapes-2, css-values-3, mediaqueries-4] [Markdown] [CSS] Handle `sup` and `sub` in the CSS docs]]></title>
             <link>https://github.com/mdn/content/issues/7267</link>
             <guid>https://github.com/mdn/content/issues/7267</guid>
@@ -101,47 +74,6 @@
 <p>It's a matter of judgment in a lot of cases what to do. Previous PRs that do this for different areas of MDN:</p>
 <p><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="913747880" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/5766" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/5766/hovercard" href="https://github.com/mdn/content/pull/5766">#5766</a> (for Web/API)<br>
 <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="895814499" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/5128" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/5128/hovercard" href="https://github.com/mdn/content/pull/5128">#5128</a> (for JS)</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[css-text-3] Issue with "white-space": The PRE element itself seems to cause two line breaks]]></title>
-            <link>https://github.com/mdn/content/issues/6752</link>
-            <guid>https://github.com/mdn/content/issues/6752</guid>
-            <pubDate>Sat, 10 Jul 2021 20:52:11 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/white-space">https://developer.mozilla.org/en-US/docs/Web/CSS/white-space</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>It looks like only line breaks of content inside PRE elements are described, not the line breaks caused by the PRE element itself.</p>
-<h4>Specific section or headline?</h4>
-<p>No, nothing specific.</p>
-<h4>What did you expect to see?</h4>
-<p>I expected to see the line-breaking of the PRE element itself mentioned.</p>
-<h4>Did you test this? If so, how?</h4>
-<p>Code:</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="&lt;body&gt;
-&lt;pre&gt;xxx&lt;/pre&gt;&lt;pre&gt;xxx&lt;/pre&gt;
-&lt;/body&gt;
-"><pre><code>&lt;body&gt;
-&lt;pre&gt;xxx&lt;/pre&gt;&lt;pre&gt;xxx&lt;/pre&gt;
-&lt;/body&gt;
-</code></pre></div>
-<p>Output (both Firefox and Chrome):</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="xxx
-
-xxx
-"><pre><code>xxx
-
-xxx
-</code></pre></div>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/css/white-space</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/white-space" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/white-space</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/white-space/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/css/white-space/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/69f5a958188c2c631e7b125992e3048625737ff1/hovercard" href="https://github.com/mdn/content/commit/69f5a958188c2c631e7b125992e3048625737ff1"><tt>69f5a95</tt></a></li>
-<li>Document last modified: 2021-06-29T03:43:37.000Z</li>
-</ul>
-</details>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[dom, selectors-4] Content suggestion: Example of :scope in element.querySelector()]]></title>
