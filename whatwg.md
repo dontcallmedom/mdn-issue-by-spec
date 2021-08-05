@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] Issue with "CanvasRenderingContext2D.bezierCurveTo()": Live sample failed](https://github.com/mdn/content/issues/7606) (2021-08-05T07:45:53Z)
-  
 * [[html, cssom-view-1, dom, uievents, FileAPI, WebIDL-1, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
 * [[dom] Issue with "DOMTokenList.toggle()": (Output not specified)](https://github.com/mdn/content/issues/7559) (2021-08-03T19:07:12Z)
