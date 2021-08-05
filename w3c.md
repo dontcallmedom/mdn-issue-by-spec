@@ -6,8 +6,6 @@
   
 * [[html, cssom-view-1, dom, uievents, FileAPI, WebIDL-1, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
-* [[webaudio] GainNode article recommends against constructor usage](https://github.com/mdn/content/issues/7426) (2021-07-29T14:00:03Z)
-  
 * [[IndexedDB-3] Issue with "IDBTransaction":Example needs explanation](https://github.com/mdn/content/issues/7160) (2021-07-22T15:31:43Z)
   
 * [[service-workers-1] Issue with "ServiceWorkerContainer.register()": may be advisable to check for an existing registration](https://github.com/mdn/content/issues/7138) (2021-07-21T16:35:44Z)

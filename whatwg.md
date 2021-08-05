@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[compat] Issue with "Window.orientation": Is it really Deprecated?](https://github.com/mdn/content/issues/7624) (2021-08-05T16:32:49Z)
+  
 * [[xhr] Issue with "FormData()": missing formdata event documentation](https://github.com/mdn/content/issues/7613) (2021-08-05T12:02:00Z)
   
 * [[html, cssom-view-1, dom, uievents, FileAPI, WebIDL-1, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)

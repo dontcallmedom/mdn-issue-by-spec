@@ -4,43 +4,10 @@
         <title>W3C Audio Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_audio_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Audio Working Group</description>
-        <lastBuildDate>Thu, 29 Jul 2021 14:00:03 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 26 Apr 2021 03:22:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[webaudio] GainNode article recommends against constructor usage]]></title>
-            <link>https://github.com/mdn/content/issues/7426</link>
-            <guid>https://github.com/mdn/content/issues/7426</guid>
-            <pubDate>Thu, 29 Jul 2021 14:00:03 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/GainNode">https://developer.mozilla.org/en-US/docs/Web/API/GainNode</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>The GainNode article recommends against using the constructor <code>new GainNode</code> and for using the factory function <code>context.createGain</code> without giving clear reasons.</p>
-<h4>Specific section or headline?</h4>
-<blockquote>
-<p>You shouldn't manually create a gain node; instead, use the method BaseAudioContext.createGain.<br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/GainNode#constructor" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/GainNode#constructor</a></p>
-</blockquote>
-<blockquote>
-<p>Note: You should typically call BaseAudioContext.createGain to create a gain node.<br>
-– <a href="https://developer.mozilla.org/en-US/docs/Web/API/GainNode/GainNode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/GainNode/GainNode</a></p>
-</blockquote>
-<h4>What did you expect to see?</h4>
-<p>The constructor <a href="https://caniuse.com/mdn-api_gainnode_gainnode" rel="nofollow">new GainNode</a> is now widely supported in the latest browser versions. Noteworthy, the factory function <a href="https://caniuse.com/mdn-api_baseaudiocontext_creategain" rel="nofollow">createGain()</a> has a little better browser support, due to having been implemented in Safari for a longer time.</p>
-<p><a href="https://github.com/w3ctag/design-reviews/blob/main/2013/07/WebAudio.md#issue-constructibility--de-sugaring-of-static-methods">W3C TAG discussions from 2013</a> indicate that the constructor should be preferred over the factory function because it allows subclassing, allows understanding how construction works, is more idiomatic and allows easy passing in of arguments.</p>
-<h4>Did you test this? If so, how?</h4>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/gainnode</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/GainNode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/GainNode</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/gainnode/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/gainnode/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/6e968ae20750e6611ab0dc76063f178d07aac974/hovercard" href="https://github.com/mdn/content/commit/6e968ae20750e6611ab0dc76063f178d07aac974"><tt>6e968ae</tt></a></li>
-<li>Document last modified: 2021-06-22T04:40:01.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[webaudio] Content bug: AudioListener and attributes need better examples. ]]></title>
             <link>https://github.com/mdn/content/issues/4468</link>
