@@ -4,50 +4,10 @@
         <title>W3C Service Workers Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_service_workers_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Service Workers Working Group</description>
-        <lastBuildDate>Wed, 04 Aug 2021 17:16:23 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 21 Jul 2021 16:35:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[service-workers-1] Issue with "ServiceWorker": wrong parentage]]></title>
-            <link>https://github.com/mdn/content/issues/7593</link>
-            <guid>https://github.com/mdn/content/issues/7593</guid>
-            <pubDate>Wed, 04 Aug 2021 17:16:23 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>You claim that ServiceWorker inherits from Worker. The spec says otherwise, it inherits from EventTarget. A ServiceWorker <strong>is not</strong> a Worker. Messages arrive at the ServiceWorkerGlobalScope, not the ServiceWorker itself. Yes, it's strange, but that's what the spec says.</p>
-<h4>Specific section or headline?</h4>
-<ul>
-<li>Properties<br>
-The ServiceWorker interface inherits properties from its parent, Worker.</li>
-</ul>
-<p><em>The error isn't obvious, because Worker has no own properties and inherits them from EventTarget, but Worker is still not the parent</em></p>
-<ul>
-<li>
-<p>Methods<br>
-The ServiceWorker interface inherits methods from its parent, Worker, with the exception of Worker.terminate</p>
-<ul>
-<li><em>As far as I know, selective inheritance is not a thing in IDL or JavaScript</em></li>
-<li><em>Yes, Worker has a postMessage and a terminate method, and ServiceWorker has a postMessage method. But no, ServiceWorker doesn't inherit it. The procedures in the HTML and ServiceWorker specs are similar, but not identical.</em></li>
-</ul>
-</li>
-</ul>
-<h4>What did you expect to see?</h4>
-<p>A description that conforms to the spec. But I'm not familiar enough with the topic to rewrite this.</p>
-<h4>Did you test this? If so, how?</h4>
-<p>I checked the prototype chain in Chrome DevTools. It's ServiceWorker -&gt; EventTarget</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/serviceworker</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworker/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworker/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/642d6eb7feb73e17cfc1ef61d3d09c2d200e65ca/hovercard" href="https://github.com/mdn/content/commit/642d6eb7feb73e17cfc1ef61d3d09c2d200e65ca"><tt>642d6eb</tt></a></li>
-<li>Document last modified: 2021-06-17T03:52:55.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[service-workers-1] Issue with "ServiceWorkerContainer.register()": may be advisable to check for an existing registration]]></title>
             <link>https://github.com/mdn/content/issues/7138</link>
