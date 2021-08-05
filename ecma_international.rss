@@ -4,42 +4,10 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Thu, 05 Aug 2021 01:01:51 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 03 Jul 2021 11:47:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript] Issue with "Right shift assignment (>>=)": (short summary here please)]]></title>
-            <link>https://github.com/mdn/content/issues/7601</link>
-            <guid>https://github.com/mdn/content/issues/7601</guid>
-            <pubDate>Thu, 05 Aug 2021 01:01:51 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift_assignment">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift_assignment</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>let b = -5;     // -00000000000000000000000000000101</p>
-<p>b &gt;&gt;= 2;        // -00000000000000000000000000000010<br>
-console.log(b);<br>
-// expected output: -2</p>
-<h4>Specific section or headline?</h4>
-<p>b &gt;&gt;= 2;        // -00000000000000000000000000000010<br>
-console.log(b);<br>
-// expected output: -2</p>
-<h4>What did you expect to see?</h4>
-<p>b &gt;&gt;= 2;        // -00000000000000000000000000000001<br>
-console.log(b);<br>
-// expected output: -2</p>
-<h4>Did you test this? If so, how?</h4>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/javascript/reference/operators/right_shift_assignment</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift_assignment" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift_assignment</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/right_shift_assignment/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/right_shift_assignment/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cf607d68522cd35ee7670782d3ee3a361eaef2e4/hovercard" href="https://github.com/mdn/content/commit/cf607d68522cd35ee7670782d3ee3a361eaef2e4"><tt>cf607d6</tt></a></li>
-<li>Document last modified: 2021-07-20T18:47:57.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[ecmascript] Issue with "isNaN()": Regarding the argumentation of the section "The necessity of an isNaN function"]]></title>
             <link>https://github.com/mdn/content/issues/6551</link>
