@@ -4,10 +4,55 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Tue, 03 Aug 2021 21:17:44 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 05 Aug 2021 07:45:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Issue with "CanvasRenderingContext2D.bezierCurveTo()": Live sample failed]]></title>
+            <link>https://github.com/mdn/content/issues/7606</link>
+            <guid>https://github.com/mdn/content/issues/7606</guid>
+            <pubDate>Thu, 05 Aug 2021 07:45:53 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/bezierCurveTo">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/bezierCurveTo</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>the live sample failed to load on the /fr page.</p>
+<p>displayed error :</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="Live sample failed!
+
+An error occurred trying to render this live sample.
+Consider filing an issue or trying your hands at a fix of your own.
+
+Error details:
+
+KumascriptError: unable to find an HTML element with an &quot;id&quot; of &quot;How_bezierCurveTo_works&quot; within /fr/docs/Web/API/CanvasRenderingContext2D/bezierCurveTo
+"><pre><code>Live sample failed!
+
+An error occurred trying to render this live sample.
+Consider filing an issue or trying your hands at a fix of your own.
+
+Error details:
+
+KumascriptError: unable to find an HTML element with an "id" of "How_bezierCurveTo_works" within /fr/docs/Web/API/CanvasRenderingContext2D/bezierCurveTo
+</code></pre></div>
+<h4>Specific section or headline?</h4>
+<p><a href="https://developer.mozilla.org/fr/docs/Web/API/CanvasRenderingContext2D/bezierCurveTo#r%C3%A9sultat" rel="nofollow">Résultat</a></p>
+<h4>What did you expect to see?</h4>
+<p>the live sample loading as it does on the /en page</p>
+<h4>Did you test this? If so, how?</h4>
+<p>load up the <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/bezierCurveTo" rel="nofollow">/en version </a> of the page<br>
+see the section load correctly</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/canvasrenderingcontext2d/beziercurveto</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/bezierCurveTo" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/bezierCurveTo</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/canvasrenderingcontext2d/beziercurveto/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/canvasrenderingcontext2d/beziercurveto/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/52cb33d18729b3664a8d146c0ad23648790dc5dc/hovercard" href="https://github.com/mdn/content/commit/52cb33d18729b3664a8d146c0ad23648790dc5dc"><tt>52cb33d</tt></a></li>
+<li>Document last modified: 2021-06-11T14:43:07.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, cssom-view-1, dom, uievents, FileAPI, WebIDL-1, pointerlock-2] Remove alert() from live samples]]></title>
             <link>https://github.com/mdn/content/issues/7566</link>
