@@ -32,7 +32,7 @@
   
 * [[css-shadow-parts-1] Issue with "Global attributes": (exportparts link broken)](https://github.com/mdn/content/issues/2753) (2021-02-27T20:24:36Z)
   
-* [[cssom-view-1] Issue with "ScrollToOptions.behavior": Description of `auto` value is wrong, lacking historical `instant` value](https://github.com/mdn/content/issues/2719) (2021-02-26T16:41:38Z)
+* [[cssom-view-1, css-overflow-3] Issue with "ScrollToOptions.behavior": Description of `auto` value is wrong, lacking historical `instant` value](https://github.com/mdn/content/issues/2719) (2021-02-26T16:41:38Z)
   
 * [[cssom-view-1] Issue with "Window.devicePixelRatio": Code example does not match the relavent description perfectly.](https://github.com/mdn/content/issues/873) (2021-01-03T10:45:10Z)
   
