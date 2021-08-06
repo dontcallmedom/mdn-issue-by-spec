@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Issue with "WorkerGlobalScope.importScripts()": (confucing description of parameters)](https://github.com/mdn/content/issues/7652) (2021-08-06T09:26:25Z)
+  
 * [[html, cssom-view-1, dom, uievents, FileAPI, WebIDL-1, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
 * [[html] Issue with "<form>": describe running javascript on submit: `onsubmit` and javascript pseudo-protocol](https://github.com/mdn/content/issues/7142) (2021-07-21T22:09:52Z)
