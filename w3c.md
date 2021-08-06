@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[wai-aria-1.2] Content bug: ariaDescription specification table, incorrectly titled ](https://github.com/mdn/content/issues/7651) (2021-08-06T07:50:01Z)
+  
 * [[service-workers-1] Issue with "ServiceWorker": wrong parentage; should explicitly list postMessage() ](https://github.com/mdn/content/issues/7593) (2021-08-04T17:16:23Z)
   
 * [[html, cssom-view-1, dom, uievents, FileAPI, WebIDL-1, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
