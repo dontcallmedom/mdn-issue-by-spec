@@ -9,6 +9,17 @@
     },
     "items": [
         {
+            "id": "https://github.com/mdn/content/issues/7653",
+            "content_html": "<p>In the documentation for the SVG <code>clipPath</code> element (<a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clipPath\">https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clipPath</a>) the example uses the <code>use</code> element and the <code>xlink:href</code> attribute.</p>\n<p>According to <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use#attributes\">https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use#attributes</a>, the <code>xlink:href</code> attribute has been deprecated in favour of the <code>href</code> attribute.</p>\n<p>Should this be corrected?</p>",
+            "url": "https://github.com/mdn/content/issues/7653",
+            "title": "[SVG11, css-masking-1] Deprecated Property on Documentation for SVG clipPath Element",
+            "date_modified": "2021-08-06T09:44:12.000Z",
+            "author": {
+                "name": "manngo",
+                "url": "https://github.com/manngo"
+            }
+        },
+        {
             "id": "https://github.com/mdn/content/issues/7651",
             "content_html": "<h2>What page(s) did you find the problem on?</h2>\n<p><a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/Element/ariaDescription\">https://developer.mozilla.org/en-US/docs/Web/API/Element/ariaDescription</a></p>\n<h2>Specific page section or heading?</h2>\n<p>Specification table</p>\n<h2>What is the problem?</h2>\n<p>Specification table links out to ARIA 1.3, but the link text is 'Accessible Rich Internet Applications (WAI-ARIA) 1.2 (WAI-ARIA 1.2)'</p>\n<p>There's no mention of <code>aria-description</code> attribute in the WAI ARIA 1.2 spec, I believe this is a 1.3 inclusion.</p>\n<h2>What did you expect to see?</h2>\n<p>a) The specification table should read</p>\n<blockquote>\n<p>Accessible Rich Internet Applications (WAI-ARIA) 1.3 (WAI-ARIA 1.3)</p>\n</blockquote>\n<p>b) or is completely dropped as per <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"817511685\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/2720\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/2720/hovercard\" href=\"https://github.com/mdn/content/pull/2720\">#2720</a></p>\n<p>After a cursory review of the README and the repo, it wasn't immediately clear to me how to submit a fix for expected result a. Happy to create a PR for expected result b (or a if someone can clarify how to do this)</p>\n<p>Thank you very much for your time <g-emoji class=\"g-emoji\" alias=\"pray\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f64f.png\">🙏</g-emoji></p>",
             "url": "https://github.com/mdn/content/issues/7651",
