@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[credential-management-1] Issue with "CredentialsContainer.get()": (short summary here please)](https://github.com/mdn/content/issues/7674) (2021-08-07T05:49:49Z)
+  
 * [[SVG11, css-masking-1] Deprecated Property on Documentation for SVG clipPath Element](https://github.com/mdn/content/issues/7653) (2021-08-06T09:44:12Z)
   
 * [[wai-aria-1.2] Content bug: ariaDescription specification table, incorrectly titled ](https://github.com/mdn/content/issues/7651) (2021-08-06T07:50:01Z)
