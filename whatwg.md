@@ -8,8 +8,6 @@
   
 * [[html, cssom-view-1, dom, uievents, FileAPI, WebIDL-1, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
-* [[dom] Issue with "DOMTokenList.toggle()": (Output not specified)](https://github.com/mdn/content/issues/7559) (2021-08-03T19:07:12Z)
-  
 * [[html] Issue with "<form>": describe running javascript on submit: `onsubmit` and javascript pseudo-protocol](https://github.com/mdn/content/issues/7142) (2021-07-21T22:09:52Z)
   
 * [[html] Content bug: Mention that the `formdata` event allows modifying the form payload](https://github.com/mdn/content/issues/7129) (2021-07-21T13:11:27Z)
