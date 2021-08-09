@@ -4,10 +4,38 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Mon, 09 Aug 2021 09:16:21 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 09 Aug 2021 11:52:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[service-workers-1] Issue with "ServiceWorkerRegistration.updateViaCache": (short summary here please)]]></title>
+            <link>https://github.com/mdn/content/issues/7760</link>
+            <guid>https://github.com/mdn/content/issues/7760</guid>
+            <pubDate>Mon, 09 Aug 2021 11:52:16 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>This is not a method, it's a string typed property</p>
+<h4>Specific section or headline?</h4>
+<p>all</p>
+<h4>What did you expect to see?</h4>
+<p>Description of property. It reflects the value of updateViaCache property of the options-Parameter in register(). The value of the property affects the behaviour of a ServiceWorker update.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>(1) Register a serviceworker, set a breakpoint, inspect the ServiceWorkerRegistration object<br>
+(2) Read the spec - V1 and nightly</p>
+<p>Sorry that I don't create a pull request. But I don't want to become a MDN author, because of lack of expertise AND time.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/serviceworkerregistration/updateviacache</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkerregistration/updateviacache/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkerregistration/updateviacache/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cad672e1d7ab78a63f60a5d79914520b1486b534/hovercard" href="https://github.com/mdn/content/commit/cad672e1d7ab78a63f60a5d79914520b1486b534"><tt>cad672e</tt></a></li>
+<li>Document last modified: 2021-07-29T14:32:30.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-masking-1, css-shapes-2] Issue with "clip-path": (short summary here please)]]></title>
             <link>https://github.com/mdn/content/issues/7742</link>
