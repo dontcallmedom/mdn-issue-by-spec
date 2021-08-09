@@ -4,43 +4,10 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Mon, 09 Aug 2021 03:02:35 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 06 Aug 2021 09:26:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[html] Issue with "HTMLTableRowElement": clarity on delectCell()]]></title>
-            <link>https://github.com/mdn/content/issues/7731</link>
-            <guid>https://github.com/mdn/content/issues/7731</guid>
-            <pubDate>Mon, 09 Aug 2021 03:02:35 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement">https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>The documentation states:</p>
-<blockquote>
-<p><code>HTMLTableRowElement.deleteCell()</code><br>
-Removes the cell at the given position in the row. If the given position is greater (or equal as it starts at zero) than the amount of cells in the row, or is smaller than 0, it raises a DOMException with the IndexSizeError value.</p>
-</blockquote>
-<h4>Specific section or headline?</h4>
-<p>HTMLTableRowElement.deleteCell()</p>
-<h4>Comment</h4>
-<p>In my own testing, <code>deleteCell(-1)</code> removes the last cell from the table row. That appears to contradict the statement that if it is smaller than 0 it raises a DOMException.</p>
-<p>The cited HTML standard document states:</p>
-<blockquote>
-<p>The position is relative to the cells in the row. The index −1 is equivalent to deleting the last cell of the row.<br>
-If the given position is less than −1 or greater than the index of the last cell, or if there are no cells, throws an "IndexSizeError" DOMException.</p>
-</blockquote>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/htmltablerowelement</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmltablerowelement/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmltablerowelement/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/3a5d65124798f70ef4777aef7ab11b7e9a5b7dbf/hovercard" href="https://github.com/mdn/content/commit/3a5d65124798f70ef4777aef7ab11b7e9a5b7dbf"><tt>3a5d651</tt></a></li>
-<li>Document last modified: 2021-06-13T14:10:35.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html] Issue with "WorkerGlobalScope.importScripts()": (confucing description of parameters)]]></title>
             <link>https://github.com/mdn/content/issues/7652</link>
