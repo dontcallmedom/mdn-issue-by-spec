@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[css-box-3] Issue with "padding": Incorrect comment in syntax section.](https://github.com/mdn/content/issues/7792) (2021-08-10T11:07:54Z)
-  
 * [[service-workers-1] Issue with "ServiceWorkerRegistration.updateViaCache": (short summary here please)](https://github.com/mdn/content/issues/7760) (2021-08-09T11:52:16Z)
   
 * [[css-masking-1, css-shapes-2] Issue with "clip-path": (short summary here please)](https://github.com/mdn/content/issues/7742) (2021-08-09T09:16:21Z)
