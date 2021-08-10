@@ -946,18 +946,19 @@ However this change is transparent to users and thus I believe this notice is mi
 <h1>Details</h1>
 
 <p><code>requestAnimationFrame</code> and <code>cancelAnimationFrame</code> used to be <code>Window</code> only methods, but it has recently been added to <code>DedicatedWorkerGlobalScope</code> too. <a rel="nofollow" href="https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider">https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider</a></p>
-<div class="highlight highlight-source-webidl position-relative" data-snippet-clipboard-copy-content="interface mixin AnimationFrameProvider {
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="interface mixin AnimationFrameProvider {
   unsigned long requestAnimationFrame(FrameRequestCallback callback);
   undefined cancelAnimationFrame(unsigned long handle);
 };
 Window includes AnimationFrameProvider;
 DedicatedWorkerGlobalScope includes AnimationFrameProvider;
-"><pre><span class="pl-k">interface</span> <span class="pl-en">mixin</span> AnimationFrameProvider {
-  <span class="pl-k">unsigned</span> <span class="pl-k">long</span> <span class="pl-en">requestAnimationFrame</span>(FrameRequestCallback callback);
-  undefined <span class="pl-en">cancelAnimationFrame</span>(<span class="pl-k">unsigned</span> <span class="pl-k">long</span> handle);
+"><pre lang="webidl"><code>interface mixin AnimationFrameProvider {
+  unsigned long requestAnimationFrame(FrameRequestCallback callback);
+  undefined cancelAnimationFrame(unsigned long handle);
 };
 Window includes AnimationFrameProvider;
-DedicatedWorkerGlobalScope includes AnimationFrameProvider;</pre></div>
+DedicatedWorkerGlobalScope includes AnimationFrameProvider;
+</code></pre></div>
 <p>I guess the page should now be <code>Web/API/WindowOrWorkerGlobalScope/requestAnimationFrame</code>, but I fear this would break any link to the current <code>/Web/API/window/requestAnimationFrame</code>. So I'm not sure how it should get handled.</p>
 <p>Also, compat-data should probably be updated (currently these methods are supported in Blink only).</p>]]></content:encoded>
         </item>
