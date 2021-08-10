@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-fonts-5] Issue with "font-family": Drop info about IE6](https://github.com/mdn/content/issues/7786) (2021-08-10T09:04:13Z)
+  
 * [[service-workers-1] Issue with "ServiceWorkerRegistration.updateViaCache": (short summary here please)](https://github.com/mdn/content/issues/7760) (2021-08-09T11:52:16Z)
   
 * [[css-masking-1, css-shapes-2] Issue with "clip-path": (short summary here please)](https://github.com/mdn/content/issues/7742) (2021-08-09T09:16:21Z)
