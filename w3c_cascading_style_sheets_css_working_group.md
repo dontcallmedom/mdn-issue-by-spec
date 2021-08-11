@@ -4,8 +4,6 @@
 
 * [[cssom-1] Issue with "CSSImportRule": CSSImportRule.media can be set, but it's labelled as read-only](https://github.com/mdn/content/issues/7810) (2021-08-11T01:50:30Z)
   
-* [[css-masking-1, css-shapes-2] Issue with "clip-path": (short summary here please)](https://github.com/mdn/content/issues/7742) (2021-08-09T09:16:21Z)
-  
 * [[SVG11, css-masking-1] Deprecated Property on Documentation for SVG clipPath Element](https://github.com/mdn/content/issues/7653) (2021-08-06T09:44:12Z)
   
 * [[html, cssom-view-1, dom, uievents, FileAPI, WebIDL-1, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
