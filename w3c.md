@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[cssom-1] Issue with "CSSImportRule": (short summary here please)](https://github.com/mdn/content/issues/7810) (2021-08-11T01:50:30Z)
+* [[cssom-1] Issue with "CSSImportRule": CSSImportRule.media can be set, but it's labelled as read-only](https://github.com/mdn/content/issues/7810) (2021-08-11T01:50:30Z)
   
 * [[service-workers-1] Issue with "ServiceWorkerRegistration.updateViaCache": (short summary here please)](https://github.com/mdn/content/issues/7760) (2021-08-09T11:52:16Z)
   
