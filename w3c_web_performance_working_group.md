@@ -8,7 +8,5 @@
   
 * [[hr-time-3] Issue with "performance.now()": Chrome, Firefox, and Safari are not spec compliant on certain platforms](https://github.com/mdn/content/issues/4713) (2021-05-04T18:23:13Z)
   
-* [[user-timing-2] Content update: performance.mark|measure x UserTiming Level 3](https://github.com/mdn/content/issues/3001) (2021-03-10T14:33:49Z)
-  
 * [[user-timing-2] Update `performance.mark` article with User Timing Level 3 data](https://github.com/mdn/content/issues/1463) (2021-01-18T15:52:43Z)
   

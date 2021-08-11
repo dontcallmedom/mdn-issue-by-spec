@@ -102,8 +102,6 @@
   
 * [[speech-api] Issue with "SpeechSynthesisUtterance.rate": (demo is incomplete)](https://github.com/mdn/content/issues/3013) (2021-03-10T23:00:08Z)
   
-* [[user-timing-2] Content update: performance.mark|measure x UserTiming Level 3](https://github.com/mdn/content/issues/3001) (2021-03-10T14:33:49Z)
-  
 * [[css-shadow-parts-1] Issue with "Global attributes": (exportparts link broken)](https://github.com/mdn/content/issues/2753) (2021-02-27T20:24:36Z)
   
 * [[cssom-view-1, css-overflow-3] Issue with "ScrollToOptions.behavior": Description of `auto` value is wrong, lacking historical `instant` value](https://github.com/mdn/content/issues/2719) (2021-02-26T16:41:38Z)

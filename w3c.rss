@@ -1691,39 +1691,6 @@ not documented in<br>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[user-timing-2] Content update: performance.mark|measure x UserTiming Level 3]]></title>
-            <link>https://github.com/mdn/content/issues/3001</link>
-            <guid>https://github.com/mdn/content/issues/3001</guid>
-            <pubDate>Wed, 10 Mar 2021 14:33:49 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
-<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark">https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Performance/measure">https://developer.mozilla.org/en-US/docs/Web/API/Performance/measure</a></p>
-<h2>Specific page section or heading?</h2>
-<ul>
-<li>Return value</li>
-<li>Specifications</li>
-<li>parameters</li>
-</ul>
-<h2>What is the problem?</h2>
-<ul>
-<li>New version of spec (UT L3) was released: <a href="https://www.w3.org/TR/user-timing-3/" rel="nofollow">https://www.w3.org/TR/user-timing-3/</a></li>
-<li>Shipped in <a href="https://www.chromestatus.com/feature/5149401886490624" rel="nofollow">Chrome 78</a> and will ship soon in <a href="https://webkit.org/blog/11333/release-notes-for-safari-technology-preview-115/" rel="nofollow">Safari 14.1</a>. <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1581705" rel="nofollow">Not yet in Firefox</a></li>
-<li>It makes <code>performance.mark|measure</code> return <code>PerformanceMark</code> <code>PerformanceMeasure</code> (and not <code>void</code>)</li>
-</ul>
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/1437027/110644805-c048eb00-81b5-11eb-8e27-250a24166f6c.png"><img src="https://user-images.githubusercontent.com/1437027/110644805-c048eb00-81b5-11eb-8e27-250a24166f6c.png" alt="image" style="max-width:100%;"></a></p>
-<ul>
-<li><code>perf.mark</code> accepts  <code>startTime</code> param:</li>
-</ul>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="      performance.mark('a', {startTime: 900})
-      performance.mark('b', {startTime: 999})
-      performance.measure('a-&gt;b', 'a', 'b')
-"><pre><code>      performance.mark('a', {startTime: 900})
-      performance.mark('b', {startTime: 999})
-      performance.measure('a-&gt;b', 'a', 'b')
-</code></pre></div>
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/1437027/110645601-685eb400-81b6-11eb-89cd-76e38b5c89ca.png"><img src="https://user-images.githubusercontent.com/1437027/110645601-685eb400-81b6-11eb-89cd-76e38b5c89ca.png" alt="image" style="max-width:100%;"></a></p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[css-shadow-parts-1] Issue with "Global attributes": (exportparts link broken)]]></title>
             <link>https://github.com/mdn/content/issues/2753</link>
             <guid>https://github.com/mdn/content/issues/2753</guid>
