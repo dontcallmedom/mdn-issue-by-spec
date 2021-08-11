@@ -897,34 +897,6 @@ setTimeout(() =&gt; ws.send("Hello"), 5000);
 </ul>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Deprecation notice in "WorkerGlobalScope.close()" is misleading.]]></title>
-            <link>https://github.com/mdn/content/issues/1694</link>
-            <guid>https://github.com/mdn/content/issues/1694</guid>
-            <pubDate>Mon, 25 Jan 2021 01:30:21 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/close">https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/close</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>The <code>close()</code> method is marked as being deprecated.</p>
-<h4>Specific section or headline?</h4>
-<p>The deprecation notice.</p>
-<h4>What did you expect to see?</h4>
-<p>A note explaining that this method has been moved to each specific type of worker global scopes.<br>
-When falling on this page users might think that they can't use this method in a DedicatedWorker (which is the most common Worker type), while, instead of a true deprecation what happened here is that this method has been moved on other interfaces.<br>
-However this change is transparent to users and thus I believe this notice is misleading (<a href="https://stackoverflow.com/questions/65875453/how-to-stop-js-web-worker-from-within/65877757" rel="nofollow">example of someone who got it wrong</a>).</p>
-<p>At the very least it should say that <a href="https://developer.mozilla.org/en-US/docs/Web/API/DedicatedWorkerGlobalScope/close" rel="nofollow">Dedicated</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/SharedWorkerGlobalScope/close" rel="nofollow">Shared</a> workers global scopes still have this method defined.</p>
-<h4>Did you test this? If so, how?</h4>
-<p>N/A</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/workerglobalscope/close</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/close" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/close</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/master/files/en-us/web/api/workerglobalscope/close/index.html">https://github.com/mdn/content/blob/master/files/en-us/web/api/workerglobalscope/close/index.html</a></li>
-<li>Document last modified: 2021-01-20T20:24:12.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] requestAnimationFrame is also available in Dedicated Workers]]></title>
             <link>https://github.com/mdn/content/issues/1519</link>
             <guid>https://github.com/mdn/content/issues/1519</guid>

@@ -86,8 +86,6 @@
   
 * [[html] [Media] Enable AVIF support](https://github.com/mdn/content/issues/1726) (2021-01-25T16:25:26Z)
   
-* [[html] Deprecation notice in "WorkerGlobalScope.close()" is misleading.](https://github.com/mdn/content/issues/1694) (2021-01-25T01:30:21Z)
-  
 * [[dom] Issue with "Event.preventDefault()": displayWarning() example doesn't work with autofill](https://github.com/mdn/content/issues/1637) (2021-01-22T19:23:00Z)
   
 * [[html] requestAnimationFrame is also available in Dedicated Workers](https://github.com/mdn/content/issues/1519) (2021-01-20T08:47:22Z)
