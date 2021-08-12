@@ -4,10 +4,34 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Wed, 11 Aug 2021 01:50:30 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Aug 2021 10:04:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[selectors-4] Content bug: Link redirecting to folder directory]]></title>
+            <link>https://github.com/mdn/content/issues/7849</link>
+            <guid>https://github.com/mdn/content/issues/7849</guid>
+            <pubDate>Thu, 12 Aug 2021 10:04:04 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:root">https://developer.mozilla.org/en-US/docs/Web/CSS/:root</a></p>
+<h2>Specific page section or heading?</h2>
+<p>Specification</p>
+<h2>What is the problem?</h2>
+<p>When clicking on:</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="Selectors Level 4 (Selectors 4)
+# root-pseudo
+"><pre><code>Selectors Level 4 (Selectors 4)
+# root-pseudo
+</code></pre></div>
+<p>it redirects to the folder directory:<br>
+<a rel="nofollow" href="https://drafts.csswg.org/selectors/#root-pseudo">https://drafts.csswg.org/selectors/#root-pseudo</a></p>
+<p>Which has HTML code inside so I don't think it's on purpose.</p>
+<h2>What did you expect to see?</h2>
+<p>IDK</p>
+<h2>Did you test this? If so, how?</h2>
+<p>Happned on chrome and chrome incognito.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[cssom-1] Issue with "CSSImportRule": CSSImportRule.media can be set, but it's labelled as read-only]]></title>
             <link>https://github.com/mdn/content/issues/7810</link>
