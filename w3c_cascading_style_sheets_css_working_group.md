@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[selectors-4] Content bug: Link redirecting to folder directory](https://github.com/mdn/content/issues/7849) (2021-08-12T10:04:04Z)
-  
 * [[cssom-1] Issue with "CSSImportRule": CSSImportRule.media can be set, but it's labelled as read-only](https://github.com/mdn/content/issues/7810) (2021-08-11T01:50:30Z)
   
 * [[SVG11, css-masking-1] Deprecated Property on Documentation for SVG clipPath Element](https://github.com/mdn/content/issues/7653) (2021-08-06T09:44:12Z)

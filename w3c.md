@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[selectors-4] Content bug: Link redirecting to folder directory](https://github.com/mdn/content/issues/7849) (2021-08-12T10:04:04Z)
-  
 * [[WebCryptoAPI] window.crypto.subtle.generateKey not supported on Safari 15 on iOS {iOS 15 Beta 5}](https://github.com/mdn/content/issues/7847) (2021-08-11T18:00:16Z)
   
 * [[cssom-1] Issue with "CSSImportRule": CSSImportRule.media can be set, but it's labelled as read-only](https://github.com/mdn/content/issues/7810) (2021-08-11T01:50:30Z)
