@@ -4,43 +4,10 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Wed, 11 Aug 2021 01:50:30 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 06 Aug 2021 09:44:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[cssom-1] Issue with "CSSImportRule": CSSImportRule.media can be set, but it's labelled as read-only]]></title>
-            <link>https://github.com/mdn/content/issues/7810</link>
-            <guid>https://github.com/mdn/content/issues/7810</guid>
-            <pubDate>Wed, 11 Aug 2021 01:50:30 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/CSSImportRule">https://developer.mozilla.org/en-US/docs/Web/API/CSSImportRule</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>CSSImportRule.media is read-only. If you set it to a valid media string, like 'print', the corresponding MediaList will be updated.</p>
-<h4>Specific section or headline?</h4>
-<p>The Properties section</p>
-<h4>What did you expect to see?</h4>
-<p>The media property of the CSSImportRule won't be updated at all</p>
-<h4>Did you test this? If so, how?</h4>
-<p>Found a web page which uses the <code>@import</code> rule: <a rel="nofollow" href="https://www.tutorialrepublic.com/codelab.php?topic=css&amp;file=import-rule-01">https://www.tutorialrepublic.com/codelab.php?topic=css&amp;file=import-rule-01</a><br>
-Fiddled with the page's console to obtain the CSSImportRule within the example iframe, then modified its media property. Here's the code</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="var style = document.querySelector('style') // or just get the first style element through the Inspector
-style.sheet.cssRules[0].media = 'print' // this updates the media property
-"><pre><code>var style = document.querySelector('style') // or just get the first style element through the Inspector
-style.sheet.cssRules[0].media = 'print' // this updates the media property
-</code></pre></div>
-<p>EDIT: I used Chromium 92.0.4515.115 Official Build, 64-bit for the test. Just in case you guys need this info.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/cssimportrule</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CSSImportRule" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CSSImportRule</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/cssimportrule/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/cssimportrule/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/48318c462f6dca7ab2c7ca0e5cc364321745cc2d/hovercard" href="https://github.com/mdn/content/commit/48318c462f6dca7ab2c7ca0e5cc364321745cc2d"><tt>48318c4</tt></a></li>
-<li>Document last modified: 2021-06-12T21:15:39.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[SVG11, css-masking-1] Deprecated Property on Documentation for SVG clipPath Element]]></title>
             <link>https://github.com/mdn/content/issues/7653</link>
