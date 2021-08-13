@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[ecmascript] Issue with "Text formatting": Comment in example is incorrect](https://github.com/mdn/content/issues/7894) (2021-08-13T16:58:46Z)
+  
 * [[ecmascript] Issue with "class": examples are an anti-pattern](https://github.com/mdn/content/issues/7840) (2021-08-12T05:06:24Z)
   
 * [[ecmascript] Issue with "isNaN()": Regarding the argumentation of the section "The necessity of an isNaN function"](https://github.com/mdn/content/issues/6551) (2021-07-03T11:47:14Z)

@@ -4,10 +4,60 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Thu, 12 Aug 2021 05:06:24 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 13 Aug 2021 16:58:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "Text formatting": Comment in example is incorrect]]></title>
+            <link>https://github.com/mdn/content/issues/7894</link>
+            <guid>https://github.com/mdn/content/issues/7894</guid>
+            <pubDate>Fri, 13 Aug 2021 16:58:46 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Text_formatting">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Text_formatting</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>Last comment <code>// Returns the string "2+2"</code> is incorrect.</p>
+<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="const firstString = '2 + 2'; // Creates a string literal value
+const secondString = new String('2 + 2'); // Creates a String object
+eval(firstString); // Returns the number 4
+eval(secondString); // Returns the string &quot;2 + 2&quot;
+"><pre><span class="pl-k">const</span> <span class="pl-s1">firstString</span> <span class="pl-c1">=</span> <span class="pl-s">'2 + 2'</span><span class="pl-kos">;</span> <span class="pl-c">// Creates a string literal value</span>
+<span class="pl-k">const</span> <span class="pl-s1">secondString</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">String</span><span class="pl-kos">(</span><span class="pl-s">'2 + 2'</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// Creates a String object</span>
+<span class="pl-en">eval</span><span class="pl-kos">(</span><span class="pl-s1">firstString</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// Returns the number 4</span>
+<span class="pl-en">eval</span><span class="pl-kos">(</span><span class="pl-s1">secondString</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// Returns the string "2 + 2"</span></pre></div>
+<h4>Specific section or headline?</h4>
+<p>String objects</p>
+<h4>What did you expect to see?</h4>
+<p>The comment should be <code>// Returns a String object containing "2+2"</code><br>
+(Just like <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval#description">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval#description</a>)</p>
+<h4>Did you test this? If so, how?</h4>
+<div class="highlight highlight-source-shell position-relative" data-snippet-clipboard-copy-content="$ node
+Welcome to Node.js v14.16.0.
+Type &quot;.help&quot; for more information.
+&gt; const secondString = new String('2 + 2');
+undefined
+&gt; eval(secondString); 
+[String: '2 + 2']
+
+"><pre>$ node
+Welcome to Node.js v14.16.0.
+Type <span class="pl-s"><span class="pl-pds">"</span>.help<span class="pl-pds">"</span></span> <span class="pl-k">for</span> more information.
+<span class="pl-k">&gt;</span> const secondString = new String(<span class="pl-s"><span class="pl-pds">'</span>2 + 2<span class="pl-pds">'</span></span>)<span class="pl-k">;</span>
+undefined
+<span class="pl-k">&gt;</span> eval(secondString)<span class="pl-k">;</span> 
+[String: <span class="pl-s"><span class="pl-pds">'</span>2 + 2<span class="pl-pds">'</span></span>]
+</pre></div>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/guide/text_formatting</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Text_formatting" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Text_formatting</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/guide/text_formatting/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/guide/text_formatting/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cf607d68522cd35ee7670782d3ee3a361eaef2e4/hovercard" href="https://github.com/mdn/content/commit/cf607d68522cd35ee7670782d3ee3a361eaef2e4"><tt>cf607d6</tt></a></li>
+<li>Document last modified: 2021-07-20T18:47:57.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Issue with "class": examples are an anti-pattern]]></title>
             <link>https://github.com/mdn/content/issues/7840</link>
