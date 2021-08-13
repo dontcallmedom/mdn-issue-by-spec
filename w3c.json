@@ -9,17 +9,6 @@
     },
     "items": [
         {
-            "id": "https://github.com/mdn/content/issues/7847",
-            "content_html": "<p><code>window.crypto.subtle.generateKey</code> throws an error <code>undefined is not an object (evaluating 'a.subtle()[f]')</code> on Safari 15 on iOS {iOS 15 Beta 5}, while it was working as expected on the previous Beta versions 1 &amp; 2 and all other previous iOS versions.</p>\n<p>We've been using SubtleCrypto library in our React-Native app on an iPhone 11 with iOS 15 Beta and ran into this issue.</p>\n\n<details>\n<summary>MDN page report details</summary>\n<ul>\n<li>Query: <code>api.SubtleCrypto.generateKey</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/generateKey\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/generateKey</a></li>\n<li>Report started: 2021-08-11T17:49:34.467Z</li>\n</ul>\n</details>",
-            "url": "https://github.com/mdn/content/issues/7847",
-            "title": "[WebCryptoAPI] window.crypto.subtle.generateKey not supported on Safari 15 on iOS {iOS 15 Beta 5}",
-            "date_modified": "2021-08-11T18:00:16.000Z",
-            "author": {
-                "name": "gt-hub",
-                "url": "https://github.com/gt-hub"
-            }
-        },
-        {
             "id": "https://github.com/mdn/content/issues/7760",
             "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache\">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache</a></p>\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<p>This is not a method, it's a string typed property</p>\n<h4>Specific section or headline?</h4>\n<p>all</p>\n<h4>What did you expect to see?</h4>\n<p>Description of property. It reflects the value of updateViaCache property of the options-Parameter in register(). The value of the property affects the behaviour of a ServiceWorker update.</p>\n<h4>Did you test this? If so, how?</h4>\n<p>(1) Register a serviceworker, set a breakpoint, inspect the ServiceWorkerRegistration object<br>\n(2) Read the spec - V1 and nightly</p>\n<p>Sorry that I don't create a pull request. But I don't want to become a MDN author, because of lack of expertise AND time.</p>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul>\n<li>Folder: <code>en-us/web/api/serviceworkerregistration/updateviacache</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkerregistration/updateviacache/index.html\">https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkerregistration/updateviacache/index.html</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/cad672e1d7ab78a63f60a5d79914520b1486b534/hovercard\" href=\"https://github.com/mdn/content/commit/cad672e1d7ab78a63f60a5d79914520b1486b534\"><tt>cad672e</tt></a></li>\n<li>Document last modified: 2021-07-29T14:32:30.000Z</li>\n</ul>\n</details>",
             "url": "https://github.com/mdn/content/issues/7760",
