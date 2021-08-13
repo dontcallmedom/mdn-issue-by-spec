@@ -18,8 +18,6 @@
   
 * [[cssom-view-1] Issue with "Window.devicePixelRatio": (short summary here please)](https://github.com/mdn/content/issues/4478) (2021-04-26T09:29:18Z)
   
-* [[web-bluetooth, cssom-1] Web IDL snippets on some pages](https://github.com/mdn/content/issues/4292) (2021-04-20T10:01:00Z)
-  
 * [[cssom-view-1] Issue with "Element.scrollTop": (short summary here please)](https://github.com/mdn/content/issues/4142) (2021-04-15T21:36:13Z)
   
 * [[css-lists-3] Issue with "list-style": (short summary here please)](https://github.com/mdn/content/issues/4103) (2021-04-14T13:53:26Z)
