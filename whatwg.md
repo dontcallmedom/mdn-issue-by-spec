@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[fetch] fetch() return type error?](https://github.com/mdn/content/issues/7907) (2021-08-14T04:24:07Z)
-  
 * [[html] Issue with "WorkerGlobalScope.importScripts()": (confucing description of parameters)](https://github.com/mdn/content/issues/7652) (2021-08-06T09:26:25Z)
   
 * [[xhr] Issue with "FormData()": missing formdata event documentation](https://github.com/mdn/content/issues/7613) (2021-08-05T12:02:00Z)
@@ -65,8 +63,6 @@
 * [[html] Issue with "HTMLFormElement: formdata event": The example code is bonkers](https://github.com/mdn/content/issues/3886) (2021-04-06T15:14:48Z)
   
 * [[html] Issue with "inputmode": Should probably discuss interaction with input type](https://github.com/mdn/content/issues/3732) (2021-04-01T05:26:56Z)
-  
-* [[html] Issue with "Location: reload()": forceReload parameter (archaeological context)](https://github.com/mdn/content/issues/3726) (2021-04-01T00:05:48Z)
   
 * [[html] Content suggestion: Guide info on Polyfill section placement in relation to others](https://github.com/mdn/content/issues/3714) (2021-03-31T15:18:14Z)
   
