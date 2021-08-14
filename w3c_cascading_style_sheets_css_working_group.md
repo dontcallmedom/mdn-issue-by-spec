@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-cascade-3] Issue with "@import": supports() query is not supported](https://github.com/mdn/content/issues/7934) (2021-08-14T20:46:27Z)
+  
 * [[SVG11, css-masking-1] Deprecated Property on Documentation for SVG clipPath Element](https://github.com/mdn/content/issues/7653) (2021-08-06T09:44:12Z)
   
 * [[html, cssom-view-1, dom, uievents, FileAPI, WebIDL-1, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
