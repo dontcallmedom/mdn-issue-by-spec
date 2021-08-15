@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[ecmascript] Content bug: Template literals erroneously called "strings", claims that spec used to do so](https://github.com/mdn/content/issues/7942) (2021-08-15T11:34:47Z)
+  
 * [[ecmascript] Issue with "class": examples are an anti-pattern](https://github.com/mdn/content/issues/7840) (2021-08-12T05:06:24Z)
   
 * [[ecmascript] Issue with "isNaN()": Regarding the argumentation of the section "The necessity of an isNaN function"](https://github.com/mdn/content/issues/6551) (2021-07-03T11:47:14Z)
