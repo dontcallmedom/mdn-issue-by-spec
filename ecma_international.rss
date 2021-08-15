@@ -4,46 +4,10 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Sun, 15 Aug 2021 11:34:47 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Aug 2021 05:06:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript] Content bug: Template literals erroneously called "strings", claims that spec used to do so]]></title>
-            <link>https://github.com/mdn/content/issues/7942</link>
-            <guid>https://github.com/mdn/content/issues/7942</guid>
-            <pubDate>Sun, 15 Aug 2021 11:34:47 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
-<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals</a></p>
-<h2>Specific page section or heading?</h2>
-<p>The two introductory paragraphs.</p>
-<h2>What is the problem?</h2>
-<p>The first two paragraphs are currently:</p>
-<blockquote>
-<p>Template literals are string literals allowing embedded expressions. You can use multi-line strings and string interpolation features with them.</p>
-<p>They were called "template strings" in prior editions of the ES2015 specification.</p>
-</blockquote>
-<p>Problems:</p>
-<ol>
-<li>
-<p><em>"...are string literals..."</em> Template literals aren't string literals. If they were string literals, you could use them anywhere a string literal can be used, but you can't. For example, you can't use them for static import module specifiers, non-computed property keys in object literals, or <code>use strict</code>.</p>
-</li>
-<li>
-<p><em>"They were called "template strings" in prior editions..."</em> There's no edition of the specification I know of that called them "template strings," I'd be curious to know what that author was referring to. They were added in <a href="https://262.ecma-international.org/6.0/" rel="nofollow">ES2015</a>, which reliably calls them template literals. ("TemplateStrings" does occur in the text, but it's specifically in reference to getting the string portions of the template.) I wouldn't be surprised if they were called "template strings" in draft versions and/or proposals, but even if so, noting that here just perpetuates the misconception that these are a third kind of string literal.</p>
-</li>
-</ol>
-<h2>What did you expect to see?</h2>
-<p>I think it should be clear that they're their own kind of literal, not string literals, and the claim about the spec should just be removed in favor of just flagging up the confusion/informal usage.</p>
-<p>I'd reword the first paragraph and replace the second.</p>
-<blockquote>
-<p>Template literals are literals delimited with backticks (<code>`</code>) allowing embedded expressions called <em>substitutions</em>. <em>Untagged</em> template literals result in strings, which is useful for string interpolation (and multiline strings, since unescaped newlines are allowed). <em>Tagged</em> template literals call a function (the <em>tag function</em>) with an array of any text segments from the literal followed by arguments with the values of any substitutions, which is useful for <a href="https://en.wikipedia.org/wiki/Domain-specific_language" rel="nofollow">DSLs</a>.</p>
-<p>Template literals are sometimes informally called <em>template strings</em>, but they aren't string literals and can't be used everywhere a string literal can be used. Also, a tagged template literal may not result in a string; it's up to the tag function what it creates (if anything).</p>
-</blockquote>
-<p>Happy to do a PR if it suits.</p>
-<p>I think I'd reorganize the page a bit as well (in fact, for me untagged template literals and tagged template literals are each big enough that two subpages might be justified). I could take that on in consultation with the team if you'd like (though not for 3-4 weeks). (FWIW, I'm a <a href="https://www.wiley.com/en-gb/JavaScript:+The+New+Toys-p-9781119367963" rel="nofollow">published author</a> in this area.)</p>
-<h2>Did you test this? If so, how?</h2>
-<p>N/A</p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[ecmascript] Issue with "class": examples are an anti-pattern]]></title>
             <link>https://github.com/mdn/content/issues/7840</link>
