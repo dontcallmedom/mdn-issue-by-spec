@@ -64,6 +64,8 @@
   
 * [[html] Issue with "inputmode": Should probably discuss interaction with input type](https://github.com/mdn/content/issues/3732) (2021-04-01T05:26:56Z)
   
+* [[html] Issue with "Location: reload()": forceReload parameter (archaeological context)](https://github.com/mdn/content/issues/3726) (2021-04-01T00:05:48Z)
+  
 * [[html] Content suggestion: Guide info on Polyfill section placement in relation to others](https://github.com/mdn/content/issues/3714) (2021-03-31T15:18:14Z)
   
 * [[html] Issue with "Document: drag event": removeChild seems superfluous - is a draggedElement moved in the dom tree?](https://github.com/mdn/content/issues/3486) (2021-03-25T07:31:27Z)

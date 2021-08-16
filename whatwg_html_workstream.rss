@@ -667,6 +667,50 @@ request.send(data);
 </details>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[[html] Issue with "Location: reload()": forceReload parameter (archaeological context)]]></title>
+            <link>https://github.com/mdn/content/issues/3726</link>
+            <guid>https://github.com/mdn/content/issues/3726</guid>
+            <pubDate>Thu, 01 Apr 2021 00:05:48 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Location/reload">https://developer.mozilla.org/en-US/docs/Web/API/Location/reload</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>I am working on an older application and am trying to find more information about <code>location.reload(forceReload: true/false)</code>. Specifically when it disappeared.</p>
+<p>It appears forceReload was a parameter previously handled by browsers. Reason for removal appears to be "<a href="https://stackoverflow.com/a/55127750" rel="nofollow">not being in the specification</a>".</p>
+<p>For archaeological/historical purposes, I was wondering if it was possible to have the historical context available.</p>
+<h4>Specific section or headline?</h4>
+<p><code>See Also</code> section would of made sense. e.g.:</p>
+<blockquote>
+<p>See also:</p>
+<ul>
+<li>The Location interface it belongs to.</li>
+<li>Similar methods: Location.assign() and Location.replace().</li>
+<li><strong>Deprecated:</strong> location.reload(forceReload)</li>
+</ul>
+</blockquote>
+<h4>What did you expect to see?</h4>
+<p>Documentation of (now) deprecated parameter forceReload.</p>
+<ul>
+<li>[Extra nice] Browser matrix of up to when feature was supported
+<ul>
+<li>Alternatively, ballpark (or specific) date(s) when forceReload was removed from browser engines.</li>
+</ul>
+</li>
+<li>[Nice to have] What replaced it?/Alternatives to achieve similar result e.g. <code>window.location.href = window.location.href</code></li>
+</ul>
+<h4>Did you test this? If so, how?</h4>
+<p>n/a</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/location/reload</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Location/reload" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Location/reload</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/location/reload/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/location/reload/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/56d9a678477f0e79232caa8169114519bf02a44a/hovercard" href="https://github.com/mdn/content/commit/56d9a678477f0e79232caa8169114519bf02a44a"><tt>56d9a67</tt></a></li>
+<li>Document last modified: 2021-02-19T19:41:18.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[[html] Content suggestion: Guide info on Polyfill section placement in relation to others]]></title>
             <link>https://github.com/mdn/content/issues/3714</link>
             <guid>https://github.com/mdn/content/issues/3714</guid>
