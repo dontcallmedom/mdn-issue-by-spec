@@ -44,8 +44,6 @@
   
 * [[speech-api] Issue with "SpeechSynthesis.onvoiceschanged": (short summary here please)](https://github.com/mdn/content/issues/6101) (2021-06-18T08:46:08Z)
   
-* [[css-fonts-5] Variable font examples can't download font (CORS error)](https://github.com/mdn/content/issues/5606) (2021-06-02T22:48:01Z)
-  
 * [[clipboard-apis] Issue with "Clipboard.write()": example setClipboard reports an error](https://github.com/mdn/content/issues/5566) (2021-06-02T06:23:17Z)
   
 * [[IndexedDB-3] Issue with "Using IndexedDB": "Updating an entry in the database" example does not work](https://github.com/mdn/content/issues/5463) (2021-05-30T02:45:08Z)
