@@ -4,22 +4,10 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Sat, 14 Aug 2021 04:24:07 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 06 Aug 2021 09:26:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[fetch] fetch() return type error?]]></title>
-            <link>https://github.com/mdn/content/issues/7907</link>
-            <guid>https://github.com/mdn/content/issues/7907</guid>
-            <pubDate>Sat, 14 Aug 2021 04:24:07 GMT</pubDate>
-            <content:encoded><![CDATA[<p>On the docs page about <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" rel="nofollow">fetch</a><br>
-it says (with emphasis mine):</p>
-<p>"The simplest use of fetch() takes one argument — the path to the resource you want to fetch — and <strong>returns a promise containing the response</strong> (a Response object)."</p>
-<p>But given that a <a href="https://developer.mozilla.org/en-US/docs/Web/API/Response" rel="nofollow">Response.json()</a> return a Promise, should this wording be</p>
-<p>"...and <strong>returns a response containing the promise</strong>" ?</p>
-<p>The initial paragraph had be thinking fetch was returning a Promise object.</p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html] Issue with "WorkerGlobalScope.importScripts()": (confucing description of parameters)]]></title>
             <link>https://github.com/mdn/content/issues/7652</link>
