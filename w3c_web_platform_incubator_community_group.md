@@ -6,8 +6,6 @@
   
 * [[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator](https://github.com/mdn/content/issues/6856) (2021-07-13T13:35:32Z)
   
-* [[speech-api] Issue with "SpeechSynthesis.onvoiceschanged": (short summary here please)](https://github.com/mdn/content/issues/6101) (2021-06-18T08:46:08Z)
-  
 * [[entries-api] Issue with "FileSystemFlags.exclusive": (short summary here please)](https://github.com/mdn/content/issues/5457) (2021-05-29T15:23:34Z)
   
 * [[speech-api] Issue with "SpeechSynthesisUtterance.rate": (demo is incomplete)](https://github.com/mdn/content/issues/3013) (2021-03-10T23:00:08Z)

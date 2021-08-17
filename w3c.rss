@@ -656,62 +656,6 @@ Promise: <em>Chained Promises</em></p>
 <p>No, I did not need to.</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[speech-api] Issue with "SpeechSynthesis.onvoiceschanged": (short summary here please)]]></title>
-            <link>https://github.com/mdn/content/issues/6101</link>
-            <guid>https://github.com/mdn/content/issues/6101</guid>
-            <pubDate>Fri, 18 Jun 2021 08:46:08 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/onvoiceschanged">https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/onvoiceschanged</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>onvoicechanged LIB.. while I reading about it there is lot of value in there, but in my VS code I access only 19 values only</p>
-<h4>Specific section or headline?</h4>
-<p>WEB SPEECH API</p>
-<h4>What did you expect to see?</h4>
-<p>Wanna to access all the value in onvoicechanged</p>
-<h4>Did you test this? If so, how?</h4>
-<p>Yes , through VC code<br>
-// Init voices array<br>
-let voices = [];</p>
-<p>const getVoices = () =&gt; {<br>
-voices = synth.getVoices();<br>
-console.log(voices);<br>
-// Loop through voices and create an option for each one<br>
-voices.forEach(voice =&gt; {<br>
-//  Create option Element<br>
-const option = document.createElement(<code>option</code>);<br>
-// Fill option with voice and language<br>
-option.textContent = voice.name + <code>(${voice.lang})</code>;</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="    // Set needed option attributes
-    option.setAttribute(`data-lang`, voice.lang);
-    option.setAttribute(`data-name`, voice.name);
-
-    voiceSelect.appendChild(option);
-})
-"><pre><code>    // Set needed option attributes
-    option.setAttribute(`data-lang`, voice.lang);
-    option.setAttribute(`data-name`, voice.name);
-
-    voiceSelect.appendChild(option);
-})
-</code></pre></div>
-<p>}<br>
-getVoices();<br>
-if (synth.onvoiceschanged !== undefined) {<br>
-synth.onvoiceschanged = getVoices;<br>
-}</p>
-<p>this. is the code I used to do</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/speechsynthesis/onvoiceschanged</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/onvoiceschanged" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/onvoiceschanged</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/speechsynthesis/onvoiceschanged/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/speechsynthesis/onvoiceschanged/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0d5312d317fb301c56441905dc84e1f902cb7046/hovercard" href="https://github.com/mdn/content/commit/0d5312d317fb301c56441905dc84e1f902cb7046"><tt>0d5312d</tt></a></li>
-<li>Document last modified: 2021-06-01T06:05:06.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[clipboard-apis] Issue with "Clipboard.write()": example setClipboard reports an error]]></title>
             <link>https://github.com/mdn/content/issues/5566</link>
             <guid>https://github.com/mdn/content/issues/5566</guid>

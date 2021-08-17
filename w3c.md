@@ -42,8 +42,6 @@
   
 * [[ecmascript, mediacapture-streams] Globally replace console.log() calls in all cases where console.error() should be used instead](https://github.com/mdn/content/issues/6117) (2021-06-18T17:07:45Z)
   
-* [[speech-api] Issue with "SpeechSynthesis.onvoiceschanged": (short summary here please)](https://github.com/mdn/content/issues/6101) (2021-06-18T08:46:08Z)
-  
 * [[clipboard-apis] Issue with "Clipboard.write()": example setClipboard reports an error](https://github.com/mdn/content/issues/5566) (2021-06-02T06:23:17Z)
   
 * [[IndexedDB-3] Issue with "Using IndexedDB": "Updating an entry in the database" example does not work](https://github.com/mdn/content/issues/5463) (2021-05-30T02:45:08Z)
