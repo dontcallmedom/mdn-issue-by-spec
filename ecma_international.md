@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[ecmascript] Issue with "getter": Mention static getters](https://github.com/mdn/content/issues/7995) (2021-08-17T03:55:40Z)
+  
 * [[ecmascript] Issue with "class": examples are an anti-pattern](https://github.com/mdn/content/issues/7840) (2021-08-12T05:06:24Z)
   
 * [[ecmascript] Issue with "isNaN()": Regarding the argumentation of the section "The necessity of an isNaN function"](https://github.com/mdn/content/issues/6551) (2021-07-03T11:47:14Z)
