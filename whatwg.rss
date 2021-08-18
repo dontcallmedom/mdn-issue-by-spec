@@ -4,10 +4,37 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Fri, 06 Aug 2021 09:26:25 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Aug 2021 09:48:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Issue with "Location: reload()": Firefox does have a parameter...]]></title>
+            <link>https://github.com/mdn/content/issues/8039</link>
+            <guid>https://github.com/mdn/content/issues/8039</guid>
+            <pubDate>Wed, 18 Aug 2021 09:48:47 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Location/reload">https://developer.mozilla.org/en-US/docs/Web/API/Location/reload</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The paragraph labeled <a href="https://developer.mozilla.org/en-US/docs/Web/API/Location/reload#location.reload_has_no_parameter" rel="nofollow">"location.reload() has no parameter"</a> implies states that no current browser supports the <code>boolean</code>  parameter in <code>location.reload()</code>.<br>
+Turns out  that Firefox does: <a rel="nofollow" href="https://searchfox.org/mozilla-central/source/dom/base/Location.cpp#551">https://searchfox.org/mozilla-central/source/dom/base/Location.cpp#551</a></p>
+<h4>Specific section or headline?</h4>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Location/reload#location.reload_has_no_parameter">https://developer.mozilla.org/en-US/docs/Web/API/Location/reload#location.reload_has_no_parameter</a></p>
+<h4>What did you expect to see?</h4>
+<p>Maybe an edulcored version of the same text, explaining that this is not standard nor on standards tracks ans should not be used, even if Firefox does support this.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>I checked the network panel of my dev-tools to confirm.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/location/reload</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Location/reload" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Location/reload</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/location/reload/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/location/reload/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/d8b62fd735cddcd481e15be0aed1e7820c528c16/hovercard" href="https://github.com/mdn/content/commit/d8b62fd735cddcd481e15be0aed1e7820c528c16"><tt>d8b62fd</tt></a></li>
+<li>Document last modified: 2021-08-14T08:38:47.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Issue with "WorkerGlobalScope.importScripts()": (confucing description of parameters)]]></title>
             <link>https://github.com/mdn/content/issues/7652</link>
