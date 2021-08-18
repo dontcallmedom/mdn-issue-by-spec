@@ -44,7 +44,7 @@ obj.doSomethingLater();
 <h4>Specific section or headline?</h4>
 <p>Arrow Example:</p>
 <h4>What did you expect to see?</h4>
-<p>The comment of <code>since the arrow function was created within the "obj", it assumes the object's "this"</code>  seems confusing to me because consider the following example code.  while the comment above it did make it clear that "arrow functions are not suited for methods",  the explanation of why that arrow function assumes' the object's "this“ seems to imply that as long as it's created within the obj, it will be.  And the following example kind of breaks that assumption.</p>
+<p>The comment of <code>since the arrow function was created within the "obj", it assumes the object's "this"</code>  seems confusing to me because consider the following example code.  while the comment above it did make it clear that "arrow functions are not suited for methods",  the explanation of why that arrow function assumes' the object's "this“ seems to imply that as long as it's created within the obj, it will be.  And the following example breaks that assumption.</p>
 <div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="
 const calculate = {
   array: [1, 2, 3],
