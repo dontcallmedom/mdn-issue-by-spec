@@ -68,6 +68,7 @@ const calculate = {
 // Throws "TypeError: Cannot read property 'reduce' of undefined"
 calculate.sum();
 </code></pre></div>
+<p>This arrow function is created within the obj, but it doesn't assume the obj's "this"</p>
 <h4>Did you test this? If so, how?</h4>
 
 <details>
