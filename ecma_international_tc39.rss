@@ -4,10 +4,83 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Tue, 17 Aug 2021 03:55:40 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Aug 2021 15:05:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "Arrow function expressions": (comment on code seems misleading)]]></title>
+            <link>https://github.com/mdn/content/issues/8050</link>
+            <guid>https://github.com/mdn/content/issues/8050</guid>
+            <pubDate>Wed, 18 Aug 2021 15:05:08 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<blockquote>
+<p>//since the arrow function was created within the "obj", it assumes the object's "this"</p>
+</blockquote>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="var obj = {
+    count : 10,
+    doSomethingLater : function(){ // of course, arrow functions are not suited for methods
+        setTimeout( () =&gt; { // since the arrow function was created within the &quot;obj&quot;, it assumes the object's &quot;this&quot;
+            this.count++;
+            console.log(this.count);
+        }, 300);
+    }
+}
+
+obj.doSomethingLater();
+"><pre><code>var obj = {
+    count : 10,
+    doSomethingLater : function(){ // of course, arrow functions are not suited for methods
+        setTimeout( () =&gt; { // since the arrow function was created within the "obj", it assumes the object's "this"
+            this.count++;
+            console.log(this.count);
+        }, 300);
+    }
+}
+
+obj.doSomethingLater();
+</code></pre></div>
+<h4>Specific section or headline?</h4>
+<p>Arrow Example:</p>
+<h4>What did you expect to see?</h4>
+<p>The comment of <code>since the arrow function was created within the "obj", it assumes the object's "this"</code>  seems confusing to me because consider the following example code.  while the comment above it did make it clear that "arrow functions are not suited for methods",  the explanation of why that arrow function assumes' the object's "this“ seems to imply that as long as it's created within the obj, it will be.  And the following example kind of breaks that assumption.</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="
+const calculate = {
+  array: [1, 2, 3],
+  sum: () =&gt; {
+    console.log(this === window); // =&gt; true
+    return this.array.reduce((result, item) =&gt; result + item);
+  }
+};
+
+// Throws &quot;TypeError: Cannot read property 'reduce' of undefined&quot;
+calculate.sum();
+"><pre><code>
+const calculate = {
+  array: [1, 2, 3],
+  sum: () =&gt; {
+    console.log(this === window); // =&gt; true
+    return this.array.reduce((result, item) =&gt; result + item);
+  }
+};
+
+// Throws "TypeError: Cannot read property 'reduce' of undefined"
+calculate.sum();
+</code></pre></div>
+<h4>Did you test this? If so, how?</h4>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/functions/arrow_functions</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/functions/arrow_functions/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/functions/arrow_functions/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/c09780e7c432029e3f8a966582e6c1c4eb85deff/hovercard" href="https://github.com/mdn/content/commit/c09780e7c432029e3f8a966582e6c1c4eb85deff"><tt>c09780e</tt></a></li>
+<li>Document last modified: 2021-08-03T23:05:38.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Issue with "getter": Mention static getters]]></title>
             <link>https://github.com/mdn/content/issues/7995</link>
