@@ -15,12 +15,12 @@
             <pubDate>Wed, 18 Aug 2021 09:48:47 GMT</pubDate>
             <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Location/reload">https://developer.mozilla.org/en-US/docs/Web/API/Location/reload</a></p>
 <h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>The paragraph labeled <a href="https://developer.mozilla.org/en-US/docs/Web/API/Location/reload#location.reload_has_no_parameter" rel="nofollow">"location.reload() has no parameter"</a> implies states that no current browser supports the <code>boolean</code>  parameter in <code>location.reload()</code>.<br>
+<p>The paragraph labeled <a href="https://developer.mozilla.org/en-US/docs/Web/API/Location/reload#location.reload_has_no_parameter" rel="nofollow">"location.reload() has no parameter"</a> states that no current browser supports the <code>boolean</code>  parameter in <code>location.reload()</code>.<br>
 Turns out  that Firefox does: <a rel="nofollow" href="https://searchfox.org/mozilla-central/source/dom/base/Location.cpp#551">https://searchfox.org/mozilla-central/source/dom/base/Location.cpp#551</a></p>
 <h4>Specific section or headline?</h4>
 <p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Location/reload#location.reload_has_no_parameter">https://developer.mozilla.org/en-US/docs/Web/API/Location/reload#location.reload_has_no_parameter</a></p>
 <h4>What did you expect to see?</h4>
-<p>Maybe an edulcored version of the same text, explaining that this is not standard nor on standards tracks ans should not be used, even if Firefox does support this.</p>
+<p>Maybe an edulcorated version of the same text, explaining that this is not standard nor on standards tracks ans should not be used, even if Firefox does support this.</p>
 <h4>Did you test this? If so, how?</h4>
 <p>I checked the network panel of my dev-tools to confirm.</p>
 
