@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-grid-3] Issue with "grid-template-rows": <custom-ident> links to wrong page](https://github.com/mdn/content/issues/8078) (2021-08-19T02:07:56Z)
+  
 * [[css-cascade-3] Issue with "@import": supports() query is not in current recommendation](https://github.com/mdn/content/issues/7934) (2021-08-14T20:46:27Z)
   
 * [[service-workers-1] Issue with "ServiceWorkerRegistration.updateViaCache": (short summary here please)](https://github.com/mdn/content/issues/7760) (2021-08-09T11:52:16Z)

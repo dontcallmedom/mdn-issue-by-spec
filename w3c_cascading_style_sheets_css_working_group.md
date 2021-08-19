@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-grid-3] Issue with "grid-template-rows": <custom-ident> links to wrong page](https://github.com/mdn/content/issues/8078) (2021-08-19T02:07:56Z)
+  
 * [[css-cascade-3] Issue with "@import": supports() query is not in current recommendation](https://github.com/mdn/content/issues/7934) (2021-08-14T20:46:27Z)
   
 * [[SVG11, css-masking-1] Deprecated Property on Documentation for SVG clipPath Element](https://github.com/mdn/content/issues/7653) (2021-08-06T09:44:12Z)
