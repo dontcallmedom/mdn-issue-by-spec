@@ -4,10 +4,37 @@
         <title>WHATWG Fetch Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_fetch_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG Fetch Workstream</description>
-        <lastBuildDate>Tue, 01 Jun 2021 14:47:27 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 19 Aug 2021 13:38:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[fetch] Issue with "WindowOrWorkerGlobalScope.fetch()": (missing streaming REQUEST body support in Browser Compatibility matrix)]]></title>
+            <link>https://github.com/mdn/content/issues/8094</link>
+            <guid>https://github.com/mdn/content/issues/8094</guid>
+            <pubDate>Thu, 19 Aug 2021 13:38:15 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch">https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The body parameter explicitly states that it can be a ReadableStream object. However, when I try using this in the latest version of Chrome (92 as of this writing) it doesn't work unless I turn on the experimental web platform features.</p>
+<h4>Specific section or headline?</h4>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch#parameters">https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch#parameters</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch#browser_compatibility">https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch#browser_compatibility</a></p>
+<h4>What did you expect to see?</h4>
+<p>It would be nice to include "Streaming request support" in the Browser Compatibility matrix and/or a warning near the "body" parameter that the ReadableStream object may not yet be fully supported in some browsers.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>Yes, I tested this by doing a fetch POST request to one of our node.js endpoints that is known to support streaming. Then by going to "about://flags" in Chrome and enabling "enable-experimental-web-platform-features".</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/windoworworkerglobalscope/fetch</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/windoworworkerglobalscope/fetch/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/windoworworkerglobalscope/fetch/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/29af89a39b0da88877431c71e6c8de10e1dfb402/hovercard" href="https://github.com/mdn/content/commit/29af89a39b0da88877431c71e6c8de10e1dfb402"><tt>29af89a</tt></a></li>
+<li>Document last modified: 2021-06-30T01:12:54.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[fetch] Issue with "WindowOrWorkerGlobalScope.fetch()": Incomplete description for `TypeError` ]]></title>
             <link>https://github.com/mdn/content/issues/5545</link>

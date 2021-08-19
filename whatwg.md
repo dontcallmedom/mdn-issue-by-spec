@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[fetch] Issue with "WindowOrWorkerGlobalScope.fetch()": (missing streaming REQUEST body support in Browser Compatibility matrix)](https://github.com/mdn/content/issues/8094) (2021-08-19T13:38:15Z)
+  
 * [[html] Issue with "WorkerGlobalScope.importScripts()": (confucing description of parameters)](https://github.com/mdn/content/issues/7652) (2021-08-06T09:26:25Z)
   
 * [[xhr] Issue with "FormData()": missing formdata event documentation](https://github.com/mdn/content/issues/7613) (2021-08-05T12:02:00Z)
