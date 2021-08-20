@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[webauthn-3] Issue with "PublicKeyCredentialCreationOptions.attestation": (short summary here please)](https://github.com/mdn/content/issues/8126) (2021-08-20T09:29:10Z)
+  
 * [[css-transforms-2] Issue with "perspective": (short summary here please)](https://github.com/mdn/content/issues/8124) (2021-08-20T08:18:48Z)
   
 * [[css-fonts-5] Issue with "font-synthesis": (short summary here please)####Display error](https://github.com/mdn/content/issues/8116) (2021-08-20T03:21:04Z)
