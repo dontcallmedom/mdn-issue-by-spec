@@ -4,10 +4,40 @@
         <title>Khronos Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/khronos_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Khronos Group</description>
-        <lastBuildDate>Mon, 26 Jul 2021 07:39:35 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Aug 2021 20:16:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[webgl1] Issue with "WebGLRenderingContext.getActiveUniform()": (short summary here please)]]></title>
+            <link>https://github.com/mdn/content/issues/8179</link>
+            <guid>https://github.com/mdn/content/issues/8179</guid>
+            <pubDate>Sat, 21 Aug 2021 20:16:38 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getActiveUniform">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getActiveUniform</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>Description of what name is returned with regard to uniform block seems incorrect</p>
+<h4>Specific section or headline?</h4>
+<p>Return Value - Uniform blocks</p>
+<h4>What did you expect to see?</h4>
+<p>In the bullet point:</p>
+<ul>
+<li>Uniform blocks: one entry for each member. <strong>If the uniform block has an instance name, the block name is prefixed</strong>. E.g. uniform Block { float foo; }; will result in foo, and uniform <strong>Block { float bar; } e; will result in Block.bar.</strong></li>
+</ul>
+<p>given the description, I expect to see <code>e.bar</code> instead of <code>Block.bar</code>.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>n/a</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/webglrenderingcontext/getactiveuniform</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getActiveUniform" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/getActiveUniform</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webglrenderingcontext/getactiveuniform/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/webglrenderingcontext/getactiveuniform/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/7510dc41b4a6fe1d8b26534c892b8d8ef6966c4f/hovercard" href="https://github.com/mdn/content/commit/7510dc41b4a6fe1d8b26534c892b8d8ef6966c4f"><tt>7510dc4</tt></a></li>
+<li>Document last modified: 2021-06-17T00:25:20.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[OVR_multiview2] WebXR guide material tracking issue]]></title>
             <link>https://github.com/mdn/content/issues/7276</link>
