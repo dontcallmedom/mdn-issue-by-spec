@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Khronos Group. [![RSS feed for Khronos Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[webgl1] Issue with "WebGLRenderingContext.getActiveUniform()": (short summary here please)](https://github.com/mdn/content/issues/8179) (2021-08-21T20:16:38Z)
+* [[webgl1] Issue with "WebGLRenderingContext.getActiveUniform()": Return value for named Block is incorrect](https://github.com/mdn/content/issues/8179) (2021-08-21T20:16:38Z)
   
 * [[OVR_multiview2] WebXR guide material tracking issue](https://github.com/mdn/content/issues/7276) (2021-07-26T07:39:35Z)
   
