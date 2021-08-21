@@ -78,8 +78,6 @@
   
 * [[cssom-view-1] Issue with "Element.scrollTop": (short summary here please)](https://github.com/mdn/content/issues/4142) (2021-04-15T21:36:13Z)
   
-* [[css-lists-3] Issue with "list-style": (short summary here please)](https://github.com/mdn/content/issues/4103) (2021-04-14T13:53:26Z)
-  
 * [[presentation-api] Issue with "getAvailability": (short summary here please)](https://github.com/mdn/content/issues/4025) (2021-04-12T01:16:00Z)
   
 * [[dom, web-bluetooth] Content bug: linking macros to Boolean shouldn't be {{domxref}}](https://github.com/mdn/content/issues/3898) (2021-04-07T02:39:25Z)

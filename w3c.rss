@@ -1326,34 +1326,6 @@ Anyway,</li>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-lists-3] Issue with "list-style": (short summary here please)]]></title>
-            <link>https://github.com/mdn/content/issues/4103</link>
-            <guid>https://github.com/mdn/content/issues/4103</guid>
-            <pubDate>Wed, 14 Apr 2021 13:53:26 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style">https://developer.mozilla.org/en-US/docs/Web/CSS/list-style</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>Accessibility concerns<br>
-Safari has an issue whereby unordered lists with a list-style value of none applied to them will not be recognized as a list in the accessibility tree. To address this, add a zero-width space as pseudo-content before each list item to ensure the list is recognized properly. This ensures the design is unaffected by the bug fix and that list items are not improperly described.</p>
-<h4>Specific section or headline?</h4>
-<p>Accessibility concerns</p>
-<h4>What did you expect to see?</h4>
-<p>First, the implication here is that this is a Safari bug. It is not a bug; <a href="https://bugs.webkit.org/show_bug.cgi?id=170179l" rel="nofollow">it is by design</a></p>
-<p>Second, at the very least the less-hackish workaround (role="list") should be mentioned. (I would drop the css fix, too)</p>
-<p>See also <a href="https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html" rel="nofollow">"'Fixing' Lists"</a></p>
-<h4>Did you test this? If so, how?</h4>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/css/list-style</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/list-style</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/list-style/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/css/list-style/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/f4fb4c2d90a134366c280eec6cb599825981ad5d/hovercard" href="https://github.com/mdn/content/commit/f4fb4c2d90a134366c280eec6cb599825981ad5d"><tt>f4fb4c2</tt></a></li>
-<li>Document last modified: 2021-03-15T17:55:56.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[presentation-api] Issue with "getAvailability": (short summary here please)]]></title>
             <link>https://github.com/mdn/content/issues/4025</link>
             <guid>https://github.com/mdn/content/issues/4025</guid>
