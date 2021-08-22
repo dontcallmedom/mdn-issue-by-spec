@@ -6,8 +6,6 @@
   
 * [[css-transitions-2] Issue with "transition-property": verbatim markdown](https://github.com/mdn/content/issues/8182) (2021-08-21T20:28:08Z)
   
-* [[css-transforms-2] Issue with "perspective": live sample iframe blocked](https://github.com/mdn/content/issues/8124) (2021-08-20T08:18:48Z)
-  
 * [[css-fonts-5] Issue with "font-synthesis": (short summary here please)####Display error](https://github.com/mdn/content/issues/8116) (2021-08-20T03:21:04Z)
   
 * [[css-cascade-3] Issue with "@import": supports() query is not in current recommendation](https://github.com/mdn/content/issues/7934) (2021-08-14T20:46:27Z)

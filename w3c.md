@@ -8,8 +8,6 @@
   
 * [[webauthn-3] PublicKeyCredentialCreationOptions.attestation: missing enum value "enterprise"](https://github.com/mdn/content/issues/8126) (2021-08-20T09:29:10Z)
   
-* [[css-transforms-2] Issue with "perspective": live sample iframe blocked](https://github.com/mdn/content/issues/8124) (2021-08-20T08:18:48Z)
-  
 * [[css-fonts-5] Issue with "font-synthesis": (short summary here please)####Display error](https://github.com/mdn/content/issues/8116) (2021-08-20T03:21:04Z)
   
 * [[service-workers-1] Issue with "CacheStorage": (need warning that CacheStorage needs serviceWorker to be available)](https://github.com/mdn/content/issues/8111) (2021-08-19T23:55:44Z)
