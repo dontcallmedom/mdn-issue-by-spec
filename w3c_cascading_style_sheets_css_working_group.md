@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[css-properties-values-api-1] Content bug: @property CSS Houdini wrong link](https://github.com/mdn/content/issues/8185) (2021-08-21T21:12:39Z)
-  
 * [[css-transitions-2] Issue with "transition-property": verbatim markdown](https://github.com/mdn/content/issues/8182) (2021-08-21T20:28:08Z)
   
 * [[css-fonts-5] Issue with "font-synthesis": (short summary here please)####Display error](https://github.com/mdn/content/issues/8116) (2021-08-20T03:21:04Z)
