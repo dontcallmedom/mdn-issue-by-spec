@@ -4,8 +4,6 @@
 
 * [[webauthn-3] PublicKeyCredentialCreationOptions.attestation: missing enum value "enterprise"](https://github.com/mdn/content/issues/8126) (2021-08-20T09:29:10Z)
   
-* [[css-fonts-5] Issue with "font-synthesis": (short summary here please)####Display error](https://github.com/mdn/content/issues/8116) (2021-08-20T03:21:04Z)
-  
 * [[service-workers-1] Issue with "CacheStorage": (need warning that CacheStorage needs serviceWorker to be available)](https://github.com/mdn/content/issues/8111) (2021-08-19T23:55:44Z)
   
 * [[css-cascade-3] Issue with "@import": supports() query is not in current recommendation](https://github.com/mdn/content/issues/7934) (2021-08-14T20:46:27Z)
