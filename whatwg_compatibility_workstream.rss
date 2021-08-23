@@ -4,10 +4,35 @@
         <title>WHATWG Compatibility Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_compatibility_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG Compatibility Workstream</description>
-        <lastBuildDate>Fri, 23 Apr 2021 02:57:45 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Aug 2021 20:17:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[compat] api.Window.orientationchange_event - <PUT TITLE HERE>]]></title>
+            <link>https://github.com/mdn/content/issues/8243</link>
+            <guid>https://github.com/mdn/content/issues/8243</guid>
+            <pubDate>Mon, 23 Aug 2021 20:17:50 GMT</pubDate>
+            <content:encoded><![CDATA[<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>What event has replaced orientationchange? The document is not helpful in pointing to an alternative. Why has this been deprecated anyway? No reason is given on the page.</p>
+<h4>What did you expect to see?</h4>
+<p>An explanation of why this event has been deprecated.<br>
+A link to the newer way of doing it.<br>
+And, for example, that it should be used in the interim until all browsers support the new event.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>I found this article on the <strong>experimental</strong> !!! screen.orientation.change event:</p>
+<p><a rel="nofollow" href="https://stackoverflow.com/questions/67961837/deprecated-window-orientationchange-event">https://stackoverflow.com/questions/67961837/deprecated-window-orientationchange-event</a></p>
+<p>(Why in the world was orientationchange deprecated before screen.orientation.change is ubiquitous?)</p>
+
+<details>
+<summary>MDN page report details</summary>
+<ul>
+<li>Query: <code>api.Window.orientationchange_event</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/orientationchange_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/orientationchange_event</a></li>
+<li>Report started: 2021-08-23T20:13:26.910Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[orientation-event, compat] Content bug: Improve device/screen orientation event doc]]></title>
             <link>https://github.com/mdn/content/issues/4400</link>
