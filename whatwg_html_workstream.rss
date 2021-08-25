@@ -257,41 +257,6 @@ Currently both those pages don't mention crossOriginIsolated  and say origin "do
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Issue with "DOMParser.parseFromString()": Error handling mentions that if parsing fails, the DOMParser does not throw an exception, but firefox throws and exception]]></title>
-            <link>https://github.com/mdn/content/issues/4737</link>
-            <guid>https://github.com/mdn/content/issues/4737</guid>
-            <pubDate>Wed, 05 May 2021 17:17:40 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/DOMParser/parseFromString">https://developer.mozilla.org/en-US/docs/Web/API/DOMParser/parseFromString</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>Error handling mentions that if parsing fails, the DOMParser does not throw an exception, but firefox throws and exception</p>
-<h4>Specific section or headline?</h4>
-<p>Error handling</p>
-<h4>What did you expect to see?</h4>
-<p>According to the documentation</p>
-<blockquote>
-<p>Note that if the XML parser is used and parsing fails, the DOMParser does not throw an exception, but instead returns an error document:</p>
-</blockquote>
-<p>But when the code in example is executed in firefox, error is thrown.<br>
-`const parser = new DOMParser();</p>
-<p>const xmlString = "Beware of the missing closing tag";<br>
-const doc = parser.parseFromString(xmlString, "application/xml");`</p>
-<p>Output error<br>
-<code>XML Parsing Error: no root element found Location: https://developer.mozilla.org/en-US/docs/Web/API/DOMParser/parseFromString Line Number 1, Column 43:</code></p>
-<h4>Did you test this? If so, how?</h4>
-<p>Executed in console</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/domparser/parsefromstring</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMParser/parseFromString" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DOMParser/parseFromString</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/domparser/parsefromstring/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/domparser/parsefromstring/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/39c006afb5fdb00830149effb225f40f26c7f912/hovercard" href="https://github.com/mdn/content/commit/39c006afb5fdb00830149effb225f40f26c7f912"><tt>39c006a</tt></a></li>
-<li>Document last modified: 2021-03-09T02:00:07.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html, selectors-4] Issue with ":target" and Web Components]]></title>
             <link>https://github.com/mdn/content/issues/4604</link>
             <guid>https://github.com/mdn/content/issues/4604</guid>

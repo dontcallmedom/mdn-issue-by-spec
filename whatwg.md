@@ -38,8 +38,6 @@
   
 * [[fetch] Issue with "WindowOrWorkerGlobalScope.fetch()": Incomplete description for `TypeError` ](https://github.com/mdn/content/issues/5545) (2021-06-01T14:47:27Z)
   
-* [[html] Issue with "DOMParser.parseFromString()": Error handling mentions that if parsing fails, the DOMParser does not throw an exception, but firefox throws and exception](https://github.com/mdn/content/issues/4737) (2021-05-05T17:17:40Z)
-  
 * [[html, selectors-4] Issue with ":target" and Web Components](https://github.com/mdn/content/issues/4604) (2021-04-29T19:29:23Z)
   
 * [[html, cssom-view-1] Window.open() needs an overhaul](https://github.com/mdn/content/issues/4583) (2021-04-29T05:03:41Z)
