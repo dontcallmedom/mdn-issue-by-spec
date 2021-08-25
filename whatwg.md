@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] StorageEvent first description seems wrongly written, explained...](https://github.com/mdn/content/issues/8279) (2021-08-25T09:43:48Z)
+  
 * [[fetch] Issue with "WindowOrWorkerGlobalScope.fetch()": (missing Streaming REQUEST body in Browser Compatibility matrix)](https://github.com/mdn/content/issues/8269) (2021-08-24T17:58:56Z)
   
 * [[compat] api.Window.orientationchange_event - <PUT TITLE HERE>](https://github.com/mdn/content/issues/8243) (2021-08-23T20:17:50Z)
