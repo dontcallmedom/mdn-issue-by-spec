@@ -4,10 +4,31 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Mon, 23 Aug 2021 21:01:07 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Aug 2021 12:39:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Output when false is compared with empty array]]></title>
+            <link>https://github.com/mdn/content/issues/8290</link>
+            <guid>https://github.com/mdn/content/issues/8290</guid>
+            <pubDate>Wed, 25 Aug 2021 12:39:54 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean</a></p>
+<h2>Specific page section or heading?</h2>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean#description">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean#description</a></p>
+<h2>What is the problem?</h2>
+<p>An empty array when equated with false giving output as true.<br>
+false == []  //true<br>
+But as per the description it should be false<br>
+<strong>The value passed as the first parameter is converted to a boolean value, if necessary. If the value is omitted or is 0, -0, null, false, NaN, undefined, or the empty string (""), the object has an initial value of false. All other values, including any object, an empty array ([]), or the string "false", create an object with an initial value of true.</strong></p>
+<h2>What did you expect to see?</h2>
+<p>The output of an empty array when equating with false should return false</p>
+<h2>Did you test this? If so, how?</h2>
+<p>false == []<br>
+Expected - false<br>
+Output - true</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Issue with "Conditional (ternary) operator": Specify short-circuit behavior]]></title>
             <link>https://github.com/mdn/content/issues/8239</link>
