@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Issue with "<a>: The Anchor element": (missing class for skip-link)](https://github.com/mdn/content/issues/8300) (2021-08-25T20:49:58Z)
+  
 * [[html] StorageEvent first description seems wrongly written, explained...](https://github.com/mdn/content/issues/8279) (2021-08-25T09:43:48Z)
   
 * [[html] Issue with "WorkerGlobalScope.importScripts()": (confucing description of parameters)](https://github.com/mdn/content/issues/7652) (2021-08-06T09:26:25Z)

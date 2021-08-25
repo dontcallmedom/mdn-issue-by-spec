@@ -4,10 +4,36 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Wed, 25 Aug 2021 09:43:48 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Aug 2021 20:49:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Issue with "<a>: The Anchor element": (missing class for skip-link)]]></title>
+            <link>https://github.com/mdn/content/issues/8300</link>
+            <guid>https://github.com/mdn/content/issues/8300</guid>
+            <pubDate>Wed, 25 Aug 2021 20:49:58 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>When describing the skip links, the anchor element does not have the skip-link class to style it (the class being shown in the CSS but not the HTML)</p>
+<h4>Specific section or headline?</h4>
+<p>Skip Links</p>
+<h4>What did you expect to see?</h4>
+<p>&lt;a "class="skip-link" href="#content"&gt;</p>
+<h4>Did you test this? If so, how?</h4>
+<p>Tried out code externally, and styling only works with class applied</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/html/element/a</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/a/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/a/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0a9865f88deed88ba4b8188a5dbe0bbcd3b2564a/hovercard" href="https://github.com/mdn/content/commit/0a9865f88deed88ba4b8188a5dbe0bbcd3b2564a"><tt>0a9865f</tt></a></li>
+<li>Document last modified: 2021-07-26T16:47:00.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] StorageEvent first description seems wrongly written, explained...]]></title>
             <link>https://github.com/mdn/content/issues/8279</link>
