@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG Fetch Workstream. [![RSS feed for WHATWG Fetch Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[fetch, rfc7233, rfc7231] Missing https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/*](https://github.com/mdn/content/issues/8332) (2021-08-26T05:42:05Z)
-  
 * [[fetch] Issue with "WindowOrWorkerGlobalScope.fetch()": (missing Streaming REQUEST body in Browser Compatibility matrix)](https://github.com/mdn/content/issues/8269) (2021-08-24T17:58:56Z)
   
 * [[fetch] Issue with "WindowOrWorkerGlobalScope.fetch()": Incomplete description for `TypeError` ](https://github.com/mdn/content/issues/5545) (2021-06-01T14:47:27Z)

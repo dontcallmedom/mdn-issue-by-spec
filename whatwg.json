@@ -9,14 +9,14 @@
     },
     "items": [
         {
-            "id": "https://github.com/mdn/content/issues/8332",
-            "content_html": "<p>The browser console shows this error log:</p>\n<blockquote>\n<p>The resource from “<a href=\"https://fonts.googleapis.com/css?family=ciutadella_rounded_regularRg,+Helvetica,+Arial,+sans-serif%E2%80%9D\" rel=\"nofollow\">https://fonts.googleapis.com/css?family=ciutadella_rounded_regularRg,+Helvetica,+Arial,+sans-serif”</a> was blocked due to MIME type (“text/html”) mismatch (X-Content-Type-Options: nosniff).en-au [<a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options\" rel=\"nofollow\">Learn More</a>]</p>\n</blockquote>\n<p>The [Learn More] link returns 404:</p>\n<blockquote>\n<h1>Page not found</h1>\n<p>Sorry, the page /en-US/docs/Web/HTTP/Headers/X-Content-Type-Options could not be found.</p>\n</blockquote>\n<p>Moreover, the <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers\" rel=\"nofollow\">page summarizing available headers</a> has a left sidebar with links such as <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type\" rel=\"nofollow\">Content-Type</a> which <em>also</em> return 404.</p>",
-            "url": "https://github.com/mdn/content/issues/8332",
-            "title": "[fetch, rfc7233, rfc7231] Missing https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/*",
-            "date_modified": "2021-08-26T05:42:05.000Z",
+            "id": "https://github.com/mdn/content/issues/8339",
+            "content_html": "<h3>Characteristics</h3>\n<p>OS : LinuxMint LMDE 3 Cindy<br>\nBrowsers : Google Chrome 92, Firefox 78.7ESR (tested partially)</p>\n<h3>Description</h3>\n<ul>\n<li>The History API object is not found on the english version of the website : <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/History\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/History</a> (linked from <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Window/history\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/Window/history</a>).</li>\n<li>If I am on the french version (<a href=\"https://developer.mozilla.org/fr/docs/Web/API/History\" rel=\"nofollow\">https://developer.mozilla.org/fr/docs/Web/API/History</a>), the page is found and I am pretty sure that I succeeded to load the english version through the selection of language, it doesn't work now anymore.</li>\n<li>The window.history english page <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Window/history\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/Window/history</a> fail to load the browser compatibility <code>Error loading BCD data</code> and I got 404 HTTP error when I switch between french and english version, however theses 2 languages version can be accessed without problem through URL and link navigation (<code>a</code>).</li>\n<li>In this page <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Window/history\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/Window/history</a>, access to breadcrub items lead to 404 error ('Window' item, 'Web technology for developers' item), Window item worked only in one Chrome session when I open it in a new tab</li>\n<li>Back/forward buttons are broken in general</li>\n</ul>\n<p>I'm sure the list is not exhaustive, I don't tested other parts so maybe these problems are present elsewhere.</p>",
+            "url": "https://github.com/mdn/content/issues/8339",
+            "title": "[html] History API doc pages navigation problem",
+            "date_modified": "2021-08-26T06:41:54.000Z",
             "author": {
-                "name": "kurahaupo",
-                "url": "https://github.com/kurahaupo"
+                "name": "RyanFarrah67",
+                "url": "https://github.com/RyanFarrah67"
             }
         },
         {

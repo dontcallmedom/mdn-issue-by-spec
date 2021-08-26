@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[fetch, rfc7233, rfc7231] Missing https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/*](https://github.com/mdn/content/issues/8332) (2021-08-26T05:42:05Z)
+* [[html] History API doc pages navigation problem](https://github.com/mdn/content/issues/8339) (2021-08-26T06:41:54Z)
   
 * [[html] Issue with "<a>: The Anchor element": (missing class for skip-link)](https://github.com/mdn/content/issues/8300) (2021-08-25T20:49:58Z)
   
