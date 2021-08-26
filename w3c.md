@@ -2,14 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[selectors-4] Issue with "Adjacent sibling combinator": Result not loading](https://github.com/mdn/content/issues/8341) (2021-08-26T06:50:18Z)
-  
-* [[uievents] Content bug: UIEvent page is 404](https://github.com/mdn/content/issues/8340) (2021-08-26T06:47:52Z)
-  
-* [[FileAPI] Missing File Api documentation](https://github.com/mdn/content/issues/8330) (2021-08-26T05:22:19Z)
-  
-* [[SVG11] Many pages are 404 “Page not found” (we’re working on a fix)](https://github.com/mdn/content/issues/8314) (2021-08-26T02:39:35Z)
-  
 * [[entries-api] Issue with "FileSystemDirectoryReader.readEntries()": wrong Deprecated status?](https://github.com/mdn/content/issues/8263) (2021-08-24T14:03:30Z)
   
 * [[webauthn-3] PublicKeyCredentialCreationOptions.attestation: missing enum value "enterprise"](https://github.com/mdn/content/issues/8126) (2021-08-20T09:29:10Z)
