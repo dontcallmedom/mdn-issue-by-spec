@@ -2,9 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[SVG11] Content bug: Broken Links](https://github.com/mdn/content/issues/8314) (2021-08-26T02:39:35Z)
-  
-* [[uievents] Content bug: page 'Web/API/KeyboardEvent/getModifierState' missing](https://github.com/mdn/content/issues/8310) (2021-08-26T01:51:58Z)
+* [[SVG11] Many pages are 404 right now (known issue; we’re working on it)](https://github.com/mdn/content/issues/8314) (2021-08-26T02:39:35Z)
   
 * [[entries-api] Issue with "FileSystemDirectoryReader.readEntries()": wrong Deprecated status?](https://github.com/mdn/content/issues/8263) (2021-08-24T14:03:30Z)
   
