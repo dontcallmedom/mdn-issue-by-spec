@@ -366,30 +366,27 @@ Promise: <em>Chained Promises</em></p>
             <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export#re-exporting_aggregating">https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export#re-exporting_aggregating</a></p>
 <h4>What information was incorrect, unhelpful, or incomplete?</h4>
 <p>This can be achieved with the "export from" syntax:</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="export { default as function1,
+<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="export { default as function1,
          function2 } from 'bar.js';
-"><pre lang="js"><code>export { default as function1,
-         function2 } from 'bar.js';
-</code></pre></div>
+"><pre><span class="pl-k">export</span> <span class="pl-kos">{</span> <span class="pl-s1">default</span> <span class="pl-k">as</span> <span class="pl-s1">function1</span><span class="pl-kos">,</span>
+         <span class="pl-s1">function2</span> <span class="pl-kos">}</span> <span class="pl-k">from</span> <span class="pl-s">'bar.js'</span><span class="pl-kos">;</span></pre></div>
 <p>Which is comparable to a combination of import and export:</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="import { default as function1,
+<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="import { default as function1,
          function2 } from 'bar.js';
 export { function1 as default, function2 };
-"><pre lang="js"><code>import { default as function1,
-         function2 } from 'bar.js';
-export { function1 as default, function2 };
-</code></pre></div>
+"><pre><span class="pl-k">import</span> <span class="pl-kos">{</span> <span class="pl-s1">default</span> <span class="pl-k">as</span> <span class="pl-s1">function1</span><span class="pl-kos">,</span>
+         <span class="pl-s1">function2</span> <span class="pl-kos">}</span> <span class="pl-k">from</span> <span class="pl-s">'bar.js'</span><span class="pl-kos">;</span>
+<span class="pl-k">export</span> <span class="pl-kos">{</span> <span class="pl-s1">function1</span> <span class="pl-k">as</span> <span class="pl-s1">default</span><span class="pl-kos">,</span> <span class="pl-s1">function2</span> <span class="pl-kos">}</span><span class="pl-kos">;</span></pre></div>
 <h4>Specific section or headline?</h4>
 <p>re-exporting_aggregating</p>
 <h4>What did you expect to see?</h4>
 <p>function1 will not export as default，here should be</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="import { default as function1,
+<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="import { default as function1,
          function2 } from 'bar.js';
 export { function1 , function2 };
-"><pre lang="js"><code>import { default as function1,
-         function2 } from 'bar.js';
-export { function1 , function2 };
-</code></pre></div>
+"><pre><span class="pl-k">import</span> <span class="pl-kos">{</span> <span class="pl-s1">default</span> <span class="pl-k">as</span> <span class="pl-s1">function1</span><span class="pl-kos">,</span>
+         <span class="pl-s1">function2</span> <span class="pl-kos">}</span> <span class="pl-k">from</span> <span class="pl-s">'bar.js'</span><span class="pl-kos">;</span>
+<span class="pl-k">export</span> <span class="pl-kos">{</span> <span class="pl-s1">function1</span> <span class="pl-kos">,</span> <span class="pl-s1">function2</span> <span class="pl-kos">}</span><span class="pl-kos">;</span></pre></div>
 <h4>Did you test this? If so, how?</h4>
 
 <details>
