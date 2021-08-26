@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C SVG Working Group. [![RSS feed for W3C SVG Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[SVG11] Content bug: Broken Links](https://github.com/mdn/content/issues/8314) (2021-08-26T02:39:35Z)
+  
 * [[SVG11, css-masking-1] Deprecated Property on Documentation for SVG clipPath Element](https://github.com/mdn/content/issues/7653) (2021-08-06T09:44:12Z)
   
 * [[SVG11] Issue with SVG generally](https://github.com/mdn/content/issues/4428) (2021-04-23T19:39:38Z)
