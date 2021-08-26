@@ -4,10 +4,26 @@
         <title>IETF-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ietf.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by IETF</description>
-        <lastBuildDate>Wed, 21 Jul 2021 15:59:50 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Aug 2021 05:42:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[fetch, rfc7233, rfc7231] Missing https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/*]]></title>
+            <link>https://github.com/mdn/content/issues/8332</link>
+            <guid>https://github.com/mdn/content/issues/8332</guid>
+            <pubDate>Thu, 26 Aug 2021 05:42:05 GMT</pubDate>
+            <content:encoded><![CDATA[<p>The browser console shows this error log:</p>
+<blockquote>
+<p>The resource from “<a href="https://fonts.googleapis.com/css?family=ciutadella_rounded_regularRg,+Helvetica,+Arial,+sans-serif%E2%80%9D" rel="nofollow">https://fonts.googleapis.com/css?family=ciutadella_rounded_regularRg,+Helvetica,+Arial,+sans-serif”</a> was blocked due to MIME type (“text/html”) mismatch (X-Content-Type-Options: nosniff).en-au [<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options" rel="nofollow">Learn More</a>]</p>
+</blockquote>
+<p>The [Learn More] link returns 404:</p>
+<blockquote>
+<h1>Page not found</h1>
+<p>Sorry, the page /en-US/docs/Web/HTTP/Headers/X-Content-Type-Options could not be found.</p>
+</blockquote>
+<p>Moreover, the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers" rel="nofollow">page summarizing available headers</a> has a left sidebar with links such as <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type" rel="nofollow">Content-Type</a> which <em>also</em> return 404.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[rfc7230] Issue with "Trailer": page says all browsers are compatible but there is no way to use this feature]]></title>
             <link>https://github.com/mdn/content/issues/7137</link>
