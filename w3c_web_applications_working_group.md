@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[uievents] Issue with "KeyboardEvent.code": page returns 404](https://github.com/mdn/content/issues/8342) (2021-08-26T06:52:51Z)
-  
 * [[uievents] Content bug: UIEvent page is 404](https://github.com/mdn/content/issues/8340) (2021-08-26T06:47:52Z)
   
 * [[FileAPI] Missing File Api documentation](https://github.com/mdn/content/issues/8330) (2021-08-26T05:22:19Z)

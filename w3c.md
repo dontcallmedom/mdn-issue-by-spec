@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[uievents] Issue with "KeyboardEvent.code": page returns 404](https://github.com/mdn/content/issues/8342) (2021-08-26T06:52:51Z)
-  
 * [[selectors-4] Issue with "Adjacent sibling combinator": Result not loading](https://github.com/mdn/content/issues/8341) (2021-08-26T06:50:18Z)
   
 * [[uievents] Content bug: UIEvent page is 404](https://github.com/mdn/content/issues/8340) (2021-08-26T06:47:52Z)
