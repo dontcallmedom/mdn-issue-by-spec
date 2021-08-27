@@ -4,8 +4,6 @@
 
 * [[html, cssom-view-1, dom, uievents, FileAPI, WebIDL-1, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
-* [[dom, selectors-4] Content suggestion: Example of :scope in element.querySelector()](https://github.com/mdn/content/issues/6676) (2021-07-08T12:03:13Z)
-  
 * [[dom] Event.composedPath() refers to nonexistent example](https://github.com/mdn/content/issues/5863) (2021-06-10T17:13:57Z)
   
 * [[dom, web-bluetooth] Content bug: linking macros to Boolean shouldn't be {{domxref}}](https://github.com/mdn/content/issues/3898) (2021-04-07T02:39:25Z)
