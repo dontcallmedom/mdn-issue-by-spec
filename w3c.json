@@ -680,17 +680,6 @@
             }
         },
         {
-            "id": "https://github.com/mdn/content/issues/1828",
-            "content_html": "<p>The following page: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event\">https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event</a></p>\n<p>It is highly recommended to optimize the <code>window.onresize</code> event.</p>\n<p>A good example is this page: <a rel=\"nofollow\" href=\"http://bencentra.com/code/2015/02/27/optimizing-window-resize.html\">http://bencentra.com/code/2015/02/27/optimizing-window-resize.html</a></p>\n<p>I would like to see MDN add a debounce example to their <code>Window: resize</code> event page.</p>\n<p>Also Browser compatibility is missing from the page as well.</p>",
-            "url": "https://github.com/mdn/content/issues/1828",
-            "title": "[cssom-view-1] Add a debounce example on the Window: resize event page",
-            "date_modified": "2020-01-30T12:13:33.000Z",
-            "author": {
-                "name": "summercms",
-                "url": "https://github.com/summercms"
-            }
-        },
-        {
             "id": "https://github.com/mdn/content/issues/2450",
             "content_html": "<h1>Request type</h1>\n\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> New documentation</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Correction or update</li>\n</ul>\n<h1>Details</h1>\n<p>See <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/icecandidate_event\" rel=\"nofollow\">icecandidate event</a>.</p>\n<p>The code sample in \"Sharing a new candidate\" checks if event.candidate is truthy before delivering it to the remote peer. \"Indicating the end of a generation of candidates\" says that events where <code>event.candidate == \"\"</code> should be delivered, but <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/Falsy\" rel=\"nofollow\">the empty string is falsy</a> in JavaScript and this signal would not be delivered. \"Indicating that ICE gathering is complete\" says that events where <code>event.complete == null</code> should not be delivered but then refers to the <code>event.candidate == true</code> test.</p>\n<p>There is clearly a nuance here that I'm missing, but in any case this may need to be clarified. An uninformed reader would form the conclusion that actually a <code>event.complete != null</code> test is needed.</p>\n<p>There's also mixed references to RTCPeerConnectionIceEvent (bluelinked) and RTCPeerIceCandidateEvent (redlinked), not sure if that's intentional.</p>",
             "url": "https://github.com/mdn/content/issues/2450",

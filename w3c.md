@@ -124,8 +124,6 @@
   
 * [[screen-capture, mediacapture-streams] MediaDevices.getDisplayMedia() ignores constraints in FF](https://github.com/mdn/content/issues/1830) (2020-02-10T14:53:07Z)
   
-* [[cssom-view-1] Add a debounce example on the Window: resize event page](https://github.com/mdn/content/issues/1828) (2020-01-30T12:13:33Z)
-  
 * [[webrtc] /en-US/docs/Web/API/RTCPeerConnection/icecandidate_event](https://github.com/mdn/content/issues/2450) (2019-11-24T10:21:05Z)
   
 * [[uievents] Add description of  relatedTarget to focusin/focusout event](https://github.com/mdn/content/issues/2309) (2019-04-02T18:21:08Z)

@@ -34,5 +34,3 @@
   
 * [[cssom-view-1] Issue with "Window.devicePixelRatio": Code example does not match the relavent description perfectly.](https://github.com/mdn/content/issues/873) (2021-01-03T10:45:10Z)
   
-* [[cssom-view-1] Add a debounce example on the Window: resize event page](https://github.com/mdn/content/issues/1828) (2020-01-30T12:13:33Z)
-  
