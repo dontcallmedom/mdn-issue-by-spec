@@ -2,10 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html, selectors-4] Issue with ":nth-last-of-type()": Deprecated HTML element used in example - <strike>](https://github.com/mdn/content/issues/8385) (2021-08-27T12:13:07Z)
-  
-* [[css-color-4] Issue with "opacity": MDN logo image not loading in the example.](https://github.com/mdn/content/issues/8382) (2021-08-27T09:31:00Z)
-  
 * [[webdriver2] Issue with "WebDriver": Error in code provided](https://github.com/mdn/content/issues/8374) (2021-08-27T02:43:59Z)
   
 * [[webauthn-3] PublicKeyCredentialCreationOptions.attestation: missing enum value "enterprise"](https://github.com/mdn/content/issues/8126) (2021-08-20T09:29:10Z)
