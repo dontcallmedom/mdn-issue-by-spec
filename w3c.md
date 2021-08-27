@@ -4,8 +4,6 @@
 
 * [[webdriver2] Issue with "WebDriver": Error in code provided](https://github.com/mdn/content/issues/8374) (2021-08-27T02:43:59Z)
   
-* [[entries-api] Issue with "FileSystemDirectoryReader.readEntries()": wrong Deprecated status?](https://github.com/mdn/content/issues/8263) (2021-08-24T14:03:30Z)
-  
 * [[webauthn-3] PublicKeyCredentialCreationOptions.attestation: missing enum value "enterprise"](https://github.com/mdn/content/issues/8126) (2021-08-20T09:29:10Z)
   
 * [[service-workers-1] Issue with "CacheStorage": (need warning that CacheStorage needs serviceWorker to be available)](https://github.com/mdn/content/issues/8111) (2021-08-19T23:55:44Z)

@@ -74,33 +74,6 @@ with webdriver.Firefox() as driver:
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[entries-api] Issue with "FileSystemDirectoryReader.readEntries()": wrong Deprecated status?]]></title>
-            <link>https://github.com/mdn/content/issues/8263</link>
-            <guid>https://github.com/mdn/content/issues/8263</guid>
-            <pubDate>Tue, 24 Aug 2021 14:03:30 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryReader/readEntries">https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryReader/readEntries</a><br>
-and also this page: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryReader">https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryReader</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>Looks like the <strong>Deprecated</strong> status doesn't reflect the real feature status.</p>
-<p>The deprecation header was <a href="https://github.com/mdn/content/commit/b6906e17854f4150a8309d4f8a2cccc0f038ec4d">added on Apr 23 2021</a> with a comment "Mark FileSystemDirectoryReader and children as deprecated to match BCD".<br>
-Then I found that the deprecation status was added initially for this API in BCD with <a href="https://github.com/mdn/browser-compat-data/pull/1637/commits/5fb0a7c7ef9fc0859389a1a23019b1b374a21299">this commit</a> on Mar 19, 2018.<br>
-So looks like it was not reviewed for a long time.</p>
-<p>The browser compatibility table says that Edge doesn't support this feature, but it <strong>actually works in Edge 92</strong> (<a href="https://caniuse.com/mdn-api_filesystemdirectoryreader_readentries" rel="nofollow">caniuse page</a> is also wrong).<br>
-And if you check this page, there is <strong>no word about deprecation</strong>.<br>
-<a rel="nofollow" href="https://www.chromestatus.com/feature/6698113687355392">https://www.chromestatus.com/feature/6698113687355392</a></p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/filesystemdirectoryreader/readentries</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryReader/readEntries" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryReader/readEntries</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/filesystemdirectoryreader/readentries/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/filesystemdirectoryreader/readentries/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/822496e1979d0d3386f1bb0bb5e1481c1328c4ec/hovercard" href="https://github.com/mdn/content/commit/822496e1979d0d3386f1bb0bb5e1481c1328c4ec"><tt>822496e</tt></a></li>
-<li>Document last modified: 2021-07-27T17:35:46.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[webauthn-3] PublicKeyCredentialCreationOptions.attestation: missing enum value "enterprise"]]></title>
             <link>https://github.com/mdn/content/issues/8126</link>
             <guid>https://github.com/mdn/content/issues/8126</guid>
