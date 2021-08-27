@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html, selectors-4] Issue with ":nth-last-of-type()": Deprecated HTML element used in example - <strike>](https://github.com/mdn/content/issues/8385) (2021-08-27T12:13:07Z)
+  
 * [[css-color-4] Issue with "opacity": MDN logo image not loading in the example.](https://github.com/mdn/content/issues/8382) (2021-08-27T09:31:00Z)
   
 * [[css-cascade-3] Issue with "@import": supports() query is not in current recommendation](https://github.com/mdn/content/issues/7934) (2021-08-14T20:46:27Z)
