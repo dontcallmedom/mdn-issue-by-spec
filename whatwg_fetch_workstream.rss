@@ -112,42 +112,5 @@
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> remove any duplicate interface/dictionary entries from GroupData</li>
 </ul>]]></content:encoded>
         </item>
-        <item>
-            <title><![CDATA[[fetch] .get() in Headers does not return all headers]]></title>
-            <link>https://github.com/mdn/content/issues/2244</link>
-            <guid>https://github.com/mdn/content/issues/2244</guid>
-            <pubDate>Sat, 26 Jan 2019 18:37:35 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>Request type</h1>
-<ul class="contains-task-list">
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> New documentation</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Correction or update</li>
-</ul>
-<h2>Page to change</h2>
-<p>If this request relates to an existing article, please give its URL:<br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Headers">https://developer.mozilla.org/en-US/docs/Web/API/Headers</a></p>
-<h1>Details</h1>
-<p><em>Please describe the change you are requesting. If you know of technical experts who can review the change, please mention them.</em></p>
-<p>Try it out in a JS console:</p>
-<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="const test = new Headers();
-test.append(&quot;bla&quot;, 1);
-test.get();
-"><pre><span class="pl-k">const</span> <span class="pl-s1">test</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Headers</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-s1">test</span><span class="pl-kos">.</span><span class="pl-en">append</span><span class="pl-kos">(</span><span class="pl-s">"bla"</span><span class="pl-kos">,</span> <span class="pl-c1">1</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-s1">test</span><span class="pl-kos">.</span><span class="pl-en">get</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
-<p>Results in:</p>
-<blockquote>
-<p>TypeError: Not enough arguments to Headers.get.</p>
-</blockquote>
-<p>in Firefox 64</p>
-<p>or</p>
-<blockquote>
-<p>TypeError: Headers.get requires at least 1 argument, but only 0 were passed</p>
-</blockquote>
-<p>in Firefox 66</p>
-<p>Whereas <code> test.get("bla")</code> results in <code>1</code>, as expected.</p>
-<h2>Related issues</h2>
-<p>If this request relates to other issues in Bugzilla or GitHub, please provide links:</p>
-<p>I hope only the doc is wrong. I do not expect Firefox implements it in such a bluntly wrong way…</p>]]></content:encoded>
-        </item>
     </channel>
 </rss>

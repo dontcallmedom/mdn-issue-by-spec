@@ -102,5 +102,3 @@
   
 * [[html] Disambiguate Exceptions Types and Exception Names Across MDN](https://github.com/mdn/content/issues/2212) (2019-07-25T14:35:31Z)
   
-* [[fetch] .get() in Headers does not return all headers](https://github.com/mdn/content/issues/2244) (2019-01-26T18:37:35Z)
-  

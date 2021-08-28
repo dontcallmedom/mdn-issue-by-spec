@@ -8,5 +8,3 @@
   
 * [[fetch] Rationalize top-level Web API pages](https://github.com/mdn/content/issues/1579) (2020-08-10T22:01:58Z)
   
-* [[fetch] .get() in Headers does not return all headers](https://github.com/mdn/content/issues/2244) (2019-01-26T18:37:35Z)
-  

@@ -557,17 +557,6 @@
                 "name": "jpmedley",
                 "url": "https://github.com/jpmedley"
             }
-        },
-        {
-            "id": "https://github.com/mdn/content/issues/2244",
-            "content_html": "<h1>Request type</h1>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> New documentation</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Correction or update</li>\n</ul>\n<h2>Page to change</h2>\n<p>If this request relates to an existing article, please give its URL:<br>\n<a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/Headers\">https://developer.mozilla.org/en-US/docs/Web/API/Headers</a></p>\n<h1>Details</h1>\n<p><em>Please describe the change you are requesting. If you know of technical experts who can review the change, please mention them.</em></p>\n<p>Try it out in a JS console:</p>\n<div class=\"highlight highlight-source-js position-relative\" data-snippet-clipboard-copy-content=\"const test = new Headers();\ntest.append(&quot;bla&quot;, 1);\ntest.get();\n\"><pre><span class=\"pl-k\">const</span> <span class=\"pl-s1\">test</span> <span class=\"pl-c1\">=</span> <span class=\"pl-k\">new</span> <span class=\"pl-v\">Headers</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-s1\">test</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">append</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">\"bla\"</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">1</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-s1\">test</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">get</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span></pre></div>\n<p>Results in:</p>\n<blockquote>\n<p>TypeError: Not enough arguments to Headers.get.</p>\n</blockquote>\n<p>in Firefox 64</p>\n<p>or</p>\n<blockquote>\n<p>TypeError: Headers.get requires at least 1 argument, but only 0 were passed</p>\n</blockquote>\n<p>in Firefox 66</p>\n<p>Whereas <code> test.get(\"bla\")</code> results in <code>1</code>, as expected.</p>\n<h2>Related issues</h2>\n<p>If this request relates to other issues in Bugzilla or GitHub, please provide links:</p>\n<p>I hope only the doc is wrong. I do not expect Firefox implements it in such a bluntly wrong way…</p>",
-            "url": "https://github.com/mdn/content/issues/2244",
-            "title": "[fetch] .get() in Headers does not return all headers",
-            "date_modified": "2019-01-26T18:37:35.000Z",
-            "author": {
-                "name": "rugk",
-                "url": "https://github.com/rugk"
-            }
         }
     ]
 }
