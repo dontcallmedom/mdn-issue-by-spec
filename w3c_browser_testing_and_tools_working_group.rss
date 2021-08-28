@@ -4,75 +4,10 @@
         <title>W3C Browser Testing and Tools Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_browser_testing_and_tools_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Browser Testing and Tools Working Group</description>
-        <lastBuildDate>Fri, 27 Aug 2021 02:43:59 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 05 Jul 2021 09:53:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[webdriver2] Issue with "WebDriver": Error in code provided]]></title>
-            <link>https://github.com/mdn/content/issues/8374</link>
-            <guid>https://github.com/mdn/content/issues/8374</guid>
-            <pubDate>Fri, 27 Aug 2021 02:43:59 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/WebDriver">https://developer.mozilla.org/en-US/docs/Web/WebDriver</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/75402062/131063462-e5157aa1-24cd-48c4-959b-ace86e80c87e.png"><img src="https://user-images.githubusercontent.com/75402062/131063462-e5157aa1-24cd-48c4-959b-ace86e80c87e.png" alt="image" style="max-width:100%;"></a><br>
-There is an error in this code</p>
-<h4>Specific section or headline?</h4>
-<p>7th line<br>
-<code>wait = WebDriverWait(driver, 10)</code></p>
-<h4>What did you expect to see?</h4>
-<div class="highlight highlight-source-python position-relative" data-snippet-clipboard-copy-content="from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support.expected_conditions import presence_of_element_located
-
-
-
-with webdriver.Firefox() as driver:
-    wait = WebDriverWait(driver, 10)
-    
-    driver.get(&quot;http://google.com/ncr&quot;)
-    driver.find_element_by_name(&quot;q&quot;).send_keys(&quot;cheese&quot; + Keys.RETURN)
-
-    wait.until(presence_of_element_located((By.CSS_SELECTOR, &quot;h3&gt;a&quot;)))
-
-    results = driver.find_elements_by_css_selector(&quot;h3&gt;a&quot;)
-    for i, result in results.iteritems():
-        print(&quot;#{}: {} ({})&quot;.format(i, result.text, result.get_property(&quot;href&quot;)))
-"><pre><span class="pl-k">from</span> <span class="pl-s1">selenium</span> <span class="pl-k">import</span> <span class="pl-s1">webdriver</span>
-<span class="pl-k">from</span> <span class="pl-s1">selenium</span>.<span class="pl-s1">webdriver</span>.<span class="pl-s1">common</span>.<span class="pl-s1">by</span> <span class="pl-k">import</span> <span class="pl-v">By</span>
-<span class="pl-k">from</span> <span class="pl-s1">selenium</span>.<span class="pl-s1">webdriver</span>.<span class="pl-s1">common</span>.<span class="pl-s1">keys</span> <span class="pl-k">import</span> <span class="pl-v">Keys</span>
-<span class="pl-k">from</span> <span class="pl-s1">selenium</span>.<span class="pl-s1">webdriver</span>.<span class="pl-s1">support</span>.<span class="pl-s1">ui</span> <span class="pl-k">import</span> <span class="pl-v">WebDriverWait</span>
-<span class="pl-k">from</span> <span class="pl-s1">selenium</span>.<span class="pl-s1">webdriver</span>.<span class="pl-s1">support</span>.<span class="pl-s1">expected_conditions</span> <span class="pl-k">import</span> <span class="pl-s1">presence_of_element_located</span>
-
-
-
-<span class="pl-k">with</span> <span class="pl-s1">webdriver</span>.<span class="pl-v">Firefox</span>() <span class="pl-k">as</span> <span class="pl-s1">driver</span>:
-    <span class="pl-s1">wait</span> <span class="pl-c1">=</span> <span class="pl-v">WebDriverWait</span>(<span class="pl-s1">driver</span>, <span class="pl-c1">10</span>)
-    
-    <span class="pl-s1">driver</span>.<span class="pl-en">get</span>(<span class="pl-s">"http://google.com/ncr"</span>)
-    <span class="pl-s1">driver</span>.<span class="pl-en">find_element_by_name</span>(<span class="pl-s">"q"</span>).<span class="pl-en">send_keys</span>(<span class="pl-s">"cheese"</span> <span class="pl-c1">+</span> <span class="pl-v">Keys</span>.<span class="pl-v">RETURN</span>)
-
-    <span class="pl-s1">wait</span>.<span class="pl-en">until</span>(<span class="pl-en">presence_of_element_located</span>((<span class="pl-v">By</span>.<span class="pl-v">CSS_SELECTOR</span>, <span class="pl-s">"h3&gt;a"</span>)))
-
-    <span class="pl-s1">results</span> <span class="pl-c1">=</span> <span class="pl-s1">driver</span>.<span class="pl-en">find_elements_by_css_selector</span>(<span class="pl-s">"h3&gt;a"</span>)
-    <span class="pl-k">for</span> <span class="pl-s1">i</span>, <span class="pl-s1">result</span> <span class="pl-c1">in</span> <span class="pl-s1">results</span>.<span class="pl-en">iteritems</span>():
-        <span class="pl-en">print</span>(<span class="pl-s">"#{}: {} ({})"</span>.<span class="pl-en">format</span>(<span class="pl-s1">i</span>, <span class="pl-s1">result</span>.<span class="pl-s1">text</span>, <span class="pl-s1">result</span>.<span class="pl-en">get_property</span>(<span class="pl-s">"href"</span>)))</pre></div>
-<h4>Did you test this? If so, how?</h4>
-<p>I put the code in my IDE and say that driver was undefined in wait = <code>WebDriverWait(driver, 10)</code></p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/webdriver</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/WebDriver" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/WebDriver</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/webdriver/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/webdriver/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/d3ce09c829bf2e45951e731a6cfbe76c331faa7f/hovercard" href="https://github.com/mdn/content/commit/d3ce09c829bf2e45951e731a6cfbe76c331faa7f"><tt>d3ce09c</tt></a></li>
-<li>Document last modified: 2021-07-08T09:10:38.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[webdriver2] Issue with "WebDriver":  Broken/Missing links]]></title>
             <link>https://github.com/mdn/content/issues/6593</link>

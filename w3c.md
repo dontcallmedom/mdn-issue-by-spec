@@ -6,8 +6,6 @@
   
 * [[css-color-4] Issue with "opacity": setting background opacity example is vague](https://github.com/mdn/content/issues/8411) (2021-08-28T07:47:57Z)
   
-* [[webdriver2] Issue with "WebDriver": Error in code provided](https://github.com/mdn/content/issues/8374) (2021-08-27T02:43:59Z)
-  
 * [[webauthn-3] PublicKeyCredentialCreationOptions.attestation: missing enum value "enterprise"](https://github.com/mdn/content/issues/8126) (2021-08-20T09:29:10Z)
   
 * [[service-workers-1] Issue with "CacheStorage": (need warning that CacheStorage needs serviceWorker to be available)](https://github.com/mdn/content/issues/8111) (2021-08-19T23:55:44Z)
