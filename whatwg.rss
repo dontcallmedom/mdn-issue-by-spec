@@ -4,10 +4,34 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Sat, 28 Aug 2021 15:10:06 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Aug 2021 17:22:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Issue with "TimeRanges": (bug on FireFox)]]></title>
+            <link>https://github.com/mdn/content/issues/8427</link>
+            <guid>https://github.com/mdn/content/issues/8427</guid>
+            <pubDate>Sat, 28 Aug 2021 17:22:32 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/TimeRanges">https://developer.mozilla.org/en-US/docs/Web/API/TimeRanges</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>This feature is not full compatible with FireFox. If you pause an audio element quite fast (i.e. before the first second has been played) its TimeRanges object will not contain any ranges of time.</p>
+<h4>Specific section or headline?</h4>
+<h4>What did you expect to see?</h4>
+<h4>Did you test this? If so, how?</h4>
+<p>Yes. I have tested it on FireFox using JS. On Chrome everything is OK.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/timeranges</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/TimeRanges" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/TimeRanges</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/timeranges/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/timeranges/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ccc3e0b65544d7ae787a2a7c992027ca1feff4b3/hovercard" href="https://github.com/mdn/content/commit/ccc3e0b65544d7ae787a2a7c992027ca1feff4b3"><tt>ccc3e0b</tt></a></li>
+<li>Document last modified: 2021-06-17T02:06:48.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Issue with "class": (short summary here please)]]></title>
             <link>https://github.com/mdn/content/issues/8422</link>
