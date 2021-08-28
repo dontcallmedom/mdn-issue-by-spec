@@ -2,6 +2,10 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[ecmascript] Issue with "Unsigned right shift (>>>)": Wrong binary conversion](https://github.com/mdn/content/issues/8415) (2021-08-28T10:29:44Z)
+  
+* [[ecmascript] Issue with "Right shift (>>)": Wrong binary conversion](https://github.com/mdn/content/issues/8414) (2021-08-28T10:28:12Z)
+  
 * [[ecmascript] Issue with "Conditional (ternary) operator": Specify short-circuit behavior](https://github.com/mdn/content/issues/8239) (2021-08-23T21:01:07Z)
   
 * [[ecmascript] Issue with "getter": Mention static getters](https://github.com/mdn/content/issues/7995) (2021-08-17T03:55:40Z)
