@@ -4,8 +4,6 @@
 
 * [[html] Issue with "TimeRanges": (bug on FireFox)](https://github.com/mdn/content/issues/8427) (2021-08-28T17:22:32Z)
   
-* [[html] Issue with "class": (short summary here please)](https://github.com/mdn/content/issues/8422) (2021-08-28T15:10:06Z)
-  
 * [[html] Issue with "<details>: The Details disclosure element": (short summary here please)](https://github.com/mdn/content/issues/8398) (2021-08-27T17:43:57Z)
   
 * [[html] Issue with "WorkerGlobalScope.importScripts()": (confucing description of parameters)](https://github.com/mdn/content/issues/7652) (2021-08-06T09:26:25Z)
