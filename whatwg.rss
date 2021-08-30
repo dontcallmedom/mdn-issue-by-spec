@@ -4,10 +4,35 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Fri, 27 Aug 2021 17:43:57 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 30 Aug 2021 05:11:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[url] Issue with "URL.searchParams": (short summary here please)]]></title>
+            <link>https://github.com/mdn/content/issues/8452</link>
+            <guid>https://github.com/mdn/content/issues/8452</guid>
+            <pubDate>Mon, 30 Aug 2021 05:11:33 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/URL/searchParams">https://developer.mozilla.org/en-US/docs/Web/API/URL/searchParams</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The example code constructs the URL object the following way: <code>new URL(document.location)</code>. The type of <code>document.location</code> is <code>Location</code> but the <code>URL</code> constructor accepts <code>string</code>, not <code>Location</code>.</p>
+<p>Would it be better to use <code>new URL(document.location.href)</code> like on this page? <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/URL#usage_notes">https://developer.mozilla.org/en-US/docs/Web/API/URL#usage_notes</a></p>
+<p>I might be wrong though...</p>
+<h4>Specific section or headline?</h4>
+<h4>What did you expect to see?</h4>
+<h4>Did you test this? If so, how?</h4>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/url/searchparams</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/searchParams" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/URL/searchParams</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/url/searchparams/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/url/searchparams/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e9f0298e84dd04caa14270e703ee21d4b70a9786/hovercard" href="https://github.com/mdn/content/commit/e9f0298e84dd04caa14270e703ee21d4b70a9786"><tt>e9f0298</tt></a></li>
+<li>Document last modified: 2021-06-17T02:20:25.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Issue with "<details>: The Details disclosure element": (short summary here please)]]></title>
             <link>https://github.com/mdn/content/issues/8398</link>
