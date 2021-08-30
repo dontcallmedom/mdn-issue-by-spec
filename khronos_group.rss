@@ -113,37 +113,6 @@ gl.getBufferSubData(gl.ARRAY_BUFFER, 0, arrBuffer);
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[webgl1] Issue with "WebGLRenderingContext.drawElements()": …]]></title>
-            <link>https://github.com/mdn/content/issues/813</link>
-            <guid>https://github.com/mdn/content/issues/813</guid>
-            <pubDate>Thu, 31 Dec 2020 23:56:41 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/drawElements">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/drawElements</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>The documentation states:</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="count
-    A GLsizei specifying the number of elements to be rendered.
-"><pre><code>count
-    A GLsizei specifying the number of elements to be rendered.
-</code></pre></div>
-<p>But "elements" isn't clear. If I am trying to draw a single gl.TRIANGLE, is it expecting that argument to be 1 (if elements means triangles) or 3 (if elements means indices)?</p>
-<h4>Specific section or headline?</h4>
-<p>count</p>
-<h4>What did you expect to see?</h4>
-<p>More precise wording to understand what the function is expecting</p>
-<h4>Did you test this? If so, how?</h4>
-<p>I have a bug that's related, but because this is unclear I have to test both possibilities each time while testing for my bug.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/webglrenderingcontext/drawelements</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/drawElements" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/drawElements</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/master/files/en-us/web/api/webglrenderingcontext/drawelements/index.html">https://github.com/mdn/content/blob/master/files/en-us/web/api/webglrenderingcontext/drawelements/index.html</a></li>
-<li>Report started: 2020-12-31T23:54:07.085Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[webgl1, webgl2] https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bindFramebuffer]]></title>
             <link>https://github.com/mdn/content/issues/1578</link>
             <guid>https://github.com/mdn/content/issues/1578</guid>
