@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-color-4] Issue with "<color>": The final RGB syntax example is different from the rest](https://github.com/mdn/content/issues/8464) (2021-08-30T14:57:00Z)
+  
 * [[css-color-4] Issue with "opacity": setting background opacity example is vague](https://github.com/mdn/content/issues/8411) (2021-08-28T07:47:57Z)
   
 * [[css-cascade-3] Issue with "@import": supports() query is not in current recommendation](https://github.com/mdn/content/issues/7934) (2021-08-14T20:46:27Z)
