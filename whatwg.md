@@ -4,8 +4,6 @@
 
 * [[url] Issue with "URL.searchParams": (short summary here please)](https://github.com/mdn/content/issues/8452) (2021-08-30T05:11:33Z)
   
-* [[html] Issue with "<details>: The Details disclosure element": (short summary here please)](https://github.com/mdn/content/issues/8398) (2021-08-27T17:43:57Z)
-  
 * [[html] Issue with "WorkerGlobalScope.importScripts()": (confucing description of parameters)](https://github.com/mdn/content/issues/7652) (2021-08-06T09:26:25Z)
   
 * [[xhr] Issue with "FormData()": missing formdata event documentation](https://github.com/mdn/content/issues/7613) (2021-08-05T12:02:00Z)
