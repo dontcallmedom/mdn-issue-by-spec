@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] Issue with "TimeRanges": (bug on FireFox)](https://github.com/mdn/content/issues/8427) (2021-08-28T17:22:32Z)
-  
 * [[html] Issue with "<details>: The Details disclosure element": (short summary here please)](https://github.com/mdn/content/issues/8398) (2021-08-27T17:43:57Z)
   
 * [[html] Issue with "WorkerGlobalScope.importScripts()": (confucing description of parameters)](https://github.com/mdn/content/issues/7652) (2021-08-06T09:26:25Z)
