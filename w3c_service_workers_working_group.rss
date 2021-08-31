@@ -4,36 +4,10 @@
         <title>W3C Service Workers Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_service_workers_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Service Workers Working Group</description>
-        <lastBuildDate>Thu, 19 Aug 2021 23:55:44 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 09 Aug 2021 11:52:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[service-workers-1] Issue with "CacheStorage": (need warning that CacheStorage needs serviceWorker to be available)]]></title>
-            <link>https://github.com/mdn/content/issues/8111</link>
-            <guid>https://github.com/mdn/content/issues/8111</guid>
-            <pubDate>Thu, 19 Aug 2021 23:55:44 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage">https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>The docs should have a warning that all CacheStorage APIs are not available in Firefox's private mode and will throw a <code>DOMException: The operation is insecure.</code> error</p>
-<h4>What did you expect to see?</h4>
-<p>A warning in the docs explaining that all operations should be guarded by <code>if ('serviceWorker' in navigator)</code></p>
-<p>It's not intuitive that CacheStorage APIs are not available in Firefox's private mode and can only be checked (AFAIK) by checking if service workers are available</p>
-<h4>Did you test this? If so, how?</h4>
-<p><code>caches.open('test').then(console.log)</code> will succeed in Firefox</p>
-<p>The same operation in Firefox private mode will throw an error</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/cachestorage</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/cachestorage/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/cachestorage/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/a559c7d8a9e43bf3dc669050a408032f568c8edb/hovercard" href="https://github.com/mdn/content/commit/a559c7d8a9e43bf3dc669050a408032f568c8edb"><tt>a559c7d</tt></a></li>
-<li>Document last modified: 2021-07-06T08:21:07.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[service-workers-1] Issue with "ServiceWorkerRegistration.updateViaCache": (short summary here please)]]></title>
             <link>https://github.com/mdn/content/issues/7760</link>
