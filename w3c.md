@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[filter-effects-2] Issue with "<filter>": sRGB image ruined if used any filter with image](https://github.com/mdn/content/issues/8499) (2021-08-31T18:03:03Z)
+  
 * [[css-sizing-4] Issue with "max-width": live example iframe not working](https://github.com/mdn/content/issues/8490) (2021-08-31T10:43:36Z)
   
 * [[css-color-4] Issue with "<color>": The final RGB syntax example is different from the rest](https://github.com/mdn/content/issues/8464) (2021-08-30T14:57:00Z)
