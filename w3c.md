@@ -14,6 +14,8 @@
   
 * [[webauthn-3] PublicKeyCredentialCreationOptions.attestation: missing enum value "enterprise"](https://github.com/mdn/content/issues/8126) (2021-08-20T09:29:10Z)
   
+* [[css-transforms-2] Issue with "perspective": live sample iframe blocked](https://github.com/mdn/content/issues/8124) (2021-08-20T08:18:48Z)
+  
 * [[css-cascade-3] Issue with "@import": supports() query is not in current recommendation](https://github.com/mdn/content/issues/7934) (2021-08-14T20:46:27Z)
   
 * [[service-workers-1] Issue with "ServiceWorkerRegistration.updateViaCache": (short summary here please)](https://github.com/mdn/content/issues/7760) (2021-08-09T11:52:16Z)
