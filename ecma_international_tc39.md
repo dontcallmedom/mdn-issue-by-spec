@@ -4,8 +4,6 @@
 
 * [[ecmascript] Issue with "Right shift (>>)": Wrong binary conversion](https://github.com/mdn/content/issues/8414) (2021-08-28T10:28:12Z)
   
-* [[ecmascript] Issue with "Conditional (ternary) operator": Specify short-circuit behavior](https://github.com/mdn/content/issues/8239) (2021-08-23T21:01:07Z)
-  
 * [[ecmascript] Issue with "getter": Mention static getters](https://github.com/mdn/content/issues/7995) (2021-08-17T03:55:40Z)
   
 * [[ecmascript] Issue with "class": examples are an anti-pattern](https://github.com/mdn/content/issues/7840) (2021-08-12T05:06:24Z)

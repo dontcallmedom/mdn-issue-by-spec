@@ -41,32 +41,6 @@ console.log((-3).toString(2)) // -11 which will be 10000000000000000000000000000
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[ecmascript] Issue with "Conditional (ternary) operator": Specify short-circuit behavior]]></title>
-            <link>https://github.com/mdn/content/issues/8239</link>
-            <guid>https://github.com/mdn/content/issues/8239</guid>
-            <pubDate>Mon, 23 Aug 2021 21:01:07 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>For conditional operator I believe only one side will be evaluated. For example <code>cond ? f() : g()</code> will only evaluate one of f or g. It is obvious in if statements, though I'm not sure if this is obvious or not in an expression (i.e. if we thought about it as <code>ifelse(cond, f(), g())</code>).</p>
-<h4>Specific section or headline?</h4>
-<p>Description</p>
-<h4>What did you expect to see?</h4>
-<p>Short note about it</p>
-<h4>Did you test this? If so, how?</h4>
-<p>ex <code>true ? alert(0) : alert(1)</code></p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/javascript/reference/operators/conditional_operator</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/conditional_operator/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/conditional_operator/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cf607d68522cd35ee7670782d3ee3a361eaef2e4/hovercard" href="https://github.com/mdn/content/commit/cf607d68522cd35ee7670782d3ee3a361eaef2e4"><tt>cf607d6</tt></a></li>
-<li>Document last modified: 2021-07-20T18:47:57.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[ecmascript] Issue with "getter": Mention static getters]]></title>
             <link>https://github.com/mdn/content/issues/7995</link>
             <guid>https://github.com/mdn/content/issues/7995</guid>
