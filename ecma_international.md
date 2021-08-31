@@ -32,8 +32,6 @@
   
 * [[ecmascript] Issue with "Conditional (ternary) operator": (short summary here please)](https://github.com/mdn/content/issues/3775) (2021-04-02T10:45:07Z)
   
-* [[ecmascript] javascript.builtins.String - String conversion](https://github.com/mdn/content/issues/5007) (2021-03-28T02:30:25Z)
-  
 * [[ecmascript] [JavaScript] Document “AsyncGenerator” & “AsyncGeneratorFunction”](https://github.com/mdn/content/issues/2803) (2021-03-02T12:34:52Z)
   
 * [[ecmascript] Show version of spec that introduces feature](https://github.com/mdn/content/issues/2787) (2021-03-01T22:52:25Z)

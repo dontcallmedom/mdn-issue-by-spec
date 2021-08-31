@@ -549,36 +549,6 @@ If expr1 can be converted to true, returns expr2; else, returns expr1."</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[ecmascript] javascript.builtins.String - String conversion]]></title>
-            <link>https://github.com/mdn/content/issues/5007</link>
-            <guid>https://github.com/mdn/content/issues/5007</guid>
-            <pubDate>Sun, 28 Mar 2021 02:30:25 GMT</pubDate>
-            <content:encoded><![CDATA[
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="let outputStrings = []
-for (let i = 0, n = inputValues.length; i &lt; n; ++i) {
-  outputStrings.push(String(inputValues[i]));
-}
-"><pre><span class="pl-k">let</span> <span class="pl-s1">outputStrings</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-kos">]</span>
-<span class="pl-k">for</span> <span class="pl-kos">(</span><span class="pl-k">let</span> <span class="pl-s1">i</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-s1">n</span> <span class="pl-c1">=</span> <span class="pl-s1">inputValues</span><span class="pl-kos">.</span><span class="pl-c1">length</span><span class="pl-kos">;</span> <span class="pl-s1">i</span> <span class="pl-c1">&lt;</span> <span class="pl-s1">n</span><span class="pl-kos">;</span> <span class="pl-c1">++</span><span class="pl-s1">i</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-  <span class="pl-s1">outputStrings</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-v">String</span><span class="pl-kos">(</span><span class="pl-s1">inputValues</span><span class="pl-kos">[</span><span class="pl-s1">i</span><span class="pl-kos">]</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span></pre></div>
-<p>I am not sure what the purpose of the example is?</p>
-<h4>What did you expect to see?</h4>
-<p><code>String(undefined) String(null) String(Symbol())</code> or something.</p>
-<h4>Did you test this? If so, how?</h4>
-<p>yes, there is  a error. <code>ReferenceError: inputValues is not defined</code></p>
-
-<details>
-<summary>MDN page report details</summary>
-<ul>
-<li>Query: <code>javascript.builtins.String</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String</a></li>
-<li>Report started: 2021-03-28T02:04:08.526Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[ecmascript] [JavaScript] Document “AsyncGenerator” & “AsyncGeneratorFunction”]]></title>
             <link>https://github.com/mdn/content/issues/2803</link>
             <guid>https://github.com/mdn/content/issues/2803</guid>
