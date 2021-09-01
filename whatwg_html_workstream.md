@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Issue with "DOMParser": (short summary here please)](https://github.com/mdn/content/issues/8526) (2021-09-01T12:45:13Z)
+  
 * [[html] Issue with "Window.localStorage": Safari deletes after 7 days unvisited](https://github.com/mdn/content/issues/8510) (2021-09-01T03:59:58Z)
   
 * [[html, webgl1, dom, selection-api] [Markdown] [Web/API] Fix live samples which use heading IDs that are not derived from heading text](https://github.com/mdn/content/issues/8509) (2021-09-01T00:01:15Z)
