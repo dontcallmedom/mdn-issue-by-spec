@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Issue with "<summary>: The Disclosure Summary element": typo in opening description](https://github.com/mdn/content/issues/8541) (2021-09-01T19:57:13Z)
+  
 * [[dom] Issue with "Element.classList": Mention toggle or replace methods](https://github.com/mdn/content/issues/8538) (2021-09-01T18:05:04Z)
   
 * [[html] Issue with "DOMParser": (short summary here please)](https://github.com/mdn/content/issues/8526) (2021-09-01T12:45:13Z)
