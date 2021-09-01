@@ -46,8 +46,6 @@
   
 * [[html] Issue with "draggable": no mention of incompatibility with svg elements](https://github.com/mdn/content/issues/4069) (2021-04-13T12:53:33Z)
   
-* [[html] Issue with "WindowOrWorkerGlobalScope.btoa()": Missing snippet for Unicode chars as found on DE page](https://github.com/mdn/content/issues/4036) (2021-04-12T13:56:40Z)
-  
 * [[html] Issue with "HTMLFormElement: formdata event": The example code is bonkers](https://github.com/mdn/content/issues/3886) (2021-04-06T15:14:48Z)
   
 * [[html] Issue with "inputmode": Should probably discuss interaction with input type](https://github.com/mdn/content/issues/3732) (2021-04-01T05:26:56Z)

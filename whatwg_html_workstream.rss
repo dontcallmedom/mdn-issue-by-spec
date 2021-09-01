@@ -605,63 +605,6 @@ More explanation of what that means would be helpful</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Issue with "WindowOrWorkerGlobalScope.btoa()": Missing snippet for Unicode chars as found on DE page]]></title>
-            <link>https://github.com/mdn/content/issues/4036</link>
-            <guid>https://github.com/mdn/content/issues/4036</guid>
-            <pubDate>Mon, 12 Apr 2021 13:56:40 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/btoa">https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/btoa</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>EN page is missing really helpful function from the DE page</p>
-<h4>Specific section or headline?</h4>
-<p><a href="https://developer.mozilla.org/de/docs/Web/API/WindowOrWorkerGlobalScope/btoa#unicode-zeichenketten" rel="nofollow">This snippet</a>, contributed by <a href="http://ecmanaut.blogspot.com/2006/07/encoding-decoding-utf8-in-javascript.html" rel="nofollow">Johan Sundström</a> for handling Unicode characters was provided on the DE page:</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="function utf8_to_b64(str) {
-    return window.btoa(unescape(encodeURIComponent(str)));
-}
-
-function b64_to_utf8(str) {
-    return decodeURIComponent(escape(window.atob(str)));
-}
-
-// Usage:
-utf8_to_b64('✓ à la mode'); // JTI1dTI3MTMlMjUyMCUyNUUwJTI1MjBsYSUyNTIwbW9kZQ==
-b64_to_utf8('JTI1dTI3MTMlMjUyMCUyNUUwJTI1MjBsYSUyNTIwbW9kZQ=='); // &quot;✓ à la mode&quot;
-
-utf8_to_b64('I \u2661 Unicode!'); // SSUyNTIwJTI1dTI2NjElMjUyMFVuaWNvZGUlMjUyMQ==
-b64_to_utf8('SSUyNTIwJTI1dTI2NjElMjUyMFVuaWNvZGUlMjUyMQ=='); // &quot;I ♡ Unicode!&quot;
-"><pre><code>function utf8_to_b64(str) {
-    return window.btoa(unescape(encodeURIComponent(str)));
-}
-
-function b64_to_utf8(str) {
-    return decodeURIComponent(escape(window.atob(str)));
-}
-
-// Usage:
-utf8_to_b64('✓ à la mode'); // JTI1dTI3MTMlMjUyMCUyNUUwJTI1MjBsYSUyNTIwbW9kZQ==
-b64_to_utf8('JTI1dTI3MTMlMjUyMCUyNUUwJTI1MjBsYSUyNTIwbW9kZQ=='); // "✓ à la mode"
-
-utf8_to_b64('I \u2661 Unicode!'); // SSUyNTIwJTI1dTI2NjElMjUyMFVuaWNvZGUlMjUyMQ==
-b64_to_utf8('SSUyNTIwJTI1dTI2NjElMjUyMFVuaWNvZGUlMjUyMQ=='); // "I ♡ Unicode!"
-</code></pre></div>
-<p>When viewing the page in <strong>EN</strong>glish, that's no where to be found.<br>
-Adding this snippet to both EN and other languages will definitely help everyone looking into this function.</p>
-<h4>What did you expect to see?</h4>
-<p>Function as mentioned above on DE page</p>
-<h4>Did you test this? If so, how?</h4>
-<p>Changed language of page to a few different ones (Polish has this snippet) – to help all chars of the world, would be great to add to page for all languges.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/windoworworkerglobalscope/btoa</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/btoa" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/btoa</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/windoworworkerglobalscope/btoa/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/windoworworkerglobalscope/btoa/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/63c69f3c933acbea9bfb24d359a7d2ffdb3c0bea/hovercard" href="https://github.com/mdn/content/commit/63c69f3c933acbea9bfb24d359a7d2ffdb3c0bea"><tt>63c69f3</tt></a></li>
-<li>Document last modified: 2021-02-19T19:51:22.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Issue with "HTMLFormElement: formdata event": The example code is bonkers]]></title>
             <link>https://github.com/mdn/content/issues/3886</link>
             <guid>https://github.com/mdn/content/issues/3886</guid>

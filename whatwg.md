@@ -56,8 +56,6 @@
   
 * [[html] Issue with "draggable": no mention of incompatibility with svg elements](https://github.com/mdn/content/issues/4069) (2021-04-13T12:53:33Z)
   
-* [[html] Issue with "WindowOrWorkerGlobalScope.btoa()": Missing snippet for Unicode chars as found on DE page](https://github.com/mdn/content/issues/4036) (2021-04-12T13:56:40Z)
-  
 * [[fetch] Content suggestion: Document Headers.forEach()](https://github.com/mdn/content/issues/3937) (2021-04-08T10:01:22Z)
   
 * [[dom, web-bluetooth] Content bug: linking macros to Boolean shouldn't be {{domxref}}](https://github.com/mdn/content/issues/3898) (2021-04-07T02:39:25Z)
