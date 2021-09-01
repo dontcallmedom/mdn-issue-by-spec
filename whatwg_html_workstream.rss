@@ -4,10 +4,49 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Wed, 01 Sep 2021 00:01:15 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Sep 2021 03:59:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Issue with "Window.localStorage": Safari deletes after 7 days unvisited]]></title>
+            <link>https://github.com/mdn/content/issues/8510</link>
+            <guid>https://github.com/mdn/content/issues/8510</guid>
+            <pubDate>Wed, 01 Sep 2021 03:59:58 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The page suggests that localStorage persists forever.</p>
+<p>But then WebKit made this March 2020 announcement <a rel="nofollow" href="https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/">https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/</a> that they will automatically clear a domain's localStorage after 7 days where the browser is opened but the domain is not visited.</p>
+<h4>Specific section or headline?</h4>
+<blockquote>
+<p>the stored data is saved across browser sessions.</p>
+</blockquote>
+<blockquote>
+<p>except that while <code>localStorage</code> data has no expiration time</p>
+</blockquote>
+<h4>What did you expect to see?</h4>
+<p>A clarification note about Apple's stated policy of automatically deleting a domains localStorage if not visited for 7 days when Safari is opened.</p>
+<p>Some commentary on this issue:</p>
+<ul>
+<li><a href="https://www.theregister.com/2020/03/26/apple_relax_were_not_totally/" rel="nofollow">https://www.theregister.com/2020/03/26/apple_relax_were_not_totally/</a></li>
+<li><a href="https://ar.al/2020/03/25/apple-just-killed-offline-web-apps-while-purporting-to-protect-your-privacy-why-thats-a-bad-thing-and-why-you-should-care/" rel="nofollow">https://ar.al/2020/03/25/apple-just-killed-offline-web-apps-while-purporting-to-protect-your-privacy-why-thats-a-bad-thing-and-why-you-should-care/</a></li>
+<li><a href="https://andregarzia.com/2020/03/private-client-side-only-pwas-are-hard-but-now-apple-made-them-impossible.html" rel="nofollow">https://andregarzia.com/2020/03/private-client-side-only-pwas-are-hard-but-now-apple-made-them-impossible.html</a></li>
+</ul>
+<p>These all respond to the announcement, but I'm having trouble finding recent documentation about this issue on MDN or elsewhere.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>Not yet. Requires at least 7 days to test, but I can write something up if there's interest.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/window/localstorage</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/localstorage/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/localstorage/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/67029603b9457e2ec278a254998df208ff2591c3/hovercard" href="https://github.com/mdn/content/commit/67029603b9457e2ec278a254998df208ff2591c3"><tt>6702960</tt></a></li>
+<li>Document last modified: 2021-08-21T21:04:34.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, webgl1, dom, selection-api] [Markdown] [Web/API] Fix live samples which use heading IDs that are not derived from heading text]]></title>
             <link>https://github.com/mdn/content/issues/8509</link>
