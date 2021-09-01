@@ -131,45 +131,6 @@ Firefox Developer Edition can't open this page</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-color-4] Issue with "<color>": The final RGB syntax example is different from the rest]]></title>
-            <link>https://github.com/mdn/content/issues/8464</link>
-            <guid>https://github.com/mdn/content/issues/8464</guid>
-            <pubDate>Mon, 30 Aug 2021 14:57:00 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">https://developer.mozilla.org/en-US/docs/Web/CSS/color_value</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>The list of RGB values is supposed to show the exact same shade of opaque bright pink. The last one, however, is not only a different shade but also different transparency.</p>
-<div class="highlight highlight-source-css position-relative" data-snippet-clipboard-copy-content="/* Whitespace syntax */
-rgb(255 0 153 / 1)
-rgb(255 0 153 / 100%)
-
-/* Functional syntax with floats value */
-rgb(255, 0, 153.6, 1)
-rgb(1e2, .5e1, .5e0, +.25e2%)
-"><pre><span class="pl-c">/* Whitespace syntax */</span>
-<span class="pl-ent">rgb</span>(255 0 153 <span class="pl-c1">/</span> 1)
-<span class="pl-ent">rgb</span>(255 0 153 <span class="pl-c1">/</span> 100%)
-
-<span class="pl-c">/* Functional syntax with floats value */</span>
-<span class="pl-ent">rgb</span>(255<span class="pl-kos">,</span> 0<span class="pl-kos">,</span> 153.6<span class="pl-kos">,</span> 1)
-<span class="pl-ent">rgb</span>(1e2<span class="pl-kos">,</span> .5e1<span class="pl-kos">,</span> .5e0<span class="pl-kos">,</span> +.25e2%)</pre></div>
-<p>The value <code>rgb(1e2, .5e1, .5e0, +.25e2%)</code> is not the same colour as the rest of the examples.</p>
-<h4>Specific section or headline?</h4>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgb_syntax_variations" rel="nofollow">#RGB syntax variations</a></p>
-<h4>What did you expect to see?</h4>
-<p>After a little bit of testing, I think an equal colour would have the code <code>rgb(1e2%, 0e0%, .6e2%, +.1e3%)</code>. I made this based on a previous example, <code>rgb(100%, 0%, 60%)</code>, and then converting each value to a float.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/css/color_value</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/color_value</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/color_value/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/color_value/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/fddea0be8e9fd29e1c8f1422fa3b0985a8075543/hovercard" href="https://github.com/mdn/content/commit/fddea0be8e9fd29e1c8f1422fa3b0985a8075543"><tt>fddea0b</tt></a></li>
-<li>Document last modified: 2021-08-23T03:12:02.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[FileAPI] Issue with "File": SVG image overflows]]></title>
             <link>https://github.com/mdn/content/issues/8412</link>
             <guid>https://github.com/mdn/content/issues/8412</guid>

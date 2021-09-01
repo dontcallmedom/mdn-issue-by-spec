@@ -6,8 +6,6 @@
   
 * [[css-sizing-4] Issue with "max-width": live example iframe not working](https://github.com/mdn/content/issues/8490) (2021-08-31T10:43:36Z)
   
-* [[css-color-4] Issue with "<color>": The final RGB syntax example is different from the rest](https://github.com/mdn/content/issues/8464) (2021-08-30T14:57:00Z)
-  
 * [[css-color-4] Issue with "opacity": setting background opacity example is vague](https://github.com/mdn/content/issues/8411) (2021-08-28T07:47:57Z)
   
 * [[css-transforms-2] Issue with "perspective": live sample iframe blocked](https://github.com/mdn/content/issues/8124) (2021-08-20T08:18:48Z)
