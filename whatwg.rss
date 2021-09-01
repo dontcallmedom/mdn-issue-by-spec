@@ -4,10 +4,40 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Wed, 01 Sep 2021 12:45:13 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Sep 2021 18:05:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[dom] Issue with "Element.classList": Mention toggle or replace methods]]></title>
+            <link>https://github.com/mdn/content/issues/8538</link>
+            <guid>https://github.com/mdn/content/issues/8538</guid>
+            <pubDate>Wed, 01 Sep 2021 18:05:04 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">https://developer.mozilla.org/en-US/docs/Web/API/Element/classList</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The classList methods .toggle() and .replace are only mentioned in the code examples. There is a sentence which fails to mention them:</p>
+<blockquote>
+<p>The DOMTokenList itself is read-only, although you can modify it using the add() and remove() methods.</p>
+</blockquote>
+<p>Seems they also modify and should be mentioned in that statement?</p>
+<h4>Specific section or headline?</h4>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList#returns">https://developer.mozilla.org/en-US/docs/Web/API/Element/classList#returns</a></p>
+<h4>What did you expect to see?</h4>
+<p>Perhaps the sentence should mention .toggle() and .replace()?<br>
+Example: "The DOMTokenList itself is read-only, although you can modify it using the add(), remove(), replace() and toggle() methods."</p>
+<h4>Did you test this? If so, how?</h4>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/element/classlist</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/classList</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/element/classlist/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/element/classlist/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e317eb64ed790b7b6e8753f907a7efba530b70c8/hovercard" href="https://github.com/mdn/content/commit/e317eb64ed790b7b6e8753f907a7efba530b70c8"><tt>e317eb6</tt></a></li>
+<li>Document last modified: 2021-08-23T20:45:51.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Issue with "DOMParser": (short summary here please)]]></title>
             <link>https://github.com/mdn/content/issues/8526</link>

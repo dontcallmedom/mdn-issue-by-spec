@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[dom] Issue with "Element.classList": Mention toggle or replace methods](https://github.com/mdn/content/issues/8538) (2021-09-01T18:05:04Z)
+  
 * [[html] Issue with "DOMParser": (short summary here please)](https://github.com/mdn/content/issues/8526) (2021-09-01T12:45:13Z)
   
 * [[html] Issue with "Window.localStorage": Safari deletes after 7 days unvisited](https://github.com/mdn/content/issues/8510) (2021-09-01T03:59:58Z)
