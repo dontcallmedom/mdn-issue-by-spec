@@ -4,13 +4,9 @@
 
 * [[html] Issue with "<summary>: The Disclosure Summary element": typo in opening description](https://github.com/mdn/content/issues/8541) (2021-09-01T19:57:13Z)
   
-* [[dom] Issue with "Element.classList": Mention toggle or replace methods](https://github.com/mdn/content/issues/8538) (2021-09-01T18:05:04Z)
-  
 * [[html] Issue with "DOMParser": (short summary here please)](https://github.com/mdn/content/issues/8526) (2021-09-01T12:45:13Z)
   
 * [[html] Issue with "Window.localStorage": Safari deletes after 7 days unvisited](https://github.com/mdn/content/issues/8510) (2021-09-01T03:59:58Z)
-  
-* [[html, webgl1, dom, selection-api] [Markdown] [Web/API] Fix live samples which use heading IDs that are not derived from heading text](https://github.com/mdn/content/issues/8509) (2021-09-01T00:01:15Z)
   
 * [[html] Issue with "WorkerGlobalScope.importScripts()": (confucing description of parameters)](https://github.com/mdn/content/issues/7652) (2021-08-06T09:26:25Z)
   

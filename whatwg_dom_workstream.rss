@@ -4,66 +4,10 @@
         <title>WHATWG DOM Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_dom_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG DOM Workstream</description>
-        <lastBuildDate>Wed, 01 Sep 2021 18:05:04 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 03 Aug 2021 21:17:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[dom] Issue with "Element.classList": Mention toggle or replace methods]]></title>
-            <link>https://github.com/mdn/content/issues/8538</link>
-            <guid>https://github.com/mdn/content/issues/8538</guid>
-            <pubDate>Wed, 01 Sep 2021 18:05:04 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">https://developer.mozilla.org/en-US/docs/Web/API/Element/classList</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>The classList methods .toggle() and .replace are only mentioned in the code examples. There is a sentence which fails to mention them:</p>
-<blockquote>
-<p>The DOMTokenList itself is read-only, although you can modify it using the add() and remove() methods.</p>
-</blockquote>
-<p>Seems they also modify and should be mentioned in that statement?</p>
-<h4>Specific section or headline?</h4>
-<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList#returns">https://developer.mozilla.org/en-US/docs/Web/API/Element/classList#returns</a></p>
-<h4>What did you expect to see?</h4>
-<p>Perhaps the sentence should mention .toggle() and .replace()?<br>
-Example: "The DOMTokenList itself is read-only, although you can modify it using the add(), remove(), replace() and toggle() methods."</p>
-<h4>Did you test this? If so, how?</h4>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/element/classlist</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/classList</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/element/classlist/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/element/classlist/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e317eb64ed790b7b6e8753f907a7efba530b70c8/hovercard" href="https://github.com/mdn/content/commit/e317eb64ed790b7b6e8753f907a7efba530b70c8"><tt>e317eb6</tt></a></li>
-<li>Document last modified: 2021-08-23T20:45:51.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[html, webgl1, dom, selection-api] [Markdown] [Web/API] Fix live samples which use heading IDs that are not derived from heading text]]></title>
-            <link>https://github.com/mdn/content/issues/8509</link>
-            <guid>https://github.com/mdn/content/issues/8509</guid>
-            <pubDate>Wed, 01 Sep 2021 00:01:15 GMT</pubDate>
-            <content:encoded><![CDATA[<p>Part of <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="970776509" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/7898" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/7898/hovercard" href="https://github.com/mdn/content/issues/7898">#7898</a>.</p>
-<p>In MDN live samples pass an ID to identify where Yari should look for the code blocks to include. This ID should always be a heading ID, in Markdown. Also in Markdown, the heading ID is always derived from the heading text - it doesn't have an independent existence.</p>
-<p>But in HTML the heading ID <em>does</em> have an independent existence, so can be different from the one that would be generated from the heading text. If a heading has such an ID in our HTML, and a live sample uses it, then that live sample will break when we convert to Markdown.</p>
-<p>I believe that this issue affects the following pages:</p>
-<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/canvas_api/tutorial/applying_styles_and_colors">https://developer.mozilla.org/en-US/docs/Web/API/canvas_api/tutorial/applying_styles_and_colors</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/canvas_api/tutorial/compositing">https://developer.mozilla.org/en-US/docs/Web/API/canvas_api/tutorial/compositing</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/css_object_model/using_dynamic_styling_information">https://developer.mozilla.org/en-US/docs/Web/API/css_object_model/using_dynamic_styling_information</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/css_painting_api/guide">https://developer.mozilla.org/en-US/docs/Web/API/css_painting_api/guide</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/datatransferitemlist">https://developer.mozilla.org/en-US/docs/Web/API/datatransferitemlist</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/datatransferitemlist/length">https://developer.mozilla.org/en-US/docs/Web/API/datatransferitemlist/length</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/document_object_model/introduction">https://developer.mozilla.org/en-US/docs/Web/API/document_object_model/introduction</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/document_object_model/traversing_an_html_table_with_javascript_and_dom_interfaces">https://developer.mozilla.org/en-US/docs/Web/API/document_object_model/traversing_an_html_table_with_javascript_and_dom_interfaces</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/document_object_model/whitespace">https://developer.mozilla.org/en-US/docs/Web/API/document_object_model/whitespace</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/element/queryselector">https://developer.mozilla.org/en-US/docs/Web/API/element/queryselector</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/eventtarget/addeventlistener">https://developer.mozilla.org/en-US/docs/Web/API/eventtarget/addeventlistener</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/globaleventhandlers/onselectionchange">https://developer.mozilla.org/en-US/docs/Web/API/globaleventhandlers/onselectionchange</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/htmlelement/focus">https://developer.mozilla.org/en-US/docs/Web/API/htmlelement/focus</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/navigator/canshare">https://developer.mozilla.org/en-US/docs/Web/API/navigator/canshare</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/settimeout">https://developer.mozilla.org/en-US/docs/Web/API/settimeout</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/webglrenderingcontext">https://developer.mozilla.org/en-US/docs/Web/API/webglrenderingcontext</a></p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html, cssom-view-1, dom, uievents, FileAPI, WebIDL-1, pointerlock-2] Remove alert() from live samples]]></title>
             <link>https://github.com/mdn/content/issues/7566</link>

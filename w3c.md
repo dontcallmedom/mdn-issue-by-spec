@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html, webgl1, dom, selection-api] [Markdown] [Web/API] Fix live samples which use heading IDs that are not derived from heading text](https://github.com/mdn/content/issues/8509) (2021-09-01T00:01:15Z)
-  
 * [[filter-effects-2] Issue with "<filter>": sRGB image ruined if used any filter with image](https://github.com/mdn/content/issues/8499) (2021-08-31T18:03:03Z)
   
 * [[css-sizing-4] Issue with "max-width": live example iframe not working](https://github.com/mdn/content/issues/8490) (2021-08-31T10:43:36Z)
