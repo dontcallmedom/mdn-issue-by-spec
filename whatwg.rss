@@ -4,10 +4,38 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Thu, 02 Sep 2021 06:58:55 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 02 Sep 2021 23:25:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Content bug: Unable to reproduce NOT_SUPPORTED_ERR stated on the HTMLMediaElement defaultPlaybackRate page]]></title>
+            <link>https://github.com/mdn/content/issues/8578</link>
+            <guid>https://github.com/mdn/content/issues/8578</guid>
+            <pubDate>Thu, 02 Sep 2021 23:25:56 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/defaultPlaybackRate#value">https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/defaultPlaybackRate#value</a></p>
+<h2>What is the problem?</h2>
+<p>The docs state that setting the value to 0.0 will produce <code>NOT_SUPPORTED_ERR</code>, however, I am not able to recreate this in any browser.</p>
+<h2>Did you test this? If so, how?</h2>
+<p>As an example:</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="Firefox
+Version 	91.0.2
+Build ID 	20210823123856
+
+&gt; var v = document.createElement(&quot;video&quot;);
+&gt; v.defaultPlaybackRate = 0.0;
+0
+"><pre><code>Firefox
+Version 	91.0.2
+Build ID 	20210823123856
+
+&gt; var v = document.createElement("video");
+&gt; v.defaultPlaybackRate = 0.0;
+0
+</code></pre></div>
+<p>Results are the same in Chrome, Opera, Safari, Edge and IE</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Issue with "<label>": (short summary here please)]]></title>
             <link>https://github.com/mdn/content/issues/8553</link>

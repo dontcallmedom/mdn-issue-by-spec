@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Content bug: Unable to reproduce NOT_SUPPORTED_ERR stated on the HTMLMediaElement defaultPlaybackRate page](https://github.com/mdn/content/issues/8578) (2021-09-02T23:25:56Z)
+  
 * [[html] Issue with "<label>": (short summary here please)](https://github.com/mdn/content/issues/8553) (2021-09-02T06:58:55Z)
   
 * [[html] Issue with "DOMParser": (short summary here please)](https://github.com/mdn/content/issues/8526) (2021-09-01T12:45:13Z)
