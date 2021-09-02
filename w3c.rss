@@ -4,10 +4,42 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Tue, 31 Aug 2021 18:03:03 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 02 Sep 2021 04:54:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[SVG11, svg-animations] Issue with "<animate>": Firefox is inconsistent in rendering svg - graphic]]></title>
+            <link>https://github.com/mdn/content/issues/8551</link>
+            <guid>https://github.com/mdn/content/issues/8551</guid>
+            <pubDate>Thu, 02 Sep 2021 04:54:48 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate">https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image">https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateMotion">https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateMotion</a></p>
+<p>And animate - everywhere Firefox has "green" full support, when on practice Firefox is inconsistent in rendering svg - graphic.</p>
+<h4>Specific section or headline?</h4>
+<p>Using animate (any of it) to apply transform on the image - image rendering for transform does not look like expected on Firefox. Smooth transform applied only to SVG shapes, except image.</p>
+<h4>What did you expect to see?</h4>
+<p>I expect to see a note or some warning that Firefox is inconsistent in rendering SVG graphic.</p>
+<h4>Did you test this? If so, how?</h4>
+<p><a href="https://danilw.github.io/GLSL-howto/motion_test_svg/motion_test.svg" rel="nofollow">motion_test.svg</a></p>
+<p><strong>gif from firefox</strong> - image "jump" instead of smooth movements:</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/24825887/131783368-cb165405-b002-4bde-9e08-35b1e36e5395.gif"><img src="https://user-images.githubusercontent.com/24825887/131783368-cb165405-b002-4bde-9e08-35b1e36e5395.gif" alt="ff" style="max-width: 100%;"></a></p>
+<p><strong>expected</strong> - no jump and smooth movement:</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/24825887/131783449-52d1fb1b-200f-4954-842d-f578bc22a5c9.gif"><img src="https://user-images.githubusercontent.com/24825887/131783449-52d1fb1b-200f-4954-842d-f578bc22a5c9.gif" alt="c" style="max-width: 100%;"></a></p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/svg/element/animate</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/svg/element/animate/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/svg/element/animate/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/91456ead4017ad5b6c5be3cacc83cc72007483ca/hovercard" href="https://github.com/mdn/content/commit/91456ead4017ad5b6c5be3cacc83cc72007483ca"><tt>91456ea</tt></a></li>
+<li>Document last modified: 2021-06-10T20:25:11.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[filter-effects-2] Issue with "<filter>": sRGB image ruined if used any filter with image]]></title>
             <link>https://github.com/mdn/content/issues/8499</link>
