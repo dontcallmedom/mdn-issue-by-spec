@@ -8,8 +8,6 @@
   
 * [[FileAPI] Issue with "File": SVG image overflows](https://github.com/mdn/content/issues/8412) (2021-08-28T08:03:49Z)
   
-* [[css-color-4] Issue with "opacity": setting background opacity example is vague](https://github.com/mdn/content/issues/8411) (2021-08-28T07:47:57Z)
-  
 * [[webauthn-3] PublicKeyCredentialCreationOptions.attestation: missing enum value "enterprise"](https://github.com/mdn/content/issues/8126) (2021-08-20T09:29:10Z)
   
 * [[css-transforms-2] Issue with "perspective": live sample iframe blocked](https://github.com/mdn/content/issues/8124) (2021-08-20T08:18:48Z)
