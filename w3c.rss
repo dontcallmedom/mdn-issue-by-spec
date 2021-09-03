@@ -340,7 +340,7 @@ The ServiceWorker interface inherits methods from its parent, Worker, with the e
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html, cssom-view-1, dom, uievents, FileAPI, WebIDL-1, pointerlock-2] Remove alert() from live samples]]></title>
+            <title><![CDATA[[html, cssom-view-1, dom, uievents, WebIDL-1, FileAPI, pointerlock-2] Remove alert() from live samples]]></title>
             <link>https://github.com/mdn/content/issues/7566</link>
             <guid>https://github.com/mdn/content/issues/7566</guid>
             <pubDate>Tue, 03 Aug 2021 21:17:44 GMT</pubDate>
@@ -481,33 +481,6 @@ at errorMsg</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[FileAPI] Issue with "FileReader.onerror": (Incomplete/Irrelevant Comment)]]></title>
-            <link>https://github.com/mdn/content/issues/6991</link>
-            <guid>https://github.com/mdn/content/issues/6991</guid>
-            <pubDate>Sat, 17 Jul 2021 06:28:11 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/FileReader/onerror">https://developer.mozilla.org/en-US/docs/Web/API/FileReader/onerror</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>There is a comment in the sample code which I found confusing. why is it there</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="reader.abort(); // (...does this do anything useful in an onerror handler?)
-"><pre><code>reader.abort(); // (...does this do anything useful in an onerror handler?)
-</code></pre></div>
-<h4>Specific section or headline?</h4>
-<p>Sample Code</p>
-<h4>What did you expect to see?</h4>
-<p>The answer to that question in a comment</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/filereader/onerror</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/FileReader/onerror" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FileReader/onerror</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/filereader/onerror/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/filereader/onerror/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/c842e7159d296e2298380acbc07ffcbd90ab8c1c/hovercard" href="https://github.com/mdn/content/commit/c842e7159d296e2298380acbc07ffcbd90ab8c1c"><tt>c842e71</tt></a></li>
-<li>Document last modified: 2021-05-31T16:49:38.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator]]></title>
             <link>https://github.com/mdn/content/issues/6856</link>
             <guid>https://github.com/mdn/content/issues/6856</guid>
@@ -578,32 +551,6 @@ sel.setBaseAndExtent(tnode, 0, tnode, 5) // this should select 'hello'
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/selection/setbaseandextent/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/selection/setbaseandextent/index.html</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/65b5fed3c37fd772df9f018d2ad013ef46ccdaa6/hovercard" href="https://github.com/mdn/content/commit/65b5fed3c37fd772df9f018d2ad013ef46ccdaa6"><tt>65b5fed</tt></a></li>
 <li>Document last modified: 2021-06-16T06:29:37.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[webdriver2] Issue with "WebDriver":  Broken/Missing links]]></title>
-            <link>https://github.com/mdn/content/issues/6593</link>
-            <guid>https://github.com/mdn/content/issues/6593</guid>
-            <pubDate>Mon, 05 Jul 2021 09:53:27 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/WebDriver">https://developer.mozilla.org/en-US/docs/Web/WebDriver</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>2 broken links.</p>
-<h4>Specific section or headline?</h4>
-<p>In the "Usage" and "See also" sections.</p>
-<h4>What did you expect to see?</h4>
-<p>Links that took me to working or existing pages, and instead got errors for both.</p>
-<h4>Did you test this? If so, how?</h4>
-<p>Yes, by clicking the link in <em>Usage</em> that took me to <a href="https://developer.mozilla.org/en-US/docs/Web/WebDriver/Clients" rel="nofollow">this page</a> which is broken, and the supposed <a href="https://www.selenium.dev/docs/" rel="nofollow">Selenium docs</a> which are now in <a href="https://www.selenium.dev/documentation/en/" rel="nofollow">this location instead</a>.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/webdriver</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/WebDriver" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/WebDriver</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/webdriver/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/webdriver/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/02dec84ed2a1ef4919841ae2452b59c8a5e55312/hovercard" href="https://github.com/mdn/content/commit/02dec84ed2a1ef4919841ae2452b59c8a5e55312"><tt>02dec84</tt></a></li>
-<li>Document last modified: 2021-04-30T06:42:17.000Z</li>
 </ul>
 </details>]]></content:encoded>
         </item>

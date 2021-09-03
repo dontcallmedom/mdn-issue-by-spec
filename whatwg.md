@@ -12,7 +12,7 @@
   
 * [[xhr] Issue with "FormData()": missing formdata event documentation](https://github.com/mdn/content/issues/7613) (2021-08-05T12:02:00Z)
   
-* [[html, cssom-view-1, dom, uievents, FileAPI, WebIDL-1, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
+* [[html, cssom-view-1, dom, uievents, WebIDL-1, FileAPI, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
 * [[html] Issue with "<form>": describe running javascript on submit: `onsubmit` and javascript pseudo-protocol](https://github.com/mdn/content/issues/7142) (2021-07-21T22:09:52Z)
   

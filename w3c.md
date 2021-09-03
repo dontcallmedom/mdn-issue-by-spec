@@ -22,7 +22,7 @@
   
 * [[service-workers-1] Issue with "ServiceWorker": wrong parentage; should explicitly list postMessage() ](https://github.com/mdn/content/issues/7593) (2021-08-04T17:16:23Z)
   
-* [[html, cssom-view-1, dom, uievents, FileAPI, WebIDL-1, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
+* [[html, cssom-view-1, dom, uievents, WebIDL-1, FileAPI, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
 * [[IndexedDB-3] Issue with "IDBTransaction":Example needs explanation](https://github.com/mdn/content/issues/7160) (2021-07-22T15:31:43Z)
   
@@ -30,15 +30,11 @@
   
 * [[mediacapture-streams] Issue with "MediaDevices": (short summary here please)](https://github.com/mdn/content/issues/7125) (2021-07-21T12:22:21Z)
   
-* [[FileAPI] Issue with "FileReader.onerror": (Incomplete/Irrelevant Comment)](https://github.com/mdn/content/issues/6991) (2021-07-17T06:28:11Z)
-  
 * [[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator](https://github.com/mdn/content/issues/6856) (2021-07-13T13:35:32Z)
   
 * [[uievents] Issue with "MouseEvent.ctrlKey": 'command' instead of 'control' for Mac keyboards](https://github.com/mdn/content/issues/6624) (2021-07-06T12:40:16Z)
   
 * [[selection-api] Issue with "Selection.setBaseAndExtent()": behaviour on text nodes](https://github.com/mdn/content/issues/6623) (2021-07-06T12:24:35Z)
-  
-* [[webdriver2] Issue with "WebDriver":  Broken/Missing links](https://github.com/mdn/content/issues/6593) (2021-07-05T09:53:27Z)
   
 * [[user-timing-2] Issue with "performance.measure()": missing note about DOMException: "An invalid or illegal string was specified"](https://github.com/mdn/content/issues/6563) (2021-07-03T18:50:22Z)
   

@@ -10,7 +10,7 @@
   
 * [[SVG11, css-masking-1] Deprecated Property on Documentation for SVG clipPath Element](https://github.com/mdn/content/issues/7653) (2021-08-06T09:44:12Z)
   
-* [[html, cssom-view-1, dom, uievents, FileAPI, WebIDL-1, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
+* [[html, cssom-view-1, dom, uievents, WebIDL-1, FileAPI, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
 * [[css-lists-3] Issue with "counter-reset": the example is a bit confusing](https://github.com/mdn/content/issues/6277) (2021-06-23T22:25:29Z)
   
