@@ -34,8 +34,6 @@
   
 * [[FileAPI] Issue with "FileReader.onerror": (Incomplete/Irrelevant Comment)](https://github.com/mdn/content/issues/6991) (2021-07-17T06:28:11Z)
   
-* [[file-system-access] Issue with "FileSystemFileHandle": (getTheFile() async function argument)](https://github.com/mdn/content/issues/6984) (2021-07-16T19:44:59Z)
-  
 * [[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator](https://github.com/mdn/content/issues/6856) (2021-07-13T13:35:32Z)
   
 * [[uievents] Issue with "MouseEvent.ctrlKey": 'command' instead of 'control' for Mac keyboards](https://github.com/mdn/content/issues/6624) (2021-07-06T12:40:16Z)
