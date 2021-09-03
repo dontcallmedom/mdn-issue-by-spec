@@ -6,8 +6,6 @@
   
 * [[css-sizing-4] Issue with "max-width": live example iframe not working](https://github.com/mdn/content/issues/8490) (2021-08-31T10:43:36Z)
   
-* [[css-transforms-2] Issue with "perspective": live sample iframe blocked](https://github.com/mdn/content/issues/8124) (2021-08-20T08:18:48Z)
-  
 * [[css-cascade-3] Issue with "@import": supports() query is not in current recommendation](https://github.com/mdn/content/issues/7934) (2021-08-14T20:46:27Z)
   
 * [[SVG11, css-masking-1] Deprecated Property on Documentation for SVG clipPath Element](https://github.com/mdn/content/issues/7653) (2021-08-06T09:44:12Z)
