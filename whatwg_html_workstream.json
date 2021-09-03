@@ -9,17 +9,6 @@
     },
     "items": [
         {
-            "id": "https://github.com/mdn/content/issues/8578",
-            "content_html": "<h2>What page(s) did you find the problem on?</h2>\n<p><a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/defaultPlaybackRate#value\">https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/defaultPlaybackRate#value</a></p>\n<h2>What is the problem?</h2>\n<p>The docs state that setting the value to 0.0 will produce <code>NOT_SUPPORTED_ERR</code>, however, I am not able to recreate this in any browser.</p>\n<h2>Did you test this? If so, how?</h2>\n<p>As an example:</p>\n<div class=\"snippet-clipboard-content position-relative\" data-snippet-clipboard-copy-content=\"Firefox\nVersion \t91.0.2\nBuild ID \t20210823123856\n\n&gt; var v = document.createElement(&quot;video&quot;);\n&gt; v.defaultPlaybackRate = 0.0;\n0\n\"><pre><code>Firefox\nVersion \t91.0.2\nBuild ID \t20210823123856\n\n&gt; var v = document.createElement(\"video\");\n&gt; v.defaultPlaybackRate = 0.0;\n0\n</code></pre></div>\n<p>Results are the same in Chrome, Opera, Safari, Edge and IE</p>",
-            "url": "https://github.com/mdn/content/issues/8578",
-            "title": "[html] Content bug: Unable to reproduce NOT_SUPPORTED_ERR stated on the HTMLMediaElement defaultPlaybackRate page",
-            "date_modified": "2021-09-02T23:25:56.000Z",
-            "author": {
-                "name": "greg-el",
-                "url": "https://github.com/greg-el"
-            }
-        },
-        {
             "id": "https://github.com/mdn/content/issues/8553",
             "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label\">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label</a></p>\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<p>Please elaborate on the \"for\" attribute. Does it support multiple ID refs?<br>\nAlso, you may wish to add an explanation that the label passes the focus to the target in the \"for\" attribute.</p>\n<h4>Specific section or headline?</h4>\n<h4>What did you expect to see?</h4>\n<h4>Did you test this? If so, how?</h4>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul>\n<li>Folder: <code>en-us/web/html/element/label</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/html/element/label/index.html\">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/label/index.html</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/567daa98535c1ec4c13e4f0111e0c1ce1e4b23b5/hovercard\" href=\"https://github.com/mdn/content/commit/567daa98535c1ec4c13e4f0111e0c1ce1e4b23b5\"><tt>567daa9</tt></a></li>\n<li>Document last modified: 2021-06-21T10:18:13.000Z</li>\n</ul>\n</details>",
             "url": "https://github.com/mdn/content/issues/8553",
