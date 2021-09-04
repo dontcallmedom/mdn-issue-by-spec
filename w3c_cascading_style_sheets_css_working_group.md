@@ -2,9 +2,9 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[filter-effects-2] Issue with "<filter>": sRGB image ruined if used any filter with image](https://github.com/mdn/content/issues/8499) (2021-08-31T18:03:03Z)
+* [[css-color-4] List of External Broken Link](https://github.com/mdn/content/issues/8645) (2021-09-04T09:17:13Z)
   
-* [[css-sizing-4] Issue with "max-width": live example iframe not working](https://github.com/mdn/content/issues/8490) (2021-08-31T10:43:36Z)
+* [[filter-effects-2] Issue with "<filter>": sRGB image ruined if used any filter with image](https://github.com/mdn/content/issues/8499) (2021-08-31T18:03:03Z)
   
 * [[css-cascade-3] Issue with "@import": supports() query is not in current recommendation](https://github.com/mdn/content/issues/7934) (2021-08-14T20:46:27Z)
   
