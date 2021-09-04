@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-text-3] Issue with "word-spacing": percentages no longer allowed](https://github.com/mdn/content/issues/8653) (2021-09-04T20:08:50Z)
+  
 * [[css-color-4] List of External Broken Link](https://github.com/mdn/content/issues/8645) (2021-09-04T09:17:13Z)
   
 * [[filter-effects-2] Issue with "<filter>": sRGB image ruined if used any filter with image](https://github.com/mdn/content/issues/8499) (2021-08-31T18:03:03Z)
