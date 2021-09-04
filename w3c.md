@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[beacon] Issue with "Navigator.sendBeacon()": (short summary here please)](https://github.com/mdn/content/issues/8638) (2021-09-04T04:09:02Z)
+  
 * [[SVG11, svg-animations] Issue with "<animate>": Firefox is inconsistent in rendering svg - graphic](https://github.com/mdn/content/issues/8551) (2021-09-02T04:54:48Z)
   
 * [[filter-effects-2] Issue with "<filter>": sRGB image ruined if used any filter with image](https://github.com/mdn/content/issues/8499) (2021-08-31T18:03:03Z)

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Performance Working Group. [![RSS feed for W3C Web Performance Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[beacon] Issue with "Navigator.sendBeacon()": (short summary here please)](https://github.com/mdn/content/issues/8638) (2021-09-04T04:09:02Z)
+  
 * [[user-timing-2] Issue with "performance.measure()": missing note about DOMException: "An invalid or illegal string was specified"](https://github.com/mdn/content/issues/6563) (2021-07-03T18:50:22Z)
   
 * [[user-timing-2] Issue with "performance.measure()": (short summary here please)](https://github.com/mdn/content/issues/6441) (2021-06-29T03:24:17Z)
