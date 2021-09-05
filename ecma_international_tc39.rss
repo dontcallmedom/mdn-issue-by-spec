@@ -4,10 +4,37 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Sat, 28 Aug 2021 10:28:12 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 05 Sep 2021 21:19:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "async function": ambiguity at end]]></title>
+            <link>https://github.com/mdn/content/issues/8670</link>
+            <guid>https://github.com/mdn/content/issues/8670</guid>
+            <pubDate>Sun, 05 Sep 2021 21:19:34 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<blockquote>
+<p>In the above example, notice there is no await statement after the return keyword, although that would be valid too: The return value of an async function is implicitly wrapped in Promise.resolve - if it's not already a promise itself (as in this example).</p>
+</blockquote>
+<p>Was unclear which of the two preceding code snippets is being referred to by "after the return keyword," and that's a crucial thing here.</p>
+<h4>Specific section or headline?</h4>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function#rewriting_a_promise_chain_with_an_async_function">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function#rewriting_a_promise_chain_with_an_async_function</a></p>
+<h4>What did you expect to see?</h4>
+<h4>Did you test this? If so, how?</h4>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/statements/async_function</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/async_function/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/async_function/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cf607d68522cd35ee7670782d3ee3a361eaef2e4/hovercard" href="https://github.com/mdn/content/commit/cf607d68522cd35ee7670782d3ee3a361eaef2e4"><tt>cf607d6</tt></a></li>
+<li>Document last modified: 2021-07-20T18:47:57.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Issue with "Right shift (>>)": Wrong binary conversion]]></title>
             <link>https://github.com/mdn/content/issues/8414</link>
