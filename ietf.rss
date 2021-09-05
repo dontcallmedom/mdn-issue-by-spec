@@ -4,10 +4,38 @@
         <title>IETF-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ietf.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by IETF</description>
-        <lastBuildDate>Wed, 21 Jul 2021 15:59:50 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 05 Sep 2021 16:01:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[rfc7234] Content bug: Explanation for `Cache-Control: no-store, max-age=0`]]></title>
+            <link>https://github.com/mdn/content/issues/8668</link>
+            <guid>https://github.com/mdn/content/issues/8668</guid>
+            <pubDate>Sun, 05 Sep 2021 16:01:50 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#preventing_caching">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#preventing_caching</a></p>
+<h2>Specific page section or heading?</h2>
+<blockquote>
+<p>Note: The no-store directive will prevent a new resource being cached, but it will not prevent the cache from responding with a non-stale resource that was cached as the result of an earlier request. Setting max-age=0 as well forces the cache to revalidate (clears the cache).<br>
+<code>Cache-Control: no-store, max-age=0</code></p>
+</blockquote>
+<h2>What is the problem?</h2>
+<p>Is the line below really true ?</p>
+<blockquote>
+<p>Setting max-age=0 as well forces the cache to revalidate (clears the cache).</p>
+</blockquote>
+<p>IIUC, <code>no-store</code> doesn't stored in any cache storage according to <a href="https://httpwg.org/http-core/draft-ietf-httpbis-cache-latest.html#cache-response-directive.no-store" rel="nofollow">spec</a>.</p>
+<p>So any directive combined with <code>no-store</code> doesn't affect any cache storage. I don't know why <code>max-age=0</code> could clear the cache in previously stored response with <code>no-store</code>.</p>
+<h2>What did you expect to see?</h2>
+<p>If it's mentioned in the spec (which I couldn't find), it should be mentioned explicitly.<br>
+or if major implementation behave like it, it can also be linked as source.</p>
+<p>otherwise, delete this Notes and leave it only</p>
+<div class="highlight highlight-source-httpspec position-relative" data-snippet-clipboard-copy-content="Cache-Control: no-store
+"><pre><span class="pl-s"><span class="pl-v">Cache-Control:</span> no-store</span></pre></div>
+<h2>Did you test this? If so, how?</h2>
+<p>I wanna ask how to test it who wrote this section.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[rfc7230] Issue with "Trailer": page says all browsers are compatible but there is no way to use this feature]]></title>
             <link>https://github.com/mdn/content/issues/7137</link>

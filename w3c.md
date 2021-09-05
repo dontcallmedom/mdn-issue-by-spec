@@ -80,8 +80,6 @@
   
 * [[css-fonts-5, css-sizing-4] Content bug: Sidebar "Related Topics" no longer shows any specific related topics on CSS pages](https://github.com/mdn/content/issues/3827) (2021-04-05T00:32:29Z)
   
-* [[mediacapture-streams] Issue with "MediaTrackSupportedConstraints": Duplicated property definition](https://github.com/mdn/content/issues/3674) (2021-03-30T14:45:58Z)
-  
 * [[webmidi] Issue with "MIDIMessageEvent": deprecated example method ](https://github.com/mdn/content/issues/3569) (2021-03-27T17:06:36Z)
   
 * [[CSP3] Issue with "Content-Security-Policy-Report-Only": deprecated report-uri recommended](https://github.com/mdn/content/issues/3566) (2021-03-27T12:17:26Z)
