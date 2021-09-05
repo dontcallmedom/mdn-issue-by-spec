@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] ondrag* examples should be live samples](https://github.com/mdn/content/issues/8669) (2021-09-05T18:10:06Z)
+  
 * [[html] Issue with "Window.localStorage": Safari deletes after 7 days unvisited](https://github.com/mdn/content/issues/8510) (2021-09-01T03:59:58Z)
   
 * [[html] Issue with "WorkerGlobalScope.importScripts()": (confucing description of parameters)](https://github.com/mdn/content/issues/7652) (2021-08-06T09:26:25Z)
