@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Issue with "DataTransfer.setData()": In the example, DataTransfer.clearData() being calledin the drop handler](https://github.com/mdn/content/issues/8672) (2021-09-06T00:44:38Z)
+  
 * [[html] ondrag* examples should be live samples](https://github.com/mdn/content/issues/8669) (2021-09-05T18:10:06Z)
   
 * [[html] Issue with "Window.localStorage": Safari deletes after 7 days unvisited](https://github.com/mdn/content/issues/8510) (2021-09-01T03:59:58Z)
