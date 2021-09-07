@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[ecmascript] Issue with "async function": ambiguity at end](https://github.com/mdn/content/issues/8670) (2021-09-05T21:19:34Z)
-  
 * [[ecmascript] Issue with "Right shift (>>)": Wrong binary conversion](https://github.com/mdn/content/issues/8414) (2021-08-28T10:28:12Z)
   
 * [[ecmascript] Issue with "getter": Mention static getters](https://github.com/mdn/content/issues/7995) (2021-08-17T03:55:40Z)
