@@ -120,3 +120,5 @@
   
 * [[webrtc] /en-US/docs/Web/API/RTCPeerConnection/icecandidate_event](https://github.com/mdn/content/issues/2450) (2019-11-24T10:21:05Z)
   
+* [[uievents] Add description of  relatedTarget to focusin/focusout event](https://github.com/mdn/content/issues/2309) (2019-04-02T18:21:08Z)
+  
