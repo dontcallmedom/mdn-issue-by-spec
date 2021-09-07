@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html, selectors-4] Issue with ":checked": option color property](https://github.com/mdn/content/issues/8731) (2021-09-07T18:58:50Z)
+  
 * [[css-color-4] List of External Broken Link](https://github.com/mdn/content/issues/8645) (2021-09-04T09:17:13Z)
   
 * [[beacon] Issue with "Navigator.sendBeacon()": (short summary here please)](https://github.com/mdn/content/issues/8638) (2021-09-04T04:09:02Z)
