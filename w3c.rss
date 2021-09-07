@@ -1941,27 +1941,5 @@ Because the media query only set once at the initial time with the initial windo
 <p>There is clearly a nuance here that I'm missing, but in any case this may need to be clarified. An uninformed reader would form the conclusion that actually a <code>event.complete != null</code> test is needed.</p>
 <p>There's also mixed references to RTCPeerConnectionIceEvent (bluelinked) and RTCPeerIceCandidateEvent (redlinked), not sure if that's intentional.</p>]]></content:encoded>
         </item>
-        <item>
-            <title><![CDATA[[uievents] Add description of  relatedTarget to focusin/focusout event]]></title>
-            <link>https://github.com/mdn/content/issues/2309</link>
-            <guid>https://github.com/mdn/content/issues/2309</guid>
-            <pubDate>Tue, 02 Apr 2019 18:21:08 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>Request type</h1>
-<ul class="contains-task-list">
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Please close this issue, I accidentally submitted it without adding any details</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> New documentation</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Correction or update</li>
-</ul>
-<h1>Details</h1>
-<p>According to <a href="https://www.w3.org/TR/uievents/#event-type-focusin" rel="nofollow">W3C documentation on UI events</a>, the main feature of <code>focusin</code> and <code>focusout</code> events is that the <code>relatedTarget</code> property is set to the corresponding counter-element in the <code>FocusEvent</code> argument of these two events, whereas with <code>focus</code> and <code>blur</code> events, the <code>relatedTarget</code> property is always null.</p>
-<p>Shouldn't this important feature be mentioned in the docs of the corresponding MDN help pages?</p>
-<p><a href="https://www.google.com/search?q=blur+relatedtarget" rel="nofollow">Many people wonder</a> why the <code>relatedTarget</code> property is always <code>null</code> when they listen to <code>focus</code>/<code>blur</code>, not knowing there are <code>focusin</code>/<code>focusout</code> events available.</p>
-<p>I'd like to suggest to add this information (and "see also" references between these four events) to the corresponding MDN pages.</p>
-<h1>Related Pages on MDN</h1>
-<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/focusin_event">https://developer.mozilla.org/en-US/docs/Web/API/Element/focusin_event</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/focusout_event">https://developer.mozilla.org/en-US/docs/Web/API/Element/focusout_event</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/focus_event">https://developer.mozilla.org/en-US/docs/Web/API/Element/focus_event</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event">https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event</a></p>]]></content:encoded>
-        </item>
     </channel>
 </rss>

@@ -18,5 +18,3 @@
   
 * [[intersection-observer] Issue with "IntersectionObserver.IntersectionObserver()": (short summary here please)](https://github.com/mdn/content/issues/4710) (2021-05-04T15:10:10Z)
   
-* [[uievents] Add description of  relatedTarget to focusin/focusout event](https://github.com/mdn/content/issues/2309) (2019-04-02T18:21:08Z)
-  
