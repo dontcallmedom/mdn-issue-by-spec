@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[dom] Issue with "Event.srcElement": (short summary here please)](https://github.com/mdn/content/issues/8750) (2021-09-08T11:04:00Z)
-  
 * [[html] Issue with "CanvasRenderingContext2D.createPattern()": need to mention that it can return null](https://github.com/mdn/content/issues/8684) (2021-09-06T11:36:49Z)
   
 * [[html] Issue with "DataTransfer.setData()": In the example, DataTransfer.clearData() being calledin the drop handler](https://github.com/mdn/content/issues/8672) (2021-09-06T00:44:38Z)
