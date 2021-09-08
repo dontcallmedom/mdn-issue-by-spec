@@ -4,8 +4,6 @@
 
 * [[permissions-policy-1] Content bug in HTTP headers > Feature-Policy](https://github.com/mdn/content/issues/8739) (2021-09-08T01:12:25Z)
   
-* [[html, selectors-4] Issue with ":checked": option color property](https://github.com/mdn/content/issues/8731) (2021-09-07T18:58:50Z)
-  
 * [[css-color-4] List of External Broken Link](https://github.com/mdn/content/issues/8645) (2021-09-04T09:17:13Z)
   
 * [[beacon] Issue with "Navigator.sendBeacon()": (short summary here please)](https://github.com/mdn/content/issues/8638) (2021-09-04T04:09:02Z)
