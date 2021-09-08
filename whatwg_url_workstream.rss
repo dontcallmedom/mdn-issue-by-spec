@@ -18,10 +18,11 @@
 <ol>
 <li>How does URLSearchParams handle the same parameter appearing more than once, for example</li>
 </ol>
-<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="for (const i of new URLSearchParams(&quot;?first=1&amp;second=2&amp;first=3&quot;)); { console.log(i) } // [&quot;first&quot;, &quot;1&quot;] [&quot;second&quot;, &quot;2&quot;] [&quot;first&quot;, &quot;3&quot;]
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="for (const i of new URLSearchParams(&quot;?first=1&amp;second=2&amp;first=3&quot;)); { console.log(i) } // [&quot;first&quot;, &quot;1&quot;] [&quot;second&quot;, &quot;2&quot;] [&quot;first&quot;, &quot;3&quot;]
 new URLSearchParams(&quot;?first=1&amp;second=2&amp;first=3&quot;).get('first'); // &quot;1&quot;
-"><pre><span class="pl-k">for</span> <span class="pl-kos">(</span><span class="pl-k">const</span> <span class="pl-s1">i</span> <span class="pl-k">of</span> <span class="pl-k">new</span> <span class="pl-v">URLSearchParams</span><span class="pl-kos">(</span><span class="pl-s">"?first=1&amp;second=2&amp;first=3"</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-kos">{</span> <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">i</span><span class="pl-kos">)</span> <span class="pl-kos">}</span> <span class="pl-c">// ["first", "1"] ["second", "2"] ["first", "3"]</span>
-<span class="pl-k">new</span> <span class="pl-v">URLSearchParams</span><span class="pl-kos">(</span><span class="pl-s">"?first=1&amp;second=2&amp;first=3"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">get</span><span class="pl-kos">(</span><span class="pl-s">'first'</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// "1"</span></pre></div>
+"><pre lang="js"><code>for (const i of new URLSearchParams("?first=1&amp;second=2&amp;first=3")); { console.log(i) } // ["first", "1"] ["second", "2"] ["first", "3"]
+new URLSearchParams("?first=1&amp;second=2&amp;first=3").get('first'); // "1"
+</code></pre></div>
 <p>Edit: nevermind, this second line is documented in <code>.get()</code> "Returns the first value", I was unsure about the first because I've seen a <a href="https://www.npmjs.com/package/query-string" rel="nofollow">different javascript library</a> return a list as the second item in each entry. I still think it would be good to mention this in the examples too.</p>
 <ol start="2">
 <li>Does iterating over URLSearchParams preserve the order of the params or is it implemented with an unordered JavaScript dictionary?</li>
@@ -31,10 +32,11 @@ new URLSearchParams(&quot;?first=1&amp;second=2&amp;first=3&quot;).get('first');
 <li>Are round trip conversions lossless? How does it differentiate between params with and without an <code>=</code>?</li>
 </ol>
 <p>No it's not lossless because <code>?param</code> and <code>?param=</code> both parse as having a value of <code>""</code> instead of <code>null</code> for the former and <code>""</code> for the latter, so they are both converted to <code>?param=</code></p>
-<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="for (const i of new URLSearchParams(&quot;?first=&amp;second&quot;)) { console.log(i) } // [&quot;first&quot;, &quot;&quot;] [&quot;second&quot;, &quot;&quot;]
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="for (const i of new URLSearchParams(&quot;?first=&amp;second&quot;)) { console.log(i) } // [&quot;first&quot;, &quot;&quot;] [&quot;second&quot;, &quot;&quot;]
 String(new URLSearchParams(&quot;?first=&amp;second&quot;)); // &quot;first=&amp;second=&quot;
-"><pre><span class="pl-k">for</span> <span class="pl-kos">(</span><span class="pl-k">const</span> <span class="pl-s1">i</span> <span class="pl-k">of</span> <span class="pl-k">new</span> <span class="pl-v">URLSearchParams</span><span class="pl-kos">(</span><span class="pl-s">"?first=&amp;second"</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-kos">{</span> <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">i</span><span class="pl-kos">)</span> <span class="pl-kos">}</span> <span class="pl-c">// ["first", ""] ["second", ""]</span>
-<span class="pl-v">String</span><span class="pl-kos">(</span><span class="pl-k">new</span> <span class="pl-v">URLSearchParams</span><span class="pl-kos">(</span><span class="pl-s">"?first=&amp;second"</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// "first=&amp;second="</span></pre></div>
+"><pre lang="js"><code>for (const i of new URLSearchParams("?first=&amp;second")) { console.log(i) } // ["first", ""] ["second", ""]
+String(new URLSearchParams("?first=&amp;second")); // "first=&amp;second="
+</code></pre></div>
 
 <details>
 <summary>MDN Content page report details</summary>
