@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-conditional-4, css-conditional-3] Content bug: Extraneous words in comment in @supports page ](https://github.com/mdn/content/issues/8761) (2021-09-09T00:05:01Z)
+  
 * [[permissions-policy-1] Content bug in HTTP headers > Feature-Policy](https://github.com/mdn/content/issues/8739) (2021-09-08T01:12:25Z)
   
 * [[css-color-4] List of External Broken Link](https://github.com/mdn/content/issues/8645) (2021-09-04T09:17:13Z)

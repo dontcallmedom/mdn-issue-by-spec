@@ -4,10 +4,84 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Wed, 08 Sep 2021 01:12:25 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 09 Sep 2021 00:05:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-conditional-4, css-conditional-3] Content bug: Extraneous words in comment in @supports page ]]></title>
+            <link>https://github.com/mdn/content/issues/8761</link>
+            <guid>https://github.com/mdn/content/issues/8761</guid>
+            <pubDate>Thu, 09 Sep 2021 00:05:01 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/@supports">https://developer.mozilla.org/en-US/docs/Web/CSS/@supports</a></p>
+
+<h2>Specific page section or heading?</h2>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/@supports#testing_for_the_support_of_a_selector">https://developer.mozilla.org/en-US/docs/Web/CSS/@supports#testing_for_the_support_of_a_selector</a></p>
+
+<h2>What is the problem?</h2>
+<p>In the second last comment there's the extraneous words "is supported"</p>
+<div class="highlight highlight-source-css position-relative" data-snippet-clipboard-copy-content="/* This rule won't be applied in browsers which don't support :is() */
+:is(ul, ol) &gt; li {
+  … /* CSS applied when the :is(…) selector is supported */
+}
+
+@supports not selector(:is(a, b)) {
+  /* Fallback for when :is() is unsupported */
+  ul &gt; li,
+  ol &gt; li {
+    … /* The above expanded for browsers which don't support :is(…) */
+  }
+}
+
+/* Note: So far, there's no browser that supports the `of` argument of :nth-child(…) */
+@supports selector(:nth-child(1n of a, b)) {
+  /* This rule needs to be inside the @supports block, otherwise
+     it will be partially applied in browsers which don't support
+     the `of` argument of :nth-child(…) is supported */ &lt;---------------------------
+  :is(
+      :nth-child(1n of ul, ol) a,
+      details &gt; summary
+  ) {
+    … /* CSS applied when the :is(…) selector and
+         the `of` argument of :nth-child(…) are both supported */
+  }
+}
+"><pre><span class="pl-c">/* This rule won't be applied in browsers which don't support :is() */</span>
+<span class="pl-kos">:</span><span class="pl-c1">is</span>(<span class="pl-ent">ul</span><span class="pl-kos">,</span> <span class="pl-ent">ol</span>) <span class="pl-c1">&gt;</span> <span class="pl-ent">li</span> {
+  … <span class="pl-c">/* CSS applied when the :is(…) selector is supported */</span>
+}
+
+<span class="pl-k">@supports</span> <span class="pl-c1">not</span> selector(<span class="pl-kos">:</span><span class="pl-c1">is</span>(<span class="pl-ent">a</span><span class="pl-kos">,</span> <span class="pl-ent">b</span>)) {
+  <span class="pl-c">/* Fallback for when :is() is unsupported */</span>
+  <span class="pl-ent">ul</span> <span class="pl-c1">&gt;</span> <span class="pl-ent">li</span><span class="pl-kos">,</span>
+  <span class="pl-ent">ol</span> <span class="pl-c1">&gt;</span> <span class="pl-ent">li</span> {
+    … <span class="pl-c">/* The above expanded for browsers which don't support :is(…) */</span>
+  }
+}
+
+<span class="pl-c">/* Note: So far, there's no browser that supports the `of` argument of :nth-child(…) */</span>
+<span class="pl-k">@supports</span> selector(<span class="pl-kos">:</span><span class="pl-c1">nth-child</span>(<span class="pl-c1">1<span class="pl-smi">n</span></span> of a<span class="pl-kos">,</span> <span class="pl-ent">b</span>)) {
+  <span class="pl-c">/* This rule needs to be inside the @supports block, otherwise</span>
+<span class="pl-c">     it will be partially applied in browsers which don't support</span>
+<span class="pl-c">     the `of` argument of :nth-child(…) is supported */</span> &lt;<span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span><span class="pl-c1">-</span>
+  <span class="pl-kos">:</span><span class="pl-c1">is</span>(
+      <span class="pl-kos">:</span><span class="pl-c1">nth-child</span>(<span class="pl-c1">1<span class="pl-smi">n</span></span> of ul<span class="pl-kos">,</span> <span class="pl-ent">ol</span>) <span class="pl-ent">a</span><span class="pl-kos">,</span>
+      <span class="pl-ent">details</span> <span class="pl-c1">&gt;</span> <span class="pl-ent">summary</span>
+  ) {
+    … <span class="pl-c">/* CSS applied when the :is(…) selector and</span>
+<span class="pl-c">         the `of` argument of :nth-child(…) are both supported */</span>
+  }
+}</pre></div>
+
+<h2>What did you expect to see?</h2>
+<p>The end of the sentence?</p>
+
+<h2>Did you test this? If so, how?</h2>
+<p>No<br>
+I reloaded page just in case, but of course nothing changed.</p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[permissions-policy-1] Content bug in HTTP headers > Feature-Policy]]></title>
             <link>https://github.com/mdn/content/issues/8739</link>
