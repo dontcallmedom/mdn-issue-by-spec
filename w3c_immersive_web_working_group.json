@@ -1,0 +1,23 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "W3C Immersive Web Working Group-relevant MDN issues",
+    "home_page_url": "https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_immersive_web_working_group.rss",
+    "description": "Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Immersive Web Working Group",
+    "author": {
+        "name": "mdn-issue-by-spec",
+        "url": "https://github.com/dontcallmedom/mdn-issue-by-spec"
+    },
+    "items": [
+        {
+            "id": "https://github.com/mdn/content/issues/8775",
+            "content_html": "<p>For <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"990422830\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/8736\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/8736/hovercard\" href=\"https://github.com/mdn/content/pull/8736\">#8736</a> I did some analysis of tables in Web/API that are coming out too wide in GFM, where \"too wide\" means &gt; 150 characters.</p>\n<p>It turns out that there are a few such tables in the WebXR pages that have already converted to Markdown. I think we might want to consider converting these tables back into HTML. Sorry!</p>\n<p><a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/xrsession/requestreferencespace\">https://developer.mozilla.org/en-US/docs/Web/API/xrsession/requestreferencespace</a> (594 chars wide)<br>\n<a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/xrreferencespace\">https://developer.mozilla.org/en-US/docs/Web/API/xrreferencespace</a>  (594 chars wide)<br>\n<a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/xrpermissionstatus/granted\">https://developer.mozilla.org/en-US/docs/Web/API/xrpermissionstatus/granted</a>  (594 chars wide)<br>\n<a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/webxr_device_api\">https://developer.mozilla.org/en-US/docs/Web/API/webxr_device_api</a> (342 chars wide)<br>\n<a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/webxr_device_api/geometry\">https://developer.mozilla.org/en-US/docs/Web/API/webxr_device_api/geometry</a> (594 chars wide)</p>\n<p>I should do the same analysis for JS and CSS and HTTP, since we have only just started considering this problem.</p>",
+            "url": "https://github.com/mdn/content/issues/8775",
+            "title": "[webxr] Wide tables in WebXR docs",
+            "date_modified": "2021-09-09T16:34:18.000Z",
+            "author": {
+                "name": "wbamberg",
+                "url": "https://github.com/wbamberg"
+            }
+        }
+    ]
+}
