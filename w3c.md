@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[IndexedDB-3] Issue with "IDBCursorWithValue": Missing Example](https://github.com/mdn/content/issues/8786) (2021-09-10T05:00:34Z)
+  
 * [[webxr] Wide tables in WebXR docs](https://github.com/mdn/content/issues/8775) (2021-09-09T16:34:18Z)
   
 * [[css-color-4] List of External Broken Link](https://github.com/mdn/content/issues/8645) (2021-09-04T09:17:13Z)
