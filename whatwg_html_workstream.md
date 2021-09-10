@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Issue with "Document: DOMContentLoaded event": Race condition in "Checking whether loading is already complete"?](https://github.com/mdn/content/issues/8808) (2021-09-10T11:50:10Z)
+  
 * [[html] Issue with "CanvasRenderingContext2D.createPattern()": need to mention that it can return null](https://github.com/mdn/content/issues/8684) (2021-09-06T11:36:49Z)
   
 * [[html] Issue with "DataTransfer.setData()": In the example, DataTransfer.clearData() being calledin the drop handler](https://github.com/mdn/content/issues/8672) (2021-09-06T00:44:38Z)
