@@ -75,68 +75,6 @@
 </table>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[filter-effects-2] Issue with "<filter>": sRGB image ruined if used any filter with image]]></title>
-            <link>https://github.com/mdn/content/issues/8499</link>
-            <guid>https://github.com/mdn/content/issues/8499</guid>
-            <pubDate>Tue, 31 Aug 2021 18:03:03 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/filter">https://developer.mozilla.org/en-US/docs/Web/SVG/Element/filter</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>Please add note that sRGB image will be ruined if using in filter operation, I think this is not obvious.</p>
-<p>Look like image lose linear filtering after filter operation.</p>
-<p><strong>Maybe this behavior expected, I do not know.</strong></p>
-<h4>Specific section or headline?</h4>
-<p>Every filter, include filter page.</p>
-<h4>What did you expect to see?</h4>
-<p>I was expecting same output as original image</p>
-<h4>Did you test this? If so, how?</h4>
-<p><a href="https://danilw.github.io/GLSL-howto/srgb_svg_bug/srgb_test.svg" rel="nofollow">test svg link</a></p>
-<p>Screenshot: (left half has smooth gradient, when right half is not)<br>
-<a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/24825887/131551792-28a008cc-8478-4f8f-820d-0d716ec65ef3.png"><img src="https://user-images.githubusercontent.com/24825887/131551792-28a008cc-8478-4f8f-820d-0d716ec65ef3.png" alt="1" style="max-width:100%;"></a></p>
-<p>svg code:</p>
-<div class="highlight highlight-text-xml position-relative" data-snippet-clipboard-copy-content="&lt;svg width=&quot;1000px&quot; height=&quot;500px&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;
-
-&lt;filter id=&quot;srgb_bug&quot; x=&quot;0%&quot; y=&quot;0%&quot; width=&quot;100%&quot; height=&quot;100%&quot;&gt;
-&lt;feComposite result=&quot;comp&quot; in2=&quot;SourceGraphic&quot; operator=&quot;arithmetic&quot; k1=&quot;0&quot; k2=&quot;0&quot; k3=&quot;1&quot; k4=&quot;0&quot;&gt;
-&lt;/feComposite&gt;
-&lt;/filter&gt;
-
-&lt;image xlink:href=&quot;srgb.png&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;1500px&quot; height=&quot;1500px&quot; opacity=&quot;1&quot;&gt;
-&lt;/image&gt;
-
-&lt;image xlink:href=&quot;srgb.png&quot; x=&quot;500&quot; y=&quot;0&quot; width=&quot;1500px&quot; height=&quot;1500px&quot; filter=&quot;url(#srgb_bug)&quot; opacity=&quot;1&quot;&gt;
-&lt;/image&gt;
-
-&lt;/svg&gt; 
-
-"><pre>&lt;<span class="pl-ent">svg</span> <span class="pl-e">width</span>=<span class="pl-s"><span class="pl-pds">"</span>1000px<span class="pl-pds">"</span></span> <span class="pl-e">height</span>=<span class="pl-s"><span class="pl-pds">"</span>500px<span class="pl-pds">"</span></span> <span class="pl-e">version</span>=<span class="pl-s"><span class="pl-pds">"</span>1.1<span class="pl-pds">"</span></span> <span class="pl-e">xmlns</span>=<span class="pl-s"><span class="pl-pds">"</span>http://www.w3.org/2000/svg<span class="pl-pds">"</span></span> <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">xlink</span>=<span class="pl-s"><span class="pl-pds">"</span>http://www.w3.org/1999/xlink<span class="pl-pds">"</span></span>&gt;
-
-&lt;<span class="pl-ent">filter</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>srgb_bug<span class="pl-pds">"</span></span> <span class="pl-e">x</span>=<span class="pl-s"><span class="pl-pds">"</span>0%<span class="pl-pds">"</span></span> <span class="pl-e">y</span>=<span class="pl-s"><span class="pl-pds">"</span>0%<span class="pl-pds">"</span></span> <span class="pl-e">width</span>=<span class="pl-s"><span class="pl-pds">"</span>100%<span class="pl-pds">"</span></span> <span class="pl-e">height</span>=<span class="pl-s"><span class="pl-pds">"</span>100%<span class="pl-pds">"</span></span>&gt;
-&lt;<span class="pl-ent">feComposite</span> <span class="pl-e">result</span>=<span class="pl-s"><span class="pl-pds">"</span>comp<span class="pl-pds">"</span></span> <span class="pl-e">in2</span>=<span class="pl-s"><span class="pl-pds">"</span>SourceGraphic<span class="pl-pds">"</span></span> <span class="pl-e">operator</span>=<span class="pl-s"><span class="pl-pds">"</span>arithmetic<span class="pl-pds">"</span></span> <span class="pl-e">k1</span>=<span class="pl-s"><span class="pl-pds">"</span>0<span class="pl-pds">"</span></span> <span class="pl-e">k2</span>=<span class="pl-s"><span class="pl-pds">"</span>0<span class="pl-pds">"</span></span> <span class="pl-e">k3</span>=<span class="pl-s"><span class="pl-pds">"</span>1<span class="pl-pds">"</span></span> <span class="pl-e">k4</span>=<span class="pl-s"><span class="pl-pds">"</span>0<span class="pl-pds">"</span></span>&gt;
-&lt;/<span class="pl-ent">feComposite</span>&gt;
-&lt;/<span class="pl-ent">filter</span>&gt;
-
-&lt;<span class="pl-ent">image</span> <span class="pl-e">xlink</span><span class="pl-e">:</span><span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>srgb.png<span class="pl-pds">"</span></span> <span class="pl-e">x</span>=<span class="pl-s"><span class="pl-pds">"</span>0<span class="pl-pds">"</span></span> <span class="pl-e">y</span>=<span class="pl-s"><span class="pl-pds">"</span>0<span class="pl-pds">"</span></span> <span class="pl-e">width</span>=<span class="pl-s"><span class="pl-pds">"</span>1500px<span class="pl-pds">"</span></span> <span class="pl-e">height</span>=<span class="pl-s"><span class="pl-pds">"</span>1500px<span class="pl-pds">"</span></span> <span class="pl-e">opacity</span>=<span class="pl-s"><span class="pl-pds">"</span>1<span class="pl-pds">"</span></span>&gt;
-&lt;/<span class="pl-ent">image</span>&gt;
-
-&lt;<span class="pl-ent">image</span> <span class="pl-e">xlink</span><span class="pl-e">:</span><span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>srgb.png<span class="pl-pds">"</span></span> <span class="pl-e">x</span>=<span class="pl-s"><span class="pl-pds">"</span>500<span class="pl-pds">"</span></span> <span class="pl-e">y</span>=<span class="pl-s"><span class="pl-pds">"</span>0<span class="pl-pds">"</span></span> <span class="pl-e">width</span>=<span class="pl-s"><span class="pl-pds">"</span>1500px<span class="pl-pds">"</span></span> <span class="pl-e">height</span>=<span class="pl-s"><span class="pl-pds">"</span>1500px<span class="pl-pds">"</span></span> <span class="pl-e">filter</span>=<span class="pl-s"><span class="pl-pds">"</span>url(#srgb_bug)<span class="pl-pds">"</span></span> <span class="pl-e">opacity</span>=<span class="pl-s"><span class="pl-pds">"</span>1<span class="pl-pds">"</span></span>&gt;
-&lt;/<span class="pl-ent">image</span>&gt;
-
-&lt;/<span class="pl-ent">svg</span>&gt; 
-</pre></div>
-<p>for better visibility <code>&lt;feBlend in="comp" in2="comp" mode="multiply"/&gt;</code> can be added after line 5</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/svg/element/filter</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/filter" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/SVG/Element/filter</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/svg/element/filter/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/svg/element/filter/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/91456ead4017ad5b6c5be3cacc83cc72007483ca/hovercard" href="https://github.com/mdn/content/commit/91456ead4017ad5b6c5be3cacc83cc72007483ca"><tt>91456ea</tt></a></li>
-<li>Document last modified: 2021-06-10T20:25:11.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[css-cascade-3] Issue with "@import": supports() query is not in current recommendation]]></title>
             <link>https://github.com/mdn/content/issues/7934</link>
             <guid>https://github.com/mdn/content/issues/7934</guid>

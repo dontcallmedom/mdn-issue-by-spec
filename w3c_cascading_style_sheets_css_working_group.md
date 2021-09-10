@@ -4,8 +4,6 @@
 
 * [[css-color-4] List of External Broken Link](https://github.com/mdn/content/issues/8645) (2021-09-04T09:17:13Z)
   
-* [[filter-effects-2] Issue with "<filter>": sRGB image ruined if used any filter with image](https://github.com/mdn/content/issues/8499) (2021-08-31T18:03:03Z)
-  
 * [[css-cascade-3] Issue with "@import": supports() query is not in current recommendation](https://github.com/mdn/content/issues/7934) (2021-08-14T20:46:27Z)
   
 * [[SVG11, css-masking-1] Deprecated Property on Documentation for SVG clipPath Element](https://github.com/mdn/content/issues/7653) (2021-08-06T09:44:12Z)
