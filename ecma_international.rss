@@ -557,33 +557,6 @@ submit a pull request.</li>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[ecmascript] Issue with "Remainder (%)": …]]></title>
-            <link>https://github.com/mdn/content/issues/961</link>
-            <guid>https://github.com/mdn/content/issues/961</guid>
-            <pubDate>Tue, 05 Jan 2021 15:27:32 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>"Note that while in most languages, ‘%’ is a remainder operator, in some (e.g. Python, Perl) it is a modulo operator. For positive values, the two are equivalent, but when the dividend and divisor are of different signs, they give different results. To obtain a modulo in JavaScript"</p>
-<h4>Specific section or headline?</h4>
-<p>Remainder (%)</p>
-<h4>What did you expect to see?</h4>
-<p>Instead of: "For positive values, the two are equivalent, but when the dividend and divisor are of different signs, they give different results."<br>
-It should say: "For two values of the same sign, the two are equivalent, but when the dividend and divisor are of different signs, they give different results."</p>
-<p>It would also be helpful for some explanation of what the actual difference between the remainder and modulus <em>are,</em> or at least a link to one. This is the best explanation for the difference, in JS, that I've found: <a rel="nofollow" href="https://2ality.com/2019/08/remainder-vs-modulo.html">https://2ality.com/2019/08/remainder-vs-modulo.html</a></p>
-<h4>Did you test this? If so, how?</h4>
-<p>Yes. I ran a number of manual modulus and remainder calculations in Node v14, and confirmed that modulus and remainder produce the same results if both operands are negative.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/javascript/reference/operators/remainder</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/master/files/en-us/web/javascript/reference/operators/remainder/index.html">https://github.com/mdn/content/blob/master/files/en-us/web/javascript/reference/operators/remainder/index.html</a></li>
-<li>Report started: 2021-01-05T14:45:59.304Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[ecmascript] "await" is not always a keyword]]></title>
             <link>https://github.com/mdn/content/issues/887</link>
             <guid>https://github.com/mdn/content/issues/887</guid>

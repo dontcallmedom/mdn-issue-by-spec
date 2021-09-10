@@ -36,8 +36,6 @@
   
 * [[ecmascript] Issue with "Promise": Code used to demonstrate Chaining is misleading for new coders](https://github.com/mdn/content/issues/2303) (2021-02-12T01:14:58Z)
   
-* [[ecmascript] Issue with "Remainder (%)": …](https://github.com/mdn/content/issues/961) (2021-01-05T15:27:32Z)
-  
 * [[ecmascript] "await" is not always a keyword](https://github.com/mdn/content/issues/887) (2021-01-03T20:50:54Z)
   
 * [[ecmascript] Issue with "static": …](https://github.com/mdn/content/issues/309) (2020-12-16T16:59:53Z)
