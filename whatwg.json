@@ -537,17 +537,6 @@
             }
         },
         {
-            "id": "https://github.com/mdn/content/issues/1192",
-            "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/Window/isSecureContext\">https://developer.mozilla.org/en-US/docs/Web/API/Window/isSecureContext</a></p>\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<ul>\n<li>\n<p>This API does not exist only on Window. It's on WorkerGlobalScope as well.</p>\n</li>\n<li>\n<p>This API is no longer specified in the Secure Contexts specification. It's specified in <a href=\"https://html.spec.whatwg.org/#dom-issecurecontext\" rel=\"nofollow\">https://html.spec.whatwg.org/#dom-issecurecontext</a></p>\n</li>\n</ul>\n<h4>Specific section or headline?</h4>\n<h4>What did you expect to see?</h4>\n<h4>Did you test this? If so, how?</h4>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul>\n<li>Folder: <code>en-us/web/api/window/issecurecontext</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Window/isSecureContext\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/Window/isSecureContext</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/master/files/en-us/web/api/window/issecurecontext/index.html\">https://github.com/mdn/content/blob/master/files/en-us/web/api/window/issecurecontext/index.html</a></li>\n<li>Report started: 2021-01-11T16:46:56.218Z</li>\n</ul>\n</details>",
-            "url": "https://github.com/mdn/content/issues/1192",
-            "title": "[html] Issue with \"Window.isSecureContext\": …",
-            "date_modified": "2021-01-11T16:49:09.000Z",
-            "author": {
-                "name": "domenic",
-                "url": "https://github.com/domenic"
-            }
-        },
-        {
             "id": "https://github.com/mdn/content/issues/897",
             "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/Worklet/addModule\">https://developer.mozilla.org/en-US/docs/Web/API/Worklet/addModule</a></p>\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<p>Usage of <code>await</code> keyword</p>\n<h4>Specific section or headline?</h4>\n<p>AudioWorklet example</p>\n<h4>What did you expect to see?</h4>\n<p>No SyntaxError</p>\n<h4>Did you test this? If so, how?</h4>\n<p>Yes. On Firefox 84.0.1, Windows 10, x86_64.<br>\nRan example:<code>let cxt = new AudioContext(); await cxt.audioWorklet.addModule(\"example.js\");</code> on localhost https (<code>example.js</code> is pre-existing worklet file). Console returned: <em>Uncaught SyntaxError: await is only valid in async functions and async generators</em></p>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul>\n<li>Folder: <code>en-us/web/api/worklet/addmodule</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Worklet/addModule\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/Worklet/addModule</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/master/files/en-us/web/api/worklet/addmodule/index.html\">https://github.com/mdn/content/blob/master/files/en-us/web/api/worklet/addmodule/index.html</a></li>\n<li>Report started: 2021-01-04T06:19:57.861Z</li>\n</ul>\n</details>",
             "url": "https://github.com/mdn/content/issues/897",

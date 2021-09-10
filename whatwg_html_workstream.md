@@ -70,8 +70,6 @@
   
 * [[html] api.HTMLSelectElement - no page for 'autocomplete'](https://github.com/mdn/content/issues/2016) (2021-01-20T05:13:05Z)
   
-* [[html] Issue with "Window.isSecureContext": …](https://github.com/mdn/content/issues/1192) (2021-01-11T16:49:09Z)
-  
 * [[html] Make better example in "Worklet.addModule()" doc](https://github.com/mdn/content/issues/897) (2021-01-04T06:27:25Z)
   
 * [[html] Examples on Cookie page not working, throwing console errors.](https://github.com/mdn/content/issues/628) (2020-12-24T14:13:33Z)
