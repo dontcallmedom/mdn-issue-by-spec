@@ -4,8 +4,6 @@
 
 * [[IndexedDB-3] Issue with "IDBCursorWithValue": Missing Example](https://github.com/mdn/content/issues/8786) (2021-09-10T05:00:34Z)
   
-* [[webxr] Wide tables in WebXR docs](https://github.com/mdn/content/issues/8775) (2021-09-09T16:34:18Z)
-  
 * [[css-color-4] List of External Broken Link](https://github.com/mdn/content/issues/8645) (2021-09-04T09:17:13Z)
   
 * [[beacon] Issue with "Navigator.sendBeacon()": (short summary here please)](https://github.com/mdn/content/issues/8638) (2021-09-04T04:09:02Z)
