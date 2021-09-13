@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[dom] Issue with "Element.children": (short summary here please)](https://github.com/mdn/content/issues/8890) (2021-09-13T18:43:27Z)
+* [[dom] Issue with "Element.children": IE11 defines `children` on `HTMLElement` and not `Element`](https://github.com/mdn/content/issues/8890) (2021-09-13T18:43:27Z)
   
 * [[dom] Issue with "Element.attachShadow()": missing information about the slotAssignment option](https://github.com/mdn/content/issues/8782) (2021-09-09T21:02:17Z)
   
