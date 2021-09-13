@@ -52,8 +52,6 @@
   
 * [[orientation-event, compat] Content bug: Improve device/screen orientation event doc](https://github.com/mdn/content/issues/4400) (2021-04-23T02:57:45Z)
   
-* [[html] Issue with "CanvasRenderingContext2D.drawImage()": How to omit sWidth or sHeight?](https://github.com/mdn/content/issues/4285) (2021-04-20T04:01:32Z)
-  
 * [[html] Content bug: Link to resize on HTMLVideoElement is broken](https://github.com/mdn/content/issues/4230) (2021-04-19T03:40:53Z)
   
 * [[html] Issue with "Document.cookie": TypeError and ReferenceError in live samples](https://github.com/mdn/content/issues/4182) (2021-04-16T17:05:21Z)
