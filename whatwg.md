@@ -58,8 +58,6 @@
   
 * [[html] Issue with "Document.cookie": TypeError and ReferenceError in live samples](https://github.com/mdn/content/issues/4182) (2021-04-16T17:05:21Z)
   
-* [[html] Issue with "Window: storage event": More details needed](https://github.com/mdn/content/issues/4120) (2021-04-15T04:01:19Z)
-  
 * [[html] Issue with "<iframe>: The Inline Frame element": Sample page does not load in iframe](https://github.com/mdn/content/issues/4116) (2021-04-15T00:05:20Z)
   
 * [[html] Issue with "draggable": no mention of incompatibility with svg elements](https://github.com/mdn/content/issues/4069) (2021-04-13T12:53:33Z)
