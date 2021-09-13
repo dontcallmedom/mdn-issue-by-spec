@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[dom] Issue with "Element.children": (short summary here please)](https://github.com/mdn/content/issues/8890) (2021-09-13T18:43:27Z)
+  
 * [[html] Issue with "Cross-Origin Resource Policy (CORP)": Page should explain relationship to COEP and link to page](https://github.com/mdn/content/issues/8812) (2021-09-10T13:10:58Z)
   
 * [[html] Issue with "Document: DOMContentLoaded event": Race condition in "Checking whether loading is already complete"?](https://github.com/mdn/content/issues/8808) (2021-09-10T11:50:10Z)
