@@ -20,8 +20,6 @@
   
 * [[ecmascript] Beginner-Understanding "Issue" with "Logical AND (&&)": the short circuit evaluation and the way the operator returns the value of one of the two operands could be _maybe_ explained in a more beginner-friendly way.](https://github.com/mdn/content/issues/4218) (2021-04-18T12:40:39Z)
   
-* [[ecmascript] Issue with "getter": inline code examples are unusually hard to read](https://github.com/mdn/content/issues/3955) (2021-04-09T05:15:10Z)
-  
 * [[ecmascript] Expanation of concept of detaching for ArrayBuffers](https://github.com/mdn/content/issues/3797) (2021-04-03T13:09:30Z)
   
 * [[ecmascript] Issue with "Conditional (ternary) operator": (short summary here please)](https://github.com/mdn/content/issues/3775) (2021-04-02T10:45:07Z)
