@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[css-ui-4] Issue with "outline": missing information regarding border-radius](https://github.com/mdn/content/issues/8829) (2021-09-10T23:06:52Z)
-  
 * [[css-color-4] List of External Broken Link](https://github.com/mdn/content/issues/8645) (2021-09-04T09:17:13Z)
   
 * [[css-cascade-3] Issue with "@import": supports() query is not in current recommendation](https://github.com/mdn/content/issues/7934) (2021-08-14T20:46:27Z)
