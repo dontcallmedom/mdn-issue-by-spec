@@ -4,10 +4,35 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Fri, 10 Sep 2021 13:10:58 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 13 Sep 2021 22:55:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Issue with "Location": (short summary here please)]]></title>
+            <link>https://github.com/mdn/content/issues/8895</link>
+            <guid>https://github.com/mdn/content/issues/8895</guid>
+            <pubDate>Mon, 13 Sep 2021 22:55:17 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Location">https://developer.mozilla.org/en-US/docs/Web/API/Location</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The documentation does not mention IDN domain names at all! It says that it's an USVString and mentions Unicode, but it's NOT unicode. It's the IDN translated name, which might come as a big surprise to anyone using IDN domains.<br>
+This problem goes for all properties of the Location object.</p>
+<h4>Specific section or headline?</h4>
+<h4>What did you expect to see?</h4>
+<p>At least it should be mentioned clearly!</p>
+<h4>Did you test this? If so, how?</h4>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/location</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Location" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Location</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/location/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/location/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/83a6da74004c1ffc4a14c3331c23b52428610c72/hovercard" href="https://github.com/mdn/content/commit/83a6da74004c1ffc4a14c3331c23b52428610c72"><tt>83a6da7</tt></a></li>
+<li>Document last modified: 2021-08-05T04:29:16.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Issue with "Cross-Origin Resource Policy (CORP)": Page should explain relationship to COEP and link to page]]></title>
             <link>https://github.com/mdn/content/issues/8812</link>
