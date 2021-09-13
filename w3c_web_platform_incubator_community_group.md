@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Platform Incubator Community Group. [![RSS feed for W3C Web Platform Incubator Community Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[background-sync] Issue with "SyncManager.register()": incorrect params and return](https://github.com/mdn/content/issues/8893) (2021-09-13T20:59:23Z)
+  
 * [[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator](https://github.com/mdn/content/issues/6856) (2021-07-13T13:35:32Z)
   
 * [[entries-api] Issue with "FileSystemFlags.exclusive": (short summary here please)](https://github.com/mdn/content/issues/5457) (2021-05-29T15:23:34Z)

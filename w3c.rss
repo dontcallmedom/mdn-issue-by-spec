@@ -4,10 +4,47 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Sat, 04 Sep 2021 09:17:13 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 13 Sep 2021 20:59:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[background-sync] Issue with "SyncManager.register()": incorrect params and return]]></title>
+            <link>https://github.com/mdn/content/issues/8893</link>
+            <guid>https://github.com/mdn/content/issues/8893</guid>
+            <pubDate>Mon, 13 Sep 2021 20:59:23 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/SyncManager/register">https://developer.mozilla.org/en-US/docs/Web/API/SyncManager/register</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>A lot of the information on the page appears to be incorrect. I see substantial discrepancies between the description of <code>register()</code> in the <a href="https://wicg.github.io/background-sync/spec/#syncmanager" rel="nofollow">WICG spec</a> and the MDN docs.</p>
+<h4>Specific section or headline?</h4>
+<p>There are discrepancies in all of the sections:</p>
+<ul>
+<li>description</li>
+<li>syntax</li>
+<li>returns</li>
+<li>parameters</li>
+</ul>
+<h4>What did you expect to see?</h4>
+<ul>
+<li>The description says that the method returns <code>Promise&lt;SyncRegistration&gt;</code>, but the spec says it's <code>Promise&lt;undefined&gt;</code>.</li>
+<li>The syntax section shows that <code>[options]</code> are passed in as a parameter, but the spec says it's a single <code>string</code> used as the tag. The syntax also shows <code>.then(function(syncRegistration) { ... })</code>, but as previously stated, it's <code>Promise&lt;undefined&gt;</code>.</li>
+<li>The returns section should be <code>Promise&lt;undefined&gt;</code>, not <code>Promise&lt;SyncRegistration&gt;</code>.</li>
+<li>The parameters are incorrect. They don't mention the <code>tag</code> <code>string</code> value at all, and have a bunch of options that are... I'm not really sure where they come from, but I don't see them mentioned in the specification at all.</li>
+</ul>
+<h4>Did you test this? If so, how?</h4>
+<p>I am just comparing the MDN docs to the specification. I have used <code>register('tagname')</code> before, though, and I know that the parameter is supposed to be a string.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/syncmanager/register</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/SyncManager/register" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/SyncManager/register</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/syncmanager/register/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/syncmanager/register/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/7eaf51c2a4e856ea0eec2bf733756f44850f30c8/hovercard" href="https://github.com/mdn/content/commit/7eaf51c2a4e856ea0eec2bf733756f44850f30c8"><tt>7eaf51c</tt></a></li>
+<li>Document last modified: 2021-07-26T09:31:13.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-color-4] List of External Broken Link]]></title>
             <link>https://github.com/mdn/content/issues/8645</link>
