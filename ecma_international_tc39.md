@@ -4,8 +4,6 @@
 
 * [[ecmascript] Issue with "Right shift (>>)": Wrong binary conversion](https://github.com/mdn/content/issues/8414) (2021-08-28T10:28:12Z)
   
-* [[ecmascript] Issue with "getter": Mention static getters](https://github.com/mdn/content/issues/7995) (2021-08-17T03:55:40Z)
-  
 * [[ecmascript] Issue with "class": examples are an anti-pattern](https://github.com/mdn/content/issues/7840) (2021-08-12T05:06:24Z)
   
 * [[ecmascript] Issue with "Functions": (short summary here please)](https://github.com/mdn/content/issues/6545) (2021-07-03T07:09:55Z)
@@ -15,8 +13,6 @@
 * [[ecmascript] Issue with "this": lack of an article about the 'Execution context'. ](https://github.com/mdn/content/issues/5006) (2021-05-14T18:14:38Z)
   
 * [[ecmascript] Issue with "Array": Documentation seems unclear and maybe contradicting itself](https://github.com/mdn/content/issues/4968) (2021-05-13T10:01:48Z)
-  
-* [[ecmascript] Issue with "export": (export from)](https://github.com/mdn/content/issues/4811) (2021-05-08T09:25:02Z)
   
 * [[ecmascript] Beginner-Understanding "Issue" with "Logical AND (&&)": the short circuit evaluation and the way the operator returns the value of one of the two operands could be _maybe_ explained in a more beginner-friendly way.](https://github.com/mdn/content/issues/4218) (2021-04-18T12:40:39Z)
   

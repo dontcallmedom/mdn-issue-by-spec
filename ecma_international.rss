@@ -41,33 +41,6 @@ console.log((-3).toString(2)) // -11 which will be 10000000000000000000000000000
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[ecmascript] Issue with "getter": Mention static getters]]></title>
-            <link>https://github.com/mdn/content/issues/7995</link>
-            <guid>https://github.com/mdn/content/issues/7995</guid>
-            <pubDate>Tue, 17 Aug 2021 03:55:40 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>Mention static getters which can be used to simulate static const variables (I believe, not sure on the details)</p>
-<p><a rel="nofollow" href="https://stackoverflow.com/questions/32647215/declaring-static-constants-in-es6-classes">https://stackoverflow.com/questions/32647215/declaring-static-constants-in-es6-classes</a></p>
-<h4>Specific section or headline?</h4>
-<p>Maybe new subsection</p>
-<h4>What did you expect to see?</h4>
-<p>Info on this</p>
-<h4>Did you test this? If so, how?</h4>
-<p>Briefly in console</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/javascript/reference/functions/get</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/functions/get/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/functions/get/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cf607d68522cd35ee7670782d3ee3a361eaef2e4/hovercard" href="https://github.com/mdn/content/commit/cf607d68522cd35ee7670782d3ee3a361eaef2e4"><tt>cf607d6</tt></a></li>
-<li>Document last modified: 2021-07-20T18:47:57.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[ecmascript] Issue with "class": examples are an anti-pattern]]></title>
             <link>https://github.com/mdn/content/issues/7840</link>
             <guid>https://github.com/mdn/content/issues/7840</guid>
@@ -225,48 +198,6 @@ Promise: <em>Chained Promises</em></p>
 <li>Folder: <code>en-us/web/javascript/reference/global_objects/array</code></li>
 <li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array</a></li>
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/array/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/array/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/13360cbad46b4ce6457f80492d73d2efd252e8a9/hovercard" href="https://github.com/mdn/content/commit/13360cbad46b4ce6457f80492d73d2efd252e8a9"><tt>13360cb</tt></a></li>
-<li>Document last modified: 2021-05-05T10:31:52.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[ecmascript] Issue with "export": (export from)]]></title>
-            <link>https://github.com/mdn/content/issues/4811</link>
-            <guid>https://github.com/mdn/content/issues/4811</guid>
-            <pubDate>Sat, 08 May 2021 09:25:02 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export#re-exporting_aggregating">https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export#re-exporting_aggregating</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>This can be achieved with the "export from" syntax:</p>
-<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="export { default as function1,
-         function2 } from 'bar.js';
-"><pre><span class="pl-k">export</span> <span class="pl-kos">{</span> <span class="pl-s1">default</span> <span class="pl-k">as</span> <span class="pl-s1">function1</span><span class="pl-kos">,</span>
-         <span class="pl-s1">function2</span> <span class="pl-kos">}</span> <span class="pl-k">from</span> <span class="pl-s">'bar.js'</span><span class="pl-kos">;</span></pre></div>
-<p>Which is comparable to a combination of import and export:</p>
-<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="import { default as function1,
-         function2 } from 'bar.js';
-export { function1 as default, function2 };
-"><pre><span class="pl-k">import</span> <span class="pl-kos">{</span> <span class="pl-s1">default</span> <span class="pl-k">as</span> <span class="pl-s1">function1</span><span class="pl-kos">,</span>
-         <span class="pl-s1">function2</span> <span class="pl-kos">}</span> <span class="pl-k">from</span> <span class="pl-s">'bar.js'</span><span class="pl-kos">;</span>
-<span class="pl-k">export</span> <span class="pl-kos">{</span> <span class="pl-s1">function1</span> <span class="pl-k">as</span> <span class="pl-s1">default</span><span class="pl-kos">,</span> <span class="pl-s1">function2</span> <span class="pl-kos">}</span><span class="pl-kos">;</span></pre></div>
-<h4>Specific section or headline?</h4>
-<p>re-exporting_aggregating</p>
-<h4>What did you expect to see?</h4>
-<p>function1 will not export as default，here should be</p>
-<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="import { default as function1,
-         function2 } from 'bar.js';
-export { function1 , function2 };
-"><pre><span class="pl-k">import</span> <span class="pl-kos">{</span> <span class="pl-s1">default</span> <span class="pl-k">as</span> <span class="pl-s1">function1</span><span class="pl-kos">,</span>
-         <span class="pl-s1">function2</span> <span class="pl-kos">}</span> <span class="pl-k">from</span> <span class="pl-s">'bar.js'</span><span class="pl-kos">;</span>
-<span class="pl-k">export</span> <span class="pl-kos">{</span> <span class="pl-s1">function1</span> <span class="pl-kos">,</span> <span class="pl-s1">function2</span> <span class="pl-kos">}</span><span class="pl-kos">;</span></pre></div>
-<h4>Did you test this? If so, how?</h4>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/javascript/reference/statements/export</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/export/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/export/index.html</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/13360cbad46b4ce6457f80492d73d2efd252e8a9/hovercard" href="https://github.com/mdn/content/commit/13360cbad46b4ce6457f80492d73d2efd252e8a9"><tt>13360cb</tt></a></li>
 <li>Document last modified: 2021-05-05T10:31:52.000Z</li>
 </ul>
