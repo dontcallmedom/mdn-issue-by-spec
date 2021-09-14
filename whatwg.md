@@ -6,8 +6,6 @@
   
 * [[dom] Issue with "Element.children": IE11 defines `children` on `HTMLElement` and not `Element`](https://github.com/mdn/content/issues/8890) (2021-09-13T18:43:27Z)
   
-* [[html] Issue with "Cross-Origin Resource Policy (CORP)": Page should explain relationship to COEP and link to page](https://github.com/mdn/content/issues/8812) (2021-09-10T13:10:58Z)
-  
 * [[html] Issue with "Document: DOMContentLoaded event": Race condition in "Checking whether loading is already complete"?](https://github.com/mdn/content/issues/8808) (2021-09-10T11:50:10Z)
   
 * [[dom] Issue with "Element.attachShadow()": missing information about the slotAssignment option](https://github.com/mdn/content/issues/8782) (2021-09-09T21:02:17Z)
