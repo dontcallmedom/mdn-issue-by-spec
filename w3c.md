@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[SVG11] Issue with "SVGSVGElement": In FF an unset viewBox property means viewBox.baseVal = null. For Chrome it is an SVGRect initialized to 0.](https://github.com/mdn/content/issues/8907) (2021-09-14T14:00:23Z)
+  
 * [[background-sync] Issue with "SyncManager.register()": incorrect params and return](https://github.com/mdn/content/issues/8893) (2021-09-13T20:59:23Z)
   
 * [[css-color-4] List of External Broken Link](https://github.com/mdn/content/issues/8645) (2021-09-04T09:17:13Z)
