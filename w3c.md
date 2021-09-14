@@ -92,8 +92,6 @@
   
 * [[resize-observer-1] Document ResizeObserver compat](https://github.com/mdn/content/issues/3276) (2021-03-18T17:24:21Z)
   
-* [[svg-animations] Issue with "<set>": Seems to work with Firefox](https://github.com/mdn/content/issues/3231) (2021-03-17T14:52:27Z)
-  
 * [[speech-api] Issue with "SpeechSynthesisUtterance.rate": (demo is incomplete)](https://github.com/mdn/content/issues/3013) (2021-03-10T23:00:08Z)
   
 * [[css-shadow-parts-1] Issue with "Global attributes": (exportparts link broken)](https://github.com/mdn/content/issues/2753) (2021-02-27T20:24:36Z)
