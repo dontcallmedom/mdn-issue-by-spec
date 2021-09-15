@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Content bug: Outdated a11y-related content on <button>](https://github.com/mdn/content/issues/8929) (2021-09-15T07:33:58Z)
+  
 * [[html] Issue with "Location": (short summary here please)](https://github.com/mdn/content/issues/8895) (2021-09-13T22:55:17Z)
   
 * [[html] Issue with "Document: DOMContentLoaded event": Race condition in "Checking whether loading is already complete"?](https://github.com/mdn/content/issues/8808) (2021-09-10T11:50:10Z)

@@ -9,6 +9,17 @@
     },
     "items": [
         {
+            "id": "https://github.com/mdn/content/issues/8929",
+            "content_html": "<h2>What page(s) did you find the problem on?</h2>\n<p><a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#clicking_and_focus\">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#clicking_and_focus</a></p>\n<h2>What is the problem?</h2>\n<p>There is a table at the bottom of this page that is obviously outdated. I'm typically removing browser-specific info when I find it, however, this is a bit different as we don't have a way to log a11y-related issues in BCD.</p>\n<p>I don't have the means to fully test a replacement, as I don't currently have a Mac or an Android device. So opening this to ask firstly, <strong>do we want to maintain tables like this in the docs?</strong></p>\n<p>If yes, then if someone with the appropriate technology can update, or at least do the tests on Android and Safari and comment here then I can update.</p>",
+            "url": "https://github.com/mdn/content/issues/8929",
+            "title": "[html] Content bug: Outdated a11y-related content on <button>",
+            "date_modified": "2021-09-15T07:33:58.000Z",
+            "author": {
+                "name": "rachelandrew",
+                "url": "https://github.com/rachelandrew"
+            }
+        },
+        {
             "id": "https://github.com/mdn/content/issues/8895",
             "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/Location\">https://developer.mozilla.org/en-US/docs/Web/API/Location</a></p>\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<p>The documentation does not mention IDN domain names at all! It says that it's an USVString and mentions Unicode, but it's NOT unicode. It's the IDN translated name, which might come as a big surprise to anyone using IDN domains.<br>\nThis problem goes for all properties of the Location object.</p>\n<h4>Specific section or headline?</h4>\n<h4>What did you expect to see?</h4>\n<p>At least it should be mentioned clearly!</p>\n<h4>Did you test this? If so, how?</h4>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul>\n<li>Folder: <code>en-us/web/api/location</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Location\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/Location</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/api/location/index.html\">https://github.com/mdn/content/blob/main/files/en-us/web/api/location/index.html</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/83a6da74004c1ffc4a14c3331c23b52428610c72/hovercard\" href=\"https://github.com/mdn/content/commit/83a6da74004c1ffc4a14c3331c23b52428610c72\"><tt>83a6da7</tt></a></li>\n<li>Document last modified: 2021-08-05T04:29:16.000Z</li>\n</ul>\n</details>",
             "url": "https://github.com/mdn/content/issues/8895",
