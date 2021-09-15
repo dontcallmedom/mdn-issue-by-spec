@@ -281,35 +281,6 @@ I am aware that this property is inherited from SVGFitToViewBox, but there is no
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-cascade-3] Issue with "@import": supports() query is not in current recommendation]]></title>
-            <link>https://github.com/mdn/content/issues/7934</link>
-            <guid>https://github.com/mdn/content/issues/7934</guid>
-            <pubDate>Sat, 14 Aug 2021 20:46:27 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/@import">https://developer.mozilla.org/en-US/docs/Web/CSS/@import</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>The MDN documentation states that <code>@import</code> can include an <code>@supports</code>-like query via <code>@import url supports( supports-query );</code>.</p>
-<p>This is mentioned in <a href="https://drafts.csswg.org/css-cascade/#conditional-import" rel="nofollow">CSS Cascading and Inheritance Level 4</a>, a CSSWG draft. It explicitly stated it is an <a href="https://drafts.csswg.org/css-cascade/#additions-l3" rel="nofollow">"Addition Since Level 3"</a>.</p>
-<p><a href="https://www.w3.org/TR/css-cascade-3/#conditional-import" rel="nofollow">CSS Cascading and Inheritance Level 3</a>, which I understand to be the current recommendation, makes no mention of such a feature.</p>
-<h4>Specific section or headline?</h4>
-<p>Syntax</p>
-<p>Despite being mentioned in Syntax, the rest of the document (including Formal syntax) makes no reference to it.</p>
-<h4>What did you expect to see?</h4>
-<p>I expect MDN to be an accurate documentation of the current CSS recommendation; therefore I expect <code>supports()</code> not to be mentioned. Is this expectation correct?</p>
-<h4>Did you test this? If so, how?</h4>
-<p><code>@import url(...) suports(...);</code> did not appear to produce a valid import in Firefox 91.0b9 - the declaration was ignored, even with a dummy supports value like <code>display: grid</code>.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/css/@import</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@import" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/@import</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/@import/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/@import/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/26f50bdaeb1228f458d21dbdf7dc110387b20daa/hovercard" href="https://github.com/mdn/content/commit/26f50bdaeb1228f458d21dbdf7dc110387b20daa"><tt>26f50bd</tt></a></li>
-<li>Document last modified: 2021-08-12T23:59:09.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[service-workers-1] Issue with "ServiceWorkerRegistration.updateViaCache": (short summary here please)]]></title>
             <link>https://github.com/mdn/content/issues/7760</link>
             <guid>https://github.com/mdn/content/issues/7760</guid>
