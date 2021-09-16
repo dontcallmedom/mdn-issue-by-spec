@@ -4,10 +4,18 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Thu, 16 Sep 2021 10:09:38 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 Sep 2021 17:38:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[clipboard-apis] Update execCommand use in context-menu-copy-link-with-types]]></title>
+            <link>https://github.com/mdn/content/issues/8990</link>
+            <guid>https://github.com/mdn/content/issues/8990</guid>
+            <pubDate>Thu, 16 Sep 2021 17:38:38 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://github.com/mdn/webextensions-examples/tree/master/context-menu-copy-link-with-types">context-menu-copy-link-with-types</a> uses a content script because when the example was written execCommand didn't work in background pages; now they do so the example should be updated to call execCommand from the background page instead of using a content script.</p>
+<p>Note, before updating check whether <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write" rel="nofollow">Clipboard.write()</a> is available in Firefox, as this would be the preferred method given that execCommand is deprecated.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[cssom-view-1, dom, notifications, service-workers-1, pointerevents3] Better naming of pages]]></title>
             <link>https://github.com/mdn/content/issues/8977</link>
