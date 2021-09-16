@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>WHATWG Notifications API Workstream-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_notifications_api_workstream.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG Notifications API Workstream</description>
+        <lastBuildDate>Tue, 23 Feb 2021 13:20:50 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[notifications] Notification]]></title>
+            <link>https://github.com/mdn/content/issues/2615</link>
+            <guid>https://github.com/mdn/content/issues/2615</guid>
+            <pubDate>Tue, 23 Feb 2021 13:20:50 GMT</pubDate>
+            <content:encoded><![CDATA[<p>The demo on</p>
+<p><a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/notification/notification/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/notification/notification/index.html</a></p>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Notification/Notification">https://developer.mozilla.org/en-US/docs/Web/API/Notification/Notification</a></p>
+<p>throws the following error;</p>
+<blockquote>
+<p>The Notification permission may only be requested from inside a short running user-generated event handler.</p>
+</blockquote>
+<p>Chromium on Android reports:</p>
+<blockquote>
+<p>Uncaught TypeError: Failed to construct 'Notification': Illegal constructor. Use ServiceWorkerRegistration.showNotification() instead.</p>
+</blockquote>
+<p>and ServiceWorkerRegistration.showNotification only works if google services is installed.</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

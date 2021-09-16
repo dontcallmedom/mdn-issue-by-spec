@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>IETF Hypertext Transfer Protocol Bis APP Working Group-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ietf_hypertext_transfer_protocol_bis_app_working_group.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by IETF Hypertext Transfer Protocol Bis APP Working Group</description>
+        <lastBuildDate>Sun, 05 Sep 2021 16:01:50 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[rfc7234] Content bug: Explanation for `Cache-Control: no-store, max-age=0`]]></title>
+            <link>https://github.com/mdn/content/issues/8668</link>
+            <guid>https://github.com/mdn/content/issues/8668</guid>
+            <pubDate>Sun, 05 Sep 2021 16:01:50 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#preventing_caching">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#preventing_caching</a></p>
+<h2>Specific page section or heading?</h2>
+<blockquote>
+<p>Note: The no-store directive will prevent a new resource being cached, but it will not prevent the cache from responding with a non-stale resource that was cached as the result of an earlier request. Setting max-age=0 as well forces the cache to revalidate (clears the cache).<br>
+<code>Cache-Control: no-store, max-age=0</code></p>
+</blockquote>
+<h2>What is the problem?</h2>
+<p>Is the line below really true ?</p>
+<blockquote>
+<p>Setting max-age=0 as well forces the cache to revalidate (clears the cache).</p>
+</blockquote>
+<p>IIUC, <code>no-store</code> doesn't stored in any cache storage according to <a href="https://httpwg.org/http-core/draft-ietf-httpbis-cache-latest.html#cache-response-directive.no-store" rel="nofollow">spec</a>.</p>
+<p>So any directive combined with <code>no-store</code> doesn't affect any cache storage. I don't know why <code>max-age=0</code> could clear the cache in previously stored response with <code>no-store</code>.</p>
+<h2>What did you expect to see?</h2>
+<p>If it's mentioned in the spec (which I couldn't find), it should be mentioned explicitly.<br>
+or if major implementation behave like it, it can also be linked as source.</p>
+<p>otherwise, delete this Notes and leave it only</p>
+<div class="highlight highlight-source-httpspec position-relative" data-snippet-clipboard-copy-content="Cache-Control: no-store
+"><pre><span class="pl-s"><span class="pl-v">Cache-Control:</span> no-store</span></pre></div>
+<h2>Did you test this? If so, how?</h2>
+<p>I wanna ask how to test it who wrote this section.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[rfc7230] Issue with "Trailer": page says all browsers are compatible but there is no way to use this feature]]></title>
+            <link>https://github.com/mdn/content/issues/7137</link>
+            <guid>https://github.com/mdn/content/issues/7137</guid>
+            <pubDate>Wed, 21 Jul 2021 15:59:50 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Trailer">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Trailer</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The page says that Trailers are available for use in all major browsers. In fact, it seems it there is no way to use them from javascript.</p>
+<h4>Specific section or headline?</h4>
+<p>"Browser compatibility" is the main culprit but also, given the information in <a href="https://stackoverflow.com/a/48180203" rel="nofollow">this</a> SO answer, I'm a little lost as to why this page exists at all.</p>
+<h4>What did you expect to see?</h4>
+<p>Maybe a thumbs down icon with a deprecation warning. I may be missing something.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>We implemented the server side of this, encouraged by this page. Now we come to depend on that from the client side we find we can't use it from the browser (neither fetch nor XMPHttpRequest) despite wall-to-wall green in the browswer compatibility table. I'd really like to understand the disconnect here (may of course be my own understanding) but in any case, I would encourage some kind of health warning on the page if possible for future visitors.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/http/headers/trailer</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Trailer" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Trailer</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/trailer/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/trailer/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/30440f2523a2c29c5c12aa18b239ee42e3f2fabc/hovercard" href="https://github.com/mdn/content/commit/30440f2523a2c29c5c12aa18b239ee42e3f2fabc"><tt>30440f2</tt></a></li>
+<li>Document last modified: 2021-07-08T09:12:33.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[rfc7232] Issue with "If-None-Match": (short summary here please)]]></title>
+            <link>https://github.com/mdn/content/issues/4343</link>
+            <guid>https://github.com/mdn/content/issues/4343</guid>
+            <pubDate>Wed, 21 Apr 2021 13:02:54 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>Apache reverse proxies will append "-gzip" suffix to well-formed <code>ETag</code> headers when gzip-encoding content, but they do not remove them from <code>If-None-Match</code> headers.  See <a rel="nofollow" href="https://bz.apache.org/bugzilla/show_bug.cgi?id=39727">https://bz.apache.org/bugzilla/show_bug.cgi?id=39727</a></p>
+<p>There are good reasons for this, since gzip-encoding the content will affect how range requests can be used.  But server software that compares If-None-Match headers in requests with ETags may need to account for this.</p>
+<h4>Specific section or headline?</h4>
+<p>Unsure.</p>
+<h4>What did you expect to see?</h4>
+<p>It should be mentioned somewhere.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>I cam across this while working on server code.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/http/headers/if-none-match</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/if-none-match/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/if-none-match/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/f6f11d2a249520f01bad93d7c4a5e5cdf6ed914a/hovercard" href="https://github.com/mdn/content/commit/f6f11d2a249520f01bad93d7c4a5e5cdf6ed914a"><tt>f6f11d2</tt></a></li>
+<li>Document last modified: 2021-02-19T19:33:30.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

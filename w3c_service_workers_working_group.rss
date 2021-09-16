@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>W3C Service Workers Working Group-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_service_workers_working_group.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Service Workers Working Group</description>
+        <lastBuildDate>Thu, 16 Sep 2021 10:09:38 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[cssom-view-1, dom, service-workers-1, pointerevents3] Better naming of pages]]></title>
+            <link>https://github.com/mdn/content/issues/8977</link>
+            <guid>https://github.com/mdn/content/issues/8977</guid>
+            <pubDate>Thu, 16 Sep 2021 10:09:38 GMT</pubDate>
+            <content:encoded><![CDATA[<p>A big step forward was made in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="980067493" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/8351" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/8351/hovercard" href="https://github.com/mdn/content/pull/8351">#8351</a>, but I'd like to propose this rule to page naming:</p>
+<ol>
+<li>If the item is available on the global, use the name. Eg:
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting" rel="nofollow"><code>ServiceWorkerGlobalScope.skipWaiting</code></a> becomes <code>skipWaiting</code>.</li>
+</ul>
+</li>
+<li>If the item is typically reached via properties reachable from the global, use that property chain.
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" rel="nofollow"><code>Document.querySelector</code></a> becomes <code>document.querySelector</code>.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage/match" rel="nofollow"><code>CacheStorage.match</code></a> becomes <code>caches.match</code>.</li>
+</ul>
+</li>
+<li>If the item is an instance method/property, use the constructor name with the first set of caps lower-cased.
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect" rel="nofollow"><code>Element.getBoundingClientRect</code></a> becomes <code>element.getBoundingClientRect</code>.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight" rel="nofollow"><code>HTMLElement.offsetHeight</code></a> becomes <code>htmlElement.offsetHeight</code>.</li>
+</ul>
+</li>
+<li>Otherwise, just use the name.
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent" rel="nofollow"><code>PointerEvent</code></a> remains <code>PointerEvent</code></li>
+</ul>
+</li>
+</ol>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[service-workers-1] Issue with "ServiceWorkerRegistration.updateViaCache": (short summary here please)]]></title>
+            <link>https://github.com/mdn/content/issues/7760</link>
+            <guid>https://github.com/mdn/content/issues/7760</guid>
+            <pubDate>Mon, 09 Aug 2021 11:52:16 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>This is not a method, it's a string typed property</p>
+<h4>Specific section or headline?</h4>
+<p>all</p>
+<h4>What did you expect to see?</h4>
+<p>Description of property. It reflects the value of updateViaCache property of the options-Parameter in register(). The value of the property affects the behaviour of a ServiceWorker update.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>(1) Register a serviceworker, set a breakpoint, inspect the ServiceWorkerRegistration object<br>
+(2) Read the spec - V1 and nightly</p>
+<p>Sorry that I don't create a pull request. But I don't want to become a MDN author, because of lack of expertise AND time.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/serviceworkerregistration/updateviacache</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkerregistration/updateviacache/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkerregistration/updateviacache/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cad672e1d7ab78a63f60a5d79914520b1486b534/hovercard" href="https://github.com/mdn/content/commit/cad672e1d7ab78a63f60a5d79914520b1486b534"><tt>cad672e</tt></a></li>
+<li>Document last modified: 2021-07-29T14:32:30.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[service-workers-1] Issue with "ServiceWorker": wrong parentage; should explicitly list postMessage() ]]></title>
+            <link>https://github.com/mdn/content/issues/7593</link>
+            <guid>https://github.com/mdn/content/issues/7593</guid>
+            <pubDate>Wed, 04 Aug 2021 17:16:23 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>You claim that ServiceWorker inherits from Worker. The spec says otherwise, it inherits from EventTarget. A ServiceWorker <strong>is not</strong> a Worker. Messages arrive at the ServiceWorkerGlobalScope, not the ServiceWorker itself. Yes, it's strange, but that's what the spec says.</p>
+<h4>Specific section or headline?</h4>
+<ul>
+<li>Properties<br>
+The ServiceWorker interface inherits properties from its parent, Worker.</li>
+</ul>
+<p><em>The error isn't obvious, because Worker has no own properties and inherits them from EventTarget, but Worker is still not the parent</em></p>
+<ul>
+<li>
+<p>Methods<br>
+The ServiceWorker interface inherits methods from its parent, Worker, with the exception of Worker.terminate</p>
+<ul>
+<li><em>As far as I know, selective inheritance is not a thing in IDL or JavaScript</em></li>
+<li><em>Yes, Worker has a postMessage and a terminate method, and ServiceWorker has a postMessage method. But no, ServiceWorker doesn't inherit it. The procedures in the HTML and ServiceWorker specs are similar, but not identical.</em></li>
+</ul>
+</li>
+</ul>
+<h4>What did you expect to see?</h4>
+<p>A description that conforms to the spec. But I'm not familiar enough with the topic to rewrite this.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>I checked the prototype chain in Chrome DevTools. It's ServiceWorker -&gt; EventTarget</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/serviceworker</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworker/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworker/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/642d6eb7feb73e17cfc1ef61d3d09c2d200e65ca/hovercard" href="https://github.com/mdn/content/commit/642d6eb7feb73e17cfc1ef61d3d09c2d200e65ca"><tt>642d6eb</tt></a></li>
+<li>Document last modified: 2021-06-17T03:52:55.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[service-workers-1] Issue with "ServiceWorkerContainer.register()": may be advisable to check for an existing registration]]></title>
+            <link>https://github.com/mdn/content/issues/7138</link>
+            <guid>https://github.com/mdn/content/issues/7138</guid>
+            <pubDate>Wed, 21 Jul 2021 16:35:44 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>I assumed (wrongly) from this that registering an already-registered worker would be a no-op. It turns out that it at least causes a network request for the worker, and that request doesn't go via the cache even if you have <code>updateViaCache: 'all'</code> (which makes sense). So regardless of your update mode, not checking for an existing registration will cause extra server load.</p>
+<h4>Specific section or headline?</h4>
+<blockquote>
+<p>You can call this method unconditionally from the controlled page. I.e., you don't need to first check whether there's an active registration.</p>
+</blockquote>
+<h4>What did you expect to see?</h4>
+<p>More detailed info about why I might <em>want</em> to check for an existing registration, even if I don't <em>need</em> to.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>Yes, looking at request headers in Fiddler.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/serviceworkercontainer/register</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkercontainer/register/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkercontainer/register/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/642d6eb7feb73e17cfc1ef61d3d09c2d200e65ca/hovercard" href="https://github.com/mdn/content/commit/642d6eb7feb73e17cfc1ef61d3d09c2d200e65ca"><tt>642d6eb</tt></a></li>
+<li>Document last modified: 2021-06-17T03:52:55.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

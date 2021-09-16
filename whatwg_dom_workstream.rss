@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>WHATWG DOM Workstream-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_dom_workstream.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG DOM Workstream</description>
+        <lastBuildDate>Thu, 16 Sep 2021 10:09:38 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[cssom-view-1, dom, service-workers-1, pointerevents3] Better naming of pages]]></title>
+            <link>https://github.com/mdn/content/issues/8977</link>
+            <guid>https://github.com/mdn/content/issues/8977</guid>
+            <pubDate>Thu, 16 Sep 2021 10:09:38 GMT</pubDate>
+            <content:encoded><![CDATA[<p>A big step forward was made in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="980067493" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/8351" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/8351/hovercard" href="https://github.com/mdn/content/pull/8351">#8351</a>, but I'd like to propose this rule to page naming:</p>
+<ol>
+<li>If the item is available on the global, use the name. Eg:
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting" rel="nofollow"><code>ServiceWorkerGlobalScope.skipWaiting</code></a> becomes <code>skipWaiting</code>.</li>
+</ul>
+</li>
+<li>If the item is typically reached via properties reachable from the global, use that property chain.
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" rel="nofollow"><code>Document.querySelector</code></a> becomes <code>document.querySelector</code>.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage/match" rel="nofollow"><code>CacheStorage.match</code></a> becomes <code>caches.match</code>.</li>
+</ul>
+</li>
+<li>If the item is an instance method/property, use the constructor name with the first set of caps lower-cased.
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect" rel="nofollow"><code>Element.getBoundingClientRect</code></a> becomes <code>element.getBoundingClientRect</code>.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight" rel="nofollow"><code>HTMLElement.offsetHeight</code></a> becomes <code>htmlElement.offsetHeight</code>.</li>
+</ul>
+</li>
+<li>Otherwise, just use the name.
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent" rel="nofollow"><code>PointerEvent</code></a> remains <code>PointerEvent</code></li>
+</ul>
+</li>
+</ol>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[dom] Issue with "Event.composed": (short summary here please)]]></title>
+            <link>https://github.com/mdn/content/issues/8937</link>
+            <guid>https://github.com/mdn/content/issues/8937</guid>
+            <pubDate>Wed, 15 Sep 2021 08:54:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Event/composed">https://developer.mozilla.org/en-US/docs/Web/API/Event/composed</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<ol>
+<li>There is no definition of the closed-shadow component</li>
+<li>(see it live) has no link</li>
+</ol>
+<h4>Specific section or headline?</h4>
+<h4>What did you expect to see?</h4>
+<h4>Did you test this? If so, how?</h4>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/event/composed</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/composed" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Event/composed</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/event/composed/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/event/composed/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/67029603b9457e2ec278a254998df208ff2591c3/hovercard" href="https://github.com/mdn/content/commit/67029603b9457e2ec278a254998df208ff2591c3"><tt>6702960</tt></a></li>
+<li>Document last modified: 2021-08-21T21:04:34.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[dom] Issue with "Element.attachShadow()": missing information about the slotAssignment option]]></title>
+            <link>https://github.com/mdn/content/issues/8782</link>
+            <guid>https://github.com/mdn/content/issues/8782</guid>
+            <pubDate>Thu, 09 Sep 2021 21:02:17 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow">https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The init parameter is missing information about the <code>slotAssignment</code> option, which should also be listed in the compatibility table.</p>
+<h4>Specific section or headline?</h4>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow#parameters" rel="nofollow">Parameters</a></p>
+<h4>What did you expect to see?</h4>
+<p>Information about the <code>slotAssignment</code> option.</p>
+<h4>Did you test this? If so, how?</h4>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/element/attachshadow</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/element/attachshadow/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/element/attachshadow/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/a25e681dccbb6a990b404b4becc0a548266a6bfd/hovercard" href="https://github.com/mdn/content/commit/a25e681dccbb6a990b404b4becc0a548266a6bfd"><tt>a25e681</tt></a></li>
+<li>Document last modified: 2021-08-23T14:15:15.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[html, cssom-view-1, dom, uievents, WebIDL-1, FileAPI, pointerlock-2] Remove alert() from live samples]]></title>
+            <link>https://github.com/mdn/content/issues/7566</link>
+            <guid>https://github.com/mdn/content/issues/7566</guid>
+            <pubDate>Tue, 03 Aug 2021 21:17:44 GMT</pubDate>
+            <content:encoded><![CDATA[<p><code>window.alert()</code> <a href="https://www.chromestatus.com/feature/5148698084376576" rel="nofollow">doesn't work cross-origin in Chrome any more</a>, meaning that any of our live samples that rely on <code>alert()</code> are now broken.</p>
+<p>See also <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="959310145" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/7553" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/7553/hovercard" href="https://github.com/mdn/content/issues/7553">#7553</a>.</p>
+<p>This is (I think) all the live samples in Web/API that use <code>alert()</code> in a live sample:</p>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/attr/localname">https://developer.mozilla.org/en-US/docs/Web/API/attr/localname</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/canvasrenderingcontext2d/addhitregion">https://developer.mozilla.org/en-US/docs/Web/API/canvasrenderingcontext2d/addhitregion</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/document/querycommandstate">https://developer.mozilla.org/en-US/docs/Web/API/document/querycommandstate</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/domexception/domexception">https://developer.mozilla.org/en-US/docs/Web/API/domexception/domexception</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/eventlistener">https://developer.mozilla.org/en-US/docs/Web/API/eventlistener</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/eventtarget/addeventlistener">https://developer.mozilla.org/en-US/docs/Web/API/eventtarget/addeventlistener</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/file/name">https://developer.mozilla.org/en-US/docs/Web/API/file/name</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/keyboardevent/metakey">https://developer.mozilla.org/en-US/docs/Web/API/keyboardevent/metakey</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/mouseevent">https://developer.mozilla.org/en-US/docs/Web/API/mouseevent</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/notifications_api/using_the_notifications_api">https://developer.mozilla.org/en-US/docs/Web/API/notifications_api/using_the_notifications_api</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/window/find">https://developer.mozilla.org/en-US/docs/Web/API/window/find</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/windoworworkerglobalscope/settimeout">https://developer.mozilla.org/en-US/docs/Web/API/windoworworkerglobalscope/settimeout</a> (fixed in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="959418868" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/7560" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/7560/hovercard" href="https://github.com/mdn/content/pull/7560">#7560</a>)</p>
+<p>(I might have missed some).</p>
+<p>We should replace all of these with some alternative. A common alternative is to write the output into an element in the example's document.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[dom] Event.composedPath() refers to nonexistent example]]></title>
+            <link>https://github.com/mdn/content/issues/5863</link>
+            <guid>https://github.com/mdn/content/issues/5863</guid>
+            <pubDate>Thu, 10 Jun 2021 17:13:57 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Event/composedPath">https://developer.mozilla.org/en-US/docs/Web/API/Event/composedPath</a> says:</p>
+<blockquote>
+<p>In our composed-composed-path example (see it live), we define two trivial custom elements,  and  ...</p>
+</blockquote>
+<p>...but "(see it live)" doesn't link to anything. I couldn't see anything likely in <a href="https://github.com/mdn/dom-examples/">https://github.com/mdn/dom-examples/</a>, maybe it's somewhere else, or maybe it's just gone?</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[dom, web-bluetooth] Content bug: linking macros to Boolean shouldn't be {{domxref}}]]></title>
+            <link>https://github.com/mdn/content/issues/3898</link>
+            <guid>https://github.com/mdn/content/issues/3898</guid>
+            <pubDate>Wed, 07 Apr 2021 02:39:25 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
+<p>127 pages (mainly in the Web API references).</p>
+<p>For example:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/contains" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/contains</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth/requestDevice" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth/requestDevice</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/45" rel="nofollow">https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/45</a></li>
+</ul>
+<h2>Specific page section or heading?</h2>
+<p>Various sections in various reference pages.</p>
+<h2>What is the problem?</h2>
+<p>{{domxref("Boolean")}} is used in a lot of pages.<br>
+However I thought it should be {{jsxref("Boolean")}} because Boolean isn't an interface of Web API and actually the {{domxref("Boolean")}} is redirected to the JavaScript reference.</p>
+<p>This looks no problem due to redirecting, but it produces broken link in translation versions.</p>
+<p>However {{jsxref("Boolean")}} is also incorrect because many of Web APIs use boolean primitive, not a Boolean object.</p>
+<h2>What did you expect to see?</h2>
+<p>{{jsxref("Boolean")}}, or another way to show it is a boolean primitive correctly.</p>
+<h2>Did you test this? If so, how?</h2>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[dom] Content bug: space before </code> on many pages]]></title>
+            <link>https://github.com/mdn/content/issues/3386</link>
+            <guid>https://github.com/mdn/content/issues/3386</guid>
+            <pubDate>Mon, 22 Mar 2021 23:05:57 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
+<p>Lots of them!</p>
+<h2>Specific page section or heading?</h2>
+<p>Example: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Attr#properties">https://developer.mozilla.org/en-US/docs/Web/API/Attr#properties</a></p>
+<h2>What is the problem?</h2>
+<p>There's a space in the code instead of after it, so it shows <code>true </code> instead of <code>true</code>.</p>
+<p>Some cases fixed in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="838172376" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/3385" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/3385/hovercard" href="https://github.com/mdn/content/pull/3385">#3385</a>, but there are too many so I'm filing an issue instead.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[dom] Document CharacterData]]></title>
+            <link>https://github.com/mdn/content/issues/2396</link>
+            <guid>https://github.com/mdn/content/issues/2396</guid>
+            <pubDate>Tue, 16 Feb 2021 15:44:40 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/CharacterData">https://developer.mozilla.org/en-US/docs/Web/API/CharacterData</a> is incomplete. None of the sub pages exist but they should. CharacterData is a core DOM API that is well supported and that should have proper docs.</p>
+<p>This came up in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="809295065" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/2394" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/2394/hovercard" href="https://github.com/mdn/content/pull/2394">#2394</a> where I removed the weird NonDocumentTypeChildNode mixin, so don't worry about that anymore.</p>
+<p>CharacterData is the parent interface for Text, ProcessingInstruction, and Comment nodes, so when creating the pages and example code, you probably want to show how to use CharacterData methods like <code>appendData()</code> with something concrete like  <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Text">https://developer.mozilla.org/en-US/docs/Web/API/Text</a> nodes.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[dom] Browser Compatibility tables are unclear when support for an item has been removed]]></title>
+            <link>https://github.com/mdn/content/issues/2107</link>
+            <guid>https://github.com/mdn/content/issues/2107</guid>
+            <pubDate>Fri, 05 Feb 2021 12:29:59 GMT</pubDate>
+            <content:encoded><![CDATA[<p>This is <a rel="nofollow" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1417902">https://bugzilla.mozilla.org/show_bug.cgi?id=1417902</a> filed again for the new MDN setup.</p>
+<p>The problem is clearly illustrated by things that were in EdgeHTML (Edge 12-18) but are not in new Chromium-based Edge 79+:<br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/DocumentType#browser_compatibility">https://developer.mozilla.org/en-US/docs/Web/API/DocumentType#browser_compatibility</a></p>
+<p>It looks as though support was in Edge 12-79, but it was in Edge 12-18.</p>
+<p>cc <a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/Elchi3/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Elchi3">@Elchi3</a> <a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/ddbeck/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ddbeck">@ddbeck</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[dom] Issue with "Event.preventDefault()": displayWarning() example doesn't work with autofill]]></title>
+            <link>https://github.com/mdn/content/issues/1637</link>
+            <guid>https://github.com/mdn/content/issues/1637</guid>
+            <pubDate>Fri, 22 Jan 2021 19:23:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault">https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The displayWarning() example didn't work when I selected my capitalized name from my autofill list</p>
+<h4>Specific section or headline?</h4>
+<p>Stopping keystrokes from reaching an edit field &gt; Result</p>
+<h4>What did you expect to see?</h4>
+<p>A warning</p>
+<h4>Did you test this? If so, how?</h4>
+<ol>
+<li>Open Microsoft Edge (88.0.705.50)</li>
+<li>Go to <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault</a></li>
+<li>Scroll down to Stopping keystrokes from reaching an edit field &gt; Result</li>
+<li>Click the box and select an item with a capital letter</li>
+<li>Observe</li>
+</ol>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/event/preventdefault</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/master/files/en-us/web/api/event/preventdefault/index.html">https://github.com/mdn/content/blob/master/files/en-us/web/api/event/preventdefault/index.html</a></li>
+<li>Report started: 2021-01-22T19:11:57.555Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[dom] https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection - Left column lists incorrect properties and methods.]]></title>
+            <link>https://github.com/mdn/content/issues/7161</link>
+            <guid>https://github.com/mdn/content/issues/7161</guid>
+            <pubDate>Mon, 28 Sep 2020 19:22:47 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/parke/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/parke">@parke</a> commented on <a href="https://github.com/mdn/sprints/issues/3582" data-hovercard-type="issue" data-hovercard-url="/mdn/sprints/issues/3582/hovercard">Fri Aug 07 2020</a></p>
+<h1>Request type</h1>
+
+<ul class="contains-task-list">
+<li>[] Please close this issue, I accidentally submitted it without adding any details</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> New documentation</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Correction or update</li>
+</ul>
+<h1>Details</h1>
+
+<p>On the referenced page, the left "quick navigation" column incorrectly lists:</p>
+<p>Properties<br>
+item</p>
+<p>The correct list would be:</p>
+<p>Properties<br>
+length</p>
+<p>Methods<br>
+item()<br>
+namedItem()</p>
+
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection">https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

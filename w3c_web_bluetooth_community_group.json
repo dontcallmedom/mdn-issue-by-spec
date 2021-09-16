@@ -1,0 +1,34 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "W3C Web Bluetooth Community Group-relevant MDN issues",
+    "home_page_url": "https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_bluetooth_community_group.rss",
+    "description": "Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Bluetooth Community Group",
+    "author": {
+        "name": "mdn-issue-by-spec",
+        "url": "https://github.com/dontcallmedom/mdn-issue-by-spec"
+    },
+    "items": [
+        {
+            "id": "https://github.com/mdn/content/issues/5244",
+            "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth/requestDevice#syntax\">https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth/requestDevice#syntax</a></p>\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<p>This syntax block:</p>\n<div class=\"snippet-clipboard-content position-relative\" data-snippet-clipboard-copy-content=\"Bluetooth.requestDevice([options])\n  .then(function(bluetoothDevice) { ... })\n\"><pre><code>Bluetooth.requestDevice([options])\n  .then(function(bluetoothDevice) { ... })\n</code></pre></div>\n<p>This doesn't work because <code>requestDevice</code> is not a static method. The example should be something like <code>bluetoothDevice = await navigator.bluetooth.requestDevice([options])</code>, maybe with <code>{acceptAllDevices: true})</code> as the options.</p>\n<p>This is a problem with other Bluetooth syntax blocks too, there are too many for me to fix so creating an issue.</p>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul>\n<li>Folder: <code>en-us/web/api/bluetooth</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/api/bluetooth/index.html\">https://github.com/mdn/content/blob/main/files/en-us/web/api/bluetooth/index.html</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/11a98a59fca5f2e448d9e4b70e3c8a538c47b201/hovercard\" href=\"https://github.com/mdn/content/commit/11a98a59fca5f2e448d9e4b70e3c8a538c47b201\"><tt>11a98a5</tt></a></li>\n<li>Document last modified: 2021-02-19T19:45:18.000Z</li>\n</ul>\n</details>",
+            "url": "https://github.com/mdn/content/issues/5244",
+            "title": "[web-bluetooth] Bluetooth.requestDevice syntax block is misleading",
+            "date_modified": "2021-05-24T07:32:53.000Z",
+            "author": {
+                "name": "foolip",
+                "url": "https://github.com/foolip"
+            }
+        },
+        {
+            "id": "https://github.com/mdn/content/issues/3898",
+            "content_html": "<h2>What page(s) did you find the problem on?</h2>\n<p>127 pages (mainly in the Web API references).</p>\n<p>For example:</p>\n<ul>\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/contains\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/contains</a></li>\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth/requestDevice\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth/requestDevice</a></li>\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/45\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/45</a></li>\n</ul>\n<h2>Specific page section or heading?</h2>\n<p>Various sections in various reference pages.</p>\n<h2>What is the problem?</h2>\n<p>{{domxref(\"Boolean\")}} is used in a lot of pages.<br>\nHowever I thought it should be {{jsxref(\"Boolean\")}} because Boolean isn't an interface of Web API and actually the {{domxref(\"Boolean\")}} is redirected to the JavaScript reference.</p>\n<p>This looks no problem due to redirecting, but it produces broken link in translation versions.</p>\n<p>However {{jsxref(\"Boolean\")}} is also incorrect because many of Web APIs use boolean primitive, not a Boolean object.</p>\n<h2>What did you expect to see?</h2>\n<p>{{jsxref(\"Boolean\")}}, or another way to show it is a boolean primitive correctly.</p>\n<h2>Did you test this? If so, how?</h2>\n",
+            "url": "https://github.com/mdn/content/issues/3898",
+            "title": "[dom, web-bluetooth] Content bug: linking macros to Boolean shouldn't be {{domxref}}",
+            "date_modified": "2021-04-07T02:39:25.000Z",
+            "author": {
+                "name": "mfuji09",
+                "url": "https://github.com/mfuji09"
+            }
+        }
+    ]
+}

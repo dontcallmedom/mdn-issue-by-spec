@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>W3C Audio Working Group-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_audio_working_group.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Audio Working Group</description>
+        <lastBuildDate>Mon, 26 Apr 2021 03:22:48 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[webaudio] Content bug: AudioListener and attributes need better examples. ]]></title>
+            <link>https://github.com/mdn/content/issues/4468</link>
+            <guid>https://github.com/mdn/content/issues/4468</guid>
+            <pubDate>Mon, 26 Apr 2021 03:22:48 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/AudioListener">https://developer.mozilla.org/en-US/docs/Web/API/AudioListener</a></p>
+<p>As discussed in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="865738850" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/4401" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/4401/hovercard?comment_id=619372451&amp;comment_type=review_comment" href="https://github.com/mdn/content/pull/4401#discussion_r619372451">#4401 (comment)</a> <code>AudioListener</code> and all the attributes link to the same example <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/PannerNode#examples">https://developer.mozilla.org/en-US/docs/Web/API/PannerNode#examples</a></p>
+<p>This is not actually all that relevant to all the attributes, and is probably more comprehensive than required at this level. It would be better to have small focussed example for each of these and cross link to the example as a see also.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webmidi] Issue with "MIDIMessageEvent": deprecated example method ]]></title>
+            <link>https://github.com/mdn/content/issues/3569</link>
+            <guid>https://github.com/mdn/content/issues/3569</guid>
+            <pubDate>Sat, 27 Mar 2021 17:06:36 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/MIDIMessageEvent">https://developer.mozilla.org/en-US/docs/Web/API/MIDIMessageEvent</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>This code snippet at the end of the article invokes a deprecated method:</p>
+<p>// Printing all messages to console<br>
+navigator.requestMIDIAccess().then(midiAccess =&gt; {<br>
+Array.from(midiAccess.inputs).forEach(input =&gt; {<br>
+input[1].onmidimessage = (msg) =&gt; { console.log(msg); }<br>
+})<br>
+});</p>
+<h4>Specific section or headline?</h4>
+<p>Examples</p>
+<h4>What did you expect to see?</h4>
+<p>a snippet that will work in my browser or a link to how to construct a well formed expression to do as much. My chrome version is Version 89.0.4389.90 (Official Build) (64-bit)</p>
+<h4>Did you test this? If so, how?</h4>
+<p>copy and pasted in console and this was the output:</p>
+<p>VM38:1 [Deprecation] Web MIDI will ask a permission to use even if the sysex is not specified in the MIDIOptions since around M82, around May 2020. See <a rel="nofollow" href="https://www.chromestatus.com/feature/5138066234671104">https://www.chromestatus.com/feature/5138066234671104</a> for more details.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/midimessageevent</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MIDIMessageEvent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MIDIMessageEvent</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/midimessageevent/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/midimessageevent/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/63c69f3c933acbea9bfb24d359a7d2ffdb3c0bea/hovercard" href="https://github.com/mdn/content/commit/63c69f3c933acbea9bfb24d359a7d2ffdb3c0bea"><tt>63c69f3</tt></a></li>
+<li>Document last modified: 2021-02-19T19:51:22.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webaudio] Visualization for OscillatorNode]]></title>
+            <link>https://github.com/mdn/content/issues/1296</link>
+            <guid>https://github.com/mdn/content/issues/1296</guid>
+            <pubDate>Thu, 14 Jan 2021 10:42:13 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/VoloshchenkoAl/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/VoloshchenkoAl">@VoloshchenkoAl</a> commented on <a href="https://github.com/mdn/webaudio-examples/issues/46" data-hovercard-type="issue" data-hovercard-url="/mdn/webaudio-examples/issues/46/hovercard">Wed Jan 13 2021</a></p>
+<p>I have started to learn about <a href="https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode" rel="nofollow">OscillatorNode</a>, and find out that it is difficult to understand how the frequency and type of Oscillator affects a sound wave.</p>
+<p>Is it a good idea to add visualization for OscillatorNode documentation? It will help to better understand how OscillatorNode works.</p>
+<p>Example of visualization — <a rel="nofollow" href="https://codepen.io/VoloshchenkoAl/pen/gOwdpKx">https://codepen.io/VoloshchenkoAl/pen/gOwdpKx</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
