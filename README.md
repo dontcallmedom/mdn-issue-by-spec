@@ -33,6 +33,6 @@ This repository collects information on MDN Web Docs issues and group them based
 * [WHATWG DOM Workstream](whatwg_dom_workstream.md): 11 issues [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](whatwg_dom_workstream.rss)
 * [WHATWG Fetch Workstream](whatwg_fetch_workstream.md): 3 issues [![RSS feed for WHATWG Fetch Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](whatwg_fetch_workstream.rss)
 * [WHATWG HTML Workstream](whatwg_html_workstream.md): 38 issues [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](whatwg_html_workstream.rss)
-* [WHATWG Notifications API Workstream](whatwg_notifications_api_workstream.md): 1 issues [![RSS feed for WHATWG Notifications API Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](whatwg_notifications_api_workstream.rss)
+* [WHATWG Notifications API Workstream](whatwg_notifications_api_workstream.md): 2 issues [![RSS feed for WHATWG Notifications API Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](whatwg_notifications_api_workstream.rss)
 * [WHATWG URL Workstream](whatwg_url_workstream.md): 1 issues [![RSS feed for WHATWG URL Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](whatwg_url_workstream.rss)
 * [WHATWG XMLHttpRequest Workstream](whatwg_xmlhttprequest_workstream.md): 1 issues [![RSS feed for WHATWG XMLHttpRequest Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](whatwg_xmlhttprequest_workstream.rss)

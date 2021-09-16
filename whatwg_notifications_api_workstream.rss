@@ -4,10 +4,46 @@
         <title>WHATWG Notifications API Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_notifications_api_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG Notifications API Workstream</description>
-        <lastBuildDate>Tue, 23 Feb 2021 13:20:50 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 Sep 2021 10:09:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[cssom-view-1, dom, notifications, service-workers-1, pointerevents3] Better naming of pages]]></title>
+            <link>https://github.com/mdn/content/issues/8977</link>
+            <guid>https://github.com/mdn/content/issues/8977</guid>
+            <pubDate>Thu, 16 Sep 2021 10:09:38 GMT</pubDate>
+            <content:encoded><![CDATA[<p>A big step forward was made in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="980067493" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/8351" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/8351/hovercard" href="https://github.com/mdn/content/pull/8351">#8351</a>, but I'd like to propose this rule to page naming:</p>
+<ol>
+<li>If the item is available on the global, use the name. Eg:
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting" rel="nofollow"><code>ServiceWorkerGlobalScope.skipWaiting</code></a> becomes <code>skipWaiting</code>.</li>
+</ul>
+</li>
+<li>If the item is typically reached via properties reachable from the global, use that property chain, omitting the global.
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" rel="nofollow"><code>Document.querySelector</code></a> becomes <code>document.querySelector</code>.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage/match" rel="nofollow"><code>CacheStorage.match</code></a> becomes <code>caches.match</code>.</li>
+</ul>
+</li>
+<li>If the item is an instance method/property, use the constructor name with the first set of caps lower-cased + the property name.
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect" rel="nofollow"><code>Element.getBoundingClientRect</code></a> becomes <code>element.getBoundingClientRect</code>.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight" rel="nofollow"><code>HTMLElement.offsetHeight</code></a> becomes <code>htmlElement.offsetHeight</code>.</li>
+</ul>
+</li>
+<li>If the item is a static method/property, use the constructor name + the property name.
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Notification/requestPermission" rel="nofollow"><code>Notification.requestPermission</code></a> remains <code>Notification.requestPermission</code>.</li>
+</ul>
+</li>
+<li>Otherwise, just use the name.
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent" rel="nofollow"><code>PointerEvent</code></a> remains <code>PointerEvent</code></li>
+</ul>
+</li>
+</ol>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[notifications] Notification]]></title>
             <link>https://github.com/mdn/content/issues/2615</link>
