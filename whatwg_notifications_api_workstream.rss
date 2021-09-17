@@ -16,6 +16,7 @@
             <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Notification/requestPermission">https://developer.mozilla.org/en-US/docs/Web/API/Notification/requestPermission</a></p>
 <h4>What information was incorrect, unhelpful, or incomplete?</h4>
 <p>Safari still (as of 09/21 v14.1.2) still does not support the newer Promise version of Notification.requestPermission(), it only supports the deprecated version with the callback. So I think it's unhelpful to say it's supported in the browser compatibility section.</p>
+<p>Edit: looks like this is now supported in Safari Technology Preview (Release 132 - Safari 15.4, WebKit 16613.1.1.5)) but this is a preview and we don't know when it'll ship. I think Safari should be marked as Partial.</p>
 <h4>Specific section or headline?</h4>
 <p>Browser compatibility section: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Notification/requestPermission#browser_compatibility">https://developer.mozilla.org/en-US/docs/Web/API/Notification/requestPermission#browser_compatibility</a></p>
 <h4>What did you expect to see?</h4>
