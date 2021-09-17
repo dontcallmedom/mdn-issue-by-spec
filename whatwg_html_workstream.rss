@@ -4,10 +4,38 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Thu, 16 Sep 2021 10:44:51 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 17 Sep 2021 21:07:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Issue with "<address>: The Contact Address element": Info about arbitrary addresses conflicts with Living Standard]]></title>
+            <link>https://github.com/mdn/content/issues/9035</link>
+            <guid>https://github.com/mdn/content/issues/9035</guid>
+            <pubDate>Fri, 17 Sep 2021 21:07:57 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>This page states that "In the latest spec versions however, its definition has been updated so it can now be used to mark up arbitrary addresses."<br>
+However, the Sept. 17, 2021, version of the HTML Living Standard (see source below) states that the address element should not be used with an arbitrary address unless it is the relevant contact.<br>
+Source: <a rel="nofollow" href="https://html.spec.whatwg.org/multipage/sections.html#the-address-element">https://html.spec.whatwg.org/multipage/sections.html#the-address-element</a></p>
+<h4>Specific section or headline?</h4>
+<p>Usage notes</p>
+<h4>What did you expect to see?</h4>
+<p>Conformance with the HTML Living Standard.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>N/A</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/html/element/address</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/address/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/address/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0b560108cd599cf4705c04279dfd1df44a26561c/hovercard" href="https://github.com/mdn/content/commit/0b560108cd599cf4705c04279dfd1df44a26561c"><tt>0b56010</tt></a></li>
+<li>Document last modified: 2021-07-07T01:26:44.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Content suggestion: Add one-liner to former WindowOrWorkerGlobalScope methods]]></title>
             <link>https://github.com/mdn/content/issues/8979</link>
