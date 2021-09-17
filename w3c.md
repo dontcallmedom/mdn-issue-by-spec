@@ -114,8 +114,6 @@
   
 * [[webaudio] Visualization for OscillatorNode](https://github.com/mdn/content/issues/1296) (2021-01-14T10:42:13Z)
   
-* [[DOM-Parsing] Source specification section from BCD; improve rendering](https://github.com/mdn/content/issues/1146) (2021-01-10T10:51:09Z)
-  
 * [[cssom-view-1] Issue with "Window.devicePixelRatio": Code example does not match the relavent description perfectly.](https://github.com/mdn/content/issues/873) (2021-01-03T10:45:10Z)
   
 * [[screen-capture, mediacapture-streams] MediaDevices.getDisplayMedia() ignores constraints in FF](https://github.com/mdn/content/issues/1830) (2020-02-10T14:53:07Z)

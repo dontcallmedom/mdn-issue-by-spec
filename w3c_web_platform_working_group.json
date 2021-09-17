@@ -18,17 +18,6 @@
                 "name": "wbamberg",
                 "url": "https://github.com/wbamberg"
             }
-        },
-        {
-            "id": "https://github.com/mdn/content/issues/1146",
-            "content_html": "<p>Over on BCD we've introduced <code>spec_url</code>:</p>\n<blockquote>\n<p>The <code>spec_url</code> property is a URL or an array of URLs, each of which is for a specific part of a specification in which this feature is defined. Each URL must contain a fragment identifier (e.g. <code>https://tc39.es/proposal-promise-allSettled/#sec-promise.allsettled</code>).</p>\n</blockquote>\n<p>It is populated for all <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript\" rel=\"nofollow\"><code>javascript.*</code></a> features and we're working on populating it for <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML\" rel=\"nofollow\"><code>html.*</code></a> features. At some point all BCD features will have a <code>spec_url</code> property.</p>\n<p>Further, the <code>spec_url</code> data in BCD is carefully reviewed and we make sure it actually contains relevant specs and not abandoned or outdated ones.</p>\n<p>Therefore, I think the \"Specifications\" section on MDN pages should use this information to render a specification table (or specification section as opposed to a table as recommended by <a class=\"user-mention\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/nschonni/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/nschonni\">@nschonni</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"782588805\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/1121\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/1121/hovercard?comment_id=554464075&amp;comment_type=review_comment\" href=\"https://github.com/mdn/content/pull/1121#discussion_r554464075\">#1121 (comment)</a>. That way we no longer need to maintain it in two places.</p>\n<p>cc'ing <a class=\"user-mention\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/sideshowbarker/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/sideshowbarker\">@sideshowbarker</a> with whom I worked on this a lot.</p>",
-            "url": "https://github.com/mdn/content/issues/1146",
-            "title": "[DOM-Parsing] Source specification section from BCD; improve rendering",
-            "date_modified": "2021-01-10T10:51:09.000Z",
-            "author": {
-                "name": "Elchi3",
-                "url": "https://github.com/Elchi3"
-            }
         }
     ]
 }
