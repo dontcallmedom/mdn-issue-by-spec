@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-ui-4] Issue with "appearance (-moz-appearance, -webkit-appearance)": js fiddle accessibility issue](https://github.com/mdn/content/issues/9036) (2021-09-17T21:27:12Z)
+  
 * [[css-text-decor-3] Issue with "text-emphasis-color": (short summary here please)](https://github.com/mdn/content/issues/9034) (2021-09-17T19:36:16Z)
   
 * [[cssom-view-1, dom, notifications, service-workers-1, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
