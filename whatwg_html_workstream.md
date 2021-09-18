@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] Issue with "<address>: The Contact Address element": Info about arbitrary addresses conflicts with Living Standard](https://github.com/mdn/content/issues/9035) (2021-09-17T21:07:57Z)
-  
 * [[html] Content suggestion: Add one-liner to former WindowOrWorkerGlobalScope methods](https://github.com/mdn/content/issues/8979) (2021-09-16T10:44:51Z)
   
 * [[html] Content bug: Outdated a11y-related content on <button>](https://github.com/mdn/content/issues/8929) (2021-09-15T07:33:58Z)
