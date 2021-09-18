@@ -4,10 +4,80 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Thu, 16 Sep 2021 10:44:51 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 18 Sep 2021 22:28:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Issue with "Advanced text formatting": unneeded <p> inside <address>]]></title>
+            <link>https://github.com/mdn/content/issues/9059</link>
+            <guid>https://github.com/mdn/content/issues/9059</guid>
+            <pubDate>Sat, 18 Sep 2021 22:28:06 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting#marking_up_contact_details">https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting#marking_up_contact_details</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>We provide three <code>&lt;address&gt;</code> examples:</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="&lt;address&gt;
+  &lt;p&gt;Chris Mills, Manchester, The Grim North, UK&lt;/p&gt;
+&lt;/address&gt;
+"><pre><code>&lt;address&gt;
+  &lt;p&gt;Chris Mills, Manchester, The Grim North, UK&lt;/p&gt;
+&lt;/address&gt;
+</code></pre></div>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="&lt;address&gt;
+  &lt;p&gt;
+    Chris Mills&lt;br&gt;
+    Manchester&lt;br&gt;
+    The Grim North&lt;br&gt;
+    UK
+  &lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Tel: 01234 567 890&lt;/li&gt;
+    &lt;li&gt;Email: me@grim-north.co.uk&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/address&gt;
+"><pre><code>&lt;address&gt;
+  &lt;p&gt;
+    Chris Mills&lt;br&gt;
+    Manchester&lt;br&gt;
+    The Grim North&lt;br&gt;
+    UK
+  &lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Tel: 01234 567 890&lt;/li&gt;
+    &lt;li&gt;Email: me@grim-north.co.uk&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/address&gt;
+</code></pre></div>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="&lt;address&gt;
+  &lt;p&gt;Page written by &lt;a href=&quot;../authors/chris-mills/&quot;&gt;Chris Mills&lt;/a&gt;.&lt;/p&gt;
+&lt;/address&gt;
+"><pre><code>&lt;address&gt;
+  &lt;p&gt;Page written by &lt;a href="../authors/chris-mills/"&gt;Chris Mills&lt;/a&gt;.&lt;/p&gt;
+&lt;/address&gt;
+</code></pre></div>
+<p>In my opinion the nested <code>&lt;p&gt;</code> element is unnecessary in examples 1 and 3. It makes sense in example 2 since we have a more complex structure.<br>
+We neither use nested <code>&lt;p&gt;</code> elements in the marking guide nor on <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address</a></p>
+<p>If there is an agreement on changing the examples you can assign me to this issue and I will provide a PR.</p>
+<h4>Specific section or headline?</h4>
+<p>Marking up contact details</p>
+<h4>What did you expect to see?</h4>
+<p>No nested <code>&lt;p&gt;</code> element in examples 1 and 3.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>Both versions are valid HTML according to <a href="https://validator.w3.org/nu/#textarea" rel="nofollow">W3C Validator</a>.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/learn/html/introduction_to_html/advanced_text_formatting</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting" rel="nofollow">https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/learn/html/introduction_to_html/advanced_text_formatting/index.html">https://github.com/mdn/content/blob/main/files/en-us/learn/html/introduction_to_html/advanced_text_formatting/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b7c594e7a8e5eb31a70bcf3e07d931e4603d201b/hovercard" href="https://github.com/mdn/content/commit/b7c594e7a8e5eb31a70bcf3e07d931e4603d201b"><tt>b7c594e</tt></a></li>
+<li>Document last modified: 2021-09-03T05:34:55.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Content suggestion: Add one-liner to former WindowOrWorkerGlobalScope methods]]></title>
             <link>https://github.com/mdn/content/issues/8979</link>
