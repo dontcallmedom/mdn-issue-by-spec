@@ -6,6 +6,8 @@
   
 * [[css-text-decor-3] Issue with "text-emphasis-color": (short summary here please)](https://github.com/mdn/content/issues/9034) (2021-09-17T19:36:16Z)
   
+* [[webaudio] api.AudioContext.createMediaElementSource - does not wok in Safari](https://github.com/mdn/content/issues/9042) (2021-09-17T18:01:03Z)
+  
 * [[clipboard-apis] Update execCommand use in context-menu-copy-link-with-types](https://github.com/mdn/content/issues/8990) (2021-09-16T17:38:38Z)
   
 * [[cssom-view-1, dom, notifications, service-workers-1, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
