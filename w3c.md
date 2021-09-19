@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[css-scroll-snap-1] Issue with "scroll-padding": Compat data for Safari is out of date](https://github.com/mdn/content/issues/9060) (2021-09-18T22:32:15Z)
-  
 * [[css-ui-4] Issue with "appearance (-moz-appearance, -webkit-appearance)": Prefixed properties should go first - standardized should be last](https://github.com/mdn/content/issues/9043) (2021-09-18T07:59:13Z)
   
 * [[css-ui-4] Issue with "appearance (-moz-appearance, -webkit-appearance)": js fiddle accessibility issue](https://github.com/mdn/content/issues/9036) (2021-09-17T21:27:12Z)
