@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Real-Time Communications Working Group. [![RSS feed for W3C Web Real-Time Communications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[webrtc] Issue with "RTCDataChannel.onerror": (Invalid code)](https://github.com/mdn/content/issues/9099) (2021-09-20T10:18:13Z)
+  
 * [[mediacapture-streams] Issue with "MediaDevices": (short summary here please)](https://github.com/mdn/content/issues/7125) (2021-07-21T12:22:21Z)
   
 * [[ecmascript, mediacapture-streams] Globally replace console.log() calls in all cases where console.error() should be used instead](https://github.com/mdn/content/issues/6117) (2021-06-18T17:07:45Z)
