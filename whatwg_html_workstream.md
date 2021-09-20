@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Issue with "<nav>: The Navigation Section element": (short summary here please)](https://github.com/mdn/content/issues/9078) (2021-09-20T02:53:21Z)
+  
 * [[html] Issue with "Advanced text formatting": unneeded <p> inside <address>](https://github.com/mdn/content/issues/9059) (2021-09-18T22:28:06Z)
   
 * [[html] Content suggestion: Add one-liner to former WindowOrWorkerGlobalScope methods](https://github.com/mdn/content/issues/8979) (2021-09-16T10:44:51Z)

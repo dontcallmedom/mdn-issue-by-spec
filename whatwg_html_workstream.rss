@@ -4,10 +4,41 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Sat, 18 Sep 2021 22:28:06 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 20 Sep 2021 02:53:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Issue with "<nav>: The Navigation Section element": (short summary here please)]]></title>
+            <link>https://github.com/mdn/content/issues/9078</link>
+            <guid>https://github.com/mdn/content/issues/9078</guid>
+            <pubDate>Mon, 20 Sep 2021 02:53:21 GMT</pubDate>
+            <content:encoded><![CDATA[<ul>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav</a></li>
+</ul>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>I just read that the nav element can use li directly, which means there is no need to use the </p><ul> as you demonstrate. I think you should show that in one of your examples.<p></p>
+<p>from:<br>
+<a rel="nofollow" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-li-element">https://html.spec.whatwg.org/multipage/grouping-content.html#the-li-element</a></p>
+<p>The li element represents a list item. If its parent element is an ol, ul, or menu element, then the element is an item of the parent element's list, as defined for those elements. Otherwise, the list item has no defined list-related relationship to any other li element.</p>
+<p>Let me know if I don’t understand this correctly.</p>
+<p>Thanks ,</p>
+<p>onno</p>
+<h4>Specific section or headline?</h4>
+<h4>What did you expect to see?</h4>
+<h4>Did you test this? If so, how?</h4>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/html/element/nav</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/nav/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/nav/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0b560108cd599cf4705c04279dfd1df44a26561c/hovercard" href="https://github.com/mdn/content/commit/0b560108cd599cf4705c04279dfd1df44a26561c"><tt>0b56010</tt></a></li>
+<li>Document last modified: 2021-07-07T01:26:44.000Z</li>
+</ul>
+</details></ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Issue with "Advanced text formatting": unneeded <p> inside <address>]]></title>
             <link>https://github.com/mdn/content/issues/9059</link>
