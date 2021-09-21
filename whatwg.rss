@@ -4,10 +4,68 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Mon, 20 Sep 2021 09:24:06 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 21 Sep 2021 16:06:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Issue with "<pre>: The Preformatted Text element": (short summary here please)]]></title>
+            <link>https://github.com/mdn/content/issues/9149</link>
+            <guid>https://github.com/mdn/content/issues/9149</guid>
+            <pubDate>Tue, 21 Sep 2021 16:06:56 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>I'm looking for information whether I have to escape certain characters inside a pre tag or not.<br>
+One of the samples in the page is:</p>
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="&lt;figure role=&quot;img&quot; aria-labelledby=&quot;cow-caption&quot;&gt;
+  &lt;pre&gt;
+  ___________________________
+&lt; I'm an expert in my field. &gt;
+  ---------------------------
+         \   ^__^
+          \  (oo)\_______
+             (__)\       )\/\
+                 ||----w |
+                 ||     ||
+  &lt;/pre&gt;
+  &lt;figcaption id=&quot;cow-caption&quot;&gt;
+    A cow saying, &quot;I'm an expert in my field.&quot; The cow is illustrated using preformatted text characters.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+"><pre><code>&lt;figure role="img" aria-labelledby="cow-caption"&gt;
+  &lt;pre&gt;
+  ___________________________
+&lt; I'm an expert in my field. &gt;
+  ---------------------------
+         \   ^__^
+          \  (oo)\_______
+             (__)\       )\/\
+                 ||----w |
+                 ||     ||
+  &lt;/pre&gt;
+  &lt;figcaption id="cow-caption"&gt;
+    A cow saying, "I'm an expert in my field." The cow is illustrated using preformatted text characters.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre></div>
+<p>The <code>&lt;</code> in <code>&lt; I'm an expert in my field. &gt;</code> seems not to be escaped, but I've the impression that every <code>&lt;</code>, <code>&gt;</code>, <code>&amp;</code>, <code>'</code>, <code>"</code> should be escaped inside the <code>&lt;pre&gt;</code> tag.</p>
+<h4>Specific section or headline?</h4>
+<p>The sample sections <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre#example">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre#example</a> should maybe add a sample with a proper escaping.</p>
+<h4>What did you expect to see?</h4>
+<p>An statement about escaping inside <code>&lt;pre&gt;</code> tag.</p>
+<h4>Did you test this? If so, how?</h4>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/html/element/pre</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/pre/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/pre/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/055ebe07415a761004e00673de18f67570e6ab85/hovercard" href="https://github.com/mdn/content/commit/055ebe07415a761004e00673de18f67570e6ab85"><tt>055ebe0</tt></a></li>
+<li>Document last modified: 2021-06-09T04:39:20.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Issue with "<label>": No anchor inside a label]]></title>
             <link>https://github.com/mdn/content/issues/9096</link>
