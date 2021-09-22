@@ -4,67 +4,10 @@
         <title>W3C Web Real-Time Communications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_real_time_communications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Real-Time Communications Working Group</description>
-        <lastBuildDate>Mon, 20 Sep 2021 10:18:13 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 21 Jul 2021 12:22:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[webrtc] Issue with "RTCDataChannel.onerror": (Invalid code)]]></title>
-            <link>https://github.com/mdn/content/issues/9099</link>
-            <guid>https://github.com/mdn/content/issues/9099</guid>
-            <pubDate>Mon, 20 Sep 2021 10:18:13 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/RTCDataChannel/onerror">https://developer.mozilla.org/en-US/docs/Web/API/RTCDataChannel/onerror</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>The code in the example has a syntax error</p>
-<h4>Specific section or headline?</h4>
-<p><strong>Example</strong></p>
-<h4>What did you expect to see?</h4>
-<p>I don't know the context of this example, so I can't give advice</p>
-<h4>Did you test this? If so, how?</h4>
-<p>Original code with syntax error:</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="let pc = new RTCPeerConnection();
-let dc = pc.createDataChannel(&quot;PlayerControl&quot;);
-
-dc.onerror = function(event) {
-  myUILibrary.doAlertBox({
-    'Network Error',        // Alert title
-    'The error &quot;' + event.message +
-           '&quot; occurred while handling player control network messages.',
-    event.filename,
-    event.lineno,
-    event.colno
-  });
-}
-
-/* ... */
-"><pre><code>let pc = new RTCPeerConnection();
-let dc = pc.createDataChannel("PlayerControl");
-
-dc.onerror = function(event) {
-  myUILibrary.doAlertBox({
-    'Network Error',        // Alert title
-    'The error "' + event.message +
-           '" occurred while handling player control network messages.',
-    event.filename,
-    event.lineno,
-    event.colno
-  });
-}
-
-/* ... */
-</code></pre></div>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/rtcdatachannel/onerror</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCDataChannel/onerror" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/RTCDataChannel/onerror</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcdatachannel/onerror/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcdatachannel/onerror/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f/hovercard" href="https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f"><tt>2279e5a</tt></a></li>
-<li>Document last modified: 2021-09-14T18:08:09.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[mediacapture-streams] Issue with "MediaDevices": (short summary here please)]]></title>
             <link>https://github.com/mdn/content/issues/7125</link>
