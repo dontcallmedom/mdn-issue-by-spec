@@ -4,8 +4,6 @@
 
 * [[css-ui-4] Issue with "appearance (-moz-appearance, -webkit-appearance)": Prefixed properties should go first - standardized should be last](https://github.com/mdn/content/issues/9043) (2021-09-18T07:59:13Z)
   
-* [[css-ui-4] Issue with "appearance (-moz-appearance, -webkit-appearance)": js fiddle accessibility issue](https://github.com/mdn/content/issues/9036) (2021-09-17T21:27:12Z)
-  
 * [[webaudio] api.AudioContext.createMediaElementSource - does not wok in Safari](https://github.com/mdn/content/issues/9042) (2021-09-17T18:01:03Z)
   
 * [[clipboard-apis] Update execCommand use in context-menu-copy-link-with-types](https://github.com/mdn/content/issues/8990) (2021-09-16T17:38:38Z)
