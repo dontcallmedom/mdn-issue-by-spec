@@ -4,10 +4,49 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Sat, 28 Aug 2021 10:28:12 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Sep 2021 08:59:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "extends": Need more clear description]]></title>
+            <link>https://github.com/mdn/content/issues/9195</link>
+            <guid>https://github.com/mdn/content/issues/9195</guid>
+            <pubDate>Thu, 23 Sep 2021 08:59:43 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>I can't understand what <em>the extension</em> means in this context:</p>
+<blockquote>
+<p>The <code>.prototype</code> of the extension must be an {{jsxref("Object")}} or {{jsxref("null")}}.</p>
+</blockquote>
+<p>My guess is that this...</p>
+<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="function Super() {}
+Super.prototype = 3
+
+class Child extends Super {}
+"><pre><span class="pl-k">function</span> <span class="pl-v">Super</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span><span class="pl-kos">}</span>
+<span class="pl-v">Super</span><span class="pl-kos">.</span><span class="pl-c1">prototype</span> <span class="pl-c1">=</span> <span class="pl-c1">3</span>
+
+<span class="pl-k">class</span> <span class="pl-v">Child</span> <span class="pl-k">extends</span> <span class="pl-v">Super</span> <span class="pl-kos">{</span><span class="pl-kos">}</span></pre></div>
+<p>...isn't valid? (<code>Uncaught TypeError: Class extends value does not have valid prototype property 3</code>)</p>
+<h4>Specific section or headline?</h4>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends#description" rel="nofollow">Description</a></p>
+<h4>What did you expect to see?</h4>
+<p>Clearer description; there's no mention of the word <em>extension</em> in the spec.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>No.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/classes/extends</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/classes/extends/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/classes/extends/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cf607d68522cd35ee7670782d3ee3a361eaef2e4/hovercard" href="https://github.com/mdn/content/commit/cf607d68522cd35ee7670782d3ee3a361eaef2e4"><tt>cf607d6</tt></a></li>
+<li>Document last modified: 2021-07-20T18:47:57.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Issue with "Right shift (>>)": Wrong binary conversion]]></title>
             <link>https://github.com/mdn/content/issues/8414</link>
