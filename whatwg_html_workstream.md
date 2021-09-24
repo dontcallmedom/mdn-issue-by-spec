@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Issue with "<param>: The Object Parameter element": (short summary here please)](https://github.com/mdn/content/issues/9223) (2021-09-24T03:46:43Z)
+  
 * [[html] Content suggestion: WebSocket.readyState enum properties WebSocket.OPEN, WebSocket.CLOSING, etc](https://github.com/mdn/content/issues/9156) (2021-09-21T22:32:24Z)
   
 * [[html] Issue with "<pre>: The Preformatted Text element": (Characters should be escaped inside a “pre” tag ?)](https://github.com/mdn/content/issues/9149) (2021-09-21T16:06:56Z)
