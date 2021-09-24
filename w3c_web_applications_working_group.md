@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[FileAPI] Content bug: File.size (File API) is not on the sidebar](https://github.com/mdn/content/issues/9219) (2021-09-24T01:49:37Z)
+  
 * [[clipboard-apis] Update execCommand use in context-menu-copy-link-with-types](https://github.com/mdn/content/issues/8990) (2021-09-16T17:38:38Z)
   
 * [[FileAPI] Issue with "File": SVG image overflows](https://github.com/mdn/content/issues/8412) (2021-08-28T08:03:49Z)

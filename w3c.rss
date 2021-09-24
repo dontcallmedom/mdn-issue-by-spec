@@ -4,10 +4,28 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Sat, 18 Sep 2021 07:59:13 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 24 Sep 2021 01:49:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[FileAPI] Content bug: File.size (File API) is not on the sidebar]]></title>
+            <link>https://github.com/mdn/content/issues/9219</link>
+            <guid>https://github.com/mdn/content/issues/9219</guid>
+            <pubDate>Fri, 24 Sep 2021 01:49:37 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/File/size">https://developer.mozilla.org/en-US/docs/Web/API/File/size</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/File">https://developer.mozilla.org/en-US/docs/Web/API/File</a></p>
+<h2>Specific page section or heading?</h2>
+<p>(Sidebar) Related Topics &gt; Properties<br>
+<a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/6047296/134606089-0805bde9-4334-45c9-9317-fce78ddeb873.png"><img src="https://user-images.githubusercontent.com/6047296/134606089-0805bde9-4334-45c9-9317-fce78ddeb873.png" alt="image" style="max-width: 100%;"></a></p>
+<h2>What is the problem?</h2>
+<p>The sidebar doesn't have a link to the <strong>size</strong> property.</p>
+<h2>What did you expect to see?</h2>
+<p>The sidebar has a link to the <strong>size</strong> property.</p>
+<h2>Did you test this? If so, how?</h2>
+<p>I checked the <strong>File API</strong> specification. The <strong>size</strong> property is listed under <em>Instance properties</em> as <strong>File.prototype.size</strong>.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-ui-4] Issue with "appearance (-moz-appearance, -webkit-appearance)": Prefixed properties should go first - standardized should be last]]></title>
             <link>https://github.com/mdn/content/issues/9043</link>

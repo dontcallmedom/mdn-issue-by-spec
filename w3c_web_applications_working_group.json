@@ -9,6 +9,17 @@
     },
     "items": [
         {
+            "id": "https://github.com/mdn/content/issues/9219",
+            "content_html": "<h2>What page(s) did you find the problem on?</h2>\n<p><a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/File/size\">https://developer.mozilla.org/en-US/docs/Web/API/File/size</a><br>\n<a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/File\">https://developer.mozilla.org/en-US/docs/Web/API/File</a></p>\n<h2>Specific page section or heading?</h2>\n<p>(Sidebar) Related Topics &gt; Properties<br>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/6047296/134606089-0805bde9-4334-45c9-9317-fce78ddeb873.png\"><img src=\"https://user-images.githubusercontent.com/6047296/134606089-0805bde9-4334-45c9-9317-fce78ddeb873.png\" alt=\"image\" style=\"max-width: 100%;\"></a></p>\n<h2>What is the problem?</h2>\n<p>The sidebar doesn't have a link to the <strong>size</strong> property.</p>\n<h2>What did you expect to see?</h2>\n<p>The sidebar has a link to the <strong>size</strong> property.</p>\n<h2>Did you test this? If so, how?</h2>\n<p>I checked the <strong>File API</strong> specification. The <strong>size</strong> property is listed under <em>Instance properties</em> as <strong>File.prototype.size</strong>.</p>",
+            "url": "https://github.com/mdn/content/issues/9219",
+            "title": "[FileAPI] Content bug: File.size (File API) is not on the sidebar",
+            "date_modified": "2021-09-24T01:49:37.000Z",
+            "author": {
+                "name": "ADTC",
+                "url": "https://github.com/ADTC"
+            }
+        },
+        {
             "id": "https://github.com/mdn/content/issues/8990",
             "content_html": "<p><a href=\"https://github.com/mdn/webextensions-examples/tree/master/context-menu-copy-link-with-types\">context-menu-copy-link-with-types</a> uses a content script because when the example was written execCommand didn't work in background pages; now they do so the example should be updated to call execCommand from the background page instead of using a content script.</p>\n<p>Note, before updating check whether <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write\" rel=\"nofollow\">Clipboard.write()</a> is available in Firefox, as this would be the preferred method given that execCommand is deprecated.</p>",
             "url": "https://github.com/mdn/content/issues/8990",
