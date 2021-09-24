@@ -4,10 +4,30 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Fri, 24 Sep 2021 03:46:43 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 24 Sep 2021 04:55:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Content suggestion: Update CanvasRenderingContext2D.getContextAttributes()]]></title>
+            <link>https://github.com/mdn/content/issues/9224</link>
+            <guid>https://github.com/mdn/content/issues/9224</guid>
+            <pubDate>Fri, 24 Sep 2021 04:55:16 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What is the new suggestion?</h2>
+<p>Update CanvasRenderingContext2D.getContextAttributes(), so it matches the attributes list in <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext" rel="nofollow">HTMCanvasElement.getContext</a></p>
+<h2>Why is it important or useful?</h2>
+<p>Readers may believe that getContextAttributes() returns two values only, alpha and desynchronized. I think it's better to keep it synchronous with HTMCanvasElement.getContext, so users has better idea of what to expect.</p>
+<p>How many pages are likely to be needed?<br>
+1<br>
+How much time do you think this work should take? A few hours? A week? A month?<br>
+A few hours - few days (less than 1 week).<br>
+Will the work enable learners or professionals to achieve their goals better?<br>
+yes<br>
+Does it address critical needs in the web industry?<br>
+Maybe<br>
+Is the work an operational necessity, i.e. is not having it a security risk?<br>
+no</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Issue with "<param>: The Object Parameter element": (short summary here please)]]></title>
             <link>https://github.com/mdn/content/issues/9223</link>

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Content suggestion: Update CanvasRenderingContext2D.getContextAttributes()](https://github.com/mdn/content/issues/9224) (2021-09-24T04:55:16Z)
+  
 * [[html] Issue with "<param>: The Object Parameter element": (short summary here please)](https://github.com/mdn/content/issues/9223) (2021-09-24T03:46:43Z)
   
 * [[html] Content suggestion: WebSocket.readyState enum properties WebSocket.OPEN, WebSocket.CLOSING, etc](https://github.com/mdn/content/issues/9156) (2021-09-21T22:32:24Z)
