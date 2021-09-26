@@ -155,41 +155,6 @@ One of the samples in the page is:</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Issue with "<label>": No anchor inside a label]]></title>
-            <link>https://github.com/mdn/content/issues/9096</link>
-            <guid>https://github.com/mdn/content/issues/9096</guid>
-            <pubDate>Mon, 20 Sep 2021 09:24:06 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>There's a <code>&lt;a&gt;</code> inside a <code>&lt;label&gt;</code> in a code snippet:</p>
-<div class="highlight highlight-text-html-basic position-relative" data-snippet-clipboard-copy-content="&lt;label for=&quot;username&quot;&gt;&lt;a href=&quot;/username-forgot&quot;&gt;Forgot your username?&lt;/a&gt;&lt;/label&gt;
-"><pre><span class="pl-kos">&lt;</span><span class="pl-ent">label</span> <span class="pl-c1">for</span>="<span class="pl-s">username</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">a</span> <span class="pl-c1">href</span>="<span class="pl-s">/username-forgot</span>"<span class="pl-kos">&gt;</span>Forgot your username?<span class="pl-kos">&lt;/</span><span class="pl-ent">a</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">label</span><span class="pl-kos">&gt;</span></pre></div>
-<p>In the same page, under <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label#accessibility_concerns" rel="nofollow">Accessibility concerns</a>:</p>
-<blockquote>
-<p>Don't place interactive elements such as anchors or buttons inside a label. Doing so makes it difficult for people to activate the form input associated with the label.</p>
-</blockquote>
-<h4>Specific section or headline?</h4>
-<p>The bottom of the intro section, under:</p>
-<blockquote>
-<p>The form control that a label is labeling is called the labeled control of the label element. Multiple labels can be associated with the same form control:</p>
-</blockquote>
-<h4>What did you expect to see?</h4>
-<p>No anchor inside the <code>&lt;label&gt;</code>. (Also, can "Forgot your username" represent <em>a caption for an item</em>?)</p>
-<h4>Did you test this? If so, how?</h4>
-<p>No.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/html/element/label</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/label/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/label/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ed8b6995c3c1cd006848e615e738ead5b1863c04/hovercard" href="https://github.com/mdn/content/commit/ed8b6995c3c1cd006848e615e738ead5b1863c04"><tt>ed8b699</tt></a></li>
-<li>Document last modified: 2021-09-04T05:27:10.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Issue with "Advanced text formatting": unneeded <p> inside <address>]]></title>
             <link>https://github.com/mdn/content/issues/9059</link>
             <guid>https://github.com/mdn/content/issues/9059</guid>

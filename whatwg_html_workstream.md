@@ -10,8 +10,6 @@
   
 * [[html] Issue with "<pre>: The Preformatted Text element": (Characters should be escaped inside a “pre” tag ?)](https://github.com/mdn/content/issues/9149) (2021-09-21T16:06:56Z)
   
-* [[html] Issue with "<label>": No anchor inside a label](https://github.com/mdn/content/issues/9096) (2021-09-20T09:24:06Z)
-  
 * [[html] Issue with "Advanced text formatting": unneeded <p> inside <address>](https://github.com/mdn/content/issues/9059) (2021-09-18T22:28:06Z)
   
 * [[html] Content suggestion: Add one-liner to former WindowOrWorkerGlobalScope methods](https://github.com/mdn/content/issues/8979) (2021-09-16T10:44:51Z)

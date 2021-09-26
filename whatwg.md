@@ -10,8 +10,6 @@
   
 * [[html] Issue with "<pre>: The Preformatted Text element": (Characters should be escaped inside a “pre” tag ?)](https://github.com/mdn/content/issues/9149) (2021-09-21T16:06:56Z)
   
-* [[html] Issue with "<label>": No anchor inside a label](https://github.com/mdn/content/issues/9096) (2021-09-20T09:24:06Z)
-  
 * [[html] Issue with "Advanced text formatting": unneeded <p> inside <address>](https://github.com/mdn/content/issues/9059) (2021-09-18T22:28:06Z)
   
 * [[notifications] Issue with "Notification.requestPermission()": (Safari does not support the Promise syntax is marked as 'full support')](https://github.com/mdn/content/issues/9029) (2021-09-17T15:07:42Z)
