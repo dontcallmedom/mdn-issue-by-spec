@@ -20,8 +20,6 @@
   
 * [[SVG11, svg-animations] Issue with "<animate>": Firefox is inconsistent in rendering svg - graphic](https://github.com/mdn/content/issues/8551) (2021-09-02T04:54:48Z)
   
-* [[FileAPI] Issue with "File": SVG image overflows](https://github.com/mdn/content/issues/8412) (2021-08-28T08:03:49Z)
-  
 * [[webauthn-3] PublicKeyCredentialCreationOptions.attestation: missing enum value "enterprise"](https://github.com/mdn/content/issues/8126) (2021-08-20T09:29:10Z)
   
 * [[service-workers-1] Issue with "ServiceWorkerRegistration.updateViaCache": (short summary here please)](https://github.com/mdn/content/issues/7760) (2021-08-09T11:52:16Z)
