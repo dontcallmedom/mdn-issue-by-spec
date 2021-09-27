@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[ecmascript] Issue with "Grouping operator ( )": (false statements added)](https://github.com/mdn/content/issues/9306) (2021-09-27T22:47:28Z)
+* [[ecmascript] Issue with "Grouping operator ( )": (invalid  statements added)](https://github.com/mdn/content/issues/9306) (2021-09-27T22:47:28Z)
   
 * [[ecmascript] Issue with "extends": Need more clear description](https://github.com/mdn/content/issues/9195) (2021-09-23T08:59:43Z)
   
