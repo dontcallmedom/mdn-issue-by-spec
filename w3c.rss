@@ -27,46 +27,6 @@
 <p>I checked the <strong>File API</strong> specification. The <strong>size</strong> property is listed under <em>Instance properties</em> as <strong>File.prototype.size</strong>.</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-ui-4] Issue with "appearance (-moz-appearance, -webkit-appearance)": Prefixed properties should go first - standardized should be last]]></title>
-            <link>https://github.com/mdn/content/issues/9043</link>
-            <guid>https://github.com/mdn/content/issues/9043</guid>
-            <pubDate>Sat, 18 Sep 2021 07:59:13 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/appearance">https://developer.mozilla.org/en-US/docs/Web/CSS/appearance</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>Prefixed properties should be placed <strong>before</strong> the standardized ones. So <code>appearance</code> (without prefix) should be placed at bottom.</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="    appearance: none;
-    -moz-appearance: none;
--webkit-appearance: none;
-"><pre><code>    appearance: none;
-    -moz-appearance: none;
--webkit-appearance: none;
-</code></pre></div>
-<h4>Specific section or headline?</h4>
-<p>"CSS Demo: appearance" - in the almost beginning of page, just under header</p>
-<h4>What did you expect to see?</h4>
-<p>Property <code>appearance</code> (without prefix) should be placed at bottom.</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="    -moz-appearance: none;
--webkit-appearance: none;
-    appearance: none;
-"><pre><code>    -moz-appearance: none;
--webkit-appearance: none;
-    appearance: none;
-</code></pre></div>
-<h4>Did you test this? If so, how?</h4>
-<p>Nope :) It should work "out of the box"</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/css/appearance</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/appearance" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/appearance</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/appearance/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/appearance/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/26f50bdaeb1228f458d21dbdf7dc110387b20daa/hovercard" href="https://github.com/mdn/content/commit/26f50bdaeb1228f458d21dbdf7dc110387b20daa"><tt>26f50bd</tt></a></li>
-<li>Document last modified: 2021-08-12T23:59:09.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[webaudio] api.AudioContext.createMediaElementSource - does not wok in Safari]]></title>
             <link>https://github.com/mdn/content/issues/9042</link>
             <guid>https://github.com/mdn/content/issues/9042</guid>
