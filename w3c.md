@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[css-content-3] Issue with "content": Accessibility concerns is outdated](https://github.com/mdn/content/issues/9284) (2021-09-27T08:58:14Z)
-  
 * [[FileAPI] Content bug: File.size (File API) is not on the sidebar](https://github.com/mdn/content/issues/9219) (2021-09-24T01:49:37Z)
   
 * [[webaudio] api.AudioContext.createMediaElementSource - does not wok in Safari](https://github.com/mdn/content/issues/9042) (2021-09-17T18:01:03Z)
