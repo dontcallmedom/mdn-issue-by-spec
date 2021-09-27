@@ -4,10 +4,66 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Thu, 23 Sep 2021 08:59:43 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Sep 2021 22:47:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "Grouping operator ( )": (false statements added)]]></title>
+            <link>https://github.com/mdn/content/issues/9306</link>
+            <guid>https://github.com/mdn/content/issues/9306</guid>
+            <pubDate>Mon, 27 Sep 2021 22:47:28 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Grouping">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Grouping</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<blockquote>
+<p>Notice in these examples that the left-to-right order of evaluation is still preserved. In other words, the order in which the operators evaluate has changed, but the order in which the operands evaluate has not. For example in this code:</p>
+</blockquote>
+<p><code>a() * (b() + c()) </code></p>
+<blockquote>
+<p>The function a will be called before the function b, which will be called before the function c.</p>
+</blockquote>
+<h4>Specific section or headline?</h4>
+<h5><strong>Examples</strong></h5>
+<h5>Using the grouping operator</h5>
+<h4>What did you expect to see?</h4>
+<p>Nothing, because the statement is false and confuses the readers especially for beginners.</p>
+<p>This statement has been added because of the argument:<br>
+The last line of the comment by <a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/js-choi/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/js-choi">@js-choi</a> :<br>
+<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1003572727" data-permission-text="Title is private" data-url="https://github.com/tc39/proposal-pipeline-operator/issues/227" data-hovercard-type="issue" data-hovercard-url="/tc39/proposal-pipeline-operator/issues/227/hovercard?comment_id=926317660&amp;comment_type=issue_comment" href="https://github.com/tc39/proposal-pipeline-operator/issues/227#issuecomment-926317660">tc39/proposal-pipeline-operator#227 (comment)</a></p>
+<blockquote>
+<p>(Actually, perhaps I should also edit MDN’s documentation to make this clearer. Maybe this old parenthesized-expressions-are-not-always-evaluated-first rule is tripping up many people learning JavaScript.)</p>
+</blockquote>
+<p>However, he has a confusion of concept.</p>
+<p>This example is just to illustrate the <a href="https://en.wikipedia.org/wiki/Evaluation_strategy#Eager_evaluation" rel="nofollow">Eager evaluation strategy of JavaScript</a> that has nothing to do with <strong>Dependency graph defined by <strong>Grouping operator ( )</strong></strong></p>
+<p><a rel="nofollow" href="https://en.wikipedia.org/wiki/Dependency_graph">https://en.wikipedia.org/wiki/Dependency_graph</a></p>
+<blockquote>
+<p>In mathematics, computer science and digital electronics, a <strong>dependency graph</strong> is a directed graph representing dependencies of several objects towards each other. It is possible to derive an <strong>evaluation order</strong> or the absence of an <strong>evaluation orde</strong>r that respects the given dependencies from the dependency graph.</p>
+</blockquote>
+<p>Remember "<strong>evaluation order</strong>" derived from the dependency graph or structure is completely different concept of "<strong>time order</strong>" of executions, and same goes to the false description in the page:</p>
+<blockquote>
+<p>Notice in these examples that the left-to-right <strong><em>order of evaluation</em></strong> is still preserved. In other words, <strong><em>the order in which the operators evaluate</em></strong> has changed, but <strong><em>the order in which the operands evaluate</em></strong> has not. For example in this code:</p>
+</blockquote>
+<p><code>a() * (b() + c()) </code></p>
+<blockquote>
+<p>The function a will be called <strong><em>before</em></strong> the function b, which will be called <strong><em>before</em></strong> the function c.</p>
+</blockquote>
+<h4>Did you test this? If so, how?</h4>
+<p>Yes.<br>
+I elaborated this:<br>
+<a href="https://dev.to/stken2050/the-current-tc39-proposal-pipeline-operator-hack-style-hijacks-grouping-operator-1dam" rel="nofollow">TC39/proposal-pipeline-operator Hack-style <code>|&gt;</code> hijacks Grouping operator <code>( )</code></a></p>
+<p>Basically the pull request to add this false statement is for the purpose of justifying the incompatibility of their own TC39 proposal.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/operators/grouping</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Grouping" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Grouping</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/grouping/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/grouping/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b2f0a92a06f6dbf9c1a7c5de48152ca18875d168/hovercard" href="https://github.com/mdn/content/commit/b2f0a92a06f6dbf9c1a7c5de48152ca18875d168"><tt>b2f0a92</tt></a></li>
+<li>Document last modified: 2021-09-26T04:51:36.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Issue with "extends": Need more clear description]]></title>
             <link>https://github.com/mdn/content/issues/9195</link>
