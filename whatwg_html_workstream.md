@@ -10,8 +10,6 @@
   
 * [[html] Issue with "<pre>: The Preformatted Text element": (Characters should be escaped inside a “pre” tag ?)](https://github.com/mdn/content/issues/9149) (2021-09-21T16:06:56Z)
   
-* [[html] Issue with "Advanced text formatting": unneeded <p> inside <address>](https://github.com/mdn/content/issues/9059) (2021-09-18T22:28:06Z)
-  
 * [[html] Content suggestion: Add one-liner to former WindowOrWorkerGlobalScope methods](https://github.com/mdn/content/issues/8979) (2021-09-16T10:44:51Z)
   
 * [[html] Content bug: Outdated a11y-related content on <button>](https://github.com/mdn/content/issues/8929) (2021-09-15T07:33:58Z)
