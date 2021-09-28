@@ -27,7 +27,8 @@
 <p>Examples<br>
 Using the grouping operator</p>
 <h2>What is the problem?</h2>
-<p>The description for the behavior of the example code arises due to eager evaluation of JavaScript, which substantially another off-topic here.</p>
+<p>The description for the behavior of the example code arises due to <a href="https://en.wikipedia.org/wiki/Evaluation_strategy#Eager_evaluation" rel="nofollow">eager evaluation of JavaScript</a>, which should be substantially another off-topic here.</p>
+<p>The topic matter: Grouping operator <code>( )</code> itself behaves in the same/common manner regardless of the difference of evaluation strategies. eager or lazy whatever.</p>
 <p><strong>As the operator illustrated, <code>+</code> or <code>*</code> is arithmetic operators, so readers naturally consider that the topic is told in the context of algebra.</strong></p>
 <p>Without clarifying the substantial concept of eager evaluation of JavaScript, as a result, the document actively and implicitly misleads readers into confusion of concepts of <strong>algebraic functionality of Grouping operator <code>( )</code></strong> and eager evaluation of JavaScript.</p>
 <p>Grouping operator <code>( )</code> itself constructs the dependency graphs of the expressions along with other operators in algebraic sense.<br>
@@ -36,15 +37,16 @@ Also, the expressions are resolved following to dependency graphs created by the
 <blockquote>
 <p>In mathematics, computer science and digital electronics, a dependency graph is a directed graph representing dependencies of several objects towards each other. It is possible to derive an <strong>evaluation order</strong> or the absence of an evaluation order that respects the given dependencies from the dependency graph.</p>
 </blockquote>
-<p>This operation is provided purely mathematical manner, and the behavior should not be confused with evaluation strategies of programming languages.</p>
+<p>This operation is provided purely in a mathematical manner, and the behavior should not be confused with evaluation strategies of programming languages.</p>
 <p>The newly added document does not only clarify in this aspect but also mislead readers actively.</p>
 <hr>
 <p>At the same time,</p>
 <p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators</a></p>
+<p>Return value and chaining</p>
 <blockquote>
 <p>When chaining these expressions, each assignment is evaluated <strong>right-to-left</strong>.</p>
 </blockquote>
-<p>We have another descriptions mentioning the evaluation order becomes   <strong>right-to-left</strong> etc. , so it's extraordinary unnatural to mention as if it's a general principle in JavaScript:</p>
+<p>We have another descriptions mentioning the evaluation order becomes   <strong>right-to-left</strong> etc. , so it's extraordinary unnatural to mention as if it's to be "<strong><em>left-to-right order of evaluation is still preserved</em></strong>" in a general principle of JavaScript:</p>
 <blockquote>
 <p>Notice in these examples that the left-to-right order of evaluation is still preserved. In other words, the order in which the operators evaluate has changed, but the order in which the operands evaluate has not.</p>
 </blockquote>
