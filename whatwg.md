@@ -12,8 +12,6 @@
   
 * [[html] Issue with "<pre>: The Preformatted Text element": (Characters should be escaped inside a “pre” tag ?)](https://github.com/mdn/content/issues/9149) (2021-09-21T16:06:56Z)
   
-* [[notifications] Issue with "Notification.requestPermission()": (Safari does not support the Promise syntax is marked as 'full support')](https://github.com/mdn/content/issues/9029) (2021-09-17T15:07:42Z)
-  
 * [[html] Content suggestion: Add one-liner to former WindowOrWorkerGlobalScope methods](https://github.com/mdn/content/issues/8979) (2021-09-16T10:44:51Z)
   
 * [[cssom-view-1, dom, notifications, service-workers-1, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
