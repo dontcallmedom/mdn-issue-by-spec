@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[ecmascript] Implicitly misleading into confusion of concepts: "Grouping operator ( )"](https://github.com/mdn/content/issues/9317) (2021-09-28T11:25:37Z)
-  
 * [[ecmascript] Issue with "extends": Need more clear description](https://github.com/mdn/content/issues/9195) (2021-09-23T08:59:43Z)
   
 * [[ecmascript] Issue with "Right shift (>>)": Wrong binary conversion](https://github.com/mdn/content/issues/8414) (2021-08-28T10:28:12Z)
