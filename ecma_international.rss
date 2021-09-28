@@ -4,10 +4,60 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Thu, 23 Sep 2021 08:59:43 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 28 Sep 2021 11:25:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Implicitly misleading into confusion of concepts: "Grouping operator ( )"]]></title>
+            <link>https://github.com/mdn/content/issues/9317</link>
+            <guid>https://github.com/mdn/content/issues/9317</guid>
+            <pubDate>Tue, 28 Sep 2021 11:25:37 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
+<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Grouping">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Grouping</a></p>
+<h2>What information was incorrect, unhelpful, or incomplete?</h2>
+<blockquote>
+<p>Notice in these examples that the left-to-right order of evaluation is still preserved. In other words, the order in which the operators evaluate has changed, but the order in which the operands evaluate has not. For example in this code:</p>
+</blockquote>
+<p><code>a() * (b() + c())</code></p>
+<blockquote>
+<p>The function a will be called before the function <code>b</code>, which will be called before the function <code>c</code>.</p>
+</blockquote>
+<h2>Specific section or headline?</h2>
+<p>Examples<br>
+Using the grouping operator</p>
+<h2>What is the problem?</h2>
+<p>The description for the behavior of the example code arises due to eager evaluation of JavaScript, which substantially another off-topic here.</p>
+<p><strong>As the operator illustrated, <code>+</code> or <code>*</code> is arithmetic operators, so readers naturally consider that the topic is told in the context of algebra.</strong></p>
+<p>Without clarifying the substantial concept of eager evaluation of JavaScript, as a result, the document actively and implicitly misleads readers into confusion of concepts of <strong>algebraic functionality of Grouping operator <code>( )</code></strong> and eager evaluation of JavaScript.</p>
+<p>Grouping operator <code>( )</code> itself constructs the dependency graphs of the expressions along with other operators in algebraic sense.<br>
+Also, the expressions are resolved following to dependency graphs created by them.</p>
+<p><a rel="nofollow" href="https://en.wikipedia.org/wiki/Dependency_graph">https://en.wikipedia.org/wiki/Dependency_graph</a></p>
+<blockquote>
+<p>In mathematics, computer science and digital electronics, a dependency graph is a directed graph representing dependencies of several objects towards each other. It is possible to derive an <strong>evaluation order</strong> or the absence of an evaluation order that respects the given dependencies from the dependency graph.</p>
+</blockquote>
+<p>This operation is provided purely mathematical manner, and the behavior should not be confused with evaluation strategies of programming languages.</p>
+<p>The newly added document does not only clarify in this aspect but also mislead readers actively.</p>
+<hr>
+<p>At the same time,</p>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators</a></p>
+<blockquote>
+<p>When chaining these expressions, each assignment is evaluated <strong>right-to-left</strong>.</p>
+</blockquote>
+<p>We have another descriptions mentioning the evaluation order becomes   <strong>right-to-left</strong> etc. , so it's extraordinary unnatural to mention as if it's a general principle in JavaScript:</p>
+<blockquote>
+<p>Notice in these examples that the left-to-right order of evaluation is still preserved. In other words, the order in which the operators evaluate has changed, but the order in which the operands evaluate has not.</p>
+</blockquote>
+<h2>What did you expect to see?</h2>
+<p>Here, at least, there are 2 independent concepts:</p>
+<ul>
+<li>Grouping operator <code>( )</code> that follows the rule of mathematics in the form of dependency graph</li>
+<li>Eager evaluation of JavaScript (off-topic)</li>
+</ul>
+<p>Readers should not be confused with these independent concept.</p>
+<p>Once an example code that behavior is due to the another substantial off-topic concept is presented, the document should explicitly clarify the concept, or should not provide such a confusing example from the first.</p>
+<p>This issue is related to <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1008748021" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/9306" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/9306/hovercard" href="https://github.com/mdn/content/issues/9306">#9306</a> , however unfortunately, the factors claimed here has not been examined.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Issue with "extends": Need more clear description]]></title>
             <link>https://github.com/mdn/content/issues/9195</link>
