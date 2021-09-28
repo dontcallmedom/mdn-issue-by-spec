@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Issue with "HTMLElement.innerText": wrong innerText output in Result](https://github.com/mdn/content/issues/9326) (2021-09-28T19:57:39Z)
+  
 * [[html] Issue with "HTMLImageElement.sizes": Images missing](https://github.com/mdn/content/issues/9313) (2021-09-28T07:27:31Z)
   
 * [[html] Content suggestion: Update CanvasRenderingContext2D.getContextAttributes()](https://github.com/mdn/content/issues/9224) (2021-09-24T04:55:16Z)
