@@ -4,10 +4,36 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Tue, 28 Sep 2021 19:57:39 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 29 Sep 2021 19:44:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Issue with "<input>: The Input (Form Input) element": (not declares that attributte 'size' is also valid for the url type)]]></title>
+            <link>https://github.com/mdn/content/issues/9347</link>
+            <guid>https://github.com/mdn/content/issues/9347</guid>
+            <pubDate>Wed, 29 Sep 2021 19:44:34 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The documentation of the input element declares that attribute size is valid only for email, password, tel, and text types</p>
+<h4>Specific section or headline?</h4>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-size">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-size</a></p>
+<h4>What did you expect to see?</h4>
+<p>"Valid for email, password, tel, <em>url</em> and text input types only"</p>
+<h4>Did you test this? If so, how?</h4>
+<p>The definition of the input of type url at MDN declares size as part of its Supported Common Attributes (<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url</a>). The standard too: <a rel="nofollow" href="https://html.spec.whatwg.org/multipage/input.html#url-state-(type=url)">https://html.spec.whatwg.org/multipage/input.html#url-state-(type=url)</a></p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/html/element/input</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/input/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/input/index.html</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/9e3a809e6522c37655e046baf8b0f3948dae20da/hovercard" href="https://github.com/mdn/content/commit/9e3a809e6522c37655e046baf8b0f3948dae20da"><tt>9e3a809</tt></a></li>
+<li>Document last modified: 2021-09-27T16:09:05.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Issue with "HTMLElement.innerText": wrong innerText output in Result]]></title>
             <link>https://github.com/mdn/content/issues/9326</link>
