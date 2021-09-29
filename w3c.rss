@@ -553,7 +553,7 @@ The ServiceWorker interface inherits methods from its parent, Worker, with the e
 at errorMsg</p>
 <h4>What did you expect to see?</h4>
 <p>The set of error defined from the catch:</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="if (error.name === &quot;ConstraintNotSatisfiedError&quot;) {
+<div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="if (error.name === &quot;ConstraintNotSatisfiedError&quot;) {
           errorMsg(
             &quot;The resolution &quot; +
               constraints.video.width.exact +
@@ -653,7 +653,7 @@ at errorMsg</p>
 <h4>What information was incorrect, unhelpful, or incomplete?</h4>
 <p>If the argument anchorNode/focusNode is a text node, the corresponding offset is the index of the character.</p>
 <h4>Did you test this? If so, how?</h4>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="var node = document.querySelector('.anything') //select an empty node!
+<div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="var node = document.querySelector('.anything') //select an empty node!
 node.textContent = &quot;hello world!&quot;
 var tnode = node.childNodes[0]
 var sel = window.getSelection()

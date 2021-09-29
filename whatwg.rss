@@ -796,15 +796,15 @@ Currently both those pages don't mention crossOriginIsolated  and say origin "do
 <p>I think that it would be useful to mention that <code>fetch</code> can reject with a <code>TypeError</code> due to a ill-formed request or a network error.</p>
 <p>If I am reading it correctly, it is part of the spec <a rel="nofollow" href="https://fetch.spec.whatwg.org/#fetch-method">https://fetch.spec.whatwg.org/#fetch-method</a>:</p>
 <p>at step <code>2</code></p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="Let requestObject be the result of invoking the initial value of Request as constructor with input and init as arguments. If this throws an exception, reject p with it and return p.
+<div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="Let requestObject be the result of invoking the initial value of Request as constructor with input and init as arguments. If this throws an exception, reject p with it and return p.
 "><pre><code>Let requestObject be the result of invoking the initial value of Request as constructor with input and init as arguments. If this throws an exception, reject p with it and return p.
 </code></pre></div>
 <p>and <code>12.3</code></p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="If response is a network error, then reject p with a TypeError and terminate these substeps.
+<div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="If response is a network error, then reject p with a TypeError and terminate these substeps.
 "><pre><code>If response is a network error, then reject p with a TypeError and terminate these substeps.
 </code></pre></div>
 <p>Maybe something along these lines could work:</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="TypeError
+<div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="TypeError
     There are several reason fetch can be interrupted with a `TypeError`:
     - it was not possible to build a `Request` object with the provided parameters (e.g. malformed url)
     - the request was interrupted due to a network error 
@@ -818,19 +818,19 @@ Currently both those pages don't mention crossOriginIsolated  and say origin "do
 <h4>Did you test this? If so, how?</h4>
 <p>In the developer console of <code>Microsoft Edge Version 91.0.864.37 (Official build) (64-bit)</code></p>
 <p>I made a <code>fetch</code> request to a <code>localhost</code> on a closed port and checked the rejection error</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="fetch(&quot;http://localhost:8080&quot;).catch(err =&gt; console.log(err));
+<div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="fetch(&quot;http://localhost:8080&quot;).catch(err =&gt; console.log(err));
 "><pre><code>fetch("http://localhost:8080").catch(err =&gt; console.log(err));
 </code></pre></div>
 <p>With result</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="&gt; TypeError: Failed to fetch
+<div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="&gt; TypeError: Failed to fetch
 "><pre><code>&gt; TypeError: Failed to fetch
 </code></pre></div>
 <p>Then I made a fetch request to a malformed url</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="fetch(&quot;k2143rjhttp://localhost:9999/hello&quot;).catch(err =&gt; console.log(err))
+<div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="fetch(&quot;k2143rjhttp://localhost:9999/hello&quot;).catch(err =&gt; console.log(err))
 "><pre><code>fetch("k2143rjhttp://localhost:9999/hello").catch(err =&gt; console.log(err))
 </code></pre></div>
 <p>With result</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="&gt; TypeError: Failed to fetch
+<div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="&gt; TypeError: Failed to fetch
 "><pre><code>&gt; TypeError: Failed to fetch
 </code></pre></div>
 
@@ -1156,7 +1156,7 @@ However I thought it should be {{jsxref("Boolean")}} because Boolean isn't an in
             <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/formdata_event">https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/formdata_event</a></p>
 <h4>What information was incorrect, unhelpful, or incomplete?</h4>
 <p>The 'formdata' event is being used to fire an ajax request.</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="// submit the data via XHR
+<div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="// submit the data via XHR
 var request = new XMLHttpRequest();
 request.open(&quot;POST&quot;, &quot;/formHandler&quot;);
 request.send(data);
