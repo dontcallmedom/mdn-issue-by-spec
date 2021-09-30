@@ -98,8 +98,6 @@
   
 * [[webauthn-3] Content bug: Missing documentation on WebAuthn Level 2 additions](https://github.com/mdn/content/issues/3488) (2021-03-25T09:42:24Z)
   
-* [[css-align-3] The "place-items" demo is confusing and therefore appears broken](https://github.com/mdn/content/issues/3427) (2021-03-24T02:36:56Z)
-  
 * [[resize-observer-1] Document ResizeObserver compat](https://github.com/mdn/content/issues/3276) (2021-03-18T17:24:21Z)
   
 * [[speech-api] Issue with "SpeechSynthesisUtterance.rate": (demo is incomplete)](https://github.com/mdn/content/issues/3013) (2021-03-10T23:00:08Z)

@@ -26,8 +26,6 @@
   
 * [[cssom-view-1] Issue with "Document.elementFromPoint()": Add info about nodes dragged and their position in the DOM tree](https://github.com/mdn/content/issues/3520) (2021-03-26T07:48:07Z)
   
-* [[css-align-3] The "place-items" demo is confusing and therefore appears broken](https://github.com/mdn/content/issues/3427) (2021-03-24T02:36:56Z)
-  
 * [[resize-observer-1] Document ResizeObserver compat](https://github.com/mdn/content/issues/3276) (2021-03-18T17:24:21Z)
   
 * [[css-shadow-parts-1] Issue with "Global attributes": (exportparts link broken)](https://github.com/mdn/content/issues/2753) (2021-02-27T20:24:36Z)
