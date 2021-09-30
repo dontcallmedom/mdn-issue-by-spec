@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Issue with "HTMLImageElement.sizes": Image not found](https://github.com/mdn/content/issues/9354) (2021-09-30T02:15:57Z)
+  
 * [[html] Issue with "<input>: The Input (Form Input) element": (not declares that attributte 'size' is also valid for the url type)](https://github.com/mdn/content/issues/9347) (2021-09-29T19:44:34Z)
   
 * [[html] Issue with "HTMLElement.innerText": wrong innerText output in Result](https://github.com/mdn/content/issues/9326) (2021-09-28T19:57:39Z)
