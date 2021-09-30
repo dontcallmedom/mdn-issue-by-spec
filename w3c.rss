@@ -4,10 +4,31 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Wed, 29 Sep 2021 13:19:57 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 30 Sep 2021 07:19:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[service-workers-1, payment-request, payment-handler] Content bug: inconsistent/incomplete descriptions of Promises as parameters]]></title>
+            <link>https://github.com/mdn/content/issues/9362</link>
+            <guid>https://github.com/mdn/content/issues/9362</guid>
+            <pubDate>Thu, 30 Sep 2021 07:19:46 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
+<p>Compare the descriptions of parameters here:<br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequest/show">https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequest/show</a><br>
+<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequestUpdateEvent/updateWith">https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequestUpdateEvent/updateWith</a></p>
+<h2>What is the problem?</h2>
+<p><code>PaymentRequest</code>'s <code>show()</code> method is documented as taking a promise, while <code>PaymentRequestUpdateEvent</code>'s <code>updateWith()</code> method is documented as taking an object. Actually, the two both accept the same kind of parameter, and because of the way that promises work, one can pass either an object directly or a promise that resolves to an object.</p>
+<h2>What did you expect to see?</h2>
+<p>A consistent style that makes it clear what can be used as the argument.</p>
+<p>Promises as parameters is not very common on the web platform, but there are other cases that also have a mix of styles:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequestEvent/respondWith" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequestEvent/respondWith</a> (also incorrectly says the <code>PaymentResponse</code> interface instead of the <code>PaymentHandlerResponse</code> dictionary)</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ExtendableEvent/waitUntil" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ExtendableEvent/waitUntil</a> (no issue here because the promise can resolve to anything)</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/FetchEvent/respondWith" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FetchEvent/respondWith</a> (correctly says "<code>Response</code> or a <code>Promise</code> that resolves to a <code>Response</code>")</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/compileStreaming" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/compileStreaming</a> (correctly says "<code>Response</code> object or a promise that will fulfill with one")</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[cssom-1] Issue with "CSSRule.type": (short summary here please)]]></title>
             <link>https://github.com/mdn/content/issues/9338</link>

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[service-workers-1, payment-request, payment-handler] Content bug: inconsistent/incomplete descriptions of Promises as parameters](https://github.com/mdn/content/issues/9362) (2021-09-30T07:19:46Z)
+  
 * [[cssom-1] Issue with "CSSRule.type": (short summary here please)](https://github.com/mdn/content/issues/9338) (2021-09-29T13:19:57Z)
   
 * [[uievents] Issue with "Element: keydown event": What generates a KeyboardEvent?](https://github.com/mdn/content/issues/9321) (2021-09-28T15:22:02Z)
