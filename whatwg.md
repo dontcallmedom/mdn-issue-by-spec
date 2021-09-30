@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Issue with "<canvas>: The Graphics Canvas element": Firefox area limit incorrect](https://github.com/mdn/content/issues/9379) (2021-09-30T16:32:42Z)
+  
 * [[html] [WebAPI + HTML] Ship enterkeyhint](https://github.com/mdn/content/issues/9367) (2021-09-30T10:17:21Z)
   
 * [[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] [WebAPI] Implement Element.setHTML(input, sanitizer)](https://github.com/mdn/content/issues/9366) (2021-09-30T10:10:37Z)
