@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] Edit on GitHub and Source on GitHub links broken for some .md converted files](https://github.com/mdn/content/issues/9359) (2021-09-30T06:02:13Z)
-  
 * [[html] Issue with "HTMLImageElement.sizes": Image not found](https://github.com/mdn/content/issues/9354) (2021-09-30T02:15:57Z)
   
 * [[html] Issue with "HTMLElement.innerText": wrong innerText output in Result](https://github.com/mdn/content/issues/9326) (2021-09-28T19:57:39Z)
