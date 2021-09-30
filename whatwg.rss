@@ -20,10 +20,11 @@
 <p>Note that if the XML parser is used and parsing fails, the DOMParser throws an error.</p>
 </blockquote>
 <h4>What did you expect to see?</h4>
-<p><code>parseFromString()</code> doesn't seem to throw on incorrect input. As the <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Parsing_and_serializing_XML" rel="nofollow">Parsing and serializing XML</a> guide shows, it produces a <code>&lt;parsererror&gt;</code> nodes.</p>
+<p><code>parseFromString()</code> doesn't seem to throw on incorrect input. As the <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Parsing_and_serializing_XML" rel="nofollow">Parsing and serializing XML</a> guide shows and the <a href="https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-domparser-parsefromstring-dev" rel="nofollow">HTML Standard</a> corroborates, it should produce a <code>&lt;parsererror&gt;</code> node.</p>
 <h4>Did you test this? If so, how?</h4>
-<div class="highlight highlight-source-js position-relative overflow-auto" data-snippet-clipboard-copy-content="(new DOMParser()).parseFromString('&lt;hello&gt;world', 'text/xml'); 
-"><pre><span class="pl-kos">(</span><span class="pl-k">new</span> <span class="pl-v">DOMParser</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">parseFromString</span><span class="pl-kos">(</span><span class="pl-s">'&lt;hello&gt;world'</span><span class="pl-kos">,</span> <span class="pl-s">'text/xml'</span><span class="pl-kos">)</span><span class="pl-kos">;</span> </pre></div>
+<div class="highlight highlight-source-js position-relative overflow-auto" data-snippet-clipboard-copy-content="(new XMLSerializer()).serializeToString((new DOMParser()).parseFromString('&lt;hello&gt;world', 'text/xml'));
+"><pre><span class="pl-kos">(</span><span class="pl-k">new</span> <span class="pl-v">XMLSerializer</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">serializeToString</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-k">new</span> <span class="pl-v">DOMParser</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">parseFromString</span><span class="pl-kos">(</span><span class="pl-s">'&lt;hello&gt;world'</span><span class="pl-kos">,</span> <span class="pl-s">'text/xml'</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<p>Note that while all tested browsers produced a <code>&lt;parsererror&gt;</code> node, its position is not always the root node, so the <em>Parsing and serializing XML</em> guide should probably updated to reflect that (See output in Safari, Chrome).</p>
 
 <details>
 <summary>MDN Content page report details</summary>
