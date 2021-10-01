@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[uievents] Issue with "MouseEvent.clientX": on mousemove im getting co ordinates only when i click on screen why i dont get it on hovering on screen?](https://github.com/mdn/content/issues/9406) (2021-10-01T07:05:10Z)
+  
 * [[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] [WebAPI] Implement Element.setHTML(input, sanitizer)](https://github.com/mdn/content/issues/9366) (2021-09-30T10:10:37Z)
   
 * [[uievents] Issue with "Element: keydown event": What generates a KeyboardEvent?](https://github.com/mdn/content/issues/9321) (2021-09-28T15:22:02Z)
