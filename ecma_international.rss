@@ -4,10 +4,37 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Thu, 23 Sep 2021 08:59:43 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 01 Oct 2021 23:49:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "Promise": (short summary here please)]]></title>
+            <link>https://github.com/mdn/content/issues/9433</link>
+            <guid>https://github.com/mdn/content/issues/9433</guid>
+            <pubDate>Fri, 01 Oct 2021 23:49:35 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>there is an example about lazy evaluation of functions that is really misleading to read through</p>
+<h4>Specific section or headline?</h4>
+<p>"consider the arrow function with no arguments: f = () =&gt; expression to create the lazily-evaluated expression, and f() to evaluate."</p>
+<h4>What did you expect to see?</h4>
+<p>instead of writing it in such a way that implies something about arrow functions being unique in its ability to lazily evaluate expressions, it should be made clear this is a property of all functions. the way its written makes it seem like its a property of arrow functions themselves instead of any function wrapping an expression.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>this is an example of someone else also being mislead by this same statement<br>
+<a rel="nofollow" href="https://stackoverflow.com/questions/67697014/why-arrow-function-is-used-in-lazy-evaluation-in-javascript">https://stackoverflow.com/questions/67697014/why-arrow-function-is-used-in-lazy-evaluation-in-javascript</a></p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/global_objects/promise</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/promise/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/promise/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2e2631aa9d11718154ca50c2c3cc82074ab34ccd/hovercard" href="https://github.com/mdn/content/commit/2e2631aa9d11718154ca50c2c3cc82074ab34ccd"><tt>2e2631a</tt></a></li>
+<li>Document last modified: 2021-08-31T15:21:54.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Issue with "extends": Need more clear description]]></title>
             <link>https://github.com/mdn/content/issues/9195</link>
