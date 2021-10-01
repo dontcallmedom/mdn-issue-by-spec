@@ -6,8 +6,6 @@
   
 * [[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] [WebAPI] Implement Element.setHTML(input, sanitizer)](https://github.com/mdn/content/issues/9366) (2021-09-30T10:10:37Z)
   
-* [[cssom-1] Issue with "CSSRule.type": (short summary here please)](https://github.com/mdn/content/issues/9338) (2021-09-29T13:19:57Z)
-  
 * [[cssom-view-1, dom, notifications, service-workers-1, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
 * [[css-color-4] List of External Broken Link](https://github.com/mdn/content/issues/8645) (2021-09-04T09:17:13Z)
