@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] How to get ImageData directly from an image?](https://github.com/mdn/content/issues/9412) (2021-10-01T11:01:00Z)
-  
 * [[html] Issue with "<canvas>: The Graphics Canvas element": Firefox area limit incorrect](https://github.com/mdn/content/issues/9379) (2021-09-30T16:32:42Z)
   
 * [[html] [WebAPI + HTML] Ship enterkeyhint](https://github.com/mdn/content/issues/9367) (2021-09-30T10:17:21Z)
