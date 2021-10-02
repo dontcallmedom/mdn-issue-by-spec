@@ -425,7 +425,7 @@ I am aware that this property is inherited from SVGFitToViewBox, but there is no
 </blockquote>
 <p>See <a rel="nofollow" href="https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-attestation">https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-attestation</a> and <a rel="nofollow" href="https://www.w3.org/TR/2021/REC-webauthn-2-20210408//#dom-publickeycredentialcreationoptions-attestation">https://www.w3.org/TR/2021/REC-webauthn-2-20210408//#dom-publickeycredentialcreationoptions-attestation</a></p>
 <p>And AttestationConveyancePreference is defined as:</p>
-<div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="enum AttestationConveyancePreference {
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="enum AttestationConveyancePreference {
     &quot;none&quot;,
     &quot;indirect&quot;,
     &quot;direct&quot;,
@@ -744,7 +744,7 @@ at errorMsg</p>
 <h4>What information was incorrect, unhelpful, or incomplete?</h4>
 <p>If the argument anchorNode/focusNode is a text node, the corresponding offset is the index of the character.</p>
 <h4>Did you test this? If so, how?</h4>
-<div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="var node = document.querySelector('.anything') //select an empty node!
+<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="var node = document.querySelector('.anything') //select an empty node!
 node.textContent = &quot;hello world!&quot;
 var tnode = node.childNodes[0]
 var sel = window.getSelection()
