@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Audio Working Group. [![RSS feed for W3C Audio Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[webaudio] Issue with "AudioContext.suspend()": Example Button Caption is wrong after Stop during Suspend](https://github.com/mdn/content/issues/9451) (2021-10-02T21:55:05Z)
+  
 * [[webaudio] api.AudioContext.createMediaElementSource - does not wok in Safari](https://github.com/mdn/content/issues/9042) (2021-09-17T18:01:03Z)
   
 * [[webaudio] Content bug: AudioListener and attributes need better examples. ](https://github.com/mdn/content/issues/4468) (2021-04-26T03:22:48Z)

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[webaudio] Issue with "AudioContext.suspend()": Example Button Caption is wrong after Stop during Suspend](https://github.com/mdn/content/issues/9451) (2021-10-02T21:55:05Z)
+  
 * [[uievents] Issue with "MouseEvent.clientX": on mousemove im getting co ordinates only when i click on screen why i dont get it on hovering on screen?](https://github.com/mdn/content/issues/9406) (2021-10-01T07:05:10Z)
   
 * [[css-cascade-3] [CSS] Add support for layer() option to @import](https://github.com/mdn/content/issues/9369) (2021-09-30T10:26:53Z)

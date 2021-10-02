@@ -4,10 +4,45 @@
         <title>W3C Audio Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_audio_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Audio Working Group</description>
-        <lastBuildDate>Fri, 17 Sep 2021 18:01:03 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 02 Oct 2021 21:55:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[webaudio] Issue with "AudioContext.suspend()": Example Button Caption is wrong after Stop during Suspend]]></title>
+            <link>https://github.com/mdn/content/issues/9451</link>
+            <guid>https://github.com/mdn/content/issues/9451</guid>
+            <pubDate>Sat, 02 Oct 2021 21:55:05 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/suspend">https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/suspend</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>The example<br>
+<a rel="nofollow" href="https://mdn.github.io/webaudio-examples/audiocontext-states/">https://mdn.github.io/webaudio-examples/audiocontext-states/</a><br>
+has a bug.<br>
+The sequence:<br>
+Create context; Suspend context; Stop context; Create context<br>
+results with the context running and sounding but the suspend/resume button caption remains Resume context.<br>
+FIX: add a line in startBtn.onclick()<br>
+susresBtn.textContent = 'Suspend context';</p>
+<h4>Specific section or headline?</h4>
+<p>Example: see it running live</p>
+<h4>What did you expect to see?</h4>
+<p>The susres button label should always show 'Suspend context' when the context is running</p>
+<h4>Did you test this? If so, how?</h4>
+<p>Yes. I ran the linked example.''<br>
+I made a local fix and tested it.<br>
+I did not make any changes on GitHub.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/api/audiocontext/suspend</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/suspend" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/suspend</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/audiocontext/suspend/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/audiocontext/suspend/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f/hovercard" href="https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f"><tt>2279e5a</tt></a></li>
+<li>Document last modified: 2021-09-14T18:08:09.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[webaudio] api.AudioContext.createMediaElementSource - does not wok in Safari]]></title>
             <link>https://github.com/mdn/content/issues/9042</link>

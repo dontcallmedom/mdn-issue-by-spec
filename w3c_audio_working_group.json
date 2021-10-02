@@ -9,6 +9,17 @@
     },
     "items": [
         {
+            "id": "https://github.com/mdn/content/issues/9451",
+            "content_html": "<p>MDN URL: <a rel=\"nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/suspend\">https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/suspend</a></p>\n<h4>What information was incorrect, unhelpful, or incomplete?</h4>\n<p>The example<br>\n<a rel=\"nofollow\" href=\"https://mdn.github.io/webaudio-examples/audiocontext-states/\">https://mdn.github.io/webaudio-examples/audiocontext-states/</a><br>\nhas a bug.<br>\nThe sequence:<br>\nCreate context; Suspend context; Stop context; Create context<br>\nresults with the context running and sounding but the suspend/resume button caption remains Resume context.<br>\nFIX: add a line in startBtn.onclick()<br>\nsusresBtn.textContent = 'Suspend context';</p>\n<h4>Specific section or headline?</h4>\n<p>Example: see it running live</p>\n<h4>What did you expect to see?</h4>\n<p>The susres button label should always show 'Suspend context' when the context is running</p>\n<h4>Did you test this? If so, how?</h4>\n<p>Yes. I ran the linked example.''<br>\nI made a local fix and tested it.<br>\nI did not make any changes on GitHub.</p>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul>\n<li>Folder: <code>en-us/web/api/audiocontext/suspend</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/suspend\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/suspend</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/api/audiocontext/suspend/index.md\">https://github.com/mdn/content/blob/main/files/en-us/web/api/audiocontext/suspend/index.md</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f/hovercard\" href=\"https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f\"><tt>2279e5a</tt></a></li>\n<li>Document last modified: 2021-09-14T18:08:09.000Z</li>\n</ul>\n</details>",
+            "url": "https://github.com/mdn/content/issues/9451",
+            "title": "[webaudio] Issue with \"AudioContext.suspend()\": Example Button Caption is wrong after Stop during Suspend",
+            "date_modified": "2021-10-02T21:55:05.000Z",
+            "author": {
+                "name": "DrTechDaddy",
+                "url": "https://github.com/DrTechDaddy"
+            }
+        },
+        {
             "id": "https://github.com/mdn/content/issues/9042",
             "content_html": "<p>The example does neither work in Safari 14 / Mojave nor in Safari / iOS 14.8. Is the compatibility table correct anyway?</p>\n\n<details>\n<summary>MDN page report details</summary>\n<ul>\n<li>Query: <code>api.AudioContext.createMediaElementSource</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaElementSource\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaElementSource</a></li>\n<li>Report started: 2021-09-17T17:25:38.880Z</li>\n</ul>\n</details>",
             "url": "https://github.com/mdn/content/issues/9042",
