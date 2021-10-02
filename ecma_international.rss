@@ -4,10 +4,44 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Fri, 01 Oct 2021 23:49:35 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 02 Oct 2021 09:54:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Issue with "Array": Arrays cannot use strings as element indexes?]]></title>
+            <link>https://github.com/mdn/content/issues/9437</link>
+            <guid>https://github.com/mdn/content/issues/9437</guid>
+            <pubDate>Sat, 02 Oct 2021 09:54:38 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<h4>Specific section or headline?</h4>
+<p>Description<br>
+Arrays cannot use strings as element indexes (as in an associative array) but must use integers.</p>
+<h4>What did you expect to see?</h4>
+<p>Not sure. I think I am confusing the low level implementation and my intuitive usage.<br>
+It seems like I can use a string index to access an item in the array.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>arr=["a","b","c","d",]<br>
+arr[0]<br>
+arr["0"]<br>
+arr["1"]="neg"<br>
+arr[1]</p>
+<p>/* further issue */<br>
+the line ' for your particular use, you might consider using typed arrays'<br>
+can you link to  <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays</a> on phrase 'typed arrays'?</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/javascript/reference/global_objects/array</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/array/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/array/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/9e7347af24ffb941643d365fe36c05c3bd21b633/hovercard" href="https://github.com/mdn/content/commit/9e7347af24ffb941643d365fe36c05c3bd21b633"><tt>9e7347a</tt></a></li>
+<li>Document last modified: 2021-09-03T15:24:53.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Issue with "Promise": (short summary here please)]]></title>
             <link>https://github.com/mdn/content/issues/9433</link>
