@@ -196,7 +196,7 @@ or</li>
 <h4>What information was incorrect, unhelpful, or incomplete?</h4>
 <p>If the argument anchorNode/focusNode is a text node, the corresponding offset is the index of the character.</p>
 <h4>Did you test this? If so, how?</h4>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="var node = document.querySelector('.anything') //select an empty node!
+<div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="var node = document.querySelector('.anything') //select an empty node!
 node.textContent = &quot;hello world!&quot;
 var tnode = node.childNodes[0]
 var sel = window.getSelection()
