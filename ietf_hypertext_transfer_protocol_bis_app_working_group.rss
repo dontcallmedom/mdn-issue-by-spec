@@ -4,10 +4,42 @@
         <title>IETF Hypertext Transfer Protocol Bis APP Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ietf_hypertext_transfer_protocol_bis_app_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by IETF Hypertext Transfer Protocol Bis APP Working Group</description>
-        <lastBuildDate>Thu, 30 Sep 2021 19:18:27 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 03 Oct 2021 10:00:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[rfc7231] Issue with "Expect": meet vs fulfill the expectations - use "meet the expectations" consistency issue and make a description simpler]]></title>
+            <link>https://github.com/mdn/content/issues/9460</link>
+            <guid>https://github.com/mdn/content/issues/9460</guid>
+            <pubDate>Sun, 03 Oct 2021 10:00:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expect">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expect</a></p>
+<h4>What information was incorrect, unhelpful, or incomplete?</h4>
+<p>use "meet the expectations" consistency issue and make a description simpler</p>
+<h4>Specific section or headline?</h4>
+<p>The Expect HTTP request header indicates expectations that need to be fulfilled by the server in order to properly handle the request.</p>
+<p>The only expectation defined in the specification is Expect: 100-continue, to which the server shall respond with:<br>
+100 if the information contained in the header is sufficient to cause an immediate success,<br>
+417 (Expectation Failed) if it cannot meet the expectation; or any other 4xx status otherwise.</p>
+<h4>What did you expect to see?</h4>
+<p>The Expect HTTP request header indicates the expectations that need to be met by the server. As a result, the request is successfully processed.</p>
+<p>Upon the "Expect: 100-continue" expectations, the server responds with:<br>
+100 (Expectation Succeeded) - if the information from the header is sufficient to cause immediate success<br>
+417 (Expectation Failed) or any other 4xx status - if the server cannot meet the expectation.</p>
+<h4>Did you test this? If so, how?</h4>
+<p>yes, the specialist should read it and approve if the meaning is not changed, and if no knowledge is lost</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/http/headers/expect</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expect" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expect</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/expect/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/expect/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/46234997b6257b619423a11ce31154afa336143f/hovercard" href="https://github.com/mdn/content/commit/46234997b6257b619423a11ce31154afa336143f"><tt>4623499</tt></a></li>
+<li>Document last modified: 2021-08-13T16:17:49.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[rfc7231] Issue with "Preflight request": preflight/options requests are not cacheable]]></title>
             <link>https://github.com/mdn/content/issues/9385</link>

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by IETF. [![RSS feed for IETF-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[rfc7231] Issue with "Expect": meet vs fulfill the expectations - use "meet the expectations" consistency issue and make a description simpler](https://github.com/mdn/content/issues/9460) (2021-10-03T10:00:11Z)
+  
 * [[rfc7231] Issue with "Preflight request": preflight/options requests are not cacheable](https://github.com/mdn/content/issues/9385) (2021-09-30T19:18:27Z)
   
 * [[rfc7234] Content bug: Explanation for `Cache-Control: no-store, max-age=0`](https://github.com/mdn/content/issues/8668) (2021-09-05T16:01:50Z)
