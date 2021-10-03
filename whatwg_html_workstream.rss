@@ -4,10 +4,49 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Thu, 30 Sep 2021 16:32:42 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 03 Oct 2021 15:26:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Issue with "<track>: The Embed Text Track element": crossorigin attribute required even when track source is on the same website as video source]]></title>
+            <link>https://github.com/mdn/content/issues/9526</link>
+            <guid>https://github.com/mdn/content/issues/9526</guid>
+            <pubDate>Sun, 03 Oct 2021 15:26:07 GMT</pubDate>
+            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track</a></p>
+<p>This page does not discuss the "Security Error" raised by Mozilla Firefox  (e.g. version 92.0.1)<br>
+about loading the WEBVTT file - whether its URL is local or absolute.</p>
+<p>I would expect to see information on any potential security issues with the <code>&lt;track&gt;</code>  tag and how to avoid them.</p>
+<p>Tested in codepen.io and with <code>file:///</code> the following code:</p>
+<div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;video controls src=&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/moonwalk.480p.h264.mp4&quot;&gt;
+  
+  &lt;track src=&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/moonwalk.vtt&quot;
+         kind=&quot;captions&quot;
+         label=&quot;English&quot;
+         srclang=&quot;en&quot;
+         default&gt;
+&lt;/video&gt;
+"><pre><code>&lt;video controls src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/moonwalk.480p.h264.mp4"&gt;
+  
+  &lt;track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/moonwalk.vtt"
+         kind="captions"
+         label="English"
+         srclang="en"
+         default&gt;
+&lt;/video&gt;
+</code></pre></div>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul>
+<li>Folder: <code>en-us/web/html/element/track</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/track/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/track/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/bbaf3676373af6f6ce9817141d25fbf7ba88ef8d/hovercard" href="https://github.com/mdn/content/commit/bbaf3676373af6f6ce9817141d25fbf7ba88ef8d"><tt>bbaf367</tt></a></li>
+<li>Document last modified: 2021-09-29T14:51:58.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Issue with "<canvas>: The Graphics Canvas element": Firefox area limit incorrect]]></title>
             <link>https://github.com/mdn/content/issues/9379</link>
