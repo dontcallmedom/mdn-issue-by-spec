@@ -4,10 +4,184 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Sun, 03 Oct 2021 07:30:52 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 03 Oct 2021 07:38:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[WebIDL-1] Fix `InvalidStateException` exceptions]]></title>
+            <link>https://github.com/mdn/content/issues/9456</link>
+            <guid>https://github.com/mdn/content/issues/9456</guid>
+            <pubDate>Sun, 03 Oct 2021 07:38:57 GMT</pubDate>
+            <content:encoded><![CDATA[<p>The way we described <a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMException" rel="nofollow">DOM Exceptions</a> is inconsistent.</p>
+<p>Some pages use tables, some pages use lists. Also, we want to indicate that these <code>InvalidStateException</code>are <code>DOMException</code> object of a given type.</p>
+<p>The right way of doing this is to have an <em>Exceptions</em> paragraph with a <code>&lt;dl&gt;</code> list, like this:</p>
+<div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="### Exceptions
+- `NotSupportedError` {{domxref(&quot;DOMException&quot;)}}
+  - : Thrown if …
+"><pre><code>### Exceptions
+- `NotSupportedError` {{domxref("DOMException")}}
+  - : Thrown if …
+</code></pre></div>
+<p>The goal here is to go through the list of pages below and, for each of them, to be sure that the exception section is in the adequate format. If the <code>InvalidStateException</code> is inside the text, make sure that it is followed by <code>{{domxref("DOMException")}}</code> so the reader is aware of it.</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/sourcebuffer/remove/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/pannernode/pannernode/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/pannernode/coneoutergain/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/xrsession/requestlightprobe/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/xrsession/requesthittestsource/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/xrsession/updaterenderstate/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/xrsession/requesthittestsourcefortransientinput/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/mediarecorder/pause/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/mediarecorder/onerror/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/mediarecorder/start/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/audioencoder/encode/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/audioencoder/configure/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/audioencoder/flush/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/paymentrequest/show/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/xrwebglbinding/getdepthinformation/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/xrwebglbinding/xrwebglbinding/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbrequest/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbrequest/error/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbrequest/result/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbdatabase/transaction/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbdatabase/deleteobjectstore/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbdatabase/createobjectstore/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/imagedecoder/decode/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/channelmergernode/channelmergernode/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/datatransferitemlist/remove/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/canvasrenderingcontext2d/putimagedata/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/rtcpeerconnection/setremotedescription/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/audiodecoder/decode/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/audiodecoder/configure/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/audiodecoder/flush/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/rtcpeerconnection/createdatachannel/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/rtcpeerconnection/addicecandidate/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/rtcpeerconnection/removetrack/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/rtcpeerconnection/createoffer/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/rtcpeerconnection/addtrack/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/rtcpeerconnection/addstream/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/rtcpeerconnection/setconfiguration/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/htmlinputelement/stepup/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/htmlinputelement/stepdown/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/audiobuffersourcenode/start/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/mediastreamaudiosourcenode/mediastreamaudiosourcenode/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/mediastreamaudiosourcenode/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/rtcpeerconnection/setlocaldescription/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/rtcpeerconnection/setidentityprovider/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/rtcpeerconnection/removestream/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/serialport/open/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/serialport/setsignals/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/serialport/getsignals/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/mediarecordererrorevent/error/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/dommatrixreadonly/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbindex/opencursor/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbindex/get/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbindex/getkey/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbindex/openkeycursor/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbindex/name/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbindex/getall/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbindex/count/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbindex/getallkeys/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/offlineaudiocontext/suspend/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/offlineaudiocontext/resume/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/mediasource/addsourcebuffer/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/mediasource/duration/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/mediasource/endofstream/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/xrsystem/requestsession/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/oscillatornode/type/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/sourcebuffer/trackdefaults/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/sourcebuffer/appendwindowstart/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/sourcebuffer/appendwindowend/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/sourcebuffer/changetype/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/sourcebuffer/timestampoffset/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/sourcebuffer/mode/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/sourcebuffer/abort/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbtransaction/commit/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbtransaction/objectstore/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbtransaction/abort/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/remoteplayback/watchavailability/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/remoteplayback/prompt/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/remoteplayback/cancelwatchavailability/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/fetchevent/respondwith/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/rtcrtpsender/setstreams/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/rtcrtpsender/setparameters/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/rtcrtpsender/replacetrack/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/baseaudiocontext/createiirfilter/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/filesystemwritablefilestream/write/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/mediastreamtrackaudiosourcenode/mediastreamtrackaudiosourcenode/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/rtcdatachannel/send/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/cssstylesheet/insertrule/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/element/attachshadow/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/domerror/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/contactsmanager/select/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/cssgroupingrule/insertrule/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/cssgroupingrule/deleterule/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/xrframe/getviewerpose/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/xrframe/getdepthinformation/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/animation/pause/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/periodicsyncmanager/register/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/domexception/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/backgroundfetchupdateuievent/updateui/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/extendableevent/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/xmlhttprequest/responsetext/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/xmlhttprequest/send/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/xmlhttprequest/responsexml/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/rtcdtmfsender/insertdtmf/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbcursor/continue/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/rtcrtptransceiver/direction/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/rtcrtptransceiver/stop/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/hiddevice/open/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/audioparam/setvaluecurveattime/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/webglrenderingcontext/makexrcompatible/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/xrwebgllayer/getviewport/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/xrwebgllayer/xrwebgllayer/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbcursor/continueprimarykey/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbcursor/advance/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbcursor/delete/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbcursor/update/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/ndefreader/scan/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/htmldialogelement/showmodal/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/audiodata/clone/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/audiodata/copyto/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/paymentresponse/complete/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/texttrack/addcue/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/videoencoder/configure/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/videoencoder/encode/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/videoencoder/flush/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/webrtc_api/perfect_negotiation/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/mediadevices/selectaudiooutput/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/mediadevices/getdisplaymedia/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/videoframe/clone/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/midioutput/send/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/backgroundfetchregistration/matchall/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbobjectstore/openkeycursor/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbobjectstore/opencursor/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbobjectstore/getkey/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbobjectstore/getall/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbobjectstore/get/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbobjectstore/deleteindex/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbobjectstore/name/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbobjectstore/index/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbobjectstore/createindex/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbobjectstore/count/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbobjectstore/add/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbobjectstore/getallkeys/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbobjectstore/put/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/idbobjectstore/delete/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/backgroundfetchregistration/match/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/xmlserializer/serializetostring/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/videodecoder/decode/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/videodecoder/configure/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/videodecoder/flush/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/xrmediabinding/xrmediabinding/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/web/api/merchantvalidationevent/complete/index.md</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/mozilla/firefox/releases/43/index.html</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> files/en-us/mozilla/firefox/releases/69/index.html</li>
+</ul>
+<p>If you want to work on this, and are not used to the format, feel free to make a PR for one of the files, and we'll review it. Also, you don't need to do 1 big PR but can break this down in pieces (although, here, larger PRs are easier to review).</p>
+<p>Thanks a lot for any help here.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[WebIDL-1] Fix `NotSupportedError` exceptions]]></title>
             <link>https://github.com/mdn/content/issues/9455</link>

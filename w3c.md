@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[WebIDL-1] Fix `InvalidStateException` exceptions](https://github.com/mdn/content/issues/9456) (2021-10-03T07:38:57Z)
+  
 * [[WebIDL-1] Fix `NotSupportedError` exceptions](https://github.com/mdn/content/issues/9455) (2021-10-03T07:30:52Z)
   
 * [[webaudio] Issue with "AudioContext.suspend()": Example Button Caption is wrong after Stop during Suspend](https://github.com/mdn/content/issues/9451) (2021-10-02T21:55:05Z)
