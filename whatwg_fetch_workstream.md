@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG Fetch Workstream. [![RSS feed for WHATWG Fetch Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[fetch] Issue with "Access-Control-Allow-Credentials": (short summary here please)](https://github.com/mdn/content/issues/9453) (2021-10-03T03:56:57Z)
+  
 * [[fetch] Issue with "WindowOrWorkerGlobalScope.fetch()": Incomplete description for `TypeError` ](https://github.com/mdn/content/issues/5545) (2021-06-01T14:47:27Z)
   
 * [[fetch] Content suggestion: Document Headers.forEach()](https://github.com/mdn/content/issues/3937) (2021-04-08T10:01:22Z)
