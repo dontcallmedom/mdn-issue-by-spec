@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-sizing-4] CSS aspect-ratio needs better examples](https://github.com/mdn/content/issues/9543) (2021-10-04T00:01:11Z)
+  
 * [[css-cascade-3] [CSS] Add support for layer() option to @import](https://github.com/mdn/content/issues/9369) (2021-09-30T10:26:53Z)
   
 * [[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] [WebAPI] Implement Element.setHTML(input, sanitizer)](https://github.com/mdn/content/issues/9366) (2021-09-30T10:10:37Z)
