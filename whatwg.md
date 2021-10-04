@@ -12,8 +12,6 @@
   
 * [[html] Issue with "<canvas>: The Graphics Canvas element": Firefox area limit incorrect](https://github.com/mdn/content/issues/9379) (2021-09-30T16:32:42Z)
   
-* [[html] [WebAPI + HTML] Ship enterkeyhint](https://github.com/mdn/content/issues/9367) (2021-09-30T10:17:21Z)
-  
 * [[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] [WebAPI] Implement Element.setHTML(input, sanitizer)](https://github.com/mdn/content/issues/9366) (2021-09-30T10:10:37Z)
   
 * [[html] Issue with "HTMLImageElement.sizes": Image not found](https://github.com/mdn/content/issues/9354) (2021-09-30T02:15:57Z)
