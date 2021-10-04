@@ -4,10 +4,38 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Sun, 03 Oct 2021 15:26:07 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 04 Oct 2021 04:10:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Content bug: HTMLElement: input event, definition not consistent with spec]]></title>
+            <link>https://github.com/mdn/content/issues/9548</link>
+            <guid>https://github.com/mdn/content/issues/9548</guid>
+            <pubDate>Mon, 04 Oct 2021 04:10:01 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
+<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event">https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event</a></p>
+<h2>Specific page section or heading?</h2>
+<p>The first sentence:</p>
+<blockquote>
+<p>The input event fires when the value of an <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, or <code>&lt;textarea&gt;</code> element has been changed.</p>
+</blockquote>
+<p>And later:</p>
+<blockquote>
+<p>Note: The input event is fired every time the value of the element changes....</p>
+</blockquote>
+<h2>What is the problem?</h2>
+<p>The germane HTML specification is at: <a rel="nofollow" href="https://html.spec.whatwg.org/multipage/indices.html#event-input-input">https://html.spec.whatwg.org/multipage/indices.html#event-input-input</a>, defining this event as:</p>
+<blockquote>
+<p>Fired at controls when the user changes the value (see also the change event).</p>
+</blockquote>
+<p>But the definition on MDN is more expansive, removing the qualification that changes must be initiated by the user.</p>
+<p>For the avoidance of doubt, we are here discussing whether some non-user-initiated change should fire the <code>input</code> event.</p>
+<h2>What did you expect to see?</h2>
+<p>It is very possible that MDN is right and this is a mistake in the HTML spec. If so the spec should be updated. But also the MDN page should recognize and explain this difference until it is fixed upstream.</p>
+<h2>Did you test this? If so, how?</h2>
+<p>No</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Issue with "<track>: The Embed Text Track element": crossorigin attribute required even when track source is on the same website as video source]]></title>
             <link>https://github.com/mdn/content/issues/9526</link>

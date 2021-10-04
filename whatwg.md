@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Content bug: HTMLElement: input event, definition not consistent with spec](https://github.com/mdn/content/issues/9548) (2021-10-04T04:10:01Z)
+  
 * [[html] Issue with "<track>: The Embed Text Track element": crossorigin attribute required even when track source is on the same website as video source](https://github.com/mdn/content/issues/9526) (2021-10-03T15:26:07Z)
   
 * [[fetch] Issue with "Access-Control-Allow-Credentials": (short summary here please)](https://github.com/mdn/content/issues/9453) (2021-10-03T03:56:57Z)
