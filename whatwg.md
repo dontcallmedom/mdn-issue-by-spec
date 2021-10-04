@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Issue with "<input type="number">": add hint to inputmode](https://github.com/mdn/content/issues/9554) (2021-10-04T12:30:22Z)
+  
 * [[html] Issue with "Document: drag event": mobile chrome supports drag & drop now.](https://github.com/mdn/content/issues/9553) (2021-10-04T11:18:29Z)
   
 * [[html] Content bug: HTMLElement: input event, definition not consistent with spec](https://github.com/mdn/content/issues/9548) (2021-10-04T04:10:01Z)
