@@ -16,8 +16,6 @@
   
 * [[css-animations-2] Missing a 'multiple' example](https://github.com/mdn/content/issues/19852) (2022-08-23T01:32:57Z)
   
-* [[css-contain-2] [CSS] Add details for contain: inline-size value](https://github.com/mdn/content/issues/19831) (2022-08-22T09:57:41Z)
-  
 * [[cssom-view-1, html] [GEH] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
   
 * [[uievents] Event references should list bubbles, cancelable, and composed values](https://github.com/mdn/content/issues/19590) (2022-08-15T13:38:07Z)
