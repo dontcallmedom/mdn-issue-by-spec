@@ -30,8 +30,6 @@
   
 * [[html, dom] "Introduction to events" article contains inaccurate/misleading statements](https://github.com/mdn/content/issues/17771) (2022-06-29T14:25:27Z)
   
-* [[fetch] Few missing request options.](https://github.com/mdn/content/issues/17560) (2022-06-22T20:54:58Z)
-  
 * [[html] Confusing documentation on textarea value attribute](https://github.com/mdn/content/issues/17294) (2022-06-15T00:09:17Z)
   
 * [[fetch] Incorrect or outdated information at fetch() and Fetch API pages](https://github.com/mdn/content/issues/17115) (2022-06-08T21:48:36Z)
