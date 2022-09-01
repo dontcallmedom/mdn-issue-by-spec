@@ -4,23 +4,117 @@
         <title>Khronos Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/khronos_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Khronos Group</description>
-        <lastBuildDate>Mon, 26 Jul 2021 07:39:35 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 16 Aug 2022 03:37:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[webgl2] WebGL2RenderingContext»texSubImage3D page: List of valid "format" parameter values does not match WebGL2 spec]]></title>
+            <link>https://github.com/mdn/content/issues/19610</link>
+            <guid>https://github.com/mdn/content/issues/19610</guid>
+            <pubDate>Tue, 16 Aug 2022 03:37:51 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/texSubImage3D" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/texSubImage3D</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Parameters</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The "Parameters" section of the <code class="notranslate">WebGL2RenderingContext.texSubImage3D()</code> documentation appears to list values that do not agree with the documentation provided by Khronos. They also do not seem to agree with the values linked via the "WebGL 2.0 Specification 3.7.6" link under the "Specifications" section.</p>
+<p dir="auto">For example, Tables 1 &amp; 2 of the <code class="notranslate">glTexImage3D()</code> method (indicated as the authoritative source of information regarding the legal combinations of the <code class="notranslate">format</code> and <code class="notranslate">type</code> parameters for WebGL2's <code class="notranslate">texSubImage3D()</code> method) include <code class="notranslate">format</code> values of e.g. <code class="notranslate">GL_RED</code> and <code class="notranslate">GL_RED_INTEGER</code> that are not listed in the MDN documentation for this method.</p>
+<p dir="auto">Furthermore, the MDN documentation claims that <code class="notranslate">gl.R8</code>, <code class="notranslate">gl.R16F</code>, <code class="notranslate">gl.R32F</code> etc are valid <code class="notranslate">format</code> parameters - but these values are <em>not</em> listed as valid <code class="notranslate">format</code> parameters by Khronos. Indeed, trying to use <code class="notranslate">gl.R8</code> as a <code class="notranslate">format</code> parameter with a <code class="notranslate">type</code> parameter of <code class="notranslate">gl.UNSIGNED_BYTE</code> and <code class="notranslate">uint8</code> source data produced the following error in Chrome:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="WebGL: INVALID_ENUM: texSubImage3D: invalid format"><pre class="notranslate"><code>WebGL: INVALID_ENUM: texSubImage3D: invalid format
+</code></pre></div>
+<p dir="auto">... but using <code class="notranslate">gl.RED_INTEGER</code> (as per the Khronos specifications) fixed that error message.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Values for <code class="notranslate">format</code> that agree with the Khronos documentation for this method.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Khronos documentation for <code class="notranslate">texSubImage3D</code> : <a href="https://registry.khronos.org/webgl/specs/latest/2.0/#3.7.6" rel="nofollow">https://registry.khronos.org/webgl/specs/latest/2.0/#3.7.6</a></p>
+<p dir="auto">The documentation above links to the Khronos documentation for Tables 1 &amp; 2 of the <code class="notranslate">glTexImage3D()</code> documentation:</p>
+<p dir="auto"><a href="https://registry.khronos.org/OpenGL-Refpages/es3.0/html/glTexImage3D.xhtml" rel="nofollow">https://registry.khronos.org/OpenGL-Refpages/es3.0/html/glTexImage3D.xhtml</a></p>
+<p dir="auto">These tables contain the "valid" values (and their combinations) for the <code class="notranslate">format</code> and <code class="notranslate">type</code> parameters of <code class="notranslate">texSubImage3D()</code>.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/webgl2renderingcontext/texsubimage3d</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/texSubImage3D" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/texSubImage3D</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/texsubimage3d/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/texsubimage3d/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/3381c87b92394ef5c68b72d40367d93c796e0870/hovercard" href="https://github.com/mdn/content/commit/3381c87b92394ef5c68b72d40367d93c796e0870"><tt>3381c87</tt></a></li>
+<li>Document last modified: 2022-07-28T09:27:35.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[OES_standard_derivatives] Issue with "OES_standard_derivatives": missing function explanation ]]></title>
+            <link>https://github.com/mdn/content/issues/14715</link>
+            <guid>https://github.com/mdn/content/issues/14715</guid>
+            <pubDate>Tue, 05 Apr 2022 16:44:46 GMT</pubDate>
+            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/OES_standard_derivatives" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/OES_standard_derivatives</a></p>
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">the page introduced 3 functions without saying anything about what those functions do</p>
+<h4 dir="auto">Specific section or headline?</h4>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/OES_standard_derivatives#glsl_built-in_functions" rel="nofollow">GLSL built-in functions</a></p>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">The functions should be explained</p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/oes_standard_derivatives</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/OES_standard_derivatives" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/OES_standard_derivatives</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/oes_standard_derivatives/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/oes_standard_derivatives/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/93ae23dec42bba9d71d6f1ed45668d8d26847e9c/hovercard" href="https://github.com/mdn/content/commit/93ae23dec42bba9d71d6f1ed45668d8d26847e9c"><tt>93ae23d</tt></a></li>
+<li>Document last modified: 2022-02-18T09:26:54.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webgl1] Content bug: vertexAttribPointer: missing WebGL 2 types]]></title>
+            <link>https://github.com/mdn/content/issues/10975</link>
+            <guid>https://github.com/mdn/content/issues/10975</guid>
+            <pubDate>Sun, 05 Dec 2021 05:53:16 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 dir="auto">What page(s) did you find the problem on?</h2>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer</a></p>
+<h2 dir="auto">Specific page section or heading?</h2>
+<p dir="auto">Syntax &gt; Parameters &gt; type</p>
+<h2 dir="auto">What is the problem?</h2>
+<p dir="auto">Only the <code class="notranslate">HALF_FLOAT</code> type is noted to be added by WebGL 2</p>
+<blockquote>
+<p dir="auto">When using a WebGL 2 context, the following values are available additionally:</p>
+<ul dir="auto">
+<li><code class="notranslate">gl.HALF_FLOAT</code>: 16-bit IEEE floating point number</li>
+</ul>
+</blockquote>
+<p dir="auto">However if you compare the ES 3.0 docs to the ES 2.0 ones, there are actually several more that were added:</p>
+<ul dir="auto">
+<li><code class="notranslate">gl.INT</code></li>
+<li><code class="notranslate">gl.UNSIGNED_INT</code></li>
+<li><code class="notranslate">gl.INT_2_10_10_10_REV</code></li>
+<li><code class="notranslate">gl.UNSIGNED_INT_2_10_10_10_REV</code></li>
+</ul>
+<p dir="auto">ES 2.0 : <a href="https://www.khronos.org/registry/OpenGL-Refpages/es2.0/xhtml/glVertexAttribPointer.xml" rel="nofollow">https://www.khronos.org/registry/OpenGL-Refpages/es2.0/xhtml/glVertexAttribPointer.xml</a><br>
+ES 3.0 : <a href="https://www.khronos.org/registry/OpenGL-Refpages/es3.0/html/glVertexAttribPointer.xhtml" rel="nofollow">https://www.khronos.org/registry/OpenGL-Refpages/es3.0/html/glVertexAttribPointer.xhtml</a></p>
+<h2 dir="auto">What did you expect to see?</h2>
+<p dir="auto">AFAIK, the types allowed in WebGL 2 should reflect the ES 3.0 docs (except <code class="notranslate">FIXED</code>).</p>
+<h2 dir="auto">Did you test this? If so, how?</h2>
+<p dir="auto">I tested on Firefox 91/Linux. All of the types listed above did work. <a href="https://jsfiddle.net/L5npqrzu/" rel="nofollow">Here</a> is a quick test with <code class="notranslate">gl.INT_2_10_10_10_REV</code> (you should see a rotating square).</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[OVR_multiview2] WebXR guide material tracking issue]]></title>
             <link>https://github.com/mdn/content/issues/7276</link>
             <guid>https://github.com/mdn/content/issues/7276</guid>
             <pubDate>Mon, 26 Jul 2021 07:39:35 GMT</pubDate>
-            <content:encoded><![CDATA[<p>(updated given Dominic's comment and more own thoughts)</p>
-<p>Filing this bug to collect what kind of guide/tutorial content is missing in the WebXR docs. Planning to share this with subject matter experts and hopefully get some help with completing these pages</p>
-<h2>Landing pages</h2>
+            <content:encoded><![CDATA[<p dir="auto">(updated given Dominic's comment and more own thoughts)</p>
+<p dir="auto">Filing this bug to collect what kind of guide/tutorial content is missing in the WebXR docs. Planning to share this with subject matter experts and hopefully get some help with completing these pages</p>
+<h2 dir="auto">Landing pages</h2>
 <ul class="contains-task-list">
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Brush up the <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics" rel="nofollow">MDN graphics landing page</a> to be more useful and to talk about WebXR</li>
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Organize the <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API" rel="nofollow">WebXR Device API</a> landing page better (list the interfaces more efficiently, put more focus on the tutorials)</li>
 </ul>
-<h2>Existing tutorials</h2>
+<h2 dir="auto">Existing tutorials</h2>
 <ul class="contains-task-list">
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API/Fundamentals" rel="nofollow">Fundamentals of WebXR</a> (to proof read to and get rid of "draft" banner)</li>
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API/Lifecycle" rel="nofollow">WebXR application lifecycle</a> (to complete)</li>
@@ -34,13 +128,13 @@
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API/Movement_and_motion" rel="nofollow">Movement, orientation, and motion </a>(to proofread)</li>
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API/Targeting" rel="nofollow">Targeting and Hit detection</a> (to be completed, talk about Hit Testing Module)</li>
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API/Performance" rel="nofollow">WebXR performance guide</a> (to be completed)
-<ul>
+<ul dir="auto">
 <li>Talk about foveate rendering (rendering more cheaply at lower resolution in the periphery of the view), refresh rates (there's <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API/Rendering#refresh_rate_and_frame_rate" rel="nofollow">some documentation here</a> but I don't think it covers requesting low and high refresh rates, <a href="https://github.com/immersive-web/webxr/issues/963" data-hovercard-type="issue" data-hovercard-url="/immersive-web/webxr/issues/963/hovercard">the refresh rate API,</a> and what to do in practice to monitor and manage refresh rate), <a href="https://developer.mozilla.org/en-US/docs/Web/API/OVR_multiview2" rel="nofollow">multiview.</a></li>
 </ul>
 </li>
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API/Permissions_and_security" rel="nofollow">WebXR permissions and security</a> (to complete; MDN still needs to document the Permission-Policy header, still documents this as Feature-Policy -&gt; side project; talk about secure origin requirement)</li>
 </ul>
-<h2>New tutorials to write</h2>
+<h2 dir="auto">New tutorials to write</h2>
 <ul class="contains-task-list">
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Using WebXR input profiles. Cover Hands Input profile</li>
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Gamecontroller (Gamepad API) in WebXR</li>
@@ -51,81 +145,19 @@
 </ul>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[webgl2] Issue with "WebGL2RenderingContext.getBufferSubData()": Argument 3 does not implement interface ArrayBufferView]]></title>
-            <link>https://github.com/mdn/content/issues/4539</link>
-            <guid>https://github.com/mdn/content/issues/4539</guid>
-            <pubDate>Wed, 28 Apr 2021 05:05:07 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>The <code>dstData</code> argument of type <code>ArrayBuffer</code> doesn't work and results in this error:</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="Uncaught TypeError: WebGL2RenderingContext.getBufferSubData: Argument 3 does not implement interface ArrayBufferView.
-"><pre><code>Uncaught TypeError: WebGL2RenderingContext.getBufferSubData: Argument 3 does not implement interface ArrayBufferView.
-</code></pre></div>
-<h4>Specific section or headline?</h4>
-<p>Parameters and Examples</p>
-<h4>What did you expect to see?</h4>
-<p>Data from the buffer</p>
-<h4>Did you test this? If so, how?</h4>
-<p>Example code:</p>
-<div class="snippet-clipboard-content position-relative" data-snippet-clipboard-copy-content="let canvas = document.createElement(&quot;canvas&quot;);
-let gl = canvas.getContext(&quot;webgl2&quot;);
-let position_buffer = gl.createBuffer();
-gl.bindBuffer(gl.ARRAY_BUFFER, position_buffer);
-let positions = [
-    -1.0, 1.0, 0.0,
-    1.0, 1.0, 0.0,
-    -1.0, -1.0, 0.0,
-    1.0, -1.0, 0.0,
-    1.0, 1.0, 0.0,
-    -1.0, -1.0, 0.0
-];
-gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(positions), gl.STATIC_DRAW);
-
-let arrBuffer = new ArrayBuffer(positions.length * Float32Array.BYTES_PER_ELEMENT);
-gl.getBufferSubData(gl.ARRAY_BUFFER, 0, arrBuffer);
-"><pre><code>let canvas = document.createElement("canvas");
-let gl = canvas.getContext("webgl2");
-let position_buffer = gl.createBuffer();
-gl.bindBuffer(gl.ARRAY_BUFFER, position_buffer);
-let positions = [
-    -1.0, 1.0, 0.0,
-    1.0, 1.0, 0.0,
-    -1.0, -1.0, 0.0,
-    1.0, -1.0, 0.0,
-    1.0, 1.0, 0.0,
-    -1.0, -1.0, 0.0
-];
-gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(positions), gl.STATIC_DRAW);
-
-let arrBuffer = new ArrayBuffer(positions.length * Float32Array.BYTES_PER_ELEMENT);
-gl.getBufferSubData(gl.ARRAY_BUFFER, 0, arrBuffer);
-</code></pre></div>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/webgl2renderingcontext/getbuffersubdata</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/getbuffersubdata/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/getbuffersubdata/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/63c69f3c933acbea9bfb24d359a7d2ffdb3c0bea/hovercard" href="https://github.com/mdn/content/commit/63c69f3c933acbea9bfb24d359a7d2ffdb3c0bea"><tt>63c69f3</tt></a></li>
-<li>Document last modified: 2021-02-19T19:51:22.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[webgl1, webgl2] https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bindFramebuffer]]></title>
             <link>https://github.com/mdn/content/issues/1578</link>
             <guid>https://github.com/mdn/content/issues/1578</guid>
             <pubDate>Wed, 12 Aug 2020 15:26:43 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>Request type</h1>
+            <content:encoded><![CDATA[<h1 dir="auto">Request type</h1>
 
 <ul class="contains-task-list">
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Please close this issue, I accidentally submitted it without adding any details</li>
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> New documentation</li>
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Correction or update</li>
 </ul>
-<h1>Details</h1>
-<p>The documentation page for <code>gl.bindFramebuffer</code> (<a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bindFramebuffer" rel="nofollow">here</a>) does not make it clear that in order to bind the default framebuffer (to render to the screen), you would do <code>gl.bindFramebuffer(gl.FRAMEBUFFER, null)</code>. This is an important use case of this function, and it should be documented.</p>]]></content:encoded>
+<h1 dir="auto">Details</h1>
+<p dir="auto">The documentation page for <code class="notranslate">gl.bindFramebuffer</code> (<a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bindFramebuffer" rel="nofollow">here</a>) does not make it clear that in order to bind the default framebuffer (to render to the screen), you would do <code class="notranslate">gl.bindFramebuffer(gl.FRAMEBUFFER, null)</code>. This is an important use case of this function, and it should be documented.</p>]]></content:encoded>
         </item>
     </channel>
 </rss>

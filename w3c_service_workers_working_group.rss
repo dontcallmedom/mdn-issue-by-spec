@@ -4,29 +4,91 @@
         <title>W3C Service Workers Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_service_workers_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Service Workers Working Group</description>
-        <lastBuildDate>Thu, 30 Sep 2021 07:19:46 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 16 Nov 2021 20:28:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[service-workers-1] Issue with "Client.postMessage()": Page does not give a full code example, or enough context to create one]]></title>
+            <link>https://github.com/mdn/content/issues/10573</link>
+            <guid>https://github.com/mdn/content/issues/10573</guid>
+            <pubDate>Tue, 16 Nov 2021 20:28:09 GMT</pubDate>
+            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Client/postMessage" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Client/postMessage</a></p>
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">When providing an example of how to get a client from an eventId, there is not enough context to know where the <code class="notranslate">clients</code> variable comes from, and it takes another scroll through the docs or another google search to be able to paint the whole picture.</p>
+<h4 dir="auto">Specific section or headline?</h4>
+<p dir="auto">Examples</p>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">I would have expected an example that shows the user one or more of the following:<br>
+a) How to match all clients, or a specific client (not necessarily explaining the code, but to give a full example)<br>
+b) The main article about getting a client or a list of clients from a servicer worker.</p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/client/postmessage</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Client/postMessage" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Client/postMessage</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/client/postmessage/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/client/postmessage/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f/hovercard" href="https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f"><tt>2279e5a</tt></a></li>
+<li>Document last modified: 2021-09-14T18:08:09.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[service-workers-1] Issue with "ServiceWorkerContainer.register()": Second example unclear on intent]]></title>
+            <link>https://github.com/mdn/content/issues/10547</link>
+            <guid>https://github.com/mdn/content/issues/10547</guid>
+            <pubDate>Mon, 15 Nov 2021 14:17:23 GMT</pubDate>
+            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register</a></p>
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">It's unclear if second example is meant to show invalid usage or not</p>
+<h4 dir="auto">Specific section or headline?</h4>
+<blockquote>
+<p dir="auto">Alternatively, if this code were included in a page at example.com/product/description.html, with the Javascript file residing at example.com/product/sw.js, then the service worker would only apply to resources under example.com/product.</p>
+<p dir="auto">if ('serviceWorker' in navigator) {<br>
+// declaring scope manually<br>
+navigator.serviceWorker.register('/sw.js', {scope: './'}).then(function(registration) {</p>
+</blockquote>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">The text talks about sw.js residing in <code class="notranslate">example.com/product/sw.js</code>, however example uses <code class="notranslate">/sw.js</code> which is <code class="notranslate">It is relative to the base URL of the application</code>, meaning in this case <code class="notranslate">example.com/sw.js</code>.</p>
+<p dir="auto">So either the text or the example is wrong, maybe something like this would be more clear / correct?</p>
+<blockquote>
+<p dir="auto">Alternatively, if this code were included in a page at example.com/product/description.html, with the Javascript file residing at example.com/sw.js, then the following example shows how to limit scope to example.com/product by using relative scope.</p>
+<p dir="auto">if ('serviceWorker' in navigator) {<br>
+// declaring scope manually, relative to current URI scope<br>
+navigator.serviceWorker.register('/sw.js', {scope: './'}).then(function(registration) {</p>
+</blockquote>
+<details>
+<summary>MDN Content page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/serviceworkercontainer/register</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkercontainer/register/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkercontainer/register/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f/hovercard" href="https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f"><tt>2279e5a</tt></a></li>
+<li>Document last modified: 2021-09-14T18:08:09.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[service-workers-1, payment-request, payment-handler] Content bug: inconsistent/incomplete descriptions of Promises as parameters]]></title>
             <link>https://github.com/mdn/content/issues/9362</link>
             <guid>https://github.com/mdn/content/issues/9362</guid>
             <pubDate>Thu, 30 Sep 2021 07:19:46 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
-<p>Compare the descriptions of parameters here:<br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequest/show">https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequest/show</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequestUpdateEvent/updateWith">https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequestUpdateEvent/updateWith</a></p>
-<h2>What is the problem?</h2>
-<p><code>PaymentRequest</code>'s <code>show()</code> method is documented as taking a promise, while <code>PaymentRequestUpdateEvent</code>'s <code>updateWith()</code> method is documented as taking an object. Actually, the two both accept the same kind of parameter, and because of the way that promises work, one can pass either an object directly or a promise that resolves to an object.</p>
-<h2>What did you expect to see?</h2>
-<p>A consistent style that makes it clear what can be used as the argument.</p>
-<p>Promises as parameters is not very common on the web platform, but there are other cases that also have a mix of styles:</p>
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequestEvent/respondWith" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequestEvent/respondWith</a> (also incorrectly says the <code>PaymentResponse</code> interface instead of the <code>PaymentHandlerResponse</code> dictionary)</li>
+            <content:encoded><![CDATA[<h2 dir="auto">What page(s) did you find the problem on?</h2>
+<p dir="auto">Compare the descriptions of parameters here:<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequest/show" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequest/show</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequestUpdateEvent/updateWith" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequestUpdateEvent/updateWith</a></p>
+<h2 dir="auto">What is the problem?</h2>
+<p dir="auto"><code class="notranslate">PaymentRequest</code>'s <code class="notranslate">show()</code> method is documented as taking a promise, while <code class="notranslate">PaymentRequestUpdateEvent</code>'s <code class="notranslate">updateWith()</code> method is documented as taking an object. Actually, the two both accept the same kind of parameter, and because of the way that promises work, one can pass either an object directly or a promise that resolves to an object.</p>
+<h2 dir="auto">What did you expect to see?</h2>
+<p dir="auto">A consistent style that makes it clear what can be used as the argument.</p>
+<p dir="auto">Promises as parameters is not very common on the web platform, but there are other cases that also have a mix of styles:</p>
+<ul dir="auto">
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequestEvent/respondWith" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PaymentRequestEvent/respondWith</a> (also incorrectly says the <code class="notranslate">PaymentResponse</code> interface instead of the <code class="notranslate">PaymentHandlerResponse</code> dictionary)</li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ExtendableEvent/waitUntil" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ExtendableEvent/waitUntil</a> (no issue here because the promise can resolve to anything)</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/FetchEvent/respondWith" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FetchEvent/respondWith</a> (correctly says "<code>Response</code> or a <code>Promise</code> that resolves to a <code>Response</code>")</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/compileStreaming" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/compileStreaming</a> (correctly says "<code>Response</code> object or a promise that will fulfill with one")</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/FetchEvent/respondWith" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FetchEvent/respondWith</a> (correctly says "<code class="notranslate">Response</code> or a <code class="notranslate">Promise</code> that resolves to a <code class="notranslate">Response</code>")</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/compileStreaming" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/compileStreaming</a> (correctly says "<code class="notranslate">Response</code> object or a promise that will fulfill with one")</li>
 </ul>]]></content:encoded>
         </item>
         <item>
@@ -34,103 +96,83 @@
             <link>https://github.com/mdn/content/issues/8977</link>
             <guid>https://github.com/mdn/content/issues/8977</guid>
             <pubDate>Thu, 16 Sep 2021 10:09:38 GMT</pubDate>
-            <content:encoded><![CDATA[<p>A big step forward was made in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="980067493" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/8351" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/8351/hovercard" href="https://github.com/mdn/content/pull/8351">#8351</a>, but I'd like to propose this rule to page naming:</p>
-<ol>
+            <content:encoded><![CDATA[<p dir="auto">A big step forward was made in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="980067493" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/8351" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/8351/hovercard" href="https://github.com/mdn/content/pull/8351">#8351</a>, but I'd like to propose this rule to page naming:</p>
+<ol dir="auto">
 <li>If the item is available on the global, use the name. Eg:
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting" rel="nofollow"><code>ServiceWorkerGlobalScope.skipWaiting</code></a> becomes <code>skipWaiting</code>.</li>
+<ul dir="auto">
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting" rel="nofollow"><code class="notranslate">ServiceWorkerGlobalScope.skipWaiting</code></a> becomes <code class="notranslate">skipWaiting</code>.</li>
 </ul>
 </li>
 <li>If the item is typically reached via properties reachable from the global, use that property chain, omitting the global.
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" rel="nofollow"><code>Document.querySelector</code></a> becomes <code>document.querySelector</code>.</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage/match" rel="nofollow"><code>CacheStorage.match</code></a> becomes <code>caches.match</code>.</li>
+<ul dir="auto">
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" rel="nofollow"><code class="notranslate">Document.querySelector</code></a> becomes <code class="notranslate">document.querySelector</code>.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage/match" rel="nofollow"><code class="notranslate">CacheStorage.match</code></a> becomes <code class="notranslate">caches.match</code>.</li>
 </ul>
 </li>
 <li>If the item is an instance method/property, use the constructor name with the first set of caps lower-cased + the property name.
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect" rel="nofollow"><code>Element.getBoundingClientRect</code></a> becomes <code>element.getBoundingClientRect</code>.</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight" rel="nofollow"><code>HTMLElement.offsetHeight</code></a> becomes <code>htmlElement.offsetHeight</code>.</li>
+<ul dir="auto">
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect" rel="nofollow"><code class="notranslate">Element.getBoundingClientRect</code></a> becomes <code class="notranslate">element.getBoundingClientRect</code>.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight" rel="nofollow"><code class="notranslate">HTMLElement.offsetHeight</code></a> becomes <code class="notranslate">htmlElement.offsetHeight</code>.</li>
 </ul>
 </li>
 <li>If the item is a static method/property, use the constructor name + the property name.
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Notification/requestPermission" rel="nofollow"><code>Notification.requestPermission</code></a> remains <code>Notification.requestPermission</code>.</li>
+<ul dir="auto">
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Notification/requestPermission" rel="nofollow"><code class="notranslate">Notification.requestPermission</code></a> remains <code class="notranslate">Notification.requestPermission</code>.</li>
 </ul>
 </li>
 <li>Otherwise, just use the name.
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent" rel="nofollow"><code>PointerEvent</code></a> remains <code>PointerEvent</code></li>
+<ul dir="auto">
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent" rel="nofollow"><code class="notranslate">PointerEvent</code></a> remains <code class="notranslate">PointerEvent</code></li>
 </ul>
 </li>
 </ol>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[service-workers-1] Issue with "ServiceWorkerRegistration.updateViaCache": (short summary here please)]]></title>
-            <link>https://github.com/mdn/content/issues/7760</link>
-            <guid>https://github.com/mdn/content/issues/7760</guid>
-            <pubDate>Mon, 09 Aug 2021 11:52:16 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>This is not a method, it's a string typed property</p>
-<h4>Specific section or headline?</h4>
-<p>all</p>
-<h4>What did you expect to see?</h4>
-<p>Description of property. It reflects the value of updateViaCache property of the options-Parameter in register(). The value of the property affects the behaviour of a ServiceWorker update.</p>
-<h4>Did you test this? If so, how?</h4>
-<p>(1) Register a serviceworker, set a breakpoint, inspect the ServiceWorkerRegistration object<br>
-(2) Read the spec - V1 and nightly</p>
-<p>Sorry that I don't create a pull request. But I don't want to become a MDN author, because of lack of expertise AND time.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/serviceworkerregistration/updateviacache</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkerregistration/updateviacache/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkerregistration/updateviacache/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cad672e1d7ab78a63f60a5d79914520b1486b534/hovercard" href="https://github.com/mdn/content/commit/cad672e1d7ab78a63f60a5d79914520b1486b534"><tt>cad672e</tt></a></li>
-<li>Document last modified: 2021-07-29T14:32:30.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[service-workers-1] Issue with "ServiceWorker": wrong parentage; should explicitly list postMessage() ]]></title>
+            <title><![CDATA[[service-workers-1] No docs for the ServiceWorker object’s postMessage method]]></title>
             <link>https://github.com/mdn/content/issues/7593</link>
             <guid>https://github.com/mdn/content/issues/7593</guid>
             <pubDate>Wed, 04 Aug 2021 17:16:23 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>You claim that ServiceWorker inherits from Worker. The spec says otherwise, it inherits from EventTarget. A ServiceWorker <strong>is not</strong> a Worker. Messages arrive at the ServiceWorkerGlobalScope, not the ServiceWorker itself. Yes, it's strange, but that's what the spec says.</p>
-<h4>Specific section or headline?</h4>
-<ul>
+            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker</a></p>
+<h3 dir="auto">2022-01-23 issue description</h3>
+<p dir="auto">The <code class="notranslate">ServiceWorker</code> object has a <code class="notranslate">postMessage()</code> method of its own — which is not completely the same as the <code class="notranslate">Worker</code> object’s <code class="notranslate">postMessage()</code> method.</p>
+<p dir="auto">There is currently no documentation in MDN for the <code class="notranslate">ServiceWorker</code> object’s <code class="notranslate">postMessage()</code> method.</p>
+<details>
+<summary>
+2021-08-05 original issue description
+</summary>
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">You claim that ServiceWorker inherits from Worker. The spec says otherwise, it inherits from EventTarget. A ServiceWorker <strong>is not</strong> a Worker. Messages arrive at the ServiceWorkerGlobalScope, not the ServiceWorker itself. Yes, it's strange, but that's what the spec says.</p>
+<h4 dir="auto">Specific section or headline?</h4>
+<ul dir="auto">
 <li>Properties<br>
 The ServiceWorker interface inherits properties from its parent, Worker.</li>
 </ul>
-<p><em>The error isn't obvious, because Worker has no own properties and inherits them from EventTarget, but Worker is still not the parent</em></p>
-<ul>
+<p dir="auto"><em>The error isn't obvious, because Worker has no own properties and inherits them from EventTarget, but Worker is still not the parent</em></p>
+<ul dir="auto">
 <li>
-<p>Methods<br>
+<p dir="auto">Methods<br>
 The ServiceWorker interface inherits methods from its parent, Worker, with the exception of Worker.terminate</p>
-<ul>
+<ul dir="auto">
 <li><em>As far as I know, selective inheritance is not a thing in IDL or JavaScript</em></li>
 <li><em>Yes, Worker has a postMessage and a terminate method, and ServiceWorker has a postMessage method. But no, ServiceWorker doesn't inherit it. The procedures in the HTML and ServiceWorker specs are similar, but not identical.</em></li>
 </ul>
 </li>
 </ul>
-<h4>What did you expect to see?</h4>
-<p>A description that conforms to the spec. But I'm not familiar enough with the topic to rewrite this.</p>
-<h4>Did you test this? If so, how?</h4>
-<p>I checked the prototype chain in Chrome DevTools. It's ServiceWorker -&gt; EventTarget</p>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">A description that conforms to the spec. But I'm not familiar enough with the topic to rewrite this.</p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+<p dir="auto">I checked the prototype chain in Chrome DevTools. It's ServiceWorker -&gt; EventTarget</p>
 
 <details>
 <summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/serviceworker</code></li>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/serviceworker</code></li>
 <li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker</a></li>
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworker/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworker/index.html</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/642d6eb7feb73e17cfc1ef61d3d09c2d200e65ca/hovercard" href="https://github.com/mdn/content/commit/642d6eb7feb73e17cfc1ef61d3d09c2d200e65ca"><tt>642d6eb</tt></a></li>
 <li>Document last modified: 2021-06-17T03:52:55.000Z</li>
 </ul>
+</details>
 </details>]]></content:encoded>
         </item>
         <item>
@@ -138,22 +180,22 @@ The ServiceWorker interface inherits methods from its parent, Worker, with the e
             <link>https://github.com/mdn/content/issues/7138</link>
             <guid>https://github.com/mdn/content/issues/7138</guid>
             <pubDate>Wed, 21 Jul 2021 16:35:44 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>I assumed (wrongly) from this that registering an already-registered worker would be a no-op. It turns out that it at least causes a network request for the worker, and that request doesn't go via the cache even if you have <code>updateViaCache: 'all'</code> (which makes sense). So regardless of your update mode, not checking for an existing registration will cause extra server load.</p>
-<h4>Specific section or headline?</h4>
+            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register</a></p>
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">I assumed (wrongly) from this that registering an already-registered worker would be a no-op. It turns out that it at least causes a network request for the worker, and that request doesn't go via the cache even if you have <code class="notranslate">updateViaCache: 'all'</code> (which makes sense). So regardless of your update mode, not checking for an existing registration will cause extra server load.</p>
+<h4 dir="auto">Specific section or headline?</h4>
 <blockquote>
-<p>You can call this method unconditionally from the controlled page. I.e., you don't need to first check whether there's an active registration.</p>
+<p dir="auto">You can call this method unconditionally from the controlled page. I.e., you don't need to first check whether there's an active registration.</p>
 </blockquote>
-<h4>What did you expect to see?</h4>
-<p>More detailed info about why I might <em>want</em> to check for an existing registration, even if I don't <em>need</em> to.</p>
-<h4>Did you test this? If so, how?</h4>
-<p>Yes, looking at request headers in Fiddler.</p>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">More detailed info about why I might <em>want</em> to check for an existing registration, even if I don't <em>need</em> to.</p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+<p dir="auto">Yes, looking at request headers in Fiddler.</p>
 
 <details>
 <summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/serviceworkercontainer/register</code></li>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/serviceworkercontainer/register</code></li>
 <li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register</a></li>
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkercontainer/register/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkercontainer/register/index.html</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/642d6eb7feb73e17cfc1ef61d3d09c2d200e65ca/hovercard" href="https://github.com/mdn/content/commit/642d6eb7feb73e17cfc1ef61d3d09c2d200e65ca"><tt>642d6eb</tt></a></li>

@@ -2,9 +2,13 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Khronos Group WebGL Working Group. [![RSS feed for Khronos Group WebGL Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[OVR_multiview2] WebXR guide material tracking issue](https://github.com/mdn/content/issues/7276) (2021-07-26T07:39:35Z)
+* [[webgl2] WebGL2RenderingContext»texSubImage3D page: List of valid "format" parameter values does not match WebGL2 spec](https://github.com/mdn/content/issues/19610) (2022-08-16T03:37:51Z)
   
-* [[webgl2] Issue with "WebGL2RenderingContext.getBufferSubData()": Argument 3 does not implement interface ArrayBufferView](https://github.com/mdn/content/issues/4539) (2021-04-28T05:05:07Z)
+* [[OES_standard_derivatives] Issue with "OES_standard_derivatives": missing function explanation ](https://github.com/mdn/content/issues/14715) (2022-04-05T16:44:46Z)
+  
+* [[webgl1] Content bug: vertexAttribPointer: missing WebGL 2 types](https://github.com/mdn/content/issues/10975) (2021-12-05T05:53:16Z)
+  
+* [[OVR_multiview2] WebXR guide material tracking issue](https://github.com/mdn/content/issues/7276) (2021-07-26T07:39:35Z)
   
 * [[webgl1, webgl2] https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bindFramebuffer](https://github.com/mdn/content/issues/1578) (2020-08-12T15:26:43Z)
   

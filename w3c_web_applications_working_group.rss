@@ -4,59 +4,525 @@
         <title>W3C Web Applications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_applications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Applications Working Group</description>
-        <lastBuildDate>Thu, 30 Sep 2021 10:10:37 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 15 Aug 2022 13:38:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] [WebAPI] Implement Element.setHTML(input, sanitizer)]]></title>
-            <link>https://github.com/mdn/content/issues/9366</link>
-            <guid>https://github.com/mdn/content/issues/9366</guid>
-            <pubDate>Thu, 30 Sep 2021 10:10:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>Acceptance Criteria</h2>
-<ul class="contains-task-list">
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> The listed features are documented sufficiently on MDN</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> BCD is updated</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Interactive example and data repos are updated if appropriate</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> The content has been reviewed as needed</li>
+            <title><![CDATA[[uievents] Event references should list bubbles, cancelable, and composed values]]></title>
+            <link>https://github.com/mdn/content/issues/19590</link>
+            <guid>https://github.com/mdn/content/issues/19590</guid>
+            <pubDate>Mon, 15 Aug 2022 13:38:07 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The event reference documentation did not give the values of the bubbles, cancelable, and composed properties.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The values of the bubbles, cancelable, and composed properties of the event.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">The old documentation used to give the values of the bubbles and cancelable properties:</p>
+<p dir="auto"><a href="https://web.archive.org/web/20220104000330/https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event" rel="nofollow">https://web.archive.org/web/20220104000330/https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">I gave an example of one event, "click", but this issue applies to every event reference.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[uievents] ``onerror = (event) => { };`` seems incorrect]]></title>
+            <link>https://github.com/mdn/content/issues/19295</link>
+            <guid>https://github.com/mdn/content/issues/19295</guid>
+            <pubDate>Mon, 08 Aug 2022 19:45:09 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/error_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/error_event</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Syntax</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto"><code class="notranslate">addEventListener('error', (event) =&gt; {});</code> and <code class="notranslate">onerror = (event) =&gt; { };</code> are not the same</p>
+<p dir="auto">this are the signature that works in Chrome</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="window.onerror = function(errorMsg,url,lineNumber,columnNumber,error) {
+	//...
+};"><pre class="notranslate"><code>window.onerror = function(errorMsg,url,lineNumber,columnNumber,error) {
+	//...
+};
+</code></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">either a discussion about the difference or<br>
+separate pages  for the two and a comment on where to find the other</p>
+<p dir="auto">seems like <code class="notranslate">onerror</code> is not an event in the same way as other <code class="notranslate">on*</code> properties of Window<br>
+but there is no <code class="notranslate">onerror</code> property listed for Window</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<ol dir="auto">
+<li>open Chrome</li>
+<li>go to <a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onerror_addeventlistener" rel="nofollow">https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onerror_addeventlistener</a></li>
+<li>right click and select inspect</li>
+<li>modify &lt;script&gt; content to:</li>
+</ol>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="    document.getElementById(&quot;myImg&quot;).addEventListener(&quot;error&quot;, myFunction);
+    window.onerror = myFunction2
+    function myFunction(e) {
+        eval(&quot;const c&quot;)
+    }
+    function myFunction2(e) {
+        var a = arguments;
+        debugger;
+    }"><pre class="notranslate"><code>    document.getElementById("myImg").addEventListener("error", myFunction);
+    window.onerror = myFunction2
+    function myFunction(e) {
+        eval("const c")
+    }
+    function myFunction2(e) {
+        var a = arguments;
+        debugger;
+    }
+</code></pre></div>
+<ol start="5" dir="auto">
+<li>press [ Run &gt; ] button</li>
+<li>debugger stop at <code class="notranslate">eval</code></li>
+<li>in chrome debugger press [ Resume script execution - F8 - Ctrl + \ ]</li>
+<li>debugger stop at <code class="notranslate">debugger</code></li>
+<li>look at value of  <code class="notranslate">a</code> in debugger Scope panel</li>
+</ol>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/window/error_event</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/error_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/error_event</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/error_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/error_event/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/da1994330c8e196600a239fbb5cbfd5351dc4973/hovercard" href="https://github.com/mdn/content/commit/da1994330c8e196600a239fbb5cbfd5351dc4973"><tt>da19943</tt></a></li>
+<li>Document last modified: 2022-07-24T05:43:54.000Z</li>
 </ul>
-<h3>For folks helping with Firefox related documentation</h3>
-<ul class="contains-task-list">
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Set bugs to <code>dev-doc-complete</code></li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Add entry to Firefox release notes if feature is enabled in release<br>
-or</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Add entry to Firefox experimental features page if feature is not yet enabled in release</li>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[uievents] Document the ability to preventDefault() a pinch-zoom gesture on a touchpad]]></title>
+            <link>https://github.com/mdn/content/issues/18342</link>
+            <guid>https://github.com/mdn/content/issues/18342</guid>
+            <pubDate>Thu, 14 Jul 2022 03:33:35 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/wheel_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/wheel_event</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Firefox and Chrome (and maybe other browsers) allow websites to opt out of the browser's default handling of a touchpad pinch gesture (which is to zoom the page, either in a reflowing or a smooth/non-reflowing way depending on the browser version and touchpad hardware), by synthesizing a <code class="notranslate">wheel</code> event (with a modifier, usually <code class="notranslate">Ctrl</code> or <code class="notranslate">Cmd</code> depending on the platform) and giving the page a chance to <code class="notranslate">preventDefault()</code> the <code class="notranslate">wheel</code> event.</p>
+<p dir="auto">This is not very discoverable, since there isn't an obvious link between a pinch gesture and a <code class="notranslate">wheel</code> event.</p>
+<p dir="auto">(My understanding is, a <code class="notranslate">wheel</code> event was chosen for the following reasons:</p>
+<ol dir="auto">
+<li>There isn't another event type in the web platform that would correspond more directly to a touchpad pinch gesture.</li>
+<li>Ctrl+wheel also causes zooming, and <code class="notranslate">preventDefault()</code>ing Ctrl+wheel was an existing way for sites to opt out of zooming, so it made sense to extend that to zooming caused by a touchpad gesture.)</li>
+</ol>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">It would be nice to document this behaviour on MDN. Specifically, that:</p>
+<ol dir="auto">
+<li>A touchpad pinch-zoom gesture results in the browser synthesizing a <code class="notranslate">wheel</code> event</li>
+<li>The zooming that's the browser's default behaviour in reponse to the gesture can be prevented using <code class="notranslate">preventDefault()</code> on that event</li>
+</ol>
+<p dir="auto">Not sure where the best place to document this is -- maybe the <code class="notranslate">wheel</code> event page? I'm open to suggestions.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">I implemented this behaviour in Firefox. Investigation of Chrome's similar behaviour is documented in <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1619187" rel="nofollow">bug 1619187</a>. More recent testing suggests Safari now has the same behaviour as well.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[IndexedDB-3] IDBObjectStore»add() example: incomplete basic explanation; unclear how ConstraintError is handled]]></title>
+            <link>https://github.com/mdn/content/issues/15037</link>
+            <guid>https://github.com/mdn/content/issues/15037</guid>
+            <pubDate>Fri, 15 Apr 2022 23:16:34 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/add" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/add</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Errors, Exceptions</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">It is unclear how  ConstraintError  is handled.<br>
+Text says "If a record already exists in the object store with the key parameter as its key, then an error ConstrainError event is fired on the returned request object."<br>
+OK.  How do I tell in my "onerror" method if it is a ConstraintError or otherwise?  Is the "event" object passed to the "onerror" method an instance of Error?  Event?  hybrid?  Error a property of Event?<br>
+Text says "This method may raise a [DOMException] of one of the following types:"<br>
+OK.  When?  The example does not handle a DOMException, just an "onerror" method.<br>
+In fact, the example confusingly applies the "onerror" to the transaction, not the request object as stated (yea, I know it bubbles to the transaction, but the example is still confusing if that is not noted to the beginner)<br>
+If I could:<br>
+try { transaction.objectStore(store).add(foo); }<br>
+catch(e) { (e instanceof ConstraintError) ? ......... }<br>
+then I could move forward.<br>
+It's a lot of work to create a database, fill it, then try to create errors and probe results from there.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">a complete reference to the method</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/idbobjectstore/add</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/add" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/add</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/idbobjectstore/add/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/idbobjectstore/add/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/281e3b21178946c8301232a8eb50d11770ee8450/hovercard" href="https://github.com/mdn/content/commit/281e3b21178946c8301232a8eb50d11770ee8450"><tt>281e3b2</tt></a></li>
+<li>Document last modified: 2022-02-18T09:53:31.000Z</li>
 </ul>
-<h2>Features to document</h2>
-<p>implement Element.setHTML(input, sanitizer). New method page under <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Element">https://developer.mozilla.org/en-US/docs/Web/API/Element</a></p>
-<h2>Related Gecko bugs</h2>
-<p><a rel="nofollow" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1716624">https://bugzilla.mozilla.org/show_bug.cgi?id=1716624</a></p>]]></content:encoded>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[html, gamepad] Double checking the gamepad docs are correct]]></title>
+            <link>https://github.com/mdn/content/issues/14874</link>
+            <guid>https://github.com/mdn/content/issues/14874</guid>
+            <pubDate>Mon, 11 Apr 2022 03:02:09 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto">/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API</p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Multiple sections</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">I could be reading the article wrong but ... stuff like this</p>
+<blockquote>
+<p dir="auto">Note: The Gamepad object is available on the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/gamepadconnected_event" rel="nofollow">gamepadconnected</a> event rather than the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window" rel="nofollow">Window</a> object itself, for security reasons. Once we have a reference to it, we can query its properties for information about the current state of the gamepad. Behind the scenes, this object will be updated every time the gamepad's state changes.</p>
+</blockquote>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">AFAIK This wrong.</p>
+<p dir="auto"><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="702066886" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/1" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/1/hovercard" href="https://github.com/mdn/content/pull/1">#1</a>. While it's true a gamepad object will be provided on gamepadconnected, it's also true that gamepad objects will be provided by navigator.getGamepads</p>
+<p dir="auto"><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="702234902" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/2" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/2/hovercard" href="https://github.com/mdn/content/pull/2">#2</a>. The description above and elsewhere suggests holding on to a reference to the gamepad object and querying it for values. But this fails. In fact, the example code in the article does not do this. It updates the gamepad objects near the end</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="       controllers[gamepads[i].index] = gamepads[i];"><pre class="notranslate notranslate"><code>       controllers[gamepads[i].index] = gamepads[i];
+</code></pre></div>
+<p dir="auto">In other words, it's updating the <code class="notranslate">controllers</code> array with a new gamepad object for the same gamepad.</p>
+<p dir="auto">If instead you did this</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="   // no need to use a new gamepad object if we already have a gamepad object
+   // for this controller from the gamepadconnected event
+   if (!controllers[gamepads[i].index]) {
+      controllers[gamepads[i].index] = gamepads[i];
+   }"><pre class="notranslate notranslate"><code>   // no need to use a new gamepad object if we already have a gamepad object
+   // for this controller from the gamepadconnected event
+   if (!controllers[gamepads[i].index]) {
+      controllers[gamepads[i].index] = gamepads[i];
+   }
+</code></pre></div>
+<p dir="auto">You'd see the example would fail. At least in Chrome I get a few readings and then gamepad object I was holding a reference too goes dead. Where as if I made sure to get new gamepad objects by calling <code class="notranslate">navigator.getGamepads</code> then the code keeps running.</p>
+<p dir="auto">Let me add, holding on to a reference used to work. I was grabbing some old code that held references and I know worked great when I wrote it 7 yrs ago but suddenly it was not working. I tracked the issue down to this. You can't keep a reference to the gamepad object. You need to take new ones by calling getGamepads</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/gamepad_api/using_the_gamepad_api</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/gamepad_api/using_the_gamepad_api/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/gamepad_api/using_the_gamepad_api/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/593f9ac8545e3ea7f67a7d8b5a25743ae681f4d3/hovercard" href="https://github.com/mdn/content/commit/593f9ac8545e3ea7f67a7d8b5a25743ae681f4d3"><tt>593f9ac</tt></a></li>
+<li>Document last modified: 2022-04-02T17:42:56.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] Content bug: Implementation of the `mode` options for `Element.attachShadow()` in code example could be refined]]></title>
+            <link>https://github.com/mdn/content/issues/14620</link>
+            <guid>https://github.com/mdn/content/issues/14620</guid>
+            <pubDate>Sun, 03 Apr 2022 15:13:09 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 dir="auto">What page(s) did you find the problem on?</h2>
+
+<p dir="auto">Context: <a href="https://developer.mozilla.org/en-US/docs/Web" rel="nofollow">References</a> &gt; <a href="https://developer.mozilla.org/en-US/docs/Web/API" rel="nofollow">Web APIs</a> &gt; <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element" rel="nofollow">Element</a> &gt; <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow" rel="nofollow">Element.attachShadow()</a></p>
+<ul dir="auto">
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow</a></li>
+</ul>
+<h2 dir="auto">Specific page section or heading?</h2>
+
+<ul dir="auto">
+<li>Heading: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow#parameters" rel="nofollow">Parameters</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow#parameters" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow#parameters</a></li>
+</ul>
+<h2 dir="auto">What is the problem?</h2>
+
+<p dir="auto">It seems the code example/demonstration is missing some information.</p>
+<ul dir="auto">
+<li>For the string <code class="notranslate">mode</code> under the parameter <code class="notranslate">init</code>, the options <code class="notranslate">open</code> and <code class="notranslate">closed</code> aren't included in the example.</li>
+<li>Or it's left for the reader to figure it out. :)</li>
+</ul>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/76430758/161434240-8bb8e945-60f4-40fc-a3bb-6eb3b80862e2.png"><img src="https://user-images.githubusercontent.com/76430758/161434240-8bb8e945-60f4-40fc-a3bb-6eb3b80862e2.png" alt="image" style="max-width: 100%;"></a></p>
+<h2 dir="auto">What did you expect to see?</h2>
+
+<ul dir="auto">
+<li>I came across the following code <code class="notranslate">this.attachShadow({ mode: "open" });</code> for a <code class="notranslate">customElements</code> that I am using in a project.</li>
+<li>The examples and documentation in MDN seemed close enough. Being fairly new to JavaScript, I didn't understand why <code class="notranslate">"open"</code> and <code class="notranslate">"closed"</code> weren't mentioned directly inside the example.</li>
+</ul>
+<h2 dir="auto">Did you test this? If so, how?</h2>
+
+<p dir="auto">N.A.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[uievents] Content bug: Description of focus events matches current spec but not reality]]></title>
+            <link>https://github.com/mdn/content/issues/14084</link>
+            <guid>https://github.com/mdn/content/issues/14084</guid>
+            <pubDate>Sun, 20 Mar 2022 09:05:07 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 dir="auto">What page(s) did you find the problem on?</h2>
+<ul dir="auto">
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/focus_event" rel="nofollow">focus event</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event" rel="nofollow">blur event</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/focusin_event" rel="nofollow">focusin event</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/focusout_event" rel="nofollow">focusout event</a></li>
+</ul>
+<h2 dir="auto">What is the problem?</h2>
+<p dir="auto">The pages match <a href="https://www.w3.org/TR/uievents/#events-focus-types" rel="nofollow">the text of the current spec</a>, but browsers uniformly implement a different story, and it looks like <a href="https://github.com/w3c/uievents/pull/290" data-hovercard-type="pull_request" data-hovercard-url="/w3c/uievents/pull/290/hovercard">the spec is due for an update</a> to match the implementations.</p>
+<h2 dir="auto">What did you expect to see?</h2>
+<p dir="auto">Should we be proactive and update the descriptions to match the soon-to-be-updated spec / current browser implementations?</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[uievents] “mouseleave is fired when the pointer has exited the element” is inaccurate]]></title>
+            <link>https://github.com/mdn/content/issues/13534</link>
+            <guid>https://github.com/mdn/content/issues/13534</guid>
+            <pubDate>Sat, 05 Mar 2022 21:18:17 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 dir="auto">What page(s) did you find the problem on?</h2>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseleave_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseleave_event</a></p>
+<h2 dir="auto">Specific page section or heading?</h2>
+<p dir="auto">Most of it, but particularly in the introduction: "...mouseleave is fired when the pointer has exited the element..."</p>
+<h2 dir="auto">What is the problem?</h2>
+<p dir="auto">In fact, the mouseleave event fires on an IMG if the pointer enters an AREA defined in a MAP referenced by an IMG - even if that AREA is entirely within the image.  In my mental model, an area is a part of an image; leaving it does not imply I have left the image.  (Though both Chrome and Firefox behave as if it <em>does</em> imply leaving the image.)</p>
+<h2 dir="auto">What did you expect to see?</h2>
+<p dir="auto">Well, an accurate description :-).</p>
+<p dir="auto">Perhaps a more thorough definition of "exit".  A MAP seems to present a problem specific to an IMG element.  Neither the map, nor its areas, seems to have a heirarchial relationship to the image, so it's not covered by the discussion of hierarchy.</p>
+<p dir="auto">Perhaps add somewhere "In the case of an image map, the cursor is considered to have left the image when it enters an area, <strong>even if that area is contained entirely within the image</strong>.  Similarly, when the cursor exits an area but remains within the image, a mouseleave event on the area will fire, and a mouseenter event on the image will also fire."</p>
+<p dir="auto">I should probably go to W3 to see if someone addressed the issue...</p>
+<h2 dir="auto">Did you test this? If so, how?</h2>
+<p dir="auto">Tediously.</p>
+
+<p dir="auto">I attached a single mouseenter handler, and a single mouseleave handler, to every IMG and AREA on a page.  They log messages to the console.  I'll guess that anyone reading this will immediately recognize what I have not understood, and the details are not necessary.  I'm omitting them to reduce clutter, but will happily provide code and logs on request :-)</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[cssom-view-1, html, dom, selection-api, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written]]></title>
+            <link>https://github.com/mdn/content/issues/13419</link>
+            <guid>https://github.com/mdn/content/issues/13419</guid>
+            <pubDate>Wed, 02 Mar 2022 14:45:44 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 dir="auto">What page(s) did you find the problem on?</h2>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document</a></p>
+<h2 dir="auto">Specific page section or heading?</h2>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document#browser_compatibility" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document#browser_compatibility</a></p>
+<h2 dir="auto">What is the problem?</h2>
+<p dir="auto">One of the document properties, <code class="notranslate">adoptedStyleSheets</code> is linked to the page <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/adoptedStyleSheets" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/adoptedStyleSheets</a> which does not exist.</p>
+<h2 dir="auto">What did you expect to see?</h2>
+<p dir="auto">Either the property should be unlinked or the page it links to should exist.</p>
+<h2 dir="auto">Did you test this? If so, how?</h2>
+<p dir="auto">I clicked the link.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[IndexedDB-3] Issue with "IDBTransaction.oncomplete": When transaction's oncomplete is actually called?]]></title>
+            <link>https://github.com/mdn/content/issues/11901</link>
+            <guid>https://github.com/mdn/content/issues/11901</guid>
+            <pubDate>Tue, 11 Jan 2022 02:17:36 GMT</pubDate>
+            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/oncomplete" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/oncomplete</a></p>
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">It mentioned <code class="notranslate">open a read/write transaction on our database and add SOME data to an object store</code> but in example only shows single <code class="notranslate">objectStore.add()</code>. So it's still confusing when transaction's <code class="notranslate">oncomplete</code> is actually called since there is no transaction closing command anywhere.</p>
+<h4 dir="auto">Specific section or headline?</h4>
+<p dir="auto">In <code class="notranslate">Example</code> part</p>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">Show an example with multiple <code class="notranslate">objectStore</code>'s operations to make it clear when <code class="notranslate">oncomplete</code> is actually called</p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+<p dir="auto">No. It should be well documented.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/idbtransaction/oncomplete</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/oncomplete" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/oncomplete</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/idbtransaction/oncomplete/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/idbtransaction/oncomplete/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/c1be872363ef4132db76ed446f7b41a9ee275e8f/hovercard" href="https://github.com/mdn/content/commit/c1be872363ef4132db76ed446f7b41a9ee275e8f"><tt>c1be872</tt></a></li>
+<li>Document last modified: 2021-12-07T10:49:24.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[uievents] Content bug: Missing information about what WheelEvent.delta* can be]]></title>
+            <link>https://github.com/mdn/content/issues/11811</link>
+            <guid>https://github.com/mdn/content/issues/11811</guid>
+            <pubDate>Fri, 07 Jan 2022 12:25:45 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 dir="auto">What page(s) did you find the problem on?</h2>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent/deltaX" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent/deltaX</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent/deltaY" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent/deltaY</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent/deltaZ" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent/deltaZ</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent/deltaMode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent/deltaMode</a></p>
+<h2 dir="auto">What is the problem?</h2>
+
+<p dir="auto">Missing information described in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="296193663" data-permission-text="Title is private" data-url="https://github.com/w3c/uievents/issues/181" data-hovercard-type="issue" data-hovercard-url="/w3c/uievents/issues/181/hovercard?comment_id=392648065&amp;comment_type=issue_comment" href="https://github.com/w3c/uievents/issues/181#issuecomment-392648065">w3c/uievents#181 (comment)</a><br>
+And the change in Firefox caused by <a href="https://groups.google.com/g/mozilla.dev.platform/c/fUXLgaSoeLI" rel="nofollow">Intent to ship: Return pixel deltas in wheel event if deltaMode is not checked by authors</a>, that modify the behavior to the following, decided per event:</p>
+<ul dir="auto">
+<li>
+<p dir="auto">If <code class="notranslate">deltaMode</code> has been accessed, then the original delta mode and deltas are reported.</p>
+</li>
+<li>
+<p dir="auto">If <code class="notranslate">deltaMode</code> has <em>not</em> been accessed, and it's <code class="notranslate">DOM_DELTA_LINE</code>, accessing any of the deltas cause the event to always report <code class="notranslate">DOM_DELTA_PIXELS</code>, and the deltas get converted to pixels using the <code class="notranslate">font-size</code> of the target element.</p>
+</li>
+</ul>
+<p dir="auto">For more information see:</p>
+<ul dir="auto">
+<li><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="296193663" data-permission-text="Title is private" data-url="https://github.com/w3c/uievents/issues/181" data-hovercard-type="issue" data-hovercard-url="/w3c/uievents/issues/181/hovercard" href="https://github.com/w3c/uievents/issues/181">w3c/uievents#181</a></li>
+<li><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1392460" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=1392460</a></li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[IndexedDB-3] Issue with "IDBIndex.getAllKeys()": getAllKeys returns an Array.]]></title>
+            <link>https://github.com/mdn/content/issues/11354</link>
+            <guid>https://github.com/mdn/content/issues/11354</guid>
+            <pubDate>Tue, 21 Dec 2021 04:24:54 GMT</pubDate>
+            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/getAllKeys" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/getAllKeys</a></p>
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">"The getAllKeys() method of the IDBIndex interface instantly retrieves the primary keys of all objects inside the index, setting them as the result of the request object."</p>
+<p dir="auto">First, the article does not specify the form of the information returned in the result property of the request object.  (It is an Array.)</p>
+<p dir="auto">Second, it does not seem to be the case that getAllKeys "instantly retrieves the primary keys..." <em>in all circumstances</em>.  See "did you test this".</p>
+<h4 dir="auto">Specific section or headline?</h4>
+<p dir="auto">The topmost headline: IDBIndex.getAllKeys().</p>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">Different phrasing, perhaps "[the method] returns an IDBRequest object on which success and error handlers may be set.  The <em>result</em> property of the success handler <em>event</em> argument will be an Array containing the keys."</p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+<p dir="auto">Wrote HTML and js to define a simple idb, create a couple of stores, one with an index, and perform operations on that db.  Then I stepped through the code in both FF and Chrome.</p>
+<p dir="auto">After some hours with the Chrome &amp; FF debuggers, I realized stepping through with the FF debugger produces different results than letting the code run to completion.  (In Chrome, the result is the same whether stepping through code, or running w/o breakpoints.)</p>
+<p dir="auto">The test code looks like this:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="       req = oStore.getAllKeys();
+       if (req.result &amp;&amp; Array.isArray(res.result)) {
+       if (req.readyState !== &quot;pending&quot;) {---; return;}
+       req.onsuccess = onSuccess;
+       ---
+       function onSuccess(event) {
+          callback(event.result);
+          return;
+       }"><pre class="notranslate notranslate"><code>       req = oStore.getAllKeys();
+       if (req.result &amp;&amp; Array.isArray(res.result)) {
+       if (req.readyState !== "pending") {---; return;}
+       req.onsuccess = onSuccess;
+       ---
+       function onSuccess(event) {
+          callback(event.result);
+          return;
+       }
+</code></pre></div>
+<p dir="auto">With breakpoints disabled, req.readyState === "pending" in both FF and Chrome, and in both the onSuccess handler is assigned and fires.</p>
+<p dir="auto">With a breakpoint at the 'if' statement, using the debugger to inspect req, FF reports req.readyState is 'done' and req.result is an Array of key values.  Upon continuing, the "if" block is executed.  onSuccess is neither assigned nor executed.</p>
+<p dir="auto">Breaking at the same point in Chrome, req.readyState === "pending".  Upon continuing, the "if" block is skipped, onSuccess is assigned, and onSuccess fires, exactly as without any break.</p>
+<p dir="auto">Given this, it is somewhat difficult to describe what getAllKeys does.  It seems to be browser dependent.  Or at least, debugger dependent.  And...if there is a problem, it is with the debugger.  But I don't know enough about this stuff to say it is a problem, rather than something about the debugger I don't get.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/idbindex/getallkeys</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/getAllKeys" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/getAllKeys</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/idbindex/getallkeys/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/idbindex/getallkeys/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b0b00060b28f06c75c2174cddd42581a9d438df0/hovercard" href="https://github.com/mdn/content/commit/b0b00060b28f06c75c2174cddd42581a9d438df0"><tt>b0b0006</tt></a></li>
+<li>Document last modified: 2021-10-22T15:52:01.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[IndexedDB-3] Issue with "IDBIndex.getAllKeys()": The article does not specify the form of the information returned in the result property of the request object]]></title>
+            <link>https://github.com/mdn/content/issues/11349</link>
+            <guid>https://github.com/mdn/content/issues/11349</guid>
+            <pubDate>Mon, 20 Dec 2021 18:58:47 GMT</pubDate>
+            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/getAllKeys" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/getAllKeys</a></p>
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">"The getAllKeys() method of the IDBIndex interface instantly retrieves the primary keys of all objects inside the index, setting them as the result of the request object."</p>
+<p dir="auto">The article does not specify the form of the information returned in the result property of the request object.</p>
+<p dir="auto">It is an Array, which is what it should be according to w3c.github.io/IndexedDB/#ref-for-dom-idbindex-getallkeys%E2%91%A0.  The word "array", however, does not appear in the article.</p>
+<p dir="auto"><strong>More importantly</strong>, FF and Chrome seem to behave very differently.   FF seems to behave as the article describes.  It returns an IDBRequest object that <em>does</em> have a result property that is an Array of keys.</p>
+<p dir="auto">Chrome, in contrast, seems to return an IDBRequest object unpopulated with a 'result' object, and with a 'readyState' property value 'pending'.  Key values are not available "immediately".  They are available only to the success event handler.</p>
+<h4 dir="auto">Specific section or headline?</h4>
+<p dir="auto">The topmost headline: IDBIndex.getAllKeys().</p>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">After trying to write this Issue clearly, I found that FF and Chrome do not seem to behave in the same way.  The section cannot be written correctly without referring to specific browsers.  That seems unfortunate!</p>
+<p dir="auto">Chrome returns an IDBRequest object that has no 'result' property, and a 'readyState' property with the value 'pending'.  The keys seem to be available only as the result property of the event passed to the success handler assigned to the IDBRequest.</p>
+<p dir="auto">The behavior of FF is as the MDN article describes: the object returned by the getAllKeys method has a 'result' property that contains the keys, and a readyState property whose value is 'done'.</p>
+<p dir="auto">In writing this, i have looked at what the W3 spec (cited above) says.  And looked again.  It is no wonder that FF and Chrome don't behave the same way.  In bending over backward to be clear and specific, W3 manages to be incomprehensible (to me, anyway).</p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+<p dir="auto">Wrote HTML and js to define a simple db, create a couple of stores, one with an index, and perform operations on that db.  Then I stepped through the code in both FF and Chrome.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/idbindex/getallkeys</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/getAllKeys" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/getAllKeys</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/idbindex/getallkeys/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/idbindex/getallkeys/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b0b00060b28f06c75c2174cddd42581a9d438df0/hovercard" href="https://github.com/mdn/content/commit/b0b00060b28f06c75c2174cddd42581a9d438df0"><tt>b0b0006</tt></a></li>
+<li>Document last modified: 2021-10-22T15:52:01.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[pointerlock-2] Element.requestPointerLock() missing some useful detail]]></title>
+            <link>https://github.com/mdn/content/issues/11327</link>
+            <guid>https://github.com/mdn/content/issues/11327</guid>
+            <pubDate>Mon, 20 Dec 2021 05:04:35 GMT</pubDate>
+            <content:encoded><![CDATA[<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/requestPointerLock" rel="nofollow">Element/requestPointerLock</a> is missing some useful detail from the spec. In particular that it requires transient activation and some of the ways it can fail - see <a href="https://w3c.github.io/pointerlock/#ref-for-dom-element-requestpointerlock-1" rel="nofollow">https://w3c.github.io/pointerlock/#ref-for-dom-element-requestpointerlock-1</a></p>
+<p dir="auto">It may be worth waiting on doing this for the quite significant changes proposed in <a href="https://github.com/w3c/pointerlock/pull/49" data-hovercard-type="pull_request" data-hovercard-url="/w3c/pointerlock/pull/49/hovercard">Add lock options to requestPointerLock - spec PR</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript, FileAPI] Clean up irrelevant notes about old browser releases]]></title>
+            <link>https://github.com/mdn/content/issues/9974</link>
+            <guid>https://github.com/mdn/content/issues/9974</guid>
+            <pubDate>Thu, 21 Oct 2021 07:48:17 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 dir="auto">What page(s) did you find the problem on?</h2>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/FileReader/error" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FileReader/error</a> says:</p>
+<blockquote>
+<p dir="auto">In Chrome 48+/Firefox 58+ this property returns a DOMException because DOMError has been removed from the DOM standard.</p>
+</blockquote>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#regular_expressions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#regular_expressions</a> says:</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="typeof /s/ === 'function'; // Chrome 1-12 Non-conform to ECMAScript 5.1
+typeof /s/ === 'object';   // Firefox 5+  Conform to ECMAScript 5.1"><pre><span class="pl-k">typeof</span> <span class="pl-pds"><span class="pl-c1">/</span>s<span class="pl-c1">/</span></span> <span class="pl-c1">===</span> <span class="pl-s">'function'</span><span class="pl-kos">;</span> <span class="pl-c">// Chrome 1-12 Non-conform to ECMAScript 5.1</span>
+<span class="pl-k">typeof</span> <span class="pl-pds"><span class="pl-c1">/</span>s<span class="pl-c1">/</span></span> <span class="pl-c1">===</span> <span class="pl-s">'object'</span><span class="pl-kos">;</span>   <span class="pl-c">// Firefox 5+  Conform to ECMAScript 5.1</span></pre></div>
+<h2 dir="auto">What is the problem?</h2>
+<p dir="auto">Information about quirks in very old browser releases seems like a net negative for readers of MDN. It will require readers to make a judgement about whether this could affect them, by testing or looking at release dates for the browsers.</p>
+<h2 dir="auto">What did you expect to see?</h2>
+<p dir="auto">Irrelevant information should be pruned from MDN after some time. Perhaps some special markup could be used when referring to a specific browser version, so that tools could be written to list information about browser releases too old to be relevant. Such cleanup happens to some extent in BCD, around irrelevant features removed from all browsers for more than 2 years, and also old flag data.</p>
+<h2 dir="auto">Did you test this? If so, how?</h2>
+<p dir="auto">Searching for "Chrome " + a number of any other browser followed by a number can find many examples like these.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[html, uievents] Replace hand-written compat sections with BCD tables]]></title>
+            <link>https://github.com/mdn/content/issues/9972</link>
+            <guid>https://github.com/mdn/content/issues/9972</guid>
+            <pubDate>Thu, 21 Oct 2021 07:40:45 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 dir="auto">What page(s) did you find the problem on?</h2>
+<p dir="auto">These pages show browser compat without using BCD tables:</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Games/Techniques/Controls_Gamepad_API#api_status_and_browser_support" rel="nofollow">https://developer.mozilla.org/en-US/docs/Games/Techniques/Controls_Gamepad_API#api_status_and_browser_support</a> (prose)</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode#value_of_keycode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode#value_of_keycode</a> (prose and tables)</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Using_readable_streams#browser_support" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Using_readable_streams#browser_support</a> (prose)</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API#browser_support" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API#browser_support</a> (prose)</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Cross-browser_audio_basics#browser_support" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Cross-browser_audio_basics#browser_support</a> (tables)</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Live_streaming_web_audio_and_video#streaming_file_format_support" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Live_streaming_web_audio_and_video#streaming_file_format_support</a> (table)</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/WebAudio_playbackRate_explained#browser_support" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/WebAudio_playbackRate_explained#browser_support</a> (bullet points)</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#clicking_and_focus" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#clicking_and_focus</a> (tables)</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Containers" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Containers</a> (tables)</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types</a> (tables)</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts/features_restricted_to_secure_contexts" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts/features_restricted_to_secure_contexts</a> (tables)</li>
+</ul>
+<h2 dir="auto">What is the problem?</h2>
+<p dir="auto">The information is presented in a different way to BCD tables used on most pages. For some of these pages there may be good reasons to maintain it by hand, but I suspect most could be replaced by linked BCD tables.</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[uievents] Issue with "Element: keydown event": What generates a KeyboardEvent?]]></title>
             <link>https://github.com/mdn/content/issues/9321</link>
             <guid>https://github.com/mdn/content/issues/9321</guid>
             <pubDate>Tue, 28 Sep 2021 15:22:02 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event">https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>Please I don't understand what's meant by this paragraph in the MDN article:</p>
+            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event</a></p>
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">Please I don't understand what's meant by this paragraph in the MDN article:</p>
 <blockquote>
-<p>Keyboard events are only generated by <code>&lt;inputs&gt;</code>, <code>&lt;textarea&gt;</code> and anything with the <code>contentEditable</code> attribute or with <code>tabindex="-1"</code>.</p>
+<p dir="auto">Keyboard events are only generated by <code class="notranslate">&lt;inputs&gt;</code>, <code class="notranslate">&lt;textarea&gt;</code> and anything with the <code class="notranslate">contentEditable</code> attribute or with <code class="notranslate">tabindex="-1"</code>.</p>
 </blockquote>
-<h4>Specific section or headline?</h4>
-<h4>What did you expect to see?</h4>
-<p>They seem to be generated by arbitrary focusable elements. I expected something like:</p>
+<h4 dir="auto">Specific section or headline?</h4>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">They seem to be generated by arbitrary focusable elements. I expected something like:</p>
 <blockquote>
-<p>Keyboard events are only generated by focusable elements. This includes <code>&lt;button&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and anything with the <code>contenteditable</code> or <code>tabindex</code> attributes.</p>
+<p dir="auto">Keyboard events are only generated by focusable elements. This includes <code class="notranslate">&lt;button&gt;</code>, <code class="notranslate">&lt;a&gt;</code>, <code class="notranslate">&lt;input&gt;</code>, <code class="notranslate">&lt;textarea&gt;</code>, and anything with the <code class="notranslate">contenteditable</code> or <code class="notranslate">tabindex</code> attributes.</p>
 </blockquote>
-<h4>Did you test this? If so, how?</h4>
-<p>I added listeners for the <code>keydown</code> and <code>keyup</code> events to an <code>&lt;a&gt;</code>, a <code>&lt;button&gt;</code> and a <code>&lt;span&gt;</code> with <code>tabindex=0</code>, and then when I typed while the elements were focused, the listeners got called.</p>
-<p>I should also add that the listeners for these events that were attached to parents of the focusable elements also got called (I'm guessing this is because the event bubbles up).</p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+<p dir="auto">I added listeners for the <code class="notranslate">keydown</code> and <code class="notranslate">keyup</code> events to an <code class="notranslate">&lt;a&gt;</code>, a <code class="notranslate">&lt;button&gt;</code> and a <code class="notranslate">&lt;span&gt;</code> with <code class="notranslate">tabindex=0</code>, and then when I typed while the elements were focused, the listeners got called.</p>
+<p dir="auto">I should also add that the listeners for these events that were attached to parents of the focusable elements also got called (I'm guessing this is because the event bubbles up).</p>
 
 <details>
 <summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/element/keydown_event</code></li>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/element/keydown_event</code></li>
 <li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event</a></li>
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/element/keydown_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/element/keydown_event/index.md</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f/hovercard" href="https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f"><tt>2279e5a</tt></a></li>
@@ -65,75 +531,61 @@ or</li>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[FileAPI] Content bug: File.size (File API) is not on the sidebar]]></title>
-            <link>https://github.com/mdn/content/issues/9219</link>
-            <guid>https://github.com/mdn/content/issues/9219</guid>
-            <pubDate>Fri, 24 Sep 2021 01:49:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
-<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/File/size">https://developer.mozilla.org/en-US/docs/Web/API/File/size</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/File">https://developer.mozilla.org/en-US/docs/Web/API/File</a></p>
-<h2>Specific page section or heading?</h2>
-<p>(Sidebar) Related Topics &gt; Properties<br>
-<a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/6047296/134606089-0805bde9-4334-45c9-9317-fce78ddeb873.png"><img src="https://user-images.githubusercontent.com/6047296/134606089-0805bde9-4334-45c9-9317-fce78ddeb873.png" alt="image" style="max-width: 100%;"></a></p>
-<h2>What is the problem?</h2>
-<p>The sidebar doesn't have a link to the <strong>size</strong> property.</p>
-<h2>What did you expect to see?</h2>
-<p>The sidebar has a link to the <strong>size</strong> property.</p>
-<h2>Did you test this? If so, how?</h2>
-<p>I checked the <strong>File API</strong> specification. The <strong>size</strong> property is listed under <em>Instance properties</em> as <strong>File.prototype.size</strong>.</p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[clipboard-apis] Update execCommand use in context-menu-copy-link-with-types]]></title>
             <link>https://github.com/mdn/content/issues/8990</link>
             <guid>https://github.com/mdn/content/issues/8990</guid>
             <pubDate>Thu, 16 Sep 2021 17:38:38 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://github.com/mdn/webextensions-examples/tree/master/context-menu-copy-link-with-types">context-menu-copy-link-with-types</a> uses a content script because when the example was written execCommand didn't work in background pages; now they do so the example should be updated to call execCommand from the background page instead of using a content script.</p>
-<p>Note, before updating check whether <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write" rel="nofollow">Clipboard.write()</a> is available in Firefox, as this would be the preferred method given that execCommand is deprecated.</p>]]></content:encoded>
+            <content:encoded><![CDATA[<p dir="auto"><a href="https://github.com/mdn/webextensions-examples/tree/master/context-menu-copy-link-with-types">context-menu-copy-link-with-types</a> uses a content script because when the example was written execCommand didn't work in background pages; now they do so the example should be updated to call execCommand from the background page instead of using a content script.</p>
+<p dir="auto">Note, before updating check whether <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write" rel="nofollow">Clipboard.write()</a> is available in Firefox, as this would be the preferred method given that execCommand is deprecated.</p>
+<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write</a><br>
+MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons" rel="nofollow">https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html, cssom-view-1, dom, uievents, WebIDL-1, FileAPI, pointerlock-2] Remove alert() from live samples]]></title>
+            <title><![CDATA[[cssom-view-1, html, dom, WebIDL-1, FileAPI, uievents, pointerlock-2] Remove alert() from live samples]]></title>
             <link>https://github.com/mdn/content/issues/7566</link>
             <guid>https://github.com/mdn/content/issues/7566</guid>
             <pubDate>Tue, 03 Aug 2021 21:17:44 GMT</pubDate>
-            <content:encoded><![CDATA[<p><code>window.alert()</code> <a href="https://www.chromestatus.com/feature/5148698084376576" rel="nofollow">doesn't work cross-origin in Chrome any more</a>, meaning that any of our live samples that rely on <code>alert()</code> are now broken.</p>
-<p>See also <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="959310145" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/7553" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/7553/hovercard" href="https://github.com/mdn/content/issues/7553">#7553</a>.</p>
-<p>This is (I think) all the live samples in Web/API that use <code>alert()</code> in a live sample:</p>
-<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/attr/localname">https://developer.mozilla.org/en-US/docs/Web/API/attr/localname</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/canvasrenderingcontext2d/addhitregion">https://developer.mozilla.org/en-US/docs/Web/API/canvasrenderingcontext2d/addhitregion</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/document/querycommandstate">https://developer.mozilla.org/en-US/docs/Web/API/document/querycommandstate</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/domexception/domexception">https://developer.mozilla.org/en-US/docs/Web/API/domexception/domexception</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/eventlistener">https://developer.mozilla.org/en-US/docs/Web/API/eventlistener</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/eventtarget/addeventlistener">https://developer.mozilla.org/en-US/docs/Web/API/eventtarget/addeventlistener</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/file/name">https://developer.mozilla.org/en-US/docs/Web/API/file/name</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/keyboardevent/metakey">https://developer.mozilla.org/en-US/docs/Web/API/keyboardevent/metakey</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/mouseevent">https://developer.mozilla.org/en-US/docs/Web/API/mouseevent</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/notifications_api/using_the_notifications_api">https://developer.mozilla.org/en-US/docs/Web/API/notifications_api/using_the_notifications_api</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/window/find">https://developer.mozilla.org/en-US/docs/Web/API/window/find</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/windoworworkerglobalscope/settimeout">https://developer.mozilla.org/en-US/docs/Web/API/windoworworkerglobalscope/settimeout</a> (fixed in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="959418868" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/7560" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/7560/hovercard" href="https://github.com/mdn/content/pull/7560">#7560</a>)</p>
-<p>(I might have missed some).</p>
-<p>We should replace all of these with some alternative. A common alternative is to write the output into an element in the example's document.</p>]]></content:encoded>
+            <content:encoded><![CDATA[<p dir="auto"><code class="notranslate">window.alert()</code> <a href="https://www.chromestatus.com/feature/5148698084376576" rel="nofollow">doesn't work cross-origin in Chrome any more</a>, meaning that any of our live samples that rely on <code class="notranslate">alert()</code> are now broken.</p>
+<p dir="auto">See also <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="959310145" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/7553" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/7553/hovercard" href="https://github.com/mdn/content/issues/7553">#7553</a>.</p>
+<p dir="auto">This is (I think) all the live samples in Web/API that use <code class="notranslate">alert()</code> in a live sample:</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> <a href="https://developer.mozilla.org/en-US/docs/Web/API/attr/localname" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/attr/localname</a></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> <a href="https://developer.mozilla.org/en-US/docs/Web/API/canvasrenderingcontext2d/addhitregion" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/canvasrenderingcontext2d/addhitregion</a></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> <a href="https://developer.mozilla.org/en-US/docs/Web/API/document/querycommandstate" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/document/querycommandstate</a></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> <a href="https://developer.mozilla.org/en-US/docs/Web/API/domexception/domexception" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/domexception/domexception</a></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> <a href="https://developer.mozilla.org/en-US/docs/Web/API/eventlistener" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/eventlistener</a></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/API/eventtarget/addeventlistener" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/eventtarget/addeventlistener</a></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> <a href="https://developer.mozilla.org/en-US/docs/Web/API/file/name" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/file/name</a></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> <a href="https://developer.mozilla.org/en-US/docs/Web/API/keyboardevent/metakey" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/keyboardevent/metakey</a></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> <a href="https://developer.mozilla.org/en-US/docs/Web/API/mouseevent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/mouseevent</a></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/API/notifications_api/using_the_notifications_api" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/notifications_api/using_the_notifications_api</a></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/find" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/window/find</a></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> <a href="https://developer.mozilla.org/en-US/docs/Web/API/windoworworkerglobalscope/settimeout" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/windoworworkerglobalscope/settimeout</a> (fixed in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="959418868" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/7560" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/7560/hovercard" href="https://github.com/mdn/content/pull/7560">#7560</a>)</li>
+</ul>
+<p dir="auto">(I might have missed some).</p>
+<p dir="auto">We should replace all of these with some alternative. A common alternative is to write the output into an element in the example's document.</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[IndexedDB-3] Issue with "IDBTransaction":Example needs explanation]]></title>
             <link>https://github.com/mdn/content/issues/7160</link>
             <guid>https://github.com/mdn/content/issues/7160</guid>
             <pubDate>Thu, 22 Jul 2021 15:31:43 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction">https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>Arguments passed to db.transaction in an example are unexplained.</p>
-<h4>Specific section or headline?</h4>
-<p>First js code example (under IDBTransaction), for example the line db.transaction("foo", "readwrite");</p>
-<h4>What did you expect to see?</h4>
-<p>Anything describing the meaning of the arguments, esp "foo" (which turns out to be a store name, and a special case of that first argument, which otherwise would be a <em>list</em>, not a string).  A link to the "transaction" article i found (see below) would be useful here.</p>
-<h4>Did you test this? If so, how?</h4>
-<p>Did not test, but answered my own question with a google search for <em>indexedDB transaction method</em>, found the mozilla article ...IDBDatabase/transaction, which provided a lucid explanation.</p>
-<p>A link to that article would be useful to rank amateurs like me.</p>
-<p>At the same time, I have to comment that this mechanism for commenting on articles is new to me.  Thank you for providing it.  Earlier alternatives seemed to offer the opportunity to edit the article, and no way was I going to do that. It's especially nice to be able to reference the tab where the question arose as I complete this form.</p>
+            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction</a></p>
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">Arguments passed to db.transaction in an example are unexplained.</p>
+<h4 dir="auto">Specific section or headline?</h4>
+<p dir="auto">First js code example (under IDBTransaction), for example the line db.transaction("foo", "readwrite");</p>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">Anything describing the meaning of the arguments, esp "foo" (which turns out to be a store name, and a special case of that first argument, which otherwise would be a <em>list</em>, not a string).  A link to the "transaction" article i found (see below) would be useful here.</p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+<p dir="auto">Did not test, but answered my own question with a google search for <em>indexedDB transaction method</em>, found the mozilla article ...IDBDatabase/transaction, which provided a lucid explanation.</p>
+<p dir="auto">A link to that article would be useful to rank amateurs like me.</p>
+<p dir="auto">At the same time, I have to comment that this mechanism for commenting on articles is new to me.  Thank you for providing it.  Earlier alternatives seemed to offer the opportunity to edit the article, and no way was I going to do that. It's especially nice to be able to reference the tab where the question arose as I complete this form.</p>
 
 <details>
 <summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/idbtransaction</code></li>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/idbtransaction</code></li>
 <li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction</a></li>
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/idbtransaction/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/idbtransaction/index.html</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e7a0bb19fe8960c2f3ee1a1d0f28e567b1219735/hovercard" href="https://github.com/mdn/content/commit/e7a0bb19fe8960c2f3ee1a1d0f28e567b1219735"><tt>e7a0bb1</tt></a></li>
@@ -142,44 +594,19 @@ or</li>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[uievents] Issue with "MouseEvent.ctrlKey": 'command' instead of 'control' for Mac keyboards]]></title>
-            <link>https://github.com/mdn/content/issues/6624</link>
-            <guid>https://github.com/mdn/content/issues/6624</guid>
-            <pubDate>Tue, 06 Jul 2021 12:40:16 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/ctrlKey">https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/ctrlKey</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>As explained already in the title, the key corresponding to 'ctrl' on Windows/Linux is "command" on Mac.</p>
-<h4>Specific section or headline?</h4>
-<p>The very first "Note" at the top of the page.</p>
-<h4>What did you expect to see?</h4>
-<p>"Command", instead of "Control"</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/mouseevent/ctrlkey</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/ctrlKey" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/ctrlKey</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/mouseevent/ctrlkey/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/mouseevent/ctrlkey/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/19f75559a3df713dd1487807a4bbd84a9e3fd62e/hovercard" href="https://github.com/mdn/content/commit/19f75559a3df713dd1487807a4bbd84a9e3fd62e"><tt>19f7555</tt></a></li>
-<li>Document last modified: 2021-06-14T14:36:19.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[selection-api] Issue with "Selection.setBaseAndExtent()": behaviour on text nodes]]></title>
             <link>https://github.com/mdn/content/issues/6623</link>
             <guid>https://github.com/mdn/content/issues/6623</guid>
             <pubDate>Tue, 06 Jul 2021 12:24:35 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Selection/setBaseAndExtent">https://developer.mozilla.org/en-US/docs/Web/API/Selection/setBaseAndExtent</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>If the argument anchorNode/focusNode is a text node, the corresponding offset is the index of the character.</p>
-<h4>Did you test this? If so, how?</h4>
-<div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="var node = document.querySelector('.anything') //select an empty node!
+            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Selection/setBaseAndExtent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Selection/setBaseAndExtent</a></p>
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">If the argument anchorNode/focusNode is a text node, the corresponding offset is the index of the character.</p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="var node = document.querySelector('.anything') //select an empty node!
 node.textContent = &quot;hello world!&quot;
 var tnode = node.childNodes[0]
 var sel = window.getSelection()
-sel.setBaseAndExtent(tnode, 0, tnode, 5) // this should select 'hello'
-"><pre><code>var node = document.querySelector('.anything') //select an empty node!
+sel.setBaseAndExtent(tnode, 0, tnode, 5) // this should select 'hello'"><pre class="notranslate notranslate"><code>var node = document.querySelector('.anything') //select an empty node!
 node.textContent = "hello world!"
 var tnode = node.childNodes[0]
 var sel = window.getSelection()
@@ -188,8 +615,8 @@ sel.setBaseAndExtent(tnode, 0, tnode, 5) // this should select 'hello'
 
 <details>
 <summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/selection/setbaseandextent</code></li>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/selection/setbaseandextent</code></li>
 <li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Selection/setBaseAndExtent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Selection/setBaseAndExtent</a></li>
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/selection/setbaseandextent/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/selection/setbaseandextent/index.html</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/65b5fed3c37fd772df9f018d2ad013ef46ccdaa6/hovercard" href="https://github.com/mdn/content/commit/65b5fed3c37fd772df9f018d2ad013ef46ccdaa6"><tt>65b5fed</tt></a></li>
@@ -198,75 +625,24 @@ sel.setBaseAndExtent(tnode, 0, tnode, 5) // this should select 'hello'
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[clipboard-apis] Issue with "Clipboard.write()": example setClipboard reports an error]]></title>
-            <link>https://github.com/mdn/content/issues/5566</link>
-            <guid>https://github.com/mdn/content/issues/5566</guid>
-            <pubDate>Wed, 02 Jun 2021 06:23:17 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write">https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>The first example function setClipboard is incorrect, and reports an error on Chrome.</p>
-<h4>Specific section or headline?</h4>
-<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write#example">https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write#example</a></p>
-<h4>What did you expect to see?</h4>
-<p>no error.<br>
-This article seems right: <a href="https://www.javascripture.com/ClipboardItem" rel="nofollow">ClipboardItem JavaScript API</a><br>
-I made a little change to the example:</p>
-<div class="highlight highlight-source-js position-relative" data-snippet-clipboard-copy-content="function setClipboard(text) {
-  const type = 'text/plain';
-  let blob = new Blob([text], {type});
-  let data = [new ClipboardItem({ [type]: blob })];
-
-  navigator.clipboard.write(data).then(function() {
-    /* success */
-  }, function(e) {
-    /* failure */
-  });
-}
-"><pre><span class="pl-k">function</span> <span class="pl-en">setClipboard</span><span class="pl-kos">(</span><span class="pl-s1">text</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-  <span class="pl-k">const</span> <span class="pl-s1">type</span> <span class="pl-c1">=</span> <span class="pl-s">'text/plain'</span><span class="pl-kos">;</span>
-  <span class="pl-k">let</span> <span class="pl-s1">blob</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Blob</span><span class="pl-kos">(</span><span class="pl-kos">[</span><span class="pl-s1">text</span><span class="pl-kos">]</span><span class="pl-kos">,</span> <span class="pl-kos">{</span>type<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-  <span class="pl-k">let</span> <span class="pl-s1">data</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-k">new</span> <span class="pl-v">ClipboardItem</span><span class="pl-kos">(</span><span class="pl-kos">{</span> <span class="pl-kos">[</span><span class="pl-s1">type</span><span class="pl-kos">]</span>: <span class="pl-s1">blob</span> <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">]</span><span class="pl-kos">;</span>
-
-  <span class="pl-s1">navigator</span><span class="pl-kos">.</span><span class="pl-c1">clipboard</span><span class="pl-kos">.</span><span class="pl-en">write</span><span class="pl-kos">(</span><span class="pl-s1">data</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-k">function</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-    <span class="pl-c">/* success */</span>
-  <span class="pl-kos">}</span><span class="pl-kos">,</span> <span class="pl-k">function</span><span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-    <span class="pl-c">/* failure */</span>
-  <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span></pre></div>
-<h4>Did you test this? If so, how?</h4>
-<p>I tested on Chrome Version 91.0.4472.77 (Official Build) (64-bit)<br>
-<a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/7382357/120431175-b72d7b80-c3aa-11eb-8e07-78851b5d7b94.png"><img src="https://user-images.githubusercontent.com/7382357/120431175-b72d7b80-c3aa-11eb-8e07-78851b5d7b94.png" alt="image" style="max-width: 100%;"></a></p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/clipboard/write</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/clipboard/write/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/clipboard/write/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e085698aeab231f6d0c1d3bb7ea6288237946703/hovercard" href="https://github.com/mdn/content/commit/e085698aeab231f6d0c1d3bb7ea6288237946703"><tt>e085698</tt></a></li>
-<li>Document last modified: 2021-05-29T04:16:39.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[IndexedDB-3] Issue with "Using IndexedDB": "Updating an entry in the database" example does not work]]></title>
             <link>https://github.com/mdn/content/issues/5463</link>
             <guid>https://github.com/mdn/content/issues/5463</guid>
             <pubDate>Sun, 30 May 2021 02:45:08 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB">https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>The code at "Updating an entry in the database" is adding a new entry instead of updating the existing one</p>
-<h4>Specific section or headline?</h4>
-<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB#updating_an_entry_in_the_database">https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB#updating_an_entry_in_the_database</a></p>
-<h4>What did you expect to see?</h4>
-<p>According to the <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/put" rel="nofollow">ObjectStore put docs</a>, to update an entry it is required to have a key as a second parameter, the current example calls put like this: <code>var requestUpdate = objectStore.put(data);</code> and it should be something like <code>var requestUpdate = objectStore.put(data,"444-44-4444");</code></p>
-<h4>Did you test this? If so, how?</h4>
-<p>I tried to execute the example as is and it adds a new entry, adding the key as a second param updates the entry</p>
+            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB</a></p>
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">The code at "Updating an entry in the database" is adding a new entry instead of updating the existing one</p>
+<h4 dir="auto">Specific section or headline?</h4>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB#updating_an_entry_in_the_database" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB#updating_an_entry_in_the_database</a></p>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">According to the <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/put" rel="nofollow">ObjectStore put docs</a>, to update an entry it is required to have a key as a second parameter, the current example calls put like this: <code class="notranslate">var requestUpdate = objectStore.put(data);</code> and it should be something like <code class="notranslate">var requestUpdate = objectStore.put(data,"444-44-4444");</code></p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+<p dir="auto">I tried to execute the example as is and it adds a new entry, adding the key as a second param updates the entry</p>
 
 <details>
 <summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/indexeddb_api/using_indexeddb</code></li>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/indexeddb_api/using_indexeddb</code></li>
 <li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB</a></li>
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/indexeddb_api/using_indexeddb/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/indexeddb_api/using_indexeddb/index.html</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/12024ee393c3fe3101b03903561c640444b38646/hovercard" href="https://github.com/mdn/content/commit/12024ee393c3fe3101b03903561c640444b38646"><tt>12024ee</tt></a></li>
@@ -275,24 +651,24 @@ I made a little change to the example:</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[intersection-observer] Issue with "IntersectionObserver.IntersectionObserver()": (short summary here please)]]></title>
+            <title><![CDATA[[intersection-observer] Issue with "IntersectionObserver.IntersectionObserver()": needs description/example of how rootMargin works]]></title>
             <link>https://github.com/mdn/content/issues/4710</link>
             <guid>https://github.com/mdn/content/issues/4710</guid>
             <pubDate>Tue, 04 May 2021 15:10:10 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver">https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>The description for <code>rootMargin</code> should indicate whether positive margins increase or decrease the threshold for intersection detection. This is particularly important because I can use margins to change the relative position of a box in CSS (e.g. I can move an element up 5 pixels by setting its top-margin to "-5px". The way the document describes this, it sounds like it functions more like CSS padding, such that setting the top value to "-5px" would <em>decrease</em> the size of the bounding box by 5px without moving the element.</p>
-<h4>Specific section or headline?</h4>
-<p>Parameters</p>
-<h4>What did you expect to see?</h4>
-<p>I'd like to see the description of how <code>rootMargin</code> works show how the option works, or at least describe its operations by stating more precisely which direction the bounding box grows (or moves?) when the value is positive vs when it is negative.</p>
-<h4>Did you test this? If so, how?</h4>
-<p>N/A</p>
+            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver</a></p>
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">The description for <code class="notranslate">rootMargin</code> should indicate whether positive margins increase or decrease the threshold for intersection detection. This is particularly important because I can use margins to change the relative position of a box in CSS (e.g. I can move an element up 5 pixels by setting its top-margin to "-5px". The way the document describes this, it sounds like it functions more like CSS padding, such that setting the top value to "-5px" would <em>decrease</em> the size of the bounding box by 5px without moving the element.</p>
+<h4 dir="auto">Specific section or headline?</h4>
+<p dir="auto">Parameters</p>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">I'd like to see the description of how <code class="notranslate">rootMargin</code> works show how the option works, or at least describe its operations by stating more precisely which direction the bounding box grows (or moves?) when the value is positive vs when it is negative.</p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+<p dir="auto">N/A</p>
 
 <details>
 <summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/intersectionobserver/intersectionobserver</code></li>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/intersectionobserver/intersectionobserver</code></li>
 <li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver</a></li>
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/intersectionobserver/intersectionobserver/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/intersectionobserver/intersectionobserver/index.html</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/11c96e424b376432f8ab8ebb12a40e5383e31e9d/hovercard" href="https://github.com/mdn/content/commit/11c96e424b376432f8ab8ebb12a40e5383e31e9d"><tt>11c96e4</tt></a></li>

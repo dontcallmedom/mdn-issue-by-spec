@@ -4,42 +4,127 @@
         <title>W3C Audio Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_audio_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Audio Working Group</description>
-        <lastBuildDate>Sat, 02 Oct 2021 21:55:05 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 20 Jul 2022 11:13:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[[webaudio] Issue with "AudioContext.suspend()": Example Button Caption is wrong after Stop during Suspend]]></title>
-            <link>https://github.com/mdn/content/issues/9451</link>
-            <guid>https://github.com/mdn/content/issues/9451</guid>
-            <pubDate>Sat, 02 Oct 2021 21:55:05 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/suspend">https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/suspend</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>The example<br>
-<a rel="nofollow" href="https://mdn.github.io/webaudio-examples/audiocontext-states/">https://mdn.github.io/webaudio-examples/audiocontext-states/</a><br>
-has a bug.<br>
-The sequence:<br>
-Create context; Suspend context; Stop context; Create context<br>
-results with the context running and sounding but the suspend/resume button caption remains Resume context.<br>
-FIX: add a line in startBtn.onclick()<br>
-susresBtn.textContent = 'Suspend context';</p>
-<h4>Specific section or headline?</h4>
-<p>Example: see it running live</p>
-<h4>What did you expect to see?</h4>
-<p>The susres button label should always show 'Suspend context' when the context is running</p>
-<h4>Did you test this? If so, how?</h4>
-<p>Yes. I ran the linked example.''<br>
-I made a local fix and tested it.<br>
-I did not make any changes on GitHub.</p>
+            <title><![CDATA[[webaudio] Outdated web audio example code]]></title>
+            <link>https://github.com/mdn/content/issues/18547</link>
+            <guid>https://github.com/mdn/content/issues/18547</guid>
+            <pubDate>Wed, 20 Jul 2022 11:13:25 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaElementSource" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaElementSource</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Examples</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The example code has been updated but this hasn’t.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Up-to-date code.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://github.com/mdn/webaudio-examples/tree/master/media-source-buffer">https://github.com/mdn/webaudio-examples/tree/master/media-source-buffer</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/audiocontext/createmediaelementsource</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaElementSource" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaElementSource</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/audiocontext/createmediaelementsource/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/audiocontext/createmediaelementsource/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/c000698d544f932314050edec3f47b8b8dc906bf/hovercard" href="https://github.com/mdn/content/commit/c000698d544f932314050edec3f47b8b8dc906bf"><tt>c000698</tt></a></li>
+<li>Document last modified: 2022-05-27T16:26:44.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webaudio] api.AudioParam - automationRate undocumented]]></title>
+            <link>https://github.com/mdn/content/issues/14637</link>
+            <guid>https://github.com/mdn/content/issues/14637</guid>
+            <pubDate>Sun, 03 Apr 2022 13:16:23 GMT</pubDate>
+            <content:encoded><![CDATA[
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">The link to automationRate leads to a 404.</p>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">A page which documents what <code class="notranslate">automationRate</code> is or was good for, whether it is deprecated or not, and "how new/old" it is (introduced 2020-02, e.g.)</p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+<p dir="auto">I found a bit of info here:<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioParamDescriptor" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioParamDescriptor</a><br>
+But that does not really cover the topic.</p>
+
+<details>
+<summary>MDN page report details</summary>
+<ul dir="auto">
+<li>Query: <code class="notranslate">api.AudioParam</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioParam" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioParam</a></li>
+<li>Report started: 2022-04-03T11:05:12.802Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webaudio] "ConvolverNode": provide a simpler example that I can adapt to more complex examples (connecting it to another node does not work)]]></title>
+            <link>https://github.com/mdn/content/issues/14022</link>
+            <guid>https://github.com/mdn/content/issues/14022</guid>
+            <pubDate>Fri, 18 Mar 2022 14:35:29 GMT</pubDate>
+            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode</a></p>
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">The convolver node doesn't seem to work when connected to another node directly</p>
+<h4 dir="auto">Specific section or headline?</h4>
+<p dir="auto">The example section, it's only for samples</p>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">to see a simpler example that i can adapt to more complex examples</p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+<p dir="auto">I'm trying to create an emulation of a eurorack module.</p>
+<p dir="auto">I'm failing to connect the convolver node to the enveloppe output.</p>
+<p dir="auto">The convolver node doesn't seem to work for any oscillator also</p>
+<p dir="auto">I expected it to be because of the fact that the buffer is null which seemed a weird design at first but I tried it and it also didn't work.</p>
+<p dir="auto">I was expecting the code to run like this:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const osc = ctx.createOscillator();
+const reverb = ctx.createConvolver();
+reverb.buffer = ctx.createBuffer(1, ctx.sampleRate, ctx.sampleRate);
+osc.connect(reverb).connect(ctx.destination);"><pre class="notranslate notranslate"><code>const osc = ctx.createOscillator();
+const reverb = ctx.createConvolver();
+reverb.buffer = ctx.createBuffer(1, ctx.sampleRate, ctx.sampleRate);
+osc.connect(reverb).connect(ctx.destination);
+</code></pre></div>
+<p dir="auto">this js fiddle contains my code. <a href="http://jsfiddle.net/5ndbfypj/7/" rel="nofollow">http://jsfiddle.net/5ndbfypj/7/</a></p>
+<p dir="auto">i've connected both the convolver node and the nvelop output to the context's destination.</p>
 
 <details>
 <summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/audiocontext/suspend</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/suspend" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/suspend</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/audiocontext/suspend/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/audiocontext/suspend/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f/hovercard" href="https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f"><tt>2279e5a</tt></a></li>
-<li>Document last modified: 2021-09-14T18:08:09.000Z</li>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/convolvernode</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/convolvernode/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/convolvernode/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/caaae4e675413aa1c44054883d7e1baa3fa910ff/hovercard" href="https://github.com/mdn/content/commit/caaae4e675413aa1c44054883d7e1baa3fa910ff"><tt>caaae4e</tt></a></li>
+<li>Document last modified: 2022-02-03T16:33:06.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webaudio] Issue with "AudioContext.createMediaStreamTrackSource()": Example is not using the method exemplified]]></title>
+            <link>https://github.com/mdn/content/issues/13941</link>
+            <guid>https://github.com/mdn/content/issues/13941</guid>
+            <pubDate>Wed, 16 Mar 2022 09:31:56 GMT</pubDate>
+            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaStreamTrackSource" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaStreamTrackSource</a></p>
+<p dir="auto"><code class="notranslate">let source = audioCtx.createMediaStreamSource(stream);</code></p>
+<h4 dir="auto">Specific section or headline?</h4>
+<p dir="auto">The Javascript example.</p>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">Something using <code class="notranslate">createMediaStreamTrackSource()</code></p>
+<p dir="auto">I also don't understand where the variable/object <code class="notranslate">audio</code> in  <code class="notranslate">audio.srcObject</code> comes from.</p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+<p dir="auto">No.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/audiocontext/createmediastreamtracksource</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaStreamTrackSource" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaStreamTrackSource</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/audiocontext/createmediastreamtracksource/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/audiocontext/createmediastreamtracksource/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/516c74d03bd44861eca7da5a96d287aef846b89d/hovercard" href="https://github.com/mdn/content/commit/516c74d03bd44861eca7da5a96d287aef846b89d"><tt>516c74d</tt></a></li>
+<li>Document last modified: 2022-01-27T16:52:19.000Z</li>
 </ul>
 </details>]]></content:encoded>
         </item>
@@ -48,12 +133,12 @@ I did not make any changes on GitHub.</p>
             <link>https://github.com/mdn/content/issues/9042</link>
             <guid>https://github.com/mdn/content/issues/9042</guid>
             <pubDate>Fri, 17 Sep 2021 18:01:03 GMT</pubDate>
-            <content:encoded><![CDATA[<p>The example does neither work in Safari 14 / Mojave nor in Safari / iOS 14.8. Is the compatibility table correct anyway?</p>
+            <content:encoded><![CDATA[<p dir="auto">The example does neither work in Safari 14 / Mojave nor in Safari / iOS 14.8. Is the compatibility table correct anyway?</p>
 
 <details>
 <summary>MDN page report details</summary>
-<ul>
-<li>Query: <code>api.AudioContext.createMediaElementSource</code></li>
+<ul dir="auto">
+<li>Query: <code class="notranslate">api.AudioContext.createMediaElementSource</code></li>
 <li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaElementSource" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaElementSource</a></li>
 <li>Report started: 2021-09-17T17:25:38.880Z</li>
 </ul>
@@ -64,36 +149,36 @@ I did not make any changes on GitHub.</p>
             <link>https://github.com/mdn/content/issues/4468</link>
             <guid>https://github.com/mdn/content/issues/4468</guid>
             <pubDate>Mon, 26 Apr 2021 03:22:48 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/AudioListener">https://developer.mozilla.org/en-US/docs/Web/API/AudioListener</a></p>
-<p>As discussed in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="865738850" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/4401" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/4401/hovercard?comment_id=619372451&amp;comment_type=review_comment" href="https://github.com/mdn/content/pull/4401#discussion_r619372451">#4401 (comment)</a> <code>AudioListener</code> and all the attributes link to the same example <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/PannerNode#examples">https://developer.mozilla.org/en-US/docs/Web/API/PannerNode#examples</a></p>
-<p>This is not actually all that relevant to all the attributes, and is probably more comprehensive than required at this level. It would be better to have small focussed example for each of these and cross link to the example as a see also.</p>]]></content:encoded>
+            <content:encoded><![CDATA[<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioListener" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioListener</a></p>
+<p dir="auto">As discussed in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="865738850" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/4401" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/4401/hovercard?comment_id=619372451&amp;comment_type=review_comment" href="https://github.com/mdn/content/pull/4401#discussion_r619372451">#4401 (comment)</a> <code class="notranslate">AudioListener</code> and all the attributes link to the same example <a href="https://developer.mozilla.org/en-US/docs/Web/API/PannerNode#examples" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PannerNode#examples</a></p>
+<p dir="auto">This is not actually all that relevant to all the attributes, and is probably more comprehensive than required at this level. It would be better to have small focussed example for each of these and cross link to the example as a see also.</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[webmidi] Issue with "MIDIMessageEvent": deprecated example method ]]></title>
             <link>https://github.com/mdn/content/issues/3569</link>
             <guid>https://github.com/mdn/content/issues/3569</guid>
             <pubDate>Sat, 27 Mar 2021 17:06:36 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/MIDIMessageEvent">https://developer.mozilla.org/en-US/docs/Web/API/MIDIMessageEvent</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<p>This code snippet at the end of the article invokes a deprecated method:</p>
-<p>// Printing all messages to console<br>
+            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MIDIMessageEvent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MIDIMessageEvent</a></p>
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">This code snippet at the end of the article invokes a deprecated method:</p>
+<p dir="auto">// Printing all messages to console<br>
 navigator.requestMIDIAccess().then(midiAccess =&gt; {<br>
 Array.from(midiAccess.inputs).forEach(input =&gt; {<br>
 input[1].onmidimessage = (msg) =&gt; { console.log(msg); }<br>
 })<br>
 });</p>
-<h4>Specific section or headline?</h4>
-<p>Examples</p>
-<h4>What did you expect to see?</h4>
-<p>a snippet that will work in my browser or a link to how to construct a well formed expression to do as much. My chrome version is Version 89.0.4389.90 (Official Build) (64-bit)</p>
-<h4>Did you test this? If so, how?</h4>
-<p>copy and pasted in console and this was the output:</p>
-<p>VM38:1 [Deprecation] Web MIDI will ask a permission to use even if the sysex is not specified in the MIDIOptions since around M82, around May 2020. See <a rel="nofollow" href="https://www.chromestatus.com/feature/5138066234671104">https://www.chromestatus.com/feature/5138066234671104</a> for more details.</p>
+<h4 dir="auto">Specific section or headline?</h4>
+<p dir="auto">Examples</p>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">a snippet that will work in my browser or a link to how to construct a well formed expression to do as much. My chrome version is Version 89.0.4389.90 (Official Build) (64-bit)</p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+<p dir="auto">copy and pasted in console and this was the output:</p>
+<p dir="auto">VM38:1 [Deprecation] Web MIDI will ask a permission to use even if the sysex is not specified in the MIDIOptions since around M82, around May 2020. See <a href="https://www.chromestatus.com/feature/5138066234671104" rel="nofollow">https://www.chromestatus.com/feature/5138066234671104</a> for more details.</p>
 
 <details>
 <summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/midimessageevent</code></li>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/midimessageevent</code></li>
 <li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MIDIMessageEvent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MIDIMessageEvent</a></li>
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/midimessageevent/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/midimessageevent/index.html</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/63c69f3c933acbea9bfb24d359a7d2ffdb3c0bea/hovercard" href="https://github.com/mdn/content/commit/63c69f3c933acbea9bfb24d359a7d2ffdb3c0bea"><tt>63c69f3</tt></a></li>
@@ -106,10 +191,10 @@ input[1].onmidimessage = (msg) =&gt; { console.log(msg); }<br>
             <link>https://github.com/mdn/content/issues/1296</link>
             <guid>https://github.com/mdn/content/issues/1296</guid>
             <pubDate>Thu, 14 Jan 2021 10:42:13 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/VoloshchenkoAl/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/VoloshchenkoAl">@VoloshchenkoAl</a> commented on <a href="https://github.com/mdn/webaudio-examples/issues/46" data-hovercard-type="issue" data-hovercard-url="/mdn/webaudio-examples/issues/46/hovercard">Wed Jan 13 2021</a></p>
-<p>I have started to learn about <a href="https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode" rel="nofollow">OscillatorNode</a>, and find out that it is difficult to understand how the frequency and type of Oscillator affects a sound wave.</p>
-<p>Is it a good idea to add visualization for OscillatorNode documentation? It will help to better understand how OscillatorNode works.</p>
-<p>Example of visualization — <a rel="nofollow" href="https://codepen.io/VoloshchenkoAl/pen/gOwdpKx">https://codepen.io/VoloshchenkoAl/pen/gOwdpKx</a></p>]]></content:encoded>
+            <content:encoded><![CDATA[<p dir="auto"><a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/VoloshchenkoAl/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/VoloshchenkoAl">@VoloshchenkoAl</a> commented on <a href="https://github.com/mdn/webaudio-examples/issues/46" data-hovercard-type="issue" data-hovercard-url="/mdn/webaudio-examples/issues/46/hovercard">Wed Jan 13 2021</a></p>
+<p dir="auto">I have started to learn about <a href="https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode" rel="nofollow">OscillatorNode</a>, and find out that it is difficult to understand how the frequency and type of Oscillator affects a sound wave.</p>
+<p dir="auto">Is it a good idea to add visualization for OscillatorNode documentation? It will help to better understand how OscillatorNode works.</p>
+<p dir="auto">Example of visualization — <a href="https://codepen.io/VoloshchenkoAl/pen/gOwdpKx" rel="nofollow">https://codepen.io/VoloshchenkoAl/pen/gOwdpKx</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

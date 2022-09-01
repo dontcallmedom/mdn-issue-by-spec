@@ -4,66 +4,77 @@
         <title>W3C Pointer Events Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_pointer_events_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Pointer Events Working Group</description>
-        <lastBuildDate>Thu, 30 Sep 2021 10:10:37 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 03 Apr 2022 15:13:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] [WebAPI] Implement Element.setHTML(input, sanitizer)]]></title>
-            <link>https://github.com/mdn/content/issues/9366</link>
-            <guid>https://github.com/mdn/content/issues/9366</guid>
-            <pubDate>Thu, 30 Sep 2021 10:10:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>Acceptance Criteria</h2>
-<ul class="contains-task-list">
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> The listed features are documented sufficiently on MDN</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> BCD is updated</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Interactive example and data repos are updated if appropriate</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> The content has been reviewed as needed</li>
+            <title><![CDATA[[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] Content bug: Implementation of the `mode` options for `Element.attachShadow()` in code example could be refined]]></title>
+            <link>https://github.com/mdn/content/issues/14620</link>
+            <guid>https://github.com/mdn/content/issues/14620</guid>
+            <pubDate>Sun, 03 Apr 2022 15:13:09 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 dir="auto">What page(s) did you find the problem on?</h2>
+
+<p dir="auto">Context: <a href="https://developer.mozilla.org/en-US/docs/Web" rel="nofollow">References</a> &gt; <a href="https://developer.mozilla.org/en-US/docs/Web/API" rel="nofollow">Web APIs</a> &gt; <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element" rel="nofollow">Element</a> &gt; <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow" rel="nofollow">Element.attachShadow()</a></p>
+<ul dir="auto">
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow</a></li>
 </ul>
-<h3>For folks helping with Firefox related documentation</h3>
-<ul class="contains-task-list">
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Set bugs to <code>dev-doc-complete</code></li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Add entry to Firefox release notes if feature is enabled in release<br>
-or</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Add entry to Firefox experimental features page if feature is not yet enabled in release</li>
+<h2 dir="auto">Specific page section or heading?</h2>
+
+<ul dir="auto">
+<li>Heading: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow#parameters" rel="nofollow">Parameters</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow#parameters" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow#parameters</a></li>
 </ul>
-<h2>Features to document</h2>
-<p>implement Element.setHTML(input, sanitizer). New method page under <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Element">https://developer.mozilla.org/en-US/docs/Web/API/Element</a></p>
-<h2>Related Gecko bugs</h2>
-<p><a rel="nofollow" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1716624">https://bugzilla.mozilla.org/show_bug.cgi?id=1716624</a></p>]]></content:encoded>
+<h2 dir="auto">What is the problem?</h2>
+
+<p dir="auto">It seems the code example/demonstration is missing some information.</p>
+<ul dir="auto">
+<li>For the string <code class="notranslate">mode</code> under the parameter <code class="notranslate">init</code>, the options <code class="notranslate">open</code> and <code class="notranslate">closed</code> aren't included in the example.</li>
+<li>Or it's left for the reader to figure it out. :)</li>
+</ul>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/76430758/161434240-8bb8e945-60f4-40fc-a3bb-6eb3b80862e2.png"><img src="https://user-images.githubusercontent.com/76430758/161434240-8bb8e945-60f4-40fc-a3bb-6eb3b80862e2.png" alt="image" style="max-width: 100%;"></a></p>
+<h2 dir="auto">What did you expect to see?</h2>
+
+<ul dir="auto">
+<li>I came across the following code <code class="notranslate">this.attachShadow({ mode: "open" });</code> for a <code class="notranslate">customElements</code> that I am using in a project.</li>
+<li>The examples and documentation in MDN seemed close enough. Being fairly new to JavaScript, I didn't understand why <code class="notranslate">"open"</code> and <code class="notranslate">"closed"</code> weren't mentioned directly inside the example.</li>
+</ul>
+<h2 dir="auto">Did you test this? If so, how?</h2>
+
+<p dir="auto">N.A.</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[cssom-view-1, dom, notifications, service-workers-1, pointerevents3] Better naming of pages]]></title>
             <link>https://github.com/mdn/content/issues/8977</link>
             <guid>https://github.com/mdn/content/issues/8977</guid>
             <pubDate>Thu, 16 Sep 2021 10:09:38 GMT</pubDate>
-            <content:encoded><![CDATA[<p>A big step forward was made in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="980067493" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/8351" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/8351/hovercard" href="https://github.com/mdn/content/pull/8351">#8351</a>, but I'd like to propose this rule to page naming:</p>
-<ol>
+            <content:encoded><![CDATA[<p dir="auto">A big step forward was made in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="980067493" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/8351" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/8351/hovercard" href="https://github.com/mdn/content/pull/8351">#8351</a>, but I'd like to propose this rule to page naming:</p>
+<ol dir="auto">
 <li>If the item is available on the global, use the name. Eg:
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting" rel="nofollow"><code>ServiceWorkerGlobalScope.skipWaiting</code></a> becomes <code>skipWaiting</code>.</li>
+<ul dir="auto">
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting" rel="nofollow"><code class="notranslate">ServiceWorkerGlobalScope.skipWaiting</code></a> becomes <code class="notranslate">skipWaiting</code>.</li>
 </ul>
 </li>
 <li>If the item is typically reached via properties reachable from the global, use that property chain, omitting the global.
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" rel="nofollow"><code>Document.querySelector</code></a> becomes <code>document.querySelector</code>.</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage/match" rel="nofollow"><code>CacheStorage.match</code></a> becomes <code>caches.match</code>.</li>
+<ul dir="auto">
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" rel="nofollow"><code class="notranslate">Document.querySelector</code></a> becomes <code class="notranslate">document.querySelector</code>.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage/match" rel="nofollow"><code class="notranslate">CacheStorage.match</code></a> becomes <code class="notranslate">caches.match</code>.</li>
 </ul>
 </li>
 <li>If the item is an instance method/property, use the constructor name with the first set of caps lower-cased + the property name.
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect" rel="nofollow"><code>Element.getBoundingClientRect</code></a> becomes <code>element.getBoundingClientRect</code>.</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight" rel="nofollow"><code>HTMLElement.offsetHeight</code></a> becomes <code>htmlElement.offsetHeight</code>.</li>
+<ul dir="auto">
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect" rel="nofollow"><code class="notranslate">Element.getBoundingClientRect</code></a> becomes <code class="notranslate">element.getBoundingClientRect</code>.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight" rel="nofollow"><code class="notranslate">HTMLElement.offsetHeight</code></a> becomes <code class="notranslate">htmlElement.offsetHeight</code>.</li>
 </ul>
 </li>
 <li>If the item is a static method/property, use the constructor name + the property name.
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Notification/requestPermission" rel="nofollow"><code>Notification.requestPermission</code></a> remains <code>Notification.requestPermission</code>.</li>
+<ul dir="auto">
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Notification/requestPermission" rel="nofollow"><code class="notranslate">Notification.requestPermission</code></a> remains <code class="notranslate">Notification.requestPermission</code>.</li>
 </ul>
 </li>
 <li>Otherwise, just use the name.
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent" rel="nofollow"><code>PointerEvent</code></a> remains <code>PointerEvent</code></li>
+<ul dir="auto">
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent" rel="nofollow"><code class="notranslate">PointerEvent</code></a> remains <code class="notranslate">PointerEvent</code></li>
 </ul>
 </li>
 </ol>]]></content:encoded>

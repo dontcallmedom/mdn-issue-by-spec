@@ -13,29 +13,28 @@
             <link>https://github.com/mdn/content/issues/8126</link>
             <guid>https://github.com/mdn/content/issues/8126</guid>
             <pubDate>Fri, 20 Aug 2021 09:29:10 GMT</pubDate>
-            <content:encoded><![CDATA[<p>MDN URL: <a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/attestation">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/attestation</a></p>
-<h4>What information was incorrect, unhelpful, or incomplete?</h4>
-<h4>Specific section or headline?</h4>
-<p>Section <code>Value</code> defines three possible values:</p>
-<ul>
+            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/attestation" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/attestation</a></p>
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<h4 dir="auto">Specific section or headline?</h4>
+<p dir="auto">Section <code class="notranslate">Value</code> defines three possible values:</p>
+<ul dir="auto">
 <li>"none":</li>
 <li>"indirect"</li>
 <li>"direct"</li>
 </ul>
-<p>According to WebAuthn level3 &amp; level 2 the possible values of <code>publicKeyCredentialCreationOptions.attestation</code> are defined by the enum <code>AttestationConveyancePreference</code>:</p>
+<p dir="auto">According to WebAuthn level3 &amp; level 2 the possible values of <code class="notranslate">publicKeyCredentialCreationOptions.attestation</code> are defined by the enum <code class="notranslate">AttestationConveyancePreference</code>:</p>
 <blockquote>
-<p>This member is intended for use by Relying Parties that wish to express their preference for attestation conveyance. Its values SHOULD be members of AttestationConveyancePreference</p>
+<p dir="auto">This member is intended for use by Relying Parties that wish to express their preference for attestation conveyance. Its values SHOULD be members of AttestationConveyancePreference</p>
 </blockquote>
-<p>See <a rel="nofollow" href="https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-attestation">https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-attestation</a> and <a rel="nofollow" href="https://www.w3.org/TR/2021/REC-webauthn-2-20210408//#dom-publickeycredentialcreationoptions-attestation">https://www.w3.org/TR/2021/REC-webauthn-2-20210408//#dom-publickeycredentialcreationoptions-attestation</a></p>
-<p>And AttestationConveyancePreference is defined as:</p>
-<div class="snippet-clipboard-content position-relative overflow-auto" data-snippet-clipboard-copy-content="enum AttestationConveyancePreference {
+<p dir="auto">See <a href="https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-attestation" rel="nofollow">https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-attestation</a> and <a href="https://www.w3.org/TR/2021/REC-webauthn-2-20210408//#dom-publickeycredentialcreationoptions-attestation" rel="nofollow">https://www.w3.org/TR/2021/REC-webauthn-2-20210408//#dom-publickeycredentialcreationoptions-attestation</a></p>
+<p dir="auto">And AttestationConveyancePreference is defined as:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="enum AttestationConveyancePreference {
     &quot;none&quot;,
     &quot;indirect&quot;,
     &quot;direct&quot;,
     &quot;enterprise&quot;
 };
-
-"><pre><code>enum AttestationConveyancePreference {
+"><pre class="notranslate notranslate"><code>enum AttestationConveyancePreference {
     "none",
     "indirect",
     "direct",
@@ -43,13 +42,13 @@
 };
 
 </code></pre></div>
-<h4>What did you expect to see?</h4>
-<p>The value <code> "enterprise"</code> is missing.</p>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">The value <code class="notranslate"> "enterprise"</code> is missing.</p>
 
 <details>
 <summary>MDN Content page report details</summary>
-<ul>
-<li>Folder: <code>en-us/web/api/publickeycredentialcreationoptions/attestation</code></li>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/publickeycredentialcreationoptions/attestation</code></li>
 <li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/attestation" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/attestation</a></li>
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/publickeycredentialcreationoptions/attestation/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/publickeycredentialcreationoptions/attestation/index.html</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/3b550e1a749853c0d46c02ae5db694e4dd1f0c68/hovercard" href="https://github.com/mdn/content/commit/3b550e1a749853c0d46c02ae5db694e4dd1f0c68"><tt>3b550e1</tt></a></li>
@@ -62,16 +61,16 @@
             <link>https://github.com/mdn/content/issues/3488</link>
             <guid>https://github.com/mdn/content/issues/3488</guid>
             <pubDate>Thu, 25 Mar 2021 09:42:24 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>What page(s) did you find the problem on?</h2>
-<p><a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorAttestationResponse">https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorAttestationResponse</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/authenticatorSelection">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/authenticatorSelection</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/attestation">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/attestation</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/extensions">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/extensions</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/getClientExtensionResults">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/getClientExtensionResults</a><br>
-<a rel="nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorResponse/clientDataJSON">https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorResponse/clientDataJSON</a></p>
-<h2>What is the problem?</h2>
-<p>The Web Authentication Level 2 specification introduces a number of changes that have not been reflected in the MDN documentation yet:</p>
-<ul>
+            <content:encoded><![CDATA[<h2 dir="auto">What page(s) did you find the problem on?</h2>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorAttestationResponse" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorAttestationResponse</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/authenticatorSelection" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/authenticatorSelection</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/attestation" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/attestation</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/extensions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/extensions</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/getClientExtensionResults" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/getClientExtensionResults</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorResponse/clientDataJSON" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorResponse/clientDataJSON</a></p>
+<h2 dir="auto">What is the problem?</h2>
+<p dir="auto">The Web Authentication Level 2 specification introduces a number of changes that have not been reflected in the MDN documentation yet:</p>
+<ul dir="auto">
 <li>AuthenticatorAttestationResponse.getAuthenticatorData(), AuthenticatorAttestationResponse.getPublicKey() and AuthenticatorAttestationResponse.getPublicKeyAlgorithm() aren't documented in <a href="https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorAttestationResponse" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorAttestationResponse</a></li>
 <li>the residentKey parameter of authenticatorSelection is not documented in<br>
 <a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/authenticatorSelection" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/authenticatorSelection</a></li>
@@ -87,7 +86,7 @@ not documented in<br>
 <a href="https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorResponse/clientDataJSON" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorResponse/clientDataJSON</a></li>
 <li>in that same page, tokenBindingId should be renamed tokenBinding</li>
 </ul>
-<p>(as initially <a href="https://lists.w3.org/Archives/Public/public-webauthn-adoption/2021Mar/0003.html" rel="nofollow">reported in the WebAuthn Adoption Community Group</a>)</p>]]></content:encoded>
+<p dir="auto">(as initially <a href="https://lists.w3.org/Archives/Public/public-webauthn-adoption/2021Mar/0003.html" rel="nofollow">reported in the WebAuthn Adoption Community Group</a>)</p>]]></content:encoded>
         </item>
     </channel>
 </rss>

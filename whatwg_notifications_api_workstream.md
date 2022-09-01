@@ -4,5 +4,5 @@
 
 * [[cssom-view-1, dom, notifications, service-workers-1, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
-* [[notifications] Notification](https://github.com/mdn/content/issues/2615) (2021-02-23T13:20:50Z)
+* [[notifications] Demo in Notification() constructor article causes error: “The Notification permission may only be requested from inside a short running user-generated event handler”](https://github.com/mdn/content/issues/2615) (2021-02-23T13:20:50Z)
   
