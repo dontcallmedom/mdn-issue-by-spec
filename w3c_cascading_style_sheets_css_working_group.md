@@ -4,8 +4,6 @@
 
 * [[css-fonts-5] CanvasRenderingContext2D needs improved `fontStretch` property example](https://github.com/mdn/content/issues/20208) (2022-09-01T14:39:38Z)
   
-* [[css-conditional-3, css-backgrounds-4] Incomplete CSS breadcrumbs](https://github.com/mdn/content/issues/20116) (2022-08-30T05:28:22Z)
-  
 * [[web-animations-2] Animation.commitStyles() remains unclear, example seems pointless](https://github.com/mdn/content/issues/20086) (2022-08-29T10:53:24Z)
   
 * [[selectors-4] Improve the :has() page documentation](https://github.com/mdn/content/issues/19972) (2022-08-25T18:30:28Z)

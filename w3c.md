@@ -6,8 +6,6 @@
   
 * [[webrtc] Possibly missing information in WebRTC config section about certificates](https://github.com/mdn/content/issues/20134) (2022-08-30T19:08:41Z)
   
-* [[css-conditional-3, css-backgrounds-4] Incomplete CSS breadcrumbs](https://github.com/mdn/content/issues/20116) (2022-08-30T05:28:22Z)
-  
 * [[web-animations-2] Animation.commitStyles() remains unclear, example seems pointless](https://github.com/mdn/content/issues/20086) (2022-08-29T10:53:24Z)
   
 * [[selectors-4] Improve the :has() page documentation](https://github.com/mdn/content/issues/19972) (2022-08-25T18:30:28Z)
