@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Khronos Group. [![RSS feed for Khronos Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[webgl2] srcOffset and srcLength not documented for WebGL2RenderingContext.uniform](https://github.com/mdn/content/issues/20225) (2022-09-02T00:42:19Z)
+  
 * [[webgl2] WebGL2RenderingContext»texSubImage3D page: List of valid "format" parameter values does not match WebGL2 spec](https://github.com/mdn/content/issues/19610) (2022-08-16T03:37:51Z)
   
 * [[OES_standard_derivatives] Issue with "OES_standard_derivatives": missing function explanation ](https://github.com/mdn/content/issues/14715) (2022-04-05T16:44:46Z)
