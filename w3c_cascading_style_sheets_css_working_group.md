@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[css-pseudo-4] "::marker" not rendering properly in the example provided](https://github.com/mdn/content/issues/20261) (2022-09-02T22:25:44Z)
-  
 * [[css-fonts-5] CanvasRenderingContext2D needs improved `fontStretch` property example](https://github.com/mdn/content/issues/20208) (2022-09-01T14:39:38Z)
   
 * [[web-animations-2] Animation.commitStyles() remains unclear, example seems pointless](https://github.com/mdn/content/issues/20086) (2022-08-29T10:53:24Z)
