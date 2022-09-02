@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-pseudo-4] "::marker" not rendering properly in the example provided](https://github.com/mdn/content/issues/20261) (2022-09-02T22:25:44Z)
+  
 * [[css-fonts-5] CanvasRenderingContext2D needs improved `fontStretch` property example](https://github.com/mdn/content/issues/20208) (2022-09-01T14:39:38Z)
   
 * [[webrtc] Possibly missing information in WebRTC config section about certificates](https://github.com/mdn/content/issues/20134) (2022-08-30T19:08:41Z)
