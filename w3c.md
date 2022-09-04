@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[page-visibility-2] Page Visibility API vs Document.visibilityState: remove "unloaded" state?](https://github.com/mdn/content/issues/20283) (2022-09-04T01:40:50Z)
+  
 * [[css-fonts-5] CanvasRenderingContext2D needs improved `fontStretch` property example](https://github.com/mdn/content/issues/20208) (2022-09-01T14:39:38Z)
   
 * [[webrtc] Possibly missing information in WebRTC config section about certificates](https://github.com/mdn/content/issues/20134) (2022-08-30T19:08:41Z)
