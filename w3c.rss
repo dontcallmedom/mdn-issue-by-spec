@@ -4,47 +4,10 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Sun, 04 Sep 2022 01:40:50 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 Sep 2022 14:39:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[page-visibility-2] Page Visibility API vs Document.visibilityState: remove "unloaded" state?]]></title>
-            <link>https://github.com/mdn/content/issues/20283</link>
-            <guid>https://github.com/mdn/content/issues/20283</guid>
-            <pubDate>Sun, 04 Sep 2022 01:40:50 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Properties added to the Document interface</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The <a href="https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API#properties_added_to_the_document_interface" rel="nofollow">"Page Visibility API" reference</a> lists <code class="notranslate">"unloaded"</code> as one of the possible values of <code class="notranslate">Document.visibilityState</code>, but <code class="notranslate">"unloaded"</code> does not appear in the list on the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilityState" rel="nofollow">"Document.visibilityState" reference</a>.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">I expect <code class="notranslate">"unloaded"</code> to be listed on both or on neither.</p>
-<p dir="auto">The <a href="https://www.w3.org/TR/page-visibility/#sec-document-interface" rel="nofollow">Page Visibility W3C Recommendation</a> from 2013 lists</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="enum VisibilityState { &quot;hidden&quot;, &quot;visible&quot;, &quot;prerender&quot;, &quot;unloaded&quot; };"><pre class="notranslate notranslate"><code>enum VisibilityState { "hidden", "visible", "prerender", "unloaded" };
-</code></pre></div>
-<p dir="auto">but the current <a href="https://html.spec.whatwg.org/#the-document-object" rel="nofollow">HTML Standard</a> only lists</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="enum DocumentVisibilityState { &quot;visible&quot;, &quot;hidden&quot; };"><pre class="notranslate notranslate"><code>enum DocumentVisibilityState { "visible", "hidden" };
-</code></pre></div>
-<p dir="auto">I assume removing <code class="notranslate">"unloaded"</code> is the right thing to do, but the deprecated value <code class="notranslate">"prerender"</code> is still listed on both pages and in the compatibility table so I figured I'd double-check first.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/page_visibility_api</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/page_visibility_api/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/page_visibility_api/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/fadf81476d3c20417947536b9df64c3b41a71a1c/hovercard" href="https://github.com/mdn/content/commit/fadf81476d3c20417947536b9df64c3b41a71a1c"><tt>fadf814</tt></a></li>
-<li>Document last modified: 2022-08-08T14:51:44.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[css-fonts-5] CanvasRenderingContext2D needs improved `fontStretch` property example]]></title>
             <link>https://github.com/mdn/content/issues/20208</link>
