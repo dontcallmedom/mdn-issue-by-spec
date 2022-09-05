@@ -817,66 +817,6 @@ Or a separate page like <a href="https://developer.mozilla.org/en-US/docs/Web/CS
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-values-3] Readability improvements for relative length units?]]></title>
-            <link>https://github.com/mdn/content/issues/17609</link>
-            <guid>https://github.com/mdn/content/issues/17609</guid>
-            <pubDate>Fri, 24 Jun 2022 07:14:54 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/length</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Relative length units based on viewport</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Background:</p>
-<p dir="auto">According to the supporting links, there's been a long-standing issue in mobile Safari (and Chrome) where <code class="notranslate">100vh</code> doesn't behave as expected when the browser chrome expands and retracts.  It looks like this was recently resolved by the addition of <code class="notranslate">svh</code>, <code class="notranslate">lvh</code> and <code class="notranslate">dvh</code> length units to the CSS spec in July 2021, and that Safari shipped support for these newer units in v15.4, with the <code class="notranslate">vh</code> unit retaining its original ambiguous behavior.</p>
-<p dir="auto">Discussion:</p>
-<p dir="auto">There's clearly a lot of history here, but I feel like the motivation for the newer units gets a bit buried in this article's text.  The viewport resizing behavior is described in a detailed and accurate way, but a simple disclaimer on the default <code class="notranslate">vh</code> unit may more effectively catch a reader's attention.</p>
-<p dir="auto">The concern is that a newer developer may scan this article or follow a link directly to the <code class="notranslate">vh</code> definition, note that prefixed <code class="notranslate">*vh</code> variants exist, but still opt for the default <code class="notranslate">vh</code> as the most 'basic' choice after seeing that it has full support in the browser compatibility table.  This also seems likely if they're using a mobile emulator that won't exhibit the dynamic browser chrome resizing of an actual mobile device, in which case there would be no observable difference between the new prefixed variants and the original unit.</p>
-<p dir="auto">The semantics of 'default' feels a bit inverted here -- often a default value will be a safe choice that serves the needs of most users.  This seems to not be the case this time, as the newer units were created to solve issues caused by the original.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">I think this section is already good, but could be made even better with a more prominent indication that the default <code class="notranslate">vh</code> unit may be problematic for full-page displays.</p>
-<p dir="auto">Some ideas:</p>
-<ol dir="auto">
-<li>
-<p dir="auto">I'm wondering if the browser compatibility data for <code class="notranslate">vh</code> would benefit from adding an implementation note to those mobile browsers which interpret <code class="notranslate">100vh</code> as <code class="notranslate">100lvh</code>.</p>
-<ul dir="auto">
-<li>'Can I use' already does something similar in the 'Known Issues' tab on their entry for viewport units: <a href="https://caniuse.com/viewport-units" rel="nofollow">https://caniuse.com/viewport-units</a></li>
-<li>The current appearance of the compatibility table suggests that <code class="notranslate">vh</code> is a safe choice across modern browsers, which is perhaps a bit misleading.  An asterisk on affected mobile browsers could help developers self-identify the extent to which dynamic viewport sizing impacts their use case, since not all browsers feature dynamic chrome.</li>
-</ul>
-</li>
-<li>
-<p dir="auto">If this sort of information doesn't belong in the browser table, perhaps a callout under the 'Default' section would be helpful.</p>
-<ul dir="auto">
-<li><a href="https://github.com/mdn/content/blob/c3fb20a1bed61703b228846a4de8b9313f8bdece/files/en-us/web/css/length/index.md?plain=1#L84">An existing sentence</a> could be converted to a highlighted note, and add a clear summary of impact:  <code class="notranslate">Note: For example, a browser might implement the default viewport-percentage unit for height (vh) that is equivalent to the large viewport-percentage height unit (lvh).  If so, this could obscure content on a full-page display while the browser interface is expanded.</code></li>
-<li>Highlighting this text would give concerns about cross-browser inconsistencies for the default unit equal visual weight on the page with concerns about performance in the 'Dynamic' section just above.  Right now the 'Default' text gets overshadowed by the notes in the sections above and below.</li>
-</ul>
-</li>
-<li>
-<p dir="auto">Something else?</p>
-</li>
-<li>
-<p dir="auto">No action, it's already clear enough</p>
-</li>
-</ol>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://bugs.webkit.org/show_bug.cgi?id=141832" rel="nofollow">Webkit bug report</a><br>
-<a href="https://developer.chrome.com/blog/url-bar-resizing/" rel="nofollow">Chrome blog</a><br>
-<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="495372962" data-permission-text="Title is private" data-url="https://github.com/w3c/csswg-drafts/issues/4329" data-hovercard-type="issue" data-hovercard-url="/w3c/csswg-drafts/issues/4329/hovercard" href="https://github.com/w3c/csswg-drafts/issues/4329">w3c/csswg-drafts#4329</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/length</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/length</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/length/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/length/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/84e64b0fcae4cf94948d412057f8254daf173d4e/hovercard" href="https://github.com/mdn/content/commit/84e64b0fcae4cf94948d412057f8254daf173d4e"><tt>84e64b0</tt></a></li>
-<li>Document last modified: 2022-06-01T20:44:14.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[cssom-view-1] the demo's getBoundingClientRect has different result in console panel]]></title>
             <link>https://github.com/mdn/content/issues/17588</link>
             <guid>https://github.com/mdn/content/issues/17588</guid>

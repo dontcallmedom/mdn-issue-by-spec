@@ -34,8 +34,6 @@
   
 * [[css-properties-values-api-1] CSS.registerProperty seems useless](https://github.com/mdn/content/issues/17670) (2022-06-26T11:38:17Z)
   
-* [[css-values-3] Readability improvements for relative length units?](https://github.com/mdn/content/issues/17609) (2022-06-24T07:14:54Z)
-  
 * [[cssom-view-1] the demo's getBoundingClientRect has different result in console panel](https://github.com/mdn/content/issues/17588) (2022-06-24T02:34:27Z)
   
 * [[css-overflow-3] CSS overflow property is giving results inconsistant with guide](https://github.com/mdn/content/issues/17430) (2022-06-19T11:34:27Z)
