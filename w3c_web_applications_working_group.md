@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[uievents] Page for `MouseEvent()` doesn't show how to use it](https://github.com/mdn/content/issues/20329) (2022-09-05T19:44:07Z)
+  
 * [[uievents] Event references should list bubbles, cancelable, and composed values](https://github.com/mdn/content/issues/19590) (2022-08-15T13:38:07Z)
   
 * [[uievents] ``onerror = (event) => { };`` seems incorrect](https://github.com/mdn/content/issues/19295) (2022-08-08T19:45:09Z)

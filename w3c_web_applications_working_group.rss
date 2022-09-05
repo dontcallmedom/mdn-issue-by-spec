@@ -4,10 +4,45 @@
         <title>W3C Web Applications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_applications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Applications Working Group</description>
-        <lastBuildDate>Mon, 15 Aug 2022 13:38:07 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 05 Sep 2022 19:44:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[uievents] Page for `MouseEvent()` doesn't show how to use it]]></title>
+            <link>https://github.com/mdn/content/issues/20329</link>
+            <guid>https://github.com/mdn/content/issues/20329</guid>
+            <pubDate>Mon, 05 Sep 2022 19:44:07 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/MouseEvent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/MouseEvent</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">This page shows that we can use <code class="notranslate">new MouseEvent(type, options)</code> to create a <code class="notranslate">MouseEvent</code> but it doesn't show how to use it</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">An example that can replace this code:</p>
+<div class="highlight highlight-source-ts notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const mouseEvent = document.createEvent(&quot;MouseEvent&quot;)
+mouseEvent.initEvent(&quot;mouseover&quot;)
+element.dispatchEvent(mouseEvent)"><pre><span class="pl-k">const</span> <span class="pl-s1">mouseEvent</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createEvent</span><span class="pl-kos">(</span><span class="pl-s">"MouseEvent"</span><span class="pl-kos">)</span>
+<span class="pl-s1">mouseEvent</span><span class="pl-kos">.</span><span class="pl-en">initEvent</span><span class="pl-kos">(</span><span class="pl-s">"mouseover"</span><span class="pl-kos">)</span>
+<span class="pl-s1">element</span><span class="pl-kos">.</span><span class="pl-en">dispatchEvent</span><span class="pl-kos">(</span><span class="pl-s1">mouseEvent</span><span class="pl-kos">)</span></pre></div>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/mouseevent/mouseevent</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/MouseEvent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/MouseEvent</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/mouseevent/mouseevent/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/mouseevent/mouseevent/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/542ec1e002ae3c340f0925adfd1f0d870c14ff32/hovercard" href="https://github.com/mdn/content/commit/542ec1e002ae3c340f0925adfd1f0d870c14ff32"><tt>542ec1e</tt></a></li>
+<li>Document last modified: 2022-08-09T12:24:48.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[uievents] Event references should list bubbles, cancelable, and composed values]]></title>
             <link>https://github.com/mdn/content/issues/19590</link>
