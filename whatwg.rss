@@ -302,36 +302,6 @@ With the GEH demixing effort this section is gone and there is nowhere I can fin
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] [Web API] Implement the fontKerning attribute for Canvas2D text]]></title>
-            <link>https://github.com/mdn/content/issues/18772</link>
-            <guid>https://github.com/mdn/content/issues/18772</guid>
-            <pubDate>Mon, 25 Jul 2022 10:34:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2 dir="auto">Acceptance Criteria</h2>
-<ul class="contains-task-list">
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> The listed features are documented sufficiently on MDN</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> BCD is updated</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Interactive example and data repos are updated if appropriate</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> The content has been reviewed as needed</li>
-</ul>
-<h3 dir="auto">For folks helping with Firefox related documentation</h3>
-<ul class="contains-task-list">
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Set bugs to <code class="notranslate">dev-doc-complete</code></li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Add entry to Firefox release notes if feature is enabled in release<br>
-or</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Add entry to Firefox experimental features page if feature is not yet enabled in release</li>
-</ul>
-<h2 dir="auto">Features to document</h2>
-<p dir="auto">Implement the fontKerning attribute for Canvas2D text</p>
-<h2 dir="auto">Related Gecko bugs</h2>
-<p dir="auto"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1778908" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=1778908</a></p>
-<h2 dir="auto">Other info</h2>
-<p dir="auto">So the fontKerning attribute is defined in the mixin <a href="https://html.spec.whatwg.org/multipage/canvas.html#canvastextdrawingstyles" rel="nofollow">CanvasTextDrawingStyles</a>, which is directly inherited by <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D" rel="nofollow">CanvasRenderingContext2D</a></p>
-<p dir="auto">The mixin <a href="https://html.spec.whatwg.org/multipage/canvas.html#canvastextdrawingstyles" rel="nofollow">CanvasTextDrawingStyles</a> is also inherited by <a href="https://html.spec.whatwg.org/multipage/canvas.html#offscreencanvasrenderingcontext2d" rel="nofollow">OffscreenCanvasRenderingContext2D</a>.</p>
-<p dir="auto">I think we need to add the attribute to <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D" rel="nofollow">CanvasRenderingContext2D</a> and maybe <a href="https://html.spec.whatwg.org/multipage/canvas.html#offscreencanvasrenderingcontext2d" rel="nofollow">OffscreenCanvasRenderingContext2D</a></p>
-<p dir="auto">The options to the attributes are implemented as strings by FF rather than enums as per spec. So this should throw on invalid value, but will actually just ignore the value - and presumably default to <code class="notranslate">auto</code> or whatever its current value is. This should be added as a note to the BCD. Note however that this is consistent for other similar cases in FF.</p>
-<p dir="auto">Chrome ignores non-standard values but accepts the the correct values case insensitively. So there are two issues there. Can be tracked in <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1343333" rel="nofollow">https://bugs.chromium.org/p/chromium/issues/detail?id=1343333</a> . Another BCD note.</p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Need more info on 'permitted parents']]></title>
             <link>https://github.com/mdn/content/issues/18609</link>
             <guid>https://github.com/mdn/content/issues/18609</guid>

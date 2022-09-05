@@ -14,8 +14,6 @@
   
 * [[cssom-view-1, html] [GEH] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
   
-* [[css-contain-2] [CSS] contain: style](https://github.com/mdn/content/issues/19452) (2022-08-12T06:19:15Z)
-  
 * [[css-color-adjust-1] [CSS] `prefers-color-scheme` reflects the `color-scheme` on the embedding element](https://github.com/mdn/content/issues/19449) (2022-08-12T05:26:16Z)
   
 * [[cssom-view-1]  height-controls](https://github.com/mdn/content/issues/19322) (2022-08-09T11:35:31Z)

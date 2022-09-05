@@ -18,8 +18,6 @@
   
 * [[uievents] Event references should list bubbles, cancelable, and composed values](https://github.com/mdn/content/issues/19590) (2022-08-15T13:38:07Z)
   
-* [[css-contain-2] [CSS] contain: style](https://github.com/mdn/content/issues/19452) (2022-08-12T06:19:15Z)
-  
 * [[css-color-adjust-1] [CSS] `prefers-color-scheme` reflects the `color-scheme` on the embedding element](https://github.com/mdn/content/issues/19449) (2022-08-12T05:26:16Z)
   
 * [[mediastream-recording] Emitted blobs do not always exactly adhere to the timeslice value](https://github.com/mdn/content/issues/19369) (2022-08-10T14:39:46Z)

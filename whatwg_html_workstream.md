@@ -20,8 +20,6 @@
   
 * [[html] Confusing description of Worker message event](https://github.com/mdn/content/issues/19071) (2022-08-02T21:38:01Z)
   
-* [[html] [Web API] Implement the fontKerning attribute for Canvas2D text](https://github.com/mdn/content/issues/18772) (2022-07-25T10:34:00Z)
-  
 * [[html] Need more info on 'permitted parents'](https://github.com/mdn/content/issues/18609) (2022-07-21T19:29:05Z)
   
 * [[html] Missing info of copying sessionStorage on creating new context](https://github.com/mdn/content/issues/18323) (2022-07-13T16:09:36Z)
