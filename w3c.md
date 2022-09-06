@@ -176,8 +176,6 @@
   
 * [[css-pseudo-4] Issue with "::first-letter (:first-letter)": (Google search result header does not show properly for pseudo-classes)](https://github.com/mdn/content/issues/10317) (2021-11-05T15:56:08Z)
   
-* [[paint-timing] “Paint Timing API” overview document needs to be written](https://github.com/mdn/content/issues/10287) (2021-11-04T11:41:14Z)
-  
 * [[hr-time-3, user-timing-2, performance-timeline-2, resource-timing-2] Content suggestion: performance glossary term: largest contentful paint/First Input Delay](https://github.com/mdn/content/issues/10196) (2021-11-01T04:46:51Z)
   
 * [[webrtc] https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Using_DTMF is using legacy APIs](https://github.com/mdn/content/issues/10020) (2021-10-22T18:00:50Z)
