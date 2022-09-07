@@ -168,8 +168,6 @@
   
 * [[html] Content bug: Link to resize on HTMLVideoElement is broken](https://github.com/mdn/content/issues/4230) (2021-04-19T03:40:53Z)
   
-* [[html] Issue with "draggable": no mention of incompatibility with svg elements](https://github.com/mdn/content/issues/4069) (2021-04-13T12:53:33Z)
-  
 * [[dom] Content suggestion: addEventListener fire capture before bubble handlers at target](https://github.com/mdn/content/issues/3936) (2021-04-08T09:53:43Z)
   
 * [[html] Issue with "Document: drag event": removeChild seems superfluous - is a draggedElement moved in the dom tree?](https://github.com/mdn/content/issues/3486) (2021-03-25T07:31:27Z)
