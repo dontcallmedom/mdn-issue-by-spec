@@ -4,10 +4,50 @@
         <title>W3C Web Applications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_applications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Applications Working Group</description>
-        <lastBuildDate>Mon, 05 Sep 2022 19:44:07 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 07 Sep 2022 00:12:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[IndexedDB-3] Mention that deleting a database isn't completed until the upgradeNeeded result is closed.]]></title>
+            <link>https://github.com/mdn/content/issues/20368</link>
+            <guid>https://github.com/mdn/content/issues/20368</guid>
+            <pubDate>Wed, 07 Sep 2022 00:12:45 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory/deleteDatabase" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory/deleteDatabase</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">When calling <code class="notranslate">IDBFactory.deleteDatabase()</code>, the database isn't deleted until the <code class="notranslate">upgradeneeded</code> event is garbage collected, which can by triggered by calling <code class="notranslate">request.result.close()</code> on the <code class="notranslate">indexedDB.open()</code> result.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Mention that <code class="notranslate">onsuccess</code> won't be fired until the <code class="notranslate">indexedDB.open()</code> result is closed like so:</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const request = indexedDB.open(dbName);
+request.onupgradeneeded = () =&gt; {
+  request.result.close();
+}"><pre><span class="pl-k">const</span> <span class="pl-s1">request</span> <span class="pl-c1">=</span> <span class="pl-s1">indexedDB</span><span class="pl-kos">.</span><span class="pl-en">open</span><span class="pl-kos">(</span><span class="pl-s1">dbName</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">request</span><span class="pl-kos">.</span><span class="pl-en">onupgradeneeded</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-s1">request</span><span class="pl-kos">.</span><span class="pl-c1">result</span><span class="pl-kos">.</span><span class="pl-en">close</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span></pre></div>
+<p dir="auto">though to be honest I'm not sure how much of this depends on my specific situation. I reckon there might be other calls that similarly cause a database to stay open like this.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Initially I thought this was a bug in Chrome, so I reported <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1359843" rel="nofollow">https://bugs.chromium.org/p/chromium/issues/detail?id=1359843</a>. But it seems like this behaviour is intentional.<br>
+You can find an example of this behaviour at <a href="https://indexeddb-deletedatabase-hanging.glitch.me/" rel="nofollow">https://indexeddb-deletedatabase-hanging.glitch.me/</a><br>
+you'll see that unless you have the 'close indexedDB.open() result' checkbox checked, deleting databases will take significantly longer depending on how fast the objects are garbage collected.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/idbfactory/deletedatabase</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory/deleteDatabase" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory/deleteDatabase</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/idbfactory/deletedatabase/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/idbfactory/deletedatabase/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/916af5e72ce683c6f7795755830c11677ca0f529/hovercard" href="https://github.com/mdn/content/commit/916af5e72ce683c6f7795755830c11677ca0f529"><tt>916af5e</tt></a></li>
+<li>Document last modified: 2022-08-04T06:19:25.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[uievents] Page for `MouseEvent()` doesn't show how to use it]]></title>
             <link>https://github.com/mdn/content/issues/20329</link>
