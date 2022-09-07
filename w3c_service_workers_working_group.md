@@ -8,7 +8,7 @@
   
 * [[service-workers-1, payment-request, payment-handler] Content bug: inconsistent/incomplete descriptions of Promises as parameters](https://github.com/mdn/content/issues/9362) (2021-09-30T07:19:46Z)
   
-* [[cssom-view-1, dom, notifications, service-workers-1, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
+* [[cssom-view-1, notifications, dom, service-workers-1, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
 * [[service-workers-1] No docs for the ServiceWorker object’s postMessage method](https://github.com/mdn/content/issues/7593) (2021-08-04T17:16:23Z)
   

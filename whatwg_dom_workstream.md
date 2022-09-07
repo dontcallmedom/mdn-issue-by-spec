@@ -16,13 +16,11 @@
   
 * [[dom] Issue with "Document.getElementById()": link to xml:id doesn't include expected source snippet](https://github.com/mdn/content/issues/9777) (2021-10-13T19:50:56Z)
   
-* [[cssom-view-1, dom, notifications, service-workers-1, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
+* [[cssom-view-1, notifications, dom, service-workers-1, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
 * [[dom] Issue with "Element.attachShadow()": missing information about the slotAssignment option](https://github.com/mdn/content/issues/8782) (2021-09-09T21:02:17Z)
   
 * [[cssom-view-1, html, dom, WebIDL-1, FileAPI, uievents, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
 * [[dom] Content suggestion: addEventListener fire capture before bubble handlers at target](https://github.com/mdn/content/issues/3936) (2021-04-08T09:53:43Z)
-  
-* [[dom] Issue with "Event.preventDefault()": displayWarning() example doesn't work with autofill](https://github.com/mdn/content/issues/1637) (2021-01-22T19:23:00Z)
   

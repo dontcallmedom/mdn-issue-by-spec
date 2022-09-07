@@ -130,7 +130,7 @@
   
 * [[html] Content suggestion: Add one-liner to former WindowOrWorkerGlobalScope methods](https://github.com/mdn/content/issues/8979) (2021-09-16T10:44:51Z)
   
-* [[cssom-view-1, dom, notifications, service-workers-1, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
+* [[cssom-view-1, notifications, dom, service-workers-1, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
 * [[html] Content bug: Outdated a11y-related content on <button>](https://github.com/mdn/content/issues/8929) (2021-09-15T07:33:58Z)
   
@@ -175,8 +175,6 @@
 * [[html] Issue with "Document: drag event": removeChild seems superfluous - is a draggedElement moved in the dom tree?](https://github.com/mdn/content/issues/3486) (2021-03-25T07:31:27Z)
   
 * [[notifications] Demo in Notification() constructor article causes error: “The Notification permission may only be requested from inside a short running user-generated event handler”](https://github.com/mdn/content/issues/2615) (2021-02-23T13:20:50Z)
-  
-* [[dom] Issue with "Event.preventDefault()": displayWarning() example doesn't work with autofill](https://github.com/mdn/content/issues/1637) (2021-01-22T19:23:00Z)
   
 * [[html] requestAnimationFrame is also available in Dedicated Workers](https://github.com/mdn/content/issues/1519) (2021-01-20T08:47:22Z)
   

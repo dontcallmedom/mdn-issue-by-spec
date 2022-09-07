@@ -4,5 +4,5 @@
 
 * [[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] Content bug: Implementation of the `mode` options for `Element.attachShadow()` in code example could be refined](https://github.com/mdn/content/issues/14620) (2022-04-03T15:13:09Z)
   
-* [[cssom-view-1, dom, notifications, service-workers-1, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
+* [[cssom-view-1, notifications, dom, service-workers-1, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
