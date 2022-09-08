@@ -32,8 +32,6 @@
   
 * [[html] Confusing documentation on textarea value attribute](https://github.com/mdn/content/issues/17294) (2022-06-15T00:09:17Z)
   
-* [[html] Missing description of controlsList attribute](https://github.com/mdn/content/issues/16768) (2022-05-29T21:21:54Z)
-  
 * [[html] Missing CanvasRenderingContext2D / CanvasState .reset()](https://github.com/mdn/content/issues/16227) (2022-05-19T09:54:12Z)
   
 * [[html] Misleading text about srcset attribute](https://github.com/mdn/content/issues/16136) (2022-05-17T11:32:34Z)
@@ -93,8 +91,6 @@
 * [[html] Issue with "Document: drop event": Mention that drop won't fire unless you preventDefault in dragover](https://github.com/mdn/content/issues/9796) (2021-10-14T10:16:25Z)
   
 * [[html] <a> element: support of "noopener" is made unclear by out of date link](https://github.com/mdn/content/issues/9572) (2021-10-04T22:54:47Z)
-  
-* [[html] <template> element: missing shadowroot attribute](https://github.com/mdn/content/issues/9559) (2021-10-04T15:27:08Z)
   
 * [[html] Content bug: HTMLElement: document that the input event requires a user to initiate changing the value of a form control (per spec) ](https://github.com/mdn/content/issues/9548) (2021-10-04T04:10:01Z)
   

@@ -34,8 +34,6 @@
   
 * [[fetch] Incorrect or outdated information at fetch() and Fetch API pages](https://github.com/mdn/content/issues/17115) (2022-06-08T21:48:36Z)
   
-* [[html] Missing description of controlsList attribute](https://github.com/mdn/content/issues/16768) (2022-05-29T21:21:54Z)
-  
 * [[html] Missing CanvasRenderingContext2D / CanvasState .reset()](https://github.com/mdn/content/issues/16227) (2022-05-19T09:54:12Z)
   
 * [[html] Misleading text about srcset attribute](https://github.com/mdn/content/issues/16136) (2022-05-17T11:32:34Z)
@@ -115,8 +113,6 @@
 * [[dom] Issue with "Document.getElementById()": link to xml:id doesn't include expected source snippet](https://github.com/mdn/content/issues/9777) (2021-10-13T19:50:56Z)
   
 * [[html] <a> element: support of "noopener" is made unclear by out of date link](https://github.com/mdn/content/issues/9572) (2021-10-04T22:54:47Z)
-  
-* [[html] <template> element: missing shadowroot attribute](https://github.com/mdn/content/issues/9559) (2021-10-04T15:27:08Z)
   
 * [[html] Content bug: HTMLElement: document that the input event requires a user to initiate changing the value of a form control (per spec) ](https://github.com/mdn/content/issues/9548) (2021-10-04T04:10:01Z)
   
