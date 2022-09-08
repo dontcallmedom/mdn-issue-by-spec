@@ -34,8 +34,6 @@
   
 * [[fetch] Incorrect or outdated information at fetch() and Fetch API pages](https://github.com/mdn/content/issues/17115) (2022-06-08T21:48:36Z)
   
-* [[html] missing description of sectionRowIndex ](https://github.com/mdn/content/issues/17038) (2022-06-06T18:30:54Z)
-  
 * [[html] Missing description of controlsList attribute](https://github.com/mdn/content/issues/16768) (2022-05-29T21:21:54Z)
   
 * [[html] Missing CanvasRenderingContext2D / CanvasState .reset()](https://github.com/mdn/content/issues/16227) (2022-05-19T09:54:12Z)
