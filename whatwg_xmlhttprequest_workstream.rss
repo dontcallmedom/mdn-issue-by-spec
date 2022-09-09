@@ -4,30 +4,10 @@
         <title>WHATWG XMLHttpRequest Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_xmlhttprequest_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG XMLHttpRequest Workstream</description>
-        <lastBuildDate>Thu, 08 Sep 2022 21:43:44 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 25 Mar 2022 16:56:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[xhr] XMLHttpRequest withCredentials option has an impact on same-site/cross-origin requests]]></title>
-            <link>https://github.com/mdn/content/issues/20441</link>
-            <guid>https://github.com/mdn/content/issues/20441</guid>
-            <pubDate>Thu, 08 Sep 2022 21:43:44 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/withCredentials" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/withCredentials</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">XMLHttpRequest withCredentials</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Setting withCredentials has no effect on same-site requests.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Setting withCredentials has no effect on same-origin requests.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">I believe that setting withCredentials <strong>does</strong> have an effect on same-site requests, in particular <code class="notranslate">same-site</code> requests that are cross origin.</p>
-<p dir="auto">If I am on origin <code class="notranslate">https://app.testme.com:3506</code>, and have cookie <code class="notranslate">foo=bar; Domain=.testme.com; SameSite=Strict</code> set in my browser, and make a request via <code class="notranslate">XMLHttpRequest</code> to <code class="notranslate">https://www.testme.com:3507</code> (same-site/cross-origin), the cookie is not sent with the request, nor can the response from <code class="notranslate">https://www.testme.com:3507</code> set cookies. However, if I follow the same exact flow, but the <code class="notranslate">XMLHttpRequest</code> to <code class="notranslate">https://www.testme.com:3507</code> has <code class="notranslate">withCredentials</code> set to <code class="notranslate">true</code>, cookie <code class="notranslate">foo=bar</code> is sent with the request and the response is able to set 1st/3rd party cookies. Based on this, I believe setting <code class="notranslate">withCredentials</code> has an impact on <code class="notranslate">same-site</code> requests, but does not have an impact on <code class="notranslate">same-origin</code> requests.</p>
-<p dir="auto">This behavior seems to be consistent in firefox and chromium browsers. Not sure if it is entirely useful but I have created a reproduction repository <a href="https://github.com/AtofStryker/understanding-cookie-behavior">here</a>.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">If we are all in agreement that the documentation is incorrect, I have no issues opening a PR to fix the issue <g-emoji class="g-emoji" alias="smiley" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f603.png">😃</g-emoji></p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[xhr] Issue with "FormData()": type=submit inputs not included]]></title>
             <link>https://github.com/mdn/content/issues/14305</link>
