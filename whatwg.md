@@ -12,8 +12,6 @@
   
 * [[html] Unreachable `source` tag in example](https://github.com/mdn/content/issues/19944) (2022-08-24T23:20:45Z)
   
-* [[html] [HTML] Remove `menuitem` and preferences in Fx 103](https://github.com/mdn/content/issues/19707) (2022-08-18T15:55:00Z)
-  
 * [[cssom-view-1, html] [GEH] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
   
 * [[html] Sectioning root](https://github.com/mdn/content/issues/19400) (2022-08-11T06:32:58Z)
