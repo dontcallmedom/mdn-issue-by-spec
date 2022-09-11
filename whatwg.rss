@@ -282,38 +282,6 @@ With the GEH demixing effort this section is gone and there is nowhere I can fin
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Confusing description of Worker message event]]></title>
-            <link>https://github.com/mdn/content/issues/19071</link>
-            <guid>https://github.com/mdn/content/issues/19071</guid>
-            <pubDate>Tue, 02 Aug 2022 21:38:01 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Worker/message_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Worker/message_event</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Top level description</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<blockquote>
-<p dir="auto">The message event is fired on a Worker object when the worker's parent receives a message from its worker</p>
-</blockquote>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">A clearer description of the event</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/worker/message_event</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Worker/message_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Worker/message_event</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/worker/message_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/worker/message_event/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/840db6342cecc2bd24cadf780ba7678ddcc25b1f/hovercard" href="https://github.com/mdn/content/commit/840db6342cecc2bd24cadf780ba7678ddcc25b1f"><tt>840db63</tt></a></li>
-<li>Document last modified: 2022-07-23T16:30:18.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Need more info on 'permitted parents']]></title>
             <link>https://github.com/mdn/content/issues/18609</link>
             <guid>https://github.com/mdn/content/issues/18609</guid>
@@ -466,37 +434,6 @@ Then it moves on to the next immediate ancestor element and does the same thing,
 </ul>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto">Upon feedback/approval, I'd be happy to rewrite these sections. But I think the article may need a broader rewrite and perhaps new code samples (some of them, like the ones that involve clicking divs, are inaccessible to keyboard users—this may need to be filed as a separate issue).</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[html] Confusing documentation on textarea value attribute]]></title>
-            <link>https://github.com/mdn/content/issues/17294</link>
-            <guid>https://github.com/mdn/content/issues/17294</guid>
-            <pubDate>Wed, 15 Jun 2022 00:09:17 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Try It</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Default content entered between the opening and closing tags. &lt;textarea&gt; does not support the value attribute.</p>
-<p dir="auto">This is correct, but I find it misleading, because it implies that JavaScript cannot use the .value property of the element.  However, in JS it is essential to use the .value property in certain situations.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Default content entered between the opening and closing tags. &lt;textarea&gt; does not support the value attribute (however, JavaScript can use the .value <em>property</em> of the element).</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/html/element/textarea</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/textarea/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/textarea/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/8037fdc19393ba1fc31bff80bc2f02c988462452/hovercard" href="https://github.com/mdn/content/commit/8037fdc19393ba1fc31bff80bc2f02c988462452"><tt>8037fdc</tt></a></li>
-<li>Document last modified: 2022-04-15T22:29:22.000Z</li>
-</ul>
-</details>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[fetch] Incorrect or outdated information at fetch() and Fetch API pages]]></title>
