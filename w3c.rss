@@ -4,10 +4,80 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Wed, 07 Sep 2022 21:59:57 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 11 Sep 2022 16:43:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[webaudio] function playSample accidentally references global variable instead of passed in variable]]></title>
+            <link>https://github.com/mdn/content/issues/20565</link>
+            <guid>https://github.com/mdn/content/issues/20565</guid>
+            <pubDate>Sun, 11 Sep 2022 16:43:52 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/cancelScheduledValues" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/cancelScheduledValues</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">function playSample(audioContext, audioBuffer, time)</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">function signature is:<br>
+// Create a buffer, plop in data, connect and play -&gt; modify graph here if required<br>
+function playSample(audioContext, audioBuffer, time) {</p>
+<p dir="auto">on line 377 (first line of the function)</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="    const sampleSource = new AudioBufferSourceNode(audioCtx, {"><pre class="notranslate notranslate"><code>    const sampleSource = new AudioBufferSourceNode(audioCtx, {
+</code></pre></div>
+<p dir="auto">line uses audioCtx (the global context variable) rather than the passed in variable audioContext</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="    const sampleSource = new AudioBufferSourceNode(audioContext, {"><pre class="notranslate notranslate"><code>    const sampleSource = new AudioBufferSourceNode(audioContext, {
+</code></pre></div>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/audioparam/cancelscheduledvalues</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/cancelScheduledValues" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/cancelScheduledValues</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/audioparam/cancelscheduledvalues/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/audioparam/cancelscheduledvalues/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/bf30e32f3b51f59080f2c76795beadb247a551eb/hovercard" href="https://github.com/mdn/content/commit/bf30e32f3b51f59080f2c76795beadb247a551eb"><tt>bf30e32</tt></a></li>
+<li>Document last modified: 2022-09-09T05:07:36.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webaudio] parseInt() is inappropriate in most cases for this example]]></title>
+            <link>https://github.com/mdn/content/issues/20564</link>
+            <guid>https://github.com/mdn/content/issues/20564</guid>
+            <pubDate>Sun, 11 Sep 2022 16:39:18 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/cancelScheduledValues" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/cancelScheduledValues</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Several, whenever an eventListener is added</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Using parseInt() for the attackTime and releaseTime clips the control to 0, 1 which isn't expected behavior.</p>
+<p dir="auto">Using parseInt() on the noiseDuration throws an error when the range slider is adjusted, because it will set the duration to 0.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Expect the example to use parseFloat(), for example:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="        noiseDuration = parseFloat(ev.target.value);"><pre class="notranslate notranslate"><code>        noiseDuration = parseFloat(ev.target.value);
+</code></pre></div>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/audioparam/cancelscheduledvalues</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/cancelScheduledValues" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/cancelScheduledValues</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/audioparam/cancelscheduledvalues/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/audioparam/cancelscheduledvalues/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/bf30e32f3b51f59080f2c76795beadb247a551eb/hovercard" href="https://github.com/mdn/content/commit/bf30e32f3b51f59080f2c76795beadb247a551eb"><tt>bf30e32</tt></a></li>
+<li>Document last modified: 2022-09-09T05:07:36.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[cssom-view-1] offsetParent is null if any ancestor has display:none]]></title>
             <link>https://github.com/mdn/content/issues/20407</link>
