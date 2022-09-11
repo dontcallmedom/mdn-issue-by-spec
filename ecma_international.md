@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[ecmascript] NaN === NaN ? No!](https://github.com/mdn/content/issues/20418) (2022-09-08T04:25:32Z)
-  
 * [[ecmascript] Issue with "Uint8Array" (and other TypedArray concrete class pages): missing inheritance from %TypedArray%](https://github.com/mdn/content/issues/20019) (2022-08-27T03:09:33Z)
   
 * [[ecmascript] Document import assertions](https://github.com/mdn/content/issues/19220) (2022-08-06T05:08:53Z)

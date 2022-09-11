@@ -42,8 +42,6 @@
   
 * [[mathml-core] Formal syntax of math-style is missing](https://github.com/mdn/content/issues/18641) (2022-07-22T09:19:19Z)
   
-* [[webaudio] Outdated web audio example code](https://github.com/mdn/content/issues/18547) (2022-07-20T11:13:25Z)
-  
 * [[uievents] Document the ability to preventDefault() a pinch-zoom gesture on a touchpad](https://github.com/mdn/content/issues/18342) (2022-07-14T03:33:35Z)
   
 * [[WebCryptoAPI] Precise max length for encoding algorithm](https://github.com/mdn/content/issues/18045) (2022-07-06T14:47:35Z)
