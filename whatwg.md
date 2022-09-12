@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] RadioNodeList.value example does not support fieldset](https://github.com/mdn/content/issues/20588) (2022-09-12T11:06:34Z)
+  
 * [[html] navigator.platform deprecated? What about browsers that don't support navigator.userAgentData?](https://github.com/mdn/content/issues/20586) (2022-09-12T08:36:50Z)
   
 * [[html] The 'hidden' attribute page does not describe the 'until-found' value for this attribute](https://github.com/mdn/content/issues/20382) (2022-09-07T08:04:12Z)

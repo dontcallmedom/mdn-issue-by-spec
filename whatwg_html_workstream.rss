@@ -4,10 +4,43 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Mon, 12 Sep 2022 08:36:50 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 12 Sep 2022 11:06:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] RadioNodeList.value example does not support fieldset]]></title>
+            <link>https://github.com/mdn/content/issues/20588</link>
+            <guid>https://github.com/mdn/content/issues/20588</guid>
+            <pubDate>Mon, 12 Sep 2022 11:06:34 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/RadioNodeList/value" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/RadioNodeList/value</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/RadioNodeList/value#example" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/RadioNodeList/value#example</a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">According to <a href="https://developer.mozilla.org/en-US/docs/Web/API/RadioNodeList" rel="nofollow">RadioNodeList documentation</a> The RadioNodeList interface represents a collection of radio elements in a form or a fieldset element.</p>
+<p dir="auto">But the supplied example is for a form and does not work with a fieldset.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">It does not seem trivial to access the radionodelist interface from a fieldset,<br>
+So I would expect a working example for a fieldset implementation.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://codepen.io/steffendyhr-nielsen/pen/bGMeOMW" rel="nofollow">Attempts done</a><br>
+<a href="https://stackoverflow.com/questions/73688233/how-do-i-access-the-radionodelist-interface-on-a-fieldset" rel="nofollow">StackOverflow</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">no that's fine ;)</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/radionodelist/value</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/RadioNodeList/value" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/RadioNodeList/value</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/radionodelist/value/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/radionodelist/value/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e0e09b1df51489867f2e74c18586d168ba5e00d1/hovercard" href="https://github.com/mdn/content/commit/e0e09b1df51489867f2e74c18586d168ba5e00d1"><tt>e0e09b1</tt></a></li>
+<li>Document last modified: 2022-09-09T05:18:40.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] navigator.platform deprecated? What about browsers that don't support navigator.userAgentData?]]></title>
             <link>https://github.com/mdn/content/issues/20586</link>
