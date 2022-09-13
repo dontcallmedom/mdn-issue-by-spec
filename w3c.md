@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-cascade-3] Missing CSS functions](https://github.com/mdn/content/issues/20611) (2022-09-13T00:32:37Z)
+  
 * [[encoding] TextEncoderStream & TextDecoderStream](https://github.com/mdn/content/issues/20572) (2022-09-12T03:01:30Z)
   
 * [[webaudio] function playSample accidentally references global variable instead of passed in variable](https://github.com/mdn/content/issues/20565) (2022-09-11T16:43:52Z)
