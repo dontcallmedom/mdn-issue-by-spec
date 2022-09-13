@@ -49,17 +49,25 @@
 <p dir="auto">Syntax</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The following example has extra slashes at start of the URLs that point to the font files, preventing the markup from working:</p>
-<p dir="auto"><a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/font-face/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/font-face">@font-face</a> {<br>
-font-family: "Open Sans";<br>
-src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),<br>
-url("/fonts/OpenSans-Regular-webfont.woff") format("woff");<br>
-}</p>
+<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="@font-face {
+  font-family: &quot;Open Sans&quot;;
+  src: url(&quot;/fonts/OpenSans-Regular-webfont.woff2&quot;) format(&quot;woff2&quot;),
+       url(&quot;/fonts/OpenSans-Regular-webfont.woff&quot;) format(&quot;woff&quot;);
+}"><pre><span class="pl-k">@font-face</span> {
+  <span class="pl-c1">font-family</span><span class="pl-kos">:</span> <span class="pl-s">"Open Sans"</span>;
+  <span class="pl-c1">src</span><span class="pl-kos">:</span> <span class="pl-en">url</span>(<span class="pl-s">"/fonts/OpenSans-Regular-webfont.woff2"</span>) <span class="pl-en">format</span>(<span class="pl-s">"woff2"</span>)<span class="pl-kos">,</span>
+       <span class="pl-en">url</span>(<span class="pl-s">"/fonts/OpenSans-Regular-webfont.woff"</span>) <span class="pl-en">format</span>(<span class="pl-s">"woff"</span>);
+}</pre></div>
 <h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto"><a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/font-face/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/font-face">@font-face</a> {<br>
-font-family: "Open Sans";<br>
-src: url("fonts/OpenSans-Regular-webfont.woff2") format("woff2"),<br>
-url("fonts/OpenSans-Regular-webfont.woff") format("woff");<br>
-}</p>
+<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="@font-face {
+  font-family: &quot;Open Sans&quot;;
+  src: url(&quot;fonts/OpenSans-Regular-webfont.woff2&quot;) format(&quot;woff2&quot;),
+       url(&quot;fonts/OpenSans-Regular-webfont.woff&quot;) format(&quot;woff&quot;);
+}"><pre><span class="pl-k">@font-face</span> {
+  <span class="pl-c1">font-family</span><span class="pl-kos">:</span> <span class="pl-s">"Open Sans"</span>;
+  <span class="pl-c1">src</span><span class="pl-kos">:</span> <span class="pl-en">url</span>(<span class="pl-s">"fonts/OpenSans-Regular-webfont.woff2"</span>) <span class="pl-en">format</span>(<span class="pl-s">"woff2"</span>)<span class="pl-kos">,</span>
+       <span class="pl-en">url</span>(<span class="pl-s">"fonts/OpenSans-Regular-webfont.woff"</span>) <span class="pl-en">format</span>(<span class="pl-s">"woff"</span>);
+}</pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
