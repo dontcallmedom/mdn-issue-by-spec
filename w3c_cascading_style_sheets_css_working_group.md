@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-fonts-5] Extra slashes at the start of src URLs at the first example](https://github.com/mdn/content/issues/20636) (2022-09-13T06:57:11Z)
+  
 * [[css-cascade-3] Missing CSS functions](https://github.com/mdn/content/issues/20611) (2022-09-13T00:32:37Z)
   
 * [[cssom-view-1] offsetParent is null if any ancestor has display:none](https://github.com/mdn/content/issues/20407) (2022-09-07T21:59:57Z)
