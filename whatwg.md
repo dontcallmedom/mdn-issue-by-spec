@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html, dom] Deprecated headline is shown without further information.](https://github.com/mdn/content/issues/20730) (2022-09-14T18:18:13Z)
+  
 * [[html] Diagram on HTMLFormElement page](https://github.com/mdn/content/issues/20589) (2022-09-12T12:38:33Z)
   
 * [[html] RadioNodeList.value example does not support fieldset](https://github.com/mdn/content/issues/20588) (2022-09-12T11:06:34Z)
