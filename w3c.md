@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[selectors-4] :is() is fully support. Remove legacy](https://github.com/mdn/content/issues/20700) (2022-09-14T01:48:52Z)
+* [[selectors-4] :is() is fully supported; remove legacy content](https://github.com/mdn/content/issues/20700) (2022-09-14T01:48:52Z)
   
 * [[service-workers-1] Fetch Event client id is null](https://github.com/mdn/content/issues/20657) (2022-09-13T11:22:55Z)
   
