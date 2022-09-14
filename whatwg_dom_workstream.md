@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html, dom] Add warning to HTMLElement.innerText about setting a value will remove child nodes](https://github.com/mdn/content/issues/20714) (2022-09-14T10:06:34Z)
-  
 * [[html, dom] "Introduction to events" article contains inaccurate/misleading statements](https://github.com/mdn/content/issues/17771) (2022-06-29T14:25:27Z)
   
 * [[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] Content bug: Implementation of the `mode` options for `Element.attachShadow()` in code example could be refined](https://github.com/mdn/content/issues/14620) (2022-04-03T15:13:09Z)
