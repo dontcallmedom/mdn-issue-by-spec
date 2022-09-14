@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html, dom] Add warning to HTMLElement.innerText about setting a value will remove child nodes](https://github.com/mdn/content/issues/20714) (2022-09-14T10:06:34Z)
+  
 * [[html] Diagram on HTMLFormElement page](https://github.com/mdn/content/issues/20589) (2022-09-12T12:38:33Z)
   
 * [[html] RadioNodeList.value example does not support fieldset](https://github.com/mdn/content/issues/20588) (2022-09-12T11:06:34Z)
