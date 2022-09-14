@@ -4,8 +4,6 @@
 
 * [[webaudio] function playSample accidentally references global variable instead of passed in variable](https://github.com/mdn/content/issues/20565) (2022-09-11T16:43:52Z)
   
-* [[webaudio] parseInt() is inappropriate in most cases for this example](https://github.com/mdn/content/issues/20564) (2022-09-11T16:39:18Z)
-  
 * [[webaudio] api.AudioParam - automationRate undocumented](https://github.com/mdn/content/issues/14637) (2022-04-03T13:16:23Z)
   
 * [[webaudio] "ConvolverNode": provide a simpler example that I can adapt to more complex examples (connecting it to another node does not work)](https://github.com/mdn/content/issues/14022) (2022-03-18T14:35:29Z)
