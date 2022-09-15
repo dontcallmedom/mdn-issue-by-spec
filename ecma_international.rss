@@ -4,10 +4,36 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Tue, 13 Sep 2022 06:50:55 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 15 Sep 2022 18:03:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Pages do not scroll to element when opened in background tab]]></title>
+            <link>https://github.com/mdn/content/issues/20777</link>
+            <guid>https://github.com/mdn/content/issues/20777</guid>
+            <pubDate>Thu, 15 Sep 2022 18:03:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#examples" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#examples</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">All headlines on all pages</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">When a URL with a hash containing an element ID is opened in a background tab in Chrome, the page does not scroll to the element with that ID when the tab is brought to the foreground. When the same URL is opened in a foreground tab, the page scrolls correctly.</p>
+<p dir="auto">Steps to reproduce:</p>
+<ol dir="auto">
+<li>Create a page with a link to an MDN URL with a hash property matching the ID of a valid element, like this URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#examples" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#examples</a></li>
+<li>In Chrome, right-click the link and select <strong>Open link in new tab</strong>. This will open the page in a background tab.</li>
+<li>Open the background tab to bring it to the foreground.</li>
+<li>Note that the page has not scrolled to the element, e.g. the Examples section.</li>
+</ol>
+<p dir="auto">It appears that MDN is using a custom smooth-scrolling feature that does work when a tab is opened in the background. That feature should detect background tabs and possibly wait for the user to open the tab before scrolling.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Pages should scroll to the correct section even when opened in a background tab.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Optional Chaining with Arrays]]></title>
             <link>https://github.com/mdn/content/issues/20635</link>
