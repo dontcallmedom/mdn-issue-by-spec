@@ -34,8 +34,6 @@
   
 * [[html, dom] "Introduction to events" article contains inaccurate/misleading statements](https://github.com/mdn/content/issues/17771) (2022-06-29T14:25:27Z)
   
-* [[html] Missing CanvasRenderingContext2D / CanvasState .reset()](https://github.com/mdn/content/issues/16227) (2022-05-19T09:54:12Z)
-  
 * [[html] Misleading text about srcset attribute](https://github.com/mdn/content/issues/16136) (2022-05-17T11:32:34Z)
   
 * [[html] Missing colorSpace attribute in HTMLCanvasElement.getContext()](https://github.com/mdn/content/issues/15995) (2022-05-13T14:02:43Z)
