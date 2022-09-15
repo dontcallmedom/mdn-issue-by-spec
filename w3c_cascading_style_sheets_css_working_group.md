@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-sizing-4] CSS spec names have become "Unknown specification"](https://github.com/mdn/content/issues/20772) (2022-09-15T17:01:56Z)
+  
 * [[selectors-4] :is() is fully supported; remove legacy content](https://github.com/mdn/content/issues/20700) (2022-09-14T01:48:52Z)
   
 * [[css-fonts-5] Extra slashes at the start of src URLs at the first example](https://github.com/mdn/content/issues/20636) (2022-09-13T06:57:11Z)
