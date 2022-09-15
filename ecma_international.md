@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[ecmascript] Pages do not scroll to element when opened in background tab](https://github.com/mdn/content/issues/20777) (2022-09-15T18:03:39Z)
-  
 * [[ecmascript] Optional Chaining with Arrays](https://github.com/mdn/content/issues/20635) (2022-09-13T06:50:55Z)
   
 * [[ecmascript] Issue with "Uint8Array" (and other TypedArray concrete class pages): missing inheritance from %TypedArray%](https://github.com/mdn/content/issues/20019) (2022-08-27T03:09:33Z)
