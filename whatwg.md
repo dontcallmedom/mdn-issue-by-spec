@@ -40,8 +40,6 @@
   
 * [[html] Misleading text about srcset attribute](https://github.com/mdn/content/issues/16136) (2022-05-17T11:32:34Z)
   
-* [[html] Missing colorSpace attribute in HTMLCanvasElement.getContext()](https://github.com/mdn/content/issues/15995) (2022-05-13T14:02:43Z)
-  
 * [[html] Content suggestion: Sort CSS Properties by category in the sidebar](https://github.com/mdn/content/issues/15844) (2022-05-10T04:08:28Z)
   
 * [[html] The links in the compatibility table appear to be broen.](https://github.com/mdn/content/issues/15631) (2022-05-03T03:28:19Z)
