@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-align-3] Content suggestion: display owns CSS shorthand property.](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
+  
 * [[SVG11] The `<color-profile>` link in the sidebar navigation is broken](https://github.com/mdn/content/issues/20792) (2022-09-15T23:19:26Z)
   
 * [[css-sizing-4] CSS spec names have become "Unknown specification"](https://github.com/mdn/content/issues/20772) (2022-09-15T17:01:56Z)
