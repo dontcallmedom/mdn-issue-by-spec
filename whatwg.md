@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] Misspelling "th" attribute "colspan" should be "colSpan" and "rowspan" should be "rowSpan"](https://github.com/mdn/content/issues/20862) (2022-09-18T19:43:42Z)
-  
 * [[html, css-transforms-2, css-transforms-1] The "non-replaced inline boxes" links to a non-existent anchor](https://github.com/mdn/content/issues/20854) (2022-09-18T09:20:10Z)
   
 * [[dom] HTML example with pipes in title](https://github.com/mdn/content/issues/20759) (2022-09-15T08:47:48Z)
