@@ -161,53 +161,6 @@ the cross-browser example can be removed.</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-fonts-5] Extra slashes at the start of src URLs at the first example]]></title>
-            <link>https://github.com/mdn/content/issues/20636</link>
-            <guid>https://github.com/mdn/content/issues/20636</guid>
-            <pubDate>Tue, 13 Sep 2022 06:57:11 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Syntax</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The following example has extra slashes at start of the URLs that point to the font files, preventing the markup from working:</p>
-<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="@font-face {
-  font-family: &quot;Open Sans&quot;;
-  src: url(&quot;/fonts/OpenSans-Regular-webfont.woff2&quot;) format(&quot;woff2&quot;),
-       url(&quot;/fonts/OpenSans-Regular-webfont.woff&quot;) format(&quot;woff&quot;);
-}"><pre><span class="pl-k">@font-face</span> {
-  <span class="pl-c1">font-family</span><span class="pl-kos">:</span> <span class="pl-s">"Open Sans"</span>;
-  <span class="pl-c1">src</span><span class="pl-kos">:</span> <span class="pl-en">url</span>(<span class="pl-s">"/fonts/OpenSans-Regular-webfont.woff2"</span>) <span class="pl-en">format</span>(<span class="pl-s">"woff2"</span>)<span class="pl-kos">,</span>
-       <span class="pl-en">url</span>(<span class="pl-s">"/fonts/OpenSans-Regular-webfont.woff"</span>) <span class="pl-en">format</span>(<span class="pl-s">"woff"</span>);
-}</pre></div>
-<h3 dir="auto">What did you expect to see?</h3>
-<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="@font-face {
-  font-family: &quot;Open Sans&quot;;
-  src: url(&quot;fonts/OpenSans-Regular-webfont.woff2&quot;) format(&quot;woff2&quot;),
-       url(&quot;fonts/OpenSans-Regular-webfont.woff&quot;) format(&quot;woff&quot;);
-}"><pre><span class="pl-k">@font-face</span> {
-  <span class="pl-c1">font-family</span><span class="pl-kos">:</span> <span class="pl-s">"Open Sans"</span>;
-  <span class="pl-c1">src</span><span class="pl-kos">:</span> <span class="pl-en">url</span>(<span class="pl-s">"fonts/OpenSans-Regular-webfont.woff2"</span>) <span class="pl-en">format</span>(<span class="pl-s">"woff2"</span>)<span class="pl-kos">,</span>
-       <span class="pl-en">url</span>(<span class="pl-s">"fonts/OpenSans-Regular-webfont.woff"</span>) <span class="pl-en">format</span>(<span class="pl-s">"woff"</span>);
-}</pre></div>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/@font-face</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/@font-face/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/@font-face/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/05a61497f79c7bf5ffaf8fe7d94b36d5a0b9626e/hovercard" href="https://github.com/mdn/content/commit/05a61497f79c7bf5ffaf8fe7d94b36d5a0b9626e"><tt>05a6149</tt></a></li>
-<li>Document last modified: 2022-09-09T05:52:16.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[css-cascade-3] Missing CSS functions]]></title>
             <link>https://github.com/mdn/content/issues/20611</link>
             <guid>https://github.com/mdn/content/issues/20611</guid>

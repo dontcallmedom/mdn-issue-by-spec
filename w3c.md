@@ -18,8 +18,6 @@
   
 * [[service-workers-1] Fetch Event client id is null](https://github.com/mdn/content/issues/20657) (2022-09-13T11:22:55Z)
   
-* [[css-fonts-5] Extra slashes at the start of src URLs at the first example](https://github.com/mdn/content/issues/20636) (2022-09-13T06:57:11Z)
-  
 * [[css-cascade-3] Missing CSS functions](https://github.com/mdn/content/issues/20611) (2022-09-13T00:32:37Z)
   
 * [[encoding] TextEncoderStream & TextDecoderStream](https://github.com/mdn/content/issues/20572) (2022-09-12T03:01:30Z)
