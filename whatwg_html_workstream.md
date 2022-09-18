@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html, css-transforms-2, css-transforms-1] The "non-replaced inline boxes" links to a non-existent anchor](https://github.com/mdn/content/issues/20854) (2022-09-18T09:20:10Z)
+  
 * [[html, dom] Deprecated headline is shown without further information.](https://github.com/mdn/content/issues/20730) (2022-09-14T18:18:13Z)
   
 * [[html] Diagram on HTMLFormElement page](https://github.com/mdn/content/issues/20589) (2022-09-12T12:38:33Z)
