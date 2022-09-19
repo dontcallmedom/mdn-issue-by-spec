@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Is <br /> a correct notation ?](https://github.com/mdn/content/issues/20894) (2022-09-19T14:45:49Z)
+  
 * [[html] Confusing example of malicious code](https://github.com/mdn/content/issues/20891) (2022-09-19T13:51:02Z)
   
 * [[html, css-transforms-2, css-transforms-1] The "non-replaced inline boxes" links to a non-existent anchor](https://github.com/mdn/content/issues/20854) (2022-09-18T09:20:10Z)
