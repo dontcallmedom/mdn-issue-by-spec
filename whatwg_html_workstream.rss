@@ -1893,32 +1893,6 @@ if (document.readyState === 'loading') {  // Loading hasn't finished yet
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Issue with "DataTransfer.setData()": In the example, DataTransfer.clearData() being calledin the drop handler]]></title>
-            <link>https://github.com/mdn/content/issues/8672</link>
-            <guid>https://github.com/mdn/content/issues/8672</guid>
-            <pubDate>Mon, 06 Sep 2021 00:44:38 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/setData" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/setData</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">In the example for DataTransfer.setData(), DataTransfer.clearData() is called in the drop handler which according to <a href="https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/clearData" rel="nofollow">this</a> should be illegal since DataTransfer.clearData() can only be called in the dragstart handler</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto">Example Section</p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">Example should call DataTransfer.clearData() in the dragstart handler</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">Yes, on firefox, throws "Uncaught DOMException: Modifications are not allowed for this document". Chrome doesn't seem to mind it</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/datatransfer/setdata</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/setData" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/setData</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/datatransfer/setdata/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/datatransfer/setdata/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/80db5924cb7cb97022361f8398eedb38c8985c24/hovercard" href="https://github.com/mdn/content/commit/80db5924cb7cb97022361f8398eedb38c8985c24"><tt>80db592</tt></a></li>
-<li>Document last modified: 2021-08-31T05:27:23.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Issue with "Window.localStorage": Safari deletes after 7 days unvisited]]></title>
             <link>https://github.com/mdn/content/issues/8510</link>
             <guid>https://github.com/mdn/content/issues/8510</guid>

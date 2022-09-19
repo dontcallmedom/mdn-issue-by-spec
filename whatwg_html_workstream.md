@@ -110,8 +110,6 @@
   
 * [[html] Issue with "CanvasRenderingContext2D.createPattern()": need to mention that it can return null](https://github.com/mdn/content/issues/8684) (2021-09-06T11:36:49Z)
   
-* [[html] Issue with "DataTransfer.setData()": In the example, DataTransfer.clearData() being calledin the drop handler](https://github.com/mdn/content/issues/8672) (2021-09-06T00:44:38Z)
-  
 * [[html] Issue with "Window.localStorage": Safari deletes after 7 days unvisited](https://github.com/mdn/content/issues/8510) (2021-09-01T03:59:58Z)
   
 * [[html] Issue with "WorkerGlobalScope.importScripts()": (confucing description of parameters)](https://github.com/mdn/content/issues/7652) (2021-08-06T09:26:25Z)
