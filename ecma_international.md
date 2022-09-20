@@ -4,8 +4,6 @@
 
 * [[ecmascript] Misleading note below provided example code](https://github.com/mdn/content/issues/20830) (2022-09-17T13:09:16Z)
   
-* [[ecmascript] MDN globalThis tangential](https://github.com/mdn/content/issues/20813) (2022-09-16T20:47:00Z)
-  
 * [[ecmascript] Issue with "Uint8Array" (and other TypedArray concrete class pages): missing inheritance from %TypedArray%](https://github.com/mdn/content/issues/20019) (2022-08-27T03:09:33Z)
   
 * [[ecmascript] Document import assertions](https://github.com/mdn/content/issues/19220) (2022-08-06T05:08:53Z)
