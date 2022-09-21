@@ -305,39 +305,6 @@ This is the missing information I'm referring to.</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] accessing localStorage raises exception when all cookies disabled]]></title>
-            <link>https://github.com/mdn/content/issues/20176</link>
-            <guid>https://github.com/mdn/content/issues/20176</guid>
-            <pubDate>Wed, 31 Aug 2022 15:43:25 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">mention that disabling all cookies causes an exception when accessing localstorage</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">When the user has all cookies disabled, trying to access the Window.localStorage will raise this error:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Uncaught (in promise) DOMException: Failed to read the 'sessionStorage' property from 'Window': Access is denied for this document."><pre class="notranslate notranslate"><code>Uncaught (in promise) DOMException: Failed to read the 'sessionStorage' property from 'Window': Access is denied for this document.
-</code></pre></div>
-<p dir="auto">I didn't know that accessing localstorage/sessionstorage and not capturing this exception would break my site for privacy-conscious users.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">A note explaining this.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://blog.tomayac.com/2022/08/30/things-not-available-when-someone-blocks-all-cookies/" rel="nofollow">https://blog.tomayac.com/2022/08/30/things-not-available-when-someone-blocks-all-cookies/</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/window/localstorage</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/localstorage/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/localstorage/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cc1f5c3bd1a9976a0668eeee016f6afc144533b0/hovercard" href="https://github.com/mdn/content/commit/cc1f5c3bd1a9976a0668eeee016f6afc144533b0"><tt>cc1f5c3</tt></a></li>
-<li>Document last modified: 2022-06-03T04:32:25.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Unreachable `source` tag in example]]></title>
             <link>https://github.com/mdn/content/issues/19944</link>
             <guid>https://github.com/mdn/content/issues/19944</guid>
