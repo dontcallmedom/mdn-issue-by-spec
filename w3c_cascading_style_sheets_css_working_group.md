@@ -114,8 +114,6 @@
   
 * [[cssom-view-1] Issue with "Document: scroll event": bad example, needs to be replaced](https://github.com/mdn/content/issues/10580) (2021-11-17T02:52:11Z)
   
-* [[css-pseudo-4] Issue with "::first-letter (:first-letter)": (Google search result header does not show properly for pseudo-classes)](https://github.com/mdn/content/issues/10317) (2021-11-05T15:56:08Z)
-  
 * [[css-shapes-2] Issue with "shape-outside": shape-outside: path doesn't seem a valid value](https://github.com/mdn/content/issues/9703) (2021-10-09T18:44:46Z)
   
 * [[css-sizing-4] CSS aspect-ratio needs better examples](https://github.com/mdn/content/issues/9543) (2021-10-04T00:01:11Z)
