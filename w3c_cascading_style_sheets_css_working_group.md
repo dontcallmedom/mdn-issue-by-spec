@@ -6,8 +6,6 @@
   
 * [[html, css-transforms-2, css-transforms-1] The "non-replaced inline boxes" links to a non-existent anchor](https://github.com/mdn/content/issues/20854) (2022-09-18T09:20:10Z)
   
-* [[css-grid-3] grid item placement](https://github.com/mdn/content/issues/20821) (2022-09-17T04:05:48Z)
-  
 * [[css-align-3] Content suggestion: display owns CSS shorthand property.](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
   
 * [[css-sizing-4] CSS spec names have become "Unknown specification"](https://github.com/mdn/content/issues/20772) (2022-09-15T17:01:56Z)
