@@ -8,8 +8,6 @@
   
 * [[css-align-3] Content suggestion: display owns CSS shorthand property.](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
   
-* [[css-sizing-4] CSS spec names have become "Unknown specification"](https://github.com/mdn/content/issues/20772) (2022-09-15T17:01:56Z)
-  
 * [[selectors-4] :is() is fully supported; remove legacy content](https://github.com/mdn/content/issues/20700) (2022-09-14T01:48:52Z)
   
 * [[css-cascade-3] Missing CSS functions](https://github.com/mdn/content/issues/20611) (2022-09-13T00:32:37Z)

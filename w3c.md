@@ -8,13 +8,11 @@
   
 * [[html, css-transforms-2, css-transforms-1] The "non-replaced inline boxes" links to a non-existent anchor](https://github.com/mdn/content/issues/20854) (2022-09-18T09:20:10Z)
   
-* [[touch-events] Improvements suggestion on TouchEvent article](https://github.com/mdn/content/issues/20811) (2022-09-16T19:07:48Z)
+* [[touch-events] TouchEvent.touches: is the array ordered?](https://github.com/mdn/content/issues/20811) (2022-09-16T19:07:48Z)
   
 * [[css-align-3] Content suggestion: display owns CSS shorthand property.](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
   
 * [[SVG11] The `<color-profile>` link in the sidebar navigation is broken](https://github.com/mdn/content/issues/20792) (2022-09-15T23:19:26Z)
-  
-* [[css-sizing-4] CSS spec names have become "Unknown specification"](https://github.com/mdn/content/issues/20772) (2022-09-15T17:01:56Z)
   
 * [[selectors-4] :is() is fully supported; remove legacy content](https://github.com/mdn/content/issues/20700) (2022-09-14T01:48:52Z)
   
