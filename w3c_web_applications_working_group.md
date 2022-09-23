@@ -8,8 +8,6 @@
   
 * [[uievents] Event references should list bubbles, cancelable, and composed values](https://github.com/mdn/content/issues/19590) (2022-08-15T13:38:07Z)
   
-* [[uievents] ``onerror = (event) => { };`` seems incorrect](https://github.com/mdn/content/issues/19295) (2022-08-08T19:45:09Z)
-  
 * [[uievents] Document the ability to preventDefault() a pinch-zoom gesture on a touchpad](https://github.com/mdn/content/issues/18342) (2022-07-14T03:33:35Z)
   
 * [[IndexedDB-3] IDBObjectStore»add() example: incomplete basic explanation; unclear how ConstraintError is handled](https://github.com/mdn/content/issues/15037) (2022-04-15T23:16:34Z)

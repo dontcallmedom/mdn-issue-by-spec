@@ -50,8 +50,6 @@
   
 * [[cssom-view-1]  height-controls](https://github.com/mdn/content/issues/19322) (2022-08-09T11:35:31Z)
   
-* [[uievents] ``onerror = (event) => { };`` seems incorrect](https://github.com/mdn/content/issues/19295) (2022-08-08T19:45:09Z)
-  
 * [[css-fonts-5] Font-stretch examples](https://github.com/mdn/content/issues/19290) (2022-08-08T15:59:28Z)
   
 * [[cssom-view-1] Include solution to checking if content is overflown in clientHeight page](https://github.com/mdn/content/issues/19153) (2022-08-04T11:29:19Z)
