@@ -30,8 +30,6 @@
   
 * [[uievents] Page for `MouseEvent()` doesn't show how to use it](https://github.com/mdn/content/issues/20329) (2022-09-05T19:44:07Z)
   
-* [[css-fonts-5] CanvasRenderingContext2D needs improved `fontStretch` property example](https://github.com/mdn/content/issues/20208) (2022-09-01T14:39:38Z)
-  
 * [[webrtc] Possibly missing information in WebRTC config section about certificates](https://github.com/mdn/content/issues/20134) (2022-08-30T19:08:41Z)
   
 * [[web-animations-2] Animation.commitStyles() remains unclear, example seems pointless](https://github.com/mdn/content/issues/20086) (2022-08-29T10:53:24Z)

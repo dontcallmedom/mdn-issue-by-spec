@@ -14,8 +14,6 @@
   
 * [[cssom-view-1] offsetParent is null if any ancestor has display:none](https://github.com/mdn/content/issues/20407) (2022-09-07T21:59:57Z)
   
-* [[css-fonts-5] CanvasRenderingContext2D needs improved `fontStretch` property example](https://github.com/mdn/content/issues/20208) (2022-09-01T14:39:38Z)
-  
 * [[web-animations-2] Animation.commitStyles() remains unclear, example seems pointless](https://github.com/mdn/content/issues/20086) (2022-08-29T10:53:24Z)
   
 * [[selectors-4] Improve the :has() page documentation](https://github.com/mdn/content/issues/19972) (2022-08-25T18:30:28Z)
