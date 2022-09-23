@@ -12,5 +12,3 @@
   
 * [[OVR_multiview2] WebXR guide material tracking issue](https://github.com/mdn/content/issues/7276) (2021-07-26T07:39:35Z)
   
-* [[webgl1, webgl2] https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bindFramebuffer](https://github.com/mdn/content/issues/1578) (2020-08-12T15:26:43Z)
-  
