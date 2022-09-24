@@ -12,8 +12,6 @@
   
 * [[html] RadioNodeList.value example does not support fieldset](https://github.com/mdn/content/issues/20588) (2022-09-12T11:06:34Z)
   
-* [[html] navigator.platform deprecated? What about browsers that don't support navigator.userAgentData?](https://github.com/mdn/content/issues/20586) (2022-09-12T08:36:50Z)
-  
 * [[html] The 'hidden' attribute page does not describe the 'until-found' value for this attribute](https://github.com/mdn/content/issues/20382) (2022-09-07T08:04:12Z)
   
 * [[html] “autcomplete" attribute article: Add explanation that one can use sections in the attribute and identify billing and shipping addresses](https://github.com/mdn/content/issues/20180) (2022-08-31T18:05:30Z)
