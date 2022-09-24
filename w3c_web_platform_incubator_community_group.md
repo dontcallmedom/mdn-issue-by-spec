@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Platform Incubator Community Group. [![RSS feed for W3C Web Platform Incubator Community Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[shape-detection-api] Example uses barcode.rawData instead of barcode.rawValue](https://github.com/mdn/content/issues/20953) (2022-09-21T09:56:09Z)
-  
 * [[file-system-access] `FileSystemHandle.requestPermission()` can throw `SecurityError`](https://github.com/mdn/content/issues/15831) (2022-05-09T19:45:01Z)
   
 * [[webusb] Can web-usb permissions be revoked by javascript code? If so, should be documented](https://github.com/mdn/content/issues/13714) (2022-03-10T03:19:03Z)
