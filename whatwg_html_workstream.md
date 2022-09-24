@@ -24,6 +24,8 @@
   
 * [[html] Incorrect information on 'DomContentLoaded_event' page](https://github.com/mdn/content/issues/19269) (2022-08-08T03:59:52Z)
   
+* [[html] Need more info on 'permitted parents'](https://github.com/mdn/content/issues/18609) (2022-07-21T19:29:05Z)
+  
 * [[html] Missing info of copying sessionStorage on creating new context](https://github.com/mdn/content/issues/18323) (2022-07-13T16:09:36Z)
   
 * [[html] WebSocket: message event properties need more explanation](https://github.com/mdn/content/issues/18021) (2022-07-06T06:26:11Z)
