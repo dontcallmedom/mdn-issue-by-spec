@@ -16,8 +16,6 @@
   
 * [[SVG11] The `<color-profile>` link in the sidebar navigation is broken](https://github.com/mdn/content/issues/20792) (2022-09-15T23:19:26Z)
   
-* [[selectors-4] :is() is fully supported; remove legacy content](https://github.com/mdn/content/issues/20700) (2022-09-14T01:48:52Z)
-  
 * [[service-workers-1] Fetch Event client id is null](https://github.com/mdn/content/issues/20657) (2022-09-13T11:22:55Z)
   
 * [[css-cascade-3] Missing CSS functions](https://github.com/mdn/content/issues/20611) (2022-09-13T00:32:37Z)
@@ -49,8 +47,6 @@
 * [[mediastream-recording] Emitted blobs do not always exactly adhere to the timeslice value](https://github.com/mdn/content/issues/19369) (2022-08-10T14:39:46Z)
   
 * [[cssom-view-1]  height-controls](https://github.com/mdn/content/issues/19322) (2022-08-09T11:35:31Z)
-  
-* [[css-fonts-5] Font-stretch examples](https://github.com/mdn/content/issues/19290) (2022-08-08T15:59:28Z)
   
 * [[cssom-view-1] Include solution to checking if content is overflown in clientHeight page](https://github.com/mdn/content/issues/19153) (2022-08-04T11:29:19Z)
   
