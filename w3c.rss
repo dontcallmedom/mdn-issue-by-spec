@@ -2595,7 +2595,7 @@ The element is removed from the normal document flow, and no space is created fo
        function onSuccess(event) {
           callback(event.result);
           return;
-       }"><pre class="notranslate notranslate"><code>       req = oStore.getAllKeys();
+       }"><pre class="notranslate"><code>       req = oStore.getAllKeys();
        if (req.result &amp;&amp; Array.isArray(res.result)) {
        if (req.readyState !== "pending") {---; return;}
        req.onsuccess = onSuccess;

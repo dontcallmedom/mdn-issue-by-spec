@@ -392,7 +392,7 @@ And the change in Firefox caused by <a href="https://groups.google.com/g/mozilla
        function onSuccess(event) {
           callback(event.result);
           return;
-       }"><pre class="notranslate notranslate"><code>       req = oStore.getAllKeys();
+       }"><pre class="notranslate"><code>       req = oStore.getAllKeys();
        if (req.result &amp;&amp; Array.isArray(res.result)) {
        if (req.readyState !== "pending") {---; return;}
        req.onsuccess = onSuccess;

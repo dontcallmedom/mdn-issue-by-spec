@@ -2125,7 +2125,7 @@ But it seem that dragging an element removes it from its current position in the
           dragged.parentNode.removeChild( dragged );
           event.target.appendChild( dragged );
       }
-"><pre class="notranslate notranslate"><code>      if ( event.target.className == "dropzone" ) {
+"><pre class="notranslate"><code>      if ( event.target.className == "dropzone" ) {
           event.target.style.background = "";
           dragged.parentNode.removeChild( dragged );
           event.target.appendChild( dragged );
@@ -2139,7 +2139,7 @@ But it seem that dragging an element removes it from its current position in the
           // dragged.parentNode.removeChild( dragged );
           event.target.appendChild( dragged );
       }
-"><pre class="notranslate notranslate"><code>      if ( event.target.className == "dropzone" ) {
+"><pre class="notranslate"><code>      if ( event.target.className == "dropzone" ) {
           event.target.style.background = "";
           // dragged.parentNode.removeChild( dragged );
           event.target.appendChild( dragged );
