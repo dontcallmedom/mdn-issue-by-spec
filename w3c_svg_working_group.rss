@@ -229,7 +229,7 @@ I am aware that this property is inherited from SVGFitToViewBox, but there is no
       .attr(&quot;class&quot;, &quot;label&quot;)
       .attr(&quot;width&quot;, barWidth + spaceBetween)
       .attr(&quot;height&quot;, 200) // Wouldn't render without this attribute
-      .text((d) =&gt; d[0]);"><pre class="notranslate notranslate"><code>const labelTexts = barsGroup
+      .text((d) =&gt; d[0]);"><pre class="notranslate"><code>const labelTexts = barsGroup
       .append("foreignObject")
       .attr("class", "label")
       .attr("width", barWidth + spaceBetween)
