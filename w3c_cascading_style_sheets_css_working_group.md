@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[mediaqueries-4, css-conditional-3] Browser compatibility @media lv 4 on Edge](https://github.com/mdn/content/issues/21042) (2022-09-24T15:38:07Z)
-  
 * [[css-conditional-3, css-conditional-4] [CSS] @supports `font-format()` and `font-tech()` functions ](https://github.com/mdn/content/issues/20917) (2022-09-20T12:35:25Z)
   
 * [[html, css-transforms-2, css-transforms-1] The "non-replaced inline boxes" links to a non-existent anchor](https://github.com/mdn/content/issues/20854) (2022-09-18T09:20:10Z)

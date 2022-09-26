@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[clipboard-apis] Question about clipboard writes](https://github.com/mdn/content/issues/21061) (2022-09-25T23:41:45Z)
-  
 * [[IndexedDB-3] indexedDB.deleteDatabase doc: Mention that deleting a database isn't completed until the upgradeNeeded result is closed](https://github.com/mdn/content/issues/20368) (2022-09-07T00:12:45Z)
   
 * [[uievents] Page for `MouseEvent()` doesn't show how to use it](https://github.com/mdn/content/issues/20329) (2022-09-05T19:44:07Z)

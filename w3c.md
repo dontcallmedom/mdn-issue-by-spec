@@ -2,11 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[clipboard-apis] Question about clipboard writes](https://github.com/mdn/content/issues/21061) (2022-09-25T23:41:45Z)
-  
 * [[picture-in-picture] Clarify/note Document.pictureInPictureElement is null for PiP launched from iframe](https://github.com/mdn/content/issues/21048) (2022-09-24T20:32:11Z)
-  
-* [[mediaqueries-4, css-conditional-3] Browser compatibility @media lv 4 on Edge](https://github.com/mdn/content/issues/21042) (2022-09-24T15:38:07Z)
   
 * [[css-conditional-3, css-conditional-4] [CSS] @supports `font-format()` and `font-tech()` functions ](https://github.com/mdn/content/issues/20917) (2022-09-20T12:35:25Z)
   

@@ -4,63 +4,10 @@
         <title>W3C Web Applications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_applications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Applications Working Group</description>
-        <lastBuildDate>Sun, 25 Sep 2022 23:41:45 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 07 Sep 2022 00:12:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[clipboard-apis] Question about clipboard writes]]></title>
-            <link>https://github.com/mdn/content/issues/21061</link>
-            <guid>https://github.com/mdn/content/issues/21061</guid>
-            <pubDate>Sun, 25 Sep 2022 23:41:45 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">"secure context"</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">This part:<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/89951208/192170438-60de18d5-246f-4677-adba-a6fe45a7a469.png"><img src="https://user-images.githubusercontent.com/89951208/192170438-60de18d5-246f-4677-adba-a6fe45a7a469.png" alt="image" style="max-width: 100%;"></a><br>
-Currently, I have <code class="notranslate">dom.events.asyncClipboard.clipboardItem</code> set to false. However, I can STILL copy text through javascript via github posts on codes, for example below if you hover your mouse over it, the button to copy appears on the right:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="test"><pre class="notranslate"><code>test
-</code></pre></div>
-<p dir="auto">And then this happens which successfully adds the string into my clipboard:<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/89951208/192170542-d0e5e936-ee8b-4f2c-972a-ffb9e489ac9b.png"><img src="https://user-images.githubusercontent.com/89951208/192170542-d0e5e936-ee8b-4f2c-972a-ffb9e489ac9b.png" alt="image" style="max-width: 100%;"></a></p>
-<p dir="auto">However, <a href="https://github.com/ArchivingToolsForWBM/AdvancedInternetArchiving/blob/main/JS%20tools/WBGS%20SPN/IA_WBGS_Checking.html">I made myself an HTML script</a> and happens to not execute code at all. Try copying this text:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="https://example.com	YES	-	https://web.archive.org/web/20210101000000/https://example.com	0	
-https://exampleFirstArchive.com	YES	-	https://web.archive.org/web/20210101000000/https://exampleFirstArchive.com	0	First Archive
-https://exampleRedirectFrom.com	YES	-	https://web.archive.org/web/20210101000000/https://exampleRedirectTo.com	0	
-https://exampleError.com	YES	-	Service Unavailable for https://exampleError.com (HTTP status=503)	0	
-https://exampleBlankColumnD.com	YES	-		0	
-https://exampleNoResultsAtAll.com					
-https://exampleSavedButHTTP4xx	YES	429	https://web.archive.org/web/20210101000000/https://exampleSavedButHTTP4xx	0	"><pre class="notranslate"><code>https://example.com	YES	-	https://web.archive.org/web/20210101000000/https://example.com	0	
-https://exampleFirstArchive.com	YES	-	https://web.archive.org/web/20210101000000/https://exampleFirstArchive.com	0	First Archive
-https://exampleRedirectFrom.com	YES	-	https://web.archive.org/web/20210101000000/https://exampleRedirectTo.com	0	
-https://exampleError.com	YES	-	Service Unavailable for https://exampleError.com (HTTP status=503)	0	
-https://exampleBlankColumnD.com	YES	-		0	
-https://exampleNoResultsAtAll.com					
-https://exampleSavedButHTTP4xx	YES	429	https://web.archive.org/web/20210101000000/https://exampleSavedButHTTP4xx	0	
-</code></pre></div>
-<p dir="auto">Then open that linked HTML file (you can copy the raw contents via the botton top-left from the text preview, paste it in a newly created text file, and rename the extension to <code class="notranslate">.html</code>, then open with firefox). Paste the mentioned text in there and try to copy the text via the button <code class="notranslate">Copy to clipboard</code>. Normally it is supposed to bring up a text next to it saying "Copied!", but on firefox does not do that and also didn't copy the contents in the textarea.</p>
-<p dir="auto">So how is my HTML document on my PC not a secure context, and why is it that copying text via JS works on github but not an HTML stored on my PC?</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">My text is supposed to be copied though javascript the same way you can copy text in github via a press of a button on the page.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/clipboard/write</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/clipboard/write/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/clipboard/write/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/da88b2f3a23b9d93f083003f13c06f9d96073f6a/hovercard" href="https://github.com/mdn/content/commit/da88b2f3a23b9d93f083003f13c06f9d96073f6a"><tt>da88b2f</tt></a></li>
-<li>Document last modified: 2022-09-13T05:21:27.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[IndexedDB-3] indexedDB.deleteDatabase doc: Mention that deleting a database isn't completed until the upgradeNeeded result is closed]]></title>
             <link>https://github.com/mdn/content/issues/20368</link>
