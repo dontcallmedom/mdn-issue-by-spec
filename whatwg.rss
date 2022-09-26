@@ -359,7 +359,7 @@ With the GEH demixing effort this section is gone and there is nowhere I can fin
 <p dir="auto">Try it</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The example does not work.  No spell checking error is shown:</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/526509/183413259-3fc6f510-985b-49d4-a617-4b64747e2d4e.png"><img width="791" alt="image" src="https://user-images.githubusercontent.com/526509/183413259-3fc6f510-985b-49d4-a617-4b64747e2d4e.png" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/526509/183413259-3fc6f510-985b-49d4-a617-4b64747e2d4e.png"><img width="791" alt="image" src="https://user-images.githubusercontent.com/526509/183413259-3fc6f510-985b-49d4-a617-4b64747e2d4e.png" style="max-width: 100%;"></a></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The misspelt words should be underlined in red.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
@@ -403,7 +403,7 @@ With the GEH demixing effort this section is gone and there is nowhere I can fin
 <li>Use a developer tool to find out when the DomContentLoaded event fires.</li>
 </ol>
 <p dir="auto">I have attached a screenshot of the event firing 2 seconds after the browser is done with parsing the html. The part ,that is highlighted in yellow line, indicates that the event was fired at 2.06s. The parsing of the html was finished long before the parsing of the external stylesheet began. The screenshot includes some korean words. Sorry for the inconvenience.<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/74853891/183335358-eaf62583-67fd-46cc-9232-5a47d202e905.png"><img src="https://user-images.githubusercontent.com/74853891/183335358-eaf62583-67fd-46cc-9232-5a47d202e905.png" alt="DomContentLoaded" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/74853891/183335358-eaf62583-67fd-46cc-9232-5a47d202e905.png"><img src="https://user-images.githubusercontent.com/74853891/183335358-eaf62583-67fd-46cc-9232-5a47d202e905.png" alt="DomContentLoaded" style="max-width: 100%;"></a></p>
 <h3 dir="auto">MDN metadata</h3>
 
 <details>
@@ -598,7 +598,7 @@ Then it moves on to the next immediate ancestor element and does the same thing,
 <li>Send a request with and without the field and check which callback is fired inside <code class="notranslate">then()</code>.</li>
 </ul>
 <p dir="auto">Request code example:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="  function test_fetch(){
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="  function test_fetch(){
 	  let message = JSON.stringify({
              // 'ids' is the expected field. Change it latter for 'id' or something else to see the error.
              ids: [1] 
@@ -616,26 +616,25 @@ Then it moves on to the next immediate ancestor element and does the same thing,
 		  body: message
 	  })
 	  .then(data =&gt; console.log('success'),data =&gt; console.log('error'))
-  }"><pre lang="javascript" class="notranslate"><code>  function test_fetch(){
-	  let message = JSON.stringify({
-             // 'ids' is the expected field. Change it latter for 'id' or something else to see the error.
-             ids: [1] 
-	  })
+  }"><pre>  <span class="pl-k">function</span> <span class="pl-en">test_fetch</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">{</span>
+	  <span class="pl-k">let</span> <span class="pl-s1">message</span> <span class="pl-c1">=</span> <span class="pl-c1">JSON</span><span class="pl-kos">.</span><span class="pl-en">stringify</span><span class="pl-kos">(</span><span class="pl-kos">{</span>
+             <span class="pl-c">// 'ids' is the expected field. Change it latter for 'id' or something else to see the error.</span>
+             <span class="pl-c1">ids</span>: <span class="pl-kos">[</span><span class="pl-c1">1</span><span class="pl-kos">]</span> 
+	  <span class="pl-kos">}</span><span class="pl-kos">)</span>
   
-	  fetch('http://your.api/get_data',{
-		  method: 'post',
-                  // Adding Content-Type header to enable preflight. 
-                  // It's still not working even with normal(no-preflight) requests.
-                  // To test with normal instead of preflight requests,
-                  // remove the line below from the fetch options object and
-                  // make sure your server can handle text/plain data or else
-                  // you may face some error due to wrong parsing of request body.
-		  headers: {'Content-Type': 'application/json'},
-		  body: message
-	  })
-	  .then(data =&gt; console.log('success'),data =&gt; console.log('error'))
-  }
-</code></pre></div>
+	  <span class="pl-en">fetch</span><span class="pl-kos">(</span><span class="pl-s">'http://your.api/get_data'</span><span class="pl-kos">,</span><span class="pl-kos">{</span>
+		  <span class="pl-c1">method</span>: <span class="pl-s">'post'</span><span class="pl-kos">,</span>
+                  <span class="pl-c">// Adding Content-Type header to enable preflight. </span>
+                  <span class="pl-c">// It's still not working even with normal(no-preflight) requests.</span>
+                  <span class="pl-c">// To test with normal instead of preflight requests,</span>
+                  <span class="pl-c">// remove the line below from the fetch options object and</span>
+                  <span class="pl-c">// make sure your server can handle text/plain data or else</span>
+                  <span class="pl-c">// you may face some error due to wrong parsing of request body.</span>
+		  <span class="pl-c1">headers</span>: <span class="pl-kos">{</span><span class="pl-s">'Content-Type'</span>: <span class="pl-s">'application/json'</span><span class="pl-kos">}</span><span class="pl-kos">,</span>
+		  <span class="pl-c1">body</span>: <span class="pl-s1">message</span>
+	  <span class="pl-kos">}</span><span class="pl-kos">)</span>
+	  <span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-s1">data</span> <span class="pl-c1">=&gt;</span> <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">'success'</span><span class="pl-kos">)</span><span class="pl-kos">,</span><span class="pl-s1">data</span> <span class="pl-c1">=&gt;</span> <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">'error'</span><span class="pl-kos">)</span><span class="pl-kos">)</span>
+  <span class="pl-kos">}</span></pre></div>
 <p dir="auto">I've tested in <code class="notranslate">Chrome, version 102.0.5005.61 (Official Build) (64-bit)</code> and <code class="notranslate">Firefox, version 75.0 (64-bit)</code>. Got the same unexpected behaviour in both.</p>
 <h3 dir="auto">MDN metadata</h3>
 
@@ -667,7 +666,7 @@ Then it moves on to the next immediate ancestor element and does the same thing,
 <p dir="auto">This is unless you specify the <code class="notranslate">sizes</code> attribute. Then you can specify a media condition followed by which width of the image you want to display. But this means, that it's possible to make rules about screen sizes, not rules to the actual rendered image size.</p>
 <p dir="auto">The text can be misleading making people think that the <code class="notranslate">srcset</code> is for network optimization in general when it actually (more or less) just seems more relevant for responsiveness.</p>
 <p dir="auto">A practical way of proving this is by the following.</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;style&gt;
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;style&gt;
     img {
         width: 50px;
     }
@@ -675,16 +674,15 @@ Then it moves on to the next immediate ancestor element and does the same thing,
 &lt;img src=&quot;https://placehold.jp/50x50.png&quot; 
      srcset=&quot;https://placehold.jp/150x150.png 50w,
              https://placehold.jp/150x150.png 150w,
-             https://placehold.jp/2000x2000.png&quot;&gt;"><pre lang="html" class="notranslate"><code>&lt;style&gt;
-    img {
-        width: 50px;
+             https://placehold.jp/2000x2000.png&quot;&gt;"><pre><span class="pl-kos">&lt;</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
+    <span class="pl-ent">img</span> {
+        <span class="pl-c1">width</span><span class="pl-kos">:</span> <span class="pl-c1">50<span class="pl-smi">px</span></span>;
     }
-&lt;/style&gt;
-&lt;img src="https://placehold.jp/50x50.png" 
-     srcset="https://placehold.jp/150x150.png 50w,
-             https://placehold.jp/150x150.png 150w,
-             https://placehold.jp/2000x2000.png"&gt;
-</code></pre></div>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">img</span> <span class="pl-c1">src</span>="<span class="pl-s">https://placehold.jp/50x50.png</span>" 
+     <span class="pl-c1">srcset</span>="<span class="pl-s">https://placehold.jp/150x150.png 50w,</span>
+<span class="pl-s">             https://placehold.jp/150x150.png 150w,</span>
+<span class="pl-s">             https://placehold.jp/2000x2000.png</span>"<span class="pl-kos">&gt;</span></pre></div>
 <p dir="auto"><a href="https://jsfiddle.net/eL68vzns/" rel="nofollow">View it on jsfiddle</a></p>
 <p dir="auto">This very simple example will show a image that won't be wider than 50px at any time. But when this sample is viewed in a browser where the page is more than 150px wide, the 2000 x 2000 image will be the current source.<br>
 This has been tested on both Chrome 101 and Firefox 100.</p>
