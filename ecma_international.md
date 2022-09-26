@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[dom, ecmascript] DOMImplementation.createDocumentType() return type section is inaccurate](https://github.com/mdn/content/issues/21086) (2022-09-26T20:47:20Z)
+  
 * [[ecmascript] "async" page - "execution of all code following this is immediately paused"](https://github.com/mdn/content/issues/20942) (2022-09-21T05:13:44Z)
   
 * [[ecmascript] Issue with "Uint8Array" (and other TypedArray concrete class pages): missing inheritance from %TypedArray%](https://github.com/mdn/content/issues/20019) (2022-08-27T03:09:33Z)
