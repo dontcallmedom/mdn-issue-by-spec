@@ -136,8 +136,6 @@
   
 * [[cssom-view-1, html, dom, selection-api, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written](https://github.com/mdn/content/issues/13419) (2022-03-02T14:45:44Z)
   
-* [[css-backgrounds-4] Issue with "border-image-repeat": middle region was not mentioned](https://github.com/mdn/content/issues/13350) (2022-02-28T21:47:39Z)
-  
 * [[css-lists-3] Issue with "counter-reset": What is the difference in behavior between the latest Firefox (82 or later) and the older 81 or earlier or other browsers?](https://github.com/mdn/content/issues/13293) (2022-02-26T00:46:43Z)
   
 * [[css-values-3] Content suggestion: Remove <length-percentage> and similar pages](https://github.com/mdn/content/issues/13066) (2022-02-17T10:45:31Z)

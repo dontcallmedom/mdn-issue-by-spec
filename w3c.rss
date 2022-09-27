@@ -2189,29 +2189,6 @@ Or provide an example for the second scenario.</p>
 <p dir="auto">I clicked the link.</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-backgrounds-4] Issue with "border-image-repeat": middle region was not mentioned]]></title>
-            <link>https://github.com/mdn/content/issues/13350</link>
-            <guid>https://github.com/mdn/content/issues/13350</guid>
-            <pubDate>Mon, 28 Feb 2022 21:47:39 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-repeat" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-repeat</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">"The border-image-repeat CSS property defines how the edge regions of a source image are adjusted to fit the dimensions of an element's border image."</p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">According to <a href="https://www.w3.org/TR/css-backgrounds-3/#border-image-repeat" rel="nofollow">https://www.w3.org/TR/css-backgrounds-3/#border-image-repeat</a> and testing, border-image-repeat also affects middle region of the border-image-slice.  Middle region can be displayed by using keyword "fill" in border-image-slice property.<br>
-I believe currently it's a bit misleading, it should be mentioned in first paragraph and in this sentence: "When two values are specified, the first applies to the top and bottom, the second to the left and right.". First value affects middle slice.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/border-image-repeat</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-repeat" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-repeat</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/border-image-repeat/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/border-image-repeat/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/26f50bdaeb1228f458d21dbdf7dc110387b20daa/hovercard" href="https://github.com/mdn/content/commit/26f50bdaeb1228f458d21dbdf7dc110387b20daa"><tt>26f50bd</tt></a></li>
-<li>Document last modified: 2021-08-12T23:59:09.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[css-lists-3] Issue with "counter-reset": What is the difference in behavior between the latest Firefox (82 or later) and the older 81 or earlier or other browsers?]]></title>
             <link>https://github.com/mdn/content/issues/13293</link>
             <guid>https://github.com/mdn/content/issues/13293</guid>

@@ -4,58 +4,10 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Mon, 26 Sep 2022 20:47:20 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 21 Sep 2022 01:53:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[dom, ecmascript] DOMImplementation.createDocumentType() return type section is inaccurate]]></title>
-            <link>https://github.com/mdn/content/issues/21086</link>
-            <guid>https://github.com/mdn/content/issues/21086</guid>
-            <pubDate>Mon, 26 Sep 2022 20:47:20 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation/createDocumentType" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation/createDocumentType</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Return type</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto"><a href="https://dom.spec.whatwg.org/#dom-domimplementation-createdocumenttype" rel="nofollow">https://dom.spec.whatwg.org/#dom-domimplementation-createdocumenttype</a> specifies that the return type is not undefined.</p>
-<p dir="auto">The MDN page says:</p>
-<blockquote>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation/createDocumentType#return_value" rel="nofollow">Return value</a><br>
-None (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined" rel="nofollow">undefined</a>).</p>
-</blockquote>
-<p dir="auto">Also, MDN says:</p>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation/createDocumentType#examples" rel="nofollow">Examples</a></p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const dt = document.implementation.createDocumentType('svg:svg', '-//W3C//DTD SVG 1.1//EN', 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd');
-const d = document.implementation.createDocument('http://www.w3.org/2000/svg', 'svg:svg', dt);
-alert(d.doctype.publicId); // -//W3C//DTD SVG 1.1//EN"><pre><span class="pl-k">const</span> <span class="pl-s1">dt</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">implementation</span><span class="pl-kos">.</span><span class="pl-en">createDocumentType</span><span class="pl-kos">(</span><span class="pl-s">'svg:svg'</span><span class="pl-kos">,</span> <span class="pl-s">'-//W3C//DTD SVG 1.1//EN'</span><span class="pl-kos">,</span> <span class="pl-s">'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-k">const</span> <span class="pl-s1">d</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">implementation</span><span class="pl-kos">.</span><span class="pl-en">createDocument</span><span class="pl-kos">(</span><span class="pl-s">'http://www.w3.org/2000/svg'</span><span class="pl-kos">,</span> <span class="pl-s">'svg:svg'</span><span class="pl-kos">,</span> <span class="pl-s1">dt</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-en">alert</span><span class="pl-kos">(</span><span class="pl-s1">d</span><span class="pl-kos">.</span><span class="pl-c1">doctype</span><span class="pl-kos">.</span><span class="pl-c1">publicId</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// -//W3C//DTD SVG 1.1//EN</span></pre></div>
-<p dir="auto">If it returned undefined, <code class="notranslate">dt</code> and <code class="notranslate">d</code> would not be useful.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Returns a <a href="https://developer.mozilla.org/en-US/docs/Web/API/DocumentType" rel="nofollow">DocumentType</a>.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation</a></p>
-<p dir="auto">Also, the page with the issue itself says:</p>
-<blockquote>
-<p dir="auto">The DOMImplementation.createDocumentType() method returns a <a href="https://developer.mozilla.org/en-US/docs/Web/API/DocumentType" rel="nofollow">DocumentType</a></p>
-</blockquote>
-<p dir="auto"><a href="https://dom.spec.whatwg.org/#dom-domimplementation-createdocumenttype" rel="nofollow">https://dom.spec.whatwg.org/#dom-domimplementation-createdocumenttype</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/domimplementation/createdocumenttype</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation/createDocumentType" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation/createDocumentType</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/domimplementation/createdocumenttype/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/domimplementation/createdocumenttype/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/4e233c16c6f0d347972c5c762f5b836318a46124/hovercard" href="https://github.com/mdn/content/commit/4e233c16c6f0d347972c5c762f5b836318a46124"><tt>4e233c1</tt></a></li>
-<li>Document last modified: 2022-09-13T05:27:14.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[console] Label - a string or a identifier?]]></title>
             <link>https://github.com/mdn/content/issues/20938</link>
@@ -407,7 +359,7 @@ With the GEH demixing effort this section is gone and there is nowhere I can fin
 <p dir="auto">Try it</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The example does not work.  No spell checking error is shown:</p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/526509/183413259-3fc6f510-985b-49d4-a617-4b64747e2d4e.png"><img width="791" alt="image" src="https://user-images.githubusercontent.com/526509/183413259-3fc6f510-985b-49d4-a617-4b64747e2d4e.png" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/526509/183413259-3fc6f510-985b-49d4-a617-4b64747e2d4e.png"><img width="791" alt="image" src="https://user-images.githubusercontent.com/526509/183413259-3fc6f510-985b-49d4-a617-4b64747e2d4e.png" style="max-width: 100%;"></a></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The misspelt words should be underlined in red.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
