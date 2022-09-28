@@ -1315,7 +1315,7 @@ Or provide an example for the second scenario.</p>
 requestAnimationFrame(function rAF() {                                          
   console.log(&quot;got a rAF callback on &quot; + document.timeline.currentTime);        
   requestAnimationFrame(rAF);                                                   
-});"><pre class="notranslate notranslate"><code>window.addEventListener("scroll", e =&gt; {                                        
+});"><pre class="notranslate"><code>window.addEventListener("scroll", e =&gt; {                                        
   console.log("got a scroll event on " + document.timeline.currentTime);        
 });                                                                             
 requestAnimationFrame(function rAF() {                                          
@@ -1974,7 +1974,7 @@ const updatePixelRatio = () =&gt; {
 
   console.log(&quot;devicePixelRatio: &quot; + window.devicePixelRatio);
 }
-updatePixelRatio();"><pre class="notranslate notranslate"><code>let remove = null;
+updatePixelRatio();"><pre class="notranslate"><code>let remove = null;
 
 const updatePixelRatio = () =&gt; {
   if(remove != null) {
@@ -2108,7 +2108,7 @@ function onDragEndEvent(event)
 function onDropEvent(event)
 {
     // i was wrong here 
-}"><pre class="notranslate notranslate"><code>draggableNode.addEventListener("dragend", onDragEndEvent, false);
+}"><pre class="notranslate"><code>draggableNode.addEventListener("dragend", onDragEndEvent, false);
 
 
 function onDragEndEvent(event)

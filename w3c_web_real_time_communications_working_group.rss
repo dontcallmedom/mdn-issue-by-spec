@@ -53,7 +53,7 @@
 <p dir="auto">If a timeslice property was passed into the <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder/start" rel="nofollow">MediaRecorder.start()</a> method that started media capture, a dataavailable event is fired every timeslice milliseconds.</p>
 </blockquote>
 <p dir="auto">However, I used to record videos with a MediaRecorder like this (in vuejs):</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="startRecording: function () {
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="startRecording: function () {
     this.recorder = new MediaRecorder(this.streamSrc, {mimeType: &quot;video/webm;codecs:vp8&quot;});
     this.recorder.ondataavailable = this.onData;
     this.recorder.start(500);
@@ -263,7 +263,7 @@ navigator.mediaDevices
   .catch(function(err) {
     console.error('Error happens:', err);
   });
-"><pre class="notranslate notranslate"><code>
+"><pre class="notranslate"><code>
 navigator.mediaDevices
   .getUserMedia({
     video: {

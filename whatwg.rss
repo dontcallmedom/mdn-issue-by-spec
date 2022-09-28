@@ -436,7 +436,7 @@ With the GEH demixing effort this section is gone and there is nowhere I can fin
 <li>Use a developer tool to find out when the DomContentLoaded event fires.</li>
 </ol>
 <p dir="auto">I have attached a screenshot of the event firing 2 seconds after the browser is done with parsing the html. The part ,that is highlighted in yellow line, indicates that the event was fired at 2.06s. The parsing of the html was finished long before the parsing of the external stylesheet began. The screenshot includes some korean words. Sorry for the inconvenience.<br>
-<a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/74853891/183335358-eaf62583-67fd-46cc-9232-5a47d202e905.png"><img src="https://user-images.githubusercontent.com/74853891/183335358-eaf62583-67fd-46cc-9232-5a47d202e905.png" alt="DomContentLoaded" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/74853891/183335358-eaf62583-67fd-46cc-9232-5a47d202e905.png"><img src="https://user-images.githubusercontent.com/74853891/183335358-eaf62583-67fd-46cc-9232-5a47d202e905.png" alt="DomContentLoaded" style="max-width: 100%;"></a></p>
 <h3 dir="auto">MDN metadata</h3>
 
 <details>
@@ -1631,7 +1631,7 @@ console.log('text downloaded');
 ctrl.abort();
 
 // Resultant behavior is that &quot;text downloaded&quot; never was displayed, and we received this:
-// (x) Uncaught DOMException: The user aborted a request."><pre class="notranslate notranslate"><code>var ctrl = new AbortController();
+// (x) Uncaught DOMException: The user aborted a request."><pre class="notranslate"><code>var ctrl = new AbortController();
 var res = await fetch('https://www.ledger-cli.org/3.0/doc/ledger3.pdf', { signal: ctrl.signal });
 console.log('response received');
 var data = await res.text();
@@ -1696,7 +1696,7 @@ Reference: <a href="https://html.spec.whatwg.org/multipage/forms.html#htmllabele
 Thus if we write:</p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="let label = document.createElement('label');
 let button = document.createElement('button');
-label.appendChild(button);"><pre class="notranslate notranslate"><code>let label = document.createElement('label');
+label.appendChild(button);"><pre class="notranslate"><code>let label = document.createElement('label');
 let button = document.createElement('button');
 label.appendChild(button);
 </code></pre></div>
@@ -1708,7 +1708,7 @@ label.appendChild(button);
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="let label = document.createElement('label');
 let button = document.createElement('button');
 label.appendChild(button);
-label.control instanceof HTMLButtonElement; // label.control returns null"><pre class="notranslate notranslate"><code>let label = document.createElement('label');
+label.control instanceof HTMLButtonElement; // label.control returns null"><pre class="notranslate"><code>let label = document.createElement('label');
 let button = document.createElement('button');
 label.appendChild(button);
 label.control instanceof HTMLButtonElement; // label.control returns null
@@ -1875,10 +1875,10 @@ chunks (their "tasks") are immediately enqueued by<br>
 (printing <code class="notranslate">"Stream error:", err</code>) is not called at all.<br>
 The error resulting from calling <code class="notranslate">defaultWriter.close()</code><br>
 is unhandled. Instead of:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="defaultWriter.close();"><pre class="notranslate notranslate"><code>defaultWriter.close();
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="defaultWriter.close();"><pre class="notranslate"><code>defaultWriter.close();
 </code></pre></div>
 <p dir="auto">it should be</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="return defaultWriter.close();"><pre class="notranslate notranslate"><code>return defaultWriter.close();
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="return defaultWriter.close();"><pre class="notranslate"><code>return defaultWriter.close();
 </code></pre></div>
 </li>
 </ul>
@@ -2344,7 +2344,7 @@ no</p>]]></content:encoded>
   readonly attribute unsigned short readyState;
   readonly attribute unsigned long long bufferedAmount;
   [...]
-}"><pre class="notranslate notranslate"><code>interface WebSocket : EventTarget {
+}"><pre class="notranslate"><code>interface WebSocket : EventTarget {
   [...]
 
   // ready state
@@ -2474,7 +2474,7 @@ if (document.readyState === 'loading') {  // Loading hasn't finished yet
   document.addEventListener('DOMContentLoaded', doSomething);
 } else {  // `DOMContentLoaded` has already fired
   doSomething();
-}"><pre class="notranslate notranslate"><code>function doSomething() {
+}"><pre class="notranslate"><code>function doSomething() {
   console.info('DOM loaded');
 }
 

@@ -194,7 +194,7 @@ console.log('text downloaded');
 ctrl.abort();
 
 // Resultant behavior is that &quot;text downloaded&quot; never was displayed, and we received this:
-// (x) Uncaught DOMException: The user aborted a request."><pre class="notranslate notranslate"><code>var ctrl = new AbortController();
+// (x) Uncaught DOMException: The user aborted a request."><pre class="notranslate"><code>var ctrl = new AbortController();
 var res = await fetch('https://www.ledger-cli.org/3.0/doc/ledger3.pdf', { signal: ctrl.signal });
 console.log('response received');
 var data = await res.text();

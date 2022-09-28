@@ -611,7 +611,7 @@ MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons" rel=
 node.textContent = &quot;hello world!&quot;
 var tnode = node.childNodes[0]
 var sel = window.getSelection()
-sel.setBaseAndExtent(tnode, 0, tnode, 5) // this should select 'hello'"><pre class="notranslate notranslate"><code>var node = document.querySelector('.anything') //select an empty node!
+sel.setBaseAndExtent(tnode, 0, tnode, 5) // this should select 'hello'"><pre class="notranslate"><code>var node = document.querySelector('.anything') //select an empty node!
 node.textContent = "hello world!"
 var tnode = node.childNodes[0]
 var sel = window.getSelection()

@@ -158,10 +158,10 @@ chunks (their "tasks") are immediately enqueued by<br>
 (printing <code class="notranslate">"Stream error:", err</code>) is not called at all.<br>
 The error resulting from calling <code class="notranslate">defaultWriter.close()</code><br>
 is unhandled. Instead of:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="defaultWriter.close();"><pre class="notranslate notranslate"><code>defaultWriter.close();
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="defaultWriter.close();"><pre class="notranslate"><code>defaultWriter.close();
 </code></pre></div>
 <p dir="auto">it should be</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="return defaultWriter.close();"><pre class="notranslate notranslate"><code>return defaultWriter.close();
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="return defaultWriter.close();"><pre class="notranslate"><code>return defaultWriter.close();
 </code></pre></div>
 </li>
 </ul>
