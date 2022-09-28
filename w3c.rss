@@ -325,11 +325,11 @@ or</li>
 // Create a buffer, plop in data, connect and play -&gt; modify graph here if required<br>
 function playSample(audioContext, audioBuffer, time) {</p>
 <p dir="auto">on line 377 (first line of the function)</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="    const sampleSource = new AudioBufferSourceNode(audioCtx, {"><pre class="notranslate notranslate"><code>    const sampleSource = new AudioBufferSourceNode(audioCtx, {
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="    const sampleSource = new AudioBufferSourceNode(audioCtx, {"><pre class="notranslate"><code>    const sampleSource = new AudioBufferSourceNode(audioCtx, {
 </code></pre></div>
 <p dir="auto">line uses audioCtx (the global context variable) rather than the passed in variable audioContext</p>
 <h3 dir="auto">What did you expect to see?</h3>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="    const sampleSource = new AudioBufferSourceNode(audioContext, {"><pre class="notranslate notranslate"><code>    const sampleSource = new AudioBufferSourceNode(audioContext, {
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="    const sampleSource = new AudioBufferSourceNode(audioContext, {"><pre class="notranslate"><code>    const sampleSource = new AudioBufferSourceNode(audioContext, {
 </code></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
@@ -1463,7 +1463,7 @@ CSS shorthand property   59
 CSS type                 37
 Guide                   113
 Landing page             10
-tool                      4"><pre class="notranslate notranslate"><code>CSS at-rule              16
+tool                      4"><pre class="notranslate"><code>CSS at-rule              16
 CSS at-rule descriptor   27
 CSS combinator            4
 CSS function             74
@@ -1614,7 +1614,7 @@ A <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/contain" rel="nofoll
 <p dir="auto">Instead of saying "value of paint", it should refer to "<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Containment#paint_containment" rel="nofollow">Paint containment</a>" with the link to information about other ways to specify a paint containment.   The link to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/contain" rel="nofollow">contain</a> is also useful since it is more direct, at least for this way of specifying a paint containment.  On that page, we find</p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Note: If applied (with value: paint, strict or content), this property creates:
 
-A new [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block) (for the descendants whose [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position) property is absolute or fixed)."><pre class="notranslate notranslate"><code>Note: If applied (with value: paint, strict or content), this property creates:
+A new [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block) (for the descendants whose [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position) property is absolute or fixed)."><pre class="notranslate"><code>Note: If applied (with value: paint, strict or content), this property creates:
 
 A new [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block) (for the descendants whose [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position) property is absolute or fixed).
 </code></pre></div>
@@ -1695,7 +1695,7 @@ It's a lot of work to create a database, fill it, then try to create errors and 
 <p dir="auto">AFAIK This wrong.</p>
 <p dir="auto"><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="702066886" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/1" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/1/hovercard" href="https://github.com/mdn/content/pull/1">#1</a>. While it's true a gamepad object will be provided on gamepadconnected, it's also true that gamepad objects will be provided by navigator.getGamepads</p>
 <p dir="auto"><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="702234902" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/2" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/2/hovercard" href="https://github.com/mdn/content/pull/2">#2</a>. The description above and elsewhere suggests holding on to a reference to the gamepad object and querying it for values. But this fails. In fact, the example code in the article does not do this. It updates the gamepad objects near the end</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="       controllers[gamepads[i].index] = gamepads[i];"><pre class="notranslate notranslate"><code>       controllers[gamepads[i].index] = gamepads[i];
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="       controllers[gamepads[i].index] = gamepads[i];"><pre class="notranslate"><code>       controllers[gamepads[i].index] = gamepads[i];
 </code></pre></div>
 <p dir="auto">In other words, it's updating the <code class="notranslate">controllers</code> array with a new gamepad object for the same gamepad.</p>
 <p dir="auto">If instead you did this</p>
@@ -1703,7 +1703,7 @@ It's a lot of work to create a database, fill it, then try to create errors and 
    // for this controller from the gamepadconnected event
    if (!controllers[gamepads[i].index]) {
       controllers[gamepads[i].index] = gamepads[i];
-   }"><pre class="notranslate notranslate"><code>   // no need to use a new gamepad object if we already have a gamepad object
+   }"><pre class="notranslate"><code>   // no need to use a new gamepad object if we already have a gamepad object
    // for this controller from the gamepadconnected event
    if (!controllers[gamepads[i].index]) {
       controllers[gamepads[i].index] = gamepads[i];
@@ -1921,7 +1921,7 @@ But that does not really cover the topic.</p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const osc = ctx.createOscillator();
 const reverb = ctx.createConvolver();
 reverb.buffer = ctx.createBuffer(1, ctx.sampleRate, ctx.sampleRate);
-osc.connect(reverb).connect(ctx.destination);"><pre class="notranslate notranslate"><code>const osc = ctx.createOscillator();
+osc.connect(reverb).connect(ctx.destination);"><pre class="notranslate"><code>const osc = ctx.createOscillator();
 const reverb = ctx.createConvolver();
 reverb.buffer = ctx.createBuffer(1, ctx.sampleRate, ctx.sampleRate);
 osc.connect(reverb).connect(ctx.destination);
@@ -2130,7 +2130,7 @@ I think the author is talking about following case:</li>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="let rotate360 = [
       { transform: 'rotate(360deg)' },
       {}   // empty keyframe, values are inferred from elements starting state
-    ];"><pre class="notranslate notranslate"><code>let rotate360 = [
+    ];"><pre class="notranslate"><code>let rotate360 = [
       { transform: 'rotate(360deg)' },
       {}   // empty keyframe, values are inferred from elements starting state
     ];

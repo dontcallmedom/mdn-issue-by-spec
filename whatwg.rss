@@ -1015,7 +1015,7 @@ If done so, the Alphabetical index could be its own page aswell, instead of furt
 <p dir="auto">AFAIK This wrong.</p>
 <p dir="auto"><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="702066886" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/1" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/1/hovercard" href="https://github.com/mdn/content/pull/1">#1</a>. While it's true a gamepad object will be provided on gamepadconnected, it's also true that gamepad objects will be provided by navigator.getGamepads</p>
 <p dir="auto"><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="702234902" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/2" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/2/hovercard" href="https://github.com/mdn/content/pull/2">#2</a>. The description above and elsewhere suggests holding on to a reference to the gamepad object and querying it for values. But this fails. In fact, the example code in the article does not do this. It updates the gamepad objects near the end</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="       controllers[gamepads[i].index] = gamepads[i];"><pre class="notranslate notranslate"><code>       controllers[gamepads[i].index] = gamepads[i];
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="       controllers[gamepads[i].index] = gamepads[i];"><pre class="notranslate"><code>       controllers[gamepads[i].index] = gamepads[i];
 </code></pre></div>
 <p dir="auto">In other words, it's updating the <code class="notranslate">controllers</code> array with a new gamepad object for the same gamepad.</p>
 <p dir="auto">If instead you did this</p>
@@ -1023,7 +1023,7 @@ If done so, the Alphabetical index could be its own page aswell, instead of furt
    // for this controller from the gamepadconnected event
    if (!controllers[gamepads[i].index]) {
       controllers[gamepads[i].index] = gamepads[i];
-   }"><pre class="notranslate notranslate"><code>   // no need to use a new gamepad object if we already have a gamepad object
+   }"><pre class="notranslate"><code>   // no need to use a new gamepad object if we already have a gamepad object
    // for this controller from the gamepadconnected event
    if (!controllers[gamepads[i].index]) {
       controllers[gamepads[i].index] = gamepads[i];
@@ -1253,7 +1253,7 @@ This feature is useful to implement multiple different submit buttons.</p>
     &lt;/form&gt;
 
   &lt;/body&gt;
-&lt;/html&gt;"><pre class="notranslate notranslate"><code>&lt;!DOCTYPE html&gt;
+&lt;/html&gt;"><pre class="notranslate"><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;body&gt;
     &lt;script&gt;
