@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[ecmascript] SUGGESTION: Common use-cases of WeakMap not included in WeakMap documentation page](https://github.com/mdn/content/issues/21180) (2022-09-29T08:23:46Z)
+* [[ecmascript] Content Suggestion: Include common use-cases of WeakMap in WeakMap documentation page](https://github.com/mdn/content/issues/21180) (2022-09-29T08:23:46Z)
   
 * [[ecmascript] "async" page - "execution of all code following this is immediately paused"](https://github.com/mdn/content/issues/20942) (2022-09-21T05:13:44Z)
   
