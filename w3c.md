@@ -114,8 +114,6 @@
   
 * [[css-fonts-5] Issue with "font-size": recommend to users not to set font-size with "em" units](https://github.com/mdn/content/issues/14282) (2022-03-25T06:00:02Z)
   
-* [[uievents] Content bug: Description of focus events matches current spec but not reality](https://github.com/mdn/content/issues/14084) (2022-03-20T09:05:07Z)
-  
 * [[webaudio] "ConvolverNode": provide a simpler example that I can adapt to more complex examples (connecting it to another node does not work)](https://github.com/mdn/content/issues/14022) (2022-03-18T14:35:29Z)
   
 * [[css-display-3] Issue with "display": accessibility concerns of display: contents deserve update](https://github.com/mdn/content/issues/14015) (2022-03-18T14:08:07Z)

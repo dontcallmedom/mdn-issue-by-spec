@@ -16,8 +16,6 @@
   
 * [[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] Content bug: Implementation of the `mode` options for `Element.attachShadow()` in code example could be refined](https://github.com/mdn/content/issues/14620) (2022-04-03T15:13:09Z)
   
-* [[uievents] Content bug: Description of focus events matches current spec but not reality](https://github.com/mdn/content/issues/14084) (2022-03-20T09:05:07Z)
-  
 * [[uievents] “mouseleave is fired when the pointer has exited the element” is inaccurate](https://github.com/mdn/content/issues/13534) (2022-03-05T21:18:17Z)
   
 * [[cssom-view-1, html, dom, selection-api, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written](https://github.com/mdn/content/issues/13419) (2022-03-02T14:45:44Z)
