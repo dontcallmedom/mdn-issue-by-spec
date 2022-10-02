@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Internationalization Working Group. [![RSS feed for W3C Internationalization Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[encoding] TextEncoder API: It seems to be lacking information](https://github.com/mdn/content/issues/21238) (2022-10-02T17:03:51Z)
+  
 * [[encoding] TextEncoderStream & TextDecoderStream](https://github.com/mdn/content/issues/20572) (2022-09-12T03:01:30Z)
   
 * [[encoding] Subjective description in `Buffer sizing` in `TextEncoder.encodeInto()`](https://github.com/mdn/content/issues/16805) (2022-05-31T02:24:05Z)

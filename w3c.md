@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[encoding] TextEncoder API: It seems to be lacking information](https://github.com/mdn/content/issues/21238) (2022-10-02T17:03:51Z)
+  
 * [[css-grid-3] syndicated content..](https://github.com/mdn/content/issues/21199) (2022-09-30T08:40:54Z)
   
 * [[picture-in-picture] Clarify/note Document.pictureInPictureElement is null for PiP launched from iframe](https://github.com/mdn/content/issues/21048) (2022-09-24T20:32:11Z)
