@@ -4,45 +4,10 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Thu, 29 Sep 2022 21:44:31 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 29 Sep 2022 08:23:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript] parseInt(): wrong return value stated in prose]]></title>
-            <link>https://github.com/mdn/content/issues/21192</link>
-            <guid>https://github.com/mdn/content/issues/21192</guid>
-            <pubDate>Thu, 29 Sep 2022 21:44:31 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Examples</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">"If the number is greater than 1e+21 (including) or less than 1e-7 (including), it will return 1. (when using radix 10). "</p>
-<p dir="auto">Incorrect.</p>
-<p dir="auto">e.g.<br>
-parseInt(0.0000000004)</p>
-<p dir="auto">Note: The examples are about passing numbers of number type, not strings.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Will be the first digit of the scientific notation string that the argument is converted to (when argument is of number type.</p>
-<p dir="auto">Or could it be anything else?</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/parseint</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/parseint/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/parseint/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ce2909126eb09e44c9f48d9f65d072acae827749/hovercard" href="https://github.com/mdn/content/commit/ce2909126eb09e44c9f48d9f65d072acae827749"><tt>ce29091</tt></a></li>
-<li>Document last modified: 2022-09-13T07:09:29.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[ecmascript] Content Suggestion: Include common use-cases of WeakMap in WeakMap documentation page]]></title>
             <link>https://github.com/mdn/content/issues/21180</link>
