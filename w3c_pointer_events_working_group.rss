@@ -4,10 +4,69 @@
         <title>W3C Pointer Events Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_pointer_events_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Pointer Events Working Group</description>
-        <lastBuildDate>Sun, 03 Apr 2022 15:13:09 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 03 Oct 2022 18:24:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[pointerevents3] Incorrect note regarding boundary crossing events for elements with captured pointers]]></title>
+            <link>https://github.com/mdn/content/issues/21268</link>
+            <guid>https://github.com/mdn/content/issues/21268</guid>
+            <pubDate>Mon, 03 Oct 2022 18:24:54 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setPointerCapture" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/setPointerCapture</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The note at the beginning</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The note says that:</p>
+<blockquote>
+<p dir="auto">When pointer capture is set, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/pointerover_event" rel="nofollow">pointerover</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/pointerout_event" rel="nofollow">pointerout</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/pointerenter_event" rel="nofollow">pointerenter</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/pointerleave_event" rel="nofollow">pointerleave</a> events are only generated when crossing the boundary of the capture target. This has the effect of suppressing these events on all other elements.</p>
+</blockquote>
+<p dir="auto">However, this is not the case, and boundary crossing events are suppressed when a pointer is captured any element.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The opposite of what is says. No boundary crossing events are fired when a pointer is captured by said element.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Issue was seen with touch inputs, which work like so:</p>
+<ol dir="auto">
+<li>Upon <code class="notranslate">pointerdown</code> on an element, the pointer is captured by the element implicitly for touch inputs <sup><a href="#user-content-fn-1-baedeac02ae270c8f18da07cac62557d" id="user-content-fnref-1-baedeac02ae270c8f18da07cac62557d" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup>.</li>
+<li>When a pointer is captured by a target:
+<ul dir="auto">
+<li>The pointer is considered to be always inside the boundaries of the capturing element <sup><a href="#user-content-fn-2-baedeac02ae270c8f18da07cac62557d" id="user-content-fnref-2-baedeac02ae270c8f18da07cac62557d" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup></li>
+<li>invocation of hit-testing is suppressed <sup><a href="#user-content-fn-1-baedeac02ae270c8f18da07cac62557d" id="user-content-fnref-1-2-baedeac02ae270c8f18da07cac62557d" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup></li>
+</ul>
+</li>
+<li>Therefore, no <code class="notranslate">pointerout</code> event is fired</li>
+</ol>
+<p dir="auto"><a href="https://jsfiddle.net/thekakkun/zbg9Ljct/57/" rel="nofollow">This behavior can be confirmed in this demo</a></p>
+<ol dir="auto">
+<li>Upon touching #target (the green square), pointer is automatically captured by that element.</li>
+<li>No <code class="notranslate">pointerleave</code>/<code class="notranslate">pointerout</code> events are fired unless pointer capture is cancelled explicitly by uncommenting lines 4-7</li>
+</ol>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/element/setpointercapture</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setPointerCapture" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/setPointerCapture</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/element/setpointercapture/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/element/setpointercapture/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/4e233c16c6f0d347972c5c762f5b836318a46124/hovercard" href="https://github.com/mdn/content/commit/4e233c16c6f0d347972c5c762f5b836318a46124"><tt>4e233c1</tt></a></li>
+<li>Document last modified: 2022-09-13T05:27:14.000Z</li>
+</ul>
+</details>
+<section data-footnotes="" class="footnotes"><h2 id="footnote-label" class="sr-only">Footnotes</h2>
+<ol dir="auto">
+<li id="user-content-fn-1-baedeac02ae270c8f18da07cac62557d">
+<p dir="auto"><a href="https://www.w3.org/TR/pointerevents/#implicit-pointer-capture" rel="nofollow">https://www.w3.org/TR/pointerevents/#implicit-pointer-capture</a> <a href="#user-content-fnref-1-baedeac02ae270c8f18da07cac62557d" data-footnote-backref="" aria-label="Back to content" class="data-footnote-backref"><g-emoji class="g-emoji" alias="leftwards_arrow_with_hook" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/21a9.png">↩</g-emoji></a> <a href="#user-content-fnref-1-2-baedeac02ae270c8f18da07cac62557d" data-footnote-backref="" aria-label="Back to content" class="data-footnote-backref"><g-emoji class="g-emoji" alias="leftwards_arrow_with_hook" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/21a9.png">↩</g-emoji><sup>2</sup></a></p>
+</li>
+<li id="user-content-fn-2-baedeac02ae270c8f18da07cac62557d">
+<p dir="auto"><a href="https://www.w3.org/TR/pointerevents/#the-pointerover-event" rel="nofollow">https://www.w3.org/TR/pointerevents/#the-pointerover-event</a> <a href="#user-content-fnref-2-baedeac02ae270c8f18da07cac62557d" data-footnote-backref="" aria-label="Back to content" class="data-footnote-backref"><g-emoji class="g-emoji" alias="leftwards_arrow_with_hook" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/21a9.png">↩</g-emoji></a></p>
+</li>
+</ol>
+</section>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] Content bug: Implementation of the `mode` options for `Element.attachShadow()` in code example could be refined]]></title>
             <link>https://github.com/mdn/content/issues/14620</link>
