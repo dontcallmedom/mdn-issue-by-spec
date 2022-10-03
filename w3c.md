@@ -54,8 +54,6 @@
   
 * [[cssom-view-1] False claim: window.pageYOffset === window.scrollY; // always true](https://github.com/mdn/content/issues/18735) (2022-07-24T13:47:54Z)
   
-* [[mathml-core] Formal syntax of math-style is missing](https://github.com/mdn/content/issues/18641) (2022-07-22T09:19:19Z)
-  
 * [[uievents] Document the ability to preventDefault() a pinch-zoom gesture on a touchpad](https://github.com/mdn/content/issues/18342) (2022-07-14T03:33:35Z)
   
 * [[WebCryptoAPI] Precise max length for encoding algorithm](https://github.com/mdn/content/issues/18045) (2022-07-06T14:47:35Z)
