@@ -557,39 +557,6 @@ element.dispatchEvent(mouseEvent)"><pre><span class="pl-k">const</span> <span cl
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[selectors-4] Improve the :has() page documentation]]></title>
-            <link>https://github.com/mdn/content/issues/19972</link>
-            <guid>https://github.com/mdn/content/issues/19972</guid>
-            <pubDate>Thu, 25 Aug 2022 18:30:28 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">This issue is for tracking improvements to the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:has" rel="nofollow">:has()</a> page.</p>
-<p dir="auto">Reference: <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1338524598" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/19572" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/19572/hovercard?comment_id=1214645922&amp;comment_type=issue_comment" href="https://github.com/mdn/content/issues/19572#issuecomment-1214645922">#19572 (comment)</a></p>
-<blockquote>
-<ul dir="auto">
-<li>
-<p dir="auto">the syntax docs are take a  but that is not defined anywhere in our docs. In summary all the "forgiving" bit means is that any of the comma separated selectors are invalid they just get skipped and the selector works on the valid ones.</p>
-<ul dir="auto">
-<li>This is apparently different to normal list selectors, where if one is wrong the lot get dumped. Not clear if this applies to just when used in a query or in a style sheet.</li>
-<li>the "relative" bit means that the selectors are relative to the element or whatever that this has() was applied to.</li>
-</ul>
-</li>
-<li>
-<p dir="auto">The WG just added a new rule that has() pseudo class can't contain a pseudo class of the current types, but may take future types:<br>
-<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1296599665" data-permission-text="Title is private" data-url="https://github.com/w3c/csswg-drafts/issues/7463" data-hovercard-type="issue" data-hovercard-url="/w3c/csswg-drafts/issues/7463/hovercard?comment_id=1196971909&amp;comment_type=issue_comment" href="https://github.com/w3c/csswg-drafts/issues/7463#issuecomment-1196971909">w3c/csswg-drafts#7463 (comment)</a></p>
-<ul dir="auto">
-<li>So we may have to list the cases that can't be used.</li>
-<li>It is not clear whether FF already implements this restriction according to <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=418039" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=418039</a>. I think we need some test code.</li>
-</ul>
-</li>
-<li>
-<p dir="auto">The Description from/including "In earlier revisions of the CSS Selectors Level 4 specification, :has had a limitation that it couldn't be used within stylesheets. ..." should be removed. If it wasn't implemented in any browser it is now irrelevant.</p>
-</li>
-<li>
-<p dir="auto">The examples are too simplistic - they only show one item - NOT a list. We need a list, and we should also show that the case of an invalid selector is dropped. Ideally in a live example.</p>
-</li>
-</ul>
-</blockquote>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[cssom-view-1] Edits for the window.pageYOffset property and related content]]></title>
             <link>https://github.com/mdn/content/issues/19933</link>
             <guid>https://github.com/mdn/content/issues/19933</guid>
