@@ -4,10 +4,50 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Mon, 19 Sep 2022 13:51:02 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 06 Oct 2022 03:08:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Slider controls example could use value instead of textContent]]></title>
+            <link>https://github.com/mdn/content/issues/21318</link>
+            <guid>https://github.com/mdn/content/issues/21318</guid>
+            <pubDate>Thu, 06 Oct 2022 03:08:45 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types" rel="nofollow">https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Slider controls</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The guide Forms &gt; HTML5 Input Types, at the section Slider controls, give an example using the HTML tag  which is updated via JavaScript using:</p>
+<p dir="auto">output.textContent = price.value;</p>
+<p dir="auto">At the end of this section exist a note pointing to a CSS-Tricks article where a similar example is given but using .value property instead of .textContent to update the DOM</p>
+<p dir="auto">Here's the link =&gt; <a href="https://css-tricks.com/the-output-element/" rel="nofollow">https://css-tricks.com/the-output-element/</a></p>
+<p dir="auto">I'm not completely sure if the use of .textContent instead of .value will not create accessibility issues for the user.</p>
+<p dir="auto">Quote form the output tag MDN reference:</p>
+<p dir="auto">"Many browsers implement this element as an aria-live region. Assistive technology will thereby announce the results of UI interactions posted inside it without requiring that focus is switched away from the controls that produce those results."</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">replace  output.textContent = price.value; in the example for output.value = price.value; In the case this replacement is appropiate.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">CSS-Tricks article "The Output Element"</p>
+<p dir="auto"><a href="https://css-tricks.com/the-output-element/" rel="nofollow">https://css-tricks.com/the-output-element/</a></p>
+<p dir="auto">MDN &gt; References &gt; HTML &gt; Elements &gt; output</p>
+<p dir="auto">Section: Accessibility Concerns</p>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output#accessibility_concerns" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output#accessibility_concerns</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/learn/forms/html5_input_types</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types" rel="nofollow">https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/learn/forms/html5_input_types/index.md">https://github.com/mdn/content/blob/main/files/en-us/learn/forms/html5_input_types/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/f1f3eaf1b5a73e3d92aef40622434b5110418852/hovercard" href="https://github.com/mdn/content/commit/f1f3eaf1b5a73e3d92aef40622434b5110418852"><tt>f1f3eaf</tt></a></li>
+<li>Document last modified: 2022-09-14T13:25:46.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Confusing example of malicious code]]></title>
             <link>https://github.com/mdn/content/issues/20891</link>
