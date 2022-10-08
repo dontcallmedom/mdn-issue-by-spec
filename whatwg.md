@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[dom, ecmascript] `Range.extractContents()` invalid return type](https://github.com/mdn/content/issues/21342) (2022-10-06T19:44:55Z)
-  
 * [[html] Slider controls example could use value instead of textContent](https://github.com/mdn/content/issues/21318) (2022-10-06T03:08:45Z)
   
 * [[console] Label - a string or a identifier?](https://github.com/mdn/content/issues/20938) (2022-09-21T01:53:38Z)
