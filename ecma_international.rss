@@ -4,10 +4,46 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Thu, 29 Sep 2022 08:23:46 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 08 Oct 2022 12:01:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Incorrect generalization of NaN in mathematical operations]]></title>
+            <link>https://github.com/mdn/content/issues/21390</link>
+            <guid>https://github.com/mdn/content/issues/21390</guid>
+            <pubDate>Sat, 08 Oct 2022 12:01:20 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN#description" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN#description</a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto">If NaN is involved in any mathematical operation, the result is also NaN.</p>
+</blockquote>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto"><em>any</em> mathematical operation is too general. There are edge cases where mathematical operations involving NaN do not result in NaN. Perhaps consider replacing <em>any</em> with <em>most</em> or <em>the vast majority</em></p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://en.wikipedia.org/wiki/NaN" rel="nofollow">https://en.wikipedia.org/wiki/NaN</a></p>
+<blockquote>
+<p dir="auto">NaNs can silently be removed from a chain of calculations where one calculation in the chain would give a constant result for all other floating-point values. For example, the calculation [x^0] may produce the result 1, even where x is NaN, so checking only the final result would obscure the fact that a calculation before the [x^0] resulted in a NaN.</p>
+</blockquote>
+<p dir="auto"><code class="notranslate">NaN ** 0 === 1 // true</code></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">No, thank you for reviewing this issue.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/nan</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/nan/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/nan/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/5277e4fe383626b8d88a26131c133b0445f20aad/hovercard" href="https://github.com/mdn/content/commit/5277e4fe383626b8d88a26131c133b0445f20aad"><tt>5277e4f</tt></a></li>
+<li>Document last modified: 2022-10-04T03:26:59.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Content Suggestion: Include common use-cases of WeakMap in WeakMap documentation page]]></title>
             <link>https://github.com/mdn/content/issues/21180</link>
