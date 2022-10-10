@@ -8,8 +8,6 @@
   
 * [[ecmascript] Content Suggestion: Include common use-cases of WeakMap in WeakMap documentation page](https://github.com/mdn/content/issues/21180) (2022-09-29T08:23:46Z)
   
-* [[ecmascript] "async" page - "execution of all code following this is immediately paused"](https://github.com/mdn/content/issues/20942) (2022-09-21T05:13:44Z)
-  
 * [[ecmascript] Issue with "Uint8Array" (and other TypedArray concrete class pages): missing inheritance from %TypedArray%](https://github.com/mdn/content/issues/20019) (2022-08-27T03:09:33Z)
   
 * [[ecmascript] Document import assertions](https://github.com/mdn/content/issues/19220) (2022-08-06T05:08:53Z)
