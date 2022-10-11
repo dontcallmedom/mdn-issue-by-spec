@@ -4,59 +4,10 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Sun, 09 Oct 2022 03:09:28 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 08 Oct 2022 12:01:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript] await return value]]></title>
-            <link>https://github.com/mdn/content/issues/21403</link>
-            <guid>https://github.com/mdn/content/issues/21403</guid>
-            <pubDate>Sun, 09 Oct 2022 03:09:28 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Return value</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto"><code class="notranslate">The fulfillment value of the promise, or the expression itself's value itself if it's not a Promise.</code></p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The expression result will be parsed by <code class="notranslate">Promise.resolve()</code>. so if this result is a <code class="notranslate">thenable</code> object, it will be resolved to a promise.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const thenable = {
-    then: function (resolve) {
-        resolve('thenable');
-    }
-};
-async function test() {
-    const a = await thenable;
-    console.log(a); // 'thenable', instead of `thenable` variables
-}
-test();"><pre class="notranslate"><code>const thenable = {
-    then: function (resolve) {
-        resolve('thenable');
-    }
-};
-async function test() {
-    const a = await thenable;
-    console.log(a); // 'thenable', instead of `thenable` variables
-}
-test();
-</code></pre></div>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/operators/await</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/await/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/await/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/1533276490d15cff6ddcd201fc05562180058a99/hovercard" href="https://github.com/mdn/content/commit/1533276490d15cff6ddcd201fc05562180058a99"><tt>1533276</tt></a></li>
-<li>Document last modified: 2022-09-13T07:11:16.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[ecmascript] Incorrect generalization of NaN in mathematical operations]]></title>
             <link>https://github.com/mdn/content/issues/21390</link>
