@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] The `<header>` example should not have `<h1>` in the `<header>` element](https://github.com/mdn/content/issues/21559) (2022-10-14T20:47:53Z)
+  
 * [[html] Slider controls example could use value instead of textContent](https://github.com/mdn/content/issues/21318) (2022-10-06T03:08:45Z)
   
 * [[html] Confusing example of malicious code](https://github.com/mdn/content/issues/20891) (2022-09-19T13:51:02Z)

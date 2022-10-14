@@ -4,10 +4,90 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Thu, 06 Oct 2022 03:08:45 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 14 Oct 2022 20:47:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] The `<header>` example should not have `<h1>` in the `<header>` element]]></title>
+            <link>https://github.com/mdn/content/issues/21559</link>
+            <guid>https://github.com/mdn/content/issues/21559</guid>
+            <pubDate>Fri, 14 Oct 2022 20:47:53 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Try It</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The <code class="notranslate">&lt;h1&gt;</code> tag does not belong in the <code class="notranslate">&lt;header&gt;</code> if it's at the root level, because here it's a <code class="notranslate">banner</code> landmark.</p>
+<p dir="auto">According to the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/banner_role" rel="nofollow">banner role page on MDN</a>:</p>
+<blockquote>
+<p dir="auto">It should be reserved for globally repeating site-wide content that is generally located at the top of every page.</p>
+<p dir="auto">The banner typically includes things such as a logo or corporate identity, or possibly a site-specific search tool, and is generally what your marketing team would call the "header" or "top banner" of the site.</p>
+</blockquote>
+<p dir="auto">Current content:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;header class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;Cute Puppies Express!&lt;/h1&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+    &lt;p&gt;I love beagles &lt;em&gt;so&lt;/em&gt; much! Like, really, a lot. They’re adorable and their ears are so, so snuggly soft!&lt;/p&gt;
+&lt;/main&gt;"><pre class="notranslate"><code>&lt;header class="page-header"&gt;
+    &lt;h1&gt;Cute Puppies Express!&lt;/h1&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+    &lt;p&gt;I love beagles &lt;em&gt;so&lt;/em&gt; much! Like, really, a lot. They’re adorable and their ears are so, so snuggly soft!&lt;/p&gt;
+&lt;/main&gt;
+</code></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">There should be a distinction shown between the "header as a banner landmark" and the "header as a generic section" use case.</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;header class=&quot;cool-banner-background&quot;&gt;
+    &lt;img src=&quot;logo.png&quot; alt=&quot;Logo&quot; /&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+    &lt;header  class=&quot;page-header&quot;&gt;
+        &lt;h1&gt;Cute Puppies Express!&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;p&gt;I love beagles &lt;em&gt;so&lt;/em&gt; much! Like, really, a lot. They’re adorable and their ears are so, so snuggly soft!&lt;/p&gt;
+&lt;/main&gt;"><pre class="notranslate"><code>&lt;header class="cool-banner-background"&gt;
+    &lt;img src="logo.png" alt="Logo" /&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+    &lt;header  class="page-header"&gt;
+        &lt;h1&gt;Cute Puppies Express!&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;p&gt;I love beagles &lt;em&gt;so&lt;/em&gt; much! Like, really, a lot. They’re adorable and their ears are so, so snuggly soft!&lt;/p&gt;
+&lt;/main&gt;
+</code></pre></div>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<ul dir="auto">
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/banner_role" rel="nofollow">Banner role page on MDN</a></li>
+<li><a href="https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/" rel="nofollow">Landmark regions | ARIA Authoring Practices Guide</a></li>
+<li><a href="https://w3c.github.io/aria/#banner" rel="nofollow">Banner - ARIA Spec on w3c.github.io</a></li>
+<li><a href="https://dequeuniversity.com/assets/pdf/module-semantic/module-semantic-checklist.pdf" rel="nofollow">Semantic Structure and Navigation Checklist (dequeuniversity.com)</a>
+<ul dir="auto">
+<li>"The beginning of the main content SHOULD start with <code class="notranslate">&lt;h1&gt;</code>"</li>
+<li>The real reference is within a copyrighted course, which I cannot reproduce here. <a href="https://dequeuniversity.com/class/semantic-structure/headings/h1-best-practices" rel="nofollow">Heading Level 1 Best Practices | Deque University</a>.</li>
+</ul>
+</li>
+</ul>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/element/header</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/header/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/header/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b56483692fd247dd7c5f11af4233ad40bf19ac31/hovercard" href="https://github.com/mdn/content/commit/b56483692fd247dd7c5f11af4233ad40bf19ac31"><tt>b564836</tt></a></li>
+<li>Document last modified: 2022-09-14T07:57:28.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Slider controls example could use value instead of textContent]]></title>
             <link>https://github.com/mdn/content/issues/21318</link>
