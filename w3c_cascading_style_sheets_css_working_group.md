@@ -24,8 +24,6 @@
   
 * [[cssom-view-1, html] [GEH] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
   
-* [[css-color-adjust-1] [CSS] `prefers-color-scheme` reflects the `color-scheme` on the embedding element](https://github.com/mdn/content/issues/19449) (2022-08-12T05:26:16Z)
-  
 * [[cssom-view-1]  height-controls](https://github.com/mdn/content/issues/19322) (2022-08-09T11:35:31Z)
   
 * [[cssom-view-1] Include solution to checking if content is overflown in clientHeight page](https://github.com/mdn/content/issues/19153) (2022-08-04T11:29:19Z)

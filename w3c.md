@@ -46,8 +46,6 @@
   
 * [[uievents] Event references should list bubbles, cancelable, and composed values](https://github.com/mdn/content/issues/19590) (2022-08-15T13:38:07Z)
   
-* [[css-color-adjust-1] [CSS] `prefers-color-scheme` reflects the `color-scheme` on the embedding element](https://github.com/mdn/content/issues/19449) (2022-08-12T05:26:16Z)
-  
 * [[mediastream-recording] Emitted blobs do not always exactly adhere to the timeslice value](https://github.com/mdn/content/issues/19369) (2022-08-10T14:39:46Z)
   
 * [[cssom-view-1]  height-controls](https://github.com/mdn/content/issues/19322) (2022-08-09T11:35:31Z)
