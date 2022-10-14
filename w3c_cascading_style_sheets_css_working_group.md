@@ -48,8 +48,6 @@
   
 * [[css-fonts-5] Update MDN font family page with -apple-system](https://github.com/mdn/content/issues/15896) (2022-05-11T05:22:44Z)
   
-* [[css-position-3] More specific description for positional properties](https://github.com/mdn/content/issues/15862) (2022-05-10T13:11:40Z)
-  
 * [[css-text-3] `word-break: break-word;` vs `overflow-wrap: anywhere;`](https://github.com/mdn/content/issues/15676) (2022-05-04T06:23:26Z)
   
 * [[css-conditional-3, DOM-Parsing] Defining page types](https://github.com/mdn/content/issues/15539) (2022-04-29T23:44:43Z)

@@ -751,33 +751,6 @@ IN summary, it's a way to construct a CSS stylesheet programmatically so that it
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-position-3] More specific description for positional properties]]></title>
-            <link>https://github.com/mdn/content/issues/15862</link>
-            <guid>https://github.com/mdn/content/issues/15862</guid>
-            <pubDate>Tue, 10 May 2022 13:11:40 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/bottom" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/bottom</a> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/left" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/left</a> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/right" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/right</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Introduction</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The effect of bottom depends on how the element is positioned (i.e., the value of the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" rel="nofollow">position</a> property):</p>
-<ul dir="auto">
-<li>When position is set to absolute or fixed, the bottom property specifies the distance between the element's <em>bottom edge</em> and the <em>bottom edge</em> of its containing block.</li>
-</ul>
-<p dir="auto">Similarly, for left, right properties</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<ul dir="auto">
-<li>When position is set to absolute or fixed, the bottom property specifies the distance between the element's <em>outer margin of bottom edge</em> and the <em>inner border of the bottom edge</em> of its containing block.</li>
-</ul>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">It's cleanly mentioned in only the top property.<br>
-In bottom/left/right it just mentions as <strong>edge</strong>(padding edge?content edge?...)</p>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/top" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/top</a></p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/70265510/167635170-0bed4401-2f30-4948-8626-eb2b53eadd34.png"><img width="753" alt="image" src="https://user-images.githubusercontent.com/70265510/167635170-0bed4401-2f30-4948-8626-eb2b53eadd34.png" style="max-width: 100%;"></a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">I have personally checked this with all the position properties and it works as mentioned in top for all.</p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[css-text-3] `word-break: break-word;` vs `overflow-wrap: anywhere;`]]></title>
             <link>https://github.com/mdn/content/issues/15676</link>
             <guid>https://github.com/mdn/content/issues/15676</guid>

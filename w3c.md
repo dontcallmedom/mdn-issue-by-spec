@@ -82,8 +82,6 @@
   
 * [[css-fonts-5] Update MDN font family page with -apple-system](https://github.com/mdn/content/issues/15896) (2022-05-11T05:22:44Z)
   
-* [[css-position-3] More specific description for positional properties](https://github.com/mdn/content/issues/15862) (2022-05-10T13:11:40Z)
-  
 * [[file-system-access] `FileSystemHandle.requestPermission()` can throw `SecurityError`](https://github.com/mdn/content/issues/15831) (2022-05-09T19:45:01Z)
   
 * [[css-text-3] `word-break: break-word;` vs `overflow-wrap: anywhere;`](https://github.com/mdn/content/issues/15676) (2022-05-04T06:23:26Z)
