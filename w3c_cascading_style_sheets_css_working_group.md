@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[css-conditional-3] Support Zoom!](https://github.com/mdn/content/issues/21562) (2022-10-14T22:00:16Z)
-  
 * [[css-fonts-5] [CSS] Ship COLRv1 color-font support](https://github.com/mdn/content/issues/21537) (2022-10-14T00:14:15Z)
   
 * [[css-grid-3] Align content in CSS grid examples across similar pages](https://github.com/mdn/content/issues/21199) (2022-09-30T08:40:54Z)
