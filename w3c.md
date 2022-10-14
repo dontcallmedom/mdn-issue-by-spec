@@ -6,8 +6,6 @@
   
 * [[css-fonts-5] [CSS] Ship COLRv1 color-font support](https://github.com/mdn/content/issues/21537) (2022-10-14T00:14:15Z)
   
-* [[css-logical-1] Duplicate word](https://github.com/mdn/content/issues/21530) (2022-10-13T15:06:16Z)
-  
 * [[css-grid-3] Align content in CSS grid examples across similar pages](https://github.com/mdn/content/issues/21199) (2022-09-30T08:40:54Z)
   
 * [[picture-in-picture] Clarify/note Document.pictureInPictureElement is null for PiP launched from iframe](https://github.com/mdn/content/issues/21048) (2022-09-24T20:32:11Z)
