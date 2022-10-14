@@ -4,10 +4,40 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Fri, 14 Oct 2022 00:26:09 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 14 Oct 2022 22:00:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-conditional-3] Support Zoom!]]></title>
+            <link>https://github.com/mdn/content/issues/21562</link>
+            <guid>https://github.com/mdn/content/issues/21562</guid>
+            <pubDate>Fri, 14 Oct 2022 22:00:16 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/zoom" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/zoom</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>"The non-standard zoom <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" rel="nofollow">CSS</a> property can be used to control the magnification level of an element. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale" rel="nofollow">transform: scale()</a> should be used instead of this property, if possible. However, unlike CSS Transforms, zoom affects the layout size of the element."</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Firefox should support zoom. I think it’s not appropriate for you to recommend transform:scale – it’s a <em>different functionality, different behavior</em>.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I expect to see Firefox support a feature that <strong>every other browser supports</strong> -- regardless of standards track.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://forum.freecodecamp.org/t/simplest-modern-x-browser-css-to-zoom-with-flow/563166" rel="nofollow">https://forum.freecodecamp.org/t/simplest-modern-x-browser-css-to-zoom-with-flow/563166</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">There are no simple workarounds to make transform:scale act like zoom. In 2022, developers shouldn't need workarounds anyway.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/zoom</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/zoom" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/zoom</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/zoom/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/zoom/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/413355c790c4102eea5937465ea610938327fe56/hovercard" href="https://github.com/mdn/content/commit/413355c790c4102eea5937465ea610938327fe56"><tt>413355c</tt></a></li>
+<li>Document last modified: 2022-09-27T03:53:49.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[SVG11] [SVG] remove SVGSVGElement.useCurrentView]]></title>
             <link>https://github.com/mdn/content/issues/21539</link>
