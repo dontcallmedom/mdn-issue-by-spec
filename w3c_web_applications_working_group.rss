@@ -4,10 +4,47 @@
         <title>W3C Web Applications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_applications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Applications Working Group</description>
-        <lastBuildDate>Wed, 07 Sep 2022 00:12:45 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 15 Oct 2022 06:34:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[uievents] Shouldn't "click" be a PointerEvent?]]></title>
+            <link>https://github.com/mdn/content/issues/21567</link>
+            <guid>https://github.com/mdn/content/issues/21567</guid>
+            <pubDate>Sat, 15 Oct 2022 06:34:06 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Event Type</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">It says event type is "MouseEvent". This is the case for Firefox now, but Chrome returns "PointerEvent".</p>
+<p dir="auto">If I didn't try for myself on Chrome, I would think there is no easy way to distinguish between clicks of "mouse", "pen" or "touch".</p>
+<p dir="auto"><a href="https://w3c.github.io/uievents/#event-type-click" rel="nofollow">https://w3c.github.io/uievents/#event-type-click</a></p>
+<p dir="auto">Spec says "Interface    PointerEvent"</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Page should show that according to spec, click event is PointerEvent and it should show its related properties like "pointerType".</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://w3c.github.io/uievents/#event-type-click" rel="nofollow">https://w3c.github.io/uievents/#event-type-click</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;div&gt;CLICK ME&lt;/div&gt;"><pre><span class="pl-kos">&lt;</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span>CLICK ME<span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></pre></div>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="document.querySelector(&quot;div&quot;).addEventListener(&quot;click&quot;, console.log);"><pre><span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">"div"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"click"</span><span class="pl-kos">,</span> <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-c1">log</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<p dir="auto">Try this on Firefox and Chrome. I tested on:<br>
+Firefox 105.0.2 (64-bit)<br>
+Chrome Version 106.0.5249.119 (Official Build) (64-bit)</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/element/click_event</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/element/click_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/element/click_event/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/5cfd1335ca537802bb064f33d22f3c58f69f6ea1/hovercard" href="https://github.com/mdn/content/commit/5cfd1335ca537802bb064f33d22f3c58f69f6ea1"><tt>5cfd133</tt></a></li>
+<li>Document last modified: 2022-09-22T08:13:42.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[IndexedDB-3] indexedDB.deleteDatabase doc: Mention that deleting a database isn't completed until the upgradeNeeded result is closed]]></title>
             <link>https://github.com/mdn/content/issues/20368</link>
