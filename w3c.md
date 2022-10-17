@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html, DOM-Parsing] Inconsistent advice on the meaning of <mark>](https://github.com/mdn/content/issues/21595) (2022-10-17T13:17:06Z)
+  
 * [[css-backgrounds-4] Border-image generator should allow "auto" as a border-image-width value](https://github.com/mdn/content/issues/21582) (2022-10-16T09:04:29Z)
   
 * [[uievents] Shouldn't "click" be a PointerEvent?](https://github.com/mdn/content/issues/21567) (2022-10-15T06:34:06Z)
