@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[ecmascript] Using addition assignment](https://github.com/mdn/content/issues/21594) (2022-10-17T13:10:14Z)
-  
 * [[ecmascript] Content Suggestion: Include common use-cases of WeakMap in WeakMap documentation page](https://github.com/mdn/content/issues/21180) (2022-09-29T08:23:46Z)
   
 * [[ecmascript] Issue with "Uint8Array" (and other TypedArray concrete class pages): missing inheritance from %TypedArray%](https://github.com/mdn/content/issues/20019) (2022-08-27T03:09:33Z)
