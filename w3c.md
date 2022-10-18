@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[css-backgrounds-4] a question and maybe an update](https://github.com/mdn/content/issues/21628) (2022-10-18T12:16:50Z)
+* [[css-backgrounds-4] The description of two-value border syntax is confusing](https://github.com/mdn/content/issues/21628) (2022-10-18T12:16:50Z)
   
 * [[html, DOM-Parsing] Inconsistent advice on the meaning of <mark>](https://github.com/mdn/content/issues/21595) (2022-10-17T13:17:06Z)
   
