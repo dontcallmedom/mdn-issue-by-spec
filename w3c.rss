@@ -4,10 +4,54 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Mon, 17 Oct 2022 13:17:06 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 18 Oct 2022 12:16:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-backgrounds-4] The description of two-value border syntax is confusing]]></title>
+            <link>https://github.com/mdn/content/issues/21628</link>
+            <guid>https://github.com/mdn/content/issues/21628</guid>
+            <pubDate>Tue, 18 Oct 2022 12:16:50 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-width" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/border-width</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Hello,</p>
+<p dir="auto">Am I making a logical mistake?</p>
+<p dir="auto">In border-style it is written in the topic Syntax:<br>
+<em>/* top and bottom | left and right */<br>
+border-style: dotted solid;<br>
+When two values are specified, the first style applies to the top and bottom, the second to the left and right.</em></p>
+<p dir="auto">In border-width it is written in the topic Syntax:<br>
+<em>/* vertical | horizontal */<br>
+border-width: 2px 1.5em;<br>
+When two values are specified, the first width applies to the top and bottom, the second to the left and right.</em></p>
+<p dir="auto">Logically, isn't top and bottom equal to horizontal and left and right to vertical?<br>
+This would be consistent between the 2 descriptions.<br>
+In addition, in the CSS example #bival confirms my remark.</p>
+<p dir="auto">If my remark is relevant, it will also be necessary to update the French page.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">/* horizontal | vertical */<br>
+border-width: 2px 1.5em;</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/border-width</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-width" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/border-width</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/border-width/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/border-width/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/44439c7254c9da1797e4438bade0f8e8984cbc35/hovercard" href="https://github.com/mdn/content/commit/44439c7254c9da1797e4438bade0f8e8984cbc35"><tt>44439c7</tt></a></li>
+<li>Document last modified: 2022-09-27T22:38:41.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, DOM-Parsing] Inconsistent advice on the meaning of <mark>]]></title>
             <link>https://github.com/mdn/content/issues/21595</link>

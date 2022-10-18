@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-backgrounds-4] The description of two-value border syntax is confusing](https://github.com/mdn/content/issues/21628) (2022-10-18T12:16:50Z)
+  
 * [[css-backgrounds-4] Border-image generator should allow "auto" as a border-image-width value](https://github.com/mdn/content/issues/21582) (2022-10-16T09:04:29Z)
   
 * [[css-fonts-5] [CSS] Ship COLRv1 color-font support](https://github.com/mdn/content/issues/21537) (2022-10-14T00:14:15Z)
