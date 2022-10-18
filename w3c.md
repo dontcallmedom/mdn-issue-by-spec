@@ -18,8 +18,6 @@
   
 * [[picture-in-picture] Clarify/note Document.pictureInPictureElement is null for PiP launched from iframe](https://github.com/mdn/content/issues/21048) (2022-09-24T20:32:11Z)
   
-* [[css-conditional-3, css-conditional-4] [CSS] @supports `font-format()` and `font-tech()` functions ](https://github.com/mdn/content/issues/20917) (2022-09-20T12:35:25Z)
-  
 * [[html, css-transforms-2, css-transforms-1] The "non-replaced inline boxes" links to a non-existent anchor](https://github.com/mdn/content/issues/20854) (2022-09-18T09:20:10Z)
   
 * [[touch-events] TouchEvent.touches: is the array ordered?](https://github.com/mdn/content/issues/20811) (2022-09-16T19:07:48Z)

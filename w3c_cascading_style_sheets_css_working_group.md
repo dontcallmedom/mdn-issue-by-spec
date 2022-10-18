@@ -10,8 +10,6 @@
   
 * [[css-grid-3] Align content in CSS grid examples across similar pages](https://github.com/mdn/content/issues/21199) (2022-09-30T08:40:54Z)
   
-* [[css-conditional-3, css-conditional-4] [CSS] @supports `font-format()` and `font-tech()` functions ](https://github.com/mdn/content/issues/20917) (2022-09-20T12:35:25Z)
-  
 * [[html, css-transforms-2, css-transforms-1] The "non-replaced inline boxes" links to a non-existent anchor](https://github.com/mdn/content/issues/20854) (2022-09-18T09:20:10Z)
   
 * [[css-align-3] Content suggestion: display owns CSS shorthand property.](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
