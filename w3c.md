@@ -6,7 +6,7 @@
   
 * [[css-backgrounds-4] Border-image generator should allow "auto" as a border-image-width value](https://github.com/mdn/content/issues/21582) (2022-10-16T09:04:29Z)
   
-* [[uievents] Shouldn't "click" be a PointerEvent?](https://github.com/mdn/content/issues/21567) (2022-10-15T06:34:06Z)
+* [[uievents] Browser inconsistency on Element click event types (MouseEvent versus PointerEvent)](https://github.com/mdn/content/issues/21567) (2022-10-15T06:34:06Z)
   
 * [[SVG11] [SVG] remove SVGSVGElement.useCurrentView](https://github.com/mdn/content/issues/21539) (2022-10-14T00:26:09Z)
   

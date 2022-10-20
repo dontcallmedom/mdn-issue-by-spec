@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[uievents] Shouldn't "click" be a PointerEvent?](https://github.com/mdn/content/issues/21567) (2022-10-15T06:34:06Z)
+* [[uievents] Browser inconsistency on Element click event types (MouseEvent versus PointerEvent)](https://github.com/mdn/content/issues/21567) (2022-10-15T06:34:06Z)
   
 * [[IndexedDB-3] indexedDB.deleteDatabase doc: Mention that deleting a database isn't completed until the upgradeNeeded result is closed](https://github.com/mdn/content/issues/20368) (2022-09-07T00:12:45Z)
   
