@@ -3586,32 +3586,6 @@ The example kind of misleading since it's not how you would typically use nested
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[IndexedDB-3] Issue with "Using IndexedDB": "Updating an entry in the database" example does not work]]></title>
-            <link>https://github.com/mdn/content/issues/5463</link>
-            <guid>https://github.com/mdn/content/issues/5463</guid>
-            <pubDate>Sun, 30 May 2021 02:45:08 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">The code at "Updating an entry in the database" is adding a new entry instead of updating the existing one</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB#updating_an_entry_in_the_database" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB#updating_an_entry_in_the_database</a></p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">According to the <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/put" rel="nofollow">ObjectStore put docs</a>, to update an entry it is required to have a key as a second parameter, the current example calls put like this: <code class="notranslate">var requestUpdate = objectStore.put(data);</code> and it should be something like <code class="notranslate">var requestUpdate = objectStore.put(data,"444-44-4444");</code></p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">I tried to execute the example as is and it adds a new entry, adding the key as a second param updates the entry</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/indexeddb_api/using_indexeddb</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/indexeddb_api/using_indexeddb/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/indexeddb_api/using_indexeddb/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/12024ee393c3fe3101b03903561c640444b38646/hovercard" href="https://github.com/mdn/content/commit/12024ee393c3fe3101b03903561c640444b38646"><tt>12024ee</tt></a></li>
-<li>Document last modified: 2021-04-08T14:57:07.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[entries-api] Issue with "FileSystemFlags.exclusive": define dirEntry is type of FileSystemDirectoryEntry]]></title>
             <link>https://github.com/mdn/content/issues/5457</link>
             <guid>https://github.com/mdn/content/issues/5457</guid>

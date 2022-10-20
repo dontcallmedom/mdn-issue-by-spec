@@ -46,7 +46,5 @@
   
 * [[selection-api] Issue with "Selection.setBaseAndExtent()": behaviour on text nodes](https://github.com/mdn/content/issues/6623) (2021-07-06T12:24:35Z)
   
-* [[IndexedDB-3] Issue with "Using IndexedDB": "Updating an entry in the database" example does not work](https://github.com/mdn/content/issues/5463) (2021-05-30T02:45:08Z)
-  
 * [[intersection-observer] Issue with "IntersectionObserver.IntersectionObserver()": needs description/example of how rootMargin works](https://github.com/mdn/content/issues/4710) (2021-05-04T15:10:10Z)
   

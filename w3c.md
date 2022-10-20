@@ -232,8 +232,6 @@
   
 * [[css-lists-3] Issue with "counter-reset": the example is a bit confusing](https://github.com/mdn/content/issues/6277) (2021-06-23T22:25:29Z)
   
-* [[IndexedDB-3] Issue with "Using IndexedDB": "Updating an entry in the database" example does not work](https://github.com/mdn/content/issues/5463) (2021-05-30T02:45:08Z)
-  
 * [[entries-api] Issue with "FileSystemFlags.exclusive": define dirEntry is type of FileSystemDirectoryEntry](https://github.com/mdn/content/issues/5457) (2021-05-29T15:23:34Z)
   
 * [[mediacapture-streams] Issue with "MediaStreamTrack: ended event": note that this event is not fired when the user calls .stop() on the track](https://github.com/mdn/content/issues/4939) (2021-05-12T10:02:23Z)
