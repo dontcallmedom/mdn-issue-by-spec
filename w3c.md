@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-text-3] text-transform demo does not properly apply uppercase to Greek text due to missing lang="el"](https://github.com/mdn/content/issues/21688) (2022-10-20T16:15:32Z)
+  
 * [[html, DOM-Parsing] Inconsistent advice on the meaning of <mark>](https://github.com/mdn/content/issues/21595) (2022-10-17T13:17:06Z)
   
 * [[css-backgrounds-4] Border-image generator should allow "auto" as a border-image-width value](https://github.com/mdn/content/issues/21582) (2022-10-16T09:04:29Z)
