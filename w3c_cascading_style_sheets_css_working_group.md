@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[css-text-3] text-transform demo does not properly apply uppercase to Greek text due to missing lang="el"](https://github.com/mdn/content/issues/21688) (2022-10-20T16:15:32Z)
-  
 * [[css-backgrounds-4] Border-image generator should allow "auto" as a border-image-width value](https://github.com/mdn/content/issues/21582) (2022-10-16T09:04:29Z)
   
 * [[css-fonts-5] [CSS] Ship COLRv1 color-font support](https://github.com/mdn/content/issues/21537) (2022-10-14T00:14:15Z)

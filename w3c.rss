@@ -4,47 +4,10 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Thu, 20 Oct 2022 16:15:32 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 17 Oct 2022 13:17:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[css-text-3] text-transform demo does not properly apply uppercase to Greek text due to missing lang="el"]]></title>
-            <link>https://github.com/mdn/content/issues/21688</link>
-            <guid>https://github.com/mdn/content/issues/21688</guid>
-            <pubDate>Thu, 20 Oct 2022 16:15:32 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Try it</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto"><code class="notranslate">text-transform: uppercase</code> does not properly remove accents and such in the Greek text, because there is no <code class="notranslate">lang="el"</code> attribute on said text.</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/6871742/197001851-7bcce4bb-4dfb-482d-83c8-27bcd50dcde9.png"><img src="https://user-images.githubusercontent.com/6871742/197001851-7bcce4bb-4dfb-482d-83c8-27bcd50dcde9.png" alt="Uppercase Greek text" style="max-width: 100%;"></a></p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Adding <code class="notranslate">lang="el"</code> on the paragraph fixes the problem:</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/6871742/197002108-ab2d368d-41c0-4b9b-b5f9-123a23812575.png"><img src="https://user-images.githubusercontent.com/6871742/197002108-ab2d368d-41c0-4b9b-b5f9-123a23812575.png" alt="Uppercase Greek text with lang=&quot;el&quot;" style="max-width: 100%;"></a></p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">The same page goes on to explain the rules for uppercase in Greek:</p>
-<blockquote>
-<ul dir="auto">
-<li>In Greek (<code class="notranslate">el</code>), vowels lose their accent when the whole word is in uppercase (<code class="notranslate">ά</code>/<code class="notranslate">Α</code>), except for the disjunctive eta (<code class="notranslate">ή</code>/<code class="notranslate">Ή</code>). Also, diphthongs with an accent on the first vowel lose the accent and gain a diaeresis on the second vowel (<code class="notranslate">άι</code>/<code class="notranslate">ΑΪ</code>).</li>
-</ul>
-</blockquote>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">(I wanted to make a pull request to fix it but I couldn’t find where the example is actually located)</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/text-transform</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/text-transform/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/text-transform/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/413355c790c4102eea5937465ea610938327fe56/hovercard" href="https://github.com/mdn/content/commit/413355c790c4102eea5937465ea610938327fe56"><tt>413355c</tt></a></li>
-<li>Document last modified: 2022-09-27T03:53:49.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html, DOM-Parsing] Inconsistent advice on the meaning of <mark>]]></title>
             <link>https://github.com/mdn/content/issues/21595</link>
