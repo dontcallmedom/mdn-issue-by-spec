@@ -4,8 +4,6 @@
 
 * [[html] Live sample is not themed correctly](https://github.com/mdn/content/issues/21650) (2022-10-19T06:37:36Z)
   
-* [[html, DOM-Parsing] Inconsistent advice on the meaning of <mark>](https://github.com/mdn/content/issues/21595) (2022-10-17T13:17:06Z)
-  
 * [[html] Slider controls example could use value instead of textContent](https://github.com/mdn/content/issues/21318) (2022-10-06T03:08:45Z)
   
 * [[html] Confusing example of malicious code](https://github.com/mdn/content/issues/20891) (2022-09-19T13:51:02Z)

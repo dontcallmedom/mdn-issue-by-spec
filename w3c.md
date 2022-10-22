@@ -4,8 +4,6 @@
 
 * [[css-content-3] Need explanations.](https://github.com/mdn/content/issues/21710) (2022-10-21T12:00:33Z)
   
-* [[html, DOM-Parsing] Inconsistent advice on the meaning of <mark>](https://github.com/mdn/content/issues/21595) (2022-10-17T13:17:06Z)
-  
 * [[css-backgrounds-4] Border-image generator should allow "auto" as a border-image-width value](https://github.com/mdn/content/issues/21582) (2022-10-16T09:04:29Z)
   
 * [[uievents] Browser inconsistency on Element click event types (MouseEvent versus PointerEvent)](https://github.com/mdn/content/issues/21567) (2022-10-15T06:34:06Z)

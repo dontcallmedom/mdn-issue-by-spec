@@ -4,8 +4,6 @@
 
 * [[html] Live sample is not themed correctly](https://github.com/mdn/content/issues/21650) (2022-10-19T06:37:36Z)
   
-* [[html, DOM-Parsing] Inconsistent advice on the meaning of <mark>](https://github.com/mdn/content/issues/21595) (2022-10-17T13:17:06Z)
-  
 * [[fetch] Response.json static method is missing](https://github.com/mdn/content/issues/21550) (2022-10-14T12:40:47Z)
   
 * [[dom] api.Element.replaceWith - Misleading details and prototype](https://github.com/mdn/content/issues/21497) (2022-10-11T19:50:51Z)
