@@ -34,36 +34,6 @@ They are:</p>
 <p dir="auto"><em>No response</em></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[ecmascript] Issue with "Uint8Array" (and other TypedArray concrete class pages): missing inheritance from %TypedArray%]]></title>
-            <link>https://github.com/mdn/content/issues/20019</link>
-            <guid>https://github.com/mdn/content/issues/20019</guid>
-            <pubDate>Sat, 27 Aug 2022 03:09:33 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">These pages mention things like <code class="notranslate">Uint8Array.prototype.copyWithin()</code>. There's no such thing—only <code class="notranslate">%TypedArray%.prototype.copyWithin()</code>. There's no need to repeat these methods on every constructor's page—just include the inheritance from <code class="notranslate">%TypedArray%</code> in the left sidebar, like we do for Web API.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Remove the redundant mentions of typed array methods on every concrete class's page—there's only one such method in JavaScript, not one per typed array class.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/55398995/187012090-586cdc0c-21d7-4b74-b66f-f667014b2adf.png"><img width="671" alt="image" src="https://user-images.githubusercontent.com/55398995/187012090-586cdc0c-21d7-4b74-b66f-f667014b2adf.png" style="max-width: 100%;"></a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/uint8array</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/uint8array/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/uint8array/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2d6d6a1d9f8ba2073c9f8e1bbc6b4e20204fb53c/hovercard" href="https://github.com/mdn/content/commit/2d6d6a1d9f8ba2073c9f8e1bbc6b4e20204fb53c"><tt>2d6d6a1</tt></a></li>
-<li>Document last modified: 2022-08-07T06:13:17.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[ecmascript] Document import assertions]]></title>
             <link>https://github.com/mdn/content/issues/19220</link>
             <guid>https://github.com/mdn/content/issues/19220</guid>
