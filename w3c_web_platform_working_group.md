@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Platform Working Group. [![RSS feed for W3C Web Platform Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[DOM-Parsing] No mention of comments in reference](https://github.com/mdn/content/issues/21761) (2022-10-23T12:49:25Z)
+  
 * [[css-conditional-3, DOM-Parsing] Defining page types](https://github.com/mdn/content/issues/15539) (2022-04-29T23:44:43Z)
   
 * [[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] Content bug: Implementation of the `mode` options for `Element.attachShadow()` in code example could be refined](https://github.com/mdn/content/issues/14620) (2022-04-03T15:13:09Z)
