@@ -8,8 +8,6 @@
   
 * [[uievents] Browser inconsistency on Element click event types (MouseEvent versus PointerEvent)](https://github.com/mdn/content/issues/21567) (2022-10-15T06:34:06Z)
   
-* [[SVG11] [SVG] remove SVGSVGElement.useCurrentView](https://github.com/mdn/content/issues/21539) (2022-10-14T00:26:09Z)
-  
 * [[css-fonts-5] [CSS] Ship COLRv1 color-font support](https://github.com/mdn/content/issues/21537) (2022-10-14T00:14:15Z)
   
 * [[css-grid-3] Align content in CSS grid examples across similar pages](https://github.com/mdn/content/issues/21199) (2022-09-30T08:40:54Z)
@@ -27,8 +25,6 @@
 * [[service-workers-1] Fetch Event client id is null](https://github.com/mdn/content/issues/20657) (2022-09-13T11:22:55Z)
   
 * [[css-cascade-3] Missing CSS functions](https://github.com/mdn/content/issues/20611) (2022-09-13T00:32:37Z)
-  
-* [[encoding] TextEncoderStream & TextDecoderStream](https://github.com/mdn/content/issues/20572) (2022-09-12T03:01:30Z)
   
 * [[webaudio] function playSample accidentally references global variable instead of passed in variable](https://github.com/mdn/content/issues/20565) (2022-09-11T16:43:52Z)
   

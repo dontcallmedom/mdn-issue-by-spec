@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C SVG Working Group. [![RSS feed for W3C SVG Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[SVG11] [SVG] remove SVGSVGElement.useCurrentView](https://github.com/mdn/content/issues/21539) (2022-10-14T00:26:09Z)
-  
 * [[SVG11] The `<color-profile>` link in the sidebar navigation is broken](https://github.com/mdn/content/issues/20792) (2022-09-15T23:19:26Z)
   
 * [[SVG11] Discussing strokes without paint-order](https://github.com/mdn/content/issues/17040) (2022-06-06T18:32:51Z)
