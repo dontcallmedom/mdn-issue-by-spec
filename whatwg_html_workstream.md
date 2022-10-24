@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] JSFiddle for TabIndex example no longer accurate?](https://github.com/mdn/content/issues/21776) (2022-10-24T05:59:47Z)
+  
 * [[html] `hidden` attribute not Boolean anymore](https://github.com/mdn/content/issues/21760) (2022-10-23T10:07:37Z)
   
 * [[html] Live sample is not themed correctly](https://github.com/mdn/content/issues/21650) (2022-10-19T06:37:36Z)
