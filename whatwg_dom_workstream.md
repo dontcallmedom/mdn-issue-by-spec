@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[dom] Outdated](https://github.com/mdn/content/issues/21834) (2022-10-25T22:41:52Z)
+  
 * [[dom] api.Element.replaceWith - Misleading details and prototype](https://github.com/mdn/content/issues/21497) (2022-10-11T19:50:51Z)
   
 * [[html, dom] Deprecated headline is shown without further information.](https://github.com/mdn/content/issues/20730) (2022-09-14T18:18:13Z)
