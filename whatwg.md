@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] table with thead but no tbody is valid or invalid?](https://github.com/mdn/content/issues/21818) (2022-10-25T10:45:13Z)
+  
 * [[html] JSFiddle for TabIndex example no longer accurate?](https://github.com/mdn/content/issues/21776) (2022-10-24T05:59:47Z)
   
 * [[html] `hidden` attribute not Boolean anymore](https://github.com/mdn/content/issues/21760) (2022-10-23T10:07:37Z)
