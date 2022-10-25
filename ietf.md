@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by IETF. [![RSS feed for IETF-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[rfc7231] Finance](https://github.com/mdn/content/issues/21829) (2022-10-25T18:20:40Z)
-  
 * [[rfc7231] Confusing (incorrect) wording](https://github.com/mdn/content/issues/21634) (2022-10-18T16:06:53Z)
   
 * [[rfc7233] Content suggestion: http content-type multipart/*](https://github.com/mdn/content/issues/19353) (2022-08-10T08:44:58Z)
