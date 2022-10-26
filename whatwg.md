@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[dom] This is not deprecated](https://github.com/mdn/content/issues/21848) (2022-10-26T10:55:49Z)
+  
 * [[dom] document.implementation is outdated](https://github.com/mdn/content/issues/21834) (2022-10-25T22:41:52Z)
   
 * [[html] table with thead but no tbody is valid or invalid?](https://github.com/mdn/content/issues/21818) (2022-10-25T10:45:13Z)
