@@ -4,64 +4,10 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Tue, 25 Oct 2022 10:45:13 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 24 Oct 2022 05:59:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[html] table with thead but no tbody is valid or invalid?]]></title>
-            <link>https://github.com/mdn/content/issues/21818</link>
-            <guid>https://github.com/mdn/content/issues/21818</guid>
-            <pubDate>Tue, 25 Oct 2022 10:45:13 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">"Tag omission" and "Usage notes"</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">According to the W3C validator a table with thead element and no tbody element is valid.</p>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="  &lt;table&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;&lt;th&gt;Country&lt;/th&gt;&lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tr&gt;&lt;td&gt;Spain&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;France&lt;/td&gt;&lt;/tr&gt;
-  &lt;/table&gt;"><pre>  <span class="pl-kos">&lt;</span><span class="pl-ent">table</span><span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">thead</span><span class="pl-kos">&gt;</span>
-      <span class="pl-kos">&lt;</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">th</span><span class="pl-kos">&gt;</span>Country<span class="pl-kos">&lt;/</span><span class="pl-ent">th</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;/</span><span class="pl-ent">thead</span><span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>Spain<span class="pl-kos">&lt;/</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>France<span class="pl-kos">&lt;/</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;/</span><span class="pl-ent">table</span><span class="pl-kos">&gt;</span></pre></div>
-<p dir="auto">Validator screenshot:<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/1515413/197281381-759fc486-a0f6-408c-9eab-4f81fb3ade68.png"><img src="https://user-images.githubusercontent.com/1515413/197281381-759fc486-a0f6-408c-9eab-4f81fb3ade68.png" alt="w3c-validator-bug-2022-10-21" style="max-width: 100%;"></a><br>
-But MDN states in this page that:</p>
-<ul dir="auto">
-<li>Tag omission. The tbody element is not a required child element for a parent table element to graphically render. However, it must be present, if the parent table element has a thead, a tfoot or another tbody element as a child.</li>
-<li>Usage notes.  If the table includes a thead block (to semantically identify header rows), the tbody block must come after it.</li>
-</ul>
-<p dir="auto">I have opened <a href="https://github.com/validator/validator/issues/1445" data-hovercard-type="issue" data-hovercard-url="/validator/validator/issues/1445/hovercard">an issue in the W3C Validator GitHub</a> asking them if it is a bug of the validator. I have been told that W3C Validator is right and MDN is wrong, so I am opening this issue.<br>
-Can you check it?<br>
-Thanking you in advance,<br>
-Bartolome Sintes</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">If the W3C Validator is right and the tbody tag is not needed when there is only one tbody element in a table, I would say that the page has to be corrected accordingly, removing the two sentences I have copied from the MDN page.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/html/element/tbody</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/tbody/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/tbody/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/a30a908b5a6c05f739e74a8af4505172ce5431c4/hovercard" href="https://github.com/mdn/content/commit/a30a908b5a6c05f739e74a8af4505172ce5431c4"><tt>a30a908</tt></a></li>
-<li>Document last modified: 2022-10-05T06:26:24.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html] JSFiddle for TabIndex example no longer accurate?]]></title>
             <link>https://github.com/mdn/content/issues/21776</link>

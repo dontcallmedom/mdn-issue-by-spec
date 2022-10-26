@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] table with thead but no tbody is valid or invalid?](https://github.com/mdn/content/issues/21818) (2022-10-25T10:45:13Z)
-  
 * [[html] JSFiddle for TabIndex example no longer accurate?](https://github.com/mdn/content/issues/21776) (2022-10-24T05:59:47Z)
   
 * [[html] Live sample is not themed correctly](https://github.com/mdn/content/issues/21650) (2022-10-19T06:37:36Z)

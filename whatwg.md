@@ -4,8 +4,6 @@
 
 * [[dom] document.implementation is outdated](https://github.com/mdn/content/issues/21834) (2022-10-25T22:41:52Z)
   
-* [[html] table with thead but no tbody is valid or invalid?](https://github.com/mdn/content/issues/21818) (2022-10-25T10:45:13Z)
-  
 * [[html] JSFiddle for TabIndex example no longer accurate?](https://github.com/mdn/content/issues/21776) (2022-10-24T05:59:47Z)
   
 * [[html] Live sample is not themed correctly](https://github.com/mdn/content/issues/21650) (2022-10-19T06:37:36Z)
