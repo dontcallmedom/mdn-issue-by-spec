@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[cssom-view-1, uievents, pointerlock-2] MouseEvent.clientX and MouseEvent.clientY is  the coordinates of the window, but the documentation is written relative to the local dom ](https://github.com/mdn/content/issues/21876) (2022-10-27T13:46:15Z)
+  
 * [[DOM-Parsing] No mention of comments in reference](https://github.com/mdn/content/issues/21761) (2022-10-23T12:49:25Z)
   
 * [[css-backgrounds-4] Border-image generator should allow "auto" as a border-image-width value](https://github.com/mdn/content/issues/21582) (2022-10-16T09:04:29Z)
