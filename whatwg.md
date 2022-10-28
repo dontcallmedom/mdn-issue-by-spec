@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Add documentation for <video posterloading=lazy>](https://github.com/mdn/content/issues/21912) (2022-10-28T12:20:13Z)
+  
 * [[html] Information missing for "hidden" <input>s](https://github.com/mdn/content/issues/21857) (2022-10-26T21:27:57Z)
   
 * [[dom] document.implementation is outdated](https://github.com/mdn/content/issues/21834) (2022-10-25T22:41:52Z)

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Add documentation for <video posterloading=lazy>](https://github.com/mdn/content/issues/21912) (2022-10-28T12:20:13Z)
+  
 * [[html] Information missing for "hidden" <input>s](https://github.com/mdn/content/issues/21857) (2022-10-26T21:27:57Z)
   
 * [[html] JSFiddle for TabIndex example no longer accurate?](https://github.com/mdn/content/issues/21776) (2022-10-24T05:59:47Z)

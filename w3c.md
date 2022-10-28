@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[WebIDL-1] Deprecated code](https://github.com/mdn/content/issues/21910) (2022-10-28T12:08:01Z)
+  
 * [[cssom-view-1, uievents, pointerlock-2] MouseEvent.clientX and MouseEvent.clientY is  the coordinates of the window, but the documentation is written relative to the local dom ](https://github.com/mdn/content/issues/21876) (2022-10-27T13:46:15Z)
   
 * [[DOM-Parsing] No mention of comments in reference](https://github.com/mdn/content/issues/21761) (2022-10-23T12:49:25Z)
