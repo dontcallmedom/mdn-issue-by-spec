@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[mediaqueries-4, css-conditional-3] Logical operator or in complex media query](https://github.com/mdn/content/issues/21959) (2022-10-31T11:33:56Z)
+  
 * [[cssom-view-1, uievents, pointerlock-2] MouseEvent.clientX and MouseEvent.clientY is  the coordinates of the window, but the documentation is written relative to the local dom ](https://github.com/mdn/content/issues/21876) (2022-10-27T13:46:15Z)
   
 * [[css-backgrounds-4] Border-image generator should allow "auto" as a border-image-width value](https://github.com/mdn/content/issues/21582) (2022-10-16T09:04:29Z)
