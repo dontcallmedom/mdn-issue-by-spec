@@ -4,10 +4,32 @@
         <title>W3C Web Platform Incubator Community Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_platform_incubator_community_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Platform Incubator Community Group</description>
-        <lastBuildDate>Mon, 09 May 2022 19:45:01 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 01 Nov 2022 18:08:42 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[background-fetch] incorrect description on backgroundfetchmanager/getIds]]></title>
+            <link>https://github.com/mdn/content/issues/21988</link>
+            <guid>https://github.com/mdn/content/issues/21988</guid>
+            <pubDate>Tue, 01 Nov 2022 18:08:42 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/BackgroundFetchManager/getIds" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/BackgroundFetchManager/getIds</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Examples</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">In description about example code, document says that example code is using <code class="notranslate">get()</code>.<br>
+However, in the example code, getIds() is used insted of get().</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<h1 dir="auto">before</h1>
+<p dir="auto">use the ServiceWorkerRegistration.backgroundFetch property to access the BackgroundFetchManager object and call its <strong><code class="notranslate">get()</code></strong> method</p>
+<h1 dir="auto">after</h1>
+<p dir="auto">use the ServiceWorkerRegistration.backgroundFetch property to access the BackgroundFetchManager object and call its <strong><code class="notranslate">getIds()</code></strong> method</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[file-system-access] `FileSystemHandle.requestPermission()` can throw `SecurityError`]]></title>
             <link>https://github.com/mdn/content/issues/15831</link>

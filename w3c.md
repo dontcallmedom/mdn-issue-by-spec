@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[background-fetch] incorrect description on backgroundfetchmanager/getIds](https://github.com/mdn/content/issues/21988) (2022-11-01T18:08:42Z)
+  
 * [[mediaqueries-4, css-conditional-3] Logical operator or in complex media query](https://github.com/mdn/content/issues/21959) (2022-10-31T11:33:56Z)
   
 * [[WebIDL-1] Deprecated code](https://github.com/mdn/content/issues/21910) (2022-10-28T12:08:01Z)
