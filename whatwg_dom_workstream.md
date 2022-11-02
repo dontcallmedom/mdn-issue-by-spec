@@ -10,8 +10,6 @@
   
 * [[html, dom] "Introduction to events" article contains inaccurate/misleading statements](https://github.com/mdn/content/issues/17771) (2022-06-29T14:25:27Z)
   
-* [[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] Content bug: Implementation of the `mode` options for `Element.attachShadow()` in code example could be refined](https://github.com/mdn/content/issues/14620) (2022-04-03T15:13:09Z)
-  
 * [[cssom-view-1, html, dom, selection-api, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written](https://github.com/mdn/content/issues/13419) (2022-03-02T14:45:44Z)
   
 * [[dom] Issue with "MutationObserver.observe()": links to nonexistent “Monitoring attribute values” section on MutationObserver](https://github.com/mdn/content/issues/12741) (2022-02-04T23:09:33Z)

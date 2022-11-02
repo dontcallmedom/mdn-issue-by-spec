@@ -62,8 +62,6 @@
   
 * [[html] Issue with "<iframe>: The Inline Frame element": no height attribute](https://github.com/mdn/content/issues/14799) (2022-04-08T02:08:21Z)
   
-* [[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] Content bug: Implementation of the `mode` options for `Element.attachShadow()` in code example could be refined](https://github.com/mdn/content/issues/14620) (2022-04-03T15:13:09Z)
-  
 * [[html] Content bug: Remove references to caching WebAssembly Modules in indexedDB](https://github.com/mdn/content/issues/14520) (2022-03-31T18:57:39Z)
   
 * [[html] "HTMLElement.dir": Misleading info about how the value is determined](https://github.com/mdn/content/issues/14484) (2022-03-30T22:18:42Z)

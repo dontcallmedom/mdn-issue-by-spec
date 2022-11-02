@@ -154,41 +154,6 @@ Then it moves on to the next immediate ancestor element and does the same thing,
 <p dir="auto">Upon feedback/approval, I'd be happy to rewrite these sections. But I think the article may need a broader rewrite and perhaps new code samples (some of them, like the ones that involve clicking divs, are inaccessible to keyboard users—this may need to be filed as a separate issue).</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] Content bug: Implementation of the `mode` options for `Element.attachShadow()` in code example could be refined]]></title>
-            <link>https://github.com/mdn/content/issues/14620</link>
-            <guid>https://github.com/mdn/content/issues/14620</guid>
-            <pubDate>Sun, 03 Apr 2022 15:13:09 GMT</pubDate>
-            <content:encoded><![CDATA[<h2 dir="auto">What page(s) did you find the problem on?</h2>
-
-<p dir="auto">Context: <a href="https://developer.mozilla.org/en-US/docs/Web" rel="nofollow">References</a> &gt; <a href="https://developer.mozilla.org/en-US/docs/Web/API" rel="nofollow">Web APIs</a> &gt; <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element" rel="nofollow">Element</a> &gt; <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow" rel="nofollow">Element.attachShadow()</a></p>
-<ul dir="auto">
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow</a></li>
-</ul>
-<h2 dir="auto">Specific page section or heading?</h2>
-
-<ul dir="auto">
-<li>Heading: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow#parameters" rel="nofollow">Parameters</a><br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow#parameters" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow#parameters</a></li>
-</ul>
-<h2 dir="auto">What is the problem?</h2>
-
-<p dir="auto">It seems the code example/demonstration is missing some information.</p>
-<ul dir="auto">
-<li>For the string <code class="notranslate">mode</code> under the parameter <code class="notranslate">init</code>, the options <code class="notranslate">open</code> and <code class="notranslate">closed</code> aren't included in the example.</li>
-<li>Or it's left for the reader to figure it out. :)</li>
-</ul>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/76430758/161434240-8bb8e945-60f4-40fc-a3bb-6eb3b80862e2.png"><img src="https://user-images.githubusercontent.com/76430758/161434240-8bb8e945-60f4-40fc-a3bb-6eb3b80862e2.png" alt="image" style="max-width: 100%;"></a></p>
-<h2 dir="auto">What did you expect to see?</h2>
-
-<ul dir="auto">
-<li>I came across the following code <code class="notranslate">this.attachShadow({ mode: "open" });</code> for a <code class="notranslate">customElements</code> that I am using in a project.</li>
-<li>The examples and documentation in MDN seemed close enough. Being fairly new to JavaScript, I didn't understand why <code class="notranslate">"open"</code> and <code class="notranslate">"closed"</code> weren't mentioned directly inside the example.</li>
-</ul>
-<h2 dir="auto">Did you test this? If so, how?</h2>
-
-<p dir="auto">N.A.</p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[cssom-view-1, html, dom, selection-api, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written]]></title>
             <link>https://github.com/mdn/content/issues/13419</link>
             <guid>https://github.com/mdn/content/issues/13419</guid>
