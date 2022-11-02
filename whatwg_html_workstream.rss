@@ -712,7 +712,7 @@ Then it moves on to the next immediate ancestor element and does the same thing,
 <p dir="auto">This is unless you specify the <code class="notranslate">sizes</code> attribute. Then you can specify a media condition followed by which width of the image you want to display. But this means, that it's possible to make rules about screen sizes, not rules to the actual rendered image size.</p>
 <p dir="auto">The text can be misleading making people think that the <code class="notranslate">srcset</code> is for network optimization in general when it actually (more or less) just seems more relevant for responsiveness.</p>
 <p dir="auto">A practical way of proving this is by the following.</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;style&gt;
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;style&gt;
     img {
         width: 50px;
     }
@@ -720,16 +720,15 @@ Then it moves on to the next immediate ancestor element and does the same thing,
 &lt;img src=&quot;https://placehold.jp/50x50.png&quot; 
      srcset=&quot;https://placehold.jp/150x150.png 50w,
              https://placehold.jp/150x150.png 150w,
-             https://placehold.jp/2000x2000.png&quot;&gt;"><pre lang="html" class="notranslate"><code>&lt;style&gt;
-    img {
-        width: 50px;
+             https://placehold.jp/2000x2000.png&quot;&gt;"><pre><span class="pl-kos">&lt;</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
+    <span class="pl-ent">img</span> {
+        <span class="pl-c1">width</span><span class="pl-kos">:</span> <span class="pl-c1">50<span class="pl-smi">px</span></span>;
     }
-&lt;/style&gt;
-&lt;img src="https://placehold.jp/50x50.png" 
-     srcset="https://placehold.jp/150x150.png 50w,
-             https://placehold.jp/150x150.png 150w,
-             https://placehold.jp/2000x2000.png"&gt;
-</code></pre></div>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">img</span> <span class="pl-c1">src</span>="<span class="pl-s">https://placehold.jp/50x50.png</span>" 
+     <span class="pl-c1">srcset</span>="<span class="pl-s">https://placehold.jp/150x150.png 50w,</span>
+<span class="pl-s">             https://placehold.jp/150x150.png 150w,</span>
+<span class="pl-s">             https://placehold.jp/2000x2000.png</span>"<span class="pl-kos">&gt;</span></pre></div>
 <p dir="auto"><a href="https://jsfiddle.net/eL68vzns/" rel="nofollow">View it on jsfiddle</a></p>
 <p dir="auto">This very simple example will show a image that won't be wider than 50px at any time. But when this sample is viewed in a browser where the page is more than 150px wide, the 2000 x 2000 image will be the current source.<br>
 This has been tested on both Chrome 101 and Firefox 100.</p>
