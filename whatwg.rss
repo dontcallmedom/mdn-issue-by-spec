@@ -4,10 +4,45 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Tue, 01 Nov 2022 12:37:18 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 04 Nov 2022 06:39:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] contenteditable missing some allowed values description]]></title>
+            <link>https://github.com/mdn/content/issues/22048</link>
+            <guid>https://github.com/mdn/content/issues/22048</guid>
+            <pubDate>Fri, 04 Nov 2022 06:39:50 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">main content</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable" rel="nofollow">above page</a> says contenteditable has 2 enumerable values <code class="notranslate">true</code>, <code class="notranslate">false</code>.<br>
+But the browser compatibility table says it's values can be <code class="notranslate">caret</code>, <code class="notranslate">events</code>, <code class="notranslate">plaintext-only</code>, <code class="notranslate">typing</code><br>
+Also note <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/contentEditable" rel="nofollow">that page</a> says the values also can be <code class="notranslate">inherit</code></p>
+<h3 dir="auto">What did you expect to see?</h3>
+<ol dir="auto">
+<li>Add some description about <code class="notranslate">caret</code>, <code class="notranslate">events</code>, <code class="notranslate">plaintext-only</code>, <code class="notranslate">typing</code> values</li>
+<li>Correct the allowed values</li>
+</ol>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://w3c.github.io/contentEditable/" rel="nofollow">https://w3c.github.io/contentEditable/</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/global_attributes/contenteditable</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/global_attributes/contenteditable/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/global_attributes/contenteditable/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b279919de5d228c3818714fd01852a4ba1b7fabc/hovercard" href="https://github.com/mdn/content/commit/b279919de5d228c3818714fd01852a4ba1b7fabc"><tt>b279919</tt></a></li>
+<li>Document last modified: 2022-10-10T06:50:47.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] http(s) scheme for WebSocket gives an error anyway]]></title>
             <link>https://github.com/mdn/content/issues/21978</link>
