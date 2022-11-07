@@ -4,10 +4,51 @@
         <title>IETF-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ietf.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by IETF</description>
-        <lastBuildDate>Wed, 10 Aug 2022 08:44:58 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 07 Nov 2022 19:00:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[rfc7231] frame-ancestors signature specified in the docs is misleading & seems incorrect]]></title>
+            <link>https://github.com/mdn/content/issues/22135</link>
+            <guid>https://github.com/mdn/content/issues/22135</guid>
+            <pubDate>Mon, 07 Nov 2022 19:00:30 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors#syntax" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors#syntax</a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Currently, <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors#syntax" rel="nofollow">the syntax section</a> states the following:</p>
+<div class="highlight highlight-source-httpspec notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="Content-Security-Policy: frame-ancestors &lt;source&gt;;
+Content-Security-Policy: frame-ancestors &lt;source&gt; &lt;source&gt;;"><pre><span class="pl-s"><span class="pl-v">Content-Security-Policy:</span> frame-ancestors &lt;source&gt;;</span>
+<span class="pl-s"><span class="pl-v">Content-Security-Policy:</span> frame-ancestors &lt;source&gt; &lt;source&gt;;</span></pre></div>
+<p dir="auto">which makes me think that I can have a maximum of 2 <code class="notranslate">ancestor-source</code>s allowed for a given document which isn't true.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Either something like</p>
+<div class="highlight highlight-source-httpspec notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="Content-Security-Policy: frame-ancestors &lt;space separated list of ancestor sources&gt;;"><pre><span class="pl-s"><span class="pl-v">Content-Security-Policy:</span> frame-ancestors &lt;space separated list of ancestor sources&gt;;</span></pre></div>
+<p dir="auto">like on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-CH" rel="nofollow"><code class="notranslate">Accept-CH</code> page</a> or something like</p>
+<div class="highlight highlight-source-httpspec notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="Content-Security-Policy: frame-ancestors &lt;source&gt;;
+
+// Multiple ancestor sources separated by a space can be specified:
+Content-Security-Policy: frame-ancestors 'self' https://www.example.org https://www.example.com https://store.example.com;"><pre><span class="pl-s"><span class="pl-v">Content-Security-Policy:</span> frame-ancestors &lt;source&gt;;</span>
+
+<span class="pl-ii">// Multiple ancestor sources separated by a space can be specified:</span>
+<span class="pl-s"><span class="pl-v">Content-Security-Policy:</span> frame-ancestors 'self' https://www.example.org https://www.example.com https://store.example.com;</span></pre></div>
+<p dir="auto">like on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language" rel="nofollow"><code class="notranslate">Accept-Language</code> page</a></p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://w3c.github.io/webappsec-csp/#directive-frame-ancestors" rel="nofollow">The spec</a> clearly defines a possibly infinite number of ancestor sources:</p>
+<div class="highlight highlight-source-abnf notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="directive-name  = &quot;frame-ancestors&quot;
+directive-value = ancestor-source-list
+
+ancestor-source-list = ( ancestor-source *( required-ascii-whitespace ancestor-source) ) / &quot;'none'&quot;
+ancestor-source      = scheme-source / host-source / &quot;'self'&quot;"><pre><span class="pl-en">directive-name</span>  <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>frame-ancestors<span class="pl-pds">"</span></span>
+<span class="pl-en">directive-value</span> <span class="pl-k">=</span> <span class="pl-v">ancestor-source-list</span>
+
+<span class="pl-en">ancestor-source-list</span> <span class="pl-k">=</span> ( <span class="pl-v">ancestor-source</span> <span class="pl-k">*</span>( <span class="pl-v">required-ascii-whitespace</span> <span class="pl-v">ancestor-source</span>) ) <span class="pl-k">/</span> <span class="pl-s"><span class="pl-pds">"</span>'none'<span class="pl-pds">"</span></span>
+<span class="pl-en">ancestor-source</span>      <span class="pl-k">=</span> <span class="pl-v">scheme-source</span> <span class="pl-k">/</span> <span class="pl-v">host-source</span> <span class="pl-k">/</span> <span class="pl-s"><span class="pl-pds">"</span>'self'<span class="pl-pds">"</span></span></pre></div>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Glad to open a PR to fix it</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[rfc7233] Content suggestion: http content-type multipart/*]]></title>
             <link>https://github.com/mdn/content/issues/19353</link>
