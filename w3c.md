@@ -94,8 +94,6 @@
   
 * [[webrtc] Definition of srflx (server reflexive) address is not correct.](https://github.com/mdn/content/issues/16155) (2022-05-17T18:12:25Z)
   
-* [[css-fonts-5] Update MDN font family page with -apple-system](https://github.com/mdn/content/issues/15896) (2022-05-11T05:22:44Z)
-  
 * [[file-system-access] `FileSystemHandle.requestPermission()` can throw `SecurityError`](https://github.com/mdn/content/issues/15831) (2022-05-09T19:45:01Z)
   
 * [[css-text-3] `word-break: break-word;` vs `overflow-wrap: anywhere;`](https://github.com/mdn/content/issues/15676) (2022-05-04T06:23:26Z)

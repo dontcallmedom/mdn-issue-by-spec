@@ -56,8 +56,6 @@
   
 * [[css-cascade-3] @import url("narrow.css") supports(display: flex) example not working](https://github.com/mdn/content/issues/16198) (2022-05-18T16:57:51Z)
   
-* [[css-fonts-5] Update MDN font family page with -apple-system](https://github.com/mdn/content/issues/15896) (2022-05-11T05:22:44Z)
-  
 * [[css-text-3] `word-break: break-word;` vs `overflow-wrap: anywhere;`](https://github.com/mdn/content/issues/15676) (2022-05-04T06:23:26Z)
   
 * [[css-conditional-3, DOM-Parsing] Defining page types](https://github.com/mdn/content/issues/15539) (2022-04-29T23:44:43Z)
