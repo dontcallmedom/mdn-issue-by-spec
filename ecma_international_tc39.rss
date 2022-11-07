@@ -4,50 +4,10 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Wed, 26 Oct 2022 23:05:55 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 29 Sep 2022 08:23:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript] Grouping operator has other uses]]></title>
-            <link>https://github.com/mdn/content/issues/21862</link>
-            <guid>https://github.com/mdn/content/issues/21862</guid>
-            <pubDate>Wed, 26 Oct 2022 23:05:55 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Grouping" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Grouping</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">The Grouping Operator</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">"The grouping operator ( ) controls the precedence of evaluation in expressions."</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The Grouping Operator groups primary expressions.</p>
-<p dir="auto">This can be useful for managing operator precedence, but that's not what it does.</p>
-<p dir="auto">It can also be used to avoid ASI pitfalls and to force tokens' evaluation as PrimaryExpressions.</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="(function a() {
-    return 1;
-}) () // &lt;-- FE, not FD"><pre class="notranslate"><code>(function a() {
-    return 1;
-}) () // &lt;-- FE, not FD
-</code></pre></div>
-<p dir="auto">It can be used to avoid ASI pitfalls:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="function b() {
-    return 
-        &quot;LongStringWithManyCharacters&quot;
-     + &quot; even more chars&quot;;
-}
-"><pre class="notranslate"><code>function b() {
-    return 
-        "LongStringWithManyCharacters"
-     + " even more chars";
-}
-
-</code></pre></div>
-<p dir="auto">— and it can be accidentally interpreted as Arguments when following an Expression, to interpret a CallExpression.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="http://jibbering.com/faq/notes/code-guidelines/asi.html" rel="nofollow">http://jibbering.com/faq/notes/code-guidelines/asi.html</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">It seems like MDN quality has decreased. I'm disappointed. I don't have endless time to volunteer for its betterment, however.</p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[ecmascript] Content Suggestion: Include common use-cases of WeakMap in WeakMap documentation page]]></title>
             <link>https://github.com/mdn/content/issues/21180</link>
