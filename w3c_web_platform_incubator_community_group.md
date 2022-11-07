@@ -4,7 +4,7 @@
 
 * [[file-system-access] File System Access API is incomplete](https://github.com/mdn/content/issues/22000) (2022-11-02T10:18:28Z)
   
-* [[background-fetch] incorrect description on backgroundfetchmanager/getIds](https://github.com/mdn/content/issues/21988) (2022-11-01T18:08:42Z)
+* [[background-fetch] Typo: Description above example in “BackgroundFetchManager»getIds()” doc says mentions “get()” but should be “getIds()”](https://github.com/mdn/content/issues/21988) (2022-11-01T18:08:42Z)
   
 * [[file-system-access] `FileSystemHandle.requestPermission()` can throw `SecurityError`](https://github.com/mdn/content/issues/15831) (2022-05-09T19:45:01Z)
   

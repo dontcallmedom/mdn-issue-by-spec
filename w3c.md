@@ -8,7 +8,7 @@
   
 * [[file-system-access] File System Access API is incomplete](https://github.com/mdn/content/issues/22000) (2022-11-02T10:18:28Z)
   
-* [[background-fetch] incorrect description on backgroundfetchmanager/getIds](https://github.com/mdn/content/issues/21988) (2022-11-01T18:08:42Z)
+* [[background-fetch] Typo: Description above example in “BackgroundFetchManager»getIds()” doc says mentions “get()” but should be “getIds()”](https://github.com/mdn/content/issues/21988) (2022-11-01T18:08:42Z)
   
 * [[mediaqueries-4, css-conditional-3] Logical operator or in complex media query](https://github.com/mdn/content/issues/21959) (2022-10-31T11:33:56Z)
   
