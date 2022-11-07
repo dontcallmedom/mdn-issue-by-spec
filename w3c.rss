@@ -4,10 +4,41 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Fri, 04 Nov 2022 20:55:23 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 07 Nov 2022 06:12:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-values-3] [CSS] Implement container relative length units]]></title>
+            <link>https://github.com/mdn/content/issues/22119</link>
+            <guid>https://github.com/mdn/content/issues/22119</guid>
+            <pubDate>Mon, 07 Nov 2022 06:12:20 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 dir="auto">Acceptance Criteria</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> The listed features are documented sufficiently on MDN</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> BCD is updated</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Interactive example and data repos are updated if appropriate</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> The content has been reviewed as needed</li>
+</ul>
+<h3 dir="auto">For folks helping with Firefox related documentation</h3>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Set bugs to <code class="notranslate">dev-doc-complete</code></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Add entry to Firefox release notes if feature is enabled in release</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Add entry to Firefox experimental features page if feature is not yet enabled in release</li>
+</ul>
+<h2 dir="auto">Features to document</h2>
+<p dir="auto">Not sure if this is behind preference or not (needs to be checked). This adds support for <a href="https://drafts.csswg.org/css-contain-3/#container-lengths" rel="nofollow">Container Relative Length units: cqw, cqh, cqi, cqb, cqmin, cqmax</a>.</p>
+<p dir="auto">Will need BCD, docs and either experimental features or release note.<br>
+I THINK the right place for documentation is <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/length</a></p>
+<h2 dir="auto">Related Gecko bugs</h2>
+<p dir="auto"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1744231" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=1744231</a></p>
+<h2 dir="auto">Other</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Check content open issues to see if any pertain to the subject matter. If there are any that can be closed because of the work, do so. If there are any that can be fixed relatively quickly because of the knowledge from completing this issue and you have time, feel free to go ahead and fix them.</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Check if glossary updates are required for the feature you're documenting - whether an existing term needs to be updated or a new term should be added.</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Check if BCD update means that content pages need to have experimental markup removed or deprecated markup added (front matter tags and macros).</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-logical-1] The article on the CSS float property lists several non-standard values as supported, with no explanation of what they are or where they came from]]></title>
             <link>https://github.com/mdn/content/issues/22069</link>
@@ -167,7 +198,7 @@ But it doesn't and isn't mentioned here that both work – or and comma (maybe t
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media#logical_operators" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/@media#logical_operators</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[WebIDL-1] Deprecated code]]></title>
+            <title><![CDATA[[WebIDL-1] “Using the Web Storage API” has deprecated “DOMException.code” in example]]></title>
             <link>https://github.com/mdn/content/issues/21910</link>
             <guid>https://github.com/mdn/content/issues/21910</guid>
             <pubDate>Fri, 28 Oct 2022 12:08:01 GMT</pubDate>

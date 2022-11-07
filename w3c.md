@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-values-3] [CSS] Implement container relative length units](https://github.com/mdn/content/issues/22119) (2022-11-07T06:12:20Z)
+  
 * [[css-logical-1] The article on the CSS float property lists several non-standard values as supported, with no explanation of what they are or where they came from](https://github.com/mdn/content/issues/22069) (2022-11-04T20:55:23Z)
   
 * [[css-font-loading-3] What is the use of document.fonts.check if it is always going to return true(in safari and firefox...)?](https://github.com/mdn/content/issues/22044) (2022-11-04T03:57:22Z)
@@ -12,7 +14,7 @@
   
 * [[mediaqueries-4, css-conditional-3] Logical operator or in complex media query](https://github.com/mdn/content/issues/21959) (2022-10-31T11:33:56Z)
   
-* [[WebIDL-1] Deprecated code](https://github.com/mdn/content/issues/21910) (2022-10-28T12:08:01Z)
+* [[WebIDL-1] “Using the Web Storage API” has deprecated “DOMException.code” in example](https://github.com/mdn/content/issues/21910) (2022-10-28T12:08:01Z)
   
 * [[cssom-view-1, uievents, pointerlock-2] MouseEvent.clientX and MouseEvent.clientY is  the coordinates of the window, but the documentation is written relative to the local dom ](https://github.com/mdn/content/issues/21876) (2022-10-27T13:46:15Z)
   
