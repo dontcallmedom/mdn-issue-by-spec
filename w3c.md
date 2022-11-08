@@ -164,8 +164,6 @@
   
 * [[IndexedDB-3] Issue with "IDBIndex.getAllKeys()": getAllKeys returns an Array.](https://github.com/mdn/content/issues/11354) (2021-12-21T04:24:54Z)
   
-* [[IndexedDB-3] Issue with "IDBIndex.getAllKeys()": The article does not specify the form of the information returned in the result property of the request object](https://github.com/mdn/content/issues/11349) (2021-12-20T18:58:47Z)
-  
 * [[pointerlock-2] Element.requestPointerLock() missing some useful detail](https://github.com/mdn/content/issues/11327) (2021-12-20T05:04:35Z)
   
 * [[css-display-3] Issue with "display": table accessibility concern should specify browsers](https://github.com/mdn/content/issues/11206) (2021-12-14T15:54:34Z)
