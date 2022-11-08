@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[css-values-3] [CSS] Implement container relative length units](https://github.com/mdn/content/issues/22119) (2022-11-07T06:12:20Z)
-  
 * [[css-logical-1] The article on the CSS float property lists several non-standard values as supported, with no explanation of what they are or where they came from](https://github.com/mdn/content/issues/22069) (2022-11-04T20:55:23Z)
   
 * [[css-font-loading-3] What is the use of document.fonts.check if it is always going to return true(in safari and firefox...)?](https://github.com/mdn/content/issues/22044) (2022-11-04T03:57:22Z)
