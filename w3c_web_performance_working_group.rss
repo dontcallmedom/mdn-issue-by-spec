@@ -4,10 +4,43 @@
         <title>W3C Web Performance Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_performance_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Performance Working Group</description>
-        <lastBuildDate>Fri, 08 Apr 2022 02:53:08 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 08 Nov 2022 22:02:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[performance-timeline-2] Maybe mention `about:config` setting `dom.enable_performance_observer` and/or that github.com requires it to work properly ?]]></title>
+            <link>https://github.com/mdn/content/issues/22172</link>
+            <guid>https://github.com/mdn/content/issues/22172</guid>
+            <pubDate>Tue, 08 Nov 2022 22:02:17 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserver" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserver</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">No mention of <code class="notranslate">about:config</code> setting <code class="notranslate">dom.enable_performance_observer</code> being <code class="notranslate">true</code> for when this is enabled.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A mention of <code class="notranslate">about:config</code> setting <code class="notranslate">dom.enable_performance_observer</code>, maybe even mention that it shouldn't be set to <code class="notranslate">false</code> to mitigate against Spectre, because it's not necessary (anymore).</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Would be nice to mention that this is a required firefox feature for github to work properly. <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1440953988" data-permission-text="Title is private" data-url="https://github.com/github/browser-support/issues/28" data-hovercard-type="issue" data-hovercard-url="/github/browser-support/issues/28/hovercard" href="https://github.com/github/browser-support/issues/28#issue-1440953988">github/browser-support#28 (comment)</a></p>
+<p dir="auto">Thanks to their site <a href="https://github.github.com/browser-support/">https://github.github.com/browser-support/</a>  which showed a red <code class="notranslate">!</code> on the <code class="notranslate">PerformanceObserver Constructor</code> as not being available but required for github to work properly, I was able to figure out what I needed to do to make things work on github.<br>
+With it disabled(ie. <code class="notranslate">dom.enable_performance_observer=false</code>, I wasn't getting any updates, the notifications blue dot wouldn't appear unless I manually refreshed the webpage, I wouldn't see any new comments/updates if I were sitting on an issue or PR page, unless I F5/refreshed the webpage manually, and visiting a notification wouldn't move the scroll to the specific item in question, it would always just be on the top of the issue instead. When creating a new gist, changing to public gist on the green button would still show secret gist on the button even though clicking it would create the chosen public gist.</p>
+<p dir="auto">I don't know how to write all this myself in that section, or even if it's all acceptable to do so there. That's why I'm just letting you know about it here.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/performanceobserver</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserver" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserver</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/performanceobserver/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/performanceobserver/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/66c9543af6a0cf1baf89d5b0c972ee7dd08663b0/hovercard" href="https://github.com/mdn/content/commit/66c9543af6a0cf1baf89d5b0c972ee7dd08663b0"><tt>66c9543</tt></a></li>
+<li>Document last modified: 2022-11-05T00:48:48.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[hr-time-3, user-timing-2, performance-timeline-2, resource-timing-2] Topic on setting HTTP priority of resource requests]]></title>
             <link>https://github.com/mdn/content/issues/14803</link>

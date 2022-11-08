@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[performance-timeline-2] Maybe mention `about:config` setting `dom.enable_performance_observer` and/or that github.com requires it to work properly ?](https://github.com/mdn/content/issues/22172) (2022-11-08T22:02:17Z)
+  
 * [[html, uievents] Load event only fires after all iframes load?](https://github.com/mdn/content/issues/22152) (2022-11-08T08:52:51Z)
   
 * [[css-logical-1] The article on the CSS float property lists several non-standard values as supported, with no explanation of what they are or where they came from](https://github.com/mdn/content/issues/22069) (2022-11-04T20:55:23Z)
