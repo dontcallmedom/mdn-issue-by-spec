@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Document HTMLInputElement's (type=file) cancel event](https://github.com/mdn/content/issues/22157) (2022-11-08T13:02:34Z)
+  
 * [[html, uievents] Load event only fires after all iframes load?](https://github.com/mdn/content/issues/22152) (2022-11-08T08:52:51Z)
   
 * [[html] contenteditable missing some allowed values description](https://github.com/mdn/content/issues/22048) (2022-11-04T06:39:50Z)
