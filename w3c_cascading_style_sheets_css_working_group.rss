@@ -4,50 +4,10 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Wed, 09 Nov 2022 16:08:46 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 09 Nov 2022 11:56:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[css-font-loading-3] FontFaceSet Example output correction]]></title>
-            <link>https://github.com/mdn/content/issues/22195</link>
-            <guid>https://github.com/mdn/content/issues/22195</guid>
-            <pubDate>Wed, 09 Nov 2022 16:08:46 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFaceSet/check" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FontFaceSet/check</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Examples</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Incorrect example:</p>
-<p dir="auto">If the font given in the font specification does not exist, this function returns <code class="notranslate">true</code>:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="console.log(document.fonts.check(&quot;12px NonExistingFont&quot;));
-// true"><pre class="notranslate"><code>console.log(document.fonts.check("12px NonExistingFont"));
-// true
-</code></pre></div>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Correction, <code class="notranslate">true</code> should be <code class="notranslate">false</code>:</p>
-<p dir="auto">If the font given in the font specification does not exist, this function returns <code class="notranslate">false</code>:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="console.log(document.fonts.check(&quot;12px NonExistingFont&quot;));
-// false"><pre class="notranslate"><code>console.log(document.fonts.check("12px NonExistingFont"));
-// false
-</code></pre></div>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><code class="notranslate">console.log(document.fonts.check("12px NonExistingFont"));</code> returns <code class="notranslate">false</code> in Chrome Version 107.0.5304.87 (Official Build) (arm64)</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/fontfaceset/check</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFaceSet/check" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FontFaceSet/check</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/fontfaceset/check/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/fontfaceset/check/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b9ff6d9960e91ff4ba27d0d675c85063b57a4198/hovercard" href="https://github.com/mdn/content/commit/b9ff6d9960e91ff4ba27d0d675c85063b57a4198"><tt>b9ff6d9</tt></a></li>
-<li>Document last modified: 2022-10-07T21:16:19.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[compositing-2] Examples of isolation hard to understand]]></title>
             <link>https://github.com/mdn/content/issues/22185</link>
