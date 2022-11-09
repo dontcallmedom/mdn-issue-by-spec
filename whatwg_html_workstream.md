@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Event documentation no longer depicts "bubbles" information.](https://github.com/mdn/content/issues/22198) (2022-11-09T17:11:05Z)
+  
 * [[html]  rejectionhandled event doesn't fire on every handled rejection, but only if  unhandledrejection events was triggered](https://github.com/mdn/content/issues/22177) (2022-11-09T04:52:54Z)
   
 * [[html] Document HTMLInputElement's (type=file) cancel event](https://github.com/mdn/content/issues/22157) (2022-11-08T13:02:34Z)
