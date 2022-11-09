@@ -8,5 +8,5 @@
   
 * [[ecmascript, FileAPI] Clean up irrelevant notes about old browser releases](https://github.com/mdn/content/issues/9974) (2021-10-21T07:48:17Z)
   
-* [[ecmascript] Issue with "this": lack of an article about the 'Execution context'. ](https://github.com/mdn/content/issues/5006) (2021-05-14T18:14:38Z)
+* [[ecmascript] Need a page on Execution context](https://github.com/mdn/content/issues/5006) (2021-05-14T18:14:38Z)
   
