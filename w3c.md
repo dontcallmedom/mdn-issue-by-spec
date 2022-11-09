@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[mediacapture-streams] navigator.mediaDevices.getUserMedia in Ventura 13.0 (22A380)](https://github.com/mdn/content/issues/22187) (2022-11-09T13:00:19Z)
-  
 * [[compositing-2] Examples of isolation hard to understand](https://github.com/mdn/content/issues/22185) (2022-11-09T11:56:05Z)
   
 * [[performance-timeline-2] Maybe mention `about:config` setting `dom.enable_performance_observer` and/or that github.com requires it to work properly ?](https://github.com/mdn/content/issues/22172) (2022-11-08T22:02:17Z)
