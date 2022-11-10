@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html]  Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.](https://github.com/mdn/content/issues/22215) (2022-11-10T10:16:39Z)
-  
 * [[html] Event documentation no longer depicts "bubbles" information.](https://github.com/mdn/content/issues/22198) (2022-11-09T17:11:05Z)
   
 * [[html]  rejectionhandled event doesn't fire on every handled rejection, but only if  unhandledrejection events was triggered](https://github.com/mdn/content/issues/22177) (2022-11-09T04:52:54Z)
