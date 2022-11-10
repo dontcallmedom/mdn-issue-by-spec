@@ -102,37 +102,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[webgl1] Content bug: vertexAttribPointer: missing WebGL 2 types]]></title>
-            <link>https://github.com/mdn/content/issues/10975</link>
-            <guid>https://github.com/mdn/content/issues/10975</guid>
-            <pubDate>Sun, 05 Dec 2021 05:53:16 GMT</pubDate>
-            <content:encoded><![CDATA[<h2 dir="auto">What page(s) did you find the problem on?</h2>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer</a></p>
-<h2 dir="auto">Specific page section or heading?</h2>
-<p dir="auto">Syntax &gt; Parameters &gt; type</p>
-<h2 dir="auto">What is the problem?</h2>
-<p dir="auto">Only the <code class="notranslate">HALF_FLOAT</code> type is noted to be added by WebGL 2</p>
-<blockquote>
-<p dir="auto">When using a WebGL 2 context, the following values are available additionally:</p>
-<ul dir="auto">
-<li><code class="notranslate">gl.HALF_FLOAT</code>: 16-bit IEEE floating point number</li>
-</ul>
-</blockquote>
-<p dir="auto">However if you compare the ES 3.0 docs to the ES 2.0 ones, there are actually several more that were added:</p>
-<ul dir="auto">
-<li><code class="notranslate">gl.INT</code></li>
-<li><code class="notranslate">gl.UNSIGNED_INT</code></li>
-<li><code class="notranslate">gl.INT_2_10_10_10_REV</code></li>
-<li><code class="notranslate">gl.UNSIGNED_INT_2_10_10_10_REV</code></li>
-</ul>
-<p dir="auto">ES 2.0 : <a href="https://www.khronos.org/registry/OpenGL-Refpages/es2.0/xhtml/glVertexAttribPointer.xml" rel="nofollow">https://www.khronos.org/registry/OpenGL-Refpages/es2.0/xhtml/glVertexAttribPointer.xml</a><br>
-ES 3.0 : <a href="https://www.khronos.org/registry/OpenGL-Refpages/es3.0/html/glVertexAttribPointer.xhtml" rel="nofollow">https://www.khronos.org/registry/OpenGL-Refpages/es3.0/html/glVertexAttribPointer.xhtml</a></p>
-<h2 dir="auto">What did you expect to see?</h2>
-<p dir="auto">AFAIK, the types allowed in WebGL 2 should reflect the ES 3.0 docs (except <code class="notranslate">FIXED</code>).</p>
-<h2 dir="auto">Did you test this? If so, how?</h2>
-<p dir="auto">I tested on Firefox 91/Linux. All of the types listed above did work. <a href="https://jsfiddle.net/L5npqrzu/" rel="nofollow">Here</a> is a quick test with <code class="notranslate">gl.INT_2_10_10_10_REV</code> (you should see a rotating square).</p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[OVR_multiview2] WebXR guide material tracking issue]]></title>
             <link>https://github.com/mdn/content/issues/7276</link>
             <guid>https://github.com/mdn/content/issues/7276</guid>
