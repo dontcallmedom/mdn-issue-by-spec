@@ -86,7 +86,7 @@
   
 * [[selectors-4] `:any-link` privacy exception not explained](https://github.com/mdn/content/issues/17366) (2022-06-17T02:50:38Z)
   
-* [[SVG11] Discussing strokes without paint-order](https://github.com/mdn/content/issues/17040) (2022-06-06T18:32:51Z)
+* [[SVG11] SVG Tutorial discussed strokes and fills without paint-order](https://github.com/mdn/content/issues/17040) (2022-06-06T18:32:51Z)
   
 * [[encoding] Subjective description in `Buffer sizing` in `TextEncoder.encodeInto()`](https://github.com/mdn/content/issues/16805) (2022-05-31T02:24:05Z)
   
@@ -253,8 +253,6 @@
 * [[cssom-view-1] Issue with "Window.devicePixelRatio": snippet to detect changes only detects when the initial value changes but doesn't detect further changes](https://github.com/mdn/content/issues/4478) (2021-04-26T09:29:18Z)
   
 * [[webaudio] Content bug: AudioListener and attributes need better examples. ](https://github.com/mdn/content/issues/4468) (2021-04-26T03:22:48Z)
-  
-* [[SVG11] Issue with SVG generally](https://github.com/mdn/content/issues/4428) (2021-04-23T19:39:38Z)
   
 * [[orientation-event, compat] Content bug: Improve device/screen orientation event doc](https://github.com/mdn/content/issues/4400) (2021-04-23T02:57:45Z)
   

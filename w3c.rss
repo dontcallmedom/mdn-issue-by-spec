@@ -1408,7 +1408,7 @@ Or a separate page like <a href="https://developer.mozilla.org/en-US/docs/Web/CS
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[SVG11] Discussing strokes without paint-order]]></title>
+            <title><![CDATA[[SVG11] SVG Tutorial discussed strokes and fills without paint-order]]></title>
             <link>https://github.com/mdn/content/issues/17040</link>
             <guid>https://github.com/mdn/content/issues/17040</guid>
             <pubDate>Mon, 06 Jun 2022 18:32:51 GMT</pubDate>
@@ -4019,36 +4019,6 @@ updatePixelRatio();
             <content:encoded><![CDATA[<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioListener" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioListener</a></p>
 <p dir="auto">As discussed in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="865738850" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/4401" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/4401/hovercard?comment_id=619372451&amp;comment_type=review_comment" href="https://github.com/mdn/content/pull/4401#discussion_r619372451">#4401 (comment)</a> <code class="notranslate">AudioListener</code> and all the attributes link to the same example <a href="https://developer.mozilla.org/en-US/docs/Web/API/PannerNode#examples" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PannerNode#examples</a></p>
 <p dir="auto">This is not actually all that relevant to all the attributes, and is probably more comprehensive than required at this level. It would be better to have small focussed example for each of these and cross link to the example as a see also.</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[SVG11] Issue with SVG generally]]></title>
-            <link>https://github.com/mdn/content/issues/4428</link>
-            <guid>https://github.com/mdn/content/issues/4428</guid>
-            <pubDate>Fri, 23 Apr 2021 19:39:38 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/SVG" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/SVG</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">Am trying to grasp the basics for SVG.  A general problem here is that the documenters seem keen to show "tricky" details  before the simple elements are clear. Here's what I believe would be helpful:</p>
-<h4 dir="auto">What did you expect to see?</h4>
-<ol dir="auto">
-<li>&lt;svg ....&gt;Is this a requisite for all SVG elements. In other words, must I make an SVG "box" before any RECT, LINE etc elements will paint? This appears to be the case, but it would be helpful to see this made clear.</li>
-<li>What is the minimum requirement for the SVG box? I don't like the clutter of the xml and other specs as I suspect these (like those for HTML) will eventually not be required. It appears that Firefox currently doesn't REQUIRE them.</li>
-<li>Basics: the x,y elements of RECT, LINE etc appear to be relative to the SVG box but I can't be sure of this, especially since there doesn't appear to be an X,Y for the SVG box.</li>
-<li>Are the quotes around X,Y,WIDTH,HEIGHT values necessary? It would appear so but they are an encumbrance when coding in PHP (backslashes are required before all such quotes. Yes, addslashes ... but...)</li>
-<li></li>
-</ol>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">I have spent a couple of hours trying to grasp what I am feel sure should be possible to grasp within 15 minutes. I do appreciate all that developers offer here for free but sometimes those efforts go for naught if visitors like myself have to seek simpler explanations elsewhere, which is unfortunately often the case Mozilla.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/svg/tutorial/fills_and_strokes</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/svg/tutorial/fills_and_strokes/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/svg/tutorial/fills_and_strokes/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/591106ab561137d3a0714d1b642ebd2319ad87ea/hovercard" href="https://github.com/mdn/content/commit/591106ab561137d3a0714d1b642ebd2319ad87ea"><tt>591106a</tt></a></li>
-<li>Document last modified: 2021-03-23T09:20:01.000Z</li>
-</ul>
-</details>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[orientation-event, compat] Content bug: Improve device/screen orientation event doc]]></title>
