@@ -8,7 +8,5 @@
   
 * [[OES_standard_derivatives] Issue with "OES_standard_derivatives": missing function explanation ](https://github.com/mdn/content/issues/14715) (2022-04-05T16:44:46Z)
   
-* [[webgl1] Content bug: vertexAttribPointer: missing WebGL 2 types](https://github.com/mdn/content/issues/10975) (2021-12-05T05:53:16Z)
-  
 * [[OVR_multiview2] WebXR guide material tracking issue](https://github.com/mdn/content/issues/7276) (2021-07-26T07:39:35Z)
   
