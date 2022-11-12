@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[ecmascript] Private static methods: even super has the same behavior](https://github.com/mdn/content/issues/22258) (2022-11-12T22:16:20Z)
+  
 * [[ecmascript] Document import assertions](https://github.com/mdn/content/issues/19220) (2022-08-06T05:08:53Z)
   
 * [[ecmascript, FileAPI] Clean up irrelevant notes about old browser releases](https://github.com/mdn/content/issues/9974) (2021-10-21T07:48:17Z)
