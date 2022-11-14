@@ -124,8 +124,6 @@
   
 * [[html] Issue with "Document: DOMContentLoaded event": Race condition in "Checking whether loading is already complete"?](https://github.com/mdn/content/issues/8808) (2021-09-10T11:50:10Z)
   
-* [[html] Issue with "CanvasRenderingContext2D.createPattern()": need to mention that it can return null](https://github.com/mdn/content/issues/8684) (2021-09-06T11:36:49Z)
-  
 * [[html] Issue with "Window.localStorage": Safari deletes after 7 days unvisited](https://github.com/mdn/content/issues/8510) (2021-09-01T03:59:58Z)
   
 * [[html] Issue with "WorkerGlobalScope.importScripts()": (confucing description of parameters)](https://github.com/mdn/content/issues/7652) (2021-08-06T09:26:25Z)
