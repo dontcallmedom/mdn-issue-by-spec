@@ -74,8 +74,6 @@
   
 * [[html] Issue with "<iframe>: The Inline Frame element": no height attribute](https://github.com/mdn/content/issues/14799) (2022-04-08T02:08:21Z)
   
-* [[html] Content bug: Remove references to caching WebAssembly Modules in indexedDB](https://github.com/mdn/content/issues/14520) (2022-03-31T18:57:39Z)
-  
 * [[html] "HTMLElement.dir": Misleading info about how the value is determined](https://github.com/mdn/content/issues/14484) (2022-03-30T22:18:42Z)
   
 * [[html] Clarify "Permitted parents: any element that accepts metadata content"](https://github.com/mdn/content/issues/14398) (2022-03-28T12:11:28Z)
