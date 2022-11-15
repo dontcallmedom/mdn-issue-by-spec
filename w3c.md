@@ -10,8 +10,6 @@
   
 * [[compositing-2] Examples of isolation hard to understand](https://github.com/mdn/content/issues/22185) (2022-11-09T11:56:05Z)
   
-* [[html, uievents] Load event only fires after all iframes load?](https://github.com/mdn/content/issues/22152) (2022-11-08T08:52:51Z)
-  
 * [[css-logical-1] The article on the CSS float property lists several non-standard values as supported, with no explanation of what they are or where they came from](https://github.com/mdn/content/issues/22069) (2022-11-04T20:55:23Z)
   
 * [[css-font-loading-3] What is the use of document.fonts.check if it is always going to return true(in safari and firefox...)?](https://github.com/mdn/content/issues/22044) (2022-11-04T03:57:22Z)

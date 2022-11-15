@@ -10,8 +10,6 @@
   
 * [[html] Document HTMLInputElement's (type=file) cancel event](https://github.com/mdn/content/issues/22157) (2022-11-08T13:02:34Z)
   
-* [[html, uievents] Load event only fires after all iframes load?](https://github.com/mdn/content/issues/22152) (2022-11-08T08:52:51Z)
-  
 * [[html] contenteditable missing some allowed values description](https://github.com/mdn/content/issues/22048) (2022-11-04T06:39:50Z)
   
 * [[html] http(s) scheme for WebSocket gives an error anyway](https://github.com/mdn/content/issues/21978) (2022-11-01T12:37:18Z)
