@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[fullscreen] Document user activation requirement of the Fullscreen API](https://github.com/mdn/content/issues/22303) (2022-11-15T12:32:26Z)
+  
 * [[html] No mention of JavaScript on this page, when it's one the only way to make it do something (other than using it inside of a form)](https://github.com/mdn/content/issues/22274) (2022-11-14T00:20:12Z)
   
 * [[html] Event documentation no longer depicts "bubbles" information.](https://github.com/mdn/content/issues/22198) (2022-11-09T17:11:05Z)
