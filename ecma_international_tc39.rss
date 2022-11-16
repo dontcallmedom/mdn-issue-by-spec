@@ -45,45 +45,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[ecmascript] Private static methods: even super has the same behavior]]></title>
-            <link>https://github.com/mdn/content/issues/22258</link>
-            <guid>https://github.com/mdn/content/issues/22258</guid>
-            <pubDate>Sat, 12 Nov 2022 22:16:20 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Private static methods</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Not only <code class="notranslate">SubCls.basePublicStaticMethod()</code> but also <code class="notranslate">super.basePublicStaticMethod()</code></p>
-<h3 dir="auto">What did you expect to see?</h3>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="class SubClass extends BaseClassWithPrivateStaticField {
-  static callWithSuper() {
-    return super.basePublicStaticMethod();
-  }
-}"><pre><span class="pl-k">class</span> <span class="pl-v">SubClass</span> <span class="pl-k">extends</span> <span class="pl-v">BaseClassWithPrivateStaticField</span> <span class="pl-kos">{</span>
-  <span class="pl-k">static</span> <span class="pl-en">callWithSuper</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-    <span class="pl-k">return</span> <span class="pl-smi">super</span><span class="pl-kos">.</span><span class="pl-en">basePublicStaticMethod</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-  <span class="pl-kos">}</span>
-<span class="pl-kos">}</span></pre></div>
-<p dir="auto">Or just link <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super#methods_that_read_super.prop_do_not_behave_differently_when_bound_to_other_objects" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super#methods_that_read_super.prop_do_not_behave_differently_when_bound_to_other_objects</a></p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/classes/private_class_fields</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/classes/private_class_fields/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/classes/private_class_fields/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/afeb4b5643b4ed5ecc976b1ace04ec20c856403e/hovercard" href="https://github.com/mdn/content/commit/afeb4b5643b4ed5ecc976b1ace04ec20c856403e"><tt>afeb4b5</tt></a></li>
-<li>Document last modified: 2022-10-27T17:34:47.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[ecmascript] Document import assertions]]></title>
             <link>https://github.com/mdn/content/issues/19220</link>
             <guid>https://github.com/mdn/content/issues/19220</guid>
