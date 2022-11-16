@@ -1,0 +1,23 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "WHATWG URL Workstream-relevant MDN issues",
+    "home_page_url": "https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_url_workstream.rss",
+    "description": "Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG URL Workstream",
+    "author": {
+        "name": "mdn-issue-by-spec",
+        "url": "https://github.com/dontcallmedom/mdn-issue-by-spec"
+    },
+    "items": [
+        {
+            "id": "https://github.com/mdn/content/issues/22333",
+            "content_html": "<h3 dir=\"auto\">MDN URL</h3>\n<p dir=\"auto\"><a href=\"https://developer.mozilla.org/en-US/docs/Web/API/URL/pathname\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/URL/pathname</a></p>\n<h3 dir=\"auto\">What specific section or headline is this issue about?</h3>\n<p dir=\"auto\">URL.pathname</p>\n<h3 dir=\"auto\">What information was incorrect, unhelpful, or incomplete?</h3>\n<p dir=\"auto\">It is unclear whether you mean (A):</p>\n<blockquote>\n<p dir=\"auto\">The pathname property of the <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/URL\" rel=\"nofollow\">URL</a> interface is<br>\n(a string containing an initial / followed by the path of the URL, not including the query string or fragment)<br>\n(or the empty string if there is no path).</p>\n</blockquote>\n<p dir=\"auto\">or (B):</p>\n<blockquote>\n<p dir=\"auto\">The pathname property of the <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/URL\" rel=\"nofollow\">URL</a> interface is<br>\na string containing an initial / followed by<br>\n(the path of the URL, not including the query string or fragment (or the empty string if there is no path)).</p>\n</blockquote>\n<h3 dir=\"auto\">What did you expect to see?</h3>\n<p dir=\"auto\">Clarification as to whether the pathname must always begin with a leading <code class=\"notranslate\">/</code>, or if it permits the empty string.</p>\n<p dir=\"auto\">In reading (A) above, it permits the empty string. In reading (B) above, it does <strong>not</strong> permit the empty string.</p>\n<h3 dir=\"auto\">Do you have any supporting links, references, or citations?</h3>\n<p dir=\"auto\"><em>No response</em></p>\n<h3 dir=\"auto\">Do you have anything more you want to share?</h3>\n<p dir=\"auto\"><em>No response</em></p>\n<h3 dir=\"auto\">MDN metadata</h3>\n\n<details>\n<summary>Page report details</summary>\n<ul dir=\"auto\">\n<li>Folder: <code class=\"notranslate\">en-us/web/api/url/pathname</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/URL/pathname\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/URL/pathname</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/api/url/pathname/index.md\">https://github.com/mdn/content/blob/main/files/en-us/web/api/url/pathname/index.md</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/f7dae62645a2c735ed6f6ed63f664bf279fdfc4b/hovercard\" href=\"https://github.com/mdn/content/commit/f7dae62645a2c735ed6f6ed63f664bf279fdfc4b\"><tt>f7dae62</tt></a></li>\n<li>Document last modified: 2022-09-09T05:19:45.000Z</li>\n</ul>\n</details>",
+            "url": "https://github.com/mdn/content/issues/22333",
+            "title": "[url] URL.pathname ambiguous: does it permit or not permit the empty string?",
+            "date_modified": "2022-11-16T07:06:49.000Z",
+            "author": {
+                "name": "HansBrende",
+                "url": "https://github.com/HansBrende"
+            }
+        }
+    ]
+}

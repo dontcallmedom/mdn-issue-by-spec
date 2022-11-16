@@ -4,10 +4,52 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Tue, 15 Nov 2022 12:32:26 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Nov 2022 07:06:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[url] URL.pathname ambiguous: does it permit or not permit the empty string?]]></title>
+            <link>https://github.com/mdn/content/issues/22333</link>
+            <guid>https://github.com/mdn/content/issues/22333</guid>
+            <pubDate>Wed, 16 Nov 2022 07:06:49 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/pathname" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/URL/pathname</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">URL.pathname</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">It is unclear whether you mean (A):</p>
+<blockquote>
+<p dir="auto">The pathname property of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/URL" rel="nofollow">URL</a> interface is<br>
+(a string containing an initial / followed by the path of the URL, not including the query string or fragment)<br>
+(or the empty string if there is no path).</p>
+</blockquote>
+<p dir="auto">or (B):</p>
+<blockquote>
+<p dir="auto">The pathname property of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/URL" rel="nofollow">URL</a> interface is<br>
+a string containing an initial / followed by<br>
+(the path of the URL, not including the query string or fragment (or the empty string if there is no path)).</p>
+</blockquote>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Clarification as to whether the pathname must always begin with a leading <code class="notranslate">/</code>, or if it permits the empty string.</p>
+<p dir="auto">In reading (A) above, it permits the empty string. In reading (B) above, it does <strong>not</strong> permit the empty string.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/url/pathname</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/pathname" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/URL/pathname</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/url/pathname/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/url/pathname/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/f7dae62645a2c735ed6f6ed63f664bf279fdfc4b/hovercard" href="https://github.com/mdn/content/commit/f7dae62645a2c735ed6f6ed63f664bf279fdfc4b"><tt>f7dae62</tt></a></li>
+<li>Document last modified: 2022-09-09T05:19:45.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[fullscreen] Document user activation requirement of the Fullscreen API]]></title>
             <link>https://github.com/mdn/content/issues/22303</link>
@@ -73,38 +115,6 @@ Once activated, it submits a form <a href="https://developer.mozilla.org/en-US/d
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/button/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/button/index.md</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/7594b50698a76ce79209b159835e615052915723/hovercard" href="https://github.com/mdn/content/commit/7594b50698a76ce79209b159835e615052915723"><tt>7594b50</tt></a></li>
 <li>Document last modified: 2022-10-31T06:32:10.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[html] Event documentation no longer depicts "bubbles" information.]]></title>
-            <link>https://github.com/mdn/content/issues/22198</link>
-            <guid>https://github.com/mdn/content/issues/22198</guid>
-            <pubDate>Wed, 09 Nov 2022 17:11:05 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/invalid_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/invalid_event</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Information about EventInit flags</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">MDN used to have information about event <code class="notranslate">bubbles</code> front-and-center. This is one of the main reasons I look at documentation on events as a developer. In particular, when dealing with form nuance — it's easy to forget whether things like <code class="notranslate">change</code> or <code class="notranslate">input</code> or <code class="notranslate">invalid</code> bubble.</p>
-<p dir="auto">Thanks very much for your consideration!</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">I expect to see a flag depicting whether or not the event <code class="notranslate">bubbles</code>. Here's a screen grab from the way back machine. Here's the live link as well: <a href="https://web.archive.org/web/20210225074714/https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/invalid_event" rel="nofollow">https://web.archive.org/web/20210225074714/https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/invalid_event</a></p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/6611546/200895547-83fd3ae5-8fb3-41de-b5a1-4a654af8f142.png"><img width="1593" alt="Screenshot 2022-11-09 at 9 07 10 AM" src="https://user-images.githubusercontent.com/6611546/200895547-83fd3ae5-8fb3-41de-b5a1-4a654af8f142.png" style="max-width: 100%;"></a></p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">Previous rendering of an example page: <a href="https://web.archive.org/web/20210225074714/https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/invalid_event" rel="nofollow">https://web.archive.org/web/20210225074714/https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/invalid_event</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/htmlinputelement/invalid_event</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/invalid_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/invalid_event</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlinputelement/invalid_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlinputelement/invalid_event/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/a36633398f827c87eb593f9647ed00bf33fd5b34/hovercard" href="https://github.com/mdn/content/commit/a36633398f827c87eb593f9647ed00bf33fd5b34"><tt>a366333</tt></a></li>
-<li>Document last modified: 2022-09-13T19:34:57.000Z</li>
 </ul>
 </details>]]></content:encoded>
         </item>
