@@ -4,10 +4,41 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Wed, 16 Nov 2022 13:47:01 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Nov 2022 20:40:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] dataset is defined on Element not HTMLElement]]></title>
+            <link>https://github.com/mdn/content/issues/22352</link>
+            <guid>https://github.com/mdn/content/issues/22352</guid>
+            <pubDate>Wed, 16 Nov 2022 20:40:40 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The documentation states that the dataset is only available on HTMLElement which seems to be wrong. According to the spec, it is defined on Element</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Element.dataset in the heading instead of HTMLElement.dataset</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://html.spec.whatwg.org/multipage/dom.html#dom-dataset-dev" rel="nofollow">https://html.spec.whatwg.org/multipage/dom.html#dom-dataset-dev</a></p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
+svg.dataset
+// returns DOMStringMap {}
+svg instanceof HTMLElement
+// returns false
+svg instanceof Element
+// returns true"><pre><span class="pl-k">const</span> <span class="pl-s1">svg</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createElementNS</span><span class="pl-kos">(</span><span class="pl-s">'http://www.w3.org/2000/svg'</span><span class="pl-kos">,</span> <span class="pl-s">'svg'</span><span class="pl-kos">)</span>
+<span class="pl-s1">svg</span><span class="pl-kos">.</span><span class="pl-c1">dataset</span>
+<span class="pl-c">// returns DOMStringMap {}</span>
+<span class="pl-s1">svg</span> <span class="pl-k">instanceof</span> <span class="pl-v">HTMLElement</span>
+<span class="pl-c">// returns false</span>
+<span class="pl-s1">svg</span> <span class="pl-k">instanceof</span> <span class="pl-v">Element</span>
+<span class="pl-c">// returns true</span></pre></div>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, uievents] Document.activeElement : The lack of HTMLAnchorElement and macOS on a case by case basis]]></title>
             <link>https://github.com/mdn/content/issues/22338</link>
