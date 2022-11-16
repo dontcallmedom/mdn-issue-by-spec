@@ -4,10 +4,41 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Wed, 16 Nov 2022 13:47:01 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Nov 2022 16:03:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[dom] The description of isConnected doesn't match the spec text]]></title>
+            <link>https://github.com/mdn/content/issues/22346</link>
+            <guid>https://github.com/mdn/content/issues/22346</guid>
+            <pubDate>Wed, 16 Nov 2022 16:03:48 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/isConnected" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Node/isConnected</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The HTML spec has the definition as "An element is connected if its shadow-including root is a document."</p>
+<p dir="auto">The MDN description seems to indicate that a node being connected indirectly to a ShadowRoot is sufficient to be considered "connected", the ShadowRoot doesn't need to be indirectly connected to a Document. This doesn't match the spec text which requires it to be indirectly connected to a Document.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Perhaps the following text: "The read-only isConnected property of the Node interface returns a boolean indicating whether the node is connected (directly or indirectly) to the Document object".</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://dom.spec.whatwg.org/#connected" rel="nofollow">https://dom.spec.whatwg.org/#connected</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/node/isconnected</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/isConnected" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Node/isConnected</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/node/isconnected/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/node/isconnected/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/20a58f1383da377a634b48902bff9b4fde9227c3/hovercard" href="https://github.com/mdn/content/commit/20a58f1383da377a634b48902bff9b4fde9227c3"><tt>20a58f1</tt></a></li>
+<li>Document last modified: 2022-09-11T19:36:48.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, uievents] Document.activeElement : The lack of HTMLAnchorElement and macOS on a case by case basis]]></title>
             <link>https://github.com/mdn/content/issues/22338</link>
@@ -101,48 +132,6 @@ Alternatively, the sentence the <em>"Often activeElement will return a <a href="
 </tr>
 </tbody>
 </table>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[url] URL.pathname ambiguous: does it permit or not permit the empty string?]]></title>
-            <link>https://github.com/mdn/content/issues/22333</link>
-            <guid>https://github.com/mdn/content/issues/22333</guid>
-            <pubDate>Wed, 16 Nov 2022 07:06:49 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/pathname" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/URL/pathname</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">URL.pathname</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">It is unclear whether you mean (A):</p>
-<blockquote>
-<p dir="auto">The pathname property of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/URL" rel="nofollow">URL</a> interface is<br>
-(a string containing an initial / followed by the path of the URL, not including the query string or fragment)<br>
-(or the empty string if there is no path).</p>
-</blockquote>
-<p dir="auto">or (B):</p>
-<blockquote>
-<p dir="auto">The pathname property of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/URL" rel="nofollow">URL</a> interface is<br>
-a string containing an initial / followed by<br>
-(the path of the URL, not including the query string or fragment (or the empty string if there is no path)).</p>
-</blockquote>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Clarification as to whether the pathname must always begin with a leading <code class="notranslate">/</code>, or if it permits the empty string.</p>
-<p dir="auto">In reading (A) above, it permits the empty string. In reading (B) above, it does <strong>not</strong> permit the empty string.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/url/pathname</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/pathname" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/URL/pathname</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/url/pathname/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/url/pathname/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/f7dae62645a2c735ed6f6ed63f664bf279fdfc4b/hovercard" href="https://github.com/mdn/content/commit/f7dae62645a2c735ed6f6ed63f664bf279fdfc4b"><tt>f7dae62</tt></a></li>
-<li>Document last modified: 2022-09-09T05:19:45.000Z</li>
-</ul>
-</details>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[fullscreen] Document user activation requirement of the Fullscreen API]]></title>
