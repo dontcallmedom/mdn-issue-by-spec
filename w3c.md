@@ -4,8 +4,6 @@
 
 * [[css-logical-1] Spec link: defined in multiple places](https://github.com/mdn/content/issues/22271) (2022-11-13T19:09:15Z)
   
-* [[encoding] TextDecoderOptions.ignoreBOM is missing](https://github.com/mdn/content/issues/22268) (2022-11-13T15:14:01Z)
-  
 * [[css-backgrounds-4] Incorrect formal definition for background-position-x Percentages](https://github.com/mdn/content/issues/22262) (2022-11-13T02:32:58Z)
   
 * [[compositing-2] Examples of isolation hard to understand](https://github.com/mdn/content/issues/22185) (2022-11-09T11:56:05Z)
@@ -116,7 +114,7 @@
   
 * [[html, gamepad] Double checking the gamepad docs are correct](https://github.com/mdn/content/issues/14874) (2022-04-11T03:02:09Z)
   
-* [[hr-time-3, user-timing-2, performance-timeline-2, resource-timing-2] Topic on setting HTTP priority of resource requests](https://github.com/mdn/content/issues/14803) (2022-04-08T02:53:08Z)
+* [[hr-time-3, performance-timeline-2, resource-timing-2, user-timing-2] Topic on setting HTTP priority of resource requests](https://github.com/mdn/content/issues/14803) (2022-04-08T02:53:08Z)
   
 * [[cssom-1] Issue with "CSSRule": Missing links for CSSDocumentRule, CSSFontFeatureValuesRule and CSSViewportRule](https://github.com/mdn/content/issues/14697) (2022-04-05T09:43:31Z)
   
@@ -194,7 +192,7 @@
   
 * [[service-workers-1] Issue with "ServiceWorkerContainer.register()": Second example unclear on intent](https://github.com/mdn/content/issues/10547) (2021-11-15T14:17:23Z)
   
-* [[hr-time-3, user-timing-2, performance-timeline-2, resource-timing-2] Content suggestion: performance glossary term: largest contentful paint/First Input Delay](https://github.com/mdn/content/issues/10196) (2021-11-01T04:46:51Z)
+* [[hr-time-3, performance-timeline-2, resource-timing-2, user-timing-2] Content suggestion: performance glossary term: largest contentful paint/First Input Delay](https://github.com/mdn/content/issues/10196) (2021-11-01T04:46:51Z)
   
 * [[webrtc] https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Using_DTMF is using legacy APIs](https://github.com/mdn/content/issues/10020) (2021-10-22T18:00:50Z)
   
@@ -237,8 +235,6 @@
 * [[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator](https://github.com/mdn/content/issues/6856) (2021-07-13T13:35:32Z)
   
 * [[selection-api] Issue with "Selection.setBaseAndExtent()": behaviour on text nodes](https://github.com/mdn/content/issues/6623) (2021-07-06T12:24:35Z)
-  
-* [[user-timing-2] Issue with "performance.measure()": Missing changes in the latest User Timing Level 3 working draft as implemented by Chrome and Safari](https://github.com/mdn/content/issues/6441) (2021-06-29T03:24:17Z)
   
 * [[css-lists-3] Issue with "counter-reset": the example is a bit confusing](https://github.com/mdn/content/issues/6277) (2021-06-23T22:25:29Z)
   
