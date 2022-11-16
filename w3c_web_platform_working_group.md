@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Platform Working Group. [![RSS feed for W3C Web Platform Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[DOM-Parsing] Why portal element is not defined by a void tag?](https://github.com/mdn/content/issues/22328) (2022-11-16T00:18:39Z)
-  
 * [[WebIDL-1] “Using the Web Storage API” has deprecated “DOMException.code” in example](https://github.com/mdn/content/issues/21910) (2022-10-28T12:08:01Z)
   
 * [[DOM-Parsing] No mention of comments in reference](https://github.com/mdn/content/issues/21761) (2022-10-23T12:49:25Z)
