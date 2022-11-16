@@ -4,10 +4,45 @@
         <title>W3C Web Platform Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_platform_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Platform Working Group</description>
-        <lastBuildDate>Fri, 28 Oct 2022 12:08:01 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Nov 2022 00:18:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[DOM-Parsing] Why portal element is not defined by a void tag?]]></title>
+            <link>https://github.com/mdn/content/issues/22328</link>
+            <guid>https://github.com/mdn/content/issues/22328</guid>
+            <pubDate>Wed, 16 Nov 2022 00:18:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/portal" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/portal</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/portal#basic_example" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/portal#basic_example</a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Your definition of <code class="notranslate">&lt;portal&gt;</code>:</p>
+<blockquote>
+<p dir="auto">The  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" rel="nofollow">HTML</a> element enables the embedding of another HTML page into the current one for the purposes of allowing smoother navigation into new pages.</p>
+</blockquote>
+<p dir="auto">The current example:</p>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;portal id=&quot;exampleportal&quot; src=&quot;https://example.com/&quot;&gt;&lt;/portal&gt;"><pre><span class="pl-kos">&lt;</span><span class="pl-ent">portal</span> <span class="pl-c1">id</span>="<span class="pl-s">exampleportal</span>" <span class="pl-c1">src</span>="<span class="pl-s">https://example.com/</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">portal</span><span class="pl-kos">&gt;</span></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;portal id=&quot;exampleportal&quot; src=&quot;https://example.com/&quot;/&gt;"><pre><span class="pl-kos">&lt;</span><span class="pl-ent">portal</span> <span class="pl-c1">id</span>="<span class="pl-s">exampleportal</span>" <span class="pl-c1">src</span>="<span class="pl-s">https://example.com/</span>"/&gt;</pre></div>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">NO.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">NO.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/element/portal</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/portal" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/portal</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/portal/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/portal/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/8507170b71a6612358bdf2d9ec47b4e9b825bd78/hovercard" href="https://github.com/mdn/content/commit/8507170b71a6612358bdf2d9ec47b4e9b825bd78"><tt>8507170</tt></a></li>
+<li>Document last modified: 2022-11-01T04:26:00.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[WebIDL-1] “Using the Web Storage API” has deprecated “DOMException.code” in example]]></title>
             <link>https://github.com/mdn/content/issues/21910</link>

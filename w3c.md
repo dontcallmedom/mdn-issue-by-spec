@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[DOM-Parsing] Why portal element is not defined by a void tag?](https://github.com/mdn/content/issues/22328) (2022-11-16T00:18:39Z)
+  
 * [[css-logical-1] Spec link: defined in multiple places](https://github.com/mdn/content/issues/22271) (2022-11-13T19:09:15Z)
   
 * [[encoding] TextDecoderOptions.ignoreBOM is missing](https://github.com/mdn/content/issues/22268) (2022-11-13T15:14:01Z)
