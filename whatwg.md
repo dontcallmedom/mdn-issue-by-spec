@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html, uievents] Document.activeElement : The lack of HTMLAnchorElement and macOS on a case by case basis](https://github.com/mdn/content/issues/22338) (2022-11-16T13:47:01Z)
+  
 * [[url] URL.pathname ambiguous: does it permit or not permit the empty string?](https://github.com/mdn/content/issues/22333) (2022-11-16T07:06:49Z)
   
 * [[fullscreen] Document user activation requirement of the Fullscreen API](https://github.com/mdn/content/issues/22303) (2022-11-15T12:32:26Z)
