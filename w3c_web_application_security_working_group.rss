@@ -4,10 +4,38 @@
         <title>W3C Web Application Security Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_application_security_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Application Security Working Group</description>
-        <lastBuildDate>Sun, 06 Mar 2022 08:14:03 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Nov 2022 18:49:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[permissions-policy-1] Intent to document: Permissions-Policy]]></title>
+            <link>https://github.com/mdn/content/issues/22347</link>
+            <guid>https://github.com/mdn/content/issues/22347</guid>
+            <pubDate>Wed, 16 Nov 2022 18:49:22 GMT</pubDate>
+            <content:encoded><![CDATA[<p dir="auto">It's time to play with this one again ;-)</p>
+<p dir="auto">There is a change to Chromium that adds wildcards to permission policy origins: <a href="https://chromestatus.com/feature/5170361717489664" rel="nofollow">https://chromestatus.com/feature/5170361717489664</a>. Unfortunately, MDN currently only documents <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy" rel="nofollow">Feature-Policy</a>, and it wouldn't make a lot of sense to put this change inside those docs.</p>
+<p dir="auto">So I'm going to have a go at getting <code class="notranslate">Permissions-Policy</code> documented once and for all.</p>
+<p dir="auto">Things to do:</p>
+<ul dir="auto">
+<li>Change all the <code class="notranslate">Feature-Policy</code> BCD to <code class="notranslate">Permissions-policy</code> and update the support versions. add alternative names for the browsers that did support <code class="notranslate">Feature-Policy</code> items (Fx and Saf only supported it via the <code class="notranslate">&lt;iframe allow=""&gt;</code> attribute.)</li>
+<li>Update the <code class="notranslate">Feature-Policy</code> header page and its directive pages to say <code class="notranslate">Permissions-Policy</code>. <a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jpmedley/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jpmedley">@jpmedley</a> nearly got there a while ago — see <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="795458119" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/1831" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/1831/hovercard" href="https://github.com/mdn/content/issues/1831">#1831</a>, and I'll definitely use that list as a basis for my work.</li>
+<li>Add any new directives that are missing</li>
+<li>Make sure the landing pages are updated to change names and talk about the new syntax. See
+<ul dir="auto">
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Feature_Policy/Using_Feature_Policy" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Feature_Policy/Using_Feature_Policy</a></li>
+</ul>
+</li>
+<li>Make sure the Permissions-Policy landing page is updated to talk about the relationship between it and the Permissions API; see <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1137959176" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/13003" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/13003/hovercard" href="https://github.com/mdn/content/issues/13003">#13003</a></li>
+<li>Document <a href="https://chromestatus.com/feature/5170361717489664" rel="nofollow">https://chromestatus.com/feature/5170361717489664</a></li>
+</ul>
+<p dir="auto">Useful pages:</p>
+<ol dir="auto">
+<li><a href="https://developer.chrome.com/en/docs/privacy-sandbox/permissions-policy/" rel="nofollow">https://developer.chrome.com/en/docs/privacy-sandbox/permissions-policy/</a></li>
+<li><a href="https://github.com/w3c/webappsec-permissions-policy/blob/main/features.md">https://github.com/w3c/webappsec-permissions-policy/blob/main/features.md</a></li>
+</ol>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[permissions-policy-1] "Feature-Policy": execution-while-not-rendered and execution-while-out-of-viewport documentation needs to be written]]></title>
             <link>https://github.com/mdn/content/issues/13556</link>
