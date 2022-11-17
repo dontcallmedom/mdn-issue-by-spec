@@ -8,6 +8,8 @@
   
 * [[html, uievents] Document.activeElement : The lack of HTMLAnchorElement and macOS on a case by case basis](https://github.com/mdn/content/issues/22338) (2022-11-16T13:47:01Z)
   
+* [[url] URL.pathname ambiguous: does it permit or not permit the empty string?](https://github.com/mdn/content/issues/22333) (2022-11-16T07:06:49Z)
+  
 * [[fullscreen] Document user activation requirement of the Fullscreen API](https://github.com/mdn/content/issues/22303) (2022-11-15T12:32:26Z)
   
 * [[html] No mention of JavaScript on this page, when it's one the only way to make it do something (other than using it inside of a form)](https://github.com/mdn/content/issues/22274) (2022-11-14T00:20:12Z)
