@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[ecmascript] Document description error](https://github.com/mdn/content/issues/22389) (2022-11-18T03:30:34Z)
+* [[ecmascript] Default exports do not overwrite each other](https://github.com/mdn/content/issues/22389) (2022-11-18T03:30:34Z)
   
 * [[ecmascript] Document import assertions](https://github.com/mdn/content/issues/19220) (2022-08-06T05:08:53Z)
   
