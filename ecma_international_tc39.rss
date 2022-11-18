@@ -4,10 +4,52 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Sat, 06 Aug 2022 05:08:53 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 18 Nov 2022 03:30:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Document description error]]></title>
+            <link>https://github.com/mdn/content/issues/22389</link>
+            <guid>https://github.com/mdn/content/issues/22389</guid>
+            <pubDate>Fri, 18 Nov 2022 03:30:34 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">ES Module - Export</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto"><code class="notranslate">// each export overwrites the previous one</code></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/51586637/202610167-23010ffe-b627-41f8-b4fe-d811786cf331.png"><img src="https://user-images.githubusercontent.com/51586637/202610167-23010ffe-b627-41f8-b4fe-d811786cf331.png" alt="image" style="max-width: 100%;"></a></p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A module can only have one default export, duplicate default exports will result in syntax errors.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="export default function A() {}
+
+export default class B {}"><pre><span class="pl-k">export</span> <span class="pl-k">default</span> <span class="pl-k">function</span> <span class="pl-v">A</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span><span class="pl-kos">}</span>
+
+<span class="pl-k">export</span> <span class="pl-k">default</span> <span class="pl-k">class</span> <span class="pl-v">B</span> <span class="pl-kos">{</span><span class="pl-kos">}</span></pre></div>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/51586637/202610454-e23a4e92-72c2-46c9-972f-0ccc5eaca19d.png"><img src="https://user-images.githubusercontent.com/51586637/202610454-e23a4e92-72c2-46c9-972f-0ccc5eaca19d.png" alt="image" style="max-width: 100%;"></a></p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="export default function () { /* … */ }
+
+export default class { /* … */ }"><pre><span class="pl-k">export</span> <span class="pl-k">default</span> <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span> <span class="pl-c">/* … */</span> <span class="pl-kos">}</span>
+
+<span class="pl-k">export</span> <span class="pl-k">default</span> <span class="pl-k">class</span> <span class="pl-kos">{</span> <span class="pl-c">/* … */</span> <span class="pl-kos">}</span></pre></div>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/51586637/202610756-edd02990-6a3c-4cfe-b48d-0275b34f9c9c.png"><img src="https://user-images.githubusercontent.com/51586637/202610756-edd02990-6a3c-4cfe-b48d-0275b34f9c9c.png" alt="image" style="max-width: 100%;"></a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/statements/export</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/export/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/export/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/1533276490d15cff6ddcd201fc05562180058a99/hovercard" href="https://github.com/mdn/content/commit/1533276490d15cff6ddcd201fc05562180058a99"><tt>1533276</tt></a></li>
+<li>Document last modified: 2022-09-13T07:11:16.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Document import assertions]]></title>
             <link>https://github.com/mdn/content/issues/19220</link>
