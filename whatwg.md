@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] <ol> element missing from attribute reference listing elements that can have a 'type' attribute](https://github.com/mdn/content/issues/22378) (2022-11-17T19:26:26Z)
-  
 * [[html] dataset is defined on Element not HTMLElement](https://github.com/mdn/content/issues/22352) (2022-11-16T20:40:40Z)
   
 * [[dom] The description of isConnected doesn't match the spec text](https://github.com/mdn/content/issues/22346) (2022-11-16T16:03:48Z)
