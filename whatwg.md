@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[console] Broken link: no "Usage" section in "console" page](https://github.com/mdn/content/issues/22398) (2022-11-18T16:26:25Z)
+  
 * [[html] dataset is defined on Element not HTMLElement](https://github.com/mdn/content/issues/22352) (2022-11-16T20:40:40Z)
   
 * [[dom] The description of isConnected doesn't match the spec text](https://github.com/mdn/content/issues/22346) (2022-11-16T16:03:48Z)
@@ -125,8 +127,6 @@
 * [[dom] Issue with "Event.timeStamp": information in the Value section seems to contradict the output values in the Reduced time precision](https://github.com/mdn/content/issues/10839) (2021-11-28T19:13:34Z)
   
 * [[html] Issue with "GlobalEventHandlers.onresize": the logged height does not change when changing the height of the browser window. (The width logger works.)](https://github.com/mdn/content/issues/10683) (2021-11-21T22:37:44Z)
-  
-* [[html] Issue with "Document.hasFocus()": `setInterval(checkPageFocus, 300)` is not a very efficient method.](https://github.com/mdn/content/issues/10312) (2021-11-05T10:26:12Z)
   
 * [[html] Issue with "HTMLFormElement: submit event": Bubbles description is confusing](https://github.com/mdn/content/issues/10069) (2021-10-25T05:37:18Z)
   

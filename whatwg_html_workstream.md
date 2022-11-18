@@ -96,8 +96,6 @@
   
 * [[html] Issue with "GlobalEventHandlers.onresize": the logged height does not change when changing the height of the browser window. (The width logger works.)](https://github.com/mdn/content/issues/10683) (2021-11-21T22:37:44Z)
   
-* [[html] Issue with "Document.hasFocus()": `setInterval(checkPageFocus, 300)` is not a very efficient method.](https://github.com/mdn/content/issues/10312) (2021-11-05T10:26:12Z)
-  
 * [[html] Issue with "HTMLFormElement: submit event": Bubbles description is confusing](https://github.com/mdn/content/issues/10069) (2021-10-25T05:37:18Z)
   
 * [[html, uievents] Replace hand-written compat sections with BCD tables](https://github.com/mdn/content/issues/9972) (2021-10-21T07:40:45Z)
