@@ -4,10 +4,56 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Fri, 18 Nov 2022 16:26:25 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 20 Nov 2022 20:23:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Closing dialog with Escape key]]></title>
+            <link>https://github.com/mdn/content/issues/22430</link>
+            <guid>https://github.com/mdn/content/issues/22430</guid>
+            <pubDate>Sun, 20 Nov 2022 20:23:05 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog#advanced_example" rel="nofollow">Advanced example</a> section</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The <code class="notranslate">&lt;dialog&gt;</code> element has a strange behavior. If you close the dialog using the Escape key or a button without a <code class="notranslate">value</code> attribute then the <code class="notranslate">returnValue</code> property is left unchanged. Any dialog <code class="notranslate">close</code> event handler that relies on the <code class="notranslate">returnValue</code> to determine which button was clicked can easily come to the wrong conclusion.</p>
+<p dir="auto">Steps to reproduce the problem in the example given on this page.</p>
+<ol dir="auto">
+<li>Click the <strong>Update details</strong> button.</li>
+<li>Click <strong>Confirm</strong>. You will see the message <code class="notranslate">default button clicked</code>.</li>
+<li>Click the <strong>Update details</strong> button again.</li>
+<li>Hit <code class="notranslate">Esc</code> key to close the dialog.</li>
+<li>The message will incorrectly show <code class="notranslate">default button clicked</code>. The timestamp will be updated.</li>
+</ol>
+<p dir="auto">This is a most unusual behavior for the <code class="notranslate">&lt;dialog&gt;</code> element that borders on being a defect. In any case, the documentation needs to point this out. One way to work around this issue is to reset the <code class="notranslate">returnValue</code> to undefined before opening the dialog. For example:</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="favDialog.returnValue = undefined;
+favDialog.showModal();"><pre><span class="pl-s1">favDialog</span><span class="pl-kos">.</span><span class="pl-c1">returnValue</span> <span class="pl-c1">=</span> <span class="pl-c1">undefined</span><span class="pl-kos">;</span>
+<span class="pl-s1">favDialog</span><span class="pl-kos">.</span><span class="pl-en">showModal</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<p dir="auto">Now, when you close the dialog using the <code class="notranslate">Esc</code> key the <code class="notranslate">returnValue</code> will be undefined.</p>
+<p dir="auto">You can also define the cancel button without a value.</p>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;button&gt;Cancel&lt;/button&gt;"><pre><span class="pl-kos">&lt;</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span>Cancel<span class="pl-kos">&lt;/</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span></pre></div>
+<p dir="auto">Now the cancel button and the <code class="notranslate">Esc</code> key will behave the same way. That is, they will close the dialog with the <code class="notranslate">returnValue</code> set to undefined.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The effect of the <code class="notranslate">Esc</code> key or a button without a <code class="notranslate">value</code> on <code class="notranslate">returnValue</code> needs to be discussed. Almost any use of a dialog is vulnerable to defect unless this issue is addressed correctly.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/element/dialog</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/dialog/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/dialog/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/7594b50698a76ce79209b159835e615052915723/hovercard" href="https://github.com/mdn/content/commit/7594b50698a76ce79209b159835e615052915723"><tt>7594b50</tt></a></li>
+<li>Document last modified: 2022-10-31T06:32:10.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[console] Broken link: no "Usage" section in "console" page]]></title>
             <link>https://github.com/mdn/content/issues/22398</link>
