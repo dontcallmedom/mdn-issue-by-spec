@@ -14,21 +14,32 @@
             <guid>https://github.com/mdn/content/issues/22347</guid>
             <pubDate>Wed, 16 Nov 2022 18:49:22 GMT</pubDate>
             <content:encoded><![CDATA[<p dir="auto">It's time to play with this one again ;-)</p>
-<p dir="auto">There is a change to Chromium that adds wildcards to permission policy origins: <a href="https://chromestatus.com/feature/5170361717489664" rel="nofollow">https://chromestatus.com/feature/5170361717489664</a>. Unfortunately, MDN currently only documents <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy" rel="nofollow">Feature-Policy</a>, and it wouldn't make a lot of sense to put this change inside those docs.</p>
+<p dir="auto">There is a change to Chromium that adds wildcards to <code class="notranslate">Permission-Policy</code> origins: <a href="https://chromestatus.com/feature/5170361717489664" rel="nofollow">https://chromestatus.com/feature/5170361717489664</a>. Unfortunately, MDN currently only documents <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy" rel="nofollow">Feature-Policy</a>, and it wouldn't make a lot of sense to put this change inside those docs.</p>
 <p dir="auto">So I'm going to have a go at getting <code class="notranslate">Permissions-Policy</code> documented once and for all.</p>
 <p dir="auto">Things to do:</p>
 <ul dir="auto">
-<li>Change all the <code class="notranslate">Feature-Policy</code> BCD to <code class="notranslate">Permissions-policy</code> and update the support versions. add alternative names for the browsers that did support <code class="notranslate">Feature-Policy</code> items (Fx and Saf only supported it via the <code class="notranslate">&lt;iframe allow=""&gt;</code> attribute.)</li>
-<li>Update the <code class="notranslate">Feature-Policy</code> header page and its directive pages to say <code class="notranslate">Permissions-Policy</code>. <a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jpmedley/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jpmedley">@jpmedley</a> nearly got there a while ago — see <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="795458119" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/1831" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/1831/hovercard" href="https://github.com/mdn/content/issues/1831">#1831</a>, and I'll definitely use that list as a basis for my work.</li>
+<li>Change all the <code class="notranslate">Feature-Policy</code> BCD to <code class="notranslate">Permissions-Policy</code> and update the support versions. add alternative names for the browsers that did support <code class="notranslate">Feature-Policy</code> items (Fx and Saf only supported it via the <code class="notranslate">&lt;iframe allow=""&gt;</code> attribute.)
+<ul dir="auto">
+<li>For the moment, keep <code class="notranslate">Feature-Policy</code> <em>and</em> <code class="notranslate">Permissions-Policy</code> so that if this gets merged and used on the site before the content updates are merged, the <code class="notranslate">Feature-Policy</code> pages don't break.</li>
+<li>Include an entry for the new Chrome 108 feature — “Wildcards in origin values”</li>
+</ul>
+</li>
+<li>Update the <code class="notranslate">Feature-Policy</code> header page and its directive pages to say <code class="notranslate">Permissions-Policy</code>. <a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/jpmedley/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/jpmedley">@jpmedley</a> nearly got there a while ago — see <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="795458119" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/1831" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/1831/hovercard" href="https://github.com/mdn/content/issues/1831">#1831</a>, and I'll definitely use that list as a basis for my work.
+<ul dir="auto">
+<li>Need to move these pages using the <code class="notranslate">move</code> command (see <a href="https://github.com/chrisdavidmills/content/blob/main/CONTRIBUTING.md#moving-documents">https://github.com/chrisdavidmills/content/blob/main/CONTRIBUTING.md#moving-documents</a>) so that the redirects are set up successfully.</li>
+</ul>
+</li>
 <li>Add any new directives that are missing</li>
 <li>Make sure the landing pages are updated to change names and talk about the new syntax. See
 <ul dir="auto">
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Feature_Policy" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Feature_Policy</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Feature_Policy/Using_Feature_Policy" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Feature_Policy/Using_Feature_Policy</a></li>
+<li>Again, these need to be moved with the <code class="notranslate">move</code> comment</li>
 </ul>
 </li>
 <li>Make sure the Permissions-Policy landing page is updated to talk about the relationship between it and the Permissions API; see <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1137959176" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/13003" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/13003/hovercard" href="https://github.com/mdn/content/issues/13003">#13003</a></li>
 <li>Document <a href="https://chromestatus.com/feature/5170361717489664" rel="nofollow">https://chromestatus.com/feature/5170361717489664</a></li>
+<li>Update the <a href="https://github.com/mdn/yari/blob/main/kumascript/macros/HTTPSidebar.ejs"><code class="notranslate">HTTPSidebar</code></a> macro so that it links to the new <code class="notranslate">Permissions-Policy</code> pages, not <code class="notranslate">Feature-Policy</code>.</li>
 </ul>
 <p dir="auto">Useful pages:</p>
 <ol dir="auto">
