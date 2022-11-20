@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[webhid] Confusing phrase "input report" is used for HIDConnectionEvent](https://github.com/mdn/content/issues/22419) (2022-11-20T02:34:52Z)
+  
 * [[css-ui-4] Not working in Opera 93.](https://github.com/mdn/content/issues/22404) (2022-11-18T23:16:51Z)
   
 * [[permissions-policy-1] Intent to document: Permissions-Policy](https://github.com/mdn/content/issues/22347) (2022-11-16T18:49:22Z)
