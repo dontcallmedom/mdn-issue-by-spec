@@ -8,8 +8,6 @@
   
 * [[webhid] Confusing phrase "input report" is used for HIDConnectionEvent](https://github.com/mdn/content/issues/22419) (2022-11-20T02:34:52Z)
   
-* [[css-ui-4] Not working in Opera 93 on Windows 10.](https://github.com/mdn/content/issues/22404) (2022-11-18T23:16:51Z)
-  
 * [[permissions-policy-1] Intent to document: Permissions-Policy](https://github.com/mdn/content/issues/22347) (2022-11-16T18:49:22Z)
   
 * [[html, uievents] Document.activeElement : The lack of HTMLAnchorElement and macOS on a case by case basis](https://github.com/mdn/content/issues/22338) (2022-11-16T13:47:01Z)
