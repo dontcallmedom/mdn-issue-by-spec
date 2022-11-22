@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[IndexedDB-3] The description for IDBRequest.result may be wrong](https://github.com/mdn/content/issues/22489) (2022-11-22T23:30:45Z)
+  
 * [[SVG11, html, FileAPI] createImageBitmap method lists elements as arguments](https://github.com/mdn/content/issues/22447) (2022-11-21T12:32:28Z)
   
 * [[webhid] HIDDevice.sendReport(): "sample below" without any samples below](https://github.com/mdn/content/issues/22426) (2022-11-20T10:57:29Z)

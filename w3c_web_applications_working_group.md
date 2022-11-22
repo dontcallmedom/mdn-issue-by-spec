@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[IndexedDB-3] The description for IDBRequest.result may be wrong](https://github.com/mdn/content/issues/22489) (2022-11-22T23:30:45Z)
+  
 * [[SVG11, html, FileAPI] createImageBitmap method lists elements as arguments](https://github.com/mdn/content/issues/22447) (2022-11-21T12:32:28Z)
   
 * [[html, uievents] Document.activeElement : The lack of HTMLAnchorElement and macOS on a case by case basis](https://github.com/mdn/content/issues/22338) (2022-11-16T13:47:01Z)
