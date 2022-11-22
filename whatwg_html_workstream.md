@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Expanding Alt-ernative](https://github.com/mdn/content/issues/22475) (2022-11-22T13:59:28Z)
+  
 * [[html] Missing page: navigator.unregisterProtocolHandler(scheme, url)](https://github.com/mdn/content/issues/22458) (2022-11-21T17:20:28Z)
   
 * [[SVG11, html, FileAPI] createImageBitmap method lists elements as arguments](https://github.com/mdn/content/issues/22447) (2022-11-21T12:32:28Z)
