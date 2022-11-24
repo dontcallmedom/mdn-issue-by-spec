@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[DOM-Parsing] Meaning of Hypertext](https://github.com/mdn/content/issues/22522) (2022-11-24T18:09:35Z)
-  
 * [[css-fonts-5] getComputedStyle() does not respect the Fallback weights algorithm](https://github.com/mdn/content/issues/22496) (2022-11-23T12:04:06Z)
   
 * [[IndexedDB-3] The description for IDBRequest.result may be wrong](https://github.com/mdn/content/issues/22489) (2022-11-22T23:30:45Z)
