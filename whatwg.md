@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Example custom select is not available on the keychain](https://github.com/mdn/content/issues/22513) (2022-11-24T13:16:19Z)
+  
 * [[html] Missing page: navigator.unregisterProtocolHandler(scheme, url)](https://github.com/mdn/content/issues/22458) (2022-11-21T17:20:28Z)
   
 * [[SVG11, html, FileAPI] createImageBitmap method lists elements as arguments](https://github.com/mdn/content/issues/22447) (2022-11-21T12:32:28Z)
