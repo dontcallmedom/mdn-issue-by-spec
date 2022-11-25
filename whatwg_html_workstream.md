@@ -16,8 +16,6 @@
   
 * [[html] No mention of JavaScript on this page, when it's one the only way to make it do something (other than using it inside of a form)](https://github.com/mdn/content/issues/22274) (2022-11-14T00:20:12Z)
   
-* [[html]  rejectionhandled event doesn't fire on every handled rejection, but only if  unhandledrejection events was triggered](https://github.com/mdn/content/issues/22177) (2022-11-09T04:52:54Z)
-  
 * [[html] Document HTMLInputElement's (type=file) cancel event](https://github.com/mdn/content/issues/22157) (2022-11-08T13:02:34Z)
   
 * [[html] contenteditable missing some allowed values description](https://github.com/mdn/content/issues/22048) (2022-11-04T06:39:50Z)
