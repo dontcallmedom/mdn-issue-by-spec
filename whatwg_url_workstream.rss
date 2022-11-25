@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>WHATWG URL Workstream-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_url_workstream.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG URL Workstream</description>
+        <lastBuildDate>Fri, 25 Nov 2022 12:18:02 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[url] The new URL object detects http://www true.]]></title>
+            <link>https://github.com/mdn/content/issues/22536</link>
+            <guid>https://github.com/mdn/content/issues/22536</guid>
+            <pubDate>Fri, 25 Nov 2022 12:18:02 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/URL/URL</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The new URL object detects <a href="http://www" rel="nofollow">http://www</a> true.</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">While using the new URL, I found that it became true even at <a href="https://www" rel="nofollow">https://www</a>.</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function isHttpUrl(string) {
+    let url;
+    try {
+        url = new URL(string);
+    } catch (e) {
+        return false;
+    }
+    return url.protocol === &quot;http:&quot; || url.protocol === &quot;https:&quot;;
+}
+console.log(isHttpUrl(&quot;https://www&quot;)); // true
+console.log(isHttpUrl(&quot;google.com&quot;)); // false"><pre><span class="pl-k">function</span> <span class="pl-en">isHttpUrl</span><span class="pl-kos">(</span><span class="pl-s1">string</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    <span class="pl-k">let</span> <span class="pl-s1">url</span><span class="pl-kos">;</span>
+    <span class="pl-k">try</span> <span class="pl-kos">{</span>
+        <span class="pl-s1">url</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-c1">URL</span><span class="pl-kos">(</span><span class="pl-s1">string</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span> <span class="pl-k">catch</span> <span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+        <span class="pl-k">return</span> <span class="pl-c1">false</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span>
+    <span class="pl-k">return</span> <span class="pl-s1">url</span><span class="pl-kos">.</span><span class="pl-c1">protocol</span> <span class="pl-c1">===</span> <span class="pl-s">"http:"</span> <span class="pl-c1">||</span> <span class="pl-s1">url</span><span class="pl-kos">.</span><span class="pl-c1">protocol</span> <span class="pl-c1">===</span> <span class="pl-s">"https:"</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-en">isHttpUrl</span><span class="pl-kos">(</span><span class="pl-s">"https://www"</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// true</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-en">isHttpUrl</span><span class="pl-kos">(</span><span class="pl-s">"google.com"</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// false</span></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">This is a new URL object found while looking for alternatives other than regular expressions while creating a function for checking urls.<br>
+But it returns true even for <a href="http://www" rel="nofollow">http://www</a>.<br>
+I'm curious if this is how it works.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/URL/URL</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/url/url</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/URL/URL</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/url/url/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/url/url/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e1353ccd3ea46598308e5208667f276df115e8e3/hovercard" href="https://github.com/mdn/content/commit/e1353ccd3ea46598308e5208667f276df115e8e3"><tt>e1353cc</tt></a></li>
+<li>Document last modified: 2022-10-25T22:36:36.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
