@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] HTML forms `POST` method example gives `403 Forbidden` (via cloudfront)](https://github.com/mdn/content/issues/22560) (2022-11-27T14:57:57Z)
+  
 * [[html] Missing content: validityState.valueMissing](https://github.com/mdn/content/issues/22557) (2022-11-27T02:52:10Z)
   
 * [[html] Example custom select is not available on the keychain](https://github.com/mdn/content/issues/22513) (2022-11-24T13:16:19Z)
