@@ -17,7 +17,7 @@
 <h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
 <p dir="auto">Im am referring to this example currently on<br>
 <a href="https://developer.mozilla.org/en-US/docs/Web/API/WritableStreamDefaultWriter" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WritableStreamDefaultWriter</a>:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const list = document.querySelector('ul');
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const list = document.querySelector('ul');
 
 function sendMessage(message, writableStream) {
 	// defaultWriter is of type WritableStreamDefaultWriter
@@ -79,68 +79,70 @@ const writableStream = new WritableStream({
 }, queuingStrategy);
 
 sendMessage(&quot;Hello, world.&quot;, writableStream);
-"><pre><span class="pl-k">const</span> <span class="pl-s1">list</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">'ul'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+"><pre lang="js" class="notranslate"><code>const list = document.querySelector('ul');
 
-<span class="pl-k">function</span> <span class="pl-en">sendMessage</span><span class="pl-kos">(</span><span class="pl-s1">message</span><span class="pl-kos">,</span> <span class="pl-s1">writableStream</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-	<span class="pl-c">// defaultWriter is of type WritableStreamDefaultWriter</span>
-	<span class="pl-k">const</span> <span class="pl-s1">defaultWriter</span> <span class="pl-c1">=</span> <span class="pl-s1">writableStream</span><span class="pl-kos">.</span><span class="pl-en">getWriter</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-	<span class="pl-k">const</span> <span class="pl-s1">encoder</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">TextEncoder</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-	<span class="pl-k">const</span> <span class="pl-s1">encoded</span> <span class="pl-c1">=</span> <span class="pl-s1">encoder</span><span class="pl-kos">.</span><span class="pl-en">encode</span><span class="pl-kos">(</span><span class="pl-s1">message</span><span class="pl-kos">,</span> <span class="pl-kos">{</span> <span class="pl-c1">stream</span>: <span class="pl-c1">true</span> <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-	<span class="pl-s1">encoded</span><span class="pl-kos">.</span><span class="pl-en">forEach</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">chunk</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-		<span class="pl-s1">defaultWriter</span><span class="pl-kos">.</span><span class="pl-c1">ready</span>
-			<span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-				<span class="pl-k">return</span> <span class="pl-s1">defaultWriter</span><span class="pl-kos">.</span><span class="pl-en">write</span><span class="pl-kos">(</span><span class="pl-s1">chunk</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-			<span class="pl-kos">}</span><span class="pl-kos">)</span>
-			<span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-				<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"Chunk written to sink."</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-			<span class="pl-kos">}</span><span class="pl-kos">)</span>
-			<span class="pl-kos">.</span><span class="pl-en">catch</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">err</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-				<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"Chunk error:"</span><span class="pl-kos">,</span> <span class="pl-s1">err</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-			<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-	<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-	<span class="pl-c">// Call ready again to ensure that all chunks are written</span>
-	<span class="pl-c">//   before closing the writer.</span>
-	<span class="pl-s1">defaultWriter</span><span class="pl-kos">.</span><span class="pl-c1">ready</span>
-		<span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-			<span class="pl-s1">defaultWriter</span><span class="pl-kos">.</span><span class="pl-en">close</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-		<span class="pl-kos">}</span><span class="pl-kos">)</span>
-		<span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-			<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"All chunks written"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-		<span class="pl-kos">}</span><span class="pl-kos">)</span>
-		<span class="pl-kos">.</span><span class="pl-en">catch</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">err</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-			<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"Stream error:"</span><span class="pl-kos">,</span> <span class="pl-s1">err</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-		<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span>
+function sendMessage(message, writableStream) {
+	// defaultWriter is of type WritableStreamDefaultWriter
+	const defaultWriter = writableStream.getWriter();
+	const encoder = new TextEncoder();
+	const encoded = encoder.encode(message, { stream: true });
+	encoded.forEach((chunk) =&gt; {
+		defaultWriter.ready
+			.then(() =&gt; {
+				return defaultWriter.write(chunk);
+			})
+			.then(() =&gt; {
+				console.log("Chunk written to sink.");
+			})
+			.catch((err) =&gt; {
+				console.log("Chunk error:", err);
+			});
+	});
+	// Call ready again to ensure that all chunks are written
+	//   before closing the writer.
+	defaultWriter.ready
+		.then(() =&gt; {
+			defaultWriter.close();
+		})
+		.then(() =&gt; {
+			console.log("All chunks written");
+		})
+		.catch((err) =&gt; {
+			console.log("Stream error:", err);
+		});
+}
 
-<span class="pl-k">const</span> <span class="pl-s1">decoder</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">TextDecoder</span><span class="pl-kos">(</span><span class="pl-s">"utf-8"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-k">const</span> <span class="pl-s1">queuingStrategy</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">CountQueuingStrategy</span><span class="pl-kos">(</span><span class="pl-kos">{</span> <span class="pl-c1">highWaterMark</span>: <span class="pl-c1">1</span> <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-k">let</span> <span class="pl-s1">result</span> <span class="pl-c1">=</span> <span class="pl-s">""</span><span class="pl-kos">;</span>
-<span class="pl-k">const</span> <span class="pl-s1">writableStream</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">WritableStream</span><span class="pl-kos">(</span><span class="pl-kos">{</span>
-	<span class="pl-c">// Implement the sink</span>
-	<span class="pl-en">write</span><span class="pl-kos">(</span><span class="pl-s1">chunk</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-		<span class="pl-k">return</span> <span class="pl-k">new</span> <span class="pl-v">Promise</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">resolve</span><span class="pl-kos">,</span> <span class="pl-s1">reject</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-			<span class="pl-k">var</span> <span class="pl-s1">buffer</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">ArrayBuffer</span><span class="pl-kos">(</span><span class="pl-c1">2</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-			<span class="pl-k">var</span> <span class="pl-s1">view</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Uint16Array</span><span class="pl-kos">(</span><span class="pl-s1">buffer</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-			<span class="pl-s1">view</span><span class="pl-kos">[</span><span class="pl-c1">0</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-s1">chunk</span><span class="pl-kos">;</span>
-			<span class="pl-k">var</span> <span class="pl-s1">decoded</span> <span class="pl-c1">=</span> <span class="pl-s1">decoder</span><span class="pl-kos">.</span><span class="pl-en">decode</span><span class="pl-kos">(</span><span class="pl-s1">view</span><span class="pl-kos">,</span> <span class="pl-kos">{</span> <span class="pl-c1">stream</span>: <span class="pl-c1">true</span> <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-			<span class="pl-k">var</span> <span class="pl-s1">listItem</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createElement</span><span class="pl-kos">(</span><span class="pl-s">'li'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-			<span class="pl-s1">listItem</span><span class="pl-kos">.</span><span class="pl-c1">textContent</span> <span class="pl-c1">=</span> <span class="pl-s">"Chunk decoded: "</span> <span class="pl-c1">+</span> <span class="pl-s1">decoded</span><span class="pl-kos">;</span>
-			<span class="pl-s1">list</span><span class="pl-kos">.</span><span class="pl-en">appendChild</span><span class="pl-kos">(</span><span class="pl-s1">listItem</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-			<span class="pl-s1">result</span> <span class="pl-c1">+=</span> <span class="pl-s1">decoded</span><span class="pl-kos">;</span>
-			<span class="pl-s1">resolve</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-		<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-	<span class="pl-kos">}</span><span class="pl-kos">,</span>
-	<span class="pl-en">close</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-		<span class="pl-k">var</span> <span class="pl-s1">listItem</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createElement</span><span class="pl-kos">(</span><span class="pl-s">'li'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-		<span class="pl-s1">listItem</span><span class="pl-kos">.</span><span class="pl-c1">textContent</span> <span class="pl-c1">=</span> <span class="pl-s">"[MESSAGE RECEIVED] "</span> <span class="pl-c1">+</span> <span class="pl-s1">result</span><span class="pl-kos">;</span>
-		<span class="pl-s1">list</span><span class="pl-kos">.</span><span class="pl-en">appendChild</span><span class="pl-kos">(</span><span class="pl-s1">listItem</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-	<span class="pl-kos">}</span><span class="pl-kos">,</span>
-	<span class="pl-en">abort</span><span class="pl-kos">(</span><span class="pl-s1">err</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-		<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"Sink error:"</span><span class="pl-kos">,</span> <span class="pl-s1">err</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-	<span class="pl-kos">}</span>
-<span class="pl-kos">}</span><span class="pl-kos">,</span> <span class="pl-s1">queuingStrategy</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+const decoder = new TextDecoder("utf-8");
+const queuingStrategy = new CountQueuingStrategy({ highWaterMark: 1 });
+let result = "";
+const writableStream = new WritableStream({
+	// Implement the sink
+	write(chunk) {
+		return new Promise((resolve, reject) =&gt; {
+			var buffer = new ArrayBuffer(2);
+			var view = new Uint16Array(buffer);
+			view[0] = chunk;
+			var decoded = decoder.decode(view, { stream: true });
+			var listItem = document.createElement('li');
+			listItem.textContent = "Chunk decoded: " + decoded;
+			list.appendChild(listItem);
+			result += decoded;
+			resolve();
+		});
+	},
+	close() {
+		var listItem = document.createElement('li');
+		listItem.textContent = "[MESSAGE RECEIVED] " + result;
+		list.appendChild(listItem);
+	},
+	abort(err) {
+		console.log("Sink error:", err);
+	}
+}, queuingStrategy);
 
-<span class="pl-en">sendMessage</span><span class="pl-kos">(</span><span class="pl-s">"Hello, world."</span><span class="pl-kos">,</span> <span class="pl-s1">writableStream</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+sendMessage("Hello, world.", writableStream);
+
+</code></pre></div>
 <p dir="auto">Preliminary note: Note that <code class="notranslate">then</code> is called multiple<br>
 times <em>on the same</em> <code class="notranslate">Promise</code> (branching, not chaining):<br>
 <code class="notranslate">defaultWriter.ready.then</code> is called multiple times.</p>
