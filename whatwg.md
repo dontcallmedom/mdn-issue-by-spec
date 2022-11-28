@@ -14,8 +14,6 @@
   
 * [[html] Closing dialog with Escape key](https://github.com/mdn/content/issues/22430) (2022-11-20T20:23:05Z)
   
-* [[console] Broken link: no "Usage" section in "console" page](https://github.com/mdn/content/issues/22398) (2022-11-18T16:26:25Z)
-  
 * [[html] dataset is defined on Element not HTMLElement](https://github.com/mdn/content/issues/22352) (2022-11-16T20:40:40Z)
   
 * [[dom] The description of isConnected doesn't match the spec text](https://github.com/mdn/content/issues/22346) (2022-11-16T16:03:48Z)
