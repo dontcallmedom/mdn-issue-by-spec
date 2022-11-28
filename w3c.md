@@ -4,8 +4,6 @@
 
 * [[css-fonts-5] getComputedStyle() does not respect the Fallback weights algorithm](https://github.com/mdn/content/issues/22496) (2022-11-23T12:04:06Z)
   
-* [[webhid] HIDDevice.sendReport(): "sample below" without any samples below](https://github.com/mdn/content/issues/22426) (2022-11-20T10:57:29Z)
-  
 * [[webhid] Confusing phrase "input report" is used for HIDConnectionEvent](https://github.com/mdn/content/issues/22419) (2022-11-20T02:34:52Z)
   
 * [[permissions-policy-1] Intent to document: Permissions-Policy](https://github.com/mdn/content/issues/22347) (2022-11-16T18:49:22Z)

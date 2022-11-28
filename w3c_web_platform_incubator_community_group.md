@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Platform Incubator Community Group. [![RSS feed for W3C Web Platform Incubator Community Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[webhid] HIDDevice.sendReport(): "sample below" without any samples below](https://github.com/mdn/content/issues/22426) (2022-11-20T10:57:29Z)
-  
 * [[webhid] Confusing phrase "input report" is used for HIDConnectionEvent](https://github.com/mdn/content/issues/22419) (2022-11-20T02:34:52Z)
   
 * [[file-system-access] File System Access API is incomplete](https://github.com/mdn/content/issues/22000) (2022-11-02T10:18:28Z)

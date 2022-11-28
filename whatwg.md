@@ -16,8 +16,6 @@
   
 * [[html] dataset is defined on Element not HTMLElement](https://github.com/mdn/content/issues/22352) (2022-11-16T20:40:40Z)
   
-* [[dom] The description of isConnected doesn't match the spec text](https://github.com/mdn/content/issues/22346) (2022-11-16T16:03:48Z)
-  
 * [[html, uievents] Document.activeElement : The lack of HTMLAnchorElement and macOS on a case by case basis](https://github.com/mdn/content/issues/22338) (2022-11-16T13:47:01Z)
   
 * [[html] No mention of JavaScript on this page, when it's one the only way to make it do something (other than using it inside of a form)](https://github.com/mdn/content/issues/22274) (2022-11-14T00:20:12Z)
