@@ -4,10 +4,66 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Sat, 06 Aug 2022 05:08:53 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 28 Nov 2022 12:41:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] BigInt replacer/reviver example is not generic]]></title>
+            <link>https://github.com/mdn/content/issues/22573</link>
+            <guid>https://github.com/mdn/content/issues/22573</guid>
+            <pubDate>Mon, 28 Nov 2022 12:41:19 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt#use_within_json" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt#use_within_json</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Use Within JSON</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The given code sample would only work if the JSON has BigInt values in a key named <code class="notranslate">big</code>. This is almost never how you’d do it (you’d check the type of the value instead and make the replacer/reviver generic functions).</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const replacer = (key, value) =&gt; key === &quot;big&quot; ? value.toString() : value;
+
+const data = {
+  number: 1,
+  big: 18014398509481982n,
+};
+const stringified = JSON.stringify(data, replacer);
+
+console.log(stringified);
+// {&quot;number&quot;:1,&quot;big&quot;:&quot;18014398509481982&quot;}"><pre><span class="pl-k">const</span> <span class="pl-en">replacer</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">key</span><span class="pl-kos">,</span> <span class="pl-s1">value</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-s1">key</span> <span class="pl-c1">===</span> <span class="pl-s">"big"</span> ? <span class="pl-s1">value</span><span class="pl-kos">.</span><span class="pl-en">toString</span><span class="pl-kos">(</span><span class="pl-kos">)</span> : <span class="pl-s1">value</span><span class="pl-kos">;</span>
+
+<span class="pl-k">const</span> <span class="pl-s1">data</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span>
+  <span class="pl-c1">number</span>: <span class="pl-c1">1</span><span class="pl-kos">,</span>
+  <span class="pl-c1">big</span>: <span class="pl-c1">18014398509481982n</span><span class="pl-kos">,</span>
+<span class="pl-kos">}</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-s1">stringified</span> <span class="pl-c1">=</span> <span class="pl-c1">JSON</span><span class="pl-kos">.</span><span class="pl-en">stringify</span><span class="pl-kos">(</span><span class="pl-s1">data</span><span class="pl-kos">,</span> <span class="pl-en">replacer</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">stringified</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-c">// {"number":1,"big":"18014398509481982"}</span></pre></div>
+<p dir="auto">Ditto for the reviver.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A generic replacer that people can copy/paste and use. e.g.,</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const data = {
+  small: -9223372036854775808n, 
+  large: 18446744073709551615n
+}
+const replacer = (_key, value) =&gt; typeof value === 'bigint' ? value.toString() : value
+const stringified = JSON.stringify(data, replacer)
+
+console.log(stringified)
+// { &quot;small&quot;: &quot;-9223372036854775808&quot;, &quot;large&quot;: &quot;18446744073709551615&quot; }"><pre><span class="pl-k">const</span> <span class="pl-s1">data</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span>
+  <span class="pl-c1">small</span>: <span class="pl-c1">-</span><span class="pl-c1">9223372036854775808n</span><span class="pl-kos">,</span> 
+  <span class="pl-c1">large</span>: <span class="pl-c1">18446744073709551615n</span>
+<span class="pl-kos">}</span>
+<span class="pl-k">const</span> <span class="pl-en">replacer</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">_key</span><span class="pl-kos">,</span> <span class="pl-s1">value</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-k">typeof</span> <span class="pl-s1">value</span> <span class="pl-c1">===</span> <span class="pl-s">'bigint'</span> ? <span class="pl-s1">value</span><span class="pl-kos">.</span><span class="pl-en">toString</span><span class="pl-kos">(</span><span class="pl-kos">)</span> : <span class="pl-s1">value</span>
+<span class="pl-k">const</span> <span class="pl-s1">stringified</span> <span class="pl-c1">=</span> <span class="pl-c1">JSON</span><span class="pl-kos">.</span><span class="pl-en">stringify</span><span class="pl-kos">(</span><span class="pl-s1">data</span><span class="pl-kos">,</span> <span class="pl-en">replacer</span><span class="pl-kos">)</span>
+
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">stringified</span><span class="pl-kos">)</span>
+<span class="pl-c">// { "small": "-9223372036854775808", "large": "18446744073709551615" }</span></pre></div>
+<p dir="auto">Ditto for the reviver.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Document import assertions]]></title>
             <link>https://github.com/mdn/content/issues/19220</link>
