@@ -12,8 +12,6 @@
   
 * [[html] Missing page: navigator.unregisterProtocolHandler(scheme, url)](https://github.com/mdn/content/issues/22458) (2022-11-21T17:20:28Z)
   
-* [[SVG11, html, FileAPI] createImageBitmap method lists elements as arguments](https://github.com/mdn/content/issues/22447) (2022-11-21T12:32:28Z)
-  
 * [[html] Closing dialog with Escape key](https://github.com/mdn/content/issues/22430) (2022-11-20T20:23:05Z)
   
 * [[console] Broken link: no "Usage" section in "console" page](https://github.com/mdn/content/issues/22398) (2022-11-18T16:26:25Z)
