@@ -2790,35 +2790,6 @@ And the change in Firefox caused by <a href="https://groups.google.com/g/mozilla
 </ul>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-position-3] Issue with "position": Move "Types of positioning" explanation to before position values explanation.]]></title>
-            <link>https://github.com/mdn/content/issues/11766</link>
-            <guid>https://github.com/mdn/content/issues/11766</guid>
-            <pubDate>Wed, 05 Jan 2022 20:12:10 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/position</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">The definitions for the position values use the word "positioned" (adjective, not verb) before it is actually defined in the document. Example:</p>
-<hr>
-<h2 dir="auto"><em>absolute</em><br>
-The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor</h2>
-<p dir="auto">If the reader is going through this document line by line, the word positioned in "its closest positioned ancestor" has not yet been defined. Readers could get confused or come to false conclusions about the meaning of this statement. Also, it is worth noting that the absolute position definition can be scrolled into view without the "Types of positioning" being in view, further facilitating confusion.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto">Position values and "types of positioning"</p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">The meaning of the adjective "positioned" ("its closest positioned ancestor") is stated after the position values are explained. Since the "Types of positioning" block is necessary to understand the position values, it should go before the position values are explained. Or, there should be some sort of note before the position values definitions pointing the reader to the definition of "positioned" in the "Types of positioning block".</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/position</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/position</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/position/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/position/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/26f50bdaeb1228f458d21dbdf7dc110387b20daa/hovercard" href="https://github.com/mdn/content/commit/26f50bdaeb1228f458d21dbdf7dc110387b20daa"><tt>26f50bd</tt></a></li>
-<li>Document last modified: 2021-08-12T23:59:09.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[css-scoping-1] Issue with ":host-context()": link to example does not demonstrate usage]]></title>
             <link>https://github.com/mdn/content/issues/11621</link>
             <guid>https://github.com/mdn/content/issues/11621</guid>

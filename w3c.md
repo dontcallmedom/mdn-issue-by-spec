@@ -168,8 +168,6 @@
   
 * [[uievents] Content bug: Missing information about what WheelEvent.delta* can be](https://github.com/mdn/content/issues/11811) (2022-01-07T12:25:45Z)
   
-* [[css-position-3] Issue with "position": Move "Types of positioning" explanation to before position values explanation.](https://github.com/mdn/content/issues/11766) (2022-01-05T20:12:10Z)
-  
 * [[css-scoping-1] Issue with ":host-context()": link to example does not demonstrate usage](https://github.com/mdn/content/issues/11621) (2021-12-31T12:10:13Z)
   
 * [[IndexedDB-3] Issue with "IDBIndex.getAllKeys()": getAllKeys returns an Array.](https://github.com/mdn/content/issues/11354) (2021-12-21T04:24:54Z)

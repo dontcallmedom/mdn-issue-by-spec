@@ -88,8 +88,6 @@
   
 * [[css-images-3] Issue with "image-orientation": cross-origin limitations](https://github.com/mdn/content/issues/12484) (2022-01-28T23:40:20Z)
   
-* [[css-position-3] Issue with "position": Move "Types of positioning" explanation to before position values explanation.](https://github.com/mdn/content/issues/11766) (2022-01-05T20:12:10Z)
-  
 * [[css-scoping-1] Issue with ":host-context()": link to example does not demonstrate usage](https://github.com/mdn/content/issues/11621) (2021-12-31T12:10:13Z)
   
 * [[css-display-3] Issue with "display": table accessibility concern should specify browsers](https://github.com/mdn/content/issues/11206) (2021-12-14T15:54:34Z)
