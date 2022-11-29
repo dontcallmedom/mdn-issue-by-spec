@@ -4,10 +4,321 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Wed, 23 Nov 2022 12:04:06 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Nov 2022 05:41:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-fonts-5, css-text-3] [TRACKER][CSS] Fonts Module 4]]></title>
+            <link>https://github.com/mdn/content/issues/22597</link>
+            <guid>https://github.com/mdn/content/issues/22597</guid>
+            <pubDate>Tue, 29 Nov 2022 05:41:08 GMT</pubDate>
+            <content:encoded><![CDATA[<p dir="auto">This tracker compares the <a href="https://drafts.csswg.org/css-fonts-4/" rel="nofollow">Fonts spec</a> with the content on MDN Web Docs.</p>
+<h3 dir="auto">1. Basic font properties (SHORTHAND: font)</h3>
+<table role="table">
+<thead>
+<tr>
+<th>SPEC</th>
+<th>MDN</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>font</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font" rel="nofollow">font</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-family <br> - [&lt;family-name&gt; | &lt;generic-family&gt;] <br>- Faces and families</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" rel="nofollow">font-family</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-weight <br>- Relative weights <br>- Missing weights</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight" rel="nofollow">font-weight</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-stretch</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-stretch" rel="nofollow">font-stretch</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-style</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-style" rel="nofollow">font-style</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-size <br>- Absolute size keyword mapping table</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" rel="nofollow">font-size</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-size-adjust</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size-adjust" rel="nofollow">font-size-adjust</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-synthesis <br>- font-synthesis-weight <br>- font-synthesis-style <br>- font-synthesis-small-caps</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis" rel="nofollow">font-synthesis</a></td>
+<td><code class="notranslate">weight</code>, <code class="notranslate">style</code>, and <code class="notranslate">small-caps</code> are documented as values</td>
+</tr>
+<tr>
+<td>font-display <br>- Font display timeline</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display#the_font_display_timeline" rel="nofollow">Font display timeline</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 dir="auto">2. Font resources</h3>
+<table role="table">
+<thead>
+<tr>
+<th>SPEC</th>
+<th>MDN</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="user-mention notranslate" data-hovercard-type="organization" data-hovercard-url="/orgs/font-face/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/font-face">@font-face</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face" rel="nofollow">@font-face</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Descriptors:</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>font-family</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-family" rel="nofollow">font-family descriptor</a></td>
+<td></td>
+</tr>
+<tr>
+<td>src</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/src" rel="nofollow">src descriptor</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-weight</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-weight" rel="nofollow">font-weight descriptor</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-style</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-style" rel="nofollow">font-style descriptor</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-stretch</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-stretch" rel="nofollow">font-stretch descriptor</a></td>
+<td></td>
+</tr>
+<tr>
+<td>unicode-range</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/unicode-range" rel="nofollow">unicode-range descriptor</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-feature-settings</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings" rel="nofollow">font-feature-settings</a></td>
+<td>Listed as a descriptor on the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face" rel="nofollow">@font-face</a> page but documented as a property</td>
+</tr>
+<tr>
+<td>font-variation-settings</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-variation-settings" rel="nofollow">font-variation-settings descriptor</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-named-instance</td>
+<td></td>
+<td>No doc</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/size-adjust" rel="nofollow">size-adjust descriptor</a></td>
+<td>No such descriptor in spec</td>
+</tr>
+<tr>
+<td>Font-display (<a href="https://drafts.csswg.org/css-fonts-4/#font-display-desc" rel="nofollow">section 4.9</a>)</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display" rel="nofollow">font-display descriptor</a></td>
+<td>The spec lists this as a descriptor for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face" rel="nofollow">@font-face</a> AND <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-feature-values" rel="nofollow">@font-feature-values</a> <br>But it is documented only as a descriptor for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face" rel="nofollow">@font-face</a></td>
+</tr>
+<tr>
+<td>@font-feature-values</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-feature-values" rel="nofollow">@font-feature-values</a></td>
+<td>It is described in spec in two sections: <br>- <a href="https://drafts.csswg.org/css-fonts-4/#font-feature-values" rel="nofollow">section 6.9</a>: This is what's documented. <br>- <a href="https://drafts.csswg.org/css-fonts-4/#font-display-font-feature-values" rel="nofollow">section 4.9.1</a></td>
+</tr>
+<tr>
+<td>Font request guidelines</td>
+<td></td>
+<td>No doc for loading and fetching</td>
+</tr>
+</tbody>
+</table>
+<table role="table">
+<thead>
+<tr>
+<th>SPEC</th>
+<th>MDN</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>font-language-override</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-language-override" rel="nofollow">font-language-override</a></td>
+<td>It is documented as a property <br>- In <a href="https://drafts.csswg.org/css-fonts-4/#font-language-override-desc" rel="nofollow">section 4.10</a>, the spec describes it as a descriptor for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face" rel="nofollow">@font-face</a> <br>- In <a href="https://drafts.csswg.org/css-fonts-4/#font-language-override-prop" rel="nofollow">section 6.13</a>, the spec describes it as a property</td>
+</tr>
+<tr>
+<td>Descriptors:</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ascent-override</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/ascent-override" rel="nofollow">ascent-override descriptor</a></td>
+<td></td>
+</tr>
+<tr>
+<td>descent-override</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/descent-override" rel="nofollow">descent-override descriptor</a></td>
+<td></td>
+</tr>
+<tr>
+<td>line-gap-override descriptor</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/line-gap-override" rel="nofollow">line-gap-override descriptor</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 dir="auto">3. Font feature properties (SHORTHAND: font-variant)</h3>
+<table role="table">
+<thead>
+<tr>
+<th>SPEC</th>
+<th>MDN</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>font-variant</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant" rel="nofollow">font-variant</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-kerning</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-kerning" rel="nofollow">font-kerning</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-variant-alternates</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-alternates" rel="nofollow">font-variant-alternates</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-variant-caps</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-caps" rel="nofollow">font-variant-caps</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-variant-east-asian</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-east-asian" rel="nofollow">font-variant-east-asian</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-variant-ligatures</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-ligatures" rel="nofollow">font-variant-ligatures</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-variant-numeric</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric" rel="nofollow">font-variant-numeric</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-variant-position</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-position" rel="nofollow">font-variant-position</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-feature-settings</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings" rel="nofollow">font-feature-settings</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-language-override</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-language-override" rel="nofollow">font-language-override</a></td>
+<td>Also see “font-language-override” under "Font resources"</td>
+</tr>
+<tr>
+<td>font-variation-settings</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings" rel="nofollow">font-variation-settings</a></td>
+<td></td>
+</tr>
+<tr>
+<td>font-optical-sizing</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-optical-sizing" rel="nofollow">font-optical-sizing</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing" rel="nofollow">letter-spacing</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 dir="auto">4. Color font support</h3>
+<table role="table">
+<thead>
+<tr>
+<th>SPEC</th>
+<th>MDN</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>font-palette</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>font-variant-emoji</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>@font-palette-values</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Descriptors:</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>font-family</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>base-palette</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>override-colors</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-fonts-5] getComputedStyle() does not respect the Fallback weights algorithm]]></title>
             <link>https://github.com/mdn/content/issues/22496</link>
