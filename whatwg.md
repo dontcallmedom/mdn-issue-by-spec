@@ -104,8 +104,6 @@
   
 * [[fetch] Content bug: Inaccurate explanation on request credentials](https://github.com/mdn/content/issues/13063) (2022-02-17T09:18:12Z)
   
-* [[html] Content suggestion: New HTML feature `blocking=render` on `<script>`,  `<link>`, `<style>`](https://github.com/mdn/content/issues/12900) (2022-02-10T19:47:21Z)
-  
 * [[fetch] Issue with "Response.error()": Example missing](https://github.com/mdn/content/issues/12852) (2022-02-09T07:32:59Z)
   
 * [[dom] Issue with "MutationObserver.observe()": links to nonexistent “Monitoring attribute values” section on MutationObserver](https://github.com/mdn/content/issues/12741) (2022-02-04T23:09:33Z)

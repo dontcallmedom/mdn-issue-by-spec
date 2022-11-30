@@ -88,8 +88,6 @@
   
 * [[html] Issue with "ElementInternals": ElementInternals.role is missing](https://github.com/mdn/content/issues/13355) (2022-03-01T09:07:30Z)
   
-* [[html] Content suggestion: New HTML feature `blocking=render` on `<script>`,  `<link>`, `<style>`](https://github.com/mdn/content/issues/12900) (2022-02-10T19:47:21Z)
-  
 * [[html] Issue with "<iframe>: The Inline Frame element": document browser behaviour for onload and onerror events.](https://github.com/mdn/content/issues/12477) (2022-01-28T14:05:20Z)
   
 * [[html] Issue with "DragEvent.dataTransfer": Clarify that `dataTransfer` can be null.](https://github.com/mdn/content/issues/11670) (2022-01-02T15:10:06Z)
