@@ -6,8 +6,6 @@
   
 * [[css-logical-1] Spec link: defined in multiple places](https://github.com/mdn/content/issues/22271) (2022-11-13T19:09:15Z)
   
-* [[css-backgrounds-4] Incorrect formal definition for background-position-x Percentages](https://github.com/mdn/content/issues/22262) (2022-11-13T02:32:58Z)
-  
 * [[compositing-2] Examples of isolation hard to understand](https://github.com/mdn/content/issues/22185) (2022-11-09T11:56:05Z)
   
 * [[css-logical-1] The article on the CSS float property lists several non-standard values as supported, with no explanation of what they are or where they came from](https://github.com/mdn/content/issues/22069) (2022-11-04T20:55:23Z)
