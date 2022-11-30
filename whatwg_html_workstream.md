@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Marquee element page is missing the sidebar.](https://github.com/mdn/content/issues/22643) (2022-11-30T21:20:57Z)
+  
 * [[html] HTML forms `POST` method example gives `403 Forbidden` (via cloudfront)](https://github.com/mdn/content/issues/22560) (2022-11-27T14:57:57Z)
   
 * [[html] Missing content: validityState.valueMissing](https://github.com/mdn/content/issues/22557) (2022-11-27T02:52:10Z)
