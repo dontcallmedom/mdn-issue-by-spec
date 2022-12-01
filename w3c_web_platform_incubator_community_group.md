@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Platform Incubator Community Group. [![RSS feed for W3C Web Platform Incubator Community Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[ecmascript, webusb] Conflicting information in `USBDevice.controlTransferIn()`](https://github.com/mdn/content/issues/22652) (2022-12-01T07:19:20Z)
+* [[ecmascript, webusb] Conflicting information in `USBDevice.controlTransferIn()` and `USBDevice.controlTransferOut()`](https://github.com/mdn/content/issues/22652) (2022-12-01T07:19:20Z)
   
 * [[webhid] Confusing phrase "input report" is used for HIDConnectionEvent](https://github.com/mdn/content/issues/22419) (2022-11-20T02:34:52Z)
   
