@@ -69,7 +69,7 @@ const data = {
 const stringified = JSON.stringify(data, replacer);
 
 console.log(stringified);
-// {&quot;number&quot;:1,&quot;big&quot;:&quot;18014398509481982&quot;}"><pre><span class="pl-k">const</span> <span class="pl-en">replacer</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">key</span><span class="pl-kos">,</span> <span class="pl-s1">value</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-s1">key</span> <span class="pl-c1">===</span> <span class="pl-s">"big"</span> ? <span class="pl-s1">value</span><span class="pl-kos">.</span><span class="pl-en">toString</span><span class="pl-kos">(</span><span class="pl-kos">)</span> : <span class="pl-s1">value</span><span class="pl-kos">;</span>
+// {&quot;number&quot;:1,&quot;big&quot;:&quot;18014398509481982&quot;}"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-en">replacer</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">key</span><span class="pl-kos">,</span> <span class="pl-s1">value</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-s1">key</span> <span class="pl-c1">===</span> <span class="pl-s">"big"</span> ? <span class="pl-s1">value</span><span class="pl-kos">.</span><span class="pl-en">toString</span><span class="pl-kos">(</span><span class="pl-kos">)</span> : <span class="pl-s1">value</span><span class="pl-kos">;</span>
 
 <span class="pl-k">const</span> <span class="pl-s1">data</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span>
   <span class="pl-c1">number</span>: <span class="pl-c1">1</span><span class="pl-kos">,</span>
@@ -90,7 +90,7 @@ const replacer = (_key, value) =&gt; typeof value === 'bigint' ? value.toString(
 const stringified = JSON.stringify(data, replacer)
 
 console.log(stringified)
-// { &quot;small&quot;: &quot;-9223372036854775808&quot;, &quot;large&quot;: &quot;18446744073709551615&quot; }"><pre><span class="pl-k">const</span> <span class="pl-s1">data</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span>
+// { &quot;small&quot;: &quot;-9223372036854775808&quot;, &quot;large&quot;: &quot;18446744073709551615&quot; }"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">data</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span>
   <span class="pl-c1">small</span>: <span class="pl-c1">-</span><span class="pl-c1">9223372036854775808n</span><span class="pl-kos">,</span> 
   <span class="pl-c1">large</span>: <span class="pl-c1">18446744073709551615n</span>
 <span class="pl-kos">}</span>
@@ -136,7 +136,7 @@ console.log(stringified)
 </blockquote>
 <p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#regular_expressions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#regular_expressions</a> says:</p>
 <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="typeof /s/ === 'function'; // Chrome 1-12 Non-conform to ECMAScript 5.1
-typeof /s/ === 'object';   // Firefox 5+  Conform to ECMAScript 5.1"><pre><span class="pl-k">typeof</span> <span class="pl-pds"><span class="pl-c1">/</span>s<span class="pl-c1">/</span></span> <span class="pl-c1">===</span> <span class="pl-s">'function'</span><span class="pl-kos">;</span> <span class="pl-c">// Chrome 1-12 Non-conform to ECMAScript 5.1</span>
+typeof /s/ === 'object';   // Firefox 5+  Conform to ECMAScript 5.1"><pre class="notranslate"><span class="pl-k">typeof</span> <span class="pl-pds"><span class="pl-c1">/</span>s<span class="pl-c1">/</span></span> <span class="pl-c1">===</span> <span class="pl-s">'function'</span><span class="pl-kos">;</span> <span class="pl-c">// Chrome 1-12 Non-conform to ECMAScript 5.1</span>
 <span class="pl-k">typeof</span> <span class="pl-pds"><span class="pl-c1">/</span>s<span class="pl-c1">/</span></span> <span class="pl-c1">===</span> <span class="pl-s">'object'</span><span class="pl-kos">;</span>   <span class="pl-c">// Firefox 5+  Conform to ECMAScript 5.1</span></pre></div>
 <h2 dir="auto">What is the problem?</h2>
 <p dir="auto">Information about quirks in very old browser releases seems like a net negative for readers of MDN. It will require readers to make a judgement about whether this could affect them, by testing or looking at release dates for the browsers.</p>

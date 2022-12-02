@@ -84,7 +84,7 @@ Currently it is only supported in Edge and  Chrome as far as I can tell.</p>
 		  body: message
 	  })
 	  .then(data =&gt; console.log('success'),data =&gt; console.log('error'))
-  }"><pre>  <span class="pl-k">function</span> <span class="pl-en">test_fetch</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">{</span>
+  }"><pre class="notranslate">  <span class="pl-k">function</span> <span class="pl-en">test_fetch</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">{</span>
 	  <span class="pl-k">let</span> <span class="pl-s1">message</span> <span class="pl-c1">=</span> <span class="pl-c1">JSON</span><span class="pl-kos">.</span><span class="pl-en">stringify</span><span class="pl-kos">(</span><span class="pl-kos">{</span>
              <span class="pl-c">// 'ids' is the expected field. Change it latter for 'id' or something else to see the error.</span>
              <span class="pl-c1">ids</span>: <span class="pl-kos">[</span><span class="pl-c1">1</span><span class="pl-kos">]</span> 

@@ -41,7 +41,7 @@
         e.style.setProperty( 'font-family', 'Inter var', 'important' )
       //}
     } catch {}
-  }"><pre>  <span class="pl-k">function</span> <span class="pl-en">f</span><span class="pl-kos">(</span> <span class="pl-s1">e</span><span class="pl-kos">,</span> <span class="pl-s1">x</span> <span class="pl-kos">)</span><span class="pl-kos">{</span>
+  }"><pre class="notranslate">  <span class="pl-k">function</span> <span class="pl-en">f</span><span class="pl-kos">(</span> <span class="pl-s1">e</span><span class="pl-kos">,</span> <span class="pl-s1">x</span> <span class="pl-kos">)</span><span class="pl-kos">{</span>
     <span class="pl-k">return</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">trunc</span><span class="pl-kos">(</span> <span class="pl-en">parseInt</span><span class="pl-kos">(</span> <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-en">getComputedStyle</span><span class="pl-kos">(</span> <span class="pl-s1">e</span> <span class="pl-kos">)</span><span class="pl-kos">[</span><span class="pl-s">'font-weight'</span><span class="pl-kos">]</span><span class="pl-kos">,</span> <span class="pl-c1">10</span> <span class="pl-kos">)</span> <span class="pl-c1">*</span>
         <span class="pl-c">// 14 font size =&gt; 1.005 font weight coefficient, 32 =&gt; 1.11, ...</span>
         <span class="pl-kos">(</span> <span class="pl-kos">(</span><span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">abs</span><span class="pl-kos">(</span><span class="pl-s1">x</span> <span class="pl-c1">-</span><span class="pl-c1">14</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-kos">(</span><span class="pl-c1">1.11</span> <span class="pl-c1">-</span><span class="pl-c1">1.005</span><span class="pl-kos">)</span><span class="pl-c1">/</span><span class="pl-kos">(</span><span class="pl-c1">32</span> <span class="pl-c1">-</span><span class="pl-c1">14</span><span class="pl-kos">)</span> <span class="pl-kos">)</span> <span class="pl-c1">+</span><span class="pl-c1">1.005</span> <span class="pl-kos">)</span> <span class="pl-kos">)</span>
@@ -65,7 +65,7 @@
   font-display: swap;
   src: url( 'https://rsms.me/font-files/Inter.var.woff2?v=3.19' ) format( 'woff2' );
   font-feature-settings: &quot;zero&quot; 1, &quot;ss01&quot; 1;
-}"><pre><span class="pl-k">@font-face</span> {
+}"><pre class="notranslate"><span class="pl-k">@font-face</span> {
   <span class="pl-c1">font-family</span><span class="pl-kos">:</span> <span class="pl-s">'Inter var'</span>;
   <span class="pl-c1">font-style</span><span class="pl-kos">:</span> oblique <span class="pl-c1">0<span class="pl-smi">deg</span></span> <span class="pl-c1">10<span class="pl-smi">deg</span></span>;
   <span class="pl-c1">font-weight</span><span class="pl-kos">:</span> <span class="pl-c1">100</span> <span class="pl-c1">900</span>;
@@ -1096,7 +1096,7 @@ A <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/contain" rel="nofoll
 <p dir="auto">Instead of saying "value of paint", it should refer to "<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Containment#paint_containment" rel="nofollow">Paint containment</a>" with the link to information about other ways to specify a paint containment.   The link to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/contain" rel="nofollow">contain</a> is also useful since it is more direct, at least for this way of specifying a paint containment.  On that page, we find</p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Note: If applied (with value: paint, strict or content), this property creates:
 
-A new [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block) (for the descendants whose [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position) property is absolute or fixed)."><pre class="notranslate"><code>Note: If applied (with value: paint, strict or content), this property creates:
+A new [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block) (for the descendants whose [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position) property is absolute or fixed)."><pre class="notranslate"><code class="notranslate">Note: If applied (with value: paint, strict or content), this property creates:
 
 A new [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block) (for the descendants whose [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position) property is absolute or fixed).
 </code></pre></div>
@@ -1258,7 +1258,7 @@ I think the author is talking about following case:</li>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="let rotate360 = [
       { transform: 'rotate(360deg)' },
       {}   // empty keyframe, values are inferred from elements starting state
-    ];"><pre class="notranslate"><code>let rotate360 = [
+    ];"><pre class="notranslate"><code class="notranslate">let rotate360 = [
       { transform: 'rotate(360deg)' },
       {}   // empty keyframe, values are inferred from elements starting state
     ];
@@ -1397,7 +1397,7 @@ Or provide an example for the second scenario.</p>
 requestAnimationFrame(function rAF() {                                          
   console.log(&quot;got a rAF callback on &quot; + document.timeline.currentTime);        
   requestAnimationFrame(rAF);                                                   
-});"><pre class="notranslate"><code>window.addEventListener("scroll", e =&gt; {                                        
+});"><pre class="notranslate"><code class="notranslate">window.addEventListener("scroll", e =&gt; {                                        
   console.log("got a scroll event on " + document.timeline.currentTime);        
 });                                                                             
 requestAnimationFrame(function rAF() {                                          
@@ -1517,7 +1517,7 @@ requestAnimationFrame(function rAF() {
       &lt;/tbody&gt;
     &lt;/table&gt;
   &lt;/body&gt;
-&lt;/html&gt;"><pre><span class="pl-c1">&lt;!DOCTYPE html<span class="pl-kos">&gt;</span></span>
+&lt;/html&gt;"><pre class="notranslate"><span class="pl-c1">&lt;!DOCTYPE html<span class="pl-kos">&gt;</span></span>
 <span class="pl-kos">&lt;</span><span class="pl-ent">html</span> <span class="pl-c1">lang</span>="<span class="pl-s">en-us</span>"<span class="pl-kos">&gt;</span>
   <span class="pl-kos">&lt;</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
     <span class="pl-kos">&lt;</span><span class="pl-ent">meta</span> <span class="pl-c1">charset</span>="<span class="pl-s">utf-8</span>"<span class="pl-kos">&gt;</span>
@@ -1961,7 +1961,7 @@ customElements.define('my-component', class myElement extends HTMLElement {
 		let shadowRoot = this.attachShadow({ mode: 'open' });
 		shadowRoot.innerHTML = template;
 	}
-});"><pre><span class="pl-k">let</span> <span class="pl-s1">template</span> <span class="pl-c1">=</span> <span class="pl-s">`</span>
+});"><pre class="notranslate"><span class="pl-k">let</span> <span class="pl-s1">template</span> <span class="pl-c1">=</span> <span class="pl-s">`</span>
 <span class="pl-s">	&lt;div&gt;</span>
 <span class="pl-s">		&lt;a href="#message"&gt;Make the message red&lt;/a&gt;</span>
 <span class="pl-s">		&lt;h2 id="message"&gt;Message in a bottle&lt;/h2&gt;</span>
@@ -2027,7 +2027,7 @@ const updatePixelRatio = () =&gt; {
 
   console.log(&quot;devicePixelRatio: &quot; + window.devicePixelRatio);
 }
-updatePixelRatio();"><pre class="notranslate"><code>let remove = null;
+updatePixelRatio();"><pre class="notranslate"><code class="notranslate">let remove = null;
 
 const updatePixelRatio = () =&gt; {
   if(remove != null) {
@@ -2161,7 +2161,7 @@ function onDragEndEvent(event)
 function onDropEvent(event)
 {
     // i was wrong here 
-}"><pre class="notranslate"><code>draggableNode.addEventListener("dragend", onDragEndEvent, false);
+}"><pre class="notranslate"><code class="notranslate">draggableNode.addEventListener("dragend", onDragEndEvent, false);
 
 
 function onDragEndEvent(event)

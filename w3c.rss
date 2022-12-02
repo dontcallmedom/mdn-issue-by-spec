@@ -82,7 +82,7 @@ Returns a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
         e.style.setProperty( 'font-family', 'Inter var', 'important' )
       //}
     } catch {}
-  }"><pre>  <span class="pl-k">function</span> <span class="pl-en">f</span><span class="pl-kos">(</span> <span class="pl-s1">e</span><span class="pl-kos">,</span> <span class="pl-s1">x</span> <span class="pl-kos">)</span><span class="pl-kos">{</span>
+  }"><pre class="notranslate">  <span class="pl-k">function</span> <span class="pl-en">f</span><span class="pl-kos">(</span> <span class="pl-s1">e</span><span class="pl-kos">,</span> <span class="pl-s1">x</span> <span class="pl-kos">)</span><span class="pl-kos">{</span>
     <span class="pl-k">return</span> <span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">trunc</span><span class="pl-kos">(</span> <span class="pl-en">parseInt</span><span class="pl-kos">(</span> <span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-en">getComputedStyle</span><span class="pl-kos">(</span> <span class="pl-s1">e</span> <span class="pl-kos">)</span><span class="pl-kos">[</span><span class="pl-s">'font-weight'</span><span class="pl-kos">]</span><span class="pl-kos">,</span> <span class="pl-c1">10</span> <span class="pl-kos">)</span> <span class="pl-c1">*</span>
         <span class="pl-c">// 14 font size =&gt; 1.005 font weight coefficient, 32 =&gt; 1.11, ...</span>
         <span class="pl-kos">(</span> <span class="pl-kos">(</span><span class="pl-v">Math</span><span class="pl-kos">.</span><span class="pl-en">abs</span><span class="pl-kos">(</span><span class="pl-s1">x</span> <span class="pl-c1">-</span><span class="pl-c1">14</span><span class="pl-kos">)</span> <span class="pl-c1">*</span> <span class="pl-kos">(</span><span class="pl-c1">1.11</span> <span class="pl-c1">-</span><span class="pl-c1">1.005</span><span class="pl-kos">)</span><span class="pl-c1">/</span><span class="pl-kos">(</span><span class="pl-c1">32</span> <span class="pl-c1">-</span><span class="pl-c1">14</span><span class="pl-kos">)</span> <span class="pl-kos">)</span> <span class="pl-c1">+</span><span class="pl-c1">1.005</span> <span class="pl-kos">)</span> <span class="pl-kos">)</span>
@@ -106,7 +106,7 @@ Returns a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
   font-display: swap;
   src: url( 'https://rsms.me/font-files/Inter.var.woff2?v=3.19' ) format( 'woff2' );
   font-feature-settings: &quot;zero&quot; 1, &quot;ss01&quot; 1;
-}"><pre><span class="pl-k">@font-face</span> {
+}"><pre class="notranslate"><span class="pl-k">@font-face</span> {
   <span class="pl-c1">font-family</span><span class="pl-kos">:</span> <span class="pl-s">'Inter var'</span>;
   <span class="pl-c1">font-style</span><span class="pl-kos">:</span> oblique <span class="pl-c1">0<span class="pl-smi">deg</span></span> <span class="pl-c1">10<span class="pl-smi">deg</span></span>;
   <span class="pl-c1">font-weight</span><span class="pl-kos">:</span> <span class="pl-c1">100</span> <span class="pl-c1">900</span>;
@@ -640,8 +640,8 @@ But it doesn't and isn't mentioned here that both work – or and comma (maybe t
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><a href="https://w3c.github.io/uievents/#event-type-click" rel="nofollow">https://w3c.github.io/uievents/#event-type-click</a></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;div&gt;CLICK ME&lt;/div&gt;"><pre><span class="pl-kos">&lt;</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span>CLICK ME<span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></pre></div>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="document.querySelector(&quot;div&quot;).addEventListener(&quot;click&quot;, console.log);"><pre><span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">"div"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"click"</span><span class="pl-kos">,</span> <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-c1">log</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;div&gt;CLICK ME&lt;/div&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span>CLICK ME<span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></pre></div>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="document.querySelector(&quot;div&quot;).addEventListener(&quot;click&quot;, console.log);"><pre class="notranslate"><span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">"div"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"click"</span><span class="pl-kos">,</span> <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-c1">log</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">Try this on Firefox and Chrome. I tested on:<br>
 Firefox 105.0.2 (64-bit)<br>
 Chrome Version 106.0.5249.119 (Official Build) (64-bit)</p>
@@ -711,7 +711,7 @@ Chrome Version 106.0.5249.119 (Official Build) (64-bit)</p>
 <p dir="auto">4.3. Extension to DocumentOrShadowRoot</p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="partial interface mixin [DocumentOrShadowRoot](https://dom.spec.whatwg.org/#documentorshadowroot) {
   readonly attribute [Element](https://dom.spec.whatwg.org/#element)? pictureInPictureElement;
-};"><pre class="notranslate"><code>partial interface mixin [DocumentOrShadowRoot](https://dom.spec.whatwg.org/#documentorshadowroot) {
+};"><pre class="notranslate"><code class="notranslate">partial interface mixin [DocumentOrShadowRoot](https://dom.spec.whatwg.org/#documentorshadowroot) {
   readonly attribute [Element](https://dom.spec.whatwg.org/#element)? pictureInPictureElement;
 };
 </code></pre></div>
@@ -722,7 +722,7 @@ Let candidate be the result of [retargeting](https://dom.spec.whatwg.org/#retarg
 
 If candidate and the context object are in the same [tree](https://dom.spec.whatwg.org/#concept-tree), return candidate and abort these steps.
 
-Return null."><pre class="notranslate"><code>If the context object is not [connected](https://dom.spec.whatwg.org/#connected), return null and abort these steps.
+Return null."><pre class="notranslate"><code class="notranslate">If the context object is not [connected](https://dom.spec.whatwg.org/#connected), return null and abort these steps.
 
 Let candidate be the result of [retargeting](https://dom.spec.whatwg.org/#retarget) Picture-in-Picture element against the context object.
 
@@ -945,11 +945,11 @@ this page is for functional notations as part of the value in property/value pai
 // Create a buffer, plop in data, connect and play -&gt; modify graph here if required<br>
 function playSample(audioContext, audioBuffer, time) {</p>
 <p dir="auto">on line 377 (first line of the function)</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="    const sampleSource = new AudioBufferSourceNode(audioCtx, {"><pre class="notranslate"><code>    const sampleSource = new AudioBufferSourceNode(audioCtx, {
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="    const sampleSource = new AudioBufferSourceNode(audioCtx, {"><pre class="notranslate"><code class="notranslate">    const sampleSource = new AudioBufferSourceNode(audioCtx, {
 </code></pre></div>
 <p dir="auto">line uses audioCtx (the global context variable) rather than the passed in variable audioContext</p>
 <h3 dir="auto">What did you expect to see?</h3>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="    const sampleSource = new AudioBufferSourceNode(audioContext, {"><pre class="notranslate"><code>    const sampleSource = new AudioBufferSourceNode(audioContext, {
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="    const sampleSource = new AudioBufferSourceNode(audioContext, {"><pre class="notranslate"><code class="notranslate">    const sampleSource = new AudioBufferSourceNode(audioContext, {
 </code></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
@@ -1023,7 +1023,7 @@ function playSample(audioContext, audioBuffer, time) {</p>
 <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const request = indexedDB.open(dbName);
 request.onupgradeneeded = () =&gt; {
   request.result.close();
-}"><pre><span class="pl-k">const</span> <span class="pl-s1">request</span> <span class="pl-c1">=</span> <span class="pl-s1">indexedDB</span><span class="pl-kos">.</span><span class="pl-en">open</span><span class="pl-kos">(</span><span class="pl-s1">dbName</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+}"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">request</span> <span class="pl-c1">=</span> <span class="pl-s1">indexedDB</span><span class="pl-kos">.</span><span class="pl-en">open</span><span class="pl-kos">(</span><span class="pl-s1">dbName</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 <span class="pl-s1">request</span><span class="pl-kos">.</span><span class="pl-en">onupgradeneeded</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
   <span class="pl-s1">request</span><span class="pl-kos">.</span><span class="pl-c1">result</span><span class="pl-kos">.</span><span class="pl-en">close</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 <span class="pl-kos">}</span></pre></div>
@@ -1062,7 +1062,7 @@ you'll see that unless you have the 'close indexedDB.open() result' checkbox che
 <p dir="auto">An example that can replace this code:</p>
 <div class="highlight highlight-source-ts notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const mouseEvent = document.createEvent(&quot;MouseEvent&quot;)
 mouseEvent.initEvent(&quot;mouseover&quot;)
-element.dispatchEvent(mouseEvent)"><pre><span class="pl-k">const</span> <span class="pl-s1">mouseEvent</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createEvent</span><span class="pl-kos">(</span><span class="pl-s">"MouseEvent"</span><span class="pl-kos">)</span>
+element.dispatchEvent(mouseEvent)"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">mouseEvent</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createEvent</span><span class="pl-kos">(</span><span class="pl-s">"MouseEvent"</span><span class="pl-kos">)</span>
 <span class="pl-s1">mouseEvent</span><span class="pl-kos">.</span><span class="pl-en">initEvent</span><span class="pl-kos">(</span><span class="pl-s">"mouseover"</span><span class="pl-kos">)</span>
 <span class="pl-s1">element</span><span class="pl-kos">.</span><span class="pl-en">dispatchEvent</span><span class="pl-kos">(</span><span class="pl-s1">mouseEvent</span><span class="pl-kos">)</span></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
@@ -1241,7 +1241,7 @@ onData: function (event) {
     // append the latest chunk of video data to an array
     this.chunks.push(event.data);
     this.duration = this.chunks.length * 500 / 1000;
-}"><pre>startRecording: <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+}"><pre class="notranslate">startRecording: <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
     <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">recorder</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">MediaRecorder</span><span class="pl-kos">(</span><span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">streamSrc</span><span class="pl-kos">,</span> <span class="pl-kos">{</span><span class="pl-c1">mimeType</span>: <span class="pl-s">"video/webm;codecs:vp8"</span><span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
     <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">recorder</span><span class="pl-kos">.</span><span class="pl-c1">ondataavailable</span> <span class="pl-c1">=</span> <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">onData</span><span class="pl-kos">;</span>
     <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">recorder</span><span class="pl-kos">.</span><span class="pl-en">start</span><span class="pl-kos">(</span><span class="pl-c1">500</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
@@ -2011,7 +2011,7 @@ A <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/contain" rel="nofoll
 <p dir="auto">Instead of saying "value of paint", it should refer to "<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Containment#paint_containment" rel="nofollow">Paint containment</a>" with the link to information about other ways to specify a paint containment.   The link to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/contain" rel="nofollow">contain</a> is also useful since it is more direct, at least for this way of specifying a paint containment.  On that page, we find</p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Note: If applied (with value: paint, strict or content), this property creates:
 
-A new [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block) (for the descendants whose [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position) property is absolute or fixed)."><pre class="notranslate"><code>Note: If applied (with value: paint, strict or content), this property creates:
+A new [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block) (for the descendants whose [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position) property is absolute or fixed)."><pre class="notranslate"><code class="notranslate">Note: If applied (with value: paint, strict or content), this property creates:
 
 A new [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block) (for the descendants whose [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position) property is absolute or fixed).
 </code></pre></div>
@@ -2092,7 +2092,7 @@ It's a lot of work to create a database, fill it, then try to create errors and 
 <p dir="auto">AFAIK This wrong.</p>
 <p dir="auto"><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="702066886" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/1" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/1/hovercard" href="https://github.com/mdn/content/pull/1">#1</a>. While it's true a gamepad object will be provided on gamepadconnected, it's also true that gamepad objects will be provided by navigator.getGamepads</p>
 <p dir="auto"><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="702234902" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/2" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/2/hovercard" href="https://github.com/mdn/content/pull/2">#2</a>. The description above and elsewhere suggests holding on to a reference to the gamepad object and querying it for values. But this fails. In fact, the example code in the article does not do this. It updates the gamepad objects near the end</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="       controllers[gamepads[i].index] = gamepads[i];"><pre class="notranslate"><code>       controllers[gamepads[i].index] = gamepads[i];
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="       controllers[gamepads[i].index] = gamepads[i];"><pre class="notranslate"><code class="notranslate">       controllers[gamepads[i].index] = gamepads[i];
 </code></pre></div>
 <p dir="auto">In other words, it's updating the <code class="notranslate">controllers</code> array with a new gamepad object for the same gamepad.</p>
 <p dir="auto">If instead you did this</p>
@@ -2100,7 +2100,7 @@ It's a lot of work to create a database, fill it, then try to create errors and 
    // for this controller from the gamepadconnected event
    if (!controllers[gamepads[i].index]) {
       controllers[gamepads[i].index] = gamepads[i];
-   }"><pre class="notranslate"><code>   // no need to use a new gamepad object if we already have a gamepad object
+   }"><pre class="notranslate"><code class="notranslate">   // no need to use a new gamepad object if we already have a gamepad object
    // for this controller from the gamepadconnected event
    if (!controllers[gamepads[i].index]) {
       controllers[gamepads[i].index] = gamepads[i];
@@ -2266,7 +2266,7 @@ But that does not really cover the topic.</p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const osc = ctx.createOscillator();
 const reverb = ctx.createConvolver();
 reverb.buffer = ctx.createBuffer(1, ctx.sampleRate, ctx.sampleRate);
-osc.connect(reverb).connect(ctx.destination);"><pre class="notranslate"><code>const osc = ctx.createOscillator();
+osc.connect(reverb).connect(ctx.destination);"><pre class="notranslate"><code class="notranslate">const osc = ctx.createOscillator();
 const reverb = ctx.createConvolver();
 reverb.buffer = ctx.createBuffer(1, ctx.sampleRate, ctx.sampleRate);
 osc.connect(reverb).connect(ctx.destination);
@@ -2475,7 +2475,7 @@ I think the author is talking about following case:</li>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="let rotate360 = [
       { transform: 'rotate(360deg)' },
       {}   // empty keyframe, values are inferred from elements starting state
-    ];"><pre class="notranslate"><code>let rotate360 = [
+    ];"><pre class="notranslate"><code class="notranslate">let rotate360 = [
       { transform: 'rotate(360deg)' },
       {}   // empty keyframe, values are inferred from elements starting state
     ];
@@ -2695,7 +2695,7 @@ MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder" 
 requestAnimationFrame(function rAF() {                                          
   console.log(&quot;got a rAF callback on &quot; + document.timeline.currentTime);        
   requestAnimationFrame(rAF);                                                   
-});"><pre class="notranslate"><code>window.addEventListener("scroll", e =&gt; {                                        
+});"><pre class="notranslate"><code class="notranslate">window.addEventListener("scroll", e =&gt; {                                        
   console.log("got a scroll event on " + document.timeline.currentTime);        
 });                                                                             
 requestAnimationFrame(function rAF() {                                          
@@ -2856,7 +2856,7 @@ And the change in Firefox caused by <a href="https://groups.google.com/g/mozilla
        function onSuccess(event) {
           callback(event.result);
           return;
-       }"><pre class="notranslate"><code>       req = oStore.getAllKeys();
+       }"><pre class="notranslate"><code class="notranslate">       req = oStore.getAllKeys();
        if (req.result &amp;&amp; Array.isArray(res.result)) {
        if (req.readyState !== "pending") {---; return;}
        req.onsuccess = onSuccess;
@@ -2930,7 +2930,7 @@ And the change in Firefox caused by <a href="https://groups.google.com/g/mozilla
       &lt;/tbody&gt;
     &lt;/table&gt;
   &lt;/body&gt;
-&lt;/html&gt;"><pre><span class="pl-c1">&lt;!DOCTYPE html<span class="pl-kos">&gt;</span></span>
+&lt;/html&gt;"><pre class="notranslate"><span class="pl-c1">&lt;!DOCTYPE html<span class="pl-kos">&gt;</span></span>
 <span class="pl-kos">&lt;</span><span class="pl-ent">html</span> <span class="pl-c1">lang</span>="<span class="pl-s">en-us</span>"<span class="pl-kos">&gt;</span>
   <span class="pl-kos">&lt;</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
     <span class="pl-kos">&lt;</span><span class="pl-ent">meta</span> <span class="pl-c1">charset</span>="<span class="pl-s">utf-8</span>"<span class="pl-kos">&gt;</span>
@@ -3323,7 +3323,7 @@ MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Performance" 
 </blockquote>
 <p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#regular_expressions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#regular_expressions</a> says:</p>
 <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="typeof /s/ === 'function'; // Chrome 1-12 Non-conform to ECMAScript 5.1
-typeof /s/ === 'object';   // Firefox 5+  Conform to ECMAScript 5.1"><pre><span class="pl-k">typeof</span> <span class="pl-pds"><span class="pl-c1">/</span>s<span class="pl-c1">/</span></span> <span class="pl-c1">===</span> <span class="pl-s">'function'</span><span class="pl-kos">;</span> <span class="pl-c">// Chrome 1-12 Non-conform to ECMAScript 5.1</span>
+typeof /s/ === 'object';   // Firefox 5+  Conform to ECMAScript 5.1"><pre class="notranslate"><span class="pl-k">typeof</span> <span class="pl-pds"><span class="pl-c1">/</span>s<span class="pl-c1">/</span></span> <span class="pl-c1">===</span> <span class="pl-s">'function'</span><span class="pl-kos">;</span> <span class="pl-c">// Chrome 1-12 Non-conform to ECMAScript 5.1</span>
 <span class="pl-k">typeof</span> <span class="pl-pds"><span class="pl-c1">/</span>s<span class="pl-c1">/</span></span> <span class="pl-c1">===</span> <span class="pl-s">'object'</span><span class="pl-kos">;</span>   <span class="pl-c">// Firefox 5+  Conform to ECMAScript 5.1</span></pre></div>
 <h2 dir="auto">What is the problem?</h2>
 <p dir="auto">Information about quirks in very old browser releases seems like a net negative for readers of MDN. It will require readers to make a judgement about whether this could affect them, by testing or looking at release dates for the browsers.</p>
@@ -3515,7 +3515,7 @@ MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons" rel=
 <h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
 <p dir="auto">There are differences between the browsers implementation of the initial values of the viewBox (baseVal) property.</p>
 <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const svg = document.createElementNS(&quot;http://www.w3.org/2000/svg&quot;, &quot;svg&quot;);
-const baseVal = svg.viewBox.baseVal;"><pre><span class="pl-k">const</span> <span class="pl-s1">svg</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createElementNS</span><span class="pl-kos">(</span><span class="pl-s">"http://www.w3.org/2000/svg"</span><span class="pl-kos">,</span> <span class="pl-s">"svg"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+const baseVal = svg.viewBox.baseVal;"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">svg</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createElementNS</span><span class="pl-kos">(</span><span class="pl-s">"http://www.w3.org/2000/svg"</span><span class="pl-kos">,</span> <span class="pl-s">"svg"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 <span class="pl-k">const</span> <span class="pl-s1">baseVal</span> <span class="pl-c1">=</span> <span class="pl-s1">svg</span><span class="pl-kos">.</span><span class="pl-c1">viewBox</span><span class="pl-kos">.</span><span class="pl-c1">baseVal</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">In Firefox <code class="notranslate">baseVal </code> is <code class="notranslate">null</code>. In Chrome it is an <code class="notranslate">SVGRect {x: 0, y: 0, width: 0, height: 0}</code>.<br>
 In my opinion it is nice to just write the values on the pre-initialized SVGRect and to let the browser synchronize the attribute.</p>
@@ -3642,7 +3642,7 @@ I am aware that this property is inherited from SVGFitToViewBox, but there is no
     &quot;direct&quot;,
     &quot;enterprise&quot;
 };
-"><pre class="notranslate"><code>enum AttestationConveyancePreference {
+"><pre class="notranslate"><code class="notranslate">enum AttestationConveyancePreference {
     "none",
     "indirect",
     "direct",
@@ -3833,7 +3833,7 @@ The ServiceWorker interface inherits methods from its parent, Worker, with the e
 node.textContent = &quot;hello world!&quot;
 var tnode = node.childNodes[0]
 var sel = window.getSelection()
-sel.setBaseAndExtent(tnode, 0, tnode, 5) // this should select 'hello'"><pre class="notranslate"><code>var node = document.querySelector('.anything') //select an empty node!
+sel.setBaseAndExtent(tnode, 0, tnode, 5) // this should select 'hello'"><pre class="notranslate"><code class="notranslate">var node = document.querySelector('.anything') //select an empty node!
 node.textContent = "hello world!"
 var tnode = node.childNodes[0]
 var sel = window.getSelection()
@@ -4116,7 +4116,7 @@ customElements.define('my-component', class myElement extends HTMLElement {
 		let shadowRoot = this.attachShadow({ mode: 'open' });
 		shadowRoot.innerHTML = template;
 	}
-});"><pre><span class="pl-k">let</span> <span class="pl-s1">template</span> <span class="pl-c1">=</span> <span class="pl-s">`</span>
+});"><pre class="notranslate"><span class="pl-k">let</span> <span class="pl-s1">template</span> <span class="pl-c1">=</span> <span class="pl-s">`</span>
 <span class="pl-s">	&lt;div&gt;</span>
 <span class="pl-s">		&lt;a href="#message"&gt;Make the message red&lt;/a&gt;</span>
 <span class="pl-s">		&lt;h2 id="message"&gt;Message in a bottle&lt;/h2&gt;</span>
@@ -4182,7 +4182,7 @@ const updatePixelRatio = () =&gt; {
 
   console.log(&quot;devicePixelRatio: &quot; + window.devicePixelRatio);
 }
-updatePixelRatio();"><pre class="notranslate"><code>let remove = null;
+updatePixelRatio();"><pre class="notranslate"><code class="notranslate">let remove = null;
 
 const updatePixelRatio = () =&gt; {
   if(remove != null) {
@@ -4453,7 +4453,7 @@ function onDragEndEvent(event)
 function onDropEvent(event)
 {
     // i was wrong here 
-}"><pre class="notranslate"><code>draggableNode.addEventListener("dragend", onDragEndEvent, false);
+}"><pre class="notranslate"><code class="notranslate">draggableNode.addEventListener("dragend", onDragEndEvent, false);
 
 
 function onDragEndEvent(event)
@@ -4612,7 +4612,7 @@ navigator.mediaDevices
   .catch(function(err) {
     console.error('Error happens:', err);
   });
-"><pre class="notranslate"><code>
+"><pre class="notranslate"><code class="notranslate">
 navigator.mediaDevices
   .getUserMedia({
     video: {
@@ -4665,7 +4665,7 @@ navigator.mediaDevices
       .attr(&quot;class&quot;, &quot;label&quot;)
       .attr(&quot;width&quot;, barWidth + spaceBetween)
       .attr(&quot;height&quot;, 200) // Wouldn't render without this attribute
-      .text((d) =&gt; d[0]);"><pre class="notranslate"><code>const labelTexts = barsGroup
+      .text((d) =&gt; d[0]);"><pre class="notranslate"><code class="notranslate">const labelTexts = barsGroup
       .append("foreignObject")
       .attr("class", "label")
       .attr("width", barWidth + spaceBetween)

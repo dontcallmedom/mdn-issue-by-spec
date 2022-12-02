@@ -151,11 +151,11 @@ That is, findable and operable via keyboard only.</p>
 </ol>
 <p dir="auto">This is a most unusual behavior for the <code class="notranslate">&lt;dialog&gt;</code> element that borders on being a defect. In any case, the documentation needs to point this out. One way to work around this issue is to reset the <code class="notranslate">returnValue</code> to undefined before opening the dialog. For example:</p>
 <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="favDialog.returnValue = undefined;
-favDialog.showModal();"><pre><span class="pl-s1">favDialog</span><span class="pl-kos">.</span><span class="pl-c1">returnValue</span> <span class="pl-c1">=</span> <span class="pl-c1">undefined</span><span class="pl-kos">;</span>
+favDialog.showModal();"><pre class="notranslate"><span class="pl-s1">favDialog</span><span class="pl-kos">.</span><span class="pl-c1">returnValue</span> <span class="pl-c1">=</span> <span class="pl-c1">undefined</span><span class="pl-kos">;</span>
 <span class="pl-s1">favDialog</span><span class="pl-kos">.</span><span class="pl-en">showModal</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">Now, when you close the dialog using the <code class="notranslate">Esc</code> key the <code class="notranslate">returnValue</code> will be undefined.</p>
 <p dir="auto">You can also define the cancel button without a value.</p>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;button&gt;Cancel&lt;/button&gt;"><pre><span class="pl-kos">&lt;</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span>Cancel<span class="pl-kos">&lt;/</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span></pre></div>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;button&gt;Cancel&lt;/button&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span>Cancel<span class="pl-kos">&lt;/</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span></pre></div>
 <p dir="auto">Now the cancel button and the <code class="notranslate">Esc</code> key will behave the same way. That is, they will close the dialog with the <code class="notranslate">returnValue</code> set to undefined.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The effect of the <code class="notranslate">Esc</code> key or a button without a <code class="notranslate">value</code> on <code class="notranslate">returnValue</code> needs to be discussed. Almost any use of a dialog is vulnerable to defect unless this issue is addressed correctly.</p>
@@ -197,7 +197,7 @@ svg.dataset
 svg instanceof HTMLElement
 // returns false
 svg instanceof Element
-// returns true"><pre><span class="pl-k">const</span> <span class="pl-s1">svg</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createElementNS</span><span class="pl-kos">(</span><span class="pl-s">'http://www.w3.org/2000/svg'</span><span class="pl-kos">,</span> <span class="pl-s">'svg'</span><span class="pl-kos">)</span>
+// returns true"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">svg</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createElementNS</span><span class="pl-kos">(</span><span class="pl-s">'http://www.w3.org/2000/svg'</span><span class="pl-kos">,</span> <span class="pl-s">'svg'</span><span class="pl-kos">)</span>
 <span class="pl-s1">svg</span><span class="pl-kos">.</span><span class="pl-c1">dataset</span>
 <span class="pl-c">// returns DOMStringMap {}</span>
 <span class="pl-s1">svg</span> <span class="pl-k">instanceof</span> <span class="pl-v">HTMLElement</span>
@@ -586,7 +586,7 @@ Currently it is only supported in Edge and  Chrome as far as I can tell.</p>
 <p dir="auto">At least a link to ChildNode mixin, but also nothing strictly related to Element prototype.</p>
 <h3 dir="auto">Did you test this? If so, how?</h3>
 <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="document.createComment('').replaceWith ; // function
-document.createComment('') instanceof Element; // false"><pre><span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createComment</span><span class="pl-kos">(</span><span class="pl-s">''</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">replaceWith</span> <span class="pl-kos">;</span> <span class="pl-c">// function</span>
+document.createComment('') instanceof Element; // false"><pre class="notranslate"><span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createComment</span><span class="pl-kos">(</span><span class="pl-s">''</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">replaceWith</span> <span class="pl-kos">;</span> <span class="pl-c">// function</span>
 <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createComment</span><span class="pl-kos">(</span><span class="pl-s">''</span><span class="pl-kos">)</span> <span class="pl-k">instanceof</span> <span class="pl-v">Element</span><span class="pl-kos">;</span> <span class="pl-c">// false</span></pre></div>
 <h3 dir="auto">Can you link to any release notes, bugs, pull requests, or MDN pages related to this?</h3>
 <p dir="auto"><a href="https://dom.spec.whatwg.org/#interface-childnode" rel="nofollow">https://dom.spec.whatwg.org/#interface-childnode</a></p>
@@ -861,7 +861,7 @@ So I would expect a working example for a fieldset implementation.</p>
   &lt;source srcset=&quot;logo-768.png, logo-768-1.5x.png 1.5x&quot;&gt;
   &lt;source srcset=&quot;logo-480.png, logo-480-2x.png 2x&quot;&gt;
   &lt;img src=&quot;logo-320.png&quot; alt=&quot;logo&quot;&gt;
-&lt;/picture&gt;"><pre class="notranslate"><code>&lt;picture&gt;
+&lt;/picture&gt;"><pre class="notranslate"><code class="notranslate">&lt;picture&gt;
   &lt;source srcset="logo-768.png, logo-768-1.5x.png 1.5x"&gt;
   &lt;source srcset="logo-480.png, logo-480-2x.png 2x"&gt;
   &lt;img src="logo-320.png" alt="logo"&gt;
@@ -965,7 +965,7 @@ With the GEH demixing effort this section is gone and there is nowhere I can fin
 <p dir="auto">Try it</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The example does not work.  No spell checking error is shown:</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/526509/183413259-3fc6f510-985b-49d4-a617-4b64747e2d4e.png"><img width="791" alt="image" src="https://user-images.githubusercontent.com/526509/183413259-3fc6f510-985b-49d4-a617-4b64747e2d4e.png" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/526509/183413259-3fc6f510-985b-49d4-a617-4b64747e2d4e.png"><img width="791" alt="image" src="https://user-images.githubusercontent.com/526509/183413259-3fc6f510-985b-49d4-a617-4b64747e2d4e.png" style="max-width: 100%;"></a></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The misspelt words should be underlined in red.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
@@ -1109,7 +1109,7 @@ The only content which mentions this behavior is the following sentence:</p>
 <p dir="auto">Except for event.data &amp; event.origin, which are obvious, all the other properties need more explanation.</p>
 <p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/MessageEvent/lastEventId" rel="nofollow">lastEventId</a> is alway an empty string '', why ?</p>
 <p dir="auto">I also see property <code class="notranslate">isTrusted</code> which was not mentioned in the link</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="[Log] MessageEvent {isTrusted: true, origin: &quot;ws://localhost:3000&quot;, lastEventId: &quot;&quot;, source: null, data: &quot;xxx&quot;, …}"><pre class="notranslate"><code>[Log] MessageEvent {isTrusted: true, origin: "ws://localhost:3000", lastEventId: "", source: null, data: "xxx", …}
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="[Log] MessageEvent {isTrusted: true, origin: &quot;ws://localhost:3000&quot;, lastEventId: &quot;&quot;, source: null, data: &quot;xxx&quot;, …}"><pre class="notranslate"><code class="notranslate">[Log] MessageEvent {isTrusted: true, origin: "ws://localhost:3000", lastEventId: "", source: null, data: "xxx", …}
 </code></pre></div>
 <p dir="auto">Another question who sets these properties ? Because the only possible place <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/send" rel="nofollow">WebSocket.send</a> can't set them. And I can't find a place in WebSocket API to set these properties</p>
 <h3 dir="auto">What did you expect to see?</h3>
@@ -1222,7 +1222,7 @@ Then it moves on to the next immediate ancestor element and does the same thing,
 		  body: message
 	  })
 	  .then(data =&gt; console.log('success'),data =&gt; console.log('error'))
-  }"><pre>  <span class="pl-k">function</span> <span class="pl-en">test_fetch</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">{</span>
+  }"><pre class="notranslate">  <span class="pl-k">function</span> <span class="pl-en">test_fetch</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">{</span>
 	  <span class="pl-k">let</span> <span class="pl-s1">message</span> <span class="pl-c1">=</span> <span class="pl-c1">JSON</span><span class="pl-kos">.</span><span class="pl-en">stringify</span><span class="pl-kos">(</span><span class="pl-kos">{</span>
              <span class="pl-c">// 'ids' is the expected field. Change it latter for 'id' or something else to see the error.</span>
              <span class="pl-c1">ids</span>: <span class="pl-kos">[</span><span class="pl-c1">1</span><span class="pl-kos">]</span> 
@@ -1280,7 +1280,7 @@ Then it moves on to the next immediate ancestor element and does the same thing,
 &lt;img src=&quot;https://placehold.jp/50x50.png&quot; 
      srcset=&quot;https://placehold.jp/150x150.png 50w,
              https://placehold.jp/150x150.png 150w,
-             https://placehold.jp/2000x2000.png&quot;&gt;"><pre><span class="pl-kos">&lt;</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
+             https://placehold.jp/2000x2000.png&quot;&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
     <span class="pl-ent">img</span> {
         <span class="pl-c1">width</span><span class="pl-kos">:</span> <span class="pl-c1">50<span class="pl-smi">px</span></span>;
     }
@@ -1588,7 +1588,7 @@ If done so, the Alphabetical index could be its own page aswell, instead of furt
 <p dir="auto">AFAIK This wrong.</p>
 <p dir="auto"><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="702066886" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/1" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/1/hovercard" href="https://github.com/mdn/content/pull/1">#1</a>. While it's true a gamepad object will be provided on gamepadconnected, it's also true that gamepad objects will be provided by navigator.getGamepads</p>
 <p dir="auto"><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="702234902" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/2" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/2/hovercard" href="https://github.com/mdn/content/pull/2">#2</a>. The description above and elsewhere suggests holding on to a reference to the gamepad object and querying it for values. But this fails. In fact, the example code in the article does not do this. It updates the gamepad objects near the end</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="       controllers[gamepads[i].index] = gamepads[i];"><pre class="notranslate"><code>       controllers[gamepads[i].index] = gamepads[i];
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="       controllers[gamepads[i].index] = gamepads[i];"><pre class="notranslate"><code class="notranslate">       controllers[gamepads[i].index] = gamepads[i];
 </code></pre></div>
 <p dir="auto">In other words, it's updating the <code class="notranslate">controllers</code> array with a new gamepad object for the same gamepad.</p>
 <p dir="auto">If instead you did this</p>
@@ -1596,7 +1596,7 @@ If done so, the Alphabetical index could be its own page aswell, instead of furt
    // for this controller from the gamepadconnected event
    if (!controllers[gamepads[i].index]) {
       controllers[gamepads[i].index] = gamepads[i];
-   }"><pre class="notranslate"><code>   // no need to use a new gamepad object if we already have a gamepad object
+   }"><pre class="notranslate"><code class="notranslate">   // no need to use a new gamepad object if we already have a gamepad object
    // for this controller from the gamepadconnected event
    if (!controllers[gamepads[i].index]) {
       controllers[gamepads[i].index] = gamepads[i];
@@ -1770,7 +1770,7 @@ This feature is useful to implement multiple different submit buttons.</p>
     &lt;/form&gt;
 
   &lt;/body&gt;
-&lt;/html&gt;"><pre class="notranslate"><code>&lt;!DOCTYPE html&gt;
+&lt;/html&gt;"><pre class="notranslate"><code class="notranslate">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;body&gt;
     &lt;script&gt;
@@ -2128,7 +2128,7 @@ console.log('text downloaded');
 ctrl.abort();
 
 // Resultant behavior is that &quot;text downloaded&quot; never was displayed, and we received this:
-// (x) Uncaught DOMException: The user aborted a request."><pre class="notranslate"><code>var ctrl = new AbortController();
+// (x) Uncaught DOMException: The user aborted a request."><pre class="notranslate"><code class="notranslate">var ctrl = new AbortController();
 var res = await fetch('https://www.ledger-cli.org/3.0/doc/ledger3.pdf', { signal: ctrl.signal });
 console.log('response received');
 var data = await res.text();
@@ -2193,7 +2193,7 @@ Reference: <a href="https://html.spec.whatwg.org/multipage/forms.html#htmllabele
 Thus if we write:</p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="let label = document.createElement('label');
 let button = document.createElement('button');
-label.appendChild(button);"><pre class="notranslate"><code>let label = document.createElement('label');
+label.appendChild(button);"><pre class="notranslate"><code class="notranslate">let label = document.createElement('label');
 let button = document.createElement('button');
 label.appendChild(button);
 </code></pre></div>
@@ -2205,7 +2205,7 @@ label.appendChild(button);
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="let label = document.createElement('label');
 let button = document.createElement('button');
 label.appendChild(button);
-label.control instanceof HTMLButtonElement; // label.control returns null"><pre class="notranslate"><code>let label = document.createElement('label');
+label.control instanceof HTMLButtonElement; // label.control returns null"><pre class="notranslate"><code class="notranslate">let label = document.createElement('label');
 let button = document.createElement('button');
 label.appendChild(button);
 label.control instanceof HTMLButtonElement; // label.control returns null
@@ -2293,7 +2293,7 @@ const writableStream = new WritableStream({
 }, queuingStrategy);
 
 sendMessage(&quot;Hello, world.&quot;, writableStream);
-"><pre><span class="pl-k">const</span> <span class="pl-s1">list</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">'ul'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">list</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">'ul'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
 <span class="pl-k">function</span> <span class="pl-en">sendMessage</span><span class="pl-kos">(</span><span class="pl-s1">message</span><span class="pl-kos">,</span> <span class="pl-s1">writableStream</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
 	<span class="pl-c">// defaultWriter is of type WritableStreamDefaultWriter</span>
@@ -2372,10 +2372,10 @@ chunks (their "tasks") are immediately enqueued by<br>
 (printing <code class="notranslate">"Stream error:", err</code>) is not called at all.<br>
 The error resulting from calling <code class="notranslate">defaultWriter.close()</code><br>
 is unhandled. Instead of:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="defaultWriter.close();"><pre class="notranslate"><code>defaultWriter.close();
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="defaultWriter.close();"><pre class="notranslate"><code class="notranslate">defaultWriter.close();
 </code></pre></div>
 <p dir="auto">it should be</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="return defaultWriter.close();"><pre class="notranslate"><code>return defaultWriter.close();
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="return defaultWriter.close();"><pre class="notranslate"><code class="notranslate">return defaultWriter.close();
 </code></pre></div>
 </li>
 </ul>
@@ -2487,7 +2487,7 @@ is unhandled. Instead of:</p>
 
 &lt;button id=&quot;btn-show&quot;&gt;Show Dialog&lt;/button&gt;
 
-&lt;p&gt;Result: &lt;span class=&quot;result&quot;&gt;&lt;/span&gt;&lt;/p&gt;"><pre><span class="pl-kos">&lt;</span><span class="pl-ent">dialog</span> <span class="pl-c1">id</span>="<span class="pl-s">diag</span>"<span class="pl-kos">&gt;</span>
+&lt;p&gt;Result: &lt;span class=&quot;result&quot;&gt;&lt;/span&gt;&lt;/p&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">dialog</span> <span class="pl-c1">id</span>="<span class="pl-s">diag</span>"<span class="pl-kos">&gt;</span>
   <span class="pl-kos">&lt;</span><span class="pl-ent">form</span> <span class="pl-c1">method</span>="<span class="pl-s">dialog</span>"<span class="pl-kos">&gt;</span>
     <span class="pl-kos">&lt;</span><span class="pl-ent">input</span> <span class="pl-c1">id</span>="<span class="pl-s">txt-name</span>" <span class="pl-c1">required</span> /&gt;
     
@@ -2509,7 +2509,7 @@ diag.addEventListener(&quot;close&quot;, () =&gt; {
 
 document.querySelector(&quot;#btn-show&quot;).addEventListener(&quot;click&quot;, () =&gt; {
   diag.showModal();
-});"><pre><span class="pl-k">const</span> <span class="pl-s1">diag</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">"#diag"</span><span class="pl-kos">)</span>
+});"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">diag</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">"#diag"</span><span class="pl-kos">)</span>
 
 <span class="pl-s1">diag</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"close"</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
   <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-c1">!</span><span class="pl-s1">diag</span><span class="pl-kos">.</span><span class="pl-c1">returnValue</span><span class="pl-kos">)</span> <span class="pl-kos">{</span> <span class="pl-k">return</span><span class="pl-kos">;</span> <span class="pl-kos">}</span>
@@ -2665,7 +2665,7 @@ the code in question is a simple xpath method:</p>
                   return 'http://www.w3.org/XML/1998/namespace';},
                 XPathResult.FIRST_ORDERED_NODE_TYPE, 
                 null).singleNodeValue;
-};"><pre><span class="pl-k">var</span> <span class="pl-en">getElementByIdWrapper</span> <span class="pl-c1">=</span> <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-s1">xmldoc</span><span class="pl-kos">,</span> <span class="pl-s1">myID</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+};"><pre class="notranslate"><span class="pl-k">var</span> <span class="pl-en">getElementByIdWrapper</span> <span class="pl-c1">=</span> <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-s1">xmldoc</span><span class="pl-kos">,</span> <span class="pl-s1">myID</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
         <span class="pl-k">return</span> <span class="pl-s1">xmldoc</span><span class="pl-kos">.</span><span class="pl-en">evaluate</span><span class="pl-kos">(</span><span class="pl-s">'//*[@xml:id="'</span><span class="pl-c1">+</span><span class="pl-s1">myID</span><span class="pl-c1">+</span><span class="pl-s">'"]'</span><span class="pl-kos">,</span> <span class="pl-s1">xmldoc</span><span class="pl-kos">,</span> 
                 <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
                   <span class="pl-k">return</span> <span class="pl-s">'http://www.w3.org/XML/1998/namespace'</span><span class="pl-kos">;</span><span class="pl-kos">}</span><span class="pl-kos">,</span>
@@ -2811,7 +2811,7 @@ no</p>]]></content:encoded>
   readonly attribute unsigned short readyState;
   readonly attribute unsigned long long bufferedAmount;
   [...]
-}"><pre class="notranslate"><code>interface WebSocket : EventTarget {
+}"><pre class="notranslate"><code class="notranslate">interface WebSocket : EventTarget {
   [...]
 
   // ready state
@@ -2941,7 +2941,7 @@ if (document.readyState === 'loading') {  // Loading hasn't finished yet
   document.addEventListener('DOMContentLoaded', doSomething);
 } else {  // `DOMContentLoaded` has already fired
   doSomething();
-}"><pre class="notranslate"><code>function doSomething() {
+}"><pre class="notranslate"><code class="notranslate">function doSomething() {
   console.info('DOM loaded');
 }
 
@@ -3271,7 +3271,7 @@ customElements.define('my-component', class myElement extends HTMLElement {
 		let shadowRoot = this.attachShadow({ mode: 'open' });
 		shadowRoot.innerHTML = template;
 	}
-});"><pre><span class="pl-k">let</span> <span class="pl-s1">template</span> <span class="pl-c1">=</span> <span class="pl-s">`</span>
+});"><pre class="notranslate"><span class="pl-k">let</span> <span class="pl-s1">template</span> <span class="pl-c1">=</span> <span class="pl-s">`</span>
 <span class="pl-s">	&lt;div&gt;</span>
 <span class="pl-s">		&lt;a href="#message"&gt;Make the message red&lt;/a&gt;</span>
 <span class="pl-s">		&lt;h2 id="message"&gt;Message in a bottle&lt;/h2&gt;</span>
@@ -3457,7 +3457,7 @@ But it seem that dragging an element removes it from its current position in the
           dragged.parentNode.removeChild( dragged );
           event.target.appendChild( dragged );
       }
-"><pre class="notranslate"><code>      if ( event.target.className == "dropzone" ) {
+"><pre class="notranslate"><code class="notranslate">      if ( event.target.className == "dropzone" ) {
           event.target.style.background = "";
           dragged.parentNode.removeChild( dragged );
           event.target.appendChild( dragged );
@@ -3471,7 +3471,7 @@ But it seem that dragging an element removes it from its current position in the
           // dragged.parentNode.removeChild( dragged );
           event.target.appendChild( dragged );
       }
-"><pre class="notranslate"><code>      if ( event.target.className == "dropzone" ) {
+"><pre class="notranslate"><code class="notranslate">      if ( event.target.className == "dropzone" ) {
           event.target.style.background = "";
           // dragged.parentNode.removeChild( dragged );
           event.target.appendChild( dragged );
@@ -3537,7 +3537,7 @@ But it seem that dragging an element removes it from its current position in the
   undefined cancelAnimationFrame(unsigned long handle);
 };
 Window includes AnimationFrameProvider;
-DedicatedWorkerGlobalScope includes AnimationFrameProvider;"><pre><span class="pl-k">interface</span> <span class="pl-en">mixin</span> AnimationFrameProvider {
+DedicatedWorkerGlobalScope includes AnimationFrameProvider;"><pre class="notranslate"><span class="pl-k">interface</span> <span class="pl-en">mixin</span> AnimationFrameProvider {
   <span class="pl-k">unsigned</span> <span class="pl-k">long</span> <span class="pl-en">requestAnimationFrame</span>(FrameRequestCallback callback);
   undefined <span class="pl-en">cancelAnimationFrame</span>(<span class="pl-k">unsigned</span> <span class="pl-k">long</span> handle);
 };

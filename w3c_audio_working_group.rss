@@ -22,11 +22,11 @@
 // Create a buffer, plop in data, connect and play -&gt; modify graph here if required<br>
 function playSample(audioContext, audioBuffer, time) {</p>
 <p dir="auto">on line 377 (first line of the function)</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="    const sampleSource = new AudioBufferSourceNode(audioCtx, {"><pre class="notranslate"><code>    const sampleSource = new AudioBufferSourceNode(audioCtx, {
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="    const sampleSource = new AudioBufferSourceNode(audioCtx, {"><pre class="notranslate"><code class="notranslate">    const sampleSource = new AudioBufferSourceNode(audioCtx, {
 </code></pre></div>
 <p dir="auto">line uses audioCtx (the global context variable) rather than the passed in variable audioContext</p>
 <h3 dir="auto">What did you expect to see?</h3>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="    const sampleSource = new AudioBufferSourceNode(audioContext, {"><pre class="notranslate"><code>    const sampleSource = new AudioBufferSourceNode(audioContext, {
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="    const sampleSource = new AudioBufferSourceNode(audioContext, {"><pre class="notranslate"><code class="notranslate">    const sampleSource = new AudioBufferSourceNode(audioContext, {
 </code></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
@@ -90,7 +90,7 @@ But that does not really cover the topic.</p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const osc = ctx.createOscillator();
 const reverb = ctx.createConvolver();
 reverb.buffer = ctx.createBuffer(1, ctx.sampleRate, ctx.sampleRate);
-osc.connect(reverb).connect(ctx.destination);"><pre class="notranslate"><code>const osc = ctx.createOscillator();
+osc.connect(reverb).connect(ctx.destination);"><pre class="notranslate"><code class="notranslate">const osc = ctx.createOscillator();
 const reverb = ctx.createConvolver();
 reverb.buffer = ctx.createBuffer(1, ctx.sampleRate, ctx.sampleRate);
 osc.connect(reverb).connect(ctx.destination);

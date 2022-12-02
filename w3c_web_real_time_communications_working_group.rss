@@ -62,7 +62,7 @@ onData: function (event) {
     // append the latest chunk of video data to an array
     this.chunks.push(event.data);
     this.duration = this.chunks.length * 500 / 1000;
-}"><pre>startRecording: <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+}"><pre class="notranslate">startRecording: <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
     <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">recorder</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">MediaRecorder</span><span class="pl-kos">(</span><span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">streamSrc</span><span class="pl-kos">,</span> <span class="pl-kos">{</span><span class="pl-c1">mimeType</span>: <span class="pl-s">"video/webm;codecs:vp8"</span><span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
     <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">recorder</span><span class="pl-kos">.</span><span class="pl-c1">ondataavailable</span> <span class="pl-c1">=</span> <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">onData</span><span class="pl-kos">;</span>
     <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">recorder</span><span class="pl-kos">.</span><span class="pl-en">start</span><span class="pl-kos">(</span><span class="pl-c1">500</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
@@ -263,7 +263,7 @@ navigator.mediaDevices
   .catch(function(err) {
     console.error('Error happens:', err);
   });
-"><pre class="notranslate"><code>
+"><pre class="notranslate"><code class="notranslate">
 navigator.mediaDevices
   .getUserMedia({
     video: {

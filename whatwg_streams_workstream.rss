@@ -79,7 +79,7 @@ const writableStream = new WritableStream({
 }, queuingStrategy);
 
 sendMessage(&quot;Hello, world.&quot;, writableStream);
-"><pre><span class="pl-k">const</span> <span class="pl-s1">list</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">'ul'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">list</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">'ul'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
 <span class="pl-k">function</span> <span class="pl-en">sendMessage</span><span class="pl-kos">(</span><span class="pl-s1">message</span><span class="pl-kos">,</span> <span class="pl-s1">writableStream</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
 	<span class="pl-c">// defaultWriter is of type WritableStreamDefaultWriter</span>
@@ -158,10 +158,10 @@ chunks (their "tasks") are immediately enqueued by<br>
 (printing <code class="notranslate">"Stream error:", err</code>) is not called at all.<br>
 The error resulting from calling <code class="notranslate">defaultWriter.close()</code><br>
 is unhandled. Instead of:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="defaultWriter.close();"><pre class="notranslate"><code>defaultWriter.close();
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="defaultWriter.close();"><pre class="notranslate"><code class="notranslate">defaultWriter.close();
 </code></pre></div>
 <p dir="auto">it should be</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="return defaultWriter.close();"><pre class="notranslate"><code>return defaultWriter.close();
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="return defaultWriter.close();"><pre class="notranslate"><code class="notranslate">return defaultWriter.close();
 </code></pre></div>
 </li>
 </ul>
