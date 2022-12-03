@@ -4,10 +4,102 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Sat, 03 Dec 2022 15:04:56 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 03 Dec 2022 16:16:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Show *Implicit ARIA Role* on each `<input type="*">` page]]></title>
+            <link>https://github.com/mdn/content/issues/22699</link>
+            <guid>https://github.com/mdn/content/issues/22699</guid>
+            <pubDate>Sat, 03 Dec 2022 16:16:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">/Web/HTML/Element/input/*</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The <code class="notranslate">&lt;input type="*"&gt;</code> pages are missing information about their implied ARIA role.</p>
+<p dir="auto">The implicit ARIA roles are describes on the <code class="notranslate">&lt;input&gt;</code>, which is good. Unfortunately, if a reader doesn't think to go up a level, they won't have access to this information.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">There's a table on each input type page. I expect implied ARIA role to be one of those rows.</p>
+<table role="table">
+  <tbody>
+    <tr>
+      <td><strong><a href="#value">Value</a></strong></td>
+      <td>
+        A string representing the value contained in
+        the search field.
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Events</strong></td>
+      <td>
+        {{domxref("HTMLElement/change_event", "change")}} and
+        {{domxref("HTMLElement/input_event", "input")}}
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Supported Common Attributes</strong></td>
+      <td>
+        {{htmlattrxref("autocomplete", "input")}},
+        {{htmlattrxref("list", "input")}},
+        {{htmlattrxref("maxlength", "input")}},
+        {{htmlattrxref("minlength", "input")}},
+        {{htmlattrxref("pattern", "input")}},
+        {{htmlattrxref("placeholder", "input")}},
+        {{htmlattrxref("required", "input")}},
+        {{htmlattrxref("size", "input")}}.
+      </td>
+    </tr>
+    <tr>
+      <td><strong>IDL attributes</strong></td>
+      <td><code class="notranslate">value</code></td>
+    </tr>    
+    <tr>
+      <td><strong>Implicit ARIA roles</strong></td>
+      <td>
+            <ul dir="auto">
+              <li>
+                with no <code class="notranslate">list</code> attribute: {{ARIARole("searchbox")}}
+              </li>
+              <li>
+                with <code class="notranslate">list</code> attribute:{{ARIARole("combobox")}}
+              </li>
+            </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>DOM interface</strong></td>
+      <td><p dir="auto">{{domxref("HTMLInputElement")}}</p></td>
+    </tr>
+    <tr>
+      <td><strong>Methods</strong></td>
+      <td>
+        {{domxref("HTMLInputElement.select", "select()")}},
+        {{domxref("HTMLInputElement.setRangeText", "setRangeText()")}},
+        {{domxref("HTMLInputElement.setSelectionRange", "setSelectionRange()")}}.
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" rel="nofollow">Input page</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search" rel="nofollow">Example Input Type page</a> (one of many)</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/element/input</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/input/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/input/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/8e16e19d3ee35157c81b299c0ccb9d5effd2ac22/hovercard" href="https://github.com/mdn/content/commit/8e16e19d3ee35157c81b299c0ccb9d5effd2ac22"><tt>8e16e19</tt></a></li>
+<li>Document last modified: 2022-11-26T11:30:26.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] ErrorEvent should document that ErrorEvent.message depends on 'HTML attribute: crossorigin' ]]></title>
             <link>https://github.com/mdn/content/issues/22698</link>
