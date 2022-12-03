@@ -22,8 +22,6 @@
   
 * [[file-system-access] File System Access API is incomplete](https://github.com/mdn/content/issues/22000) (2022-11-02T10:18:28Z)
   
-* [[mediaqueries-4, css-conditional-3] Logical operator or in complex media query](https://github.com/mdn/content/issues/21959) (2022-10-31T11:33:56Z)
-  
 * [[WebIDL-1] “Using the Web Storage API” has deprecated “DOMException.code” in example](https://github.com/mdn/content/issues/21910) (2022-10-28T12:08:01Z)
   
 * [[cssom-view-1, uievents, pointerlock-2] MouseEvent.clientX and MouseEvent.clientY is  the coordinates of the window, but the documentation is written relative to the local dom ](https://github.com/mdn/content/issues/21876) (2022-10-27T13:46:15Z)
