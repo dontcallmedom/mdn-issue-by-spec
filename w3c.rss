@@ -4,10 +4,55 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Thu, 01 Dec 2022 07:19:20 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 03 Dec 2022 23:33:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[web-share] Error: TypeError: navigator.share is not a function]]></title>
+            <link>https://github.com/mdn/content/issues/22703</link>
+            <guid>https://github.com/mdn/content/issues/22703</guid>
+            <pubDate>Sat, 03 Dec 2022 23:33:43 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Navigator.share()</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">const shareData = {<br>
+title: 'MDN',<br>
+text: 'Learn web development on MDN!',<br>
+url: '<a href="https://developer.mozilla.org" rel="nofollow">https://developer.mozilla.org</a>'<br>
+}</p>
+<p dir="auto">const btn = document.querySelector('button');<br>
+const resultPara = document.querySelector('.result');</p>
+<p dir="auto">// Share must be triggered by "user activation"<br>
+btn.addEventListener('click', async () =&gt; {<br>
+try {<br>
+await navigator.share(shareData);<br>
+resultPara.textContent = 'MDN shared successfully';<br>
+} catch (err) {<br>
+resultPara.textContent = <code class="notranslate">Error: ${err}</code>;<br>
+}<br>
+});</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Share API to work, currently returning error (Error: TypeError: navigator.share is not a function)</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/navigator/share</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/navigator/share/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/navigator/share/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/a243190b798aa57b6cc08b9ef3216aed8ab9c895/hovercard" href="https://github.com/mdn/content/commit/a243190b798aa57b6cc08b9ef3216aed8ab9c895"><tt>a243190</tt></a></li>
+<li>Document last modified: 2022-09-22T16:39:52.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript, webusb] Conflicting information in `USBDevice.controlTransferIn()` and `USBDevice.controlTransferOut()`]]></title>
             <link>https://github.com/mdn/content/issues/22652</link>

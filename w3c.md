@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[web-share] Error: TypeError: navigator.share is not a function](https://github.com/mdn/content/issues/22703) (2022-12-03T23:33:43Z)
+  
 * [[ecmascript, webusb] Conflicting information in `USBDevice.controlTransferIn()` and `USBDevice.controlTransferOut()`](https://github.com/mdn/content/issues/22652) (2022-12-01T07:19:20Z)
   
 * [[css-fonts-5] getComputedStyle() does not respect the Fallback weights algorithm](https://github.com/mdn/content/issues/22496) (2022-11-23T12:04:06Z)
