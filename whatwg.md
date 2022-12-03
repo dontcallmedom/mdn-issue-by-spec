@@ -2,6 +2,10 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] ErrorEvent should document that ErrorEvent.message depends on 'HTML attribute: crossorigin' ](https://github.com/mdn/content/issues/22698) (2022-12-03T15:04:56Z)
+  
+* [[html, dom] The page should include that, if the user holds down the Shift key the context menu will be displayed](https://github.com/mdn/content/issues/22697) (2022-12-03T15:03:26Z)
+  
 * [[html] HTML forms `POST` method example gives `403 Forbidden` (via cloudfront)](https://github.com/mdn/content/issues/22560) (2022-11-27T14:57:57Z)
   
 * [[html] Missing content: validityState.valueMissing](https://github.com/mdn/content/issues/22557) (2022-11-27T02:52:10Z)

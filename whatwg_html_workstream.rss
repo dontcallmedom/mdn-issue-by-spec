@@ -4,10 +4,75 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Sun, 27 Nov 2022 14:57:57 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 03 Dec 2022 15:04:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] ErrorEvent should document that ErrorEvent.message depends on 'HTML attribute: crossorigin' ]]></title>
+            <link>https://github.com/mdn/content/issues/22698</link>
+            <guid>https://github.com/mdn/content/issues/22698</guid>
+            <pubDate>Sat, 03 Dec 2022 15:04:56 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ErrorEvent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ErrorEvent</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ErrorEvent#instance_properties" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ErrorEvent#instance_properties</a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">When a script is included from a URL different from where it is executed the error.message is truncated for security reasons.  However this is not documented except on <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin" rel="nofollow">crossorigin</a>, which is not where developers will be looking with an error problem.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I would expect or at least hope to see the things that affect error.message on the related error page where the message is discussed.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin</a> page says in the default section  that lack of a crossorgin setting reduces error logging.</p>
+<blockquote>
+
+</blockquote>
+
+
+<table role="table">
+<thead>
+<tr>
+<th>script</th>
+<th>Access to error logging via window.onerror will be limited.</th>
+</tr>
+</thead>
+</table>
+
+
+
+<p dir="auto">The same info should be on a page about error.message</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Javascript errors are a little complicated and difficult to document clearly, there is not a reason to include this in the error documentation since it will help developers find what they need in the most likely place to look for it.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[html, dom] The page should include that, if the user holds down the Shift key the context menu will be displayed]]></title>
+            <link>https://github.com/mdn/content/issues/22697</link>
+            <guid>https://github.com/mdn/content/issues/22697</guid>
+            <pubDate>Sat, 03 Dec 2022 15:03:26 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/contextmenu_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/contextmenu_event</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Any right-click event that is not disabled (by calling the event's <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" rel="nofollow">preventDefault()</a> method) will result in a contextmenu event being fired at the targeted element.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Maybe something like this: "In Firefox, if the user holds down the Shift key while opening the context menu will not prevent it from opening."</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/element/contextmenu_event</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/contextmenu_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/contextmenu_event</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/element/contextmenu_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/element/contextmenu_event/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/1732201134d732af9bfd49ee9e10f7e2086cc783/hovercard" href="https://github.com/mdn/content/commit/1732201134d732af9bfd49ee9e10f7e2086cc783"><tt>1732201</tt></a></li>
+<li>Document last modified: 2022-10-14T07:09:52.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] HTML forms `POST` method example gives `403 Forbidden` (via cloudfront)]]></title>
             <link>https://github.com/mdn/content/issues/22560</link>
