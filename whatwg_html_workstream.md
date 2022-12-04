@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] rejectionhandled event doesn't fire on every handled rejection, but only if unhandledrejection events was triggered](https://github.com/mdn/content/issues/22709) (2022-12-04T05:53:35Z)
+  
 * [[html] Show *Implicit ARIA Role* on each `<input type="*">` page](https://github.com/mdn/content/issues/22699) (2022-12-03T16:16:00Z)
   
 * [[html] ErrorEvent should document that ErrorEvent.message depends on 'HTML attribute: crossorigin' ](https://github.com/mdn/content/issues/22698) (2022-12-03T15:04:56Z)
