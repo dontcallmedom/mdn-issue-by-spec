@@ -4,10 +4,37 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Sat, 03 Dec 2022 23:33:43 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 04 Dec 2022 00:17:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[DOM-Parsing] [page types] Define page types for HTML]]></title>
+            <link>https://github.com/mdn/content/issues/22705</link>
+            <guid>https://github.com/mdn/content/issues/22705</guid>
+            <pubDate>Sun, 04 Dec 2022 00:17:19 GMT</pubDate>
+            <content:encoded><![CDATA[<p dir="auto">Part of <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1221660178" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/15539" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/15539/hovercard" href="https://github.com/mdn/content/issues/15539">#15539</a>.</p>
+<p dir="auto">In <a href="https://docs.google.com/spreadsheets/d/14RX8EEKPpeYkP2cF5Y_ZKF3JpNJ_24OL7stvZWNJLIY/edit#gid=2083448819" rel="nofollow">https://docs.google.com/spreadsheets/d/14RX8EEKPpeYkP2cF5Y_ZKF3JpNJ_24OL7stvZWNJLIY/edit#gid=2083448819</a>, in the "HTML" tab, I've listed every page under <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML</a> and made an initial determination about the page type.</p>
+<p dir="auto">Apart from the generic "guide" and "landing page" types, I have come up with just:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="HTML attribute (52)
+HTML attribute value (11)
+HTML element (156)"><pre class="notranslate"><code class="notranslate">HTML attribute (52)
+HTML attribute value (11)
+HTML element (156)
+</code></pre></div>
+<p dir="auto">In the IA attributes are a mess, we have them in at least three places:</p>
+<ul dir="auto">
+<li>global attributes under <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes</a></li>
+<li>some non-global attributes under <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes</a></li>
+<li>some other non-global attributes under some element</li>
+</ul>
+<p dir="auto">Some day we should sort this out but I don't think it affects page types.<br>
+From a page types perspective, I opted not to have a separate type for "global attributes". AFAICT they are structurally the same, they just apply to a different set of elements.</p>
+<p dir="auto">I opted to call input types "HTML element" to align with the general fiction we have of treating them as individual elements. I think this is a reasonable approach although we do have an organizational problem that they live under another element page. This is especially confusing since we also have some attributes under element pages.</p>
+<p dir="auto">An alternative I suppose could be to call input types "HTML attribute value" pages, which is technically correct. But it is perhaps less helpful.</p>
+<hr>
+<p dir="auto">BTW I wanted to do this now because removing <a href="https://github.com/mdn/yari/blob/2720d1f9998be94428a822dcc06946d6a53879d0/kumascript/macros/CSSInfo.ejs#L44">one of the places we use tags</a> depends on having HTML element page types.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[web-share] Error: TypeError: navigator.share is not a function]]></title>
             <link>https://github.com/mdn/content/issues/22703</link>
