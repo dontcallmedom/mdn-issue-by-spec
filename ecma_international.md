@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[ecmascript, webusb] Conflicting information in `USBDevice.controlTransferIn()` and `USBDevice.controlTransferOut()`](https://github.com/mdn/content/issues/22652) (2022-12-01T07:19:20Z)
-  
 * [[ecmascript] BigInt replacer/reviver example is not generic](https://github.com/mdn/content/issues/22573) (2022-11-28T12:41:19Z)
   
 * [[ecmascript] Document import assertions](https://github.com/mdn/content/issues/19220) (2022-08-06T05:08:53Z)
