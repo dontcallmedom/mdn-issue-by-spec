@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Platform Incubator Community Group. [![RSS feed for W3C Web Platform Incubator Community Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[file-system-access] Incorrect interfaces specified in explanatory text for FileSystemHandle](https://github.com/mdn/content/issues/22744) (2022-12-05T14:09:58Z)
+  
 * [[webhid] Confusing phrase "input report" is used for HIDConnectionEvent](https://github.com/mdn/content/issues/22419) (2022-11-20T02:34:52Z)
   
 * [[file-system-access] File System Access API is incomplete](https://github.com/mdn/content/issues/22000) (2022-11-02T10:18:28Z)
