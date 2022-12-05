@@ -4,10 +4,32 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Sat, 03 Dec 2022 16:16:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 05 Dec 2022 04:44:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] document-domain feature policy is being removed]]></title>
+            <link>https://github.com/mdn/content/issues/22732</link>
+            <guid>https://github.com/mdn/content/issues/22732</guid>
+            <pubDate>Mon, 05 Dec 2022 04:44:41 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/domain" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/domain</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Failures</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto">The document-domain Feature-Policy is disabled.</p>
+</blockquote>
+<p dir="auto">should be removed, and the linked page should be either deleted or marked as deprecated in some way.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">No mention of the document-domain feature policy</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">The feature policy is being removed from the spec in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1463420649" data-permission-text="Title is private" data-url="https://github.com/whatwg/html/issues/8549" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/html/pull/8549/hovercard" href="https://github.com/whatwg/html/pull/8549">whatwg/html#8549</a> and from Chromium in <a href="https://chromium-review.googlesource.com/c/3930823" rel="nofollow">https://chromium-review.googlesource.com/c/3930823</a> .</p>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/document-domain" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/document-domain</a> says that document-domain feature policy was enabled in Chromium 77, but I believe this is incorrect; <a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/otherdaniel/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/otherdaniel">@otherdaniel</a> says it was never enabled by default.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Show *Implicit ARIA Role* on each `<input type="*">` page]]></title>
             <link>https://github.com/mdn/content/issues/22699</link>
