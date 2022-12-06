@@ -4,43 +4,10 @@
         <title>WHATWG Console Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_console_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG Console Workstream</description>
-        <lastBuildDate>Wed, 21 Sep 2022 01:53:38 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 06 Jul 2021 06:31:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[console] Label - a string or a identifier?]]></title>
-            <link>https://github.com/mdn/content/issues/20938</link>
-            <guid>https://github.com/mdn/content/issues/20938</guid>
-            <pubDate>Wed, 21 Sep 2022 01:53:38 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/console/time" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/console/time</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">time(label)</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The article calls this a label, but does not actually state that it should be a string. The user could interpret that they can just put an identifier on there (a line of text without wrapping it in quotes). During testing it is supposed to be a string wrapped in quotes <code class="notranslate">console.time("Example")</code>, not like this: <code class="notranslate">console.time(Example)</code> as tested in chrome resulted in an error. Same should apply to <a href="https://developer.mozilla.org/en-US/docs/Web/API/console/timeEnd" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/console/timeEnd</a></p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">It should say something like this:</p>
-<blockquote>
-<p dir="auto">The label must be a string.</p>
-</blockquote>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/console/time</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/console/time" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/console/time</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/console/time/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/console/time/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/da88b2f3a23b9d93f083003f13c06f9d96073f6a/hovercard" href="https://github.com/mdn/content/commit/da88b2f3a23b9d93f083003f13c06f9d96073f6a"><tt>da88b2f</tt></a></li>
-<li>Document last modified: 2022-09-13T05:21:27.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[console] Issue with "console", how does number formatting work? Number formatting doesn't work on Chrome.]]></title>
             <link>https://github.com/mdn/content/issues/6614</link>
