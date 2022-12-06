@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[SVG11] [page types] Define page types for SVG](https://github.com/mdn/content/issues/22762) (2022-12-05T23:50:18Z)
+  
 * [[file-system-access] Incorrect interfaces specified in explanatory text for FileSystemHandle](https://github.com/mdn/content/issues/22744) (2022-12-05T14:09:58Z)
   
 * [[DOM-Parsing] [page types] Define page types for HTML](https://github.com/mdn/content/issues/22705) (2022-12-04T00:17:19Z)
