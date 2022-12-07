@@ -24,7 +24,7 @@
 </blockquote>
 <p dir="auto">There is a caveat in which <code class="notranslate">calc()</code> cannot be used as a number. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/percentage#syntax" rel="nofollow">If we take a look at the syntax for percentage</a>, we'll see that it states:</p>
 <blockquote>
-<p dir="auto">The  data type consists of a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/number" rel="nofollow"></a> followed by the percentage sign (%).</p>
+<p dir="auto">The <code class="notranslate">&lt;percentage&gt;</code> data type consists of a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/number" rel="nofollow"><code class="notranslate">&lt;number&gt;</code></a> followed by the percentage sign (%).</p>
 </blockquote>
 <p dir="auto">If you were to try to substitute <code class="notranslate">&lt;number&gt;</code> with a calc expression, such as:</p>
 <div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content=".class {
