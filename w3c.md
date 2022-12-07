@@ -4,8 +4,6 @@
 
 * [[SVG11] [page types] Define page types for SVG](https://github.com/mdn/content/issues/22762) (2022-12-05T23:50:18Z)
   
-* [[file-system-access] Incorrect interfaces specified in explanatory text for FileSystemHandle](https://github.com/mdn/content/issues/22744) (2022-12-05T14:09:58Z)
-  
 * [[DOM-Parsing] [page types] Define page types for HTML](https://github.com/mdn/content/issues/22705) (2022-12-04T00:17:19Z)
   
 * [[css-fonts-5] getComputedStyle() does not respect the Fallback weights algorithm](https://github.com/mdn/content/issues/22496) (2022-11-23T12:04:06Z)

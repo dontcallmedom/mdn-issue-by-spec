@@ -3,13 +3,13 @@
 
 This repository collects information on MDN Web Docs issues and group them based on the specifications they relate to and the orgs / groups that produce these specifications.
 
-* [Ecma International](ecma_international.md): 4 issues [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ecma_international.rss)
-* [Ecma International TC39](ecma_international_tc39.md): 4 issues [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ecma_international_tc39.rss)
+* [Ecma International](ecma_international.md): 5 issues [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ecma_international.rss)
+* [Ecma International TC39](ecma_international_tc39.md): 5 issues [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ecma_international_tc39.rss)
 * [IETF](ietf.md): 7 issues [![RSS feed for IETF-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ietf.rss)
 * [IETF Hypertext Transfer Protocol Bis APP Working Group](ietf_hypertext_transfer_protocol_bis_app_working_group.md): 7 issues [![RSS feed for IETF Hypertext Transfer Protocol Bis APP Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ietf_hypertext_transfer_protocol_bis_app_working_group.rss)
 * [Khronos Group](khronos_group.md): 4 issues [![RSS feed for Khronos Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](khronos_group.rss)
 * [Khronos Group WebGL Working Group](khronos_group_webgl_working_group.md): 4 issues [![RSS feed for Khronos Group WebGL Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](khronos_group_webgl_working_group.rss)
-* [W3C](w3c.md): 144 issues [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c.rss)
+* [W3C](w3c.md): 143 issues [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c.rss)
 * [W3C Audio Working Group](w3c_audio_working_group.md): 8 issues [![RSS feed for W3C Audio Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_audio_working_group.rss)
 * [W3C Browser Testing and Tools Working Group](w3c_browser_testing_and_tools_working_group.md): 1 issues [![RSS feed for W3C Browser Testing and Tools Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_browser_testing_and_tools_working_group.rss)
 * [W3C Cascading Style Sheets (CSS) Working Group](w3c_cascading_style_sheets_css_working_group.md): 64 issues [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_cascading_style_sheets_css_working_group.rss)
@@ -29,7 +29,7 @@ This repository collects information on MDN Web Docs issues and group them based
 * [W3C Web Events Working Group](w3c_web_events_working_group.md): 1 issues [![RSS feed for W3C Web Events Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_web_events_working_group.rss)
 * [W3C Web Payments Working Group](w3c_web_payments_working_group.md): 1 issues [![RSS feed for W3C Web Payments Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_web_payments_working_group.rss)
 * [W3C Web Performance Working Group](w3c_web_performance_working_group.md): 4 issues [![RSS feed for W3C Web Performance Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_web_performance_working_group.rss)
-* [W3C Web Platform Incubator Community Group](w3c_web_platform_incubator_community_group.md): 8 issues [![RSS feed for W3C Web Platform Incubator Community Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_web_platform_incubator_community_group.rss)
+* [W3C Web Platform Incubator Community Group](w3c_web_platform_incubator_community_group.md): 7 issues [![RSS feed for W3C Web Platform Incubator Community Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_web_platform_incubator_community_group.rss)
 * [W3C Web Platform Working Group](w3c_web_platform_working_group.md): 5 issues [![RSS feed for W3C Web Platform Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_web_platform_working_group.rss)
 * [W3C Web Real-Time Communications Working Group](w3c_web_real_time_communications_working_group.md): 10 issues [![RSS feed for W3C Web Real-Time Communications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_web_real_time_communications_working_group.rss)
 * [WHATWG](whatwg.md): 99 issues [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](whatwg.rss)
