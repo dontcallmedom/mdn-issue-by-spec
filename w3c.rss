@@ -4,10 +4,54 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Wed, 07 Dec 2022 17:22:55 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 07 Dec 2022 22:38:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-values-3] Misleading text in calc() doc]]></title>
+            <link>https://github.com/mdn/content/issues/22805</link>
+            <guid>https://github.com/mdn/content/issues/22805</guid>
+            <pubDate>Wed, 07 Dec 2022 22:38:31 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/calc" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/calc</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The first paragraph</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The statement:</p>
+<blockquote>
+<p dir="auto">It can be used anywhere a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length" rel="nofollow"><code class="notranslate">&lt;length&gt;</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/frequency" rel="nofollow"><code class="notranslate">&lt;frequency&gt;</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/angle" rel="nofollow"><code class="notranslate">&lt;angle&gt;</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/time" rel="nofollow"><code class="notranslate">&lt;time&gt;</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/percentage" rel="nofollow"><code class="notranslate">&lt;percentage&gt;</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/number" rel="nofollow"><code class="notranslate">&lt;number&gt;</code></a>, or <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/integer" rel="nofollow"><code class="notranslate">&lt;integer&gt;</code></a> is allowed.</p>
+</blockquote>
+<p dir="auto">There is a caveat in which <code class="notranslate">calc()</code> cannot be used as a number. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/percentage#syntax" rel="nofollow">If we take a look at the syntax for percentage</a>, we'll see that it states:</p>
+<blockquote>
+<p dir="auto">The  data type consists of a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/number" rel="nofollow"></a> followed by the percentage sign (%).</p>
+</blockquote>
+<p dir="auto">If you were to try to substitute <code class="notranslate">&lt;number&gt;</code> with a calc expression, such as:</p>
+<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content=".class {
+  background-position: calc(100 / 200 * 3)%;
+}"><pre class="notranslate">.<span class="pl-c1">class</span> {
+  <span class="pl-c1">background-position</span><span class="pl-kos">:</span> <span class="pl-en">calc</span>(<span class="pl-c1">100</span> <span class="pl-c1">/</span> <span class="pl-c1">200</span> <span class="pl-c1">*</span> <span class="pl-c1">3</span>)%;
+}</pre></div>
+<p dir="auto">It would not be valid.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A mention of this caveat, and likely the removal of the word "anywhere".</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/percentage#syntax" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/percentage#syntax</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/calc</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/calc" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/calc</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/calc/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/calc/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/6be1b954a117202d7635caeec74ebbbde984d3f3/hovercard" href="https://github.com/mdn/content/commit/6be1b954a117202d7635caeec74ebbbde984d3f3"><tt>6be1b95</tt></a></li>
+<li>Document last modified: 2022-09-26T22:47:43.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[resize-observer-1] ResizeObserver example uses outdated implementation of contentBoxSize for Firefox]]></title>
             <link>https://github.com/mdn/content/issues/22799</link>

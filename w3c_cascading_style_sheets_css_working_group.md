@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-values-3] Misleading text in calc() doc](https://github.com/mdn/content/issues/22805) (2022-12-07T22:38:31Z)
+  
 * [[resize-observer-1] ResizeObserver example uses outdated implementation of contentBoxSize for Firefox](https://github.com/mdn/content/issues/22799) (2022-12-07T17:22:55Z)
   
 * [[css-fonts-5] getComputedStyle() does not respect the Fallback weights algorithm](https://github.com/mdn/content/issues/22496) (2022-11-23T12:04:06Z)
