@@ -113,7 +113,7 @@ function generateFeed(scope, path, issues) {
       link: issue.url,
       content: issue.bodyHTML,
       author: [
-        {name: issue.author.login, link: issue.author.url}
+        {name: issue.author?.login, link: issue.author?.url}
       ],
       date: new Date(issue.createdAt)
     });
