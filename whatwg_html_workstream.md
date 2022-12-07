@@ -12,8 +12,6 @@
   
 * [[html] HTML forms `POST` method example gives `403 Forbidden` (via cloudfront)](https://github.com/mdn/content/issues/22560) (2022-11-27T14:57:57Z)
   
-* [[html] Missing content: validityState.valueMissing](https://github.com/mdn/content/issues/22557) (2022-11-27T02:52:10Z)
-  
 * [[html] Example custom select is not available on the keychain](https://github.com/mdn/content/issues/22513) (2022-11-24T13:16:19Z)
   
 * [[html] Missing page: navigator.unregisterProtocolHandler(scheme, url)](https://github.com/mdn/content/issues/22458) (2022-11-21T17:20:28Z)
