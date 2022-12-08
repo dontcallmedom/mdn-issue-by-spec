@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] `srcset` description for `<source>` element is incorrect and misleading.](https://github.com/mdn/content/issues/22820) (2022-12-08T14:50:06Z)
+  
 * [[html] document-domain feature policy is being removed](https://github.com/mdn/content/issues/22732) (2022-12-05T04:44:41Z)
   
 * [[html] Show *Implicit ARIA Role* on each `<input type="*">` page](https://github.com/mdn/content/issues/22699) (2022-12-03T16:16:00Z)
