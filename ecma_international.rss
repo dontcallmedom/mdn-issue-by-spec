@@ -4,10 +4,49 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Wed, 07 Dec 2022 05:27:56 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 09 Dec 2022 04:21:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Example leads to an error]]></title>
+            <link>https://github.com/mdn/content/issues/22835</link>
+            <guid>https://github.com/mdn/content/issues/22835</guid>
+            <pubDate>Fri, 09 Dec 2022 04:21:52 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comma_Operator" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comma_Operator</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Examples</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Trying to run the for loop example lead to an error:</p>
+<blockquote>Uncaught ReferenceError: a is not defined</blockquote>
+<p dir="auto">
+In the example provided inside the console.log on the left side of the = operator **a** is outside of the embedded expression while on the right side of the = operator **a** is inside the embedded expression.</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="for (let i = 0, j = 9; i &lt;= 9; i++, j--) {
+  console.log(`a[${i}][${j}] = ${a[i][j]}`);
+}"><pre class="notranslate"><code class="notranslate"><span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>,</span> j <span>=</span> <span>9</span><span>;</span> i <span>&lt;=</span> <span>9</span><span>;</span> i<span>++</span><span>,</span> j<span>--</span><span>)</span> <span>{</span>
+  console<span>.</span><span>log</span><span>(</span><span><span>`</span><span>a[</span><span><span>${</span>i<span>}</span></span><span>][</span><span><span>${</span>j<span>}</span></span><span>] = </span><span><span>${</span>a<span>[</span>i<span>]</span><span>[</span>j<span>]</span><span>}</span></span><span>`</span></span><span>)</span><span>;</span>
+<span>}</span>
+</code></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">a successful, accessible example</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/operators/comma_operator</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comma_Operator" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comma_Operator</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/comma_operator/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/comma_operator/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0ad08fe1d8830f11e0314733f56e391affc1fe94/hovercard" href="https://github.com/mdn/content/commit/0ad08fe1d8830f11e0314733f56e391affc1fe94"><tt>0ad08fe</tt></a></li>
+<li>Document last modified: 2022-11-17T13:58:24.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] "promisedFunction" is confusing]]></title>
             <link>https://github.com/mdn/content/issues/22785</link>
