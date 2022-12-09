@@ -24,8 +24,6 @@
   
 * [[html, uievents] Document.activeElement : The lack of HTMLAnchorElement and macOS on a case by case basis](https://github.com/mdn/content/issues/22338) (2022-11-16T13:47:01Z)
   
-* [[html] No mention of JavaScript on this page, when it's one the only way to make it do something (other than using it inside of a form)](https://github.com/mdn/content/issues/22274) (2022-11-14T00:20:12Z)
-  
 * [[html] Document HTMLInputElement's (type=file) cancel event](https://github.com/mdn/content/issues/22157) (2022-11-08T13:02:34Z)
   
 * [[html] contenteditable missing some allowed values description](https://github.com/mdn/content/issues/22048) (2022-11-04T06:39:50Z)
