@@ -4,8 +4,6 @@
 
 * [[css-values-3] Misleading text in calc() doc](https://github.com/mdn/content/issues/22805) (2022-12-07T22:38:31Z)
   
-* [[resize-observer-1] ResizeObserver example uses outdated implementation of contentBoxSize for Firefox](https://github.com/mdn/content/issues/22799) (2022-12-07T17:22:55Z)
-  
 * [[css-fonts-5] getComputedStyle() does not respect the Fallback weights algorithm](https://github.com/mdn/content/issues/22496) (2022-11-23T12:04:06Z)
   
 * [[css-logical-1] Spec link: defined in multiple places](https://github.com/mdn/content/issues/22271) (2022-11-13T19:09:15Z)
