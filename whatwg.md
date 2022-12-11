@@ -190,8 +190,6 @@
   
 * [[dom] Content suggestion: addEventListener fire capture before bubble handlers at target](https://github.com/mdn/content/issues/3936) (2021-04-08T09:53:43Z)
   
-* [[html] Issue with "Document: drag event": removeChild seems superfluous - is a draggedElement moved in the dom tree?](https://github.com/mdn/content/issues/3486) (2021-03-25T07:31:27Z)
-  
 * [[notifications] Demo in Notification() constructor article causes error: “The Notification permission may only be requested from inside a short running user-generated event handler”](https://github.com/mdn/content/issues/2615) (2021-02-23T13:20:50Z)
   
 * [[html] requestAnimationFrame is also available in Dedicated Workers](https://github.com/mdn/content/issues/1519) (2021-01-20T08:47:22Z)

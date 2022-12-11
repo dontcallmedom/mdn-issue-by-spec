@@ -2682,58 +2682,6 @@ I expect the message to run red when clicking on the link.</p>
 <p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/1372946/115178508-45ad9e00-a086-11eb-8d78-625dafab7eb6.png"><img src="https://user-images.githubusercontent.com/1372946/115178508-45ad9e00-a086-11eb-8d78-625dafab7eb6.png" alt="image" style="max-width: 100%;"></a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Issue with "Document: drag event": removeChild seems superfluous - is a draggedElement moved in the dom tree?]]></title>
-            <link>https://github.com/mdn/content/issues/3486</link>
-            <guid>https://github.com/mdn/content/issues/3486</guid>
-            <pubDate>Thu, 25 Mar 2021 07:31:27 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/drag_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/drag_event</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">It is unclear to me how a dragged element is treated by the browser.<br>
-I would expect that deleting  <code class="notranslate">dragged.parentNode.removeChild</code> would change the demo.<br>
-But it seem that dragging an element removes it from its current position in the dom tree.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto">The fiddle demo contains these lines</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="      if ( event.target.className == &quot;dropzone&quot; ) {
-          event.target.style.background = &quot;&quot;;
-          dragged.parentNode.removeChild( dragged );
-          event.target.appendChild( dragged );
-      }
-"><pre class="notranslate"><code class="notranslate">      if ( event.target.className == "dropzone" ) {
-          event.target.style.background = "";
-          dragged.parentNode.removeChild( dragged );
-          event.target.appendChild( dragged );
-      }
-
-</code></pre></div>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">After commenting out <code class="notranslate">dragged.parentNode.removeChild</code> i would expect that there are two dragged-divs the one that was appended and the orignal one that was not removed.</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="      if ( event.target.className == &quot;dropzone&quot; ) {
-          event.target.style.background = &quot;&quot;;
-          // dragged.parentNode.removeChild( dragged );
-          event.target.appendChild( dragged );
-      }
-"><pre class="notranslate"><code class="notranslate">      if ( event.target.className == "dropzone" ) {
-          event.target.style.background = "";
-          // dragged.parentNode.removeChild( dragged );
-          event.target.appendChild( dragged );
-      }
-
-</code></pre></div>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">Yes i forked the demo <a href="https://jsfiddle.net/oew6d71q/1/" rel="nofollow"> on fiddle</a></p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/document/drag_event</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/drag_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/drag_event</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/document/drag_event/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/document/drag_event/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/9917bf17a97973166bb3cb3812a496e4117a778f/hovercard" href="https://github.com/mdn/content/commit/9917bf17a97973166bb3cb3812a496e4117a778f"><tt>9917bf1</tt></a></li>
-<li>Document last modified: 2021-01-11T13:30:57.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] requestAnimationFrame is also available in Dedicated Workers]]></title>
             <link>https://github.com/mdn/content/issues/1519</link>
             <guid>https://github.com/mdn/content/issues/1519</guid>

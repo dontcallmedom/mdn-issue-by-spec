@@ -152,8 +152,6 @@
   
 * [[html] Content bug: Link to resize on HTMLVideoElement is broken](https://github.com/mdn/content/issues/4230) (2021-04-19T03:40:53Z)
   
-* [[html] Issue with "Document: drag event": removeChild seems superfluous - is a draggedElement moved in the dom tree?](https://github.com/mdn/content/issues/3486) (2021-03-25T07:31:27Z)
-  
 * [[html] requestAnimationFrame is also available in Dedicated Workers](https://github.com/mdn/content/issues/1519) (2021-01-20T08:47:22Z)
   
 * [[html] api.HTMLSelectElement - write page for 'autocomplete'](https://github.com/mdn/content/issues/2016) (2021-01-20T05:13:05Z)
