@@ -1796,47 +1796,6 @@ IN summary, it's a way to construct a CSS stylesheet programmatically so that it
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[webrtc] Definition of srflx (server reflexive) address is not correct.]]></title>
-            <link>https://github.com/mdn/content/issues/16155</link>
-            <guid>https://github.com/mdn/content/issues/16155</guid>
-            <pubDate>Tue, 17 May 2022 18:12:25 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidate/type" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidate/type</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Value:srflx</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The intermediary address is not assigned by the STUN server. The STUN server does not assign any addresses; it reports back the sender's address as a service. The ip field indicates the address seen by a STUN server as the source address when it received a STUN BINDING request packet. This is the address of the host as seen by a STUN server.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Something that paraphrases: "Server Reflexive Candidate:  A candidate whose IP address and port<br>
-are a binding allocated by a NAT for an agent when it sent a<br>
-packet through the NAT to a server.  Server reflexive candidates<br>
-can be learned by STUN servers using the Binding request, or TURN<br>
-servers, which provides both a relayed and server reflexive<br>
-candidate."</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://www.rfc-editor.org/rfc/rfc5245#page-20" rel="nofollow">https://www.rfc-editor.org/rfc/rfc5245#page-20</a></p>
-<p dir="auto">Server Reflexive Candidate:  A candidate whose IP address and port<br>
-are a binding allocated by a NAT for an agent when it sent a<br>
-packet through the NAT to a server.  Server reflexive candidates<br>
-can be learned by STUN servers using the Binding request, or TURN<br>
-servers, which provides both a relayed and server reflexive<br>
-candidate.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/rtcicecandidate/type</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidate/type" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidate/type</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcicecandidate/type/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcicecandidate/type/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/1137a94618867e82b78d192bd79c4dd30b034cdc/hovercard" href="https://github.com/mdn/content/commit/1137a94618867e82b78d192bd79c4dd30b034cdc"><tt>1137a94</tt></a></li>
-<li>Document last modified: 2022-05-14T04:19:35.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[file-system-access] `FileSystemHandle.requestPermission()` can throw `SecurityError`]]></title>
             <link>https://github.com/mdn/content/issues/15831</link>
             <guid>https://github.com/mdn/content/issues/15831</guid>

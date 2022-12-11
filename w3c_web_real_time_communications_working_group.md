@@ -6,8 +6,6 @@
   
 * [[mediastream-recording] Emitted blobs do not always exactly adhere to the timeslice value](https://github.com/mdn/content/issues/19369) (2022-08-10T14:39:46Z)
   
-* [[webrtc] Definition of srflx (server reflexive) address is not correct.](https://github.com/mdn/content/issues/16155) (2022-05-17T18:12:25Z)
-  
 * [[mediacapture-streams] MediaStream API missing removeTrack documentation](https://github.com/mdn/content/issues/15282) (2022-04-23T15:03:58Z)
   
 * [[mediacapture-streams] MediaDeviceInfo»toJSON() needs to be documented](https://github.com/mdn/content/issues/13463) (2022-03-03T18:40:42Z)
