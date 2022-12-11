@@ -120,8 +120,6 @@
   
 * [[html, selectors-4] Issue with ":target" and Web Components](https://github.com/mdn/content/issues/4604) (2021-04-29T19:29:23Z)
   
-* [[cssom-view-1] Issue with "Window.devicePixelRatio": snippet to detect changes only detects when the initial value changes but doesn't detect further changes](https://github.com/mdn/content/issues/4478) (2021-04-26T09:29:18Z)
-  
 * [[cssom-view-1] Issue with "Element.scrollTop": note that scrollTop value is negative when display: flex and flex-direction: column-reverse used](https://github.com/mdn/content/issues/4142) (2021-04-15T21:36:13Z)
   
 * [[css-fonts-5, css-sizing-4] Content bug: Sidebar "Related Topics" no longer shows any specific related topics on CSS pages](https://github.com/mdn/content/issues/3827) (2021-04-05T00:32:29Z)

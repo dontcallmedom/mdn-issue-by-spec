@@ -2019,62 +2019,6 @@ I expect the message to run red when clicking on the link.</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[cssom-view-1] Issue with "Window.devicePixelRatio": snippet to detect changes only detects when the initial value changes but doesn't detect further changes]]></title>
-            <link>https://github.com/mdn/content/issues/4478</link>
-            <guid>https://github.com/mdn/content/issues/4478</guid>
-            <pubDate>Mon, 26 Apr 2021 09:29:18 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">The JavaScript snippet to detect changes only detects when the initial value changes but doesn't detect further changes. This can easily be tested on Chrome with zoom.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto">JavaScript</p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">A working solution, see below.</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">I tested this, and it didn't work. So I've worked on a working solution.<br>
-Check out my StackOverflow answer: <a href="https://stackoverflow.com/questions/28905420/window-devicepixelratio-change-listener/67263950#67263950" rel="nofollow">https://stackoverflow.com/questions/28905420/window-devicepixelratio-change-listener/67263950#67263950</a></p>
-<p dir="auto">Here is the working solution (a bit complex for documentation, but it works)</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="let remove = null;
-
-const updatePixelRatio = () =&gt; {
-  if(remove != null) {
-      remove();
-  }
-  let mqString = `(resolution: ${window.devicePixelRatio}dppx)`;
-  let media = matchMedia(mqString);
-  media.addListener(updatePixelRatio);
-  remove = function() {media.removeListener(updatePixelRatio)};
-
-  console.log(&quot;devicePixelRatio: &quot; + window.devicePixelRatio);
-}
-updatePixelRatio();"><pre class="notranslate"><code class="notranslate">let remove = null;
-
-const updatePixelRatio = () =&gt; {
-  if(remove != null) {
-      remove();
-  }
-  let mqString = `(resolution: ${window.devicePixelRatio}dppx)`;
-  let media = matchMedia(mqString);
-  media.addListener(updatePixelRatio);
-  remove = function() {media.removeListener(updatePixelRatio)};
-
-  console.log("devicePixelRatio: " + window.devicePixelRatio);
-}
-updatePixelRatio();
-</code></pre></div>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/window/devicepixelratio</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/devicepixelratio/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/devicepixelratio/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ba4a07195d8f8f4941e7ae06118b8405f9cac9cf/hovercard" href="https://github.com/mdn/content/commit/ba4a07195d8f8f4941e7ae06118b8405f9cac9cf"><tt>ba4a071</tt></a></li>
-<li>Document last modified: 2021-04-10T23:58:36.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[cssom-view-1] Issue with "Element.scrollTop": note that scrollTop value is negative when display: flex and flex-direction: column-reverse used]]></title>
             <link>https://github.com/mdn/content/issues/4142</link>
             <guid>https://github.com/mdn/content/issues/4142</guid>

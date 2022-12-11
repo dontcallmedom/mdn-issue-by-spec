@@ -256,8 +256,6 @@
   
 * [[html, selectors-4] Issue with ":target" and Web Components](https://github.com/mdn/content/issues/4604) (2021-04-29T19:29:23Z)
   
-* [[cssom-view-1] Issue with "Window.devicePixelRatio": snippet to detect changes only detects when the initial value changes but doesn't detect further changes](https://github.com/mdn/content/issues/4478) (2021-04-26T09:29:18Z)
-  
 * [[webaudio] Content bug: AudioListener and attributes need better examples. ](https://github.com/mdn/content/issues/4468) (2021-04-26T03:22:48Z)
   
 * [[orientation-event, compat] Content bug: Improve device/screen orientation event doc](https://github.com/mdn/content/issues/4400) (2021-04-23T02:57:45Z)
