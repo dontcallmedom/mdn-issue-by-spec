@@ -4,8 +4,6 @@
 
 * [[orientation-event] Explanation of X, y, z coordinates of DeviceMotionEvent.acceleration and DeviceMotionEvent.accelerationIncludingGravity is either completely wrong or extremely confusing (or both)](https://github.com/mdn/content/issues/22885) (2022-12-11T22:18:39Z)
   
-* [[css-values-3] Misleading text in calc() doc](https://github.com/mdn/content/issues/22805) (2022-12-07T22:38:31Z)
-  
 * [[SVG11] [page types] Define page types for SVG](https://github.com/mdn/content/issues/22762) (2022-12-05T23:50:18Z)
   
 * [[DOM-Parsing] [page types] Define page types for HTML](https://github.com/mdn/content/issues/22705) (2022-12-04T00:17:19Z)
