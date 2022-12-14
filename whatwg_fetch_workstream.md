@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG Fetch Workstream. [![RSS feed for WHATWG Fetch Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[fetch] "the request's destination. This is a string indicating the type of content being requested."](https://github.com/mdn/content/issues/22955) (2022-12-14T16:29:26Z)
+  
 * [[fetch] Response.json static method is missing](https://github.com/mdn/content/issues/21550) (2022-10-14T12:40:47Z)
   
 * [[fetch] Incorrect or outdated information at fetch() and Fetch API pages](https://github.com/mdn/content/issues/17115) (2022-06-08T21:48:36Z)

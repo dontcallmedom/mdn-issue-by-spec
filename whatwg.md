@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[fetch] "the request's destination. This is a string indicating the type of content being requested."](https://github.com/mdn/content/issues/22955) (2022-12-14T16:29:26Z)
+  
 * [[html] <select>: The HTML Select element](https://github.com/mdn/content/issues/22947) (2022-12-14T12:04:58Z)
   
 * [[html] `srcset` description for `<source>` element is incorrect and misleading.](https://github.com/mdn/content/issues/22820) (2022-12-08T14:50:06Z)
