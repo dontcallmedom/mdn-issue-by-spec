@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[dom] CustomEvent constructor type argument is supported](https://github.com/mdn/content/issues/22918) (2022-12-13T05:47:24Z)
+* [[html] <select>: The HTML Select element](https://github.com/mdn/content/issues/22947) (2022-12-14T12:04:58Z)
   
 * [[html] `srcset` description for `<source>` element is incorrect and misleading.](https://github.com/mdn/content/issues/22820) (2022-12-08T14:50:06Z)
   

@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[dom] CustomEvent constructor type argument is supported](https://github.com/mdn/content/issues/22918) (2022-12-13T05:47:24Z)
-  
 * [[html, dom] The page should include that, if the user holds down the Shift key the context menu will be displayed](https://github.com/mdn/content/issues/22697) (2022-12-03T15:03:26Z)
   
 * [[dom] document.implementation is outdated](https://github.com/mdn/content/issues/21834) (2022-10-25T22:41:52Z)
