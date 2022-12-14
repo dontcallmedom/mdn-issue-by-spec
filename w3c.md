@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[webaudio] `AudioContext.createMediaElementSource()` demo does not work in Safari](https://github.com/mdn/content/issues/22941) (2022-12-14T04:04:39Z)
-  
 * [[orientation-event] Explanation of X, y, z coordinates of DeviceMotionEvent.acceleration and DeviceMotionEvent.accelerationIncludingGravity is either completely wrong or extremely confusing (or both)](https://github.com/mdn/content/issues/22885) (2022-12-11T22:18:39Z)
   
 * [[DOM-Parsing] [page types] Define page types for HTML](https://github.com/mdn/content/issues/22705) (2022-12-04T00:17:19Z)

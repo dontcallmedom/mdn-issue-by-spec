@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Audio Working Group. [![RSS feed for W3C Audio Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[webaudio] `AudioContext.createMediaElementSource()` demo does not work in Safari](https://github.com/mdn/content/issues/22941) (2022-12-14T04:04:39Z)
-  
 * [[webaudio] function playSample accidentally references global variable instead of passed in variable](https://github.com/mdn/content/issues/20565) (2022-09-11T16:43:52Z)
   
 * [[webaudio] api.AudioParam - automationRate undocumented](https://github.com/mdn/content/issues/14637) (2022-04-03T13:16:23Z)
