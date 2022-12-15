@@ -16,8 +16,6 @@
   
 * [[css-backgrounds-4] Border-image generator should allow "auto" as a border-image-width value](https://github.com/mdn/content/issues/21582) (2022-10-16T09:04:29Z)
   
-* [[css-fonts-5] [CSS] Ship COLRv1 color-font support](https://github.com/mdn/content/issues/21537) (2022-10-14T00:14:15Z)
-  
 * [[html, css-transforms-2, css-transforms-1] The "non-replaced inline boxes" links to a non-existent anchor](https://github.com/mdn/content/issues/20854) (2022-09-18T09:20:10Z)
   
 * [[css-align-3] Content suggestion: display owns CSS shorthand property.](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
