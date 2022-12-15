@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Missing importmap](https://github.com/mdn/content/issues/22980) (2022-12-15T15:33:48Z)
+  
 * [[html] Suggestion to add accessibility section](https://github.com/mdn/content/issues/22958) (2022-12-14T17:14:03Z)
   
 * [[html] <select>: The HTML Select element](https://github.com/mdn/content/issues/22947) (2022-12-14T12:04:58Z)
