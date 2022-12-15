@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[selectors-4] CSSWG resolution: has and not will no longer be forgiving.](https://github.com/mdn/content/issues/22986) (2022-12-15T19:11:16Z)
+  
 * [[mediacapture-streams] Missing description of getUserMedia constraints.](https://github.com/mdn/content/issues/22962) (2022-12-14T20:17:55Z)
   
 * [[orientation-event] Explanation of X, y, z coordinates of DeviceMotionEvent.acceleration and DeviceMotionEvent.accelerationIncludingGravity is either completely wrong or extremely confusing (or both)](https://github.com/mdn/content/issues/22885) (2022-12-11T22:18:39Z)
