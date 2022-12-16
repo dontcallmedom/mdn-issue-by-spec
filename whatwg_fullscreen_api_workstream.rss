@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>WHATWG Fullscreen API Workstream-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_fullscreen_api_workstream.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG Fullscreen API Workstream</description>
+        <lastBuildDate>Wed, 09 Mar 2022 00:38:35 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[fullscreen] Using F11 to enter fullscreen mode doesn’t set fullscreenElement (it remains null) and document.exitFullscreen() doesn’t work]]></title>
+            <link>https://github.com/mdn/content/issues/13674</link>
+            <guid>https://github.com/mdn/content/issues/13674</guid>
+            <pubDate>Wed, 09 Mar 2022 00:38:35 GMT</pubDate>
+            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/exitFullscreen" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/exitFullscreen</a></p>
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">If you enter in fullscreen mode by using the browsers shortcuts (F11 for example), this simply doesn't work. It doesn't set the fullscreenElement, it remains null.</p>
+<h4 dir="auto">Specific section or headline?</h4>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">The functions working as expected even if I switch between calling the fullscreen functions though code or through browser shortcuts.</p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+<p dir="auto">Yes..<br>
+Open the browser, press F11 and check the Document.fullscreenElement, it will be null and it should rather be set.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/document/exitfullscreen</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/exitFullscreen" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/exitFullscreen</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/document/exitfullscreen/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/document/exitfullscreen/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/89c8199b06e7fb2b76da4087cb9eedef065b2506/hovercard" href="https://github.com/mdn/content/commit/89c8199b06e7fb2b76da4087cb9eedef065b2506"><tt>89c8199</tt></a></li>
+<li>Document last modified: 2022-02-18T09:24:31.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
