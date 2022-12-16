@@ -4,9 +4,7 @@
 
 * [[html] Adding playsinline attribute](https://github.com/mdn/content/issues/22989) (2022-12-15T22:22:49Z)
   
-* [[html] Suggestion to add accessibility section](https://github.com/mdn/content/issues/22958) (2022-12-14T17:14:03Z)
-  
-* [[html] <select>: The HTML Select element](https://github.com/mdn/content/issues/22947) (2022-12-14T12:04:58Z)
+* [[html] Suggestion to add accessibility section to the MDN article for the “datalist” element](https://github.com/mdn/content/issues/22958) (2022-12-14T17:14:03Z)
   
 * [[html] `srcset` description for `<source>` element is incorrect and misleading.](https://github.com/mdn/content/issues/22820) (2022-12-08T14:50:06Z)
   
