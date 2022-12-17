@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[css-backgrounds-4] Hardly readable text highlighting in docs examples](https://github.com/mdn/content/issues/23022) (2022-12-17T15:22:21Z)
-  
 * [[css-box-4] Outdated content for margin-trim](https://github.com/mdn/content/issues/23012) (2022-12-16T20:16:11Z)
   
 * [[mediacapture-streams] Missing description of getUserMedia constraints.](https://github.com/mdn/content/issues/22962) (2022-12-14T20:17:55Z)

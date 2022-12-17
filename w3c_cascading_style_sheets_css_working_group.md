@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[css-backgrounds-4] Hardly readable text highlighting in docs examples](https://github.com/mdn/content/issues/23022) (2022-12-17T15:22:21Z)
-  
 * [[css-box-4] Outdated content for margin-trim](https://github.com/mdn/content/issues/23012) (2022-12-16T20:16:11Z)
   
 * [[css-fonts-5] getComputedStyle() does not respect the Fallback weights algorithm](https://github.com/mdn/content/issues/22496) (2022-11-23T12:04:06Z)
