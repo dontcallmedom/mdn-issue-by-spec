@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Platform Working Group. [![RSS feed for W3C Web Platform Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[DOM-Parsing] Typo in HTML Introduction Page](https://github.com/mdn/content/issues/23113) (2022-12-21T15:08:18Z)
+  
 * [[DOM-Parsing] [page types] Define page types for HTML](https://github.com/mdn/content/issues/22705) (2022-12-04T00:17:19Z)
   
 * [[WebIDL-1] “Using the Web Storage API” has deprecated “DOMException.code” in example](https://github.com/mdn/content/issues/21910) (2022-10-28T12:08:01Z)
