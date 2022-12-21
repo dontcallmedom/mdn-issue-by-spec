@@ -276,8 +276,6 @@
   
 * [[webauthn-3] Content bug: Missing documentation on WebAuthn Level 2 additions](https://github.com/mdn/content/issues/3488) (2021-03-25T09:42:24Z)
   
-* [[cssom-view-1, css-overflow-3] Issue with "ScrollToOptions.behavior": Description of `auto` value is wrong, lacking historical `instant` value](https://github.com/mdn/content/issues/2719) (2021-02-26T16:41:38Z)
-  
 * [[screen-capture] displaySurface doc looks wrong: there is no way to restrain the type of surface you want to allow in javascript on client side; displaySurface can be used to detect the type of surface for a current stream already going](https://github.com/mdn/content/issues/1456) (2021-01-18T15:39:25Z)
   
 * [[webrtc] "RTCRtpSender.replaceTrack()": I don't think the example code is correct - it introduces "PCs" but what is this?](https://github.com/mdn/content/issues/1406) (2021-01-17T17:37:46Z)

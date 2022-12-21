@@ -128,7 +128,5 @@
   
 * [[cssom-view-1] Issue with "Document.elementFromPoint()": Add info about nodes dragged and their position in the DOM tree](https://github.com/mdn/content/issues/3520) (2021-03-26T07:48:07Z)
   
-* [[cssom-view-1, css-overflow-3] Issue with "ScrollToOptions.behavior": Description of `auto` value is wrong, lacking historical `instant` value](https://github.com/mdn/content/issues/2719) (2021-02-26T16:41:38Z)
-  
 * [[cssom-view-1] Issue with "Window.devicePixelRatio": Code example does not match the relavent description perfectly.](https://github.com/mdn/content/issues/873) (2021-01-03T10:45:10Z)
   

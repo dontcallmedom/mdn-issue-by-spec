@@ -2165,48 +2165,6 @@ function onDropEvent(event)
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[cssom-view-1, css-overflow-3] Issue with "ScrollToOptions.behavior": Description of `auto` value is wrong, lacking historical `instant` value]]></title>
-            <link>https://github.com/mdn/content/issues/2719</link>
-            <guid>https://github.com/mdn/content/issues/2719</guid>
-            <pubDate>Fri, 26 Feb 2021 16:41:38 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ScrollToOptions/behavior" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ScrollToOptions/behavior</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">The <code class="notranslate">behavior: 'auto'</code> will not always do an instant scroll that jumps to the element as described in the doc.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ScrollToOptions/behavior#value" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ScrollToOptions/behavior#value</a></p>
-<h4 dir="auto">What did you expect to see?</h4>
-<blockquote>
-<p dir="auto">auto (default): The scrolling happens with the same value of style <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior" rel="nofollow">scroll-behavior</a>, which is set or inherited on the scrolling element.</p>
-</blockquote>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto"><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="816896237" data-permission-text="Title is private" data-url="https://github.com/Norserium/react-indiana-drag-scroll/issues/53" data-hovercard-type="issue" data-hovercard-url="/Norserium/react-indiana-drag-scroll/issues/53/hovercard?comment_id=786750940&amp;comment_type=issue_comment" href="https://github.com/Norserium/react-indiana-drag-scroll/issues/53#issuecomment-786750940">Norserium/react-indiana-drag-scroll#53 (comment)</a></p>
-<blockquote>
-<p dir="auto">I've tested on chrome and firefox with this change, it's still doesn't work, in fact determining <code class="notranslate">behavior: 'auto'</code> doesn't cancel the effect of <code class="notranslate">scroll-behavior: smooth</code>, and it's an expected behavior standardized by CSSOM.</p>
-<p dir="auto"><a href="https://drafts.csswg.org/cssom-view/#scrolling" rel="nofollow">CSSOM draft</a> says:</p>
-<blockquote>
-<p dir="auto">If the user agent honors the scroll-behavior property and one of the following are true:<br>
-behavior is "auto" and element is not null and its computed value of the scroll-behavior property is smooth<br>
-behavior is smooth<br>
-...then perform a smooth scroll of box to position. Otherwise, perform an instant scroll of box to position.</p>
-</blockquote>
-<p dir="auto">It's also been mentioned in <a href="https://stackoverflow.com/questions/60795723/how-to-override-the-css-scroll-behavior-with-scrollto-in-javascript" rel="nofollow">stackoverflow</a> and <a href="https://bugs.webkit.org/show_bug.cgi?id=188043" rel="nofollow">webkit developers</a></p>
-<p dir="auto">But the <a href="https://developer.mozilla.org/en-US/docs/Web/API/ScrollToOptions/behavior" rel="nofollow">MDN doc</a> doesn't mention this, it just says: <code class="notranslate">auto: The scrolling happens in a single jump.</code>, it's only correct when there's no <code class="notranslate">scroll-behavior: smooth</code> style applied on the scrolling elements. In wild, I've seen some websites use <code class="notranslate">body { scroll-behavior: smooth; }</code> to make all scrolling executed by js is smooth.</p>
-<p dir="auto">According to the previous stackoverflow answer, the only available workaround for compatible elements with <code class="notranslate">scroll-behavior: smooth</code> style is adding <code class="notranslate">scroll-behavior: auto !important;</code> after <a href="https://github.com/Norserium/react-indiana-drag-scroll/blob/329221fc52a79b0af7dc9f3b6fb088535a206879/src/style.css#L3">https://github.com/Norserium/react-indiana-drag-scroll/blob/329221fc52a79b0af7dc9f3b6fb088535a206879/src/style.css#L3</a></p>
-<p dir="auto">So I think there's a lack of 'instant' value of ScrollToOptions in CSSOM to allow using js to perform instant scroll without touching style temporarily.</p>
-</blockquote>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/scrolltooptions/behavior</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ScrollToOptions/behavior" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ScrollToOptions/behavior</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/scrolltooptions/behavior/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/scrolltooptions/behavior/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/11a98a59fca5f2e448d9e4b70e3c8a538c47b201/hovercard" href="https://github.com/mdn/content/commit/11a98a59fca5f2e448d9e4b70e3c8a538c47b201"><tt>11a98a5</tt></a></li>
-<li>Document last modified: 2021-02-19T19:45:18.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[cssom-view-1] Issue with "Window.devicePixelRatio": Code example does not match the relavent description perfectly.]]></title>
             <link>https://github.com/mdn/content/issues/873</link>
             <guid>https://github.com/mdn/content/issues/873</guid>
