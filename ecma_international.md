@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[ecmascript] Change to a more clear message](https://github.com/mdn/content/issues/23112) (2022-12-21T14:46:05Z)
+  
 * [[ecmascript] "promisedFunction" is confusing](https://github.com/mdn/content/issues/22785) (2022-12-07T05:27:56Z)
   
 * [[ecmascript] BigInt replacer/reviver example is not generic](https://github.com/mdn/content/issues/22573) (2022-11-28T12:41:19Z)
