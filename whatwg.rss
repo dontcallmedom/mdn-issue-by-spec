@@ -4,10 +4,40 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Thu, 15 Dec 2022 05:21:11 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 22 Dec 2022 19:01:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] duplicate "the" article in text]]></title>
+            <link>https://github.com/mdn/content/issues/23140</link>
+            <guid>https://github.com/mdn/content/issues/23140</guid>
+            <pubDate>Thu, 22 Dec 2022 19:01:43 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">there is a typo, "the the" instead of "the"</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">When an image element's srcset contains "x" descriptors, browsers also consider the the URL in the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/src" rel="nofollow">src</a> attribute (if present) as a candidate, and assign it a default descriptor of 1x.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">When an image element's srcset contains "x" descriptors, browsers also consider the URL in the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/src" rel="nofollow">src</a> attribute (if present) as a candidate, and assign it a default descriptor of 1x.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">When an image element's srcset contains "x" descriptors, browsers also consider <strong>the the</strong> URL in the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/src" rel="nofollow">src</a> attribute (if present) as a candidate, and assign it a default descriptor of 1x.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">simple typo</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/htmlimageelement/srcset</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlimageelement/srcset/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlimageelement/srcset/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2e90e26ecedbad8cc8a105fcda86b4a6096cf515/hovercard" href="https://github.com/mdn/content/commit/2e90e26ecedbad8cc8a105fcda86b4a6096cf515"><tt>2e90e26</tt></a></li>
+<li>Document last modified: 2022-12-02T05:10:22.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[console] console.group() needs examples illustrating the use of the label parameter]]></title>
             <link>https://github.com/mdn/content/issues/22972</link>
