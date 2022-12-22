@@ -4,7 +4,7 @@
 
 * [[hr-time-3, performance-timeline-2, resource-timing-2, user-timing-2] Topic on setting HTTP priority of resource requests](https://github.com/mdn/content/issues/14803) (2022-04-08T02:53:08Z)
   
-* [[cssom-view-1, html, dom, selection-api, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written](https://github.com/mdn/content/issues/13419) (2022-03-02T14:45:44Z)
+* [[cssom-view-1, html, selection-api, dom, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written](https://github.com/mdn/content/issues/13419) (2022-03-02T14:45:44Z)
   
 * [[hr-time-3, performance-timeline-2, resource-timing-2, user-timing-2] Content suggestion: performance glossary term: largest contentful paint/First Input Delay](https://github.com/mdn/content/issues/10196) (2021-11-01T04:46:51Z)
   

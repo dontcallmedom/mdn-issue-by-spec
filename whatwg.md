@@ -108,7 +108,7 @@
   
 * [[html] Conflicting descriptions of whether Firefox respects the “autocomplete” attribute, specifically for <input type="checkbox">](https://github.com/mdn/content/issues/13502) (2022-03-04T16:37:28Z)
   
-* [[cssom-view-1, html, dom, selection-api, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written](https://github.com/mdn/content/issues/13419) (2022-03-02T14:45:44Z)
+* [[cssom-view-1, html, selection-api, dom, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written](https://github.com/mdn/content/issues/13419) (2022-03-02T14:45:44Z)
   
 * [[html] Issue with "ElementInternals": ElementInternals.role is missing](https://github.com/mdn/content/issues/13355) (2022-03-01T09:07:30Z)
   
@@ -160,7 +160,7 @@
   
 * [[html] Content suggestion: Add one-liner to former WindowOrWorkerGlobalScope methods](https://github.com/mdn/content/issues/8979) (2021-09-16T10:44:51Z)
   
-* [[cssom-view-1, notifications, dom, service-workers-1, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
+* [[cssom-view-1, notifications, service-workers-1, dom, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
 * [[html] Content bug: Outdated a11y-related content on <button>](https://github.com/mdn/content/issues/8929) (2021-09-15T07:33:58Z)
   
@@ -195,8 +195,6 @@
 * [[orientation-event, compat] Content bug: Improve device/screen orientation event doc](https://github.com/mdn/content/issues/4400) (2021-04-23T02:57:45Z)
   
 * [[html] Content bug: Link to resize on HTMLVideoElement is broken](https://github.com/mdn/content/issues/4230) (2021-04-19T03:40:53Z)
-  
-* [[dom] Content suggestion: addEventListener fire capture before bubble handlers at target](https://github.com/mdn/content/issues/3936) (2021-04-08T09:53:43Z)
   
 * [[notifications] Demo in Notification() constructor article causes error: “The Notification permission may only be requested from inside a short running user-generated event handler”](https://github.com/mdn/content/issues/2615) (2021-02-23T13:20:50Z)
   

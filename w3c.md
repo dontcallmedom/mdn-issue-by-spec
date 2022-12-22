@@ -150,7 +150,7 @@
   
 * [[mediacapture-streams] MediaDeviceInfo»toJSON() needs to be documented](https://github.com/mdn/content/issues/13463) (2022-03-03T18:40:42Z)
   
-* [[cssom-view-1, html, dom, selection-api, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written](https://github.com/mdn/content/issues/13419) (2022-03-02T14:45:44Z)
+* [[cssom-view-1, html, selection-api, dom, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written](https://github.com/mdn/content/issues/13419) (2022-03-02T14:45:44Z)
   
 * [[css-lists-3] Issue with "counter-reset": What is the difference in behavior between the latest Firefox (82 or later) and the older 81 or earlier or other browsers?](https://github.com/mdn/content/issues/13293) (2022-02-26T00:46:43Z)
   
@@ -218,7 +218,7 @@
   
 * [[clipboard-apis] Update execCommand use in context-menu-copy-link-with-types](https://github.com/mdn/content/issues/8990) (2021-09-16T17:38:38Z)
   
-* [[cssom-view-1, notifications, dom, service-workers-1, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
+* [[cssom-view-1, notifications, service-workers-1, dom, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
 * [[SVG11] Issue with "SVGSVGElement": In FF an unset viewBox property means viewBox.baseVal = null. For Chrome it is an SVGRect initialized to 0.](https://github.com/mdn/content/issues/8907) (2021-09-14T14:00:23Z)
   

@@ -12,7 +12,7 @@
   
 * [[html, dom] "Introduction to events" article contains inaccurate/misleading statements](https://github.com/mdn/content/issues/17771) (2022-06-29T14:25:27Z)
   
-* [[cssom-view-1, html, dom, selection-api, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written](https://github.com/mdn/content/issues/13419) (2022-03-02T14:45:44Z)
+* [[cssom-view-1, html, selection-api, dom, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written](https://github.com/mdn/content/issues/13419) (2022-03-02T14:45:44Z)
   
 * [[dom] Issue with "MutationObserver.observe()": links to nonexistent “Monitoring attribute values” section on MutationObserver](https://github.com/mdn/content/issues/12741) (2022-02-04T23:09:33Z)
   
@@ -22,11 +22,9 @@
   
 * [[dom] Issue with "Document.getElementById()": link to xml:id doesn't include expected source snippet](https://github.com/mdn/content/issues/9777) (2021-10-13T19:50:56Z)
   
-* [[cssom-view-1, notifications, dom, service-workers-1, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
+* [[cssom-view-1, notifications, service-workers-1, dom, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
 * [[dom] Issue with "Element.attachShadow()": missing information about the slotAssignment option](https://github.com/mdn/content/issues/8782) (2021-09-09T21:02:17Z)
   
 * [[cssom-view-1, html, dom, WebIDL-1, FileAPI, uievents, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
-  
-* [[dom] Content suggestion: addEventListener fire capture before bubble handlers at target](https://github.com/mdn/content/issues/3936) (2021-04-08T09:53:43Z)
   

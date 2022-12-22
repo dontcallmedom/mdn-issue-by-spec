@@ -184,7 +184,7 @@ Then it moves on to the next immediate ancestor element and does the same thing,
 <p dir="auto">Upon feedback/approval, I'd be happy to rewrite these sections. But I think the article may need a broader rewrite and perhaps new code samples (some of them, like the ones that involve clicking divs, are inaccessible to keyboard users—this may need to be filed as a separate issue).</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[cssom-view-1, html, dom, selection-api, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written]]></title>
+            <title><![CDATA[[cssom-view-1, html, selection-api, dom, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written]]></title>
             <link>https://github.com/mdn/content/issues/13419</link>
             <guid>https://github.com/mdn/content/issues/13419</guid>
             <pubDate>Wed, 02 Mar 2022 14:45:44 GMT</pubDate>
@@ -351,7 +351,7 @@ the code in question is a simple xpath method:</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[cssom-view-1, notifications, dom, service-workers-1, pointerevents3] Better naming of pages]]></title>
+            <title><![CDATA[[cssom-view-1, notifications, service-workers-1, dom, pointerevents3] Better naming of pages]]></title>
             <link>https://github.com/mdn/content/issues/8977</link>
             <guid>https://github.com/mdn/content/issues/8977</guid>
             <pubDate>Thu, 16 Sep 2021 10:09:38 GMT</pubDate>
@@ -435,68 +435,6 @@ the code in question is a simple xpath method:</p>
 </ul>
 <p dir="auto">(I might have missed some).</p>
 <p dir="auto">We should replace all of these with some alternative. A common alternative is to write the output into an element in the example's document.</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[dom] Content suggestion: addEventListener fire capture before bubble handlers at target]]></title>
-            <link>https://github.com/mdn/content/issues/3936</link>
-            <guid>https://github.com/mdn/content/issues/3936</guid>
-            <pubDate>Thu, 08 Apr 2021 09:53:43 GMT</pubDate>
-            <content:encoded><![CDATA[<h2 dir="auto">What is the new suggestion?</h2>
-<p dir="auto">After chromium 89.0.4359.0.<br>
-When the event is in the target phase, it will trigger <code class="notranslate">{ useCapture: true }</code> listener, and then <code class="notranslate">{ useCapture: false }</code> listener. It does not depend on the order they were registered.</p>
-<h2 dir="auto">Why is it important or useful?</h2>
-<p dir="auto">The description in this line:<br>
-</p><div class="Box Box--condensed my-2">
-  <div class="Box-header f6">
-    <p class="mb-0 text-bold">
-      <a href="https://github.com/mdn/content/blob/710d9171a7a1b20e797cd0c1b79a5460dcad4381/files/en-us/web/api/eventtarget/addeventlistener/index.html#L98-L102">content/files/en-us/web/api/eventtarget/addeventlistener/index.html</a>
-    </p>
-    <p class="mb-0 color-fg-muted">
-        Lines 98 to 102
-      in
-      <a data-pjax="true" class="commit-tease-sha" href="/mdn/content/commit/710d9171a7a1b20e797cd0c1b79a5460dcad4381">710d917</a>
-    </p>
-  </div>
-  <div itemprop="text" class="Box-body p-0 blob-wrapper blob-wrapper-embedded data">
-    <table class="highlight tab-size mb-0 js-file-line-container" data-tab-size="8" data-paste-markdown-skip="">
-
-        <tbody><tr class="border-0">
-          <td id="L98" class="blob-num border-0 px-3 py-0 color-bg-default" data-line-number="98"></td>
-          <td id="LC98" class="blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line"> <span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>For event listeners attached to the event target, the event is in the target phase,  </td>
-        </tr>
-
-        <tr class="border-0">
-          <td id="L99" class="blob-num border-0 px-3 py-0 color-bg-default" data-line-number="99"></td>
-          <td id="LC99" class="blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line">   rather than the capturing and bubbling phases. </td>
-        </tr>
-
-        <tr class="border-0">
-          <td id="L100" class="blob-num border-0 px-3 py-0 color-bg-default" data-line-number="100"></td>
-          <td id="LC100" class="blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line">   Events in the target phase will trigger all listeners on an element in the </td>
-        </tr>
-
-        <tr class="border-0">
-          <td id="L101" class="blob-num border-0 px-3 py-0 color-bg-default" data-line-number="101"></td>
-          <td id="LC101" class="blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line"> order they were registered, regardless of the <span class="pl-kos">&lt;</span><span class="pl-ent">var</span><span class="pl-kos">&gt;</span>useCapture<span class="pl-kos">&lt;/</span><span class="pl-ent">var</span><span class="pl-kos">&gt;</span> </td>
-        </tr>
-
-        <tr class="border-0">
-          <td id="L102" class="blob-num border-0 px-3 py-0 color-bg-default" data-line-number="102"></td>
-          <td id="LC102" class="blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line"> parameter.<span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span> </td>
-        </tr>
-    </tbody></table>
-  </div>
-</div>
-<p></p>
-<p dir="auto">Might confuse someone who never tries this before.<br>
-I think we need a more precise document.</p>
-<h2 dir="auto">Other supporting information</h2>
-<ul dir="auto">
-<li><a href="https://github.com/chromium/chromium/commit/f73b047b99026f22c60f4541cab98346e9871f65">Chromium Commit: Fire capture before bubble handlers at target</a></li>
-<li><a href="https://trac.webkit.org/changeset/236002/webkit" rel="nofollow">WebKit changes 236002</a></li>
-</ul>
-<p dir="auto">Thanks for the review !</p>
-<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

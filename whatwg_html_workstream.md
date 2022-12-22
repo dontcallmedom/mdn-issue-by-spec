@@ -92,7 +92,7 @@
   
 * [[html] Conflicting descriptions of whether Firefox respects the “autocomplete” attribute, specifically for <input type="checkbox">](https://github.com/mdn/content/issues/13502) (2022-03-04T16:37:28Z)
   
-* [[cssom-view-1, html, dom, selection-api, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written](https://github.com/mdn/content/issues/13419) (2022-03-02T14:45:44Z)
+* [[cssom-view-1, html, selection-api, dom, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written](https://github.com/mdn/content/issues/13419) (2022-03-02T14:45:44Z)
   
 * [[html] Issue with "ElementInternals": ElementInternals.role is missing](https://github.com/mdn/content/issues/13355) (2022-03-01T09:07:30Z)
   
