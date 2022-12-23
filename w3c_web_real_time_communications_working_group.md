@@ -12,7 +12,7 @@
   
 * [[mediacapture-streams] MediaDeviceInfo»toJSON() needs to be documented](https://github.com/mdn/content/issues/13463) (2022-03-03T18:40:42Z)
   
-* [[webrtc] https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Using_DTMF is using legacy APIs](https://github.com/mdn/content/issues/10020) (2021-10-22T18:00:50Z)
+* [[webrtc] "Using DTMF" is using legacy APIs](https://github.com/mdn/content/issues/10020) (2021-10-22T18:00:50Z)
   
 * [[mediacapture-streams] Issue with "MediaStreamTrack: ended event": note that this event is not fired when the user calls .stop() on the track](https://github.com/mdn/content/issues/4939) (2021-05-12T10:02:23Z)
   
