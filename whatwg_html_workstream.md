@@ -94,8 +94,6 @@
   
 * [[html] Issue with "DragEvent.dataTransfer": Clarify that `dataTransfer` can be null.](https://github.com/mdn/content/issues/11670) (2022-01-02T15:10:06Z)
   
-* [[html] Issue with "HTMLLabelElement.control": (label.control and the labelable element)](https://github.com/mdn/content/issues/11633) (2021-12-31T23:01:15Z)
-  
 * [[html] Issue with "CustomElementRegistry.define()": Documentation needs more concise text and examples.](https://github.com/mdn/content/issues/11225) (2021-12-15T05:03:59Z)
   
 * [[html, selectors-4] Issue with ":invalid": Include fieldset](https://github.com/mdn/content/issues/11096) (2021-12-10T00:03:02Z)

@@ -1864,49 +1864,6 @@ Though in the typescript <code class="notranslate">lib.dom.d.ts</code> the prope
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Issue with "HTMLLabelElement.control": (label.control and the labelable element)]]></title>
-            <link>https://github.com/mdn/content/issues/11633</link>
-            <guid>https://github.com/mdn/content/issues/11633</guid>
-            <pubDate>Fri, 31 Dec 2021 23:01:15 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLLabelElement/control" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLLabelElement/control</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">The documentation explains the control matches the element whose id is provided with the <code class="notranslate">for</code> attribute or null otherwise.<br>
-However, the specifications differs somewhat. It states that "If the <code class="notranslate">for</code> attribute is not specified, but the label element has a labelable element descendant, then the first such descendant in tree order is the label element's labeled control."<br>
-A 'labelable element' is a "button, input (if the type attribute is not in the Hidden state) meter, output, progress, select, textarea, form-associated custom elements"<br>
-Reference: <a href="https://html.spec.whatwg.org/multipage/forms.html#htmllabelelement" rel="nofollow">https://html.spec.whatwg.org/multipage/forms.html#htmllabelelement</a><br>
-Thus if we write:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="let label = document.createElement('label');
-let button = document.createElement('button');
-label.appendChild(button);"><pre class="notranslate"><code class="notranslate">let label = document.createElement('label');
-let button = document.createElement('button');
-label.appendChild(button);
-</code></pre></div>
-<p dir="auto"><code class="notranslate">label.control</code> should give us the HTMLButtonElement, but now in Firefox v95.0.2 it returns <code class="notranslate">null</code></p>
-<h4 dir="auto">Specific section or headline?</h4>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">I expected <code class="notranslate">control</code> to return the first instance of a child <code class="notranslate">labelable element</code> if no <code class="notranslate">for</code> attribute is set.</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="let label = document.createElement('label');
-let button = document.createElement('button');
-label.appendChild(button);
-label.control instanceof HTMLButtonElement; // label.control returns null"><pre class="notranslate"><code class="notranslate">let label = document.createElement('label');
-let button = document.createElement('button');
-label.appendChild(button);
-label.control instanceof HTMLButtonElement; // label.control returns null
-</code></pre></div>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/htmllabelelement/control</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLLabelElement/control" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLLabelElement/control</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmllabelelement/control/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmllabelelement/control/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f/hovercard" href="https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f"><tt>2279e5a</tt></a></li>
-<li>Document last modified: 2021-09-14T18:08:09.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Issue with "CustomElementRegistry.define()": Documentation needs more concise text and examples.]]></title>
             <link>https://github.com/mdn/content/issues/11225</link>
             <guid>https://github.com/mdn/content/issues/11225</guid>
