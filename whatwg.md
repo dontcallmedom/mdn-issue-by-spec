@@ -128,7 +128,7 @@
   
 * [[dom] Issue with "Event.timeStamp": information in the Value section seems to contradict the output values in the Reduced time precision](https://github.com/mdn/content/issues/10839) (2021-11-28T19:13:34Z)
   
-* [[html] Issue with "GlobalEventHandlers.onresize": the logged height does not change when changing the height of the browser window. (The width logger works.)](https://github.com/mdn/content/issues/10683) (2021-11-21T22:37:44Z)
+* [[html] Issue with "resize event": the logged height does not change when changing the height of the browser window](https://github.com/mdn/content/issues/10683) (2021-11-21T22:37:44Z)
   
 * [[html] Issue with "HTMLFormElement: submit event": Bubbles description is confusing](https://github.com/mdn/content/issues/10069) (2021-10-25T05:37:18Z)
   
