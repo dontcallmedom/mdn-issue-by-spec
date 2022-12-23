@@ -124,7 +124,7 @@
   
 * [[cssom-1] Issue with "CSSRule": Missing links for CSSDocumentRule, CSSFontFeatureValuesRule and CSSViewportRule](https://github.com/mdn/content/issues/14697) (2022-04-05T09:43:31Z)
   
-* [[webaudio] api.AudioParam - automationRate undocumented](https://github.com/mdn/content/issues/14637) (2022-04-03T13:16:23Z)
+* [[webaudio] AudioParam - automationRate undocumented](https://github.com/mdn/content/issues/14637) (2022-04-03T13:16:23Z)
   
 * [[css-backgrounds-4] Issue with "box-shadow": box-shadow examples potentially violate WCAG a11y guidelines with poor colour contrast](https://github.com/mdn/content/issues/14372) (2022-03-27T14:09:19Z)
   
@@ -133,8 +133,6 @@
 * [[webaudio] "ConvolverNode": provide a simpler example that I can adapt to more complex examples (connecting it to another node does not work)](https://github.com/mdn/content/issues/14022) (2022-03-18T14:35:29Z)
   
 * [[css-display-3] Issue with "display": accessibility concerns of display: contents deserve update](https://github.com/mdn/content/issues/14015) (2022-03-18T14:08:07Z)
-  
-* [[webaudio] Issue with "AudioContext.createMediaStreamTrackSource()": Example is not using the method exemplified](https://github.com/mdn/content/issues/13941) (2022-03-16T09:31:56Z)
   
 * [[SVG11] Issue with "<tspan>": No mention of multiple x values](https://github.com/mdn/content/issues/13831) (2022-03-13T18:05:24Z)
   
