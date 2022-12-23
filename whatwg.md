@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] duplicate "the" article in text](https://github.com/mdn/content/issues/23140) (2022-12-22T19:01:43Z)
-  
 * [[console] console.group() needs examples illustrating the use of the label parameter](https://github.com/mdn/content/issues/22972) (2022-12-15T05:21:11Z)
   
 * [[html] Suggestion to add accessibility section to the MDN article for the “datalist” element](https://github.com/mdn/content/issues/22958) (2022-12-14T17:14:03Z)
