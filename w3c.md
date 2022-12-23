@@ -142,8 +142,6 @@
   
 * [[webusb] Can web-usb permissions be revoked by javascript code? If so, should be documented](https://github.com/mdn/content/issues/13714) (2022-03-10T03:19:03Z)
   
-* [[permissions-policy-1] "Feature-Policy": execution-while-not-rendered and execution-while-out-of-viewport documentation needs to be written](https://github.com/mdn/content/issues/13556) (2022-03-06T08:14:03Z)
-  
 * [[uievents] “mouseleave is fired when the pointer has exited the element” is inaccurate](https://github.com/mdn/content/issues/13534) (2022-03-05T21:18:17Z)
   
 * [[web-animations-2, css-animations-2] Issue with "Element.animate()": wrong scenario mentioned](https://github.com/mdn/content/issues/13487) (2022-03-04T07:40:26Z)
