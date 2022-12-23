@@ -64,8 +64,6 @@
   
 * [[html] WebSocket: message event properties need more explanation](https://github.com/mdn/content/issues/18021) (2022-07-06T06:26:11Z)
   
-* [[html, dom] "Introduction to events" article contains inaccurate/misleading statements](https://github.com/mdn/content/issues/17771) (2022-06-29T14:25:27Z)
-  
 * [[html] Misleading text about srcset attribute](https://github.com/mdn/content/issues/16136) (2022-05-17T11:32:34Z)
   
 * [[html] Content suggestion: Sort CSS Properties by category in the sidebar](https://github.com/mdn/content/issues/15844) (2022-05-10T04:08:28Z)

@@ -10,8 +10,6 @@
   
 * [[html, dom] Deprecated headline is shown without further information.](https://github.com/mdn/content/issues/20730) (2022-09-14T18:18:13Z)
   
-* [[html, dom] "Introduction to events" article contains inaccurate/misleading statements](https://github.com/mdn/content/issues/17771) (2022-06-29T14:25:27Z)
-  
 * [[dom] Issue with "MutationObserver.observe()": links to nonexistent “Monitoring attribute values” section on MutationObserver](https://github.com/mdn/content/issues/12741) (2022-02-04T23:09:33Z)
   
 * [[dom] Issue with "AbortController": (missing info on behavior of .text() or .json() or other body promise)](https://github.com/mdn/content/issues/12387) (2022-01-24T16:10:11Z)
