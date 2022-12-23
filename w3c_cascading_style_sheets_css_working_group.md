@@ -76,8 +76,6 @@
   
 * [[web-animations-2, css-animations-2] Issue with "Element.animate()": wrong scenario mentioned](https://github.com/mdn/content/issues/13487) (2022-03-04T07:40:26Z)
   
-* [[cssom-view-1, html, selection-api, dom, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written](https://github.com/mdn/content/issues/13419) (2022-03-02T14:45:44Z)
-  
 * [[css-lists-3] Issue with "counter-reset": What is the difference in behavior between the latest Firefox (82 or later) and the older 81 or earlier or other browsers?](https://github.com/mdn/content/issues/13293) (2022-02-26T00:46:43Z)
   
 * [[css-values-3] Content suggestion: Remove <length-percentage> and similar pages](https://github.com/mdn/content/issues/13066) (2022-02-17T10:45:31Z)

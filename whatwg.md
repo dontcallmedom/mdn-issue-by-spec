@@ -106,8 +106,6 @@
   
 * [[html] Conflicting descriptions of whether Firefox respects the “autocomplete” attribute, specifically for <input type="checkbox">](https://github.com/mdn/content/issues/13502) (2022-03-04T16:37:28Z)
   
-* [[cssom-view-1, html, selection-api, dom, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written](https://github.com/mdn/content/issues/13419) (2022-03-02T14:45:44Z)
-  
 * [[fetch] Issue with "Response.json()": Possible exceptions not documented](https://github.com/mdn/content/issues/13208) (2022-02-22T13:11:28Z)
   
 * [[fetch] Content bug: Inaccurate explanation on request credentials](https://github.com/mdn/content/issues/13063) (2022-02-17T09:18:12Z)

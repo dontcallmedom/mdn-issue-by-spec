@@ -22,8 +22,6 @@
   
 * [[uievents] “mouseleave is fired when the pointer has exited the element” is inaccurate](https://github.com/mdn/content/issues/13534) (2022-03-05T21:18:17Z)
   
-* [[cssom-view-1, html, selection-api, dom, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written](https://github.com/mdn/content/issues/13419) (2022-03-02T14:45:44Z)
-  
 * [[IndexedDB-3] Issue with "IDBTransaction.oncomplete": When transaction's oncomplete is actually called?](https://github.com/mdn/content/issues/11901) (2022-01-11T02:17:36Z)
   
 * [[uievents] Content bug: Missing information about what WheelEvent.delta* can be](https://github.com/mdn/content/issues/11811) (2022-01-07T12:25:45Z)

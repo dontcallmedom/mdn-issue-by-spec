@@ -100,7 +100,7 @@
   
 * [[SVG11] SVG Tutorial discussed strokes and fills without paint-order](https://github.com/mdn/content/issues/17040) (2022-06-06T18:32:51Z)
   
-* [[encoding] Subjective description in `Buffer sizing` in `TextEncoder.encodeInto()`](https://github.com/mdn/content/issues/16805) (2022-05-31T02:24:05Z)
+* [[encoding] "Buffer sizing" in `TextEncoder.encodeInto()` is English-centric](https://github.com/mdn/content/issues/16805) (2022-05-31T02:24:05Z)
   
 * [[cssom-1] [Web-API] Constructible stylesheets guide ](https://github.com/mdn/content/issues/16774) (2022-05-30T05:03:25Z)
   
@@ -147,8 +147,6 @@
 * [[web-animations-2, css-animations-2] Issue with "Element.animate()": wrong scenario mentioned](https://github.com/mdn/content/issues/13487) (2022-03-04T07:40:26Z)
   
 * [[mediacapture-streams] MediaDeviceInfo»toJSON() needs to be documented](https://github.com/mdn/content/issues/13463) (2022-03-03T18:40:42Z)
-  
-* [[cssom-view-1, html, selection-api, dom, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written](https://github.com/mdn/content/issues/13419) (2022-03-02T14:45:44Z)
   
 * [[css-lists-3] Issue with "counter-reset": What is the difference in behavior between the latest Firefox (82 or later) and the older 81 or earlier or other browsers?](https://github.com/mdn/content/issues/13293) (2022-02-26T00:46:43Z)
   

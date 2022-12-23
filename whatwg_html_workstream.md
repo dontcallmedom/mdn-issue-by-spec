@@ -90,8 +90,6 @@
   
 * [[html] Conflicting descriptions of whether Firefox respects the “autocomplete” attribute, specifically for <input type="checkbox">](https://github.com/mdn/content/issues/13502) (2022-03-04T16:37:28Z)
   
-* [[cssom-view-1, html, selection-api, dom, pointerlock-2, page-visibility-2, cssom-1] Content bug: Documentation for document.adoptedStyleSheets needs to be written](https://github.com/mdn/content/issues/13419) (2022-03-02T14:45:44Z)
-  
 * [[html] Issue with "<iframe>: The Inline Frame element": document browser behaviour for onload and onerror events.](https://github.com/mdn/content/issues/12477) (2022-01-28T14:05:20Z)
   
 * [[html] Issue with "DragEvent.dataTransfer": Clarify that `dataTransfer` can be null.](https://github.com/mdn/content/issues/11670) (2022-01-02T15:10:06Z)
