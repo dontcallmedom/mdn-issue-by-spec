@@ -144,7 +144,7 @@
   
 * [[html] CustomElementRegistry needs updating](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
   
-* [[html] Issue with "WindowOrWorkerGlobalScope.clearTimeout()": (Can failure be detected?)](https://github.com/mdn/content/issues/5553) (2021-06-01T19:35:39Z)
+* [[html] Issue with "clearTimeout()": Can failure be detected?](https://github.com/mdn/content/issues/5553) (2021-06-01T19:35:39Z)
   
 * [[html, selectors-4] Issue with ":target" and Web Components](https://github.com/mdn/content/issues/4604) (2021-04-29T19:29:23Z)
   
