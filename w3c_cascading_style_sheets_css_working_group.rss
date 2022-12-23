@@ -668,47 +668,6 @@ d). etc</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[cssom-view-1] onscroll performance optimization]]></title>
-            <link>https://github.com/mdn/content/issues/18843</link>
-            <guid>https://github.com/mdn/content/issues/18843</guid>
-            <pubDate>Wed, 27 Jul 2022 08:44:39 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">"the optimization below is often unnecessary"</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">I think giving the example while saying it is often unnecessary is confusing, there should be a  little more information on when and why it is necessary, or give a different example. There are many different opinions on this around the internet and no clear resources / answer, so I was hoping for a better / clearer answer from MDN. Or a link to further resources?</p>
-<p dir="auto">E.g. <a href="https://stackoverflow.com/questions/41740082/scroll-events-requestanimationframe-vs-requestidlecallback-vs-passive-event-lis" rel="nofollow">the top answer in this thread</a> suggests that onscroll and AF are synced and it will never fire? and suggests "<em>However the scroll event is triggered every time the browser renders a scroll position change.</em>" - you simply state they "<em>fire at about the same rate</em>" - can you give any more precise information?</p>
-<p dir="auto">in my own tests i actually found that onscroll events never fire more often than RAF ( in firefox they actually fire 1 to 1) so wouldnt it be better to leave scroll logic in a passive onscroll event?<br>
-and if we use raf for optimisation, couldnt the logic be entirely moved to raf loop - isnt that already enough "debouncing"? the example you give confused  me as I'm not sure what it demonstrates and in which cases it should be used.</p>
-<p dir="auto">Sorry if my question / problem is not super clear - but im basically saying this is a tricky topic and some more / clearer info on MDN docs you be fantastic, and what I hoped for as usually MDN are the go-to resource.</p>
-<p dir="auto">Thanks for all the great work,</p>
-<p dir="auto">Thomas Britnell</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">more explanation on when this is necessary or not.<br>
-couldnt scroll logic be completely moved to raf? (when it is animating something)<br>
-what should / could be done in onScroll event then?</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">see these topics on stackoverflow - they are obviously of interest and unclear to people<br>
-<a href="https://stackoverflow.com/questions/41740082/scroll-events-requestanimationframe-vs-requestidlecallback-vs-passive-event-lis" rel="nofollow">https://stackoverflow.com/questions/41740082/scroll-events-requestanimationframe-vs-requestidlecallback-vs-passive-event-lis</a></p>
-<p dir="auto">also<br>
-<a href="https://stackoverflow.com/questions/51329892/javascript-onscroll-performance-comparison" rel="nofollow">https://stackoverflow.com/questions/51329892/javascript-onscroll-performance-comparison</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/document/scroll_event</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/document/scroll_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/document/scroll_event/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ddf7070d8b148756fef2e84ed395c3613bc33233/hovercard" href="https://github.com/mdn/content/commit/ddf7070d8b148756fef2e84ed395c3613bc33233"><tt>ddf7070</tt></a></li>
-<li>Document last modified: 2022-07-14T13:27:06.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[cssom-view-1] False claim: window.pageYOffset === window.scrollY; // always true]]></title>
             <link>https://github.com/mdn/content/issues/18735</link>
             <guid>https://github.com/mdn/content/issues/18735</guid>
@@ -1798,33 +1757,6 @@ I expect that column-reverse divs behave differently with scrollTop</p>
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/@media/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/@media/index.md</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/a5154c6965a0416e13c893414b9e2493ef1ba4aa/hovercard" href="https://github.com/mdn/content/commit/a5154c6965a0416e13c893414b9e2493ef1ba4aa"><tt>a5154c6</tt></a></li>
 <li>Document last modified: 2021-10-22T03:29:59.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[cssom-view-1] Issue with "Document: scroll event": bad example, needs to be replaced]]></title>
-            <link>https://github.com/mdn/content/issues/10580</link>
-            <guid>https://github.com/mdn/content/issues/10580</guid>
-            <pubDate>Wed, 17 Nov 2021 02:52:11 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">The Examples section states that scroll events can fire at high rate, and that it is recommended to throttle it through requestAnimationFrame.<br>
-The scroll event actually already fires in the <a href="https://html.spec.whatwg.org/multipage/webappapis.html#update-the-rendering" rel="nofollow">rendering steps</a> of the event loop (step 7), just like requestAnimationFrame callbacks (step 13), so throttling this event using requestAnimationFrame makes no sense at all, and using anything else makes only very little sense.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto">Examples &gt; "Scroll event throttling"</p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">Maybe an actual example on how to use the event, but not this.</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto"><a href="https://jsfiddle.net/aujqx28L/" rel="nofollow">https://jsfiddle.net/aujqx28L/</a></p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/document/scroll_event</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/document/scroll_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/document/scroll_event/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f/hovercard" href="https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f"><tt>2279e5a</tt></a></li>
-<li>Document last modified: 2021-09-14T18:08:09.000Z</li>
 </ul>
 </details>]]></content:encoded>
         </item>

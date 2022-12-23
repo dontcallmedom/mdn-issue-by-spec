@@ -80,8 +80,6 @@
   
 * [[cssom-view-1] Include solution to checking if content is overflown in clientHeight page](https://github.com/mdn/content/issues/19153) (2022-08-04T11:29:19Z)
   
-* [[cssom-view-1] onscroll performance optimization](https://github.com/mdn/content/issues/18843) (2022-07-27T08:44:39Z)
-  
 * [[cssom-view-1] False claim: window.pageYOffset === window.scrollY; // always true](https://github.com/mdn/content/issues/18735) (2022-07-24T13:47:54Z)
   
 * [[uievents] Document the ability to preventDefault() a pinch-zoom gesture on a touchpad](https://github.com/mdn/content/issues/18342) (2022-07-14T03:33:35Z)
@@ -191,8 +189,6 @@
 * [[css-transforms-2, css-transforms-1] Issue with "transform": Need to clarify transform-function application in reverse order](https://github.com/mdn/content/issues/10781) (2021-11-26T04:25:19Z)
   
 * [[mediaqueries-4, css-conditional-3] Issue with "@media": Need more clarity re Level 4 v Level 3, browser compat, and broken links](https://github.com/mdn/content/issues/10774) (2021-11-25T20:39:58Z)
-  
-* [[cssom-view-1] Issue with "Document: scroll event": bad example, needs to be replaced](https://github.com/mdn/content/issues/10580) (2021-11-17T02:52:11Z)
   
 * [[service-workers-1] Issue with "Client.postMessage()": Page does not give a full code example, or enough context to create one](https://github.com/mdn/content/issues/10573) (2021-11-16T20:28:09Z)
   
