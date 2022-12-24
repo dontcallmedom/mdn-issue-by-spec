@@ -92,8 +92,6 @@
   
 * [[xhr] Issue with "FormData()": type=submit inputs not included](https://github.com/mdn/content/issues/14305) (2022-03-25T16:56:07Z)
   
-* [[html] “Content categories” article: "sectioning root" link goes to "The HTML Section Heading elements" article](https://github.com/mdn/content/issues/13920) (2022-03-15T20:37:43Z)
-  
 * [[html] Issue with "<a>: The Anchor element": Article implies file:/// scheme is supported](https://github.com/mdn/content/issues/13867) (2022-03-14T22:15:10Z)
   
 * [[html] Issue with "Window.personalbar": content is no longer correct](https://github.com/mdn/content/issues/13729) (2022-03-10T13:33:11Z)

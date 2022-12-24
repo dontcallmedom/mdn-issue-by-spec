@@ -78,8 +78,6 @@
   
 * [[html] Clarify "Permitted parents: any element that accepts metadata content"](https://github.com/mdn/content/issues/14398) (2022-03-28T12:11:28Z)
   
-* [[html] “Content categories” article: "sectioning root" link goes to "The HTML Section Heading elements" article](https://github.com/mdn/content/issues/13920) (2022-03-15T20:37:43Z)
-  
 * [[html] Issue with "<a>: The Anchor element": Article implies file:/// scheme is supported](https://github.com/mdn/content/issues/13867) (2022-03-14T22:15:10Z)
   
 * [[html] Issue with "Window.personalbar": content is no longer correct](https://github.com/mdn/content/issues/13729) (2022-03-10T13:33:11Z)
