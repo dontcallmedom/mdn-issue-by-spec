@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[web-bluetooth] `unwatchAdvertisements` isn't a function in the web bluetooth specification](https://github.com/mdn/content/issues/23151) (2022-12-23T09:59:07Z)
-  
 * [[selectors-4] Broken interactive example](https://github.com/mdn/content/issues/23083) (2022-12-20T04:13:00Z)
   
 * [[css-shapes-2] Property listed as unsupported on Firefox for Android, but @supports still fires for it](https://github.com/mdn/content/issues/23027) (2022-12-17T22:46:43Z)
