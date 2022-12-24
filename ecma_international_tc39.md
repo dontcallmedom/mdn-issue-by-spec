@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[ecmascript] IteratorResult interface has no docs page](https://github.com/mdn/content/issues/23131) (2022-12-22T12:55:57Z)
-  
 * [[ecmascript] BigInt replacer/reviver example is not generic](https://github.com/mdn/content/issues/22573) (2022-11-28T12:41:19Z)
   
 * [[ecmascript] Document import assertions](https://github.com/mdn/content/issues/19220) (2022-08-06T05:08:53Z)
