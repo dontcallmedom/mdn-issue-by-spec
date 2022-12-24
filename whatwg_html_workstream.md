@@ -66,7 +66,7 @@
   
 * [[html] Content suggestion: Sort CSS Properties by category in the sidebar](https://github.com/mdn/content/issues/15844) (2022-05-10T04:08:28Z)
   
-* [[html] The links in the compatibility table appear to be broen.](https://github.com/mdn/content/issues/15631) (2022-05-03T03:28:19Z)
+* [[html] HTMLTableCellElement missing property pages](https://github.com/mdn/content/issues/15631) (2022-05-03T03:28:19Z)
   
 * [[html, gamepad] Double checking the gamepad docs are correct](https://github.com/mdn/content/issues/14874) (2022-04-11T03:02:09Z)
   

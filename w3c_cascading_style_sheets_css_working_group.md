@@ -44,8 +44,6 @@
   
 * [[selectors-4] Content suggestion: @scope](https://github.com/mdn/content/issues/17751) (2022-06-29T01:36:56Z)
   
-* [[css-properties-values-api-1] CSS.registerProperty seems useless](https://github.com/mdn/content/issues/17670) (2022-06-26T11:38:17Z)
-  
 * [[cssom-view-1] the demo's getBoundingClientRect has different result in console panel](https://github.com/mdn/content/issues/17588) (2022-06-24T02:34:27Z)
   
 * [[css-overflow-3] CSS overflow property is giving results inconsistant with guide](https://github.com/mdn/content/issues/17430) (2022-06-19T11:34:27Z)
@@ -64,7 +62,7 @@
   
 * [[css-contain-2] Containing block via contain:paint vs other alternatives](https://github.com/mdn/content/issues/15210) (2022-04-21T19:05:51Z)
   
-* [[cssom-1] Issue with "CSSRule": Missing links for CSSDocumentRule, CSSFontFeatureValuesRule and CSSViewportRule](https://github.com/mdn/content/issues/14697) (2022-04-05T09:43:31Z)
+* [[cssom-1] Missing pages for CSSDocumentRule, CSSFontFeatureValuesRule and CSSViewportRule](https://github.com/mdn/content/issues/14697) (2022-04-05T09:43:31Z)
   
 * [[css-backgrounds-4] Issue with "box-shadow": box-shadow examples potentially violate WCAG a11y guidelines with poor colour contrast](https://github.com/mdn/content/issues/14372) (2022-03-27T14:09:19Z)
   
