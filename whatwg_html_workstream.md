@@ -48,11 +48,9 @@
   
 * [[html] “autcomplete" attribute article: Add explanation that one can use sections in the attribute and identify billing and shipping addresses](https://github.com/mdn/content/issues/20180) (2022-08-31T18:05:30Z)
   
-* [[html] Unreachable `source` tag in example](https://github.com/mdn/content/issues/19944) (2022-08-24T23:20:45Z)
-  
 * [[cssom-view-1, html] [GEH] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
   
-* [[html] Sectioning root](https://github.com/mdn/content/issues/19400) (2022-08-11T06:32:58Z)
+* [[html] Missing sectioning root content](https://github.com/mdn/content/issues/19400) (2022-08-11T06:32:58Z)
   
 * [[html] spellcheck attribute example does not work](https://github.com/mdn/content/issues/19285) (2022-08-08T12:02:51Z)
   

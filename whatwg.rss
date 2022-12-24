@@ -1047,47 +1047,6 @@ So I would expect a working example for a fieldset implementation.</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Unreachable `source` tag in example]]></title>
-            <link>https://github.com/mdn/content/issues/19944</link>
-            <guid>https://github.com/mdn/content/issues/19944</guid>
-            <pubDate>Wed, 24 Aug 2022 23:20:45 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">The srcset attribute</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The example:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;picture&gt;
-  &lt;source srcset=&quot;logo-768.png, logo-768-1.5x.png 1.5x&quot;&gt;
-  &lt;source srcset=&quot;logo-480.png, logo-480-2x.png 2x&quot;&gt;
-  &lt;img src=&quot;logo-320.png&quot; alt=&quot;logo&quot;&gt;
-&lt;/picture&gt;"><pre class="notranslate"><code class="notranslate">&lt;picture&gt;
-  &lt;source srcset="logo-768.png, logo-768-1.5x.png 1.5x"&gt;
-  &lt;source srcset="logo-480.png, logo-480-2x.png 2x"&gt;
-  &lt;img src="logo-320.png" alt="logo"&gt;
-&lt;/picture&gt;
-</code></pre></div>
-<p dir="auto">It doesn't seem to me like it'd make sense to include both of those <code class="notranslate">source</code> tags. How would the browser choose to display <code class="notranslate">logo-480.png</code> over <code class="notranslate">logo-768.png</code>?</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">If there are multiple <code class="notranslate">source</code> tags there should be some way to select between them such as a <code class="notranslate">media</code> or <code class="notranslate">type</code> attribute</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/html/element/picture</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/picture/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/picture/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b0f52c874e2598703c10f8598a83b5f92f23f0ac/hovercard" href="https://github.com/mdn/content/commit/b0f52c874e2598703c10f8598a83b5f92f23f0ac"><tt>b0f52c8</tt></a></li>
-<li>Document last modified: 2022-07-28T02:10:01.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[cssom-view-1, html] [GEH] The scroll event isn't referenced as firing on Window anymore]]></title>
             <link>https://github.com/mdn/content/issues/19699</link>
             <guid>https://github.com/mdn/content/issues/19699</guid>
@@ -1119,7 +1078,7 @@ With the GEH demixing effort this section is gone and there is nowhere I can fin
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Sectioning root]]></title>
+            <title><![CDATA[[html] Missing sectioning root content]]></title>
             <link>https://github.com/mdn/content/issues/19400</link>
             <guid>https://github.com/mdn/content/issues/19400</guid>
             <pubDate>Thu, 11 Aug 2022 06:32:58 GMT</pubDate>
