@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html, dom, css-backgrounds-4] Duplicate content inside the JavaScript events page](https://github.com/mdn/content/issues/23198) (2022-12-26T12:12:02Z)
+  
 * [[clipboard-apis] clipboard.readText() is behind flag on Firefox](https://github.com/mdn/content/issues/23188) (2022-12-25T21:43:10Z)
   
 * [[IndexedDB-3] Add the `event.target.result` information to `IDBRequest`](https://github.com/mdn/content/issues/23184) (2022-12-25T12:49:26Z)
