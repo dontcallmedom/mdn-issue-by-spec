@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] requestAnimationFrame](https://github.com/mdn/content/issues/23197) (2022-12-26T11:40:49Z)
+  
 * [[html] Suggestion to add accessibility section to the MDN article for the “datalist” element](https://github.com/mdn/content/issues/22958) (2022-12-14T17:14:03Z)
   
 * [[html] `srcset` description for `<source>` element is incorrect and misleading.](https://github.com/mdn/content/issues/22820) (2022-12-08T14:50:06Z)
