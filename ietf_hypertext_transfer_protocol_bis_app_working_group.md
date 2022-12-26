@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by IETF Hypertext Transfer Protocol Bis APP Working Group. [![RSS feed for IETF Hypertext Transfer Protocol Bis APP Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[rfc7231] HTTP Connect response has body?](https://github.com/mdn/content/issues/23194) (2022-12-26T05:49:14Z)
+  
 * [[rfc7233] Content suggestion: http content-type multipart/*](https://github.com/mdn/content/issues/19353) (2022-08-10T08:44:58Z)
   
 * [[rfc7233] HTTP Range Request: Requesting a range of bytes (such as of a video file)](https://github.com/mdn/content/issues/18237) (2022-07-11T21:53:18Z)
