@@ -1569,36 +1569,6 @@ requestAnimationFrame(function rAF() {
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[cssom-view-1] Issue with "Element.scrollTop": Negative values are possible]]></title>
-            <link>https://github.com/mdn/content/issues/10968</link>
-            <guid>https://github.com/mdn/content/issues/10968</guid>
-            <pubDate>Sat, 04 Dec 2021 11:37:03 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTop" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTop</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">scrollTop doesn't respond to negative values; instead, it sets itself back to 0.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto">Syntax caveats</p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">I'm seeing negative scrollTop on a flex column-reverse div of mine (electron/chromium)<br>
-I expect that column-reverse divs behave differently with scrollTop</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">Messed with scrollTop in the browser console on a column-reverse div<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/9081748/144708008-c25556ea-be3f-477b-8c44-45fd3a580137.png"><img src="https://user-images.githubusercontent.com/9081748/144708008-c25556ea-be3f-477b-8c44-45fd3a580137.png" alt="image" style="max-width: 100%;"></a><br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/9081748/144707977-5aee30ab-70f8-4607-8030-c6fa0353b393.png"><img src="https://user-images.githubusercontent.com/9081748/144707977-5aee30ab-70f8-4607-8030-c6fa0353b393.png" alt="image" style="max-width: 100%;"></a><br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/9081748/144707995-99a8abb6-ec2d-4f34-a4d3-1eb7ce90b4af.png"><img src="https://user-images.githubusercontent.com/9081748/144707995-99a8abb6-ec2d-4f34-a4d3-1eb7ce90b4af.png" alt="image" style="max-width: 100%;"></a></p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/element/scrolltop</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTop" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTop</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/element/scrolltop/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/element/scrolltop/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f/hovercard" href="https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f"><tt>2279e5a</tt></a></li>
-<li>Document last modified: 2021-09-14T18:08:09.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[css-fonts-5] Issue with "@font-face/font-weight": Document <font-weight-absolute>{2} ]]></title>
             <link>https://github.com/mdn/content/issues/10910</link>
             <guid>https://github.com/mdn/content/issues/10910</guid>

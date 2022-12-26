@@ -90,8 +90,6 @@
   
 * [[selectors-4] Issue with ":scope": Examples don't work](https://github.com/mdn/content/issues/11069) (2021-12-09T06:38:03Z)
   
-* [[cssom-view-1] Issue with "Element.scrollTop": Negative values are possible](https://github.com/mdn/content/issues/10968) (2021-12-04T11:37:03Z)
-  
 * [[css-fonts-5] Issue with "@font-face/font-weight": Document <font-weight-absolute>{2} ](https://github.com/mdn/content/issues/10910) (2021-12-01T18:54:16Z)
   
 * [[css-transforms-2, css-transforms-1] Issue with "transform": Need to clarify transform-function application in reverse order](https://github.com/mdn/content/issues/10781) (2021-11-26T04:25:19Z)
