@@ -3142,55 +3142,6 @@ This problem goes for all properties of the Location object.</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Issue with "Document: DOMContentLoaded event": Race condition in "Checking whether loading is already complete"?]]></title>
-            <link>https://github.com/mdn/content/issues/8808</link>
-            <guid>https://github.com/mdn/content/issues/8808</guid>
-            <pubDate>Fri, 10 Sep 2021 11:50:10 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event#checking_whether_loading_is_already_complete" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event#checking_whether_loading_is_already_complete</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">The section "Checking whether loading is already complete" contains this code:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="function doSomething() {
-  console.info('DOM loaded');
-}
-
-if (document.readyState === 'loading') {  // Loading hasn't finished yet
-  document.addEventListener('DOMContentLoaded', doSomething);
-} else {  // `DOMContentLoaded` has already fired
-  doSomething();
-}"><pre class="notranslate"><code class="notranslate">function doSomething() {
-  console.info('DOM loaded');
-}
-
-if (document.readyState === 'loading') {  // Loading hasn't finished yet
-  document.addEventListener('DOMContentLoaded', doSomething);
-} else {  // `DOMContentLoaded` has already fired
-  doSomething();
-}
-</code></pre></div>
-<p dir="auto">But isn't this a race condition? If the state switches from <code class="notranslate">loading</code> to <code class="notranslate">interactive</code> <em>after</em> the <code class="notranslate">if</code> condition finishes the check but before the event is fired, the <code class="notranslate">doSomething</code> function will not be invoked.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto">"Checking whether loading is already complete"</p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">I expect to see one of two things, depending on whether my assessment is correct:</p>
-<ul dir="auto">
-<li>If there <em>is</em> a race condition, the code should be revised to prevent it somehow.</li>
-<li>If there <em>is not</em> a race condition, then the page should document this fact and how we know that <code class="notranslate">readyState</code> cannot change between the <code class="notranslate">if</code> condition check and adding the event listener.</li>
-</ul>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">No, I didn't run any testing. I'm not sure how you could test a race condition reliably here.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/document/domcontentloaded_event</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/document/domcontentloaded_event/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/document/domcontentloaded_event/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b02518d8440b256c0a40377f1bb751f918ba650b/hovercard" href="https://github.com/mdn/content/commit/b02518d8440b256c0a40377f1bb751f918ba650b"><tt>b02518d</tt></a></li>
-<li>Document last modified: 2021-08-15T05:40:09.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[dom] Issue with "Element.attachShadow()": missing information about the slotAssignment option]]></title>
             <link>https://github.com/mdn/content/issues/8782</link>
             <guid>https://github.com/mdn/content/issues/8782</guid>

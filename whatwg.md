@@ -156,8 +156,6 @@
   
 * [[html] Issue with "Location": does not mention IDN domain names at all](https://github.com/mdn/content/issues/8895) (2021-09-13T22:55:17Z)
   
-* [[html] Issue with "Document: DOMContentLoaded event": Race condition in "Checking whether loading is already complete"?](https://github.com/mdn/content/issues/8808) (2021-09-10T11:50:10Z)
-  
 * [[dom] Issue with "Element.attachShadow()": missing information about the slotAssignment option](https://github.com/mdn/content/issues/8782) (2021-09-09T21:02:17Z)
   
 * [[html] Issue with "Window.localStorage": Safari deletes after 7 days unvisited](https://github.com/mdn/content/issues/8510) (2021-09-01T03:59:58Z)
