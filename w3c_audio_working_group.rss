@@ -4,47 +4,10 @@
         <title>W3C Audio Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_audio_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Audio Working Group</description>
-        <lastBuildDate>Sun, 11 Sep 2022 16:43:52 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 03 Apr 2022 13:16:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[webaudio] function playSample accidentally references global variable instead of passed in variable]]></title>
-            <link>https://github.com/mdn/content/issues/20565</link>
-            <guid>https://github.com/mdn/content/issues/20565</guid>
-            <pubDate>Sun, 11 Sep 2022 16:43:52 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/cancelScheduledValues" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/cancelScheduledValues</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">function playSample(audioContext, audioBuffer, time)</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">function signature is:<br>
-// Create a buffer, plop in data, connect and play -&gt; modify graph here if required<br>
-function playSample(audioContext, audioBuffer, time) {</p>
-<p dir="auto">on line 377 (first line of the function)</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="    const sampleSource = new AudioBufferSourceNode(audioCtx, {"><pre class="notranslate"><code class="notranslate">    const sampleSource = new AudioBufferSourceNode(audioCtx, {
-</code></pre></div>
-<p dir="auto">line uses audioCtx (the global context variable) rather than the passed in variable audioContext</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="    const sampleSource = new AudioBufferSourceNode(audioContext, {"><pre class="notranslate"><code class="notranslate">    const sampleSource = new AudioBufferSourceNode(audioContext, {
-</code></pre></div>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/audioparam/cancelscheduledvalues</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/cancelScheduledValues" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioParam/cancelScheduledValues</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/audioparam/cancelscheduledvalues/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/audioparam/cancelscheduledvalues/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/bf30e32f3b51f59080f2c76795beadb247a551eb/hovercard" href="https://github.com/mdn/content/commit/bf30e32f3b51f59080f2c76795beadb247a551eb"><tt>bf30e32</tt></a></li>
-<li>Document last modified: 2022-09-09T05:07:36.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[webaudio] AudioParam - automationRate undocumented]]></title>
             <link>https://github.com/mdn/content/issues/14637</link>

@@ -62,8 +62,6 @@
   
 * [[css-cascade-3] Missing CSS functions](https://github.com/mdn/content/issues/20611) (2022-09-13T00:32:37Z)
   
-* [[webaudio] function playSample accidentally references global variable instead of passed in variable](https://github.com/mdn/content/issues/20565) (2022-09-11T16:43:52Z)
-  
 * [[cssom-view-1] offsetParent is null if any ancestor has display:none](https://github.com/mdn/content/issues/20407) (2022-09-07T21:59:57Z)
   
 * [[IndexedDB-3] indexedDB.deleteDatabase doc: Mention that deleting a database isn't completed until the upgradeNeeded result is closed](https://github.com/mdn/content/issues/20368) (2022-09-07T00:12:45Z)
