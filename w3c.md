@@ -188,8 +188,6 @@
   
 * [[service-workers-1] Issue with "ServiceWorkerContainer.register()": Second example unclear on intent](https://github.com/mdn/content/issues/10547) (2021-11-15T14:17:23Z)
   
-* [[hr-time-3, performance-timeline-2, resource-timing-2, user-timing-2] Content suggestion: performance glossary term: largest contentful paint/First Input Delay](https://github.com/mdn/content/issues/10196) (2021-11-01T04:46:51Z)
-  
 * [[webrtc] "Using DTMF" is using legacy APIs](https://github.com/mdn/content/issues/10020) (2021-10-22T18:00:50Z)
   
 * [[ecmascript, FileAPI] Clean up irrelevant notes about old browser releases](https://github.com/mdn/content/issues/9974) (2021-10-21T07:48:17Z)
