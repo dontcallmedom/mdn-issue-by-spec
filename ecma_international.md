@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[ecmascript] Remove Function.prototype.prototype from Function Instance properties in MDN](https://github.com/mdn/content/issues/23232) (2022-12-28T14:08:49Z)
+  
 * [[ecmascript, console] `console.timeLog()` is incorrectly described as having a return value](https://github.com/mdn/content/issues/23230) (2022-12-28T12:07:18Z)
   
 * [[ecmascript] Document import assertions](https://github.com/mdn/content/issues/19220) (2022-08-06T05:08:53Z)
