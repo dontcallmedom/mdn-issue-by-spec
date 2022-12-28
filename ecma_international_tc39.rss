@@ -4,10 +4,40 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Wed, 28 Dec 2022 12:07:18 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 Dec 2022 15:18:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Incorrect explanation of interaction between exponentiation and unary operators]]></title>
+            <link>https://github.com/mdn/content/issues/23235</link>
+            <guid>https://github.com/mdn/content/issues/23235</guid>
+            <pubDate>Wed, 28 Dec 2022 15:18:13 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Notes list, under Table</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The operand of unary operators (precedence 14; excluding prefix increment/decrement) cannot be an exponentiation ** (precedence 13) without grouping, or there will be a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError" rel="nofollow">SyntaxError</a>. That means, although -1 ** 2 is technically unambiguous, the language requires you to use (-1) ** 2 instead.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The left operand of an exponentiation (precedence 13) cannot be a unary operation (precedence 14; excluding prefix increment/decrement) without grouping, or there will be a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError" rel="nofollow">SyntaxError</a>. That means, although -1 ** 2 is technically unambiguous, the language requires you to use (-1) ** 2 instead.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/operators/operator_precedence</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/operator_precedence/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/operator_precedence/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/fe3b1f7aac210e72df7273b1a10ed4771fa2a2bf/hovercard" href="https://github.com/mdn/content/commit/fe3b1f7aac210e72df7273b1a10ed4771fa2a2bf"><tt>fe3b1f7</tt></a></li>
+<li>Document last modified: 2022-12-19T09:48:47.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript, console] `console.timeLog()` is incorrectly described as having a return value]]></title>
             <link>https://github.com/mdn/content/issues/23230</link>
