@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[ecmascript, console] `console.timeLog()` is incorrectly described as having a return value](https://github.com/mdn/content/issues/23230) (2022-12-28T12:07:18Z)
-  
 * [[html] Window.opener clarification of cross-origin behavior](https://github.com/mdn/content/issues/23204) (2022-12-26T23:45:01Z)
   
 * [[html, dom, css-backgrounds-4] Duplicate content inside the JavaScript events page](https://github.com/mdn/content/issues/23198) (2022-12-26T12:12:02Z)

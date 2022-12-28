@@ -4,8 +4,6 @@
 
 * [[ecmascript] Incorrect explanation of interaction between exponentiation and unary operators](https://github.com/mdn/content/issues/23235) (2022-12-28T15:18:13Z)
   
-* [[ecmascript, console] `console.timeLog()` is incorrectly described as having a return value](https://github.com/mdn/content/issues/23230) (2022-12-28T12:07:18Z)
-  
 * [[ecmascript] Document import assertions](https://github.com/mdn/content/issues/19220) (2022-08-06T05:08:53Z)
   
 * [[ecmascript, FileAPI] Clean up irrelevant notes about old browser releases](https://github.com/mdn/content/issues/9974) (2021-10-21T07:48:17Z)
