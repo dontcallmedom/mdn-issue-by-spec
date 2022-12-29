@@ -108,8 +108,6 @@
   
 * [[html] Issue with "Document: drop event": Mention that drop won't fire unless you preventDefault in dragover](https://github.com/mdn/content/issues/9796) (2021-10-14T10:16:25Z)
   
-* [[html] <a> element: support of "noopener" is made unclear by out of date link](https://github.com/mdn/content/issues/9572) (2021-10-04T22:54:47Z)
-  
 * [[html] HTMLElement: the input event requires a user to initiate changing the value of a form control](https://github.com/mdn/content/issues/9548) (2021-10-04T04:10:01Z)
   
 * [[html] Issue with "<canvas>: The Graphics Canvas element": Firefox area limit incorrect](https://github.com/mdn/content/issues/9379) (2021-09-30T16:32:42Z)

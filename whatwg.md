@@ -140,8 +140,6 @@
   
 * [[dom] Issue with "Document.getElementById()": link to xml:id doesn't include expected source snippet](https://github.com/mdn/content/issues/9777) (2021-10-13T19:50:56Z)
   
-* [[html] <a> element: support of "noopener" is made unclear by out of date link](https://github.com/mdn/content/issues/9572) (2021-10-04T22:54:47Z)
-  
 * [[html] HTMLElement: the input event requires a user to initiate changing the value of a form control](https://github.com/mdn/content/issues/9548) (2021-10-04T04:10:01Z)
   
 * [[html] Issue with "<canvas>: The Graphics Canvas element": Firefox area limit incorrect](https://github.com/mdn/content/issues/9379) (2021-09-30T16:32:42Z)
