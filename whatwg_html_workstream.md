@@ -6,7 +6,7 @@
   
 * [[html, dom, css-backgrounds-4] Duplicate content inside the JavaScript events page](https://github.com/mdn/content/issues/23198) (2022-12-26T12:12:02Z)
   
-* [[html] requestAnimationFrame](https://github.com/mdn/content/issues/23197) (2022-12-26T11:40:49Z)
+* [[html] Using requestAnimationFrame with async DOM updating](https://github.com/mdn/content/issues/23197) (2022-12-26T11:40:49Z)
   
 * [[html] Suggestion to add accessibility section to the MDN article for the “datalist” element](https://github.com/mdn/content/issues/22958) (2022-12-14T17:14:03Z)
   
