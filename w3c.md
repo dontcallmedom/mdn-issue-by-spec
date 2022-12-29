@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[selectors-4] 404 not found](https://github.com/mdn/content/issues/23256) (2022-12-29T08:22:21Z)
+  
 * [[webvtt1] ::cue should include ::cue() information](https://github.com/mdn/content/issues/23209) (2022-12-27T02:43:21Z)
   
 * [[html, dom, css-backgrounds-4] Duplicate content inside the JavaScript events page](https://github.com/mdn/content/issues/23198) (2022-12-26T12:12:02Z)
