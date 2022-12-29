@@ -242,7 +242,7 @@
   
 * [[hr-time-3] Issue with "performance.now()": Chrome, Firefox, and Safari are not spec compliant on certain platforms](https://github.com/mdn/content/issues/4713) (2021-05-04T18:23:13Z)
   
-* [[intersection-observer] Issue with "IntersectionObserver.IntersectionObserver()": needs description/example of how rootMargin works](https://github.com/mdn/content/issues/4710) (2021-05-04T15:10:10Z)
+* [[intersection-observer] Issue with "IntersectionObserver()": needs description/example of how rootMargin works](https://github.com/mdn/content/issues/4710) (2021-05-04T15:10:10Z)
   
 * [[html, selectors-4] Issue with ":target" and Web Components](https://github.com/mdn/content/issues/4604) (2021-04-29T19:29:23Z)
   
