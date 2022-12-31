@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[FileAPI] Add Link to the corresponding specifications Github repo page.](https://github.com/mdn/content/issues/23289) (2022-12-31T13:04:25Z)
+  
 * [[clipboard-apis] clipboard.readText() is behind flag on Firefox](https://github.com/mdn/content/issues/23188) (2022-12-25T21:43:10Z)
   
 * [[IndexedDB-3] Add the `event.target.result` information to `IDBRequest`](https://github.com/mdn/content/issues/23184) (2022-12-25T12:49:26Z)
