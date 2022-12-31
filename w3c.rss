@@ -2350,52 +2350,6 @@ osc.connect(reverb).connect(ctx.destination);
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-display-3] Issue with "display": accessibility concerns of display: contents deserve update]]></title>
-            <link>https://github.com/mdn/content/issues/14015</link>
-            <guid>https://github.com/mdn/content/issues/14015</guid>
-            <pubDate>Fri, 18 Mar 2022 14:08:07 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/display</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">Under <code class="notranslate">contents</code>:</p>
-<blockquote>
-<p dir="auto">Due to a bug in browsers, this will currently remove the element from the accessibility tree — screen readers will not look at what's inside. See the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display#accessibility_concerns" rel="nofollow">Accessibility concerns</a> section below for more details.</p>
-</blockquote>
-<p dir="auto">From this, I got an impression that using <code class="notranslate">display: contents</code> will remove the element's whole tree. ("will not look at what's inside")</p>
-<p dir="auto">But won't the descendants remain?</p>
-<blockquote>
-<p dir="auto">... in most browsers will remove from the <a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility#accessibility_apis" rel="nofollow">accessibility tree</a> any element with a display value of contents <strong>(but descendants will remain)</strong>.</p>
-</blockquote>
-<p dir="auto">Also, <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=835455" rel="nofollow">Chromium bug</a> for this issue was closed last year, it's two of three major browser engines fixed. Only <a href="https://bugs.webkit.org/show_bug.cgi?id=185679" rel="nofollow">WebKit bug</a> is open. Maybe the word "most" can be removed.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<ul dir="auto">
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display#contents" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/display#contents</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display#accessibility_concerns" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/display#accessibility_concerns</a></li>
-</ul>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">Any of these.</p>
-<ul dir="auto">
-<li>Remove the warning under <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display#contents" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/display#contents</a> and keep only "Accessibility concerns".
-<ul dir="auto">
-<li>Or, rewrite it in some way..?</li>
-</ul>
-</li>
-<li>"... in <strong>most</strong> browsers will remove ..." -&gt; "... in <strong>some</strong> browsers will remove ..."</li>
-</ul>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">Chrome/Fx accessibility tree inspector</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/display</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/display</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/display/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/display/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/672bace59f60c4931e5cdde8eb32919c924bd191/hovercard" href="https://github.com/mdn/content/commit/672bace59f60c4931e5cdde8eb32919c924bd191"><tt>672bace</tt></a></li>
-<li>Document last modified: 2022-03-14T00:26:56.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[SVG11] Issue with "<tspan>": No mention of multiple x values]]></title>
             <link>https://github.com/mdn/content/issues/13831</link>
             <guid>https://github.com/mdn/content/issues/13831</guid>

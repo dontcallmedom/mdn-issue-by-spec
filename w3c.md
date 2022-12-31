@@ -132,8 +132,6 @@
   
 * [[webaudio] "ConvolverNode": provide a simpler example that I can adapt to more complex examples (connecting it to another node does not work)](https://github.com/mdn/content/issues/14022) (2022-03-18T14:35:29Z)
   
-* [[css-display-3] Issue with "display": accessibility concerns of display: contents deserve update](https://github.com/mdn/content/issues/14015) (2022-03-18T14:08:07Z)
-  
 * [[SVG11] Issue with "<tspan>": No mention of multiple x values](https://github.com/mdn/content/issues/13831) (2022-03-13T18:05:24Z)
   
 * [[webusb] Can web-usb permissions be revoked by javascript code? If so, should be documented](https://github.com/mdn/content/issues/13714) (2022-03-10T03:19:03Z)
