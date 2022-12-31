@@ -4,10 +4,50 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Sat, 31 Dec 2022 00:03:11 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 31 Dec 2022 01:28:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Add a reference to to the load (et al) events on HTMLScriptElement.]]></title>
+            <link>https://github.com/mdn/content/issues/23287</link>
+            <guid>https://github.com/mdn/content/issues/23287</guid>
+            <pubDate>Sat, 31 Dec 2022 01:28:40 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Events and See Also</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">There is no indication that there is a <code class="notranslate">load</code> event, or when it might fire.</p>
+<p dir="auto">The link to "Ryan Grove's &lt;script&gt; and  node event compatibility chart" (i.e. <a href="https://pie.gd/test/script-link-events/" rel="nofollow">https://pie.gd/test/script-link-events/</a>) is broken.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I expected to see the <code class="notranslate">load</code> event documented. Although the <code class="notranslate">load</code> element <em>is</em> defined for all elements</p>
+<ul dir="auto">
+<li>it is not listed on <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement</a></li>
+<li>it seems to only fire for elements that have external content, and only when they are done loading</li>
+</ul>
+<p dir="auto">Given that, I think people are more likely to look for the event on the individual elements. For example, <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#events" rel="nofollow">HTMLInputElement</a> lists the <code class="notranslate">input</code> event.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<ul dir="auto">
+<li><a href="https://html.spec.whatwg.org/multipage/scripting.html#execute-the-script-block" rel="nofollow">https://html.spec.whatwg.org/multipage/scripting.html#execute-the-script-block</a> (step 8)</li>
+<li><a href="https://html.spec.whatwg.org/multipage/indices.html#event-load" rel="nofollow">https://html.spec.whatwg.org/multipage/indices.html#event-load</a> (in particular, the cross-references to that, which can be viewed by clicking on the event name)</li>
+<li><a href="https://web.archive.org/web/20221015042641/https://pie.gd/test/script-link-events/" rel="nofollow">https://web.archive.org/web/20221015042641/https://pie.gd/test/script-link-events/</a></li>
+</ul>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">The same is probably true of the other elements that can have a load event fired for them.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/htmlscriptelement</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlscriptelement/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlscriptelement/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/8a72e8bc250e2b5d51e17bd59bc94300849c14b5/hovercard" href="https://github.com/mdn/content/commit/8a72e8bc250e2b5d51e17bd59bc94300849c14b5"><tt>8a72e8b</tt></a></li>
+<li>Document last modified: 2022-12-19T01:49:48.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] CanvasRenderingContext2D.save(), restore(): Confusing comments]]></title>
             <link>https://github.com/mdn/content/issues/23285</link>
