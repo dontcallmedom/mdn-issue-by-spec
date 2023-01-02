@@ -262,7 +262,7 @@
   
 * [[webrtc] "RTCRtpSender.replaceTrack()": example uses undeclared variable "PCs"](https://github.com/mdn/content/issues/1406) (2021-01-17T17:37:46Z)
   
-* [[SVG11] Issue with "<foreignObject>": …](https://github.com/mdn/content/issues/1319) (2021-01-14T17:25:42Z)
+* [[SVG11] Issue with "<foreignObject>": doesn't render in Safari](https://github.com/mdn/content/issues/1319) (2021-01-14T17:25:42Z)
   
 * [[webaudio] Visualization for OscillatorNode](https://github.com/mdn/content/issues/1296) (2021-01-14T10:42:13Z)
   
