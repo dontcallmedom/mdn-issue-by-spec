@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[dom] Lead section for xml/html DOM Text Node seems to provide an incorrect example](https://github.com/mdn/content/issues/23353) (2023-01-03T18:12:21Z)
+  
 * [[dom] Clarifying scope in event listener definition and execution](https://github.com/mdn/content/issues/23253) (2022-12-29T07:11:31Z)
   
 * [[html, dom, css-backgrounds-4] Duplicate content inside the JavaScript events page](https://github.com/mdn/content/issues/23198) (2022-12-26T12:12:02Z)
