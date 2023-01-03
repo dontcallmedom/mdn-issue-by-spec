@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[IndexedDB-3] Example of a key to be logged is not in the IDBCursor.key page](https://github.com/mdn/content/issues/23328) (2023-01-02T23:59:08Z)
+  
 * [[webvtt1] ::cue should include ::cue() information](https://github.com/mdn/content/issues/23209) (2022-12-27T02:43:21Z)
   
 * [[html, dom, css-backgrounds-4] Duplicate content inside the JavaScript events page](https://github.com/mdn/content/issues/23198) (2022-12-26T12:12:02Z)
