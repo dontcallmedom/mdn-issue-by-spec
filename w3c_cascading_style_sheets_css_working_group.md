@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[css-logical-1] Incorrect formal definition for border-block](https://github.com/mdn/content/issues/23343) (2023-01-03T12:03:55Z)
-  
 * [[css-fonts-5] Move content from the `src` section in `@font-face` out to the sub page](https://github.com/mdn/content/issues/23341) (2023-01-03T09:35:02Z)
   
 * [[html, dom, css-backgrounds-4] Duplicate content inside the JavaScript events page](https://github.com/mdn/content/issues/23198) (2022-12-26T12:12:02Z)
