@@ -4,10 +4,53 @@
         <title>W3C Web Applications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_applications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Applications Working Group</description>
-        <lastBuildDate>Mon, 02 Jan 2023 23:59:08 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 03 Jan 2023 23:53:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[IndexedDB-3] "createIndex()'s objectParameters" might be correct instead of "optionalParameters"]]></title>
+            <link>https://github.com/mdn/content/issues/23359</link>
+            <guid>https://github.com/mdn/content/issues/23359</guid>
+            <pubDate>Tue, 03 Jan 2023 23:53:11 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">This page and some other pages (listed below) has this phrase:</p>
+<blockquote>
+<p dir="auto">see createIndex()'s optionalParameters.</p>
+</blockquote>
+<p dir="auto">The "optionalParameters" part looks weird not to be written as "optional parameters", assuming that this simply means general parameters that are not required.</p>
+<p dir="auto">Seeing the linked page <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/createIndex#parameters" rel="nofollow">IDBObjectStore.createIndex()</a>, I found a parameter <code class="notranslate">objectParameters</code>.</p>
+<p dir="auto">Therefore, I think replacing "optionalParameters" in the phrase by "objectParameters" may be better.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">If this is the case, replace "optionalParameters" with "objectParameters" to correctly refer to the 3rd argument of <code class="notranslate">IDBObjectStore.createIndex()</code>.</p>
+<p dir="auto">Another option is renaming the parameter (both the <code class="notranslate">IDBObjectStore.createIndex()</code> page and the references) to <code class="notranslate">options</code> to match the specification.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">The specification: <a href="https://w3c.github.io/IndexedDB/#ref-for-dom-idbobjectstore-createindex%E2%91%A0" rel="nofollow">Indexed Database API 3.0</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Other pages with the phrase:</p>
+<ul dir="auto">
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex" rel="nofollow">IDBIndex - Web APIs | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/isAutoLocale" rel="nofollow">IDBIndex.isAutoLocale - Web APIs | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/locale" rel="nofollow">IDBIndex.locale - Web APIs | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBLocaleAwareKeyRange" rel="nofollow">IDBLocaleAwareKeyRange - Web APIs | MDN</a></li>
+</ul>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/indexeddb_api</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/indexeddb_api/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/indexeddb_api/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/1e0a2838cb7781245288eec60fbf7606bb6ac8dc/hovercard" href="https://github.com/mdn/content/commit/1e0a2838cb7781245288eec60fbf7606bb6ac8dc"><tt>1e0a283</tt></a></li>
+<li>Document last modified: 2022-10-24T15:41:47.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[IndexedDB-3] Example of a key to be logged is not in the IDBCursor.key page]]></title>
             <link>https://github.com/mdn/content/issues/23328</link>

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[IndexedDB-3] "createIndex()'s objectParameters" might be correct instead of "optionalParameters"](https://github.com/mdn/content/issues/23359) (2023-01-03T23:53:11Z)
+  
 * [[css-fonts-5] Move content from the `src` section in `@font-face` out to the sub page](https://github.com/mdn/content/issues/23341) (2023-01-03T09:35:02Z)
   
 * [[IndexedDB-3] Example of a key to be logged is not in the IDBCursor.key page](https://github.com/mdn/content/issues/23328) (2023-01-02T23:59:08Z)
