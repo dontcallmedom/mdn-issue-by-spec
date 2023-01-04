@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] There is no example page above in https://developer.mozilla.org/en-US/docs/Web/API/Window/personalbar](https://github.com/mdn/content/issues/23345) (2023-01-03T12:22:52Z)
-  
 * [[html] Add a reference to to the load (et al) events on HTMLScriptElement.](https://github.com/mdn/content/issues/23287) (2022-12-31T01:28:40Z)
   
 * [[html] CanvasRenderingContext2D.save(), restore(): Confusing comments](https://github.com/mdn/content/issues/23285) (2022-12-31T00:03:11Z)
@@ -89,8 +87,6 @@
 * [[html] Clarify "Permitted parents: any element that accepts metadata content"](https://github.com/mdn/content/issues/14398) (2022-03-28T12:11:28Z)
   
 * [[html] Issue with "<a>: The Anchor element": Article implies file:/// scheme is supported](https://github.com/mdn/content/issues/13867) (2022-03-14T22:15:10Z)
-  
-* [[html] Issue with "Window.personalbar": content is no longer correct](https://github.com/mdn/content/issues/13729) (2022-03-10T13:33:11Z)
   
 * [[html] Conflicting descriptions of whether Firefox respects the “autocomplete” attribute, specifically for <input type="checkbox">](https://github.com/mdn/content/issues/13502) (2022-03-04T16:37:28Z)
   

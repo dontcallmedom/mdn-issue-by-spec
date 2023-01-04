@@ -4,8 +4,6 @@
 
 * [[dom] Lead section for xml/html DOM Text Node seems to provide an incorrect example](https://github.com/mdn/content/issues/23353) (2023-01-03T18:12:21Z)
   
-* [[html] There is no example page above in https://developer.mozilla.org/en-US/docs/Web/API/Window/personalbar](https://github.com/mdn/content/issues/23345) (2023-01-03T12:22:52Z)
-  
 * [[streams] ReadableStream example mixes creation and consumption](https://github.com/mdn/content/issues/23299) (2023-01-01T13:20:04Z)
   
 * [[html] Add a reference to to the load (et al) events on HTMLScriptElement.](https://github.com/mdn/content/issues/23287) (2022-12-31T01:28:40Z)
@@ -109,8 +107,6 @@
 * [[xhr] Issue with "FormData()": type=submit inputs not included](https://github.com/mdn/content/issues/14305) (2022-03-25T16:56:07Z)
   
 * [[html] Issue with "<a>: The Anchor element": Article implies file:/// scheme is supported](https://github.com/mdn/content/issues/13867) (2022-03-14T22:15:10Z)
-  
-* [[html] Issue with "Window.personalbar": content is no longer correct](https://github.com/mdn/content/issues/13729) (2022-03-10T13:33:11Z)
   
 * [[fullscreen] Using F11 to enter fullscreen mode doesn’t set fullscreenElement (it remains null) and document.exitFullscreen() doesn’t work](https://github.com/mdn/content/issues/13674) (2022-03-09T00:38:35Z)
   
