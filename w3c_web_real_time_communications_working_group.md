@@ -16,7 +16,7 @@
   
 * [[mediacapture-streams] Issue with "MediaStreamTrack: ended event": note that this event is not fired when the user calls .stop() on the track](https://github.com/mdn/content/issues/4939) (2021-05-12T10:02:23Z)
   
-* [[screen-capture] displaySurface doc looks wrong: there is no way to restrain the type of surface you want to allow in javascript on client side; displaySurface can be used to detect the type of surface for a current stream already going](https://github.com/mdn/content/issues/1456) (2021-01-18T15:39:25Z)
+* [[screen-capture] MediaTrackConstraints.displaySurface: there is no way to restrain surface type via javascript; can only detect surface type for a current stream already going](https://github.com/mdn/content/issues/1456) (2021-01-18T15:39:25Z)
   
 * [[webrtc] "RTCRtpSender.replaceTrack()": example uses undeclared variable "PCs"](https://github.com/mdn/content/issues/1406) (2021-01-17T17:37:46Z)
   
