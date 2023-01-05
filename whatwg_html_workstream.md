@@ -4,8 +4,6 @@
 
 * [[html] Add a reference to to the load (et al) events on HTMLScriptElement.](https://github.com/mdn/content/issues/23287) (2022-12-31T01:28:40Z)
   
-* [[html] CanvasRenderingContext2D.save(), restore(): Confusing comments](https://github.com/mdn/content/issues/23285) (2022-12-31T00:03:11Z)
-  
 * [[html] Window.opener clarification of cross-origin behavior](https://github.com/mdn/content/issues/23204) (2022-12-26T23:45:01Z)
   
 * [[html, dom, css-backgrounds-4] Duplicate content inside the JavaScript events page](https://github.com/mdn/content/issues/23198) (2022-12-26T12:12:02Z)

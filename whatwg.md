@@ -8,8 +8,6 @@
   
 * [[html] Add a reference to to the load (et al) events on HTMLScriptElement.](https://github.com/mdn/content/issues/23287) (2022-12-31T01:28:40Z)
   
-* [[html] CanvasRenderingContext2D.save(), restore(): Confusing comments](https://github.com/mdn/content/issues/23285) (2022-12-31T00:03:11Z)
-  
 * [[dom] Clarifying scope in event listener definition and execution](https://github.com/mdn/content/issues/23253) (2022-12-29T07:11:31Z)
   
 * [[html] Window.opener clarification of cross-origin behavior](https://github.com/mdn/content/issues/23204) (2022-12-26T23:45:01Z)
