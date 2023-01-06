@@ -14,8 +14,6 @@
   
 * [[clipboard-apis] clipboard.readText() is behind flag on Firefox](https://github.com/mdn/content/issues/23188) (2022-12-25T21:43:10Z)
   
-* [[IndexedDB-3] Add the `event.target.result` information to `IDBRequest`](https://github.com/mdn/content/issues/23184) (2022-12-25T12:49:26Z)
-  
 * [[css-shapes-2] Property listed as unsupported on Firefox for Android, but @supports still fires for it](https://github.com/mdn/content/issues/23027) (2022-12-17T22:46:43Z)
   
 * [[mediacapture-streams] Missing description of getUserMedia constraints.](https://github.com/mdn/content/issues/22962) (2022-12-14T20:17:55Z)

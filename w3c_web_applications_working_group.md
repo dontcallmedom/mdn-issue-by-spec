@@ -8,8 +8,6 @@
   
 * [[clipboard-apis] clipboard.readText() is behind flag on Firefox](https://github.com/mdn/content/issues/23188) (2022-12-25T21:43:10Z)
   
-* [[IndexedDB-3] Add the `event.target.result` information to `IDBRequest`](https://github.com/mdn/content/issues/23184) (2022-12-25T12:49:26Z)
-  
 * [[html, uievents] Document.activeElement : The lack of HTMLAnchorElement and macOS on a case by case basis](https://github.com/mdn/content/issues/22338) (2022-11-16T13:47:01Z)
   
 * [[cssom-view-1, uievents, pointerlock-2] MouseEvent.clientX and MouseEvent.clientY is  the coordinates of the window, but the documentation is written relative to the local dom ](https://github.com/mdn/content/issues/21876) (2022-10-27T13:46:15Z)
