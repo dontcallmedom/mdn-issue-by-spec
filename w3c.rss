@@ -2792,58 +2792,6 @@ And the change in Firefox caused by <a href="https://groups.google.com/g/mozilla
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[IndexedDB-3] Issue with "IDBIndex.getAllKeys()": getAllKeys returns an Array.]]></title>
-            <link>https://github.com/mdn/content/issues/11354</link>
-            <guid>https://github.com/mdn/content/issues/11354</guid>
-            <pubDate>Tue, 21 Dec 2021 04:24:54 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/getAllKeys" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/getAllKeys</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">"The getAllKeys() method of the IDBIndex interface instantly retrieves the primary keys of all objects inside the index, setting them as the result of the request object."</p>
-<p dir="auto">First, the article does not specify the form of the information returned in the result property of the request object.  (It is an Array.)</p>
-<p dir="auto">Second, it does not seem to be the case that getAllKeys "instantly retrieves the primary keys..." <em>in all circumstances</em>.  See "did you test this".</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto">The topmost headline: IDBIndex.getAllKeys().</p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">Different phrasing, perhaps "[the method] returns an IDBRequest object on which success and error handlers may be set.  The <em>result</em> property of the success handler <em>event</em> argument will be an Array containing the keys."</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">Wrote HTML and js to define a simple idb, create a couple of stores, one with an index, and perform operations on that db.  Then I stepped through the code in both FF and Chrome.</p>
-<p dir="auto">After some hours with the Chrome &amp; FF debuggers, I realized stepping through with the FF debugger produces different results than letting the code run to completion.  (In Chrome, the result is the same whether stepping through code, or running w/o breakpoints.)</p>
-<p dir="auto">The test code looks like this:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="       req = oStore.getAllKeys();
-       if (req.result &amp;&amp; Array.isArray(res.result)) {
-       if (req.readyState !== &quot;pending&quot;) {---; return;}
-       req.onsuccess = onSuccess;
-       ---
-       function onSuccess(event) {
-          callback(event.result);
-          return;
-       }"><pre class="notranslate"><code class="notranslate">       req = oStore.getAllKeys();
-       if (req.result &amp;&amp; Array.isArray(res.result)) {
-       if (req.readyState !== "pending") {---; return;}
-       req.onsuccess = onSuccess;
-       ---
-       function onSuccess(event) {
-          callback(event.result);
-          return;
-       }
-</code></pre></div>
-<p dir="auto">With breakpoints disabled, req.readyState === "pending" in both FF and Chrome, and in both the onSuccess handler is assigned and fires.</p>
-<p dir="auto">With a breakpoint at the 'if' statement, using the debugger to inspect req, FF reports req.readyState is 'done' and req.result is an Array of key values.  Upon continuing, the "if" block is executed.  onSuccess is neither assigned nor executed.</p>
-<p dir="auto">Breaking at the same point in Chrome, req.readyState === "pending".  Upon continuing, the "if" block is skipped, onSuccess is assigned, and onSuccess fires, exactly as without any break.</p>
-<p dir="auto">Given this, it is somewhat difficult to describe what getAllKeys does.  It seems to be browser dependent.  Or at least, debugger dependent.  And...if there is a problem, it is with the debugger.  But I don't know enough about this stuff to say it is a problem, rather than something about the debugger I don't get.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/idbindex/getallkeys</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/getAllKeys" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/getAllKeys</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/idbindex/getallkeys/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/idbindex/getallkeys/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b0b00060b28f06c75c2174cddd42581a9d438df0/hovercard" href="https://github.com/mdn/content/commit/b0b00060b28f06c75c2174cddd42581a9d438df0"><tt>b0b0006</tt></a></li>
-<li>Document last modified: 2021-10-22T15:52:01.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[pointerlock-2] Element.requestPointerLock() missing some useful detail]]></title>
             <link>https://github.com/mdn/content/issues/11327</link>
             <guid>https://github.com/mdn/content/issues/11327</guid>

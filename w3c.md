@@ -164,8 +164,6 @@
   
 * [[css-scoping-1] Issue with ":host-context()": link to example does not demonstrate usage](https://github.com/mdn/content/issues/11621) (2021-12-31T12:10:13Z)
   
-* [[IndexedDB-3] Issue with "IDBIndex.getAllKeys()": getAllKeys returns an Array.](https://github.com/mdn/content/issues/11354) (2021-12-21T04:24:54Z)
-  
 * [[pointerlock-2] Element.requestPointerLock() missing some useful detail](https://github.com/mdn/content/issues/11327) (2021-12-20T05:04:35Z)
   
 * [[css-display-3] Issue with "display": table accessibility concern should specify browsers](https://github.com/mdn/content/issues/11206) (2021-12-14T15:54:34Z)

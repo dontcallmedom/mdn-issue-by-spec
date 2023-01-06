@@ -32,8 +32,6 @@
   
 * [[uievents] Content bug: Missing information about what WheelEvent.delta* can be](https://github.com/mdn/content/issues/11811) (2022-01-07T12:25:45Z)
   
-* [[IndexedDB-3] Issue with "IDBIndex.getAllKeys()": getAllKeys returns an Array.](https://github.com/mdn/content/issues/11354) (2021-12-21T04:24:54Z)
-  
 * [[pointerlock-2] Element.requestPointerLock() missing some useful detail](https://github.com/mdn/content/issues/11327) (2021-12-20T05:04:35Z)
   
 * [[ecmascript, FileAPI] Clean up irrelevant notes about old browser releases](https://github.com/mdn/content/issues/9974) (2021-10-21T07:48:17Z)
