@@ -28,8 +28,6 @@
   
 * [[css-cascade-3] Missing CSS functions](https://github.com/mdn/content/issues/20611) (2022-09-13T00:32:37Z)
   
-* [[cssom-view-1] offsetParent is null if any ancestor has display:none](https://github.com/mdn/content/issues/20407) (2022-09-07T21:59:57Z)
-  
 * [[web-animations-2] Animation.commitStyles() remains unclear, example seems pointless](https://github.com/mdn/content/issues/20086) (2022-08-29T10:53:24Z)
   
 * [[cssom-view-1, html] [GEH] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)

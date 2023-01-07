@@ -1179,45 +1179,6 @@ this page is for functional notations as part of the value in property/value pai
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[cssom-view-1] offsetParent is null if any ancestor has display:none]]></title>
-            <link>https://github.com/mdn/content/issues/20407</link>
-            <guid>https://github.com/mdn/content/issues/20407</guid>
-            <pubDate>Wed, 07 Sep 2022 21:59:57 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetParent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetParent</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Note</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<blockquote>
-<p dir="auto">offsetParent returns null in the following situations:</p>
-<p dir="auto">The element <strong>or its parent element</strong> has the display property set to none.</p>
-</blockquote>
-<p dir="auto">Should say <strong>element or any ancestor</strong>, doesn't need to be specifically the parent.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The element or any ancestor has the display property set to none.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://drafts.csswg.org/cssom-view/#dom-htmlelement-offsetparent" rel="nofollow">https://drafts.csswg.org/cssom-view/#dom-htmlelement-offsetparent</a></p>
-<blockquote>
-<p dir="auto">If any of the following holds true return null and terminate this algorithm:</p>
-<p dir="auto">The element does not have an associated <a href="https://drafts.csswg.org/css-display-3/#box" rel="nofollow">box</a>.</p>
-</blockquote>
-<p dir="auto">If any ancestor has display:none the element will not have an associated box.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/htmlelement/offsetparent</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetParent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetParent</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlelement/offsetparent/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlelement/offsetparent/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0d1f2b120066971c814341032438cbd526a4dc34/hovercard" href="https://github.com/mdn/content/commit/0d1f2b120066971c814341032438cbd526a4dc34"><tt>0d1f2b1</tt></a></li>
-<li>Document last modified: 2022-07-01T19:39:07.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[IndexedDB-3] indexedDB.deleteDatabase doc: Mention that deleting a database isn't completed until the upgradeNeeded result is closed]]></title>
             <link>https://github.com/mdn/content/issues/20368</link>
             <guid>https://github.com/mdn/content/issues/20368</guid>
