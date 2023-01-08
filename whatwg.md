@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[compat] -webkit-text-stroke is not part of any standard](https://github.com/mdn/content/issues/23463) (2023-01-08T00:33:44Z)
+  
 * [[dom] Lead section for xml/html DOM Text Node seems to provide an incorrect example](https://github.com/mdn/content/issues/23353) (2023-01-03T18:12:21Z)
   
 * [[streams] ReadableStream example mixes creation and consumption](https://github.com/mdn/content/issues/23299) (2023-01-01T13:20:04Z)
