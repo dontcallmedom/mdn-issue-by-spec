@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-shadow-parts-1] ::part(): Missing information](https://github.com/mdn/content/issues/23471) (2023-01-08T11:05:39Z)
+  
 * [[web-share] Share MDN Example Not Working - TypeError: navigator.share is not a function](https://github.com/mdn/content/issues/23403) (2023-01-05T12:11:34Z)
   
 * [[css-fonts-5] Move content from the `src` section in `@font-face` out to the sub page](https://github.com/mdn/content/issues/23341) (2023-01-03T09:35:02Z)
