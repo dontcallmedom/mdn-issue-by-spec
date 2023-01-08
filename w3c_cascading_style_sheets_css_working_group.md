@@ -106,7 +106,7 @@
   
 * [[css-lists-3] Issue with "counter-reset": the example is a bit confusing](https://github.com/mdn/content/issues/6277) (2021-06-23T22:25:29Z)
   
-* [[html, selectors-4] Issue with ":target" and Web Components](https://github.com/mdn/content/issues/4604) (2021-04-29T19:29:23Z)
+* [[html, selectors-4] :target doesn't work within shadow roots](https://github.com/mdn/content/issues/4604) (2021-04-29T19:29:23Z)
   
 * [[cssom-view-1] Issue with "Element.scrollTop": note that scrollTop value is negative when display: flex and flex-direction: column-reverse used](https://github.com/mdn/content/issues/4142) (2021-04-15T21:36:13Z)
   

@@ -238,7 +238,7 @@
   
 * [[intersection-observer] Issue with "IntersectionObserver()": needs description/example of how rootMargin works](https://github.com/mdn/content/issues/4710) (2021-05-04T15:10:10Z)
   
-* [[html, selectors-4] Issue with ":target" and Web Components](https://github.com/mdn/content/issues/4604) (2021-04-29T19:29:23Z)
+* [[html, selectors-4] :target doesn't work within shadow roots](https://github.com/mdn/content/issues/4604) (2021-04-29T19:29:23Z)
   
 * [[webaudio] Content bug: AudioListener and attributes need better examples. ](https://github.com/mdn/content/issues/4468) (2021-04-26T03:22:48Z)
   

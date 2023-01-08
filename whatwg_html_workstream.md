@@ -134,7 +134,7 @@
   
 * [[html] Issue with "clearTimeout()": Can failure be detected?](https://github.com/mdn/content/issues/5553) (2021-06-01T19:35:39Z)
   
-* [[html, selectors-4] Issue with ":target" and Web Components](https://github.com/mdn/content/issues/4604) (2021-04-29T19:29:23Z)
+* [[html, selectors-4] :target doesn't work within shadow roots](https://github.com/mdn/content/issues/4604) (2021-04-29T19:29:23Z)
   
 * [[html] requestAnimationFrame is also available in Dedicated Workers](https://github.com/mdn/content/issues/1519) (2021-01-20T08:47:22Z)
   
