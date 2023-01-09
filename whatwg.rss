@@ -926,7 +926,7 @@ favDialog.showModal();"><pre class="notranslate"><span class="pl-s1">favDialog</
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] dataset is defined on Element not HTMLElement]]></title>
+            <title><![CDATA[[html] dataset is also available on SVGElement]]></title>
             <link>https://github.com/mdn/content/issues/22352</link>
             <guid>https://github.com/mdn/content/issues/22352</guid>
             <pubDate>Wed, 16 Nov 2022 20:40:40 GMT</pubDate>
@@ -1210,45 +1210,6 @@ Also note <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/document/implementation/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/document/implementation/index.md</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/1511e914c6b1ce6f88056bfefd48a6aa585cebce/hovercard" href="https://github.com/mdn/content/commit/1511e914c6b1ce6f88056bfefd48a6aa585cebce"><tt>1511e91</tt></a></li>
 <li>Document last modified: 2022-09-09T05:10:34.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[html] JSFiddle for TabIndex example no longer accurate?]]></title>
-            <link>https://github.com/mdn/content/issues/21776</link>
-            <guid>https://github.com/mdn/content/issues/21776</guid>
-            <pubDate>Mon, 24 Oct 2022 05:59:47 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">"Check out this fiddle to understand the scrolling effects of tabindex."</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">When viewing the JS fiddle, the first div says: "Child(orange background div)'s content can NOT be accessed by scrolling with Keyboard"</p>
-<p dir="auto">Tabbing into it, the first tab stop highlights the child (orange background div) which shows a focus ring around it. Using the keyboard does indeed scroll the content of the inner/orange background div. [Though, the message says "Child (orange background div)'s content can NOT be accessed by scrolling with the keyboard", though I can scroll the child element fine]</p>
-<p dir="auto">I cannot however focus the outer (white background) div that contains it, or scroll that div with the keyboard, unless I click within that div with my mouse, then I can scroll the outer div, which makes the next tab stop the inner div again, which I can still scroll with the keyboard.</p>
-<p dir="auto">Starting over (keyboard only, ie. disregarding my mouse focus mentioned in the previous paragraph), the next (second) tab stop on the page is the inner div of the second container; this results in the same behavior as the first (outer can't be scrolled unless mouse focused, inner scrolls with keyboard). [I suppose the label here isn't wrong]</p>
-<p dir="auto">Continuing down the page, the third tab stop is the third outer div, which I can scroll with the keyboard. Next stop is the inner div of the same third outer div, which I can also scroll with keyboard. [Again, label not really wrong I guess]</p>
-<p dir="auto">Fourth box (which is the 5th tab stop) selects the outer div, which I can scroll with keyboard, tabbing again doesn't select the inner div, thus I cannot scroll the inner div with keyboard. [Label here says I <em>can</em> scroll the child, but I can't]</p>
-<p dir="auto">Fifth box (6th tab stop) selects the fifth boxes outer div, which I can scroll with keyboard. Another tab selects it's child, which I can also scroll with keyboard. [Label here isn't wrong again I guess]</p>
-<p dir="auto">I should also note that the contrast between the fiddle saying "can [not] be accessed <em>by</em> scrolling with the keyboard" feels misleading as if focus should be changed by simply scrolling up/down with the keyboard alone, without any tabs; I'm not sure if that would be an accessibility option somewhere but even so, it contrasts with the description linking to the fiddle that says "its child content cannot be scrolled with the arrow keys" which also feels more accurate and clear.</p>
-<p dir="auto">Also, all the labels/descriptions on the page only refer to the inner div content being scrollable, there are situations (at least, now it seems) where the outer div also isn't scrollable and I wonder if it's worth mentioning/exemplifying that as well.</p>
-<p dir="auto">I'm not sure if behavior has changed since the creation of the fiddle or if behavior maybe varies between user agents; my testing on this was all done with Firefox 106.0.1 (64-bit) on Windows 10.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The labels/descriptions matching the behavior (see above)</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/html/global_attributes/tabindex</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/global_attributes/tabindex/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/global_attributes/tabindex/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/36001a269f4d7b2b3ac6de79e942a5f849bb87d8/hovercard" href="https://github.com/mdn/content/commit/36001a269f4d7b2b3ac6de79e942a5f849bb87d8"><tt>36001a2</tt></a></li>
-<li>Document last modified: 2022-09-09T05:53:39.000Z</li>
 </ul>
 </details>]]></content:encoded>
         </item>

@@ -28,7 +28,7 @@
   
 * [[html] Closing dialog with Escape key](https://github.com/mdn/content/issues/22430) (2022-11-20T20:23:05Z)
   
-* [[html] dataset is defined on Element not HTMLElement](https://github.com/mdn/content/issues/22352) (2022-11-16T20:40:40Z)
+* [[html] dataset is also available on SVGElement](https://github.com/mdn/content/issues/22352) (2022-11-16T20:40:40Z)
   
 * [[html, uievents] Document.activeElement : The lack of HTMLAnchorElement and macOS on a case by case basis](https://github.com/mdn/content/issues/22338) (2022-11-16T13:47:01Z)
   
@@ -41,8 +41,6 @@
 * [[html] Add documentation for <video posterloading=lazy>](https://github.com/mdn/content/issues/21912) (2022-10-28T12:20:13Z)
   
 * [[html] Information missing for "hidden" <input>s](https://github.com/mdn/content/issues/21857) (2022-10-26T21:27:57Z)
-  
-* [[html] JSFiddle for TabIndex example no longer accurate?](https://github.com/mdn/content/issues/21776) (2022-10-24T05:59:47Z)
   
 * [[html] Slider controls example could use value instead of textContent](https://github.com/mdn/content/issues/21318) (2022-10-06T03:08:45Z)
   
