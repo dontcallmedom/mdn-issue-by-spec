@@ -224,8 +224,6 @@
   
 * [[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator](https://github.com/mdn/content/issues/6856) (2021-07-13T13:35:32Z)
   
-* [[selection-api] Issue with "Selection.setBaseAndExtent()": behaviour on text nodes](https://github.com/mdn/content/issues/6623) (2021-07-06T12:24:35Z)
-  
 * [[css-lists-3] Issue with "counter-reset": the example is a bit confusing](https://github.com/mdn/content/issues/6277) (2021-06-23T22:25:29Z)
   
 * [[entries-api] Issue with "FileSystemFlags.exclusive": define dirEntry is type of FileSystemDirectoryEntry](https://github.com/mdn/content/issues/5457) (2021-05-29T15:23:34Z)
