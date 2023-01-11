@@ -4,8 +4,6 @@
 
 * [[css-shadow-parts-1] ::part(): Missing information](https://github.com/mdn/content/issues/23471) (2023-01-08T11:05:39Z)
   
-* [[css-fonts-5] Move content from the `src` section in `@font-face` out to the sub page](https://github.com/mdn/content/issues/23341) (2023-01-03T09:35:02Z)
-  
 * [[html, dom, css-backgrounds-4] Duplicate content inside the JavaScript events page](https://github.com/mdn/content/issues/23198) (2022-12-26T12:12:02Z)
   
 * [[css-shapes-2] Property listed as unsupported on Firefox for Android, but @supports still fires for it](https://github.com/mdn/content/issues/23027) (2022-12-17T22:46:43Z)

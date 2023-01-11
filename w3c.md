@@ -6,8 +6,6 @@
   
 * [[web-share] Share MDN Example Not Working - TypeError: navigator.share is not a function](https://github.com/mdn/content/issues/23403) (2023-01-05T12:11:34Z)
   
-* [[css-fonts-5] Move content from the `src` section in `@font-face` out to the sub page](https://github.com/mdn/content/issues/23341) (2023-01-03T09:35:02Z)
-  
 * [[IndexedDB-3] Example of a key to be logged is not in the IDBCursor.key page](https://github.com/mdn/content/issues/23328) (2023-01-02T23:59:08Z)
   
 * [[webvtt1] ::cue should include ::cue() information](https://github.com/mdn/content/issues/23209) (2022-12-27T02:43:21Z)
