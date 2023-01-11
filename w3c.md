@@ -156,8 +156,6 @@
   
 * [[cssom-view-1] Issue with "Document: scroll event": Example using rAF in scroll-event callbacks is outdated, and anti-performance](https://github.com/mdn/content/issues/12701) (2022-02-04T00:25:49Z)
   
-* [[css-images-3] Issue with "image-orientation": cross-origin limitations](https://github.com/mdn/content/issues/12484) (2022-01-28T23:40:20Z)
-  
 * [[IndexedDB-3] Issue with "IDBTransaction.oncomplete": When transaction's oncomplete is actually called?](https://github.com/mdn/content/issues/11901) (2022-01-11T02:17:36Z)
   
 * [[uievents] Content bug: Missing information about what WheelEvent.delta* can be](https://github.com/mdn/content/issues/11811) (2022-01-07T12:25:45Z)

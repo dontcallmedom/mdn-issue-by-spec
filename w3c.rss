@@ -2680,35 +2680,6 @@ requestAnimationFrame(function rAF() {
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-images-3] Issue with "image-orientation": cross-origin limitations]]></title>
-            <link>https://github.com/mdn/content/issues/12484</link>
-            <guid>https://github.com/mdn/content/issues/12484</guid>
-            <pubDate>Fri, 28 Jan 2022 23:40:20 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/image-orientation" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/image-orientation</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">As discussed in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="630516885" data-permission-text="Title is private" data-url="https://github.com/w3c/csswg-drafts/issues/5165" data-hovercard-type="issue" data-hovercard-url="/w3c/csswg-drafts/issues/5165/hovercard" href="https://github.com/w3c/csswg-drafts/issues/5165">w3c/csswg-drafts/issues/5165</a>, this behavior is no longer supported for cross-origin images. This severely limits its usefulness and means that the old default behavior (where EXIF data was ignored) can no longer be achieved for cross-origin images.</p>
-<ul dir="auto">
-<li><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1655598" rel="nofollow">Firefox bug</a> (Open)</li>
-<li><a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1110330" rel="nofollow">Chromium bug</a> (Closed)</li>
-<li><a href="https://bugs.webkit.org/show_bug.cgi?id=217294" rel="nofollow">Webkit bug</a> (Closed)</li>
-</ul>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">The page should probably have a big callout about this.</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">Yes, I created a page that loads an image with an EXIF rotation and set <code class="notranslate">image-orientation: none</code> on it. When using a cross-origin image, the image was flipped according to the EXIF data (in Chrome). When using a same-origin image, the EXIF data was ignored.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/image-orientation</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/image-orientation" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/image-orientation</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/image-orientation/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/image-orientation/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0469140da76b9b593251a191c63a2ee92abc1774/hovercard" href="https://github.com/mdn/content/commit/0469140da76b9b593251a191c63a2ee92abc1774"><tt>0469140</tt></a></li>
-<li>Document last modified: 2021-09-15T02:25:12.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[IndexedDB-3] Issue with "IDBTransaction.oncomplete": When transaction's oncomplete is actually called?]]></title>
             <link>https://github.com/mdn/content/issues/11901</link>
             <guid>https://github.com/mdn/content/issues/11901</guid>

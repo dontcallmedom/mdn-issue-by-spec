@@ -76,8 +76,6 @@
   
 * [[cssom-view-1] Issue with "Document: scroll event": Example using rAF in scroll-event callbacks is outdated, and anti-performance](https://github.com/mdn/content/issues/12701) (2022-02-04T00:25:49Z)
   
-* [[css-images-3] Issue with "image-orientation": cross-origin limitations](https://github.com/mdn/content/issues/12484) (2022-01-28T23:40:20Z)
-  
 * [[css-scoping-1] Issue with ":host-context()": link to example does not demonstrate usage](https://github.com/mdn/content/issues/11621) (2021-12-31T12:10:13Z)
   
 * [[css-display-3] Issue with "display": table accessibility concern should specify browsers](https://github.com/mdn/content/issues/11206) (2021-12-14T15:54:34Z)
