@@ -26,8 +26,6 @@
   
 * [[html] Example custom select is not available on the keychain](https://github.com/mdn/content/issues/22513) (2022-11-24T13:16:19Z)
   
-* [[html] Missing page: navigator.unregisterProtocolHandler(scheme, url)](https://github.com/mdn/content/issues/22458) (2022-11-21T17:20:28Z)
-  
 * [[html] Closing dialog with Escape key](https://github.com/mdn/content/issues/22430) (2022-11-20T20:23:05Z)
   
 * [[html] dataset is also available on SVGElement](https://github.com/mdn/content/issues/22352) (2022-11-16T20:40:40Z)
