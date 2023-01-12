@@ -4,8 +4,6 @@
 
 * [[appmanifest] Show Windows example for `related_applications`](https://github.com/mdn/content/issues/23570) (2023-01-12T02:19:58Z)
   
-* [[cssom-1] Confusing > (&gt;) in note's hyperlink.](https://github.com/mdn/content/issues/23568) (2023-01-12T01:11:43Z)
-  
 * [[css-shadow-parts-1] ::part(): Missing information](https://github.com/mdn/content/issues/23471) (2023-01-08T11:05:39Z)
   
 * [[web-share] Share MDN Example Not Working - TypeError: navigator.share is not a function](https://github.com/mdn/content/issues/23403) (2023-01-05T12:11:34Z)
