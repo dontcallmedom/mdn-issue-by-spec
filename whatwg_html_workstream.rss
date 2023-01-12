@@ -330,7 +330,7 @@ function YieldForFrame()
 <p dir="auto">Each string in the list must have at least a width descriptor or a pixel density descriptor to be valid. Among the list, there must be only one string containing the same tuple of width descriptor and pixel density descriptor. The browser chooses the most adequate image to display at a given point of time. If width descriptors are used, the sizes attribute must also be present, or the srcset value will be ignored.</p>
 </blockquote>
 <p dir="auto">This reads as if this would be valid :</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;picture&gt;
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;picture&gt;
   &lt;source srcset=&quot;
     mdn-logo-wide.png 400w 1x,
     mdn-logo-wide-2x.png 400w 2x,
@@ -339,17 +339,16 @@ function YieldForFrame()
   &quot; media=&quot;(min-width: 800px)&quot; /&gt;
 
   &lt;img src=&quot;mdn-logo-narrow.png&quot; alt=&quot;MDN Web Docs&quot; /&gt;
-&lt;/picture&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;picture&gt;
-  &lt;source srcset="
-    mdn-logo-wide.png 400w 1x,
-    mdn-logo-wide-2x.png 400w 2x,
-    mdn-logo-extra-wide.png 800w 1x,
-    mdn-logo-extra-wide-2x.png 800w 2x
-  " media="(min-width: 800px)" /&gt;
+&lt;/picture&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">picture</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">source</span> <span class="pl-c1">srcset</span>="<span class="pl-s"></span>
+<span class="pl-s">    mdn-logo-wide.png 400w 1x,</span>
+<span class="pl-s">    mdn-logo-wide-2x.png 400w 2x,</span>
+<span class="pl-s">    mdn-logo-extra-wide.png 800w 1x,</span>
+<span class="pl-s">    mdn-logo-extra-wide-2x.png 800w 2x</span>
+<span class="pl-s">  </span>" <span class="pl-c1">media</span>="<span class="pl-s">(min-width: 800px)</span>" /&gt;
 
-  &lt;img src="mdn-logo-narrow.png" alt="MDN Web Docs" /&gt;
-&lt;/picture&gt;
-</code></pre></div>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">img</span> <span class="pl-c1">src</span>="<span class="pl-s">mdn-logo-narrow.png</span>" <span class="pl-c1">alt</span>="<span class="pl-s">MDN Web Docs</span>" /&gt;
+<span class="pl-kos">&lt;/</span><span class="pl-ent">picture</span><span class="pl-kos">&gt;</span></pre></div>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">Documentation that matches the specification : <a href="https://html.spec.whatwg.org/multipage/images.html#image-candidate-string" rel="nofollow">https://html.spec.whatwg.org/multipage/images.html#image-candidate-string</a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
