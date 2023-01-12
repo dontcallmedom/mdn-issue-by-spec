@@ -2289,35 +2289,6 @@ But that does not really cover the topic.</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-backgrounds-4] Issue with "box-shadow": box-shadow examples potentially violate WCAG a11y guidelines with poor colour contrast]]></title>
-            <link>https://github.com/mdn/content/issues/14372</link>
-            <guid>https://github.com/mdn/content/issues/14372</guid>
-            <pubDate>Sun, 27 Mar 2022 14:09:19 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">Box-shadow offset demonstration has poor colour contrast and is potentially non-compliant with WCAG guidelines. It is particularly hostile to low vision, but otherwise sighted individuals due to poor contrast issues. Poorly contrasting adjacent elements, even if they may be entirely discernable to users with optimal vision, can be difficult or impossible for low-vision users to parse, which may render the rendered example visually confusing and difficult to understand.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow#setting_zero_for_offset_and_blur" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow#setting_zero_for_offset_and_blur</a></p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">A good contrast between colours used to demonstrate the feature. While individual developers may stray from WCAG guidelines in their own projects, possibly to their own detriment, a resource such as this, which will be used by low vision developers and developers with restricted colour vision, should comply as strictly as possible in order to maximise accessibility and minimise discrimination against such developers. Replacement of one of the box-shadow colours with black would be the most obvious solution, or replacement of one or both with higher contrast alternatives. I might recommend #2E3436 for the first box-shadow and #EDD400 for the second, as together they are compliant with the guidelines.</p>
-<p dir="auto">Edit: Alternatively, #1C409B and #F4AAB9 to maintain some resemblance to the previous theme.</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">As well as testing with my own experiences, I used some online a11y resources to quantify the contrast issue. A contrast of less than 3:1 is generally considered non-compliant. The second link demonstrates the issue with poorly contrasted adjacent visual elements (the background and "foreground" border are, in terms of user experience, functionally equivalent to the two box-shadows layered one atop the other).<br>
-<a href="https://color.a11y.com/ContrastPair/?bgcolor=FF44b9&amp;fgcolor=66CCFF" rel="nofollow">https://color.a11y.com/ContrastPair/?bgcolor=FF44b9&amp;fgcolor=66CCFF</a><br>
-<a href="https://webaim.org/resources/contrastchecker/?fcolor=F4AAB9&amp;bcolor=66CCFF" rel="nofollow">https://webaim.org/resources/contrastchecker/?fcolor=F4AAB9&amp;bcolor=66CCFF</a></p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/box-shadow</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/box-shadow/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/box-shadow/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/281e3b21178946c8301232a8eb50d11770ee8450/hovercard" href="https://github.com/mdn/content/commit/281e3b21178946c8301232a8eb50d11770ee8450"><tt>281e3b2</tt></a></li>
-<li>Document last modified: 2022-02-18T09:53:31.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[css-fonts-5] Issue with "font-size": recommend to users not to set font-size with "em" units]]></title>
             <link>https://github.com/mdn/content/issues/14282</link>
             <guid>https://github.com/mdn/content/issues/14282</guid>

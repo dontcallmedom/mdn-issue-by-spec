@@ -62,8 +62,6 @@
   
 * [[cssom-1] Missing pages for CSSDocumentRule, CSSFontFeatureValuesRule and CSSViewportRule](https://github.com/mdn/content/issues/14697) (2022-04-05T09:43:31Z)
   
-* [[css-backgrounds-4] Issue with "box-shadow": box-shadow examples potentially violate WCAG a11y guidelines with poor colour contrast](https://github.com/mdn/content/issues/14372) (2022-03-27T14:09:19Z)
-  
 * [[css-fonts-5] Issue with "font-size": recommend to users not to set font-size with "em" units](https://github.com/mdn/content/issues/14282) (2022-03-25T06:00:02Z)
   
 * [[web-animations-2, css-animations-2] Issue with "Element.animate()": wrong scenario mentioned](https://github.com/mdn/content/issues/13487) (2022-03-04T07:40:26Z)
