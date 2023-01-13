@@ -8,8 +8,6 @@
   
 * [[compat] -webkit-text-stroke is unexpectedly part of WHATWG standard](https://github.com/mdn/content/issues/23463) (2023-01-08T00:33:44Z)
   
-* [[dom] Lead section for xml/html DOM Text Node seems to provide an incorrect example](https://github.com/mdn/content/issues/23353) (2023-01-03T18:12:21Z)
-  
 * [[streams] ReadableStream example mixes creation and consumption](https://github.com/mdn/content/issues/23299) (2023-01-01T13:20:04Z)
   
 * [[html] Add a reference to to the load (et al) events on HTMLScriptElement.](https://github.com/mdn/content/issues/23287) (2022-12-31T01:28:40Z)
