@@ -196,7 +196,7 @@
   
 * [[uievents] Issue with "Element: keydown event": What generates a KeyboardEvent?](https://github.com/mdn/content/issues/9321) (2021-09-28T15:22:02Z)
   
-* [[webaudio] api.AudioContext.createMediaElementSource - does not wok in Safari](https://github.com/mdn/content/issues/9042) (2021-09-17T18:01:03Z)
+* [[webaudio] AudioContext.createMediaElementSource does not work in Safari](https://github.com/mdn/content/issues/9042) (2021-09-17T18:01:03Z)
   
 * [[clipboard-apis] Update execCommand use in context-menu-copy-link-with-types](https://github.com/mdn/content/issues/8990) (2021-09-16T17:38:38Z)
   
