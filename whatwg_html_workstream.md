@@ -54,7 +54,7 @@
   
 * [[html] “autcomplete" attribute article: Add explanation that one can use sections in the attribute and identify billing and shipping addresses](https://github.com/mdn/content/issues/20180) (2022-08-31T18:05:30Z)
   
-* [[cssom-view-1, html] [GEH] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
+* [[html, cssom-view-1] [GEH] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
   
 * [[html] Missing sectioning root content](https://github.com/mdn/content/issues/19400) (2022-08-11T06:32:58Z)
   
@@ -122,7 +122,7 @@
   
 * [[html] Issue with "WorkerGlobalScope.importScripts()": (confucing description of parameters)](https://github.com/mdn/content/issues/7652) (2021-08-06T09:26:25Z)
   
-* [[cssom-view-1, html, dom, WebIDL-1, FileAPI, uievents, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
+* [[html, cssom-view-1, dom, WebIDL-1, FileAPI, uievents, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
 * [[html] Issue with "<form>": describe running javascript on submit: `onsubmit` and javascript pseudo-protocol](https://github.com/mdn/content/issues/7142) (2021-07-21T22:09:52Z)
   

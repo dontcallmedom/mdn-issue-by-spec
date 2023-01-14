@@ -70,7 +70,7 @@
   
 * [[html] “autcomplete" attribute article: Add explanation that one can use sections in the attribute and identify billing and shipping addresses](https://github.com/mdn/content/issues/20180) (2022-08-31T18:05:30Z)
   
-* [[cssom-view-1, html] [GEH] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
+* [[html, cssom-view-1] [GEH] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
   
 * [[html] Missing sectioning root content](https://github.com/mdn/content/issues/19400) (2022-08-11T06:32:58Z)
   
@@ -154,7 +154,7 @@
   
 * [[html] Content suggestion: Add one-liner to former WindowOrWorkerGlobalScope methods](https://github.com/mdn/content/issues/8979) (2021-09-16T10:44:51Z)
   
-* [[cssom-view-1, notifications, service-workers-1, dom, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
+* [[notifications, cssom-view-1, service-workers-1, dom, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
 * [[html] Issue with "Location": does not mention IDN domain names at all](https://github.com/mdn/content/issues/8895) (2021-09-13T22:55:17Z)
   
@@ -166,7 +166,7 @@
   
 * [[xhr] Issue with "FormData()": missing formdata event documentation](https://github.com/mdn/content/issues/7613) (2021-08-05T12:02:00Z)
   
-* [[cssom-view-1, html, dom, WebIDL-1, FileAPI, uievents, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
+* [[html, cssom-view-1, dom, WebIDL-1, FileAPI, uievents, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
 * [[html] Issue with "<form>": describe running javascript on submit: `onsubmit` and javascript pseudo-protocol](https://github.com/mdn/content/issues/7142) (2021-07-21T22:09:52Z)
   

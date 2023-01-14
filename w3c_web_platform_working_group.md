@@ -10,5 +10,5 @@
   
 * [[css-conditional-3, DOM-Parsing] Defining page types](https://github.com/mdn/content/issues/15539) (2022-04-29T23:44:43Z)
   
-* [[cssom-view-1, html, dom, WebIDL-1, FileAPI, uievents, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
+* [[html, cssom-view-1, dom, WebIDL-1, FileAPI, uievents, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   

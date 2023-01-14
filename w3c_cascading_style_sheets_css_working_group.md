@@ -30,7 +30,7 @@
   
 * [[web-animations-2] Animation.commitStyles() remains unclear, example seems pointless](https://github.com/mdn/content/issues/20086) (2022-08-29T10:53:24Z)
   
-* [[cssom-view-1, html] [GEH] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
+* [[html, cssom-view-1] [GEH] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
   
 * [[cssom-view-1]  height-controls](https://github.com/mdn/content/issues/19322) (2022-08-09T11:35:31Z)
   
@@ -92,11 +92,11 @@
   
 * [[css-sizing-4] CSS aspect-ratio needs better examples](https://github.com/mdn/content/issues/9543) (2021-10-04T00:01:11Z)
   
-* [[cssom-view-1, notifications, service-workers-1, dom, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
+* [[notifications, cssom-view-1, service-workers-1, dom, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
 * [[SVG11, css-masking-1] Deprecated Property on Documentation for SVG clipPath Element](https://github.com/mdn/content/issues/7653) (2021-08-06T09:44:12Z)
   
-* [[cssom-view-1, html, dom, WebIDL-1, FileAPI, uievents, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
+* [[html, cssom-view-1, dom, WebIDL-1, FileAPI, uievents, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
 * [[css-lists-3] Issue with "counter-reset": the example is a bit confusing](https://github.com/mdn/content/issues/6277) (2021-06-23T22:25:29Z)
   
@@ -107,6 +107,4 @@
 * [[css-fonts-5, css-sizing-4] Content bug: Sidebar "Related Topics" no longer shows any specific related topics on CSS pages](https://github.com/mdn/content/issues/3827) (2021-04-05T00:32:29Z)
   
 * [[cssom-view-1] Issue with "Document.elementFromPoint()": Add info about nodes dragged and their position in the DOM tree](https://github.com/mdn/content/issues/3520) (2021-03-26T07:48:07Z)
-  
-* [[cssom-view-1] Issue with "Window.devicePixelRatio": Code example does not match the relavent description perfectly.](https://github.com/mdn/content/issues/873) (2021-01-03T10:45:10Z)
   

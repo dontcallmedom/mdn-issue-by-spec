@@ -74,7 +74,7 @@
   
 * [[web-animations-2] Animation.commitStyles() remains unclear, example seems pointless](https://github.com/mdn/content/issues/20086) (2022-08-29T10:53:24Z)
   
-* [[cssom-view-1, html] [GEH] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
+* [[html, cssom-view-1] [GEH] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
   
 * [[uievents] Event references should list bubbles, cancelable, and composed values](https://github.com/mdn/content/issues/19590) (2022-08-15T13:38:07Z)
   
@@ -200,7 +200,7 @@
   
 * [[clipboard-apis] Update execCommand use in context-menu-copy-link-with-types](https://github.com/mdn/content/issues/8990) (2021-09-16T17:38:38Z)
   
-* [[cssom-view-1, notifications, service-workers-1, dom, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
+* [[notifications, cssom-view-1, service-workers-1, dom, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
 * [[SVG11] Issue with "SVGSVGElement": In FF an unset viewBox property means viewBox.baseVal = null. For Chrome it is an SVGRect initialized to 0.](https://github.com/mdn/content/issues/8907) (2021-09-14T14:00:23Z)
   
@@ -214,7 +214,7 @@
   
 * [[service-workers-1] No docs for the ServiceWorker object’s postMessage method](https://github.com/mdn/content/issues/7593) (2021-08-04T17:16:23Z)
   
-* [[cssom-view-1, html, dom, WebIDL-1, FileAPI, uievents, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
+* [[html, cssom-view-1, dom, WebIDL-1, FileAPI, uievents, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
 * [[IndexedDB-3] Issue with "IDBTransaction":Example needs explanation](https://github.com/mdn/content/issues/7160) (2021-07-22T15:31:43Z)
   
@@ -259,8 +259,6 @@
 * [[SVG11] Issue with "<foreignObject>": doesn't render in Safari](https://github.com/mdn/content/issues/1319) (2021-01-14T17:25:42Z)
   
 * [[webaudio] Visualization for OscillatorNode](https://github.com/mdn/content/issues/1296) (2021-01-14T10:42:13Z)
-  
-* [[cssom-view-1] Issue with "Window.devicePixelRatio": Code example does not match the relavent description perfectly.](https://github.com/mdn/content/issues/873) (2021-01-03T10:45:10Z)
   
 * [[webrtc] icecandidate_event update the meaning of null candidate](https://github.com/mdn/content/issues/2450) (2019-11-24T10:21:05Z)
   
