@@ -24,7 +24,5 @@
   
 * [[notifications, cssom-view-1, service-workers-1, dom, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
-* [[dom] Issue with "Element.attachShadow()": missing information about the slotAssignment option](https://github.com/mdn/content/issues/8782) (2021-09-09T21:02:17Z)
-  
 * [[html, cssom-view-1, dom, WebIDL-1, FileAPI, uievents, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
