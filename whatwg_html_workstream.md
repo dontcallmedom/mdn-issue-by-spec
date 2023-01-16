@@ -112,8 +112,6 @@
   
 * [[html] Issue with "<canvas>: The Graphics Canvas element": Firefox area limit incorrect](https://github.com/mdn/content/issues/9379) (2021-09-30T16:32:42Z)
   
-* [[html] Content suggestion: Update CanvasRenderingContext2D.getContextAttributes()](https://github.com/mdn/content/issues/9224) (2021-09-24T04:55:16Z)
-  
 * [[html] Content suggestion: WebSocket.readyState enum properties WebSocket.OPEN, WebSocket.CLOSING, etc](https://github.com/mdn/content/issues/9156) (2021-09-21T22:32:24Z)
   
 * [[html] Content suggestion: Add one-liner to former WindowOrWorkerGlobalScope methods](https://github.com/mdn/content/issues/8979) (2021-09-16T10:44:51Z)
