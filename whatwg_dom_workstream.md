@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[dom] Missing NodeFilter.FILTER_SKIP description](https://github.com/mdn/content/issues/23728) (2023-01-17T19:26:34Z)
+  
 * [[dom] Example code has confusing elements](https://github.com/mdn/content/issues/23658) (2023-01-15T06:46:02Z)
   
 * [[dom] Clarifying scope in event listener definition and execution](https://github.com/mdn/content/issues/23253) (2022-12-29T07:11:31Z)
