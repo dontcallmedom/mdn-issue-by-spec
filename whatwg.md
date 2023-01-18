@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Safari autocomplete support](https://github.com/mdn/content/issues/23742) (2023-01-18T11:10:57Z)
+  
 * [[dom] Is the parameter description accurate?](https://github.com/mdn/content/issues/23733) (2023-01-18T02:11:45Z)
   
 * [[dom] Missing NodeFilter.FILTER_SKIP description](https://github.com/mdn/content/issues/23728) (2023-01-17T19:26:34Z)
