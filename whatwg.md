@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[dom] Is the parameter description accurate?](https://github.com/mdn/content/issues/23733) (2023-01-18T02:11:45Z)
+  
 * [[dom] Missing NodeFilter.FILTER_SKIP description](https://github.com/mdn/content/issues/23728) (2023-01-17T19:26:34Z)
   
 * [[console] trace() from chrome and firefox also include async sources, would help to note this as it confused me.](https://github.com/mdn/content/issues/23705) (2023-01-16T20:10:18Z)
