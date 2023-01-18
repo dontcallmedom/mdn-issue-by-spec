@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] Safari autocomplete support](https://github.com/mdn/content/issues/23742) (2023-01-18T11:10:57Z)
-  
 * [[html] In the example, isn't the requestAnimationFrame always called more than once if once queued were fired within a single frame?](https://github.com/mdn/content/issues/23635) (2023-01-14T14:28:24Z)
   
 * [[html] HTMLInputElement lacks documentation for selectionStart, selectionEnd, selectionDirection](https://github.com/mdn/content/issues/23606) (2023-01-13T09:19:01Z)
