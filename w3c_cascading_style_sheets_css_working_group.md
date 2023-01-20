@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[cssom-view-1] there is missing ">" in HTMLImageElement.x example html and src is 404](https://github.com/mdn/content/issues/23791) (2023-01-20T17:06:25Z)
+  
 * [[css-overscroll-1] The "Try It" result block isn't displaying in Firefox (works in Chrome)](https://github.com/mdn/content/issues/23784) (2023-01-20T06:35:01Z)
   
 * [[css-shadow-parts-1] ::part(): Missing information](https://github.com/mdn/content/issues/23471) (2023-01-08T11:05:39Z)
