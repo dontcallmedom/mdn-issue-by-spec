@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[console] console.timeLog() acceps multiple parameters](https://github.com/mdn/content/issues/23806) (2023-01-21T22:19:13Z)
+  
 * [[html] Inconsistencies in character length definition.](https://github.com/mdn/content/issues/23783) (2023-01-20T02:56:19Z)
   
 * [[dom] Is the parameter description accurate?](https://github.com/mdn/content/issues/23733) (2023-01-18T02:11:45Z)
