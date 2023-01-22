@@ -4,10 +4,34 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Fri, 20 Jan 2023 06:35:01 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Jan 2023 08:06:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[web-animations-2] "Automatically removing filling animations" and several related docs are incorrect and/or extremely confusing]]></title>
+            <link>https://github.com/mdn/content/issues/23811</link>
+            <guid>https://github.com/mdn/content/issues/23811</guid>
+            <pubDate>Sun, 22 Jan 2023 08:06:05 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Animation#automatically_removing_filling_animations" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Animation#automatically_removing_filling_animations</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Automatically removing filling animations</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<ul dir="auto">
+<li>Page says <code class="notranslate">"remove"</code> event is fired when animation is put into <code class="notranslate">"active"</code> replace state, but actually after a <code class="notranslate">"remove"</code> event the replace state <a href="https://w3c.github.io/csswg-drafts/web-animations-1/#removing-replaced-animations" rel="nofollow">must be <code class="notranslate">"removed"</code></a>, and <code class="notranslate">"active"</code> is the initial/default state</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Animation/replaceState" rel="nofollow"><code class="notranslate">Animation.replaceState</code></a> page says that <code class="notranslate">"removed"</code> is for when an animation is "explicitly removed", but it's not clear if or how that's possible.</li>
+<li>The <a href="https://mdn.github.io/dom-examples/web-animations-api/replace-indefinite-animations.html" rel="nofollow">example</a> doesn't actually demonstrate all of the things it claims (for example, it does not print the replace state at any relevant point).</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Animation/commitStyles" rel="nofollow"><code class="notranslate">Animation.commitStyles()</code></a> and the aforementioned example claim that the end state is written, but spec says the <a href="https://w3c.github.io/csswg-drafts/web-animations-1/#dom-animation-commitstyles" rel="nofollow">current state</a> is written; see also <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1354093004" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/20086" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/20086/hovercard" href="https://github.com/mdn/content/issues/20086">#20086</a></li>
+<li>probably more things</li>
+</ul>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Clear docs with supporting examples, terminology used in a manner consist with its meaning in the spec?</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">See links above.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">I'm not exactly a subject matter expert here, I might be (am) very confused.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-overscroll-1] The "Try It" result block isn't displaying in Firefox (works in Chrome)]]></title>
             <link>https://github.com/mdn/content/issues/23784</link>
