@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] beforeunload event guide references custom event.returnValue, but that is deprecated](https://github.com/mdn/content/issues/23837) (2023-01-23T14:01:02Z)
+  
 * [[html] Inconsistencies in character length definition.](https://github.com/mdn/content/issues/23783) (2023-01-20T02:56:19Z)
   
 * [[html] In the example, isn't the requestAnimationFrame always called more than once if once queued were fired within a single frame?](https://github.com/mdn/content/issues/23635) (2023-01-14T14:28:24Z)

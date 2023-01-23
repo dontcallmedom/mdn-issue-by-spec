@@ -4,10 +4,52 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Fri, 20 Jan 2023 02:56:19 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Jan 2023 14:01:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] beforeunload event guide references custom event.returnValue, but that is deprecated]]></title>
+            <link>https://github.com/mdn/content/issues/23837</link>
+            <guid>https://github.com/mdn/content/issues/23837</guid>
+            <pubDate>Mon, 23 Jan 2023 14:01:02 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">#examples, #browser_compatibility, #compatibility_notes</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Three sections of this page cover use of <code class="notranslate">event.returnValue</code> to set a custom navigate-away message:</p>
+<ul dir="auto">
+<li>"<code class="notranslate">return event.returnValue = "Are you sure you want to exit?";</code>"</li>
+<li>"Activation using event.returnValue = "string";"</li>
+<li>"Starting with Firefox 44, Chrome 51, Opera 38, and Safari 9.1, a generic string not under the control of the webpage will be shown instead of the returned string."</li>
+</ul>
+<p dir="auto">However, as noted in that third point, the first example is now unhelpful as it suggests a custom message can be set.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The following changes are needed:</p>
+<ul dir="auto">
+<li><strong>Most importantly</strong>, the example giving <code class="notranslate">return event.returnValue = "Are you sure you want to exit?";</code> should now presumably be <code class="notranslate">return event.returnValue = '';</code></li>
+<li>The browser compatibility table should have a new row documenting browser status showing when event.returnValue stopped being configurable with a custom message.</li>
+<li><code class="notranslate">Starting with ... will be shown</code> should be reworded to <code class="notranslate">Since ... is shown</code> as the current wording implies forthcoming rather than implemented.</li>
+<li>The statement <code class="notranslate">Chrome displays the string, "Do you want to leave this site? Changes you made may not be saved."</code> should now read <code class="notranslate">Chrome displays the string, "Leave site? Changes you made may not be saved."</code></li>
+</ul>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/window/beforeunload_event</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/beforeunload_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/beforeunload_event/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/a243190b798aa57b6cc08b9ef3216aed8ab9c895/hovercard" href="https://github.com/mdn/content/commit/a243190b798aa57b6cc08b9ef3216aed8ab9c895"><tt>a243190</tt></a></li>
+<li>Document last modified: 2022-09-22T16:39:52.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Inconsistencies in character length definition.]]></title>
             <link>https://github.com/mdn/content/issues/23783</link>
