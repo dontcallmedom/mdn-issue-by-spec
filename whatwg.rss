@@ -2084,60 +2084,6 @@ The only content which mentions this behavior is the following sentence:</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Misleading text about srcset attribute]]></title>
-            <link>https://github.com/mdn/content/issues/16136</link>
-            <guid>https://github.com/mdn/content/issues/16136</guid>
-            <pubDate>Tue, 17 May 2022 11:32:34 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">#value</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">To indicate that the image resource specified by the image candidate string should be used when the image is being rendered with a particular width in pixels, provide a width descriptor comprised the number giving that width in pixels followed by the lower case letter "w". <strong><em>For example, to provide an image resource to be used when the renderer needs a 450 pixel wide image, use the width descriptor string 450w. The specified width must be a positive, non-zero, integer, and must match the intrinsic width of the referenced image.</em></strong></p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Some text that would describe a more practical example. The text (set with bold) can give the wrong idea about how to use the <code class="notranslate">srcset</code> attribute.</p>
-<p dir="auto">The thing about the "width descriptor" is that it doesn't care about the actual rendered width of the image. The rule seems more to specify the width of the whole page than the actual rendered width of the image.</p>
-<p dir="auto">This is unless you specify the <code class="notranslate">sizes</code> attribute. Then you can specify a media condition followed by which width of the image you want to display. But this means, that it's possible to make rules about screen sizes, not rules to the actual rendered image size.</p>
-<p dir="auto">The text can be misleading making people think that the <code class="notranslate">srcset</code> is for network optimization in general when it actually (more or less) just seems more relevant for responsiveness.</p>
-<p dir="auto">A practical way of proving this is by the following.</p>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;style&gt;
-    img {
-        width: 50px;
-    }
-&lt;/style&gt;
-&lt;img src=&quot;https://placehold.jp/50x50.png&quot; 
-     srcset=&quot;https://placehold.jp/150x150.png 50w,
-             https://placehold.jp/150x150.png 150w,
-             https://placehold.jp/2000x2000.png&quot;&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
-    <span class="pl-ent">img</span> {
-        <span class="pl-c1">width</span><span class="pl-kos">:</span> <span class="pl-c1">50<span class="pl-smi">px</span></span>;
-    }
-<span class="pl-kos">&lt;/</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
-<span class="pl-kos">&lt;</span><span class="pl-ent">img</span> <span class="pl-c1">src</span>="<span class="pl-s">https://placehold.jp/50x50.png</span>" 
-     <span class="pl-c1">srcset</span>="<span class="pl-s">https://placehold.jp/150x150.png 50w,</span>
-<span class="pl-s">             https://placehold.jp/150x150.png 150w,</span>
-<span class="pl-s">             https://placehold.jp/2000x2000.png</span>"<span class="pl-kos">&gt;</span></pre></div>
-<p dir="auto"><a href="https://jsfiddle.net/eL68vzns/" rel="nofollow">View it on jsfiddle</a></p>
-<p dir="auto">This very simple example will show a image that won't be wider than 50px at any time. But when this sample is viewed in a browser where the page is more than 150px wide, the 2000 x 2000 image will be the current source.<br>
-This has been tested on both Chrome 101 and Firefox 100.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/htmlimageelement/srcset</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlimageelement/srcset/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlimageelement/srcset/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/754920839bd673d5203e08b6e85f2572b6d86137/hovercard" href="https://github.com/mdn/content/commit/754920839bd673d5203e08b6e85f2572b6d86137"><tt>7549208</tt></a></li>
-<li>Document last modified: 2022-05-07T03:03:53.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Content suggestion: Sort CSS Properties by category in the sidebar]]></title>
             <link>https://github.com/mdn/content/issues/15844</link>
             <guid>https://github.com/mdn/content/issues/15844</guid>
