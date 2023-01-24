@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[clipboard-apis] No carga la pagina completa de https://developer-mozilla-org.translate.goog/en-US/docs/Web/API/Navigator/clipboard?_x_tr_sl=auto&_x_tr_tl=es&_x_tr_hl=es-419](https://github.com/mdn/content/issues/23868) (2023-01-24T15:27:03Z)
+  
 * [[web-animations-2] "Automatically removing filling animations" and several related docs are incorrect and/or extremely confusing](https://github.com/mdn/content/issues/23811) (2023-01-22T08:06:05Z)
   
 * [[css-overscroll-1] The "Try It" result block isn't displaying in Firefox (works in Chrome)](https://github.com/mdn/content/issues/23784) (2023-01-20T06:35:01Z)

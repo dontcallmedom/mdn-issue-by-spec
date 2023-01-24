@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[clipboard-apis] No carga la pagina completa de https://developer-mozilla-org.translate.goog/en-US/docs/Web/API/Navigator/clipboard?_x_tr_sl=auto&_x_tr_tl=es&_x_tr_hl=es-419](https://github.com/mdn/content/issues/23868) (2023-01-24T15:27:03Z)
+  
 * [[push-api] Subscriptions are lost after page reload](https://github.com/mdn/content/issues/23747) (2023-01-18T15:29:52Z)
   
 * [[appmanifest] Show Windows example for `related_applications`](https://github.com/mdn/content/issues/23570) (2023-01-12T02:19:58Z)
