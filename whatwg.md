@@ -12,8 +12,6 @@
   
 * [[html] Inconsistencies in character length definition.](https://github.com/mdn/content/issues/23783) (2023-01-20T02:56:19Z)
   
-* [[dom] Is the parameter description accurate?](https://github.com/mdn/content/issues/23733) (2023-01-18T02:11:45Z)
-  
 * [[dom] Missing NodeFilter.FILTER_SKIP description](https://github.com/mdn/content/issues/23728) (2023-01-17T19:26:34Z)
   
 * [[console] trace() from chrome and firefox also include async sources, would help to note this as it confused me.](https://github.com/mdn/content/issues/23705) (2023-01-16T20:10:18Z)

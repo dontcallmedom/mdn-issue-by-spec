@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[dom] Is the parameter description accurate?](https://github.com/mdn/content/issues/23733) (2023-01-18T02:11:45Z)
-  
 * [[dom] Missing NodeFilter.FILTER_SKIP description](https://github.com/mdn/content/issues/23728) (2023-01-17T19:26:34Z)
   
 * [[dom] Example code has confusing elements](https://github.com/mdn/content/issues/23658) (2023-01-15T06:46:02Z)
