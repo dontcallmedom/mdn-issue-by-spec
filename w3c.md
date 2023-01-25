@@ -6,8 +6,6 @@
   
 * [[web-animations-2] "Automatically removing filling animations" and several related docs are incorrect and/or extremely confusing](https://github.com/mdn/content/issues/23811) (2023-01-22T08:06:05Z)
   
-* [[css-overscroll-1] The "Try It" result block isn't displaying in Firefox (works in Chrome)](https://github.com/mdn/content/issues/23784) (2023-01-20T06:35:01Z)
-  
 * [[push-api] Subscriptions are lost after page reload](https://github.com/mdn/content/issues/23747) (2023-01-18T15:29:52Z)
   
 * [[webaudio] BiquadFilterNode»Q: Incorrect range for Q?](https://github.com/mdn/content/issues/23592) (2023-01-13T01:05:43Z)

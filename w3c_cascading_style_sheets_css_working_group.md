@@ -4,8 +4,6 @@
 
 * [[web-animations-2] "Automatically removing filling animations" and several related docs are incorrect and/or extremely confusing](https://github.com/mdn/content/issues/23811) (2023-01-22T08:06:05Z)
   
-* [[css-overscroll-1] The "Try It" result block isn't displaying in Firefox (works in Chrome)](https://github.com/mdn/content/issues/23784) (2023-01-20T06:35:01Z)
-  
 * [[css-shadow-parts-1] ::part(): Missing information](https://github.com/mdn/content/issues/23471) (2023-01-08T11:05:39Z)
   
 * [[html, dom, css-backgrounds-4] Duplicate content inside the JavaScript events page](https://github.com/mdn/content/issues/23198) (2022-12-26T12:12:02Z)
