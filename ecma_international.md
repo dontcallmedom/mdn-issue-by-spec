@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[ecmascript] The shift right operator requires a supplemental description](https://github.com/mdn/content/issues/23883) (2023-01-25T13:46:43Z)
+  
 * [[ecmascript] Passing arguments by value](https://github.com/mdn/content/issues/23653) (2023-01-15T06:07:01Z)
   
 * [[ecmascript] Add explanation of why we need Reflect](https://github.com/mdn/content/issues/23432) (2023-01-06T09:31:34Z)
