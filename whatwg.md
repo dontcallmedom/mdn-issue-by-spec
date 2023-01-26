@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[xhr] Document FormData constructor submitter parameter](https://github.com/mdn/content/issues/23917) (2023-01-26T20:08:23Z)
+  
 * [[html] autofocus on dialog page](https://github.com/mdn/content/issues/23915) (2023-01-26T19:55:03Z)
   
 * [[html] 'commit' does not existr and its page needs to be deleted](https://github.com/mdn/content/issues/23893) (2023-01-25T22:50:42Z)
