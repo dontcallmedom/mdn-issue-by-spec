@@ -4,8 +4,6 @@
 
 * [[html] 'commit' does not existr and its page needs to be deleted](https://github.com/mdn/content/issues/23893) (2023-01-25T22:50:42Z)
   
-* [[html] First Name name attribute wrong value assigned](https://github.com/mdn/content/issues/23880) (2023-01-25T07:05:45Z)
-  
 * [[html] beforeunload event guide references custom event.returnValue, but that is deprecated](https://github.com/mdn/content/issues/23837) (2023-01-23T14:01:02Z)
   
 * [[html] Inconsistencies in character length definition.](https://github.com/mdn/content/issues/23783) (2023-01-20T02:56:19Z)
