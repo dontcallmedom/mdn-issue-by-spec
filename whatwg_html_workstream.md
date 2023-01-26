@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] Sketchy phone number in `a` example](https://github.com/mdn/content/issues/23901) (2023-01-26T08:12:30Z)
-  
 * [[html] 'commit' does not existr and its page needs to be deleted](https://github.com/mdn/content/issues/23893) (2023-01-25T22:50:42Z)
   
 * [[html] First Name name attribute wrong value assigned](https://github.com/mdn/content/issues/23880) (2023-01-25T07:05:45Z)
