@@ -8,8 +8,6 @@
   
 * [[mediastream-recording] Emitted blobs do not always exactly adhere to the timeslice value](https://github.com/mdn/content/issues/19369) (2022-08-10T14:39:46Z)
   
-* [[mediacapture-streams] MediaStream API missing removeTrack documentation](https://github.com/mdn/content/issues/15282) (2022-04-23T15:03:58Z)
-  
 * [[mediacapture-streams] MediaDeviceInfo»toJSON() needs to be documented](https://github.com/mdn/content/issues/13463) (2022-03-03T18:40:42Z)
   
 * [[webrtc] "Using DTMF" is using legacy APIs](https://github.com/mdn/content/issues/10020) (2021-10-22T18:00:50Z)

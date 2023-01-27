@@ -120,8 +120,6 @@
   
 * [[css-logical-1] Possibly confusing note about floats, cleared items and grid](https://github.com/mdn/content/issues/15285) (2022-04-23T16:08:30Z)
   
-* [[mediacapture-streams] MediaStream API missing removeTrack documentation](https://github.com/mdn/content/issues/15282) (2022-04-23T15:03:58Z)
-  
 * [[css-contain-2] Containing block via contain:paint vs other alternatives](https://github.com/mdn/content/issues/15210) (2022-04-21T19:05:51Z)
   
 * [[IndexedDB-3] IDBObjectStore»add() example: incomplete basic explanation; unclear how ConstraintError is handled](https://github.com/mdn/content/issues/15037) (2022-04-15T23:16:34Z)
