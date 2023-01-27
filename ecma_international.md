@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[ecmascript] issue with Example of this with Callbacks in strict mode, especially the output of setTimeout `undefined` is wrong](https://github.com/mdn/content/issues/23928) (2023-01-27T08:56:56Z)
+  
 * [[ecmascript] The shift right operator requires a supplemental description](https://github.com/mdn/content/issues/23883) (2023-01-25T13:46:43Z)
   
 * [[ecmascript] Passing arguments by value](https://github.com/mdn/content/issues/23653) (2023-01-15T06:07:01Z)
