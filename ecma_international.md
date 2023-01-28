@@ -4,11 +4,7 @@
 
 * [[ecmascript] issue with Example of this with Callbacks in strict mode, especially the output of setTimeout `undefined` is wrong](https://github.com/mdn/content/issues/23928) (2023-01-27T08:56:56Z)
   
-* [[ecmascript] The shift right operator requires a supplemental description](https://github.com/mdn/content/issues/23883) (2023-01-25T13:46:43Z)
-  
 * [[ecmascript] Passing arguments by value](https://github.com/mdn/content/issues/23653) (2023-01-15T06:07:01Z)
-  
-* [[ecmascript] Add explanation of why we need Reflect](https://github.com/mdn/content/issues/23432) (2023-01-06T09:31:34Z)
   
 * [[ecmascript] Document import assertions](https://github.com/mdn/content/issues/19220) (2022-08-06T05:08:53Z)
   
