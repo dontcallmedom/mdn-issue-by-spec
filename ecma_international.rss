@@ -4,56 +4,10 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Fri, 27 Jan 2023 08:56:56 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 06 Aug 2022 05:08:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript] issue with Example of this with Callbacks in strict mode, especially the output of setTimeout `undefined` is wrong]]></title>
-            <link>https://github.com/mdn/content/issues/23928</link>
-            <guid>https://github.com/mdn/content/issues/23928</guid>
-            <pubDate>Fri, 27 Jan 2023 08:56:56 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#callbacks" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#callbacks</a></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">information was incorrect,</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="function logThis() {
-  &quot;use strict&quot;;
-  console.log(this);
-}
-
-[1, 2, 3].forEach(logThis); // undefined, undefined, undefined
-setTimeout(logThis, 1000); // undefined"><pre class="notranslate"><code class="notranslate">function logThis() {
-  "use strict";
-  console.log(this);
-}
-
-[1, 2, 3].forEach(logThis); // undefined, undefined, undefined
-setTimeout(logThis, 1000); // undefined
-</code></pre></div>
-<p dir="auto">Here the output of <code class="notranslate">setTimeout(logThis, 1000);</code> is undefined which is wrong</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Here the output of <code class="notranslate">setTimeout(logThis, 1000);</code> is undefined but after running it the actual output is <code class="notranslate">window</code></p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://stackoverflow.com/questions/73457834/why-does-a-callback-in-settimeout-have-this-window-even-in-strict-mode" rel="nofollow">https://stackoverflow.com/questions/73457834/why-does-a-callback-in-settimeout-have-this-window-even-in-strict-mode</a><br>
-<a href="https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-settimeout-dev" rel="nofollow">https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-settimeout-dev</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/operators/this</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/this/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/this/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0f248adcab759bdad247a5dbfb7da12dc32bce59/hovercard" href="https://github.com/mdn/content/commit/0f248adcab759bdad247a5dbfb7da12dc32bce59"><tt>0f248ad</tt></a></li>
-<li>Document last modified: 2022-12-13T20:26:24.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[ecmascript] Document import assertions]]></title>
             <link>https://github.com/mdn/content/issues/19220</link>
