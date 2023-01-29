@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Block container inserted into article but never defined](https://github.com/mdn/content/issues/23972) (2023-01-29T20:30:11Z)
+  
 * [[xhr] xhr.abort is inaccurate](https://github.com/mdn/content/issues/23961) (2023-01-29T01:52:09Z)
   
 * [[xhr] Document FormData constructor submitter parameter](https://github.com/mdn/content/issues/23917) (2023-01-26T20:08:23Z)
