@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Real-Time Communications Working Group. [![RSS feed for W3C Web Real-Time Communications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[webrtc] What is `RTCPeerConnection.generateCertificate(..)` good for?](https://github.com/mdn/content/issues/23993) (2023-01-30T20:28:26Z)
+  
 * [[mediacapture-streams] Missing description of getUserMedia constraints.](https://github.com/mdn/content/issues/22962) (2022-12-14T20:17:55Z)
   
 * [[webrtc] Possibly missing information in WebRTC config section about certificates](https://github.com/mdn/content/issues/20134) (2022-08-30T19:08:41Z)
