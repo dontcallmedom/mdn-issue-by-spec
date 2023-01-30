@@ -2,15 +2,13 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] Block container inserted into article but never defined](https://github.com/mdn/content/issues/23972) (2023-01-29T20:30:11Z)
+* [[html] “Layout and the containing block”: Block container inserted into article but never defined](https://github.com/mdn/content/issues/23972) (2023-01-29T20:30:11Z)
   
 * [[xhr] xhr.abort is inaccurate](https://github.com/mdn/content/issues/23961) (2023-01-29T01:52:09Z)
   
 * [[xhr] Document FormData constructor submitter parameter](https://github.com/mdn/content/issues/23917) (2023-01-26T20:08:23Z)
   
 * [[html] autofocus on dialog page](https://github.com/mdn/content/issues/23915) (2023-01-26T19:55:03Z)
-  
-* [[html] 'commit' does not existr and its page needs to be deleted](https://github.com/mdn/content/issues/23893) (2023-01-25T22:50:42Z)
   
 * [[html] beforeunload event guide references custom event.returnValue, but that is deprecated](https://github.com/mdn/content/issues/23837) (2023-01-23T14:01:02Z)
   
