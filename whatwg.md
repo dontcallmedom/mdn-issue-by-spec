@@ -50,8 +50,6 @@
   
 * [[html] document-domain feature policy is being removed](https://github.com/mdn/content/issues/22732) (2022-12-05T04:44:41Z)
   
-* [[html] Show *Implicit ARIA Role* on each `<input type="*">` page](https://github.com/mdn/content/issues/22699) (2022-12-03T16:16:00Z)
-  
 * [[html, dom] The page should include that, if the user holds down the Shift key the context menu will be displayed](https://github.com/mdn/content/issues/22697) (2022-12-03T15:03:26Z)
   
 * [[html] Example custom select is not available on the keychain](https://github.com/mdn/content/issues/22513) (2022-11-24T13:16:19Z)
