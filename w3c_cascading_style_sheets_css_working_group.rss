@@ -4,10 +4,60 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Sun, 22 Jan 2023 08:06:05 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Feb 2023 20:11:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[cssom-1] JS names for CSS properties]]></title>
+            <link>https://github.com/mdn/content/issues/24084</link>
+            <guid>https://github.com/mdn/content/issues/24084</guid>
+            <pubDate>Wed, 01 Feb 2023 20:11:45 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Notes</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The text includes this important statement:</p>
+<blockquote>
+<p dir="auto">CSS property values may be accessed using the getPropertyValue(propName) API or by indexing directly into the object such as obj['z-index'] or obj.zIndex.</p>
+</blockquote>
+<p dir="auto">Which likely deserves it's own page.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A link to a document describing <a href="https://drafts.csswg.org/cssom/#css-property-to-idl-attribute" rel="nofollow">https://drafts.csswg.org/cssom/#css-property-to-idl-attribute</a> or, possibly,</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="let availableProps = getComputedStyle(document.body);
+let list = [];
+for(cssProp in availableProps) { 
+  if(!/\-/.test(cssProp) &amp;&amp; /^[a-z]/.test(cssProp)) {
+    list.push(cssProp);
+  }
+}
+console.log(list);"><pre class="notranslate"><span class="pl-k">let</span> <span class="pl-s1">availableProps</span> <span class="pl-c1">=</span> <span class="pl-en">getComputedStyle</span><span class="pl-kos">(</span><span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">body</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">let</span> <span class="pl-s1">list</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-kos">]</span><span class="pl-kos">;</span>
+<span class="pl-k">for</span><span class="pl-kos">(</span><span class="pl-s1">cssProp</span> <span class="pl-k">in</span> <span class="pl-s1">availableProps</span><span class="pl-kos">)</span> <span class="pl-kos">{</span> 
+  <span class="pl-k">if</span><span class="pl-kos">(</span><span class="pl-c1">!</span><span class="pl-pds"><span class="pl-c1">/</span><span class="pl-cce">\-</span><span class="pl-c1">/</span></span><span class="pl-kos">.</span><span class="pl-en">test</span><span class="pl-kos">(</span><span class="pl-s1">cssProp</span><span class="pl-kos">)</span> <span class="pl-c1">&amp;&amp;</span> <span class="pl-pds"><span class="pl-c1">/</span><span class="pl-cce">^</span><span class="pl-kos">[</span>a-z<span class="pl-kos">]</span><span class="pl-c1">/</span></span><span class="pl-kos">.</span><span class="pl-en">test</span><span class="pl-kos">(</span><span class="pl-s1">cssProp</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    <span class="pl-s1">list</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-s1">cssProp</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span>
+<span class="pl-kos">}</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">list</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<p dir="auto">as a live example in the page</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/window/getcomputedstyle</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/getcomputedstyle/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/getcomputedstyle/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/76264bba2d8b68b00de3eca0ad1e64c4aa77af39/hovercard" href="https://github.com/mdn/content/commit/76264bba2d8b68b00de3eca0ad1e64c4aa77af39"><tt>76264bb</tt></a></li>
+<li>Document last modified: 2023-01-12T04:22:58.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[web-animations-2] "Automatically removing filling animations" and several related docs are incorrect and/or extremely confusing]]></title>
             <link>https://github.com/mdn/content/issues/23811</link>
