@@ -18,8 +18,6 @@
   
 * [[dom] Missing NodeFilter.FILTER_SKIP description](https://github.com/mdn/content/issues/23728) (2023-01-17T19:26:34Z)
   
-* [[console] trace() from chrome and firefox also include async sources, would help to note this as it confused me.](https://github.com/mdn/content/issues/23705) (2023-01-16T20:10:18Z)
-  
 * [[dom] Example code has confusing elements](https://github.com/mdn/content/issues/23658) (2023-01-15T06:46:02Z)
   
 * [[html] In the example, isn't the requestAnimationFrame always called more than once if once queued were fired within a single frame?](https://github.com/mdn/content/issues/23635) (2023-01-14T14:28:24Z)

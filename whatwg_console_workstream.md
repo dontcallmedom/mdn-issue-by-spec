@@ -4,8 +4,6 @@
 
 * [[console] console.timeLog() acceps multiple parameters](https://github.com/mdn/content/issues/23806) (2023-01-21T22:19:13Z)
   
-* [[console] trace() from chrome and firefox also include async sources, would help to note this as it confused me.](https://github.com/mdn/content/issues/23705) (2023-01-16T20:10:18Z)
-  
 * [[console] console.group() needs examples illustrating the use of the label parameter](https://github.com/mdn/content/issues/22972) (2022-12-15T05:21:11Z)
   
 * [[console] Issue with "console", how does number formatting work? Number formatting doesn't work on Chrome.](https://github.com/mdn/content/issues/6614) (2021-07-06T06:31:49Z)
