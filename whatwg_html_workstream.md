@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] `a`, `b`, `c` and `d` in setTransform have an incorrect explanation](https://github.com/mdn/content/issues/24165) (2023-02-04T12:35:47Z)
+  
 * [[html] “Layout and the containing block”: Block container inserted into article but never defined](https://github.com/mdn/content/issues/23972) (2023-01-29T20:30:11Z)
   
 * [[html] autofocus on dialog page](https://github.com/mdn/content/issues/23915) (2023-01-26T19:55:03Z)

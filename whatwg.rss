@@ -4,10 +4,67 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Sun, 29 Jan 2023 20:30:11 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 04 Feb 2023 12:35:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] `a`, `b`, `c` and `d` in setTransform have an incorrect explanation]]></title>
+            <link>https://github.com/mdn/content/issues/24165</link>
+            <guid>https://github.com/mdn/content/issues/24165</guid>
+            <pubDate>Sat, 04 Feb 2023 12:35:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/setTransform" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/setTransform</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">#Parameters</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto">a (m11)<br>
+Horizontal scaling. A value of 1 results in no scaling.</p>
+</blockquote>
+<blockquote>
+<p dir="auto">b (m12)<br>
+Vertical skewing.</p>
+</blockquote>
+<blockquote>
+<p dir="auto">c (m21)<br>
+Horizontal skewing.</p>
+</blockquote>
+<blockquote>
+<p dir="auto">d (m22)<br>
+Vertical scaling. A value of 1 results in no scaling.</p>
+</blockquote>
+<p dir="auto">This is misleading and is not how transformation matrices work</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Described in terms of scaling and skewing, it makes no sense to define the purpose of <code class="notranslate">a</code>, <code class="notranslate">b</code>, <code class="notranslate">c</code> and <code class="notranslate">d</code> individually, as only together can they perform scaling and skewing.</p>
+<p dir="auto">As an example, the shape can still have a positive non-zero area even when both <code class="notranslate">a</code> and <code class="notranslate">d</code> are both 0.<br>
+The area could also be zero even when <code class="notranslate">a</code> and <code class="notranslate">d</code> are both 1, which of course would not make sense if scaling was solely represented by <code class="notranslate">a</code> and <code class="notranslate">d</code>.</p>
+<p dir="auto">In essence, the intuitiveness of scaling and skewing are not compatible.<br>
+It would make more sense to describe these as values in a transformation matrix, similar to how it is explained in getTransform, or even <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix</a><br>
+Alternatively, they could be described in terms of scaling and rotating, such that<br>
+<code class="notranslate">a = cos(rot) * x_scale</code><br>
+<code class="notranslate">b = sin(rot) * x_scale</code><br>
+<code class="notranslate">c = -sin(rot) * y_scale</code><br>
+<code class="notranslate">d = cos(rot) * y_scale</code></p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix</a></p>
+<p dir="auto"><a href="https://en.wikipedia.org/wiki/Transformation_matrix#Examples_in_2_dimensions" rel="nofollow">https://en.wikipedia.org/wiki/Transformation_matrix#Examples_in_2_dimensions</a><br>
+(Although in the article a stretching matrix is represented by [k, 0, 0, 1], this is actually a simplification that assumes no rotation, and could explain the origin of this mistake)</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/canvasrenderingcontext2d/settransform</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/setTransform" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/setTransform</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/canvasrenderingcontext2d/settransform/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/canvasrenderingcontext2d/settransform/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/90ffef849d3f869365c67f9bc457518afdec2bac/hovercard" href="https://github.com/mdn/content/commit/90ffef849d3f869365c67f9bc457518afdec2bac"><tt>90ffef8</tt></a></li>
+<li>Document last modified: 2023-01-07T11:51:52.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] “Layout and the containing block”: Block container inserted into article but never defined]]></title>
             <link>https://github.com/mdn/content/issues/23972</link>
