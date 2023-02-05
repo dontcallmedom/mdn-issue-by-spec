@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] "<p>: The Paragraph element" page incorrectly indicates no implicit ARIA role](https://github.com/mdn/content/issues/24179) (2023-02-05T17:23:18Z)
+  
 * [[html, css-pseudo-4] Incorrect link URL on the `::placeholder` page](https://github.com/mdn/content/issues/24172) (2023-02-05T08:31:08Z)
   
 * [[html] `a`, `b`, `c` and `d` in setTransform have an incorrect explanation](https://github.com/mdn/content/issues/24165) (2023-02-04T12:35:47Z)
