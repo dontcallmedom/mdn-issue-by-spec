@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html, css-pseudo-4] Incorrect link URL on the `::placeholder` page](https://github.com/mdn/content/issues/24172) (2023-02-05T08:31:08Z)
+  
 * [[filter-effects-2] feGaussianBlur needs guidance about setting height and width ](https://github.com/mdn/content/issues/24169) (2023-02-04T21:15:51Z)
   
 * [[cssom-1] JS names for CSS properties](https://github.com/mdn/content/issues/24084) (2023-02-01T20:11:45Z)
