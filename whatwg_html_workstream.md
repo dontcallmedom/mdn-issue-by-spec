@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Does Safari 16 actually still support applet tag?](https://github.com/mdn/content/issues/24247) (2023-02-07T11:57:28Z)
+  
 * [[html] "<p>: The Paragraph element" page incorrectly indicates no implicit ARIA role](https://github.com/mdn/content/issues/24179) (2023-02-05T17:23:18Z)
   
 * [[html] `a`, `b`, `c` and `d` in setTransform have an incorrect explanation](https://github.com/mdn/content/issues/24165) (2023-02-04T12:35:47Z)
