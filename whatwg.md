@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] spelling mistake in "<em>: The Emphasis element"](https://github.com/mdn/content/issues/24259) (2023-02-07T20:49:29Z)
+  
 * [[html] Does Safari 16 actually still support applet tag?](https://github.com/mdn/content/issues/24247) (2023-02-07T11:57:28Z)
   
 * [[dom] addEventListener - which browsers/events default to passive](https://github.com/mdn/content/issues/24181) (2023-02-05T18:59:51Z)
