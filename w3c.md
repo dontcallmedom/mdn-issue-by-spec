@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[webaudio] AudioListener.setPosition is deprecated, but no alternative is mentioned](https://github.com/mdn/content/issues/24280) (2023-02-08T19:30:58Z)
+  
 * [[selectors-4] inaccurate example on the :not() page](https://github.com/mdn/content/issues/24277) (2023-02-08T16:44:52Z)
   
 * [[screen-capture] MediaDevices»getDisplayMedia(): Incorrect mention of default values](https://github.com/mdn/content/issues/24267) (2023-02-08T11:39:25Z)

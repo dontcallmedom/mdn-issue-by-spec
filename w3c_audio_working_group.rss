@@ -4,10 +4,41 @@
         <title>W3C Audio Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_audio_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Audio Working Group</description>
-        <lastBuildDate>Sun, 05 Feb 2023 20:10:26 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Feb 2023 19:30:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[webaudio] AudioListener.setPosition is deprecated, but no alternative is mentioned]]></title>
+            <link>https://github.com/mdn/content/issues/24280</link>
+            <guid>https://github.com/mdn/content/issues/24280</guid>
+            <pubDate>Wed, 08 Feb 2023 19:30:58 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/setPosition" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/setPosition</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The deprecation warning suggests <code class="notranslate">setPosition()</code> and <code class="notranslate">setOrientation()</code> should not be used, but no alternative is mentioned.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A link to <code class="notranslate">AudioListener.positionX</code> and an explanation that this should be used instead.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">The spec mentions an alternative: <a href="https://webaudio.github.io/web-audio-api/#dom-audiolistener-setposition" rel="nofollow">https://webaudio.github.io/web-audio-api/#dom-audiolistener-setposition</a><br>
+Which is to use <code class="notranslate">AudioListener.positionX</code> instead. <a href="https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createPanner#example" rel="nofollow">The <code class="notranslate">createPanner()</code> example</a> also already makes use of it, though a comment with an explanation would be nice.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/audiolistener/setposition</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/setPosition" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/setPosition</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/audiolistener/setposition/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/audiolistener/setposition/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/48882b75978cef6a4fbc68a35e547b33f8012f93/hovercard" href="https://github.com/mdn/content/commit/48882b75978cef6a4fbc68a35e547b33f8012f93"><tt>48882b7</tt></a></li>
+<li>Document last modified: 2022-11-23T22:13:34.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[webaudio] Visualization is by far not the only use case for FFT]]></title>
             <link>https://github.com/mdn/content/issues/24183</link>
