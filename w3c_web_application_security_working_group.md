@@ -4,5 +4,3 @@
 
 * [[permissions-policy-1] Permissions API - update to docs needed](https://github.com/mdn/content/issues/13003) (2022-02-14T23:13:08Z)
   
-* [[CSP3] Issue with "Content-Security-Policy-Report-Only": deprecated report-uri recommended](https://github.com/mdn/content/issues/3566) (2021-03-27T12:17:26Z)
-  

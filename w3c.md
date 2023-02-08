@@ -260,8 +260,6 @@
   
 * [[webmidi] Issue with "MIDIMessageEvent": deprecated example method ](https://github.com/mdn/content/issues/3569) (2021-03-27T17:06:36Z)
   
-* [[CSP3] Issue with "Content-Security-Policy-Report-Only": deprecated report-uri recommended](https://github.com/mdn/content/issues/3566) (2021-03-27T12:17:26Z)
-  
 * [[cssom-view-1] Issue with "Document.elementFromPoint()": Add info about nodes dragged and their position in the DOM tree](https://github.com/mdn/content/issues/3520) (2021-03-26T07:48:07Z)
   
 * [[webauthn-3] Content bug: Missing documentation on WebAuthn Level 2 additions](https://github.com/mdn/content/issues/3488) (2021-03-25T09:42:24Z)
