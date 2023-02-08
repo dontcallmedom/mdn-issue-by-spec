@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[screen-capture] Incorrect mention of default values](https://github.com/mdn/content/issues/24267) (2023-02-08T11:39:25Z)
+* [[screen-capture] MediaDevices»getDisplayMedia(): Incorrect mention of default values](https://github.com/mdn/content/issues/24267) (2023-02-08T11:39:25Z)
   
 * [[webaudio] Visualization is by far not the only use case for FFT](https://github.com/mdn/content/issues/24183) (2023-02-05T20:10:26Z)
   
