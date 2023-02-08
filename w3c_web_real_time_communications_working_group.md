@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Real-Time Communications Working Group. [![RSS feed for W3C Web Real-Time Communications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[screen-capture] Incorrect mention of default values](https://github.com/mdn/content/issues/24267) (2023-02-08T11:39:25Z)
+  
 * [[webrtc] What is `RTCPeerConnection.generateCertificate(..)` good for?](https://github.com/mdn/content/issues/23993) (2023-01-30T20:28:26Z)
   
 * [[mediacapture-streams] Missing description of getUserMedia constraints.](https://github.com/mdn/content/issues/22962) (2022-12-14T20:17:55Z)
