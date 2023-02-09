@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Audio Working Group. [![RSS feed for W3C Audio Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[webaudio] AudioListener.setPosition is deprecated, but no alternative is mentioned](https://github.com/mdn/content/issues/24280) (2023-02-08T19:30:58Z)
-  
 * [[webaudio] Visualization is by far not the only use case for FFT](https://github.com/mdn/content/issues/24183) (2023-02-05T20:10:26Z)
   
 * [[webaudio] BiquadFilterNode»Q: Incorrect range for Q?](https://github.com/mdn/content/issues/23592) (2023-01-13T01:05:43Z)

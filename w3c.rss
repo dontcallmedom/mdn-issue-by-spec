@@ -4,41 +4,10 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Wed, 08 Feb 2023 19:30:58 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Feb 2023 16:44:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[webaudio] AudioListener.setPosition is deprecated, but no alternative is mentioned]]></title>
-            <link>https://github.com/mdn/content/issues/24280</link>
-            <guid>https://github.com/mdn/content/issues/24280</guid>
-            <pubDate>Wed, 08 Feb 2023 19:30:58 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/setPosition" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/setPosition</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The deprecation warning suggests <code class="notranslate">setPosition()</code> and <code class="notranslate">setOrientation()</code> should not be used, but no alternative is mentioned.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">A link to <code class="notranslate">AudioListener.positionX</code> and an explanation that this should be used instead.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">The spec mentions an alternative: <a href="https://webaudio.github.io/web-audio-api/#dom-audiolistener-setposition" rel="nofollow">https://webaudio.github.io/web-audio-api/#dom-audiolistener-setposition</a><br>
-Which is to use <code class="notranslate">AudioListener.positionX</code> instead. <a href="https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createPanner#example" rel="nofollow">The <code class="notranslate">createPanner()</code> example</a> also already makes use of it, though a comment with an explanation would be nice.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/audiolistener/setposition</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/setPosition" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/setPosition</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/audiolistener/setposition/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/audiolistener/setposition/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/48882b75978cef6a4fbc68a35e547b33f8012f93/hovercard" href="https://github.com/mdn/content/commit/48882b75978cef6a4fbc68a35e547b33f8012f93"><tt>48882b7</tt></a></li>
-<li>Document last modified: 2022-11-23T22:13:34.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[selectors-4] inaccurate example on the :not() page]]></title>
             <link>https://github.com/mdn/content/issues/24277</link>
@@ -71,37 +40,6 @@ it will also match elements that weren't intended to initially, thus isn't a ver
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_not/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_not/index.md</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/26a33b20edc0facf5a7b17ad0bf3190d847e366e/hovercard" href="https://github.com/mdn/content/commit/26a33b20edc0facf5a7b17ad0bf3190d847e366e"><tt>26a33b2</tt></a></li>
 <li>Document last modified: 2022-12-15T20:42:42.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[screen-capture] MediaDevices»getDisplayMedia(): Incorrect mention of default values]]></title>
-            <link>https://github.com/mdn/content/issues/24267</link>
-            <guid>https://github.com/mdn/content/issues/24267</guid>
-            <pubDate>Wed, 08 Feb 2023 11:39:25 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getDisplayMedia" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getDisplayMedia</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getDisplayMedia" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getDisplayMedia</a></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Some of the reported default values are incorrect. For example, <code class="notranslate">selfBrowserSurface</code> is documented as defaulting to <code class="notranslate">'include'</code>, but the spec authors explicitly avoided specifying a default, and even went so far as to mention that the UA may ignore the value provided. So each UA can actually have a different default value.</p>
-<p dir="auto">In practice, I have actually just finished a gradual rollout in Chrome that, among other things, changed the default value (for Chrome) from <code class="notranslate">'include'</code> to <code class="notranslate">'exclude'</code>. (Chrome Developers article pending.)</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">See above.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/mediadevices/getdisplaymedia</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getDisplayMedia" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getDisplayMedia</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/mediadevices/getdisplaymedia/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/mediadevices/getdisplaymedia/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/83eccbfdb3d06b3c156dd12db48f1da2e738eaca/hovercard" href="https://github.com/mdn/content/commit/83eccbfdb3d06b3c156dd12db48f1da2e738eaca"><tt>83eccbf</tt></a></li>
-<li>Document last modified: 2022-12-19T19:02:47.000Z</li>
 </ul>
 </details>]]></content:encoded>
         </item>
