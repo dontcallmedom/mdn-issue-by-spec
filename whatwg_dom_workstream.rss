@@ -4,10 +4,41 @@
         <title>WHATWG DOM Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_dom_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG DOM Workstream</description>
-        <lastBuildDate>Sun, 05 Feb 2023 18:59:51 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 09 Feb 2023 21:56:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[dom] User Notes Section]]></title>
+            <link>https://github.com/mdn/content/issues/24302</link>
+            <guid>https://github.com/mdn/content/issues/24302</guid>
+            <pubDate>Thu, 09 Feb 2023 21:56:25 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">User Notes</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Apologies if this is inaccurate, but under the section user notes, it states:</p>
+<p dir="auto">"In this example, when selecting .outer .inner in the context of the &lt; div &gt; with the class select, the element with the class .inner is still found, even though .outer is not a descendant of the base element on which the search is performed (.select). By default, querySelectorAll() only verifies that the last element in the selector is within the search scope."</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I thought it should say "the element with the class.outer is still found, even though .outer is not a descendant of the base element..."</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">N/a</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/document/queryselectorall</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/document/queryselectorall/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/document/queryselectorall/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/77b8cdb3a05999ade4a269d0ef2443618bb7cd66/hovercard" href="https://github.com/mdn/content/commit/77b8cdb3a05999ade4a269d0ef2443618bb7cd66"><tt>77b8cdb</tt></a></li>
+<li>Document last modified: 2022-09-13T13:39:19.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[dom] addEventListener - which browsers/events default to passive]]></title>
             <link>https://github.com/mdn/content/issues/24181</link>

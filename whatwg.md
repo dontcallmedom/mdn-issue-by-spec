@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[dom] User Notes Section](https://github.com/mdn/content/issues/24302) (2023-02-09T21:56:25Z)
+  
 * [[dom] addEventListener - which browsers/events default to passive](https://github.com/mdn/content/issues/24181) (2023-02-05T18:59:51Z)
   
 * [[html] "<p>: The Paragraph element" page incorrectly indicates no implicit ARIA role](https://github.com/mdn/content/issues/24179) (2023-02-05T17:23:18Z)
