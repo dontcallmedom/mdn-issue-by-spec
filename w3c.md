@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[filter-effects-2] Include embedded example](https://github.com/mdn/content/issues/24329) (2023-02-10T23:44:49Z)
+  
 * [[html, CSP3] Clarify the sandbox directive use in Content-Security-Policy-Report-Only](https://github.com/mdn/content/issues/24318) (2023-02-10T14:49:54Z)
   
 * [[css-multicol-2] "Try it" buttons not working in some browsers](https://github.com/mdn/content/issues/24309) (2023-02-10T05:51:15Z)
