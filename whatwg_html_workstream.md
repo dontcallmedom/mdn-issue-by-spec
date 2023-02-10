@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html, CSP3] Clarify the sandbox directive use in Content-Security-Policy-Report-Only](https://github.com/mdn/content/issues/24318) (2023-02-10T14:49:54Z)
+  
 * [[html] "<p>: The Paragraph element" page incorrectly indicates no implicit ARIA role](https://github.com/mdn/content/issues/24179) (2023-02-05T17:23:18Z)
   
 * [[html] `a`, `b`, `c` and `d` in setTransform have an incorrect explanation](https://github.com/mdn/content/issues/24165) (2023-02-04T12:35:47Z)
