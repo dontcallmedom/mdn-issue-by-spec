@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-multicol-2] "Try it" buttons not working in some browsers](https://github.com/mdn/content/issues/24309) (2023-02-10T05:51:15Z)
+  
 * [[selectors-4] inaccurate example on the :not() page](https://github.com/mdn/content/issues/24277) (2023-02-08T16:44:52Z)
   
 * [[webaudio] Visualization is by far not the only use case for FFT](https://github.com/mdn/content/issues/24183) (2023-02-05T20:10:26Z)
