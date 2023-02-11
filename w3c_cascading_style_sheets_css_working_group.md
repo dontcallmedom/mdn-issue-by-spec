@@ -4,8 +4,6 @@
 
 * [[filter-effects-2] Include embedded example](https://github.com/mdn/content/issues/24329) (2023-02-10T23:44:49Z)
   
-* [[css-multicol-2] "Try it" buttons not working in some browsers](https://github.com/mdn/content/issues/24309) (2023-02-10T05:51:15Z)
-  
 * [[selectors-4] inaccurate example on the :not() page](https://github.com/mdn/content/issues/24277) (2023-02-08T16:44:52Z)
   
 * [[filter-effects-2] feGaussianBlur needs guidance about setting height and width ](https://github.com/mdn/content/issues/24169) (2023-02-04T21:15:51Z)
