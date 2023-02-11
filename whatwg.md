@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Window.localStorage documentation is incomplete](https://github.com/mdn/content/issues/24356) (2023-02-11T19:39:14Z)
+  
 * [[html, CSP3] Clarify the sandbox directive use in Content-Security-Policy-Report-Only](https://github.com/mdn/content/issues/24318) (2023-02-10T14:49:54Z)
   
 * [[dom] addEventListener - which browsers/events default to passive](https://github.com/mdn/content/issues/24181) (2023-02-05T18:59:51Z)
