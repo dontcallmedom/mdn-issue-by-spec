@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by IETF. [![RSS feed for IETF-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[rfc7231] Problem with 500 interval server error](https://github.com/mdn/content/issues/24363) (2023-02-12T08:04:01Z)
+  
 * [[rfc7231] Wrong description for "Access-Control-Allow-Headers" keyword](https://github.com/mdn/content/issues/24272) (2023-02-08T14:38:22Z)
   
 * [[rfc7233] Content suggestion: http content-type multipart/*](https://github.com/mdn/content/issues/19353) (2022-08-10T08:44:58Z)
