@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] [HTML] autocapitalize attr](https://github.com/mdn/content/issues/24401) (2023-02-13T15:36:13Z)
+  
 * [[html] [HTML] translate attr](https://github.com/mdn/content/issues/24394) (2023-02-13T15:10:30Z)
   
 * [[html] Window.localStorage documentation is incomplete](https://github.com/mdn/content/issues/24356) (2023-02-11T19:39:14Z)
