@@ -58,8 +58,6 @@
   
 * [[fetch] "the request's destination. This is a string indicating the type of content being requested."](https://github.com/mdn/content/issues/22955) (2022-12-14T16:29:26Z)
   
-* [[html] `srcset` description for `<source>` element is incorrect and misleading.](https://github.com/mdn/content/issues/22820) (2022-12-08T14:50:06Z)
-  
 * [[html] document-domain feature policy is being removed](https://github.com/mdn/content/issues/22732) (2022-12-05T04:44:41Z)
   
 * [[html, dom] The page should include that, if the user holds down the Shift key the context menu will be displayed](https://github.com/mdn/content/issues/22697) (2022-12-03T15:03:26Z)

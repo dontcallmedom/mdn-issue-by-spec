@@ -1116,64 +1116,6 @@ function YieldForFrame()
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] `srcset` description for `<source>` element is incorrect and misleading.]]></title>
-            <link>https://github.com/mdn/content/issues/22820</link>
-            <guid>https://github.com/mdn/content/issues/22820</guid>
-            <pubDate>Thu, 08 Dec 2022 14:50:06 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source#attr-srcset" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source#attr-srcset</a></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<blockquote>
-<p dir="auto">A list of one or more strings, separated by commas, indicating a set of possible images represented by the source for the browser to use. Each string is composed of:</p>
-<ul dir="auto">
-<li>One URL specifying an image.</li>
-<li>A width descriptor, which consists of a string containing a positive integer directly followed by "w", such as 300w. The default value, if missing, is the infinity.</li>
-<li>A pixel density descriptor, that is a positive floating number directly followed by "x". The default value, if missing, is 1x.</li>
-</ul>
-<p dir="auto">Each string in the list must have at least a width descriptor or a pixel density descriptor to be valid. Among the list, there must be only one string containing the same tuple of width descriptor and pixel density descriptor. The browser chooses the most adequate image to display at a given point of time. If width descriptors are used, the sizes attribute must also be present, or the srcset value will be ignored.</p>
-</blockquote>
-<p dir="auto">This reads as if this would be valid :</p>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;picture&gt;
-  &lt;source srcset=&quot;
-    mdn-logo-wide.png 400w 1x,
-    mdn-logo-wide-2x.png 400w 2x,
-    mdn-logo-extra-wide.png 800w 1x,
-    mdn-logo-extra-wide-2x.png 800w 2x
-  &quot; media=&quot;(min-width: 800px)&quot; /&gt;
-
-  &lt;img src=&quot;mdn-logo-narrow.png&quot; alt=&quot;MDN Web Docs&quot; /&gt;
-&lt;/picture&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">picture</span><span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;</span><span class="pl-ent">source</span> <span class="pl-c1">srcset</span>="<span class="pl-s"></span>
-<span class="pl-s">    mdn-logo-wide.png 400w 1x,</span>
-<span class="pl-s">    mdn-logo-wide-2x.png 400w 2x,</span>
-<span class="pl-s">    mdn-logo-extra-wide.png 800w 1x,</span>
-<span class="pl-s">    mdn-logo-extra-wide-2x.png 800w 2x</span>
-<span class="pl-s">  </span>" <span class="pl-c1">media</span>="<span class="pl-s">(min-width: 800px)</span>" /&gt;
-
-  <span class="pl-kos">&lt;</span><span class="pl-ent">img</span> <span class="pl-c1">src</span>="<span class="pl-s">mdn-logo-narrow.png</span>" <span class="pl-c1">alt</span>="<span class="pl-s">MDN Web Docs</span>" /&gt;
-<span class="pl-kos">&lt;/</span><span class="pl-ent">picture</span><span class="pl-kos">&gt;</span></pre></div>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Documentation that matches the specification : <a href="https://html.spec.whatwg.org/multipage/images.html#image-candidate-string" rel="nofollow">https://html.spec.whatwg.org/multipage/images.html#image-candidate-string</a></p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/html/element/source</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/source/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/source/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/7d86bc540b9aa3d8d4a8d3109667f73d0b3ff701/hovercard" href="https://github.com/mdn/content/commit/7d86bc540b9aa3d8d4a8d3109667f73d0b3ff701"><tt>7d86bc5</tt></a></li>
-<li>Document last modified: 2022-11-02T05:33:58.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] document-domain feature policy is being removed]]></title>
             <link>https://github.com/mdn/content/issues/22732</link>
             <guid>https://github.com/mdn/content/issues/22732</guid>
