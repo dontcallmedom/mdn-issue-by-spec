@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[selectors-4] Some dark mode highlighted code is invisible](https://github.com/mdn/content/issues/24429) (2023-02-14T11:43:23Z)
-  
 * [[IndexedDB-3] The description of the parameter "key" of IDBObjectStore.put() looks false](https://github.com/mdn/content/issues/24428) (2023-02-14T11:26:54Z)
   
 * [[audio-output] [Web API] enable Audio Output Devices API on nightly](https://github.com/mdn/content/issues/24387) (2023-02-13T14:36:15Z)
