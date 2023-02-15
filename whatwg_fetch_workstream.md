@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG Fetch Workstream. [![RSS feed for WHATWG Fetch Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[fetch] `Response.text()` can throw a `TypeError`](https://github.com/mdn/content/issues/24466) (2023-02-15T16:35:17Z)
+  
 * [[fetch] Spec update: `response.body` now returns readable byte stream](https://github.com/mdn/content/issues/24453) (2023-02-15T10:53:31Z)
   
 * [[fetch] "the request's destination. This is a string indicating the type of content being requested."](https://github.com/mdn/content/issues/22955) (2022-12-14T16:29:26Z)
