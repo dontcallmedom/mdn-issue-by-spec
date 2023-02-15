@@ -4,8 +4,6 @@
 
 * [[fetch] `Response.text()` can throw a `TypeError`](https://github.com/mdn/content/issues/24466) (2023-02-15T16:35:17Z)
   
-* [[html] bad words included](https://github.com/mdn/content/issues/24463) (2023-02-15T14:24:25Z)
-  
 * [[fetch] Spec update: `response.body` now returns readable byte stream](https://github.com/mdn/content/issues/24453) (2023-02-15T10:53:31Z)
   
 * [[html] [HTML] autocapitalize attr](https://github.com/mdn/content/issues/24401) (2023-02-13T15:36:13Z)
