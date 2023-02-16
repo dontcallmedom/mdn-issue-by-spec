@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Scientific names of organisms should not have a lang="la" attribute](https://github.com/mdn/content/issues/24486) (2023-02-16T12:10:26Z)
+  
 * [[fetch] `Response.text()` can throw a `TypeError`](https://github.com/mdn/content/issues/24466) (2023-02-15T16:35:17Z)
   
 * [[fetch] Spec update: `response.body` now returns readable byte stream](https://github.com/mdn/content/issues/24453) (2023-02-15T10:53:31Z)

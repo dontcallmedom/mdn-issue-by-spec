@@ -4,10 +4,54 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Wed, 15 Feb 2023 16:35:17 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 Feb 2023 12:10:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Scientific names of organisms should not have a lang="la" attribute]]></title>
+            <link>https://github.com/mdn/content/issues/24486</link>
+            <guid>https://github.com/mdn/content/issues/24486</guid>
+            <pubDate>Thu, 16 Feb 2023 12:10:26 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Try it &gt; taxonomic name example</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The example given for scientific names uses a <code class="notranslate">lang="la"</code> attribute.</p>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;p&gt;&lt;i lang=&quot;la&quot;&gt;Musa&lt;/i&gt; is one of two or three genera in the family &lt;i lang=&quot;la&quot;&gt;Musaceae&lt;/i&gt;; it includes bananas and plantains.&lt;/p&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">i</span> <span class="pl-c1">lang</span>="<span class="pl-s">la</span>"<span class="pl-kos">&gt;</span>Musa<span class="pl-kos">&lt;/</span><span class="pl-ent">i</span><span class="pl-kos">&gt;</span> is one of two or three genera in the family <span class="pl-kos">&lt;</span><span class="pl-ent">i</span> <span class="pl-c1">lang</span>="<span class="pl-s">la</span>"<span class="pl-kos">&gt;</span>Musaceae<span class="pl-kos">&lt;/</span><span class="pl-ent">i</span><span class="pl-kos">&gt;</span>; it includes bananas and plantains.<span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">While it is appropriate to use the <code class="notranslate">&lt;i&gt;</code> element for scientific names, the <code class="notranslate">lang</code> attribute is inappropriate because scientific names are not necessarily Latin. Many are derived from Latin, but many are also derived from Ancient Greek, and <a href="https://en.wikipedia.org/wiki/Binomial_nomenclature#Derivation_of_binomial_names" rel="nofollow">several other sources</a>.</p>
+<blockquote>
+<p dir="auto">A complete binomial name is always treated grammatically as if it were a phrase in the Latin language (hence the common use of the term "Latin name" for a binomial name). However, the two parts of a binomial name can each be derived from a number of sources, of which Latin is only one.</p>
+</blockquote>
+<p dir="auto">So, scientific names are <em>Latinised</em> but they are not, strictly speaking, <em>Latin</em>.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Wikipedia's manual of style states the following:</p>
+<blockquote>
+<p dir="auto">Although often derived from Latin or Ancient Greek, scientific names are never marked up with {{<a href="https://en.wikipedia.org/wiki/Template:Lang" rel="nofollow">lang</a>}} or related templates.</p>
+</blockquote>
+<p dir="auto">Nigel Chaffey, Senior Lecturer in Botany at Bath Spa University argues:</p>
+<blockquote>
+<p dir="auto">I acknowledge that in formulating such binomials <a href="http://www.scienceprofonline.com/biology-general/biological-classification-binomial-nomenclature.html" rel="nofollow">the words must follow the rules of Latin grammar</a> (and are therefore Latinised), which is emphasised by the words being given emphasis <a href="http://www.dailywritingtips.com/italicizing-foreign-words/" rel="nofollow">in italic script</a> (as is also the case in UK and US English <a href="https://grammarpartyblog.com/2012/02/23/when-to-italicize-foreign-words-and-phrases/" rel="nofollow">for unfamiliar Latin words and foreign phrases</a>). But, I also recognise that the words used in those names are often derived from languages other than Latin, such as <a href="http://tomclothier.hort.net/page36.html" rel="nofollow">Greek</a>, Japanese (e.g. the genera <a href="http://scholar.lib.vt.edu/ejournals/JARS/v18n4/v18n4-kruckeberg.htm" rel="nofollow">Tsuga</a>, and <a href="http://imaginatorium.org/sano/ginkgo2.htm" rel="nofollow">Ginkgo</a>), slang/conversational English (e.g. the genus <a href="http://www.theplantlist.org/1.1/browse/A/Scrophulariaceae/Hebejeebie/" rel="nofollow">Hebejeebie</a>), etc. For the latter reason in particular I think that binomials are best described as scientific names rather than Latin names (and which nicely contrasts with the term ‘<a href="https://extension.umass.edu/floriculture/plant-identification" rel="nofollow">common names</a>’ by which most plants are also known in <a href="http://www.flowers.org.uk/plants/plant-common-names/" rel="nofollow">everyday conversation</a>).</p>
+</blockquote>
+<p dir="auto">(<a href="https://botany.one/2017/02/latin-name-scientific-name-stand/" rel="nofollow">Source</a>)</p>
+<p dir="auto">I personally worked for over 12 years in biodiversity informatics and although we colloquially refer to scientific names as <em>Latin names</em>, we all knew the correct generic term is <em>scientific name</em> or, more specifically, <em>binomial name</em> or <em>binomials</em>. These are what we would use in formal writing, reports, and in our specialised databases.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Bearing all of the above in mind, if the intention of the <code class="notranslate">lang="la"</code> attribute is to express <em><a href="https://en.wikipedia.org/wiki/Latinisation_of_names" rel="nofollow">Latinisation</a></em> (the practice of rendering non-Latin names in a Latin style) in the more loose sense, then this attribute remains appropriate.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/element/i</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/i/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/i/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/3c925962d641d83660a3c28d3e9a0627a7996183/hovercard" href="https://github.com/mdn/content/commit/3c925962d641d83660a3c28d3e9a0627a7996183"><tt>3c92596</tt></a></li>
+<li>Document last modified: 2023-01-19T12:03:58.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[fetch] `Response.text()` can throw a `TypeError`]]></title>
             <link>https://github.com/mdn/content/issues/24466</link>
