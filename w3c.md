@@ -44,8 +44,6 @@
   
 * [[webvtt1] ::cue should include ::cue() information](https://github.com/mdn/content/issues/23209) (2022-12-27T02:43:21Z)
   
-* [[html, dom, css-backgrounds-4] Duplicate content inside the JavaScript events page](https://github.com/mdn/content/issues/23198) (2022-12-26T12:12:02Z)
-  
 * [[clipboard-apis] clipboard.readText() is behind flag on Firefox](https://github.com/mdn/content/issues/23188) (2022-12-25T21:43:10Z)
   
 * [[css-shapes-2] Property listed as unsupported on Firefox for Android, but @supports still fires for it](https://github.com/mdn/content/issues/23027) (2022-12-17T22:46:43Z)
@@ -237,8 +235,6 @@
 * [[webauthn-3] PublicKeyCredentialCreationOptions.attestation: missing enum value "enterprise"](https://github.com/mdn/content/issues/8126) (2021-08-20T09:29:10Z)
   
 * [[SVG11, css-masking-1] Deprecated Property on Documentation for SVG clipPath Element](https://github.com/mdn/content/issues/7653) (2021-08-06T09:44:12Z)
-  
-* [[service-workers-1] No docs for the ServiceWorker object’s postMessage method](https://github.com/mdn/content/issues/7593) (2021-08-04T17:16:23Z)
   
 * [[html, cssom-view-1, dom, WebIDL-1, FileAPI, uievents, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   

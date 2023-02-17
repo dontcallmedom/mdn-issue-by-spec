@@ -54,8 +54,6 @@
   
 * [[html] Window.opener clarification of cross-origin behavior](https://github.com/mdn/content/issues/23204) (2022-12-26T23:45:01Z)
   
-* [[html, dom, css-backgrounds-4] Duplicate content inside the JavaScript events page](https://github.com/mdn/content/issues/23198) (2022-12-26T12:12:02Z)
-  
 * [[html] Using requestAnimationFrame with async DOM updating](https://github.com/mdn/content/issues/23197) (2022-12-26T11:40:49Z)
   
 * [[console] console.group() needs examples illustrating the use of the label parameter](https://github.com/mdn/content/issues/22972) (2022-12-15T05:21:11Z)

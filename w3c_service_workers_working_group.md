@@ -12,7 +12,5 @@
   
 * [[notifications, cssom-view-1, service-workers-1, dom, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
-* [[service-workers-1] No docs for the ServiceWorker object’s postMessage method](https://github.com/mdn/content/issues/7593) (2021-08-04T17:16:23Z)
-  
 * [[service-workers-1] Issue with "ServiceWorkerContainer.register()": may be advisable to check for an existing registration](https://github.com/mdn/content/issues/7138) (2021-07-21T16:35:44Z)
   

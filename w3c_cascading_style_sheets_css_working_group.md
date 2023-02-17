@@ -16,8 +16,6 @@
   
 * [[css-shadow-parts-1] ::part(): Missing information](https://github.com/mdn/content/issues/23471) (2023-01-08T11:05:39Z)
   
-* [[html, dom, css-backgrounds-4] Duplicate content inside the JavaScript events page](https://github.com/mdn/content/issues/23198) (2022-12-26T12:12:02Z)
-  
 * [[css-shapes-2] Property listed as unsupported on Firefox for Android, but @supports still fires for it](https://github.com/mdn/content/issues/23027) (2022-12-17T22:46:43Z)
   
 * [[css-fonts-5] getComputedStyle() does not respect the Fallback weights algorithm](https://github.com/mdn/content/issues/22496) (2022-11-23T12:04:06Z)

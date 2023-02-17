@@ -158,54 +158,6 @@ navigator.serviceWorker.register('/sw.js', {scope: './'}).then(function(registra
 </ol>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[service-workers-1] No docs for the ServiceWorker object’s postMessage method]]></title>
-            <link>https://github.com/mdn/content/issues/7593</link>
-            <guid>https://github.com/mdn/content/issues/7593</guid>
-            <pubDate>Wed, 04 Aug 2021 17:16:23 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker</a></p>
-<h3 dir="auto">2022-01-23 issue description</h3>
-<p dir="auto">The <code class="notranslate">ServiceWorker</code> object has a <code class="notranslate">postMessage()</code> method of its own — which is not completely the same as the <code class="notranslate">Worker</code> object’s <code class="notranslate">postMessage()</code> method.</p>
-<p dir="auto">There is currently no documentation in MDN for the <code class="notranslate">ServiceWorker</code> object’s <code class="notranslate">postMessage()</code> method.</p>
-<details>
-<summary>
-2021-08-05 original issue description
-</summary>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">You claim that ServiceWorker inherits from Worker. The spec says otherwise, it inherits from EventTarget. A ServiceWorker <strong>is not</strong> a Worker. Messages arrive at the ServiceWorkerGlobalScope, not the ServiceWorker itself. Yes, it's strange, but that's what the spec says.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<ul dir="auto">
-<li>Properties<br>
-The ServiceWorker interface inherits properties from its parent, Worker.</li>
-</ul>
-<p dir="auto"><em>The error isn't obvious, because Worker has no own properties and inherits them from EventTarget, but Worker is still not the parent</em></p>
-<ul dir="auto">
-<li>
-<p dir="auto">Methods<br>
-The ServiceWorker interface inherits methods from its parent, Worker, with the exception of Worker.terminate</p>
-<ul dir="auto">
-<li><em>As far as I know, selective inheritance is not a thing in IDL or JavaScript</em></li>
-<li><em>Yes, Worker has a postMessage and a terminate method, and ServiceWorker has a postMessage method. But no, ServiceWorker doesn't inherit it. The procedures in the HTML and ServiceWorker specs are similar, but not identical.</em></li>
-</ul>
-</li>
-</ul>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">A description that conforms to the spec. But I'm not familiar enough with the topic to rewrite this.</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">I checked the prototype chain in Chrome DevTools. It's ServiceWorker -&gt; EventTarget</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/serviceworker</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworker/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworker/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/642d6eb7feb73e17cfc1ef61d3d09c2d200e65ca/hovercard" href="https://github.com/mdn/content/commit/642d6eb7feb73e17cfc1ef61d3d09c2d200e65ca"><tt>642d6eb</tt></a></li>
-<li>Document last modified: 2021-06-17T03:52:55.000Z</li>
-</ul>
-</details>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[service-workers-1] Issue with "ServiceWorkerContainer.register()": may be advisable to check for an existing registration]]></title>
             <link>https://github.com/mdn/content/issues/7138</link>
             <guid>https://github.com/mdn/content/issues/7138</guid>
