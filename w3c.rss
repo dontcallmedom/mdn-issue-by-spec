@@ -4,10 +4,34 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Tue, 14 Feb 2023 11:26:54 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 17 Feb 2023 01:53:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-lists-3] Incorrect note about `list-style-position` behaviors across browers]]></title>
+            <link>https://github.com/mdn/content/issues/24502</link>
+            <guid>https://github.com/mdn/content/issues/24502</guid>
+            <pubDate>Fri, 17 Feb 2023 01:53:35 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Try it</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The last paragraph in the "Try it" <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position#try_it" rel="nofollow">section</a> claims different behaviors across browsers for <code class="notranslate">list-style-position: inside</code> if a block element is placed first in the list element:</p>
+<ul dir="auto">
+<li>Chrome and Safari place the block element on the first line;</li>
+<li>Firefox, Opera, Internet Explorer place the block element on the second line.</li>
+</ul>
+<p dir="auto">However, according to <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=36854#c38" rel="nofollow">Comment 38</a> of Mozilla Bug 36854, Chrome also places the block element on the second line in this case, but Safari <em>may</em> still places it on the first line.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The note be corrected.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Mozilla Bug 36854: <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=36854" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=36854</a><br>
+WebKit Bug 227000: <a href="https://bugs.webkit.org/show_bug.cgi?id=227000" rel="nofollow">https://bugs.webkit.org/show_bug.cgi?id=227000</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[IndexedDB-3] The description of the parameter "key" of IDBObjectStore.put() looks false]]></title>
             <link>https://github.com/mdn/content/issues/24428</link>
