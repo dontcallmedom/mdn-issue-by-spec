@@ -4,8 +4,6 @@
 
 * [[console] console.log, weird inclusion of "JSON.parse()" in usage suggestion/example.](https://github.com/mdn/content/issues/24567) (2023-02-19T07:51:09Z)
   
-* [[html] Confusing grammar in description of queue order](https://github.com/mdn/content/issues/24506) (2023-02-17T05:26:50Z)
-  
 * [[fetch] `Response.text()` can throw a `TypeError`](https://github.com/mdn/content/issues/24466) (2023-02-15T16:35:17Z)
   
 * [[fetch] Spec update: `response.body` now returns readable byte stream](https://github.com/mdn/content/issues/24453) (2023-02-15T10:53:31Z)

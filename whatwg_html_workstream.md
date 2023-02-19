@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] Confusing grammar in description of queue order](https://github.com/mdn/content/issues/24506) (2023-02-17T05:26:50Z)
-  
 * [[html] [HTML] autocapitalize attr](https://github.com/mdn/content/issues/24401) (2023-02-13T15:36:13Z)
   
 * [[html] [HTML] translate attr](https://github.com/mdn/content/issues/24394) (2023-02-13T15:10:30Z)
