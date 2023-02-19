@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-content-3] not obvious that `content` works with `::marker`](https://github.com/mdn/content/issues/24600) (2023-02-19T20:16:44Z)
+  
 * [[css-lists-3] Incorrect note about `list-style-position` behaviors across browers](https://github.com/mdn/content/issues/24502) (2023-02-17T01:53:35Z)
   
 * [[filter-effects-2] Include embedded example](https://github.com/mdn/content/issues/24329) (2023-02-10T23:44:49Z)
