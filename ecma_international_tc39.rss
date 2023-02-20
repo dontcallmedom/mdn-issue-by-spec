@@ -4,10 +4,54 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Sun, 05 Feb 2023 16:19:19 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 20 Feb 2023 17:18:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Not obvious how non-static class field initializers behave when the value they're initialized to is a literal for a type ordinarily passed by reference (i.e. `field = {}`)]]></title>
+            <link>https://github.com/mdn/content/issues/24650</link>
+            <guid>https://github.com/mdn/content/issues/24650</guid>
+            <pubDate>Mon, 20 Feb 2023 17:18:07 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Description</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Consider:</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="class Foo {
+   bar = {};
+};
+
+a = new Foo();
+b = new Foo();"><pre class="notranslate"><span class="pl-k">class</span> <span class="pl-v">Foo</span> <span class="pl-kos">{</span>
+   <span class="pl-c1">bar</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span><span class="pl-kos">}</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">;</span>
+
+<span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Foo</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">b</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Foo</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<p dir="auto">Does <code class="notranslate">a.bar === b.bar</code>? Is <code class="notranslate">bar = {}</code> evaluated at the time the class is defined, such that all instances' <code class="notranslate">bar</code> properties refer to the same object? Or is <code class="notranslate">bar = {}</code> evaluated at the time each instance is constructed, such that each instance's <code class="notranslate">bar</code> property refers to a separate object? The article shows examples of fields being initialized to simple primitives (strings, numbers, etc.) that are passed by value, but doesn't demonstrate values that are passed by reference.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I expected to see a specific answer to the above, rather than having to test it myself. (Apparently, non-static field initializers are evaluated when instances are constructed rather than when the class is defined, so each instance gets a separate object.)</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">The article on <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields" rel="nofollow">private class fields</a> has the same ambiguity.</p>
+<p dir="auto">The JavaScript spec is <em>very</em> hard to read if you don't start from the beginning and have a cavernous memory; I've had an easier time going into the C++ spec blind. It's difficult to find any formal answer regarding this topic in the spec because it's difficult to even know where to look; one might assume that <a href="https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-runtime-semantics-classdefinitionevaluation" rel="nofollow">ClassDefinitionEvaluation</a> refers to instance construction, for example, but it actually seems to refer to what happens when the class definition <em>itself</em> is evaluated. When <a href="https://github.com/tc39/proposal-class-fields/issues?q=is%253Aissue+initializer">searching through issues on the original proposal</a>, I didn't find any clarifying discussions either.</p>
+<p dir="auto">As is, the only way to know how this situation behaves is to test it oneself. That's not difficult and it doesn't take long. Looking through the documentation long enough to be sure this information is missing, though, is a bit of a waste of time.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/classes/public_class_fields</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/classes/public_class_fields/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/classes/public_class_fields/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/a1c4e2f1f10fa4fbf38a3af6cc90ed23a4cce63d/hovercard" href="https://github.com/mdn/content/commit/a1c4e2f1f10fa4fbf38a3af6cc90ed23a4cce63d"><tt>a1c4e2f</tt></a></li>
+<li>Document last modified: 2023-01-31T06:24:07.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Misleading information around await's interaction with microtask/task queues]]></title>
             <link>https://github.com/mdn/content/issues/24177</link>
