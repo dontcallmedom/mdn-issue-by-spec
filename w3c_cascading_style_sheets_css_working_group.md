@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[CSS21] the spec isn't the most recent](https://github.com/mdn/content/issues/24669) (2023-02-21T01:23:23Z)
-  
 * [[selectors-4] :where() demo does not work properly due to editor shadow DOM injected classes](https://github.com/mdn/content/issues/24628) (2023-02-20T12:31:36Z)
   
 * [[css-content-3] not obvious that `content` works with `::marker`](https://github.com/mdn/content/issues/24600) (2023-02-19T20:16:44Z)
