@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] <script type=module async> explanation incorrectly says it defers](https://github.com/mdn/content/issues/24754) (2023-02-22T14:21:24Z)
+  
 * [[fetch] Can't get the example to work.](https://github.com/mdn/content/issues/24728) (2023-02-22T05:29:58Z)
   
 * [[dom] Need to update lookupNamespaceURI() and createNSResolver()](https://github.com/mdn/content/issues/24724) (2023-02-22T02:32:44Z)
