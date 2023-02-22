@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-images-3] Description of image-rendering algorithms do not follow the W3C specs](https://github.com/mdn/content/issues/24734) (2023-02-22T09:07:41Z)
+  
 * [[css-content-3] not obvious that `content` works with `::marker`](https://github.com/mdn/content/issues/24600) (2023-02-19T20:16:44Z)
   
 * [[css-lists-3] Incorrect note about `list-style-position` behaviors across browers](https://github.com/mdn/content/issues/24502) (2023-02-17T01:53:35Z)
