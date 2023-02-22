@@ -4,55 +4,10 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Mon, 20 Feb 2023 12:31:36 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 19 Feb 2023 20:16:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[selectors-4] :where() demo does not work properly due to editor shadow DOM injected classes]]></title>
-            <link>https://github.com/mdn/content/issues/24628</link>
-            <guid>https://github.com/mdn/content/issues/24628</guid>
-            <pubDate>Mon, 20 Feb 2023 12:31:36 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:where" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:where</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Examples</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Live example does not work</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">A demonstration of :where() ;-)</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://repo.palemoon.org/MoonchildProductions/UXP/issues/2078#issuecomment-33984" rel="nofollow">https://repo.palemoon.org/MoonchildProductions/UXP/issues/2078#issuecomment-33984</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">The MDN demo for :where appears to not work because the editor unintentionally increases specificity in the fallback code for browsers that don't support shadow DOM.</p>
-<p dir="auto">The editor says that the following CSS is applied:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content=":where(ol, ul, menu:unsupported) :where(ol, ul) {
-    color: green;
-}"><pre class="notranslate"><code class="notranslate">:where(ol, ul, menu:unsupported) :where(ol, ul) {
-    color: green;
-}
-</code></pre></div>
-<p dir="auto">but in reality, the following CSS is applied:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content=".shadow-output:where(ol, ul.shadow-output, menu:unsupported) .shadow-output.shadow-output:where(ol, ul) {
-    color: green;
-}"><pre class="notranslate"><code class="notranslate">.shadow-output:where(ol, ul.shadow-output, menu:unsupported) .shadow-output.shadow-output:where(ol, ul) {
-    color: green;
-}
-</code></pre></div>
-<p dir="auto">Because the editor JS code inserts <code class="notranslate">.shadow-output</code>, the specificity of that rule is increased despite :where being 0. A copy of that editor demo with the exact same HTML and code, sans the shadow DOM cruft works just fine.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/_colon_where</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:where" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:where</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_where/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_where/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/4e002d26cb032c915aeee366f922f23cbacd8bf1/hovercard" href="https://github.com/mdn/content/commit/4e002d26cb032c915aeee366f922f23cbacd8bf1"><tt>4e002d2</tt></a></li>
-<li>Document last modified: 2023-02-11T03:07:14.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[css-content-3] not obvious that `content` works with `::marker`]]></title>
             <link>https://github.com/mdn/content/issues/24600</link>
