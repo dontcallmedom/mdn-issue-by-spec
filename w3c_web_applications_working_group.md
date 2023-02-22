@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[uievents] "See also" link mistakenly links to same document](https://github.com/mdn/content/issues/24764) (2023-02-22T18:29:39Z)
+  
 * [[IndexedDB-3] The description of the parameter "key" of IDBObjectStore.put() looks false](https://github.com/mdn/content/issues/24428) (2023-02-14T11:26:54Z)
   
 * [[clipboard-apis] No carga la pagina completa de https://developer-mozilla-org.translate.goog/en-US/docs/Web/API/Navigator/clipboard?_x_tr_sl=auto&_x_tr_tl=es&_x_tr_hl=es-419](https://github.com/mdn/content/issues/23868) (2023-01-24T15:27:03Z)
