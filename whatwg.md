@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] event doesnt fire on fully cached pages (no event appears to)](https://github.com/mdn/content/issues/24770) (2023-02-22T21:34:14Z)
+  
 * [[html] <script type=module async> explanation incorrectly says it defers](https://github.com/mdn/content/issues/24754) (2023-02-22T14:21:24Z)
   
 * [[fetch] Can't get the example to work.](https://github.com/mdn/content/issues/24728) (2023-02-22T05:29:58Z)
