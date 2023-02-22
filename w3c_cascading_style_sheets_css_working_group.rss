@@ -133,41 +133,6 @@ WebKit Bug 227000: <a href="https://bugs.webkit.org/show_bug.cgi?id=227000" rel=
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[selectors-4] inaccurate example on the :not() page]]></title>
-            <link>https://github.com/mdn/content/issues/24277</link>
-            <guid>https://github.com/mdn/content/issues/24277</guid>
-            <pubDate>Wed, 08 Feb 2023 16:44:52 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:not" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:not</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Description</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">last bullet:</p>
-<blockquote>
-<p dir="auto">If any selector passed to the <code class="notranslate">:not()</code> pseudo-class is invalid or not supported by the browser, the whole rule will be invalidated. The effective way to overcome this behavior is to use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:is" rel="nofollow"><code class="notranslate">:is</code></a> pseudo-class, which accepts a forgiving selector list. For example <code class="notranslate">:not(.foo, :invalid-pseudo-class)</code> will invalidate a whole rule, but <code class="notranslate">:is(:not(.foo), :not(:invalid-pseudo-class))</code> will match any element that isn't <code class="notranslate">.foo</code>.</p>
-</blockquote>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">the example is inaccurate, as <code class="notranslate">:not(.foo, :invalid-pseudo-class)</code> matches NEITHER <code class="notranslate">.foo</code> NOR <code class="notranslate">:invalid-pseudo-class</code><br>
-whereas <code class="notranslate">:is(:not(.foo), :not(:invalid-pseudo-class))</code> matches anything that simply isn't <code class="notranslate">.foo</code> (disregarding the second condition)<br>
-it will also match elements that weren't intended to initially, thus isn't a very good example of overcoming the issue.. :)</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">made a <a href="https://codepen.io/michal-amichai/pen/oNMRyWG" rel="nofollow">pen example</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/_colon_not</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:not" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:not</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_not/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_not/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/26a33b20edc0facf5a7b17ad0bf3190d847e366e/hovercard" href="https://github.com/mdn/content/commit/26a33b20edc0facf5a7b17ad0bf3190d847e366e"><tt>26a33b2</tt></a></li>
-<li>Document last modified: 2022-12-15T20:42:42.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[filter-effects-2] feGaussianBlur needs guidance about setting height and width ]]></title>
             <link>https://github.com/mdn/content/issues/24169</link>
             <guid>https://github.com/mdn/content/issues/24169</guid>
