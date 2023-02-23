@@ -4,10 +4,40 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Wed, 22 Feb 2023 21:34:14 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Feb 2023 02:40:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] datalist component when scrolling]]></title>
+            <link>https://github.com/mdn/content/issues/24774</link>
+            <guid>https://github.com/mdn/content/issues/24774</guid>
+            <pubDate>Thu, 23 Feb 2023 02:40:03 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The datalist component stays present when page is scrolled</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">If you select a field in the example, the datalist component is displayed. However, when you scroll, the field scrolls off the screen but the datalist remains in place. This cannot be the expected behavior. A big floating list in the middle of the screen after scrolling looks terrible.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I expect the field to lose focus and the datalist to disappear. Either that or at the very least, the datalist should remain positioned under the input field it's associated with and should scroll when the page scrolls.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/element/datalist</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/datalist/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/datalist/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/3c925962d641d83660a3c28d3e9a0627a7996183/hovercard" href="https://github.com/mdn/content/commit/3c925962d641d83660a3c28d3e9a0627a7996183"><tt>3c92596</tt></a></li>
+<li>Document last modified: 2023-01-19T12:03:58.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] event doesnt fire on fully cached pages (no event appears to)]]></title>
             <link>https://github.com/mdn/content/issues/24770</link>
