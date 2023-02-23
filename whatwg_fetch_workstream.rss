@@ -19,10 +19,9 @@
 <p dir="auto">Examples does not work</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">According to the example, the below is supposed to work:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const myRequest = new Request('flowers.jpg');
-const myIntegrity = myRequest.integrity;"><pre lang="js" class="notranslate"><code class="notranslate">const myRequest = new Request('flowers.jpg');
-const myIntegrity = myRequest.integrity;
-</code></pre></div>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const myRequest = new Request('flowers.jpg');
+const myIntegrity = myRequest.integrity;"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">myRequest</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Request</span><span class="pl-kos">(</span><span class="pl-s">'flowers.jpg'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-s1">myIntegrity</span> <span class="pl-c1">=</span> <span class="pl-s1">myRequest</span><span class="pl-kos">.</span><span class="pl-c1">integrity</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">However, I am unable to get an integrity by referencing a file by URL.<br>
 I don't understand how it would be theoretically possible because the integrity according to my understanding is based on the file content which would require an async function execution.</p>
 <h3 dir="auto">What did you expect to see?</h3>
