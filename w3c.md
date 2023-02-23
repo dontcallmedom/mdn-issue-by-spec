@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[uievents] "See also" link mistakenly links to same document](https://github.com/mdn/content/issues/24764) (2023-02-22T18:29:39Z)
-  
 * [[css-images-3] Description of image-rendering algorithms do not follow the W3C specs](https://github.com/mdn/content/issues/24734) (2023-02-22T09:07:41Z)
   
 * [[css-content-3] not obvious that `content` works with `::marker`](https://github.com/mdn/content/issues/24600) (2023-02-19T20:16:44Z)
