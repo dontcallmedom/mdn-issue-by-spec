@@ -4,10 +4,44 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Wed, 22 Feb 2023 09:07:41 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 24 Feb 2023 23:22:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[cssom-view-1] Incorrect image format used to demonstrate pixel quality]]></title>
+            <link>https://github.com/mdn/content/issues/24854</link>
+            <guid>https://github.com/mdn/content/issues/24854</guid>
+            <pubDate>Fri, 24 Feb 2023 23:22:56 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Correcting resolution in a </p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The example with writing "I love MDN" on a green box is blurry.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A high-quality image. You can't display a quality simple two-color image using jpeg lossy compression! This should be png format instead.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Adobe and many others says about using png</p>
+<p dir="auto"><strong>They’re often the default format for screenshot images since they can provide a highly accurate representation of your desktop and don’t compress pixels together. A huge color palette and lossless compression ensure they retain plenty of detail — making them a popular choice for illustrations and charts.</strong></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Here is an example zoomed in Photoshop. You can see the typical jpeg "fuzz" around the letters and the general noise in the image. The image on the right, if png, would be razor sharp! Or at least with png at most would be some anti-aliasing edges. Be sure to view this full-size, not the size in the box shown here (click on it with a big terminal window)</p>
+<p dir="auto">Given it's a graphic, and I'm new to MDN, I don't feel comfortable providing an alternate png file.</p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/33092591/221318900-1f7e39f4-8fb7-412a-90fc-789c0d105725.png"><img src="https://user-images.githubusercontent.com/33092591/221318900-1f7e39f4-8fb7-412a-90fc-789c0d105725.png" alt="mdn" style="max-width: 100%;"></a><br>
+full-size</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/window/devicepixelratio</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/devicepixelratio/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/devicepixelratio/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/bb8221e061bba27dbdbe5a3698b6c69febf0bc70/hovercard" href="https://github.com/mdn/content/commit/bb8221e061bba27dbdbe5a3698b6c69febf0bc70"><tt>bb8221e</tt></a></li>
+<li>Document last modified: 2023-02-19T07:19:47.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-images-3] Description of image-rendering algorithms do not follow the W3C specs]]></title>
             <link>https://github.com/mdn/content/issues/24734</link>
