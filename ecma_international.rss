@@ -4,10 +4,46 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Sun, 05 Feb 2023 16:19:19 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 24 Feb 2023 04:20:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Misleading note wording about function `length` calculation]]></title>
+            <link>https://github.com/mdn/content/issues/24819</link>
+            <guid>https://github.com/mdn/content/issues/24819</guid>
+            <pubDate>Fri, 24 Feb 2023 04:20:05 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The Note in the Description section</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">"Note: Parameters after the first default parameter will not contribute to the function's <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/length" rel="nofollow">length</a>."</p>
+<p dir="auto">This is misleading because it does not mention that the default parameters themselves also do not contribute to the function's <code class="notranslate">length</code> calculated value.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Note: Default parameters and parameters after the first default parameter will not contribute to the function's <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/length" rel="nofollow">length</a>.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">The last code line (and the comment that follows it) in the Examples section of the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/length#using_function_length" rel="nofollow">length page</a> - which the note links to - is more clear in that only parameters <em>before</em> the first default parameter count towards the <code class="notranslate">length</code>.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">This is the example code and its comment from the <code class="notranslate">length</code> page that outputs a <code class="notranslate">length</code> of 1 due to the second parameter being a default parameter and the third parameter being after the first default parameter.</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="console.log(((a, b = 1, c) =&gt; {}).length);
+// 1, only parameters before the first one with
+// a default value are counted"><pre class="notranslate"><span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">a</span><span class="pl-kos">,</span> <span class="pl-s1">b</span> <span class="pl-c1">=</span> <span class="pl-c1">1</span><span class="pl-kos">,</span> <span class="pl-s1">c</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span><span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">length</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-c">// 1, only parameters before the first one with</span>
+<span class="pl-c">// a default value are counted</span></pre></div>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/functions/default_parameters</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/functions/default_parameters/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/functions/default_parameters/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/9c4fb236cd9ced12b1eb8e7696d8e6fcb8d8bad3/hovercard" href="https://github.com/mdn/content/commit/9c4fb236cd9ced12b1eb8e7696d8e6fcb8d8bad3"><tt>9c4fb23</tt></a></li>
+<li>Document last modified: 2023-02-21T01:35:45.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Misleading information around await's interaction with microtask/task queues]]></title>
             <link>https://github.com/mdn/content/issues/24177</link>
