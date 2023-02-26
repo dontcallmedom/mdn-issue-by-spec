@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[filter-effects-2] Filter function demo is not working](https://github.com/mdn/content/issues/24874) (2023-02-26T02:06:44Z)
+  
 * [[cssom-view-1] Incorrect image format used to demonstrate pixel quality](https://github.com/mdn/content/issues/24854) (2023-02-24T23:22:56Z)
   
 * [[css-images-3] Description of image-rendering algorithms do not follow the W3C specs](https://github.com/mdn/content/issues/24734) (2023-02-22T09:07:41Z)
