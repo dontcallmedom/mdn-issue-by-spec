@@ -4,59 +4,10 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Sun, 26 Feb 2023 03:08:46 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Feb 2023 02:40:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[html] Autocomplete Article is INVALID for CHROME]]></title>
-            <link>https://github.com/mdn/content/issues/24875</link>
-            <guid>https://github.com/mdn/content/issues/24875</guid>
-            <pubDate>Sun, 26 Feb 2023 03:08:46 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Autocomplete=Off does not work in Chrome</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Currently, even in your example where you have autocomplete=off for email, Chrome refuses to honor the request.</p>
-<p dir="auto">Not only does Chrome refuse to turn Autocomplete off under almost any circumstance, it determines how it will style the list and that often conflicts with the form element.</p>
-<p dir="auto">For example, the rather extensive autocomplete list cannot be closed, moved, or minimized in Chrome.<br>
-If scrolling the page when the autocomplete suggestions are present, the field will move but the autocomplete remains stationary. You can scroll the field off the screen and still see Chrome's autocomplete suggestions.</p>
-<p dir="auto">This creates numerous security concerns. People's login IDs are regularly exposed by this feature on public computers. People's account numbers are often disclosed. Private information about people gets disclosed and there is no recourse.</p>
-<p dir="auto">There are numerous trouble tickets open for Chrome that have remained unaddressed for at least 5 years.</p>
-<p dir="auto">You cannot style the elements other than by overriding the user-agent stylesheet on your own private version of Chrome. You cannot change the appearance of this broken feature on remote computers.</p>
-<p dir="auto">This needs to be made clear whenever autocomplete is mentioned regarding chrome. The existing workarounds keep failing with each new Chrome update.</p>
-<p dir="auto">This is especially compounded when using the list attribute on an element. It refuses to only show the list elements, but rather adds the list items to the autosuggestion options.</p>
-<p dir="auto">UPDATE: As I was taking screenshots to demonstrate how it is impossible use AUTOCOMPLETE="off" , I found out for the first time by accident how to turn this nast feature off. Set autocomplete to some random value like "AUTOCOMPLETE="NOSHOW"  I still don't trust it, but for the purposes of getting screenshots, it appears to work.</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/755697/221389975-7fca8dbb-9daa-4c4d-bc6a-65065096bdac.png"><img src="https://user-images.githubusercontent.com/755697/221389975-7fca8dbb-9daa-4c4d-bc6a-65065096bdac.png" alt="image" style="max-width: 100%;"></a><br>
-figure 1 - shows how Chromes suggestion list obscures the content and is not prevented by automcomplete=off</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/755697/221389997-248c0768-4a3a-491d-a94a-d7a8723fa6be.png"><img src="https://user-images.githubusercontent.com/755697/221389997-248c0768-4a3a-491d-a94a-d7a8723fa6be.png" alt="image" style="max-width: 100%;"></a><br>
-Another example of the weird placement of the suggestion list by chrome with autocomnplete=off</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/755697/221390018-9ac64297-4b65-4f14-b6ba-5d4de3c59d0a.png"><img src="https://user-images.githubusercontent.com/755697/221390018-9ac64297-4b65-4f14-b6ba-5d4de3c59d0a.png" alt="image" style="max-width: 100%;"></a><br>
-final screenshow shows nonsense in the autocomplete field actually works for the first time in years.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Look at any of your pages with Autocomplete to see examples of this problem first-hand.</p>
-<p dir="auto">Chrome could resolve this issue by providing the ability to style the elements (including display:none).<br>
-They could solve the issue by following the existing web suggestions.<br>
-They could solve this issue by providing a close-box or minimize control on the popuplist so you can see the content it currently obscures.<br>
-They could solve this issue by allowing the user to move the autocomplete suggestions</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/html/attributes/autocomplete</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/attributes/autocomplete/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/attributes/autocomplete/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ba96f2f183353872db6d9242c7d2dffe2dbc0c35/hovercard" href="https://github.com/mdn/content/commit/ba96f2f183353872db6d9242c7d2dffe2dbc0c35"><tt>ba96f2f</tt></a></li>
-<li>Document last modified: 2023-02-24T05:52:35.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html] datalist component when scrolling]]></title>
             <link>https://github.com/mdn/content/issues/24774</link>
