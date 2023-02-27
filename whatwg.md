@@ -16,10 +16,6 @@
   
 * [[fetch] Spec update: `response.body` now returns readable byte stream](https://github.com/mdn/content/issues/24453) (2023-02-15T10:53:31Z)
   
-* [[html] [HTML] autocapitalize attr](https://github.com/mdn/content/issues/24401) (2023-02-13T15:36:13Z)
-  
-* [[html] [HTML] translate attr](https://github.com/mdn/content/issues/24394) (2023-02-13T15:10:30Z)
-  
 * [[html] Window.localStorage documentation should include an example of using JSON.stringify and JSON.parse to store and retrieve (serialize and deserialize) objects](https://github.com/mdn/content/issues/24356) (2023-02-11T19:39:14Z)
   
 * [[html, CSP3] Clarify the sandbox directive use in Content-Security-Policy-Report-Only](https://github.com/mdn/content/issues/24318) (2023-02-10T14:49:54Z)
