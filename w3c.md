@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html, uievents] window:error event interface and cancelling](https://github.com/mdn/content/issues/24957) (2023-02-28T13:06:18Z)
+  
 * [[filter-effects-2] SVG slope attribute: incorrect information](https://github.com/mdn/content/issues/24935) (2023-02-28T00:02:49Z)
   
 * [[filter-effects-2] Filter function demo is not working](https://github.com/mdn/content/issues/24874) (2023-02-26T02:06:44Z)
