@@ -4,8 +4,6 @@
 
 * [[html] HTMLScriptElement.supports() example does not use textarea](https://github.com/mdn/content/issues/24954) (2023-02-28T10:19:16Z)
   
-* [[html] Canvas element example needs improvements](https://github.com/mdn/content/issues/24926) (2023-02-27T16:23:01Z)
-  
 * [[html] datalist component when scrolling](https://github.com/mdn/content/issues/24774) (2023-02-23T02:40:03Z)
   
 * [[html] event doesnt fire on fully cached pages (no event appears to)](https://github.com/mdn/content/issues/24770) (2023-02-22T21:34:14Z)
