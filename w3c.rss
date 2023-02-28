@@ -4,10 +4,38 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Tue, 28 Feb 2023 13:06:18 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 28 Feb 2023 22:03:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[web-animations-2] Double reference to KeyframeEffect on AnimationEffect page]]></title>
+            <link>https://github.com/mdn/content/issues/24969</link>
+            <guid>https://github.com/mdn/content/issues/24969</guid>
+            <pubDate>Tue, 28 Feb 2023 22:03:44 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/AnimationEffect" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AnimationEffect</a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The page says:</p>
+<blockquote>
+<p dir="auto">The AnimationEffect interface of the Web Animations API defines current and future animation effects like <strong>KeyframeEffect</strong>, which can be passed to Animation objects for playing, and <strong>KeyframeEffect</strong> (which is used by CSS Animations and Transitions).</p>
+</blockquote>
+<p dir="auto">(emphasis mine)</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I'm not sure exactly what was intended but I imagine one of the KeyframeEffect mentions was meant to be something else.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/animationeffect</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AnimationEffect" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AnimationEffect</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/animationeffect/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/animationeffect/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/bca8d1ab2bc4f5a1ef6b39c454b0229539178e98/hovercard" href="https://github.com/mdn/content/commit/bca8d1ab2bc4f5a1ef6b39c454b0229539178e98"><tt>bca8d1a</tt></a></li>
+<li>Document last modified: 2023-02-18T07:09:59.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, uievents] window:error event interface and cancelling]]></title>
             <link>https://github.com/mdn/content/issues/24957</link>
