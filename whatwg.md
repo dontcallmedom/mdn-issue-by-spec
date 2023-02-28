@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] HTMLScriptElement.supports() example does not use textarea](https://github.com/mdn/content/issues/24954) (2023-02-28T10:19:16Z)
+  
 * [[html] Canvas element example needs improvements](https://github.com/mdn/content/issues/24926) (2023-02-27T16:23:01Z)
   
 * [[html] datalist component when scrolling](https://github.com/mdn/content/issues/24774) (2023-02-23T02:40:03Z)
