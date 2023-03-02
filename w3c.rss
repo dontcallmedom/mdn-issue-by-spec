@@ -4,10 +4,75 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Tue, 28 Feb 2023 22:03:44 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 02 Mar 2023 00:19:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[filter-effects-2] SVG contrast filter]]></title>
+            <link>https://github.com/mdn/content/issues/24989</link>
+            <guid>https://github.com/mdn/content/issues/24989</guid>
+            <pubDate>Thu, 02 Mar 2023 00:19:11 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/filter" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/SVG/Element/filter</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">There's no contrast filter page</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The SVG {{SVGElement("filter")}} element is used to define custom filter effects that can then be referenced by {{htmlattrxref("id")}}. The <code class="notranslate">&lt;filter&gt;</code>'s {{SVGElement("feComponentTransfer")}} primitive enables pixel-level color remapping. To alter the contrast, include linear {{SVGElement("feFuncR")}} (red), {{SVGElement("feFuncB")}} (blue), and {{SVGElement("feFuncG")}} (green) primitives with the <code class="notranslate">slope</code> attribute value defining the contrast multiplier and the <code class="notranslate">intercept</code> attribute.</p>
+<div class="highlight highlight-text-xml-svg notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;svg role=&quot;none&quot;&gt;
+  &lt;filter id=&quot;contrast&quot;&gt;
+    &lt;feComponentTransfer&gt;
+      &lt;feFuncR type=&quot;linear&quot; slope=&quot;[amount]&quot; intercept=&quot;-(0.5 * [amount]) + 0.5&quot;/&gt;
+      &lt;feFuncG type=&quot;linear&quot; slope=&quot;[amount]&quot; intercept=&quot;-(0.5 * [amount]) + 0.5&quot;/&gt;
+      &lt;feFuncB type=&quot;linear&quot; slope=&quot;[amount]&quot; intercept=&quot;-(0.5 * [amount]) + 0.5&quot;/&gt;
+    &lt;/feComponentTransfer&gt;
+  &lt;/filter&gt;
+&lt;/svg&gt;"><pre class="notranslate">&lt;<span class="pl-ent">svg</span> <span class="pl-e">role</span>=<span class="pl-s"><span class="pl-pds">"</span>none<span class="pl-pds">"</span></span>&gt;
+  &lt;<span class="pl-ent">filter</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>contrast<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">feComponentTransfer</span>&gt;
+      &lt;<span class="pl-ent">feFuncR</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>linear<span class="pl-pds">"</span></span> <span class="pl-e">slope</span>=<span class="pl-s"><span class="pl-pds">"</span>[amount]<span class="pl-pds">"</span></span> <span class="pl-e">intercept</span>=<span class="pl-s"><span class="pl-pds">"</span>-(0.5 * [amount]) + 0.5<span class="pl-pds">"</span></span>/&gt;
+      &lt;<span class="pl-ent">feFuncG</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>linear<span class="pl-pds">"</span></span> <span class="pl-e">slope</span>=<span class="pl-s"><span class="pl-pds">"</span>[amount]<span class="pl-pds">"</span></span> <span class="pl-e">intercept</span>=<span class="pl-s"><span class="pl-pds">"</span>-(0.5 * [amount]) + 0.5<span class="pl-pds">"</span></span>/&gt;
+      &lt;<span class="pl-ent">feFuncB</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>linear<span class="pl-pds">"</span></span> <span class="pl-e">slope</span>=<span class="pl-s"><span class="pl-pds">"</span>[amount]<span class="pl-pds">"</span></span> <span class="pl-e">intercept</span>=<span class="pl-s"><span class="pl-pds">"</span>-(0.5 * [amount]) + 0.5<span class="pl-pds">"</span></span>/&gt;
+    &lt;/<span class="pl-ent">feComponentTransfer</span>&gt;
+  &lt;/<span class="pl-ent">filter</span>&gt;
+&lt;/<span class="pl-ent">svg</span>&gt;</pre></div>
+<p dir="auto">Given the above, the following two statements will produce the same results</p>
+<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content=".filter {
+  filter: contrast(2);
+}
+.filter {
+  filter: url(#contrast);
+}"><pre class="notranslate">.<span class="pl-c1">filter</span> {
+  <span class="pl-c1">filter</span><span class="pl-kos">:</span> <span class="pl-en">contrast</span>(<span class="pl-c1">2</span>);
+}
+.<span class="pl-c1">filter</span> {
+  <span class="pl-c1">filter</span><span class="pl-kos">:</span> <span class="pl-en">url</span>(<span class="pl-kos">#</span>contrast);
+}</pre></div>
+<p dir="auto">To create a filter that doubles the original contrast, we set the <code class="notranslate">slope</code> attribute to 2, for 200%, and the <code class="notranslate">intercept</code> attribute set to the <code class="notranslate">-(0.25 * [2.00]) + 0.5</code>, which is <code class="notranslate">-0.5</code>.</p>
+<div class="highlight highlight-text-xml-svg notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;svg role=&quot;none&quot;&gt;
+  &lt;filter id=&quot;contrast&quot;&gt;
+    &lt;feComponentTransfer&gt;
+      &lt;feFuncR type=&quot;linear&quot; slope=&quot;2&quot; intercept=&quot;-0.5&quot;/&gt;
+      &lt;feFuncG type=&quot;linear&quot; slope=&quot;2&quot; intercept=&quot;-0.5&quot;/&gt;
+      &lt;feFuncB type=&quot;linear&quot; slope=&quot;2&quot; intercept=&quot;-0.5&quot;/&gt;
+    &lt;/feComponentTransfer&gt;
+  &lt;/filter&gt;
+&lt;/svg&gt;"><pre class="notranslate">&lt;<span class="pl-ent">svg</span> <span class="pl-e">role</span>=<span class="pl-s"><span class="pl-pds">"</span>none<span class="pl-pds">"</span></span>&gt;
+  &lt;<span class="pl-ent">filter</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>contrast<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">feComponentTransfer</span>&gt;
+      &lt;<span class="pl-ent">feFuncR</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>linear<span class="pl-pds">"</span></span> <span class="pl-e">slope</span>=<span class="pl-s"><span class="pl-pds">"</span>2<span class="pl-pds">"</span></span> <span class="pl-e">intercept</span>=<span class="pl-s"><span class="pl-pds">"</span>-0.5<span class="pl-pds">"</span></span>/&gt;
+      &lt;<span class="pl-ent">feFuncG</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>linear<span class="pl-pds">"</span></span> <span class="pl-e">slope</span>=<span class="pl-s"><span class="pl-pds">"</span>2<span class="pl-pds">"</span></span> <span class="pl-e">intercept</span>=<span class="pl-s"><span class="pl-pds">"</span>-0.5<span class="pl-pds">"</span></span>/&gt;
+      &lt;<span class="pl-ent">feFuncB</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>linear<span class="pl-pds">"</span></span> <span class="pl-e">slope</span>=<span class="pl-s"><span class="pl-pds">"</span>2<span class="pl-pds">"</span></span> <span class="pl-e">intercept</span>=<span class="pl-s"><span class="pl-pds">"</span>-0.5<span class="pl-pds">"</span></span>/&gt;
+    &lt;/<span class="pl-ent">feComponentTransfer</span>&gt;
+  &lt;/<span class="pl-ent">filter</span>&gt;
+&lt;/<span class="pl-ent">svg</span>&gt;</pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A page where including the above would  makes sense.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[web-animations-2] Double reference to KeyframeEffect on AnimationEffect page]]></title>
             <link>https://github.com/mdn/content/issues/24969</link>
