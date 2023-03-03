@@ -99,7 +99,7 @@ But in reality it's possible for this promise to reject with a TypeError.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">It would be helpful to show it returns readable byte stream and thus one can also call <code class="notranslate">.getReader({ mode: "byob" })</code> instead of <code class="notranslate">.getReader()</code> to get the bytes from Response.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">We are updating the spec here: <a aria-label="Pull request #1593" class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1531851817" data-permission-text="Title is private" data-url="https://github.com/whatwg/fetch/issues/1593" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/fetch/pull/1593/hovercard" href="https://github.com/whatwg/fetch/pull/1593">whatwg/fetch#1593</a></p>
+<p dir="auto">We are updating the spec here: <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1531851817" data-permission-text="Title is private" data-url="https://github.com/whatwg/fetch/issues/1593" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/fetch/pull/1593/hovercard" href="https://github.com/whatwg/fetch/pull/1593">whatwg/fetch#1593</a></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto">Check whether this is supported on each browser by running <code class="notranslate">new Response("").body.getReader({ mode: "byob" })</code>. It will throw when not supported.</p>]]></content:encoded>
         </item>
