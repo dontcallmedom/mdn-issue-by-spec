@@ -4,10 +4,41 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Tue, 28 Feb 2023 13:06:18 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 03 Mar 2023 03:25:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[dom] this.getAttribute() doesn't work inside the constructor()]]></title>
+            <link>https://github.com/mdn/content/issues/25028</link>
+            <guid>https://github.com/mdn/content/issues/25028</guid>
+            <pubDate>Fri, 03 Mar 2023 03:25:46 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Creating the shadow DOM structure</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">This sample code that uses <code class="notranslate">this.getAttribute("img")</code> is misleading. The attributes are normally inaccessible from the constructor(). The only reason this works is because the script is imported using <code class="notranslate">defer</code> and this is not mentioned at all in the documentation. Only when you do outside research and look at the entire code in github will you realize why this works.<br>
+You can see others having the same issue on your page but I guess nobody is reporting it.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I expect to see a self contained working example or at least a <em>CAUTION</em> flag mentioning that defer is required because normally attributes are inaccessible.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://stackoverflow.com/questions/63564717/custom-element-not-picking-up-attributes" rel="nofollow">https://stackoverflow.com/questions/63564717/custom-element-not-picking-up-attributes</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/element/attachshadow</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/element/attachshadow/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/element/attachshadow/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/9fb6c9e56c6db295967384730feeb941509ac743/hovercard" href="https://github.com/mdn/content/commit/9fb6c9e56c6db295967384730feeb941509ac743"><tt>9fb6c9e</tt></a></li>
+<li>Document last modified: 2023-02-22T10:15:21.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, uievents] window:error event interface and cancelling]]></title>
             <link>https://github.com/mdn/content/issues/24957</link>
