@@ -29,17 +29,18 @@ In <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/error_event#
 <p dir="auto"><strong>Event type</strong>*<br>
 If we run this code we'll see in the console that the error is of type <code class="notranslate">ErrorEvent</code>.<br>
 In <a href="https://html.spec.whatwg.org/multipage/indices.html#event-error" rel="nofollow">HTML spec</a> is mentioned the same.</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="window.addEventListener(&quot;error&quot;, (event) =&gt; {
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="window.addEventListener(&quot;error&quot;, (event) =&gt; {
   console.log(event); // event is of type ErrorEvent
 });
 
 const badCode = &quot;const s;&quot;;
-eval(badCode);"><pre class="notranslate"><span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"error"</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// event is of type ErrorEvent</span>
-<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+eval(badCode);"><pre lang="js" class="notranslate"><code class="notranslate">window.addEventListener("error", (event) =&gt; {
+  console.log(event); // event is of type ErrorEvent
+});
 
-<span class="pl-k">const</span> <span class="pl-s1">badCode</span> <span class="pl-c1">=</span> <span class="pl-s">"const s;"</span><span class="pl-kos">;</span>
-<span class="pl-en">eval</span><span class="pl-kos">(</span><span class="pl-s1">badCode</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+const badCode = "const s;";
+eval(badCode);
+</code></pre></div>
 <p dir="auto"><strong>Usage notes</strong></p>
 <p dir="auto">The <code class="notranslate">return</code> statement doesn't seem to have an impact, Regardless of the returned value: <code class="notranslate">return true</code> or <code class="notranslate">return false</code> the error message is displayed in the console.  This event it looks like is similar with <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/unhandledrejection_event#preventing_default_handling" rel="nofollow">unhandledrejection</a> and <code class="notranslate">event.preventDefault()</code> must be used, so that the message is not printed to the console.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
