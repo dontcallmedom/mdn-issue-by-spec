@@ -6,8 +6,6 @@
   
 * [[IndexedDB-3] The description of the parameter "key" of IDBObjectStore.put() looks false](https://github.com/mdn/content/issues/24428) (2023-02-14T11:26:54Z)
   
-* [[clipboard-apis] No carga la pagina completa de https://developer-mozilla-org.translate.goog/en-US/docs/Web/API/Navigator/clipboard?_x_tr_sl=auto&_x_tr_tl=es&_x_tr_hl=es-419](https://github.com/mdn/content/issues/23868) (2023-01-24T15:27:03Z)
-  
 * [[push-api] Subscriptions are lost after page reload](https://github.com/mdn/content/issues/23747) (2023-01-18T15:29:52Z)
   
 * [[appmanifest] Show Windows example for `related_applications`](https://github.com/mdn/content/issues/23570) (2023-01-12T02:19:58Z)

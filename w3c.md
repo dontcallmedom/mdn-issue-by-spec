@@ -40,8 +40,6 @@
   
 * [[webrtc] What is `RTCPeerConnection.generateCertificate(..)` good for?](https://github.com/mdn/content/issues/23993) (2023-01-30T20:28:26Z)
   
-* [[clipboard-apis] No carga la pagina completa de https://developer-mozilla-org.translate.goog/en-US/docs/Web/API/Navigator/clipboard?_x_tr_sl=auto&_x_tr_tl=es&_x_tr_hl=es-419](https://github.com/mdn/content/issues/23868) (2023-01-24T15:27:03Z)
-  
 * [[web-animations-2] "Automatically removing filling animations" and several related docs are incorrect and/or extremely confusing](https://github.com/mdn/content/issues/23811) (2023-01-22T08:06:05Z)
   
 * [[push-api] Subscriptions are lost after page reload](https://github.com/mdn/content/issues/23747) (2023-01-18T15:29:52Z)
