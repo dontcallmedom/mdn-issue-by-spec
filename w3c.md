@@ -4,8 +4,6 @@
 
 * [[filter-effects-2] SVG contrast filter](https://github.com/mdn/content/issues/24989) (2023-03-02T00:19:11Z)
   
-* [[web-animations-2] Double reference to KeyframeEffect on AnimationEffect page](https://github.com/mdn/content/issues/24969) (2023-02-28T22:03:44Z)
-  
 * [[html, uievents] window:error event interface and cancelling](https://github.com/mdn/content/issues/24957) (2023-02-28T13:06:18Z)
   
 * [[filter-effects-2] SVG slope attribute: incorrect information](https://github.com/mdn/content/issues/24935) (2023-02-28T00:02:49Z)
