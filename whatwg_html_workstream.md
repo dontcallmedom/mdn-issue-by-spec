@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] disabled attribute is marked as obsolete for <link> element](https://github.com/mdn/content/issues/25047) (2023-03-03T17:09:16Z)
-  
 * [[html, uievents] window:error event interface and cancelling](https://github.com/mdn/content/issues/24957) (2023-02-28T13:06:18Z)
   
 * [[html] HTMLScriptElement.supports() example does not use textarea](https://github.com/mdn/content/issues/24954) (2023-02-28T10:19:16Z)
