@@ -4,10 +4,46 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Thu, 02 Mar 2023 00:19:11 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 05 Mar 2023 03:22:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-sizing-4, css-conditional-3, css-sizing-3] In correct statement about max-width]]></title>
+            <link>https://github.com/mdn/content/issues/25073</link>
+            <guid>https://github.com/mdn/content/issues/25073</guid>
+            <pubDate>Sun, 05 Mar 2023 03:22:13 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-width" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/max-width</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The Into and "Try it"</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto">The max-width <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" rel="nofollow">CSS</a> property sets the maximum width of an element. It prevents the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/used_value" rel="nofollow">used value</a> of the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width" rel="nofollow">width</a> property from becoming larger than the value specified by max-width.</p>
+</blockquote>
+<blockquote>
+<p dir="auto">max-width overrides <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width" rel="nofollow">width</a>, but <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/min-width" rel="nofollow">min-width</a> overrides max-width.</p>
+</blockquote>
+<p dir="auto">Although true a lot of the time, its not technically true all the time. The exceptions is what makes debugging code so hard. It might be worth adding a note for when this is not true, like with select inputs, <code class="notranslate">width</code> overrides <code class="notranslate">max-width</code>.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Information to help explain why <code class="notranslate">max-width</code> is not working on a <code class="notranslate">&lt;select&gt;</code> input.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://stackoverflow.com/a/10795269/5506400" rel="nofollow">https://stackoverflow.com/a/10795269/5506400</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Hope one day form controls will be more consistent with their API. Every form control has some weird quirks one has to work around.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/max-width</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-width" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/max-width</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/max-width/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/max-width/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/7a9f9baa25d9a7313bd6c62ef5ef585b28459c58/hovercard" href="https://github.com/mdn/content/commit/7a9f9baa25d9a7313bd6c62ef5ef585b28459c58"><tt>7a9f9ba</tt></a></li>
+<li>Document last modified: 2023-02-21T06:01:00.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[filter-effects-2] SVG contrast filter]]></title>
             <link>https://github.com/mdn/content/issues/24989</link>

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-sizing-4, css-conditional-3, css-sizing-3] In correct statement about max-width](https://github.com/mdn/content/issues/25073) (2023-03-05T03:22:13Z)
+  
 * [[filter-effects-2] SVG contrast filter](https://github.com/mdn/content/issues/24989) (2023-03-02T00:19:11Z)
   
 * [[filter-effects-2] SVG slope attribute: incorrect information](https://github.com/mdn/content/issues/24935) (2023-02-28T00:02:49Z)
