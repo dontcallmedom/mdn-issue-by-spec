@@ -4,75 +4,10 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Sun, 05 Mar 2023 20:35:53 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 05 Mar 2023 03:22:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[css-animations-2] Copy to clipboard  from  'Try it'  is not working]]></title>
-            <link>https://github.com/mdn/content/issues/25092</link>
-            <guid>https://github.com/mdn/content/issues/25092</guid>
-            <pubDate>Sun, 05 Mar 2023 20:35:53 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Try it</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Since a couple of weeks ago, it is not possible to copy your code from many of your Try it examples. Nothing happens when clicking on the 'Copy to clipboard' icon. I think the problem started after updating Chrome to 109. Just wanted to mention it in case it might help with your possible troubleshooting. Also Firefox console fire off alot of <code class="notranslate">Unknown property 'class'</code> warnings, see bottom for more info about that.</p>
-<hr>
-<p dir="auto">Tested with following browser</p>
-<ul dir="auto">
-<li>
-<p dir="auto">Chrome 110.0.5481.178</p>
-</li>
-<li>
-<p dir="auto">Firefox 110.0.1</p>
-</li>
-<li>
-<p dir="auto">Microsoft Edge 110.0.1587.63</p>
-</li>
-<li>
-<p dir="auto">Opera 96.0.4693.31</p>
-<p dir="auto">Normal/Private/Incognito mode</p>
-</li>
-</ul>
-<hr>
-<p dir="auto">Firefox Console Warnings on <a href="https://interactive-examples.mdn.mozilla.net/pages/css/animation-timing-function.html" rel="nofollow">interactive-examples.mdn.mozilla.net/pages/css/animation-timing-function.html</a></p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="21:12:41.993 Unknown property ‘class’.  Declaration dropped. animation-timing-function.html:60:12
-21:12:41.993 Unknown property ‘class’.  Declaration dropped. animation-timing-function.html:61:12
-21:12:41.993 Unknown property ‘class’.  Declaration dropped. animation-timing-function.html:62:12
-21:12:41.993 Unknown property ‘class’.  Declaration dropped. animation-timing-function.html:63:12
-21:12:41.993 Unknown property ‘class’.  Declaration dropped. animation-timing-function.html:64:12
-21:12:41.993 Unknown property ‘class’.  Declaration dropped. animation-timing-function.html:65:12
-21:12:41.993 Unknown property ‘class’.  Declaration dropped. animation-timing-function.html:66:12"><pre class="notranslate"><code class="notranslate">21:12:41.993 Unknown property ‘class’.  Declaration dropped. animation-timing-function.html:60:12
-21:12:41.993 Unknown property ‘class’.  Declaration dropped. animation-timing-function.html:61:12
-21:12:41.993 Unknown property ‘class’.  Declaration dropped. animation-timing-function.html:62:12
-21:12:41.993 Unknown property ‘class’.  Declaration dropped. animation-timing-function.html:63:12
-21:12:41.993 Unknown property ‘class’.  Declaration dropped. animation-timing-function.html:64:12
-21:12:41.993 Unknown property ‘class’.  Declaration dropped. animation-timing-function.html:65:12
-21:12:41.993 Unknown property ‘class’.  Declaration dropped. animation-timing-function.html:66:12
-</code></pre></div>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The text "Copied!". You can copy the code from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function#syntax" rel="nofollow">Syntax</a></p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://interactive-examples.mdn.mozilla.net/pages/css/animation-timing-function.html" rel="nofollow">https://interactive-examples.mdn.mozilla.net/pages/css/animation-timing-function.html</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/3928913/222984454-52bfb23a-76a8-4f8d-a6d7-c38be3fe3822.png"><img width="1128" alt="2023-03-05" src="https://user-images.githubusercontent.com/3928913/222984454-52bfb23a-76a8-4f8d-a6d7-c38be3fe3822.png" style="max-width: 100%;"></a></p>
-<p dir="auto">Firefox 110.0.1<br>
-New profile</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/animation-timing-function</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/animation-timing-function/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/animation-timing-function/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/42c1bb8c259f3f57de9f38600776cf273e3addda/hovercard" href="https://github.com/mdn/content/commit/42c1bb8c259f3f57de9f38600776cf273e3addda"><tt>42c1bb8</tt></a></li>
-<li>Document last modified: 2023-02-21T06:27:49.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[css-sizing-4, css-conditional-3, css-sizing-3] In correct statement about max-width]]></title>
             <link>https://github.com/mdn/content/issues/25073</link>
