@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[file-system-access] Fix example in FileSystemHandle](https://github.com/mdn/content/issues/25108) (2023-03-06T15:52:10Z)
+  
 * [[css-cascade-3] Precedence order of regular cascade layers issue](https://github.com/mdn/content/issues/25103) (2023-03-06T10:42:58Z)
   
 * [[css-sizing-4, css-conditional-3, css-sizing-3] In correct statement about max-width](https://github.com/mdn/content/issues/25073) (2023-03-05T03:22:13Z)
