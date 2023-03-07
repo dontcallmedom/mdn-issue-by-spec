@@ -24,7 +24,7 @@
   
 * [[IndexedDB-3] The description of the parameter "key" of IDBObjectStore.put() looks false](https://github.com/mdn/content/issues/24428) (2023-02-14T11:26:54Z)
   
-* [[audio-output] [Web API] enable Audio Output Devices API on nightly](https://github.com/mdn/content/issues/24387) (2023-02-13T14:36:15Z)
+* [[audio-output] [Behind Pref] [Web API] enable Audio Output Devices API on nightly](https://github.com/mdn/content/issues/24387) (2023-02-13T14:36:15Z)
   
 * [[tracking-dnt] Web/HTTP/Headers/DNT: has ambigious deprecation notice](https://github.com/mdn/content/issues/24368) (2023-02-12T19:38:23Z)
   
