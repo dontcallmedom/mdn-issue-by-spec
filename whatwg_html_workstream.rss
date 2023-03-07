@@ -4,10 +4,42 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Tue, 28 Feb 2023 13:06:18 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 07 Mar 2023 08:13:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Use proper BCP 47 language tag for Chinese]]></title>
+            <link>https://github.com/mdn/content/issues/25134</link>
+            <guid>https://github.com/mdn/content/issues/25134</guid>
+            <pubDate>Tue, 07 Mar 2023 08:13:44 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang#accessibility" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang#accessibility</a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;li lang=&quot;zh-CN&quot; role=&quot;menuitem&quot;&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">li</span> <span class="pl-c1">lang</span>="<span class="pl-s">zh-CN</span>" <span class="pl-c1">role</span>="<span class="pl-s">menuitem</span>"<span class="pl-kos">&gt;</span></pre></div>
+<p dir="auto">Here, <code class="notranslate">zh-CN</code> is meant to indicate Simplified Chinese, which is also used in Singapore.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">W3C recommends using <code class="notranslate">zh-Hans</code> rather than <code class="notranslate">zh-CN</code> for this purpose.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://www.w3.org/International/articles/language-tags/index#script" rel="nofollow">https://www.w3.org/International/articles/language-tags/index#script</a></p>
+<p dir="auto">/cc <a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/r12a/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/r12a">@r12a</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/global_attributes/lang</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/global_attributes/lang/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/global_attributes/lang/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/7671d18ab2d141906af448d5bb125eebc16d3994/hovercard" href="https://github.com/mdn/content/commit/7671d18ab2d141906af448d5bb125eebc16d3994"><tt>7671d18</tt></a></li>
+<li>Document last modified: 2023-03-02T05:45:10.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, uievents] window:error event interface and cancelling]]></title>
             <link>https://github.com/mdn/content/issues/24957</link>

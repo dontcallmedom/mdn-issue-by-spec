@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Use proper BCP 47 language tag for Chinese](https://github.com/mdn/content/issues/25134) (2023-03-07T08:13:44Z)
+  
 * [[html, uievents] window:error event interface and cancelling](https://github.com/mdn/content/issues/24957) (2023-02-28T13:06:18Z)
   
 * [[html] HTMLScriptElement.supports() example does not use textarea](https://github.com/mdn/content/issues/24954) (2023-02-28T10:19:16Z)
