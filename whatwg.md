@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[fetch] Response.json(): missing static method documentation](https://github.com/mdn/content/issues/25180) (2023-03-08T15:46:35Z)
+  
 * [[html] Missing HTMLAllCollection](https://github.com/mdn/content/issues/25178) (2023-03-08T14:43:46Z)
   
 * [[html] A srcset example contradicts instructions](https://github.com/mdn/content/issues/25150) (2023-03-07T21:00:37Z)

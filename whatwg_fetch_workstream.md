@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG Fetch Workstream. [![RSS feed for WHATWG Fetch Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[fetch] Response.json(): missing static method documentation](https://github.com/mdn/content/issues/25180) (2023-03-08T15:46:35Z)
+  
 * [[fetch] Can't get the example to work.](https://github.com/mdn/content/issues/24728) (2023-02-22T05:29:58Z)
   
 * [[fetch] `Response.text()` can throw a `TypeError`](https://github.com/mdn/content/issues/24466) (2023-02-15T16:35:17Z)
