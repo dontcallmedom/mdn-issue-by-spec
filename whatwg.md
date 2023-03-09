@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Missing documentation of methods and properties of `HTMLOptionsCollections`](https://github.com/mdn/content/issues/25190) (2023-03-09T02:30:04Z)
+  
 * [[html] Missing HTMLAllCollection](https://github.com/mdn/content/issues/25178) (2023-03-08T14:43:46Z)
   
 * [[html] A srcset example contradicts instructions](https://github.com/mdn/content/issues/25150) (2023-03-07T21:00:37Z)
