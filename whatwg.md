@@ -8,8 +8,6 @@
   
 * [[html] A srcset example contradicts instructions](https://github.com/mdn/content/issues/25150) (2023-03-07T21:00:37Z)
   
-* [[html] Use proper BCP 47 language tag for Chinese](https://github.com/mdn/content/issues/25134) (2023-03-07T08:13:44Z)
-  
 * [[dom] this.getAttribute() doesn't work inside the constructor()](https://github.com/mdn/content/issues/25028) (2023-03-03T03:25:46Z)
   
 * [[html, uievents] window:error event interface and cancelling](https://github.com/mdn/content/issues/24957) (2023-02-28T13:06:18Z)
