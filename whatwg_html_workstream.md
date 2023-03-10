@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] Global id attribute specification do not match with HTML spec](https://github.com/mdn/content/issues/25225) (2023-03-10T12:25:41Z)
-  
 * [[html] Misleading/incorrect link in See Also section of "Guides > HTML > Introduction to HTML > Document and website structure"](https://github.com/mdn/content/issues/25217) (2023-03-10T05:48:45Z)
   
 * [[html] ID value can start with a number](https://github.com/mdn/content/issues/25200) (2023-03-09T14:05:20Z)
