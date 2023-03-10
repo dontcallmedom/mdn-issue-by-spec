@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[cssom-view-1] Element.scrollIntoView: Safari does support options parameter](https://github.com/mdn/content/issues/25198) (2023-03-09T09:54:29Z)
-  
 * [[css-cascade-3] Precedence order of regular cascade layers issue](https://github.com/mdn/content/issues/25103) (2023-03-06T10:42:58Z)
   
 * [[css-sizing-4, css-conditional-3, css-sizing-3] In correct statement about max-width](https://github.com/mdn/content/issues/25073) (2023-03-05T03:22:13Z)
