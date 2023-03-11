@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[filter-effects-2] backdrop-filer demo says the feature is not supported by Safari (but it is)](https://github.com/mdn/content/issues/25252) (2023-03-11T15:38:18Z)
+  
 * [[media-capabilities] configuration type "transmission" should be replaced with "webrtc"](https://github.com/mdn/content/issues/25223) (2023-03-10T11:28:22Z)
   
 * [[css-cascade-3] Precedence order of regular cascade layers issue](https://github.com/mdn/content/issues/25103) (2023-03-06T10:42:58Z)
