@@ -6,8 +6,6 @@
   
 * [[IndexedDB-3] Failed to execute ‘transaction’ on IDBDdatabase the database connection closing](https://github.com/mdn/content/issues/25281) (2023-03-13T03:05:57Z)
   
-* [[html, uievents] window:error event interface and cancelling](https://github.com/mdn/content/issues/24957) (2023-02-28T13:06:18Z)
-  
 * [[IndexedDB-3] The description of the parameter "key" of IDBObjectStore.put() looks false](https://github.com/mdn/content/issues/24428) (2023-02-14T11:26:54Z)
   
 * [[push-api] Subscriptions are lost after page reload](https://github.com/mdn/content/issues/23747) (2023-01-18T15:29:52Z)

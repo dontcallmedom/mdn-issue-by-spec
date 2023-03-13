@@ -12,8 +12,6 @@
   
 * [[html] A srcset example contradicts instructions](https://github.com/mdn/content/issues/25150) (2023-03-07T21:00:37Z)
   
-* [[html, uievents] window:error event interface and cancelling](https://github.com/mdn/content/issues/24957) (2023-02-28T13:06:18Z)
-  
 * [[html] HTMLScriptElement.supports() example does not use textarea](https://github.com/mdn/content/issues/24954) (2023-02-28T10:19:16Z)
   
 * [[html] datalist component when scrolling](https://github.com/mdn/content/issues/24774) (2023-02-23T02:40:03Z)

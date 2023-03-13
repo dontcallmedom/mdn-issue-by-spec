@@ -14,8 +14,6 @@
   
 * [[dom] this.getAttribute() doesn't work inside the constructor()](https://github.com/mdn/content/issues/25028) (2023-03-03T03:25:46Z)
   
-* [[html, uievents] window:error event interface and cancelling](https://github.com/mdn/content/issues/24957) (2023-02-28T13:06:18Z)
-  
 * [[html] HTMLScriptElement.supports() example does not use textarea](https://github.com/mdn/content/issues/24954) (2023-02-28T10:19:16Z)
   
 * [[html] datalist component when scrolling](https://github.com/mdn/content/issues/24774) (2023-02-23T02:40:03Z)
