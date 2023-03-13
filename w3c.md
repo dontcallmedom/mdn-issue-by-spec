@@ -2,6 +2,10 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[FileAPI] More information about text encoding when creating a Blob](https://github.com/mdn/content/issues/25282) (2023-03-13T03:06:03Z)
+  
+* [[IndexedDB-3] Failed to execute ‘transaction’ on IDBDdatabase the database connection closing](https://github.com/mdn/content/issues/25281) (2023-03-13T03:05:57Z)
+  
 * [[media-capabilities] configuration type "transmission" should be replaced with "webrtc"](https://github.com/mdn/content/issues/25223) (2023-03-10T11:28:22Z)
   
 * [[css-cascade-3] Precedence order of regular cascade layers issue](https://github.com/mdn/content/issues/25103) (2023-03-06T10:42:58Z)

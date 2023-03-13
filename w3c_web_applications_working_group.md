@@ -2,6 +2,10 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[FileAPI] More information about text encoding when creating a Blob](https://github.com/mdn/content/issues/25282) (2023-03-13T03:06:03Z)
+  
+* [[IndexedDB-3] Failed to execute ‘transaction’ on IDBDdatabase the database connection closing](https://github.com/mdn/content/issues/25281) (2023-03-13T03:05:57Z)
+  
 * [[html, uievents] window:error event interface and cancelling](https://github.com/mdn/content/issues/24957) (2023-02-28T13:06:18Z)
   
 * [[IndexedDB-3] The description of the parameter "key" of IDBObjectStore.put() looks false](https://github.com/mdn/content/issues/24428) (2023-02-14T11:26:54Z)
