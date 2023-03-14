@@ -44,8 +44,6 @@
   
 * [[xhr] xhr.abort is inaccurate](https://github.com/mdn/content/issues/23961) (2023-01-29T01:52:09Z)
   
-* [[xhr] Document FormData constructor submitter parameter](https://github.com/mdn/content/issues/23917) (2023-01-26T20:08:23Z)
-  
 * [[html] autofocus on dialog page](https://github.com/mdn/content/issues/23915) (2023-01-26T19:55:03Z)
   
 * [[html] beforeunload event guide references custom event.returnValue, but that is deprecated](https://github.com/mdn/content/issues/23837) (2023-01-23T14:01:02Z)
