@@ -4,8 +4,6 @@
 
 * [[screen-capture] systemAudio is misleading](https://github.com/mdn/content/issues/25307) (2023-03-14T03:38:33Z)
   
-* [[audio-output] [Behind Pref] [Web API] enable Audio Output Devices API on nightly](https://github.com/mdn/content/issues/24387) (2023-02-13T14:36:15Z)
-  
 * [[webrtc] What is `RTCPeerConnection.generateCertificate(..)` good for?](https://github.com/mdn/content/issues/23993) (2023-01-30T20:28:26Z)
   
 * [[mediacapture-streams] Missing description of getUserMedia constraints.](https://github.com/mdn/content/issues/22962) (2022-12-14T20:17:55Z)
