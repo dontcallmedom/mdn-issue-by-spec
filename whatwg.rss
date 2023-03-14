@@ -211,24 +211,24 @@ You can see others having the same issue on your page but I guess nobody is repo
 
         <tbody><tr class="border-0">
           <td id="L69" class="blob-num border-0 px-3 py-0 color-bg-default" data-line-number="69"></td>
-          <td id="LC69" class="blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line"> ```html hidden </td>
+          <td id="LC69" class="blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line"> <span class="pl-c1"><span class="pl-c1">```html hidden</span></span> </td>
         </tr>
 
         <tr class="border-0">
           <td id="L70" class="blob-num border-0 px-3 py-0 color-bg-default" data-line-number="70"></td>
-          <td id="LC70" class="blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line"> &lt;textarea id="log" rows="5" cols="80"&gt;&lt;/textarea&gt; </td>
+          <td id="LC70" class="blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line"> <span class="pl-c1">&lt;textarea id="log" rows="5" cols="80"&gt;&lt;/textarea&gt;</span> </td>
         </tr>
 
         <tr class="border-0">
           <td id="L71" class="blob-num border-0 px-3 py-0 color-bg-default" data-line-number="71"></td>
-          <td id="LC71" class="blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line"> ``` </td>
+          <td id="LC71" class="blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line"> <span class="pl-c1"><span class="pl-c1">```</span></span> </td>
         </tr>
     </tbody></table>
   </div>
 </div>
 <p></p>
 <p dir="auto">Other examples using <code class="notranslate">&lt;textarea id="log"</code> should be checked also:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="grep -r &quot;textarea id=\&quot;log\&quot;&quot; files
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="grep -r &quot;textarea id=\&quot;log\&quot;&quot; files
 files/en-us/web/api/svgstyleelement/title/index.md:&lt;textarea id=&quot;log&quot; rows=&quot;3&quot; cols=&quot;50&quot;&gt;&lt;/textarea&gt;
 files/en-us/web/api/svgstyleelement/index.md:&lt;textarea id=&quot;log&quot; rows=&quot;6&quot; cols=&quot;90&quot;&gt;&lt;/textarea&gt;
 files/en-us/web/api/svgstyleelement/sheet/index.md:&lt;textarea id=&quot;log&quot; rows=&quot;3&quot; cols=&quot;50&quot;&gt;&lt;/textarea&gt;
@@ -244,24 +244,23 @@ files/en-us/web/api/screenorientation/lock/index.md:  &lt;textarea id=&quot;log&
 files/en-us/web/api/tasksignal/prioritychange_event/index.md:&lt;textarea id=&quot;log&quot; style=&quot;min-height: 70px; width: 95%&quot;&gt;&lt;/textarea&gt;
 files/en-us/web/api/htmlscriptelement/supports/index.md:&lt;textarea id=&quot;log&quot; rows=&quot;5&quot; cols=&quot;80&quot;&gt;&lt;/textarea&gt;
 files/en-us/web/api/css_font_loading_api/index.md:&lt;textarea id=&quot;log&quot; rows=&quot;3&quot; cols=&quot;100&quot;&gt;&lt;/textarea&gt;
-files/en-us/web/api/css_font_loading_api/index.md:&lt;textarea id=&quot;log&quot; rows=&quot;25&quot; cols=&quot;100&quot;&gt;&lt;/textarea&gt;"><pre lang="bash" class="notranslate"><code class="notranslate">grep -r "textarea id=\"log\"" files
-files/en-us/web/api/svgstyleelement/title/index.md:&lt;textarea id="log" rows="3" cols="50"&gt;&lt;/textarea&gt;
-files/en-us/web/api/svgstyleelement/index.md:&lt;textarea id="log" rows="6" cols="90"&gt;&lt;/textarea&gt;
-files/en-us/web/api/svgstyleelement/sheet/index.md:&lt;textarea id="log" rows="3" cols="50"&gt;&lt;/textarea&gt;
-files/en-us/web/api/htmlareaelement/hostname/index.md:&lt;textarea id="log" rows="4" cols="100"&gt;&lt;/textarea&gt;
-files/en-us/web/api/prioritized_task_scheduling_api/index.md:&lt;textarea id="log" style="min-height: 20px; width: 95%"&gt;&lt;/textarea&gt;
-files/en-us/web/api/prioritized_task_scheduling_api/index.md:&lt;textarea id="log" style="min-height: 20px; width: 95%"&gt;&lt;/textarea&gt;
-files/en-us/web/api/prioritized_task_scheduling_api/index.md:&lt;textarea id="log" style="min-height: 100px; width: 95%"&gt;&lt;/textarea&gt;
-files/en-us/web/api/prioritized_task_scheduling_api/index.md:&lt;textarea id="log" style="min-height: 120px; width: 95%"&gt;&lt;/textarea&gt;
-files/en-us/web/api/prioritized_task_scheduling_api/index.md:&lt;textarea id="log" style="min-height: 70px; width: 95%"&gt;&lt;/textarea&gt;
-files/en-us/web/api/prioritized_task_scheduling_api/index.md:&lt;textarea id="log" style="min-height: 50px; width: 95%"&gt;&lt;/textarea&gt;
-files/en-us/web/api/prioritized_task_scheduling_api/index.md:&lt;textarea id="log" style="min-height: 50px; width: 95%"&gt;&lt;/textarea&gt;
-files/en-us/web/api/screenorientation/lock/index.md:  &lt;textarea id="log" rows="7" cols="85"&gt;&lt;/textarea&gt;
-files/en-us/web/api/tasksignal/prioritychange_event/index.md:&lt;textarea id="log" style="min-height: 70px; width: 95%"&gt;&lt;/textarea&gt;
-files/en-us/web/api/htmlscriptelement/supports/index.md:&lt;textarea id="log" rows="5" cols="80"&gt;&lt;/textarea&gt;
-files/en-us/web/api/css_font_loading_api/index.md:&lt;textarea id="log" rows="3" cols="100"&gt;&lt;/textarea&gt;
-files/en-us/web/api/css_font_loading_api/index.md:&lt;textarea id="log" rows="25" cols="100"&gt;&lt;/textarea&gt;
-</code></pre></div>]]></content:encoded>
+files/en-us/web/api/css_font_loading_api/index.md:&lt;textarea id=&quot;log&quot; rows=&quot;25&quot; cols=&quot;100&quot;&gt;&lt;/textarea&gt;"><pre class="notranslate">grep -r <span class="pl-s"><span class="pl-pds">"</span>textarea id=<span class="pl-cce">\"</span>log<span class="pl-cce">\"</span><span class="pl-pds">"</span></span> files
+files/en-us/web/api/svgstyleelement/title/index.md:<span class="pl-k">&lt;</span>textarea id=<span class="pl-s"><span class="pl-pds">"</span>log<span class="pl-pds">"</span></span> rows=<span class="pl-s"><span class="pl-pds">"</span>3<span class="pl-pds">"</span></span> cols=<span class="pl-s"><span class="pl-pds">"</span>50<span class="pl-pds">"</span></span>&gt;&lt;/textarea<span class="pl-k">&gt;</span>
+files/en-us/web/api/svgstyleelement/index.md:<span class="pl-k">&lt;</span>textarea id=<span class="pl-s"><span class="pl-pds">"</span>log<span class="pl-pds">"</span></span> rows=<span class="pl-s"><span class="pl-pds">"</span>6<span class="pl-pds">"</span></span> cols=<span class="pl-s"><span class="pl-pds">"</span>90<span class="pl-pds">"</span></span>&gt;&lt;/textarea<span class="pl-k">&gt;</span>
+files/en-us/web/api/svgstyleelement/sheet/index.md:<span class="pl-k">&lt;</span>textarea id=<span class="pl-s"><span class="pl-pds">"</span>log<span class="pl-pds">"</span></span> rows=<span class="pl-s"><span class="pl-pds">"</span>3<span class="pl-pds">"</span></span> cols=<span class="pl-s"><span class="pl-pds">"</span>50<span class="pl-pds">"</span></span>&gt;&lt;/textarea<span class="pl-k">&gt;</span>
+files/en-us/web/api/htmlareaelement/hostname/index.md:<span class="pl-k">&lt;</span>textarea id=<span class="pl-s"><span class="pl-pds">"</span>log<span class="pl-pds">"</span></span> rows=<span class="pl-s"><span class="pl-pds">"</span>4<span class="pl-pds">"</span></span> cols=<span class="pl-s"><span class="pl-pds">"</span>100<span class="pl-pds">"</span></span>&gt;&lt;/textarea<span class="pl-k">&gt;</span>
+files/en-us/web/api/prioritized_task_scheduling_api/index.md:<span class="pl-k">&lt;</span>textarea id=<span class="pl-s"><span class="pl-pds">"</span>log<span class="pl-pds">"</span></span> style=<span class="pl-s"><span class="pl-pds">"</span>min-height: 20px; width: 95%<span class="pl-pds">"</span></span>&gt;&lt;/textarea<span class="pl-k">&gt;</span>
+files/en-us/web/api/prioritized_task_scheduling_api/index.md:<span class="pl-k">&lt;</span>textarea id=<span class="pl-s"><span class="pl-pds">"</span>log<span class="pl-pds">"</span></span> style=<span class="pl-s"><span class="pl-pds">"</span>min-height: 20px; width: 95%<span class="pl-pds">"</span></span>&gt;&lt;/textarea<span class="pl-k">&gt;</span>
+files/en-us/web/api/prioritized_task_scheduling_api/index.md:<span class="pl-k">&lt;</span>textarea id=<span class="pl-s"><span class="pl-pds">"</span>log<span class="pl-pds">"</span></span> style=<span class="pl-s"><span class="pl-pds">"</span>min-height: 100px; width: 95%<span class="pl-pds">"</span></span>&gt;&lt;/textarea<span class="pl-k">&gt;</span>
+files/en-us/web/api/prioritized_task_scheduling_api/index.md:<span class="pl-k">&lt;</span>textarea id=<span class="pl-s"><span class="pl-pds">"</span>log<span class="pl-pds">"</span></span> style=<span class="pl-s"><span class="pl-pds">"</span>min-height: 120px; width: 95%<span class="pl-pds">"</span></span>&gt;&lt;/textarea<span class="pl-k">&gt;</span>
+files/en-us/web/api/prioritized_task_scheduling_api/index.md:<span class="pl-k">&lt;</span>textarea id=<span class="pl-s"><span class="pl-pds">"</span>log<span class="pl-pds">"</span></span> style=<span class="pl-s"><span class="pl-pds">"</span>min-height: 70px; width: 95%<span class="pl-pds">"</span></span>&gt;&lt;/textarea<span class="pl-k">&gt;</span>
+files/en-us/web/api/prioritized_task_scheduling_api/index.md:<span class="pl-k">&lt;</span>textarea id=<span class="pl-s"><span class="pl-pds">"</span>log<span class="pl-pds">"</span></span> style=<span class="pl-s"><span class="pl-pds">"</span>min-height: 50px; width: 95%<span class="pl-pds">"</span></span>&gt;&lt;/textarea<span class="pl-k">&gt;</span>
+files/en-us/web/api/prioritized_task_scheduling_api/index.md:<span class="pl-k">&lt;</span>textarea id=<span class="pl-s"><span class="pl-pds">"</span>log<span class="pl-pds">"</span></span> style=<span class="pl-s"><span class="pl-pds">"</span>min-height: 50px; width: 95%<span class="pl-pds">"</span></span>&gt;&lt;/textarea<span class="pl-k">&gt;</span>
+files/en-us/web/api/screenorientation/lock/index.md:  <span class="pl-k">&lt;</span>textarea id=<span class="pl-s"><span class="pl-pds">"</span>log<span class="pl-pds">"</span></span> rows=<span class="pl-s"><span class="pl-pds">"</span>7<span class="pl-pds">"</span></span> cols=<span class="pl-s"><span class="pl-pds">"</span>85<span class="pl-pds">"</span></span>&gt;&lt;/textarea<span class="pl-k">&gt;</span>
+files/en-us/web/api/tasksignal/prioritychange_event/index.md:<span class="pl-k">&lt;</span>textarea id=<span class="pl-s"><span class="pl-pds">"</span>log<span class="pl-pds">"</span></span> style=<span class="pl-s"><span class="pl-pds">"</span>min-height: 70px; width: 95%<span class="pl-pds">"</span></span>&gt;&lt;/textarea<span class="pl-k">&gt;</span>
+files/en-us/web/api/htmlscriptelement/supports/index.md:<span class="pl-k">&lt;</span>textarea id=<span class="pl-s"><span class="pl-pds">"</span>log<span class="pl-pds">"</span></span> rows=<span class="pl-s"><span class="pl-pds">"</span>5<span class="pl-pds">"</span></span> cols=<span class="pl-s"><span class="pl-pds">"</span>80<span class="pl-pds">"</span></span>&gt;&lt;/textarea<span class="pl-k">&gt;</span>
+files/en-us/web/api/css_font_loading_api/index.md:<span class="pl-k">&lt;</span>textarea id=<span class="pl-s"><span class="pl-pds">"</span>log<span class="pl-pds">"</span></span> rows=<span class="pl-s"><span class="pl-pds">"</span>3<span class="pl-pds">"</span></span> cols=<span class="pl-s"><span class="pl-pds">"</span>100<span class="pl-pds">"</span></span>&gt;&lt;/textarea<span class="pl-k">&gt;</span>
+files/en-us/web/api/css_font_loading_api/index.md:<span class="pl-k">&lt;</span>textarea id=<span class="pl-s"><span class="pl-pds">"</span>log<span class="pl-pds">"</span></span> rows=<span class="pl-s"><span class="pl-pds">"</span>25<span class="pl-pds">"</span></span> cols=<span class="pl-s"><span class="pl-pds">"</span>100<span class="pl-pds">"</span></span>&gt;&lt;/textarea<span class="pl-k">&gt;</span></pre></div>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[html] datalist component when scrolling]]></title>
@@ -367,10 +366,9 @@ files/en-us/web/api/css_font_loading_api/index.md:&lt;textarea id="log" rows="25
 <p dir="auto">Examples does not work</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">According to the example, the below is supposed to work:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const myRequest = new Request('flowers.jpg');
-const myIntegrity = myRequest.integrity;"><pre lang="js" class="notranslate"><code class="notranslate">const myRequest = new Request('flowers.jpg');
-const myIntegrity = myRequest.integrity;
-</code></pre></div>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const myRequest = new Request('flowers.jpg');
+const myIntegrity = myRequest.integrity;"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">myRequest</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Request</span><span class="pl-kos">(</span><span class="pl-s">'flowers.jpg'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-s1">myIntegrity</span> <span class="pl-c1">=</span> <span class="pl-s1">myRequest</span><span class="pl-kos">.</span><span class="pl-c1">integrity</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">However, I am unable to get an integrity by referencing a file by URL.<br>
 I don't understand how it would be theoretically possible because the integrity according to my understanding is based on the file content which would require an async function execution.</p>
 <h3 dir="auto">What did you expect to see?</h3>
