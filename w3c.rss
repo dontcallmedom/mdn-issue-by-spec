@@ -4,10 +4,45 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Mon, 13 Mar 2023 03:06:03 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 14 Mar 2023 03:38:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[screen-capture] systemAudio is misleading]]></title>
+            <link>https://github.com/mdn/content/issues/25307</link>
+            <guid>https://github.com/mdn/content/issues/25307</guid>
+            <pubDate>Tue, 14 Mar 2023 03:38:33 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getDisplayMedia" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getDisplayMedia</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">systemAudio</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto"><code class="notranslate">systemAudio</code> constraint is misleading. Especially on Chrome or Chromium browsers, where <code class="notranslate">window.speechSynthesisSpeak()</code> called on the same Tab <em>is not</em> captured by <code class="notranslate">navigator.mediaDevices.getDisplayMedia()</code> using any constraints - because audio output as a result of a call to <code class="notranslate">window.speechSynthesis.speak()</code> really <em>is</em> output at the system level, not on the current Tab, or any browser Tab.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A note notifying users that Chrome and Chromium browsers on Linux <em>do not</em> capture system audio.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<ul dir="auto">
+<li><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1401964331" data-permission-text="Title is private" data-url="https://github.com/GoogleChrome/developer.chrome.com/issues/3947" data-hovercard-type="pull_request" data-hovercard-url="/GoogleChrome/developer.chrome.com/pull/3947/hovercard?comment_id=1274250421&amp;comment_type=issue_comment" href="https://github.com/GoogleChrome/developer.chrome.com/pull/3947#issuecomment-1274250421">GoogleChrome/developer.chrome.com#3947 (comment)</a></li>
+<li><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1403215492" data-permission-text="Title is private" data-url="https://github.com/GoogleChrome/developer.chrome.com/issues/3957" data-hovercard-type="issue" data-hovercard-url="/GoogleChrome/developer.chrome.com/issues/3957/hovercard" href="https://github.com/GoogleChrome/developer.chrome.com/issues/3957">GoogleChrome/developer.chrome.com#3957</a></li>
+<li><a href="https://github.com/edisionnano/Screenshare-with-audio-on-Discord-with-Linux#enter-chromium">https://github.com/edisionnano/Screenshare-with-audio-on-Discord-with-Linux#enter-chromium</a></li>
+<li><a href="https://github.com/guest271314/captureSystemAudio#references">https://github.com/guest271314/captureSystemAudio#references</a></li>
+</ul>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">In spite of the specification using the terminology "systemAudio" Chromium and Chromium browser authors <em>refuse</em> <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=931749" rel="nofollow">https://bugs.chromium.org/p/chromium/issues/detail?id=931749</a> to support capture of system audio on Linux. Thus the constraint is misleading for user on Linux using Chrome or Chromium.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/mediadevices/getdisplaymedia</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getDisplayMedia" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getDisplayMedia</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/mediadevices/getdisplaymedia/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/mediadevices/getdisplaymedia/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2ba2c0efbdf0c34b1da02203e4e84b571c883629/hovercard" href="https://github.com/mdn/content/commit/2ba2c0efbdf0c34b1da02203e4e84b571c883629"><tt>2ba2c0e</tt></a></li>
+<li>Document last modified: 2023-02-28T14:00:22.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[FileAPI] More information about text encoding when creating a Blob]]></title>
             <link>https://github.com/mdn/content/issues/25282</link>
