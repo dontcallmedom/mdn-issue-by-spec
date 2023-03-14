@@ -4,10 +4,51 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Sun, 05 Feb 2023 16:19:19 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 14 Mar 2023 17:53:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] BigInt should not be used with bitwise operators]]></title>
+            <link>https://github.com/mdn/content/issues/25323</link>
+            <guid>https://github.com/mdn/content/issues/25323</guid>
+            <pubDate>Tue, 14 Mar 2023 17:53:40 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Operators</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators" rel="nofollow">Bitwise operators</a> are supported as well, except &gt;&gt;&gt; (zero-fill right shift), as every BigInt value is signed.</p>
+</blockquote>
+<p dir="auto">I would argue that this is incorrect. In the Description section of the documentation for most if not all of the bitwise operators states that</p>
+<blockquote>
+<p dir="auto">The operands are converted to 32-bit integers and expressed by a series of bits (zeroes and ones). Numbers with more than 32 bits get their most significant bits discarded.</p>
+</blockquote>
+<p dir="auto">Once the most significant digits have been discarded, the results of any operation are likely to be wrong.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">It is good that the article refers to bitwise operations, but it would be helpful if it explicitly stated that the bitwise operators will first convert the value to a 32 bit integer.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR" rel="nofollow">Bitwise XOR (^)</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR" rel="nofollow">Bitwise OR (|)</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND" rel="nofollow">Bitwise AND (&amp;)</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_NOT" rel="nofollow">Bitwise NOT (~)</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift" rel="nofollow">Left shift (&lt;&lt;)</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/bigint</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/bigint/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/bigint/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/d19dc31570f62196a5837be38bd0b11c45e67b05/hovercard" href="https://github.com/mdn/content/commit/d19dc31570f62196a5837be38bd0b11c45e67b05"><tt>d19dc31</tt></a></li>
+<li>Document last modified: 2023-02-21T07:09:00.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Misleading information around await's interaction with microtask/task queues]]></title>
             <link>https://github.com/mdn/content/issues/24177</link>
