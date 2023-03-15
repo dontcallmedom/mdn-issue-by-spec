@@ -126,7 +126,5 @@
   
 * [[cssom-view-1] Issue with "Element.scrollTop": note that scrollTop value is negative when display: flex and flex-direction: column-reverse used](https://github.com/mdn/content/issues/4142) (2021-04-15T21:36:13Z)
   
-* [[css-fonts-5, css-sizing-4] Content bug: Sidebar "Related Topics" no longer shows any specific related topics on CSS pages](https://github.com/mdn/content/issues/3827) (2021-04-05T00:32:29Z)
-  
 * [[cssom-view-1] Issue with "Document.elementFromPoint()": Add info about nodes dragged and their position in the DOM tree](https://github.com/mdn/content/issues/3520) (2021-03-26T07:48:07Z)
   

@@ -280,8 +280,6 @@
   
 * [[presentation-api] Issue with "getAvailability": needs improvement (currently just contains a dump of the spec for the method)](https://github.com/mdn/content/issues/4025) (2021-04-12T01:16:00Z)
   
-* [[css-fonts-5, css-sizing-4] Content bug: Sidebar "Related Topics" no longer shows any specific related topics on CSS pages](https://github.com/mdn/content/issues/3827) (2021-04-05T00:32:29Z)
-  
 * [[webmidi] Issue with "MIDIMessageEvent": deprecated example method ](https://github.com/mdn/content/issues/3569) (2021-03-27T17:06:36Z)
   
 * [[cssom-view-1] Issue with "Document.elementFromPoint()": Add info about nodes dragged and their position in the DOM tree](https://github.com/mdn/content/issues/3520) (2021-03-26T07:48:07Z)
