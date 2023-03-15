@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[resize-observer-1] ResizeObserverEntry.contentBoxSize example doesn't use ResizeObserverEntry.contentBoxSize](https://github.com/mdn/content/issues/25364) (2023-03-15T22:35:36Z)
+  
 * [[css-cascade-3] Precedence order of regular cascade layers issue](https://github.com/mdn/content/issues/25103) (2023-03-06T10:42:58Z)
   
 * [[css-sizing-4, css-conditional-3, css-sizing-3] In correct statement about max-width](https://github.com/mdn/content/issues/25073) (2023-03-05T03:22:13Z)
