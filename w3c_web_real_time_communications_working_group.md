@@ -12,8 +12,6 @@
   
 * [[mediastream-recording] Emitted blobs do not always exactly adhere to the timeslice value](https://github.com/mdn/content/issues/19369) (2022-08-10T14:39:46Z)
   
-* [[mediacapture-streams] MediaDeviceInfo»toJSON() needs to be documented](https://github.com/mdn/content/issues/13463) (2022-03-03T18:40:42Z)
-  
 * [[webrtc] "Using DTMF" is using legacy APIs](https://github.com/mdn/content/issues/10020) (2021-10-22T18:00:50Z)
   
 * [[mediacapture-streams] Issue with "MediaStreamTrack: ended event": note that this event is not fired when the user calls .stop() on the track](https://github.com/mdn/content/issues/4939) (2021-05-12T10:02:23Z)

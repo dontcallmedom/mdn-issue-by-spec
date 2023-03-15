@@ -182,8 +182,6 @@
   
 * [[web-animations-2, css-animations-2] Issue with "Element.animate()": wrong scenario mentioned](https://github.com/mdn/content/issues/13487) (2022-03-04T07:40:26Z)
   
-* [[mediacapture-streams] MediaDeviceInfo»toJSON() needs to be documented](https://github.com/mdn/content/issues/13463) (2022-03-03T18:40:42Z)
-  
 * [[css-lists-3] Issue with "counter-reset": What is the difference in behavior between the latest Firefox (82 or later) and the older 81 or earlier or other browsers?](https://github.com/mdn/content/issues/13293) (2022-02-26T00:46:43Z)
   
 * [[css-values-3] Content suggestion: Remove <length-percentage> and similar pages](https://github.com/mdn/content/issues/13066) (2022-02-17T10:45:31Z)
