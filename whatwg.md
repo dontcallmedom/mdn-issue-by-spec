@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[fullscreen] lose live example at fullscreenchange_event](https://github.com/mdn/content/issues/25374) (2023-03-16T10:09:20Z)
+  
 * [[html] Window.postMessage() missing options parameter](https://github.com/mdn/content/issues/25342) (2023-03-15T12:40:15Z)
   
 * [[html] Misleading/incorrect link in See Also section of "Guides > HTML > Introduction to HTML > Document and website structure"](https://github.com/mdn/content/issues/25217) (2023-03-10T05:48:45Z)
