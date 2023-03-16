@@ -4127,7 +4127,7 @@ This problem goes for all properties of the Location object.</p>
             <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:target" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:target</a></p>
 <h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
 <p dir="auto">Let's assume you have this Web Component:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="
 let template = `
 	&lt;div&gt;
 		&lt;a href=&quot;#message&quot;&gt;Make the message red&lt;/a&gt;
@@ -4146,27 +4146,25 @@ customElements.define('my-component', class myElement extends HTMLElement {
 		let shadowRoot = this.attachShadow({ mode: 'open' });
 		shadowRoot.innerHTML = template;
 	}
-});"><pre lang="javascript" class="notranslate"><code class="notranslate">
-let template = `
-	&lt;div&gt;
-		&lt;a href="#message"&gt;Make the message red&lt;/a&gt;
-		&lt;h2 id="message"&gt;Message in a bottle&lt;/h2&gt;
-	&lt;/div&gt;
-	&lt;style&gt;
-		#message:target {
-			color: red;
-		}
-	&lt;/style&gt;
-`;
+});"><pre class="notranslate"><span class="pl-k">let</span> <span class="pl-s1">template</span> <span class="pl-c1">=</span> <span class="pl-s">`</span>
+<span class="pl-s">	&lt;div&gt;</span>
+<span class="pl-s">		&lt;a href="#message"&gt;Make the message red&lt;/a&gt;</span>
+<span class="pl-s">		&lt;h2 id="message"&gt;Message in a bottle&lt;/h2&gt;</span>
+<span class="pl-s">	&lt;/div&gt;</span>
+<span class="pl-s">	&lt;style&gt;</span>
+<span class="pl-s">		#message:target {</span>
+<span class="pl-s">			color: red;</span>
+<span class="pl-s">		}</span>
+<span class="pl-s">	&lt;/style&gt;</span>
+<span class="pl-s">`</span><span class="pl-kos">;</span>
 
-customElements.define('my-component', class myElement extends HTMLElement {
-	constructor() {
-		super();
-		let shadowRoot = this.attachShadow({ mode: 'open' });
-		shadowRoot.innerHTML = template;
-	}
-});
-</code></pre></div>
+<span class="pl-s1">customElements</span><span class="pl-kos">.</span><span class="pl-en">define</span><span class="pl-kos">(</span><span class="pl-s">'my-component'</span><span class="pl-kos">,</span> <span class="pl-k">class</span> <span class="pl-s1">myElement</span> <span class="pl-k">extends</span> <span class="pl-v">HTMLElement</span> <span class="pl-kos">{</span>
+	<span class="pl-en">constructor</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+		<span class="pl-smi">super</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+		<span class="pl-k">let</span> <span class="pl-s1">shadowRoot</span> <span class="pl-c1">=</span> <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-en">attachShadow</span><span class="pl-kos">(</span><span class="pl-kos">{</span> <span class="pl-c1">mode</span>: <span class="pl-s">'open'</span> <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+		<span class="pl-s1">shadowRoot</span><span class="pl-kos">.</span><span class="pl-c1">innerHTML</span> <span class="pl-c1">=</span> <span class="pl-s1">template</span><span class="pl-kos">;</span>
+	<span class="pl-kos">}</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">This code fails to work because the event <code class="notranslate">:target</code> is missing in the root of the shadow.</p>
 <h4 dir="auto">Specific section or headline?</h4>
 <h4 dir="auto">What did you expect to see?</h4>
@@ -4273,18 +4271,17 @@ Anyway,</li>
 <h1 dir="auto">Details</h1>
 
 <p dir="auto"><code class="notranslate">requestAnimationFrame</code> and <code class="notranslate">cancelAnimationFrame</code> used to be <code class="notranslate">Window</code> only methods, but it has recently been added to <code class="notranslate">DedicatedWorkerGlobalScope</code> too. <a href="https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider" rel="nofollow">https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider</a></p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="interface mixin AnimationFrameProvider {
+<div class="highlight highlight-source-webidl notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="interface mixin AnimationFrameProvider {
   unsigned long requestAnimationFrame(FrameRequestCallback callback);
   undefined cancelAnimationFrame(unsigned long handle);
 };
 Window includes AnimationFrameProvider;
-DedicatedWorkerGlobalScope includes AnimationFrameProvider;"><pre lang="webidl" class="notranslate"><code class="notranslate">interface mixin AnimationFrameProvider {
-  unsigned long requestAnimationFrame(FrameRequestCallback callback);
-  undefined cancelAnimationFrame(unsigned long handle);
+DedicatedWorkerGlobalScope includes AnimationFrameProvider;"><pre class="notranslate"><span class="pl-k">interface</span> <span class="pl-en">mixin</span> AnimationFrameProvider {
+  <span class="pl-k">unsigned</span> <span class="pl-k">long</span> <span class="pl-en">requestAnimationFrame</span>(FrameRequestCallback callback);
+  undefined <span class="pl-en">cancelAnimationFrame</span>(<span class="pl-k">unsigned</span> <span class="pl-k">long</span> handle);
 };
 Window includes AnimationFrameProvider;
-DedicatedWorkerGlobalScope includes AnimationFrameProvider;
-</code></pre></div>
+DedicatedWorkerGlobalScope includes AnimationFrameProvider;</pre></div>
 <p dir="auto">I guess the page should now be <code class="notranslate">Web/API/WindowOrWorkerGlobalScope/requestAnimationFrame</code>, but I fear this would break any link to the current <code class="notranslate">/Web/API/window/requestAnimationFrame</code>. So I'm not sure how it should get handled.</p>
 <p dir="auto">Also, compat-data should probably be updated (currently these methods are supported in Blink only).</p>]]></content:encoded>
         </item>
