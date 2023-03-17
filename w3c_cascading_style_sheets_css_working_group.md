@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-overflow-3] All `-webkit-*` CSS property pages miss two global values](https://github.com/mdn/content/issues/25403) (2023-03-17T03:14:36Z)
+  
 * [[resize-observer-1] ResizeObserverEntry.contentBoxSize example doesn't use ResizeObserverEntry.contentBoxSize](https://github.com/mdn/content/issues/25364) (2023-03-15T22:35:36Z)
   
 * [[css-cascade-3] Precedence order of regular cascade layers issue](https://github.com/mdn/content/issues/25103) (2023-03-06T10:42:58Z)

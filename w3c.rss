@@ -4,10 +4,35 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Thu, 16 Mar 2023 15:15:59 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 17 Mar 2023 03:14:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-overflow-3] All `-webkit-*` CSS property pages miss two global values]]></title>
+            <link>https://github.com/mdn/content/issues/25403</link>
+            <guid>https://github.com/mdn/content/issues/25403</guid>
+            <pubDate>Fri, 17 Mar 2023 03:14:36 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Syntax</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">All these property pages list the following as global values:</p>
+<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="-webkit-*: inherit;
+-webkit-*: initial;
+-webkit-*: unset;"><pre class="notranslate"><span class="pl-c1">-webkit-</span><span class="pl-c1">*</span><span class="pl-kos">:</span> inherit;
+<span class="pl-c1">-webkit-</span><span class="pl-c1">*</span><span class="pl-kos">:</span> initial;
+<span class="pl-c1">-webkit-</span><span class="pl-c1">*</span><span class="pl-kos">:</span> unset;</pre></div>
+<p dir="auto">Per the CSS properties <a href="https://compat.spec.whatwg.org/#css-properties" rel="nofollow">section</a> of the Compatibility Standard and the Legacy compatibility <a href="https://w3c.github.io/csswg-drafts/css-overflow-4/#webkit-line-clamp" rel="nofollow">section</a> of CSS Overflow Module Level 4, all these prefixed properties should also accept the CSS-wide keywords <code class="notranslate">revert</code> and <code class="notranslate">revert-layer</code>.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The mentioned two values be added to all these pages.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Compatibility Standard: <a href="https://compat.spec.whatwg.org/#css-properties" rel="nofollow">https://compat.spec.whatwg.org/#css-properties</a><br>
+CSS Overflow Module Level 4: <a href="https://w3c.github.io/csswg-drafts/css-overflow-4/#webkit-line-clamp" rel="nofollow">https://w3c.github.io/csswg-drafts/css-overflow-4/#webkit-line-clamp</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[IndexedDB-3] IDBObjectStore.openCursor incorrect direction docs]]></title>
             <link>https://github.com/mdn/content/issues/25385</link>
