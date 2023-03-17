@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-backgrounds-4] Incorrect animation type link of `box-shadow`](https://github.com/mdn/content/issues/25425) (2023-03-17T15:39:20Z)
+  
 * [[cssom-view-1] Optimizing window.onresize url fails.](https://github.com/mdn/content/issues/25420) (2023-03-17T13:37:28Z)
   
 * [[css-values-3] oklch functional notation shows wrong number range for L component (0-100 instead of 0-1)](https://github.com/mdn/content/issues/25416) (2023-03-17T11:22:11Z)
