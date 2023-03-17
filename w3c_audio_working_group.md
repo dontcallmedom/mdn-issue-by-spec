@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Audio Working Group. [![RSS feed for W3C Audio Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[webaudio] AudioBufferSourceNode.playbackRate Automation Rate](https://github.com/mdn/content/issues/25429) (2023-03-17T21:43:17Z)
+  
 * [[webaudio] Visualization is by far not the only use case for FFT](https://github.com/mdn/content/issues/24183) (2023-02-05T20:10:26Z)
   
 * [[webaudio] BiquadFilterNode»Q: Incorrect range for Q?](https://github.com/mdn/content/issues/23592) (2023-01-13T01:05:43Z)
