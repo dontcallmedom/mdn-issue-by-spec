@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-page-4] Several CSS property pages don't show the "Formal definition" section normally](https://github.com/mdn/content/issues/25441) (2023-03-18T14:24:56Z)
+  
 * [[css-fonts-5] Incorrect / outdated animation type for `font-weight`](https://github.com/mdn/content/issues/25426) (2023-03-17T15:56:25Z)
   
 * [[css-backgrounds-4, css-text-decor-3] Incorrect animation type link of `box-shadow`](https://github.com/mdn/content/issues/25425) (2023-03-17T15:39:20Z)
