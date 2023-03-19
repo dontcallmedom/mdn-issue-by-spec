@@ -568,22 +568,21 @@ WebKit Bug 227000: <a href="https://bugs.webkit.org/show_bug.cgi?id=227000" rel=
 <p dir="auto">Which likely deserves it's own page.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">A link to a document describing <a href="https://drafts.csswg.org/cssom/#css-property-to-idl-attribute" rel="nofollow">https://drafts.csswg.org/cssom/#css-property-to-idl-attribute</a> or, possibly,</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="let availableProps = getComputedStyle(document.body);
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="let availableProps = getComputedStyle(document.body);
 let list = [];
 for(cssProp in availableProps) { 
   if(!/\-/.test(cssProp) &amp;&amp; /^[a-z]/.test(cssProp)) {
     list.push(cssProp);
   }
 }
-console.log(list);"><pre lang="js" class="notranslate"><code class="notranslate">let availableProps = getComputedStyle(document.body);
-let list = [];
-for(cssProp in availableProps) { 
-  if(!/\-/.test(cssProp) &amp;&amp; /^[a-z]/.test(cssProp)) {
-    list.push(cssProp);
-  }
-}
-console.log(list);
-</code></pre></div>
+console.log(list);"><pre class="notranslate"><span class="pl-k">let</span> <span class="pl-s1">availableProps</span> <span class="pl-c1">=</span> <span class="pl-en">getComputedStyle</span><span class="pl-kos">(</span><span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">body</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">let</span> <span class="pl-s1">list</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-kos">]</span><span class="pl-kos">;</span>
+<span class="pl-k">for</span><span class="pl-kos">(</span><span class="pl-s1">cssProp</span> <span class="pl-k">in</span> <span class="pl-s1">availableProps</span><span class="pl-kos">)</span> <span class="pl-kos">{</span> 
+  <span class="pl-k">if</span><span class="pl-kos">(</span><span class="pl-c1">!</span><span class="pl-pds"><span class="pl-c1">/</span><span class="pl-cce">\-</span><span class="pl-c1">/</span></span><span class="pl-kos">.</span><span class="pl-en">test</span><span class="pl-kos">(</span><span class="pl-s1">cssProp</span><span class="pl-kos">)</span> <span class="pl-c1">&amp;&amp;</span> <span class="pl-pds"><span class="pl-c1">/</span><span class="pl-cce">^</span><span class="pl-kos">[</span>a-z<span class="pl-kos">]</span><span class="pl-c1">/</span></span><span class="pl-kos">.</span><span class="pl-en">test</span><span class="pl-kos">(</span><span class="pl-s1">cssProp</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    <span class="pl-s1">list</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-s1">cssProp</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span>
+<span class="pl-kos">}</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">list</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">as a live example in the page</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
