@@ -97,69 +97,6 @@ CSS Fonts Module Level 4: <a href="https://w3c.github.io/csswg-drafts/css-fonts-
 <p dir="auto"><del>The link in the "Animation type" row of both <code class="notranslate">box-shadow</code> and <code class="notranslate">text-shadow</code> has a really lengthy <code class="notranslate">title</code> attribute, the content of which almost duplicates that in the "Interpolation" subsection of <code class="notranslate">box-shadow</code>.</del> All the special animation types have such <code class="notranslate">title</code> attributes, so never mind.</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-values-3] oklch functional notation shows wrong number range for L component (0-100 instead of 0-1)]]></title>
-            <link>https://github.com/mdn/content/issues/25416</link>
-            <guid>https://github.com/mdn/content/issues/25416</guid>
-            <pubDate>Fri, 17 Mar 2023 11:22:11 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Values &gt; Functional notation, subsequent Note</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The core issue is that the <code class="notranslate">L</code> component in the functional notation for <code class="notranslate">oklch</code> and <code class="notranslate">oklab</code> is a number between 0 and 1 in the spec, instead of 0 and 100 as listed on MDN.</p>
-<p dir="auto">More specifically, the Values section describes the value range as:</p>
-<blockquote>
-<p dir="auto">L is a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/number" rel="nofollow">&lt;number&gt;</a> between 0 and 100 or a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/percentage" rel="nofollow">&lt;percentage&gt;</a> between 0% and 100% that specifies the CIE Lightness where the number 0 corresponds to 0% (black) and the number 100 corresponds to 100% (white).</p>
-</blockquote>
-<p dir="auto">However, the <code class="notranslate">number</code> value for <code class="notranslate">oklch</code> and <code class="notranslate">oklab</code> is between 0 and 1, where the number 0 corresponds to 0% (black) and the number 1 corresponds to 100% (white), as per the specification (referenced below)</p>
-<p dir="auto">The spec also mentions that the <code class="notranslate">L</code> component in <code class="notranslate">oklch</code> and <code class="notranslate">oklab</code> is "Oklab Lightness" instead of CIE Lightness.</p>
-<p dir="auto">The subsequent note:</p>
-<blockquote>
-<p dir="auto">Note: Usually when percentage values have a numeric equivalent in CSS, 100% is equal to the number 1. This case is notable in that 100% is equal to the number 100 for the L value and 0.4 for the C value.</p>
-</blockquote>
-<p dir="auto">Is similarly misleading, and can be removed.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The Values &gt; Functional notation &gt; L section can be updated to:</p>
-<blockquote>
-<p dir="auto">L is a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/number" rel="nofollow">&lt;number&gt;</a> between 0 and 1 or a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/percentage" rel="nofollow">&lt;percentage&gt;</a> between 0% and 100% that specifies the Oklab Lightness where the number 0 corresponds to 0% (black) and the number 1 corresponds to 100% (white).</p>
-</blockquote>
-<p dir="auto">The note itself can be removed, since the number is consistent with the numeric equivalent in CSS. Alternatively, it could be changed to point out the difference between this numeric range and those for <code class="notranslate">lch</code>/<code class="notranslate">lab</code> (which are 0-100).</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">From the spec linked on the same page:<br>
-<a href="https://w3c.github.io/csswg-drafts/css-color/#specifying-oklab-oklch" rel="nofollow">https://w3c.github.io/csswg-drafts/css-color/#specifying-oklab-oklch</a></p>
-<blockquote>
-<p dir="auto">Percent reference range | for L: 0% = 0.0, 100% = 1.0</p>
-</blockquote>
-<blockquote>
-<p dir="auto">The first argument specifies the Oklab Lightness. This is a number between 0% or 0 (representing black) and 100% or 1.0 (representing white).</p>
-</blockquote>
-<p dir="auto">and subsequently for Oklch:</p>
-<blockquote>
-<p dir="auto">The first argument specifies the Oklch Lightness L, interpreted identically to the Lightness argument of <a href="https://w3c.github.io/csswg-drafts/css-color/#funcdef-oklab" rel="nofollow">oklab()</a>.</p>
-</blockquote>
-<p dir="auto"><a href="https://w3c.github.io/csswg-drafts/css-color/#ex-oklch-samples" rel="nofollow">Example 24 shows the 0-1 range being used</a></p>
-<p dir="auto"><a href="https://www.w3.org/TR/css-color-4/#specifying-oklab-oklch" rel="nofollow">The Candidate Recommendation draft also references the 0-1 range</a>:</p>
-<blockquote>
-<p dir="auto">Percent reference range | for L: 0% = 0.0, 100% = 1.0</p>
-</blockquote>
-<p dir="auto">...but lacks the disambiguation in the text. The <a href="https://www.w3.org/TR/css-color-4/#ex-oklch-samples" rel="nofollow">examples do use the 0-1 range</a>, as above.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">The same issue is present for the <code class="notranslate">oklab</code> page, I can make an issue for it as well :)<br>
-I would be happy to contribute these changes!</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/color_value/oklch</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/color_value/oklch/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/color_value/oklch/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0c7c30dfa484e0f5ddf05f8bb51c03a588c5ebaa/hovercard" href="https://github.com/mdn/content/commit/0c7c30dfa484e0f5ddf05f8bb51c03a588c5ebaa"><tt>0c7c30d</tt></a></li>
-<li>Document last modified: 2023-03-11T03:43:15.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[css-overflow-3] All `-webkit-*` CSS property pages miss two global values]]></title>
             <link>https://github.com/mdn/content/issues/25403</link>
             <guid>https://github.com/mdn/content/issues/25403</guid>
