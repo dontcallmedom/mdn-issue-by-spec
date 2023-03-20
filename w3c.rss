@@ -3778,7 +3778,7 @@ And the change in Firefox caused by <a href="https://groups.google.com/g/mozilla
 <h4 dir="auto">Did you test this? If so, how?</h4>
 <ol dir="auto">
 <li>Open the following HTML in any browser I want to test:
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;!DOCTYPE html&gt;
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en-us&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -3796,26 +3796,25 @@ And the change in Firefox caused by <a href="https://groups.google.com/g/mozilla
       &lt;/tbody&gt;
     &lt;/table&gt;
   &lt;/body&gt;
-&lt;/html&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;!DOCTYPE html&gt;
-&lt;html lang="en-us"&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-    &lt;title&gt;Display Grid Table&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;table style="grid"&gt;
-      &lt;caption&gt;Grid Table&lt;/caption&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;th&gt;Hello&lt;/th&gt;
-          &lt;td&gt;World&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre></div>
+&lt;/html&gt;"><pre class="notranslate"><span class="pl-c1">&lt;!DOCTYPE html<span class="pl-kos">&gt;</span></span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">html</span> <span class="pl-c1">lang</span>="<span class="pl-s">en-us</span>"<span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">meta</span> <span class="pl-c1">charset</span>="<span class="pl-s">utf-8</span>"<span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">meta</span> <span class="pl-c1">name</span>="<span class="pl-s">viewport</span>" <span class="pl-c1">content</span>="<span class="pl-s">width=device-width, initial-scale=1</span>"<span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">title</span><span class="pl-kos">&gt;</span>Display Grid Table<span class="pl-kos">&lt;/</span><span class="pl-ent">title</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;/</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">table</span> <span class="pl-c1">style</span>="<span class="pl-s">grid</span>"<span class="pl-kos">&gt;</span>
+      <span class="pl-kos">&lt;</span><span class="pl-ent">caption</span><span class="pl-kos">&gt;</span>Grid Table<span class="pl-kos">&lt;/</span><span class="pl-ent">caption</span><span class="pl-kos">&gt;</span>
+      <span class="pl-kos">&lt;</span><span class="pl-ent">tbody</span><span class="pl-kos">&gt;</span>
+        <span class="pl-kos">&lt;</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
+          <span class="pl-kos">&lt;</span><span class="pl-ent">th</span><span class="pl-kos">&gt;</span>Hello<span class="pl-kos">&lt;/</span><span class="pl-ent">th</span><span class="pl-kos">&gt;</span>
+          <span class="pl-kos">&lt;</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>World<span class="pl-kos">&lt;/</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>
+        <span class="pl-kos">&lt;/</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
+      <span class="pl-kos">&lt;/</span><span class="pl-ent">tbody</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;/</span><span class="pl-ent">table</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;/</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span></pre></div>
 </li>
 <li>Use browser accessibility tools to check the role of each table node to see if they have changed
 <ul dir="auto">
@@ -4109,10 +4108,9 @@ navigator.serviceWorker.register('/sw.js', {scope: './'}).then(function(registra
 <p dir="auto">In Chrome 48+/Firefox 58+ this property returns a DOMException because DOMError has been removed from the DOM standard.</p>
 </blockquote>
 <p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#regular_expressions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#regular_expressions</a> says:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="typeof /s/ === 'function'; // Chrome 1-12 Non-conform to ECMAScript 5.1
-typeof /s/ === 'object';   // Firefox 5+  Conform to ECMAScript 5.1"><pre lang="js" class="notranslate"><code class="notranslate">typeof /s/ === 'function'; // Chrome 1-12 Non-conform to ECMAScript 5.1
-typeof /s/ === 'object';   // Firefox 5+  Conform to ECMAScript 5.1
-</code></pre></div>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="typeof /s/ === 'function'; // Chrome 1-12 Non-conform to ECMAScript 5.1
+typeof /s/ === 'object';   // Firefox 5+  Conform to ECMAScript 5.1"><pre class="notranslate"><span class="pl-k">typeof</span> <span class="pl-pds"><span class="pl-c1">/</span>s<span class="pl-c1">/</span></span> <span class="pl-c1">===</span> <span class="pl-s">'function'</span><span class="pl-kos">;</span> <span class="pl-c">// Chrome 1-12 Non-conform to ECMAScript 5.1</span>
+<span class="pl-k">typeof</span> <span class="pl-pds"><span class="pl-c1">/</span>s<span class="pl-c1">/</span></span> <span class="pl-c1">===</span> <span class="pl-s">'object'</span><span class="pl-kos">;</span>   <span class="pl-c">// Firefox 5+  Conform to ECMAScript 5.1</span></pre></div>
 <h2 dir="auto">What is the problem?</h2>
 <p dir="auto">Information about quirks in very old browser releases seems like a net negative for readers of MDN. It will require readers to make a judgement about whether this could affect them, by testing or looking at release dates for the browsers.</p>
 <h2 dir="auto">What did you expect to see?</h2>
@@ -4302,10 +4300,9 @@ MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons" rel=
             <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement</a></p>
 <h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
 <p dir="auto">There are differences between the browsers implementation of the initial values of the viewBox (baseVal) property.</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const svg = document.createElementNS(&quot;http://www.w3.org/2000/svg&quot;, &quot;svg&quot;);
-const baseVal = svg.viewBox.baseVal;"><pre lang="js" class="notranslate"><code class="notranslate">const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-const baseVal = svg.viewBox.baseVal;
-</code></pre></div>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const svg = document.createElementNS(&quot;http://www.w3.org/2000/svg&quot;, &quot;svg&quot;);
+const baseVal = svg.viewBox.baseVal;"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">svg</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createElementNS</span><span class="pl-kos">(</span><span class="pl-s">"http://www.w3.org/2000/svg"</span><span class="pl-kos">,</span> <span class="pl-s">"svg"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-s1">baseVal</span> <span class="pl-c1">=</span> <span class="pl-s1">svg</span><span class="pl-kos">.</span><span class="pl-c1">viewBox</span><span class="pl-kos">.</span><span class="pl-c1">baseVal</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">In Firefox <code class="notranslate">baseVal </code> is <code class="notranslate">null</code>. In Chrome it is an <code class="notranslate">SVGRect {x: 0, y: 0, width: 0, height: 0}</code>.<br>
 In my opinion it is nice to just write the values on the pre-initialized SVGRect and to let the browser synchronize the attribute.</p>
 <p dir="auto">Since the bug on this topic (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=888307" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=888307</a>) is closed and no one seems to care, at least developers should be informed of this difference.</p>
