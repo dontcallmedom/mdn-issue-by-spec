@@ -4,10 +4,44 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Sun, 19 Mar 2023 14:26:31 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 20 Mar 2023 15:52:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[streams] interval variable is not in scope of cancel method]]></title>
+            <link>https://github.com/mdn/content/issues/25480</link>
+            <guid>https://github.com/mdn/content/issues/25480</guid>
+            <pubDate>Mon, 20 Mar 2023 15:52:36 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream/ReadableStream" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream/ReadableStream</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Examples</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The scope of the variable 'interval' is unclear. We cannot say whether the cancel function actually has access to it!<br>
+In your running example, the cancel function cannot.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">let interval;<br>
+const stream = new ReadableStream({<br>
+start(controller) {<br>
+...</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/readablestream/readablestream</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream/ReadableStream" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream/ReadableStream</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/readablestream/readablestream/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/readablestream/readablestream/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/3b22c657f659c249cbe6e4fc6794370a5cb67a72/hovercard" href="https://github.com/mdn/content/commit/3b22c657f659c249cbe6e4fc6794370a5cb67a72"><tt>3b22c65</tt></a></li>
+<li>Document last modified: 2023-03-01T11:11:40.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Please review Drag & Drop - Interoperability docs - There seems to be outdated info]]></title>
             <link>https://github.com/mdn/content/issues/25456</link>
