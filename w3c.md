@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[FileAPI] "Your connection to this site isn't secure" when testing blob example](https://github.com/mdn/content/issues/25515) (2023-03-21T17:36:25Z)
+  
 * [[css-logical-1, css-page-4] Should `page-break-*` be explicitly mark as deprecated?](https://github.com/mdn/content/issues/25459) (2023-03-19T15:16:56Z)
   
 * [[css-page-4] Several CSS property pages don't show the "Formal definition" section normally](https://github.com/mdn/content/issues/25441) (2023-03-18T14:24:56Z)
