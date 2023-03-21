@@ -10,8 +10,6 @@
   
 * [[html] Window.postMessage() missing options parameter](https://github.com/mdn/content/issues/25342) (2023-03-15T12:40:15Z)
   
-* [[html] Misleading/incorrect link in See Also section of "Guides > HTML > Introduction to HTML > Document and website structure"](https://github.com/mdn/content/issues/25217) (2023-03-10T05:48:45Z)
-  
 * [[html] ID value can start with a number](https://github.com/mdn/content/issues/25200) (2023-03-09T14:05:20Z)
   
 * [[html] Missing documentation of methods and properties of `HTMLOptionsCollections`](https://github.com/mdn/content/issues/25190) (2023-03-09T02:30:04Z)
