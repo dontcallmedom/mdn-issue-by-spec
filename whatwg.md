@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[dom] Abstract Range introduction](https://github.com/mdn/content/issues/25492) (2023-03-21T02:35:01Z)
-  
 * [[streams] interval variable is not in scope of cancel method](https://github.com/mdn/content/issues/25480) (2023-03-20T15:52:36Z)
   
 * [[html] Please review Drag & Drop - Interoperability docs - There seems to be outdated info](https://github.com/mdn/content/issues/25456) (2023-03-19T14:26:31Z)
