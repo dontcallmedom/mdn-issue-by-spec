@@ -4,10 +4,51 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Wed, 22 Mar 2023 03:39:09 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 22 Mar 2023 15:13:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[SVG11] SVG <image> element supports animated GIF]]></title>
+            <link>https://github.com/mdn/content/issues/25543</link>
+            <guid>https://github.com/mdn/content/issues/25543</guid>
+            <pubDate>Wed, 22 Mar 2023 15:13:36 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><code class="notranslate">&lt;image&gt;</code></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The second paragraph in this section says:</p>
+<p dir="auto">"The only image formats SVG software must support are <a href="https://developer.mozilla.org/en-US/docs/Glossary/JPEG" rel="nofollow">JPEG</a>, <a href="https://developer.mozilla.org/en-US/docs/Glossary/PNG" rel="nofollow">PNG</a>, and other SVG files. Animated <a href="https://developer.mozilla.org/en-US/docs/Glossary/GIF" rel="nofollow">GIF</a> behavior is undefined."</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">With current Browsers animated GIF images are supported too (FireFox 111.0.1 as well as current Chrome,  Chromium and Safari).</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">You can test it with with a SVG file that contains:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;svg version=&quot;1.1&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot;
+  viewBox=&quot;0 0 150 150&quot; enable-background=&quot;new 0 0 100 100&quot; xml:space=&quot;preserve&quot;&gt;
+  &lt;image href=&quot;https://upload.wikimedia.org/wikipedia/commons/d/d7/Muybridge_horse_gallop_animated_2.gif&quot; height=&quot;150&quot; width=&quot;150&quot; /&gt;
+&lt;/svg&gt;"><pre class="notranslate"><code class="notranslate">&lt;svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  viewBox="0 0 150 150" enable-background="new 0 0 100 100" xml:space="preserve"&gt;
+  &lt;image href="https://upload.wikimedia.org/wikipedia/commons/d/d7/Muybridge_horse_gallop_animated_2.gif" height="150" width="150" /&gt;
+&lt;/svg&gt;
+</code></pre></div>
+<p dir="auto">The horse gallops when you open the SVG file in a browser.<br>
+Tested with FireFox 111.0.1 as well as current Chrome,  Chromium and Safari.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/svg/element/image</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/svg/element/image/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/svg/element/image/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b4f998244660723175f8e06b5d77f68cfb1d1f1a/hovercard" href="https://github.com/mdn/content/commit/b4f998244660723175f8e06b5d77f68cfb1d1f1a"><tt>b4f9982</tt></a></li>
+<li>Document last modified: 2023-03-06T23:38:10.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-logical-1] The `max-block-size` page significantly deviates from other logical sizing properties]]></title>
             <link>https://github.com/mdn/content/issues/25525</link>
