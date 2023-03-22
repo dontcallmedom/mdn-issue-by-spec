@@ -4,8 +4,6 @@
 
 * [[streams] interval variable is not in scope of cancel method](https://github.com/mdn/content/issues/25480) (2023-03-20T15:52:36Z)
   
-* [[html] Please review Drag & Drop - Interoperability docs - There seems to be outdated info](https://github.com/mdn/content/issues/25456) (2023-03-19T14:26:31Z)
-  
 * [[html] Role of definition and aria-labelledby](https://github.com/mdn/content/issues/25393) (2023-03-16T19:05:02Z)
   
 * [[html] Window.postMessage() missing options parameter](https://github.com/mdn/content/issues/25342) (2023-03-15T12:40:15Z)
