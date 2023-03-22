@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-flexbox-1] Toggling  is not working as described ](https://github.com/mdn/content/issues/25552) (2023-03-22T20:12:19Z)
+  
 * [[SVG11] SVG <image> element supports animated GIF](https://github.com/mdn/content/issues/25543) (2023-03-22T15:13:36Z)
   
 * [[css-logical-1] The `max-block-size` page significantly deviates from other logical sizing properties](https://github.com/mdn/content/issues/25525) (2023-03-22T03:39:09Z)
