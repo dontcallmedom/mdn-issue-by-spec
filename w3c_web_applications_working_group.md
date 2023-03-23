@@ -10,8 +10,6 @@
   
 * [[IndexedDB-3] Failed to execute ‘transaction’ on IDBDdatabase the database connection closing](https://github.com/mdn/content/issues/25281) (2023-03-13T03:05:57Z)
   
-* [[IndexedDB-3] The description of the parameter "key" of IDBObjectStore.put() looks false](https://github.com/mdn/content/issues/24428) (2023-02-14T11:26:54Z)
-  
 * [[push-api] Subscriptions are lost after page reload](https://github.com/mdn/content/issues/23747) (2023-01-18T15:29:52Z)
   
 * [[web-share] Share MDN Example Not Working - TypeError: navigator.share is not a function](https://github.com/mdn/content/issues/23403) (2023-01-05T12:11:34Z)

@@ -48,8 +48,6 @@
   
 * [[css-lists-3] Incorrect note about `list-style-position` behaviors across browers](https://github.com/mdn/content/issues/24502) (2023-02-17T01:53:35Z)
   
-* [[IndexedDB-3] The description of the parameter "key" of IDBObjectStore.put() looks false](https://github.com/mdn/content/issues/24428) (2023-02-14T11:26:54Z)
-  
 * [[tracking-dnt] Web/HTTP/Headers/DNT: has ambigious deprecation notice](https://github.com/mdn/content/issues/24368) (2023-02-12T19:38:23Z)
   
 * [[filter-effects-2] Include embedded example](https://github.com/mdn/content/issues/24329) (2023-02-10T23:44:49Z)
