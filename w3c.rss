@@ -4,10 +4,42 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Wed, 22 Mar 2023 20:12:19 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Mar 2023 14:41:18 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[webaudio] AnalyserNode::getFloatTimeDomainData() doesn't specify the encoding of the waveform]]></title>
+            <link>https://github.com/mdn/content/issues/25571</link>
+            <guid>https://github.com/mdn/content/issues/25571</guid>
+            <pubDate>Thu, 23 Mar 2023 14:41:18 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getFloatTimeDomainData" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getFloatTimeDomainData</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Top-level description</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Missing encoding of the waveform. Because the parameter is a <code class="notranslate">Float32Array</code>, one can reasonably assume that the encoding is <code class="notranslate">f32</code> (that is, PCM data amplitude in [-1:1]). However it would be better to confirm this in writing instead of leaving developers to their guess. There's also no mention of planar/non-planar encoding, which is necessary to do anything with the data retrieved (unless the signal has a single channel).</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Something akin to:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="The time-domain data is encoded in `f32` format with the amplitude of samples in [-1:1]."><pre class="notranslate"><code class="notranslate">The time-domain data is encoded in `f32` format with the amplitude of samples in [-1:1].
+</code></pre></div>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">The 3 other instance methods of <code class="notranslate">AnalyzerNode</code> have the same issue. Especially for the <code class="notranslate">byte</code> variant where it's unclear if the data is signed [-128:127] or unsigned [0:255]. The example in <a href="https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getByteTimeDomainData" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getByteTimeDomainData</a> hints that it may be the former.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/analysernode/getfloattimedomaindata</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getFloatTimeDomainData" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getFloatTimeDomainData</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/analysernode/getfloattimedomaindata/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/analysernode/getfloattimedomaindata/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/bca8d1ab2bc4f5a1ef6b39c454b0229539178e98/hovercard" href="https://github.com/mdn/content/commit/bca8d1ab2bc4f5a1ef6b39c454b0229539178e98"><tt>bca8d1a</tt></a></li>
+<li>Document last modified: 2023-02-18T07:09:59.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-flexbox-1] Toggling  is not working as described ]]></title>
             <link>https://github.com/mdn/content/issues/25552</link>
