@@ -12,8 +12,6 @@
   
 * [[push-api] Subscriptions are lost after page reload](https://github.com/mdn/content/issues/23747) (2023-01-18T15:29:52Z)
   
-* [[web-share] Share MDN Example Not Working - TypeError: navigator.share is not a function](https://github.com/mdn/content/issues/23403) (2023-01-05T12:11:34Z)
-  
 * [[IndexedDB-3] Example of a key to be logged is not in the IDBCursor.key page](https://github.com/mdn/content/issues/23328) (2023-01-02T23:59:08Z)
   
 * [[clipboard-apis] clipboard.readText() is behind flag on Firefox](https://github.com/mdn/content/issues/23188) (2022-12-25T21:43:10Z)
