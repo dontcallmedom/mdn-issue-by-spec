@@ -72,8 +72,6 @@
   
 * [[webaudio] BiquadFilterNode»Q: Incorrect range for Q?](https://github.com/mdn/content/issues/23592) (2023-01-13T01:05:43Z)
   
-* [[appmanifest] Show Windows example for `related_applications`](https://github.com/mdn/content/issues/23570) (2023-01-12T02:19:58Z)
-  
 * [[css-shadow-parts-1] ::part(): Missing information](https://github.com/mdn/content/issues/23471) (2023-01-08T11:05:39Z)
   
 * [[web-share] Share MDN Example Not Working - TypeError: navigator.share is not a function](https://github.com/mdn/content/issues/23403) (2023-01-05T12:11:34Z)
