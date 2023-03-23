@@ -26,7 +26,6 @@
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">An example using a <code class="notranslate">DataView.setInt32(byteOffset, value, littleEndian)</code> instead, perhaps?</p>
 <p dir="auto">If this is a real portability pitfall, there should be warnings about it on the WebAssembly.memory and TypedArray pages.</p>
-<p dir="auto">Maybe javascript needs a <code class="notranslate">LittleEndianTypedArray</code> or something.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">If this really is a bug, exposing endian-ness like this has worrying implications for web page portability. I've already seen this pattern used in several other places, such as:</p>
 <ul dir="auto">
@@ -35,7 +34,7 @@
 <li>Questions <a href="https://groups.google.com/g/teavm/c/BlO4lkGNi40" rel="nofollow">1</a> <a href="https://stackoverflow.com/questions/41875728/pass-a-javascript-array-as-argument-to-a-webassembly-function" rel="nofollow">2</a></li>
 </ul>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
+<p dir="auto">Maybe javascript needs a <code class="notranslate">LittleEndianTypedArray</code> or something. And maybe <code class="notranslate">new Uint32Array(wasmmemory.buffer)</code> should throw a type error, only allowing <code class="notranslate">Uint8</code> and <code class="notranslate">Int8</code>.</p>
 <h3 dir="auto">MDN metadata</h3>
 
 <details>
