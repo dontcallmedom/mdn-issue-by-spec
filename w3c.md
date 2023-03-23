@@ -12,8 +12,6 @@
   
 * [[css-logical-1, css-page-4] Should `page-break-*` be explicitly mark as deprecated?](https://github.com/mdn/content/issues/25459) (2023-03-19T15:16:56Z)
   
-* [[css-page-4] Several CSS property pages don't show the "Formal definition" section normally](https://github.com/mdn/content/issues/25441) (2023-03-18T14:24:56Z)
-  
 * [[css-backgrounds-4, css-text-decor-3] Incorrect animation type link of `box-shadow`](https://github.com/mdn/content/issues/25425) (2023-03-17T15:39:20Z)
   
 * [[css-overflow-3] All `-webkit-*` CSS property pages miss two global values](https://github.com/mdn/content/issues/25403) (2023-03-17T03:14:36Z)
