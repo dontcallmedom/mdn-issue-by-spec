@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[SVG11, html] Missing info](https://github.com/mdn/content/issues/25576) (2023-03-23T17:27:49Z)
+  
 * [[streams] interval variable is not in scope of cancel method](https://github.com/mdn/content/issues/25480) (2023-03-20T15:52:36Z)
   
 * [[html] Role of definition and aria-labelledby](https://github.com/mdn/content/issues/25393) (2023-03-16T19:05:02Z)

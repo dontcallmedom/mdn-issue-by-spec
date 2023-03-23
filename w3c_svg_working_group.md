@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C SVG Working Group. [![RSS feed for W3C SVG Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[SVG11, html] Missing info](https://github.com/mdn/content/issues/25576) (2023-03-23T17:27:49Z)
+  
 * [[SVG11] SVG <image> element supports animated GIF](https://github.com/mdn/content/issues/25543) (2023-03-22T15:13:36Z)
   
 * [[SVG11] Inconsistency with experimental status of textPath attribute method](https://github.com/mdn/content/issues/24079) (2023-02-01T16:11:22Z)
