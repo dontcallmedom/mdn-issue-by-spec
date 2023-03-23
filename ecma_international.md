@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[ecmascript] Accessing WebAssembly memory using TypedArrays is incorrect on Big Endian systems?](https://github.com/mdn/content/issues/25569) (2023-03-23T12:09:31Z)
+  
 * [[ecmascript] Symbol as WeakMap key is now allowed](https://github.com/mdn/content/issues/25544) (2023-03-22T15:33:46Z)
   
 * [[ecmascript] BigInt should not be used with bitwise operators](https://github.com/mdn/content/issues/25323) (2023-03-14T17:53:40Z)
