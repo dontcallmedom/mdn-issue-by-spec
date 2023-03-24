@@ -120,8 +120,6 @@
   
 * [[html] Issue with "CustomElementRegistry.define()": Documentation needs more concise text and examples.](https://github.com/mdn/content/issues/11225) (2021-12-15T05:03:59Z)
   
-* [[html] Issue with "<dialog>: The Dialog element": Cancel button wouldn't work if there is required input element](https://github.com/mdn/content/issues/10848) (2021-11-29T10:44:42Z)
-  
 * [[html] Issue with "resize event": the logged height does not change when changing the height of the browser window](https://github.com/mdn/content/issues/10683) (2021-11-21T22:37:44Z)
   
 * [[html] Issue with "HTMLFormElement: submit event": Bubbles description is confusing](https://github.com/mdn/content/issues/10069) (2021-10-25T05:37:18Z)
