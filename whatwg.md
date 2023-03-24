@@ -118,8 +118,6 @@
   
 * [[html, cssom-view-1] [GEH] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
   
-* [[html] Missing sectioning root content](https://github.com/mdn/content/issues/19400) (2022-08-11T06:32:58Z)
-  
 * [[html] spellcheck attribute example does not work](https://github.com/mdn/content/issues/19285) (2022-08-08T12:02:51Z)
   
 * [[html] Incorrect information on 'DomContentLoaded_event' page](https://github.com/mdn/content/issues/19269) (2022-08-08T03:59:52Z)
