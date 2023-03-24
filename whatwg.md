@@ -6,8 +6,6 @@
   
 * [[streams] interval variable is not in scope of cancel method](https://github.com/mdn/content/issues/25480) (2023-03-20T15:52:36Z)
   
-* [[html] Role of definition and aria-labelledby](https://github.com/mdn/content/issues/25393) (2023-03-16T19:05:02Z)
-  
 * [[html] Window.postMessage() missing options parameter](https://github.com/mdn/content/issues/25342) (2023-03-15T12:40:15Z)
   
 * [[html] ID value can start with a number](https://github.com/mdn/content/issues/25200) (2023-03-09T14:05:20Z)
