@@ -36,8 +36,6 @@
   
 * [[dom] addEventListener - which browsers/events default to passive](https://github.com/mdn/content/issues/24181) (2023-02-05T18:59:51Z)
   
-* [[html] "<p>: The Paragraph element" page incorrectly indicates no implicit ARIA role](https://github.com/mdn/content/issues/24179) (2023-02-05T17:23:18Z)
-  
 * [[html] `a`, `b`, `c` and `d` in setTransform have an incorrect explanation](https://github.com/mdn/content/issues/24165) (2023-02-04T12:35:47Z)
   
 * [[html] “Layout and the containing block”: Block container inserted into article but never defined](https://github.com/mdn/content/issues/23972) (2023-01-29T20:30:11Z)
