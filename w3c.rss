@@ -4,40 +4,10 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Thu, 23 Mar 2023 17:27:49 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Mar 2023 14:41:18 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[SVG11, html] Missing info]]></title>
-            <link>https://github.com/mdn/content/issues/25576</link>
-            <guid>https://github.com/mdn/content/issues/25576</guid>
-            <pubDate>Thu, 23 Mar 2023 17:27:49 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">missing info about title in SVG and iframe</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">No mention of the legit use of title elements within the page SVG and iframe elements. This is important as there is a misconception out in the wild regarding this exact topic claiming that there must be one and only one title element on the page. This misconception is potentially dangerous to accessibility as SVG title elements are the platform mechanism to convey accessible names for SVGs</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">A mention of the legitimacy and importance of the use of title elements within SVG elements</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/title" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/SVG/Element/title</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/html/element/title</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/title/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/title/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ba96f2f183353872db6d9242c7d2dffe2dbc0c35/hovercard" href="https://github.com/mdn/content/commit/ba96f2f183353872db6d9242c7d2dffe2dbc0c35"><tt>ba96f2f</tt></a></li>
-<li>Document last modified: 2023-02-24T05:52:35.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[webaudio] AnalyserNode::getFloatTimeDomainData() doesn't specify the encoding of the waveform]]></title>
             <link>https://github.com/mdn/content/issues/25571</link>
@@ -3808,47 +3778,6 @@ And the change in Firefox caused by <a href="https://groups.google.com/g/mozilla
 <li>Folder: <code class="notranslate">en-us/web/css/display</code></li>
 <li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/display</a></li>
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/display/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/display/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/26f50bdaeb1228f458d21dbdf7dc110387b20daa/hovercard" href="https://github.com/mdn/content/commit/26f50bdaeb1228f458d21dbdf7dc110387b20daa"><tt>26f50bd</tt></a></li>
-<li>Document last modified: 2021-08-12T23:59:09.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[css-flexbox-1] Issue with "flex-grow": (unclear how remaining space is distributed, gotchas about what space is distributed)]]></title>
-            <link>https://github.com/mdn/content/issues/11090</link>
-            <guid>https://github.com/mdn/content/issues/11090</guid>
-            <pubDate>Thu, 09 Dec 2021 19:37:43 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<ol dir="auto">
-<li>
-<p dir="auto">Unclear how remaining space is distributed</p>
-<blockquote>
-<p dir="auto">the ratio defined by the different flex grow factors</p>
-</blockquote>
-<p dir="auto">This should be something like</p>
-<blockquote>
-<p dir="auto">the ratio between the item's grow factor and the sum of all item's grow factor</p>
-</blockquote>
-</li>
-<li>
-<p dir="auto">Gotchas about what space is distributed</p>
-<p dir="auto">The example uses items with too little content, so if someone skims they will think that it distributes the <em>main/total size</em> of the line, instead of the <em>remaining size</em>.</p>
-</li>
-</ol>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow#description" rel="nofollow">Description</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow#examples" rel="nofollow">Examples</a> sections.</p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">Explained above.</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">No.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/flex-grow</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/flex-grow/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/flex-grow/index.md</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/26f50bdaeb1228f458d21dbdf7dc110387b20daa/hovercard" href="https://github.com/mdn/content/commit/26f50bdaeb1228f458d21dbdf7dc110387b20daa"><tt>26f50bd</tt></a></li>
 <li>Document last modified: 2021-08-12T23:59:09.000Z</li>
 </ul>
