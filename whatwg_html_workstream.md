@@ -120,8 +120,6 @@
   
 * [[html] Issue with "CustomElementRegistry.define()": Documentation needs more concise text and examples.](https://github.com/mdn/content/issues/11225) (2021-12-15T05:03:59Z)
   
-* [[html, selectors-4] Issue with ":invalid": Include fieldset](https://github.com/mdn/content/issues/11096) (2021-12-10T00:03:02Z)
-  
 * [[html] Issue with "<dialog>: The Dialog element": Cancel button wouldn't work if there is required input element](https://github.com/mdn/content/issues/10848) (2021-11-29T10:44:42Z)
   
 * [[html] Issue with "resize event": the logged height does not change when changing the height of the browser window](https://github.com/mdn/content/issues/10683) (2021-11-21T22:37:44Z)

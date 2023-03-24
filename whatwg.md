@@ -174,8 +174,6 @@
   
 * [[html] Issue with "CustomElementRegistry.define()": Documentation needs more concise text and examples.](https://github.com/mdn/content/issues/11225) (2021-12-15T05:03:59Z)
   
-* [[html, selectors-4] Issue with ":invalid": Include fieldset](https://github.com/mdn/content/issues/11096) (2021-12-10T00:03:02Z)
-  
 * [[html] Issue with "<dialog>: The Dialog element": Cancel button wouldn't work if there is required input element](https://github.com/mdn/content/issues/10848) (2021-11-29T10:44:42Z)
   
 * [[dom] Issue with "Event.timeStamp": information in the Value section seems to contradict the output values in the Reduced time precision](https://github.com/mdn/content/issues/10839) (2021-11-28T19:13:34Z)

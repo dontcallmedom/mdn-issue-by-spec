@@ -110,8 +110,6 @@
   
 * [[css-display-3] Issue with "display": table accessibility concern should specify browsers](https://github.com/mdn/content/issues/11206) (2021-12-14T15:54:34Z)
   
-* [[html, selectors-4] Issue with ":invalid": Include fieldset](https://github.com/mdn/content/issues/11096) (2021-12-10T00:03:02Z)
-  
 * [[css-flexbox-1] Issue with "flex-grow": (unclear how remaining space is distributed, gotchas about what space is distributed)](https://github.com/mdn/content/issues/11090) (2021-12-09T19:37:43Z)
   
 * [[selectors-4] Issue with ":scope": Examples don't work](https://github.com/mdn/content/issues/11069) (2021-12-09T06:38:03Z)
