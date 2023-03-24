@@ -110,8 +110,6 @@
   
 * [[html] Clarify "Permitted parents: any element that accepts metadata content"](https://github.com/mdn/content/issues/14398) (2022-03-28T12:11:28Z)
   
-* [[html] Issue with "<a>: The Anchor element": Article implies file:/// scheme is supported](https://github.com/mdn/content/issues/13867) (2022-03-14T22:15:10Z)
-  
 * [[html] Conflicting descriptions of whether Firefox respects the “autocomplete” attribute, specifically for <input type="checkbox">](https://github.com/mdn/content/issues/13502) (2022-03-04T16:37:28Z)
   
 * [[html] Issue with "<iframe>: The Inline Frame element": document browser behaviour for onload and onerror events.](https://github.com/mdn/content/issues/12477) (2022-01-28T14:05:20Z)
