@@ -216,8 +216,6 @@
   
 * [[pointerlock-2] Element.requestPointerLock() missing some useful detail](https://github.com/mdn/content/issues/11327) (2021-12-20T05:04:35Z)
   
-* [[css-display-3] Issue with "display": table accessibility concern should specify browsers](https://github.com/mdn/content/issues/11206) (2021-12-14T15:54:34Z)
-  
 * [[selectors-4] Issue with ":scope": Examples don't work](https://github.com/mdn/content/issues/11069) (2021-12-09T06:38:03Z)
   
 * [[css-fonts-5] Issue with "@font-face/font-weight": Document <font-weight-absolute>{2} ](https://github.com/mdn/content/issues/10910) (2021-12-01T18:54:16Z)

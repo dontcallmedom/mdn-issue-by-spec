@@ -3698,92 +3698,6 @@ And the change in Firefox caused by <a href="https://groups.google.com/g/mozilla
 <p dir="auto">It may be worth waiting on doing this for the quite significant changes proposed in <a href="https://github.com/w3c/pointerlock/pull/49" data-hovercard-type="pull_request" data-hovercard-url="/w3c/pointerlock/pull/49/hovercard">Add lock options to requestPointerLock - spec PR</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-display-3] Issue with "display": table accessibility concern should specify browsers]]></title>
-            <link>https://github.com/mdn/content/issues/11206</link>
-            <guid>https://github.com/mdn/content/issues/11206</guid>
-            <pubDate>Tue, 14 Dec 2021 15:54:34 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display#tables" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/display#tables</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">Changing the display value of a table element <strong>can</strong> alter its representation in an accessibility tree, but Firefox ESR and Chrome stable don't appear to have that issue.  Gnome Web 41.0 does have this issue, so this is still a valid accessibility concern.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto">In <em>Accessibility concerns</em> under <em>Tables</em> it states:</p>
-<blockquote>
-<p dir="auto">Changing the <code class="notranslate">display</code> value of a <code class="notranslate">&lt;table&gt;</code> element to <code class="notranslate">block</code>, <code class="notranslate">grid</code>, or <code class="notranslate">flex</code> <strong>will</strong> alter its representation in the accessibility tree.</p>
-</blockquote>
-<p dir="auto">(Emphasis added and hyperlinks removed)</p>
-<h4 dir="auto">What did you expect to see?</h4>
-<blockquote>
-<p dir="auto">Some browsers alter there accessibility tree based on <code class="notranslate">display: table</code>.</p>
-</blockquote>
-<p dir="auto">Given this is a browser based issue, adding a related entry to the Browser Compatibility table might also be ideal.</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<ol dir="auto">
-<li>Open the following HTML in any browser I want to test:
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en-us&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-    &lt;title&gt;Display Grid Table&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;table style=&quot;grid&quot;&gt;
-      &lt;caption&gt;Grid Table&lt;/caption&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;th&gt;Hello&lt;/th&gt;
-          &lt;td&gt;World&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/body&gt;
-&lt;/html&gt;"><pre class="notranslate"><span class="pl-c1">&lt;!DOCTYPE html<span class="pl-kos">&gt;</span></span>
-<span class="pl-kos">&lt;</span><span class="pl-ent">html</span> <span class="pl-c1">lang</span>="<span class="pl-s">en-us</span>"<span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">meta</span> <span class="pl-c1">charset</span>="<span class="pl-s">utf-8</span>"<span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">meta</span> <span class="pl-c1">name</span>="<span class="pl-s">viewport</span>" <span class="pl-c1">content</span>="<span class="pl-s">width=device-width, initial-scale=1</span>"<span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">title</span><span class="pl-kos">&gt;</span>Display Grid Table<span class="pl-kos">&lt;/</span><span class="pl-ent">title</span><span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;/</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">table</span> <span class="pl-c1">style</span>="<span class="pl-s">grid</span>"<span class="pl-kos">&gt;</span>
-      <span class="pl-kos">&lt;</span><span class="pl-ent">caption</span><span class="pl-kos">&gt;</span>Grid Table<span class="pl-kos">&lt;/</span><span class="pl-ent">caption</span><span class="pl-kos">&gt;</span>
-      <span class="pl-kos">&lt;</span><span class="pl-ent">tbody</span><span class="pl-kos">&gt;</span>
-        <span class="pl-kos">&lt;</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
-          <span class="pl-kos">&lt;</span><span class="pl-ent">th</span><span class="pl-kos">&gt;</span>Hello<span class="pl-kos">&lt;/</span><span class="pl-ent">th</span><span class="pl-kos">&gt;</span>
-          <span class="pl-kos">&lt;</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>World<span class="pl-kos">&lt;/</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>
-        <span class="pl-kos">&lt;/</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
-      <span class="pl-kos">&lt;/</span><span class="pl-ent">tbody</span><span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;/</span><span class="pl-ent">table</span><span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;/</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
-<span class="pl-kos">&lt;/</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span></pre></div>
-</li>
-<li>Use browser accessibility tools to check the role of each table node to see if they have changed
-<ul dir="auto">
-<li>Usually roles just get erased entirely if changed</li>
-</ul>
-</li>
-</ol>
-<ul dir="auto">
-<li>Firefox ESR (Debian Buster) or Chrome OS 94.0 show no changes in the accessibility tree roles</li>
-<li>Gnome Web 41.0 will remove all table roles from table elements rooted with a non-table display value
-<ul dir="auto">
-<li>Making <code class="notranslate">tbody</code> display grid removes table roles from it and its children, but not its parents</li>
-</ul>
-</li>
-</ul>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/display</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/display</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/display/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/display/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/26f50bdaeb1228f458d21dbdf7dc110387b20daa/hovercard" href="https://github.com/mdn/content/commit/26f50bdaeb1228f458d21dbdf7dc110387b20daa"><tt>26f50bd</tt></a></li>
-<li>Document last modified: 2021-08-12T23:59:09.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[selectors-4] Issue with ":scope": Examples don't work]]></title>
             <link>https://github.com/mdn/content/issues/11069</link>
             <guid>https://github.com/mdn/content/issues/11069</guid>
@@ -3982,9 +3896,10 @@ navigator.serviceWorker.register('/sw.js', {scope: './'}).then(function(registra
 <p dir="auto">In Chrome 48+/Firefox 58+ this property returns a DOMException because DOMError has been removed from the DOM standard.</p>
 </blockquote>
 <p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#regular_expressions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#regular_expressions</a> says:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="typeof /s/ === 'function'; // Chrome 1-12 Non-conform to ECMAScript 5.1
-typeof /s/ === 'object';   // Firefox 5+  Conform to ECMAScript 5.1"><pre class="notranslate"><span class="pl-k">typeof</span> <span class="pl-pds"><span class="pl-c1">/</span>s<span class="pl-c1">/</span></span> <span class="pl-c1">===</span> <span class="pl-s">'function'</span><span class="pl-kos">;</span> <span class="pl-c">// Chrome 1-12 Non-conform to ECMAScript 5.1</span>
-<span class="pl-k">typeof</span> <span class="pl-pds"><span class="pl-c1">/</span>s<span class="pl-c1">/</span></span> <span class="pl-c1">===</span> <span class="pl-s">'object'</span><span class="pl-kos">;</span>   <span class="pl-c">// Firefox 5+  Conform to ECMAScript 5.1</span></pre></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="typeof /s/ === 'function'; // Chrome 1-12 Non-conform to ECMAScript 5.1
+typeof /s/ === 'object';   // Firefox 5+  Conform to ECMAScript 5.1"><pre lang="js" class="notranslate"><code class="notranslate">typeof /s/ === 'function'; // Chrome 1-12 Non-conform to ECMAScript 5.1
+typeof /s/ === 'object';   // Firefox 5+  Conform to ECMAScript 5.1
+</code></pre></div>
 <h2 dir="auto">What is the problem?</h2>
 <p dir="auto">Information about quirks in very old browser releases seems like a net negative for readers of MDN. It will require readers to make a judgement about whether this could affect them, by testing or looking at release dates for the browsers.</p>
 <h2 dir="auto">What did you expect to see?</h2>
@@ -4174,9 +4089,10 @@ MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons" rel=
             <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement</a></p>
 <h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
 <p dir="auto">There are differences between the browsers implementation of the initial values of the viewBox (baseVal) property.</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const svg = document.createElementNS(&quot;http://www.w3.org/2000/svg&quot;, &quot;svg&quot;);
-const baseVal = svg.viewBox.baseVal;"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">svg</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createElementNS</span><span class="pl-kos">(</span><span class="pl-s">"http://www.w3.org/2000/svg"</span><span class="pl-kos">,</span> <span class="pl-s">"svg"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-k">const</span> <span class="pl-s1">baseVal</span> <span class="pl-c1">=</span> <span class="pl-s1">svg</span><span class="pl-kos">.</span><span class="pl-c1">viewBox</span><span class="pl-kos">.</span><span class="pl-c1">baseVal</span><span class="pl-kos">;</span></pre></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const svg = document.createElementNS(&quot;http://www.w3.org/2000/svg&quot;, &quot;svg&quot;);
+const baseVal = svg.viewBox.baseVal;"><pre lang="js" class="notranslate"><code class="notranslate">const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+const baseVal = svg.viewBox.baseVal;
+</code></pre></div>
 <p dir="auto">In Firefox <code class="notranslate">baseVal </code> is <code class="notranslate">null</code>. In Chrome it is an <code class="notranslate">SVGRect {x: 0, y: 0, width: 0, height: 0}</code>.<br>
 In my opinion it is nice to just write the values on the pre-initialized SVGRect and to let the browser synchronize the attribute.</p>
 <p dir="auto">Since the bug on this topic (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=888307" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=888307</a>) is closed and no one seems to care, at least developers should be informed of this difference.</p>
