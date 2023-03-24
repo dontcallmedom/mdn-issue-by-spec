@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Keyboard shortcuts table suggest accesskeys aren't supported in Safari and Chrome on Mac, as well as in Edge on Windows](https://github.com/mdn/content/issues/25608) (2023-03-24T20:43:06Z)
+  
 * [[streams] interval variable is not in scope of cancel method](https://github.com/mdn/content/issues/25480) (2023-03-20T15:52:36Z)
   
 * [[html] Window.postMessage() missing options parameter](https://github.com/mdn/content/issues/25342) (2023-03-15T12:40:15Z)

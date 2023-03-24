@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Keyboard shortcuts table suggest accesskeys aren't supported in Safari and Chrome on Mac, as well as in Edge on Windows](https://github.com/mdn/content/issues/25608) (2023-03-24T20:43:06Z)
+  
 * [[html] Window.postMessage() missing options parameter](https://github.com/mdn/content/issues/25342) (2023-03-15T12:40:15Z)
   
 * [[html] ID value can start with a number](https://github.com/mdn/content/issues/25200) (2023-03-09T14:05:20Z)
