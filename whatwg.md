@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Non-`Window` properties and methods](https://github.com/mdn/content/issues/25652) (2023-03-26T11:34:21Z)
+  
 * [[html] Comparable Attribute for Select Element](https://github.com/mdn/content/issues/25640) (2023-03-25T20:54:50Z)
   
 * [[html] SharedWorker's name parameter in the constructor is also used to create new instances of the same SharedWorker script](https://github.com/mdn/content/issues/25636) (2023-03-25T18:00:48Z)
