@@ -84,8 +84,6 @@
   
 * [[html] document-domain feature policy is being removed](https://github.com/mdn/content/issues/22732) (2022-12-05T04:44:41Z)
   
-* [[html, dom] The page should include that, if the user holds down the Shift key the context menu will be displayed](https://github.com/mdn/content/issues/22697) (2022-12-03T15:03:26Z)
-  
 * [[html] Example custom select is not available on the keychain](https://github.com/mdn/content/issues/22513) (2022-11-24T13:16:19Z)
   
 * [[html] Closing dialog with Escape key](https://github.com/mdn/content/issues/22430) (2022-11-20T20:23:05Z)
@@ -165,8 +163,6 @@
 * [[dom] Issue with "AbortController": (missing info on behavior of .text() or .json() or other body promise)](https://github.com/mdn/content/issues/12387) (2022-01-24T16:10:11Z)
   
 * [[html] Issue with "DragEvent.dataTransfer": Clarify that `dataTransfer` can be null.](https://github.com/mdn/content/issues/11670) (2022-01-02T15:10:06Z)
-  
-* [[streams] Issue with "WritableStreamDefaultWriter": (Incorrect/Problematic Example)](https://github.com/mdn/content/issues/11494) (2021-12-26T17:35:24Z)
   
 * [[html] Issue with "CustomElementRegistry.define()": Documentation needs more concise text and examples.](https://github.com/mdn/content/issues/11225) (2021-12-15T05:03:59Z)
   

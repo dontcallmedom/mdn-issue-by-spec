@@ -6,5 +6,3 @@
   
 * [[streams] ReadableStream example mixes creation and consumption](https://github.com/mdn/content/issues/23299) (2023-01-01T13:20:04Z)
   
-* [[streams] Issue with "WritableStreamDefaultWriter": (Incorrect/Problematic Example)](https://github.com/mdn/content/issues/11494) (2021-12-26T17:35:24Z)
-  
