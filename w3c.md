@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[screen-capture] MediaTrackSettings.displaySurface is not supported by Safari](https://github.com/mdn/content/issues/25656) (2023-03-26T13:57:12Z)
-  
 * [[webaudio] AnalyserNode::getFloatTimeDomainData() doesn't specify the encoding of the waveform](https://github.com/mdn/content/issues/25571) (2023-03-23T14:41:18Z)
   
 * [[css-flexbox-1] Toggling  is not working as described ](https://github.com/mdn/content/issues/25552) (2023-03-22T20:12:19Z)
