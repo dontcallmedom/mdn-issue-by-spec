@@ -236,8 +236,6 @@
   
 * [[html, uievents] Replace hand-written compat sections with BCD tables](https://github.com/mdn/content/issues/9972) (2021-10-21T07:40:45Z)
   
-* [[css-shapes-2] Issue with "shape-outside": shape-outside: path doesn't seem a valid value](https://github.com/mdn/content/issues/9703) (2021-10-09T18:44:46Z)
-  
 * [[css-sizing-4] CSS aspect-ratio needs better examples](https://github.com/mdn/content/issues/9543) (2021-10-04T00:01:11Z)
   
 * [[service-workers-1, payment-request, payment-handler] Content bug: inconsistent/incomplete descriptions of Promises as parameters](https://github.com/mdn/content/issues/9362) (2021-09-30T07:19:46Z)

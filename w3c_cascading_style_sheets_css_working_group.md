@@ -118,8 +118,6 @@
   
 * [[mediaqueries-4, css-conditional-3] Issue with "@media": Need more clarity re Level 4 v Level 3, browser compat, and broken links](https://github.com/mdn/content/issues/10774) (2021-11-25T20:39:58Z)
   
-* [[css-shapes-2] Issue with "shape-outside": shape-outside: path doesn't seem a valid value](https://github.com/mdn/content/issues/9703) (2021-10-09T18:44:46Z)
-  
 * [[css-sizing-4] CSS aspect-ratio needs better examples](https://github.com/mdn/content/issues/9543) (2021-10-04T00:01:11Z)
   
 * [[notifications, cssom-view-1, service-workers-1, dom, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
