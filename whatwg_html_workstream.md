@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html, dom] Update docs to use current method on beforeunload_event / onbeforeunload?](https://github.com/mdn/content/issues/25686) (2023-03-27T21:17:09Z)
+  
 * [[html] Comparable Attribute for Select Element](https://github.com/mdn/content/issues/25640) (2023-03-25T20:54:50Z)
   
 * [[html] SharedWorker's name parameter in the constructor is also used to create new instances of the same SharedWorker script](https://github.com/mdn/content/issues/25636) (2023-03-25T18:00:48Z)

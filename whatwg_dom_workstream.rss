@@ -4,10 +4,48 @@
         <title>WHATWG DOM Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_dom_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG DOM Workstream</description>
-        <lastBuildDate>Fri, 03 Mar 2023 03:25:46 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Mar 2023 21:17:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html, dom] Update docs to use current method on beforeunload_event / onbeforeunload?]]></title>
+            <link>https://github.com/mdn/content/issues/25686</link>
+            <guid>https://github.com/mdn/content/issues/25686</guid>
+            <pubDate>Mon, 27 Mar 2023 21:17:09 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">quoted below.</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Page states:</p>
+<blockquote>
+<p dir="auto">The HTML specification states that authors should use the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" rel="nofollow">Event.preventDefault()</a> method instead of using <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/returnValue" rel="nofollow">Event.returnValue</a> to prompt the user. However, this is not yet supported by all browsers.</p>
+</blockquote>
+<p dir="auto">If I'm not mistaken, this is outdated; the linked page indicates all (current listed) browsers support Event.preventDefault.  Thus should this be changed?  And if so, then the example on the page should also be changed to use Event.preventDefault(), no?  (I'm not competent/confident enough to make the changes myself; just muddling through.)</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Maybe swap in this sentence? :</p>
+<blockquote>
+<p dir="auto">This is now supported by all browsers.</p>
+</blockquote>
+<p dir="auto">And update the example code to _____.  (I don't know.)</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/window/beforeunload_event</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/beforeunload_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/beforeunload_event/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/73b724ad82b94d2a4c314924218367cea2740e97/hovercard" href="https://github.com/mdn/content/commit/73b724ad82b94d2a4c314924218367cea2740e97"><tt>73b724a</tt></a></li>
+<li>Document last modified: 2023-03-16T15:51:10.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[dom] this.getAttribute() doesn't work inside the constructor()]]></title>
             <link>https://github.com/mdn/content/issues/25028</link>
