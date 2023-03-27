@@ -32,6 +32,8 @@
 <li><a href="https://crates.io/crates/wasm-bindgen" rel="nofollow">wasm-bindgen</a> (I think)</li>
 <li>Tutorials <a href="https://ariya.io/2019/05/basics-of-memory-access-in-webassembly" rel="nofollow">1</a> <a href="https://www.oreilly.com/library/view/webassembly-the-definitive/9781492089834/ch04.html" rel="nofollow">2</a> <a href="https://rob-blackbourn.github.io/blog/webassembly/wasm/array/arrays/javascript/c/2020/06/07/wasm-arrays.html" rel="nofollow">3</a></li>
 <li>Questions <a href="https://groups.google.com/g/teavm/c/BlO4lkGNi40" rel="nofollow">1</a> <a href="https://stackoverflow.com/questions/41875728/pass-a-javascript-array-as-argument-to-a-webassembly-function" rel="nofollow">2</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API" rel="nofollow">MDN Using the WebAssembly Javascript API</a></li>
+<li><a href="https://webassembly.org/getting-started/js-api/" rel="nofollow">webassembly.org Understanding the JS API</a></li>
 </ul>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto">Maybe javascript needs a <code class="notranslate">LittleEndianTypedArray</code> or something. And maybe <code class="notranslate">new Uint32Array(wasmmemory.buffer)</code> should throw a type error, only allowing <code class="notranslate">Uint8</code> and <code class="notranslate">Int8</code>.</p>
