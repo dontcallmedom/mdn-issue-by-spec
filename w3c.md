@@ -46,8 +46,6 @@
   
 * [[css-content-3] not obvious that `content` works with `::marker`](https://github.com/mdn/content/issues/24600) (2023-02-19T20:16:44Z)
   
-* [[css-lists-3] Incorrect note about `list-style-position` behaviors across browers](https://github.com/mdn/content/issues/24502) (2023-02-17T01:53:35Z)
-  
 * [[tracking-dnt] Web/HTTP/Headers/DNT: has ambigious deprecation notice](https://github.com/mdn/content/issues/24368) (2023-02-12T19:38:23Z)
   
 * [[filter-effects-2] Include embedded example](https://github.com/mdn/content/issues/24329) (2023-02-10T23:44:49Z)
