@@ -4,89 +4,10 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Tue, 28 Mar 2023 15:52:03 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 28 Mar 2023 08:10:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[cssom-1] cssText is not blocked]]></title>
-            <link>https://github.com/mdn/content/issues/25707</link>
-            <guid>https://github.com/mdn/content/issues/25707</guid>
-            <pubDate>Tue, 28 Mar 2023 15:52:03 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">"As well as styles that are applied in JavaScript by setting the style attribute directly, or by setting cssText"</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<blockquote>
-<p dir="auto">As well as styles that are applied in JavaScript by setting the style attribute directly, or by setting <a href="https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssText" rel="nofollow">cssText</a>:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="document.querySelector(&quot;div&quot;).setAttribute(&quot;style&quot;, &quot;display:none;&quot;);
-document.querySelector(&quot;div&quot;).style.cssText = &quot;display:none;&quot;;"><pre class="notranslate"><code class="notranslate">document.querySelector("div").setAttribute("style", "display:none;");
-document.querySelector("div").style.cssText = "display:none;";
-</code></pre></div>
-<p dir="auto">However, styles properties that are set directly on the element's <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style" rel="nofollow">style</a> property will not be blocked, allowing users to safely manipulate styles via JavaScript:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="document.querySelector(&quot;div&quot;).style.display = &quot;none&quot;;"><pre class="notranslate"><code class="notranslate">document.querySelector("div").style.display = "none";
-</code></pre></div>
-</blockquote>
-<p dir="auto">The snippet <code class="notranslate">document.querySelector("div").style.cssText = "display:none;";</code> works in modern versions of Chrome (Version 111.0.5563.65) &amp; Edge (Version 111.0.1661.54) - I did not test on other browsers. I believe this also contradicts the following snippet <code class="notranslate">document.querySelector("div").style.display = "none";</code> as both act on an element's <code class="notranslate">style</code> attribute</p>
-<p dir="auto">Example php code (I know I'm sorry)</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;?php
-header(&quot;Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; &quot;);
-$script1 = &quot;&lt;script src='./test/test.js'&gt;&lt;/script&gt;&quot;;
-$style1 = '&lt;link href=&quot;./test/style.css&quot; rel=&quot;stylesheet&quot; /&gt;';
-echo $style1 . PHP_EOL;
-echo &quot;&lt;button id='myButton1' class='badButton'&gt;Button 1&lt;/button&gt;&quot; . PHP_EOL;
-echo $script1 . PHP_EOL;
-"><pre class="notranslate"><code class="notranslate">&lt;?php
-header("Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; ");
-$script1 = "&lt;script src='./test/test.js'&gt;&lt;/script&gt;";
-$style1 = '&lt;link href="./test/style.css" rel="stylesheet" /&gt;';
-echo $style1 . PHP_EOL;
-echo "&lt;button id='myButton1' class='badButton'&gt;Button 1&lt;/button&gt;" . PHP_EOL;
-echo $script1 . PHP_EOL;
-
-</code></pre></div>
-<p dir="auto">test/test.js</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="function wellDefinedClickHandler() {
-  const myButton1 = document.getElementById('myButton1')
-  document.querySelector(&quot;button&quot;).setAttribute(&quot;style&quot;, &quot;display:none;&quot;);
-  document.querySelector(&quot;button&quot;).style.cssText = 'display:none'; // y u work
-}
-const myButton1 = document.getElementById('myButton1');
-myButton1.addEventListener(&quot;click&quot;, wellDefinedClickHandler);"><pre class="notranslate"><code class="notranslate">function wellDefinedClickHandler() {
-  const myButton1 = document.getElementById('myButton1')
-  document.querySelector("button").setAttribute("style", "display:none;");
-  document.querySelector("button").style.cssText = 'display:none'; // y u work
-}
-const myButton1 = document.getElementById('myButton1');
-myButton1.addEventListener("click", wellDefinedClickHandler);
-</code></pre></div>
-<p dir="auto">test/style.css</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content=".badButton {
-    background: blue;
-}"><pre class="notranslate"><code class="notranslate">.badButton {
-    background: blue;
-}
-</code></pre></div>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">I expected <code class="notranslate">document.querySelector("div").style.cssText = "display:none;";</code> not to work, and I think it should be removed as it is not enforced by the CSP directive</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/129200570/228295176-df15d90d-49f4-47f7-83ce-d7958fde30bc.PNG"><img src="https://user-images.githubusercontent.com/129200570/228295176-df15d90d-49f4-47f7-83ce-d7958fde30bc.PNG" alt="misleading - Copy" style="max-width: 100%;"></a></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/http/headers/content-security-policy/style-src</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/content-security-policy/style-src/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/content-security-policy/style-src/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/c44653e3f3502fbda86ba392ed8058e1e3a0a0de/hovercard" href="https://github.com/mdn/content/commit/c44653e3f3502fbda86ba392ed8058e1e3a0a0de"><tt>c44653e</tt></a></li>
-<li>Document last modified: 2023-03-03T04:38:28.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[appmanifest] `start_url` is doc'd as optional, but is actually an installability requirement for chromium-based browsers]]></title>
             <link>https://github.com/mdn/content/issues/25697</link>

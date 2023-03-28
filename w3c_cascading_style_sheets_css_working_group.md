@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[cssom-1] cssText is not blocked](https://github.com/mdn/content/issues/25707) (2023-03-28T15:52:03Z)
-  
 * [[web-animations-2] KeyframeEffect.target: issues with the example](https://github.com/mdn/content/issues/25694) (2023-03-28T06:54:37Z)
   
 * [[css-logical-1] The `max-block-size` page significantly deviates from other logical sizing properties](https://github.com/mdn/content/issues/25525) (2023-03-22T03:39:09Z)
