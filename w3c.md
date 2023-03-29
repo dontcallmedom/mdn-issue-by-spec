@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[webrtc] The new restartIce() method should replace the old "iceRestart" parameter in the documentation consistently.](https://github.com/mdn/content/issues/25732) (2023-03-29T09:34:05Z)
+  
 * [[appmanifest] `start_url` is doc'd as optional, but is actually an installability requirement for chromium-based browsers](https://github.com/mdn/content/issues/25697) (2023-03-28T08:10:30Z)
   
 * [[web-animations-2] KeyframeEffect.target: issues with the example](https://github.com/mdn/content/issues/25694) (2023-03-28T06:54:37Z)

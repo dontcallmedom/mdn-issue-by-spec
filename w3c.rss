@@ -4,10 +4,41 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Tue, 28 Mar 2023 08:10:30 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 29 Mar 2023 09:34:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[webrtc] The new restartIce() method should replace the old "iceRestart" parameter in the documentation consistently.]]></title>
+            <link>https://github.com/mdn/content/issues/25732</link>
+            <guid>https://github.com/mdn/content/issues/25732</guid>
+            <pubDate>Wed, 29 Mar 2023 09:34:05 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/restartIce" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/restartIce</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">the restartIce() method is mentioned here, but not on the page referred to</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">On the referred to page at <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Session_lifetime#ice_restart" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Session_lifetime#ice_restart</a><br>
+only the pc paramter iceRestart is mentioned (the old way to initiate ICE restart), but not the new way to do this using the restartIce() method.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">That the new way of initiating ICE restart is mentioned (the method restartIce()), and not only the old way of doing this (using the paramter "iceRestart").</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/rtcpeerconnection/restartice</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/restartIce" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/restartIce</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcpeerconnection/restartice/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcpeerconnection/restartice/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/50ed08d7b506c19b7d073b05ea1e02a15f276878/hovercard" href="https://github.com/mdn/content/commit/50ed08d7b506c19b7d073b05ea1e02a15f276878"><tt>50ed08d</tt></a></li>
+<li>Document last modified: 2023-02-19T09:57:47.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[appmanifest] `start_url` is doc'd as optional, but is actually an installability requirement for chromium-based browsers]]></title>
             <link>https://github.com/mdn/content/issues/25697</link>
