@@ -50,8 +50,6 @@
   
 * [[tracking-dnt] Web/HTTP/Headers/DNT: has ambigious deprecation notice](https://github.com/mdn/content/issues/24368) (2023-02-12T19:38:23Z)
   
-* [[filter-effects-2] Include embedded example](https://github.com/mdn/content/issues/24329) (2023-02-10T23:44:49Z)
-  
 * [[html, CSP3] Clarify the sandbox directive use in Content-Security-Policy-Report-Only](https://github.com/mdn/content/issues/24318) (2023-02-10T14:49:54Z)
   
 * [[webaudio] Visualization is by far not the only use case for FFT](https://github.com/mdn/content/issues/24183) (2023-02-05T20:10:26Z)
