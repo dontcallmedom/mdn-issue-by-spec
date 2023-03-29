@@ -95,37 +95,6 @@ If this is a real portability pitfall, there should be warnings about it on the 
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[ecmascript] Symbol as WeakMap key is now allowed]]></title>
-            <link>https://github.com/mdn/content/issues/25544</link>
-            <guid>https://github.com/mdn/content/issues/25544</guid>
-            <pubDate>Wed, 22 Mar 2023 15:33:46 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Description</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">"<a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive" rel="nofollow">Primitive data types</a> as keys are not allowed (e.g. a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol" rel="nofollow">Symbol</a> can't be a WeakMap key)."</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">WebKit implemented Symbols as keys in WeakMap in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1452457867" data-permission-text="Title is private" data-url="https://github.com/WebKit/WebKit/issues/6570" data-hovercard-type="pull_request" data-hovercard-url="/WebKit/WebKit/pull/6570/hovercard" href="https://github.com/WebKit/WebKit/pull/6570">WebKit/WebKit#6570</a></p>
-<p dir="auto"><a href="https://github.com/tc39/proposal-symbols-as-weakmap-keys">https://github.com/tc39/proposal-symbols-as-weakmap-keys</a> is Stage 3</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">The tc39 proposal description says "Permit Symbols as keys in WeakMaps, entries in WeakSets and WeakRefs, and registered in FinalizationRegistries " so there may be other MDN pages that need updating accordingly.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/weakmap</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/weakmap/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/weakmap/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/11eb3b9de211e7bc91a31bdc99f268c1c2f93d7b/hovercard" href="https://github.com/mdn/content/commit/11eb3b9de211e7bc91a31bdc99f268c1c2f93d7b"><tt>11eb3b9</tt></a></li>
-<li>Document last modified: 2023-02-21T23:38:32.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[ecmascript] Misleading information around await's interaction with microtask/task queues]]></title>
             <link>https://github.com/mdn/content/issues/24177</link>
             <guid>https://github.com/mdn/content/issues/24177</guid>

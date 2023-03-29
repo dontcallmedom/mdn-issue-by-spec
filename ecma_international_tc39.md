@@ -6,8 +6,6 @@
   
 * [[ecmascript] Accessing WebAssembly memory using TypedArrays is incorrect on Big Endian systems?](https://github.com/mdn/content/issues/25569) (2023-03-23T12:09:31Z)
   
-* [[ecmascript] Symbol as WeakMap key is now allowed](https://github.com/mdn/content/issues/25544) (2023-03-22T15:33:46Z)
-  
 * [[ecmascript] Misleading information around await's interaction with microtask/task queues](https://github.com/mdn/content/issues/24177) (2023-02-05T16:19:19Z)
   
 * [[ecmascript] Document import assertions](https://github.com/mdn/content/issues/19220) (2022-08-06T05:08:53Z)
