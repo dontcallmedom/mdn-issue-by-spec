@@ -4,48 +4,10 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Tue, 28 Mar 2023 11:06:24 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 25 Mar 2023 20:54:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[html] Stricter "implemented from elsewhere" sections or removal of them]]></title>
-            <link>https://github.com/mdn/content/issues/25699</link>
-            <guid>https://github.com/mdn/content/issues/25699</guid>
-            <pubDate>Tue, 28 Mar 2023 11:06:24 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Instance properties implemented from elsewhere, Instance methods implemented from elsewhere</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<ul dir="auto">
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/caches" rel="nofollow">caches</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/indexedDB" rel="nofollow">indexedDB</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/origin" rel="nofollow">origin</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/scheduler" rel="nofollow">Window.scheduler</a></li>
-</ul>
-<p dir="auto">They all live in <code class="notranslate">mixin WindowOrWorkerGlobalScope</code> --- but since mixins are gone from MDN, this grouping serves much less than before. (From elsewhere? <em>Where</em>?)</p>
-<p dir="auto">As a user, this just disrupts alphabetical ordering.</p>
-<p dir="auto"><code class="notranslate">crypto</code> is also defined with <code class="notranslate">WindowOrWorkerGlobalScope</code>, <code class="notranslate">localStorage</code> and <code class="notranslate">sessionStorage</code> in <code class="notranslate">WindowLocalStorage</code> and <code class="notranslate">WindowSessionStorage</code> respectively but they are not under the "Instance properties implemented from elsewhere".</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">No "implemented from elsewhere" sections. Or clearer criteria for them by moving <code class="notranslate">crypto</code> and stuff under the "implemented from elsewhere" as well</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">I think <code class="notranslate">console</code> shouldn't be in <code class="notranslate">Window</code>, technically?</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/window</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/6e1fe83cb73ee673d811225df496e5795d112d0c/hovercard" href="https://github.com/mdn/content/commit/6e1fe83cb73ee673d811225df496e5795d112d0c"><tt>6e1fe83</tt></a></li>
-<li>Document last modified: 2023-03-26T22:50:24.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html] Comparable Attribute for Select Element]]></title>
             <link>https://github.com/mdn/content/issues/25640</link>
