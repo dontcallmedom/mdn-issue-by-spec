@@ -182,8 +182,6 @@
   
 * [[hr-time-3, performance-timeline-2, resource-timing-2, user-timing-2] Topic on setting HTTP priority of resource requests](https://github.com/mdn/content/issues/14803) (2022-04-08T02:53:08Z)
   
-* [[cssom-1] Missing pages for CSSDocumentRule, CSSFontFeatureValuesRule and CSSViewportRule](https://github.com/mdn/content/issues/14697) (2022-04-05T09:43:31Z)
-  
 * [[webaudio] AudioParam - automationRate undocumented](https://github.com/mdn/content/issues/14637) (2022-04-03T13:16:23Z)
   
 * [[css-fonts-5] Issue with "font-size": recommend to users not to set font-size with "em" units](https://github.com/mdn/content/issues/14282) (2022-03-25T06:00:02Z)
