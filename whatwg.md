@@ -60,8 +60,6 @@
   
 * [[html] In the example, isn't the requestAnimationFrame always called more than once if once queued were fired within a single frame?](https://github.com/mdn/content/issues/23635) (2023-01-14T14:28:24Z)
   
-* [[html] HTMLInputElement lacks documentation for selectionStart, selectionEnd, selectionDirection](https://github.com/mdn/content/issues/23606) (2023-01-13T09:19:01Z)
-  
 * [[html] Add documentation of sms: anchor links](https://github.com/mdn/content/issues/23526) (2023-01-10T21:14:40Z)
   
 * [[streams] ReadableStream example mixes creation and consumption](https://github.com/mdn/content/issues/23299) (2023-01-01T13:20:04Z)
