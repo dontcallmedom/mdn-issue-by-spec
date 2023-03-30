@@ -48,8 +48,6 @@
   
 * [[html, CSP3] Clarify the sandbox directive use in Content-Security-Policy-Report-Only](https://github.com/mdn/content/issues/24318) (2023-02-10T14:49:54Z)
   
-* [[webaudio] Visualization is by far not the only use case for FFT](https://github.com/mdn/content/issues/24183) (2023-02-05T20:10:26Z)
-  
 * [[filter-effects-2] feGaussianBlur needs guidance about setting height and width ](https://github.com/mdn/content/issues/24169) (2023-02-04T21:15:51Z)
   
 * [[cssom-1] JS names for CSS properties](https://github.com/mdn/content/issues/24084) (2023-02-01T20:11:45Z)
