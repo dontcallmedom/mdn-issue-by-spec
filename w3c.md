@@ -4,8 +4,6 @@
 
 * [[webrtc] The new restartIce() method should replace the old "iceRestart" parameter in the documentation consistently.](https://github.com/mdn/content/issues/25732) (2023-03-29T09:34:05Z)
   
-* [[appmanifest] `start_url` is doc'd as optional, but is actually an installability requirement for chromium-based browsers](https://github.com/mdn/content/issues/25697) (2023-03-28T08:10:30Z)
-  
 * [[web-animations-2] KeyframeEffect.target: issues with the example](https://github.com/mdn/content/issues/25694) (2023-03-28T06:54:37Z)
   
 * [[webaudio] AnalyserNode::getFloatTimeDomainData() doesn't specify the encoding of the waveform](https://github.com/mdn/content/issues/25571) (2023-03-23T14:41:18Z)

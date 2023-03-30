@@ -4,33 +4,10 @@
         <title>W3C Web Applications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_applications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Applications Working Group</description>
-        <lastBuildDate>Tue, 28 Mar 2023 08:10:30 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 21 Mar 2023 17:36:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[appmanifest] `start_url` is doc'd as optional, but is actually an installability requirement for chromium-based browsers]]></title>
-            <link>https://github.com/mdn/content/issues/25697</link>
-            <guid>https://github.com/mdn/content/issues/25697</guid>
-            <pubDate>Tue, 28 Mar 2023 08:10:30 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/Manifest/start_url" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Manifest/start_url</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The page says that this manifest member is optional, and might even be ignored by user agents, but it is part of the required members for chromium-based browsers to consider a PWA installable.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<ul dir="auto">
-<li>The table at the top should probably say something like "Mandatory: Yes for installed PWAs, No otherwise". Although, I don't know why would someone use a manifest other than to make their app installable anyway.</li>
-<li>The note about the member being purely advisory should be checked against actual browser implementations. Is that really the case?</li>
-<li>There should be a note about the fact that the member is a PWA installability requirement on chromium-based browsers. We should also check if safari on iOS requires this member for their add-to-home-screen feature, and whether Firefox on Android also requires it.</li>
-</ul>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">See this section: <a href="https://developer.mozilla.org/en-US/docs/web/progressive_web_apps/guides/making_pwas_installable#the_web_app_manifest" rel="nofollow">https://developer.mozilla.org/en-US/docs/web/progressive_web_apps/guides/making_pwas_installable#the_web_app_manifest</a></p>
-<p dir="auto">And this article: <a href="https://web.dev/install-criteria/#criteria" rel="nofollow">https://web.dev/install-criteria/#criteria</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[FileAPI] "Your connection to this site isn't secure" when testing blob example]]></title>
             <link>https://github.com/mdn/content/issues/25515</link>
