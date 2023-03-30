@@ -4,10 +4,50 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Sat, 25 Mar 2023 18:00:48 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 30 Mar 2023 20:11:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html, DOM-Parsing] Inconsistency about if pushState() results in a popstate event]]></title>
+            <link>https://github.com/mdn/content/issues/25785</link>
+            <guid>https://github.com/mdn/content/issues/25785</guid>
+            <pubDate>Thu, 30 Mar 2023 20:11:04 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/History/pushState" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/History/pushState</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">At <a href="https://developer.mozilla.org/en-US/docs/Web/API/History/pushState" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/History/pushState</a> the text at the top says:</p>
+<blockquote>
+<p dir="auto">In an <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" rel="nofollow">HTML</a> document, the <code class="notranslate">history.pushState()</code> method adds an entry to the browser's session history stack.<br>
+This method is <a href="https://developer.mozilla.org/en-US/docs/Glossary/Asynchronous" rel="nofollow">asynchronous</a>. Add a listener for the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/popstate_event" rel="nofollow"><code class="notranslate">popstate</code></a> event in order to determine when the navigation has completed. The <code class="notranslate">state</code> parameter will be available in it.</p>
+</blockquote>
+<p dir="auto">Especially with that second sentence, it seems like a developer should expect a <code class="notranslate">popstate</code> event to be fired when the call to <code class="notranslate">pushState()</code> has finished whatever it's going to do.</p>
+<p dir="auto">I think this is incorrect, based in part on the third paragraph <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/popstate_event#the_history_stack" rel="nofollow">here</a> which says this:</p>
+<blockquote>
+<p dir="auto">Note that just calling <code class="notranslate">history.pushState()</code> or <code class="notranslate">history.replaceState()</code> won't trigger a <code class="notranslate">popstate</code> event. The <code class="notranslate">popstate</code> event will be triggered by doing a browser action such as a click on the back or forward button (or calling <code class="notranslate">history.back()</code> or <code class="notranslate">history.forward()</code> in JavaScript).</p>
+</blockquote>
+<p dir="auto">but I am not sufficiently expert in the cross-browser event-firing behavior of History API calls to confidently propose any PR.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">More consistency and accuracy in information presented.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/history/pushstate</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/History/pushState" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/History/pushState</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/history/pushstate/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/history/pushstate/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/55de68017f98094f45addb3ebaa0f7f52024f60b/hovercard" href="https://github.com/mdn/content/commit/55de68017f98094f45addb3ebaa0f7f52024f60b"><tt>55de680</tt></a></li>
+<li>Document last modified: 2023-03-29T06:38:14.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] SharedWorker's name parameter in the constructor is also used to create new instances of the same SharedWorker script]]></title>
             <link>https://github.com/mdn/content/issues/25636</link>
