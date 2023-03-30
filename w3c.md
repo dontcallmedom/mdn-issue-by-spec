@@ -18,8 +18,6 @@
   
 * [[css-backgrounds-4, css-text-decor-3] Incorrect animation type link of `box-shadow`](https://github.com/mdn/content/issues/25425) (2023-03-17T15:39:20Z)
   
-* [[css-overflow-3] All `-webkit-*` CSS property pages miss two global values](https://github.com/mdn/content/issues/25403) (2023-03-17T03:14:36Z)
-  
 * [[IndexedDB-3] IDBObjectStore.openCursor incorrect direction docs](https://github.com/mdn/content/issues/25385) (2023-03-16T15:15:59Z)
   
 * [[resize-observer-1] ResizeObserverEntry.contentBoxSize example doesn't use ResizeObserverEntry.contentBoxSize](https://github.com/mdn/content/issues/25364) (2023-03-15T22:35:36Z)
