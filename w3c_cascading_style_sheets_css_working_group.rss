@@ -4,10 +4,41 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Thu, 30 Mar 2023 17:10:38 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 31 Mar 2023 11:03:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-transforms-2] transform-style docs should mention that there are scenarios where the value is forced]]></title>
+            <link>https://github.com/mdn/content/issues/25801</link>
+            <guid>https://github.com/mdn/content/issues/25801</guid>
+            <pubDate>Fri, 31 Mar 2023 11:03:24 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">It is not mentioned that there are scenarios where the <code class="notranslate">flat</code> will be used even when <code class="notranslate">preserve-3d</code> has been specified.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">It should mention that other CSS properties (such as <code class="notranslate">overflow: hidden;</code>) may force the <code class="notranslate">transform-style</code> value to <code class="notranslate">flat</code>.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">For properties that force <code class="notranslate">flat</code> to be used, see<br>
+<a href="https://www.w3.org/TR/css-transforms-2/#grouping-property-values" rel="nofollow">https://www.w3.org/TR/css-transforms-2/#grouping-property-values</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/transform-style</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/transform-style/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/transform-style/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b82ff59aab7883b7bb2222cf9f9f9b6eed818e08/hovercard" href="https://github.com/mdn/content/commit/b82ff59aab7883b7bb2222cf9f9f9b6eed818e08"><tt>b82ff59</tt></a></li>
+<li>Document last modified: 2023-02-21T06:13:19.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-properties-values-api-1] Please provide a working example]]></title>
             <link>https://github.com/mdn/content/issues/25776</link>
