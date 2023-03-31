@@ -36,8 +36,6 @@
   
 * [[media-capabilities] configuration type "transmission" should be replaced with "webrtc"](https://github.com/mdn/content/issues/25223) (2023-03-10T11:28:22Z)
   
-* [[css-cascade-3] Precedence order of regular cascade layers issue](https://github.com/mdn/content/issues/25103) (2023-03-06T10:42:58Z)
-  
 * [[css-sizing-4, css-conditional-3, css-sizing-3] In correct statement about max-width](https://github.com/mdn/content/issues/25073) (2023-03-05T03:22:13Z)
   
 * [[filter-effects-2] SVG contrast filter](https://github.com/mdn/content/issues/24989) (2023-03-02T00:19:11Z)
