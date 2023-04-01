@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[cssom-1] CSSImportRule appears twice in the sidebar](https://github.com/mdn/content/issues/25834) (2023-04-01T15:43:31Z)
-  
 * [[css-transforms-2] transform-style docs should mention that there are scenarios where the value is forced](https://github.com/mdn/content/issues/25801) (2023-03-31T11:03:24Z)
   
 * [[css-properties-values-api-1] Please provide a working example](https://github.com/mdn/content/issues/25776) (2023-03-30T17:10:38Z)
