@@ -4,10 +4,45 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Thu, 23 Mar 2023 12:09:31 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 01 Apr 2023 14:41:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Return statement in a switch statement]]></title>
+            <link>https://github.com/mdn/content/issues/25831</link>
+            <guid>https://github.com/mdn/content/issues/25831</guid>
+            <pubDate>Sat, 01 Apr 2023 14:41:19 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Breaking and fall-through</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Just after the first example in the "Breaking and fall-through" section, The following sentence is not quite correct:<br>
+"You can use other control-flow statements to replace break, such as a return statement.".<br>
+Using a return statement in a simple switch statement causes an error ("Uncaught SyntaxError: Illegal return statement").</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">An important clarification should be added:<br>
+"When using switch inside a function, however, you may use a return statement instead of a break statement.".</p>
+<p dir="auto">That's it for my contribution.<br>
+Sorry for my English if it's not perfectly correct :D.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/statements/switch</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/switch/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/switch/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0f3738f6b1ed1aa69395ff181207186e1ad9f4d8/hovercard" href="https://github.com/mdn/content/commit/0f3738f6b1ed1aa69395ff181207186e1ad9f4d8"><tt>0f3738f</tt></a></li>
+<li>Document last modified: 2023-02-21T00:33:34.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Accessing WebAssembly memory using TypedArrays is incorrect on Big Endian systems?]]></title>
             <link>https://github.com/mdn/content/issues/25569</link>
