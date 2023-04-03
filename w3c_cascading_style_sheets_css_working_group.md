@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-paint-api-1] PaintWorkletGlobalScope nav link broken on CSS Painting API page](https://github.com/mdn/content/issues/25880) (2023-04-03T15:35:47Z)
+  
 * [[css-backgrounds-4] add note on `border-image` and `border-radius` lack of interaction ](https://github.com/mdn/content/issues/25875) (2023-04-03T12:49:30Z)
   
 * [[css-transforms-2] transform-style docs should mention that there are scenarios where the value is forced](https://github.com/mdn/content/issues/25801) (2023-03-31T11:03:24Z)

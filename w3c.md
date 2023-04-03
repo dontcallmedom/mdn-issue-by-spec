@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-paint-api-1] PaintWorkletGlobalScope nav link broken on CSS Painting API page](https://github.com/mdn/content/issues/25880) (2023-04-03T15:35:47Z)
+  
 * [[css-backgrounds-4] add note on `border-image` and `border-radius` lack of interaction ](https://github.com/mdn/content/issues/25875) (2023-04-03T12:49:30Z)
   
 * [[requestidlecallback] Odd API in polyfill](https://github.com/mdn/content/issues/25804) (2023-03-31T11:44:27Z)
