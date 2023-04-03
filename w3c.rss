@@ -4,10 +4,41 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Fri, 31 Mar 2023 11:44:27 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 03 Apr 2023 12:49:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-backgrounds-4] add note on `border-image` and `border-radius` lack of interaction ]]></title>
+            <link>https://github.com/mdn/content/issues/25875</link>
+            <guid>https://github.com/mdn/content/issues/25875</guid>
+            <pubDate>Mon, 03 Apr 2023 12:49:30 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-image" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/border-image</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">I'm suggesting that some sort of note be added about the <code class="notranslate">border-image</code> and <code class="notranslate">border-radius</code> lack of interaction. Many devs seem to expect that they can use a gradient <code class="notranslate">border-image</code> on an element with a <code class="notranslate">border-radius</code>. But this does not work.</p>
+<p dir="auto">I opened an issue with the working group (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1324783198" data-permission-text="Title is private" data-url="https://github.com/w3c/csswg-drafts/issues/7550" data-hovercard-type="issue" data-hovercard-url="/w3c/csswg-drafts/issues/7550/hovercard" href="https://github.com/w3c/csswg-drafts/issues/7550">w3c/csswg-drafts#7550</a>) included is an explanation of why this interaction doesn't work.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Not sure if this would be a note or it's own heading?</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/border-image</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-image" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/border-image</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/border-image/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/border-image/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/42c1bb8c259f3f57de9f38600776cf273e3addda/hovercard" href="https://github.com/mdn/content/commit/42c1bb8c259f3f57de9f38600776cf273e3addda"><tt>42c1bb8</tt></a></li>
+<li>Document last modified: 2023-02-21T06:27:49.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[requestidlecallback] Odd API in polyfill]]></title>
             <link>https://github.com/mdn/content/issues/25804</link>
