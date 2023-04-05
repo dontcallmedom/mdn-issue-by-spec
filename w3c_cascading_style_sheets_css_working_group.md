@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-sizing-4] The compatibility table is very confusing when alternative names exist](https://github.com/mdn/content/issues/25923) (2023-04-05T12:20:27Z)
+  
 * [[css-overflow-3] Deviation of the `overflow-clip-margin` page from the spec](https://github.com/mdn/content/issues/25906) (2023-04-04T14:38:09Z)
   
 * [[css-backgrounds-4] add note on `border-image` and `border-radius` lack of interaction ](https://github.com/mdn/content/issues/25875) (2023-04-03T12:49:30Z)
