@@ -230,8 +230,6 @@
   
 * [[css-fonts-5] Issue with "@font-face/font-weight": Document <font-weight-absolute>{2} ](https://github.com/mdn/content/issues/10910) (2021-12-01T18:54:16Z)
   
-* [[css-transforms-2, css-transforms-1] Issue with "transform": Need to clarify transform-function application in reverse order](https://github.com/mdn/content/issues/10781) (2021-11-26T04:25:19Z)
-  
 * [[mediaqueries-4, css-conditional-3] Issue with "@media": Need more clarity re Level 4 v Level 3, browser compat, and broken links](https://github.com/mdn/content/issues/10774) (2021-11-25T20:39:58Z)
   
 * [[service-workers-1] Issue with "Client.postMessage()": Page does not give a full code example, or enough context to create one](https://github.com/mdn/content/issues/10573) (2021-11-16T20:28:09Z)

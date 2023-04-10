@@ -1936,37 +1936,6 @@ requestAnimationFrame(function rAF() {
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-transforms-2, css-transforms-1] Issue with "transform": Need to clarify transform-function application in reverse order]]></title>
-            <link>https://github.com/mdn/content/issues/10781</link>
-            <guid>https://github.com/mdn/content/issues/10781</guid>
-            <pubDate>Fri, 26 Nov 2021 04:25:19 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/transform</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">It's not obvious or clear that the transform functions are effectively applied in reverse order, and that each represents a transform matrix applied to the initial vector of each of the four corners of the target.</p>
-<p dir="auto">In vector/matrix maths we write V(result) = M(1) M(2) V(initial).  The assumed operator is 'matrix multiplication'.  Thus we see that M(2) is applied first.  A link to something explaining this would be useful.</p>
-<blockquote>
-<p dir="auto">If perspective() is one of multiple function values, it must be listed first.</p>
-</blockquote>
-<p dir="auto">Really?  Surely it's just another matrix.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto">n/a</p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">Some explanation of the maths, at least indicating that the transforms are applied in reverse order.</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">I studied mathematics at university.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/transform</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/transform</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/transform/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/transform/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b90911dc2846c8feefc042ee9b52910834295ce3/hovercard" href="https://github.com/mdn/content/commit/b90911dc2846c8feefc042ee9b52910834295ce3"><tt>b90911d</tt></a></li>
-<li>Document last modified: 2021-10-25T07:54:55.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[mediaqueries-4, css-conditional-3] Issue with "@media": Need more clarity re Level 4 v Level 3, browser compat, and broken links]]></title>
             <link>https://github.com/mdn/content/issues/10774</link>
             <guid>https://github.com/mdn/content/issues/10774</guid>
