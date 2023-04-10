@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Some issues / inconsistencies on the <tr> reference page](https://github.com/mdn/content/issues/26088) (2023-04-10T14:59:46Z)
+  
 * [[dom] Rationale for second parameter in MutationObserver callback?](https://github.com/mdn/content/issues/25839) (2023-04-01T17:26:06Z)
   
 * [[html, DOM-Parsing] Inconsistency about if pushState() results in a popstate event](https://github.com/mdn/content/issues/25785) (2023-03-30T20:11:04Z)
