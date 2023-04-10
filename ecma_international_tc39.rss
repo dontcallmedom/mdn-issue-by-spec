@@ -4,10 +4,49 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Sat, 08 Apr 2023 11:59:21 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 10 Apr 2023 16:48:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecma-402] Conflict in documentation in specifying "default" locale]]></title>
+            <link>https://github.com/mdn/content/issues/26090</link>
+            <guid>https://github.com/mdn/content/issues/26090</guid>
+            <pubDate>Mon, 10 Apr 2023 16:48:30 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Using Options</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">In the examples, to use the browser's "default" locale, you are instructed to use "default".</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="// to specify options but use the browser's default locale, use 'default'
+console.log(new Intl.DateTimeFormat(&quot;default&quot;, options).format(date));
+// &quot;12/19/2012, 19:00:00&quot;"><pre class="notranslate"><span class="pl-c">// to specify options but use the browser's default locale, use 'default'</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-k">new</span> <span class="pl-v">Intl</span><span class="pl-kos">.</span><span class="pl-c1">DateTimeFormat</span><span class="pl-kos">(</span><span class="pl-s">"default"</span><span class="pl-kos">,</span> <span class="pl-s1">options</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">format</span><span class="pl-kos">(</span><span class="pl-s1">date</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-c">// "12/19/2012, 19:00:00"</span></pre></div>
+<p dir="auto">This conflicts with the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#locales_argument" rel="nofollow">"locales argument" section of the <code class="notranslate">Intl</code> documentation</a> which says</p>
+<blockquote>
+<p dir="auto"><code class="notranslate">undefined</code> (or omitted): The implementation's default locale will be used.</p>
+</blockquote>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I would expect both places to use the "default" string, or both places to use <code class="notranslate">undefined</code>.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/intl/datetimeformat</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/intl/datetimeformat/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/intl/datetimeformat/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/01bf58c144237c1fc75cf7135491346778591f09/hovercard" href="https://github.com/mdn/content/commit/01bf58c144237c1fc75cf7135491346778591f09"><tt>01bf58c</tt></a></li>
+<li>Document last modified: 2023-04-08T17:33:52.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript, service-workers-1] Please specify that `openWindow()` and `focus()` only works when the user clicked on a notification]]></title>
             <link>https://github.com/mdn/content/issues/26048</link>
