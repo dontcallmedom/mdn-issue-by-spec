@@ -4,45 +4,10 @@
         <title>IETF-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ietf.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by IETF</description>
-        <lastBuildDate>Sat, 08 Apr 2023 08:10:24 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 10 Aug 2022 08:44:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[rfc7232] Status Code 304 does not mention that requests should not contain a body, as per RFC specification]]></title>
-            <link>https://github.com/mdn/content/issues/26040</link>
-            <guid>https://github.com/mdn/content/issues/26040</guid>
-            <pubDate>Sat, 08 Apr 2023 08:10:24 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/304" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/304</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The RFC guidelines state the following:</p>
-<blockquote>
-<p dir="auto">A 304 response is terminated by the end of the header section; it cannot contain content or trailers.</p>
-</blockquote>
-<p dir="auto"><a href="https://www.rfc-editor.org/rfc/rfc9110.html#status.304" rel="nofollow">Source</a></p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The MDN documentation makes no mention of this, other than a slight nudge when mentioning the status code <code class="notranslate">200 OK</code>.</p>
-<p dir="auto">The major backend frameworks will NOT send a response body when this code is set, even if you provide one, as they abide by the specifications. This can cause confusion when trying to use this status code and constantly seeing the response body is always empty.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/http/status/304</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/304" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/304</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/http/status/304/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/http/status/304/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/45d4569a5f7c2a4e614b8e950b9e56fa890b9fed/hovercard" href="https://github.com/mdn/content/commit/45d4569a5f7c2a4e614b8e950b9e56fa890b9fed"><tt>45d4569</tt></a></li>
-<li>Document last modified: 2023-03-03T04:42:31.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[rfc7233] Content suggestion: http content-type multipart/*]]></title>
             <link>https://github.com/mdn/content/issues/19353</link>
