@@ -4,10 +4,40 @@
         <title>WHATWG Fullscreen API Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_fullscreen_api_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG Fullscreen API Workstream</description>
-        <lastBuildDate>Wed, 09 Mar 2022 00:38:35 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 13 Apr 2023 19:15:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[fullscreen] ::backdrop is now defined by CSS Position 4, not Fullscreen]]></title>
+            <link>https://github.com/mdn/content/issues/26191</link>
+            <guid>https://github.com/mdn/content/issues/26191</guid>
+            <pubDate>Thu, 13 Apr 2023 19:15:59 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::backdrop" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/::backdrop</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">#specifications</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The Specifications section lists this as being defined by Fullscreen, but the feature (and top-layer stuff in general) has moved to CSS Position 4 <a href="https://drafts.csswg.org/css-position-4/#backdrop" rel="nofollow">https://drafts.csswg.org/css-position-4/#backdrop</a>. It'll be removed from Fullscreen by <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1667002962" data-permission-text="Title is private" data-url="https://github.com/whatwg/fullscreen/issues/223" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/fullscreen/pull/223/hovercard" href="https://github.com/whatwg/fullscreen/pull/223">whatwg/fullscreen#223</a>.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Specifications section lists CSS Position 4 instead.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://drafts.csswg.org/css-position-4/#backdrop" rel="nofollow">https://drafts.csswg.org/css-position-4/#backdrop</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/_doublecolon_backdrop</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::backdrop" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/::backdrop</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/_doublecolon_backdrop/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/_doublecolon_backdrop/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/5fea7c9593f5e4b4ef13ec65064acf1eabf01e4e/hovercard" href="https://github.com/mdn/content/commit/5fea7c9593f5e4b4ef13ec65064acf1eabf01e4e"><tt>5fea7c9</tt></a></li>
+<li>Document last modified: 2023-02-21T06:49:52.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[fullscreen] Using F11 to enter fullscreen mode doesn’t set fullscreenElement (it remains null) and document.exitFullscreen() doesn’t work]]></title>
             <link>https://github.com/mdn/content/issues/13674</link>
