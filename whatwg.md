@@ -16,8 +16,6 @@
   
 * [[html] Window.postMessage() missing options parameter](https://github.com/mdn/content/issues/25342) (2023-03-15T12:40:15Z)
   
-* [[html] ID value can start with a number](https://github.com/mdn/content/issues/25200) (2023-03-09T14:05:20Z)
-  
 * [[html] Missing documentation of methods and properties of `HTMLOptionsCollections`](https://github.com/mdn/content/issues/25190) (2023-03-09T02:30:04Z)
   
 * [[html] Missing HTMLAllCollection](https://github.com/mdn/content/issues/25178) (2023-03-08T14:43:46Z)

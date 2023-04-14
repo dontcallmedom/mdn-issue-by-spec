@@ -257,43 +257,6 @@ This method is <a href="https://developer.mozilla.org/en-US/docs/Glossary/Asynch
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] ID value can start with a number]]></title>
-            <link>https://github.com/mdn/content/issues/25200</link>
-            <guid>https://github.com/mdn/content/issues/25200</guid>
-            <pubDate>Thu, 09 Mar 2023 14:05:20 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">#sect2</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">This bold phrase: "should start with a letter" here:</p>
-<blockquote>
-<p dir="auto">Note: Technically, the value for an id attribute may contain any character, except <a href="https://developer.mozilla.org/en-US/docs/Glossary/Whitespace" rel="nofollow">whitespace</a> characters. However, to avoid inadvertent errors, only <a href="https://developer.mozilla.org/en-US/docs/Glossary/ASCII" rel="nofollow">ASCII</a> letters, digits, '_', and '-' should be used and the value for an id attribute <strong>should start with a letter</strong>.</p>
-</blockquote>
-<p dir="auto">contradicts <a href="https://html.spec.whatwg.org/multipage/dom.html#global-attributes:the-id-attribute-2" rel="nofollow">the HTML5 spec</a> which says:</p>
-<blockquote>
-<p dir="auto">There are no other restrictions on what form an ID can take; in particular, IDs can consist of just digits, <strong>start with a digit</strong>, start with an underscore, consist of just punctuation, etc.</p>
-</blockquote>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The blue note agreeing with the HTML5 spec, i.e. stating that an ID <em>could</em> start with a letter.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/html/global_attributes/id</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/global_attributes/id/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/global_attributes/id/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ba96f2f183353872db6d9242c7d2dffe2dbc0c35/hovercard" href="https://github.com/mdn/content/commit/ba96f2f183353872db6d9242c7d2dffe2dbc0c35"><tt>ba96f2f</tt></a></li>
-<li>Document last modified: 2023-02-24T05:52:35.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Missing documentation of methods and properties of `HTMLOptionsCollections`]]></title>
             <link>https://github.com/mdn/content/issues/25190</link>
             <guid>https://github.com/mdn/content/issues/25190</guid>
