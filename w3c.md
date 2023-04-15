@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[tracking-dnt] navigator.doNotTrack needs to say what people should use instead](https://github.com/mdn/content/issues/26232) (2023-04-15T18:55:38Z)
-  
 * [[css-backgrounds-4, css-color-4] Misleading or old information about the styling of the <option> element across different browsers ](https://github.com/mdn/content/issues/26182) (2023-04-13T10:15:11Z)
   
 * [[webaudio] interrupted state not listed as a valid state value, but an example of interrupted state was given](https://github.com/mdn/content/issues/26129) (2023-04-11T18:49:59Z)
