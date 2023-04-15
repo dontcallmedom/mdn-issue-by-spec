@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Missing Webauthn Conditional UI attributes](https://github.com/mdn/content/issues/26227) (2023-04-15T08:27:54Z)
+  
 * [[html] Poor Color Contrast of "run shared worker" Example Page](https://github.com/mdn/content/issues/26130) (2023-04-11T19:11:21Z)
   
 * [[html] Some issues / inconsistencies on the <tr> reference page](https://github.com/mdn/content/issues/26088) (2023-04-10T14:59:46Z)
