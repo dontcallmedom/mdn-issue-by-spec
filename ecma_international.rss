@@ -90,7 +90,7 @@ This is exactly the same issue as <a href="https://github.com/mdn/content/issues
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[ecmascript] Accessing WebAssembly memory using TypedArrays is incorrect on Big Endian systems?]]></title>
+            <title><![CDATA[[ecmascript] Accessing WebAssembly memory using TypedArrays is incorrect on Big Endian systems]]></title>
             <link>https://github.com/mdn/content/issues/25569</link>
             <guid>https://github.com/mdn/content/issues/25569</guid>
             <pubDate>Thu, 23 Mar 2023 12:09:31 GMT</pubDate>
@@ -105,18 +105,18 @@ This is exactly the same issue as <a href="https://github.com/mdn/content/issues
   const values = new Uint32Array(obj.instance.exports.memory.buffer);"><pre class="notranslate">  <span class="pl-k">const</span> <span class="pl-s1">summands</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Uint32Array</span><span class="pl-kos">(</span><span class="pl-s1">memory</span><span class="pl-kos">.</span><span class="pl-c1">buffer</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 ...
   <span class="pl-k">const</span> <span class="pl-s1">values</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Uint32Array</span><span class="pl-kos">(</span><span class="pl-s1">obj</span><span class="pl-kos">.</span><span class="pl-c1">instance</span><span class="pl-kos">.</span><span class="pl-c1">exports</span><span class="pl-kos">.</span><span class="pl-c1">memory</span><span class="pl-kos">.</span><span class="pl-c1">buffer</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
-<p dir="auto">However in the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array/Uint32Array" rel="nofollow">Uint32Array docs</a> it says:</p>
+<p dir="auto">However in the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array" rel="nofollow">Uint32Array docs</a> it says:</p>
 <blockquote>
-<p dir="auto">The Uint32Array() typed array constructor creates an array of 32-bit unsigned integers in the <em><strong>platform byte order</strong></em>. If control over byte order is needed, use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView" rel="nofollow">DataView</a> instead.</p>
+<p dir="auto">The Uint32Array typed array represents an array of 32-bit unsigned integers in the platform byte order. If control over byte order is needed, use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView" rel="nofollow">DataView</a> instead.</p>
 </blockquote>
-<p dir="auto">(<a href="https://tc39.es/ecma262/#sec-integerindexedelementget" rel="nofollow">This is backed up by the ECMAScript spec</a>, following step 6 to GetValueFromBuffer and inspecting steps 8 and 9 there.)</p>
+<p dir="auto">(This is backed up by the ECMAScript spec: <a href="https://tc39.es/ecma262/#sec-properties-of-typedarray-instances" rel="nofollow">Typed Arrays are integer-indexed exotic objects</a>, <a href="https://tc39.es/ecma262/#sec-integer-indexed-exotic-objects-get-p-receiver" rel="nofollow">which have the [[Get]] internal method</a>, which calls <a href="https://tc39.es/ecma262/#sec-integerindexedelementget" rel="nofollow">IntegerIndexedElementGet</a>, which calls <a href="https://tc39.es/ecma262/#sec-getvaluefrombuffer" rel="nofollow">GetValueFromBuffer</a>, which uses the platforms endianness in steps 8 and 9.)</p>
 <p dir="auto">However the <a href="https://webassembly.github.io/spec/core/syntax/instructions.html?highlight=endian#memory-instructions" rel="nofollow">WebAssembly docs</a> say:</p>
 <blockquote>
 <p dir="auto">All values are read and written in <em><strong>little endian</strong></em> byte order.</p>
 </blockquote>
 <p dir="auto">So it appears that the example will return incorrect results on big-endian systems.</p>
 <h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">An example using a <code class="notranslate">DataView.setInt32(byteOffset, value, littleEndian)</code> instead, perhaps?</p>
+<p dir="auto">An example using a <code class="notranslate">DataView.setInt32(byteOffset, value, littleEndian)</code> instead.</p>
 <p dir="auto">Exposing endian-ness like this has worrying implications for web page portability.<br>
 If this is a real portability pitfall, there should be warnings about it on the WebAssembly.memory and TypedArray pages.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
