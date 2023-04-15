@@ -271,10 +271,9 @@ This "Alternate name" bullet sounds to me like it is available as both of "fit-c
 <p dir="auto">The white rabbit example should be a transition, not an animation: The ears go from visible to not. You don’t need an animation for that, just a class change.</p>
 <p dir="auto">Let's say we stick with that anyhow, there are other issues.</p>
 <p dir="auto">The code in the code example:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="// returns &lt;div id=&quot;rabbit&quot;&gt;Click the rabbit's ears!&lt;/div&gt;
-rabbitDownKeyframes.target;"><pre lang="javascript" class="notranslate"><code class="notranslate">// returns &lt;div id="rabbit"&gt;Click the rabbit's ears!&lt;/div&gt;
-rabbitDownKeyframes.target;
-</code></pre></div>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="// returns &lt;div id=&quot;rabbit&quot;&gt;Click the rabbit's ears!&lt;/div&gt;
+rabbitDownKeyframes.target;"><pre class="notranslate"><span class="pl-c">// returns &lt;div id="rabbit"&gt;Click the rabbit's ears!&lt;/div&gt;</span>
+<span class="pl-s1">rabbitDownKeyframes</span><span class="pl-kos">.</span><span class="pl-c1">target</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">Is not included in the linked Codepen.<br>
 If the user wants to add it by copying and pasting, the line itself isn’t a log or a variable definition. it just sits there.</p>
 <p dir="auto">Additionally, the example is not good UX. The sighted user has no way of knowing where to click or even that they should. There are no focusable / interactive html elements. The cursor doesn't indicate clickability either.</p>
