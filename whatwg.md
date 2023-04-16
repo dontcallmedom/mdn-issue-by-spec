@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[dom] Object assignment to Node.textContent ](https://github.com/mdn/content/issues/26243) (2023-04-16T21:07:45Z)
+  
 * [[html] Sample code appears to have a bug](https://github.com/mdn/content/issues/26240) (2023-04-16T15:46:16Z)
   
 * [[html] Missing Webauthn Conditional UI attributes](https://github.com/mdn/content/issues/26227) (2023-04-15T08:27:54Z)
