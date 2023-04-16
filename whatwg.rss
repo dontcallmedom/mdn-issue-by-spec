@@ -4,10 +4,78 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Sat, 15 Apr 2023 08:27:54 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 16 Apr 2023 15:46:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Sample code appears to have a bug]]></title>
+            <link>https://github.com/mdn/content/issues/26240</link>
+            <guid>https://github.com/mdn/content/issues/26240</guid>
+            <pubDate>Sun, 16 Apr 2023 15:46:16 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Advanced example</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Selecting any "Favorite Animal" option and clicking "Submit" results in "Return value: No value selected."</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">When selecting a "Favorite Animal" option and clicking "Submit," I expect to see "Return value: [selected value]," e.g. "Return value: Brine Shirmp."</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">N/A</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">I have fixed the bug on my own machine (at least I have it "working"). I have changed this:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="favDialog.addEventListener('close', () =&gt; {
+  outputBox.value = favDialog.returnValue ? `ReturnValue: ${favDialog.returnValue}.` : &quot;No return value&quot;;
+});
+confirmBtn.addEventListener('click', (event) =&gt; {
+  event.preventDefault(); // We don't want to submit this fake form
+  favDialog.close();
+});"><pre class="notranslate"><code class="notranslate">favDialog.addEventListener('close', () =&gt; {
+  outputBox.value = favDialog.returnValue ? `ReturnValue: ${favDialog.returnValue}.` : "No return value";
+});
+confirmBtn.addEventListener('click', (event) =&gt; {
+  event.preventDefault(); // We don't want to submit this fake form
+  favDialog.close();
+});
+</code></pre></div>
+<p dir="auto">To this:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="favDialog.addEventListener('close', (e) =&gt; {
+  outputBox.value =favDialog.returnValue === 'default' ? &quot;No return value.&quot; : 
+  `ReturnValue: ${favDialog.returnValue}.`; // Have to check for &quot;default&quot; rather than empty string
+});
+confirmBtn.addEventListener('click', (event) =&gt; {
+  event.preventDefault(); // We don't want to submit this fake form
+  favDialog.close(selectEl.value); // Have to send the select box value here.
+});"><pre class="notranslate"><code class="notranslate">favDialog.addEventListener('close', (e) =&gt; {
+  outputBox.value =favDialog.returnValue === 'default' ? "No return value." : 
+  `ReturnValue: ${favDialog.returnValue}.`; // Have to check for "default" rather than empty string
+});
+confirmBtn.addEventListener('click', (event) =&gt; {
+  event.preventDefault(); // We don't want to submit this fake form
+  favDialog.close(selectEl.value); // Have to send the select box value here.
+});
+</code></pre></div>
+<p dir="auto">As it stands now, <code class="notranslate">favDialog.returnValue</code> is always an empty string, so the <code class="notranslate">close</code> event listener always assigns <code class="notranslate">"ReturnValue: No return value."</code> to <code class="notranslate">outputBox.value</code>. The select box's <code class="notranslate">value</code> property will contain either the selected value or <code class="notranslate">'default'</code>, so it will always be truthy. So the fix has to</p>
+<ol dir="auto">
+<li>Check for <code class="notranslate">'default'</code> rather than truthiness when assigning the appropriate value to <code class="notranslate">outputBox</code>.</li>
+<li>Send <code class="notranslate">selectEl.value</code> through the <code class="notranslate">favDialog.close</code> method.</li>
+</ol>
+<p dir="auto">I would like to post the fix, but I'm not confident of my ability to do so without messing it up. In particular, I had to wrap the JS in a DOMContentLoaded event listener, and I suspect the convention here is to leave that out. I'd like to make sure of that one way or the other. Also, of course, there are several other ways to do the fix, and one might be better than mine.</p>
+<p dir="auto">Perhaps someone can advise me on how to post the fix properly?</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/element/dialog</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/dialog/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/dialog/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/942a529383ee7ee3996fb234187641c08935f3ff/hovercard" href="https://github.com/mdn/content/commit/942a529383ee7ee3996fb234187641c08935f3ff"><tt>942a529</tt></a></li>
+<li>Document last modified: 2023-04-13T06:13:15.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Missing Webauthn Conditional UI attributes]]></title>
             <link>https://github.com/mdn/content/issues/26227</link>
