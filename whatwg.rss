@@ -4,60 +4,10 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Sun, 16 Apr 2023 21:07:45 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 16 Apr 2023 15:46:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[dom] Object assignment to Node.textContent ]]></title>
-            <link>https://github.com/mdn/content/issues/26243</link>
-            <guid>https://github.com/mdn/content/issues/26243</guid>
-            <pubDate>Sun, 16 Apr 2023 21:07:45 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Range/setStart" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Range/setStart</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Invalid assignment</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const element = document.getElementById(&quot;content&quot;);
-const textNode = element.childNodes[0];
-const range = document.createRange();
-range.setStart(textNode, 0); // Start at first character
-range.setEnd(textNode, 5); // End at fifth character
-document.getElementById(&quot;log&quot;).textContent = range;"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">element</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">getElementById</span><span class="pl-kos">(</span><span class="pl-s">"content"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-k">const</span> <span class="pl-s1">textNode</span> <span class="pl-c1">=</span> <span class="pl-s1">element</span><span class="pl-kos">.</span><span class="pl-c1">childNodes</span><span class="pl-kos">[</span><span class="pl-c1">0</span><span class="pl-kos">]</span><span class="pl-kos">;</span>
-<span class="pl-k">const</span> <span class="pl-s1">range</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createRange</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-s1">range</span><span class="pl-kos">.</span><span class="pl-en">setStart</span><span class="pl-kos">(</span><span class="pl-s1">textNode</span><span class="pl-kos">,</span> <span class="pl-c1">0</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// Start at first character</span>
-<span class="pl-s1">range</span><span class="pl-kos">.</span><span class="pl-en">setEnd</span><span class="pl-kos">(</span><span class="pl-s1">textNode</span><span class="pl-kos">,</span> <span class="pl-c1">5</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// End at fifth character</span>
-<span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">getElementById</span><span class="pl-kos">(</span><span class="pl-s">"log"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">textContent</span> <span class="pl-c1">=</span> <span class="pl-s1">range</span><span class="pl-kos">;</span></pre></div>
-<h3 dir="auto">What did you expect to see?</h3>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const element = document.getElementById(&quot;content&quot;);
-const textNode = element.childNodes[0];
-const range = document.createRange();
-range.setStart(textNode, 0); // Start at first character
-range.setEnd(textNode, 5); // End at fifth character
-document.getElementById(&quot;log&quot;).textContent = range.extractContents().textContent;"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">element</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">getElementById</span><span class="pl-kos">(</span><span class="pl-s">"content"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-k">const</span> <span class="pl-s1">textNode</span> <span class="pl-c1">=</span> <span class="pl-s1">element</span><span class="pl-kos">.</span><span class="pl-c1">childNodes</span><span class="pl-kos">[</span><span class="pl-c1">0</span><span class="pl-kos">]</span><span class="pl-kos">;</span>
-<span class="pl-k">const</span> <span class="pl-s1">range</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createRange</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-s1">range</span><span class="pl-kos">.</span><span class="pl-en">setStart</span><span class="pl-kos">(</span><span class="pl-s1">textNode</span><span class="pl-kos">,</span> <span class="pl-c1">0</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// Start at first character</span>
-<span class="pl-s1">range</span><span class="pl-kos">.</span><span class="pl-en">setEnd</span><span class="pl-kos">(</span><span class="pl-s1">textNode</span><span class="pl-kos">,</span> <span class="pl-c1">5</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// End at fifth character</span>
-<span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">getElementById</span><span class="pl-kos">(</span><span class="pl-s">"log"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">textContent</span> <span class="pl-c1">=</span> <span class="pl-s1">range</span><span class="pl-kos">.</span><span class="pl-en">extractContents</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">textContent</span><span class="pl-kos">;</span></pre></div>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/range/setstart</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Range/setStart" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Range/setStart</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/range/setstart/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/range/setstart/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/c58e8c1dd6ecbcb63894c7dd17fb9495b9511b4e/hovercard" href="https://github.com/mdn/content/commit/c58e8c1dd6ecbcb63894c7dd17fb9495b9511b4e"><tt>c58e8c1</tt></a></li>
-<li>Document last modified: 2023-04-07T19:46:21.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html] Sample code appears to have a bug]]></title>
             <link>https://github.com/mdn/content/issues/26240</link>
