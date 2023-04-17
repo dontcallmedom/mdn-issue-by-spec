@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Service Workers Working Group. [![RSS feed for W3C Service Workers Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[service-workers-1] Safari Support for WindowClient.navigate()](https://github.com/mdn/content/issues/26264) (2023-04-17T23:17:14Z)
+  
 * [[ecmascript, service-workers-1] Please specify that `openWindow()` and `focus()` only works when the user clicked on a notification](https://github.com/mdn/content/issues/26048) (2023-04-08T11:59:21Z)
   
 * [[service-workers-1] Fetch Event client id is null](https://github.com/mdn/content/issues/20657) (2022-09-13T11:22:55Z)

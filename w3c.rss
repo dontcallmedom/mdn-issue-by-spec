@@ -4,10 +4,42 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Mon, 17 Apr 2023 22:33:51 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 17 Apr 2023 23:17:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[service-workers-1] Safari Support for WindowClient.navigate()]]></title>
+            <link>https://github.com/mdn/content/issues/26264</link>
+            <guid>https://github.com/mdn/content/issues/26264</guid>
+            <pubDate>Mon, 17 Apr 2023 23:17:14 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowClient/navigate" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WindowClient/navigate</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Browser Compatibility</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">I think WindowClient.navigate() works in Safari now, at least from what I can tell. I'm not sure when it started working, version-wise, because I hardly see any references to it online.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Full support listed for Safari 16.4 - or perhaps even earlier versions, if someone has that available to test.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Here is a quick way to test:</p>
+<p dir="auto"><a href="https://googlechrome.github.io/samples/service-worker/windowclient-navigate/" rel="nofollow">https://googlechrome.github.io/samples/service-worker/windowclient-navigate/</a></p>
+<p dir="auto">Past that, I tried it (from the console) on one of my own sites and it worked fine on Safari desktop and iOS.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">I'm most curious to know how far back this support goes, but unfortunately I don't have any old devices on which to test. I'm kinda hoping that as a part of verifying this report, somebody will give some indication :)</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/windowclient/navigate</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowClient/navigate" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WindowClient/navigate</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/windowclient/navigate/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/windowclient/navigate/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cc070123f72376faec06e36622c4fc723a75325f/hovercard" href="https://github.com/mdn/content/commit/cc070123f72376faec06e36622c4fc723a75325f"><tt>cc07012</tt></a></li>
+<li>Document last modified: 2023-04-08T06:57:07.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[SVG11] Broken link on SVG <textPath> page]]></title>
             <link>https://github.com/mdn/content/issues/26262</link>
