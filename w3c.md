@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[SVG11] Broken link on SVG <textPath> page](https://github.com/mdn/content/issues/26262) (2023-04-17T22:33:51Z)
+  
 * [[clear-site-data] [HTTP] privacy.clearsitedata.cache.enabled removed from codebase](https://github.com/mdn/content/issues/26246) (2023-04-17T01:10:38Z)
   
 * [[css-backgrounds-4, css-color-4] Misleading or old information about the styling of the <option> element across different browsers ](https://github.com/mdn/content/issues/26182) (2023-04-13T10:15:11Z)
