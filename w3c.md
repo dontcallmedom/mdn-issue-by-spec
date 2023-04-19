@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[tracking-dnt] Do Not Track deprecation notice is self-fulfilling](https://github.com/mdn/content/issues/26295) (2023-04-19T08:44:04Z)
+  
 * [[service-workers-1] Safari Support for WindowClient.navigate()](https://github.com/mdn/content/issues/26264) (2023-04-17T23:17:14Z)
   
 * [[SVG11] Broken link on SVG <textPath> page](https://github.com/mdn/content/issues/26262) (2023-04-17T22:33:51Z)

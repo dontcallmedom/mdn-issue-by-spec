@@ -4,10 +4,30 @@
         <title>W3C Tracking Protection Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_tracking_protection_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Tracking Protection Working Group</description>
-        <lastBuildDate>Sun, 12 Feb 2023 19:38:23 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 19 Apr 2023 08:44:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[tracking-dnt] Do Not Track deprecation notice is self-fulfilling]]></title>
+            <link>https://github.com/mdn/content/issues/26295</link>
+            <guid>https://github.com/mdn/content/issues/26295</guid>
+            <pubDate>Wed, 19 Apr 2023 08:44:04 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/DNT" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/DNT</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The deprecation notice</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The deprecation notice on MDN's Do Not Track page causes developers to not respect Do Not Track, which further entrenches the subtle idea that Do Not Track <em>should be or already is deprecated</em>. This creates an obvious viscous cycle.</p>
+<p dir="auto">I also argue that this notice is false. If this feature was actually deprecated I would expect to see an actual timeline for its removal. I do not see that.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">No deprecation notice</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">I asked a Consent Management Platform developer if they would support Do Not Track in their platform and they responded no, citing this MDN article as if the deprecation notice was authoritative.</p>
+<p dir="auto">DNT has not been removed from Firefox or Chrome and with the new upcoming ePrivacy Regulation it may be revitalized in terms of legal responsibility of website owners.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[tracking-dnt] Web/HTTP/Headers/DNT: has ambigious deprecation notice]]></title>
             <link>https://github.com/mdn/content/issues/24368</link>
