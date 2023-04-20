@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html, cssom-view-1] Problem with window.devicePixelRatio example](https://github.com/mdn/content/issues/26316) (2023-04-20T12:37:50Z)
+  
 * [[html] Fallback content for iframe is not allowed](https://github.com/mdn/content/issues/26313) (2023-04-20T09:07:13Z)
   
 * [[html] Missing Webauthn Conditional UI attributes](https://github.com/mdn/content/issues/26227) (2023-04-15T08:27:54Z)

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html, cssom-view-1] Problem with window.devicePixelRatio example](https://github.com/mdn/content/issues/26316) (2023-04-20T12:37:50Z)
+  
 * [[css-backgrounds-4, css-color-4] Misleading or old information about the styling of the <option> element across different browsers ](https://github.com/mdn/content/issues/26182) (2023-04-13T10:15:11Z)
   
 * [[css-sizing-4] The compatibility table is very confusing when alternative names exist](https://github.com/mdn/content/issues/25923) (2023-04-05T12:20:27Z)
