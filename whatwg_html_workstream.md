@@ -4,10 +4,6 @@
 
 * [[html] Fallback content for iframe is not allowed](https://github.com/mdn/content/issues/26313) (2023-04-20T09:07:13Z)
   
-* [[html] Wrong live samples due to ambiguous headers](https://github.com/mdn/content/issues/26273) (2023-04-18T08:29:55Z)
-  
-* [[html] Sample code appears to have a bug](https://github.com/mdn/content/issues/26240) (2023-04-16T15:46:16Z)
-  
 * [[html] Missing Webauthn Conditional UI attributes](https://github.com/mdn/content/issues/26227) (2023-04-15T08:27:54Z)
   
 * [[html] Poor Color Contrast of "run shared worker" Example Page](https://github.com/mdn/content/issues/26130) (2023-04-11T19:11:21Z)
