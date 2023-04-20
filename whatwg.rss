@@ -4,10 +4,46 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Tue, 18 Apr 2023 08:29:55 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 20 Apr 2023 09:07:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Fallback content for iframe is not allowed]]></title>
+            <link>https://github.com/mdn/content/issues/26313</link>
+            <guid>https://github.com/mdn/content/issues/26313</guid>
+            <pubDate>Thu, 20 Apr 2023 09:07:13 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies" rel="nofollow">https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">iframes in detail</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">In the article we can see the followed content:</p>
+<blockquote>
+<p dir="auto">Fallback content .<br>
+In the same way as other similar elements like <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" rel="nofollow"></a>, you can include fallback content between the opening and closing &lt;iframe&gt;&lt;/iframe&gt; tags that will appear if the browser doesn't support the &lt;iframe&gt;. In this case, we have included a link to the page instead. It is unlikely that you'll come across any browser that doesn't support &lt;iframe&gt;s these days.</p>
+</blockquote>
+<p dir="auto">But there is no any definition about this usage in w3c <a href="https://www.w3.org/TR/2010/WD-html5-20101019/the-iframe-element.html" rel="nofollow">https://www.w3.org/TR/2010/WD-html5-20101019/the-iframe-element.html</a></p>
+<p dir="auto">So I think, that html iframe element can't have child element.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Removing info about fallback from the page.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/learn/html/multimedia_and_embedding/other_embedding_technologies</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies" rel="nofollow">https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/learn/html/multimedia_and_embedding/other_embedding_technologies/index.md">https://github.com/mdn/content/blob/main/files/en-us/learn/html/multimedia_and_embedding/other_embedding_technologies/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/8039255be7bc0affdc8f2abf67cd2f7b31948b60/hovercard" href="https://github.com/mdn/content/commit/8039255be7bc0affdc8f2abf67cd2f7b31948b60"><tt>8039255</tt></a></li>
+<li>Document last modified: 2023-04-15T05:00:08.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Wrong live samples due to ambiguous headers]]></title>
             <link>https://github.com/mdn/content/issues/26273</link>
