@@ -56,6 +56,8 @@
   
 * [[resize-observer-1] ResizeObserverEntry.contentBoxSize example doesn't use ResizeObserverEntry.contentBoxSize](https://github.com/mdn/content/issues/25364) (2023-03-15T22:35:36Z)
   
+* [[css-easing-1] [CSS] Enable linear-easing-function for all channels](https://github.com/mdn/content/issues/25357) (2023-03-15T21:12:51Z)
+  
 * [[screen-capture] systemAudio is misleading](https://github.com/mdn/content/issues/25307) (2023-03-14T03:38:33Z)
   
 * [[FileAPI] More information about text encoding when creating a Blob](https://github.com/mdn/content/issues/25282) (2023-03-13T03:06:03Z)
