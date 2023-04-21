@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[ecmascript] Responsive design issue ](https://github.com/mdn/content/issues/26340) (2023-04-21T10:21:21Z)
+  
 * [[ecmascript] Issue with inheritance with classes: examples are an anti-pattern ](https://github.com/mdn/content/issues/26110) (2023-04-11T08:18:24Z)
   
 * [[ecmascript, service-workers-1] Please specify that `openWindow()` and `focus()` only works when the user clicked on a notification](https://github.com/mdn/content/issues/26048) (2023-04-08T11:59:21Z)
