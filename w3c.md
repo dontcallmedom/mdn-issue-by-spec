@@ -12,8 +12,6 @@
   
 * [[tracking-dnt] Do Not Track deprecation notice is self-fulfilling](https://github.com/mdn/content/issues/26295) (2023-04-19T08:44:04Z)
   
-* [[service-workers-1] Safari Support for WindowClient.navigate()](https://github.com/mdn/content/issues/26264) (2023-04-17T23:17:14Z)
-  
 * [[SVG11] Broken link on SVG <textPath> page](https://github.com/mdn/content/issues/26262) (2023-04-17T22:33:51Z)
   
 * [[clear-site-data] [HTTP] privacy.clearsitedata.cache.enabled removed from codebase](https://github.com/mdn/content/issues/26246) (2023-04-17T01:10:38Z)
