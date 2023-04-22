@@ -64,8 +64,6 @@
   
 * [[dom] Missing NodeFilter.FILTER_SKIP description](https://github.com/mdn/content/issues/23728) (2023-01-17T19:26:34Z)
   
-* [[dom] Example code has confusing elements](https://github.com/mdn/content/issues/23658) (2023-01-15T06:46:02Z)
-  
 * [[html] In the example, isn't the requestAnimationFrame always called more than once if once queued were fired within a single frame?](https://github.com/mdn/content/issues/23635) (2023-01-14T14:28:24Z)
   
 * [[html] Add documentation of sms: anchor links](https://github.com/mdn/content/issues/23526) (2023-01-10T21:14:40Z)

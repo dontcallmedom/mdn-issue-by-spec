@@ -12,8 +12,6 @@
   
 * [[dom] Missing NodeFilter.FILTER_SKIP description](https://github.com/mdn/content/issues/23728) (2023-01-17T19:26:34Z)
   
-* [[dom] Example code has confusing elements](https://github.com/mdn/content/issues/23658) (2023-01-15T06:46:02Z)
-  
 * [[dom] Clarifying scope in event listener definition and execution](https://github.com/mdn/content/issues/23253) (2022-12-29T07:11:31Z)
   
 * [[dom] document.implementation is outdated](https://github.com/mdn/content/issues/21834) (2022-10-25T22:41:52Z)
