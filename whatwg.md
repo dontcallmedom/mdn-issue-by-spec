@@ -104,8 +104,6 @@
   
 * [[html] Information missing for "hidden" <input>s](https://github.com/mdn/content/issues/21857) (2022-10-26T21:27:57Z)
   
-* [[dom] document.implementation is outdated](https://github.com/mdn/content/issues/21834) (2022-10-25T22:41:52Z)
-  
 * [[fetch] Response.json static method is missing](https://github.com/mdn/content/issues/21550) (2022-10-14T12:40:47Z)
   
 * [[dom] api.Element.replaceWith - Misleading details and prototype](https://github.com/mdn/content/issues/21497) (2022-10-11T19:50:51Z)
