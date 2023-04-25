@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[selectors-4] Issue with content ](https://github.com/mdn/content/issues/26406) (2023-04-25T06:37:34Z)
+  
 * [[cssom-view-1] availHeight SVG pseudo window rendered incorrectly](https://github.com/mdn/content/issues/26403) (2023-04-25T04:34:52Z)
   
 * [[css-text-3] white-space live sample text has different line breaks than HTML sample lorem ipsum](https://github.com/mdn/content/issues/26338) (2023-04-21T07:03:20Z)
