@@ -34,8 +34,6 @@
   
 * [[resize-observer-1] ResizeObserverEntry.contentBoxSize example doesn't use ResizeObserverEntry.contentBoxSize](https://github.com/mdn/content/issues/25364) (2023-03-15T22:35:36Z)
   
-* [[css-easing-1] [CSS] Enable linear-easing-function for all channels](https://github.com/mdn/content/issues/25357) (2023-03-15T21:12:51Z)
-  
 * [[css-sizing-4, css-conditional-3, css-sizing-3] In correct statement about max-width](https://github.com/mdn/content/issues/25073) (2023-03-05T03:22:13Z)
   
 * [[filter-effects-2] SVG contrast filter](https://github.com/mdn/content/issues/24989) (2023-03-02T00:19:11Z)
