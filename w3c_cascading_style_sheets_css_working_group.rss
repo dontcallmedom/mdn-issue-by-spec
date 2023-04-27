@@ -4,10 +4,45 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Tue, 25 Apr 2023 04:34:52 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 27 Apr 2023 02:31:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-backgrounds-4] It is unclear why background-attachment: fixed is said to be incompatible with background-clip: text]]></title>
+            <link>https://github.com/mdn/content/issues/26445</link>
+            <guid>https://github.com/mdn/content/issues/26445</guid>
+            <pubDate>Thu, 27 Apr 2023 02:31:12 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment#values" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment#values</a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The <code class="notranslate">fixed</code> section says</p>
+<blockquote>
+<p dir="auto">(This is not compatible with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip#values" rel="nofollow">background-clip: text</a>.)</p>
+</blockquote>
+<p dir="auto">However, by looking at the<a href="https://w3c.github.io/csswg-drafts/css-backgrounds/#the-background-attachment" rel="nofollow"> linked specs</a>, there doesn't seem to be anything suggesting so. Even <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip" rel="nofollow">MDN's <code class="notranslate">background-clip</code></a> article doesn't mention this.</p>
+<p dir="auto">And <a href="https://jsfiddle.net/7qasmcnb" rel="nofollow">when testing</a> it seems that both Safari and Chrome do handle it correctly, but it's true that apparently Firefox is buggy here (we need to <a href="https://jsfiddle.net/7qasmcnb/1/" rel="nofollow">force a recalc</a> when scrolling). But that sounds just like a Firefox bug, and not a true -by design- limitation of the API.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Either a note in the compatibility table stating that Firefox has this bug, if it's indeed a known bug, and a link to the bugzilla issue, or a clear pointer to the specs that states that this combination is indeed not supposed to work, and in that case the same note in the <code class="notranslate">background-clip</code> article.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">I don't but that's kind of the point, I am requesting for such links, references, or citations to support the current claim.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/background-attachment</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/background-attachment/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/background-attachment/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/42c1bb8c259f3f57de9f38600776cf273e3addda/hovercard" href="https://github.com/mdn/content/commit/42c1bb8c259f3f57de9f38600776cf273e3addda"><tt>42c1bb8</tt></a></li>
+<li>Document last modified: 2023-02-21T06:27:49.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[cssom-view-1] availHeight SVG pseudo window rendered incorrectly]]></title>
             <link>https://github.com/mdn/content/issues/26403</link>
