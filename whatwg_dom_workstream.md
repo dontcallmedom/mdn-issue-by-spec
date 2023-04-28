@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[dom] More information would be helpful](https://github.com/mdn/content/issues/26470) (2023-04-28T04:34:16Z)
+  
 * [[dom] Rationale for second parameter in MutationObserver callback?](https://github.com/mdn/content/issues/25839) (2023-04-01T17:26:06Z)
   
 * [[dom] this.getAttribute() doesn't work inside the constructor()](https://github.com/mdn/content/issues/25028) (2023-03-03T03:25:46Z)
