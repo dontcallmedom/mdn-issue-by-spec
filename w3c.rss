@@ -4,10 +4,69 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Thu, 27 Apr 2023 02:31:12 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 29 Apr 2023 02:18:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html, cssom-view-1] Description of updatePixelRatio() example function doesn't match code listing]]></title>
+            <link>https://github.com/mdn/content/issues/26490</link>
+            <guid>https://github.com/mdn/content/issues/26490</guid>
+            <pubDate>Sat, 29 Apr 2023 02:18:13 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Monitoring screen resolution or zoom level changes</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The description of example function <code class="notranslate">updatePixelRatio()</code> says "sets the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText" rel="nofollow">innerText</a> of the element <code class="notranslate">pixelRatioBox</code> to a string which displays the ratio both as a percentage and as a raw decimal value with up to two decimal places."</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">What the code listing actually does is log that information to the console. The mentioned <code class="notranslate">pixelRatioBox</code> element does not exist, nor does the formatting discussed.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/window/devicepixelratio</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/devicepixelratio/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/devicepixelratio/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cc070123f72376faec06e36622c4fc723a75325f/hovercard" href="https://github.com/mdn/content/commit/cc070123f72376faec06e36622c4fc723a75325f"><tt>cc07012</tt></a></li>
+<li>Document last modified: 2023-04-08T06:57:07.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[uievents] The `error` event should be under `HTMLElement`, not `Element`]]></title>
+            <link>https://github.com/mdn/content/issues/26489</link>
+            <guid>https://github.com/mdn/content/issues/26489</guid>
+            <pubDate>Sat, 29 Apr 2023 01:38:40 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/error_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/error_event</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The slug, title, and summary</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">This page suggests that the <code class="notranslate">error</code> event is defined on the <code class="notranslate">Element</code> interface. However, according to the <a href="https://dom.spec.whatwg.org/#interface-element" rel="nofollow"><code class="notranslate">Element</code> interface Web IDL spec</a>, <code class="notranslate">onerror</code> is <strong><em>not</em></strong> included. Moreover, if we check in the browser:</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="// `onerror` is not found on the `Element` prototype
+Object.hasOwn(Element.prototype, &quot;onerror&quot;) // false"><pre class="notranslate"><span class="pl-c">// `onerror` is not found on the `Element` prototype</span>
+<span class="pl-v">Object</span><span class="pl-kos">.</span><span class="pl-en">hasOwn</span><span class="pl-kos">(</span><span class="pl-v">Element</span><span class="pl-kos">.</span><span class="pl-c1">prototype</span><span class="pl-kos">,</span> <span class="pl-s">"onerror"</span><span class="pl-kos">)</span> <span class="pl-c">// false</span></pre></div>
+<p dir="auto">On the other hand, the <code class="notranslate">error</code> event is defined on the <a href="https://html.spec.whatwg.org/multipage/dom.html#htmlelement" rel="nofollow"><code class="notranslate">HTMLElement</code></a> interface via <a href="https://html.spec.whatwg.org/multipage/webappapis.html#globaleventhandlers" rel="nofollow"><code class="notranslate">GlobalEventHandlers</code></a>. We can also confirm this in the browser:</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="// `onerror` is found on the `HTMLElement` prototype
+Object.hasOwn(HTMLElement.prototype, &quot;onerror&quot;) // true"><pre class="notranslate"><span class="pl-c">// `onerror` is found on the `HTMLElement` prototype</span>
+<span class="pl-v">Object</span><span class="pl-kos">.</span><span class="pl-en">hasOwn</span><span class="pl-kos">(</span><span class="pl-v">HTMLElement</span><span class="pl-kos">.</span><span class="pl-c1">prototype</span><span class="pl-kos">,</span> <span class="pl-s">"onerror"</span><span class="pl-kos">)</span> <span class="pl-c">// true</span></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The page should be moved to the API reference for <code class="notranslate">HTMLElement</code>. Moreover, all references (slug, title, summary, etc.) to <code class="notranslate">Element</code> should be replaced with <code class="notranslate">HTMLElement</code>.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<ul dir="auto">
+<li><a href="https://dom.spec.whatwg.org/#interface-element" rel="nofollow">Element Web IDL interface</a></li>
+<li><a href="https://html.spec.whatwg.org/multipage/dom.html#htmlelement" rel="nofollow">HTMLElement Web IDL interface</a></li>
+<li><a href="https://html.spec.whatwg.org/multipage/webappapis.html#globaleventhandlers" rel="nofollow">GlobalEventHandlers Web IDL interface</a></li>
+</ul>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">The HTMLElement <code class="notranslate">error</code> event is the counterpart of the HTMLElement <code class="notranslate">load</code> event; together they enable detecting the outcome of loading an HTML resource. As a result, I also created PR <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1688740169" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/26479" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/26479/hovercard" href="https://github.com/mdn/content/pull/26479">#26479</a> to add the <code class="notranslate">load</code> event to <code class="notranslate">HTMLElement</code> API reference.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-backgrounds-4] It is unclear why background-attachment: fixed is said to be incompatible with background-clip: text]]></title>
             <link>https://github.com/mdn/content/issues/26445</link>
