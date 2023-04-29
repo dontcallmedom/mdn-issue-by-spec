@@ -4,8 +4,6 @@
 
 * [[html, cssom-view-1] Description of updatePixelRatio() example function doesn't match code listing](https://github.com/mdn/content/issues/26490) (2023-04-29T02:18:13Z)
   
-* [[uievents] The `error` event should be under `HTMLElement`, not `Element`](https://github.com/mdn/content/issues/26489) (2023-04-29T01:38:40Z)
-  
 * [[css-backgrounds-4] It is unclear why background-attachment: fixed is said to be incompatible with background-clip: text](https://github.com/mdn/content/issues/26445) (2023-04-27T02:31:12Z)
   
 * [[cssom-view-1] availHeight SVG pseudo window rendered incorrectly](https://github.com/mdn/content/issues/26403) (2023-04-25T04:34:52Z)
