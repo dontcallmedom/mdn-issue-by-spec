@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[ecmascript] Typo of extra parenthesis in example](https://github.com/mdn/content/issues/26510) (2023-05-01T00:33:20Z)
-  
 * [[ecmascript] FinalizationRegistry: missing example and lack of clarity on "threads"](https://github.com/mdn/content/issues/26486) (2023-04-28T20:00:14Z)
   
 * [[ecmascript] Issue with inheritance with classes: examples are an anti-pattern ](https://github.com/mdn/content/issues/26110) (2023-04-11T08:18:24Z)
