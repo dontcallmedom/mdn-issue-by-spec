@@ -16,8 +16,6 @@
   
 * [[tracking-dnt] Do Not Track deprecation notice is self-fulfilling](https://github.com/mdn/content/issues/26295) (2023-04-19T08:44:04Z)
   
-* [[SVG11] Broken link on SVG <textPath> page](https://github.com/mdn/content/issues/26262) (2023-04-17T22:33:51Z)
-  
 * [[clear-site-data] [HTTP] privacy.clearsitedata.cache.enabled removed from codebase](https://github.com/mdn/content/issues/26246) (2023-04-17T01:10:38Z)
   
 * [[css-backgrounds-4, css-color-4] Misleading or old information about the styling of the <option> element across different browsers ](https://github.com/mdn/content/issues/26182) (2023-04-13T10:15:11Z)
