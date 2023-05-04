@@ -1657,30 +1657,6 @@ It says you can store the certificate in IndexedDB.</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[web-animations-2] "Automatically removing filling animations" and several related docs are incorrect and/or extremely confusing]]></title>
-            <link>https://github.com/mdn/content/issues/23811</link>
-            <guid>https://github.com/mdn/content/issues/23811</guid>
-            <pubDate>Sun, 22 Jan 2023 08:06:05 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Animation#automatically_removing_filling_animations" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Animation#automatically_removing_filling_animations</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Automatically removing filling animations</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<ul dir="auto">
-<li>Page says <code class="notranslate">"remove"</code> event is fired when animation is put into <code class="notranslate">"active"</code> replace state, but actually after a <code class="notranslate">"remove"</code> event the replace state <a href="https://w3c.github.io/csswg-drafts/web-animations-1/#removing-replaced-animations" rel="nofollow">must be <code class="notranslate">"removed"</code></a>, and <code class="notranslate">"active"</code> is the initial/default state</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Animation/replaceState" rel="nofollow"><code class="notranslate">Animation.replaceState</code></a> page says that <code class="notranslate">"removed"</code> is for when an animation is "explicitly removed", but it's not clear if or how that's possible.</li>
-<li>The <a href="https://mdn.github.io/dom-examples/web-animations-api/replace-indefinite-animations.html" rel="nofollow">example</a> doesn't actually demonstrate all of the things it claims (for example, it does not print the replace state at any relevant point).</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Animation/commitStyles" rel="nofollow"><code class="notranslate">Animation.commitStyles()</code></a> and the aforementioned example claim that the end state is written, but spec says the <a href="https://w3c.github.io/csswg-drafts/web-animations-1/#dom-animation-commitstyles" rel="nofollow">current state</a> is written; see also <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1354093004" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/20086" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/20086/hovercard" href="https://github.com/mdn/content/issues/20086">#20086</a></li>
-<li>probably more things</li>
-</ul>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Clear docs with supporting examples, terminology used in a manner consist with its meaning in the spec?</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">See links above.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">I'm not exactly a subject matter expert here, I might be (am) very confused.</p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[push-api] Subscriptions are lost after page reload]]></title>
             <link>https://github.com/mdn/content/issues/23747</link>
             <guid>https://github.com/mdn/content/issues/23747</guid>
@@ -2885,36 +2861,6 @@ element.dispatchEvent(mouseEvent)"><pre class="notranslate"><span class="pl-k">c
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcpeerconnection/rtcpeerconnection/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcpeerconnection/rtcpeerconnection/index.md</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/59d036cd686d9715c1cb9f3157a2a8545ea13882/hovercard" href="https://github.com/mdn/content/commit/59d036cd686d9715c1cb9f3157a2a8545ea13882"><tt>59d036c</tt></a></li>
 <li>Document last modified: 2022-06-11T04:12:24.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[web-animations-2] Animation.commitStyles() remains unclear, example seems pointless]]></title>
-            <link>https://github.com/mdn/content/issues/20086</link>
-            <guid>https://github.com/mdn/content/issues/20086</guid>
-            <pubDate>Mon, 29 Aug 2022 10:53:24 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Animation/commitStyles" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Animation/commitStyles</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The description of this method remains unclear to me. It looks like it should be used to remove a forwards-fill animation when it's done and persist its final style in the element itself. But that's not what I can observe. This method, when called immediately after starting the animation, will persist the initial or current style in the element, not the final state. When deferring that call until after the animation has ended, the final style is persisted. But in any way, the animation still remains active. Something is missing here. Why should I call this method in the way shown in the example? It seems pointless to me.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">I need a reliable way to persist the animation's final style and remove the animation when it's finished and has not been aborted or reversed while playing. Can I use this method or do I need something else?</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/animation/commitstyles</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Animation/commitStyles" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Animation/commitStyles</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/animation/commitstyles/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/animation/commitstyles/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/810d65ba6245b16b46ed352458ed1fee8dec359f/hovercard" href="https://github.com/mdn/content/commit/810d65ba6245b16b46ed352458ed1fee8dec359f"><tt>810d65b</tt></a></li>
-<li>Document last modified: 2022-07-23T10:49:03.000Z</li>
 </ul>
 </details>]]></content:encoded>
         </item>

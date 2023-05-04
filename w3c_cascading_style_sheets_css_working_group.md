@@ -54,8 +54,6 @@
   
 * [[cssom-1] JS names for CSS properties](https://github.com/mdn/content/issues/24084) (2023-02-01T20:11:45Z)
   
-* [[web-animations-2] "Automatically removing filling animations" and several related docs are incorrect and/or extremely confusing](https://github.com/mdn/content/issues/23811) (2023-01-22T08:06:05Z)
-  
 * [[css-shadow-parts-1] ::part(): Missing information](https://github.com/mdn/content/issues/23471) (2023-01-08T11:05:39Z)
   
 * [[css-shapes-2] Property listed as unsupported on Firefox for Android, but @supports still fires for it](https://github.com/mdn/content/issues/23027) (2022-12-17T22:46:43Z)
@@ -79,8 +77,6 @@
 * [[css-align-3] Content suggestion: display owns CSS shorthand property.](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
   
 * [[css-cascade-3] Missing CSS functions](https://github.com/mdn/content/issues/20611) (2022-09-13T00:32:37Z)
-  
-* [[web-animations-2] Animation.commitStyles() remains unclear, example seems pointless](https://github.com/mdn/content/issues/20086) (2022-08-29T10:53:24Z)
   
 * [[html, cssom-view-1] [GEH] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
   

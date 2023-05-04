@@ -94,8 +94,6 @@
   
 * [[webrtc] What is `RTCPeerConnection.generateCertificate(..)` good for?](https://github.com/mdn/content/issues/23993) (2023-01-30T20:28:26Z)
   
-* [[web-animations-2] "Automatically removing filling animations" and several related docs are incorrect and/or extremely confusing](https://github.com/mdn/content/issues/23811) (2023-01-22T08:06:05Z)
-  
 * [[push-api] Subscriptions are lost after page reload](https://github.com/mdn/content/issues/23747) (2023-01-18T15:29:52Z)
   
 * [[webaudio] BiquadFilterNode»Q: Incorrect range for Q?](https://github.com/mdn/content/issues/23592) (2023-01-13T01:05:43Z)
@@ -159,8 +157,6 @@
 * [[uievents] Page for `MouseEvent()` doesn't show how to use it](https://github.com/mdn/content/issues/20329) (2022-09-05T19:44:07Z)
   
 * [[webrtc] Possibly missing information in WebRTC config section about certificates](https://github.com/mdn/content/issues/20134) (2022-08-30T19:08:41Z)
-  
-* [[web-animations-2] Animation.commitStyles() remains unclear, example seems pointless](https://github.com/mdn/content/issues/20086) (2022-08-29T10:53:24Z)
   
 * [[html, cssom-view-1] [GEH] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
   
