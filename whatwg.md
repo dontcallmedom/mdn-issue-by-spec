@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] Video is not showing on the webpage while using the example provided to embed a YouTube video into the webpage.](https://github.com/mdn/content/issues/26561) (2023-05-03T17:34:54Z)
-  
 * [[html] Image request fired as soon as src is set](https://github.com/mdn/content/issues/26560) (2023-05-03T17:23:34Z)
   
 * [[html] ValidityState broken link to customError](https://github.com/mdn/content/issues/26522) (2023-05-01T18:58:31Z)
