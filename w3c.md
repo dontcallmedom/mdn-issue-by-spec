@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[IndexedDB-3] IDBObjectStore createIndex options unique has no no mention of default](https://github.com/mdn/content/issues/26607) (2023-05-05T21:50:45Z)
-  
 * [[html, cssom-view-1] Description of updatePixelRatio() example function doesn't match code listing](https://github.com/mdn/content/issues/26490) (2023-04-29T02:18:13Z)
   
 * [[css-backgrounds-4] It is unclear why background-attachment: fixed is said to be incompatible with background-clip: text](https://github.com/mdn/content/issues/26445) (2023-04-27T02:31:12Z)
