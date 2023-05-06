@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-backgrounds-4] No documentation for css src(...)](https://github.com/mdn/content/issues/26621) (2023-05-06T22:26:03Z)
+  
 * [[css-backgrounds-4] Almost all links pointing to "w3c.github.io/csswg-drafts" are broken now](https://github.com/mdn/content/issues/26613) (2023-05-06T05:06:56Z)
   
 * [[html, cssom-view-1] Description of updatePixelRatio() example function doesn't match code listing](https://github.com/mdn/content/issues/26490) (2023-04-29T02:18:13Z)
