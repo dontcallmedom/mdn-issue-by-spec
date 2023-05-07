@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Improve wording on what it means to be suspended](https://github.com/mdn/content/issues/26625) (2023-05-07T04:43:55Z)
+  
 * [[html] Image request fired as soon as src is set](https://github.com/mdn/content/issues/26560) (2023-05-03T17:23:34Z)
   
 * [[html] ValidityState broken link to customError](https://github.com/mdn/content/issues/26522) (2023-05-01T18:58:31Z)
