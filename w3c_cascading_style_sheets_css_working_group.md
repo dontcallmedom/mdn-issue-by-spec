@@ -12,8 +12,6 @@
   
 * [[cssom-view-1] availHeight SVG pseudo window rendered incorrectly](https://github.com/mdn/content/issues/26403) (2023-04-25T04:34:52Z)
   
-* [[css-text-3] white-space live sample text has different line breaks than HTML sample lorem ipsum](https://github.com/mdn/content/issues/26338) (2023-04-21T07:03:20Z)
-  
 * [[cssom-view-1] Please add a note about getBoundingClientRect() forcing a reflow and performance issues](https://github.com/mdn/content/issues/26330) (2023-04-21T01:08:41Z)
   
 * [[html, cssom-view-1] Problem with window.devicePixelRatio example](https://github.com/mdn/content/issues/26316) (2023-04-20T12:37:50Z)
