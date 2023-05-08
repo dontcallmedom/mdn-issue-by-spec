@@ -4,10 +4,41 @@
         <title>W3C Web Applications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_applications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Applications Working Group</description>
-        <lastBuildDate>Mon, 08 May 2023 06:34:43 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 08 May 2023 06:47:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[IndexedDB-3] versionchange is super important and hardly is given any attention]]></title>
+            <link>https://github.com/mdn/content/issues/26639</link>
+            <guid>https://github.com/mdn/content/issues/26639</guid>
+            <pubDate>Mon, 08 May 2023 06:47:05 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Events/versionchange</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">onversionchange is critical and if not implemented can lead to user data corruption or loss. Running different versions in different tabs is a problem and the versionchange event solves this. Not a single thing is mentioned about this except some weak verbage of "An event fired when a database structure change was requested."</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I expect for this critical user data loss subject to be at least mentioned and even better showing some code supporting good practices for multiple tabs being open.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Ivan V. brings focus to this critical topic <a href="https://dev.to/ivandotv/handling-indexeddb-upgrade-version-conflict-368a" rel="nofollow">Handling IndexedDB Upgrade Version Conflict</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">The documentation here is pretty weak too. It just casually grazes the subject saying "was requested elsewhere (most probably in another window/tab on the same computer)"<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/versionchange_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/versionchange_event</a></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/idbdatabase</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/idbdatabase/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/idbdatabase/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/89c582f832c8700f7bccef50dabea59350fe3906/hovercard" href="https://github.com/mdn/content/commit/89c582f832c8700f7bccef50dabea59350fe3906"><tt>89c582f</tt></a></li>
+<li>Document last modified: 2023-03-21T06:14:00.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[IndexedDB-3] leading the developer down a dead end in onupgradeneeded]]></title>
             <link>https://github.com/mdn/content/issues/26638</link>
