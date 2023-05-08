@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[IndexedDB-3] leading the developer down a dead end in onupgradeneeded](https://github.com/mdn/content/issues/26638) (2023-05-08T06:34:43Z)
+  
 * [[uievents] Redirect for /en-US/docs/Web/Guide/API/DOM/Events/Mutation_events](https://github.com/mdn/content/issues/26030) (2023-04-08T03:24:27Z)
   
 * [[IndexedDB-3] Example error](https://github.com/mdn/content/issues/25792) (2023-03-31T02:21:29Z)
