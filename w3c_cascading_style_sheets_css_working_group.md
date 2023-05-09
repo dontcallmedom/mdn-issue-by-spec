@@ -50,8 +50,6 @@
   
 * [[cssom-view-1] Incorrect image format used to demonstrate pixel quality](https://github.com/mdn/content/issues/24854) (2023-02-24T23:22:56Z)
   
-* [[css-images-3] Description of image-rendering algorithms do not follow the W3C specs](https://github.com/mdn/content/issues/24734) (2023-02-22T09:07:41Z)
-  
 * [[css-content-3] not obvious that `content` works with `::marker`](https://github.com/mdn/content/issues/24600) (2023-02-19T20:16:44Z)
   
 * [[filter-effects-2] feGaussianBlur needs guidance about setting height and width ](https://github.com/mdn/content/issues/24169) (2023-02-04T21:15:51Z)
