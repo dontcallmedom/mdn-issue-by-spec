@@ -19,7 +19,7 @@
 <p dir="auto">The example</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The example is this one:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="fetch('https://www.example.org')
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="fetch('https://www.example.org')
   .then((response) =&gt; response.body)
   .then((rb) =&gt; {
     const reader = rb.getReader();
@@ -56,45 +56,43 @@
     // Do things with result
     console.log(result);
   });
-"><pre lang="js" class="notranslate"><code class="notranslate">fetch('https://www.example.org')
-  .then((response) =&gt; response.body)
-  .then((rb) =&gt; {
-    const reader = rb.getReader();
+"><pre class="notranslate"><span class="pl-en">fetch</span><span class="pl-kos">(</span><span class="pl-s">'https://www.example.org'</span><span class="pl-kos">)</span>
+  <span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">response</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-s1">response</span><span class="pl-kos">.</span><span class="pl-c1">body</span><span class="pl-kos">)</span>
+  <span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">rb</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+    <span class="pl-k">const</span> <span class="pl-s1">reader</span> <span class="pl-c1">=</span> <span class="pl-s1">rb</span><span class="pl-kos">.</span><span class="pl-en">getReader</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
-    return new ReadableStream({
-      start(controller) {
-        // The following function handles each data chunk
-        function push() {
-          // "done" is a Boolean and value a "Uint8Array"
-          reader.read().then(({ done, value }) =&gt; {
-            // If there is no more data to read
-            if (done) {
-              console.log('done', done);
-              controller.close();
-              return;
-            }
-            // Get the data and send it to the browser via the controller
-            controller.enqueue(value);
-            // Check chunks by logging to the console
-            console.log(done, value);
-            push();
-          });
-        }
+    <span class="pl-k">return</span> <span class="pl-k">new</span> <span class="pl-v">ReadableStream</span><span class="pl-kos">(</span><span class="pl-kos">{</span>
+      <span class="pl-en">start</span><span class="pl-kos">(</span><span class="pl-s1">controller</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+        <span class="pl-c">// The following function handles each data chunk</span>
+        <span class="pl-k">function</span> <span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+          <span class="pl-c">// "done" is a Boolean and value a "Uint8Array"</span>
+          <span class="pl-s1">reader</span><span class="pl-kos">.</span><span class="pl-en">read</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-kos">{</span> done<span class="pl-kos">,</span> value <span class="pl-kos">}</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+            <span class="pl-c">// If there is no more data to read</span>
+            <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">done</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+              <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">'done'</span><span class="pl-kos">,</span> <span class="pl-s1">done</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+              <span class="pl-s1">controller</span><span class="pl-kos">.</span><span class="pl-en">close</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+              <span class="pl-k">return</span><span class="pl-kos">;</span>
+            <span class="pl-kos">}</span>
+            <span class="pl-c">// Get the data and send it to the browser via the controller</span>
+            <span class="pl-s1">controller</span><span class="pl-kos">.</span><span class="pl-en">enqueue</span><span class="pl-kos">(</span><span class="pl-s1">value</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+            <span class="pl-c">// Check chunks by logging to the console</span>
+            <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">done</span><span class="pl-kos">,</span> <span class="pl-s1">value</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+            <span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+          <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+        <span class="pl-kos">}</span>
 
-        push();
-      },
-    });
-  })
-  .then((stream) =&gt;
-    // Respond with our stream
-    new Response(stream, { headers: { 'Content-Type': 'text/html' } }).text()
-  )
-  .then((result) =&gt; {
-    // Do things with result
-    console.log(result);
-  });
-
-</code></pre></div>
+        <span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+      <span class="pl-kos">}</span><span class="pl-kos">,</span>
+    <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span><span class="pl-kos">)</span>
+  <span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">stream</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span>
+    <span class="pl-c">// Respond with our stream</span>
+    <span class="pl-k">new</span> <span class="pl-v">Response</span><span class="pl-kos">(</span><span class="pl-s1">stream</span><span class="pl-kos">,</span> <span class="pl-kos">{</span> <span class="pl-c1">headers</span>: <span class="pl-kos">{</span> <span class="pl-s">'Content-Type'</span>: <span class="pl-s">'text/html'</span> <span class="pl-kos">}</span> <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">text</span><span class="pl-kos">(</span><span class="pl-kos">)</span>
+  <span class="pl-kos">)</span>
+  <span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">result</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+    <span class="pl-c">// Do things with result</span>
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">result</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">I found it confusing because it is mixing both the <strong>how to consume</strong> and <strong>how to produce</strong> a Stream if I am correct.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">As a person that is learning I don't really get from here a recipe for using it. Wouldn't it be better to split this into two pieces, one where it is shown how to read, and other where - maybe a server - creates a Stream for a Response ?</p>
