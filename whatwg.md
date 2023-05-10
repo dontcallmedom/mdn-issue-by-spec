@@ -78,8 +78,6 @@
   
 * [[html] Add documentation of sms: anchor links](https://github.com/mdn/content/issues/23526) (2023-01-10T21:14:40Z)
   
-* [[streams] ReadableStream example mixes creation and consumption](https://github.com/mdn/content/issues/23299) (2023-01-01T13:20:04Z)
-  
 * [[html] Add a reference to to the load (et al) events on HTMLScriptElement.](https://github.com/mdn/content/issues/23287) (2022-12-31T01:28:40Z)
   
 * [[dom] Clarifying scope in event listener definition and execution](https://github.com/mdn/content/issues/23253) (2022-12-29T07:11:31Z)
