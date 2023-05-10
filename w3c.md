@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[css-writing-modes-4] The picture is not satisfied with the actual effect.](https://github.com/mdn/content/issues/26666) (2023-05-09T07:26:22Z)
-  
 * [[IndexedDB-3] versionchange is super important and hardly is given any attention](https://github.com/mdn/content/issues/26639) (2023-05-08T06:47:05Z)
   
 * [[IndexedDB-3] leading the developer down a dead end in onupgradeneeded](https://github.com/mdn/content/issues/26638) (2023-05-08T06:34:43Z)
