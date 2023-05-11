@@ -2551,10 +2551,8 @@ and show it is always going to return true if the font is not available in syste
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><a href="https://w3c.github.io/uievents/#event-type-click" rel="nofollow">https://w3c.github.io/uievents/#event-type-click</a></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;div&gt;CLICK ME&lt;/div&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;div&gt;CLICK ME&lt;/div&gt;
-</code></pre></div>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="document.querySelector(&quot;div&quot;).addEventListener(&quot;click&quot;, console.log);"><pre lang="javascript" class="notranslate"><code class="notranslate">document.querySelector("div").addEventListener("click", console.log);
-</code></pre></div>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;div&gt;CLICK ME&lt;/div&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span>CLICK ME<span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></pre></div>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="document.querySelector(&quot;div&quot;).addEventListener(&quot;click&quot;, console.log);"><pre class="notranslate"><span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">"div"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"click"</span><span class="pl-kos">,</span> <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-c1">log</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">Try this on Firefox and Chrome. I tested on:<br>
 Firefox 105.0.2 (64-bit)<br>
 Chrome Version 106.0.5249.119 (Official Build) (64-bit)</p>
@@ -2822,14 +2820,13 @@ this page is for functional notations as part of the value in property/value pai
 <p dir="auto">When calling <code class="notranslate">IDBFactory.deleteDatabase()</code>, the database isn't deleted until the <code class="notranslate">upgradeneeded</code> event is garbage collected, which can by triggered by calling <code class="notranslate">request.result.close()</code> on the <code class="notranslate">indexedDB.open()</code> result.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">Mention that <code class="notranslate">onsuccess</code> won't be fired until the <code class="notranslate">indexedDB.open()</code> result is closed like so:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const request = indexedDB.open(dbName);
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const request = indexedDB.open(dbName);
 request.onupgradeneeded = () =&gt; {
   request.result.close();
-}"><pre lang="js" class="notranslate"><code class="notranslate">const request = indexedDB.open(dbName);
-request.onupgradeneeded = () =&gt; {
-  request.result.close();
-}
-</code></pre></div>
+}"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">request</span> <span class="pl-c1">=</span> <span class="pl-s1">indexedDB</span><span class="pl-kos">.</span><span class="pl-en">open</span><span class="pl-kos">(</span><span class="pl-s1">dbName</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">request</span><span class="pl-kos">.</span><span class="pl-en">onupgradeneeded</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-s1">request</span><span class="pl-kos">.</span><span class="pl-c1">result</span><span class="pl-kos">.</span><span class="pl-en">close</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span></pre></div>
 <p dir="auto">though to be honest I'm not sure how much of this depends on my specific situation. I reckon there might be other calls that similarly cause a database to stay open like this.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">Initially I thought this was a bug in Chrome, so I reported <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1359843" rel="nofollow">https://bugs.chromium.org/p/chromium/issues/detail?id=1359843</a>. But it seems like this behaviour is intentional.<br>
@@ -2863,12 +2860,11 @@ you'll see that unless you have the 'close indexedDB.open() result' checkbox che
 <p dir="auto">This page shows that we can use <code class="notranslate">new MouseEvent(type, options)</code> to create a <code class="notranslate">MouseEvent</code> but it doesn't show how to use it</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">An example that can replace this code:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const mouseEvent = document.createEvent(&quot;MouseEvent&quot;)
+<div class="highlight highlight-source-ts notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const mouseEvent = document.createEvent(&quot;MouseEvent&quot;)
 mouseEvent.initEvent(&quot;mouseover&quot;)
-element.dispatchEvent(mouseEvent)"><pre lang="typescript" class="notranslate"><code class="notranslate">const mouseEvent = document.createEvent("MouseEvent")
-mouseEvent.initEvent("mouseover")
-element.dispatchEvent(mouseEvent)
-</code></pre></div>
+element.dispatchEvent(mouseEvent)"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">mouseEvent</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createEvent</span><span class="pl-kos">(</span><span class="pl-s">"MouseEvent"</span><span class="pl-kos">)</span>
+<span class="pl-s1">mouseEvent</span><span class="pl-kos">.</span><span class="pl-en">initEvent</span><span class="pl-kos">(</span><span class="pl-s">"mouseover"</span><span class="pl-kos">)</span>
+<span class="pl-s1">element</span><span class="pl-kos">.</span><span class="pl-en">dispatchEvent</span><span class="pl-kos">(</span><span class="pl-s1">mouseEvent</span><span class="pl-kos">)</span></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
@@ -2981,7 +2977,7 @@ With the GEH demixing effort this section is gone and there is nowhere I can fin
 <p dir="auto">If a timeslice property was passed into the <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder/start" rel="nofollow">MediaRecorder.start()</a> method that started media capture, a dataavailable event is fired every timeslice milliseconds.</p>
 </blockquote>
 <p dir="auto">However, I used to record videos with a MediaRecorder like this (in vuejs):</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="startRecording: function () {
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="startRecording: function () {
     this.recorder = new MediaRecorder(this.streamSrc, {mimeType: &quot;video/webm;codecs:vp8&quot;});
     this.recorder.ondataavailable = this.onData;
     this.recorder.start(500);
@@ -2990,17 +2986,16 @@ onData: function (event) {
     // append the latest chunk of video data to an array
     this.chunks.push(event.data);
     this.duration = this.chunks.length * 500 / 1000;
-}"><pre lang="js" class="notranslate"><code class="notranslate">startRecording: function () {
-    this.recorder = new MediaRecorder(this.streamSrc, {mimeType: "video/webm;codecs:vp8"});
-    this.recorder.ondataavailable = this.onData;
-    this.recorder.start(500);
-},
-onData: function (event) {
-    // append the latest chunk of video data to an array
-    this.chunks.push(event.data);
-    this.duration = this.chunks.length * 500 / 1000;
-}
-</code></pre></div>
+}"><pre class="notranslate">startRecording: <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">recorder</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">MediaRecorder</span><span class="pl-kos">(</span><span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">streamSrc</span><span class="pl-kos">,</span> <span class="pl-kos">{</span><span class="pl-c1">mimeType</span>: <span class="pl-s">"video/webm;codecs:vp8"</span><span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">recorder</span><span class="pl-kos">.</span><span class="pl-c1">ondataavailable</span> <span class="pl-c1">=</span> <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">onData</span><span class="pl-kos">;</span>
+    <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">recorder</span><span class="pl-kos">.</span><span class="pl-en">start</span><span class="pl-kos">(</span><span class="pl-c1">500</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">,</span>
+<span class="pl-s1">onData</span>: <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    <span class="pl-c">// append the latest chunk of video data to an array</span>
+    <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">chunks</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-c1">data</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">duration</span> <span class="pl-c1">=</span> <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">chunks</span><span class="pl-kos">.</span><span class="pl-c1">length</span> <span class="pl-c1">*</span> <span class="pl-c1">500</span> <span class="pl-c1">/</span> <span class="pl-c1">1000</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span></pre></div>
 <p dir="auto">and expected each blob emitted to the <code class="notranslate">onData</code> handler to contain exactly 500 ms of video. Hence, I simply used the length of the array to show the total recorded video duration to the user.</p>
 <p dir="auto">As it turns out, the computed duration would accumulate a substantial drift from the real duration as the video got longer. After around 10 minutes of video, the displayed <code class="notranslate">duration</code> value would differ from the actual video duration by multiple seconds.<br>
 I ended up implementing my own "stopwatch" to keep track of the recorded duration, which works much more accurately.</p>
