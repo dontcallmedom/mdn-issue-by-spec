@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] beforeunload docs say it's incompatible with BFCache](https://github.com/mdn/content/issues/26739) (2023-05-12T04:06:27Z)
+  
 * [[html] rowgroup scope is not explained correctly](https://github.com/mdn/content/issues/26722) (2023-05-11T07:56:31Z)
   
 * [[html] facing issue in autocomplete="off"](https://github.com/mdn/content/issues/26714) (2023-05-10T20:29:22Z)
