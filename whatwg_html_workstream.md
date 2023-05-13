@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Lack of information on the differences between closing via method='dialog' and .close()  method](https://github.com/mdn/content/issues/26760) (2023-05-13T04:28:17Z)
+  
 * [[html] For beforeunload event documentation, change userActivation type from transient to sticky](https://github.com/mdn/content/issues/26751) (2023-05-12T19:28:13Z)
   
 * [[html] beforeunload docs say it's incompatible with BFCache](https://github.com/mdn/content/issues/26739) (2023-05-12T04:06:27Z)
