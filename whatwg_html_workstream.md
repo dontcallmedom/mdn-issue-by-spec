@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] Docs indicate buttons with name attribute will be included in form data set, but is incorrect - submitter must be used](https://github.com/mdn/content/issues/26763) (2023-05-13T11:24:03Z)
-  
 * [[html] Lack of information on the differences between closing via method='dialog' and .close()  method](https://github.com/mdn/content/issues/26760) (2023-05-13T04:28:17Z)
   
 * [[html] For beforeunload event documentation, change userActivation type from transient to sticky](https://github.com/mdn/content/issues/26751) (2023-05-12T19:28:13Z)
