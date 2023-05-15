@@ -10,8 +10,6 @@
   
 * [[IndexedDB-3] Example error](https://github.com/mdn/content/issues/25792) (2023-03-31T02:21:29Z)
   
-* [[FileAPI] "Your connection to this site isn't secure" when testing blob example](https://github.com/mdn/content/issues/25515) (2023-03-21T17:36:25Z)
-  
 * [[IndexedDB-3] IDBObjectStore.openCursor incorrect direction docs](https://github.com/mdn/content/issues/25385) (2023-03-16T15:15:59Z)
   
 * [[FileAPI] More information about text encoding when creating a Blob](https://github.com/mdn/content/issues/25282) (2023-03-13T03:06:03Z)
