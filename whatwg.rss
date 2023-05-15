@@ -119,41 +119,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] facing issue in autocomplete="off"]]></title>
-            <link>https://github.com/mdn/content/issues/26714</link>
-            <guid>https://github.com/mdn/content/issues/26714</guid>
-            <pubDate>Wed, 10 May 2023 20:29:22 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/Security/Securing_your_site/Turning_off_form_autocompletion" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Security/Securing_your_site/Turning_off_form_autocompletion</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">For this reason, many modern browsers do not support autocomplete="off" for login fields:</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">For this reason, many modern browsers do not support autocomplete="off" for login fields:</p>
-<p dir="auto">If a site sets autocomplete="off" for a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" rel="nofollow"><code class="notranslate">&lt;form&gt;</code></a>, and the form includes username and password input fields, then the browser still offers to remember this login, and if the user agrees, the browser will autofill those fields the next time the user visits the page.<br>
-If a site sets autocomplete="off" for username and password <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" rel="nofollow"><code class="notranslate">&lt;input&gt;</code></a> fields, then the browser still offers to remember this login, and if the user agrees, the browser will autofill those fields the next time the user visits the page.<br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/Security/Securing_your_site/Turning_off_form_autocompletion#preventing_autofilling_with_autocompletenew-password" rel="nofollow">Preventing autofilling with autocomplete="new-password"</a><br>
-If you are defining a user management page where a user can specify a new password for another person, and therefore you want to prevent autofilling of password fields, you can use autocomplete="new-password".</p>
-<p dir="auto">This is a hint, which browsers are not required to comply with. However modern browsers have stopped autofilling  elements with autocomplete="new-password" for this very reason. For example, Firefox version 67 (see <a href="https://bugzil.la/1119063" rel="nofollow">Firefox bug 1119063</a>) stopped autofilling in this case; however, Firefox 70 (see <a href="https://bugzil.la/1565407" rel="nofollow">Firefox bug 1565407</a>) can suggest securely-generated passwords, but does not autofill a saved password. See the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#browser_compatibility" rel="nofollow">autocomplete compat table</a> for more details.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">I want an answer is __away the solution for this.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">check on stackover flow</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">text me and it's solve this problem</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/security/securing_your_site/turning_off_form_autocompletion</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Securing_your_site/Turning_off_form_autocompletion" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Security/Securing_your_site/Turning_off_form_autocompletion</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/security/securing_your_site/turning_off_form_autocompletion/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/security/securing_your_site/turning_off_form_autocompletion/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/c6dbc4ff96451887b908b46c8e70bcfec1c2c48c/hovercard" href="https://github.com/mdn/content/commit/c6dbc4ff96451887b908b46c8e70bcfec1c2c48c"><tt>c6dbc4f</tt></a></li>
-<li>Document last modified: 2023-02-26T04:54:36.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] link: fix examples for Apple touch icon]]></title>
             <link>https://github.com/mdn/content/issues/26707</link>
             <guid>https://github.com/mdn/content/issues/26707</guid>

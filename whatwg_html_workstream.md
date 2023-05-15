@@ -8,8 +8,6 @@
   
 * [[html] rowgroup scope is not explained correctly](https://github.com/mdn/content/issues/26722) (2023-05-11T07:56:31Z)
   
-* [[html] facing issue in autocomplete="off"](https://github.com/mdn/content/issues/26714) (2023-05-10T20:29:22Z)
-  
 * [[html] link: fix examples for Apple touch icon](https://github.com/mdn/content/issues/26707) (2023-05-10T15:45:25Z)
   
 * [[html] Improve wording on what it means to be suspended](https://github.com/mdn/content/issues/26625) (2023-05-07T04:43:55Z)
