@@ -4,8 +4,6 @@
 
 * [[html] Lack of information on the differences between closing via method='dialog' and .close()  method](https://github.com/mdn/content/issues/26760) (2023-05-13T04:28:17Z)
   
-* [[html] For beforeunload event documentation, change userActivation type from transient to sticky](https://github.com/mdn/content/issues/26751) (2023-05-12T19:28:13Z)
-  
 * [[html] beforeunload docs say it's incompatible with BFCache](https://github.com/mdn/content/issues/26739) (2023-05-12T04:06:27Z)
   
 * [[html] rowgroup scope is not explained correctly](https://github.com/mdn/content/issues/26722) (2023-05-11T07:56:31Z)

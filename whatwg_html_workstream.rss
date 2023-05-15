@@ -39,37 +39,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] For beforeunload event documentation, change userActivation type from transient to sticky]]></title>
-            <link>https://github.com/mdn/content/issues/26751</link>
-            <guid>https://github.com/mdn/content/issues/26751</guid>
-            <pubDate>Fri, 12 May 2023 19:28:13 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Security</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">I have a question about this sentence: 'Transient user activation is required. The user has to interact with the page or a UI element in order for this feature to work.'</p>
-<p dir="auto">Transient user activation can be programmatically determined by <code class="notranslate">navigator.userActivation.isActive</code>. I was confused why after the warning dialog was still popping up even after a user clicked on the page and the isActive property changed from true to false. It was behaving as if it was gated by sticky activation, not transient activation.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">When I did a quick search through the chromium code, looks like they tested 'beforeunload' being gated by sticky activation. Maybe I was interpreting it wrong, but I think its more accurate to say 'Sticky user activation is required. The user has to interact with the page or a UI element in order for this feature to work.'. And also make changes on other pages as needed like here: <a href="https://developer.mozilla.org/en-US/docs/Web/Security/User_activation" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Security/User_activation</a>.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">Chromium test example: <a href="https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/web_tests/external/wpt/html/browsers/browsing-the-web/unloading-documents/support/beforeunload-sticky-destination.html" rel="nofollow">https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/web_tests/external/wpt/html/browsers/browsing-the-web/unloading-documents/support/beforeunload-sticky-destination.html</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">Don't mind making changes myself if this change is needed.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/window/beforeunload_event</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/beforeunload_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/beforeunload_event/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cc070123f72376faec06e36622c4fc723a75325f/hovercard" href="https://github.com/mdn/content/commit/cc070123f72376faec06e36622c4fc723a75325f"><tt>cc07012</tt></a></li>
-<li>Document last modified: 2023-04-08T06:57:07.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] beforeunload docs say it's incompatible with BFCache]]></title>
             <link>https://github.com/mdn/content/issues/26739</link>
             <guid>https://github.com/mdn/content/issues/26739</guid>
