@@ -34,8 +34,6 @@
   
 * [[ecmascript, service-workers-1] Please specify that `openWindow()` and `focus()` only works when the user clicked on a notification](https://github.com/mdn/content/issues/26048) (2023-04-08T11:59:21Z)
   
-* [[uievents] Redirect for /en-US/docs/Web/Guide/API/DOM/Events/Mutation_events](https://github.com/mdn/content/issues/26030) (2023-04-08T03:24:27Z)
-  
 * [[css-sizing-4] The compatibility table is very confusing when alternative names exist](https://github.com/mdn/content/issues/25923) (2023-04-05T12:20:27Z)
   
 * [[css-overflow-3] Deviation of the `overflow-clip-margin` page from the spec](https://github.com/mdn/content/issues/25906) (2023-04-04T14:38:09Z)
