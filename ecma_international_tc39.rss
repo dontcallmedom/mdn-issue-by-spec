@@ -4,69 +4,10 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Thu, 11 May 2023 13:32:29 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 28 Apr 2023 20:00:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript] Description of the differences between TypedArray.from() and Array.from() are not correct.]]></title>
-            <link>https://github.com/mdn/content/issues/26729</link>
-            <guid>https://github.com/mdn/content/issues/26729</guid>
-            <pubDate>Thu, 11 May 2023 13:32:29 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/from" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/from</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Differences from Array.from()</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<ul dir="auto">
-<li>
-<blockquote>
-<p dir="auto">If the thisArg value passed to TypedArray.from() is not a constructor, TypedArray.from() will throw a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError" rel="nofollow">TypeError</a>, where Array.from() defaults to creating a new <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" rel="nofollow">Array</a>.</p>
-</blockquote>
-</li>
-</ul>
-<p dir="auto">It turns out that the <code class="notranslate">thisArg</code> in the arguments list of <code class="notranslate">TypedArray.from(arrayLike, mapFn, thisArg)</code> can be a non-constructor. For example: a plain object in the following code:</p>
-<p dir="auto"><code class="notranslate">const arr = Uint32Array.from([1, 2, 3], x =&gt; x, {});</code></p>
-<p dir="auto">If you run this code, there won't be errors be thrown.</p>
-<p dir="auto">I think the author meant not the <code class="notranslate">thisArg</code> passed to <code class="notranslate">TypedArray.from()</code> but the thing based on which <code class="notranslate">TypedArray.from()</code> is called. In other words, the receiver of <code class="notranslate">TypedArray.from()</code>.</p>
-<p dir="auto">So if we change the receiver manually like this:</p>
-<p dir="auto"><code class="notranslate">Uint32Array.from.call({}, [1, 2, 3]);</code></p>
-<p dir="auto">We can find the following type error.</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/16416541/237702021-381265a6-f7dc-4b47-b9ba-fff9ed74c280.png"><img src="https://user-images.githubusercontent.com/16416541/237702021-381265a6-f7dc-4b47-b9ba-fff9ed74c280.png" alt="image" style="max-width: 100%;"></a></p>
-<ul dir="auto">
-<li>
-<blockquote>
-<p dir="auto">When the source parameter is an iterator, the TypedArray.from() first collects all the values from the iterator, then creates an instance of thisArg using the count, then sets the values on the instance. Array.from() sets each value as it receives them from the iterator, then sets its length at the end.</p>
-</blockquote>
-</li>
-</ul>
-<p dir="auto">I think the <code class="notranslate">source</code> should be <code class="notranslate">arrayLike</code>, right?</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<ul dir="auto">
-<li>
-<p dir="auto">If the <code class="notranslate">this</code> value based on which TypedArray.from() is called is not a constructor, TypedArray.from() will throw a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError" rel="nofollow">TypeError</a>, where Array.from() defaults to creating a new <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" rel="nofollow">Array</a>.</p>
-</li>
-<li>
-<p dir="auto">When the <code class="notranslate">arrayLike</code> parameter is an iterator, the TypedArray.from() first collects all the values from the iterator, then creates an instance of thisArg using the count, then sets the values on the instance. Array.from() sets each value as it receives them from the iterator, then sets its length at the end.</p>
-</li>
-</ul>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/typedarray/from</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/from" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/from</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/typedarray/from/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/typedarray/from/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/c51736321bee582320a6aed38f969e9f28a2fcd8/hovercard" href="https://github.com/mdn/content/commit/c51736321bee582320a6aed38f969e9f28a2fcd8"><tt>c517363</tt></a></li>
-<li>Document last modified: 2023-03-30T14:41:11.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[ecmascript] FinalizationRegistry: missing example and lack of clarity on "threads"]]></title>
             <link>https://github.com/mdn/content/issues/26486</link>
