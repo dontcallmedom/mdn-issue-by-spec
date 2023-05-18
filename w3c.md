@@ -48,7 +48,7 @@
   
 * [[html, DOM-Parsing] Inconsistency about if pushState() results in a popstate event](https://github.com/mdn/content/issues/25785) (2023-03-30T20:11:04Z)
   
-* [[css-properties-values-api-1] Please provide a working example](https://github.com/mdn/content/issues/25776) (2023-03-30T17:10:38Z)
+* [[css-properties-values-api-1] Please provide a working example for @property](https://github.com/mdn/content/issues/25776) (2023-03-30T17:10:38Z)
   
 * [[css-images-3] Outdated note for `image-rendering`](https://github.com/mdn/content/issues/25774) (2023-03-30T15:21:01Z)
   
