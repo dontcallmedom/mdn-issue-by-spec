@@ -44,7 +44,7 @@
   
 * [[css-transforms-2] transform-style docs should mention that there are scenarios where the value is forced](https://github.com/mdn/content/issues/25801) (2023-03-31T11:03:24Z)
   
-* [[IndexedDB-3] Example error](https://github.com/mdn/content/issues/25792) (2023-03-31T02:21:29Z)
+* [[IndexedDB-3] Example uses nonexistent IDBCursor#value property](https://github.com/mdn/content/issues/25792) (2023-03-31T02:21:29Z)
   
 * [[html, DOM-Parsing] Inconsistency about if pushState() results in a popstate event](https://github.com/mdn/content/issues/25785) (2023-03-30T20:11:04Z)
   
