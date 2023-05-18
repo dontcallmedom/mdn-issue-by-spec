@@ -6,8 +6,6 @@
   
 * [[css-backgrounds-4] No documentation for css src(...)](https://github.com/mdn/content/issues/26621) (2023-05-06T22:26:03Z)
   
-* [[css-backgrounds-4] Almost all links pointing to "w3c.github.io/csswg-drafts" are broken now](https://github.com/mdn/content/issues/26613) (2023-05-06T05:06:56Z)
-  
 * [[html, cssom-view-1] Description of updatePixelRatio() example function doesn't match code listing](https://github.com/mdn/content/issues/26490) (2023-04-29T02:18:13Z)
   
 * [[css-backgrounds-4] It is unclear why background-attachment: fixed is said to be incompatible with background-clip: text](https://github.com/mdn/content/issues/26445) (2023-04-27T02:31:12Z)
