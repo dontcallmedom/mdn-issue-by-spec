@@ -2511,7 +2511,7 @@ The only content which mentions this behavior is the following sentence:</p>
 <li>Send a request with and without the field and check which callback is fired inside <code class="notranslate">then()</code>.</li>
 </ul>
 <p dir="auto">Request code example:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="  function test_fetch(){
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="  function test_fetch(){
 	  let message = JSON.stringify({
              // 'ids' is the expected field. Change it latter for 'id' or something else to see the error.
              ids: [1] 
@@ -2529,26 +2529,25 @@ The only content which mentions this behavior is the following sentence:</p>
 		  body: message
 	  })
 	  .then(data =&gt; console.log('success'),data =&gt; console.log('error'))
-  }"><pre lang="javascript" class="notranslate"><code class="notranslate">  function test_fetch(){
-	  let message = JSON.stringify({
-             // 'ids' is the expected field. Change it latter for 'id' or something else to see the error.
-             ids: [1] 
-	  })
+  }"><pre class="notranslate">  <span class="pl-k">function</span> <span class="pl-en">test_fetch</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">{</span>
+	  <span class="pl-k">let</span> <span class="pl-s1">message</span> <span class="pl-c1">=</span> <span class="pl-c1">JSON</span><span class="pl-kos">.</span><span class="pl-en">stringify</span><span class="pl-kos">(</span><span class="pl-kos">{</span>
+             <span class="pl-c">// 'ids' is the expected field. Change it latter for 'id' or something else to see the error.</span>
+             <span class="pl-c1">ids</span>: <span class="pl-kos">[</span><span class="pl-c1">1</span><span class="pl-kos">]</span> 
+	  <span class="pl-kos">}</span><span class="pl-kos">)</span>
   
-	  fetch('http://your.api/get_data',{
-		  method: 'post',
-                  // Adding Content-Type header to enable preflight. 
-                  // It's still not working even with normal(no-preflight) requests.
-                  // To test with normal instead of preflight requests,
-                  // remove the line below from the fetch options object and
-                  // make sure your server can handle text/plain data or else
-                  // you may face some error due to wrong parsing of request body.
-		  headers: {'Content-Type': 'application/json'},
-		  body: message
-	  })
-	  .then(data =&gt; console.log('success'),data =&gt; console.log('error'))
-  }
-</code></pre></div>
+	  <span class="pl-en">fetch</span><span class="pl-kos">(</span><span class="pl-s">'http://your.api/get_data'</span><span class="pl-kos">,</span><span class="pl-kos">{</span>
+		  <span class="pl-c1">method</span>: <span class="pl-s">'post'</span><span class="pl-kos">,</span>
+                  <span class="pl-c">// Adding Content-Type header to enable preflight. </span>
+                  <span class="pl-c">// It's still not working even with normal(no-preflight) requests.</span>
+                  <span class="pl-c">// To test with normal instead of preflight requests,</span>
+                  <span class="pl-c">// remove the line below from the fetch options object and</span>
+                  <span class="pl-c">// make sure your server can handle text/plain data or else</span>
+                  <span class="pl-c">// you may face some error due to wrong parsing of request body.</span>
+		  <span class="pl-c1">headers</span>: <span class="pl-kos">{</span><span class="pl-s">'Content-Type'</span>: <span class="pl-s">'application/json'</span><span class="pl-kos">}</span><span class="pl-kos">,</span>
+		  <span class="pl-c1">body</span>: <span class="pl-s1">message</span>
+	  <span class="pl-kos">}</span><span class="pl-kos">)</span>
+	  <span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-s1">data</span> <span class="pl-c1">=&gt;</span> <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">'success'</span><span class="pl-kos">)</span><span class="pl-kos">,</span><span class="pl-s1">data</span> <span class="pl-c1">=&gt;</span> <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">'error'</span><span class="pl-kos">)</span><span class="pl-kos">)</span>
+  <span class="pl-kos">}</span></pre></div>
 <p dir="auto">I've tested in <code class="notranslate">Chrome, version 102.0.5005.61 (Official Build) (64-bit)</code> and <code class="notranslate">Firefox, version 75.0 (64-bit)</code>. Got the same unexpected behaviour in both.</p>
 <h3 dir="auto">MDN metadata</h3>
 
@@ -3893,7 +3892,7 @@ This problem goes for all properties of the Location object.</p>
             <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:target" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:target</a></p>
 <h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
 <p dir="auto">Let's assume you have this Web Component:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="
 let template = `
 	&lt;div&gt;
 		&lt;a href=&quot;#message&quot;&gt;Make the message red&lt;/a&gt;
@@ -3912,27 +3911,25 @@ customElements.define('my-component', class myElement extends HTMLElement {
 		let shadowRoot = this.attachShadow({ mode: 'open' });
 		shadowRoot.innerHTML = template;
 	}
-});"><pre lang="javascript" class="notranslate"><code class="notranslate">
-let template = `
-	&lt;div&gt;
-		&lt;a href="#message"&gt;Make the message red&lt;/a&gt;
-		&lt;h2 id="message"&gt;Message in a bottle&lt;/h2&gt;
-	&lt;/div&gt;
-	&lt;style&gt;
-		#message:target {
-			color: red;
-		}
-	&lt;/style&gt;
-`;
+});"><pre class="notranslate"><span class="pl-k">let</span> <span class="pl-s1">template</span> <span class="pl-c1">=</span> <span class="pl-s">`</span>
+<span class="pl-s">	&lt;div&gt;</span>
+<span class="pl-s">		&lt;a href="#message"&gt;Make the message red&lt;/a&gt;</span>
+<span class="pl-s">		&lt;h2 id="message"&gt;Message in a bottle&lt;/h2&gt;</span>
+<span class="pl-s">	&lt;/div&gt;</span>
+<span class="pl-s">	&lt;style&gt;</span>
+<span class="pl-s">		#message:target {</span>
+<span class="pl-s">			color: red;</span>
+<span class="pl-s">		}</span>
+<span class="pl-s">	&lt;/style&gt;</span>
+<span class="pl-s">`</span><span class="pl-kos">;</span>
 
-customElements.define('my-component', class myElement extends HTMLElement {
-	constructor() {
-		super();
-		let shadowRoot = this.attachShadow({ mode: 'open' });
-		shadowRoot.innerHTML = template;
-	}
-});
-</code></pre></div>
+<span class="pl-s1">customElements</span><span class="pl-kos">.</span><span class="pl-en">define</span><span class="pl-kos">(</span><span class="pl-s">'my-component'</span><span class="pl-kos">,</span> <span class="pl-k">class</span> <span class="pl-s1">myElement</span> <span class="pl-k">extends</span> <span class="pl-v">HTMLElement</span> <span class="pl-kos">{</span>
+	<span class="pl-en">constructor</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+		<span class="pl-smi">super</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+		<span class="pl-k">let</span> <span class="pl-s1">shadowRoot</span> <span class="pl-c1">=</span> <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-en">attachShadow</span><span class="pl-kos">(</span><span class="pl-kos">{</span> <span class="pl-c1">mode</span>: <span class="pl-s">'open'</span> <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+		<span class="pl-s1">shadowRoot</span><span class="pl-kos">.</span><span class="pl-c1">innerHTML</span> <span class="pl-c1">=</span> <span class="pl-s1">template</span><span class="pl-kos">;</span>
+	<span class="pl-kos">}</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">This code fails to work because the event <code class="notranslate">:target</code> is missing in the root of the shadow.</p>
 <h4 dir="auto">Specific section or headline?</h4>
 <h4 dir="auto">What did you expect to see?</h4>
@@ -4039,18 +4036,17 @@ Anyway,</li>
 <h1 dir="auto">Details</h1>
 
 <p dir="auto"><code class="notranslate">requestAnimationFrame</code> and <code class="notranslate">cancelAnimationFrame</code> used to be <code class="notranslate">Window</code> only methods, but it has recently been added to <code class="notranslate">DedicatedWorkerGlobalScope</code> too. <a href="https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider" rel="nofollow">https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider</a></p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="interface mixin AnimationFrameProvider {
+<div class="highlight highlight-source-webidl notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="interface mixin AnimationFrameProvider {
   unsigned long requestAnimationFrame(FrameRequestCallback callback);
   undefined cancelAnimationFrame(unsigned long handle);
 };
 Window includes AnimationFrameProvider;
-DedicatedWorkerGlobalScope includes AnimationFrameProvider;"><pre lang="webidl" class="notranslate"><code class="notranslate">interface mixin AnimationFrameProvider {
-  unsigned long requestAnimationFrame(FrameRequestCallback callback);
-  undefined cancelAnimationFrame(unsigned long handle);
+DedicatedWorkerGlobalScope includes AnimationFrameProvider;"><pre class="notranslate"><span class="pl-k">interface</span> <span class="pl-en">mixin</span> AnimationFrameProvider {
+  <span class="pl-k">unsigned</span> <span class="pl-k">long</span> <span class="pl-en">requestAnimationFrame</span>(FrameRequestCallback callback);
+  undefined <span class="pl-en">cancelAnimationFrame</span>(<span class="pl-k">unsigned</span> <span class="pl-k">long</span> handle);
 };
 Window includes AnimationFrameProvider;
-DedicatedWorkerGlobalScope includes AnimationFrameProvider;
-</code></pre></div>
+DedicatedWorkerGlobalScope includes AnimationFrameProvider;</pre></div>
 <p dir="auto">I guess the page should now be <code class="notranslate">Web/API/WindowOrWorkerGlobalScope/requestAnimationFrame</code>, but I fear this would break any link to the current <code class="notranslate">/Web/API/window/requestAnimationFrame</code>. So I'm not sure how it should get handled.</p>
 <p dir="auto">Also, compat-data should probably be updated (currently these methods are supported in Blink only).</p>]]></content:encoded>
         </item>
