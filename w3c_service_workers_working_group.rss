@@ -4,10 +4,40 @@
         <title>W3C Service Workers Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_service_workers_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Service Workers Working Group</description>
-        <lastBuildDate>Sat, 08 Apr 2023 11:59:21 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 18 May 2023 18:58:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[service-workers-1] Incorrect example code for Cache.matchAll]]></title>
+            <link>https://github.com/mdn/content/issues/26841</link>
+            <guid>https://github.com/mdn/content/issues/26841</guid>
+            <pubDate>Thu, 18 May 2023 18:58:05 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Cache/matchAll" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Cache/matchAll</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Examples</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The example code uses the <code class="notranslate">Response</code> results from <code class="notranslate">matchAll</code> as parameters to <code class="notranslate">cache.delete</code>. However, according to the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Cache/delete" rel="nofollow">docs</a> and TypeScript definitions, and based on my own testing, <code class="notranslate">Cache.delete</code> takes a Request or a URL, not a Response.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Valid example code</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Cache/delete" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Cache/delete</a>, <a href="https://w3c.github.io/ServiceWorker/#cache-delete" rel="nofollow">https://w3c.github.io/ServiceWorker/#cache-delete</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/cache/matchall</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Cache/matchAll" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Cache/matchAll</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/cache/matchall/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/cache/matchall/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/1f216a70d94c3901c5767e6108a29daa48edc070/hovercard" href="https://github.com/mdn/content/commit/1f216a70d94c3901c5767e6108a29daa48edc070"><tt>1f216a7</tt></a></li>
+<li>Document last modified: 2023-04-07T06:13:50.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript, service-workers-1] Please specify that `openWindow()` and `focus()` only works when the user clicked on a notification]]></title>
             <link>https://github.com/mdn/content/issues/26048</link>
