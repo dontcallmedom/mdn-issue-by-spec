@@ -77,43 +77,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] beforeunload docs say it's incompatible with BFCache]]></title>
-            <link>https://github.com/mdn/content/issues/26739</link>
-            <guid>https://github.com/mdn/content/issues/26739</guid>
-            <pubDate>Fri, 12 May 2023 04:06:27 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">#usage_notes</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto"><code class="notranslate">beforeunload</code> events only prevent BFCaching on Mozilla. Chrome and Safari BFCache pages with a handler.</p>
-<p dir="auto">You can test it out with <a href="https://fergald.github.io/random/bfcache/beforeunload/" rel="nofollow">this page</a>.</p>
-<p dir="auto">The reasoning</p>
-<blockquote>
-<p dir="auto">because many pages using this event assume that the page will not continue to exist after the event is fired</p>
-</blockquote>
-<p dir="auto">doesn't seem valid. A user may opt to remain on the page <em>because</em> of the prompt that is shown, so it's entirely expected that the page may continue to exist after the event is fired. I think perhaps this was was mistakenly copied from <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/unload_event#usage_notes" rel="nofollow">the <code class="notranslate">unload</code> event</a>.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">It should not that it currently blocks on Mozilla.</p>
-<p dir="auto">See <a href="https://web.dev/bfcache/#only-add-beforeunload-listeners-conditionally" rel="nofollow">the BFCache guide</a> for the latest advice on use of <code class="notranslate">beforeunload</code> and BFCache.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/window/beforeunload_event</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/beforeunload_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/beforeunload_event/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cc070123f72376faec06e36622c4fc723a75325f/hovercard" href="https://github.com/mdn/content/commit/cc070123f72376faec06e36622c4fc723a75325f"><tt>cc07012</tt></a></li>
-<li>Document last modified: 2023-04-08T06:57:07.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] rowgroup scope is not explained correctly]]></title>
             <link>https://github.com/mdn/content/issues/26722</link>
             <guid>https://github.com/mdn/content/issues/26722</guid>
