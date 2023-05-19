@@ -6,8 +6,6 @@
   
 * [[ecmascript] Issue with inheritance with classes: examples are an anti-pattern ](https://github.com/mdn/content/issues/26110) (2023-04-11T08:18:24Z)
   
-* [[ecmascript, service-workers-1] Please specify that `openWindow()` and `focus()` only works when the user clicked on a notification](https://github.com/mdn/content/issues/26048) (2023-04-08T11:59:21Z)
-  
 * [[ecmascript] Accessing WebAssembly memory using TypedArrays is incorrect on Big Endian systems](https://github.com/mdn/content/issues/25569) (2023-03-23T12:09:31Z)
   
 * [[ecmascript] Misleading information around await's interaction with microtask/task queues](https://github.com/mdn/content/issues/24177) (2023-02-05T16:19:19Z)

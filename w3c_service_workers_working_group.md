@@ -4,8 +4,6 @@
 
 * [[service-workers-1] Incorrect example code for Cache.matchAll](https://github.com/mdn/content/issues/26841) (2023-05-18T18:58:05Z)
   
-* [[ecmascript, service-workers-1] Please specify that `openWindow()` and `focus()` only works when the user clicked on a notification](https://github.com/mdn/content/issues/26048) (2023-04-08T11:59:21Z)
-  
 * [[service-workers-1] Fetch Event client id is null](https://github.com/mdn/content/issues/20657) (2022-09-13T11:22:55Z)
   
 * [[service-workers-1] Issue with "Client.postMessage()": Page does not give a full code example, or enough context to create one](https://github.com/mdn/content/issues/10573) (2021-11-16T20:28:09Z)
