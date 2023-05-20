@@ -16,8 +16,6 @@
   
 * [[html, cssom-view-1] Problem with window.devicePixelRatio example](https://github.com/mdn/content/issues/26316) (2023-04-20T12:37:50Z)
   
-* [[css-backgrounds-4, css-color-4] Misleading or old information about the styling of the <option> element across different browsers ](https://github.com/mdn/content/issues/26182) (2023-04-13T10:15:11Z)
-  
 * [[css-sizing-4] The compatibility table is very confusing when alternative names exist](https://github.com/mdn/content/issues/25923) (2023-04-05T12:20:27Z)
   
 * [[css-overflow-3] Deviation of the `overflow-clip-margin` page from the spec](https://github.com/mdn/content/issues/25906) (2023-04-04T14:38:09Z)

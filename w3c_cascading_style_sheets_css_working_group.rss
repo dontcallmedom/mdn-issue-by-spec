@@ -236,44 +236,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-backgrounds-4, css-color-4] Misleading or old information about the styling of the <option> element across different browsers ]]></title>
-            <link>https://github.com/mdn/content/issues/26182</link>
-            <guid>https://github.com/mdn/content/issues/26182</guid>
-            <pubDate>Thu, 13 Apr 2023 10:15:11 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling" rel="nofollow">https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Selects and datalists</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">In this section the article explains two problems relating to styling the <code class="notranslate">&lt;select&gt;</code> and <code class="notranslate">&lt;datalists&gt;</code> elements. In the second problem, the article says:</p>
-<blockquote>
-<p dir="auto">The second, slightly more major issue is that you don't have control over the box that appears containing the options when you click on the <code class="notranslate">&lt;select&gt;</code> box to open it. <strong>You'll notice that the options don't inherit the font set on the parent</strong>.</p>
-</blockquote>
-<p dir="auto">The last line says the <code class="notranslate">&lt;option&gt;</code> element doesn't <strong>inherit</strong> the font set from the parent. Maybe this happens on older browsers but when I checked both on <strong>Firefox</strong> and <strong>Chrome</strong> <code class="notranslate">&lt;option&gt;</code> is inheriting the font from its parent so this line is not correct anymore in the paragraph. On the next line, it says:</p>
-<blockquote>
-<p dir="auto">You also can't consistently set things like spacing and colors. For example, Firefox will apply <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color" rel="nofollow">color</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color" rel="nofollow">background-color</a> when set on the <code class="notranslate">&lt;option&gt;</code> elements, <strong>but Chrome won't</strong>.</p>
-</blockquote>
-<p dir="auto">I checked on Chrome it also applies the <strong>color</strong> and <strong>background color</strong> properties so this statement that Chrome won't apply these properties does not make any sense because Chrome also applies these properties as well.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Maybe change this paragraph so that it does not create confusion between the old and modern browser's capabilities.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/learn/forms/advanced_form_styling</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling" rel="nofollow">https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/learn/forms/advanced_form_styling/index.md">https://github.com/mdn/content/blob/main/files/en-us/learn/forms/advanced_form_styling/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/8e2641ebe076ab89299c77a51ece882de4ba5efb/hovercard" href="https://github.com/mdn/content/commit/8e2641ebe076ab89299c77a51ece882de4ba5efb"><tt>8e2641e</tt></a></li>
-<li>Document last modified: 2023-02-23T23:55:46.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[css-sizing-4] The compatibility table is very confusing when alternative names exist]]></title>
             <link>https://github.com/mdn/content/issues/25923</link>
             <guid>https://github.com/mdn/content/issues/25923</guid>
