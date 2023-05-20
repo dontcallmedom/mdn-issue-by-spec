@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[webaudio] stream is not defined](https://github.com/mdn/content/issues/26867) (2023-05-20T17:29:16Z)
+  
 * [[service-workers-1] Incorrect example code for Cache.matchAll](https://github.com/mdn/content/issues/26841) (2023-05-18T18:58:05Z)
   
 * [[css-contain-2] Incorrect Documentation - CSS quotes are not affected by "contain: style".](https://github.com/mdn/content/issues/26804) (2023-05-16T17:17:45Z)
