@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] Letter casing inconsistency](https://github.com/mdn/content/issues/26848) (2023-05-19T05:50:23Z)
-  
 * [[html] Lack of information on the differences between closing via method='dialog' and .close()  method](https://github.com/mdn/content/issues/26760) (2023-05-13T04:28:17Z)
   
 * [[html] rowgroup scope is not explained correctly](https://github.com/mdn/content/issues/26722) (2023-05-11T07:56:31Z)
