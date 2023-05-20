@@ -58,8 +58,6 @@
   
 * [[css-logical-1, css-page-4] Should `page-break-*` be explicitly mark as deprecated?](https://github.com/mdn/content/issues/25459) (2023-03-19T15:16:56Z)
   
-* [[css-backgrounds-4, css-text-decor-3] Incorrect animation type link of `box-shadow`](https://github.com/mdn/content/issues/25425) (2023-03-17T15:39:20Z)
-  
 * [[IndexedDB-3] IDBObjectStore.openCursor incorrect direction docs](https://github.com/mdn/content/issues/25385) (2023-03-16T15:15:59Z)
   
 * [[resize-observer-1] ResizeObserverEntry.contentBoxSize example doesn't use ResizeObserverEntry.contentBoxSize](https://github.com/mdn/content/issues/25364) (2023-03-15T22:35:36Z)
@@ -67,8 +65,6 @@
 * [[screen-capture] systemAudio is misleading](https://github.com/mdn/content/issues/25307) (2023-03-14T03:38:33Z)
   
 * [[FileAPI] More information about text encoding when creating a Blob](https://github.com/mdn/content/issues/25282) (2023-03-13T03:06:03Z)
-  
-* [[IndexedDB-3] Failed to execute ‘transaction’ on IDBDdatabase the database connection closing](https://github.com/mdn/content/issues/25281) (2023-03-13T03:05:57Z)
   
 * [[css-sizing-4, css-conditional-3, css-sizing-3] In correct statement about max-width](https://github.com/mdn/content/issues/25073) (2023-03-05T03:22:13Z)
   
