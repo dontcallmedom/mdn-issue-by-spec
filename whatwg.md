@@ -18,7 +18,7 @@
   
 * [[html, cssom-view-1] Description of updatePixelRatio() example function doesn't match code listing](https://github.com/mdn/content/issues/26490) (2023-04-29T02:18:13Z)
   
-* [[dom] More information would be helpful](https://github.com/mdn/content/issues/26470) (2023-04-28T04:34:16Z)
+* [[dom] More information about what HTMLCollection is replaced with](https://github.com/mdn/content/issues/26470) (2023-04-28T04:34:16Z)
   
 * [[html, cssom-view-1] Problem with window.devicePixelRatio example](https://github.com/mdn/content/issues/26316) (2023-04-20T12:37:50Z)
   
