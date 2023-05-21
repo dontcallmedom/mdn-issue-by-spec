@@ -4,8 +4,6 @@
 
 * [[WebCryptoAPI] Provide an example of SHA digesting a file](https://github.com/mdn/content/issues/26872) (2023-05-20T23:31:07Z)
   
-* [[webaudio] stream is not defined](https://github.com/mdn/content/issues/26867) (2023-05-20T17:29:16Z)
-  
 * [[service-workers-1] Incorrect example code for Cache.matchAll](https://github.com/mdn/content/issues/26841) (2023-05-18T18:58:05Z)
   
 * [[css-contain-2] Incorrect Documentation - CSS quotes are not affected by "contain: style".](https://github.com/mdn/content/issues/26804) (2023-05-16T17:17:45Z)
