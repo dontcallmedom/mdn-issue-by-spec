@@ -4,65 +4,10 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Mon, 22 May 2023 13:21:03 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 21 May 2023 01:39:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript] possibly sample code race condition]]></title>
-            <link>https://github.com/mdn/content/issues/26905</link>
-            <guid>https://github.com/mdn/content/issues/26905</guid>
-            <pubDate>Mon, 22 May 2023 13:21:03 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields#simulating_private_constructors" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields#simulating_private_constructors</a></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Not being an expert I wonder whether there could be a race condition issue with the static field <code class="notranslate">#isInternalConstructing</code> in the sample code.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">What if we passed a static private secret instead?</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="class PrivateConstructor {
-  static #secret = Math.random();
-
-  constructor(secret) {
-    if(secret !== PrivateConstructor.#secret)
-      throw new TypeError(&quot;PrivateConstructor is not constructable&quot;);
-  }
-
-  static create() {
-    return new PrivateConstructor(PrivateConstructor.#secret);
-  }
-}"><pre class="notranslate"><code class="notranslate">class PrivateConstructor {
-  static #secret = Math.random();
-
-  constructor(secret) {
-    if(secret !== PrivateConstructor.#secret)
-      throw new TypeError("PrivateConstructor is not constructable");
-  }
-
-  static create() {
-    return new PrivateConstructor(PrivateConstructor.#secret);
-  }
-}
-</code></pre></div>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">Thanks for sharing!<br>
-Cheers!</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/classes/private_class_fields</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/classes/private_class_fields/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/classes/private_class_fields/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/1c3289e60a5d72973d49f046e457c477eff23898/hovercard" href="https://github.com/mdn/content/commit/1c3289e60a5d72973d49f046e457c477eff23898"><tt>1c3289e</tt></a></li>
-<li>Document last modified: 2023-04-09T19:29:33.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[ecmascript] Provide a definition for binding list]]></title>
             <link>https://github.com/mdn/content/issues/26875</link>
