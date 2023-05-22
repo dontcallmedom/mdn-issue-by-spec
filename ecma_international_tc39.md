@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[ecmascript] possibly sample code race condition](https://github.com/mdn/content/issues/26905) (2023-05-22T13:21:03Z)
+  
 * [[ecmascript] Provide a definition for binding list](https://github.com/mdn/content/issues/26875) (2023-05-21T01:39:29Z)
   
 * [[ecmascript] FinalizationRegistry: missing example and lack of clarity on "threads"](https://github.com/mdn/content/issues/26486) (2023-04-28T20:00:14Z)
