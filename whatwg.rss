@@ -4,10 +4,47 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Tue, 23 May 2023 11:03:22 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 23 May 2023 13:24:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[dom] Searching for `<!` does not return any results, making information on HTML comments harder to find than necessary]]></title>
+            <link>https://github.com/mdn/content/issues/26923</link>
+            <guid>https://github.com/mdn/content/issues/26923</guid>
+            <pubDate>Tue, 23 May 2023 13:24:50 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started" rel="nofollow">https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">HTML comments</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Searching for <code class="notranslate">&lt;!----&gt;</code> (or even the first <code class="notranslate">&lt;!</code>, really) does not return any search results on HTML comments.</p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/259840/240293021-9775ea8b-1364-4daa-a0d1-4e29e5604673.png"><img src="https://user-images.githubusercontent.com/259840/240293021-9775ea8b-1364-4daa-a0d1-4e29e5604673.png" alt="image" style="max-width: 100%;"></a></p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Links to these relevant pages:</p>
+<ul dir="auto">
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started" rel="nofollow">https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Comment" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Comment</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Comment/Comment" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Comment/Comment</a></li>
+</ul>
+<p dir="auto">(there might have been more that I missed)</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Searching for <code class="notranslate">&lt;!</code> gives no results: <a href="https://developer.mozilla.org/en-US/search?q=%3C" rel="nofollow">https://developer.mozilla.org/en-US/search?q=%3C</a>!</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Sorry for not fixing this myself - if it was as simple as writing some paragraphs of missing information I would have done so, but I have no idea how to affect search results.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/learn/html/introduction_to_html/getting_started</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started" rel="nofollow">https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/learn/html/introduction_to_html/getting_started/index.md">https://github.com/mdn/content/blob/main/files/en-us/learn/html/introduction_to_html/getting_started/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/6cecc075daf0a215d98b952982e304acdf45977d/hovercard" href="https://github.com/mdn/content/commit/6cecc075daf0a215d98b952982e304acdf45977d"><tt>6cecc07</tt></a></li>
+<li>Document last modified: 2023-05-10T19:30:03.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[streams] response.body is not an asynchronous iterable]]></title>
             <link>https://github.com/mdn/content/issues/26921</link>
