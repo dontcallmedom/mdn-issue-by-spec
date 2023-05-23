@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[streams] response.body is not an asynchronous iterable](https://github.com/mdn/content/issues/26921) (2023-05-23T11:03:22Z)
+  
 * [[notifications] NotificationOptions and Notification silent default has change](https://github.com/mdn/content/issues/26812) (2023-05-17T14:25:50Z)
   
 * [[html] Lack of information on the differences between closing via method='dialog' and .close()  method](https://github.com/mdn/content/issues/26760) (2023-05-13T04:28:17Z)
