@@ -4,8 +4,6 @@
 
 * [[dom] Searching for `<!` does not return any results, making information on HTML comments harder to find than necessary](https://github.com/mdn/content/issues/26923) (2023-05-23T13:24:50Z)
   
-* [[streams] response.body is not an asynchronous iterable](https://github.com/mdn/content/issues/26921) (2023-05-23T11:03:22Z)
-  
 * [[notifications] NotificationOptions and Notification silent default has change](https://github.com/mdn/content/issues/26812) (2023-05-17T14:25:50Z)
   
 * [[html] Lack of information on the differences between closing via method='dialog' and .close()  method](https://github.com/mdn/content/issues/26760) (2023-05-13T04:28:17Z)
