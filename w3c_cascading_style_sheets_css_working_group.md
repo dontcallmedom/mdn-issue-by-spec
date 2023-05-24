@@ -6,8 +6,6 @@
   
 * [[css-text-3] "word-break: normal;" !== "word-break: break-word;"](https://github.com/mdn/content/issues/26948) (2023-05-24T10:39:26Z)
   
-* [[css-animations-2] `animation` shorthand CSS property lacks syntax – please add](https://github.com/mdn/content/issues/26947) (2023-05-24T10:25:56Z)
-  
 * [[css-contain-2] Incorrect Documentation - CSS quotes are not affected by "contain: style".](https://github.com/mdn/content/issues/26804) (2023-05-16T17:17:45Z)
   
 * [[css-backgrounds-4] No documentation for css src(...)](https://github.com/mdn/content/issues/26621) (2023-05-06T22:26:03Z)
