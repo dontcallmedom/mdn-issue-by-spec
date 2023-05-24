@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-text-3] "word-break: normal;" !== "word-break: break-word;"](https://github.com/mdn/content/issues/26948) (2023-05-24T10:39:26Z)
+  
 * [[css-animations-2] `animation` shorthand CSS property lacks syntax – please add](https://github.com/mdn/content/issues/26947) (2023-05-24T10:25:56Z)
   
 * [[service-workers-1] Incorrect example code for Cache.matchAll](https://github.com/mdn/content/issues/26841) (2023-05-18T18:58:05Z)
