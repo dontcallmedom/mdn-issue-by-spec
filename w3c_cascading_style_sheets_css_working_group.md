@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[css-text-3] Support catalan geminate Ls](https://github.com/mdn/content/issues/26968) (2023-05-25T11:33:42Z)
-  
 * [[css-text-3] hyphens page does not mention caveat about word-break: break-all vs break-word](https://github.com/mdn/content/issues/26950) (2023-05-24T13:19:14Z)
   
 * [[css-text-3] "word-break: normal;" !== "word-break: break-word;"](https://github.com/mdn/content/issues/26948) (2023-05-24T10:39:26Z)
