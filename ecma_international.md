@@ -6,8 +6,6 @@
   
 * [[ecmascript] FinalizationRegistry: missing example and lack of clarity on "threads"](https://github.com/mdn/content/issues/26486) (2023-04-28T20:00:14Z)
   
-* [[ecmascript] Issue with inheritance with classes: examples are an anti-pattern ](https://github.com/mdn/content/issues/26110) (2023-04-11T08:18:24Z)
-  
 * [[ecmascript] Accessing WebAssembly memory using TypedArrays is incorrect on Big Endian systems](https://github.com/mdn/content/issues/25569) (2023-03-23T12:09:31Z)
   
 * [[ecmascript] Misleading information around await's interaction with microtask/task queues](https://github.com/mdn/content/issues/24177) (2023-02-05T16:19:19Z)
