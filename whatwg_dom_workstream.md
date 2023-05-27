@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[dom] Broken link under §“Parameters”](https://github.com/mdn/content/issues/27007) (2023-05-27T16:28:36Z)
+  
 * [[dom] getRootNode() documentation doesn't mention that it can return the element itself](https://github.com/mdn/content/issues/26962) (2023-05-25T07:32:08Z)
   
 * [[dom] More information about what HTMLCollection is replaced with](https://github.com/mdn/content/issues/26470) (2023-04-28T04:34:16Z)
