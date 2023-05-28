@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-color-4] CurrentColor can't be transitioned is not mentioned](https://github.com/mdn/content/issues/27014) (2023-05-28T16:32:39Z)
+  
 * [[css-text-3] hyphens page does not mention caveat about word-break: break-all vs break-word](https://github.com/mdn/content/issues/26950) (2023-05-24T13:19:14Z)
   
 * [[css-text-3] "word-break: normal;" !== "word-break: break-word;"](https://github.com/mdn/content/issues/26948) (2023-05-24T10:39:26Z)
