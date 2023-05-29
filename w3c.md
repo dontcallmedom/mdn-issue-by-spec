@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[webusb] Vender Typo](https://github.com/mdn/content/issues/27023) (2023-05-29T04:01:32Z)
+  
 * [[css-color-4] CurrentColor can't be transitioned is not mentioned](https://github.com/mdn/content/issues/27014) (2023-05-28T16:32:39Z)
   
 * [[css-text-3] hyphens page does not mention caveat about word-break: break-all vs break-word](https://github.com/mdn/content/issues/26950) (2023-05-24T13:19:14Z)
