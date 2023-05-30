@@ -32,8 +32,6 @@
   
 * [[tracking-dnt] Do Not Track deprecation notice is self-fulfilling](https://github.com/mdn/content/issues/26295) (2023-04-19T08:44:04Z)
   
-* [[clear-site-data] [HTTP] privacy.clearsitedata.cache.enabled removed from codebase](https://github.com/mdn/content/issues/26246) (2023-04-17T01:10:38Z)
-  
 * [[webaudio] interrupted state not listed as a valid state value, but an example of interrupted state was given](https://github.com/mdn/content/issues/26129) (2023-04-11T18:49:59Z)
   
 * [[css-sizing-4] The compatibility table is very confusing when alternative names exist](https://github.com/mdn/content/issues/25923) (2023-04-05T12:20:27Z)
