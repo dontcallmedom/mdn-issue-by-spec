@@ -76,8 +76,6 @@
   
 * [[css-content-3] not obvious that `content` works with `::marker`](https://github.com/mdn/content/issues/24600) (2023-02-19T20:16:44Z)
   
-* [[tracking-dnt] Web/HTTP/Headers/DNT: has ambigious deprecation notice](https://github.com/mdn/content/issues/24368) (2023-02-12T19:38:23Z)
-  
 * [[html, CSP3] Clarify the sandbox directive use in Content-Security-Policy-Report-Only](https://github.com/mdn/content/issues/24318) (2023-02-10T14:49:54Z)
   
 * [[filter-effects-2] feGaussianBlur needs guidance about setting height and width ](https://github.com/mdn/content/issues/24169) (2023-02-04T21:15:51Z)

@@ -40,8 +40,6 @@
   
 * [[html] A srcset example contradicts instructions](https://github.com/mdn/content/issues/25150) (2023-03-07T21:00:37Z)
   
-* [[html] datalist component when scrolling](https://github.com/mdn/content/issues/24774) (2023-02-23T02:40:03Z)
-  
 * [[html] event doesnt fire on fully cached pages (no event appears to)](https://github.com/mdn/content/issues/24770) (2023-02-22T21:34:14Z)
   
 * [[html] <script type=module async> explanation incorrectly says it defers](https://github.com/mdn/content/issues/24754) (2023-02-22T14:21:24Z)
