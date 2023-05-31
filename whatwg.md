@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] <source media> in media elements is allowed again (spec change)](https://github.com/mdn/content/issues/27079) (2023-05-31T18:43:51Z)
+  
 * [[html] Explanation when "input" event is fired is missleading](https://github.com/mdn/content/issues/27044) (2023-05-30T09:45:01Z)
   
 * [[dom] Broken link under §“Parameters”](https://github.com/mdn/content/issues/27007) (2023-05-27T16:28:36Z)
