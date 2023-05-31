@@ -208,8 +208,6 @@
   
 * [[html] Content suggestion: Add one-liner to former WindowOrWorkerGlobalScope methods](https://github.com/mdn/content/issues/8979) (2021-09-16T10:44:51Z)
   
-* [[notifications, cssom-view-1, service-workers-1, dom, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
-  
 * [[html] Issue with "Location": does not mention IDN domain names at all](https://github.com/mdn/content/issues/8895) (2021-09-13T22:55:17Z)
   
 * [[html] Issue with "WorkerGlobalScope.importScripts()": (confucing description of parameters)](https://github.com/mdn/content/issues/7652) (2021-08-06T09:26:25Z)

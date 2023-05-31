@@ -522,42 +522,6 @@ the code in question is a simple xpath method:</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[notifications, cssom-view-1, service-workers-1, dom, pointerevents3] Better naming of pages]]></title>
-            <link>https://github.com/mdn/content/issues/8977</link>
-            <guid>https://github.com/mdn/content/issues/8977</guid>
-            <pubDate>Thu, 16 Sep 2021 10:09:38 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">A big step forward was made in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="980067493" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/8351" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/8351/hovercard" href="https://github.com/mdn/content/pull/8351">#8351</a>, but I'd like to propose this rule to page naming:</p>
-<ol dir="auto">
-<li>If the item is available on the global, use the name. Eg:
-<ul dir="auto">
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting" rel="nofollow"><code class="notranslate">ServiceWorkerGlobalScope.skipWaiting</code></a> becomes <code class="notranslate">skipWaiting</code>.</li>
-</ul>
-</li>
-<li>If the item is typically reached via properties reachable from the global, use that property chain, omitting the global.
-<ul dir="auto">
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" rel="nofollow"><code class="notranslate">Document.querySelector</code></a> becomes <code class="notranslate">document.querySelector</code>.</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage/match" rel="nofollow"><code class="notranslate">CacheStorage.match</code></a> becomes <code class="notranslate">caches.match</code>.</li>
-</ul>
-</li>
-<li>If the item is an instance method/property, use the constructor name with the first set of caps lower-cased + the property name.
-<ul dir="auto">
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect" rel="nofollow"><code class="notranslate">Element.getBoundingClientRect</code></a> becomes <code class="notranslate">element.getBoundingClientRect</code>.</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight" rel="nofollow"><code class="notranslate">HTMLElement.offsetHeight</code></a> becomes <code class="notranslate">htmlElement.offsetHeight</code>.</li>
-</ul>
-</li>
-<li>If the item is a static method/property, use the constructor name + the property name.
-<ul dir="auto">
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Notification/requestPermission" rel="nofollow"><code class="notranslate">Notification.requestPermission</code></a> remains <code class="notranslate">Notification.requestPermission</code>.</li>
-</ul>
-</li>
-<li>Otherwise, just use the name.
-<ul dir="auto">
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent" rel="nofollow"><code class="notranslate">PointerEvent</code></a> remains <code class="notranslate">PointerEvent</code></li>
-</ul>
-</li>
-</ol>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html, cssom-view-1, dom, WebIDL-1, FileAPI, uievents, pointerlock-2] Remove alert() from live samples]]></title>
             <link>https://github.com/mdn/content/issues/7566</link>
             <guid>https://github.com/mdn/content/issues/7566</guid>
