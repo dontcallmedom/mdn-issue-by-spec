@@ -28,8 +28,6 @@
   
 * [[html, cssom-view-1] Problem with window.devicePixelRatio example](https://github.com/mdn/content/issues/26316) (2023-04-20T12:37:50Z)
   
-* [[tracking-dnt] Do Not Track deprecation notice is self-fulfilling](https://github.com/mdn/content/issues/26295) (2023-04-19T08:44:04Z)
-  
 * [[webaudio] interrupted state not listed as a valid state value, but an example of interrupted state was given](https://github.com/mdn/content/issues/26129) (2023-04-11T18:49:59Z)
   
 * [[css-sizing-4] The compatibility table is very confusing when alternative names exist](https://github.com/mdn/content/issues/25923) (2023-04-05T12:20:27Z)
