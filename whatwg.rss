@@ -19,7 +19,7 @@
 <p dir="auto">media attribute</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <blockquote>
-<p dir="auto">Allowed if the source element's parent is a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture" rel="nofollow"><themed-picture data-catalyst-inline="true"><picture></picture></themed-picture></a> element, but not allowed if the source element's parent is an <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" rel="nofollow"></a> or <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" rel="nofollow"></a> element.</p>
+<p dir="auto">Allowed if the source element's parent is a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture" rel="nofollow"><code class="notranslate">&lt;picture&gt;</code></a> element, but not allowed if the source element's parent is an <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" rel="nofollow"><code class="notranslate">&lt;audio&gt;</code></a> or <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" rel="nofollow"><code class="notranslate">&lt;video&gt;</code></a> element.</p>
 </blockquote>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">It's also allowed when the parent is audio or video, as of <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1727729022" data-permission-text="Title is private" data-url="https://github.com/whatwg/html/issues/9341" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/html/pull/9341/hovercard" href="https://github.com/whatwg/html/pull/9341">whatwg/html#9341</a></p>
