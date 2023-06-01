@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[selectors-4] No difference between mouse and keyboard focus methods](https://github.com/mdn/content/issues/27093) (2023-06-01T09:55:49Z)
+  
 * [[css-color-4] CurrentColor can't be transitioned is not mentioned](https://github.com/mdn/content/issues/27014) (2023-05-28T16:32:39Z)
   
 * [[css-text-3] hyphens page does not mention caveat about word-break: break-all vs break-word](https://github.com/mdn/content/issues/26950) (2023-05-24T13:19:14Z)
@@ -297,8 +299,6 @@
 * [[webmidi] Issue with "MIDIMessageEvent": deprecated example method ](https://github.com/mdn/content/issues/3569) (2021-03-27T17:06:36Z)
   
 * [[cssom-view-1] Issue with "Document.elementFromPoint()": Add info about nodes dragged and their position in the DOM tree](https://github.com/mdn/content/issues/3520) (2021-03-26T07:48:07Z)
-  
-* [[webauthn-3] Content bug: Missing documentation on WebAuthn Level 2 additions](https://github.com/mdn/content/issues/3488) (2021-03-25T09:42:24Z)
   
 * [[screen-capture] MediaTrackConstraints.displaySurface: there is no way to restrain surface type via javascript; can only detect surface type for a current stream already going](https://github.com/mdn/content/issues/1456) (2021-01-18T15:39:25Z)
   

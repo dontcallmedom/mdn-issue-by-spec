@@ -56,37 +56,5 @@
 </ul>
 </details>]]></content:encoded>
         </item>
-        <item>
-            <title><![CDATA[[webauthn-3] Content bug: Missing documentation on WebAuthn Level 2 additions]]></title>
-            <link>https://github.com/mdn/content/issues/3488</link>
-            <guid>https://github.com/mdn/content/issues/3488</guid>
-            <pubDate>Thu, 25 Mar 2021 09:42:24 GMT</pubDate>
-            <content:encoded><![CDATA[<h2 dir="auto">What page(s) did you find the problem on?</h2>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorAttestationResponse" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorAttestationResponse</a><br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/authenticatorSelection" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/authenticatorSelection</a><br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/attestation" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/attestation</a><br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/extensions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/extensions</a><br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/getClientExtensionResults" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/getClientExtensionResults</a><br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorResponse/clientDataJSON" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorResponse/clientDataJSON</a></p>
-<h2 dir="auto">What is the problem?</h2>
-<p dir="auto">The Web Authentication Level 2 specification introduces a number of changes that have not been reflected in the MDN documentation yet:</p>
-<ul dir="auto">
-<li>AuthenticatorAttestationResponse.getAuthenticatorData(), AuthenticatorAttestationResponse.getPublicKey() and AuthenticatorAttestationResponse.getPublicKeyAlgorithm() aren't documented in <a href="https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorAttestationResponse" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorAttestationResponse</a></li>
-<li>the residentKey parameter of authenticatorSelection is not documented in<br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/authenticatorSelection" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/authenticatorSelection</a></li>
-<li>the value "enterprise" is not documented in<br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/attestation" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/attestation</a></li>
-<li>appid, appidExclude, credProps, largeBlob aren't documented in<br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/extensions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/extensions</a></li>
-<li>conversely, authnSel, exts, uvi, loc, biometricPerfBounds are listed there, but have been removed from level 2</li>
-<li>none of the output extensions (not even the level 1)  are documented<br>
-in <a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/getClientExtensionResults" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/getClientExtensionResults</a></li>
-<li>the "crossOrigin" property of AuthenticatorResponse.clientDataJSON is<br>
-not documented in<br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorResponse/clientDataJSON" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorResponse/clientDataJSON</a></li>
-<li>in that same page, tokenBindingId should be renamed tokenBinding</li>
-</ul>
-<p dir="auto">(as initially <a href="https://lists.w3.org/Archives/Public/public-webauthn-adoption/2021Mar/0003.html" rel="nofollow">reported in the WebAuthn Adoption Community Group</a>)</p>]]></content:encoded>
-        </item>
     </channel>
 </rss>
