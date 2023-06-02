@@ -228,8 +228,6 @@
   
 * [[html] Issue with "clearTimeout()": Can failure be detected?](https://github.com/mdn/content/issues/5553) (2021-06-01T19:35:39Z)
   
-* [[html, selectors-4] :target doesn't work within shadow roots](https://github.com/mdn/content/issues/4604) (2021-04-29T19:29:23Z)
-  
 * [[orientation-event, compat] Content bug: Improve device/screen orientation event doc](https://github.com/mdn/content/issues/4400) (2021-04-23T02:57:45Z)
   
 * [[notifications] Demo in Notification() constructor article causes error: “The Notification permission may only be requested from inside a short running user-generated event handler”](https://github.com/mdn/content/issues/2615) (2021-02-23T13:20:50Z)
