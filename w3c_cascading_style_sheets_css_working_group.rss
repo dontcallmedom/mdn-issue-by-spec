@@ -160,29 +160,6 @@ Version 13.2.1</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-contain-2] Incorrect Documentation - CSS quotes are not affected by "contain: style".]]></title>
-            <link>https://github.com/mdn/content/issues/26804</link>
-            <guid>https://github.com/mdn/content/issues/26804</guid>
-            <pubDate>Tue, 16 May 2023 17:17:45 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/contain" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/contain</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Containment and quotes</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The documentation says that:<br>
-"CSS quotes are similarly affected in that the content values relating to quotes are scoped to the element:"</p>
-<p dir="auto">However, this is inccorect.  I have tested the code many times.  CSS quotes are not affected by "contain: style", and there is nowhere in the W3C or WHATWG specification that says CSS quotes are affected by "contain: style".</p>
-<p dir="auto">I am using Chrome version 113, and, contrary to what the documentation says, the "first closing quote" doesn't use the outer span's closing quote.  From the screenshot below, you can see that the first closing quote clearly uses the inner span's closing quote.</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/61098455/238721654-64088674-3a10-4ba6-a062-50f3dc197967.png"><img src="https://user-images.githubusercontent.com/61098455/238721654-64088674-3a10-4ba6-a062-50f3dc197967.png" alt="image" style="max-width: 100%;"></a></p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Proposed Solution 1: Update the text to say "CSS quotes are not affected by "contain: style".</p>
-<p dir="auto">Proposed Solution 2: We can remove this entire section on "Containment and quotes".</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">Please see screenshot above.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[css-backgrounds-4] No documentation for css src(...)]]></title>
             <link>https://github.com/mdn/content/issues/26621</link>
             <guid>https://github.com/mdn/content/issues/26621</guid>

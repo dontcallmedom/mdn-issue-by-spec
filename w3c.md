@@ -12,8 +12,6 @@
   
 * [[css-text-3] "word-break: normal;" !== "word-break: break-word;"](https://github.com/mdn/content/issues/26948) (2023-05-24T10:39:26Z)
   
-* [[css-contain-2] Incorrect Documentation - CSS quotes are not affected by "contain: style".](https://github.com/mdn/content/issues/26804) (2023-05-16T17:17:45Z)
-  
 * [[manifest-app-info] Web app manifests: Add `form_factor` member.](https://github.com/mdn/content/issues/26799) (2023-05-16T09:08:23Z)
   
 * [[IndexedDB-3] versionchange is super important and hardly is given any attention](https://github.com/mdn/content/issues/26639) (2023-05-08T06:47:05Z)

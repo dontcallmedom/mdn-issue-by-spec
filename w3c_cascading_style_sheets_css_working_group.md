@@ -12,8 +12,6 @@
   
 * [[css-text-3] "word-break: normal;" !== "word-break: break-word;"](https://github.com/mdn/content/issues/26948) (2023-05-24T10:39:26Z)
   
-* [[css-contain-2] Incorrect Documentation - CSS quotes are not affected by "contain: style".](https://github.com/mdn/content/issues/26804) (2023-05-16T17:17:45Z)
-  
 * [[css-backgrounds-4] No documentation for css src(...)](https://github.com/mdn/content/issues/26621) (2023-05-06T22:26:03Z)
   
 * [[html, cssom-view-1] Description of updatePixelRatio() example function doesn't match code listing](https://github.com/mdn/content/issues/26490) (2023-04-29T02:18:13Z)
