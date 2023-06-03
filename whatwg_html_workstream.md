@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] autocomplete example's labels aren't associated with their inputs](https://github.com/mdn/content/issues/27126) (2023-06-03T06:21:53Z)
+  
 * [[html] <source media> in media elements is allowed again (spec change)](https://github.com/mdn/content/issues/27079) (2023-05-31T18:43:51Z)
   
 * [[html] Explanation when "input" event is fired is missleading](https://github.com/mdn/content/issues/27044) (2023-05-30T09:45:01Z)
