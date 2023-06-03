@@ -16,8 +16,6 @@
   
 * [[notifications] NotificationOptions and Notification silent default has change](https://github.com/mdn/content/issues/26812) (2023-05-17T14:25:50Z)
   
-* [[html] Lack of information on the differences between closing via method='dialog' and .close()  method](https://github.com/mdn/content/issues/26760) (2023-05-13T04:28:17Z)
-  
 * [[html] link: fix examples for Apple touch icon](https://github.com/mdn/content/issues/26707) (2023-05-10T15:45:25Z)
   
 * [[html] Improve wording on what it means to be suspended](https://github.com/mdn/content/issues/26625) (2023-05-07T04:43:55Z)
@@ -131,8 +129,6 @@
 * [[fetch] Response.json static method is missing](https://github.com/mdn/content/issues/21550) (2022-10-14T12:40:47Z)
   
 * [[dom] api.Element.replaceWith - Misleading details and prototype](https://github.com/mdn/content/issues/21497) (2022-10-11T19:50:51Z)
-  
-* [[html] Slider controls example could use value instead of textContent](https://github.com/mdn/content/issues/21318) (2022-10-06T03:08:45Z)
   
 * [[html, css-transforms-2, css-transforms-1] The "non-replaced inline boxes" links to a non-existent anchor](https://github.com/mdn/content/issues/20854) (2022-09-18T09:20:10Z)
   

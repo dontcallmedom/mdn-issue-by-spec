@@ -8,8 +8,6 @@
   
 * [[html] lineJoin page could use an example where you can experiment with the different types](https://github.com/mdn/content/issues/26992) (2023-05-26T16:37:42Z)
   
-* [[html] Lack of information on the differences between closing via method='dialog' and .close()  method](https://github.com/mdn/content/issues/26760) (2023-05-13T04:28:17Z)
-  
 * [[html] link: fix examples for Apple touch icon](https://github.com/mdn/content/issues/26707) (2023-05-10T15:45:25Z)
   
 * [[html] Improve wording on what it means to be suspended](https://github.com/mdn/content/issues/26625) (2023-05-07T04:43:55Z)
@@ -91,8 +89,6 @@
 * [[html] Add documentation for <video posterloading=lazy>](https://github.com/mdn/content/issues/21912) (2022-10-28T12:20:13Z)
   
 * [[html] Information missing for "hidden" <input>s](https://github.com/mdn/content/issues/21857) (2022-10-26T21:27:57Z)
-  
-* [[html] Slider controls example could use value instead of textContent](https://github.com/mdn/content/issues/21318) (2022-10-06T03:08:45Z)
   
 * [[html, css-transforms-2, css-transforms-1] The "non-replaced inline boxes" links to a non-existent anchor](https://github.com/mdn/content/issues/20854) (2022-09-18T09:20:10Z)
   
