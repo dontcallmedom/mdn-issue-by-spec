@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[ecmascript] Proxy doesn't trap "apply" for objects.](https://github.com/mdn/content/issues/27156) (2023-06-05T20:39:01Z)
+  
 * [[ecmascript] Throwing a string or number (instead of an Error) is generally problematic](https://github.com/mdn/content/issues/27151) (2023-06-05T20:09:49Z)
   
 * [[ecmascript] Provide a definition for binding list](https://github.com/mdn/content/issues/26875) (2023-05-21T01:39:29Z)

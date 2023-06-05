@@ -4,10 +4,99 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Mon, 05 Jun 2023 20:09:49 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 05 Jun 2023 20:39:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Proxy doesn't trap "apply" for objects.]]></title>
+            <link>https://github.com/mdn/content/issues/27156</link>
+            <guid>https://github.com/mdn/content/issues/27156</guid>
+            <pubDate>Mon, 05 Jun 2023 20:39:01 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/apply" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/apply</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The handler.apply() method is a trap for the [[Call]] <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy#object_internal_methods" rel="nofollow">object internal method</a>, which is used by operations such as function calls.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I expect <code class="notranslate">apply</code> to work also on objects, like applying a function to an object.</p>
+<p dir="auto">Example:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const Object = {Native: true};
+const Handler =
+{
+   apply ( Target, Context, Arguments ) // Should be bound to `MyProxy` when instantiating the Proxy object.
+   {
+      this; // Should refer to `MyProxy` when instantiating the Proxy object, not `Handler`.
+      
+      Context; // Should refer to `Object` because it's what was passed through that argument.
+      
+      this['FirstProperty'] = 'First'; // Should call the interception function trap `set` on `MyProxy`.
+      
+      Context['SecondProperty'] = 'Second'; // Should set a property directly on `Object` without being trapped by the proxy.
+      
+      // Finally, apply the `Target` directly to the `Context` through reflection.
+      return Reflect.apply(Target, Context, Arguments);
+      
+      // The lines below should produce maximum stack call error.
+      return Reflect.apply(Target, this, Arguments);
+      return Reflect.apply(Target, MyProxy, Arguments);
+   }
+};
+
+const MyProxy = new Proxy(Object, Handler);
+
+const Result = Reflect.apply(function () { this.Value = true; }, MyProxy, []);
+// Should return {Native: true, FirstProperty: 'First', SecondProperty: 'Second', Value: true}
+// and `Object` will be exactly like this because `set` was not defined in the handler.
+
+// But Handler.apply is never executed. It will only work if `typeof Object` is `function`."><pre class="notranslate"><code class="notranslate">const Object = {Native: true};
+const Handler =
+{
+   apply ( Target, Context, Arguments ) // Should be bound to `MyProxy` when instantiating the Proxy object.
+   {
+      this; // Should refer to `MyProxy` when instantiating the Proxy object, not `Handler`.
+      
+      Context; // Should refer to `Object` because it's what was passed through that argument.
+      
+      this['FirstProperty'] = 'First'; // Should call the interception function trap `set` on `MyProxy`.
+      
+      Context['SecondProperty'] = 'Second'; // Should set a property directly on `Object` without being trapped by the proxy.
+      
+      // Finally, apply the `Target` directly to the `Context` through reflection.
+      return Reflect.apply(Target, Context, Arguments);
+      
+      // The lines below should produce maximum stack call error.
+      return Reflect.apply(Target, this, Arguments);
+      return Reflect.apply(Target, MyProxy, Arguments);
+   }
+};
+
+const MyProxy = new Proxy(Object, Handler);
+
+const Result = Reflect.apply(function () { this.Value = true; }, MyProxy, []);
+// Should return {Native: true, FirstProperty: 'First', SecondProperty: 'Second', Value: true}
+// and `Object` will be exactly like this because `set` was not defined in the handler.
+
+// But Handler.apply is never executed. It will only work if `typeof Object` is `function`.
+</code></pre></div>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/proxy/proxy/apply</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/apply" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/apply</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/proxy/proxy/apply/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/proxy/proxy/apply/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/fcd80ee4c8477b6f73553bfada841781cf74cf46/hovercard" href="https://github.com/mdn/content/commit/fcd80ee4c8477b6f73553bfada841781cf74cf46"><tt>fcd80ee</tt></a></li>
+<li>Document last modified: 2023-02-21T01:57:14.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Throwing a string or number (instead of an Error) is generally problematic]]></title>
             <link>https://github.com/mdn/content/issues/27151</link>
