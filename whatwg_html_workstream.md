@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Hyperlink to "Custom Error" page is not found](https://github.com/mdn/content/issues/27153) (2023-06-05T20:25:28Z)
+  
 * [[html] autocomplete example's labels aren't associated with their inputs](https://github.com/mdn/content/issues/27126) (2023-06-03T06:21:53Z)
   
 * [[html] <source media> in media elements is allowed again (spec change)](https://github.com/mdn/content/issues/27079) (2023-05-31T18:43:51Z)
