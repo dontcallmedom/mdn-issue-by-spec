@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Different info about DOMContentLoaded event on Window and Document object](https://github.com/mdn/content/issues/27197) (2023-06-07T10:42:58Z)
+  
 * [[html] Hyperlink to "Custom Error" page is not found](https://github.com/mdn/content/issues/27153) (2023-06-05T20:25:28Z)
   
 * [[html] autocomplete example's labels aren't associated with their inputs](https://github.com/mdn/content/issues/27126) (2023-06-03T06:21:53Z)
