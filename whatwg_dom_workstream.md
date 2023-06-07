@@ -4,8 +4,6 @@
 
 * [[dom] no mention what the default is for ShadowRoot mode](https://github.com/mdn/content/issues/27110) (2023-06-02T09:06:55Z)
   
-* [[dom] Broken link under §“Parameters”](https://github.com/mdn/content/issues/27007) (2023-05-27T16:28:36Z)
-  
 * [[dom] getRootNode() documentation doesn't mention that it can return the element itself](https://github.com/mdn/content/issues/26962) (2023-05-25T07:32:08Z)
   
 * [[dom] More information about what HTMLCollection is replaced with](https://github.com/mdn/content/issues/26470) (2023-04-28T04:34:16Z)
@@ -25,8 +23,6 @@
 * [[dom] api.Element.replaceWith - Misleading details and prototype](https://github.com/mdn/content/issues/21497) (2022-10-11T19:50:51Z)
   
 * [[html, dom] Deprecated headline is shown without further information.](https://github.com/mdn/content/issues/20730) (2022-09-14T18:18:13Z)
-  
-* [[dom] Issue with "MutationObserver.observe()": links to nonexistent “Monitoring attribute values” section on MutationObserver](https://github.com/mdn/content/issues/12741) (2022-02-04T23:09:33Z)
   
 * [[dom] Issue with "AbortController": (missing info on behavior of .text() or .json() or other body promise)](https://github.com/mdn/content/issues/12387) (2022-01-24T16:10:11Z)
   

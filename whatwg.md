@@ -14,8 +14,6 @@
   
 * [[html] Explanation when "input" event is fired is missleading](https://github.com/mdn/content/issues/27044) (2023-05-30T09:45:01Z)
   
-* [[dom] Broken link under §“Parameters”](https://github.com/mdn/content/issues/27007) (2023-05-27T16:28:36Z)
-  
 * [[html] lineJoin page could use an example where you can experiment with the different types](https://github.com/mdn/content/issues/26992) (2023-05-26T16:37:42Z)
   
 * [[dom] getRootNode() documentation doesn't mention that it can return the element itself](https://github.com/mdn/content/issues/26962) (2023-05-25T07:32:08Z)
@@ -181,8 +179,6 @@
 * [[fetch] Content bug: Inaccurate explanation on request credentials](https://github.com/mdn/content/issues/13063) (2022-02-17T09:18:12Z)
   
 * [[fetch] Issue with "Response.error()": Example missing](https://github.com/mdn/content/issues/12852) (2022-02-09T07:32:59Z)
-  
-* [[dom] Issue with "MutationObserver.observe()": links to nonexistent “Monitoring attribute values” section on MutationObserver](https://github.com/mdn/content/issues/12741) (2022-02-04T23:09:33Z)
   
 * [[html] Issue with "<iframe>: The Inline Frame element": document browser behaviour for onload and onerror events.](https://github.com/mdn/content/issues/12477) (2022-01-28T14:05:20Z)
   

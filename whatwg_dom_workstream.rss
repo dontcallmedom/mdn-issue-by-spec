@@ -42,41 +42,6 @@ nor this document<br>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[dom] Broken link under §“Parameters”]]></title>
-            <link>https://github.com/mdn/content/issues/27007</link>
-            <guid>https://github.com/mdn/content/issues/27007</guid>
-            <pubDate>Sat, 27 May 2023 16:28:36 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Parameters</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Under the description for <code class="notranslate">options.attributeOldValue</code>, there is a link with the text “Monitoring attribute values”.</p>
-<p dir="auto">It is <em>supposed</em> to link to <code class="notranslate">https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver#monitoring_attribute_values</code>, but there is no anchor on that page, so the reader is directed to the main <code class="notranslate">MutationObserver</code> page with no idea of what they were supposed to learn.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Well, the sentence with the broken link currently reads:</p>
-<blockquote>
-<p dir="auto">See <a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver#monitoring_attribute_values" rel="nofollow">Monitoring attribute values</a> for details on watching for attribute changes and value recording.</p>
-</blockquote>
-<p dir="auto">So, I would expect to click on that link and start reading a section about details on watching for attribute changes and value recording.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/mutationobserver/observe</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/mutationobserver/observe/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/mutationobserver/observe/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ef75c1741b450c2331204be5563ee964ad5f4c48/hovercard" href="https://github.com/mdn/content/commit/ef75c1741b450c2331204be5563ee964ad5f4c48"><tt>ef75c17</tt></a></li>
-<li>Document last modified: 2023-04-07T06:16:45.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[dom] getRootNode() documentation doesn't mention that it can return the element itself]]></title>
             <link>https://github.com/mdn/content/issues/26962</link>
             <guid>https://github.com/mdn/content/issues/26962</guid>
@@ -400,36 +365,6 @@ There's no other working solution other than it.. So, that has to be said, if yo
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/event/returnvalue/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/event/returnvalue/index.md</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/1511e914c6b1ce6f88056bfefd48a6aa585cebce/hovercard" href="https://github.com/mdn/content/commit/1511e914c6b1ce6f88056bfefd48a6aa585cebce"><tt>1511e91</tt></a></li>
 <li>Document last modified: 2022-09-09T05:10:34.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[dom] Issue with "MutationObserver.observe()": links to nonexistent “Monitoring attribute values” section on MutationObserver]]></title>
-            <link>https://github.com/mdn/content/issues/12741</link>
-            <guid>https://github.com/mdn/content/issues/12741</guid>
-            <pubDate>Fri, 04 Feb 2022 23:09:33 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<blockquote>
-<p dir="auto"><code class="notranslate">attributeOldValue</code> Optional<br>
-Set to <code class="notranslate">true</code> to record the previous value of any attribute that changes when monitoring the node or nodes for attribute changes; see <a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver#monitoring_attribute_values" rel="nofollow">Monitoring attribute values</a> in <a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver" rel="nofollow"><code class="notranslate">MutationObserver</code></a> for details on watching for attribute changes and value recording. The default value is <code class="notranslate">false</code>.</p>
-</blockquote>
-<p dir="auto">The link "Monitoring attribute values" is broken. I had a look through old versions of the <code class="notranslate">MutationObserver</code> page but couldn't find what it's supposed to be pointing to.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto">Parameters, description of <code class="notranslate">attributeOldValue</code></p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">A section as described by the text.</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">I clicked it.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/mutationobserver/observe</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/mutationobserver/observe/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/mutationobserver/observe/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0f1f6f74804725f379465c09f698b88611292c90/hovercard" href="https://github.com/mdn/content/commit/0f1f6f74804725f379465c09f698b88611292c90"><tt>0f1f6f7</tt></a></li>
-<li>Document last modified: 2021-12-01T06:01:14.000Z</li>
 </ul>
 </details>]]></content:encoded>
         </item>
