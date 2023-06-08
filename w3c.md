@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-logical-1] Inconsistent Values definition](https://github.com/mdn/content/issues/27217) (2023-06-08T09:32:12Z)
+  
 * [[IndexedDB-3] Confusing "consider instead" note](https://github.com/mdn/content/issues/27207) (2023-06-08T00:11:01Z)
   
 * [[uievents] Bad example to demonstrate MouseEvent.ctrlKey for Macintosh users](https://github.com/mdn/content/issues/27143) (2023-06-04T19:05:36Z)

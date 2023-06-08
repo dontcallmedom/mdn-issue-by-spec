@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-logical-1] Inconsistent Values definition](https://github.com/mdn/content/issues/27217) (2023-06-08T09:32:12Z)
+  
 * [[css-scrollbars-1] "coloring_overflow_scrollbars" example does not meet the WCAG color contrast requirement mentioned earlier in this article](https://github.com/mdn/content/issues/27140) (2023-06-04T12:47:19Z)
   
 * [[css-backgrounds-4] Truncated sentence in formal definition of background-origin](https://github.com/mdn/content/issues/27112) (2023-06-02T10:55:32Z)

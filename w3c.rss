@@ -4,10 +4,41 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Thu, 08 Jun 2023 00:11:01 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 08 Jun 2023 09:32:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-logical-1] Inconsistent Values definition]]></title>
+            <link>https://github.com/mdn/content/issues/27217</link>
+            <guid>https://github.com/mdn/content/issues/27217</guid>
+            <pubDate>Thu, 08 Jun 2023 09:32:12 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/caption-side" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/caption-side</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Syntax/Values and Formal Syntax</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The section Values lists 6 possible values (top, bottom, block-start, block-end, inline-start, inline-end), but the section Formal syntax lists only 2 (top, bottom).</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The information in both sections should be consistent.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Limited testing indicates that both Firefox (114) and Chromium (113) support only <code class="notranslate">top</code>  and <code class="notranslate">bottom</code> but not the other 4.<br>
+If those 4 values are retained the compatibility chart should also be amended to show which browser supports which values.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/caption-side</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/caption-side" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/caption-side</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/caption-side/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/caption-side/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/42c1bb8c259f3f57de9f38600776cf273e3addda/hovercard" href="https://github.com/mdn/content/commit/42c1bb8c259f3f57de9f38600776cf273e3addda"><tt>42c1bb8</tt></a></li>
+<li>Document last modified: 2023-02-21T06:27:49.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[IndexedDB-3] Confusing "consider instead" note]]></title>
             <link>https://github.com/mdn/content/issues/27207</link>
