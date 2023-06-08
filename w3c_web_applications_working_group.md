@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[IndexedDB-3] Confusing "consider instead" note](https://github.com/mdn/content/issues/27207) (2023-06-08T00:11:01Z)
-  
 * [[uievents] Bad example to demonstrate MouseEvent.ctrlKey for Macintosh users](https://github.com/mdn/content/issues/27143) (2023-06-04T19:05:36Z)
   
 * [[manifest-app-info] Web app manifests: Add `form_factor` member.](https://github.com/mdn/content/issues/26799) (2023-05-16T09:08:23Z)
