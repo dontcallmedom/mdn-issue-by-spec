@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html, selectors-4] all HTML code not show according to the output](https://github.com/mdn/content/issues/27234) (2023-06-09T11:45:17Z)
+  
 * [[css-color-4] Document missing components' bahavior for CSS color functions?](https://github.com/mdn/content/issues/27218) (2023-06-08T10:35:28Z)
   
 * [[css-logical-1] Inconsistent Values definition](https://github.com/mdn/content/issues/27217) (2023-06-08T09:32:12Z)
