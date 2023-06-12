@@ -4,61 +4,10 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Fri, 09 Jun 2023 11:50:59 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 09 Jun 2023 11:45:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[html] Is `pushState` real asynchronous?]]></title>
-            <link>https://github.com/mdn/content/issues/27235</link>
-            <guid>https://github.com/mdn/content/issues/27235</guid>
-            <pubDate>Fri, 09 Jun 2023 11:50:59 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/History/pushState" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/History/pushState</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<blockquote>
-<p dir="auto">This method is <a href="https://developer.mozilla.org/en-US/docs/Glossary/Asynchronous" rel="nofollow">asynchronous</a>. Add a listener for the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/popstate_event" rel="nofollow">popstate</a> event in order to determine when the navigation has completed. The state parameter will be available in it.</p>
-</blockquote>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">You said it is asynchronous, and popstate event will emit.</p>
-<p dir="auto">but according to my code, pushState don't emit event, is it real asynchronous?</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="window.addEventListener(&quot;popstate&quot;, (event) =&gt; {
-  console.log(
-    `location: ${document.location}, state: ${JSON.stringify(event.state)}`
-  );
-});
-
-history.pushState({ name: &quot;Example&quot; }, &quot;pushState example&quot;,);
-
-history.back()"><pre class="notranslate"><span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"popstate"</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span>
-    <span class="pl-s">`location: <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">location</span><span class="pl-kos">}</span></span>, state: <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-c1">JSON</span><span class="pl-kos">.</span><span class="pl-en">stringify</span><span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-c1">state</span><span class="pl-kos">)</span><span class="pl-kos">}</span></span>`</span>
-  <span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-
-<span class="pl-s1">history</span><span class="pl-kos">.</span><span class="pl-en">pushState</span><span class="pl-kos">(</span><span class="pl-kos">{</span> <span class="pl-c1">name</span>: <span class="pl-s">"Example"</span> <span class="pl-kos">}</span><span class="pl-kos">,</span> <span class="pl-s">"pushState example"</span><span class="pl-kos">,</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-
-<span class="pl-s1">history</span><span class="pl-kos">.</span><span class="pl-en">back</span><span class="pl-kos">(</span><span class="pl-kos">)</span></pre></div>
-<p dir="auto"><code class="notranslate">history.back</code> will emit popstate event, but <code class="notranslate">history.pushState</code> will not.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/history/pushstate</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/History/pushState" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/History/pushState</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/history/pushstate/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/history/pushstate/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/a3d9f61a8990ba7b53bda9748d1f26a9e9810b18/hovercard" href="https://github.com/mdn/content/commit/a3d9f61a8990ba7b53bda9748d1f26a9e9810b18"><tt>a3d9f61</tt></a></li>
-<li>Document last modified: 2023-04-07T00:39:15.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html, selectors-4] all HTML code not show according to the output]]></title>
             <link>https://github.com/mdn/content/issues/27234</link>
