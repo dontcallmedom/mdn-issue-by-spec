@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Broken link](https://github.com/mdn/content/issues/27317) (2023-06-14T06:46:48Z)
+  
 * [[html] Examples should include fallback content](https://github.com/mdn/content/issues/27300) (2023-06-13T14:44:21Z)
   
 * [[html] Error en la documentación del atributo srcset](https://github.com/mdn/content/issues/27291) (2023-06-12T21:33:46Z)
