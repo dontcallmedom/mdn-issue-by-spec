@@ -2,6 +2,10 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-overflow-4] The behavior of 'overflow: overlay;' is changed in Chrome (and others?) to be exactly the same as 'auto'](https://github.com/mdn/content/issues/27322) (2023-06-14T10:32:40Z)
+  
+* [[css-overflow-3] The behavior of 'overflow: overlay;' is changed in Chrome (and others?) to be exactly the same as 'auto'](https://github.com/mdn/content/issues/27321) (2023-06-14T10:32:36Z)
+  
 * [[html, selectors-4] all HTML code not show according to the output](https://github.com/mdn/content/issues/27234) (2023-06-09T11:45:17Z)
   
 * [[css-color-4] Document missing components' bahavior for CSS color functions?](https://github.com/mdn/content/issues/27218) (2023-06-08T10:35:28Z)
