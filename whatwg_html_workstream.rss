@@ -3033,18 +3033,17 @@ This problem goes for all properties of the Location object.</p>
 <h1 dir="auto">Details</h1>
 
 <p dir="auto"><code class="notranslate">requestAnimationFrame</code> and <code class="notranslate">cancelAnimationFrame</code> used to be <code class="notranslate">Window</code> only methods, but it has recently been added to <code class="notranslate">DedicatedWorkerGlobalScope</code> too. <a href="https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider" rel="nofollow">https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider</a></p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="interface mixin AnimationFrameProvider {
+<div class="highlight highlight-source-webidl notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="interface mixin AnimationFrameProvider {
   unsigned long requestAnimationFrame(FrameRequestCallback callback);
   undefined cancelAnimationFrame(unsigned long handle);
 };
 Window includes AnimationFrameProvider;
-DedicatedWorkerGlobalScope includes AnimationFrameProvider;"><pre lang="webidl" class="notranslate"><code class="notranslate">interface mixin AnimationFrameProvider {
-  unsigned long requestAnimationFrame(FrameRequestCallback callback);
-  undefined cancelAnimationFrame(unsigned long handle);
+DedicatedWorkerGlobalScope includes AnimationFrameProvider;"><pre class="notranslate"><span class="pl-k">interface</span> <span class="pl-en">mixin</span> AnimationFrameProvider {
+  <span class="pl-k">unsigned</span> <span class="pl-k">long</span> <span class="pl-en">requestAnimationFrame</span>(FrameRequestCallback callback);
+  undefined <span class="pl-en">cancelAnimationFrame</span>(<span class="pl-k">unsigned</span> <span class="pl-k">long</span> handle);
 };
 Window includes AnimationFrameProvider;
-DedicatedWorkerGlobalScope includes AnimationFrameProvider;
-</code></pre></div>
+DedicatedWorkerGlobalScope includes AnimationFrameProvider;</pre></div>
 <p dir="auto">I guess the page should now be <code class="notranslate">Web/API/WindowOrWorkerGlobalScope/requestAnimationFrame</code>, but I fear this would break any link to the current <code class="notranslate">/Web/API/window/requestAnimationFrame</code>. So I'm not sure how it should get handled.</p>
 <p dir="auto">Also, compat-data should probably be updated (currently these methods are supported in Blink only).</p>]]></content:encoded>
         </item>
