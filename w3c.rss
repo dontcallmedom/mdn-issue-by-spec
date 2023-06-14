@@ -4,10 +4,70 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Wed, 14 Jun 2023 10:32:40 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 14 Jun 2023 18:17:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[IndexedDB-3] "Using IndexedDB" guide seems to be out of sync with the more specific documentation]]></title>
+            <link>https://github.com/mdn/content/issues/27330</link>
+            <guid>https://github.com/mdn/content/issues/27330</guid>
+            <pubDate>Wed, 14 Jun 2023 18:17:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Multiple, listed below</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">It seems like there are multiple things in the "Using indexedDB" guide that are inconsistent or have fallen out of sync with the more specific documentation. I have found three examples so far, but it seems possible that there are more.</p>
+<p dir="auto">First:<br>
+In the <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB#structuring_the_database" rel="nofollow">"Structuring the database" section</a>, an example says</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="  // Use transaction oncomplete to make sure the objectStore creation is
+  // finished before adding data into it."><pre class="notranslate"><code class="notranslate">  // Use transaction oncomplete to make sure the objectStore creation is
+  // finished before adding data into it.
+</code></pre></div>
+<p dir="auto">but then the very next section demonstrates adding data to the <code class="notranslate">objectStore</code> without waiting for the transaction to complete, which seems wrong. If waiting for the transaction to complete before accessing the object store is necessary, all the examples that show the object store creation and data access to that object store should either show that step being done or at least have a comment calling out that that step is being skipped for simplicity.</p>
+<p dir="auto">Second:<br>
+This sentence in the <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB#adding_data_to_the_database" rel="nofollow">"Adding data to the database" section</a> seems inconsistent.</p>
+<blockquote>
+<p dir="auto">You can pass an empty array if you want the transaction to span all object stores, but don't do it because the spec says an empty array should generate an InvalidAccessError.</p>
+</blockquote>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/transaction" rel="nofollow">The documentation for the specific function</a> gives a different, (I'm guessing) more appropriate way of doing this:</p>
+<blockquote>
+<p dir="auto">If you need to access all object stores in the database, you can use the property <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/objectStoreNames" rel="nofollow"><code class="notranslate">IDBDatabase.objectStoreNames</code></a>:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const transaction = db.transaction(db.objectStoreNames);"><pre class="notranslate"><code class="notranslate">const transaction = db.transaction(db.objectStoreNames);
+</code></pre></div>
+</blockquote>
+<p dir="auto">It then says specifically not to do what the guide suggests potentially doing</p>
+<blockquote>
+<p dir="auto">Passing an empty array will throw an exception.</p>
+</blockquote>
+<p dir="auto">I think that the guide should probably suggest using <code class="notranslate">IDBDatabase.objectStoreNames</code> rather than an empty array. If there is an appropriate time or Firefox version when an empty array ought to be passed instead, that should be stated explicitly.</p>
+<p dir="auto">Third:<br>
+The <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB#adding_retrieving_and_removing_data" rel="nofollow">"Adding, retrieving, and removing data" section</a> has a note discussing durability guarantees that suggests using</p>
+<blockquote>
+<p dir="auto">the experimental (non-standard) readwriteflush mode (see <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/transaction" rel="nofollow">IDBDatabase.transaction</a>).</p>
+</blockquote>
+<p dir="auto">The linked docs do discuss using the <code class="notranslate">readwriteflush</code> mode, but also indicate that this function takes an <code class="notranslate">options</code> argument that can be used to set <code class="notranslate">durability: "strict"</code>. It is never mentioned if there is any difference between using <code class="notranslate">readwriteflush</code> and <code class="notranslate">durability: "strict"</code> (perhaps this should be mentioned), but the <code class="notranslate">options</code> object sounds much more standardized and therefore probably preferable. It seems likely that the <code class="notranslate">options</code> parameter was added later and that <code class="notranslate">readwriteflush</code> was added prior to that in order to grant access to that functionality when there was no other way to access it. But the "Browser Compatibility" section indicates that Firefox has had "Full support" for this feature since version 10.</p>
+<p dir="auto">I don't really know what changes to suggest here since I don't know the truth of the situation. If my guess above is correct, probably the "Browser Compatibility" section should be fixed, the note in "Using indexedDB" guide should mention <code class="notranslate">durability: "strict"</code> and probably not mention <code class="notranslate">readwriteflush</code> mode. And the <code class="notranslate">transaction</code> docs' discussion of <code class="notranslate">readwriteflush</code> mode should indicate that the mode should only be used for some specific range of Firefox versions and other versions should use <code class="notranslate">durability: "strict"</code>.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I'm not sure exactly what the text ought to read since I am trying to learn how this interface works from the inconsistent documentation, but I have given my best guesses in the previous section.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/indexeddb_api/using_indexeddb</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/indexeddb_api/using_indexeddb/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/indexeddb_api/using_indexeddb/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/4b9377a26bb7094a8f13551cf328865a6457f5ee/hovercard" href="https://github.com/mdn/content/commit/4b9377a26bb7094a8f13551cf328865a6457f5ee"><tt>4b9377a</tt></a></li>
+<li>Document last modified: 2023-03-21T12:46:26.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-overflow-4] The behavior of 'overflow: overlay;' is changed in Chrome (and others?) to be exactly the same as 'auto']]></title>
             <link>https://github.com/mdn/content/issues/27322</link>
