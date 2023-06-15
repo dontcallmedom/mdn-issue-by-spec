@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[ecmascript] Slightly misleading wording around Atomics.wait/Async](https://github.com/mdn/content/issues/27356) (2023-06-15T17:50:26Z)
+  
 * [[ecmascript] Throwing a string or number (instead of an Error) is generally problematic](https://github.com/mdn/content/issues/27151) (2023-06-05T20:09:49Z)
   
 * [[ecmascript] Provide a definition for binding list](https://github.com/mdn/content/issues/26875) (2023-05-21T01:39:29Z)
