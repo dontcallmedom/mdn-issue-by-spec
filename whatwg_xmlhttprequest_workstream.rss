@@ -4,100 +4,10 @@
         <title>WHATWG XMLHttpRequest Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_xmlhttprequest_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG XMLHttpRequest Workstream</description>
-        <lastBuildDate>Thu, 15 Jun 2023 15:41:07 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 29 Jan 2023 01:52:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[xhr] TypeError: Cannot read property 'name' of undefined]]></title>
-            <link>https://github.com/mdn/content/issues/27353</link>
-            <guid>https://github.com/mdn/content/issues/27353</guid>
-            <pubDate>Thu, 15 Jun 2023 15:41:07 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/FormData/append" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FormData/append</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">TypeError: Cannot read property 'name' of undefined</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">TypeError: Cannot read property 'name' of undefined</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">TypeError: Cannot read property 'name' of undefined</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">TypeError: Cannot read property 'name' of undefined</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">let _data = new FormData();<br>
-_data.append(<code class="notranslate">FaceDataRecord', '{"faceLibType":"blackFD","FDID":"1","FPID":"${employeeNo}"}</code>);<br>
-_data.append('img', fs.createReadStream('/C:/Users/ALIENWARE/Downloads/unnamed.jpg'));</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="    let _config = {
-        method: 'put',
-        maxBodyLength: Infinity,
-        url: 'http://192.168.1.3/ISAPI/Intelligent/FDLib/FDSetUp?format=json',
-        headers: {
-            'Accept': '*/*',
-            'Accept-Language': 'en-US,en;q=0.9',
-            'Connection': 'keep-alive',
-            'Cookie': 'language=en; WebSession_F82FED6D22=' + cookie,
-            'Origin': 'http://192.168.1.3',
-            'Referer': 'http://192.168.1.3/index.asp',
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
-            'X-Requested-With': 'XMLHttpRequest',
-            ..._data.getHeaders()
-        },
-        data: _data
-    };
-
-   await axios.request(_config)
-        .then((response) =&gt; {
-            console.log(JSON.stringify(response.data));
-        })
-        .catch((error) =&gt; {
-            console.log(error);
-        });
-
-} catch (error) {
-    console.error(error);
-}"><pre class="notranslate"><code class="notranslate">    let _config = {
-        method: 'put',
-        maxBodyLength: Infinity,
-        url: 'http://192.168.1.3/ISAPI/Intelligent/FDLib/FDSetUp?format=json',
-        headers: {
-            'Accept': '*/*',
-            'Accept-Language': 'en-US,en;q=0.9',
-            'Connection': 'keep-alive',
-            'Cookie': 'language=en; WebSession_F82FED6D22=' + cookie,
-            'Origin': 'http://192.168.1.3',
-            'Referer': 'http://192.168.1.3/index.asp',
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
-            'X-Requested-With': 'XMLHttpRequest',
-            ..._data.getHeaders()
-        },
-        data: _data
-    };
-
-   await axios.request(_config)
-        .then((response) =&gt; {
-            console.log(JSON.stringify(response.data));
-        })
-        .catch((error) =&gt; {
-            console.log(error);
-        });
-
-} catch (error) {
-    console.error(error);
-}
-</code></pre></div>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/formdata/append</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/FormData/append" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FormData/append</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/formdata/append/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/formdata/append/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/339595951b78774e951b1a9d215a6db6b856f6b2/hovercard" href="https://github.com/mdn/content/commit/339595951b78774e951b1a9d215a6db6b856f6b2"><tt>3395959</tt></a></li>
-<li>Document last modified: 2023-04-07T05:59:30.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[xhr] xhr.abort is inaccurate]]></title>
             <link>https://github.com/mdn/content/issues/23961</link>

@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[xhr] TypeError: Cannot read property 'name' of undefined](https://github.com/mdn/content/issues/27353) (2023-06-15T15:41:07Z)
-  
 * [[html] Examples should include fallback content](https://github.com/mdn/content/issues/27300) (2023-06-13T14:44:21Z)
   
 * [[html] Error en la documentación del atributo srcset](https://github.com/mdn/content/issues/27291) (2023-06-12T21:33:46Z)
