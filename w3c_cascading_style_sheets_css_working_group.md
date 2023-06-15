@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html, cssom-view-1] window.open() has a partial list of features](https://github.com/mdn/content/issues/27357) (2023-06-15T19:36:20Z)
+  
 * [[css-overflow-4] The behavior of 'overflow: overlay;' is changed in Chrome (and others?) to be exactly the same as 'auto'](https://github.com/mdn/content/issues/27322) (2023-06-14T10:32:40Z)
   
 * [[html, selectors-4] all HTML code not show according to the output](https://github.com/mdn/content/issues/27234) (2023-06-09T11:45:17Z)

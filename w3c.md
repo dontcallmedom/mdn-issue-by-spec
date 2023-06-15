@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html, cssom-view-1] window.open() has a partial list of features](https://github.com/mdn/content/issues/27357) (2023-06-15T19:36:20Z)
+  
 * [[geolocation-API] Outdated info about what APIs browsers support to query via Permissions API](https://github.com/mdn/content/issues/27341) (2023-06-15T09:24:16Z)
   
 * [[IndexedDB-3] "Using IndexedDB" guide seems to be out of sync with the more specific documentation](https://github.com/mdn/content/issues/27330) (2023-06-14T18:17:39Z)
