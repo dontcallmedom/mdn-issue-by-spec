@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[geolocation-API] Outdated info about what APIs browsers support to query via Permissions API](https://github.com/mdn/content/issues/27341) (2023-06-15T09:24:16Z)
+  
 * [[IndexedDB-3] "Using IndexedDB" guide seems to be out of sync with the more specific documentation](https://github.com/mdn/content/issues/27330) (2023-06-14T18:17:39Z)
   
 * [[css-overflow-4] The behavior of 'overflow: overlay;' is changed in Chrome (and others?) to be exactly the same as 'auto'](https://github.com/mdn/content/issues/27322) (2023-06-14T10:32:40Z)
