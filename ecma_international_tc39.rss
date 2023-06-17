@@ -256,25 +256,6 @@ loop()"><pre class="notranslate"><span class="pl-c">// blocks the event loop</sp
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[ecmascript] Document import assertions]]></title>
-            <link>https://github.com/mdn/content/issues/19220</link>
-            <guid>https://github.com/mdn/content/issues/19220</guid>
-            <pubDate>Sat, 06 Aug 2022 05:08:53 GMT</pubDate>
-            <content:encoded><![CDATA[<h2 dir="auto">What is the new suggestion?</h2>
-<p dir="auto">Document <a href="https://github.com/tc39/proposal-import-assertions">import assertions</a>.</p>
-<h2 dir="auto">Why is it important or useful?</h2>
-<p dir="auto"><a href="https://v8.dev/features/import-assertions" rel="nofollow">Already shipped in V8 for over a year.</a> JSON modules have been unflagged in Node so a lot of people are starting to rely on it. Need more information on its syntax and semantics.</p>
-<p dir="auto">Very importantly, import assertions do not change the semantics of the module itself—it cannot affect how the module is interpreted, nor can it be used as part of the cache key. Virtually all existing toolings, except JSON modules themselves (<code class="notranslate">assert { type: "json" }</code>), that try to extend import assertions are using them in a spec-incompliant way. (TBH, that to me means the proposal is designed poorly.) We need to call that out.</p>
-<p dir="auto">We just need a new section under <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import</a>, but with so many additions to JavaScript modules in the future, it may make sense to start a new reference chapter like "modules", parallel to the existing "classes" and "functions" chapters...</p>
-<h2 dir="auto">Other supporting information</h2>
-<ul dir="auto">
-<li>Spec draft: <a href="https://tc39.es/proposal-import-assertions/" rel="nofollow">https://tc39.es/proposal-import-assertions/</a></li>
-<li>Proposal: <a href="https://github.com/tc39/proposal-import-assertions">https://github.com/tc39/proposal-import-assertions</a></li>
-<li>This is a sibling proposal of <a href="https://github.com/tc39/proposal-json-modules">JSON modules</a>, so we should probably mention that as well.</li>
-<li>Only after this proposal does <code class="notranslate">import()</code> have a second parameter and therefore optional trailing comma. <code class="notranslate">import("foo",)</code> works in Chrome but is a syntax error in Safari/Firefox. We need to add this to BCD and the trailing commas page: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Trailing_commas" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Trailing_commas</a></li>
-</ul>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[ecmascript, FileAPI] Clean up irrelevant notes about old browser releases]]></title>
             <link>https://github.com/mdn/content/issues/9974</link>
             <guid>https://github.com/mdn/content/issues/9974</guid>
