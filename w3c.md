@@ -14,8 +14,6 @@
   
 * [[css-color-4] Document missing components' bahavior for CSS color functions?](https://github.com/mdn/content/issues/27218) (2023-06-08T10:35:28Z)
   
-* [[css-logical-1] Inconsistent Values definition](https://github.com/mdn/content/issues/27217) (2023-06-08T09:32:12Z)
-  
 * [[uievents] Bad example to demonstrate MouseEvent.ctrlKey for Macintosh users](https://github.com/mdn/content/issues/27143) (2023-06-04T19:05:36Z)
   
 * [[css-scrollbars-1] "coloring_overflow_scrollbars" example does not meet the WCAG color contrast requirement mentioned earlier in this article](https://github.com/mdn/content/issues/27140) (2023-06-04T12:47:19Z)
