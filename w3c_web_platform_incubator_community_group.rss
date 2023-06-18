@@ -45,40 +45,6 @@ These should also be replaced if they in the main article are replaced.</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[file-system-access] File System Access API is incomplete]]></title>
-            <link>https://github.com/mdn/content/issues/22000</link>
-            <guid>https://github.com/mdn/content/issues/22000</guid>
-            <pubDate>Wed, 02 Nov 2022 10:18:28 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">FileSystemDirectoryHandle</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The File System Access API doesn't address the question of how to manage package bundles (e.g. .textbundle files) or compressed archives (e.g. .zip files).</p>
-<p dir="auto">The above types of files have a kind of 'file' when they should really be identified as having a kind of 'Directory'.</p>
-<p dir="auto">You cannot use window.showDirectoryPicker() to select a package bundle or zip archive.</p>
-<p dir="auto">The window.showOpenFilePicker() allows us to select the above types of files, but won't allow us to work with their contents.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Package bundles or compressed archives should really be identified as having a kind of 'Directory' and be accessible using the window.showDirectoryPicker() method.</p>
-<p dir="auto">We should be able to identify and iterate through the contents of such packages.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://playcode.io/1000385" rel="nofollow">https://playcode.io/1000385</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/filesystemhandle</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/filesystemhandle/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/filesystemhandle/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/5f80944f03f785c729c12ac143cf88a1c12e72cd/hovercard" href="https://github.com/mdn/content/commit/5f80944f03f785c729c12ac143cf88a1c12e72cd"><tt>5f80944</tt></a></li>
-<li>Document last modified: 2022-10-10T08:12:11.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[file-system-access] `FileSystemHandle.requestPermission()` can throw `SecurityError`]]></title>
             <link>https://github.com/mdn/content/issues/15831</link>
             <guid>https://github.com/mdn/content/issues/15831</guid>
