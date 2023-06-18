@@ -278,8 +278,6 @@
   
 * [[SVG11] Issue with "SVGSVGElement": In FF an unset viewBox property means viewBox.baseVal = null. For Chrome it is an SVGRect initialized to 0.](https://github.com/mdn/content/issues/8907) (2021-09-14T14:00:23Z)
   
-* [[background-sync] Issue with "SyncManager.register()": incorrect params and return](https://github.com/mdn/content/issues/8893) (2021-09-13T20:59:23Z)
-  
 * [[SVG11, svg-animations] Issue with "<animate>": Firefox is inconsistent in rendering svg - graphic](https://github.com/mdn/content/issues/8551) (2021-09-02T04:54:48Z)
   
 * [[webauthn-3] PublicKeyCredentialCreationOptions.attestation: missing enum value "enterprise"](https://github.com/mdn/content/issues/8126) (2021-08-20T09:29:10Z)

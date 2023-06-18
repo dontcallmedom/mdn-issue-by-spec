@@ -10,8 +10,6 @@
   
 * [[webusb] Can web-usb permissions be revoked by javascript code? If so, should be documented](https://github.com/mdn/content/issues/13714) (2022-03-10T03:19:03Z)
   
-* [[background-sync] Issue with "SyncManager.register()": incorrect params and return](https://github.com/mdn/content/issues/8893) (2021-09-13T20:59:23Z)
-  
 * [[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator](https://github.com/mdn/content/issues/6856) (2021-07-13T13:35:32Z)
   
 * [[entries-api] Issue with "FileSystemFlags.exclusive": define dirEntry is type of FileSystemDirectoryEntry](https://github.com/mdn/content/issues/5457) (2021-05-29T15:23:34Z)
