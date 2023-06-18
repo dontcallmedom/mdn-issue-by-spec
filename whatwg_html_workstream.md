@@ -30,8 +30,6 @@
   
 * [[html, cssom-view-1] Problem with window.devicePixelRatio example](https://github.com/mdn/content/issues/26316) (2023-04-20T12:37:50Z)
   
-* [[html] Missing Webauthn Conditional UI attributes](https://github.com/mdn/content/issues/26227) (2023-04-15T08:27:54Z)
-  
 * [[html] Poor Color Contrast of "run shared worker" Example Page](https://github.com/mdn/content/issues/26130) (2023-04-11T19:11:21Z)
   
 * [[html] Some issues / inconsistencies on the <tr> reference page](https://github.com/mdn/content/issues/26088) (2023-04-10T14:59:46Z)
