@@ -12,8 +12,6 @@
   
 * [[fetch] "the request's destination. This is a string indicating the type of content being requested."](https://github.com/mdn/content/issues/22955) (2022-12-14T16:29:26Z)
   
-* [[fetch] Response.json static method is missing](https://github.com/mdn/content/issues/21550) (2022-10-14T12:40:47Z)
-  
 * [[fetch] Incorrect or outdated information at fetch() and Fetch API pages](https://github.com/mdn/content/issues/17115) (2022-06-08T21:48:36Z)
   
 * [[fetch] Issue with "Response.json()": Possible exceptions not documented](https://github.com/mdn/content/issues/13208) (2022-02-22T13:11:28Z)
