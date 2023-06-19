@@ -44,8 +44,6 @@
   
 * [[html] Some issues / inconsistencies on the <tr> reference page](https://github.com/mdn/content/issues/26088) (2023-04-10T14:59:46Z)
   
-* [[dom] Rationale for second parameter in MutationObserver callback?](https://github.com/mdn/content/issues/25839) (2023-04-01T17:26:06Z)
-  
 * [[html, DOM-Parsing] Inconsistency about if pushState() results in a popstate event](https://github.com/mdn/content/issues/25785) (2023-03-30T20:11:04Z)
   
 * [[html] SharedWorker's name parameter in the constructor is also used to create new instances of the same SharedWorker script](https://github.com/mdn/content/issues/25636) (2023-03-25T18:00:48Z)

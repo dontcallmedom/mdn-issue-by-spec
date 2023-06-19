@@ -696,39 +696,6 @@ As a reader, I was also wondering how the examples are directly connected to the
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[dom] Rationale for second parameter in MutationObserver callback?]]></title>
-            <link>https://github.com/mdn/content/issues/25839</link>
-            <guid>https://github.com/mdn/content/issues/25839</guid>
-            <pubDate>Sat, 01 Apr 2023 17:26:06 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/MutationObserver" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/MutationObserver</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">#parameters</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">From the documentation shown on this and related pages, it is unclear why the callback function has to take the <code class="notranslate">MutationObserver</code> itself as a second parameter. To me it looks strange that the MutationObserver should have to reference itself in its callback, especially if we write the observer definition as follows:</p>
-<p dir="auto"><code class="notranslate">const obs = new MutationObserver((list, obs) =&gt; /*do something*/);</code></p>
-<p dir="auto">Moreover, in the example given on the page, the <code class="notranslate">observer</code> parameter can be omitted from the callback without any effect on the result.</p>
-<p dir="auto">However, I am certain that there are instances when this parameter is necessary and useful – but I would have liked to see this demonstrated or explained. The examples I can come up with at least do fine with only the first parameter.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">An explanation and/or an example of an instance when the second parameter is useful in the callback.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/mutationobserver/mutationobserver</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/MutationObserver" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/MutationObserver</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/mutationobserver/mutationobserver/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/mutationobserver/mutationobserver/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2ba2c0efbdf0c34b1da02203e4e84b571c883629/hovercard" href="https://github.com/mdn/content/commit/2ba2c0efbdf0c34b1da02203e4e84b571c883629"><tt>2ba2c0e</tt></a></li>
-<li>Document last modified: 2023-02-28T14:00:22.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html, DOM-Parsing] Inconsistency about if pushState() results in a popstate event]]></title>
             <link>https://github.com/mdn/content/issues/25785</link>
             <guid>https://github.com/mdn/content/issues/25785</guid>
