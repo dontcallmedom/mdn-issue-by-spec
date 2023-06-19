@@ -43,40 +43,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[ecmascript] Throwing a string or number (instead of an Error) is generally problematic]]></title>
-            <link>https://github.com/mdn/content/issues/27151</link>
-            <guid>https://github.com/mdn/content/issues/27151</guid>
-            <pubDate>Mon, 05 Jun 2023 20:09:49 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Description</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">throw "Error2"; // generates an exception with a string value<br>
-throw 42; // generates an exception with the value 42<br>
-throw true; // generates an exception with the value true<br>
-throw new Error("Required"); // generates an error object with the message of Required</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">throw new Error("Required"); // generates an error object with the message of Required</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://stackoverflow.com/questions/11502052/throwing-strings-instead-of-errors" rel="nofollow">https://stackoverflow.com/questions/11502052/throwing-strings-instead-of-errors</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">The current documentation conveys the false impression that throw("message") might be a valid shorthand for throw new Error("message"). While it's not technically an error, it's extremely unhelpful, misleading, and unconventional. Conventionally catch statements expect e.message to be defined.</p>
-<p dir="auto">If you're going to present examples of the alternatives with string/number/boolean instead of Error, don't put them before the conventional example with Error, and do add a cautionary note that those examples are unconventional.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/statements/throw</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/throw/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/throw/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0f3738f6b1ed1aa69395ff181207186e1ad9f4d8/hovercard" href="https://github.com/mdn/content/commit/0f3738f6b1ed1aa69395ff181207186e1ad9f4d8"><tt>0f3738f</tt></a></li>
-<li>Document last modified: 2023-02-21T00:33:34.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[ecmascript] Provide a definition for binding list]]></title>
             <link>https://github.com/mdn/content/issues/26875</link>
             <guid>https://github.com/mdn/content/issues/26875</guid>

@@ -4,8 +4,6 @@
 
 * [[ecmascript] Slightly misleading wording around Atomics.wait/Async](https://github.com/mdn/content/issues/27356) (2023-06-15T17:50:26Z)
   
-* [[ecmascript] Throwing a string or number (instead of an Error) is generally problematic](https://github.com/mdn/content/issues/27151) (2023-06-05T20:09:49Z)
-  
 * [[ecmascript] Provide a definition for binding list](https://github.com/mdn/content/issues/26875) (2023-05-21T01:39:29Z)
   
 * [[ecmascript] FinalizationRegistry: missing example and lack of clarity on "threads"](https://github.com/mdn/content/issues/26486) (2023-04-28T20:00:14Z)
