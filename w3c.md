@@ -196,8 +196,6 @@
   
 * [[cssom-1] [Web-API] Constructible stylesheets guide ](https://github.com/mdn/content/issues/16774) (2022-05-30T05:03:25Z)
   
-* [[css-cascade-3] @import url("narrow.css") supports(display: flex) example not working](https://github.com/mdn/content/issues/16198) (2022-05-18T16:57:51Z)
-  
 * [[file-system-access] `FileSystemHandle.requestPermission()` can throw `SecurityError`](https://github.com/mdn/content/issues/15831) (2022-05-09T19:45:01Z)
   
 * [[css-text-3] `word-break: break-word;` vs `overflow-wrap: anywhere;`](https://github.com/mdn/content/issues/15676) (2022-05-04T06:23:26Z)
