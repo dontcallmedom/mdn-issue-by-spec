@@ -72,8 +72,6 @@
   
 * [[fetch] Spec update: `response.body` now returns readable byte stream](https://github.com/mdn/content/issues/24453) (2023-02-15T10:53:31Z)
   
-* [[html] Window.localStorage documentation should include an example of using JSON.stringify and JSON.parse to store and retrieve (serialize and deserialize) objects](https://github.com/mdn/content/issues/24356) (2023-02-11T19:39:14Z)
-  
 * [[html, CSP3] Clarify the sandbox directive use in Content-Security-Policy-Report-Only](https://github.com/mdn/content/issues/24318) (2023-02-10T14:49:54Z)
   
 * [[dom] addEventListener - which browsers/events default to passive](https://github.com/mdn/content/issues/24181) (2023-02-05T18:59:51Z)
@@ -201,8 +199,6 @@
 * [[html] Issue with "Document: drop event": Mention that drop won't fire unless you preventDefault in dragover](https://github.com/mdn/content/issues/9796) (2021-10-14T10:16:25Z)
   
 * [[dom] Issue with "Document.getElementById()": link to xml:id doesn't include expected source snippet](https://github.com/mdn/content/issues/9777) (2021-10-13T19:50:56Z)
-  
-* [[html] HTMLElement: the input event requires a user to initiate changing the value of a form control](https://github.com/mdn/content/issues/9548) (2021-10-04T04:10:01Z)
   
 * [[html] Issue with "<canvas>: The Graphics Canvas element": Firefox area limit incorrect](https://github.com/mdn/content/issues/9379) (2021-09-30T16:32:42Z)
   

@@ -52,8 +52,6 @@
   
 * [[html] <script type=module async> explanation incorrectly says it defers](https://github.com/mdn/content/issues/24754) (2023-02-22T14:21:24Z)
   
-* [[html] Window.localStorage documentation should include an example of using JSON.stringify and JSON.parse to store and retrieve (serialize and deserialize) objects](https://github.com/mdn/content/issues/24356) (2023-02-11T19:39:14Z)
-  
 * [[html, CSP3] Clarify the sandbox directive use in Content-Security-Policy-Report-Only](https://github.com/mdn/content/issues/24318) (2023-02-10T14:49:54Z)
   
 * [[html] `a`, `b`, `c` and `d` in setTransform have an incorrect explanation](https://github.com/mdn/content/issues/24165) (2023-02-04T12:35:47Z)
@@ -147,8 +145,6 @@
 * [[html, uievents] Replace hand-written compat sections with BCD tables](https://github.com/mdn/content/issues/9972) (2021-10-21T07:40:45Z)
   
 * [[html] Issue with "Document: drop event": Mention that drop won't fire unless you preventDefault in dragover](https://github.com/mdn/content/issues/9796) (2021-10-14T10:16:25Z)
-  
-* [[html] HTMLElement: the input event requires a user to initiate changing the value of a form control](https://github.com/mdn/content/issues/9548) (2021-10-04T04:10:01Z)
   
 * [[html] Issue with "<canvas>: The Graphics Canvas element": Firefox area limit incorrect](https://github.com/mdn/content/issues/9379) (2021-09-30T16:32:42Z)
   
