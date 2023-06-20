@@ -77,43 +77,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[ecmascript] FinalizationRegistry: missing example and lack of clarity on "threads"]]></title>
-            <link>https://github.com/mdn/content/issues/26486</link>
-            <guid>https://github.com/mdn/content/issues/26486</guid>
-            <pubDate>Fri, 28 Apr 2023 20:00:14 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/FinalizationRegistry" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/FinalizationRegistry</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Notes on cleanup callbacks</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The documentation does not say anything about the thread that will run the callbacks.</p>
-<p dir="auto">It is very important because until the main thread "yields", they cannot run. And if the main thread never yields, they can only run at the end.<br>
-This has been confirmed both in node and deno.</p>
-<p dir="auto">Basically, without repeated calls to <code class="notranslate">setTimeout</code>, the callbacks never run.</p>
-<p dir="auto">I think it is a fundamental piece of information, even considering all the disclaimers.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<ol dir="auto">
-<li>information about the need of some sort of pause in the main thread</li>
-<li>a complete example</li>
-</ol>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://github.com/orgs/nodejs/discussions/47716">https://github.com/orgs/nodejs/discussions/47716</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/finalizationregistry</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/FinalizationRegistry" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/FinalizationRegistry</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/finalizationregistry/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/finalizationregistry/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/7da0dabee277f9c295178ae132c16c8fed5d747a/hovercard" href="https://github.com/mdn/content/commit/7da0dabee277f9c295178ae132c16c8fed5d747a"><tt>7da0dab</tt></a></li>
-<li>Document last modified: 2023-03-29T16:29:26.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[ecmascript] Accessing WebAssembly memory using TypedArrays is incorrect on Big Endian systems]]></title>
             <link>https://github.com/mdn/content/issues/25569</link>
             <guid>https://github.com/mdn/content/issues/25569</guid>

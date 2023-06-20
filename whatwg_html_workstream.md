@@ -56,8 +56,6 @@
   
 * [[html, CSP3] Clarify the sandbox directive use in Content-Security-Policy-Report-Only](https://github.com/mdn/content/issues/24318) (2023-02-10T14:49:54Z)
   
-* [[html] `a`, `b`, `c` and `d` in setTransform have an incorrect explanation](https://github.com/mdn/content/issues/24165) (2023-02-04T12:35:47Z)
-  
 * [[html] “Layout and the containing block”: Block container inserted into article but never defined](https://github.com/mdn/content/issues/23972) (2023-01-29T20:30:11Z)
   
 * [[html] autofocus on dialog page](https://github.com/mdn/content/issues/23915) (2023-01-26T19:55:03Z)
