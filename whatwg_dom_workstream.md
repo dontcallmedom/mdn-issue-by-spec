@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[dom] Description of the `DocumentType.after()` in the `DocumentType` page is incorrect](https://github.com/mdn/content/issues/27428) (2023-06-20T03:24:58Z)
+  
 * [[dom] no mention what the default is for ShadowRoot mode](https://github.com/mdn/content/issues/27110) (2023-06-02T09:06:55Z)
   
 * [[dom] getRootNode() documentation doesn't mention that it can return the element itself](https://github.com/mdn/content/issues/26962) (2023-05-25T07:32:08Z)
