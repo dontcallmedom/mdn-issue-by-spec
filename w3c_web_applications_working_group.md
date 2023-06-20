@@ -38,8 +38,6 @@
   
 * [[uievents] Document the ability to preventDefault() a pinch-zoom gesture on a touchpad](https://github.com/mdn/content/issues/18342) (2022-07-14T03:33:35Z)
   
-* [[IndexedDB-3] IDBObjectStore»add() example: incomplete basic explanation; unclear how ConstraintError is handled](https://github.com/mdn/content/issues/15037) (2022-04-15T23:16:34Z)
-  
 * [[html, gamepad] Double checking the gamepad docs are correct](https://github.com/mdn/content/issues/14874) (2022-04-11T03:02:09Z)
   
 * [[uievents] mouseleave is also fired when cursor enters an area contained in an img](https://github.com/mdn/content/issues/13534) (2022-03-05T21:18:17Z)

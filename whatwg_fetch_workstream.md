@@ -18,5 +18,3 @@
   
 * [[fetch] Content bug: Inaccurate explanation on request credentials](https://github.com/mdn/content/issues/13063) (2022-02-17T09:18:12Z)
   
-* [[fetch] Issue with "Response.error()": Example missing](https://github.com/mdn/content/issues/12852) (2022-02-09T07:32:59Z)
-  

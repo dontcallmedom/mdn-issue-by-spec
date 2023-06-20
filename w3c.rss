@@ -3681,46 +3681,6 @@ A new [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Contai
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[IndexedDB-3] IDBObjectStore»add() example: incomplete basic explanation; unclear how ConstraintError is handled]]></title>
-            <link>https://github.com/mdn/content/issues/15037</link>
-            <guid>https://github.com/mdn/content/issues/15037</guid>
-            <pubDate>Fri, 15 Apr 2022 23:16:34 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/add" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/add</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Errors, Exceptions</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">It is unclear how  ConstraintError  is handled.<br>
-Text says "If a record already exists in the object store with the key parameter as its key, then an error ConstrainError event is fired on the returned request object."<br>
-OK.  How do I tell in my "onerror" method if it is a ConstraintError or otherwise?  Is the "event" object passed to the "onerror" method an instance of Error?  Event?  hybrid?  Error a property of Event?<br>
-Text says "This method may raise a [DOMException] of one of the following types:"<br>
-OK.  When?  The example does not handle a DOMException, just an "onerror" method.<br>
-In fact, the example confusingly applies the "onerror" to the transaction, not the request object as stated (yea, I know it bubbles to the transaction, but the example is still confusing if that is not noted to the beginner)<br>
-If I could:<br>
-try { transaction.objectStore(store).add(foo); }<br>
-catch(e) { (e instanceof ConstraintError) ? ......... }<br>
-then I could move forward.<br>
-It's a lot of work to create a database, fill it, then try to create errors and probe results from there.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">a complete reference to the method</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/idbobjectstore/add</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/add" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/add</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/idbobjectstore/add/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/idbobjectstore/add/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/281e3b21178946c8301232a8eb50d11770ee8450/hovercard" href="https://github.com/mdn/content/commit/281e3b21178946c8301232a8eb50d11770ee8450"><tt>281e3b2</tt></a></li>
-<li>Document last modified: 2022-02-18T09:53:31.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html, gamepad] Double checking the gamepad docs are correct]]></title>
             <link>https://github.com/mdn/content/issues/14874</link>
             <guid>https://github.com/mdn/content/issues/14874</guid>

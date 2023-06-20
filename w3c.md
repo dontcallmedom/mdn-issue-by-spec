@@ -206,8 +206,6 @@
   
 * [[css-contain-2] Containing block via contain:paint vs other alternatives](https://github.com/mdn/content/issues/15210) (2022-04-21T19:05:51Z)
   
-* [[IndexedDB-3] IDBObjectStore»add() example: incomplete basic explanation; unclear how ConstraintError is handled](https://github.com/mdn/content/issues/15037) (2022-04-15T23:16:34Z)
-  
 * [[html, gamepad] Double checking the gamepad docs are correct](https://github.com/mdn/content/issues/14874) (2022-04-11T03:02:09Z)
   
 * [[hr-time-3, performance-timeline-2, resource-timing-2, user-timing-2] Topic on setting HTTP priority of resource requests](https://github.com/mdn/content/issues/14803) (2022-04-08T02:53:08Z)

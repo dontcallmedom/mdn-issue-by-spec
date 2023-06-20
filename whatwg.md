@@ -180,8 +180,6 @@
   
 * [[fetch] Content bug: Inaccurate explanation on request credentials](https://github.com/mdn/content/issues/13063) (2022-02-17T09:18:12Z)
   
-* [[fetch] Issue with "Response.error()": Example missing](https://github.com/mdn/content/issues/12852) (2022-02-09T07:32:59Z)
-  
 * [[html] Issue with "<iframe>: The Inline Frame element": document browser behaviour for onload and onerror events.](https://github.com/mdn/content/issues/12477) (2022-01-28T14:05:20Z)
   
 * [[dom] Issue with "AbortController": (missing info on behavior of .text() or .json() or other body promise)](https://github.com/mdn/content/issues/12387) (2022-01-24T16:10:11Z)
