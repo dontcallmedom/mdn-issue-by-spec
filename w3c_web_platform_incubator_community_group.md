@@ -6,9 +6,7 @@
   
 * [[file-system-access] `FileSystemHandle.requestPermission()` can throw `SecurityError`](https://github.com/mdn/content/issues/15831) (2022-05-09T19:45:01Z)
   
-* [[webusb] Can web-usb permissions be revoked by javascript code? If so, should be documented](https://github.com/mdn/content/issues/13714) (2022-03-10T03:19:03Z)
-  
 * [[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator](https://github.com/mdn/content/issues/6856) (2021-07-13T13:35:32Z)
   
-* [[entries-api] Issue with "FileSystemFlags.exclusive": does not successfully create new file](https://github.com/mdn/content/issues/5457) (2021-05-29T15:23:34Z)
+* [[entries-api] Issue with "FileSystemFlags.exclusive": does not successfully replace original file](https://github.com/mdn/content/issues/5457) (2021-05-29T15:23:34Z)
   

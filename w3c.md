@@ -220,9 +220,7 @@
   
 * [[SVG11] Issue with "<tspan>": No mention of multiple x values](https://github.com/mdn/content/issues/13831) (2022-03-13T18:05:24Z)
   
-* [[webusb] Can web-usb permissions be revoked by javascript code? If so, should be documented](https://github.com/mdn/content/issues/13714) (2022-03-10T03:19:03Z)
-  
-* [[uievents] “mouseleave is fired when the pointer has exited the element” is inaccurate](https://github.com/mdn/content/issues/13534) (2022-03-05T21:18:17Z)
+* [[uievents] mouseleave is also fired when cursor enters an area contained in an img](https://github.com/mdn/content/issues/13534) (2022-03-05T21:18:17Z)
   
 * [[web-animations-2, css-animations-2] Issue with "Element.animate()": wrong scenario mentioned](https://github.com/mdn/content/issues/13487) (2022-03-04T07:40:26Z)
   
@@ -290,7 +288,7 @@
   
 * [[css-lists-3] Issue with "counter-reset": the example is a bit confusing](https://github.com/mdn/content/issues/6277) (2021-06-23T22:25:29Z)
   
-* [[entries-api] Issue with "FileSystemFlags.exclusive": does not successfully create new file](https://github.com/mdn/content/issues/5457) (2021-05-29T15:23:34Z)
+* [[entries-api] Issue with "FileSystemFlags.exclusive": does not successfully replace original file](https://github.com/mdn/content/issues/5457) (2021-05-29T15:23:34Z)
   
 * [[mediacapture-streams] Issue with "MediaStreamTrack: ended event": note that this event is not fired when the user calls .stop() on the track](https://github.com/mdn/content/issues/4939) (2021-05-12T10:02:23Z)
   
