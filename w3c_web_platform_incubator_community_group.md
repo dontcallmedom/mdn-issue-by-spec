@@ -10,5 +10,5 @@
   
 * [[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator](https://github.com/mdn/content/issues/6856) (2021-07-13T13:35:32Z)
   
-* [[entries-api] Issue with "FileSystemFlags.exclusive": define dirEntry is type of FileSystemDirectoryEntry](https://github.com/mdn/content/issues/5457) (2021-05-29T15:23:34Z)
+* [[entries-api] Issue with "FileSystemFlags.exclusive": does not successfully create new file](https://github.com/mdn/content/issues/5457) (2021-05-29T15:23:34Z)
   
