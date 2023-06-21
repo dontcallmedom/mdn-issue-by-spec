@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] fix broken link](https://github.com/mdn/content/issues/27437) (2023-06-20T13:01:40Z)
-  
 * [[notifications] Notification not working on Chrome and Safari on Ios](https://github.com/mdn/content/issues/27431) (2023-06-20T07:10:18Z)
   
 * [[dom] Description of the `DocumentType.after()` in the `DocumentType` page is incorrect](https://github.com/mdn/content/issues/27428) (2023-06-20T03:24:58Z)
