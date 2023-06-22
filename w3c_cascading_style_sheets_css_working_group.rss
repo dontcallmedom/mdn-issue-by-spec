@@ -4,10 +4,40 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Thu, 22 Jun 2023 10:35:15 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 22 Jun 2023 17:50:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[cssom-view-1] Docs incorrectly list full support for chromium browsers]]></title>
+            <link>https://github.com/mdn/content/issues/27485</link>
+            <guid>https://github.com/mdn/content/issues/27485</guid>
+            <pubDate>Thu, 22 Jun 2023 17:50:30 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Browser Compatibility</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">For Edge and Chrome, the <code class="notranslate">behavior: "smooth"</code> option for window.scrollTo() is only supported if the user has enabled the experimental flag <code class="notranslate">chrome://flags/#smooth-scrolling</code>.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A note saying that the smooth scrolling paramater is supported only if the user has enabled the flag</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Comment by Tamas Bolvari on Saeed Hassanvand's answer on this stackoverflow thread <a href="https://stackoverflow.com/questions/49636727/why-is-scroll-behaviorsmooth-not-working-but-javascript-window-scroll-smooth-is" rel="nofollow">https://stackoverflow.com/questions/49636727/why-is-scroll-behaviorsmooth-not-working-but-javascript-window-scroll-smooth-is</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/window/scrollto</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/scrollto/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/scrollto/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cc070123f72376faec06e36622c4fc723a75325f/hovercard" href="https://github.com/mdn/content/commit/cc070123f72376faec06e36622c4fc723a75325f"><tt>cc07012</tt></a></li>
+<li>Document last modified: 2023-04-08T06:57:07.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-backgrounds-4, CSS21] border-style inset behaves like ridge, outset behaves like groove with border-collapse]]></title>
             <link>https://github.com/mdn/content/issues/27475</link>
