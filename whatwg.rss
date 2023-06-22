@@ -4,40 +4,10 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Thu, 22 Jun 2023 16:49:17 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 22 Jun 2023 14:18:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[html] Example in `<address>` doesn't work]]></title>
-            <link>https://github.com/mdn/content/issues/27482</link>
-            <guid>https://github.com/mdn/content/issues/27482</guid>
-            <pubDate>Thu, 22 Jun 2023 16:49:17 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Result</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Example in <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address" rel="nofollow"><code class="notranslate">&lt;address&gt;</code></a> doesn't work.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">A working example in <code class="notranslate">&lt;address&gt;</code>.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/19418601/248000478-2aea1cfe-561a-4c9a-a3a5-e812ee91ddb7.png"><img src="https://user-images.githubusercontent.com/19418601/248000478-2aea1cfe-561a-4c9a-a3a5-e812ee91ddb7.png" alt="Screenshot 2023-06-22 at 19 47 58" style="max-width: 100%;"></a></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/html/element/address</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/address/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/address/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/942a529383ee7ee3996fb234187641c08935f3ff/hovercard" href="https://github.com/mdn/content/commit/942a529383ee7ee3996fb234187641c08935f3ff"><tt>942a529</tt></a></li>
-<li>Document last modified: 2023-04-13T06:13:15.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[dom] Inaccessible example]]></title>
             <link>https://github.com/mdn/content/issues/27478</link>
@@ -3968,18 +3938,17 @@ Anyway,</li>
 <h1 dir="auto">Details</h1>
 
 <p dir="auto"><code class="notranslate">requestAnimationFrame</code> and <code class="notranslate">cancelAnimationFrame</code> used to be <code class="notranslate">Window</code> only methods, but it has recently been added to <code class="notranslate">DedicatedWorkerGlobalScope</code> too. <a href="https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider" rel="nofollow">https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider</a></p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="interface mixin AnimationFrameProvider {
+<div class="highlight highlight-source-webidl notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="interface mixin AnimationFrameProvider {
   unsigned long requestAnimationFrame(FrameRequestCallback callback);
   undefined cancelAnimationFrame(unsigned long handle);
 };
 Window includes AnimationFrameProvider;
-DedicatedWorkerGlobalScope includes AnimationFrameProvider;"><pre lang="webidl" class="notranslate"><code class="notranslate">interface mixin AnimationFrameProvider {
-  unsigned long requestAnimationFrame(FrameRequestCallback callback);
-  undefined cancelAnimationFrame(unsigned long handle);
+DedicatedWorkerGlobalScope includes AnimationFrameProvider;"><pre class="notranslate"><span class="pl-k">interface</span> <span class="pl-en">mixin</span> AnimationFrameProvider {
+  <span class="pl-k">unsigned</span> <span class="pl-k">long</span> <span class="pl-en">requestAnimationFrame</span>(FrameRequestCallback callback);
+  undefined <span class="pl-en">cancelAnimationFrame</span>(<span class="pl-k">unsigned</span> <span class="pl-k">long</span> handle);
 };
 Window includes AnimationFrameProvider;
-DedicatedWorkerGlobalScope includes AnimationFrameProvider;
-</code></pre></div>
+DedicatedWorkerGlobalScope includes AnimationFrameProvider;</pre></div>
 <p dir="auto">I guess the page should now be <code class="notranslate">Web/API/WindowOrWorkerGlobalScope/requestAnimationFrame</code>, but I fear this would break any link to the current <code class="notranslate">/Web/API/window/requestAnimationFrame</code>. So I'm not sure how it should get handled.</p>
 <p dir="auto">Also, compat-data should probably be updated (currently these methods are supported in Blink only).</p>]]></content:encoded>
         </item>

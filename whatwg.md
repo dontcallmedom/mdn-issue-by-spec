@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html] Example in `<address>` doesn't work](https://github.com/mdn/content/issues/27482) (2023-06-22T16:49:17Z)
-  
 * [[dom] Inaccessible example](https://github.com/mdn/content/issues/27478) (2023-06-22T14:18:14Z)
   
 * [[notifications] Notification not working on Chrome and Safari on Ios](https://github.com/mdn/content/issues/27431) (2023-06-20T07:10:18Z)
