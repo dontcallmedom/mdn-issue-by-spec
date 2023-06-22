@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-backgrounds-4, CSS21] border-style inset behaves like ridge, outset behaves like groove with border-collapse](https://github.com/mdn/content/issues/27475) (2023-06-22T10:35:15Z)
+  
 * [[web-share] Example for sharing a URL is not functional](https://github.com/mdn/content/issues/27469) (2023-06-21T19:17:08Z)
   
 * [[selectors-4] CSS :has() is the conceptional counterpart of a RegEx lookahead](https://github.com/mdn/content/issues/27464) (2023-06-21T15:34:11Z)
