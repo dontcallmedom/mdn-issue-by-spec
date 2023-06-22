@@ -4,8 +4,6 @@
 
 * [[web-share] Example for sharing a URL is not functional](https://github.com/mdn/content/issues/27469) (2023-06-21T19:17:08Z)
   
-* [[uievents] KeyboardEvent/keyCode should rename OSLeft/Right to MetaLeft/Right ](https://github.com/mdn/content/issues/27459) (2023-06-21T12:22:37Z)
-  
 * [[IndexedDB-3] "Using IndexedDB" guide seems to be out of sync with the more specific documentation](https://github.com/mdn/content/issues/27330) (2023-06-14T18:17:39Z)
   
 * [[uievents] Bad example to demonstrate MouseEvent.ctrlKey for Macintosh users](https://github.com/mdn/content/issues/27143) (2023-06-04T19:05:36Z)
