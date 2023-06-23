@@ -12,8 +12,6 @@
   
 * [[dom] More information about what HTMLCollection is replaced with](https://github.com/mdn/content/issues/26470) (2023-04-28T04:34:16Z)
   
-* [[dom] this.getAttribute() doesn't work inside the constructor()](https://github.com/mdn/content/issues/25028) (2023-03-03T03:25:46Z)
-  
 * [[dom] Need to update lookupNamespaceURI() and createNSResolver()](https://github.com/mdn/content/issues/24724) (2023-02-22T02:32:44Z)
   
 * [[dom] addEventListener - which browsers/events default to passive](https://github.com/mdn/content/issues/24181) (2023-02-05T18:59:51Z)

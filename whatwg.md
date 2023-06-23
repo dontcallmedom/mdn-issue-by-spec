@@ -60,8 +60,6 @@
   
 * [[html] A srcset example contradicts instructions](https://github.com/mdn/content/issues/25150) (2023-03-07T21:00:37Z)
   
-* [[dom] this.getAttribute() doesn't work inside the constructor()](https://github.com/mdn/content/issues/25028) (2023-03-03T03:25:46Z)
-  
 * [[html] event doesnt fire on fully cached pages (no event appears to)](https://github.com/mdn/content/issues/24770) (2023-02-22T21:34:14Z)
   
 * [[html] <script type=module async> explanation incorrectly says it defers](https://github.com/mdn/content/issues/24754) (2023-02-22T14:21:24Z)
