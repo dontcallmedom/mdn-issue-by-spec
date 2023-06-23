@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[webrtc] MDN Web Docs state incorrectly that RTCRtpTransceiver.mid is null until negotiation is completed.](https://github.com/mdn/content/issues/27502) (2023-06-23T10:39:29Z)
+  
 * [[css-masking-1] CSP and other errors reported in the console for CSS mask-type article's EmbedLiveSample iframes](https://github.com/mdn/content/issues/27500) (2023-06-23T07:07:55Z)
   
 * [[cssom-view-1] Docs incorrectly list full support for chromium browsers](https://github.com/mdn/content/issues/27485) (2023-06-22T17:50:30Z)
