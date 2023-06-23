@@ -4,10 +4,31 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Fri, 23 Jun 2023 07:07:55 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 23 Jun 2023 10:39:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[webrtc] MDN Web Docs state incorrectly that RTCRtpTransceiver.mid is null until negotiation is completed.]]></title>
+            <link>https://github.com/mdn/content/issues/27502</link>
+            <guid>https://github.com/mdn/content/issues/27502</guid>
+            <pubDate>Fri, 23 Jun 2023 10:39:29 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpTransceiver/mid" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpTransceiver/mid</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Value</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">This value is <code class="notranslate">null</code> if negotiation has not completed.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">This value should be set to the MID of the "m=" section when a local or remote description is applyed, according to RFC 8829 that is referenced by WebRTC specification.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://w3c.github.io/webrtc-pc/#dfn-jsepmid" rel="nofollow">https://w3c.github.io/webrtc-pc/#dfn-jsepmid</a><br>
+<a href="https://datatracker.ietf.org/doc/html/rfc8829#name-applying-a-local-descriptio" rel="nofollow">https://datatracker.ietf.org/doc/html/rfc8829#name-applying-a-local-descriptio</a><br>
+<a href="https://datatracker.ietf.org/doc/html/rfc8829#name-applying-a-remote-descripti" rel="nofollow">https://datatracker.ietf.org/doc/html/rfc8829#name-applying-a-remote-descripti</a><br>
+<a href="https://w3c.github.io/webrtc-pc/#set-the-session-description" rel="nofollow">https://w3c.github.io/webrtc-pc/#set-the-session-description</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-masking-1] CSP and other errors reported in the console for CSS mask-type article's EmbedLiveSample iframes]]></title>
             <link>https://github.com/mdn/content/issues/27500</link>
