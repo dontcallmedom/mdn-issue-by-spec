@@ -312,8 +312,6 @@
   
 * [[screen-capture] MediaTrackConstraints.displaySurface: there is no way to restrain surface type via javascript; can only detect surface type for a current stream already going](https://github.com/mdn/content/issues/1456) (2021-01-18T15:39:25Z)
   
-* [[webrtc] "RTCRtpSender.replaceTrack()": example uses undeclared variable "PCs"](https://github.com/mdn/content/issues/1406) (2021-01-17T17:37:46Z)
-  
 * [[SVG11] Issue with "<foreignObject>": doesn't render in Safari](https://github.com/mdn/content/issues/1319) (2021-01-14T17:25:42Z)
   
 * [[webaudio] Visualization for OscillatorNode](https://github.com/mdn/content/issues/1296) (2021-01-14T10:42:13Z)
