@@ -142,8 +142,6 @@
   
 * [[css-logical-1] The article on the CSS float property lists several non-standard values as supported, with no explanation of what they are or where they came from](https://github.com/mdn/content/issues/22069) (2022-11-04T20:55:23Z)
   
-* [[css-font-loading-3] What is the use of document.fonts.check if it is always going to return true(in safari and firefox...)?](https://github.com/mdn/content/issues/22044) (2022-11-04T03:57:22Z)
-  
 * [[WebIDL-1] “Using the Web Storage API” has deprecated “DOMException.code” in example](https://github.com/mdn/content/issues/21910) (2022-10-28T12:08:01Z)
   
 * [[cssom-view-1, uievents, pointerlock-2] MouseEvent.clientX and MouseEvent.clientY is  the coordinates of the window, but the documentation is written relative to the local dom ](https://github.com/mdn/content/issues/21876) (2022-10-27T13:46:15Z)
@@ -171,8 +169,6 @@
 * [[IndexedDB-3] indexedDB.deleteDatabase doc: Mention that deleting a database isn't completed until the upgradeNeeded result is closed](https://github.com/mdn/content/issues/20368) (2022-09-07T00:12:45Z)
   
 * [[uievents] Page for `MouseEvent()` doesn't show how to use it](https://github.com/mdn/content/issues/20329) (2022-09-05T19:44:07Z)
-  
-* [[webrtc] Possibly missing information in WebRTC config section about certificates](https://github.com/mdn/content/issues/20134) (2022-08-30T19:08:41Z)
   
 * [[html, cssom-view-1] [GEH] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
   

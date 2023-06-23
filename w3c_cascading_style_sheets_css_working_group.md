@@ -84,8 +84,6 @@
   
 * [[css-logical-1] The article on the CSS float property lists several non-standard values as supported, with no explanation of what they are or where they came from](https://github.com/mdn/content/issues/22069) (2022-11-04T20:55:23Z)
   
-* [[css-font-loading-3] What is the use of document.fonts.check if it is always going to return true(in safari and firefox...)?](https://github.com/mdn/content/issues/22044) (2022-11-04T03:57:22Z)
-  
 * [[cssom-view-1, uievents, pointerlock-2] MouseEvent.clientX and MouseEvent.clientY is  the coordinates of the window, but the documentation is written relative to the local dom ](https://github.com/mdn/content/issues/21876) (2022-10-27T13:46:15Z)
   
 * [[css-backgrounds-4] Border-image generator should allow "auto" as a border-image-width value](https://github.com/mdn/content/issues/21582) (2022-10-16T09:04:29Z)
