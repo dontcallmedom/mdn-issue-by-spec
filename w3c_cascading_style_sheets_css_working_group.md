@@ -38,8 +38,6 @@
   
 * [[cssom-view-1] Please add a note about getBoundingClientRect() forcing a reflow and performance issues](https://github.com/mdn/content/issues/26330) (2023-04-21T01:08:41Z)
   
-* [[html, cssom-view-1] Problem with window.devicePixelRatio example](https://github.com/mdn/content/issues/26316) (2023-04-20T12:37:50Z)
-  
 * [[css-sizing-4] The compatibility table is very confusing when alternative names exist](https://github.com/mdn/content/issues/25923) (2023-04-05T12:20:27Z)
   
 * [[css-overflow-3] Deviation of the `overflow-clip-margin` page from the spec](https://github.com/mdn/content/issues/25906) (2023-04-04T14:38:09Z)

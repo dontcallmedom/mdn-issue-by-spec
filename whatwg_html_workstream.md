@@ -28,8 +28,6 @@
   
 * [[html, cssom-view-1] Description of updatePixelRatio() example function doesn't match code listing](https://github.com/mdn/content/issues/26490) (2023-04-29T02:18:13Z)
   
-* [[html, cssom-view-1] Problem with window.devicePixelRatio example](https://github.com/mdn/content/issues/26316) (2023-04-20T12:37:50Z)
-  
 * [[html] Some issues / inconsistencies on the <tr> reference page](https://github.com/mdn/content/issues/26088) (2023-04-10T14:59:46Z)
   
 * [[html, DOM-Parsing] Inconsistency about if pushState() results in a popstate event](https://github.com/mdn/content/issues/25785) (2023-03-30T20:11:04Z)
