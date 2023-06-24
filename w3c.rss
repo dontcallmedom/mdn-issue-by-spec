@@ -4,10 +4,41 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Sat, 24 Jun 2023 14:58:02 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 24 Jun 2023 17:45:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-contain-2, css-position-3] position: fixed not documented as being affected by contain: layout or paint]]></title>
+            <link>https://github.com/mdn/content/issues/27529</link>
+            <guid>https://github.com/mdn/content/issues/27529</guid>
+            <pubDate>Sat, 24 Jun 2023 17:45:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/position</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Values &gt; fixed; Fixed Positioning; maybe some other sections too.</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">After reading about <code class="notranslate">contain</code>: layout at <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/contain" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/contain</a>, I learned how it changes the containing block used for fixed position elements. It is no longer the initial containing block. It is the nearest ancestor with <code class="notranslate">contain: layout</code>, <code class="notranslate">paint</code>, <code class="notranslate">strict</code>, or <code class="notranslate">content</code> or the initial containing block if no ancestor with <code class="notranslate">contain: layout</code>, <code class="notranslate">paint</code>, <code class="notranslate">strict</code>, or <code class="notranslate">content</code> is found.</p>
+<p dir="auto">Note: It is mentioned at <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block</a>.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Documentation and maybe an example how <code class="notranslate">contain: layout</code> or <code class="notranslate">contain: paint</code> (and therefore <code class="notranslate">contain: strict</code> or <code class="notranslate">contain: content</code> too) affects fixed position elements.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/contain" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/contain</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/position</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/position</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/position/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/position/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/9428e6f9ac2fd4166b5cf245fb674123209787ff/hovercard" href="https://github.com/mdn/content/commit/9428e6f9ac2fd4166b5cf245fb674123209787ff"><tt>9428e6f</tt></a></li>
+<li>Document last modified: 2023-02-21T06:10:16.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-scoping-1, webvtt1] Regroup the page types for CSS selectors]]></title>
             <link>https://github.com/mdn/content/issues/27526</link>
