@@ -4,10 +4,44 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Thu, 15 Jun 2023 17:50:26 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 24 Jun 2023 00:52:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] The description about `Promise.any()` is a bit confusing]]></title>
+            <link>https://github.com/mdn/content/issues/27515</link>
+            <guid>https://github.com/mdn/content/issues/27515</guid>
+            <pubDate>Sat, 24 Jun 2023 00:52:53 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise#promise_any" rel="nofollow"><code class="notranslate">Promise.any()</code></a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Promise methods like <code class="notranslate">Promise.any()</code>, <code class="notranslate">Promise.race()</code>, etc, would actually return a new promise immediately. But the description about <code class="notranslate">Promise.any()</code> is:</p>
+<blockquote>
+<p dir="auto">Takes an iterable of Promise objects and, as soon as one of the promises in the iterable fulfills, returns a single promise that fulfills with the value from that promise.</p>
+</blockquote>
+<p dir="auto">this may confuse readers: whether this method return a promise after one of the promises fulfilled (or return a promise immediately and fulfills when one of the promises is fulfilled)?</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">clearer description, the promise would be returned immediately.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">reference: <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1761942487" data-permission-text="Title is private" data-url="https://github.com/mdn/translated-content/issues/13809" data-hovercard-type="pull_request" data-hovercard-url="/mdn/translated-content/pull/13809/hovercard?comment_id=1236993877&amp;comment_type=review_comment" href="https://github.com/mdn/translated-content/pull/13809#discussion_r1236993877">mdn/translated-content#13809 (comment)</a></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/promise</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/promise/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/promise/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/01bf58c144237c1fc75cf7135491346778591f09/hovercard" href="https://github.com/mdn/content/commit/01bf58c144237c1fc75cf7135491346778591f09"><tt>01bf58c</tt></a></li>
+<li>Document last modified: 2023-04-08T17:33:52.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Slightly misleading wording around Atomics.wait/Async]]></title>
             <link>https://github.com/mdn/content/issues/27356</link>
