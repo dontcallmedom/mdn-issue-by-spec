@@ -4,10 +4,37 @@
         <title>W3C Timed Text Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_timed_text_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Timed Text Working Group</description>
-        <lastBuildDate>Tue, 27 Dec 2022 02:43:21 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 24 Jun 2023 14:58:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-scoping-1, webvtt1] Regroup the page types for CSS selectors]]></title>
+            <link>https://github.com/mdn/content/issues/27526</link>
+            <guid>https://github.com/mdn/content/issues/27526</guid>
+            <pubDate>Sat, 24 Jun 2023 14:58:02 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::cue" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/::cue</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">CSS selector pages have various page types such as "css-combinators" (e.g. <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/adjacent_sibling_combinator/index.md?plain=1">Adjacent sibling combinator</a>) and "css-pseudo-element" (e.g. <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/_doublecolon_cue/index.md?plain=1">::cue</a>), but this categorization seems both redundent and insufficient to some extent.</p>
+<p dir="auto"><strong>Redundency:</strong> The pages under <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators" rel="nofollow">Expressions and operators</a> for JavaScript are functionally similar to CSS selectors pages, but those pages don't get to (nor need to) be further grouped like "assignment operators" and "logical operators".</p>
+<p dir="auto"><strong>Insufficiency:</strong> Current page types don't differentiate <code class="notranslate">::cue</code> and <code class="notranslate">::cue()</code> (this pair should also have separate pages like the next pair do), nor <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:host" rel="nofollow"><code class="notranslate">:host</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:host_function" rel="nofollow"><code class="notranslate">:host()</code></a>.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Regroup the page types for CSS selectors as:</p>
+<ul dir="auto">
+<li>css-selector</li>
+<li>css-pseudo-class</li>
+<li>css-pseudo-class-function</li>
+<li>css-pseudo-element</li>
+<li>css-pseudo-element-function</li>
+</ul>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[webvtt1] ::cue should include ::cue() information]]></title>
             <link>https://github.com/mdn/content/issues/23209</link>
