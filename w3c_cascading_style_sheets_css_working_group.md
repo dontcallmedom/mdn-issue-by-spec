@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-lists-3, css-counter-styles-3] List-style-type needs a pointer to Ready-made Counter Styles](https://github.com/mdn/content/issues/27539) (2023-06-25T06:25:39Z)
+  
 * [[css-contain-2, css-position-3] position: fixed not documented as being affected by contain: layout or paint](https://github.com/mdn/content/issues/27529) (2023-06-24T17:45:47Z)
   
 * [[css-scoping-1, webvtt1] Regroup the page types for CSS selectors](https://github.com/mdn/content/issues/27526) (2023-06-24T14:58:02Z)
