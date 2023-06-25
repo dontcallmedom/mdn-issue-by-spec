@@ -4,10 +4,48 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Sat, 24 Jun 2023 00:52:53 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 25 Jun 2023 08:39:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] operator ++ ..... return problem ]]></title>
+            <link>https://github.com/mdn/content/issues/27541</link>
+            <guid>https://github.com/mdn/content/issues/27541</guid>
+            <pubDate>Sun, 25 Jun 2023 08:39:52 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment%C2%A7" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment§</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Try it</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">let x = 3;<br>
+const y = x++;</p>
+<p dir="auto">console.log(<code class="notranslate">x:${x}, y:${y}</code>);<br>
+// Expected output: "x:4, y:3"</p>
+<p dir="auto">let a = 3;<br>
+const b = ++a;</p>
+<p dir="auto">console.log(<code class="notranslate">a:${a}, b:${b}</code>);<br>
+// Expected output: "a:4, b:4"</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I think that this is information is wrong because &lt; const y = x++ ;   y:3 &gt;<br>
+This should return y:4</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/operators/increment</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/increment/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/increment/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/93d2d79c1c68af93f2730d27cdea9d527eee0d7a/hovercard" href="https://github.com/mdn/content/commit/93d2d79c1c68af93f2730d27cdea9d527eee0d7a"><tt>93d2d79</tt></a></li>
+<li>Document last modified: 2023-03-28T05:38:31.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] The description about `Promise.any()` is a bit confusing]]></title>
             <link>https://github.com/mdn/content/issues/27515</link>
