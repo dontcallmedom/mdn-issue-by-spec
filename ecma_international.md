@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[ecmascript] operator ++ ..... return problem ](https://github.com/mdn/content/issues/27541) (2023-06-25T08:39:52Z)
-  
 * [[ecmascript] The description about `Promise.any()` is a bit confusing](https://github.com/mdn/content/issues/27515) (2023-06-24T00:52:53Z)
   
 * [[ecmascript] Slightly misleading wording around Atomics.wait/Async](https://github.com/mdn/content/issues/27356) (2023-06-15T17:50:26Z)
