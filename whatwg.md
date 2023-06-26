@@ -60,7 +60,7 @@
   
 * [[html] <script type=module async> explanation incorrectly says it defers](https://github.com/mdn/content/issues/24754) (2023-02-22T14:21:24Z)
   
-* [[fetch] Can't get the example to work.](https://github.com/mdn/content/issues/24728) (2023-02-22T05:29:58Z)
+* [[fetch] Request.integrity: new request doesn't contain integrity](https://github.com/mdn/content/issues/24728) (2023-02-22T05:29:58Z)
   
 * [[dom] Need to update lookupNamespaceURI() and createNSResolver()](https://github.com/mdn/content/issues/24724) (2023-02-22T02:32:44Z)
   

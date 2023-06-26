@@ -4,7 +4,7 @@
 
 * [[fetch] [Not release] HTTP Access-Control-Allow-Header can't be wildcarded for authorization directive](https://github.com/mdn/content/issues/27230) (2023-06-09T05:38:55Z)
   
-* [[fetch] Can't get the example to work.](https://github.com/mdn/content/issues/24728) (2023-02-22T05:29:58Z)
+* [[fetch] Request.integrity: new request doesn't contain integrity](https://github.com/mdn/content/issues/24728) (2023-02-22T05:29:58Z)
   
 * [[fetch] `Response.text()` can throw a `TypeError`](https://github.com/mdn/content/issues/24466) (2023-02-15T16:35:17Z)
   
