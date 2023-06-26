@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[dom] Inaccessible example](https://github.com/mdn/content/issues/27478) (2023-06-22T14:18:14Z)
+* [[dom] Event.preventDefault: Inaccessible example](https://github.com/mdn/content/issues/27478) (2023-06-22T14:18:14Z)
   
 * [[dom] Description of the `DocumentType.after()` in the `DocumentType` page is incorrect](https://github.com/mdn/content/issues/27428) (2023-06-20T03:24:58Z)
   

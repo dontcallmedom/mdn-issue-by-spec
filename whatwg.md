@@ -4,7 +4,7 @@
 
 * [[html] There is an easier way to get form data](https://github.com/mdn/content/issues/27543) (2023-06-25T09:33:22Z)
   
-* [[dom] Inaccessible example](https://github.com/mdn/content/issues/27478) (2023-06-22T14:18:14Z)
+* [[dom] Event.preventDefault: Inaccessible example](https://github.com/mdn/content/issues/27478) (2023-06-22T14:18:14Z)
   
 * [[dom] Description of the `DocumentType.after()` in the `DocumentType` page is incorrect](https://github.com/mdn/content/issues/27428) (2023-06-20T03:24:58Z)
   
@@ -17,8 +17,6 @@
 * [[fetch] [Not release] HTTP Access-Control-Allow-Header can't be wildcarded for authorization directive](https://github.com/mdn/content/issues/27230) (2023-06-09T05:38:55Z)
   
 * [[html] Different info about DOMContentLoaded event on Window and Document object](https://github.com/mdn/content/issues/27197) (2023-06-07T10:42:58Z)
-  
-* [[html] Hyperlink to "Custom Error" page is not found](https://github.com/mdn/content/issues/27153) (2023-06-05T20:25:28Z)
   
 * [[dom] no mention what the default is for ShadowRoot mode](https://github.com/mdn/content/issues/27110) (2023-06-02T09:06:55Z)
   

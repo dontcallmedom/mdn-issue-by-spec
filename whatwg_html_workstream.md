@@ -12,8 +12,6 @@
   
 * [[html] Different info about DOMContentLoaded event on Window and Document object](https://github.com/mdn/content/issues/27197) (2023-06-07T10:42:58Z)
   
-* [[html] Hyperlink to "Custom Error" page is not found](https://github.com/mdn/content/issues/27153) (2023-06-05T20:25:28Z)
-  
 * [[html] <source media> in media elements is allowed again (spec change)](https://github.com/mdn/content/issues/27079) (2023-05-31T18:43:51Z)
   
 * [[html] Explanation when "input" event is fired is missleading](https://github.com/mdn/content/issues/27044) (2023-05-30T09:45:01Z)
