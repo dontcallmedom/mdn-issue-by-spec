@@ -1874,36 +1874,6 @@ Also note <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] http(s) scheme for WebSocket gives an error anyway]]></title>
-            <link>https://github.com/mdn/content/issues/21978</link>
-            <guid>https://github.com/mdn/content/issues/21978</guid>
-            <pubDate>Tue, 01 Nov 2022 12:37:18 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/connect-src" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/connect-src</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Examples</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">at least the WebSocket("<a href="https://not-example.com/" rel="nofollow">https://not-example.com/</a>") example is totally useless as the https scheme will raise an exception in the WebSocket interface, independently from the CSP mechanism, so not-example.com will not even be looked at</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">I expected to understand how can I <em>not</em> specify the WebSocket protocol for ws://example.com/ in the connect-src and still be able to connect using WebSocket.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/WebSocket#exceptions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/WebSocket#exceptions</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/http/headers/content-security-policy/connect-src</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/connect-src" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/connect-src</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/content-security-policy/connect-src/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/content-security-policy/connect-src/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/8e1f45b8c0a3671f6e3de43c0764ad610aa345dd/hovercard" href="https://github.com/mdn/content/commit/8e1f45b8c0a3671f6e3de43c0764ad610aa345dd"><tt>8e1f45b</tt></a></li>
-<li>Document last modified: 2022-09-14T09:06:12.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Add documentation for <video posterloading=lazy>]]></title>
             <link>https://github.com/mdn/content/issues/21912</link>
             <guid>https://github.com/mdn/content/issues/21912</guid>
