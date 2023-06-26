@@ -445,36 +445,6 @@ The <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Usin
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html, selectors-4] all HTML code not show according to the output]]></title>
-            <link>https://github.com/mdn/content/issues/27234</link>
-            <guid>https://github.com/mdn/content/issues/27234</guid>
-            <pubDate>Fri, 09 Jun 2023 11:45:17 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:valid" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:valid</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">all HTML code not show according to the  content output</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">HTML source code</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/_colon_valid</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:valid" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:valid</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_valid/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_valid/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cfcbb39cc595bd536b107f6771bfb3f8e13bacca/hovercard" href="https://github.com/mdn/content/commit/cfcbb39cc595bd536b107f6771bfb3f8e13bacca"><tt>cfcbb39</tt></a></li>
-<li>Document last modified: 2023-02-24T06:27:09.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[css-color-4] Document missing components' bahavior for CSS color functions?]]></title>
             <link>https://github.com/mdn/content/issues/27218</link>
             <guid>https://github.com/mdn/content/issues/27218</guid>
@@ -2144,42 +2114,6 @@ For example, x-panel::part(confirm-button)::part(label) never matches anything. 
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-shapes-2] Property listed as unsupported on Firefox for Android, but @supports still fires for it]]></title>
-            <link>https://github.com/mdn/content/issues/23027</link>
-            <guid>https://github.com/mdn/content/issues/23027</guid>
-            <pubDate>Sat, 17 Dec 2022 22:46:43 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/shape-image-threshold" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/shape-image-threshold</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Browser compatibility</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The property is listed as supported on Firefox for Desktop, but unsupported for Firefox for Android, However, the <code class="notranslate">@supports</code> media rule indicates that the property is supported on both platforms.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">If the property does not function as intended on Firefox for Android, but still registers as supported when using <code class="notranslate">@supports</code>, then there should be a note of this.</p>
-<p dir="auto">I haven't bothered to see if the property <em>does</em> function as intended on Android. The <code class="notranslate">@supports</code> query is my only use case at present.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">The following properties on other articles have the same issue; this form only lets me report one article at a time and making separate issues for these seems like a waste:</p>
-<ul dir="auto">
-<li>overscroll-behavior-block</li>
-<li>overscroll-behavior-inline</li>
-</ul>
-<p dir="auto">In case the context helps: I need to target smartphones with CSS to offer a touch-friendly layout. The only usable media queries for this task <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1806259" rel="nofollow">are unreliable in Firefox</a> and apparently <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1493128" rel="nofollow">have been for four years</a>. I can use <code class="notranslate">@-moz-document url-prefix()</code> to target Firefox in general, but I need some way of targeting the Android version in specific in order to complete my task. I was hoping to find a property I could use <code class="notranslate">@supports</code> on, though that is increasingly seeming like a long shot.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/shape-image-threshold</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/shape-image-threshold" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/shape-image-threshold</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/shape-image-threshold/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/shape-image-threshold/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/413355c790c4102eea5937465ea610938327fe56/hovercard" href="https://github.com/mdn/content/commit/413355c790c4102eea5937465ea610938327fe56"><tt>413355c</tt></a></li>
-<li>Document last modified: 2022-09-27T03:53:49.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[mediacapture-streams] Missing description of getUserMedia constraints.]]></title>
             <link>https://github.com/mdn/content/issues/22962</link>
             <guid>https://github.com/mdn/content/issues/22962</guid>
@@ -2233,13 +2167,13 @@ Represents the acceleration upon the z axis which is the <strong>down to up axis
 <p dir="auto">Now, the definitions of "west to east" and "south to north" axes are completely unambiguous (unless you are on one of the poles), and crystal clear. And it's <strong>definitely not true</strong> that <code class="notranslate">x</code> and <code class="notranslate">y</code> correspond to west to east and north to south.</p>
 <p dir="auto">"Down to up" on its own would be potentially ambiguous, but given the other two are east to west and south to north, one can only reasonably assume that <strong>"up to down" is referring to the surface of the earth</strong>. And of course, that is <strong>also not true</strong>.</p>
 <p dir="auto">By  that description, one would unambiguously understand (wrongly) that the coordinates are <strong>absolute and in no way influenced by the orientation of the device</strong>. One can only infer that the system has already done the necessary calculations behind the scene to compute those values (which by the way is only possible by using also the compass as well as the accelerometer; and also I think it would involve some heuristics, not entirely sure about that).</p>
-<p dir="auto">I couldn't believe it but it is so crystal clear and unambiguously stated, that I assumed it had to be true. But of course my gut instinct was right 🤦</p>
+<p dir="auto">I couldn't believe it but it is so crystal clear and unambiguously stated, that I assumed it had to be true. But of course my gut instinct was right <g-emoji class="g-emoji" alias="facepalm" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f926.png">🤦</g-emoji></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">From some quick experiments, I think the reality is:</p>
 <p dir="auto">x: corresponds to the x axis of the html document (not sure if with the same sign or opposite)<br>
 y: corresponds to the y axis of the html document (not sure if with the same sign or opposite)<br>
 z: corresponds to the remaining perpendicular axis, so one that either points into the screen or out of the screen.</p>
-<p dir="auto">Which of course makes way more sense <g-emoji class="g-emoji" alias="facepalm" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f926.png">🤦</g-emoji></p>
+<p dir="auto">Which of course makes way more sense 🤦</p>
 <p dir="auto">And this is true both for <code class="notranslate">acceleration</code> and <code class="notranslate">accelerationIncludingGravity</code></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
@@ -2467,7 +2401,7 @@ Alternatively, the sentence the <em>"Often activeElement will return a <a href="
 </table>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-logical-1] Spec link: defined in multiple places]]></title>
+            <title><![CDATA[[css-logical-1] caption-side should have multiple spec links]]></title>
             <link>https://github.com/mdn/content/issues/22271</link>
             <guid>https://github.com/mdn/content/issues/22271</guid>
             <pubDate>Sun, 13 Nov 2022 19:09:15 GMT</pubDate>

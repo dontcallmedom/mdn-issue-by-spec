@@ -26,8 +26,6 @@
   
 * [[css-overflow-4] The behavior of 'overflow: overlay;' is changed in Chrome (and others?) to be exactly the same as 'auto'](https://github.com/mdn/content/issues/27322) (2023-06-14T10:32:40Z)
   
-* [[html, selectors-4] all HTML code not show according to the output](https://github.com/mdn/content/issues/27234) (2023-06-09T11:45:17Z)
-  
 * [[css-color-4] Document missing components' bahavior for CSS color functions?](https://github.com/mdn/content/issues/27218) (2023-06-08T10:35:28Z)
   
 * [[css-scrollbars-1] "coloring_overflow_scrollbars" example does not meet the WCAG color contrast requirement mentioned earlier in this article](https://github.com/mdn/content/issues/27140) (2023-06-04T12:47:19Z)
@@ -124,8 +122,6 @@
   
 * [[clipboard-apis] clipboard.readText() is behind flag on Firefox](https://github.com/mdn/content/issues/23188) (2022-12-25T21:43:10Z)
   
-* [[css-shapes-2] Property listed as unsupported on Firefox for Android, but @supports still fires for it](https://github.com/mdn/content/issues/23027) (2022-12-17T22:46:43Z)
-  
 * [[mediacapture-streams] Missing description of getUserMedia constraints.](https://github.com/mdn/content/issues/22962) (2022-12-14T20:17:55Z)
   
 * [[orientation-event] Explanation of X, y, z coordinates of DeviceMotionEvent.acceleration and DeviceMotionEvent.accelerationIncludingGravity is either completely wrong or extremely confusing (or both)](https://github.com/mdn/content/issues/22885) (2022-12-11T22:18:39Z)
@@ -136,7 +132,7 @@
   
 * [[html, uievents] Document.activeElement : The lack of HTMLAnchorElement and macOS on a case by case basis](https://github.com/mdn/content/issues/22338) (2022-11-16T13:47:01Z)
   
-* [[css-logical-1] Spec link: defined in multiple places](https://github.com/mdn/content/issues/22271) (2022-11-13T19:09:15Z)
+* [[css-logical-1] caption-side should have multiple spec links](https://github.com/mdn/content/issues/22271) (2022-11-13T19:09:15Z)
   
 * [[compositing-2] Examples of isolation hard to understand](https://github.com/mdn/content/issues/22185) (2022-11-09T11:56:05Z)
   

@@ -12,8 +12,6 @@
   
 * [[html] sizes attribute has a default](https://github.com/mdn/content/issues/27291) (2023-06-12T21:33:46Z)
   
-* [[html, selectors-4] all HTML code not show according to the output](https://github.com/mdn/content/issues/27234) (2023-06-09T11:45:17Z)
-  
 * [[fetch] [Not release] HTTP Access-Control-Allow-Header can't be wildcarded for authorization directive](https://github.com/mdn/content/issues/27230) (2023-06-09T05:38:55Z)
   
 * [[html] Different info about DOMContentLoaded event on Window and Document object](https://github.com/mdn/content/issues/27197) (2023-06-07T10:42:58Z)

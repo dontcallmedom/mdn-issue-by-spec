@@ -18,8 +18,6 @@
   
 * [[css-overflow-4] The behavior of 'overflow: overlay;' is changed in Chrome (and others?) to be exactly the same as 'auto'](https://github.com/mdn/content/issues/27322) (2023-06-14T10:32:40Z)
   
-* [[html, selectors-4] all HTML code not show according to the output](https://github.com/mdn/content/issues/27234) (2023-06-09T11:45:17Z)
-  
 * [[css-color-4] Document missing components' bahavior for CSS color functions?](https://github.com/mdn/content/issues/27218) (2023-06-08T10:35:28Z)
   
 * [[css-scrollbars-1] "coloring_overflow_scrollbars" example does not meet the WCAG color contrast requirement mentioned earlier in this article](https://github.com/mdn/content/issues/27140) (2023-06-04T12:47:19Z)
@@ -74,11 +72,9 @@
   
 * [[css-shadow-parts-1] ::part(): Missing information](https://github.com/mdn/content/issues/23471) (2023-01-08T11:05:39Z)
   
-* [[css-shapes-2] Property listed as unsupported on Firefox for Android, but @supports still fires for it](https://github.com/mdn/content/issues/23027) (2022-12-17T22:46:43Z)
-  
 * [[css-fonts-5] getComputedStyle() does not respect the Fallback weights algorithm](https://github.com/mdn/content/issues/22496) (2022-11-23T12:04:06Z)
   
-* [[css-logical-1] Spec link: defined in multiple places](https://github.com/mdn/content/issues/22271) (2022-11-13T19:09:15Z)
+* [[css-logical-1] caption-side should have multiple spec links](https://github.com/mdn/content/issues/22271) (2022-11-13T19:09:15Z)
   
 * [[compositing-2] Examples of isolation hard to understand](https://github.com/mdn/content/issues/22185) (2022-11-09T11:56:05Z)
   
