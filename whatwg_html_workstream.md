@@ -6,7 +6,7 @@
   
 * [[html, cssom-view-1] window.open() has a partial list of features](https://github.com/mdn/content/issues/27357) (2023-06-15T19:36:20Z)
   
-* [[html] Error en la documentación del atributo srcset](https://github.com/mdn/content/issues/27291) (2023-06-12T21:33:46Z)
+* [[html] sizes attribute has a default](https://github.com/mdn/content/issues/27291) (2023-06-12T21:33:46Z)
   
 * [[html, selectors-4] all HTML code not show according to the output](https://github.com/mdn/content/issues/27234) (2023-06-09T11:45:17Z)
   
@@ -25,8 +25,6 @@
 * [[html] Image request fired as soon as src is set](https://github.com/mdn/content/issues/26560) (2023-05-03T17:23:34Z)
   
 * [[html] ValidityState broken link to customError](https://github.com/mdn/content/issues/26522) (2023-05-01T18:58:31Z)
-  
-* [[html, cssom-view-1] Description of updatePixelRatio() example function doesn't match code listing](https://github.com/mdn/content/issues/26490) (2023-04-29T02:18:13Z)
   
 * [[html] Some issues / inconsistencies on the <tr> reference page](https://github.com/mdn/content/issues/26088) (2023-04-10T14:59:46Z)
   

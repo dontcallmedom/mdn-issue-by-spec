@@ -34,15 +34,11 @@
   
 * [[css-backgrounds-4] No documentation for css src(...)](https://github.com/mdn/content/issues/26621) (2023-05-06T22:26:03Z)
   
-* [[html, cssom-view-1] Description of updatePixelRatio() example function doesn't match code listing](https://github.com/mdn/content/issues/26490) (2023-04-29T02:18:13Z)
-  
 * [[css-backgrounds-4] It is unclear why background-attachment: fixed is said to be incompatible with background-clip: text](https://github.com/mdn/content/issues/26445) (2023-04-27T02:31:12Z)
   
 * [[cssom-view-1] availHeight SVG pseudo window rendered incorrectly](https://github.com/mdn/content/issues/26403) (2023-04-25T04:34:52Z)
   
 * [[cssom-view-1] Please add a note about getBoundingClientRect() forcing a reflow and performance issues](https://github.com/mdn/content/issues/26330) (2023-04-21T01:08:41Z)
-  
-* [[css-sizing-4] The compatibility table is very confusing when alternative names exist](https://github.com/mdn/content/issues/25923) (2023-04-05T12:20:27Z)
   
 * [[css-overflow-3] Deviation of the `overflow-clip-margin` page from the spec](https://github.com/mdn/content/issues/25906) (2023-04-04T14:38:09Z)
   

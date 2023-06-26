@@ -87,7 +87,7 @@ alert(j);
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Error en la documentación del atributo srcset]]></title>
+            <title><![CDATA[[html] sizes attribute has a default]]></title>
             <link>https://github.com/mdn/content/issues/27291</link>
             <guid>https://github.com/mdn/content/issues/27291</guid>
             <pubDate>Mon, 12 Jun 2023 21:33:46 GMT</pubDate>
@@ -96,11 +96,22 @@ alert(j);
 <h3 dir="auto">What specific section or headline is this issue about?</h3>
 <p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset#sect1" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset#sect1</a></p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">(Machine-translated)</p>
+<p dir="auto">On the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset" rel="nofollow">HTMLImageElement page: srcset property - Web APIs | MDN</a>, it is mentioned that if the srcset attribute uses width (w) descriptors, the sizes attribute must also be present, or the srcset itself will be ignored. However, according to the WHATWG <a href="https://html.spec.whatwg.org/multipage/images.html#srcset-attribute" rel="nofollow">HTML Standard</a> specification, if the sizes attribute is not present, its default value is 100vw. This means that if the sizes attribute is not defined, the browser will assume that the image will always be displayed in the full width of the viewport and will select the most appropriate image from the srcset based on that assumption.</p>
+<p dir="auto">Please update the documentation to reflect this information correctly.</p>
+<p dir="auto">Thank you.</p>
+<details>
+<summary>Original</summary>
 <p dir="auto">En la página <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset" rel="nofollow">HTMLImageElement: srcset property - Web APIs | MDN</a>, se menciona que si el atributo srcset usa descriptores de ancho (w), el atributo sizes también debe estar presente, o el srcset en sí mismo será ignorado. Sin embargo, según la especificación de WHATWG <a href="https://html.spec.whatwg.org/multipage/images.html#srcset-attribute" rel="nofollow">HTML Standard</a>, si el atributo sizes no está presente, su valor predeterminado es 100vw. Esto significa que si no se define el atributo sizes, el navegador asumirá que la imagen siempre se mostrará en el ancho completo del viewport y seleccionará la imagen más adecuada del srcset en función de esa suposición.</p>
 <p dir="auto">Por favor, actualicen la documentación para reflejar esta información correctamente.</p>
 <p dir="auto">Gracias.</p>
+</details>
 <h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I hope they remove the mentioned quote or correct it.</p>
+<details>
+<summary>Original</summary>
 <p dir="auto">Espero que eliminen la cita mencionada o que la corrijan.</p>
+</details>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
@@ -404,36 +415,6 @@ alert(j);
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/validitystate/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/validitystate/index.md</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/6b1e3eebf22abf1b73bb219581335b1147b75d7a/hovercard" href="https://github.com/mdn/content/commit/6b1e3eebf22abf1b73bb219581335b1147b75d7a"><tt>6b1e3ee</tt></a></li>
 <li>Document last modified: 2023-03-12T09:29:44.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[html, cssom-view-1] Description of updatePixelRatio() example function doesn't match code listing]]></title>
-            <link>https://github.com/mdn/content/issues/26490</link>
-            <guid>https://github.com/mdn/content/issues/26490</guid>
-            <pubDate>Sat, 29 Apr 2023 02:18:13 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Monitoring screen resolution or zoom level changes</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The description of example function <code class="notranslate">updatePixelRatio()</code> says "sets the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText" rel="nofollow">innerText</a> of the element <code class="notranslate">pixelRatioBox</code> to a string which displays the ratio both as a percentage and as a raw decimal value with up to two decimal places."</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">What the code listing actually does is log that information to the console. The mentioned <code class="notranslate">pixelRatioBox</code> element does not exist, nor does the formatting discussed.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/window/devicepixelratio</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/devicepixelratio/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/devicepixelratio/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cc070123f72376faec06e36622c4fc723a75325f/hovercard" href="https://github.com/mdn/content/commit/cc070123f72376faec06e36622c4fc723a75325f"><tt>cc07012</tt></a></li>
-<li>Document last modified: 2023-04-08T06:57:07.000Z</li>
 </ul>
 </details>]]></content:encoded>
         </item>

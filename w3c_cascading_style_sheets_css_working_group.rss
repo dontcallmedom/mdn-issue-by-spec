@@ -551,36 +551,6 @@ Version 13.2.1</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html, cssom-view-1] Description of updatePixelRatio() example function doesn't match code listing]]></title>
-            <link>https://github.com/mdn/content/issues/26490</link>
-            <guid>https://github.com/mdn/content/issues/26490</guid>
-            <pubDate>Sat, 29 Apr 2023 02:18:13 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Monitoring screen resolution or zoom level changes</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The description of example function <code class="notranslate">updatePixelRatio()</code> says "sets the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText" rel="nofollow">innerText</a> of the element <code class="notranslate">pixelRatioBox</code> to a string which displays the ratio both as a percentage and as a raw decimal value with up to two decimal places."</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">What the code listing actually does is log that information to the console. The mentioned <code class="notranslate">pixelRatioBox</code> element does not exist, nor does the formatting discussed.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/window/devicepixelratio</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/devicepixelratio/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/devicepixelratio/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cc070123f72376faec06e36622c4fc723a75325f/hovercard" href="https://github.com/mdn/content/commit/cc070123f72376faec06e36622c4fc723a75325f"><tt>cc07012</tt></a></li>
-<li>Document last modified: 2023-04-08T06:57:07.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[css-backgrounds-4] It is unclear why background-attachment: fixed is said to be incompatible with background-clip: text]]></title>
             <link>https://github.com/mdn/content/issues/26445</link>
             <guid>https://github.com/mdn/content/issues/26445</guid>
@@ -673,74 +643,6 @@ Version 13.2.1</p>
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/element/getboundingclientrect/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/element/getboundingclientrect/index.md</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/bbf7f25f9cf95fb154e2740a9fdc9c02818981bf/hovercard" href="https://github.com/mdn/content/commit/bbf7f25f9cf95fb154e2740a9fdc9c02818981bf"><tt>bbf7f25</tt></a></li>
 <li>Document last modified: 2023-04-07T05:55:26.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[css-sizing-4] The compatibility table is very confusing when alternative names exist]]></title>
-            <link>https://github.com/mdn/content/issues/25923</link>
-            <guid>https://github.com/mdn/content/issues/25923</guid>
-            <pubDate>Wed, 05 Apr 2023 12:20:27 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/width</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Browser compatibility table user interface</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The information is super confusing.<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/184400/230075748-eb435877-6530-4f35-809f-eaae139d3ff2.png"><img src="https://user-images.githubusercontent.com/184400/230075748-eb435877-6530-4f35-809f-eaae139d3ff2.png" alt="image" style="max-width: 100%;"></a><br>
-This "Alternate name" bullet sounds to me like it is available as both of "fit-content" as well as "intrinsic", but maybe it is just me</p>
-<p dir="auto">Maybe this is clearer -</p>
-<blockquote>
-<ul dir="auto">
-<li>1 - 47 (released 2008-12-11) <strong>as <code class="notranslate">intrinsic</code></strong>
-<ul dir="auto">
-<li>Removed in 48 and later</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<blockquote>
-<p dir="auto">-------- (completely separate, as it was implemented in parallel)</p>
-</blockquote>
-<blockquote>
-<ul dir="auto">
-<li>22 (Released 2012-09025) <strong>as a prefixed version</strong>
-<ul dir="auto">
-<li>Implemented with the vendor prefix: -webkit-</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<blockquote>
-<p dir="auto">.. | ..</p>
-</blockquote>
-<blockquote>
-<ul dir="auto">
-<li>46 (Release 2019-10-13)
-<ul dir="auto">
-<li>Full support, unprefixed</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<p dir="auto">It might have been clearer (also not so sure). Right now, it is a confusing mess.</p>
-<p dir="auto">Another way is to create a separate entry for <code class="notranslate">intrinsic</code> and mention next to it that <code class="notranslate">fit-content</code> is the standard name</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Clearer information</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/width</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/width</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/width/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/width/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b82ff59aab7883b7bb2222cf9f9f9b6eed818e08/hovercard" href="https://github.com/mdn/content/commit/b82ff59aab7883b7bb2222cf9f9f9b6eed818e08"><tt>b82ff59</tt></a></li>
-<li>Document last modified: 2023-02-21T06:13:19.000Z</li>
 </ul>
 </details>]]></content:encoded>
         </item>

@@ -10,7 +10,7 @@
   
 * [[html, cssom-view-1] window.open() has a partial list of features](https://github.com/mdn/content/issues/27357) (2023-06-15T19:36:20Z)
   
-* [[html] Error en la documentación del atributo srcset](https://github.com/mdn/content/issues/27291) (2023-06-12T21:33:46Z)
+* [[html] sizes attribute has a default](https://github.com/mdn/content/issues/27291) (2023-06-12T21:33:46Z)
   
 * [[html, selectors-4] all HTML code not show according to the output](https://github.com/mdn/content/issues/27234) (2023-06-09T11:45:17Z)
   
@@ -37,8 +37,6 @@
 * [[html] Image request fired as soon as src is set](https://github.com/mdn/content/issues/26560) (2023-05-03T17:23:34Z)
   
 * [[html] ValidityState broken link to customError](https://github.com/mdn/content/issues/26522) (2023-05-01T18:58:31Z)
-  
-* [[html, cssom-view-1] Description of updatePixelRatio() example function doesn't match code listing](https://github.com/mdn/content/issues/26490) (2023-04-29T02:18:13Z)
   
 * [[dom] More information about what HTMLCollection is replaced with](https://github.com/mdn/content/issues/26470) (2023-04-28T04:34:16Z)
   
@@ -83,8 +81,6 @@
 * [[html] autofocus on dialog page](https://github.com/mdn/content/issues/23915) (2023-01-26T19:55:03Z)
   
 * [[html] beforeunload event guide references custom event.returnValue, but that is deprecated](https://github.com/mdn/content/issues/23837) (2023-01-23T14:01:02Z)
-  
-* [[console] console.timeLog() acceps multiple parameters](https://github.com/mdn/content/issues/23806) (2023-01-21T22:19:13Z)
   
 * [[html] Inconsistencies in character length definition.](https://github.com/mdn/content/issues/23783) (2023-01-20T02:56:19Z)
   
