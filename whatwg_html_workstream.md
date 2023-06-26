@@ -18,8 +18,6 @@
   
 * [[html] Explanation when "input" event is fired is missleading](https://github.com/mdn/content/issues/27044) (2023-05-30T09:45:01Z)
   
-* [[html] lineJoin page could use an example where you can experiment with the different types](https://github.com/mdn/content/issues/26992) (2023-05-26T16:37:42Z)
-  
 * [[html] link: fix examples for Apple touch icon](https://github.com/mdn/content/issues/26707) (2023-05-10T15:45:25Z)
   
 * [[html] Improve wording on what it means to be suspended](https://github.com/mdn/content/issues/26625) (2023-05-07T04:43:55Z)

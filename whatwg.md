@@ -26,8 +26,6 @@
   
 * [[html] Explanation when "input" event is fired is missleading](https://github.com/mdn/content/issues/27044) (2023-05-30T09:45:01Z)
   
-* [[html] lineJoin page could use an example where you can experiment with the different types](https://github.com/mdn/content/issues/26992) (2023-05-26T16:37:42Z)
-  
 * [[dom] getRootNode() documentation doesn't mention that it can return the element itself](https://github.com/mdn/content/issues/26962) (2023-05-25T07:32:08Z)
   
 * [[notifications] NotificationOptions and Notification silent default has change](https://github.com/mdn/content/issues/26812) (2023-05-17T14:25:50Z)
