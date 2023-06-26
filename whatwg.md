@@ -6,8 +6,6 @@
   
 * [[dom] Inaccessible example](https://github.com/mdn/content/issues/27478) (2023-06-22T14:18:14Z)
   
-* [[notifications] Notification not working on Chrome and Safari on Ios](https://github.com/mdn/content/issues/27431) (2023-06-20T07:10:18Z)
-  
 * [[dom] Description of the `DocumentType.after()` in the `DocumentType` page is incorrect](https://github.com/mdn/content/issues/27428) (2023-06-20T03:24:58Z)
   
 * [[html, cssom-view-1] window.open() has a partial list of features](https://github.com/mdn/content/issues/27357) (2023-06-15T19:36:20Z)
