@@ -70,8 +70,6 @@
   
 * [[dom] addEventListener - which browsers/events default to passive](https://github.com/mdn/content/issues/24181) (2023-02-05T18:59:51Z)
   
-* [[html] “Layout and the containing block”: Block container inserted into article but never defined](https://github.com/mdn/content/issues/23972) (2023-01-29T20:30:11Z)
-  
 * [[xhr] xhr.abort is inaccurate](https://github.com/mdn/content/issues/23961) (2023-01-29T01:52:09Z)
   
 * [[html] autofocus on dialog page](https://github.com/mdn/content/issues/23915) (2023-01-26T19:55:03Z)

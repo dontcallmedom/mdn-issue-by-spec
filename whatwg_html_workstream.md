@@ -46,8 +46,6 @@
   
 * [[html, CSP3] Clarify the sandbox directive use in Content-Security-Policy-Report-Only](https://github.com/mdn/content/issues/24318) (2023-02-10T14:49:54Z)
   
-* [[html] “Layout and the containing block”: Block container inserted into article but never defined](https://github.com/mdn/content/issues/23972) (2023-01-29T20:30:11Z)
-  
 * [[html] autofocus on dialog page](https://github.com/mdn/content/issues/23915) (2023-01-26T19:55:03Z)
   
 * [[html] beforeunload event guide references custom event.returnValue, but that is deprecated](https://github.com/mdn/content/issues/23837) (2023-01-23T14:01:02Z)
