@@ -3659,42 +3659,6 @@ Anyway,</li>
 <p dir="auto">and ServiceWorkerRegistration.showNotification only works if google services is installed.</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] requestAnimationFrame is also available in Dedicated Workers]]></title>
-            <link>https://github.com/mdn/content/issues/1519</link>
-            <guid>https://github.com/mdn/content/issues/1519</guid>
-            <pubDate>Wed, 20 Jan 2021 08:47:22 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto"><a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/chrisdavidmills/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/chrisdavidmills">@chrisdavidmills</a> commented on <a href="https://github.com/mdn/sprints/issues/3749" data-hovercard-type="issue" data-hovercard-url="/mdn/sprints/issues/3749/hovercard">Mon Oct 05 2020</a></p>
-<p dir="auto"><a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/Kaiido/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Kaiido">@Kaiido</a> commented on <a href="https://github.com/mdn/kuma/issues/7543" data-hovercard-type="issue" data-hovercard-url="/mdn/kuma/issues/7543/hovercard">Mon Oct 05 2020</a></p>
-<h1 dir="auto">Content Issue</h1>
-
-<ul class="contains-task-list">
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Please close this issue, I accidentally submitted it without adding any details</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> New documentation</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Correction or update</li>
-</ul>
-<h1 dir="auto">URLs of page you are seeing the problem on:</h1>
-<ul dir="auto">
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/window/cancelAnimationFrame" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/window/cancelAnimationFrame</a></li>
-</ul>
-<h1 dir="auto">Details</h1>
-
-<p dir="auto"><code class="notranslate">requestAnimationFrame</code> and <code class="notranslate">cancelAnimationFrame</code> used to be <code class="notranslate">Window</code> only methods, but it has recently been added to <code class="notranslate">DedicatedWorkerGlobalScope</code> too. <a href="https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider" rel="nofollow">https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider</a></p>
-<div class="highlight highlight-source-webidl notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="interface mixin AnimationFrameProvider {
-  unsigned long requestAnimationFrame(FrameRequestCallback callback);
-  undefined cancelAnimationFrame(unsigned long handle);
-};
-Window includes AnimationFrameProvider;
-DedicatedWorkerGlobalScope includes AnimationFrameProvider;"><pre class="notranslate"><span class="pl-k">interface</span> <span class="pl-en">mixin</span> AnimationFrameProvider {
-  <span class="pl-k">unsigned</span> <span class="pl-k">long</span> <span class="pl-en">requestAnimationFrame</span>(FrameRequestCallback callback);
-  undefined <span class="pl-en">cancelAnimationFrame</span>(<span class="pl-k">unsigned</span> <span class="pl-k">long</span> handle);
-};
-Window includes AnimationFrameProvider;
-DedicatedWorkerGlobalScope includes AnimationFrameProvider;</pre></div>
-<p dir="auto">I guess the page should now be <code class="notranslate">Web/API/WindowOrWorkerGlobalScope/requestAnimationFrame</code>, but I fear this would break any link to the current <code class="notranslate">/Web/API/window/requestAnimationFrame</code>. So I'm not sure how it should get handled.</p>
-<p dir="auto">Also, compat-data should probably be updated (currently these methods are supported in Blink only).</p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] api.HTMLSelectElement - write page for 'autocomplete']]></title>
             <link>https://github.com/mdn/content/issues/2016</link>
             <guid>https://github.com/mdn/content/issues/2016</guid>

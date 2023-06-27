@@ -212,7 +212,5 @@
   
 * [[notifications] Demo in Notification() constructor article causes error: “The Notification permission may only be requested from inside a short running user-generated event handler”](https://github.com/mdn/content/issues/2615) (2021-02-23T13:20:50Z)
   
-* [[html] requestAnimationFrame is also available in Dedicated Workers](https://github.com/mdn/content/issues/1519) (2021-01-20T08:47:22Z)
-  
 * [[html] api.HTMLSelectElement - write page for 'autocomplete'](https://github.com/mdn/content/issues/2016) (2021-01-20T05:13:05Z)
   
