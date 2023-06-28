@@ -4,68 +4,10 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Wed, 28 Jun 2023 08:46:30 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 Jun 2023 00:54:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[css-flexbox-1] On the flex-grow page, the result section of the last example is showing wrong ]]></title>
-            <link>https://github.com/mdn/content/issues/27615</link>
-            <guid>https://github.com/mdn/content/issues/27615</guid>
-            <pubDate>Wed, 28 Jun 2023 08:46:30 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Result (#result)</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The <code class="notranslate">#content</code> should be applied <code class="notranslate">display: flex</code> property, but it is not. Because there are some broken styles before its style block</p>
-<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="/* These styles below are broken */
-background-color:red;
-background-color:lightblue;
-background-color:yellow;
-background-color:brown;
-background-color:lightgreen;
-background-color:brown;
-#content {
-  display: flex;
-
-  justify-content: space-around;
-  flex-flow: row wrap;
-  align-items: stretch;
-}"><pre class="notranslate"><span class="pl-c">/* These styles below are broken */</span>
-<span class="pl-c1">background-color</span><span class="pl-kos">:</span>red;
-<span class="pl-c1">background-color</span><span class="pl-kos">:</span>lightblue;
-<span class="pl-c1">background-color</span><span class="pl-kos">:</span>yellow;
-<span class="pl-c1">background-color</span><span class="pl-kos">:</span>brown;
-<span class="pl-c1">background-color</span><span class="pl-kos">:</span>lightgreen;
-<span class="pl-c1">background-color</span><span class="pl-kos">:</span>brown;
-<span class="pl-kos">#</span><span class="pl-c1">content</span> {
-  <span class="pl-c1">display</span><span class="pl-kos">:</span> flex;
-
-  <span class="pl-c1">justify-content</span><span class="pl-kos">:</span> space-around;
-  <span class="pl-c1">flex-flow</span><span class="pl-kos">:</span> row wrap;
-  <span class="pl-c1">align-items</span><span class="pl-kos">:</span> stretch;
-}</pre></div>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The <code class="notranslate">#content</code> should be applied <code class="notranslate">display: flex</code> property.</p>
-<p dir="auto">Btw, I think we should use class instead of id for the content element. Because using the ID is an anti-pattern. It's fine in the example but folks likely use the example as the standard. I remember in the early stage of my career, I usually considered code from MDN and some other sites as good practice and followed blindly.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">I would like to fix this issue but I can't find where is the snippet code.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/flex-grow</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/flex-grow/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/flex-grow/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/f421d513726545316580eb3fc3cbe8dde632b046/hovercard" href="https://github.com/mdn/content/commit/f421d513726545316580eb3fc3cbe8dde632b046"><tt>f421d51</tt></a></li>
-<li>Document last modified: 2023-03-24T06:41:28.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[pointerlock-2] Document: exitPointerLock() needs one reminder]]></title>
             <link>https://github.com/mdn/content/issues/27612</link>

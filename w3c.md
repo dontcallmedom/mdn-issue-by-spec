@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[css-flexbox-1] On the flex-grow page, the result section of the last example is showing wrong ](https://github.com/mdn/content/issues/27615) (2023-06-28T08:46:30Z)
-  
 * [[pointerlock-2] Document: exitPointerLock() needs one reminder](https://github.com/mdn/content/issues/27612) (2023-06-28T00:54:56Z)
   
 * [[pointerlock-2] pointerlockchange event should demonstrate how to get the locked element](https://github.com/mdn/content/issues/27610) (2023-06-28T00:41:42Z)
