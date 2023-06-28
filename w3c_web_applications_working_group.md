@@ -4,7 +4,7 @@
 
 * [[pointerlock-2] Document: exitPointerLock() needs one reminder](https://github.com/mdn/content/issues/27612) (2023-06-28T00:54:56Z)
   
-* [[pointerlock-2] pointerlockchange event missing details](https://github.com/mdn/content/issues/27610) (2023-06-28T00:41:42Z)
+* [[pointerlock-2] pointerlockchange event should demonstrate how to get the locked element](https://github.com/mdn/content/issues/27610) (2023-06-28T00:41:42Z)
   
 * [[pointerlock-2] better example for pointerLockElement property](https://github.com/mdn/content/issues/27609) (2023-06-28T00:20:21Z)
   

@@ -41,7 +41,7 @@ document.exitPointerLock()</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[pointerlock-2] pointerlockchange event missing details]]></title>
+            <title><![CDATA[[pointerlock-2] pointerlockchange event should demonstrate how to get the locked element]]></title>
             <link>https://github.com/mdn/content/issues/27610</link>
             <guid>https://github.com/mdn/content/issues/27610</guid>
             <pubDate>Wed, 28 Jun 2023 00:41:42 GMT</pubDate>
@@ -51,27 +51,31 @@ document.exitPointerLock()</p>
 <p dir="auto">just needs some details I expected to see in the article.</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <ol dir="auto">
-<li></li>
-</ol>
+<li>
 <p dir="auto">The pointerlockchange event is fired when the pointer is locked/unlocked.</p>
-<ol start="2" dir="auto">
-<li></li>
+</li>
+<li>
+<p dir="auto"><code class="notranslate">addEventListener("pointerlockchange", (event) =&gt; {});</code></p>
+</li>
 </ol>
-<p dir="auto">addEventListener("pointerlockchange", (event) =&gt; {});</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <ol dir="auto">
-<li></li>
-</ol>
+<li>
 <p dir="auto">The pointerlockchange event is fired when the pointer is locked/unlocked.  Unfortunately, the event doesn't tell you which, or what element it's locked onto, so you need to check document.pointerLockElement, that's the element it's locked onto, or falsy if none.</p>
-<ol start="2" dir="auto">
+</li>
 <li></li>
 </ol>
-<p dir="auto">addEventListener("pointerlockchange", (event) =&gt; {<br>
-if (document.pointerLockElement)<br>
-console.log(<code class="notranslate">That thar pointer is locked onto here: </code>, document.pointerLockElement);<br>
-else<br>
-console.log(<code class="notranslate">There ain't no lock!  Y'all can go use the pointer any way ya dang well please. </code>);<br>
-});</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="addEventListener(&quot;pointerlockchange&quot;, (event) =&gt; {
+if (document.pointerLockElement)
+  console.log(`That thar pointer is locked onto here: `, document.pointerLockElement);
+else
+  console.log(`There ain't no lock!  Y'all can go use the pointer any way ya dang well please. `);
+});"><pre class="notranslate"><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"pointerlockchange"</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+<span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">pointerLockElement</span><span class="pl-kos">)</span>
+  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`That thar pointer is locked onto here: `</span><span class="pl-kos">,</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">pointerLockElement</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">else</span>
+  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`There ain't no lock!  Y'all can go use the pointer any way ya dang well please. `</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
@@ -100,23 +104,34 @@ console.log(<code class="notranslate">There ain't no lock!  Y'all can go use the
 <h3 dir="auto">What specific section or headline is this issue about?</h3>
 <p dir="auto">example</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">if (document.pointerLockElement === canvasElement) {<br>
-console.log("The pointer lock status is now locked");<br>
-// Do something useful in response<br>
-} else {<br>
-console.log("The pointer lock status is now unlocked");<br>
-// Do something useful in response<br>
-}</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="if (document.pointerLockElement === canvasElement) {
+  console.log(&quot;The pointer lock status is now locked&quot;);
+  // Do something useful in response
+} else {
+  console.log(&quot;The pointer lock status is now unlocked&quot;);
+  // Do something useful in response
+}"><pre class="notranslate"><span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">pointerLockElement</span> <span class="pl-c1">===</span> <span class="pl-s1">canvasElement</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"The pointer lock status is now locked"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-c">// Do something useful in response</span>
+<span class="pl-kos">}</span> <span class="pl-k">else</span> <span class="pl-kos">{</span>
+  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"The pointer lock status is now unlocked"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-c">// Do something useful in response</span>
+<span class="pl-kos">}</span></pre></div>
 <h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">let el = document.pointerLockElement;<br>
-if (el) {<br>
-console.log(<code class="notranslate">The pointer IS locked! on to an element &lt;${el.localName} ${ el.id ? 'id=' + el.id : '' } &gt;</code>);<br>
-} else {<br>
-console.log(<code class="notranslate">I guess the pointer's not locked in this document ${location.href}</code>);<br>
-}</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="let el = document.pointerLockElement;
+if (el) {
+  console.log(`The pointer IS locked! on to an element &lt;${el.localName} ${ el.id ? 'id=' + el.id : '' } &gt;`);
+} else {
+  console.log(`I guess the pointer's not locked in this document ${location.href}`);
+}"><pre class="notranslate"><span class="pl-k">let</span> <span class="pl-s1">el</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">pointerLockElement</span><span class="pl-kos">;</span>
+<span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">el</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`The pointer IS locked! on to an element &lt;<span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">el</span><span class="pl-kos">.</span><span class="pl-c1">localName</span><span class="pl-kos">}</span></span> <span class="pl-s1"><span class="pl-kos">${</span> <span class="pl-s1">el</span><span class="pl-kos">.</span><span class="pl-c1">id</span> ? <span class="pl-s">'id='</span> <span class="pl-c1">+</span> <span class="pl-s1">el</span><span class="pl-kos">.</span><span class="pl-c1">id</span> : <span class="pl-s">''</span> <span class="pl-kos">}</span></span> &gt;`</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span> <span class="pl-k">else</span> <span class="pl-kos">{</span>
+  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`I guess the pointer's not locked in this document <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">location</span><span class="pl-kos">.</span><span class="pl-c1">href</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span></pre></div>
 <p dir="auto">That should print:<br>
-The pointer IS locked! on to an element </p><br>
-if a  element has the lock.<p dir="auto"></p>
+The pointer IS locked! on to an element <code class="notranslate">&lt;nav  &gt;</code><br>
+if a <code class="notranslate">&lt;nav&gt;</code> element has the lock.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
