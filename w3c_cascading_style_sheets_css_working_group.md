@@ -64,8 +64,6 @@
   
 * [[filter-effects-2] SVG slope attribute: incorrect information](https://github.com/mdn/content/issues/24935) (2023-02-28T00:02:49Z)
   
-* [[cssom-view-1] Incorrect image format used to demonstrate pixel quality](https://github.com/mdn/content/issues/24854) (2023-02-24T23:22:56Z)
-  
 * [[css-content-3] not obvious that `content` works with `::marker`](https://github.com/mdn/content/issues/24600) (2023-02-19T20:16:44Z)
   
 * [[filter-effects-2] feGaussianBlur needs guidance about setting height and width ](https://github.com/mdn/content/issues/24169) (2023-02-04T21:15:51Z)
