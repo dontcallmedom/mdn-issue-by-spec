@@ -2,6 +2,12 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[pointerlock-2] Document: exitPointerLock() needs one reminder](https://github.com/mdn/content/issues/27612) (2023-06-28T00:54:56Z)
+  
+* [[pointerlock-2] pointerlockchange event missing details](https://github.com/mdn/content/issues/27610) (2023-06-28T00:41:42Z)
+  
+* [[pointerlock-2] better example for pointerLockElement property](https://github.com/mdn/content/issues/27609) (2023-06-28T00:20:21Z)
+  
 * [[web-share] Example for sharing a URL is not functional](https://github.com/mdn/content/issues/27469) (2023-06-21T19:17:08Z)
   
 * [[IndexedDB-3] "Using IndexedDB" guide seems to be out of sync with the more specific documentation](https://github.com/mdn/content/issues/27330) (2023-06-14T18:17:39Z)
