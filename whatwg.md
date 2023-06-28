@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] srcdocs page does not include anchor tags caveat](https://github.com/mdn/content/issues/27630) (2023-06-28T16:31:51Z)
+  
 * [[html] There is an easier way to get form data](https://github.com/mdn/content/issues/27543) (2023-06-25T09:33:22Z)
   
 * [[dom] Event.preventDefault: Inaccessible example](https://github.com/mdn/content/issues/27478) (2023-06-22T14:18:14Z)
@@ -59,8 +61,6 @@
 * [[fetch] Request.integrity: new request doesn't contain integrity](https://github.com/mdn/content/issues/24728) (2023-02-22T05:29:58Z)
   
 * [[dom] Need to update lookupNamespaceURI() and createNSResolver()](https://github.com/mdn/content/issues/24724) (2023-02-22T02:32:44Z)
-  
-* [[html] Improve lastmodified example with regex](https://github.com/mdn/content/issues/24513) (2023-02-17T13:22:20Z)
   
 * [[fetch] `Response.text()` can throw a `TypeError`](https://github.com/mdn/content/issues/24466) (2023-02-15T16:35:17Z)
   
