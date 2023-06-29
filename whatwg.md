@@ -92,8 +92,6 @@
   
 * [[html] Using requestAnimationFrame with async DOM updating](https://github.com/mdn/content/issues/23197) (2022-12-26T11:40:49Z)
   
-* [[console] console.group() needs examples illustrating the use of the label parameter](https://github.com/mdn/content/issues/22972) (2022-12-15T05:21:11Z)
-  
 * [[html] Suggestion to add accessibility section to the MDN article for the “datalist” element](https://github.com/mdn/content/issues/22958) (2022-12-14T17:14:03Z)
   
 * [[fetch] "the request's destination. This is a string indicating the type of content being requested."](https://github.com/mdn/content/issues/22955) (2022-12-14T16:29:26Z)
