@@ -6,8 +6,6 @@
   
 * [[css-contain-2, css-position-3] position: fixed not documented as being affected by contain: layout or paint](https://github.com/mdn/content/issues/27529) (2023-06-24T17:45:47Z)
   
-* [[css-scoping-1, webvtt1] Regroup the page types for CSS selectors](https://github.com/mdn/content/issues/27526) (2023-06-24T14:58:02Z)
-  
 * [[css-masking-1] CSP and other errors reported in the console for CSS mask-type article's EmbedLiveSample iframes](https://github.com/mdn/content/issues/27500) (2023-06-23T07:07:55Z)
   
 * [[css-backgrounds-4, CSS21] border-style inset behaves like ridge, outset behaves like groove with border-collapse](https://github.com/mdn/content/issues/27475) (2023-06-22T10:35:15Z)
