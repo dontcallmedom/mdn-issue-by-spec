@@ -4,10 +4,57 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Wed, 28 Jun 2023 00:54:56 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 30 Jun 2023 13:43:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[push-api] Missing properties on PushSubscription#toJSON]]></title>
+            <link>https://github.com/mdn/content/issues/27676</link>
+            <guid>https://github.com/mdn/content/issues/27676</guid>
+            <pubDate>Fri, 30 Jun 2023 13:43:33 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/PushSubscription/toJSON" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PushSubscription/toJSON</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">There are properties that are missing in this documentation. For example <code class="notranslate">.expirationTime</code> and <code class="notranslate">.keys</code> will exist on the toJSON method in Chrome, but are not documented here.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A list of all properties that this method returns.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">TypeScript says that this is the returned object (from lib.dom.d.ts):</p>
+<div class="highlight highlight-source-ts notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="type EpochTimeStamp = number;
+
+// ...
+
+interface PushSubscriptionJSON {
+    endpoint?: string;
+    expirationTime?: EpochTimeStamp | null;
+    keys?: Record&lt;string, string&gt;;
+}"><pre class="notranslate"><span class="pl-k">type</span> <span class="pl-smi">EpochTimeStamp</span> <span class="pl-c1">=</span> <span class="pl-smi">number</span><span class="pl-kos">;</span>
+
+<span class="pl-c">// ...</span>
+
+<span class="pl-k">interface</span> <span class="pl-smi">PushSubscriptionJSON</span> <span class="pl-kos">{</span>
+    <span class="pl-c1">endpoint</span>?: <span class="pl-smi">string</span><span class="pl-kos">;</span>
+    <span class="pl-c1">expirationTime</span>?: <span class="pl-smi">EpochTimeStamp</span> <span class="pl-c1">|</span> <span class="pl-c1">null</span><span class="pl-kos">;</span>
+    <span class="pl-c1">keys</span>?: <span class="pl-smi">Record</span><span class="pl-kos">&lt;</span><span class="pl-smi">string</span><span class="pl-kos">,</span> <span class="pl-smi">string</span><span class="pl-kos">&gt;</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span></pre></div>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/pushsubscription/tojson</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/PushSubscription/toJSON" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PushSubscription/toJSON</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/pushsubscription/tojson/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/pushsubscription/tojson/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/c58e8c1dd6ecbcb63894c7dd17fb9495b9511b4e/hovercard" href="https://github.com/mdn/content/commit/c58e8c1dd6ecbcb63894c7dd17fb9495b9511b4e"><tt>c58e8c1</tt></a></li>
+<li>Document last modified: 2023-04-07T19:46:21.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[pointerlock-2] Document: exitPointerLock() needs one reminder]]></title>
             <link>https://github.com/mdn/content/issues/27612</link>
