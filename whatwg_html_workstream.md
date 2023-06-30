@@ -122,8 +122,6 @@
   
 * [[html] Issue with "resize event": the logged height does not change when changing the height of the browser window](https://github.com/mdn/content/issues/10683) (2021-11-21T22:37:44Z)
   
-* [[html] Issue with "HTMLFormElement: submit event": Bubbles description is confusing](https://github.com/mdn/content/issues/10069) (2021-10-25T05:37:18Z)
-  
 * [[html, uievents] Replace hand-written compat sections with BCD tables](https://github.com/mdn/content/issues/9972) (2021-10-21T07:40:45Z)
   
 * [[html] Issue with "Document: drop event": Mention that drop won't fire unless you preventDefault in dragover](https://github.com/mdn/content/issues/9796) (2021-10-14T10:16:25Z)
