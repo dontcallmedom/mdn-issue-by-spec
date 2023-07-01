@@ -8,8 +8,6 @@
   
 * [[dom] Event.preventDefault: Inaccessible example](https://github.com/mdn/content/issues/27478) (2023-06-22T14:18:14Z)
   
-* [[dom] Description of the `DocumentType.after()` in the `DocumentType` page is incorrect](https://github.com/mdn/content/issues/27428) (2023-06-20T03:24:58Z)
-  
 * [[html, cssom-view-1] window.open() has a partial list of features](https://github.com/mdn/content/issues/27357) (2023-06-15T19:36:20Z)
   
 * [[html] sizes attribute has a default](https://github.com/mdn/content/issues/27291) (2023-06-12T21:33:46Z)
