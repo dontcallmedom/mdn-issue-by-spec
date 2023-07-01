@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-easing-1] <easing-functions> page has "step()" not "steps()" 4 times in .png file](https://github.com/mdn/content/issues/27695) (2023-07-01T15:03:57Z)
+  
 * [[push-api] Missing properties on PushSubscription#toJSON](https://github.com/mdn/content/issues/27676) (2023-06-30T13:43:33Z)
   
 * [[pointerlock-2] Document: exitPointerLock() needs one reminder](https://github.com/mdn/content/issues/27612) (2023-06-28T00:54:56Z)
