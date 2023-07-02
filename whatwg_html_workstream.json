@@ -677,17 +677,6 @@
             }
         },
         {
-            "id": "https://github.com/mdn/content/issues/9796",
-            "content_html": "<p dir=\"auto\">MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Document/drop_event\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/Document/drop_event</a></p>\n<p dir=\"auto\">It might be useful to mention that drop won't fire until you preventDefault in dragover, because it's worse than unintuitive.</p>",
-            "url": "https://github.com/mdn/content/issues/9796",
-            "title": "[html] Issue with \"Document: drop event\": Mention that drop won't fire unless you preventDefault in dragover",
-            "date_modified": "2021-10-14T10:16:25.000Z",
-            "author": {
-                "name": "voracity",
-                "url": "https://github.com/voracity"
-            }
-        },
-        {
             "id": "https://github.com/mdn/content/issues/9379",
             "content_html": "<p dir=\"auto\">MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas</a></p>\n<h4 dir=\"auto\">What information was incorrect, unhelpful, or incomplete?</h4>\n<p dir=\"auto\">The area limit for Firefox.</p>\n<h4 dir=\"auto\">Specific section or headline?</h4>\n<p dir=\"auto\">Maximum canvas size<br>\n<a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas#maximum_canvas_size\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas#maximum_canvas_size</a></p>\n<h4 dir=\"auto\">What did you expect to see?</h4>\n<p dir=\"auto\">134,217,728 pixels (i.e., something)</p>\n<h4 dir=\"auto\">Did you test this? If so, how?</h4>\n<p dir=\"auto\">I tested a large canvas and got a failure. The issue was reported to Firefox and it was determined to be a memory allocation limit of 1/2 GB,  which at 4 bytes per pixel means 1/8 G pixel limit.<br>\n<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1719337\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=1719337</a></p>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul dir=\"auto\">\n<li>Folder: <code class=\"notranslate\">en-us/web/html/element/canvas</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/html/element/canvas/index.md\">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/canvas/index.md</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/bbaf3676373af6f6ce9817141d25fbf7ba88ef8d/hovercard\" href=\"https://github.com/mdn/content/commit/bbaf3676373af6f6ce9817141d25fbf7ba88ef8d\"><tt>bbaf367</tt></a></li>\n<li>Document last modified: 2021-09-29T14:51:58.000Z</li>\n</ul>\n</details>",
             "url": "https://github.com/mdn/content/issues/9379",

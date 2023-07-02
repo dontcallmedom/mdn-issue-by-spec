@@ -168,8 +168,6 @@
   
 * [[html, uievents] Replace hand-written compat sections with BCD tables](https://github.com/mdn/content/issues/9972) (2021-10-21T07:40:45Z)
   
-* [[html] Issue with "Document: drop event": Mention that drop won't fire unless you preventDefault in dragover](https://github.com/mdn/content/issues/9796) (2021-10-14T10:16:25Z)
-  
 * [[dom] Issue with "Document.getElementById()": link to xml:id doesn't include expected source snippet](https://github.com/mdn/content/issues/9777) (2021-10-13T19:50:56Z)
   
 * [[html] Issue with "<canvas>: The Graphics Canvas element": Firefox area limit incorrect](https://github.com/mdn/content/issues/9379) (2021-09-30T16:32:42Z)

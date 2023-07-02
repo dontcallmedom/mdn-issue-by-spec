@@ -300,8 +300,6 @@
   
 * [[cssom-view-1] Issue with "Document.elementFromPoint()": Add info about nodes dragged and their position in the DOM tree](https://github.com/mdn/content/issues/3520) (2021-03-26T07:48:07Z)
   
-* [[screen-capture] MediaTrackConstraints.displaySurface: there is no way to restrain surface type via javascript; can only detect surface type for a current stream already going](https://github.com/mdn/content/issues/1456) (2021-01-18T15:39:25Z)
-  
 * [[SVG11] Issue with "<foreignObject>": doesn't render in Safari](https://github.com/mdn/content/issues/1319) (2021-01-14T17:25:42Z)
   
 * [[webaudio] Visualization for OscillatorNode](https://github.com/mdn/content/issues/1296) (2021-01-14T10:42:13Z)
