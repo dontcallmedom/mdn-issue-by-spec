@@ -124,8 +124,6 @@
   
 * [[clipboard-apis] clipboard.readText() is behind flag on Firefox](https://github.com/mdn/content/issues/23188) (2022-12-25T21:43:10Z)
   
-* [[mediacapture-streams] Missing description of getUserMedia constraints.](https://github.com/mdn/content/issues/22962) (2022-12-14T20:17:55Z)
-  
 * [[orientation-event] Explanation of X, y, z coordinates of DeviceMotionEvent.acceleration and DeviceMotionEvent.accelerationIncludingGravity is either completely wrong or extremely confusing (or both)](https://github.com/mdn/content/issues/22885) (2022-12-11T22:18:39Z)
   
 * [[css-fonts-5] getComputedStyle() does not respect the Fallback weights algorithm](https://github.com/mdn/content/issues/22496) (2022-11-23T12:04:06Z)
