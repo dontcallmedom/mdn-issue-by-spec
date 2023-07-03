@@ -24,60 +24,70 @@
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">Cells in subsequent rows <em>do</em> affect column widths.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<code class="notranslate">
-
-
-
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
     &lt;style&gt;
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="    table {
-        table-layout: fixed;
-    }
+        table {
+            table-layout: fixed;
+        }
 
-    td {
-        background: cyan;
-    }
+        td {
+            background: cyan;
+        }
 
-&lt;/style&gt;"><pre class="notranslate"><code class="notranslate">    table {
-        table-layout: fixed;
-    }
+    &lt;/style&gt;
+&lt;/head&gt;
 
-    td {
-        background: cyan;
-    }
+&lt;body&gt;
 
-&lt;/style&gt;
-</code></pre></div>
+    &lt;table&gt;
 
+        &lt;tr&gt;
+            &lt;td&gt;aaaaa&lt;/td&gt;
+            &lt;td&gt;b&lt;/td&gt;
+        &lt;/tr&gt;
 
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;ccccccccccccccccccc&lt;/td&gt;
+            &lt;td&gt;d&lt;/td&gt;
+        &lt;/tr&gt;
 
-    &lt;tr&gt;
-        &lt;td&gt;aaaaa&lt;/td&gt;
-        &lt;td&gt;b&lt;/td&gt;
-    &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"><pre class="notranslate"><span class="pl-c1">&lt;!DOCTYPE html<span class="pl-kos">&gt;</span></span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
+        <span class="pl-ent">table</span> {
+            <span class="pl-c1">table-layout</span><span class="pl-kos">:</span> fixed;
+        }
 
-    &lt;tr&gt;
-        &lt;td&gt;ccccccccccccccccccc&lt;/td&gt;
-        &lt;td&gt;d&lt;/td&gt;
-    &lt;/tr&gt;
+        <span class="pl-ent">td</span> {
+            <span class="pl-c1">background</span><span class="pl-kos">:</span> cyan;
+        }
 
-&lt;/table&gt;"><pre class="notranslate"><code class="notranslate">&lt;table&gt;
+    <span class="pl-kos">&lt;/</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
 
-    &lt;tr&gt;
-        &lt;td&gt;aaaaa&lt;/td&gt;
-        &lt;td&gt;b&lt;/td&gt;
-    &lt;/tr&gt;
+<span class="pl-kos">&lt;</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
 
-    &lt;tr&gt;
-        &lt;td&gt;ccccccccccccccccccc&lt;/td&gt;
-        &lt;td&gt;d&lt;/td&gt;
-    &lt;/tr&gt;
+    <span class="pl-kos">&lt;</span><span class="pl-ent">table</span><span class="pl-kos">&gt;</span>
 
-&lt;/table&gt;
-</code></pre></div>
+        <span class="pl-kos">&lt;</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
+            <span class="pl-kos">&lt;</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>aaaaa<span class="pl-kos">&lt;/</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>
+            <span class="pl-kos">&lt;</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>b<span class="pl-kos">&lt;/</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>
+        <span class="pl-kos">&lt;/</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
 
+        <span class="pl-kos">&lt;</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
+            <span class="pl-kos">&lt;</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>ccccccccccccccccccc<span class="pl-kos">&lt;/</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>
+            <span class="pl-kos">&lt;</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>d<span class="pl-kos">&lt;/</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>
+        <span class="pl-kos">&lt;/</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
 
-</code>
+    <span class="pl-kos">&lt;/</span><span class="pl-ent">table</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span></pre></div>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto">JsFiddle:</p>
 <p dir="auto"><a href="https://jsfiddle.net/emmaJsFiddle/1wz3s6ob/3/" rel="nofollow">https://jsfiddle.net/emmaJsFiddle/1wz3s6ob/3/</a></p>]]></content:encoded>
