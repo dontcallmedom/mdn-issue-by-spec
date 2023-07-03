@@ -4,8 +4,6 @@
 
 * [[ecmascript] Slightly misleading wording around Atomics.wait/Async](https://github.com/mdn/content/issues/27356) (2023-06-15T17:50:26Z)
   
-* [[ecmascript] Provide a definition for binding list](https://github.com/mdn/content/issues/26875) (2023-05-21T01:39:29Z)
-  
 * [[ecmascript] Accessing WebAssembly memory using TypedArrays is incorrect on Big Endian systems](https://github.com/mdn/content/issues/25569) (2023-03-23T12:09:31Z)
   
 * [[ecmascript] Misleading information around await's interaction with microtask/task queues](https://github.com/mdn/content/issues/24177) (2023-02-05T16:19:19Z)
