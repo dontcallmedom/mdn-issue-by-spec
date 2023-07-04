@@ -4,10 +4,54 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Tue, 04 Jul 2023 09:32:52 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 04 Jul 2023 10:25:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] [HTML] Add support for `dirname` attribute]]></title>
+            <link>https://github.com/mdn/content/issues/27760</link>
+            <guid>https://github.com/mdn/content/issues/27760</guid>
+            <pubDate>Tue, 04 Jul 2023 10:25:15 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 dir="auto">Acceptance Criteria</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> The listed features are documented sufficiently on MDN</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> BCD is updated</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Interactive example and data repos are updated if appropriate</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> The content has been reviewed as needed</li>
+</ul>
+<h3 dir="auto">For folks helping with Firefox related documentation</h3>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Set bugs to <code class="notranslate">dev-doc-complete</code></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Add entry to Firefox release notes if feature is enabled in release</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Add entry to Firefox experimental features page if feature is not yet enabled in release</li>
+</ul>
+<h2 dir="auto">Features to document</h2>
+<blockquote>
+<p dir="auto">"The dirname attribute on a form control element enables the submission of <a href="https://html.spec.whatwg.org/multipage/dom.html#the-directionality" rel="nofollow">the directionality</a> of the element, and gives the name of the control that contains this value during <a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2" rel="nofollow">form submission</a>. If such an attribute is specified, its value must not be the empty string."</p>
+</blockquote>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;form action=&quot;addcomment.cgi&quot; method=post&gt;
+ &lt;p&gt;&lt;label&gt;Comment: &lt;input type=text name=&quot;comment&quot; dirname=&quot;comment.dir&quot; required&gt;&lt;/label&gt;&lt;/p&gt;
+ &lt;p&gt;&lt;button name=&quot;mode&quot; type=submit value=&quot;add&quot;&gt;Post Comment&lt;/button&gt;&lt;/p&gt;
+&lt;/form&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">form</span> <span class="pl-c1">action</span>="<span class="pl-s">addcomment.cgi</span>" <span class="pl-c1">method</span>=<span class="pl-s">post</span><span class="pl-kos">&gt;</span>
+ <span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">label</span><span class="pl-kos">&gt;</span>Comment: <span class="pl-kos">&lt;</span><span class="pl-ent">input</span> <span class="pl-c1">type</span>=<span class="pl-s">text</span> <span class="pl-c1">name</span>="<span class="pl-s">comment</span>" <span class="pl-c1">dirname</span>="<span class="pl-s">comment.dir</span>" <span class="pl-c1">required</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">label</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>
+ <span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">button</span> <span class="pl-c1">name</span>="<span class="pl-s">mode</span>" <span class="pl-c1">type</span>=<span class="pl-s">submit</span> <span class="pl-c1">value</span>="<span class="pl-s">add</span>"<span class="pl-kos">&gt;</span>Post Comment<span class="pl-kos">&lt;/</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">form</span><span class="pl-kos">&gt;</span></pre></div>
+<p dir="auto"><a href="https://www.mozilla.org/en-US/firefox/116.0a1/releasenotes/" rel="nofollow">From release notes:</a></p>
+<blockquote>
+<p dir="auto">Added support for the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#dirname" rel="nofollow">dirname</a> attribute to pass text directionality information about input and textarea elements to the server.</p>
+</blockquote>
+<h2 dir="auto">Related Gecko bugs</h2>
+<ul dir="auto">
+<li><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=675943" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=675943</a></li>
+</ul>
+<h2 dir="auto">Other</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Check content open issues to see if any pertain to the subject matter. If there are any that can be closed because of the work, do so. If there are any that can be fixed relatively quickly because of the knowledge from completing this issue and you have time, feel free to go ahead and fix them.</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Check if glossary updates are required for the feature you're documenting - whether an existing term needs to be updated or a new term should be added.</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Check if BCD update means that content pages need to have experimental markup removed or deprecated markup added (front matter tags and macros).</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] No mention of CSPs frame-ancestors.]]></title>
             <link>https://github.com/mdn/content/issues/27754</link>
