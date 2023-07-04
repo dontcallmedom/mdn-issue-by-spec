@@ -20,8 +20,6 @@
   
 * [[css-color-4] Document missing components' bahavior for CSS color functions?](https://github.com/mdn/content/issues/27218) (2023-06-08T10:35:28Z)
   
-* [[css-scrollbars-1] "coloring_overflow_scrollbars" example does not meet the WCAG color contrast requirement mentioned earlier in this article](https://github.com/mdn/content/issues/27140) (2023-06-04T12:47:19Z)
-  
 * [[css-backgrounds-4] Truncated sentence in formal definition of background-origin](https://github.com/mdn/content/issues/27112) (2023-06-02T10:55:32Z)
   
 * [[selectors-4] No difference between mouse and keyboard focus methods](https://github.com/mdn/content/issues/27093) (2023-06-01T09:55:49Z)
