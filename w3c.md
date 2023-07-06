@@ -4,8 +4,6 @@
 
 * [[css-display-3] Remove the entire section "display: flow-root"](https://github.com/mdn/content/issues/27784) (2023-07-06T04:33:09Z)
   
-* [[CSS21] table-layout: Cells in subsequent rows *do* affect column widths.](https://github.com/mdn/content/issues/27728) (2023-07-03T23:12:14Z)
-  
 * [[css-easing-1] <easing-functions> page has "step()" not "steps()" 4 times in .png file](https://github.com/mdn/content/issues/27695) (2023-07-01T15:03:57Z)
   
 * [[push-api] Missing properties on PushSubscription#toJSON](https://github.com/mdn/content/issues/27676) (2023-06-30T13:43:33Z)
@@ -17,8 +15,6 @@
 * [[pointerlock-2] better example for pointerLockElement property](https://github.com/mdn/content/issues/27609) (2023-06-28T00:20:21Z)
   
 * [[css-lists-3, css-counter-styles-3] List-style-type needs a pointer to Ready-made Counter Styles](https://github.com/mdn/content/issues/27539) (2023-06-25T06:25:39Z)
-  
-* [[css-contain-2, css-position-3] position: fixed not documented as being affected by contain: layout or paint](https://github.com/mdn/content/issues/27529) (2023-06-24T17:45:47Z)
   
 * [[webrtc] MDN Web Docs state incorrectly that RTCRtpTransceiver.mid is null until negotiation is completed.](https://github.com/mdn/content/issues/27502) (2023-06-23T10:39:29Z)
   
