@@ -4,8 +4,6 @@
 
 * [[css-display-3] Remove the entire section "display: flow-root"](https://github.com/mdn/content/issues/27784) (2023-07-06T04:33:09Z)
   
-* [[css-easing-1] <easing-functions> page has "step()" not "steps()" 4 times in .png file](https://github.com/mdn/content/issues/27695) (2023-07-01T15:03:57Z)
-  
 * [[push-api] Missing properties on PushSubscription#toJSON](https://github.com/mdn/content/issues/27676) (2023-06-30T13:43:33Z)
   
 * [[pointerlock-2] Document: exitPointerLock() needs one reminder](https://github.com/mdn/content/issues/27612) (2023-06-28T00:54:56Z)

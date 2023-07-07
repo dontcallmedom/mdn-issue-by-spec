@@ -4,8 +4,6 @@
 
 * [[css-display-3] Remove the entire section "display: flow-root"](https://github.com/mdn/content/issues/27784) (2023-07-06T04:33:09Z)
   
-* [[css-easing-1] <easing-functions> page has "step()" not "steps()" 4 times in .png file](https://github.com/mdn/content/issues/27695) (2023-07-01T15:03:57Z)
-  
 * [[css-lists-3, css-counter-styles-3] List-style-type needs a pointer to Ready-made Counter Styles](https://github.com/mdn/content/issues/27539) (2023-06-25T06:25:39Z)
   
 * [[css-masking-1] CSP and other errors reported in the console for CSS mask-type article's EmbedLiveSample iframes](https://github.com/mdn/content/issues/27500) (2023-06-23T07:07:55Z)
