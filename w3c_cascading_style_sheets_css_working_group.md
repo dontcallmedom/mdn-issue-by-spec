@@ -38,8 +38,6 @@
   
 * [[css-transforms-2] transform-style docs should mention that there are scenarios where the value is forced](https://github.com/mdn/content/issues/25801) (2023-03-31T11:03:24Z)
   
-* [[css-properties-values-api-1] Please provide a working example for @property](https://github.com/mdn/content/issues/25776) (2023-03-30T17:10:38Z)
-  
 * [[css-images-3] Outdated note for `image-rendering`](https://github.com/mdn/content/issues/25774) (2023-03-30T15:21:01Z)
   
 * [[web-animations-2] KeyframeEffect.target: issues with the example](https://github.com/mdn/content/issues/25694) (2023-03-28T06:54:37Z)
