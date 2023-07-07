@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] "loadstart" event not documented for html element "audio"](https://github.com/mdn/content/issues/27820) (2023-07-07T08:09:40Z)
+  
 * [[html] Example code adds some styling that is not in use](https://github.com/mdn/content/issues/27764) (2023-07-04T18:02:31Z)
   
 * [[html] [HTML] Add support for `dirname` attribute](https://github.com/mdn/content/issues/27760) (2023-07-04T10:25:15Z)
