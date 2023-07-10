@@ -18,8 +18,6 @@
   
 * [[selectors-4] No difference between mouse and keyboard focus methods](https://github.com/mdn/content/issues/27093) (2023-06-01T09:55:49Z)
   
-* [[css-text-3] hyphens page does not mention caveat about word-break: break-all vs break-word](https://github.com/mdn/content/issues/26950) (2023-05-24T13:19:14Z)
-  
 * [[css-text-3] "word-break: normal;" !== "word-break: break-word;"](https://github.com/mdn/content/issues/26948) (2023-05-24T10:39:26Z)
   
 * [[css-backgrounds-4] No documentation for css src(...)](https://github.com/mdn/content/issues/26621) (2023-05-06T22:26:03Z)
