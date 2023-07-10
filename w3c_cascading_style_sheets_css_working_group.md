@@ -18,8 +18,6 @@
   
 * [[selectors-4] No difference between mouse and keyboard focus methods](https://github.com/mdn/content/issues/27093) (2023-06-01T09:55:49Z)
   
-* [[css-text-3] "word-break: normal;" !== "word-break: break-word;"](https://github.com/mdn/content/issues/26948) (2023-05-24T10:39:26Z)
-  
 * [[css-backgrounds-4] No documentation for css src(...)](https://github.com/mdn/content/issues/26621) (2023-05-06T22:26:03Z)
   
 * [[css-backgrounds-4] It is unclear why background-attachment: fixed is said to be incompatible with background-clip: text](https://github.com/mdn/content/issues/26445) (2023-04-27T02:31:12Z)
