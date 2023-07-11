@@ -608,40 +608,6 @@ This method is <a href="https://developer.mozilla.org/en-US/docs/Glossary/Asynch
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] SharedWorker's name parameter in the constructor is also used to create new instances of the same SharedWorker script]]></title>
-            <link>https://github.com/mdn/content/issues/25636</link>
-            <guid>https://github.com/mdn/content/issues/25636</guid>
-            <pubDate>Sat, 25 Mar 2023 18:00:48 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker/SharedWorker" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker/SharedWorker</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Parameters --&gt; name</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">According to <a href="https://html.spec.whatwg.org/multipage/workers.html#shared-workers" rel="nofollow">the spec</a>:</p>
-<blockquote>
-<p dir="auto">Shared workers are identified by the URL of the script used to create it, optionally with an explicit name. <strong>The name allows multiple instances of a particular shared worker to be started.</strong></p>
-</blockquote>
-<p dir="auto">It would be helpful to clarify this as well in the documentation. When I read this I wondered if it was possible to have multiple instances of the same shared worker. Reading the documentation my understanding was that it wasn't impossible because the <code class="notranslate">name</code> field is "mainly useful for debugging purposes".</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">I expected the docs to clarify that you can use the name to create new instances of the same SharedWorker.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://html.spec.whatwg.org/multipage/workers.html#shared-workers" rel="nofollow">https://html.spec.whatwg.org/multipage/workers.html#shared-workers</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/sharedworker/sharedworker</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker/SharedWorker" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker/SharedWorker</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/sharedworker/sharedworker/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/sharedworker/sharedworker/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/4ba12fec878a1f941492ada3edd467bfd76532cf/hovercard" href="https://github.com/mdn/content/commit/4ba12fec878a1f941492ada3edd467bfd76532cf"><tt>4ba12fe</tt></a></li>
-<li>Document last modified: 2023-03-03T11:36:23.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Keyboard shortcuts table suggest accesskeys aren't supported in Safari and Chrome on Mac, as well as in Edge on Windows]]></title>
             <link>https://github.com/mdn/content/issues/25608</link>
             <guid>https://github.com/mdn/content/issues/25608</guid>
