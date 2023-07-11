@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[media-source] iPhone now supports MediaSource behind experimental flag](https://github.com/mdn/content/issues/27865) (2023-07-10T22:11:58Z)
-  
 * [[css-display-3] Remove the entire section "display: flow-root"](https://github.com/mdn/content/issues/27784) (2023-07-06T04:33:09Z)
   
 * [[push-api] Missing properties on PushSubscription#toJSON](https://github.com/mdn/content/issues/27676) (2023-06-30T13:43:33Z)
