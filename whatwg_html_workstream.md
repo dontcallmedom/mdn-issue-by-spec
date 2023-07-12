@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Button HTML error](https://github.com/mdn/content/issues/27905) (2023-07-12T19:02:03Z)
+  
 * [[html] "loadstart" event not linked to from <audio>/<video> pages](https://github.com/mdn/content/issues/27820) (2023-07-07T08:09:40Z)
   
 * [[html] [HTML] Add support for `dirname` attribute](https://github.com/mdn/content/issues/27760) (2023-07-04T10:25:15Z)
