@@ -3159,43 +3159,6 @@ Source code for this <a href="https://glitch.com/edit/#!/handle-request-permissi
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-text-3] `word-break: break-word;` vs `overflow-wrap: anywhere;`]]></title>
-            <link>https://github.com/mdn/content/issues/15676</link>
-            <guid>https://github.com/mdn/content/issues/15676</guid>
-            <pubDate>Wed, 04 May 2022 06:23:26 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/word-break" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/word-break</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">break-word</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto"><code class="notranslate">break-word</code> is labelled as deprecated, with a note that <code class="notranslate">overflow-wrap: anywhere</code> is equivalent.<br>
-While this <em>is</em> true, <code class="notranslate">overflow-wrap: anywhere;</code> still isn't supported by safari, which isn't mentioned anywhere.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">I'm not sure exactly how to present this information, but I think the note about <code class="notranslate">word-break: break-word</code> being deprecated should mention:</p>
-<ul dir="auto">
-<li><code class="notranslate">word-break: break-word</code> is deprecated in favor of <code class="notranslate">overflow-wrap: anywhere</code></li>
-<li><code class="notranslate">anywhere</code> is not supported by all browsers, so <code class="notranslate">word-break: break-word</code> should be used instead</li>
-<li>also consider <code class="notranslate">overflow-wrap: break-word</code>, which behaves similarly</li>
-</ul>
-<p dir="auto">(In my experience, to achieve reasonable text wrapping, you always want either <code class="notranslate">overflow-wrap: anywhere</code> (<code class="notranslate">word-break: break-all</code>) or <code class="notranslate">overflow-wrap: break-word</code>, depending on how you want the intrinsic size to be calculated, so this is a pretty important property to understand)</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/word-break</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/word-break" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/word-break</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/word-break/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/word-break/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/899010f6aff5849b0a08292a3e26a56b4147c54a/hovercard" href="https://github.com/mdn/content/commit/899010f6aff5849b0a08292a3e26a56b4147c54a"><tt>899010f</tt></a></li>
-<li>Document last modified: 2022-04-05T21:15:04.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[css-conditional-3, DOM-Parsing] Defining page types]]></title>
             <link>https://github.com/mdn/content/issues/15539</link>
             <guid>https://github.com/mdn/content/issues/15539</guid>

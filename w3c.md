@@ -174,8 +174,6 @@
   
 * [[file-system-access] `FileSystemHandle.requestPermission()` can throw `SecurityError`](https://github.com/mdn/content/issues/15831) (2022-05-09T19:45:01Z)
   
-* [[css-text-3] `word-break: break-word;` vs `overflow-wrap: anywhere;`](https://github.com/mdn/content/issues/15676) (2022-05-04T06:23:26Z)
-  
 * [[css-conditional-3, DOM-Parsing] Defining page types](https://github.com/mdn/content/issues/15539) (2022-04-29T23:44:43Z)
   
 * [[css-logical-1] Possibly confusing note about floats, cleared items and grid](https://github.com/mdn/content/issues/15285) (2022-04-23T16:08:30Z)
