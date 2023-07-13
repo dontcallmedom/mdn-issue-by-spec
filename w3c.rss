@@ -4,10 +4,51 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Tue, 11 Jul 2023 17:21:56 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 13 Jul 2023 19:52:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html, uievents] List the event type for contextmenu as PointerEvent but clearly note that Firefox and Safari don't follow the standard]]></title>
+            <link>https://github.com/mdn/content/issues/27929</link>
+            <guid>https://github.com/mdn/content/issues/27929</guid>
+            <pubDate>Thu, 13 Jul 2023 19:52:34 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/contextmenu_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/contextmenu_event</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Event type</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">According to <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="578079100" data-permission-text="Title is private" data-url="https://github.com/w3c/pointerevents/issues/317" data-hovercard-type="pull_request" data-hovercard-url="/w3c/pointerevents/pull/317/hovercard" href="https://github.com/w3c/pointerevents/pull/317">w3c/pointerevents#317</a>, the "correct" event type is <code class="notranslate">PointerEvent</code>. However, while Chromium browsers follow the new standard, Firefox and Safari do not. The Event Type should be noted as being <code class="notranslate">PointerEvent</code>, but with a clear obvious disclaimer that this is not the case on Firefox or Safari. Currently, that disclaimer is hidden in <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/contextmenu_event#browser_compatibility" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/contextmenu_event#browser_compatibility</a>.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The event type that matches the spec, but with an obvious disclaimer that the spec is not followed by Firefox or Safari.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<ul dir="auto">
+<li><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="564786298" data-permission-text="Title is private" data-url="https://github.com/w3c/uievents/issues/259" data-hovercard-type="pull_request" data-hovercard-url="/w3c/uievents/pull/259/hovercard" href="https://github.com/w3c/uievents/pull/259">w3c/uievents#259</a></li>
+<li><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="578079100" data-permission-text="Title is private" data-url="https://github.com/w3c/pointerevents/issues/317" data-hovercard-type="pull_request" data-hovercard-url="/w3c/pointerevents/pull/317/hovercard" href="https://github.com/w3c/pointerevents/pull/317">w3c/pointerevents#317</a></li>
+<li><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="574130852" data-permission-text="Title is private" data-url="https://github.com/whatwg/html/issues/5324" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/html/pull/5324/hovercard" href="https://github.com/whatwg/html/pull/5324">whatwg/html#5324</a></li>
+<li><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="737208317" data-permission-text="Title is private" data-url="https://github.com/whatwg/html/issues/6126" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/html/pull/6126/hovercard" href="https://github.com/whatwg/html/pull/6126">whatwg/html#6126</a></li>
+<li><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1675847" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=1675847</a></li>
+<li><a href="https://webkit.org/b/218665" rel="nofollow">https://webkit.org/b/218665</a></li>
+</ul>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">This also applies to:</p>
+<ul dir="auto">
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/auxclick_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/auxclick_event</a></li>
+</ul>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/element/contextmenu_event</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/contextmenu_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/contextmenu_event</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/element/contextmenu_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/element/contextmenu_event/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0e4057ad96b3dc4cd5fae3e87ad76e81cca6098a/hovercard" href="https://github.com/mdn/content/commit/0e4057ad96b3dc4cd5fae3e87ad76e81cca6098a"><tt>0e4057a</tt></a></li>
+<li>Document last modified: 2023-07-03T10:10:32.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[cssom-view-1] Window.innerWidth: does it include the scrollbar?]]></title>
             <link>https://github.com/mdn/content/issues/27887</link>
