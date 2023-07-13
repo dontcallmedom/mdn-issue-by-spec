@@ -60,7 +60,7 @@
 <p dir="auto">Top layer</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <ol dir="auto">
-<li>In Firefox, I couldn't find the top layer shown in the screenshot. I think this is because Firefox developer tools don't show it, only Chrome developer tools?</li>
+<li>In Firefox, I couldn't find the top layer shown in the screenshot. I think this is because Firefox developer tools don't show it, only Chrome developer tools? Or, maybe, <code class="notranslate">#top-layer</code> hasn't been implemented in Firefox yet?</li>
 <li>Can you interact with the top layer, or is it purely conceptual? Can you refer to it with a CSS selector (e.g., <code class="notranslate">#top-layer</code>) like the screenshot implies? Is there a way to, for example, hide all the elements within the top layer with CSS? With JavaScript?</li>
 <li>The "See also" section doesn't link to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" rel="nofollow">dialog element page</a>.</li>
 <li>This page says, "The top layer is a specific layer in the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context" rel="nofollow">stacking context</a>", but I don't see it mentioned on the stacking context page, not even in the stacking context "See also" section.</li>
@@ -68,7 +68,7 @@
 <p dir="auto">For context, I'm experimenting with <code class="notranslate">dialog.showModal()</code>.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <ol dir="auto">
-<li>IMHO, the page should explicitly state that the top layer can't be seen in Firefox developer tools.</li>
+<li>IMHO, the page should explicitly state that the top layer can't be seen in Firefox developer tools. If this is due to Firefox not supporting the feature/concept, a browser support table might be a good way to illustrate this information.</li>
 <li>I think the article could be expanded to answer these questions, ideally with examples. If <code class="notranslate">#top-layer</code> is purely conceptual, maybe that could be explicitly mentioned.</li>
 <li>Link to the dialog element page in the "See also."</li>
 <li>I suppose I expected to see the top layer mentioned in lesser detail on the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context" rel="nofollow">stacking context</a> page--a single sentence may suffice.</li>
@@ -106,7 +106,7 @@
 </blockquote>
 <p dir="auto">This implies it is possible to put a &lt;dialog&gt; element in the top layer, but I haven't found anything explaining how to do this.</p>
 <p dir="auto">On the other hand, I'm wondering if there's a typo here. According to <a href="https://html.spec.whatwg.org/multipage/interactive-elements.html#dom-dialog-showmodal" rel="nofollow">step 8. in this spec</a>, &lt;dialog&gt; elements opened with <code class="notranslate">showModal</code> <em>are</em> added to the top layer.</p>
-<p dir="auto">Perhaps this paragraph intended to refer to <strong>non-modal</strong> &lt;dialog&gt; elements instead of all &lt;dialog&gt; elements? Because elements opened with <code class="notranslate">show</code> don't have this same step in the spec. Either way, I'd like to see how to put a &lt;dialog&gt; element in the top layer when it doesn't start there.</p>
+<p dir="auto">Perhaps this paragraph intended to refer to <strong>non-modal</strong> &lt;dialog&gt; elements instead of all &lt;dialog&gt; elements; elements opened with <code class="notranslate">show</code> don't have a similar step in the spec. Either way, I'd like to see how to put a &lt;dialog&gt; element in the top layer when it doesn't start there.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I expected to see a link to--or an explanation of--how to put a &lt;dialog&gt; element into the top layer. This information should probably be added to <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" rel="nofollow">the &lt;dialog&gt; element page</a>. When I search that page, I don't see the top layer mentioned anywhere.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
