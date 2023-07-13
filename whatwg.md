@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Suggestions to improve the Top Layer page: add examples, specify browser support, and clarify information](https://github.com/mdn/content/issues/27914) (2023-07-13T04:40:07Z)
+  
 * [[html] Explain how to put dialog elements in the top layer](https://github.com/mdn/content/issues/27912) (2023-07-13T04:28:06Z)
   
 * [[html] Button HTML error](https://github.com/mdn/content/issues/27905) (2023-07-12T19:02:03Z)
