@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[cssom-view-1] The information contradicts itself](https://github.com/mdn/content/issues/27887) (2023-07-11T17:21:56Z)
+* [[cssom-view-1] Window.innerWidth: does it include the scrollbar?](https://github.com/mdn/content/issues/27887) (2023-07-11T17:21:56Z)
   
 * [[cssom-view-1, dom, uievents, pointerlock-2, fullscreen, DOM-Parsing, pointerevents3] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
   
