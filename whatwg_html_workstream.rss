@@ -4,10 +4,46 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Wed, 12 Jul 2023 19:02:03 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 13 Jul 2023 04:28:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Explain how to put dialog elements in the top layer]]></title>
+            <link>https://github.com/mdn/content/issues/27912</link>
+            <guid>https://github.com/mdn/content/issues/27912</guid>
+            <pubDate>Thu, 13 Jul 2023 04:28:06 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Popover_API" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Popover_API</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Popover_API#concepts_and_usage" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Popover_API#concepts_and_usage</a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The page says:</p>
+<blockquote>
+<p dir="auto">Popovers which are created using the popover API are always non-modal. If you want to create a modal popover, a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" rel="nofollow">&lt;dialog&gt;</a> element is the right way to go, although bear in mind that <strong>&lt;dialog&gt; elements are not put in the <a href="https://developer.mozilla.org/en-US/docs/Glossary/Top_layer" rel="nofollow">top layer</a> by default</strong> — popovers are.</p>
+</blockquote>
+<p dir="auto">This implies it is possible to put a &lt;dialog&gt; element in the top layer, but I haven't found anything explaining how to do this.</p>
+<p dir="auto">On the other hand, I'm wondering if there's a typo here. According to <a href="https://html.spec.whatwg.org/multipage/interactive-elements.html#dom-dialog-showmodal" rel="nofollow">step 8. in this spec</a>, &lt;dialog&gt; elements opened with <code class="notranslate">showModal</code> <em>are</em> added to the top layer.</p>
+<p dir="auto">Perhaps this paragraph intended to refer to <strong>non-modal</strong> &lt;dialog&gt; elements instead of all &lt;dialog&gt; elements? Because elements opened with <code class="notranslate">show</code> don't have this same step in the spec. Either way, I'd like to see how to put a &lt;dialog&gt; element in the top layer when it doesn't start there.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I expected to see a link to--or an explanation of--how to put a &lt;dialog&gt; element into the top layer. This information should probably be added to <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" rel="nofollow">the &lt;dialog&gt; element page</a>. When I search that page, I don't see the top layer mentioned anywhere.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://html.spec.whatwg.org/multipage/interactive-elements.html#dom-dialog-showmodal" rel="nofollow">https://html.spec.whatwg.org/multipage/interactive-elements.html#dom-dialog-showmodal</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/popover_api</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Popover_API" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Popover_API</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/popover_api/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/popover_api/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e0d92259b485a219840367cf4e23a7069f192eec/hovercard" href="https://github.com/mdn/content/commit/e0d92259b485a219840367cf4e23a7069f192eec"><tt>e0d9225</tt></a></li>
+<li>Document last modified: 2023-07-03T09:21:02.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Button HTML error]]></title>
             <link>https://github.com/mdn/content/issues/27905</link>
