@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html, uievents] List the event type for contextmenu as PointerEvent but clearly note that Firefox and Safari don't follow the standard](https://github.com/mdn/content/issues/27929) (2023-07-13T19:52:34Z)
+* [[html, uievents] Note contextmenu, click, and auxclick are PointerEvents though Firefox and Safari don't follow the standard](https://github.com/mdn/content/issues/27929) (2023-07-13T19:52:34Z)
   
 * [[cssom-view-1] Window.innerWidth: does it include the scrollbar?](https://github.com/mdn/content/issues/27887) (2023-07-11T17:21:56Z)
   
