@@ -136,7 +136,7 @@
   
 * [[html] WebSocket: message event properties need more explanation](https://github.com/mdn/content/issues/18021) (2022-07-06T06:26:11Z)
   
-* [[fetch] Incorrect or outdated information at fetch() and Fetch API pages](https://github.com/mdn/content/issues/17115) (2022-06-08T21:48:36Z)
+* [[fetch] fetch could reject when 400 is returned](https://github.com/mdn/content/issues/17115) (2022-06-08T21:48:36Z)
   
 * [[html] Content suggestion: Sort CSS Properties by category in the sidebar](https://github.com/mdn/content/issues/15844) (2022-05-10T04:08:28Z)
   
