@@ -6,8 +6,6 @@
   
 * [[html] Explain how to put dialog elements in the top layer](https://github.com/mdn/content/issues/27912) (2023-07-13T04:28:06Z)
   
-* [[html] Button HTML error](https://github.com/mdn/content/issues/27905) (2023-07-12T19:02:03Z)
-  
 * [[cssom-view-1, dom, uievents, pointerlock-2, fullscreen, DOM-Parsing, pointerevents3] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
   
 * [[html] "loadstart" event not linked to from <audio>/<video> pages](https://github.com/mdn/content/issues/27820) (2023-07-07T08:09:40Z)
