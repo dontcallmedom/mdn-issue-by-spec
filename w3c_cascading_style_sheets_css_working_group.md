@@ -48,7 +48,7 @@
   
 * [[resize-observer-1] ResizeObserverEntry.contentBoxSize example doesn't use ResizeObserverEntry.contentBoxSize](https://github.com/mdn/content/issues/25364) (2023-03-15T22:35:36Z)
   
-* [[css-sizing-4, css-conditional-3, css-sizing-3] In correct statement about max-width](https://github.com/mdn/content/issues/25073) (2023-03-05T03:22:13Z)
+* [[css-conditional-3, css-sizing-4, css-sizing-3] In correct statement about max-width](https://github.com/mdn/content/issues/25073) (2023-03-05T03:22:13Z)
   
 * [[filter-effects-2] SVG contrast filter](https://github.com/mdn/content/issues/24989) (2023-03-02T00:19:11Z)
   
@@ -117,8 +117,6 @@
 * [[css-fonts-5] Issue with "@font-face/font-weight": Document <font-weight-absolute>{2} ](https://github.com/mdn/content/issues/10910) (2021-12-01T18:54:16Z)
   
 * [[mediaqueries-4, css-conditional-3] Issue with "@media": Need more clarity re Level 4 v Level 3, browser compat, and broken links](https://github.com/mdn/content/issues/10774) (2021-11-25T20:39:58Z)
-  
-* [[css-sizing-4] CSS aspect-ratio needs better examples](https://github.com/mdn/content/issues/9543) (2021-10-04T00:01:11Z)
   
 * [[SVG11, css-masking-1] Deprecated Property on Documentation for SVG clipPath Element](https://github.com/mdn/content/issues/7653) (2021-08-06T09:44:12Z)
   

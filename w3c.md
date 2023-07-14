@@ -82,7 +82,7 @@
   
 * [[screen-capture] MediaDevices#getDisplayMedia(): systemAudio is misleading](https://github.com/mdn/content/issues/25307) (2023-03-14T03:38:33Z)
   
-* [[css-sizing-4, css-conditional-3, css-sizing-3] In correct statement about max-width](https://github.com/mdn/content/issues/25073) (2023-03-05T03:22:13Z)
+* [[css-conditional-3, css-sizing-4, css-sizing-3] In correct statement about max-width](https://github.com/mdn/content/issues/25073) (2023-03-05T03:22:13Z)
   
 * [[filter-effects-2] SVG contrast filter](https://github.com/mdn/content/issues/24989) (2023-03-02T00:19:11Z)
   
@@ -233,8 +233,6 @@
 * [[ecmascript, FileAPI] Clean up irrelevant notes about old browser releases](https://github.com/mdn/content/issues/9974) (2021-10-21T07:48:17Z)
   
 * [[html, uievents] Replace hand-written compat sections with BCD tables](https://github.com/mdn/content/issues/9972) (2021-10-21T07:40:45Z)
-  
-* [[css-sizing-4] CSS aspect-ratio needs better examples](https://github.com/mdn/content/issues/9543) (2021-10-04T00:01:11Z)
   
 * [[service-workers-1, payment-request, payment-handler] Content bug: inconsistent/incomplete descriptions of Promises as parameters](https://github.com/mdn/content/issues/9362) (2021-09-30T07:19:46Z)
   
