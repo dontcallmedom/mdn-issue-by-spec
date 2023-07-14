@@ -544,51 +544,6 @@ alert(j);
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] link: fix examples for Apple touch icon]]></title>
-            <link>https://github.com/mdn/content/issues/26707</link>
-            <guid>https://github.com/mdn/content/issues/26707</guid>
-            <pubDate>Wed, 10 May 2023 15:45:25 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Providing icons for different usage contexts</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Apple devices no longer check for <code class="notranslate">apple-touch-icon-precompose</code></p>
-<blockquote>
-<p dir="auto">In older versions of Safari for iOS, the <a href="https://mathiasbynens.be/notes/touch-icons#effects" rel="nofollow">precomposed keyword</a> could be used to prevent iOS from adding different visual effects to the touch icon (i.e., rounded corners, drop shadow, reflective shine). Starting with iOS 7, no special effects are applied to touch icons, so there is no need to use the precomposed keyword anymore.</p>
-</blockquote>
-<p dir="auto"><a href="https://github.com/webhintio/hint/blob/main/packages/hint-apple-touch-icons/README.md#why-is-this-important">https://github.com/webhintio/hint/blob/main/packages/hint-apple-touch-icons/README.md#why-is-this-important</a></p>
-<h3 dir="auto">What did you expect to see?</h3>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;link
-  rel=&quot;apple-touch-icon&quot;
-  sizes=&quot;144x144&quot;
-  href=&quot;favicon144.png&quot; /&gt;
-...
-"><pre class="notranslate"><code class="notranslate">&lt;link
-  rel="apple-touch-icon"
-  sizes="144x144"
-  href="favicon144.png" /&gt;
-...
-
-</code></pre></div>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://github.com/webhintio/hint/blob/main/packages/hint-apple-touch-icons/README.md#why-is-this-important">https://github.com/webhintio/hint/blob/main/packages/hint-apple-touch-icons/README.md#why-is-this-important</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/html/element/link</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/link/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/link/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/fa8a44b8bff24a4032181c4fd155c459c0dc9161/hovercard" href="https://github.com/mdn/content/commit/fa8a44b8bff24a4032181c4fd155c459c0dc9161"><tt>fa8a44b</tt></a></li>
-<li>Document last modified: 2023-03-13T07:09:38.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Improve wording on what it means to be suspended]]></title>
             <link>https://github.com/mdn/content/issues/26625</link>
             <guid>https://github.com/mdn/content/issues/26625</guid>

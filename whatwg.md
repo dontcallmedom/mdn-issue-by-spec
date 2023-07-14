@@ -42,8 +42,6 @@
   
 * [[notifications] NotificationOptions and Notification silent default has change](https://github.com/mdn/content/issues/26812) (2023-05-17T14:25:50Z)
   
-* [[html] link: fix examples for Apple touch icon](https://github.com/mdn/content/issues/26707) (2023-05-10T15:45:25Z)
-  
 * [[html] Improve wording on what it means to be suspended](https://github.com/mdn/content/issues/26625) (2023-05-07T04:43:55Z)
   
 * [[html] Image request fired as soon as src is set](https://github.com/mdn/content/issues/26560) (2023-05-03T17:23:34Z)
