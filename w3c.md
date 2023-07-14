@@ -132,8 +132,6 @@
   
 * [[picture-in-picture] Clarify/note Document.pictureInPictureElement is null for PiP launched from iframe](https://github.com/mdn/content/issues/21048) (2022-09-24T20:32:11Z)
   
-* [[html, css-transforms-2, css-transforms-1] The "non-replaced inline boxes" links to a non-existent anchor](https://github.com/mdn/content/issues/20854) (2022-09-18T09:20:10Z)
-  
 * [[css-align-3] Content suggestion: display owns CSS shorthand property.](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
   
 * [[service-workers-1] Fetch Event client id is null](https://github.com/mdn/content/issues/20657) (2022-09-13T11:22:55Z)

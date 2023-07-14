@@ -88,8 +88,6 @@
   
 * [[html] Information missing for "hidden" <input>s](https://github.com/mdn/content/issues/21857) (2022-10-26T21:27:57Z)
   
-* [[html, css-transforms-2, css-transforms-1] The "non-replaced inline boxes" links to a non-existent anchor](https://github.com/mdn/content/issues/20854) (2022-09-18T09:20:10Z)
-  
 * [[html, dom] Event.returnValue: further deprecation information needed](https://github.com/mdn/content/issues/20730) (2022-09-14T18:18:13Z)
   
 * [[html] RadioNodeList.value example does not support fieldset](https://github.com/mdn/content/issues/20588) (2022-09-12T11:06:34Z)
