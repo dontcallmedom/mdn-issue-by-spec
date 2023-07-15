@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[ecmascript] Issues with "Description" and "Hoisting" in var documentation.](https://github.com/mdn/content/issues/27966) (2023-07-15T14:57:06Z)
+  
 * [[ecmascript] Slightly misleading wording around Atomics.wait/Async](https://github.com/mdn/content/issues/27356) (2023-06-15T17:50:26Z)
   
 * [[ecmascript] Accessing WebAssembly memory using TypedArrays is incorrect on Big Endian systems](https://github.com/mdn/content/issues/25569) (2023-03-23T12:09:31Z)
