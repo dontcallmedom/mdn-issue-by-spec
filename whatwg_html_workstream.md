@@ -128,8 +128,6 @@
   
 * [[html] Issue with "<dialog>: The Dialog element": Cancel button wouldn't work if there is required input element](https://github.com/mdn/content/issues/10848) (2021-11-29T10:44:42Z)
   
-* [[html] Issue with "resize event": the logged height does not change when changing the height of the browser window](https://github.com/mdn/content/issues/10683) (2021-11-21T22:37:44Z)
-  
 * [[html, uievents] Replace hand-written compat sections with BCD tables](https://github.com/mdn/content/issues/9972) (2021-10-21T07:40:45Z)
   
 * [[html] Issue with "<canvas>: The Graphics Canvas element": Firefox area limit incorrect](https://github.com/mdn/content/issues/9379) (2021-09-30T16:32:42Z)
