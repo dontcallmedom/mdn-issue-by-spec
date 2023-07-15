@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html, css-scoping-1, selectors-4] selector page needs a try it section](https://github.com/mdn/content/issues/27938) (2023-07-14T04:26:03Z)
+* [[html, selectors-4, css-scoping-1] selector page needs a try it section](https://github.com/mdn/content/issues/27938) (2023-07-14T04:26:03Z)
   
 * [[html, uievents] Note contextmenu, click, and auxclick are PointerEvents though Firefox and Safari don't follow the standard](https://github.com/mdn/content/issues/27929) (2023-07-13T19:52:34Z)
   

@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html, css-scoping-1, selectors-4] selector page needs a try it section](https://github.com/mdn/content/issues/27938) (2023-07-14T04:26:03Z)
+* [[html, selectors-4, css-scoping-1] selector page needs a try it section](https://github.com/mdn/content/issues/27938) (2023-07-14T04:26:03Z)
   
 * [[html, uievents] Note contextmenu, click, and auxclick are PointerEvents though Firefox and Safari don't follow the standard](https://github.com/mdn/content/issues/27929) (2023-07-13T19:52:34Z)
   
@@ -211,8 +211,6 @@
 * [[IndexedDB-3] Issue with "IDBTransaction.oncomplete": When transaction's oncomplete is actually called?](https://github.com/mdn/content/issues/11901) (2022-01-11T02:17:36Z)
   
 * [[uievents] Content bug: Missing information about what WheelEvent.delta* can be](https://github.com/mdn/content/issues/11811) (2022-01-07T12:25:45Z)
-  
-* [[css-scoping-1] Issue with ":host-context()": link to example does not demonstrate usage](https://github.com/mdn/content/issues/11621) (2021-12-31T12:10:13Z)
   
 * [[pointerlock-2] Element.requestPointerLock() missing some useful detail](https://github.com/mdn/content/issues/11327) (2021-12-20T05:04:35Z)
   

@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[html, css-scoping-1, selectors-4] selector page needs a try it section](https://github.com/mdn/content/issues/27938) (2023-07-14T04:26:03Z)
+* [[html, selectors-4, css-scoping-1] selector page needs a try it section](https://github.com/mdn/content/issues/27938) (2023-07-14T04:26:03Z)
   
 * [[cssom-view-1] Window.innerWidth: does it include the scrollbar?](https://github.com/mdn/content/issues/27887) (2023-07-11T17:21:56Z)
   
@@ -109,8 +109,6 @@
 * [[css-values-3] Content suggestion: Remove <length-percentage> and similar pages](https://github.com/mdn/content/issues/13066) (2022-02-17T10:45:31Z)
   
 * [[cssom-view-1] Issue with "Document: scroll event": Example using rAF in scroll-event callbacks is outdated, and anti-performance](https://github.com/mdn/content/issues/12701) (2022-02-04T00:25:49Z)
-  
-* [[css-scoping-1] Issue with ":host-context()": link to example does not demonstrate usage](https://github.com/mdn/content/issues/11621) (2021-12-31T12:10:13Z)
   
 * [[css-fonts-5] Issue with "@font-face/font-weight": Document <font-weight-absolute>{2} ](https://github.com/mdn/content/issues/10910) (2021-12-01T18:54:16Z)
   
