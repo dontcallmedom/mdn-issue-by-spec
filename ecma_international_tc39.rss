@@ -77,40 +77,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[ecmascript] Slightly misleading wording around Atomics.wait/Async]]></title>
-            <link>https://github.com/mdn/content/issues/27356</link>
-            <guid>https://github.com/mdn/content/issues/27356</guid>
-            <pubDate>Thu, 15 Jun 2023 17:50:26 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/wait" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/wait</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">The Note</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto"><strong>Note:</strong> This operation only works with a shared <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array" rel="nofollow">Int32Array</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt64Array" rel="nofollow">BigInt64Array</a> and may not be allowed on the main thread.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">It's a bit of a brainstorming session or just plain wrong wording to me ... to use a <em>SharedArrayBuffer</em> I don't strictly need to "<em>share</em>" an <em>Int32Array</em> or even a <em>BigInt64Array</em>, all I need to do is to use these <strong>views</strong> to deal with the received <em>SharedArrayBuffer</em>.</p>
-<p dir="auto">In short, I've found a bit misleading the concept of "<em>a shared Int32Array</em>" as that can't be used as transferable + it really doesn't need to be posted at all to coordinate <em>Atomics</em> operations, as 2 <code class="notranslate">new Int32Array(sab)</code> in both main thread and the worker would do just fine, and the memory consumption, after a structured clone algorithm, won't grant or guarantee any memory saving in passing along these references, instead of the raw <em>SharedArrayBuffer</em>, also used in most blog posts examples.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">My recent blog post around <em>SharedArrayBuffer and Atomics</em> show, and live test, that no view is strictly needed to operate, and a reference to such buffer would be enough: <a href="https://webreflection.medium.com/about-sharedarraybuffer-atomics-87f97ddfc098" rel="nofollow">https://webreflection.medium.com/about-sharedarraybuffer-atomics-87f97ddfc098</a></p>
-<p dir="auto">Do I need to change those examples because my understanding and working code is somehow <em>wrong</em> and those buffers need to be posted already as <code class="notranslate">Int32Array</code>?</p>
-<p dir="auto">Is this rather a hint that there's no need to create multiple <code class="notranslate">Int32Array</code> on both sides?</p>
-<p dir="auto">I am fully open to learn more here, and eventually fix that blog post too, thanks!</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/atomics/wait</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/wait" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/wait</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/atomics/wait/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/atomics/wait/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/a92a2bb31cf5d79808878701f0344a4eabf12963/hovercard" href="https://github.com/mdn/content/commit/a92a2bb31cf5d79808878701f0344a4eabf12963"><tt>a92a2bb</tt></a></li>
-<li>Document last modified: 2023-04-06T04:58:26.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[ecmascript] Accessing WebAssembly memory using TypedArrays is incorrect on Big Endian systems]]></title>
             <link>https://github.com/mdn/content/issues/25569</link>
             <guid>https://github.com/mdn/content/issues/25569</guid>
