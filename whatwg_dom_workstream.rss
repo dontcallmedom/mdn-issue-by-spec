@@ -426,32 +426,6 @@ ctrl.abort();
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[dom] Issue with "Event.timeStamp": information in the Value section seems to contradict the output values in the Reduced time precision]]></title>
-            <link>https://github.com/mdn/content/issues/10839</link>
-            <guid>https://github.com/mdn/content/issues/10839</guid>
-            <pubDate>Sun, 28 Nov 2021 19:13:34 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/timeStamp" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Event/timeStamp</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">The information in the <strong>Value</strong> section seems to contradict the output values in the <strong>Reduced time precision</strong></p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto">I believe the <strong>Reduced time precision</strong> is incorrect.</p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">It should show something similar to what we see when we test things for ourselves in the provided iframe, immediately above the section's header.</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">In the provided iframe, where Event.timeStamp can be tested, you see a few thousand milliseconds, as it should be. The output in the comments in the code in the <strong>Reduced time precision</strong> section seems to show timestamps as if they were created using <code class="notranslate">Date.now()</code>.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/event/timestamp</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/timeStamp" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Event/timeStamp</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/event/timestamp/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/event/timestamp/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/7aa179f5e0c8712eaffeb69bd65d59cf660ede46/hovercard" href="https://github.com/mdn/content/commit/7aa179f5e0c8712eaffeb69bd65d59cf660ede46"><tt>7aa179f</tt></a></li>
-<li>Document last modified: 2021-10-29T14:18:27.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[dom] Issue with "Document.getElementById()": link to xml:id doesn't include expected source snippet]]></title>
             <link>https://github.com/mdn/content/issues/9777</link>
             <guid>https://github.com/mdn/content/issues/9777</guid>

@@ -26,8 +26,6 @@
   
 * [[dom] Issue with "AbortController": (missing info on behavior of .text() or .json() or other body promise)](https://github.com/mdn/content/issues/12387) (2022-01-24T16:10:11Z)
   
-* [[dom] Issue with "Event.timeStamp": information in the Value section seems to contradict the output values in the Reduced time precision](https://github.com/mdn/content/issues/10839) (2021-11-28T19:13:34Z)
-  
 * [[dom] Issue with "Document.getElementById()": link to xml:id doesn't include expected source snippet](https://github.com/mdn/content/issues/9777) (2021-10-13T19:50:56Z)
   
 * [[html, cssom-view-1, dom, WebIDL-1, FileAPI, uievents, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)

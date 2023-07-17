@@ -170,8 +170,6 @@
   
 * [[html] Issue with "<dialog>: The Dialog element": Cancel button wouldn't work if there is required input element](https://github.com/mdn/content/issues/10848) (2021-11-29T10:44:42Z)
   
-* [[dom] Issue with "Event.timeStamp": information in the Value section seems to contradict the output values in the Reduced time precision](https://github.com/mdn/content/issues/10839) (2021-11-28T19:13:34Z)
-  
 * [[html, uievents] Replace hand-written compat sections with BCD tables](https://github.com/mdn/content/issues/9972) (2021-10-21T07:40:45Z)
   
 * [[dom] Issue with "Document.getElementById()": link to xml:id doesn't include expected source snippet](https://github.com/mdn/content/issues/9777) (2021-10-13T19:50:56Z)
