@@ -4,10 +4,42 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Sat, 15 Jul 2023 14:57:06 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 18 Jul 2023 12:58:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] TS version support]]></title>
+            <link>https://github.com/mdn/content/issues/28031</link>
+            <guid>https://github.com/mdn/content/issues/28031</guid>
+            <pubDate>Tue, 18 Jul 2023 12:58:44 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AggregateError" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AggregateError</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">browser compatibility</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">We've my work-mates we've face to a weird behavior on our IDE. AggregateErrors was available in some projects and unavailable on others (no completion, then build faillure).</p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/28789447/254269913-b34a0848-0169-43b4-a628-012f7062e38c.png"><img src="https://user-images.githubusercontent.com/28789447/254269913-b34a0848-0169-43b4-a628-012f7062e38c.png" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto">After an analysis, we've seen that is due to version of Typescript. AggregateErrors seems to be available since es2021. Good news because the projects that not recognized AggregateErrors were in es2020 !</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I expect to see a new column with the TS version compatibility</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/aggregateerror</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AggregateError" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AggregateError</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/aggregateerror/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/aggregateerror/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/6a0f9553932823cd0c4dcf695d4b4813474964fb/hovercard" href="https://github.com/mdn/content/commit/6a0f9553932823cd0c4dcf695d4b4813474964fb"><tt>6a0f955</tt></a></li>
+<li>Document last modified: 2023-04-12T16:34:04.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Issues with "Description" and "Hoisting" in var documentation.]]></title>
             <link>https://github.com/mdn/content/issues/27966</link>
