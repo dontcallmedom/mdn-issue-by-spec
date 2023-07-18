@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[ecmascript] setter - the word consr is shown instead of const](https://github.com/mdn/content/issues/28039) (2023-07-18T19:23:58Z)
+  
 * [[ecmascript] Issues with "Description" and "Hoisting" in var documentation.](https://github.com/mdn/content/issues/27966) (2023-07-15T14:57:06Z)
   
 * [[ecmascript] Accessing WebAssembly memory using TypedArrays is incorrect on Big Endian systems](https://github.com/mdn/content/issues/25569) (2023-03-23T12:09:31Z)
