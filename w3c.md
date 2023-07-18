@@ -12,8 +12,6 @@
   
 * [[cssom-view-1, dom, uievents, pointerlock-2, fullscreen, DOM-Parsing, pointerevents3] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
   
-* [[css-display-3] Remove the entire section "display: flow-root"](https://github.com/mdn/content/issues/27784) (2023-07-06T04:33:09Z)
-  
 * [[push-api] Missing properties on PushSubscription#toJSON](https://github.com/mdn/content/issues/27676) (2023-06-30T13:43:33Z)
   
 * [[pointerlock-2] pointerlockchange event should demonstrate how to get the locked element](https://github.com/mdn/content/issues/27610) (2023-06-28T00:41:42Z)
