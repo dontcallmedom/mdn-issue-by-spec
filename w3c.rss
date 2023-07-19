@@ -4,10 +4,41 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Wed, 19 Jul 2023 00:44:36 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 19 Jul 2023 15:26:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-images-3] scale-down just looks like contain]]></title>
+            <link>https://github.com/mdn/content/issues/28054</link>
+            <guid>https://github.com/mdn/content/issues/28054</guid>
+            <pubDate>Wed, 19 Jul 2023 15:26:50 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">everything related to scale-down value</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The <code class="notranslate">scale-down</code> value looks as if it did the same as <code class="notranslate">contain</code>.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The major difference between the two seems to be that <code class="notranslate">scale-down</code> keeps a small image size if the image is smaller than its container, while <code class="notranslate">contain</code> stretches the image to fit the container.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">This <a href="https://codepen.io/chrisnager/pen/XJgJqN" rel="nofollow">codepen here</a> shows the differences very clearly and visually.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Would be cool to edit the page accordingly.<br>
+Anything to add?</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/object-fit</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/object-fit/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/object-fit/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc/hovercard" href="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc"><tt>acfe8c9</tt></a></li>
+<li>Document last modified: 2023-07-07T07:19:19.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, selectors-4] Remove or condense non-standard prefixed pseudos from the side navigation]]></title>
             <link>https://github.com/mdn/content/issues/28043</link>
