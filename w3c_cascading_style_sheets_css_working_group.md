@@ -14,8 +14,6 @@
   
 * [[css-lists-3, css-counter-styles-3] List-style-type needs a pointer to Ready-made Counter Styles](https://github.com/mdn/content/issues/27539) (2023-06-25T06:25:39Z)
   
-* [[css-masking-1] CSP and other errors reported in the console for CSS mask-type article's EmbedLiveSample iframes](https://github.com/mdn/content/issues/27500) (2023-06-23T07:07:55Z)
-  
 * [[html, cssom-view-1] window.open() has a partial list of features](https://github.com/mdn/content/issues/27357) (2023-06-15T19:36:20Z)
   
 * [[css-overflow-4] The behavior of 'overflow: overlay;' is changed in Chrome (and others?) to be exactly the same as 'auto'](https://github.com/mdn/content/issues/27322) (2023-06-14T10:32:40Z)

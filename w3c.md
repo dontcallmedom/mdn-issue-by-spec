@@ -26,8 +26,6 @@
   
 * [[webrtc] MDN Web Docs state incorrectly that RTCRtpTransceiver.mid is null until negotiation is completed.](https://github.com/mdn/content/issues/27502) (2023-06-23T10:39:29Z)
   
-* [[css-masking-1] CSP and other errors reported in the console for CSS mask-type article's EmbedLiveSample iframes](https://github.com/mdn/content/issues/27500) (2023-06-23T07:07:55Z)
-  
 * [[web-share] Example for sharing a URL is not functional](https://github.com/mdn/content/issues/27469) (2023-06-21T19:17:08Z)
   
 * [[html, cssom-view-1] window.open() has a partial list of features](https://github.com/mdn/content/issues/27357) (2023-06-15T19:36:20Z)
