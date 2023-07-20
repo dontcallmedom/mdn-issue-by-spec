@@ -36,8 +36,6 @@
   
 * [[css-overflow-4] The behavior of 'overflow: overlay;' is changed in Chrome (and others?) to be exactly the same as 'auto'](https://github.com/mdn/content/issues/27322) (2023-06-14T10:32:40Z)
   
-* [[css-backgrounds-4] Truncated sentence in formal definition of background-origin](https://github.com/mdn/content/issues/27112) (2023-06-02T10:55:32Z)
-  
 * [[selectors-4] No difference between mouse and keyboard focus methods](https://github.com/mdn/content/issues/27093) (2023-06-01T09:55:49Z)
   
 * [[IndexedDB-3] versionchange is super important and hardly is given any attention](https://github.com/mdn/content/issues/26639) (2023-05-08T06:47:05Z)
