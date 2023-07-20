@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Real-Time Communications Working Group. [![RSS feed for W3C Web Real-Time Communications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[webrtc] connectionstatechange event: Error in example code](https://github.com/mdn/content/issues/28057) (2023-07-19T16:19:52Z)
-  
 * [[webrtc] MDN Web Docs state incorrectly that RTCRtpTransceiver.mid is null until negotiation is completed.](https://github.com/mdn/content/issues/27502) (2023-06-23T10:39:29Z)
   
 * [[webrtc] The new restartIce() method should replace the old "iceRestart" parameter in the documentation consistently.](https://github.com/mdn/content/issues/25732) (2023-03-29T09:34:05Z)
