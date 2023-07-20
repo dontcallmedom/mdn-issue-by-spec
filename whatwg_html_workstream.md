@@ -106,8 +106,6 @@
   
 * [[html] WebSocket: message event properties need more explanation](https://github.com/mdn/content/issues/18021) (2022-07-06T06:26:11Z)
   
-* [[html] Content suggestion: Sort CSS Properties by category in the sidebar](https://github.com/mdn/content/issues/15844) (2022-05-10T04:08:28Z)
-  
 * [[html] HTMLTableCellElement missing property pages](https://github.com/mdn/content/issues/15631) (2022-05-03T03:28:19Z)
   
 * [[html, gamepad] Double checking the gamepad docs are correct](https://github.com/mdn/content/issues/14874) (2022-04-11T03:02:09Z)
