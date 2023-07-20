@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[css-images-3] scale-down just looks like contain](https://github.com/mdn/content/issues/28054) (2023-07-19T15:26:50Z)
-  
 * [[html, selectors-4] Remove or condense non-standard prefixed pseudos from the side navigation](https://github.com/mdn/content/issues/28043) (2023-07-19T00:44:36Z)
   
 * [[selectors-4] The explanation of the :focus-visible psuedo-class is not clear about (text) input](https://github.com/mdn/content/issues/27993) (2023-07-17T12:04:34Z)
