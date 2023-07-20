@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Recommend changing the name of this attribute](https://github.com/mdn/content/issues/28087) (2023-07-20T17:21:42Z)
+  
 * [[html, selectors-4] Remove or condense non-standard prefixed pseudos from the side navigation](https://github.com/mdn/content/issues/28043) (2023-07-19T00:44:36Z)
   
 * [[html, selectors-4, css-scoping-1] selector page needs a try it section](https://github.com/mdn/content/issues/27938) (2023-07-14T04:26:03Z)
