@@ -4,8 +4,6 @@
 
 * [[html, selectors-4] Remove or condense non-standard prefixed pseudos from the side navigation](https://github.com/mdn/content/issues/28043) (2023-07-19T00:44:36Z)
   
-* [[selectors-4] The explanation of the :focus-visible psuedo-class is not clear about (text) input](https://github.com/mdn/content/issues/27993) (2023-07-17T12:04:34Z)
-  
 * [[html, selectors-4, css-scoping-1] selector page needs a try it section](https://github.com/mdn/content/issues/27938) (2023-07-14T04:26:03Z)
   
 * [[cssom-view-1] Window.innerWidth: does it include the scrollbar?](https://github.com/mdn/content/issues/27887) (2023-07-11T17:21:56Z)
