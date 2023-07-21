@@ -4,78 +4,10 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Sat, 15 Jul 2023 14:57:06 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Mar 2023 12:09:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript] Issues with "Description" and "Hoisting" in var documentation.]]></title>
-            <link>https://github.com/mdn/content/issues/27966</link>
-            <guid>https://github.com/mdn/content/issues/27966</guid>
-            <pubDate>Sat, 15 Jul 2023 14:57:06 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Description and Hoisting sections</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<ol dir="auto">
-<li>The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#description" rel="nofollow">Description</a> section states</li>
-</ol>
-<blockquote>
-<p dir="auto">The scope of a variable declared with var is one of the following curly-brace-enclosed syntaxes that most closely contains the var statement:</p>
-<ul dir="auto">
-<li>Function body</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Static_initialization_blocks" rel="nofollow">Static initialization block</a></li>
-</ul>
-<p dir="auto">Or the current module or script, if it's contained in neither of these.)</p>
-</blockquote>
-<p dir="auto"><strong>The issue:</strong>  Scripts that are not modules don't create their own variable scope;</p>
-<ol start="2" dir="auto">
-<li>The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#hoisting" rel="nofollow">Hoisting section</a> states in the second sentence</li>
-</ol>
-<blockquote>
-<p dir="auto">Declaring a variable anywhere in the code is equivalent to declaring it at the top.</p>
-</blockquote>
-<p dir="auto"><strong>The issue</strong> The "top" of what is not defined and could benefit from including a "top of the containing script" option.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto"><strong>under Description</strong></p>
-<blockquote>
-<p dir="auto">Or the current module or script, if it's contained in neither of these.</p>
-</blockquote>
-<p dir="auto">might benefit from being reworded along the lines of:</p>
-<blockquote>
-<p dir="auto">Or if it's not contained in either of these,</p>
-<ul dir="auto">
-<li>the  module a <code class="notranslate">var</code> is declared within, or</li>
-<li>global scope if the declaration is not within a module.</li>
-</ul>
-</blockquote>
-<p dir="auto"><strong>Second sentence of <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#hoisting" rel="nofollow">Hoisting</a></strong></p>
-<blockquote>
-<p dir="auto">Declaring a variable anywhere in the code is equivalent to declaring it at the top.</p>
-</blockquote>
-<p dir="auto">might benefit from being reworded along the lines of:</p>
-<blockquote>
-<p dir="auto">Declaring a variable anywhere in the code is equivalent to declaring it at the top of the function, static initialization block or script it is declared in.</p>
-</blockquote>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">The reason for suggestions in this request comes from this <a href="https://stackoverflow.com/q/76693633/5217142" rel="nofollow">Stack Overflow question</a> about why a global variable in a script is not hoisted such that it can be accessed in a preceding script without generating a run time error.</p>
-<p dir="auto">The obvious answer about a timing error - the  second script tag had not been encountered or processed at the time the first script was executed - doesn't appear to be covered in question answers, the nominated duplicate question on Stack Overflow, or in MDN articles for <code class="notranslate">var</code> (this amendment request) or the glossary definition for <a href="https://developer.mozilla.org/en-US/docs/Glossary/Hoisting" rel="nofollow">Hoisting</a>.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/statements/var</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/var/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/var/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/1c4869cdb1a9a9c3cafba87a2cd9469591f7aa47/hovercard" href="https://github.com/mdn/content/commit/1c4869cdb1a9a9c3cafba87a2cd9469591f7aa47"><tt>1c4869c</tt></a></li>
-<li>Document last modified: 2023-07-03T17:55:26.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[ecmascript] Accessing WebAssembly memory using TypedArrays is incorrect on Big Endian systems]]></title>
             <link>https://github.com/mdn/content/issues/25569</link>
