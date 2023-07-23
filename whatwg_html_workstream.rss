@@ -4,84 +4,10 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Sun, 23 Jul 2023 13:45:46 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 13 Jul 2023 19:52:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[html] Blockquote example does not need figure/figcaption]]></title>
-            <link>https://github.com/mdn/content/issues/28133</link>
-            <guid>https://github.com/mdn/content/issues/28133</guid>
-            <pubDate>Sun, 23 Jul 2023 13:45:46 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Try it</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The "Try it" section wraps the blockquote text in a figure with a figure caption, but does not explain why the figure is used nor explain the impact on screen reader announcements.</p>
-<p dir="auto">The code:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;figure&gt;
-    &lt;blockquote cite=&quot;https://www.huxley.net/bnw/four.html&quot;&gt;
-        &lt;p&gt;Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.&lt;/p&gt;
-    &lt;/blockquote&gt;
-    &lt;figcaption&gt;—Aldous Huxley, &lt;cite&gt;Brave New World&lt;/cite&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;"><pre class="notranslate"><code class="notranslate">&lt;figure&gt;
-    &lt;blockquote cite="https://www.huxley.net/bnw/four.html"&gt;
-        &lt;p&gt;Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.&lt;/p&gt;
-    &lt;/blockquote&gt;
-    &lt;figcaption&gt;—Aldous Huxley, &lt;cite&gt;Brave New World&lt;/cite&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-</code></pre></div>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Either:</p>
-<ul dir="auto">
-<li>no <code class="notranslate">&lt;figure&gt;</code> element, or</li>
-<li>an explanation why it is used in this section but not in the "Examples" section later in the page.</li>
-</ul>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">Fire up a screen reader and navigate it.</p>
-<p dir="auto">This is the output navigating with the virtual cursor in NVDA/Firefox:</p>
-<p dir="auto"><code class="notranslate">↓</code></p>
-<blockquote>
-<p dir="auto">em dash Aldous Huxley, Brave New World, figure, block quote, left quote Words can be like X dash rays, if you use them properly em dash they’ll go through anything. You read and you’re pierced. right quote</p>
-</blockquote>
-<p dir="auto"><code class="notranslate">↓</code></p>
-<blockquote>
-<p dir="auto">out of block quote, caption, em dash Aldous Huxley, Brave New World</p>
-</blockquote>
-<p dir="auto">The <code class="notranslate">&lt;figure&gt;</code> causes an announcement of the figure, which is fine but adds unnecessary noise. The <code class="notranslate">&lt;figcaption&gt;</code> causes announcement of the text it contains at the <em>start</em> of the content, prior to announcing the presence of the figure or blockquote Then the contents of the <code class="notranslate">&lt;figcaption&gt;</code> are announced again as the user moves the virtual cursor through the DOM.</p>
-<p dir="auto">As a user, it is unclear why I am hearing this information twice (other than the code chosen). As a developer, there is no guidance on what this code will output.</p>
-<p dir="auto">This is the output navigating with the virtual cursor in JAWS/Chrome:</p>
-<p dir="auto"><code class="notranslate">↓</code></p>
-<blockquote>
-<p dir="auto">block quote cited from <a href="https://www.huxley.net/bnw/four.html" rel="nofollow">https://www.huxley.net/bnw/four.html</a></p>
-</blockquote>
-<p dir="auto"><code class="notranslate">↓</code></p>
-<blockquote>
-<p dir="auto">has details, left quote Words can be like X dash rays, if you use them properly em dash they’ll go through anything. You read and you’re pierced. right quote<br>
-block quote end</p>
-</blockquote>
-<p dir="auto"><code class="notranslate">↓</code></p>
-<blockquote>
-<p dir="auto">has details, em dash Aldous Huxley, Brave New World</p>
-</blockquote>
-<p dir="auto">Here, the "has details" announcement is a function of the <code class="notranslate">&lt;figcaption&gt;</code>.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">I cannot edit this example in GitHub because it comes in from an embed with no immediately apparent documentation on where to find it:<br>
-<code class="notranslate">{{EmbedInteractiveExample("pages/tabbed/blockquote.html","tabbed-standard")}}</code></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/html/element/blockquote</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/blockquote/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/blockquote/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e04d8d2766c468f149445c0bf438d09f9b2d188c/hovercard" href="https://github.com/mdn/content/commit/e04d8d2766c468f149445c0bf438d09f9b2d188c"><tt>e04d8d2</tt></a></li>
-<li>Document last modified: 2023-06-13T08:10:47.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html, uievents] Note contextmenu, click, and auxclick are PointerEvents though Firefox and Safari don't follow the standard]]></title>
             <link>https://github.com/mdn/content/issues/27929</link>
