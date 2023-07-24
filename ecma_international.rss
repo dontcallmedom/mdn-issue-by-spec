@@ -4,10 +4,45 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Thu, 23 Mar 2023 12:09:31 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 24 Jul 2023 14:42:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Incorrect link in description]]></title>
+            <link>https://github.com/mdn/content/issues/28151</link>
+            <guid>https://github.com/mdn/content/issues/28151</guid>
+            <pubDate>Mon, 24 Jul 2023 14:42:52 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function</a>*</p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*#description" rel="nofollow">Description</a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The link associated with the text "<code class="notranslate">function*</code> declaration" redirects to the "<code class="notranslate">function</code> declaration" instead of the actual "<code class="notranslate">function*</code> declaration"</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The correct link ?</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">The associated code :</p>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;a href=&quot;/en-US/docs/Web/JavaScript/Reference/Statements/function&quot;&gt;&lt;code&gt;function*&lt;/code&gt; declaration&lt;/a&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">a</span> <span class="pl-c1">href</span>="<span class="pl-s">/en-US/docs/Web/JavaScript/Reference/Statements/function</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">code</span><span class="pl-kos">&gt;</span>function*<span class="pl-kos">&lt;/</span><span class="pl-ent">code</span><span class="pl-kos">&gt;</span> declaration<span class="pl-kos">&lt;/</span><span class="pl-ent">a</span><span class="pl-kos">&gt;</span></pre></div>
+<p dir="auto">The expected code :</p>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;a href=&quot;/en-US/docs/Web/JavaScript/Reference/Statements/function*&quot;&gt;&lt;code&gt;function*&lt;/code&gt; declaration&lt;/a&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">a</span> <span class="pl-c1">href</span>="<span class="pl-s">/en-US/docs/Web/JavaScript/Reference/Statements/function*</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">code</span><span class="pl-kos">&gt;</span>function*<span class="pl-kos">&lt;/</span><span class="pl-ent">code</span><span class="pl-kos">&gt;</span> declaration<span class="pl-kos">&lt;/</span><span class="pl-ent">a</span><span class="pl-kos">&gt;</span></pre></div>
+<p dir="auto">Note that the correct code appears on every other occurence of the text "<code class="notranslate">function*</code> declaration" in the page.<br>
+A pull request is already open for review : <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1818561104" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/28150" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/28150/hovercard" href="https://github.com/mdn/content/pull/28150">#28150</a></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/operators/function_star_</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function</a>*</li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/function_star_/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/function_star_/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/40574fa665cd58de35cc2d30de2a46f5e9d3b484/hovercard" href="https://github.com/mdn/content/commit/40574fa665cd58de35cc2d30de2a46f5e9d3b484"><tt>40574fa</tt></a></li>
+<li>Document last modified: 2023-03-06T09:41:58.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Accessing WebAssembly memory using TypedArrays is incorrect on Big Endian systems]]></title>
             <link>https://github.com/mdn/content/issues/25569</link>
