@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[webaudio] AudioParam 的简中翻译和英文不符合](https://github.com/mdn/content/issues/28184) (2023-07-26T02:40:45Z)
+  
 * [[webrtc] usernameFragment Examples section contains method that does not exist](https://github.com/mdn/content/issues/28171) (2023-07-25T13:19:31Z)
   
 * [[css-typed-om-2] CSSMathNegate() constructor page is a stub](https://github.com/mdn/content/issues/28118) (2023-07-22T02:25:00Z)
