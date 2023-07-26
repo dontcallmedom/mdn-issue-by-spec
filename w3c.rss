@@ -4,10 +4,45 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Tue, 25 Jul 2023 13:19:31 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 26 Jul 2023 16:04:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[intersection-observer] Get scroll direction from IntersectionObserverEntry]]></title>
+            <link>https://github.com/mdn/content/issues/28197</link>
+            <guid>https://github.com/mdn/content/issues/28197</guid>
+            <pubDate>Wed, 26 Jul 2023 16:04:02 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Intersection change callbacks</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">That section says:</p>
+<blockquote>
+<p dir="auto">Each entry in the list of thresholds is an <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry" rel="nofollow">IntersectionObserverEntry</a> object describing one threshold that was crossed; that is, each entry describes how much of a given element is intersecting with the root element, whether or not the element is considered to be intersecting or not, and the direction in which the transition occurred.</p>
+</blockquote>
+<p dir="auto">I don't believe "and the direction in which the transition occurred" is true. There's no explicit field that describes direction. I wish there was - that's what I came looking for - but I don't think that exists.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I was hoping to find an example of getting the scroll direction from an <code class="notranslate">IntersectionObserverEntry</code>, but I don't believe there is an explicit field for that (despite the docs sort of alluding to it).</p>
+<p dir="auto">It would be nice if MDN included an example of how to do it. From what I've researched, it's possible by checking <code class="notranslate">entry.boundingClientRect.&lt;top|bottom|left|right&gt; &lt; 0</code> and <code class="notranslate">entry.isIntersecting</code>, but I don't yet have a clean reliable code to share.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/intersection_observer_api</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/intersection_observer_api/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/intersection_observer_api/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/76717f752447b6eef25bf29c12272e407ee5cb6b/hovercard" href="https://github.com/mdn/content/commit/76717f752447b6eef25bf29c12272e407ee5cb6b"><tt>76717f7</tt></a></li>
+<li>Document last modified: 2023-07-17T23:17:51.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[webrtc] usernameFragment Examples section contains method that does not exist]]></title>
             <link>https://github.com/mdn/content/issues/28171</link>
