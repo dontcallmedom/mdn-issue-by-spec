@@ -4,10 +4,27 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Wed, 26 Jul 2023 16:04:02 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 27 Jul 2023 04:54:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-position-3] Document content about “position” values "absolute" and "fixed"]]></title>
+            <link>https://github.com/mdn/content/issues/28209</link>
+            <guid>https://github.com/mdn/content/issues/28209</guid>
+            <pubDate>Thu, 27 Jul 2023 04:54:04 GMT</pubDate>
+            <content:encoded><![CDATA[<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position#values" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/position#values</a></p>
+<p dir="auto">we should understand "containing block " is different with "initial containing block"</p>
+<p dir="auto">I think "absolute" should be described "The element is positioned relative to its containing block", rather than "The element is positioned relative to its closest positioned ancestor (if any) or to the <strong>initial containing block</strong>"</p>
+<p dir="auto">especially， "fixed" should also be described like that, or <strong>"viewport（containing block）" not "initial containing block"</strong>，because its containing block is not "initial containing block", its containing block maybe viewport or with 'transform\filter...'</p>
+<p dir="auto"><strong>source document:</strong><br>
+"absolute<br>
+The element is removed from the normal document flow, and no space is created for the element in the page layout. The element is positioned relative to its closest positioned ancestor (if any) or to the initial <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#identifying_the_containing_block" rel="nofollow">containing block</a>. Its final position is determined by the values of top, right, bottom, and left.</p>
+<p dir="auto">This value creates a new <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context" rel="nofollow">stacking context</a> when the value of z-index is not auto. The margins of absolutely positioned boxes do not <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Mastering_margin_collapsing" rel="nofollow">collapse</a> with other margins.</p>
+<p dir="auto">fixed<br>
+The element is removed from the normal document flow, and no space is created for the element in the page layout. The element is positioned relative to its initial <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#identifying_the_containing_block" rel="nofollow">containing block</a>. Its final position is determined by the values of top, right, bottom, and left.</p>
+<p dir="auto">This value always creates a new <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context" rel="nofollow">stacking context</a>. In printed documents, the element is placed in the same position on every page."</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[intersection-observer] Get scroll direction from IntersectionObserverEntry]]></title>
             <link>https://github.com/mdn/content/issues/28197</link>

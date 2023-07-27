@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-position-3] Document content about “position” values "absolute" and "fixed"](https://github.com/mdn/content/issues/28209) (2023-07-27T04:54:04Z)
+  
 * [[intersection-observer] Get scroll direction from IntersectionObserverEntry](https://github.com/mdn/content/issues/28197) (2023-07-26T16:04:02Z)
   
 * [[webrtc] usernameFragment Examples section contains method that does not exist](https://github.com/mdn/content/issues/28171) (2023-07-25T13:19:31Z)
