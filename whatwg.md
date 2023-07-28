@@ -12,8 +12,6 @@
   
 * [[html] "loadstart" event not linked to from <audio>/<video> pages](https://github.com/mdn/content/issues/27820) (2023-07-07T08:09:40Z)
   
-* [[html] [HTML] Add support for `dirname` attribute](https://github.com/mdn/content/issues/27760) (2023-07-04T10:25:15Z)
-  
 * [[html] No mention of CSPs frame-ancestors.](https://github.com/mdn/content/issues/27754) (2023-07-04T09:32:52Z)
   
 * [[html] No examples for iframe usage given](https://github.com/mdn/content/issues/27753) (2023-07-04T09:28:24Z)
