@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[dom] "Event: currentTarget property" is difficult to understand](https://github.com/mdn/content/issues/28260) (2023-07-29T16:30:15Z)
+  
 * [[ecmascript, dom] createTreeWalker: Use Best Practice Example](https://github.com/mdn/content/issues/28257) (2023-07-29T14:30:22Z)
   
 * [[dom] createNodeIterator: Use Best Practice Example](https://github.com/mdn/content/issues/28256) (2023-07-29T14:30:07Z)
