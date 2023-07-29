@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[dom] createTreeWalker: Use Best Practice Example](https://github.com/mdn/content/issues/28257) (2023-07-29T14:30:22Z)
+* [[ecmascript, dom] createTreeWalker: Use Best Practice Example](https://github.com/mdn/content/issues/28257) (2023-07-29T14:30:22Z)
   
 * [[dom] createNodeIterator: Use Best Practice Example](https://github.com/mdn/content/issues/28256) (2023-07-29T14:30:07Z)
   
