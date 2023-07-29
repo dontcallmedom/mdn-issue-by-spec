@@ -2,6 +2,10 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[dom] createTreeWalker: Use Best Practice Example](https://github.com/mdn/content/issues/28257) (2023-07-29T14:30:22Z)
+  
+* [[dom] createNodeIterator: Use Best Practice Example](https://github.com/mdn/content/issues/28256) (2023-07-29T14:30:07Z)
+  
 * [[cssom-view-1, dom, uievents, pointerlock-2, fullscreen, DOM-Parsing, pointerevents3] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
   
 * [[dom] Event.preventDefault: Inaccessible example](https://github.com/mdn/content/issues/27478) (2023-06-22T14:18:14Z)
