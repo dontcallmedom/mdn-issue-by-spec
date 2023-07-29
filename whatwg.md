@@ -14,8 +14,6 @@
   
 * [[cssom-view-1, dom, uievents, pointerlock-2, fullscreen, DOM-Parsing, pointerevents3] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
   
-* [[html] "loadstart" event not linked to from <audio>/<video> pages](https://github.com/mdn/content/issues/27820) (2023-07-07T08:09:40Z)
-  
 * [[html] No mention of CSPs frame-ancestors.](https://github.com/mdn/content/issues/27754) (2023-07-04T09:32:52Z)
   
 * [[html] No examples for iframe usage given](https://github.com/mdn/content/issues/27753) (2023-07-04T09:28:24Z)
