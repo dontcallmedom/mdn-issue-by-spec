@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[ecmascript, dom] createTreeWalker: Use Best Practice Example](https://github.com/mdn/content/issues/28257) (2023-07-29T14:30:22Z)
+* [[ecmascript, dom] Rephrase assignment-as-condition Best Practice](https://github.com/mdn/content/issues/28257) (2023-07-29T14:30:22Z)
   
 * [[ecmascript] Accessing WebAssembly memory using TypedArrays is incorrect on Big Endian systems](https://github.com/mdn/content/issues/25569) (2023-03-23T12:09:31Z)
   

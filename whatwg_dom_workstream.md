@@ -4,9 +4,7 @@
 
 * [[dom] "Event: currentTarget property" is difficult to understand](https://github.com/mdn/content/issues/28260) (2023-07-29T16:30:15Z)
   
-* [[ecmascript, dom] createTreeWalker: Use Best Practice Example](https://github.com/mdn/content/issues/28257) (2023-07-29T14:30:22Z)
-  
-* [[dom] createNodeIterator: Use Best Practice Example](https://github.com/mdn/content/issues/28256) (2023-07-29T14:30:07Z)
+* [[ecmascript, dom] Rephrase assignment-as-condition Best Practice](https://github.com/mdn/content/issues/28257) (2023-07-29T14:30:22Z)
   
 * [[cssom-view-1, dom, uievents, pointerlock-2, fullscreen, DOM-Parsing, pointerevents3] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
   
