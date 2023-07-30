@@ -32,9 +32,16 @@
   世界！<span class="pl-kos">&lt;/</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>
 <span class="pl-kos">&lt;</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>你好 世界！<span class="pl-kos">&lt;/</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span></pre></div>
 </li>
+<li>
+<p dir="auto">In the same subsection, Step 5 is incorrect:</p>
+<blockquote>
+<p dir="auto">And finally, sequences of spaces at the beginning and end of an element are removed[…]</p>
+</blockquote>
+<p dir="auto">In <a href="https://drafts.csswg.org/css-text/#white-space-phase-2" rel="nofollow">4.1.2. Phase II: Trimming and Positioning</a>, Step 1 and 3 shows that spaces are removed not because they're at the start or end of a (block-level) element, but because they appear at the start or end of a line during layout.</p>
+</li>
 </ol>
 <p dir="auto"><strong>Structual issues:</strong></p>
-<ol start="2" dir="auto">
+<ol start="3" dir="auto">
 <li>
 <p dir="auto">The <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Whitespace#how_does_css_process_whitespace" rel="nofollow">How does CSS process whitespace?</a> subsection may use a more consistent heading with the subsections that follow, e.g. "Whitespaces in inline formatting contexts", since all the subsections in this section deal with whitespaces in CSS.</p>
 </li>
@@ -46,13 +53,13 @@
 <div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;h1&gt;你好
   世界！&lt;/h1&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>你好
   世界！<span class="pl-kos">&lt;/</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span></pre></div>
-<p dir="auto">the rendered text is <code class="notranslate">你好世界！</code>, while <code class="notranslate">getSelection().toString()</code> returns <code class="notranslate">你好 世界！</code>, which is also what gets copied by <kbd>Ctrl</kbd> + <kbd>C</kbd> on Firefox on Windows (note that the tab is transformed into a space), and <code class="notranslate">getSelection().getRangeAt(0).toString()</code> returns <code class="notranslate">你好\n\t世界！</code>.</p>
+<p dir="auto">the rendered text is <code class="notranslate">你好世界！</code>. But when selecting all the visible texts, e.g. pressing <kbd>Ctrl</kbd> + <kbd>A</kbd> on the page on Windows, <code class="notranslate">getSelection().toString()</code> returns <code class="notranslate">你好 世界！</code>, which is also what gets copied by <kbd>Ctrl</kbd> + <kbd>C</kbd> on Firefox on Windows (note that the tab is transformed into a space), whereas <code class="notranslate">getSelection().getRangeAt(0).toString()</code> returns <code class="notranslate">你好\n\t世界！</code>.</p>
 </li>
 </ol>
 <h3 dir="auto">What did you expect to see?</h3>
 <ol dir="auto">
 <li>The factual error be corrected.</li>
-<li>Split the CSS-related content on this page into a new guide page under CSS. <strong>Note:</strong> Most technical details are already covered by the new <code class="notranslate">white-space-collapse</code> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/white-space-collapse" rel="nofollow">page</a>, so only the guide content needs porting to a new page.</li>
+<li>Split the CSS-related content on this page into a new guide page under CSS. <strong>Note:</strong> Most technical details are already covered by the new <code class="notranslate">white-space-collapse</code> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/white-space-collapse#collapsing_of_white_space" rel="nofollow">page</a>, so only the guide content needs porting to a new page.</li>
 <li>Add a section about whitespace on the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Selection" rel="nofollow">page</a> of the Selection API.</li>
 <li>Crossref these whitespace sections with each other.</li>
 </ol>
