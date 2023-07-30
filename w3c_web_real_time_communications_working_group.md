@@ -18,5 +18,3 @@
   
 * [[mediacapture-streams] Issue with "MediaStreamTrack: ended event": note that this event is not fired when the user calls .stop() on the track](https://github.com/mdn/content/issues/4939) (2021-05-12T10:02:23Z)
   
-* [[webrtc] icecandidate_event update the meaning of null candidate](https://github.com/mdn/content/issues/2450) (2019-11-24T10:21:05Z)
-  

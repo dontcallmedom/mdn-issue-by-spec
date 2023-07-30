@@ -271,22 +271,5 @@ Also available using the onended event handler property.</p>
 </ul>
 </details>]]></content:encoded>
         </item>
-        <item>
-            <title><![CDATA[[webrtc] icecandidate_event update the meaning of null candidate]]></title>
-            <link>https://github.com/mdn/content/issues/2450</link>
-            <guid>https://github.com/mdn/content/issues/2450</guid>
-            <pubDate>Sun, 24 Nov 2019 10:21:05 GMT</pubDate>
-            <content:encoded><![CDATA[<h1 dir="auto">Request type</h1>
-
-<ul class="contains-task-list">
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> New documentation</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Correction or update</li>
-</ul>
-<h1 dir="auto">Details</h1>
-<p dir="auto">See <a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/icecandidate_event" rel="nofollow">icecandidate event</a>.</p>
-<p dir="auto">The code sample in "Sharing a new candidate" checks if event.candidate is truthy before delivering it to the remote peer. "Indicating the end of a generation of candidates" says that events where <code class="notranslate">event.candidate == ""</code> should be delivered, but <a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy" rel="nofollow">the empty string is falsy</a> in JavaScript and this signal would not be delivered. "Indicating that ICE gathering is complete" says that events where <code class="notranslate">event.complete == null</code> should not be delivered but then refers to the <code class="notranslate">event.candidate == true</code> test.</p>
-<p dir="auto">There is clearly a nuance here that I'm missing, but in any case this may need to be clarified. An uninformed reader would form the conclusion that actually a <code class="notranslate">event.complete != null</code> test is needed.</p>
-<p dir="auto">There's also mixed references to RTCPeerConnectionIceEvent (bluelinked) and RTCPeerIceCandidateEvent (redlinked), not sure if that's intentional.</p>]]></content:encoded>
-        </item>
     </channel>
 </rss>

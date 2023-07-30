@@ -276,5 +276,3 @@
   
 * [[webaudio] Visualization for OscillatorNode](https://github.com/mdn/content/issues/1296) (2021-01-14T10:42:13Z)
   
-* [[webrtc] icecandidate_event update the meaning of null candidate](https://github.com/mdn/content/issues/2450) (2019-11-24T10:21:05Z)
-  

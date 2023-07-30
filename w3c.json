@@ -1514,17 +1514,6 @@
                 "name": "chrisdavidmills",
                 "url": "https://github.com/chrisdavidmills"
             }
-        },
-        {
-            "id": "https://github.com/mdn/content/issues/2450",
-            "content_html": "<h1 dir=\"auto\">Request type</h1>\n\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> New documentation</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Correction or update</li>\n</ul>\n<h1 dir=\"auto\">Details</h1>\n<p dir=\"auto\">See <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/icecandidate_event\" rel=\"nofollow\">icecandidate event</a>.</p>\n<p dir=\"auto\">The code sample in \"Sharing a new candidate\" checks if event.candidate is truthy before delivering it to the remote peer. \"Indicating the end of a generation of candidates\" says that events where <code class=\"notranslate\">event.candidate == \"\"</code> should be delivered, but <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/Falsy\" rel=\"nofollow\">the empty string is falsy</a> in JavaScript and this signal would not be delivered. \"Indicating that ICE gathering is complete\" says that events where <code class=\"notranslate\">event.complete == null</code> should not be delivered but then refers to the <code class=\"notranslate\">event.candidate == true</code> test.</p>\n<p dir=\"auto\">There is clearly a nuance here that I'm missing, but in any case this may need to be clarified. An uninformed reader would form the conclusion that actually a <code class=\"notranslate\">event.complete != null</code> test is needed.</p>\n<p dir=\"auto\">There's also mixed references to RTCPeerConnectionIceEvent (bluelinked) and RTCPeerIceCandidateEvent (redlinked), not sure if that's intentional.</p>",
-            "url": "https://github.com/mdn/content/issues/2450",
-            "title": "[webrtc] icecandidate_event update the meaning of null candidate",
-            "date_modified": "2019-11-24T10:21:05.000Z",
-            "author": {
-                "name": "bardiharborow",
-                "url": "https://github.com/bardiharborow"
-            }
         }
     ]
 }
