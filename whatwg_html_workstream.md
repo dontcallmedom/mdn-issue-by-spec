@@ -8,8 +8,6 @@
   
 * [[html] Explain how to put dialog elements in the top layer](https://github.com/mdn/content/issues/27912) (2023-07-13T04:28:06Z)
   
-* [[html] No mention of CSPs frame-ancestors.](https://github.com/mdn/content/issues/27754) (2023-07-04T09:32:52Z)
-  
 * [[html] No examples for iframe usage given](https://github.com/mdn/content/issues/27753) (2023-07-04T09:28:24Z)
   
 * [[html] srcdocs page does not include anchor tags caveat](https://github.com/mdn/content/issues/27630) (2023-06-28T16:31:51Z)
