@@ -4,10 +4,36 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Sat, 29 Jul 2023 16:30:15 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 31 Jul 2023 10:17:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Issue with "title": "Hovering here will show nothing." shows something when hovering]]></title>
+            <link>https://github.com/mdn/content/issues/28297</link>
+            <guid>https://github.com/mdn/content/issues/28297</guid>
+            <pubDate>Mon, 31 Jul 2023 10:17:36 GMT</pubDate>
+            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title</a></p>
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">In the results there are two &lt;p&gt;. one with an empty title and one with a specified title attribute. hovering over the second one (the one with the empty title) should show nothing but it shows in an title "title attribute inheritance sample" (it generally shows that in the whole result container, not the second &lt;p&gt; perse, its still very confusing and distracting.)</p>
+<h4 dir="auto">Specific section or headline?</h4>
+<p dir="auto"><a href="https://mdn1.moz.one/en-US/docs/Web/HTML/Global_attributes/title#title_attribute_inheritance" rel="nofollow">Title attribute inheritance</a> &gt; Result</p>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">Nothing</p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+<p dir="auto">Refreshing site and using different browser, chrome works as it should, firefox v114 &amp; v117 ironically not</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/global_attributes/title</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/style/old/files/en-us/web/html/global_attributes/title/index.md">https://github.com/mdn/content/blob/style/old/files/en-us/web/html/global_attributes/title/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/426485595b1be50e2af91764fbfd94c04c3c36a5/hovercard" href="https://github.com/mdn/content/commit/426485595b1be50e2af91764fbfd94c04c3c36a5"><tt>4264855</tt></a></li>
+<li>Document last modified: 2022-02-18T11:38:26.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[dom] "Event: currentTarget property" is difficult to understand]]></title>
             <link>https://github.com/mdn/content/issues/28260</link>

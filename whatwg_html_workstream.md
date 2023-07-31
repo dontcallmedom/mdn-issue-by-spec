@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Issue with "title": "Hovering here will show nothing." shows something when hovering](https://github.com/mdn/content/issues/28297) (2023-07-31T10:17:36Z)
+  
 * [[html, uievents] Note contextmenu, click, and auxclick are PointerEvents though Firefox and Safari don't follow the standard](https://github.com/mdn/content/issues/27929) (2023-07-13T19:52:34Z)
   
 * [[html] Suggestions to improve the Top Layer page: add examples, specify browser support, and clarify information](https://github.com/mdn/content/issues/27914) (2023-07-13T04:40:07Z)
