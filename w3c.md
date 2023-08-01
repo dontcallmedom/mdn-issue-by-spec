@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[WebIDL-1] Deprecated: should be listed as deprecated in the sidebar](https://github.com/mdn/content/issues/28327) (2023-08-01T17:30:31Z)
-  
 * [[css-writing-modes-4] More differences between HTML dir and CSS direction](https://github.com/mdn/content/issues/28320) (2023-08-01T12:10:15Z)
   
 * [[selection-api] Correct and split "How whitespace is handled by HTML, CSS, and in the DOM"](https://github.com/mdn/content/issues/28268) (2023-07-30T09:11:04Z)
