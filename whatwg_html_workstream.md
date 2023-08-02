@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Example given on <em> page contradicts guidance on when to use the tag](https://github.com/mdn/content/issues/28337) (2023-08-02T06:47:10Z)
+  
 * [[html] Issue with "title": "Hovering here will show nothing." shows something when hovering](https://github.com/mdn/content/issues/28297) (2023-07-31T10:17:36Z)
   
 * [[html, uievents] Note contextmenu, click, and auxclick are PointerEvents though Firefox and Safari don't follow the standard](https://github.com/mdn/content/issues/27929) (2023-07-13T19:52:34Z)

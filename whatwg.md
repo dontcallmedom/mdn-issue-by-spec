@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Example given on <em> page contradicts guidance on when to use the tag](https://github.com/mdn/content/issues/28337) (2023-08-02T06:47:10Z)
+  
 * [[html] Issue with "title": "Hovering here will show nothing." shows something when hovering](https://github.com/mdn/content/issues/28297) (2023-07-31T10:17:36Z)
   
 * [[dom] "Event: currentTarget property" is difficult to understand](https://github.com/mdn/content/issues/28260) (2023-07-29T16:30:15Z)
