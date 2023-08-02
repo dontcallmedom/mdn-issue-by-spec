@@ -4,49 +4,10 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Wed, 02 Aug 2023 07:59:33 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 01 Aug 2023 12:10:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[web-locks] LockManager request return type information inconsistent]]></title>
-            <link>https://github.com/mdn/content/issues/28339</link>
-            <guid>https://github.com/mdn/content/issues/28339</guid>
-            <pubDate>Wed, 02 Aug 2023 07:59:33 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/LockManager/request" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/LockManager/request</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Return value</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">It is not clear, whether the <code class="notranslate">request()</code> method returns</p>
-<blockquote>
-<p dir="auto">a Promise that resolves with undefined</p>
-</blockquote>
-<p dir="auto">as stated in the first paragraph, or</p>
-<blockquote>
-<p dir="auto">A Promise that resolves (or rejects) with the result of the callback after the lock is released, or rejects if the request is aborted.</p>
-</blockquote>
-<p dir="auto">as stated in the Return value section.</p>
-<p dir="auto">According to my testing, Chrome 115 has it implemented the other way. But for example <a href="https://www.npmjs.com/package/@types/web-locks-api" rel="nofollow">https://www.npmjs.com/package/@types/web-locks-api</a> has it typed the undefined way. I am not sure, what the expected behavior is.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Consistent information about the return type. I would edit the page myself but I am not sure what the intended behavior actually is.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/lockmanager/request</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/LockManager/request" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/LockManager/request</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/lockmanager/request/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/lockmanager/request/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc/hovercard" href="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc"><tt>acfe8c9</tt></a></li>
-<li>Document last modified: 2023-07-07T07:19:19.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[css-writing-modes-4] More differences between HTML dir and CSS direction]]></title>
             <link>https://github.com/mdn/content/issues/28320</link>
