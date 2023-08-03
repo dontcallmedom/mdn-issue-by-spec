@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Create a `form` attribute page](https://github.com/mdn/content/issues/28375) (2023-08-03T18:28:41Z)
+  
 * [[html] Table height attribute](https://github.com/mdn/content/issues/28346) (2023-08-02T16:41:44Z)
   
 * [[html] Example given on <em> page contradicts guidance on when to use the tag](https://github.com/mdn/content/issues/28337) (2023-08-02T06:47:10Z)
