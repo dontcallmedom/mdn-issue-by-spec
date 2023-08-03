@@ -32,8 +32,6 @@
   
 * [[html] sizes attribute has a default](https://github.com/mdn/content/issues/27291) (2023-06-12T21:33:46Z)
   
-* [[html] Different info about DOMContentLoaded event on Window and Document object](https://github.com/mdn/content/issues/27197) (2023-06-07T10:42:58Z)
-  
 * [[dom] no mention what the default is for ShadowRoot mode](https://github.com/mdn/content/issues/27110) (2023-06-02T09:06:55Z)
   
 * [[html] <source media> in media elements is allowed again (spec change)](https://github.com/mdn/content/issues/27079) (2023-05-31T18:43:51Z)
@@ -125,8 +123,6 @@
 * [[html, cssom-view-1] [GEH] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
   
 * [[html] spellcheck attribute example does not work](https://github.com/mdn/content/issues/19285) (2022-08-08T12:02:51Z)
-  
-* [[html] Incorrect information on 'DomContentLoaded_event' page](https://github.com/mdn/content/issues/19269) (2022-08-08T03:59:52Z)
   
 * [[html] Need more info on 'permitted parents'](https://github.com/mdn/content/issues/18609) (2022-07-21T19:29:05Z)
   
