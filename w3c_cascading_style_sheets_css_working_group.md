@@ -4,8 +4,6 @@
 
 * [[css-writing-modes-4] More differences between HTML dir and CSS direction](https://github.com/mdn/content/issues/28320) (2023-08-01T12:10:15Z)
   
-* [[css-position-3] Document content about “position” values "absolute" and "fixed"](https://github.com/mdn/content/issues/28209) (2023-07-27T04:54:04Z)
-  
 * [[css-typed-om-2] CSSMathNegate() constructor page is a stub](https://github.com/mdn/content/issues/28118) (2023-07-22T02:25:00Z)
   
 * [[cssom-view-1] Window.innerWidth: does it include the scrollbar?](https://github.com/mdn/content/issues/27887) (2023-07-11T17:21:56Z)
