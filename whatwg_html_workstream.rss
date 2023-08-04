@@ -4,10 +4,52 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Thu, 03 Aug 2023 18:28:41 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 04 Aug 2023 18:47:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Example given on blockquote page is incorrect according to the HTML spec]]></title>
+            <link>https://github.com/mdn/content/issues/28401</link>
+            <guid>https://github.com/mdn/content/issues/28401</guid>
+            <pubDate>Fri, 04 Aug 2023 18:47:11 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Try it</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The example given places the attribution for the quotation inside <code class="notranslate">blockquote</code> element, which incorrect according to the HTML specification.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The example should place the quotation attribution outside the <code class="notranslate">blockquote</code> element, eg. in <code class="notranslate">figcaption</code> element:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;figure&gt;
+  &lt;blockquote cite=&quot;https://www.huxley.net/bnw/four.html&quot;&gt;
+    &lt;p&gt;Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;figcaption&gt;—Aldous Huxley, &lt;cite&gt;Brave New World&lt;/cite&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;"><pre class="notranslate"><code class="notranslate">&lt;figure&gt;
+  &lt;blockquote cite="https://www.huxley.net/bnw/four.html"&gt;
+    &lt;p&gt;Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;figcaption&gt;—Aldous Huxley, &lt;cite&gt;Brave New World&lt;/cite&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre></div>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">The HTML specification (<a href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element" rel="nofollow">https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element</a>) states: “Attribution for the quotation, if any, must be placed outside the <code class="notranslate">blockquote</code> element.”</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/element/blockquote</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/blockquote/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/blockquote/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e04d8d2766c468f149445c0bf438d09f9b2d188c/hovercard" href="https://github.com/mdn/content/commit/e04d8d2766c468f149445c0bf438d09f9b2d188c"><tt>e04d8d2</tt></a></li>
+<li>Document last modified: 2023-06-13T08:10:47.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Create a `form` attribute page]]></title>
             <link>https://github.com/mdn/content/issues/28375</link>
