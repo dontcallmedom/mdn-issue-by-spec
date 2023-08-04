@@ -4,10 +4,48 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Thu, 03 Aug 2023 18:28:41 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 04 Aug 2023 15:48:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html, selection-api] Strange behavior of getSelection]]></title>
+            <link>https://github.com/mdn/content/issues/28396</link>
+            <guid>https://github.com/mdn/content/issues/28396</guid>
+            <pubDate>Fri, 04 Aug 2023 15:48:32 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/getSelection" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/getSelection</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Section "Related objects" at bottom of page</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto">It is worth noting that currently getSelection() doesn't work on the content of <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea" rel="nofollow">&lt;textarea&gt;</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" rel="nofollow"></a> elements in Firefox and Edge (Legacy).</p>
+</blockquote>
+<p dir="auto">Is this a Firefox feature or is it a bug? If it's a bug, why has it not been fixed after all these years?</p>
+<p dir="auto"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=85686" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=85686</a></p>
+<p dir="auto">The incorrect information is that Edge also shares this bug. If it was true in the past, it is no longer true. I have tested Chrome, Safari, Edge, and Opera, and none of them exhibit this behavior, only Firefox.</p>
+<p dir="auto"><a href="https://jsfiddle.net/AVLCY/1/" rel="nofollow">https://jsfiddle.net/AVLCY/1/</a></p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I expect that this bug be fixed and that this whole paragraph be removed!</p>
+<p dir="auto">If a selection exists, I expect that <code class="notranslate">window.getSelection()</code> returns this selection no matter the element type. Otherwise, the method should be called <code class="notranslate">getSelectionExceptForFormElements</code> ;-)</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=85686" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=85686</a><br>
+<a href="https://jsfiddle.net/AVLCY/1/" rel="nofollow">https://jsfiddle.net/AVLCY/1/</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/window/getselection</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/getSelection" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/getSelection</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/getselection/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/getselection/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cc070123f72376faec06e36622c4fc723a75325f/hovercard" href="https://github.com/mdn/content/commit/cc070123f72376faec06e36622c4fc723a75325f"><tt>cc07012</tt></a></li>
+<li>Document last modified: 2023-04-08T06:57:07.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Create a `form` attribute page]]></title>
             <link>https://github.com/mdn/content/issues/28375</link>
