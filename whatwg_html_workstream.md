@@ -46,8 +46,6 @@
   
 * [[html] Missing documentation of methods and properties of `HTMLOptionsCollections`](https://github.com/mdn/content/issues/25190) (2023-03-09T02:30:04Z)
   
-* [[html] Missing HTMLAllCollection](https://github.com/mdn/content/issues/25178) (2023-03-08T14:43:46Z)
-  
 * [[html] A srcset example contradicts instructions](https://github.com/mdn/content/issues/25150) (2023-03-07T21:00:37Z)
   
 * [[html] event doesnt fire on fully cached pages (no event appears to)](https://github.com/mdn/content/issues/24770) (2023-02-22T21:34:14Z)
