@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Khronos Group WebGL Working Group. [![RSS feed for Khronos Group WebGL Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[webgl2, webgl1] vertexAttribPointer() type only accepts floating point types](https://github.com/mdn/content/issues/28425) (2023-08-06T23:42:13Z)
+  
 * [[webgl2] srcOffset and srcLength not documented for WebGL2RenderingContext.uniform](https://github.com/mdn/content/issues/20225) (2022-09-02T00:42:19Z)
   
 * [[webgl2] WebGL2RenderingContext»texSubImage3D page: List of valid "format" parameter values does not match WebGL2 spec](https://github.com/mdn/content/issues/19610) (2022-08-16T03:37:51Z)

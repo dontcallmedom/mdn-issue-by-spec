@@ -4,10 +4,40 @@
         <title>Khronos Group WebGL Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/khronos_group_webgl_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Khronos Group WebGL Working Group</description>
-        <lastBuildDate>Fri, 02 Sep 2022 00:42:19 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 06 Aug 2023 23:42:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[webgl2, webgl1] vertexAttribPointer() type only accepts floating point types]]></title>
+            <link>https://github.com/mdn/content/issues/28425</link>
+            <guid>https://github.com/mdn/content/issues/28425</guid>
+            <pubDate>Sun, 06 Aug 2023 23:42:13 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer#parameters" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer#parameters</a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">I tried using <code class="notranslate">gl.UNSIGNED_INT</code> but kept getting <code class="notranslate">WebGL warning: drawArraysInstanced: Vertex attrib 0 requires data of type UINT, but is being supplied with type FLOAT.</code> errors.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Turns out I have to use <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/vertexAttribIPointer" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/vertexAttribIPointer</a> instead for integer types.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://stackoverflow.com/a/17261259/866521" rel="nofollow">https://stackoverflow.com/a/17261259/866521</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/webglrenderingcontext/vertexattribpointer</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webglrenderingcontext/vertexattribpointer/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/webglrenderingcontext/vertexattribpointer/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/eda49877b9078b24cd18f794470e5e225add9b94/hovercard" href="https://github.com/mdn/content/commit/eda49877b9078b24cd18f794470e5e225add9b94"><tt>eda4987</tt></a></li>
+<li>Document last modified: 2023-04-08T06:46:30.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[webgl2] srcOffset and srcLength not documented for WebGL2RenderingContext.uniform]]></title>
             <link>https://github.com/mdn/content/issues/20225</link>
