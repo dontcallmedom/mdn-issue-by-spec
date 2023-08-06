@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-logical-1] @page has conflicting content](https://github.com/mdn/content/issues/28423) (2023-08-06T20:39:39Z)
+  
 * [[css-writing-modes-4] More differences between HTML dir and CSS direction](https://github.com/mdn/content/issues/28320) (2023-08-01T12:10:15Z)
   
 * [[css-typed-om-2] CSSMathNegate() constructor page is a stub](https://github.com/mdn/content/issues/28118) (2023-07-22T02:25:00Z)
