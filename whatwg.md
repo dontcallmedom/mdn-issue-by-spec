@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] value attribute of <select> not mentioned](https://github.com/mdn/content/issues/28418) (2023-08-06T08:23:16Z)
+  
 * [[html] Example given on blockquote page is incorrect according to the HTML spec](https://github.com/mdn/content/issues/28401) (2023-08-04T18:47:11Z)
   
 * [[html] Create a `form` attribute page](https://github.com/mdn/content/issues/28375) (2023-08-03T18:28:41Z)
