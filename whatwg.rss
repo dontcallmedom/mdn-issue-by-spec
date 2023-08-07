@@ -320,39 +320,43 @@ Maybe that's too much to ask :)</p>
 <p dir="auto">Examples</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The example shows:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="let currentNode;
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="let currentNode;
 while ((currentNode = treeWalker.nextNode())) {
   currentNode.data = currentNode.data.toUpperCase();
-}"><pre class="notranslate"><span class="pl-k">let</span> <span class="pl-s1">currentNode</span><span class="pl-kos">;</span>
-<span class="pl-k">while</span> <span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">currentNode</span> <span class="pl-c1">=</span> <span class="pl-s1">treeWalker</span><span class="pl-kos">.</span><span class="pl-en">nextNode</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-  <span class="pl-s1">currentNode</span><span class="pl-kos">.</span><span class="pl-c1">data</span> <span class="pl-c1">=</span> <span class="pl-s1">currentNode</span><span class="pl-kos">.</span><span class="pl-c1">data</span><span class="pl-kos">.</span><span class="pl-en">toUpperCase</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span></pre></div>
+}"><pre lang="js" class="notranslate"><code class="notranslate">let currentNode;
+while ((currentNode = treeWalker.nextNode())) {
+  currentNode.data = currentNode.data.toUpperCase();
+}
+</code></pre></div>
 <p dir="auto">Also ...</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="while ((currentTextNode = textTreeWalker.nextNode())) {
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="while ((currentTextNode = textTreeWalker.nextNode())) {
   currentTextNode.data = encodeURI(currentTextNode.data.replace(/\s+/g, &quot; &quot;));
-}"><pre class="notranslate"><span class="pl-k">while</span> <span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">currentTextNode</span> <span class="pl-c1">=</span> <span class="pl-s1">textTreeWalker</span><span class="pl-kos">.</span><span class="pl-en">nextNode</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-  <span class="pl-s1">currentTextNode</span><span class="pl-kos">.</span><span class="pl-c1">data</span> <span class="pl-c1">=</span> <span class="pl-en">encodeURI</span><span class="pl-kos">(</span><span class="pl-s1">currentTextNode</span><span class="pl-kos">.</span><span class="pl-c1">data</span><span class="pl-kos">.</span><span class="pl-en">replace</span><span class="pl-kos">(</span><span class="pl-pds"><span class="pl-c1">/</span><span class="pl-cce">\s</span><span class="pl-c1">+</span><span class="pl-c1">/</span>g</span><span class="pl-kos">,</span> <span class="pl-s">" "</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span></pre></div>
+}"><pre lang="js" class="notranslate"><code class="notranslate">while ((currentTextNode = textTreeWalker.nextNode())) {
+  currentTextNode.data = encodeURI(currentTextNode.data.replace(/\s+/g, " "));
+}
+</code></pre></div>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">It would be worthwhile to use the best practice in the above example as shown in the following section i.e.</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="while ((currentNode = treeWalker.nextNode()) !== null) {
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="while ((currentNode = treeWalker.nextNode()) !== null) {
   // ...
-}"><pre class="notranslate"><span class="pl-k">while</span> <span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">currentNode</span> <span class="pl-c1">=</span> <span class="pl-s1">treeWalker</span><span class="pl-kos">.</span><span class="pl-en">nextNode</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-c1">!==</span> <span class="pl-c1">null</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-  <span class="pl-c">// ...</span>
-<span class="pl-kos">}</span></pre></div>
+}"><pre lang="js" class="notranslate"><code class="notranslate">while ((currentNode = treeWalker.nextNode()) !== null) {
+  // ...
+}
+</code></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <blockquote>
 <p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while#using_an_assignment_as_a_condition" rel="nofollow">while: Using an assignment as a condition</a></p>
 <p dir="auto">But the real best practice is to go a step further and make the code even more clear — by adding a comparison operator to turn the condition into an explicit comparison:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const iterator = document.createNodeIterator(document, NodeFilter.SHOW_COMMENT);
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const iterator = document.createNodeIterator(document, NodeFilter.SHOW_COMMENT);
 let currentNode;
 while ((currentNode = iterator.nextNode()) !== null) {
   console.log(currentNode.textContent.trim());
-}"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">iterator</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createNodeIterator</span><span class="pl-kos">(</span><span class="pl-smi">document</span><span class="pl-kos">,</span> <span class="pl-v">NodeFilter</span><span class="pl-kos">.</span><span class="pl-c1">SHOW_COMMENT</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-k">let</span> <span class="pl-s1">currentNode</span><span class="pl-kos">;</span>
-<span class="pl-k">while</span> <span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">currentNode</span> <span class="pl-c1">=</span> <span class="pl-s1">iterator</span><span class="pl-kos">.</span><span class="pl-en">nextNode</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-c1">!==</span> <span class="pl-c1">null</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">currentNode</span><span class="pl-kos">.</span><span class="pl-c1">textContent</span><span class="pl-kos">.</span><span class="pl-en">trim</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span></pre></div>
+}"><pre lang="js" class="notranslate"><code class="notranslate">const iterator = document.createNodeIterator(document, NodeFilter.SHOW_COMMENT);
+let currentNode;
+while ((currentNode = iterator.nextNode()) !== null) {
+  console.log(currentNode.textContent.trim());
+}
+</code></pre></div>
 </blockquote>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>]]></content:encoded>
@@ -554,11 +558,13 @@ while ((currentNode = iterator.nextNode()) !== null) {
 <p dir="auto">General</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">Using an iframe with a srcdoc that includes an anchor tag, such as:</p>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;iframe srcdoc=&quot;&lt;html&gt;&lt;a href='#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;&quot;&gt;&lt;/iframe&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">iframe</span> <span class="pl-c1">srcdoc</span>="<span class="pl-s">&lt;html&gt;&lt;a href='#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">iframe</span><span class="pl-kos">&gt;</span></pre></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;iframe srcdoc=&quot;&lt;html&gt;&lt;a href='#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;&quot;&gt;&lt;/iframe&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;iframe srcdoc="&lt;html&gt;&lt;a href='#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;"&gt;&lt;/iframe&gt;
+</code></pre></div>
 <p dir="auto">Will not work, as the anchor tag should start with <code class="notranslate">about:srcdoc</code></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">Should give some info or warning that if one chooses to use srcdoc, they would need to use another method of rendering anchor links. Using simply <code class="notranslate">#tag</code> will redirect the whole iframe to another location, (and likely have a XSS error)</p>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;iframe srcdoc=&quot;&lt;html&gt;&lt;a href='about:srcdoc#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;&quot;&gt;&lt;/iframe&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">iframe</span> <span class="pl-c1">srcdoc</span>="<span class="pl-s">&lt;html&gt;&lt;a href='about:srcdoc#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">iframe</span><span class="pl-kos">&gt;</span></pre></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;iframe srcdoc=&quot;&lt;html&gt;&lt;a href='about:srcdoc#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;&quot;&gt;&lt;/iframe&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;iframe srcdoc="&lt;html&gt;&lt;a href='about:srcdoc#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;"&gt;&lt;/iframe&gt;
+</code></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><a href="https://stackoverflow.com/questions/42475012/how-to-make-href-anchors-in-iframe-srcdoc-actually-work" rel="nofollow">https://stackoverflow.com/questions/42475012/how-to-make-href-anchors-in-iframe-srcdoc-actually-work</a></p>
 <p dir="auto"><a href="https://en.wikipedia.org/wiki/About_URI_scheme#Standardization" rel="nofollow">https://en.wikipedia.org/wiki/About_URI_scheme#Standardization</a></p>
