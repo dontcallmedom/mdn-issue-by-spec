@@ -6,7 +6,7 @@
   
 * [[ecmascript, dom] Rephrase assignment-as-condition Best Practice](https://github.com/mdn/content/issues/28257) (2023-07-29T14:30:22Z)
   
-* [[cssom-view-1, dom, uievents, pointerlock-2, fullscreen, DOM-Parsing, pointerevents3] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
+* [[cssom-view-1, dom, uievents, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
   
 * [[dom] Event.preventDefault: Inaccessible example](https://github.com/mdn/content/issues/27478) (2023-06-22T14:18:14Z)
   
@@ -31,6 +31,8 @@
 * [[dom] Issue with "AbortController": (missing info on behavior of .text() or .json() or other body promise)](https://github.com/mdn/content/issues/12387) (2022-01-24T16:10:11Z)
   
 * [[dom] Issue with "Document.getElementById()": link to xml:id doesn't include expected source snippet](https://github.com/mdn/content/issues/9777) (2021-10-13T19:50:56Z)
+  
+* [[notifications, cssom-view-1, service-workers-1, dom, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
 * [[html, cssom-view-1, dom, WebIDL-1, FileAPI, uievents, pointerlock-2] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   

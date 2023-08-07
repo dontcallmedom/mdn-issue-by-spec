@@ -8,7 +8,7 @@
   
 * [[html, uievents] Note contextmenu, click, and auxclick are PointerEvents though Firefox and Safari don't follow the standard](https://github.com/mdn/content/issues/27929) (2023-07-13T19:52:34Z)
   
-* [[cssom-view-1, dom, uievents, pointerlock-2, fullscreen, DOM-Parsing, pointerevents3] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
+* [[cssom-view-1, dom, uievents, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
   
 * [[push-api] Missing properties on PushSubscription#toJSON](https://github.com/mdn/content/issues/27676) (2023-06-30T13:43:33Z)
   

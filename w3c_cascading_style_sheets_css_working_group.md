@@ -10,7 +10,7 @@
   
 * [[cssom-view-1] Window.innerWidth: does it include the scrollbar?](https://github.com/mdn/content/issues/27887) (2023-07-11T17:21:56Z)
   
-* [[cssom-view-1, dom, uievents, pointerlock-2, fullscreen, DOM-Parsing, pointerevents3] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
+* [[cssom-view-1, dom, uievents, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
   
 * [[css-lists-3, css-counter-styles-3] List-style-type needs a pointer to Ready-made Counter Styles](https://github.com/mdn/content/issues/27539) (2023-06-25T06:25:39Z)
   
@@ -109,6 +109,8 @@
 * [[css-fonts-5] Issue with "@font-face/font-weight": Document <font-weight-absolute>{2} ](https://github.com/mdn/content/issues/10910) (2021-12-01T18:54:16Z)
   
 * [[mediaqueries-4, css-conditional-3] Issue with "@media": Need more clarity re Level 4 v Level 3, browser compat, and broken links](https://github.com/mdn/content/issues/10774) (2021-11-25T20:39:58Z)
+  
+* [[notifications, cssom-view-1, service-workers-1, dom, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
 * [[SVG11, css-masking-1] Deprecated Property on Documentation for SVG clipPath Element](https://github.com/mdn/content/issues/7653) (2021-08-06T09:44:12Z)
   

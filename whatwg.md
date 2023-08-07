@@ -24,7 +24,7 @@
   
 * [[html] Explain how to put dialog elements in the top layer](https://github.com/mdn/content/issues/27912) (2023-07-13T04:28:06Z)
   
-* [[cssom-view-1, dom, uievents, pointerlock-2, fullscreen, DOM-Parsing, pointerevents3] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
+* [[cssom-view-1, dom, uievents, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
   
 * [[html] No examples for iframe usage given](https://github.com/mdn/content/issues/27753) (2023-07-04T09:28:24Z)
   
@@ -175,6 +175,8 @@
 * [[html] Content suggestion: WebSocket.readyState enum properties WebSocket.OPEN, WebSocket.CLOSING, etc](https://github.com/mdn/content/issues/9156) (2021-09-21T22:32:24Z)
   
 * [[html] Content suggestion: Add one-liner to former WindowOrWorkerGlobalScope methods](https://github.com/mdn/content/issues/8979) (2021-09-16T10:44:51Z)
+  
+* [[notifications, cssom-view-1, service-workers-1, dom, pointerevents3] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
 * [[html] Issue with "Location": does not mention IDN domain names at all](https://github.com/mdn/content/issues/8895) (2021-09-13T22:55:17Z)
   
