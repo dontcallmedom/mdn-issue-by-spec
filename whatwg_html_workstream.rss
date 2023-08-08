@@ -4,10 +4,59 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Sun, 06 Aug 2023 08:23:16 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 08 Aug 2023 09:37:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Implicit role for `<summary>` element]]></title>
+            <link>https://github.com/mdn/content/issues/28446</link>
+            <guid>https://github.com/mdn/content/issues/28446</guid>
+            <pubDate>Tue, 08 Aug 2023 09:37:51 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary#technical_summary" rel="nofollow">Technical summary</a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The implicit ARIA role for the <code class="notranslate">&lt;summary&gt;</code> element is <code class="notranslate">button</code></p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I don't know, the spec says that the implicit role is supposed to be <code class="notranslate">generic</code> but that many browsers use <code class="notranslate">button</code> instead. But chrome uses <code class="notranslate">generic</code> and firefox uses <code class="notranslate">summary</code>.<br>
+Maybe it would be less confusing (given the already very confusing situation) to have a specific message or something ?<br>
+Something like what is in the spec : "generic, note that many agents will use the button role instead"</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<blockquote>
+<p dir="auto"><a href="https://w3c.github.io/html-aria/#dfn-no-corresponding-role" rel="nofollow">No corresponding role</a><br>
+NOTE<br>
+Many, but not all, user agents expose the summary element with an implicit ARIA role=<a href="https://w3c.github.io/html-aria/#index-aria-button" rel="nofollow">button</a>.</p>
+</blockquote>
+<p dir="auto">-- <a href="https://w3c.github.io/html-aria/#el-summary" rel="nofollow">specification of the <code class="notranslate">&lt;summary&gt;</code> element</a></p>
+<div dir="auto">
+
+  <a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/25901730/259054440-829211ac-52b0-4b85-8f61-22debefeb33a.png"><img width="488" alt="" src="https://user-images.githubusercontent.com/25901730/259054440-829211ac-52b0-4b85-8f61-22debefeb33a.png" style="max-width: 100%;"></a>
+  Chrome uses `generic` in the form of an implementation specific role `DisclosureTriangle`
+
+</div>
+<div dir="auto">
+
+  <a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/25901730/259055416-6ab80ecc-881e-4019-8650-19df1c80bc5d.png"><img width="348" alt="" src="https://user-images.githubusercontent.com/25901730/259055416-6ab80ecc-881e-4019-8650-19df1c80bc5d.png" style="max-width: 100%;"></a>
+  Firefox uses `summary` which is not documented on MDN
+
+</div>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/element/summary</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/summary/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/summary/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/942a529383ee7ee3996fb234187641c08935f3ff/hovercard" href="https://github.com/mdn/content/commit/942a529383ee7ee3996fb234187641c08935f3ff"><tt>942a529</tt></a></li>
+<li>Document last modified: 2023-04-13T06:13:15.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] No page for HTMLSelectElement.value]]></title>
             <link>https://github.com/mdn/content/issues/28418</link>

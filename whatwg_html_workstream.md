@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Implicit role for `<summary>` element](https://github.com/mdn/content/issues/28446) (2023-08-08T09:37:51Z)
+  
 * [[html] No page for HTMLSelectElement.value](https://github.com/mdn/content/issues/28418) (2023-08-06T08:23:16Z)
   
 * [[html] Example given on blockquote page is incorrect according to the HTML spec](https://github.com/mdn/content/issues/28401) (2023-08-04T18:47:11Z)
