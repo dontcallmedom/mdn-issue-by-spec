@@ -4,10 +4,40 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Sun, 06 Aug 2023 20:39:39 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 08 Aug 2023 18:52:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[selectors-4] Spaces not needed around '>']]></title>
+            <link>https://github.com/mdn/content/issues/28460</link>
+            <guid>https://github.com/mdn/content/issues/28460</guid>
+            <pubDate>Tue, 08 Aug 2023 18:52:37 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Syntax, Examples</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The syntax and examples always show spaces surrounding the angle bracket ("direct child"). Just as with the period, spaces are not required around angle brackets in selectors. It might be interesting to see how many other MDN articles fail to mention the actual syntax of the CSS language. The CSS Standards mix examples using spaces and omitting spaces, for clarity.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Either a BNF-like specification of actual CSS syntax, a link to a BNF-like specification of actual CSS syntax, or mixing possibilities in the examples.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://www.w3.org/TR/selectors-3/#child-combinators" rel="nofollow">https://www.w3.org/TR/selectors-3/#child-combinators</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/child_combinator</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/child_combinator/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/child_combinator/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/42c1bb8c259f3f57de9f38600776cf273e3addda/hovercard" href="https://github.com/mdn/content/commit/42c1bb8c259f3f57de9f38600776cf273e3addda"><tt>42c1bb8</tt></a></li>
+<li>Document last modified: 2023-02-21T06:27:49.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-logical-1] @page has conflicting content]]></title>
             <link>https://github.com/mdn/content/issues/28423</link>
