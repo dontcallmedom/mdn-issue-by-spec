@@ -140,6 +140,8 @@
   
 * [[html] HTMLTableCellElement missing property pages](https://github.com/mdn/content/issues/15631) (2022-05-03T03:28:19Z)
   
+* [[console] api.console.assert - Output format detail](https://github.com/mdn/content/issues/28451) (2022-04-14T20:46:28Z)
+  
 * [[html, gamepad] Double checking the gamepad docs are correct](https://github.com/mdn/content/issues/14874) (2022-04-11T03:02:09Z)
   
 * [[html] All the BCD table links are broken on the HTMLBodyElement page](https://github.com/mdn/content/issues/14865) (2022-04-10T14:35:48Z)

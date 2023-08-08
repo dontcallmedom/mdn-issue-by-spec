@@ -4,10 +4,52 @@
         <title>WHATWG Console Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_console_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG Console Workstream</description>
-        <lastBuildDate>Tue, 06 Jul 2021 06:31:49 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 14 Apr 2022 20:46:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[console] api.console.assert - Output format detail]]></title>
+            <link>https://github.com/mdn/content/issues/28451</link>
+            <guid>https://github.com/mdn/content/issues/28451</guid>
+            <pubDate>Thu, 14 Apr 2022 20:46:28 GMT</pubDate>
+            <content:encoded><![CDATA[
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">On NodeJS v14, the textual representation of objects varies between the 2 forms of <code class="notranslate">console.assert()</code>. More detail beyond "This parameter gives you additional control over the format of the output" would be helpful.</p>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">A mention of the specific differences between the textual representations. In particular that the 2nd form provides more useful printouts in practice.</p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+<p dir="auto">On NodeJS v14.19.0:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&gt; console.assert(false, {}); 
+Assertion failed: [object Object]
+undefined
+&gt; console.assert(false, &quot;&quot;, {}); 
+Assertion failed:  {}
+undefined
+&gt; console.assert(false, &quot;&quot;, JSON.stringify({})); 
+Assertion failed:  {}
+undefined"><pre class="notranslate"><code class="notranslate">&gt; console.assert(false, {}); 
+Assertion failed: [object Object]
+undefined
+&gt; console.assert(false, "", {}); 
+Assertion failed:  {}
+undefined
+&gt; console.assert(false, "", JSON.stringify({})); 
+Assertion failed:  {}
+undefined
+</code></pre></div>
+<p dir="auto">On Firefox:<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/23622288/163471694-6b0f7d01-3af2-4e7d-a799-64076a451bb6.png"><img src="https://user-images.githubusercontent.com/23622288/163471694-6b0f7d01-3af2-4e7d-a799-64076a451bb6.png" alt="image" style="max-width: 100%;"></a></p>
+
+<details>
+<summary>MDN page report details</summary>
+<ul dir="auto">
+<li>Query: <code class="notranslate">api.console.assert</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/console/assert" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/console/assert</a></li>
+<li>Report started: 2022-04-14T20:26:29.165Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[console] Issue with "console", how does number formatting work? Number formatting doesn't work on Chrome.]]></title>
             <link>https://github.com/mdn/content/issues/6614</link>
