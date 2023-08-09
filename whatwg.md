@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] globalCompositeOperation lacks list of operations](https://github.com/mdn/content/issues/28465) (2023-08-09T06:55:39Z)
+  
 * [[html] Implicit role for `<summary>` element](https://github.com/mdn/content/issues/28446) (2023-08-08T09:37:51Z)
   
 * [[html] No page for HTMLSelectElement.value](https://github.com/mdn/content/issues/28418) (2023-08-06T08:23:16Z)
