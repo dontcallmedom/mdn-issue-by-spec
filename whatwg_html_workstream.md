@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Are H elements block or inline?](https://github.com/mdn/content/issues/28475) (2023-08-09T15:36:19Z)
+  
 * [[html] globalCompositeOperation lacks list of operations](https://github.com/mdn/content/issues/28465) (2023-08-09T06:55:39Z)
   
 * [[html] Implicit role for `<summary>` element](https://github.com/mdn/content/issues/28446) (2023-08-08T09:37:51Z)
