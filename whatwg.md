@@ -20,8 +20,6 @@
   
 * [[dom] "Event: currentTarget property" is difficult to understand](https://github.com/mdn/content/issues/28260) (2023-07-29T16:30:15Z)
   
-* [[ecmascript, dom] Rephrase assignment-as-condition Best Practice](https://github.com/mdn/content/issues/28257) (2023-07-29T14:30:22Z)
-  
 * [[html, uievents] Note contextmenu, click, and auxclick are PointerEvents though Firefox and Safari don't follow the standard](https://github.com/mdn/content/issues/27929) (2023-07-13T19:52:34Z)
   
 * [[html] Suggestions to improve the Top Layer page: add examples, specify browser support, and clarify information](https://github.com/mdn/content/issues/27914) (2023-07-13T04:40:07Z)

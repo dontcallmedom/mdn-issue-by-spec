@@ -4,58 +4,10 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Sat, 29 Jul 2023 14:30:22 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Mar 2023 12:09:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript, dom] Rephrase assignment-as-condition Best Practice]]></title>
-            <link>https://github.com/mdn/content/issues/28257</link>
-            <guid>https://github.com/mdn/content/issues/28257</guid>
-            <pubDate>Sat, 29 Jul 2023 14:30:22 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createTreeWalker" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/createTreeWalker</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Examples</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The example shows:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="let currentNode;
-while ((currentNode = treeWalker.nextNode())) {
-  currentNode.data = currentNode.data.toUpperCase();
-}"><pre class="notranslate"><span class="pl-k">let</span> <span class="pl-s1">currentNode</span><span class="pl-kos">;</span>
-<span class="pl-k">while</span> <span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">currentNode</span> <span class="pl-c1">=</span> <span class="pl-s1">treeWalker</span><span class="pl-kos">.</span><span class="pl-en">nextNode</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-  <span class="pl-s1">currentNode</span><span class="pl-kos">.</span><span class="pl-c1">data</span> <span class="pl-c1">=</span> <span class="pl-s1">currentNode</span><span class="pl-kos">.</span><span class="pl-c1">data</span><span class="pl-kos">.</span><span class="pl-en">toUpperCase</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span></pre></div>
-<p dir="auto">Also ...</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="while ((currentTextNode = textTreeWalker.nextNode())) {
-  currentTextNode.data = encodeURI(currentTextNode.data.replace(/\s+/g, &quot; &quot;));
-}"><pre class="notranslate"><span class="pl-k">while</span> <span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">currentTextNode</span> <span class="pl-c1">=</span> <span class="pl-s1">textTreeWalker</span><span class="pl-kos">.</span><span class="pl-en">nextNode</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-  <span class="pl-s1">currentTextNode</span><span class="pl-kos">.</span><span class="pl-c1">data</span> <span class="pl-c1">=</span> <span class="pl-en">encodeURI</span><span class="pl-kos">(</span><span class="pl-s1">currentTextNode</span><span class="pl-kos">.</span><span class="pl-c1">data</span><span class="pl-kos">.</span><span class="pl-en">replace</span><span class="pl-kos">(</span><span class="pl-pds"><span class="pl-c1">/</span><span class="pl-cce">\s</span><span class="pl-c1">+</span><span class="pl-c1">/</span>g</span><span class="pl-kos">,</span> <span class="pl-s">" "</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span></pre></div>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">It would be worthwhile to use the best practice in the above example as shown in the following section i.e.</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="while ((currentNode = treeWalker.nextNode()) !== null) {
-  // ...
-}"><pre class="notranslate"><span class="pl-k">while</span> <span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">currentNode</span> <span class="pl-c1">=</span> <span class="pl-s1">treeWalker</span><span class="pl-kos">.</span><span class="pl-en">nextNode</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-c1">!==</span> <span class="pl-c1">null</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-  <span class="pl-c">// ...</span>
-<span class="pl-kos">}</span></pre></div>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<blockquote>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while#using_an_assignment_as_a_condition" rel="nofollow">while: Using an assignment as a condition</a></p>
-<p dir="auto">But the real best practice is to go a step further and make the code even more clear — by adding a comparison operator to turn the condition into an explicit comparison:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const iterator = document.createNodeIterator(document, NodeFilter.SHOW_COMMENT);
-let currentNode;
-while ((currentNode = iterator.nextNode()) !== null) {
-  console.log(currentNode.textContent.trim());
-}"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">iterator</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createNodeIterator</span><span class="pl-kos">(</span><span class="pl-smi">document</span><span class="pl-kos">,</span> <span class="pl-v">NodeFilter</span><span class="pl-kos">.</span><span class="pl-c1">SHOW_COMMENT</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-k">let</span> <span class="pl-s1">currentNode</span><span class="pl-kos">;</span>
-<span class="pl-k">while</span> <span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">currentNode</span> <span class="pl-c1">=</span> <span class="pl-s1">iterator</span><span class="pl-kos">.</span><span class="pl-en">nextNode</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-c1">!==</span> <span class="pl-c1">null</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">currentNode</span><span class="pl-kos">.</span><span class="pl-c1">textContent</span><span class="pl-kos">.</span><span class="pl-en">trim</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span></pre></div>
-</blockquote>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[ecmascript] Accessing WebAssembly memory using TypedArrays is incorrect on Big Endian systems]]></title>
             <link>https://github.com/mdn/content/issues/25569</link>

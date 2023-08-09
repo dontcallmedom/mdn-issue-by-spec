@@ -4,8 +4,6 @@
 
 * [[dom] "Event: currentTarget property" is difficult to understand](https://github.com/mdn/content/issues/28260) (2023-07-29T16:30:15Z)
   
-* [[ecmascript, dom] Rephrase assignment-as-condition Best Practice](https://github.com/mdn/content/issues/28257) (2023-07-29T14:30:22Z)
-  
 * [[cssom-view-1, dom, uievents, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
   
 * [[dom] Event.preventDefault: Inaccessible example](https://github.com/mdn/content/issues/27478) (2023-06-22T14:18:14Z)
