@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[appmanifest] Author confused property names with their values](https://github.com/mdn/content/issues/28520) (2023-08-11T10:55:13Z)
+  
 * [[css-pseudo-4] XML error showing on ::marker](https://github.com/mdn/content/issues/28486) (2023-08-10T09:15:54Z)
   
 * [[selectors-4] “Child combinator” article: Spaces not needed around '>'](https://github.com/mdn/content/issues/28460) (2023-08-08T18:52:37Z)
