@@ -6,8 +6,6 @@
   
 * [[html] History API pushState size limit for Firefox is given as 640K in one article, and 16 MiB in another](https://github.com/mdn/content/issues/28516) (2023-08-11T07:44:05Z)
   
-* [[html] Are H elements block or inline?](https://github.com/mdn/content/issues/28475) (2023-08-09T15:36:19Z)
-  
 * [[html] globalCompositeOperation lacks list of operations](https://github.com/mdn/content/issues/28465) (2023-08-09T06:55:39Z)
   
 * [[html] Implicit role for `<summary>` element](https://github.com/mdn/content/issues/28446) (2023-08-08T09:37:51Z)
