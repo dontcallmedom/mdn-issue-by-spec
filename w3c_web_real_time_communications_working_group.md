@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Real-Time Communications Working Group. [![RSS feed for W3C Web Real-Time Communications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[webrtc] RTCRtpEncodingParameters.scaleResolutionDownBy : Browser compatibility state for Microsoft Edge is wrong.](https://github.com/mdn/content/issues/28517) (2023-08-11T08:28:50Z)
-  
 * [[webrtc] usernameFragment Examples section contains method that does not exist](https://github.com/mdn/content/issues/28171) (2023-07-25T13:19:31Z)
   
 * [[webrtc] MDN Web Docs state incorrectly that RTCRtpTransceiver.mid is null until negotiation is completed.](https://github.com/mdn/content/issues/27502) (2023-06-23T10:39:29Z)
