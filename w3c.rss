@@ -4,10 +4,41 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Sun, 13 Aug 2023 03:48:53 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 13 Aug 2023 18:37:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[selectors-4] "nth-child" is, surprisingly, applied to the child, not the parent]]></title>
+            <link>https://github.com/mdn/content/issues/28544</link>
+            <guid>https://github.com/mdn/content/issues/28544</guid>
+            <pubDate>Sun, 13 Aug 2023 18:37:41 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">(unsure)</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Even after I read this article several times, I still thought that this operator selected the nth child of a given parent. It is the obvious conclusion from the name "nth-child".</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">There needs to be a clarification that what this operator does is, given the child of a parent, selects (detects) whether that child is the nth child of the parent. Therefore, this operator operates on the child, not the parent node.</p>
+<p dir="auto">If you want a specific css rule to run when the nth child of a parent is hovered over, for example, you must write n separate statements, the first of which is <code class="notranslate">parent&gt;child:nth-child(1):hover {}</code>. This example should appear in this article.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">(No; I discovered this by discussing a time-consuming CSS programming error of mine with ChatGPT, then experimenting).</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/_colon_nth-child</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_nth-child/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_nth-child/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/764b291098cfe575374580844f1a91e7d814a8d3/hovercard" href="https://github.com/mdn/content/commit/764b291098cfe575374580844f1a91e7d814a8d3"><tt>764b291</tt></a></li>
+<li>Document last modified: 2023-06-21T22:40:10.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-grid-3] Masonry page states Firefox exclusive; Safari 17 supports it.]]></title>
             <link>https://github.com/mdn/content/issues/28541</link>
