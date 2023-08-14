@@ -4,8 +4,6 @@
 
 * [[html, cssom-view-1, dom, uievents, pointerlock-2, selection-api, page-visibility-2] Keydown, keyup, keypress pages should mention they work on document, body, etc](https://github.com/mdn/content/issues/28561) (2023-08-14T20:14:56Z)
   
-* [[html] Example does not work as expected](https://github.com/mdn/content/issues/28523) (2023-08-11T15:38:45Z)
-  
 * [[html] History API pushState size limit for Firefox is given as 640K in one article, and 16 MiB in another](https://github.com/mdn/content/issues/28516) (2023-08-11T07:44:05Z)
   
 * [[html] globalCompositeOperation lacks list of operations](https://github.com/mdn/content/issues/28465) (2023-08-09T06:55:39Z)
