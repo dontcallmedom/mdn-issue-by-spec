@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html, cssom-view-1, dom, uievents, pointerlock-2, selection-api, page-visibility-2] Keydown, keyup, keypress pages should mention they work on document, body, etc](https://github.com/mdn/content/issues/28561) (2023-08-14T20:14:56Z)
+  
 * [[css-ui-4] <input type="range">: slider-vertical to be removed from Chrome](https://github.com/mdn/content/issues/28550) (2023-08-14T05:47:35Z)
   
 * [[selectors-4] "nth-child" is, surprisingly, applied to the child, not the parent](https://github.com/mdn/content/issues/28544) (2023-08-13T18:37:41Z)
