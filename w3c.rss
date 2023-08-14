@@ -4,10 +4,43 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Sun, 13 Aug 2023 18:37:41 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Aug 2023 05:47:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-ui-4] <input type="range">: slider-vertical to be removed from Chrome]]></title>
+            <link>https://github.com/mdn/content/issues/28550</link>
+            <guid>https://github.com/mdn/content/issues/28550</guid>
+            <pubDate>Mon, 14 Aug 2023 05:47:35 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Creating vertical range controls (under 'Examples')</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The <code class="notranslate">slider-vertical</code> CSS property will apparently be removed from Chrome.</p>
+<p dir="auto">There is also a section that describes usage of <code class="notranslate">writing-mode: bt-lr</code>, which, according to the "Putting it all together" section, only applies for Pre-Blink Edge.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">It is not clear how to create a vertical slider in a way that would continue to render correctly in the future across all browsers.</p>
+<p dir="auto">It would also be helpful to note the pending removal of <code class="notranslate">slider-vertical</code> in the "Non-standard keywords" section of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/appearance#syntax" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/appearance#syntax</a></p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1676683703" data-permission-text="Title is private" data-url="https://github.com/w3c/csswg-drafts/issues/8743" data-hovercard-type="issue" data-hovercard-url="/w3c/csswg-drafts/issues/8743/hovercard" href="https://github.com/w3c/csswg-drafts/issues/8743">w3c/csswg-drafts#8743</a></p>
+<p dir="auto">On pages with a vertical slider, the Chrome console shows: <code class="notranslate">The keyword 'slider-vertical' specified to an 'appearance' property is not standardized. It will be removed in the future.</code></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/element/input/range</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/input/range/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/input/range/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e04d8d2766c468f149445c0bf438d09f9b2d188c/hovercard" href="https://github.com/mdn/content/commit/e04d8d2766c468f149445c0bf438d09f9b2d188c"><tt>e04d8d2</tt></a></li>
+<li>Document last modified: 2023-06-13T08:10:47.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[selectors-4] "nth-child" is, surprisingly, applied to the child, not the parent]]></title>
             <link>https://github.com/mdn/content/issues/28544</link>
