@@ -8,8 +8,6 @@
   
 * [[selectors-4] "nth-child" is, surprisingly, applied to the child, not the parent](https://github.com/mdn/content/issues/28544) (2023-08-13T18:37:41Z)
   
-* [[css-grid-3] Masonry page states Firefox exclusive; Safari 17 supports it.](https://github.com/mdn/content/issues/28541) (2023-08-13T03:48:53Z)
-  
 * [[css-pseudo-4] XML error showing on ::marker](https://github.com/mdn/content/issues/28486) (2023-08-10T09:15:54Z)
   
 * [[selectors-4] “Child combinator” article: Spaces not needed around '>'](https://github.com/mdn/content/issues/28460) (2023-08-08T18:52:37Z)

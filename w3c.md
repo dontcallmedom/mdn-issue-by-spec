@@ -8,8 +8,6 @@
   
 * [[selectors-4] "nth-child" is, surprisingly, applied to the child, not the parent](https://github.com/mdn/content/issues/28544) (2023-08-13T18:37:41Z)
   
-* [[css-grid-3] Masonry page states Firefox exclusive; Safari 17 supports it.](https://github.com/mdn/content/issues/28541) (2023-08-13T03:48:53Z)
-  
 * [[appmanifest] Author confused property names with their values](https://github.com/mdn/content/issues/28520) (2023-08-11T10:55:13Z)
   
 * [[css-pseudo-4] XML error showing on ::marker](https://github.com/mdn/content/issues/28486) (2023-08-10T09:15:54Z)
