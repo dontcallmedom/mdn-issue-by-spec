@@ -4,43 +4,10 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Wed, 16 Aug 2023 18:34:52 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Aug 2023 14:13:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[resize-observer-1] ResizeObserverEntry: Wrong definition of instance properties]]></title>
-            <link>https://github.com/mdn/content/issues/28589</link>
-            <guid>https://github.com/mdn/content/issues/28589</guid>
-            <pubDate>Wed, 16 Aug 2023 18:34:52 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserverEntry" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserverEntry</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">top level definition plus example</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">borderBoxSize &amp; contentBoxSize are described as objects, but inside browser implementations (tested in chrome, firefox &amp; safari)</p>
-<p dir="auto">devicePixelContentBoxSize  is described as an object, but inside browser implementations (tested in chrome &amp; firefox, safari not there yet)</p>
-<a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/1177434/261102689-5c7dd856-a58a-4a7e-8031-c2ec2b7e382d.png"><img width="511" alt="Screenshot 2023-08-16 at 20 26 13" src="https://user-images.githubusercontent.com/1177434/261102689-5c7dd856-a58a-4a7e-8031-c2ec2b7e382d.png" style="max-width: 100%;"></a>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">borderBoxSize, contentBoxSize &amp; devicePixelContentBoxSize getting described as arrays.</p>
-<p dir="auto">inside the example, the code breaks: <code class="notranslate">entry.contentBoxSize.inlineSize</code> instead of <code class="notranslate">entry.contentBoxSize[0].inlineSize</code></p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/resizeobserverentry</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserverEntry" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserverEntry</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/resizeobserverentry/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/resizeobserverentry/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc/hovercard" href="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc"><tt>acfe8c9</tt></a></li>
-<li>Document last modified: 2023-07-07T07:19:19.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html, selectors-4] WCAG 2.1 level A violation in lightbox example on the `:target` selector page]]></title>
             <link>https://github.com/mdn/content/issues/28587</link>
