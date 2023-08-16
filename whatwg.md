@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html, selectors-4] WCAG 2.1 level A violation in lightbox example on the `:target` selector page](https://github.com/mdn/content/issues/28587) (2023-08-16T14:13:10Z)
+  
 * [[html, cssom-view-1, dom, uievents, pointerlock-2, selection-api, page-visibility-2] Keydown, keyup, keypress pages should mention they work on document, body, etc](https://github.com/mdn/content/issues/28561) (2023-08-14T20:14:56Z)
   
 * [[html] History API pushState size limit for Firefox is given as 640K in one article, and 16 MiB in another](https://github.com/mdn/content/issues/28516) (2023-08-11T07:44:05Z)
