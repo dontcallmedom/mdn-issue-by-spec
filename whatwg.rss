@@ -42,40 +42,6 @@
 <p dir="auto">I'd be glad to open a PR to extend the docs</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html, selectors-4] WCAG 2.1 level A violation in lightbox example on the `:target` selector page]]></title>
-            <link>https://github.com/mdn/content/issues/28587</link>
-            <guid>https://github.com/mdn/content/issues/28587</guid>
-            <pubDate>Wed, 16 Aug 2023 14:13:10 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:target" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:target</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Pure-CSS lightbox</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The lightbox example contains at least one WCAG 2.1 level A violation</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">No WCAG 2.1 AA violations.</p>
-<p dir="auto">Whether examples need to comply with WCAG 2.1 AA could be discussed, since many simply illustrate whatever the MDN page is documenting, and do not resemble real-life use cases (see for instance the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:target#a_table_of_contents" rel="nofollow">first example on the <code class="notranslate">:target</code> selector page</a>)</p>
-<p dir="auto">In this case however, since the lightbox is a functioning (albeit flawed) modal dialog, there is a risk that it ends up on live websites.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">The lightbox fails at least one WCAG level A criterion: 2.1.1 keyboard: <a href="https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html" rel="nofollow">https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html</a></p>
-<p dir="auto">Instead, such a lightbox should probably follow the behavior described in the <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/" rel="nofollow">Dialog (modal) APG pattern</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">I don't think it's worth trying to make the lightbox accessible, since it would likely not use the <code class="notranslate">:target</code> selector anymore. A CSS-only lightbox is not accessible and should not be built: I'd recommend removing the section.</p>
-<p dir="auto">I'm happy to open a PR for this, let me know.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/_colon_target</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:target" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:target</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_target/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_target/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/592f6ec42e54981b6573b58ec0343c9aa8cbbda8/hovercard" href="https://github.com/mdn/content/commit/592f6ec42e54981b6573b58ec0343c9aa8cbbda8"><tt>592f6ec</tt></a></li>
-<li>Document last modified: 2023-07-25T00:27:48.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html, cssom-view-1, dom, uievents, pointerlock-2, selection-api, page-visibility-2] Keydown, keyup, keypress pages should mention they work on document, body, etc]]></title>
             <link>https://github.com/mdn/content/issues/28561</link>
             <guid>https://github.com/mdn/content/issues/28561</guid>
