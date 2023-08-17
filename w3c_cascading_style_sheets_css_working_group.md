@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-pseudo-4] "Report the content Issue" is not gramatically correct.](https://github.com/mdn/content/issues/28622) (2023-08-17T13:44:39Z)
+  
 * [[css-ui-4] Accent color is applying on more elements on Firefox](https://github.com/mdn/content/issues/28604) (2023-08-17T03:22:17Z)
   
 * [[html, selectors-4] WCAG 2.1 level A violation in lightbox example on the `:target` selector page](https://github.com/mdn/content/issues/28587) (2023-08-16T14:13:10Z)
