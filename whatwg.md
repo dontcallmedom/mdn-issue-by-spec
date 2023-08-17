@@ -130,8 +130,6 @@
   
 * [[html] RadioNodeList.value example does not support fieldset](https://github.com/mdn/content/issues/20588) (2022-09-12T11:06:34Z)
   
-* [[html] “autcomplete" attribute article: Add explanation that one can use sections in the attribute and identify billing and shipping addresses](https://github.com/mdn/content/issues/20180) (2022-08-31T18:05:30Z)
-  
 * [[html, cssom-view-1] [GEH] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
   
 * [[html] spellcheck attribute example does not work](https://github.com/mdn/content/issues/19285) (2022-08-08T12:02:51Z)
