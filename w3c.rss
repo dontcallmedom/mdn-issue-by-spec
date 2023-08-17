@@ -4,80 +4,10 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Thu, 17 Aug 2023 11:18:57 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Aug 2023 03:22:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[selectors-4] :blank don't work on textarea]]></title>
-            <link>https://github.com/mdn/content/issues/28619</link>
-            <guid>https://github.com/mdn/content/issues/28619</guid>
-            <pubDate>Thu, 17 Aug 2023 11:18:57 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:blank" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:blank</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">example</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">:blank don't work on textarea. I've tested on Mozilla and Chrome. but its work on other tags like </p><p dir="auto"></p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">try, html</p>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;div class=&quot;blanks&quot;&gt;
-  &lt;p&gt;This paragraph is not empty or blank.&lt;/p&gt;
-  &lt;p&gt;&lt;!--this is empty and blank --&gt;&lt;/p&gt;
-  &lt;p&gt;
-    
-    &lt;!-- this is not empty, because it has whitespace. But it is blank.--&gt;
-    
-  &lt;/p&gt;
-  &lt;p&gt;This paragraph is not empty or blank.&lt;/p&gt;
-&lt;/div&gt;
-"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">class</span>="<span class="pl-s">blanks</span>"<span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>This paragraph is not empty or blank.<span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span><span class="pl-c">&lt;!--this is empty and blank --&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>
-    
-    <span class="pl-c">&lt;!-- this is not empty, because it has whitespace. But it is blank.--&gt;</span>
-    
-  <span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>This paragraph is not empty or blank.<span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>
-<span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></pre></div>
-<p dir="auto">css</p>
-<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="
-p {
-  min-height: 30px;
-  width: 250px;
-  background-color: lightblue;
-}
-
-p:blank { display: none; }
-
-p:-moz-only-whitespace { display: none; } /* Mozilla-only pseudo-class that works like :blank will */
-"><pre class="notranslate"><span class="pl-ent">p</span> {
-  <span class="pl-c1">min-height</span><span class="pl-kos">:</span> <span class="pl-c1">30<span class="pl-smi">px</span></span>;
-  <span class="pl-c1">width</span><span class="pl-kos">:</span> <span class="pl-c1">250<span class="pl-smi">px</span></span>;
-  <span class="pl-c1">background-color</span><span class="pl-kos">:</span> lightblue;
-}
-
-<span class="pl-ent">p</span><span class="pl-kos">:</span><span class="pl-c1">blank</span> { <span class="pl-c1">display</span><span class="pl-kos">:</span> none; }
-
-<span class="pl-ent">p</span><span class="pl-kos">:</span><span class="pl-c1">-moz-only-whitespace</span> { <span class="pl-c1">display</span><span class="pl-kos">:</span> none; } <span class="pl-c">/* Mozilla-only pseudo-class that works like :blank will */</span></pre></div>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/_colon_blank</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:blank" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:blank</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_blank/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_blank/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/5fea7c9593f5e4b4ef13ec65064acf1eabf01e4e/hovercard" href="https://github.com/mdn/content/commit/5fea7c9593f5e4b4ef13ec65064acf1eabf01e4e"><tt>5fea7c9</tt></a></li>
-<li>Document last modified: 2023-02-21T06:49:52.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[css-ui-4] Accent color is applying on more elements on Firefox]]></title>
             <link>https://github.com/mdn/content/issues/28604</link>
