@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Quotation attribution must be placed outside the blockquote element](https://github.com/mdn/content/issues/28644) (2023-08-18T07:51:13Z)
+  
 * [[html] Issue with explanations, and  order of tokens ](https://github.com/mdn/content/issues/28636) (2023-08-17T23:15:09Z)
   
 * [[html] Extend HTMLIFrameElement: contentWindow property doc to cover another important use case](https://github.com/mdn/content/issues/28591) (2023-08-16T19:59:43Z)
