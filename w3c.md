@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[css-transforms-2, css-transforms-1] Incorrect internal link in the transform reference page](https://github.com/mdn/content/issues/28661) (2023-08-19T19:12:07Z)
+* [[css-transforms-2, css-transforms-1] Incorrect internal link in the CSS transform reference page](https://github.com/mdn/content/issues/28661) (2023-08-19T19:12:07Z)
   
 * [[css-writing-modes-4] vertical writing for the text](https://github.com/mdn/content/issues/28642) (2023-08-18T03:38:11Z)
   
