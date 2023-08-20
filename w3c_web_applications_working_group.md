@@ -4,8 +4,6 @@
 
 * [[html, cssom-view-1, dom, uievents, pointerlock-2, selection-api, page-visibility-2] Keydown, keyup, keypress pages should mention they work on document, body, etc](https://github.com/mdn/content/issues/28561) (2023-08-14T20:14:56Z)
   
-* [[appmanifest] Author confused property names with their values](https://github.com/mdn/content/issues/28520) (2023-08-11T10:55:13Z)
-  
 * [[selection-api] Correct and split "How whitespace is handled by HTML, CSS, and in the DOM"](https://github.com/mdn/content/issues/28268) (2023-07-30T09:11:04Z)
   
 * [[intersection-observer] Get scroll direction from IntersectionObserverEntry](https://github.com/mdn/content/issues/28197) (2023-07-26T16:04:02Z)
