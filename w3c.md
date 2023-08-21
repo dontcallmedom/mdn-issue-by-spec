@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[uievents] Screen global coordinates definition needed](https://github.com/mdn/content/issues/28676) (2023-08-21T13:37:56Z)
+  
 * [[css-writing-modes-4] vertical writing for the text](https://github.com/mdn/content/issues/28642) (2023-08-18T03:38:11Z)
   
 * [[css-ui-4] Mention that accent color is applying on more elements on Firefox](https://github.com/mdn/content/issues/28604) (2023-08-17T03:22:17Z)
