@@ -24,8 +24,6 @@
   
 * [[html] Create a `form` attribute page](https://github.com/mdn/content/issues/28375) (2023-08-03T18:28:41Z)
   
-* [[html] Table height attribute](https://github.com/mdn/content/issues/28346) (2023-08-02T16:41:44Z)
-  
 * [[html] Issue with "title": "Hovering here will show nothing." shows something when hovering](https://github.com/mdn/content/issues/28297) (2023-07-31T10:17:36Z)
   
 * [[html, uievents] Note contextmenu, click, and auxclick are PointerEvents though Firefox and Safari don't follow the standard](https://github.com/mdn/content/issues/27929) (2023-07-13T19:52:34Z)
