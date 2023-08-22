@@ -16,8 +16,6 @@
   
 * [[selectors-4] "nth-child" is, surprisingly, applied to the child, not the parent](https://github.com/mdn/content/issues/28544) (2023-08-13T18:37:41Z)
   
-* [[css-pseudo-4] XML error showing on ::marker](https://github.com/mdn/content/issues/28486) (2023-08-10T09:15:54Z)
-  
 * [[selectors-4] “Child combinator” article: Spaces not needed around '>'](https://github.com/mdn/content/issues/28460) (2023-08-08T18:52:37Z)
   
 * [[css-logical-1] @page has conflicting content](https://github.com/mdn/content/issues/28423) (2023-08-06T20:39:39Z)
