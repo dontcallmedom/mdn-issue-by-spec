@@ -4,10 +4,40 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Mon, 21 Aug 2023 21:20:42 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Aug 2023 12:27:42 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[webaudio, ecmascript] Incorrect return value for OfflineAudioContext.startRendering]]></title>
+            <link>https://github.com/mdn/content/issues/28732</link>
+            <guid>https://github.com/mdn/content/issues/28732</guid>
+            <pubDate>Thu, 24 Aug 2023 12:27:42 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/startRendering" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/startRendering</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Return value</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The return value is listed as "None (undefined)"</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">"A <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" rel="nofollow">Promise</a> resolving to an <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer" rel="nofollow">AudioBuffer</a>"</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">The 'Examples' section below 'Return value', states that "When the startRendering() promise resolves, rendering has completed and the output AudioBuffer is returned out of the promise."</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/32961755/262971698-e7ebadc1-9c44-40f0-9bae-8b366f05b3af.png"><img width="648" alt="image" src="https://user-images.githubusercontent.com/32961755/262971698-e7ebadc1-9c44-40f0-9bae-8b366f05b3af.png" style="max-width: 100%;"></a>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/offlineaudiocontext/startrendering</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/startRendering" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/startRendering</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/offlineaudiocontext/startrendering/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/offlineaudiocontext/startrendering/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/312081aabba3885b35a81107b3c2fc53428896c5/hovercard" href="https://github.com/mdn/content/commit/312081aabba3885b35a81107b3c2fc53428896c5"><tt>312081a</tt></a></li>
+<li>Document last modified: 2023-04-07T06:19:30.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-ui-4] Chrome intents to remove non-standard appearance keywords]]></title>
             <link>https://github.com/mdn/content/issues/28687</link>
