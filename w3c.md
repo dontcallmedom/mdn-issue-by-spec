@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-text-decor-3] text-emphasis and related longhand-properties do inherit](https://github.com/mdn/content/issues/28767) (2023-08-25T23:08:32Z)
+  
 * [[webaudio, ecmascript] Incorrect return value for OfflineAudioContext.startRendering](https://github.com/mdn/content/issues/28732) (2023-08-24T12:27:42Z)
   
 * [[css-ui-4] Chrome intents to remove non-standard appearance keywords](https://github.com/mdn/content/issues/28687) (2023-08-21T21:20:42Z)
