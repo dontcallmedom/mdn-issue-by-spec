@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[dom] `querySelector`: mention that `id`s starting with a number require special handling](https://github.com/mdn/content/issues/28752) (2023-08-25T12:12:43Z)
+  
 * [[html, cssom-view-1, dom, uievents, pointerlock-2, selection-api, page-visibility-2] Keydown, keyup, keypress pages should mention they work on document, body, etc](https://github.com/mdn/content/issues/28561) (2023-08-14T20:14:56Z)
   
 * [[dom] "Event: currentTarget property" is difficult to understand](https://github.com/mdn/content/issues/28260) (2023-07-29T16:30:15Z)
