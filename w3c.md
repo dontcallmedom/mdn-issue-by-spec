@@ -4,8 +4,6 @@
 
 * [[css-text-decor-3] text-emphasis and related longhand-properties do inherit](https://github.com/mdn/content/issues/28767) (2023-08-25T23:08:32Z)
   
-* [[webaudio, ecmascript] Incorrect return value for OfflineAudioContext.startRendering](https://github.com/mdn/content/issues/28732) (2023-08-24T12:27:42Z)
-  
 * [[css-ui-4] Chrome intents to remove non-standard appearance keywords](https://github.com/mdn/content/issues/28687) (2023-08-21T21:20:42Z)
   
 * [[uievents] Screen global coordinates definition needed](https://github.com/mdn/content/issues/28676) (2023-08-21T13:37:56Z)
