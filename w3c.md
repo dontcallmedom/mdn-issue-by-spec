@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-color-adjust-1] Topic to be more explained](https://github.com/mdn/content/issues/28804) (2023-08-28T15:07:29Z)
+  
 * [[css-sizing-4] Docs for "aspect-ratio" are incomplete (missing aspect-ratio: auto x/y;)](https://github.com/mdn/content/issues/28798) (2023-08-28T12:02:31Z)
   
 * [[css-text-decor-3] text-emphasis and related longhand-properties do inherit](https://github.com/mdn/content/issues/28767) (2023-08-25T23:08:32Z)
