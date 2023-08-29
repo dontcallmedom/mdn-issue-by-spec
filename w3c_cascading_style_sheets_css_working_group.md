@@ -4,8 +4,6 @@
 
 * [[selectors-4] :blank selector page does not consider the `:blank` `@page` pseudo-class which is different](https://github.com/mdn/content/issues/28809) (2023-08-28T22:32:36Z)
   
-* [[css-sizing-4] Docs for "aspect-ratio" are incomplete (missing aspect-ratio: auto x/y;)](https://github.com/mdn/content/issues/28798) (2023-08-28T12:02:31Z)
-  
 * [[css-ui-4] Chrome intents to remove non-standard appearance keywords](https://github.com/mdn/content/issues/28687) (2023-08-21T21:20:42Z)
   
 * [[css-ui-4] Mention that accent color is applying on more elements on Firefox](https://github.com/mdn/content/issues/28604) (2023-08-17T03:22:17Z)
