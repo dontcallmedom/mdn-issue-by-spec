@@ -38,8 +38,6 @@
   
 * [[pointerlock-2] better example for pointerLockElement property](https://github.com/mdn/content/issues/27609) (2023-06-28T00:20:21Z)
   
-* [[css-lists-3, css-counter-styles-3] List-style-type needs a pointer to Ready-made Counter Styles](https://github.com/mdn/content/issues/27539) (2023-06-25T06:25:39Z)
-  
 * [[webrtc] MDN Web Docs state incorrectly that RTCRtpTransceiver.mid is null until negotiation is completed.](https://github.com/mdn/content/issues/27502) (2023-06-23T10:39:29Z)
   
 * [[web-share] Example for sharing a URL is not functional](https://github.com/mdn/content/issues/27469) (2023-06-21T19:17:08Z)
