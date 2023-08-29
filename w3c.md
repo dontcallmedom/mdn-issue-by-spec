@@ -4,11 +4,7 @@
 
 * [[selectors-4] :blank selector page does not consider the `:blank` `@page` pseudo-class which is different](https://github.com/mdn/content/issues/28809) (2023-08-28T22:32:36Z)
   
-* [[css-color-adjust-1] Topic to be more explained](https://github.com/mdn/content/issues/28804) (2023-08-28T15:07:29Z)
-  
 * [[css-sizing-4] Docs for "aspect-ratio" are incomplete (missing aspect-ratio: auto x/y;)](https://github.com/mdn/content/issues/28798) (2023-08-28T12:02:31Z)
-  
-* [[css-text-decor-3] text-emphasis and related longhand-properties do inherit](https://github.com/mdn/content/issues/28767) (2023-08-25T23:08:32Z)
   
 * [[css-ui-4] Chrome intents to remove non-standard appearance keywords](https://github.com/mdn/content/issues/28687) (2023-08-21T21:20:42Z)
   
