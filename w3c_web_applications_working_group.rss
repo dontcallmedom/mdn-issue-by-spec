@@ -304,61 +304,6 @@ interface PushSubscriptionJSON {
 ```]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[pointerlock-2] better example for pointerLockElement property]]></title>
-            <link>https://github.com/mdn/content/issues/27609</link>
-            <guid>https://github.com/mdn/content/issues/27609</guid>
-            <pubDate>Wed, 28 Jun 2023 00:20:21 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/pointerLockElement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/pointerLockElement</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">example</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="if (document.pointerLockElement === canvasElement) {
-  console.log(&quot;The pointer lock status is now locked&quot;);
-  // Do something useful in response
-} else {
-  console.log(&quot;The pointer lock status is now unlocked&quot;);
-  // Do something useful in response
-}"><pre class="notranslate"><span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">pointerLockElement</span> <span class="pl-c1">===</span> <span class="pl-s1">canvasElement</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"The pointer lock status is now locked"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-  <span class="pl-c">// Do something useful in response</span>
-<span class="pl-kos">}</span> <span class="pl-k">else</span> <span class="pl-kos">{</span>
-  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"The pointer lock status is now unlocked"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-  <span class="pl-c">// Do something useful in response</span>
-<span class="pl-kos">}</span></pre></div>
-<h3 dir="auto">What did you expect to see?</h3>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="let el = document.pointerLockElement;
-if (el) {
-  console.log(`The pointer IS locked! on to an element &lt;${el.localName} ${ el.id ? 'id=' + el.id : '' } &gt;`);
-} else {
-  console.log(`I guess the pointer's not locked in this document ${location.href}`);
-}"><pre class="notranslate"><span class="pl-k">let</span> <span class="pl-s1">el</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">pointerLockElement</span><span class="pl-kos">;</span>
-<span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">el</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`The pointer IS locked! on to an element &lt;<span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">el</span><span class="pl-kos">.</span><span class="pl-c1">localName</span><span class="pl-kos">}</span></span> <span class="pl-s1"><span class="pl-kos">${</span> <span class="pl-s1">el</span><span class="pl-kos">.</span><span class="pl-c1">id</span> ? <span class="pl-s">'id='</span> <span class="pl-c1">+</span> <span class="pl-s1">el</span><span class="pl-kos">.</span><span class="pl-c1">id</span> : <span class="pl-s">''</span> <span class="pl-kos">}</span></span> &gt;`</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span> <span class="pl-k">else</span> <span class="pl-kos">{</span>
-  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`I guess the pointer's not locked in this document <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">location</span><span class="pl-kos">.</span><span class="pl-c1">href</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span></pre></div>
-<p dir="auto">That should print:<br>
-The pointer IS locked! on to an element <code class="notranslate">&lt;nav  &gt;</code><br>
-if a <code class="notranslate">&lt;nav&gt;</code> element has the lock.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">I promise I tested the above code in my app.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/document/pointerlockelement</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/pointerLockElement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/pointerLockElement</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/document/pointerlockelement/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/document/pointerlockelement/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/41a8b9c9832359d445d136b6d7a8a28737badc6b/hovercard" href="https://github.com/mdn/content/commit/41a8b9c9832359d445d136b6d7a8a28737badc6b"><tt>41a8b9c</tt></a></li>
-<li>Document last modified: 2023-04-07T05:52:28.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[web-share] Example for sharing a URL is not functional]]></title>
             <link>https://github.com/mdn/content/issues/27469</link>
             <guid>https://github.com/mdn/content/issues/27469</guid>
