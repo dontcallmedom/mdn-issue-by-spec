@@ -16,8 +16,6 @@
   
 * [[push-api] Missing properties on PushSubscription#toJSON](https://github.com/mdn/content/issues/27676) (2023-06-30T13:43:33Z)
   
-* [[pointerlock-2] pointerlockchange event should demonstrate how to get the locked element](https://github.com/mdn/content/issues/27610) (2023-06-28T00:41:42Z)
-  
 * [[pointerlock-2] better example for pointerLockElement property](https://github.com/mdn/content/issues/27609) (2023-06-28T00:20:21Z)
   
 * [[web-share] Example for sharing a URL is not functional](https://github.com/mdn/content/issues/27469) (2023-06-21T19:17:08Z)
