@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[css-break-3, css-multicol-2] CSS Attributes: widows and orphans ](https://github.com/mdn/content/issues/28871) (2023-08-31T19:27:12Z)
+  
 * [[css-fonts-5] [CSS] Add from-font keyword to font-size-adjust](https://github.com/mdn/content/issues/28842) (2023-08-30T15:53:34Z)
   
 * [[selectors-4] :blank selector page does not consider the `:blank` `@page` pseudo-class which is different](https://github.com/mdn/content/issues/28809) (2023-08-28T22:32:36Z)
