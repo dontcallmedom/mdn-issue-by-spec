@@ -6,8 +6,6 @@
   
 * [[css-fonts-5] [CSS] Add from-font keyword to font-size-adjust](https://github.com/mdn/content/issues/28842) (2023-08-30T15:53:34Z)
   
-* [[uievents] Outdated/incorrect statement about FocusEvent order](https://github.com/mdn/content/issues/28835) (2023-08-30T13:37:58Z)
-  
 * [[selectors-4] :blank selector page does not consider the `:blank` `@page` pseudo-class which is different](https://github.com/mdn/content/issues/28809) (2023-08-28T22:32:36Z)
   
 * [[css-ui-4] Chrome intents to remove non-standard appearance keywords](https://github.com/mdn/content/issues/28687) (2023-08-21T21:20:42Z)
