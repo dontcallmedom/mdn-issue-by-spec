@@ -138,52 +138,6 @@ There is no info what thouse do currently (same as <code class="notranslate">aut
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-ui-4] Mention that accent color is applying on more elements on Firefox]]></title>
-            <link>https://github.com/mdn/content/issues/28604</link>
-            <guid>https://github.com/mdn/content/issues/28604</guid>
-            <pubDate>Thu, 17 Aug 2023 03:22:17 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">On Firefox 116 stable, the accent color is adopted as the color of the focus ring on text fields  like <code class="notranslate">&lt;input type="text"&gt;</code> or <code class="notranslate">&lt;textarea&gt;</code>. It has no effect on Chrome as of 115, but it is worth mentioning in the document.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Append <code class="notranslate">&lt;input type="text"&gt;</code> (and like <code class="notranslate">email</code>, <code class="notranslate">password</code>, ...) and <code class="notranslate">&lt;textarea&gt;</code> to the list right after "Browsers that support <code class="notranslate">accent-color</code> currently apply it to the following HTML elements:".</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">This is a minimal example of <code class="notranslate">accent-color</code> style on Firefox 116 stable on macOS:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="data:text/html,&lt;!DOCTYPE html&gt;&lt;input style=&quot;accent-color:%230f0&quot;&gt;&lt;textarea style=&quot;accent-color:%230f0&quot;&gt;"><pre class="notranslate"><code class="notranslate">data:text/html,&lt;!DOCTYPE html&gt;&lt;input style="accent-color:%230f0"&gt;&lt;textarea style="accent-color:%230f0"&gt;
-</code></pre></div>
-<details open="" class="details-reset border rounded-2">
-  <summary class="px-3 py-2">
-    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-device-camera-video">
-    <path d="M16 3.75v8.5a.75.75 0 0 1-1.136.643L11 10.575v.675A1.75 1.75 0 0 1 9.25 13h-7.5A1.75 1.75 0 0 1 0 11.25v-6.5C0 3.784.784 3 1.75 3h7.5c.966 0 1.75.784 1.75 1.75v.675l3.864-2.318A.75.75 0 0 1 16 3.75Zm-6.5 1a.25.25 0 0 0-.25-.25h-7.5a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-6.5ZM11 8.825l3.5 2.1v-5.85l-3.5 2.1Z"></path>
-</svg>
-    <span aria-label="Video description 2023-08-17.11.10.48.mov" class="m-1">2023-08-17.11.10.48.mov</span>
-    <span class="dropdown-caret"></span>
-  </summary>
-
-  <video src="https://user-images.githubusercontent.com/5269414/261186795-8ccca102-8e6a-4849-b7c3-5b9cfdf6758f.mov" data-canonical-src="https://user-images.githubusercontent.com/5269414/261186795-8ccca102-8e6a-4849-b7c3-5b9cfdf6758f.mov" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px">
-
-  </video>
-</details>
-
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/accent-color</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/accent-color/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/accent-color/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2adfb8760ac42c80966080e2e84211b14e43b589/hovercard" href="https://github.com/mdn/content/commit/2adfb8760ac42c80966080e2e84211b14e43b589"><tt>2adfb87</tt></a></li>
-<li>Document last modified: 2023-07-18T00:15:42.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html, cssom-view-1, dom, uievents, pointerlock-2, selection-api, page-visibility-2] Keydown, keyup, keypress pages should mention they work on document, body, etc]]></title>
             <link>https://github.com/mdn/content/issues/28561</link>
             <guid>https://github.com/mdn/content/issues/28561</guid>

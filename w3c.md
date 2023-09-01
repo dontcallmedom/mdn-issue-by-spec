@@ -14,8 +14,6 @@
   
 * [[uievents] Screen global coordinates definition needed](https://github.com/mdn/content/issues/28676) (2023-08-21T13:37:56Z)
   
-* [[css-ui-4] Mention that accent color is applying on more elements on Firefox](https://github.com/mdn/content/issues/28604) (2023-08-17T03:22:17Z)
-  
 * [[html, cssom-view-1, dom, uievents, pointerlock-2, selection-api, page-visibility-2] Keydown, keyup, keypress pages should mention they work on document, body, etc](https://github.com/mdn/content/issues/28561) (2023-08-14T20:14:56Z)
   
 * [[css-ui-4] <input type="range">: slider-vertical to be removed from Chrome](https://github.com/mdn/content/issues/28550) (2023-08-14T05:47:35Z)
