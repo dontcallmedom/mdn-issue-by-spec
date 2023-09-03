@@ -4,49 +4,10 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Sun, 03 Sep 2023 16:09:27 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 28 Aug 2023 09:55:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript] Confusing docs]]></title>
-            <link>https://github.com/mdn/content/issues/28913</link>
-            <guid>https://github.com/mdn/content/issues/28913</guid>
-            <pubDate>Sun, 03 Sep 2023 16:09:27 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Description</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">It could be correct, but seems confusing:</p>
-<blockquote>
-<p dir="auto">If used postfix, with operator after operand (for example, x--), the decrement operator decrements and returns the value before decrementing.</p>
-<p dir="auto">If used prefix, with operator before operand (for example, --x), the decrement operator decrements and returns the value after decrementing.</p>
-</blockquote>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Should these instead state?:</p>
-<p dir="auto">If used postfix, with operator after operand (for example, x--), the decrement operator <del>decrements and</del> returns the value before decrementing.</p>
-<p dir="auto">If used prefix, with operator before operand (for example, --x), the decrement operator <del>decrements and</del> returns the value after decrementing.</p>
-<p dir="auto">or maybe?:</p>
-<p dir="auto">If used postfix, with operator after operand (for example, x--), the decrement operator <del>decrements and</del> returns the value <strong>before the decrement</strong>.</p>
-<p dir="auto">If used prefix, with operator before operand (for example, --x), the decrement operator <del>decrements and</del> returns the <strong>value after the decrement</strong>.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/operators/decrement</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/decrement/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/decrement/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/f616cb604af851f77f8cd59368e94ee3e43a8838/hovercard" href="https://github.com/mdn/content/commit/f616cb604af851f77f8cd59368e94ee3e43a8838"><tt>f616cb6</tt></a></li>
-<li>Document last modified: 2023-08-15T14:59:44.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[ecmascript] Macrotasks and Microtasks]]></title>
             <link>https://github.com/mdn/content/issues/28795</link>
