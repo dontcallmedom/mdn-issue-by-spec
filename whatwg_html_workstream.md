@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[html] Document deprecation of unload event](https://github.com/mdn/content/issues/28928) (2023-09-04T14:33:56Z)
+  
 * [[html] Explain why tabindex may not be used on the dialog element](https://github.com/mdn/content/issues/28750) (2023-08-25T10:39:27Z)
   
 * [[html] Inaccurate mention of the `in` operator ](https://github.com/mdn/content/issues/28693) (2023-08-22T08:32:02Z)
