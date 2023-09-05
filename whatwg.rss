@@ -33,6 +33,7 @@
     <span class="pl-kos">.</span><span class="pl-en">read</span><span class="pl-kos">(</span>...<span class="pl-kos">)</span>
     <span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span>...<span class="pl-kos">)</span><span class="pl-kos">;</span>
 <span class="pl-kos">}</span></pre></div>
+<p dir="auto">Also the loop will not terminate when the stream is <code class="notranslate">done</code>. It only terminates if the buffer runs out of room.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="async function readStream(reader) {
   ...
