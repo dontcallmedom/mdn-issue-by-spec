@@ -2195,7 +2195,7 @@ Though in the typescript <code class="notranslate">lib.dom.d.ts</code> the prope
 <p dir="auto">A demo with a Cancel button that can work</p>
 <h4 dir="auto">Did you test this? If so, how?</h4>
 <p dir="auto">Relevant <a href="https://stackoverflow.com/questions/70153242/is-it-possible-to-make-a-close-dismiss-button-for-html-native-dialog-no-plugi" rel="nofollow">StackOverflow question with code</a></p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;dialog id=&quot;diag&quot;&gt;
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;dialog id=&quot;diag&quot;&gt;
   &lt;form method=&quot;dialog&quot;&gt;
     &lt;input id=&quot;txt-name&quot; required /&gt;
     
@@ -2206,20 +2206,19 @@ Though in the typescript <code class="notranslate">lib.dom.d.ts</code> the prope
 
 &lt;button id=&quot;btn-show&quot;&gt;Show Dialog&lt;/button&gt;
 
-&lt;p&gt;Result: &lt;span class=&quot;result&quot;&gt;&lt;/span&gt;&lt;/p&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;dialog id="diag"&gt;
-  &lt;form method="dialog"&gt;
-    &lt;input id="txt-name" required /&gt;
+&lt;p&gt;Result: &lt;span class=&quot;result&quot;&gt;&lt;/span&gt;&lt;/p&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">dialog</span> <span class="pl-c1">id</span>="<span class="pl-s">diag</span>"<span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">form</span> <span class="pl-c1">method</span>="<span class="pl-s">dialog</span>"<span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">input</span> <span class="pl-c1">id</span>="<span class="pl-s">txt-name</span>" <span class="pl-c1">required</span> /&gt;
     
-    &lt;button value="submit"&gt;Submit&lt;/button&gt;
-    &lt;button value=""&gt;Cancel&lt;/button&gt;
-  &lt;/form&gt;
-&lt;/dialog&gt;
+    <span class="pl-kos">&lt;</span><span class="pl-ent">button</span> <span class="pl-c1">value</span>="<span class="pl-s">submit</span>"<span class="pl-kos">&gt;</span>Submit<span class="pl-kos">&lt;/</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">button</span> <span class="pl-c1">value</span>=""<span class="pl-kos">&gt;</span>Cancel<span class="pl-kos">&lt;/</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;/</span><span class="pl-ent">form</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">dialog</span><span class="pl-kos">&gt;</span>
 
-&lt;button id="btn-show"&gt;Show Dialog&lt;/button&gt;
+<span class="pl-kos">&lt;</span><span class="pl-ent">button</span> <span class="pl-c1">id</span>="<span class="pl-s">btn-show</span>"<span class="pl-kos">&gt;</span>Show Dialog<span class="pl-kos">&lt;/</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span>
 
-&lt;p&gt;Result: &lt;span class="result"&gt;&lt;/span&gt;&lt;/p&gt;
-</code></pre></div>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const diag = document.querySelector(&quot;#diag&quot;)
+<span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>Result: <span class="pl-kos">&lt;</span><span class="pl-ent">span</span> <span class="pl-c1">class</span>="<span class="pl-s">result</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">span</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span></pre></div>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const diag = document.querySelector(&quot;#diag&quot;)
 
 diag.addEventListener(&quot;close&quot;, () =&gt; {
   if (!diag.returnValue) { return; }
@@ -2229,18 +2228,17 @@ diag.addEventListener(&quot;close&quot;, () =&gt; {
 
 document.querySelector(&quot;#btn-show&quot;).addEventListener(&quot;click&quot;, () =&gt; {
   diag.showModal();
-});"><pre lang="js" class="notranslate"><code class="notranslate">const diag = document.querySelector("#diag")
+});"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">diag</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">"#diag"</span><span class="pl-kos">)</span>
 
-diag.addEventListener("close", () =&gt; {
-  if (!diag.returnValue) { return; }
+<span class="pl-s1">diag</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"close"</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-c1">!</span><span class="pl-s1">diag</span><span class="pl-kos">.</span><span class="pl-c1">returnValue</span><span class="pl-kos">)</span> <span class="pl-kos">{</span> <span class="pl-k">return</span><span class="pl-kos">;</span> <span class="pl-kos">}</span>
   
-  document.querySelector(".result").textContent = document.querySelector("#txt-name").value;
-});
+  <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">".result"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">textContent</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">"#txt-name"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">value</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
-document.querySelector("#btn-show").addEventListener("click", () =&gt; {
-  diag.showModal();
-});
-</code></pre></div>
+<span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">"#btn-show"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"click"</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-s1">diag</span><span class="pl-kos">.</span><span class="pl-en">showModal</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 
 <details>
 <summary>MDN Content page report details</summary>
