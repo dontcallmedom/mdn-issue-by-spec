@@ -10,8 +10,6 @@
   
 * [[css-fonts-5] [CSS] Add from-font keyword to font-size-adjust](https://github.com/mdn/content/issues/28842) (2023-08-30T15:53:34Z)
   
-* [[selectors-4] :blank selector page does not consider the `:blank` `@page` pseudo-class which is different](https://github.com/mdn/content/issues/28809) (2023-08-28T22:32:36Z)
-  
 * [[css-ui-4] Chrome intents to remove non-standard appearance keywords](https://github.com/mdn/content/issues/28687) (2023-08-21T21:20:42Z)
   
 * [[html, cssom-view-1, dom, uievents, pointerlock-2, selection-api, page-visibility-2] Keydown, keyup, keypress pages should mention they work on document, body, etc](https://github.com/mdn/content/issues/28561) (2023-08-14T20:14:56Z)
