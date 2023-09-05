@@ -23,22 +23,21 @@
 <p dir="auto">You can nest one or more try statements. If an inner try statement does not have a catch block, the enclosing try statement's catch block is used instead.</p>
 </blockquote>
 <p dir="auto">If the inner try both does not have a corresponding catch block, will it not throw a syntax error? Please check the code example below,</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="try{
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="try{
   try{
     throw new Error('nested try Error')
   }
 }
 catch(e){
   console.log(e)
-}"><pre lang="javascript" class="notranslate"><code class="notranslate">try{
-  try{
-    throw new Error('nested try Error')
-  }
-}
-catch(e){
-  console.log(e)
-}
-</code></pre></div>
+}"><pre class="notranslate"><span class="pl-k">try</span><span class="pl-kos">{</span>
+  <span class="pl-k">try</span><span class="pl-kos">{</span>
+    <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-v">Error</span><span class="pl-kos">(</span><span class="pl-s">'nested try Error'</span><span class="pl-kos">)</span>
+  <span class="pl-kos">}</span>
+<span class="pl-kos">}</span>
+<span class="pl-k">catch</span><span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span><span class="pl-kos">{</span>
+  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span>
+<span class="pl-kos">}</span></pre></div>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">Every try block should have it's corresponding catch or finally block.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
