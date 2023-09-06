@@ -16,8 +16,6 @@
   
 * [[dom] no mention what the default is for ShadowRoot mode](https://github.com/mdn/content/issues/27110) (2023-06-02T09:06:55Z)
   
-* [[dom] getRootNode() documentation doesn't mention that it can return the element itself](https://github.com/mdn/content/issues/26962) (2023-05-25T07:32:08Z)
-  
 * [[dom] More information about what HTMLCollection is replaced with](https://github.com/mdn/content/issues/26470) (2023-04-28T04:34:16Z)
   
 * [[dom] Need to update lookupNamespaceURI() and createNSResolver()](https://github.com/mdn/content/issues/24724) (2023-02-22T02:32:44Z)

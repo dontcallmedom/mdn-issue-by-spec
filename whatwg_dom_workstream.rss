@@ -249,42 +249,6 @@ nor this document<br>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[dom] getRootNode() documentation doesn't mention that it can return the element itself]]></title>
-            <link>https://github.com/mdn/content/issues/26962</link>
-            <guid>https://github.com/mdn/content/issues/26962</guid>
-            <pubDate>Thu, 25 May 2023 07:32:08 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/getRootNode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Node/getRootNode</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The documentation it is not clear that <code class="notranslate">getRootNode()</code> might return the element itself, if it doesn't have a parent.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Clear statement that the parent of the element matters and also an example.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">From <a href="https://dom.spec.whatwg.org/#dom-node-getrootnode" rel="nofollow">DOM Standard</a>:</p>
-<blockquote>
-<p dir="auto">The getRootNode(options) method steps are to return <a href="https://webidl.spec.whatwg.org/#this" rel="nofollow">this</a>’s <a href="https://dom.spec.whatwg.org/#concept-shadow-including-root" rel="nofollow">shadow-including root</a> if options["<a href="https://dom.spec.whatwg.org/#dom-getrootnodeoptions-composed" rel="nofollow">composed</a>"] is true; otherwise <a href="https://webidl.spec.whatwg.org/#this" rel="nofollow">this</a>’s <a href="https://dom.spec.whatwg.org/#concept-tree-root" rel="nofollow">root</a>.</p>
-</blockquote>
-<blockquote>
-<p dir="auto">The root of an object is itself, if its <a href="https://dom.spec.whatwg.org/#concept-tree-parent" rel="nofollow">parent</a> is null, or else it is the <a href="https://dom.spec.whatwg.org/#concept-tree-root" rel="nofollow">root</a> of its <a href="https://dom.spec.whatwg.org/#concept-tree-parent" rel="nofollow">parent</a>. The <a href="https://dom.spec.whatwg.org/#concept-tree-root" rel="nofollow">root</a> of a <a href="https://dom.spec.whatwg.org/#concept-tree" rel="nofollow">tree</a> is any object <a href="https://dom.spec.whatwg.org/#concept-tree-participate" rel="nofollow">participating</a> in that <a href="https://dom.spec.whatwg.org/#concept-tree" rel="nofollow">tree</a> whose <a href="https://dom.spec.whatwg.org/#concept-tree-parent" rel="nofollow">parent</a> is null.</p>
-</blockquote>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><code class="notranslate">document.createElement("div").getRootNode() // returns the div itself</code></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/node/getrootnode</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/getRootNode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Node/getRootNode</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/node/getrootnode/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/node/getrootnode/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/312081aabba3885b35a81107b3c2fc53428896c5/hovercard" href="https://github.com/mdn/content/commit/312081aabba3885b35a81107b3c2fc53428896c5"><tt>312081a</tt></a></li>
-<li>Document last modified: 2023-04-07T06:19:30.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[dom] More information about what HTMLCollection is replaced with]]></title>
             <link>https://github.com/mdn/content/issues/26470</link>
             <guid>https://github.com/mdn/content/issues/26470</guid>
