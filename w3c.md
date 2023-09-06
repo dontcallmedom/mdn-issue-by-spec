@@ -4,8 +4,6 @@
 
 * [[css-fonts-5] Formal syntax wrong](https://github.com/mdn/content/issues/28900) (2023-09-02T14:41:13Z)
   
-* [[css-break-3, css-multicol-2] CSS Attributes: widows and orphans ](https://github.com/mdn/content/issues/28871) (2023-08-31T19:27:12Z)
-  
 * [[css-fonts-5] [CSS] Add from-font keyword to font-size-adjust](https://github.com/mdn/content/issues/28842) (2023-08-30T15:53:34Z)
   
 * [[css-ui-4] Chrome intents to remove non-standard appearance keywords](https://github.com/mdn/content/issues/28687) (2023-08-21T21:20:42Z)
