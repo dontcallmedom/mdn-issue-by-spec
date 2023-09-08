@@ -26,10 +26,11 @@
 </blockquote>
 <p dir="auto"><code class="notranslate">FileSystemDirectoryHandle.entries()</code> returns a <code class="notranslate">FileSystemDirectoryIterator</code>. It's an iterator, not an array.</p>
 <h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">An iterator that provides a <code class="notranslate">Promise</code>, which is fulfills with a given object's own enumerable property [key, value] pairs</p>
+<p dir="auto">An iterator that provides a <code class="notranslate">Promise</code>, which is fulfills with a given object's own enumerable property <code class="notranslate">[key, value]</code> pair</p>
 <p dir="auto">Or something else.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><a href="https://fs.spec.whatwg.org/#api-filesystemdirectoryhandle-asynciterable" rel="nofollow">File System Living Standard — Last Updated 24 July 2023 § 2.4.1. Directory iteration</a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/42113148/266732371-0250f377-29f8-4d6e-954a-084d935c89ff.png"><img src="https://user-images.githubusercontent.com/42113148/266732371-0250f377-29f8-4d6e-954a-084d935c89ff.png" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>]]></content:encoded>
         </item>
