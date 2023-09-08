@@ -4,10 +4,35 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Mon, 28 Aug 2023 09:55:38 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 08 Sep 2023 21:12:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript, file-system-access] Wrong description of value that `FileSystemDirectoryHandle.entries()` method returns]]></title>
+            <link>https://github.com/mdn/content/issues/29003</link>
+            <guid>https://github.com/mdn/content/issues/29003</guid>
+            <pubDate>Fri, 08 Sep 2023 21:12:43 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryHandle/entries" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryHandle/entries</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">intro, ### Return value</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto">The entries() method of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryHandle" rel="nofollow">FileSystemDirectoryHandle</a> interface returns an array of a given object's own enumerable property [key, value] pairs, in the same order as that provided by a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in" rel="nofollow">for...in</a> loop (the difference being that a for-in loop enumerates properties in the prototype chain as well).</p>
+</blockquote>
+<blockquote>
+<p dir="auto">An array of the given FileSystemDirectoryHandle object's own enumerable property [key, value] pairs.</p>
+</blockquote>
+<p dir="auto"><code class="notranslate">FileSystemDirectoryHandle.entries()</code> returns a <code class="notranslate">FileSystemDirectoryIterator</code>. It's an iterator, not an array.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">An iterator that provides a <code class="notranslate">Promise</code>, which is fulfills with a given object's own enumerable property [key, value] pairs</p>
+<p dir="auto">Or something else.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://fs.spec.whatwg.org/#api-filesystemdirectoryhandle-asynciterable" rel="nofollow">File System Living Standard — Last Updated 24 July 2023 § 2.4.1. Directory iteration</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Macrotasks and Microtasks]]></title>
             <link>https://github.com/mdn/content/issues/28795</link>
