@@ -4,10 +4,40 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Thu, 07 Sep 2023 16:48:29 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 08 Sep 2023 00:41:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[cssom-view-1] offsetParent is also changed by transform]]></title>
+            <link>https://github.com/mdn/content/issues/28991</link>
+            <guid>https://github.com/mdn/content/issues/28991</guid>
+            <pubDate>Fri, 08 Sep 2023 00:41:19 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetParent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetParent</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">HTMLElement: offsetParent property</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The listing is incomplete. A <code class="notranslate">static</code> parent with <code class="notranslate">transform</code> property also becomes <code class="notranslate">offsetParent</code> of another non-static child. For example: <a href="https://jsfiddle.net/f4nw0s5a/" rel="nofollow">https://jsfiddle.net/f4nw0s5a/</a></p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Mention <code class="notranslate">transform</code> changing <code class="notranslate">offsetParent</code> value.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">More details in the comment of this question: <a href="https://stackoverflow.com/questions/77063213/why-is-my-elements-offsetparent-its-parent-static-element-instead-of-its-fixed" rel="nofollow">https://stackoverflow.com/questions/77063213/why-is-my-elements-offsetparent-its-parent-static-element-instead-of-its-fixed</a></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/htmlelement/offsetparent</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetParent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetParent</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlelement/offsetparent/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlelement/offsetparent/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/a3d9f61a8990ba7b53bda9748d1f26a9e9810b18/hovercard" href="https://github.com/mdn/content/commit/a3d9f61a8990ba7b53bda9748d1f26a9e9810b18"><tt>a3d9f61</tt></a></li>
+<li>Document last modified: 2023-04-07T00:39:15.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-pseudo-4] Explain Pseudo Element Selectors without `content` Property Behavior]]></title>
             <link>https://github.com/mdn/content/issues/28985</link>

@@ -512,47 +512,6 @@ But (especially for a beginner - like me) it would be super helpful to at least 
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Suggestions to improve the Top Layer page: add examples, specify browser support, and clarify information]]></title>
-            <link>https://github.com/mdn/content/issues/27914</link>
-            <guid>https://github.com/mdn/content/issues/27914</guid>
-            <pubDate>Thu, 13 Jul 2023 04:40:07 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Glossary/Top_layer" rel="nofollow">https://developer.mozilla.org/en-US/docs/Glossary/Top_layer</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Top layer</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<ol dir="auto">
-<li>In Firefox, I couldn't find the top layer shown in the screenshot. I think this is because Firefox developer tools don't show it, only Chrome developer tools? Or, maybe, <code class="notranslate">#top-layer</code> hasn't been implemented in Firefox yet?</li>
-<li>Can you interact with the top layer, or is it purely conceptual? Can you refer to it with a CSS selector (e.g., <code class="notranslate">#top-layer</code>) like the screenshot implies? Is there a way to, for example, hide all the elements within the top layer with CSS? With JavaScript?</li>
-<li>The "See also" section doesn't link to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" rel="nofollow">dialog element page</a>.</li>
-<li>This page says, "The top layer is a specific layer in the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context" rel="nofollow">stacking context</a>", but I don't see it mentioned on the stacking context page, not even in the stacking context "See also" section.</li>
-</ol>
-<p dir="auto">For context, I'm experimenting with <code class="notranslate">dialog.showModal()</code>.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<ol dir="auto">
-<li>IMHO, the page should explicitly state that the top layer can't be seen in Firefox developer tools. If this is due to Firefox not supporting the feature/concept, a browser support table might be a good way to illustrate this information.</li>
-<li>I think the article could be expanded to answer these questions, ideally with examples. If <code class="notranslate">#top-layer</code> is purely conceptual, maybe that could be explicitly mentioned.</li>
-<li>Link to the dialog element page in the "See also."</li>
-<li>I suppose I expected to see the top layer mentioned in lesser detail on the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context" rel="nofollow">stacking context</a> page--a single sentence may suffice.</li>
-</ol>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/glossary/top_layer</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Glossary/Top_layer" rel="nofollow">https://developer.mozilla.org/en-US/docs/Glossary/Top_layer</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/glossary/top_layer/index.md">https://github.com/mdn/content/blob/main/files/en-us/glossary/top_layer/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ada5fa5ef15eadd44b549ecf906423b4a2092f34/hovercard" href="https://github.com/mdn/content/commit/ada5fa5ef15eadd44b549ecf906423b4a2092f34"><tt>ada5fa5</tt></a></li>
-<li>Document last modified: 2023-06-08T13:19:16.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Explain how to put dialog elements in the top layer]]></title>
             <link>https://github.com/mdn/content/issues/27912</link>
             <guid>https://github.com/mdn/content/issues/27912</guid>

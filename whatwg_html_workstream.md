@@ -30,8 +30,6 @@
   
 * [[html] Issue with "title": "Hovering here will show nothing." shows something when hovering](https://github.com/mdn/content/issues/28297) (2023-07-31T10:17:36Z)
   
-* [[html] Suggestions to improve the Top Layer page: add examples, specify browser support, and clarify information](https://github.com/mdn/content/issues/27914) (2023-07-13T04:40:07Z)
-  
 * [[html] Explain how to put dialog elements in the top layer](https://github.com/mdn/content/issues/27912) (2023-07-13T04:28:06Z)
   
 * [[html] No examples for iframe usage given](https://github.com/mdn/content/issues/27753) (2023-07-04T09:28:24Z)
