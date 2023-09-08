@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[dom] Code example for `passive` option is misleading](https://github.com/mdn/content/issues/28997) (2023-09-08T08:35:47Z)
+  
 * [[html] The enumeration of the values of platform property has duplicates.](https://github.com/mdn/content/issues/28966) (2023-09-06T10:45:05Z)
   
 * [[streams] infinite loop in example code](https://github.com/mdn/content/issues/28954) (2023-09-05T19:36:09Z)
