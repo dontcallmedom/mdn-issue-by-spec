@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by IETF. [![RSS feed for IETF-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [[rfc6265] CHIPS no longer requires Path=/](https://github.com/mdn/content/issues/29001) (2023-09-08T15:54:56Z)
+  
 * [[rfc7233] Range HTTP Header offsets are inclusive](https://github.com/mdn/content/issues/28957) (2023-09-05T21:43:46Z)
   
 * [[rfc7231] Retry-After doesn't suggest what to do for `Retry-After: 0`](https://github.com/mdn/content/issues/28330) (2023-08-01T21:56:14Z)
