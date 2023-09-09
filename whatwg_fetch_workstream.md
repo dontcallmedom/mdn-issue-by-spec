@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG Fetch Workstream. [![RSS feed for WHATWG Fetch Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[fetch] `input` argument does not follow the specification](https://github.com/mdn/content/issues/29025) (2023-09-09T22:39:24Z)
+* [[fetch] Request's `input` argument does not follow the specification](https://github.com/mdn/content/issues/29025) (2023-09-09T22:39:24Z)
   
 * [[fetch] `Response.text()` can throw a `TypeError`](https://github.com/mdn/content/issues/24466) (2023-02-15T16:35:17Z)
   
