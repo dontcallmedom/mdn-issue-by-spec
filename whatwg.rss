@@ -4,10 +4,57 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Fri, 08 Sep 2023 08:35:47 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 09 Sep 2023 22:39:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[fetch] `input` argument does not follow the specification]]></title>
+            <link>https://github.com/mdn/content/issues/29025</link>
+            <guid>https://github.com/mdn/content/issues/29025</guid>
+            <pubDate>Sat, 09 Sep 2023 22:39:24 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Request/Request" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Request/Request</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Parameter &gt; <code class="notranslate">input</code></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto"><code class="notranslate">input</code><br>
+Defines the resource that you wish to fetch. This can either be:<br>
+[...]</p>
+<ul dir="auto">
+<li>A <a href="https://developer.mozilla.org/en-US/docs/Web/API/Request" rel="nofollow">Request</a> object, <strong>effectively creating a copy</strong>.</li>
+<li>[...]</li>
+</ul>
+</blockquote>
+<p dir="auto">The "effectively creating a copy" part is misleading. Here is what the spec says on the <code class="notranslate">input</code> parameter:</p>
+<blockquote>
+<p dir="auto">request = new <a href="https://fetch.spec.whatwg.org/#dom-request" rel="nofollow">Request</a>(input [, init])<br>
+Returns a new request whose <a href="https://fetch.spec.whatwg.org/#dom-request-url" rel="nofollow">url</a> property is input if input is a string, <strong>and input’s <a href="https://fetch.spec.whatwg.org/#dom-request-url" rel="nofollow">url</a> if input is a <a href="https://fetch.spec.whatwg.org/#request" rel="nofollow">Request</a> object</strong>.</p>
+</blockquote>
+<p dir="auto">So according to the spec, only the URL is ported over from the argument, nothing else (including the body for example, which would be expected according to the MDN description)</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Replace the second element of the list with something akin to:</p>
+<blockquote>
+<p dir="auto">A <a href="https://developer.mozilla.org/en-US/docs/Web/API/Request" rel="nofollow">Request</a> object, using its URL to create the new Request.</p>
+</blockquote>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Specification link: <a href="https://fetch.spec.whatwg.org/#ref-for-dom-request%E2%91%A0" rel="nofollow">https://fetch.spec.whatwg.org/#ref-for-dom-request%E2%91%A0</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/request/request</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Request/Request" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Request/Request</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/request/request/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/request/request/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc/hovercard" href="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc"><tt>acfe8c9</tt></a></li>
+<li>Document last modified: 2023-07-07T07:19:19.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[dom] Code example for `passive` option is misleading]]></title>
             <link>https://github.com/mdn/content/issues/28997</link>
