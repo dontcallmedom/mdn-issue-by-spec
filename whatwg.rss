@@ -3179,7 +3179,7 @@ Though in the typescript <code class="notranslate">lib.dom.d.ts</code> the prope
 <p dir="auto">A demo with a Cancel button that can work</p>
 <h4 dir="auto">Did you test this? If so, how?</h4>
 <p dir="auto">Relevant <a href="https://stackoverflow.com/questions/70153242/is-it-possible-to-make-a-close-dismiss-button-for-html-native-dialog-no-plugi" rel="nofollow">StackOverflow question with code</a></p>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;dialog id=&quot;diag&quot;&gt;
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;dialog id=&quot;diag&quot;&gt;
   &lt;form method=&quot;dialog&quot;&gt;
     &lt;input id=&quot;txt-name&quot; required /&gt;
     
@@ -3190,19 +3190,20 @@ Though in the typescript <code class="notranslate">lib.dom.d.ts</code> the prope
 
 &lt;button id=&quot;btn-show&quot;&gt;Show Dialog&lt;/button&gt;
 
-&lt;p&gt;Result: &lt;span class=&quot;result&quot;&gt;&lt;/span&gt;&lt;/p&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">dialog</span> <span class="pl-c1">id</span>="<span class="pl-s">diag</span>"<span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;</span><span class="pl-ent">form</span> <span class="pl-c1">method</span>="<span class="pl-s">dialog</span>"<span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">input</span> <span class="pl-c1">id</span>="<span class="pl-s">txt-name</span>" <span class="pl-c1">required</span> /&gt;
+&lt;p&gt;Result: &lt;span class=&quot;result&quot;&gt;&lt;/span&gt;&lt;/p&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;dialog id="diag"&gt;
+  &lt;form method="dialog"&gt;
+    &lt;input id="txt-name" required /&gt;
     
-    <span class="pl-kos">&lt;</span><span class="pl-ent">button</span> <span class="pl-c1">value</span>="<span class="pl-s">submit</span>"<span class="pl-kos">&gt;</span>Submit<span class="pl-kos">&lt;/</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">button</span> <span class="pl-c1">value</span>=""<span class="pl-kos">&gt;</span>Cancel<span class="pl-kos">&lt;/</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;/</span><span class="pl-ent">form</span><span class="pl-kos">&gt;</span>
-<span class="pl-kos">&lt;/</span><span class="pl-ent">dialog</span><span class="pl-kos">&gt;</span>
+    &lt;button value="submit"&gt;Submit&lt;/button&gt;
+    &lt;button value=""&gt;Cancel&lt;/button&gt;
+  &lt;/form&gt;
+&lt;/dialog&gt;
 
-<span class="pl-kos">&lt;</span><span class="pl-ent">button</span> <span class="pl-c1">id</span>="<span class="pl-s">btn-show</span>"<span class="pl-kos">&gt;</span>Show Dialog<span class="pl-kos">&lt;/</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span>
+&lt;button id="btn-show"&gt;Show Dialog&lt;/button&gt;
 
-<span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>Result: <span class="pl-kos">&lt;</span><span class="pl-ent">span</span> <span class="pl-c1">class</span>="<span class="pl-s">result</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">span</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span></pre></div>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const diag = document.querySelector(&quot;#diag&quot;)
+&lt;p&gt;Result: &lt;span class="result"&gt;&lt;/span&gt;&lt;/p&gt;
+</code></pre></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const diag = document.querySelector(&quot;#diag&quot;)
 
 diag.addEventListener(&quot;close&quot;, () =&gt; {
   if (!diag.returnValue) { return; }
@@ -3212,17 +3213,18 @@ diag.addEventListener(&quot;close&quot;, () =&gt; {
 
 document.querySelector(&quot;#btn-show&quot;).addEventListener(&quot;click&quot;, () =&gt; {
   diag.showModal();
-});"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">diag</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">"#diag"</span><span class="pl-kos">)</span>
+});"><pre lang="js" class="notranslate"><code class="notranslate">const diag = document.querySelector("#diag")
 
-<span class="pl-s1">diag</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"close"</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-  <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-c1">!</span><span class="pl-s1">diag</span><span class="pl-kos">.</span><span class="pl-c1">returnValue</span><span class="pl-kos">)</span> <span class="pl-kos">{</span> <span class="pl-k">return</span><span class="pl-kos">;</span> <span class="pl-kos">}</span>
+diag.addEventListener("close", () =&gt; {
+  if (!diag.returnValue) { return; }
   
-  <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">".result"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">textContent</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">"#txt-name"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">value</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  document.querySelector(".result").textContent = document.querySelector("#txt-name").value;
+});
 
-<span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">"#btn-show"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"click"</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-  <span class="pl-s1">diag</span><span class="pl-kos">.</span><span class="pl-en">showModal</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+document.querySelector("#btn-show").addEventListener("click", () =&gt; {
+  diag.showModal();
+});
+</code></pre></div>
 
 <details>
 <summary>MDN Content page report details</summary>
@@ -3273,19 +3275,20 @@ document.querySelector(&quot;#btn-show&quot;).addEventListener(&quot;click&quot;
 <p dir="auto">was updated to point from a broken mdn link to a specification page on w3.org. However, this page doesn't actually have the promised utility method.</p>
 <p dir="auto">The source code that the link alludes to is actually present on the mdn page at internet archive: <a href="https://web.archive.org/web/20140408083257/https://developer.mozilla.org/en-US/docs/xml/xml:id" rel="nofollow">https://web.archive.org/web/20140408083257/https://developer.mozilla.org/en-US/docs/xml/xml:id</a><br>
 the code in question is a simple xpath method:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="var getElementByIdWrapper = function (xmldoc, myID) {
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="var getElementByIdWrapper = function (xmldoc, myID) {
         return xmldoc.evaluate('//*[@xml:id=&quot;'+myID+'&quot;]', xmldoc, 
                 function () {
                   return 'http://www.w3.org/XML/1998/namespace';},
                 XPathResult.FIRST_ORDERED_NODE_TYPE, 
                 null).singleNodeValue;
-};"><pre class="notranslate"><span class="pl-k">var</span> <span class="pl-en">getElementByIdWrapper</span> <span class="pl-c1">=</span> <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-s1">xmldoc</span><span class="pl-kos">,</span> <span class="pl-s1">myID</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-        <span class="pl-k">return</span> <span class="pl-s1">xmldoc</span><span class="pl-kos">.</span><span class="pl-en">evaluate</span><span class="pl-kos">(</span><span class="pl-s">'//*[@xml:id="'</span><span class="pl-c1">+</span><span class="pl-s1">myID</span><span class="pl-c1">+</span><span class="pl-s">'"]'</span><span class="pl-kos">,</span> <span class="pl-s1">xmldoc</span><span class="pl-kos">,</span> 
-                <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-                  <span class="pl-k">return</span> <span class="pl-s">'http://www.w3.org/XML/1998/namespace'</span><span class="pl-kos">;</span><span class="pl-kos">}</span><span class="pl-kos">,</span>
-                <span class="pl-v">XPathResult</span><span class="pl-kos">.</span><span class="pl-c1">FIRST_ORDERED_NODE_TYPE</span><span class="pl-kos">,</span> 
-                <span class="pl-c1">null</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">singleNodeValue</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span><span class="pl-kos">;</span></pre></div>
+};"><pre lang="js" class="notranslate"><code class="notranslate">var getElementByIdWrapper = function (xmldoc, myID) {
+        return xmldoc.evaluate('//*[@xml:id="'+myID+'"]', xmldoc, 
+                function () {
+                  return 'http://www.w3.org/XML/1998/namespace';},
+                XPathResult.FIRST_ORDERED_NODE_TYPE, 
+                null).singleNodeValue;
+};
+</code></pre></div>
 <p dir="auto">I'm not sure if it makes sense to include this code in-line on this doc page, for most people it'd probably introduce more confusion, however in my specific case I was actually looking for this code and didn't understand why it wasn't available on the linked w3.org page.</p>
 <h4 dir="auto">Specific section or headline?</h4>
 <p dir="auto">"See also"</p>
