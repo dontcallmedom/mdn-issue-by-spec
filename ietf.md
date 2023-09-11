@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by IETF. [![RSS feed for IETF-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[rfc7231] 500error](https://github.com/mdn/content/issues/29041) (2023-09-11T01:58:34Z)
-  
 * [[rfc6265] CHIPS no longer requires Path=/](https://github.com/mdn/content/issues/29001) (2023-09-08T15:54:56Z)
   
 * [[rfc7233] Range HTTP Header offsets are inclusive](https://github.com/mdn/content/issues/28957) (2023-09-05T21:43:46Z)
