@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [[background-sync] Wrong type of ServiceWorkerRegistration.sync property in sidebar of Background Synchronization API](https://github.com/mdn/content/issues/29059) (2023-09-12T02:30:57Z)
-  
 * [[appmanifest] Wrong Type](https://github.com/mdn/content/issues/29028) (2023-09-10T07:01:11Z)
   
 * [[cssom-view-1] offsetParent is also changed by transform](https://github.com/mdn/content/issues/28991) (2023-09-08T00:41:19Z)
