@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Article element in a wrong implementation](https://github.com/mdn/content/issues/29090) (2023-09-13T12:53:45Z)
+  
 * [\[html\] Wrong explanation of the example inside Inline formatting context](https://github.com/mdn/content/issues/29035) (2023-09-10T13:07:32Z)
   
 * [\[fetch\] Request's \`input\` argument does not follow the specification](https://github.com/mdn/content/issues/29025) (2023-09-09T22:39:24Z)
