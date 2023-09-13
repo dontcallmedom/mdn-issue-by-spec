@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[background-fetch\] Parameters request of matchAll() should be optional](https://github.com/mdn/content/issues/29094) (2023-09-13T16:53:16Z)
+  
 * [\[webrtc\] RTCDataChannel bufferedamountlow event not sent if the threshold is 0?](https://github.com/mdn/content/issues/29087) (2023-09-13T08:47:28Z)
   
 * [\[appmanifest\] Wrong Type](https://github.com/mdn/content/issues/29028) (2023-09-10T07:01:11Z)
