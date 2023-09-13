@@ -92,7 +92,7 @@ function generateMarkdown(scope, issues) {
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by ${scope}. [![RSS feed for ${scope}-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](${path}.rss)
 
-${issues.map(issue => `* [${gfmEscaper(issue.title)}](${issue.url}) (${issue.createdAt})
+${issues.map(issue => `* [${gfmEscaper.escape(issue.title)}](${issue.url}) (${issue.createdAt})
   `).join("\n")}
 `;
 }
