@@ -8,6 +8,9 @@ const { JSDOM } = require("jsdom");
 const bcd = require('@mdn/browser-compat-data');
 const browserSpecs = require("browser-specs");
 const {Feed} = require("feed");
+const GfmEscape = require('gfm-escape');
+
+const gfmEscaper = new GfmEscape();
 
 const toSlug = title => title.replace(/([A-Z])/g, s => s.toLowerCase())
         .replace(/[^a-z0-9]/g, '_')
@@ -89,7 +92,7 @@ function generateMarkdown(scope, issues) {
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by ${scope}. [![RSS feed for ${scope}-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](${path}.rss)
 
-${issues.map(issue => `* [${issue.title}](${issue.url}) (${issue.createdAt})
+${issues.map(issue => `* [${gfmEscaper(issue.title)}](${issue.url}) (${issue.createdAt})
   `).join("\n")}
 `;
 }
