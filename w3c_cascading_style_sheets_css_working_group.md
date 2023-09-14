@@ -28,8 +28,6 @@
   
 * [\[html, cssom-view-1\] window.open() has a partial list of features](https://github.com/mdn/content/issues/27357) (2023-06-15T19:36:20Z)
   
-* [\[selectors-4\] No difference between mouse and keyboard focus methods](https://github.com/mdn/content/issues/27093) (2023-06-01T09:55:49Z)
-  
 * [\[css-backgrounds-4\] No documentation for css src(...)](https://github.com/mdn/content/issues/26621) (2023-05-06T22:26:03Z)
   
 * [\[css-backgrounds-4\] It is unclear why background-attachment: fixed is said to be incompatible with background-clip: text](https://github.com/mdn/content/issues/26445) (2023-04-27T02:31:12Z)
