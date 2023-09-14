@@ -4,7 +4,7 @@
 
 * [\[service-workers-1\] Missing property ServiceWorkerGlobalScope.serviceWorker](https://github.com/mdn/content/issues/29123) (2023-09-14T19:14:58Z)
   
-* [\[css-masking-1\] url() function doesn't work with file://](https://github.com/mdn/content/issues/29106) (2023-09-14T09:24:04Z)
+* [\[css-masking-1\] mask-image: url() function doesn't work with file://](https://github.com/mdn/content/issues/29106) (2023-09-14T09:24:04Z)
   
 * [\[webrtc\] RTCDataChannel bufferedamountlow event not sent if the threshold is 0?](https://github.com/mdn/content/issues/29087) (2023-09-13T08:47:28Z)
   

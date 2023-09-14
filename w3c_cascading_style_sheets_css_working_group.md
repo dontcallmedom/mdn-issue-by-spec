@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-masking-1\] url() function doesn't work with file://](https://github.com/mdn/content/issues/29106) (2023-09-14T09:24:04Z)
+* [\[css-masking-1\] mask-image: url() function doesn't work with file://](https://github.com/mdn/content/issues/29106) (2023-09-14T09:24:04Z)
   
 * [\[cssom-view-1\] offsetParent is also changed by transform](https://github.com/mdn/content/issues/28991) (2023-09-08T00:41:19Z)
   
