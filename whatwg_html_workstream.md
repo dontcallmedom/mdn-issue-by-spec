@@ -44,8 +44,6 @@
   
 * [\[html\] \<source media\> in media elements is allowed again (spec change)](https://github.com/mdn/content/issues/27079) (2023-05-31T18:43:51Z)
   
-* [\[html\] Explanation when "input" event is fired is missleading](https://github.com/mdn/content/issues/27044) (2023-05-30T09:45:01Z)
-  
 * [\[html\] Improve wording on what it means to be suspended](https://github.com/mdn/content/issues/26625) (2023-05-07T04:43:55Z)
   
 * [\[html\] Image request fired as soon as src is set](https://github.com/mdn/content/issues/26560) (2023-05-03T17:23:34Z)
