@@ -6,8 +6,6 @@
   
 * [\[fetch\] \`Response.text()\` can throw a \`TypeError\`](https://github.com/mdn/content/issues/24466) (2023-02-15T16:35:17Z)
   
-* [\[fetch\] Spec update: \`response.body\` now returns readable byte stream](https://github.com/mdn/content/issues/24453) (2023-02-15T10:53:31Z)
-  
 * [\[fetch\] "the request's destination. This is a string indicating the type of content being requested."](https://github.com/mdn/content/issues/22955) (2022-12-14T16:29:26Z)
   
 * [\[fetch\] fetch could reject when 400 is returned](https://github.com/mdn/content/issues/17115) (2022-06-08T21:48:36Z)

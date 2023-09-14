@@ -4,55 +4,10 @@
         <title>W3C Web Platform Incubator Community Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_platform_incubator_community_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Platform Incubator Community Group</description>
-        <lastBuildDate>Wed, 13 Sep 2023 16:53:16 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 20 Nov 2022 02:34:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[background-fetch] Parameters request of matchAll() should be optional]]></title>
-            <link>https://github.com/mdn/content/issues/29094</link>
-            <guid>https://github.com/mdn/content/issues/29094</guid>
-            <pubDate>Wed, 13 Sep 2023 16:53:16 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/BackgroundFetchRegistration/matchAll" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/BackgroundFetchRegistration/matchAll</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Unlike match(), Parameters request of matchAll() is an optional parameter.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">mark parameter request of matchAll() to be an optional parameter</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://wicg.github.io/background-fetch/#idl-index" rel="nofollow">https://wicg.github.io/background-fetch/#idl-index</a></p>
-<div class="highlight highlight-source-idl notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="[Exposed=(Window,Worker)]
-interface BackgroundFetchRegistration : EventTarget {
-  // ...
-
-  Promise&lt;BackgroundFetchRecord&gt; match(RequestInfo request, optional CacheQueryOptions options = {});
-  Promise&lt;sequence&lt;BackgroundFetchRecord&gt;&gt; matchAll(optional RequestInfo request, optional CacheQueryOptions options = {});
-};"><pre class="notranslate">[Exposed=(<span class="pl-c1">Window</span>,Worker)]
-interface BackgroundFetchRegistration <span class="pl-k">:</span> EventTarget {
-  <span class="pl-k">//</span> ...
-
-  Promise<span class="pl-k">&lt;</span>BackgroundFetchRecord<span class="pl-k">&gt;</span> match(RequestInfo request, optional CacheQueryOptions options = {})<span class="pl-c"><span class="pl-c">;</span></span>
-  Promise<span class="pl-k">&lt;</span>sequence<span class="pl-k">&lt;</span>BackgroundFetchRecord<span class="pl-k">&gt;&gt;</span> matchAll(optional RequestInfo request, optional CacheQueryOptions options = {})<span class="pl-c"><span class="pl-c">;</span></span>
-}<span class="pl-c"><span class="pl-c">;</span></span></pre></div>
-<p dir="auto"><a href="https://wicg.github.io/background-fetch/#index-defined-here" rel="nofollow">https://wicg.github.io/background-fetch/#index-defined-here</a></p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/95597335/267730093-7622fe8e-c0c1-4a90-b561-ae468089cea7.png"><img src="https://user-images.githubusercontent.com/95597335/267730093-7622fe8e-c0c1-4a90-b561-ae468089cea7.png" alt="image" style="max-width: 100%;"></a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/backgroundfetchregistration/matchall</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/BackgroundFetchRegistration/matchAll" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/BackgroundFetchRegistration/matchAll</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/backgroundfetchregistration/matchall/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/backgroundfetchregistration/matchall/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/135b8311a5e3d12789e8421845be3ce026ef72b8/hovercard" href="https://github.com/mdn/content/commit/135b8311a5e3d12789e8421845be3ce026ef72b8"><tt>135b831</tt></a></li>
-<li>Document last modified: 2023-04-06T14:57:25.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[webhid] Confusing phrase "input report" is used for HIDConnectionEvent]]></title>
             <link>https://github.com/mdn/content/issues/22419</link>

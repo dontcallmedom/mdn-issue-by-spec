@@ -6,8 +6,6 @@
   
 * [\[fetch\] Request's \`input\` argument does not follow the specification](https://github.com/mdn/content/issues/29025) (2023-09-09T22:39:24Z)
   
-* [\[dom\] Code example for \`passive\` option is misleading](https://github.com/mdn/content/issues/28997) (2023-09-08T08:35:47Z)
-  
 * [\[streams\] infinite loop in example code](https://github.com/mdn/content/issues/28954) (2023-09-05T19:36:09Z)
   
 * [\[html\] Document deprecation of unload event](https://github.com/mdn/content/issues/28928) (2023-09-04T14:33:56Z)
@@ -91,8 +89,6 @@
 * [\[dom\] Need to update lookupNamespaceURI() and createNSResolver()](https://github.com/mdn/content/issues/24724) (2023-02-22T02:32:44Z)
   
 * [\[fetch\] \`Response.text()\` can throw a \`TypeError\`](https://github.com/mdn/content/issues/24466) (2023-02-15T16:35:17Z)
-  
-* [\[fetch\] Spec update: \`response.body\` now returns readable byte stream](https://github.com/mdn/content/issues/24453) (2023-02-15T10:53:31Z)
   
 * [\[dom\] addEventListener - which browsers/events default to passive](https://github.com/mdn/content/issues/24181) (2023-02-05T18:59:51Z)
   
