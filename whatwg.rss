@@ -4,10 +4,80 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Fri, 15 Sep 2023 06:42:01 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 15 Sep 2023 16:43:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Possible misleading description of History method]]></title>
+            <link>https://github.com/mdn/content/issues/29138</link>
+            <guid>https://github.com/mdn/content/issues/29138</guid>
+            <pubDate>Fri, 15 Sep 2023 16:43:56 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">This method is asynchronous. Add a listener for the popstate event in order to determine when the navigation has completed. The state parameter will be available in it.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">replaceState method on it's own should not be described as an asynchronous function.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">You can execute the following example to validate it is in fact synchronous:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="(() =&gt; {
+    let oldReplaceState = history.replaceState;
+    history.replaceState = function replaceState() {
+        let ret = oldReplaceState.apply(this, arguments);
+        console.log(arguments)
+        window.dispatchEvent(new Event('replacestate'));
+        window.dispatchEvent(new Event('locationchange'));
+        return ret;
+    };
+})();
+
+console.log('beginning')
+history.replaceState({}, '', '#asd')
+history.replaceState({}, '', '#asd1')
+history.replaceState({}, '', '#asd2')
+console.log('after asd2')
+history.replaceState({}, '', '#asd3')
+history.replaceState({}, '', '#asd4')
+history.replaceState({}, '', '#asd5')
+history.replaceState({}, '', '#asd6')
+history.replaceState({}, '', '#asd7')
+history.replaceState({}, '', '#asd8')
+history.replaceState({}, '', '#asd9')
+history.replaceState({}, '', '#asd10')
+history.replaceState({}, '', '#asd11')
+console.log('end') "><pre class="notranslate"><code class="notranslate">(() =&gt; {
+    let oldReplaceState = history.replaceState;
+    history.replaceState = function replaceState() {
+        let ret = oldReplaceState.apply(this, arguments);
+        console.log(arguments)
+        window.dispatchEvent(new Event('replacestate'));
+        window.dispatchEvent(new Event('locationchange'));
+        return ret;
+    };
+})();
+
+console.log('beginning')
+history.replaceState({}, '', '#asd')
+history.replaceState({}, '', '#asd1')
+history.replaceState({}, '', '#asd2')
+console.log('after asd2')
+history.replaceState({}, '', '#asd3')
+history.replaceState({}, '', '#asd4')
+history.replaceState({}, '', '#asd5')
+history.replaceState({}, '', '#asd6')
+history.replaceState({}, '', '#asd7')
+history.replaceState({}, '', '#asd8')
+history.replaceState({}, '', '#asd9')
+history.replaceState({}, '', '#asd10')
+history.replaceState({}, '', '#asd11')
+console.log('end') 
+</code></pre></div>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[dom] Arrow function | Invocation context]]></title>
             <link>https://github.com/mdn/content/issues/29132</link>
