@@ -4,10 +4,72 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Fri, 15 Sep 2023 16:43:56 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 15 Sep 2023 17:26:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html, css-conditional-3, selectors-4] `read-only` pseudo class behavior ambiguities in the documentation.]]></title>
+            <link>https://github.com/mdn/content/issues/29140</link>
+            <guid>https://github.com/mdn/content/issues/29140</guid>
+            <pubDate>Fri, 15 Sep 2023 17:26:16 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">:read-only</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The first paragraph states:</p>
+<blockquote>
+<p dir="auto">The :read-only <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" rel="nofollow">CSS</a> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" rel="nofollow">pseudo-class</a> represents an element (such as input or textarea) that is not editable by the user.</p>
+</blockquote>
+<p dir="auto">However, this is inaccurate. The <code class="notranslate">read-only</code> pseudo <em>targets editable fields that do not accept text</em>. This can be verified by the following code:</p>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;input type=&quot;checkbox&quot; /&gt;
+&lt;input type=&quot;radio&quot; /&gt;
+&lt;input type=&quot;text&quot; /&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">input</span> <span class="pl-c1">type</span>="<span class="pl-s">checkbox</span>" /&gt;
+<span class="pl-kos">&lt;</span><span class="pl-ent">input</span> <span class="pl-c1">type</span>="<span class="pl-s">radio</span>" /&gt;
+<span class="pl-kos">&lt;</span><span class="pl-ent">input</span> <span class="pl-c1">type</span>="<span class="pl-s">text</span>" /&gt;</pre></div>
+<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="input {
+  outline: none;
+}
+
+input:read-write {
+  outline: thick double blue;
+}
+
+input:read-only {
+  outline: thick double red;
+}"><pre class="notranslate"><span class="pl-ent">input</span> {
+  <span class="pl-c1">outline</span><span class="pl-kos">:</span> none;
+}
+
+<span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-write</span> {
+  <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double blue;
+}
+
+<span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
+  <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
+}</pre></div>
+<a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png" style="max-width: 100%;"></a>
+<p dir="auto"><em>Sample output</em></p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Not beyond the replicable code.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">No.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/_colon_read-only</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_read-only/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_read-only/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/d3cdafcdb4d22e5c55771501e7c80451a96aa032/hovercard" href="https://github.com/mdn/content/commit/d3cdafcdb4d22e5c55771501e7c80451a96aa032"><tt>d3cdafc</tt></a></li>
+<li>Document last modified: 2023-03-12T06:37:36.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Possible misleading description of History method]]></title>
             <link>https://github.com/mdn/content/issues/29138</link>
@@ -18,20 +80,18 @@
 <h3 dir="auto">What specific section or headline is this issue about?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">This method is asynchronous. Add a listener for the popstate event in order to determine when the navigation has completed. The state parameter will be available in it.</p>
+<p dir="auto">"This method is asynchronous. Add a listener for the popstate event in order to determine when the navigation has completed. The state parameter will be available in it."</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">replaceState method on it's own should not be described as an asynchronous function.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">You can execute the following example to validate it is in fact synchronous:</p>
+<p dir="auto">You can execute the following example to validate it is synchronous:</p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="(() =&gt; {
     let oldReplaceState = history.replaceState;
     history.replaceState = function replaceState() {
         let ret = oldReplaceState.apply(this, arguments);
         console.log(arguments)
-        window.dispatchEvent(new Event('replacestate'));
-        window.dispatchEvent(new Event('locationchange'));
         return ret;
     };
 })();
@@ -55,8 +115,6 @@ console.log('end') "><pre class="notranslate"><code class="notranslate">(() =&gt
     history.replaceState = function replaceState() {
         let ret = oldReplaceState.apply(this, arguments);
         console.log(arguments)
-        window.dispatchEvent(new Event('replacestate'));
-        window.dispatchEvent(new Event('locationchange'));
         return ret;
     };
 })();
