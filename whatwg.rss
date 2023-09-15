@@ -4,10 +4,85 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Sun, 10 Sep 2023 13:07:32 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 15 Sep 2023 06:42:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[dom] Arrow function | Invocation context]]></title>
+            <link>https://github.com/mdn/content/issues/29132</link>
+            <guid>https://github.com/mdn/content/issues/29132</guid>
+            <pubDate>Fri, 15 Sep 2023 06:42:01 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">class SomeClass {<br>
+constructor() {<br>
+this.name = "Something Good";<br>
+}</p>
+<p dir="auto">register() {<br>
+const that = this; // Do we need const that = this since arrow functions inherit this value of the function that contains them?<br>
+window.addEventListener("keydown", (e) =&gt; {<br>
+that.someMethod(e);<br>
+});<br>
+}</p>
+<p dir="auto">someMethod(e) {<br>
+console.log(this.name);<br>
+switch (e.keyCode) {<br>
+case 5:<br>
+// some code here…<br>
+break;<br>
+case 6:<br>
+// some code here…<br>
+break;<br>
+}<br>
+}<br>
+}</p>
+<p dir="auto">const myObject = new SomeClass();<br>
+myObject.register();</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">class SomeClass {<br>
+constructor() {<br>
+this.name = "Something Good";<br>
+}</p>
+<p dir="auto">register() {<br>
+window.addEventListener("keydown", (e) =&gt; {<br>
+this.someMethod(e);<br>
+});<br>
+}</p>
+<p dir="auto">someMethod(e) {<br>
+console.log(this.name);<br>
+switch (e.keyCode) {<br>
+case 5:<br>
+// some code here…<br>
+break;<br>
+case 6:<br>
+// some code here…<br>
+break;<br>
+}<br>
+}<br>
+}</p>
+<p dir="auto">const myObject = new SomeClass();<br>
+myObject.register();</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/eventtarget/addeventlistener</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/eventtarget/addeventlistener/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/eventtarget/addeventlistener/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/3f6726b293a7ae1a428db4a983ebfd2826750ce5/hovercard" href="https://github.com/mdn/content/commit/3f6726b293a7ae1a428db4a983ebfd2826750ce5"><tt>3f6726b</tt></a></li>
+<li>Document last modified: 2023-09-14T09:44:11.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Wrong explanation of the example inside Inline formatting context]]></title>
             <link>https://github.com/mdn/content/issues/29035</link>
