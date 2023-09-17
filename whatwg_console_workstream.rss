@@ -4,10 +4,45 @@
         <title>WHATWG Console Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_console_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG Console Workstream</description>
-        <lastBuildDate>Thu, 14 Apr 2022 20:46:28 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 17 Sep 2023 18:09:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[console] What should `console.assert(false, { a: 1 })` show in the console?]]></title>
+            <link>https://github.com/mdn/content/issues/29172</link>
+            <guid>https://github.com/mdn/content/issues/29172</guid>
+            <pubDate>Sun, 17 Sep 2023 18:09:54 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/console/assert" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/console/assert</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The part about passing in objects</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">What should this print?</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="console.assert(false, { a: 1 })"><pre class="notranslate"><span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">assert</span><span class="pl-kos">(</span><span class="pl-c1">false</span><span class="pl-kos">,</span> <span class="pl-kos">{</span> <span class="pl-c1">a</span>: <span class="pl-c1">1</span> <span class="pl-kos">}</span><span class="pl-kos">)</span></pre></div>
+<p dir="auto">In the spec text <a href="https://console.spec.whatwg.org/#assert" rel="nofollow">https://console.spec.whatwg.org/#assert</a> it would <em>seem</em> (from my limited understanding) that it should forward everything to <code class="notranslate">Logger()</code> and it should print <code class="notranslate">Assertion failed  ▶ { a: 1 }</code> like most other console methods do. That's what Chrome and Firefox do at least.</p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/61068799/268519857-2b1f5ace-5f6f-4b91-b9bc-731a31c98cb7.png"><img src="https://user-images.githubusercontent.com/61068799/268519857-2b1f5ace-5f6f-4b91-b9bc-731a31c98cb7.png" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/61068799/268519861-c3cf19ae-0431-45d5-aa81-35312c5e1e77.png"><img src="https://user-images.githubusercontent.com/61068799/268519861-c3cf19ae-0431-45d5-aa81-35312c5e1e77.png" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto">...but then on MDN there's this text: <a href="https://developer.mozilla.org/en-US/docs/Web/API/console/assert" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/console/assert</a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/61068799/268519906-263e1528-e5a7-44fe-bd3c-1d24e35e52cf.png"><img src="https://user-images.githubusercontent.com/61068799/268519906-263e1528-e5a7-44fe-bd3c-1d24e35e52cf.png" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/61068799/268519925-2f3f096a-ac4b-4617-b11d-55ced2b75c93.png"><img src="https://user-images.githubusercontent.com/61068799/268519925-2f3f096a-ac4b-4617-b11d-55ced2b75c93.png" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto">which reads (to me at least; i could be mistaken) that passing <code class="notranslate">console.assert(false, {a:1},{b:2})</code> will do <code class="notranslate">String()</code> or similar on each of those <code class="notranslate">{a:1}</code> objects<br>
+...which would seem to indicate that Node.js has the right idea:<br>
+<a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/61068799/268519948-932e51f0-3ac8-4e7a-aa77-a3ee88d9daaf.png"><img src="https://user-images.githubusercontent.com/61068799/268519948-932e51f0-3ac8-4e7a-aa77-a3ee88d9daaf.png" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto">idk man, I'm just a bit confused which one is "right" 😂</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Rephrase the text to be a bit more clear on whether "The string representations of each of these objects are appended together in the order listed and output." means <em>perform string coercion</em> or <em>print a fancy object repr</em>.</p>
+<p dir="auto">or idk maybe a little note or some screenshots of what happens sorta like <a href="https://developer.mozilla.org/en-US/docs/Web/API/console#using_groups_in_the_console" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/console#using_groups_in_the_console</a> which has a very nice image</p>
+<p dir="auto">or maybe a little note about how Node.js has a slightly different way of doing it 🤷‍♂️</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://console.spec.whatwg.org/#assert" rel="nofollow">https://console.spec.whatwg.org/#assert</a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/61068799/268511225-0fd91b8a-18be-477b-830f-2eb1758c7aad.jpg"><img width="300" src="https://user-images.githubusercontent.com/61068799/268511225-0fd91b8a-18be-477b-830f-2eb1758c7aad.jpg" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/61068799/268511294-e3b7a32d-f5e8-4a1b-9540-4f5021e0351f.jpg"><img width="300" src="https://user-images.githubusercontent.com/61068799/268511294-e3b7a32d-f5e8-4a1b-9540-4f5021e0351f.jpg" style="max-width: 100%;"></a></p>
+<p dir="auto"><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1899612141" data-permission-text="Title is private" data-url="https://github.com/nodejs/node/issues/49680" data-hovercard-type="issue" data-hovercard-url="/nodejs/node/issues/49680/hovercard" href="https://github.com/nodejs/node/issues/49680">nodejs/node#49680</a></p>
+<p dir="auto"><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="196547362" data-permission-text="Title is private" data-url="https://github.com/whatwg/console/issues/77" data-hovercard-type="issue" data-hovercard-url="/whatwg/console/issues/77/hovercard" href="https://github.com/whatwg/console/issues/77">whatwg/console#77</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[console] api.console.assert - Output format detail]]></title>
             <link>https://github.com/mdn/content/issues/28451</link>

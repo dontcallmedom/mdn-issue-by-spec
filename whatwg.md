@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[console\] What should \`console.assert(false, { a: 1 })\` show in the console?](https://github.com/mdn/content/issues/29172) (2023-09-17T18:09:54Z)
+  
 * [\[html, css-conditional-3, selectors-4\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
   
 * [\[dom\] Arrow function | Invocation context](https://github.com/mdn/content/issues/29132) (2023-09-15T06:42:01Z)
