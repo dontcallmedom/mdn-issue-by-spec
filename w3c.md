@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-display-3\] Shambolic](https://github.com/mdn/content/issues/29197) (2023-09-19T03:43:00Z)
+  
 * [\[html, css-conditional-3, selectors-4\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
   
 * [\[service-workers-1\] Missing property ServiceWorkerGlobalScope.serviceWorker](https://github.com/mdn/content/issues/29123) (2023-09-14T19:14:58Z)
