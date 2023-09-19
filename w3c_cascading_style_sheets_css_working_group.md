@@ -26,8 +26,6 @@
   
 * [\[css-typed-om-2\] CSSMathNegate() constructor page is a stub](https://github.com/mdn/content/issues/28118) (2023-07-22T02:25:00Z)
   
-* [\[cssom-view-1\] Window.innerWidth: does it include the scrollbar?](https://github.com/mdn/content/issues/27887) (2023-07-11T17:21:56Z)
-  
 * [\[cssom-view-1, dom, uievents, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
   
 * [\[html, cssom-view-1\] window.open() has a partial list of features](https://github.com/mdn/content/issues/27357) (2023-06-15T19:36:20Z)
