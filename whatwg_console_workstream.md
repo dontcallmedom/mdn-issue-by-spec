@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG Console Workstream. [![RSS feed for WHATWG Console Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[console\] What should \`console.assert(false, { a: 1 })\` show in the console?](https://github.com/mdn/content/issues/29172) (2023-09-17T18:09:54Z)
+* [\[console\] Clarify wording around "string representation" in console.\* related functions](https://github.com/mdn/content/issues/29172) (2023-09-17T18:09:54Z)
   
 * [\[console\] api.console.assert - Output format detail](https://github.com/mdn/content/issues/28451) (2022-04-14T20:46:28Z)
   
