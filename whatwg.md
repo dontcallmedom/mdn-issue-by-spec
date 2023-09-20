@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] undefined relList](https://github.com/mdn/content/issues/29224) (2023-09-20T15:05:38Z)
+  
 * [\[console\] Clarify wording around "string representation" in console.\* related functions](https://github.com/mdn/content/issues/29172) (2023-09-17T18:09:54Z)
   
 * [\[html, css-conditional-3, selectors-4\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
