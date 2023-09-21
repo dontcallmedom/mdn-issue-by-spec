@@ -18,7 +18,7 @@
 <h3 dir="auto">What specific section or headline is this issue about?</h3>
 <p dir="auto">Examples</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const links = document.getElementsByTagName(&quot;link&quot;);
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const links = document.getElementsByTagName(&quot;link&quot;);
 const length = links.length;
 for (const link of links) {
   const listLength = list.length;
@@ -26,31 +26,29 @@ for (const link of links) {
   relList.forEach((relEntry) =&gt; {
     console.log(relEntry);
   });
-}"><pre lang="html" class="notranslate"><code class="notranslate">const links = document.getElementsByTagName("link");
+}"><pre class="notranslate">const links = document.getElementsByTagName("link");
 const length = links.length;
 for (const link of links) {
   const listLength = list.length;
   console.log("New link found.");
-  relList.forEach((relEntry) =&gt; {
+  relList.forEach((relEntry) =<span class="pl-kos">&gt;</span> {
     console.log(relEntry);
   });
-}
-</code></pre></div>
+}</pre></div>
 <h3 dir="auto">What did you expect to see?</h3>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="for (const link of links) {
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="for (const link of links) {
   const relList = link.relList;
   console.log(&quot;New link found.&quot;);
   relList.forEach((relEntry) =&gt; {
     console.log(relEntry);
   });
-}"><pre lang="html" class="notranslate"><code class="notranslate">for (const link of links) {
+}"><pre class="notranslate">for (const link of links) {
   const relList = link.relList;
   console.log("New link found.");
-  relList.forEach((relEntry) =&gt; {
+  relList.forEach((relEntry) =<span class="pl-kos">&gt;</span> {
     console.log(relEntry);
   });
-}
-</code></pre></div>
+}</pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
@@ -80,8 +78,7 @@ for (const link of links) {
 <p dir="auto">The part about passing in objects</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">What should this print?</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="console.assert(false, { a: 1 })"><pre lang="js" class="notranslate"><code class="notranslate">console.assert(false, { a: 1 })
-</code></pre></div>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="console.assert(false, { a: 1 })"><pre class="notranslate"><span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">assert</span><span class="pl-kos">(</span><span class="pl-c1">false</span><span class="pl-kos">,</span> <span class="pl-kos">{</span> <span class="pl-c1">a</span>: <span class="pl-c1">1</span> <span class="pl-kos">}</span><span class="pl-kos">)</span></pre></div>
 <p dir="auto">In the spec text <a href="https://console.spec.whatwg.org/#assert" rel="nofollow">https://console.spec.whatwg.org/#assert</a> it would <em>seem</em> (from my limited understanding) that it should forward everything to <code class="notranslate">Logger()</code> and it should print <code class="notranslate">Assertion failed  ▶ { a: 1 }</code> like most other console methods do. That's what Chrome and Firefox do at least.</p>
 <p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/61068799/268519857-2b1f5ace-5f6f-4b91-b9bc-731a31c98cb7.png"><img src="https://user-images.githubusercontent.com/61068799/268519857-2b1f5ace-5f6f-4b91-b9bc-731a31c98cb7.png" alt="image" style="max-width: 100%;"></a><br>
 <a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/61068799/268519861-c3cf19ae-0431-45d5-aa81-35312c5e1e77.png"><img src="https://user-images.githubusercontent.com/61068799/268519861-c3cf19ae-0431-45d5-aa81-35312c5e1e77.png" alt="image" style="max-width: 100%;"></a></p>
@@ -108,18 +105,17 @@ for (const link of links) {
 <p dir="auto">Right now in a lot of the console.* methods there's this type of language used:<br>
 <a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/61068799/269010704-e2a289b5-8eea-49eb-94c6-8defd0c3af07.png"><img src="https://user-images.githubusercontent.com/61068799/269010704-e2a289b5-8eea-49eb-94c6-8defd0c3af07.png" alt="image" style="max-width: 100%;"></a></p>
 <p dir="auto">This is potentially confusing. It seems to indicate that said objects will all be <code class="notranslate">.toString()</code>-ed and concatenated together, sorta like this:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="// obj1 … objN
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="// obj1 … objN
 // A list of JavaScript objects to output. The string representations of each
 // of these objects are appended together in the order listed and output.
 console.info = (...objN) =&gt; {
   underlyingPrint(objN.map(x =&gt; String(x)).join(&quot; &quot;))
-}"><pre lang="js" class="notranslate"><code class="notranslate">// obj1 … objN
-// A list of JavaScript objects to output. The string representations of each
-// of these objects are appended together in the order listed and output.
-console.info = (...objN) =&gt; {
-  underlyingPrint(objN.map(x =&gt; String(x)).join(" "))
-}
-</code></pre></div>
+}"><pre class="notranslate"><span class="pl-c">// obj1 … objN</span>
+<span class="pl-c">// A list of JavaScript objects to output. The string representations of each</span>
+<span class="pl-c">// of these objects are appended together in the order listed and output.</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">info</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span>...<span class="pl-s1">objN</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-en">underlyingPrint</span><span class="pl-kos">(</span><span class="pl-s1">objN</span><span class="pl-kos">.</span><span class="pl-en">map</span><span class="pl-kos">(</span><span class="pl-s1">x</span> <span class="pl-c1">=&gt;</span> <span class="pl-v">String</span><span class="pl-kos">(</span><span class="pl-s1">x</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">join</span><span class="pl-kos">(</span><span class="pl-s">" "</span><span class="pl-kos">)</span><span class="pl-kos">)</span>
+<span class="pl-kos">}</span></pre></div>
 <p dir="auto">but that's obviously NOT what it means to convey. Instead, it means to convey that these objects are "inspected" or "pretty printed" and then "shown" (not necessarily "printed") to the console in the specified order.</p>
 <p dir="auto">The issue at hand: Should this change?</p>
 <p dir="auto">If so, here's an idea:</p>
@@ -161,13 +157,12 @@ Zero or more objects to be output to console along with the trace. These are ass
 <p dir="auto">The :read-only <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" rel="nofollow">CSS</a> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" rel="nofollow">pseudo-class</a> represents an element (such as input or textarea) that is not editable by the user.</p>
 </blockquote>
 <p dir="auto">However, this is inaccurate. The <code class="notranslate">read-only</code> pseudo <em>targets editable fields that do not accept text</em>. This can be verified by the following code:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;input type=&quot;checkbox&quot; /&gt;
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;input type=&quot;checkbox&quot; /&gt;
 &lt;input type=&quot;radio&quot; /&gt;
-&lt;input type=&quot;text&quot; /&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;input type="checkbox" /&gt;
-&lt;input type="radio" /&gt;
-&lt;input type="text" /&gt;
-</code></pre></div>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="input {
+&lt;input type=&quot;text&quot; /&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">input</span> <span class="pl-c1">type</span>="<span class="pl-s">checkbox</span>" /&gt;
+<span class="pl-kos">&lt;</span><span class="pl-ent">input</span> <span class="pl-c1">type</span>="<span class="pl-s">radio</span>" /&gt;
+<span class="pl-kos">&lt;</span><span class="pl-ent">input</span> <span class="pl-c1">type</span>="<span class="pl-s">text</span>" /&gt;</pre></div>
+<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="input {
   outline: none;
 }
 
@@ -177,18 +172,17 @@ input:read-write {
 
 input:read-only {
   outline: thick double red;
-}"><pre lang="css" class="notranslate"><code class="notranslate">input {
-  outline: none;
+}"><pre class="notranslate"><span class="pl-ent">input</span> {
+  <span class="pl-c1">outline</span><span class="pl-kos">:</span> none;
 }
 
-input:read-write {
-  outline: thick double blue;
+<span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-write</span> {
+  <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double blue;
 }
 
-input:read-only {
-  outline: thick double red;
-}
-</code></pre></div>
+<span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
+  <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
+}</pre></div>
 <a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
@@ -364,40 +358,38 @@ Returns a new request whose <a href="https://fetch.spec.whatwg.org/#dom-request-
 <h3 dir="auto">What specific section or headline is this issue about?</h3>
 <p dir="auto">"Examples"</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="while (offset &lt; buffer.byteLength) {
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="while (offset &lt; buffer.byteLength) {
   // THIS LOOP IS INFINITE!
   // offset never changes because `readStream` is not async and
   // we do not `await` the result of `reader.read(...).then(...)`
   reader
     .read(...)
     .then(...);
-}"><pre lang="js" class="notranslate"><code class="notranslate">while (offset &lt; buffer.byteLength) {
-  // THIS LOOP IS INFINITE!
-  // offset never changes because `readStream` is not async and
-  // we do not `await` the result of `reader.read(...).then(...)`
-  reader
-    .read(...)
-    .then(...);
-}
-</code></pre></div>
+}"><pre class="notranslate"><span class="pl-k">while</span> <span class="pl-kos">(</span><span class="pl-s1">offset</span> <span class="pl-c1">&lt;</span> <span class="pl-s1">buffer</span><span class="pl-kos">.</span><span class="pl-c1">byteLength</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-c">// THIS LOOP IS INFINITE!</span>
+  <span class="pl-c">// offset never changes because `readStream` is not async and</span>
+  <span class="pl-c">// we do not `await` the result of `reader.read(...).then(...)`</span>
+  <span class="pl-s1">reader</span>
+    <span class="pl-kos">.</span><span class="pl-en">read</span><span class="pl-kos">(</span>...<span class="pl-kos">)</span>
+    <span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span>...<span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span></pre></div>
 <p dir="auto">Also the loop will not terminate when the stream is <code class="notranslate">done</code>. It only terminates if the buffer runs out of room.</p>
 <h3 dir="auto">What did you expect to see?</h3>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="async function readStream(reader) {
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="async function readStream(reader) {
   ...
   while (offset &lt; buffer.byteLength) {
     await reader
       .read(...)
       .then(...);
   }
-}"><pre lang="js" class="notranslate"><code class="notranslate">async function readStream(reader) {
+}"><pre class="notranslate"><span class="pl-k">async</span> <span class="pl-k">function</span> <span class="pl-en">readStream</span><span class="pl-kos">(</span><span class="pl-s1">reader</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
   ...
-  while (offset &lt; buffer.byteLength) {
-    await reader
-      .read(...)
-      .then(...);
-  }
-}
-</code></pre></div>
+  <span class="pl-k">while</span> <span class="pl-kos">(</span><span class="pl-s1">offset</span> <span class="pl-c1">&lt;</span> <span class="pl-s1">buffer</span><span class="pl-kos">.</span><span class="pl-c1">byteLength</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    <span class="pl-k">await</span> <span class="pl-s1">reader</span>
+      <span class="pl-kos">.</span><span class="pl-en">read</span><span class="pl-kos">(</span>...<span class="pl-kos">)</span>
+      <span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span>...<span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span>
+<span class="pl-kos">}</span></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
