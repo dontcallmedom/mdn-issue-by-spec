@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[dom\] CustomEvent documentation missing \`cloneInto\` information](https://github.com/mdn/content/issues/29232) (2023-09-21T13:33:50Z)
+* [\[dom\] CustomEvent documentation missing \`cloneInto\` information for web extension scripts](https://github.com/mdn/content/issues/29232) (2023-09-21T13:33:50Z)
   
 * [\[dom\] Arrow function | Invocation context](https://github.com/mdn/content/issues/29132) (2023-09-15T06:42:01Z)
   
