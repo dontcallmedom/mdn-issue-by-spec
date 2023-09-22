@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Broken link on page "HTMLImageElement: sizes property"](https://github.com/mdn/content/issues/29249) (2023-09-22T17:24:06Z)
+  
 * [\[dom\] CustomEvent documentation missing \`cloneInto\` information for web extension scripts](https://github.com/mdn/content/issues/29232) (2023-09-21T13:33:50Z)
   
 * [\[html\] undefined relList](https://github.com/mdn/content/issues/29224) (2023-09-20T15:05:38Z)
