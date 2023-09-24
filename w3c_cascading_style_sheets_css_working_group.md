@@ -52,7 +52,7 @@
   
 * [\[filter-effects-2\] SVG contrast filter](https://github.com/mdn/content/issues/24989) (2023-03-02T00:19:11Z)
   
-* [\[filter-effects-2\] SVG slope attribute: incorrect information](https://github.com/mdn/content/issues/24935) (2023-02-28T00:02:49Z)
+* [\[filter-effects-2\] SVG slope attribute can be used on \<feFunc\*\> elements](https://github.com/mdn/content/issues/24935) (2023-02-28T00:02:49Z)
   
 * [\[css-content-3\] not obvious that \`content\` works with \`::marker\`](https://github.com/mdn/content/issues/24600) (2023-02-19T20:16:44Z)
   
@@ -113,8 +113,6 @@
 * [\[mediaqueries-4, css-conditional-3\] Issue with "@media": Need more clarity re Level 4 v Level 3, browser compat, and broken links](https://github.com/mdn/content/issues/10774) (2021-11-25T20:39:58Z)
   
 * [\[notifications, cssom-view-1, service-workers-1, dom, pointerevents3\] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
-  
-* [\[SVG11, css-masking-1\] Deprecated Property on Documentation for SVG clipPath Element](https://github.com/mdn/content/issues/7653) (2021-08-06T09:44:12Z)
   
 * [\[html, cssom-view-1, dom, WebIDL-1, FileAPI, uievents, pointerlock-2\] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   

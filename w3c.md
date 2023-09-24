@@ -96,7 +96,7 @@
   
 * [\[filter-effects-2\] SVG contrast filter](https://github.com/mdn/content/issues/24989) (2023-03-02T00:19:11Z)
   
-* [\[filter-effects-2\] SVG slope attribute: incorrect information](https://github.com/mdn/content/issues/24935) (2023-02-28T00:02:49Z)
+* [\[filter-effects-2\] SVG slope attribute can be used on \<feFunc\*\> elements](https://github.com/mdn/content/issues/24935) (2023-02-28T00:02:49Z)
   
 * [\[css-content-3\] not obvious that \`content\` works with \`::marker\`](https://github.com/mdn/content/issues/24600) (2023-02-19T20:16:44Z)
   
@@ -249,8 +249,6 @@
 * [\[SVG11\] Issue with "SVGSVGElement": In FF an unset viewBox property means viewBox.baseVal = null. For Chrome it is an SVGRect initialized to 0.](https://github.com/mdn/content/issues/8907) (2021-09-14T14:00:23Z)
   
 * [\[SVG11, svg-animations\] Issue with "\<animate\>": Firefox is inconsistent in rendering svg - graphic](https://github.com/mdn/content/issues/8551) (2021-09-02T04:54:48Z)
-  
-* [\[SVG11, css-masking-1\] Deprecated Property on Documentation for SVG clipPath Element](https://github.com/mdn/content/issues/7653) (2021-08-06T09:44:12Z)
   
 * [\[html, cssom-view-1, dom, WebIDL-1, FileAPI, uievents, pointerlock-2\] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   

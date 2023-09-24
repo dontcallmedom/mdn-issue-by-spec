@@ -845,7 +845,7 @@ The relevant item in the change history in the spec:<br>
 <p dir="auto"><em>No response</em></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[filter-effects-2] SVG slope attribute: incorrect information]]></title>
+            <title><![CDATA[[filter-effects-2] SVG slope attribute can be used on <feFunc*> elements]]></title>
             <link>https://github.com/mdn/content/issues/24935</link>
             <guid>https://github.com/mdn/content/issues/24935</guid>
             <pubDate>Tue, 28 Feb 2023 00:02:49 GMT</pubDate>
@@ -854,7 +854,7 @@ The relevant item in the change history in the spec:<br>
 <h3 dir="auto">What specific section or headline is this issue about?</h3>
 <p dir="auto">deprecated and list of related elements on which it can be used.</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncR" rel="nofollow"></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncB" rel="nofollow"></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncG" rel="nofollow"></a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncA" rel="nofollow"></a> elements all support the <code class="notranslate">slope</code> attribute, and use it to set values for linear filters, such as brightness. This page says it's deprecated and only relevant to font. I arrived at the page from <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute#transfer_function_attributes" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute#transfer_function_attributes</a>. It is definitely not deprecated.</p>
+<p dir="auto">The <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncR" rel="nofollow"><code class="notranslate">&lt;feFuncR&gt;</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncB" rel="nofollow"><code class="notranslate">&lt;feFuncB&gt;</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncG" rel="nofollow"><code class="notranslate">&lt;feFuncG&gt;</code></a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncA" rel="nofollow"><code class="notranslate">&lt;feFuncA&gt;</code></a> elements all support the <code class="notranslate">slope</code> attribute, and use it to set values for linear filters, such as brightness. This page says it's deprecated and only relevant to font. I arrived at the page from <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute#transfer_function_attributes" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute#transfer_function_attributes</a>. It is definitely not deprecated.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">information on how to use the slope attribute to define linear multipliers.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
@@ -1957,15 +1957,6 @@ requestAnimationFrame(function rAF() {
 </ul>
 </li>
 </ol>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[SVG11, css-masking-1] Deprecated Property on Documentation for SVG clipPath Element]]></title>
-            <link>https://github.com/mdn/content/issues/7653</link>
-            <guid>https://github.com/mdn/content/issues/7653</guid>
-            <pubDate>Fri, 06 Aug 2021 09:44:12 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">In the documentation for the SVG <code class="notranslate">clipPath</code> element (<a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clipPath" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clipPath</a>) the example uses the <code class="notranslate">use</code> element and the <code class="notranslate">xlink:href</code> attribute.</p>
-<p dir="auto">According to <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use#attributes" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use#attributes</a>, the <code class="notranslate">xlink:href</code> attribute has been deprecated in favour of the <code class="notranslate">href</code> attribute.</p>
-<p dir="auto">Should this be corrected?</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[html, cssom-view-1, dom, WebIDL-1, FileAPI, uievents, pointerlock-2] Remove alert() from live samples]]></title>

@@ -14,7 +14,5 @@
   
 * [\[SVG11, svg-animations\] Issue with "\<animate\>": Firefox is inconsistent in rendering svg - graphic](https://github.com/mdn/content/issues/8551) (2021-09-02T04:54:48Z)
   
-* [\[SVG11, css-masking-1\] Deprecated Property on Documentation for SVG clipPath Element](https://github.com/mdn/content/issues/7653) (2021-08-06T09:44:12Z)
-  
 * [\[SVG11\] Issue with "\<foreignObject\>": doesn't render in Safari](https://github.com/mdn/content/issues/1319) (2021-01-14T17:25:42Z)
   
