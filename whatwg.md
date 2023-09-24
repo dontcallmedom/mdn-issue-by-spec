@@ -12,8 +12,6 @@
   
 * [\[html, css-conditional-3, selectors-4\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
   
-* [\[dom\] Arrow function | Invocation context](https://github.com/mdn/content/issues/29132) (2023-09-15T06:42:01Z)
-  
 * [\[html\] Wrong explanation of the example inside Inline formatting context](https://github.com/mdn/content/issues/29035) (2023-09-10T13:07:32Z)
   
 * [\[fetch\] Request's \`input\` argument does not follow the specification](https://github.com/mdn/content/issues/29025) (2023-09-09T22:39:24Z)
