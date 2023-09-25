@@ -2,11 +2,13 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[service-workers-1\] Missing property \`WindowClient.ancestorOrigins\`](https://github.com/mdn/content/issues/29281) (2023-09-25T17:41:07Z)
+  
 * [\[pointerlock-2\] \`Element.requestPointerLock()\` conflict of Standard](https://github.com/mdn/content/issues/29259) (2023-09-23T16:53:47Z)
   
 * [\[html, css-conditional-3, selectors-4\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
   
-* [\[service-workers-1\] Missing property ServiceWorkerGlobalScope.serviceWorker](https://github.com/mdn/content/issues/29123) (2023-09-14T19:14:58Z)
+* [\[service-workers-1\] Missing property \`ServiceWorkerGlobalScope.serviceWorker\`](https://github.com/mdn/content/issues/29123) (2023-09-14T19:14:58Z)
   
 * [\[css-masking-1\] mask-image: url() function doesn't work with file://](https://github.com/mdn/content/issues/29106) (2023-09-14T09:24:04Z)
   
