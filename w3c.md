@@ -20,8 +20,6 @@
   
 * [\[css-fonts-5\] Formal syntax wrong](https://github.com/mdn/content/issues/28900) (2023-09-02T14:41:13Z)
   
-* [\[css-fonts-5\] \[CSS\] Add from-font keyword to font-size-adjust](https://github.com/mdn/content/issues/28842) (2023-08-30T15:53:34Z)
-  
 * [\[css-ui-4\] Chrome intents to remove non-standard appearance keywords](https://github.com/mdn/content/issues/28687) (2023-08-21T21:20:42Z)
   
 * [\[uievents\] Screen global coordinates definition needed](https://github.com/mdn/content/issues/28676) (2023-08-21T13:37:56Z)
