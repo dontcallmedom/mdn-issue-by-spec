@@ -18,8 +18,6 @@
   
 * [\[html\] Issue with explanations, and  order of tokens ](https://github.com/mdn/content/issues/28636) (2023-08-17T23:15:09Z)
   
-* [\[html\] Extend HTMLIFrameElement: contentWindow property doc to cover another important use case](https://github.com/mdn/content/issues/28591) (2023-08-16T19:59:43Z)
-  
 * [\[html, cssom-view-1, dom, uievents, pointerlock-2, selection-api, page-visibility-2\] Keydown, keyup, keypress pages should mention they work on document, body, etc](https://github.com/mdn/content/issues/28561) (2023-08-14T20:14:56Z)
   
 * [\[html\] History API pushState size limit for Firefox is given as 640K in one article, and 16 MiB in another](https://github.com/mdn/content/issues/28516) (2023-08-11T07:44:05Z)
