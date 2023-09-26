@@ -4,10 +4,54 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Fri, 22 Sep 2023 17:24:06 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 26 Sep 2023 18:36:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] [JS] Window: beforeunload event: Clarify whether an empty string should trigger the confirmation dialog]]></title>
+            <link>https://github.com/mdn/content/issues/29314</link>
+            <guid>https://github.com/mdn/content/issues/29314</guid>
+            <pubDate>Tue, 26 Sep 2023 18:36:01 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Examples, Compatibility notes</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<ol dir="auto">
+<li>One of the examples shows setting <code class="notranslate">returnValue</code> to an empty string</li>
+<li>The Compatibility notes says:</li>
+</ol>
+<blockquote>
+<p dir="auto">When this event returns (or sets the returnValue property to) a value other than null or undefined, the user will be prompted to confirm the page unload</p>
+</blockquote>
+<h3 dir="auto">What did you expect to see?</h3>
+<ol dir="auto">
+<li>The empty string should not be recommended in the example (use a non empty string)</li>
+<li>The empty string should be mentioned in the compatibility note (...value other than null or undefined <strong>or the empty string</strong>...)</li>
+<li>Perhaps a compatibility row should be added to indicate the support for this</li>
+</ol>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">It appears that the empty string is no longer supported by Chrome as of 117: <a href="https://chromestatus.com/feature/4968823574233088" rel="nofollow">https://chromestatus.com/feature/4968823574233088</a></p>
+<p dir="auto">And <a href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#checking-if-unloading-is-user-canceled" rel="nofollow">the spec it links to</a> says:</p>
+<blockquote>
+<p dir="auto">the <code class="notranslate">returnValue</code> attribute of event is not the empty string</p>
+</blockquote>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/window/beforeunload_event</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/beforeunload_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/beforeunload_event/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/367358d6847aa1766344951207dfd79d5c073a66/hovercard" href="https://github.com/mdn/content/commit/367358d6847aa1766344951207dfd79d5c073a66"><tt>367358d</tt></a></li>
+<li>Document last modified: 2023-08-04T07:15:35.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Broken link on page "HTMLImageElement: sizes property"]]></title>
             <link>https://github.com/mdn/content/issues/29249</link>
