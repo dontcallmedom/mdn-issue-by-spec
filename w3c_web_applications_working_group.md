@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[pointerlock-2\] Document that MouseEvent.movementX/movementY are 0 for events other than \`mousemove\`](https://github.com/mdn/content/issues/29315) (2023-09-26T20:53:41Z)
+  
 * [\[pointerlock-2\] \`Element.requestPointerLock()\` conflict of Standard](https://github.com/mdn/content/issues/29259) (2023-09-23T16:53:47Z)
   
 * [\[appmanifest\] Wrong Type](https://github.com/mdn/content/issues/29028) (2023-09-10T07:01:11Z)
