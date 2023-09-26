@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[permissions\] Navigator.permissions always returns prompt on firefox mobile. Even after the permission is granted.](https://github.com/mdn/content/issues/29291) (2023-09-26T04:29:04Z)
+  
 * [\[service-workers-1\] Missing property \`WindowClient.ancestorOrigins\`](https://github.com/mdn/content/issues/29281) (2023-09-25T17:41:07Z)
   
 * [\[pointerlock-2\] \`Element.requestPointerLock()\` conflict of Standard](https://github.com/mdn/content/issues/29259) (2023-09-23T16:53:47Z)
