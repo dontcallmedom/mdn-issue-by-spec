@@ -26,7 +26,7 @@
   
 * [\[html\] Explain why tabindex may not be used on the dialog element](https://github.com/mdn/content/issues/28750) (2023-08-25T10:39:27Z)
   
-* [\[html\] Inaccurate mention of the \`in\` operator ](https://github.com/mdn/content/issues/28693) (2023-08-22T08:32:02Z)
+* [\[html\] HTMLElement.dataset: using the \`in\` operator is unsafe](https://github.com/mdn/content/issues/28693) (2023-08-22T08:32:02Z)
   
 * [\[html\] Issue with explanations, and  order of tokens ](https://github.com/mdn/content/issues/28636) (2023-08-17T23:15:09Z)
   
@@ -60,13 +60,13 @@
   
 * [\[html, cssom-view-1\] window.open() has a partial list of features](https://github.com/mdn/content/issues/27357) (2023-06-15T19:36:20Z)
   
-* [\[html\] sizes attribute has a default](https://github.com/mdn/content/issues/27291) (2023-06-12T21:33:46Z)
+* [\[html\] HTMLImageElement.srcset: sizes attribute doesn't need to be present](https://github.com/mdn/content/issues/27291) (2023-06-12T21:33:46Z)
   
 * [\[html\] \<source media\> in media elements is allowed again (spec change)](https://github.com/mdn/content/issues/27079) (2023-05-31T18:43:51Z)
   
 * [\[notifications\] NotificationOptions and Notification silent default has change](https://github.com/mdn/content/issues/26812) (2023-05-17T14:25:50Z)
   
-* [\[html\] Improve wording on what it means to be suspended](https://github.com/mdn/content/issues/26625) (2023-05-07T04:43:55Z)
+* [\[html\] HTMLMediaElement: suspend: Improve wording on what it means to be suspended](https://github.com/mdn/content/issues/26625) (2023-05-07T04:43:55Z)
   
 * [\[html\] Image request fired as soon as src is set](https://github.com/mdn/content/issues/26560) (2023-05-03T17:23:34Z)
   
@@ -149,8 +149,6 @@
 * [\[fetch\] fetch could reject when 400 is returned](https://github.com/mdn/content/issues/17115) (2022-06-08T21:48:36Z)
   
 * [\[html\] HTMLTableCellElement missing property pages](https://github.com/mdn/content/issues/15631) (2022-05-03T03:28:19Z)
-  
-* [\[console\] api.console.assert - Output format detail](https://github.com/mdn/content/issues/28451) (2022-04-14T20:46:28Z)
   
 * [\[html, gamepad\] Double checking the gamepad docs are correct](https://github.com/mdn/content/issues/14874) (2022-04-11T03:02:09Z)
   
