@@ -18,8 +18,6 @@
   
 * [\[webrtc\] RTCDataChannel bufferedamountlow event not sent if the threshold is 0?](https://github.com/mdn/content/issues/29087) (2023-09-13T08:47:28Z)
   
-* [\[appmanifest\] Wrong Type](https://github.com/mdn/content/issues/29028) (2023-09-10T07:01:11Z)
-  
 * [\[cssom-view-1\] offsetParent is also changed by transform](https://github.com/mdn/content/issues/28991) (2023-09-08T00:41:19Z)
   
 * [\[css-pseudo-4\] Explain Pseudo Element Selectors without \`content\` Property Behavior](https://github.com/mdn/content/issues/28985) (2023-09-07T16:48:29Z)
