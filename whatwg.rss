@@ -3210,35 +3210,6 @@ Though in the typescript <code class="notranslate">lib.dom.d.ts</code> the prope
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Issue with "CustomElementRegistry.define()": Documentation needs more concise text and examples.]]></title>
-            <link>https://github.com/mdn/content/issues/11225</link>
-            <guid>https://github.com/mdn/content/issues/11225</guid>
-            <pubDate>Wed, 15 Dec 2021 05:03:59 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">The discussions of the class for a web-component custom element, in particular the examples, is chaotic.  Some examples illustrate a class without a constructor() method.  Others place all the class action inside the constructor() method.  Still others place the action in the connectedCallback() method. The existing examples are inconsistent and full of extraneous code trying to construct goofy giant shadow HTML DOMs.</p>
-<p dir="auto">connectedCallback() is not consistently and well described to show that the custom element may be constructed but not fully parsed to make its innerHTML available.  The solution to this is difficult to find;  it's in the lifecycle discussion, but nowhere is it explained how this is useful, or why this exists in contrast to constructor().</p>
-<p dir="auto">It is further not explained why element.innerHTML, element.innerText, and element.textContent sometimes exist and sometimes don't within the web-component class constructor.</p>
-<p dir="auto">Are we supposed to use customElements or CustomElementRegistry?</p>
-<h4 dir="auto">CustomElementRegistry.define() ... Parameters</h4>
-<p dir="auto">The second parameter of the define() method needs explanation and examples which are less random.  Answer these questions for autonomous elements: is a constructor() containing super() required?  What parts of the HTML environment are available in the constructor? Is connectedCallback() required to access the HTML? When is it useful?  If parsing is delayed after connection, what is the correct way to wait for it to be done?  Are we supposed to await a Promise returned by CustomElementRegistry.whenDefined() ?  Its definition is difficult to find and it's not easy to see how it should be used.</p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">I expect to find a web-component spec that states the names and purposes of <em>all</em> the methods and <em>all</em> the callbacks of CustomElementRegistry, in one chapter of the MDN API.</p>
-<p dir="auto">I expect to find <em>short</em> examples that show the correct (i.e., as intended by web-component designers) class definition of new elements, so I don't have to figure this out by trial, error, and stackoverflow.</p>
-<p dir="auto">Thanks.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/customelementregistry/define</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/customelementregistry/define/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/customelementregistry/define/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/d3c38334923570ada25766f77212b2e808fdebc5/hovercard" href="https://github.com/mdn/content/commit/d3c38334923570ada25766f77212b2e808fdebc5"><tt>d3c3833</tt></a></li>
-<li>Document last modified: 2021-10-15T17:04:17.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Issue with "<dialog>: The Dialog element": Cancel button wouldn't work if there is required input element]]></title>
             <link>https://github.com/mdn/content/issues/10848</link>
             <guid>https://github.com/mdn/content/issues/10848</guid>
