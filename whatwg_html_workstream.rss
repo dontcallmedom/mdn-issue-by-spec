@@ -83,64 +83,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] undefined relList]]></title>
-            <link>https://github.com/mdn/content/issues/29224</link>
-            <guid>https://github.com/mdn/content/issues/29224</guid>
-            <pubDate>Wed, 20 Sep 2023 15:05:38 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLLinkElement/relList" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLLinkElement/relList</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Examples</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const links = document.getElementsByTagName(&quot;link&quot;);
-const length = links.length;
-for (const link of links) {
-  const listLength = list.length;
-  console.log(&quot;New link found.&quot;);
-  relList.forEach((relEntry) =&gt; {
-    console.log(relEntry);
-  });
-}"><pre class="notranslate">const links = document.getElementsByTagName("link");
-const length = links.length;
-for (const link of links) {
-  const listLength = list.length;
-  console.log("New link found.");
-  relList.forEach((relEntry) =<span class="pl-kos">&gt;</span> {
-    console.log(relEntry);
-  });
-}</pre></div>
-<h3 dir="auto">What did you expect to see?</h3>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="for (const link of links) {
-  const relList = link.relList;
-  console.log(&quot;New link found.&quot;);
-  relList.forEach((relEntry) =&gt; {
-    console.log(relEntry);
-  });
-}"><pre class="notranslate">for (const link of links) {
-  const relList = link.relList;
-  console.log("New link found.");
-  relList.forEach((relEntry) =<span class="pl-kos">&gt;</span> {
-    console.log(relEntry);
-  });
-}</pre></div>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/htmllinkelement/rellist</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLLinkElement/relList" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLLinkElement/relList</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmllinkelement/rellist/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmllinkelement/rellist/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/595cba0e07c70eda7f08a12890e00ea0281933d3/hovercard" href="https://github.com/mdn/content/commit/595cba0e07c70eda7f08a12890e00ea0281933d3"><tt>595cba0</tt></a></li>
-<li>Document last modified: 2023-04-07T00:32:52.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html, css-conditional-3, selectors-4] `read-only` pseudo class behavior ambiguities in the documentation.]]></title>
             <link>https://github.com/mdn/content/issues/29140</link>
             <guid>https://github.com/mdn/content/issues/29140</guid>

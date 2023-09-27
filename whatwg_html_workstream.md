@@ -6,8 +6,6 @@
   
 * [\[html\] Broken link on page "HTMLImageElement: sizes property"](https://github.com/mdn/content/issues/29249) (2023-09-22T17:24:06Z)
   
-* [\[html\] undefined relList](https://github.com/mdn/content/issues/29224) (2023-09-20T15:05:38Z)
-  
 * [\[html, css-conditional-3, selectors-4\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
   
 * [\[html\] Wrong explanation of the example inside Inline formatting context](https://github.com/mdn/content/issues/29035) (2023-09-10T13:07:32Z)
