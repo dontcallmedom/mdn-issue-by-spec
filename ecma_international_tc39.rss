@@ -4,10 +4,70 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Mon, 28 Aug 2023 09:55:38 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 27 Sep 2023 04:50:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] ++ and -- are the only postfix operators in JavaScript?]]></title>
+            <link>https://github.com/mdn/content/issues/29322</link>
+            <guid>https://github.com/mdn/content/issues/29322</guid>
+            <pubDate>Wed, 27 Sep 2023 04:50:28 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Expressions and operators</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">++ and -- are the <strong><em>only postfix</em></strong> operators in JavaScript.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">we can use ++ and -- operators as prefix as well as postfix.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Please check the document, in the description section 2nd and 3rd paragraphs we used the ++ and -- operators as prefix.<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment#description" rel="nofollow">For reference</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="let x = 9;
+ x++;
+ x++;
+let postfixPlus = x;         // postfixPlus = 11
+x-- ;
+x--;
+let postfixMinus = x;     // postfixMinus =  9
+
+let  y = 5
+++y;
+++y;
+let prefixPlus = y;      // prefixPlus = 7
+--y;
+--y;
+let prefixMinus = y;   // prefixMinus  = 5"><pre class="notranslate"><code class="notranslate">let x = 9;
+ x++;
+ x++;
+let postfixPlus = x;         // postfixPlus = 11
+x-- ;
+x--;
+let postfixMinus = x;     // postfixMinus =  9
+
+let  y = 5
+++y;
+++y;
+let prefixPlus = y;      // prefixPlus = 7
+--y;
+--y;
+let prefixMinus = y;   // prefixMinus  = 5
+</code></pre></div>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/guide/expressions_and_operators</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/guide/expressions_and_operators/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/guide/expressions_and_operators/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/d71b141d2d18b96639547856714df19cefacfebf/hovercard" href="https://github.com/mdn/content/commit/d71b141d2d18b96639547856714df19cefacfebf"><tt>d71b141</tt></a></li>
+<li>Document last modified: 2023-08-12T02:11:54.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Macrotasks and Microtasks]]></title>
             <link>https://github.com/mdn/content/issues/28795</link>
