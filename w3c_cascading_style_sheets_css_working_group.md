@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-fonts-5\] Inaccurate description of metrics retrieval from first available font in \`font-size-adjust\`](https://github.com/mdn/content/issues/29339) (2023-09-28T12:36:54Z)
+  
 * [\[html, css-conditional-3, selectors-4\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
   
 * [\[css-masking-1\] mask-image: url() function doesn't work with file://](https://github.com/mdn/content/issues/29106) (2023-09-14T09:24:04Z)

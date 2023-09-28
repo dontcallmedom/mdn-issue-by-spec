@@ -4,10 +4,44 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Tue, 26 Sep 2023 20:53:41 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 28 Sep 2023 12:36:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-fonts-5] Inaccurate description of metrics retrieval from first available font in `font-size-adjust`]]></title>
+            <link>https://github.com/mdn/content/issues/29339</link>
+            <guid>https://github.com/mdn/content/issues/29339</guid>
+            <pubDate>Thu, 28 Sep 2023 12:36:54 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size-adjust" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/font-size-adjust</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Description of usage of first available font.</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto">Uses the  value for the specified  from the first available font that is able to provide the desired metric.</p>
+</blockquote>
+<p dir="auto">This sentence is not accurate. <code class="notranslate">from-font</code> uses the value from the first available font, whether it has the value or not. If it does not, a value is likely synthesized.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Strip the last part of the sentence.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">See also <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="921667526" data-permission-text="Title is private" data-url="https://github.com/w3c/csswg-drafts/issues/6384" data-hovercard-type="issue" data-hovercard-url="/w3c/csswg-drafts/issues/6384/hovercard" href="https://github.com/w3c/csswg-drafts/issues/6384">w3c/csswg-drafts#6384</a></p>
+<p dir="auto"><a href="https://drafts.csswg.org/css-fonts-5/#font-size-adjust-prop:~:text=Computes%20to%20the%20%3Cnumber%3E%20corresponding%20to%20the%20specified" rel="nofollow">https://drafts.csswg.org/css-fonts-5/#font-size-adjust-prop:~:text=Computes%20to%20the%20%3Cnumber%3E%20corresponding%20to%20the%20specified</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/font-size-adjust</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size-adjust" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/font-size-adjust</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/font-size-adjust/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/font-size-adjust/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/75d94518e16b4354cd57f74f13710ca27791019a/hovercard" href="https://github.com/mdn/content/commit/75d94518e16b4354cd57f74f13710ca27791019a"><tt>75d9451</tt></a></li>
+<li>Document last modified: 2023-09-25T16:24:26.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[pointerlock-2] Document that MouseEvent.movementX/movementY are 0 for events other than `mousemove`]]></title>
             <link>https://github.com/mdn/content/issues/29315</link>
