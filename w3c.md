@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[service-workers-1\] the description of \`ServiceWorkerRegistration: scope property\` is not quite accurate](https://github.com/mdn/content/issues/29367) (2023-09-29T16:25:11Z)
+  
 * [\[css-fonts-5\] Inaccurate description of metrics retrieval from first available font in \`font-size-adjust\`](https://github.com/mdn/content/issues/29339) (2023-09-28T12:36:54Z)
   
 * [\[pointerlock-2\] Document that MouseEvent.movementX/movementY are 0 for events other than \`mousemove\`](https://github.com/mdn/content/issues/29315) (2023-09-26T20:53:41Z)
