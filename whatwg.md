@@ -6,8 +6,6 @@
   
 * [\[html\] Window: beforeunload event: Clarify whether an empty string should trigger the confirmation dialog](https://github.com/mdn/content/issues/29314) (2023-09-26T18:36:01Z)
   
-* [\[html\] Broken link on page "HTMLImageElement: sizes property"](https://github.com/mdn/content/issues/29249) (2023-09-22T17:24:06Z)
-  
 * [\[dom\] CustomEvent documentation missing \`cloneInto\` information for web extension scripts](https://github.com/mdn/content/issues/29232) (2023-09-21T13:33:50Z)
   
 * [\[console\] Clarify wording around "string representation" in console.\* related functions](https://github.com/mdn/content/issues/29172) (2023-09-17T18:09:54Z)
