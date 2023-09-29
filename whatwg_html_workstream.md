@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Cookie Examples Broken](https://github.com/mdn/content/issues/29370) (2023-09-29T18:28:29Z)
+  
 * [\[html\] Window: beforeunload event: Clarify whether an empty string should trigger the confirmation dialog](https://github.com/mdn/content/issues/29314) (2023-09-26T18:36:01Z)
   
 * [\[html, css-conditional-3, selectors-4\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Cookie Examples Broken](https://github.com/mdn/content/issues/29370) (2023-09-29T18:28:29Z)
+  
 * [\[console\] Missing parameters for console.dir() ](https://github.com/mdn/content/issues/29329) (2023-09-27T14:23:41Z)
   
 * [\[html\] Window: beforeunload event: Clarify whether an empty string should trigger the confirmation dialog](https://github.com/mdn/content/issues/29314) (2023-09-26T18:36:01Z)
