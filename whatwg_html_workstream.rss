@@ -4,10 +4,49 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Fri, 29 Sep 2023 18:28:29 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 29 Sep 2023 22:16:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] The "Navigator: languages property" documentation is missing some browser quirks]]></title>
+            <link>https://github.com/mdn/content/issues/29371</link>
+            <guid>https://github.com/mdn/content/issues/29371</guid>
+            <pubDate>Fri, 29 Sep 2023 22:16:14 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/languages" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Navigator/languages</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The MDN page for <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/languages" rel="nofollow">Navigator.languages</a> implies that the <code class="notranslate">navigator.languages</code> property and the <code class="notranslate">Accept-Language</code> header are always the same:</p>
+<blockquote>
+<p dir="auto">The <code class="notranslate">Accept-Language</code> HTTP header in every HTTP request from the user's browser uses the same value for the <code class="notranslate">navigator.languages</code> property except for the extra <code class="notranslate">qvalues</code> (quality values) field (e.g. <code class="notranslate">en-US;q=0.8</code>).</p>
+</blockquote>
+<p dir="auto">Indeed, this is implied by <a href="https://html.spec.whatwg.org/#navigatorlanguage" rel="nofollow">the specification</a>. However, it has never been the behaviour in WebKit, as evidenced by the thread in which the feature was first implemented:</p>
+<p dir="auto"><a href="https://bugs.webkit.org/show_bug.cgi?id=163220" rel="nofollow">https://bugs.webkit.org/show_bug.cgi?id=163220</a></p>
+<p dir="auto">Instead, <code class="notranslate">navigator.languages</code> always returns an array with a single value. The relevant change to <code class="notranslate">Source/WebCore/page/NavigatorBase.cpp</code> is still standing in WebKit's most recent release.</p>
+<p dir="auto">Chrome exhibits similar behaviour on mobile devices, although not that I have noticed on the desktop: <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1345416" rel="nofollow">https://bugs.chromium.org/p/chromium/issues/detail?id=1345416</a>.</p>
+<p dir="auto">There is also a relevant experiment the Chrome developers did to reduce fingerprinting by limiting what gets included in both the <code class="notranslate">Accept-Languages</code> header and in <code class="notranslate">navigator.languages</code>: <a href="https://developer.chrome.com/blog/origin-trial-for-accept-language-reduction/" rel="nofollow">https://developer.chrome.com/blog/origin-trial-for-accept-language-reduction/</a>. Although if they did that for real (sigh), at least the language here would be correct.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I have to admit, I'm confused and frustrated by all of this, but I think MDN could improve here by explaining that <code class="notranslate">navigator.languages</code> probably can't be trusted to provide a list of fallback languages in <em>at least</em> Chrome and Safari.</p>
+<p dir="auto">My suggestion is to completely remove the paragraph I quoted, since it is not true in a majority of cases, and add more implementation notes under Chrome, Safari, and Android WebView.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/navigator/languages</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/languages" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Navigator/languages</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/navigator/languages/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/navigator/languages/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ef75c1741b450c2331204be5563ee964ad5f4c48/hovercard" href="https://github.com/mdn/content/commit/ef75c1741b450c2331204be5563ee964ad5f4c48"><tt>ef75c17</tt></a></li>
+<li>Document last modified: 2023-04-07T06:16:45.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Cookie Examples Broken]]></title>
             <link>https://github.com/mdn/content/issues/29370</link>
