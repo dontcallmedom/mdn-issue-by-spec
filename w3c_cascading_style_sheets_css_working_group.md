@@ -4,9 +4,9 @@
 
 * [\[css-overscroll-1\] Overscroll-Behavior is not working](https://github.com/mdn/content/issues/29384) (2023-09-30T14:20:23Z)
   
-* [\[selectors-4\] "Subsequent-Sibling Combinator"](https://github.com/mdn/content/issues/29383) (2023-09-30T10:24:42Z)
+* [\[selectors-4\] General sibling combinator is now called "subsequent-sibling combinator"](https://github.com/mdn/content/issues/29383) (2023-09-30T10:24:42Z)
   
-* [\[selectors-4\] "next-sibling combinator"](https://github.com/mdn/content/issues/29382) (2023-09-30T10:23:32Z)
+* [\[selectors-4\] Adjacent sibling selector is now called "next-sibling combinator"](https://github.com/mdn/content/issues/29382) (2023-09-30T10:23:32Z)
   
 * [\[css-fonts-5\] Inaccurate description of metrics retrieval from first available font in \`font-size-adjust\`](https://github.com/mdn/content/issues/29339) (2023-09-28T12:36:54Z)
   
