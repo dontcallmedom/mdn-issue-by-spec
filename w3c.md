@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-overscroll-1\] Overscroll-Behavior is not working](https://github.com/mdn/content/issues/29384) (2023-09-30T14:20:23Z)
+  
 * [\[selectors-4\] "Subsequent-Sibling Combinator"](https://github.com/mdn/content/issues/29383) (2023-09-30T10:24:42Z)
   
 * [\[selectors-4\] "next-sibling combinator"](https://github.com/mdn/content/issues/29382) (2023-09-30T10:23:32Z)
