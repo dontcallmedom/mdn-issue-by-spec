@@ -2,6 +2,10 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[selectors-4\] "Subsequent-Sibling Combinator"](https://github.com/mdn/content/issues/29383) (2023-09-30T10:24:42Z)
+  
+* [\[selectors-4\] "next-sibling combinator"](https://github.com/mdn/content/issues/29382) (2023-09-30T10:23:32Z)
+  
 * [\[css-fonts-5\] Inaccurate description of metrics retrieval from first available font in \`font-size-adjust\`](https://github.com/mdn/content/issues/29339) (2023-09-28T12:36:54Z)
   
 * [\[html, css-conditional-3, selectors-4\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
