@@ -244,8 +244,6 @@
   
 * [\[webrtc\] "Using DTMF" is using legacy APIs](https://github.com/mdn/content/issues/10020) (2021-10-22T18:00:50Z)
   
-* [\[ecmascript, FileAPI\] Clean up irrelevant notes about old browser releases](https://github.com/mdn/content/issues/9974) (2021-10-21T07:48:17Z)
-  
 * [\[html, uievents\] Replace hand-written compat sections with BCD tables](https://github.com/mdn/content/issues/9972) (2021-10-21T07:40:45Z)
   
 * [\[service-workers-1, payment-request, payment-handler\] Content bug: inconsistent/incomplete descriptions of Promises as parameters](https://github.com/mdn/content/issues/9362) (2021-09-30T07:19:46Z)

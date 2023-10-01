@@ -58,8 +58,6 @@
   
 * [\[pointerlock-2\] Element.requestPointerLock() missing some useful detail](https://github.com/mdn/content/issues/11327) (2021-12-20T05:04:35Z)
   
-* [\[ecmascript, FileAPI\] Clean up irrelevant notes about old browser releases](https://github.com/mdn/content/issues/9974) (2021-10-21T07:48:17Z)
-  
 * [\[html, uievents\] Replace hand-written compat sections with BCD tables](https://github.com/mdn/content/issues/9972) (2021-10-21T07:40:45Z)
   
 * [\[uievents\] Issue with "Element: keydown event": What generates a KeyboardEvent?](https://github.com/mdn/content/issues/9321) (2021-09-28T15:22:02Z)
