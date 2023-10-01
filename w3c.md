@@ -12,8 +12,6 @@
   
 * [\[css-fonts-5\] Inaccurate description of metrics retrieval from first available font in \`font-size-adjust\`](https://github.com/mdn/content/issues/29339) (2023-09-28T12:36:54Z)
   
-* [\[pointerlock-2\] Document that MouseEvent.movementX/movementY are 0 for events other than \`mousemove\`](https://github.com/mdn/content/issues/29315) (2023-09-26T20:53:41Z)
-  
 * [\[permissions\] Navigator.permissions always returns prompt on firefox mobile. Even after the permission is granted.](https://github.com/mdn/content/issues/29291) (2023-09-26T04:29:04Z)
   
 * [\[service-workers-1\] Missing property \`WindowClient.ancestorOrigins\`](https://github.com/mdn/content/issues/29281) (2023-09-25T17:41:07Z)

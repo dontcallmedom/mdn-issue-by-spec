@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[pointerlock-2\] Document that MouseEvent.movementX/movementY are 0 for events other than \`mousemove\`](https://github.com/mdn/content/issues/29315) (2023-09-26T20:53:41Z)
-  
 * [\[pointerlock-2\] \`Element.requestPointerLock()\` conflict of Standard](https://github.com/mdn/content/issues/29259) (2023-09-23T16:53:47Z)
   
 * [\[uievents\] Screen global coordinates definition needed](https://github.com/mdn/content/issues/28676) (2023-08-21T13:37:56Z)
