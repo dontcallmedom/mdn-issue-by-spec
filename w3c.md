@@ -234,7 +234,7 @@
   
 * [\[pointerlock-2\] Element.requestPointerLock() missing some useful detail](https://github.com/mdn/content/issues/11327) (2021-12-20T05:04:35Z)
   
-* [\[css-fonts-5\] Issue with "@font-face/font-weight": Document \<font-weight-absolute\>{2} ](https://github.com/mdn/content/issues/10910) (2021-12-01T18:54:16Z)
+* [\[css-fonts-5\] @font-face/font-weight: expand on \<font-weight-absolute\>{2} importance](https://github.com/mdn/content/issues/10910) (2021-12-01T18:54:16Z)
   
 * [\[mediaqueries-4, css-conditional-3\] Issue with "@media": Need more clarity re Level 4 v Level 3, browser compat, and broken links](https://github.com/mdn/content/issues/10774) (2021-11-25T20:39:58Z)
   

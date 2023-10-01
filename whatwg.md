@@ -158,8 +158,6 @@
   
 * [\[html\] Clarify "Permitted parents: any element that accepts metadata content"](https://github.com/mdn/content/issues/14398) (2022-03-28T12:11:28Z)
   
-* [\[xhr\] Issue with "FormData()": type=submit inputs not included](https://github.com/mdn/content/issues/14305) (2022-03-25T16:56:07Z)
-  
 * [\[fullscreen\] Using F11 to enter fullscreen mode doesn’t set fullscreenElement (it remains null) and document.exitFullscreen() doesn’t work](https://github.com/mdn/content/issues/13674) (2022-03-09T00:38:35Z)
   
 * [\[html\] Conflicting descriptions of whether Firefox respects the “autocomplete” attribute, specifically for \<input type="checkbox"\>](https://github.com/mdn/content/issues/13502) (2022-03-04T16:37:28Z)
