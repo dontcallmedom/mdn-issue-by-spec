@@ -78,8 +78,6 @@
   
 * [\[html, DOM-Parsing\] Inconsistency about if pushState() results in a popstate event](https://github.com/mdn/content/issues/25785) (2023-03-30T20:11:04Z)
   
-* [\[html\] Window.postMessage() missing options parameter](https://github.com/mdn/content/issues/25342) (2023-03-15T12:40:15Z)
-  
 * [\[html\] Missing documentation of methods and properties of \`HTMLOptionsCollections\`](https://github.com/mdn/content/issues/25190) (2023-03-09T02:30:04Z)
   
 * [\[html\] A srcset example contradicts instructions](https://github.com/mdn/content/issues/25150) (2023-03-07T21:00:37Z)
