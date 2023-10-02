@@ -4,8 +4,6 @@
 
 * [\[css-overscroll-1\] Overscroll-Behavior is not working](https://github.com/mdn/content/issues/29384) (2023-09-30T14:20:23Z)
   
-* [\[selectors-4\] General sibling combinator is now called "subsequent-sibling combinator"](https://github.com/mdn/content/issues/29383) (2023-09-30T10:24:42Z)
-  
 * [\[selectors-4\] Adjacent sibling selector is now called "next-sibling combinator"](https://github.com/mdn/content/issues/29382) (2023-09-30T10:23:32Z)
   
 * [\[service-workers-1\] the description of \`ServiceWorkerRegistration: scope property\` is not quite accurate](https://github.com/mdn/content/issues/29367) (2023-09-29T16:25:11Z)
