@@ -4,10 +4,66 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Mon, 02 Oct 2023 08:37:09 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 03 Oct 2023 18:07:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] a11y - blockquote example does not follow html spec]]></title>
+            <link>https://github.com/mdn/content/issues/29446</link>
+            <guid>https://github.com/mdn/content/issues/29446</guid>
+            <pubDate>Tue, 03 Oct 2023 18:07:57 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The 'try it' section</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The 'try it' section incorrectly shows you can put attribution within the <code class="notranslate">&lt;blockquote&gt;</code> element, however <a href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element" rel="nofollow">the HTML spec</a> notes that's incorrect and that you should put attributions outside said element.</p>
+<blockquote>
+<p dir="auto">Attribution for the quotation, if any, must be placed outside the <a href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element" rel="nofollow"><code class="notranslate">blockquote</code></a> element.</p>
+</blockquote>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I suggest to follow the spec example.</p>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;blockquote cite=&quot;https://www.huxley.net/bnw/four.html&quot;&gt;
+  &lt;p&gt;Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;— Aldous Huxley, &lt;cite&gt;Brave New World&lt;/cite&gt;&lt;/p&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">blockquote</span> <span class="pl-c1">cite</span>="<span class="pl-s">https://www.huxley.net/bnw/four.html</span>"<span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.<span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">blockquote</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>— Aldous Huxley, <span class="pl-kos">&lt;</span><span class="pl-ent">cite</span><span class="pl-kos">&gt;</span>Brave New World<span class="pl-kos">&lt;/</span><span class="pl-ent">cite</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span></pre></div>
+<p dir="auto">Or using a figure.</p>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;figure&gt;
+  &lt;blockquote cite=&quot;https://www.huxley.net/bnw/four.html&quot;&gt;
+    &lt;p&gt;Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;figcaption&gt;
+    — Aldous Huxley, &lt;cite&gt;Brave New World&lt;/cite&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">figure</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">blockquote</span> <span class="pl-c1">cite</span>="<span class="pl-s">https://www.huxley.net/bnw/four.html</span>"<span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.<span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;/</span><span class="pl-ent">blockquote</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">figcaption</span><span class="pl-kos">&gt;</span>
+    — Aldous Huxley, <span class="pl-kos">&lt;</span><span class="pl-ent">cite</span><span class="pl-kos">&gt;</span>Brave New World<span class="pl-kos">&lt;/</span><span class="pl-ent">cite</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;/</span><span class="pl-ent">figcaption</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">figure</span><span class="pl-kos">&gt;</span></pre></div>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/element/blockquote</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/blockquote/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/blockquote/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e04d8d2766c468f149445c0bf438d09f9b2d188c/hovercard" href="https://github.com/mdn/content/commit/e04d8d2766c468f149445c0bf438d09f9b2d188c"><tt>e04d8d2</tt></a></li>
+<li>Document last modified: 2023-06-13T08:10:47.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Missing documentation for StorageEvent interface member]]></title>
             <link>https://github.com/mdn/content/issues/29419</link>
