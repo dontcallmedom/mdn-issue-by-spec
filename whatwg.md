@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] a11y - blockquote example does not follow html spec](https://github.com/mdn/content/issues/29446) (2023-10-03T18:07:57Z)
-  
 * [\[html\] Missing documentation for StorageEvent interface member](https://github.com/mdn/content/issues/29419) (2023-10-02T08:37:09Z)
   
 * [\[html\] The "Navigator: languages property" documentation is missing some browser quirks](https://github.com/mdn/content/issues/29371) (2023-09-29T22:16:14Z)
