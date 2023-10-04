@@ -807,7 +807,7 @@ Selection API issue:<br>
 <p dir="auto">A list of all properties that this method returns.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">TypeScript says that this is the returned object (from lib.dom.d.ts):</p>
-<div class="highlight highlight-source-ts notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="type EpochTimeStamp = number;
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="type EpochTimeStamp = number;
 
 // ...
 
@@ -815,15 +815,16 @@ interface PushSubscriptionJSON {
     endpoint?: string;
     expirationTime?: EpochTimeStamp | null;
     keys?: Record&lt;string, string&gt;;
-}"><pre class="notranslate"><span class="pl-k">type</span> <span class="pl-smi">EpochTimeStamp</span> <span class="pl-c1">=</span> <span class="pl-smi">number</span><span class="pl-kos">;</span>
+}"><pre lang="ts" class="notranslate"><code class="notranslate">type EpochTimeStamp = number;
 
-<span class="pl-c">// ...</span>
+// ...
 
-<span class="pl-k">interface</span> <span class="pl-smi">PushSubscriptionJSON</span> <span class="pl-kos">{</span>
-    <span class="pl-c1">endpoint</span>?: <span class="pl-smi">string</span><span class="pl-kos">;</span>
-    <span class="pl-c1">expirationTime</span>?: <span class="pl-smi">EpochTimeStamp</span> <span class="pl-c1">|</span> <span class="pl-c1">null</span><span class="pl-kos">;</span>
-    <span class="pl-c1">keys</span>?: <span class="pl-smi">Record</span><span class="pl-kos">&lt;</span><span class="pl-smi">string</span><span class="pl-kos">,</span> <span class="pl-smi">string</span><span class="pl-kos">&gt;</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span></pre></div>
+interface PushSubscriptionJSON {
+    endpoint?: string;
+    expirationTime?: EpochTimeStamp | null;
+    keys?: Record&lt;string, string&gt;;
+}
+</code></pre></div>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">MDN metadata</h3>
@@ -1463,9 +1464,10 @@ only the pc paramter iceRestart is mentioned (the old way to initiate ICE restar
 <p dir="auto">The white rabbit example should be a transition, not an animation: The ears go from visible to not. You don’t need an animation for that, just a class change.</p>
 <p dir="auto">Let's say we stick with that anyhow, there are other issues.</p>
 <p dir="auto">The code in the code example:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="// returns &lt;div id=&quot;rabbit&quot;&gt;Click the rabbit's ears!&lt;/div&gt;
-rabbitDownKeyframes.target;"><pre class="notranslate"><span class="pl-c">// returns &lt;div id="rabbit"&gt;Click the rabbit's ears!&lt;/div&gt;</span>
-<span class="pl-s1">rabbitDownKeyframes</span><span class="pl-kos">.</span><span class="pl-c1">target</span><span class="pl-kos">;</span></pre></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="// returns &lt;div id=&quot;rabbit&quot;&gt;Click the rabbit's ears!&lt;/div&gt;
+rabbitDownKeyframes.target;"><pre lang="javascript" class="notranslate"><code class="notranslate">// returns &lt;div id="rabbit"&gt;Click the rabbit's ears!&lt;/div&gt;
+rabbitDownKeyframes.target;
+</code></pre></div>
 <p dir="auto">Is not included in the linked Codepen.<br>
 If the user wants to add it by copying and pasting, the line itself isn’t a log or a variable definition. it just sits there.</p>
 <p dir="auto">Additionally, the example is not good UX. The sighted user has no way of knowing where to click or even that they should. There are no focusable / interactive html elements. The cursor doesn't indicate clickability either.</p>
