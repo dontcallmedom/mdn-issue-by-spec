@@ -1173,39 +1173,6 @@ This method is <a href="https://developer.mozilla.org/en-US/docs/Glossary/Asynch
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] <script type=module async> explanation incorrectly says it defers]]></title>
-            <link>https://github.com/mdn/content/issues/24754</link>
-            <guid>https://github.com/mdn/content/issues/24754</guid>
-            <pubDate>Wed, 22 Feb 2023 14:21:24 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">async</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<blockquote>
-<p dir="auto">For <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules" rel="nofollow">module scripts</a>, if the async attribute is present then the scripts and all their dependencies will be executed in the defer queue, therefore they will get fetched in parallel to parsing and evaluated as soon as they are available.</p>
-</blockquote>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">What happens with async module scripts is, as far as I know and understand from the spec, what’s explained in the part of that sentence. Just like non-module scripts. But the part about “the defer queue” is confusing, as <code class="notranslate">async</code> has nothing to do with <code class="notranslate">defer</code>.</p>
-<p dir="auto">My guess is that the writer naively called what happened with the dependency chain a “defer queue” even though <code class="notranslate">defer</code> is something totally different in the context of loading scripts.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">Spec (with a neat diagram): <a href="https://html.spec.whatwg.org/multipage/scripting.html#attr-script-async" rel="nofollow">https://html.spec.whatwg.org/multipage/scripting.html#attr-script-async</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/html/element/script</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/script/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/script/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/f2ad7c5bfe075511f5a5c2a040e54889a2158d3b/hovercard" href="https://github.com/mdn/content/commit/f2ad7c5bfe075511f5a5c2a040e54889a2158d3b"><tt>f2ad7c5</tt></a></li>
-<li>Document last modified: 2023-02-20T14:39:34.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] autofocus on dialog page]]></title>
             <link>https://github.com/mdn/content/issues/23915</link>
             <guid>https://github.com/mdn/content/issues/23915</guid>

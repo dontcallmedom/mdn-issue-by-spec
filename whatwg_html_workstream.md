@@ -68,8 +68,6 @@
   
 * [\[html\] event doesnt fire on fully cached pages (no event appears to)](https://github.com/mdn/content/issues/24770) (2023-02-22T21:34:14Z)
   
-* [\[html\] \<script type=module async\> explanation incorrectly says it defers](https://github.com/mdn/content/issues/24754) (2023-02-22T14:21:24Z)
-  
 * [\[html\] autofocus on dialog page](https://github.com/mdn/content/issues/23915) (2023-01-26T19:55:03Z)
   
 * [\[html\] beforeunload event guide references custom event.returnValue, but that is deprecated](https://github.com/mdn/content/issues/23837) (2023-01-23T14:01:02Z)

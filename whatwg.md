@@ -90,8 +90,6 @@
   
 * [\[html\] event doesnt fire on fully cached pages (no event appears to)](https://github.com/mdn/content/issues/24770) (2023-02-22T21:34:14Z)
   
-* [\[html\] \<script type=module async\> explanation incorrectly says it defers](https://github.com/mdn/content/issues/24754) (2023-02-22T14:21:24Z)
-  
 * [\[dom\] Need to update lookupNamespaceURI() and createNSResolver()](https://github.com/mdn/content/issues/24724) (2023-02-22T02:32:44Z)
   
 * [\[fetch\] \`Response.text()\` can throw a \`TypeError\`](https://github.com/mdn/content/issues/24466) (2023-02-15T16:35:17Z)
