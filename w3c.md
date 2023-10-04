@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-overscroll-1\] \`overscroll-behavior: contain\` example specifies "or refreshes" when it shouldn't](https://github.com/mdn/content/issues/29473) (2023-10-04T18:20:41Z)
+  
 * [\[css-overflow-3\] Outdated info regarding fade and fade() options in text-overflow?](https://github.com/mdn/content/issues/29466) (2023-10-04T12:12:16Z)
   
 * [\[css-overscroll-1\] Overscroll-Behavior is not working](https://github.com/mdn/content/issues/29384) (2023-09-30T14:20:23Z)
