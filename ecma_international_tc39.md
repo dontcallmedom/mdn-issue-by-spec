@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[ecmascript\] Include information/section on "Method definitions in object literals"](https://github.com/mdn/content/issues/29489) (2023-10-05T00:01:28Z)
+  
 * [\[ecmascript\] Macrotasks and Microtasks](https://github.com/mdn/content/issues/28795) (2023-08-28T09:55:38Z)
   
 * [\[ecmascript\] Accessing WebAssembly memory using TypedArrays is incorrect on Big Endian systems](https://github.com/mdn/content/issues/25569) (2023-03-23T12:09:31Z)
