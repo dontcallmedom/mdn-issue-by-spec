@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[ecmascript\] equivalence of x &&= y and x && ( x = y )](https://github.com/mdn/content/issues/29524) (2023-10-06T23:24:08Z)
+  
 * [\[ecmascript\] Include information/section on "Method definitions in object literals"](https://github.com/mdn/content/issues/29489) (2023-10-05T00:01:28Z)
   
 * [\[ecmascript\] Macrotasks and Microtasks](https://github.com/mdn/content/issues/28795) (2023-08-28T09:55:38Z)
