@@ -6,7 +6,7 @@
   
 * [\[streams\] getWriter exceptions](https://github.com/mdn/content/issues/29452) (2023-10-04T04:29:34Z)
   
-* [\[html\] Missing documentation for StorageEvent interface member](https://github.com/mdn/content/issues/29419) (2023-10-02T08:37:09Z)
+* [\[html\] Missing documentation for \`StorageEvent\` interface member](https://github.com/mdn/content/issues/29419) (2023-10-02T08:37:09Z)
   
 * [\[html\] The "Navigator: languages property" documentation is missing some browser quirks](https://github.com/mdn/content/issues/29371) (2023-09-29T22:16:14Z)
   
