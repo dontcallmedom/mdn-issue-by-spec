@@ -4348,16 +4348,6 @@ navigator.serviceWorker.register('/sw.js', {scope: './'}).then(function(registra
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[clipboard-apis] Update execCommand use in context-menu-copy-link-with-types]]></title>
-            <link>https://github.com/mdn/content/issues/8990</link>
-            <guid>https://github.com/mdn/content/issues/8990</guid>
-            <pubDate>Thu, 16 Sep 2021 17:38:38 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto"><a href="https://github.com/mdn/webextensions-examples/tree/master/context-menu-copy-link-with-types">context-menu-copy-link-with-types</a> uses a content script because when the example was written execCommand didn't work in background pages; now they do so the example should be updated to call execCommand from the background page instead of using a content script.</p>
-<p dir="auto">Note, before updating check whether <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write" rel="nofollow">Clipboard.write()</a> is available in Firefox, as this would be the preferred method given that execCommand is deprecated.</p>
-<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write</a><br>
-MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons" rel="nofollow">https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons</a></p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[notifications, cssom-view-1, service-workers-1, dom, pointerevents3] Better naming of pages]]></title>
             <link>https://github.com/mdn/content/issues/8977</link>
             <guid>https://github.com/mdn/content/issues/8977</guid>
