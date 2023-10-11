@@ -24,27 +24,19 @@
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <blockquote>
 <p dir="auto">4.3. Extension to DocumentOrShadowRoot</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="partial interface mixin [DocumentOrShadowRoot](https://dom.spec.whatwg.org/#documentorshadowroot) {
-  readonly attribute [Element](https://dom.spec.whatwg.org/#element)? pictureInPictureElement;
-};"><pre class="notranslate"><code class="notranslate">partial interface mixin [DocumentOrShadowRoot](https://dom.spec.whatwg.org/#documentorshadowroot) {
+<pre class="notranslate"><code class="notranslate">partial interface mixin [DocumentOrShadowRoot](https://dom.spec.whatwg.org/#documentorshadowroot) {
   readonly attribute [Element](https://dom.spec.whatwg.org/#element)? pictureInPictureElement;
 };
-</code></pre></div>
+</code></pre>
 <p dir="auto">The <a href="https://www.w3.org/TR/picture-in-picture/#dom-documentorshadowroot-pictureinpictureelement" rel="nofollow">pictureInPictureElement</a> attribute’s getter must run these steps:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="If the context object is not [connected](https://dom.spec.whatwg.org/#connected), return null and abort these steps.
-
-Let candidate be the result of [retargeting](https://dom.spec.whatwg.org/#retarget) Picture-in-Picture element against the context object.
-
-If candidate and the context object are in the same [tree](https://dom.spec.whatwg.org/#concept-tree), return candidate and abort these steps.
-
-Return null."><pre class="notranslate"><code class="notranslate">If the context object is not [connected](https://dom.spec.whatwg.org/#connected), return null and abort these steps.
+<pre class="notranslate"><code class="notranslate">If the context object is not [connected](https://dom.spec.whatwg.org/#connected), return null and abort these steps.
 
 Let candidate be the result of [retargeting](https://dom.spec.whatwg.org/#retarget) Picture-in-Picture element against the context object.
 
 If candidate and the context object are in the same [tree](https://dom.spec.whatwg.org/#concept-tree), return candidate and abort these steps.
 
 Return null.
-</code></pre></div>
+</code></pre>
 </blockquote>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto">Steps to reproduce (where W3C Picture-in-Picture specification is supported):</p>
