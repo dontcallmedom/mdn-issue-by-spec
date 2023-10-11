@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, dom\] The \`shadowrootmode\` attribute on \`\<template\>\` is about to be standardized](https://github.com/mdn/content/issues/29600) (2023-10-11T16:01:03Z)
+  
 * [\[html\] Incomplete data](https://github.com/mdn/content/issues/29457) (2023-10-04T07:23:44Z)
   
 * [\[html\] Missing documentation for \`StorageEvent\` interface member](https://github.com/mdn/content/issues/29419) (2023-10-02T08:37:09Z)
