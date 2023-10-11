@@ -68,8 +68,6 @@
   
 * [\[html\] HTMLImageElement.srcset: sizes attribute doesn't need to be present](https://github.com/mdn/content/issues/27291) (2023-06-12T21:33:46Z)
   
-* [\[html\] \<source media\> in media elements is allowed again (spec change)](https://github.com/mdn/content/issues/27079) (2023-05-31T18:43:51Z)
-  
 * [\[notifications\] NotificationOptions and Notification silent default has change](https://github.com/mdn/content/issues/26812) (2023-05-17T14:25:50Z)
   
 * [\[html\] HTMLMediaElement: suspend: Improve wording on what it means to be suspended](https://github.com/mdn/content/issues/26625) (2023-05-07T04:43:55Z)
