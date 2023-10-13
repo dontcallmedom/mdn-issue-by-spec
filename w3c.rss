@@ -3412,32 +3412,6 @@ Chrome 102.0.5005.115 (Official Build) (64-bit)</p>
 <p dir="auto"><em>No response</em></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[cssom-1] [Web-API] Constructible stylesheets guide ]]></title>
-            <link>https://github.com/mdn/content/issues/16774</link>
-            <guid>https://github.com/mdn/content/issues/16774</guid>
-            <pubDate>Mon, 30 May 2022 05:03:25 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">FF101 minimal release work for constructible stylesheets was done in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1244333785" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/16411" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/16411/hovercard" href="https://github.com/mdn/content/pull/16411">#16411</a>. This covered release notes and new properties.</p>
-<p dir="auto">What still need to be done is to provide an explanation of the API as "guide" material.<br>
-IN summary, it's a way to construct a CSS stylesheet programmatically so that it can be shared efficiently with shadow DOM subtrees.</p>
-<p dir="auto">This is mostly likely an addition to <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM</a> and lots of cross linking.</p>
-<p dir="auto">The main methods/properties are:</p>
-<ul dir="auto">
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet" rel="nofollow">CSSStyleSheet</a> methods including its <a href="https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/CSSStyleSheet" rel="nofollow">CSSStyleSheet()</a>, <code class="notranslate">replace</code>, <code class="notranslate">replaceSync</code>, <code class="notranslate">insertRule</code>, <code class="notranslate">deleteRule</code> and <code class="notranslate">adoptedStylesheets</code> in Document and ShadowRoot.</li>
-</ul>
-<p dir="auto">Resources</p>
-<ul class="contains-task-list">
-<li>
-<p dir="auto">Explainer: <a href="https://github.com/WICG/construct-stylesheets/blob/gh-pages/explainer.md">https://github.com/WICG/construct-stylesheets/blob/gh-pages/explainer.md</a></p>
-</li>
-<li>
-<p dir="auto"><a href="https://web.dev/constructable-stylesheets/" rel="nofollow">Constructable Stylesheets</a> (web.dev)</p>
-</li>
-<li class="task-list-item">
-<p dir="auto"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> When done, mark this one dev-doc-complete <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1644102" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=1644102</a></p>
-</li>
-</ul>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[file-system-access] `FileSystemHandle.requestPermission()` can throw `SecurityError`]]></title>
             <link>https://github.com/mdn/content/issues/15831</link>
             <guid>https://github.com/mdn/content/issues/15831</guid>

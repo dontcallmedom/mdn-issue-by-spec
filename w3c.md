@@ -188,8 +188,6 @@
   
 * [\[encoding\] "Buffer sizing" in \`TextEncoder.encodeInto()\` is English-centric](https://github.com/mdn/content/issues/16805) (2022-05-31T02:24:05Z)
   
-* [\[cssom-1\] \[Web-API\] Constructible stylesheets guide ](https://github.com/mdn/content/issues/16774) (2022-05-30T05:03:25Z)
-  
 * [\[file-system-access\] \`FileSystemHandle.requestPermission()\` can throw \`SecurityError\`](https://github.com/mdn/content/issues/15831) (2022-05-09T19:45:01Z)
   
 * [\[css-conditional-3, DOM-Parsing\] Defining page types](https://github.com/mdn/content/issues/15539) (2022-04-29T23:44:43Z)
