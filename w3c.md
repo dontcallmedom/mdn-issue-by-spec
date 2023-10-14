@@ -28,8 +28,6 @@
   
 * [\[cssom-view-1\] offsetParent is also changed by transform](https://github.com/mdn/content/issues/28991) (2023-09-08T00:41:19Z)
   
-* [\[css-pseudo-4\] Explain Pseudo Element Selectors without \`content\` Property Behavior](https://github.com/mdn/content/issues/28985) (2023-09-07T16:48:29Z)
-  
 * [\[css-fonts-5\] Formal syntax wrong](https://github.com/mdn/content/issues/28900) (2023-09-02T14:41:13Z)
   
 * [\[css-ui-4\] Chrome intents to remove non-standard appearance keywords](https://github.com/mdn/content/issues/28687) (2023-08-21T21:20:42Z)
