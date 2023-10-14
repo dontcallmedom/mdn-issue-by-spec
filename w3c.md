@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[webrtc\] The heading is mismatched to the paragraph content](https://github.com/mdn/content/issues/29640) (2023-10-14T10:45:48Z)
+  
 * [\[cssom-view-1\] "offsetTop" definition is misleading / inaccurate](https://github.com/mdn/content/issues/29601) (2023-10-11T17:37:26Z)
   
 * [\[service-workers-1\] The description of \`ServiceWorker\`'s getter is not comprehensive enough](https://github.com/mdn/content/issues/29541) (2023-10-08T15:59:56Z)
