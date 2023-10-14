@@ -6,8 +6,6 @@
   
 * [\[service-workers-1\] The description of \`ServiceWorker\`'s getter is not comprehensive enough](https://github.com/mdn/content/issues/29541) (2023-10-08T15:59:56Z)
   
-* [\[css-overflow-3\] Outdated info regarding fade and fade() options in text-overflow?](https://github.com/mdn/content/issues/29466) (2023-10-04T12:12:16Z)
-  
 * [\[css-overscroll-1\] Overscroll-Behavior is not working](https://github.com/mdn/content/issues/29384) (2023-09-30T14:20:23Z)
   
 * [\[service-workers-1\] the description of \`ServiceWorkerRegistration: scope property\` is not quite accurate](https://github.com/mdn/content/issues/29367) (2023-09-29T16:25:11Z)
