@@ -4,10 +4,34 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Sat, 14 Oct 2023 10:45:48 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 16 Oct 2023 16:13:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[filter-effects-2] backdrop-filter article states that a transparent background is required, but that doesn't seem to be the case]]></title>
+            <link>https://github.com/mdn/content/issues/29667</link>
+            <guid>https://github.com/mdn/content/issues/29667</guid>
+            <pubDate>Mon, 16 Oct 2023 16:13:58 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">backdrop-filter</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The article states:</p>
+<blockquote>
+<p dir="auto">Because it applies to everything behind the element, to see the effect you must make the element or its background at least partially transparent.</p>
+</blockquote>
+<p dir="auto">However, when I inspect the demos on that page in Chrome 117 and remove the semi-transparent background color, it still works:</p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/19352442/275580195-b96f1e30-b8ba-4749-95e4-6cd219f54707.png"><img src="https://user-images.githubusercontent.com/19352442/275580195-b96f1e30-b8ba-4749-95e4-6cd219f54707.png" alt="Inspecting a demo of backdrop-filter on MDN. Some text is overlaid on a photo of a hot air balloon. The browser dev tools are open and the background-color property has been removed from the overlay, which still maintains its blur effect." style="max-width: 100%;"></a></p>
+<p dir="auto">Repro here: <a href="https://jsfiddle.net/wa91g3hx/25/" rel="nofollow">https://jsfiddle.net/wa91g3hx/25/</a></p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">If this is true, the article should clarify why/what happens if a background color is omitted.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://jsfiddle.net/wa91g3hx/25/" rel="nofollow">https://jsfiddle.net/wa91g3hx/25/</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[webrtc] The heading is mismatched to the paragraph content]]></title>
             <link>https://github.com/mdn/content/issues/29640</link>
