@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] beforeunload demo not work at all](https://github.com/mdn/content/issues/29655) (2023-10-16T06:30:24Z)
+  
 * [\[html, dom\] The \`shadowrootmode\` attribute on \`\<template\>\` is about to be standardized](https://github.com/mdn/content/issues/29600) (2023-10-11T16:01:03Z)
   
 * [\[html\] Incomplete data](https://github.com/mdn/content/issues/29457) (2023-10-04T07:23:44Z)
