@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[dom\] Chrome behaves differently than described](https://github.com/mdn/content/issues/29660) (2023-10-16T08:39:40Z)
+  
 * [\[html, dom\] The \`shadowrootmode\` attribute on \`\<template\>\` is about to be standardized](https://github.com/mdn/content/issues/29600) (2023-10-11T16:01:03Z)
   
 * [\[dom\] CustomEvent documentation missing \`cloneInto\` information for web extension scripts](https://github.com/mdn/content/issues/29232) (2023-09-21T13:33:50Z)
