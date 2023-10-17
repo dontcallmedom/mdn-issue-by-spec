@@ -4,80 +4,10 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Tue, 17 Oct 2023 03:46:43 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 Oct 2023 08:50:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript] Proxy example in the `No private property forwarding` section looks incorrect]]></title>
-            <link>https://github.com/mdn/content/issues/29673</link>
-            <guid>https://github.com/mdn/content/issues/29673</guid>
-            <pubDate>Tue, 17 Oct 2023 03:46:43 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Example for the function one in the private property section is incorrect</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">This example in <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy#no_private_property_forwarding" rel="nofollow">No private property forwarding</a> causes misleading.</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="class Secret {
-  #x = 1;
-  x() {
-    return this.#x;
-  }
-}
-
-const aSecret = new Secret();
-const proxy = new Proxy(aSecret, {
-  get(target, prop, receiver) {
-    const value = target[prop];
-    if (value instanceof Function) {
-      return function (...args) {
-        return value.apply(this === receiver ? target : this, args); //!&lt;&lt;&lt; here is incorrect;
-      };
-    }
-    return value;
-  },
-});
-console.log(proxy.x());"><pre class="notranslate"><span class="pl-k">class</span> <span class="pl-v">Secret</span> <span class="pl-kos">{</span>
-  #<span class="pl-c1">x</span> <span class="pl-c1">=</span> <span class="pl-c1">1</span><span class="pl-kos">;</span>
-  <span class="pl-en">x</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-    <span class="pl-k">return</span> <span class="pl-smi">this</span><span class="pl-kos">.</span>#<span class="pl-c1">x</span><span class="pl-kos">;</span>
-  <span class="pl-kos">}</span>
-<span class="pl-kos">}</span>
-
-<span class="pl-k">const</span> <span class="pl-s1">aSecret</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Secret</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-k">const</span> <span class="pl-s1">proxy</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Proxy</span><span class="pl-kos">(</span><span class="pl-s1">aSecret</span><span class="pl-kos">,</span> <span class="pl-kos">{</span>
-  <span class="pl-en">get</span><span class="pl-kos">(</span><span class="pl-s1">target</span><span class="pl-kos">,</span> <span class="pl-s1">prop</span><span class="pl-kos">,</span> <span class="pl-s1">receiver</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-    <span class="pl-k">const</span> <span class="pl-s1">value</span> <span class="pl-c1">=</span> <span class="pl-s1">target</span><span class="pl-kos">[</span><span class="pl-s1">prop</span><span class="pl-kos">]</span><span class="pl-kos">;</span>
-    <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">value</span> <span class="pl-k">instanceof</span> <span class="pl-v">Function</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-      <span class="pl-k">return</span> <span class="pl-k">function</span> <span class="pl-kos">(</span>...<span class="pl-s1">args</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-        <span class="pl-k">return</span> <span class="pl-s1">value</span><span class="pl-kos">.</span><span class="pl-en">apply</span><span class="pl-kos">(</span><span class="pl-smi">this</span> <span class="pl-c1">===</span> <span class="pl-s1">receiver</span> ? <span class="pl-s1">target</span> : <span class="pl-smi">this</span><span class="pl-kos">,</span> <span class="pl-s1">args</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">//!&lt;&lt;&lt; here is incorrect;</span>
-      <span class="pl-kos">}</span><span class="pl-kos">;</span>
-    <span class="pl-kos">}</span>
-    <span class="pl-k">return</span> <span class="pl-s1">value</span><span class="pl-kos">;</span>
-  <span class="pl-kos">}</span><span class="pl-kos">,</span>
-<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">proxy</span><span class="pl-kos">.</span><span class="pl-en">x</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">It should be <code class="notranslate">...args</code>, not <code class="notranslate">args</code>. Otherwise, the function cannot receive the correct function inputs.</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="alue.apply(this === receiver ? target : this, ...args);"><pre class="notranslate"><span class="pl-s1">alue</span><span class="pl-kos">.</span><span class="pl-en">apply</span><span class="pl-kos">(</span><span class="pl-smi">this</span> <span class="pl-c1">===</span> <span class="pl-s1">receiver</span> ? <span class="pl-s1">target</span> : <span class="pl-smi">this</span><span class="pl-kos">,</span> ...<span class="pl-s1">args</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/proxy</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/proxy/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/proxy/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/fb85334ffa4a2c88d209b1074909bee0e0abd57a/hovercard" href="https://github.com/mdn/content/commit/fb85334ffa4a2c88d209b1074909bee0e0abd57a"><tt>fb85334</tt></a></li>
-<li>Document last modified: 2023-09-25T07:33:31.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[ecmascript] Import assertions proposal renamed to import attributes]]></title>
             <link>https://github.com/mdn/content/issues/29572</link>
