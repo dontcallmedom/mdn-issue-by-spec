@@ -20,8 +20,6 @@
   
 * [\[html\] Wrong explanation of the example inside Inline formatting context](https://github.com/mdn/content/issues/29035) (2023-09-10T13:07:32Z)
   
-* [\[html\] Document deprecation of unload event](https://github.com/mdn/content/issues/28928) (2023-09-04T14:33:56Z)
-  
 * [\[html\] Explain why tabindex may not be used on the dialog element](https://github.com/mdn/content/issues/28750) (2023-08-25T10:39:27Z)
   
 * [\[html\] HTMLElement.dataset: using the \`in\` operator is unsafe](https://github.com/mdn/content/issues/28693) (2023-08-22T08:32:02Z)
