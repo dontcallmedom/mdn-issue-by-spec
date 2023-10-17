@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[cssom-view-1\] Include detailed information about scaling on window.devicePixelRatio reference page](https://github.com/mdn/content/issues/29682) (2023-10-17T10:43:43Z)
+  
 * [\[filter-effects-2\] backdrop-filter article states that a transparent background is required, but that doesn't seem to be the case](https://github.com/mdn/content/issues/29667) (2023-10-16T16:13:58Z)
   
 * [\[cssom-view-1\] "offsetTop" definition is misleading / inaccurate](https://github.com/mdn/content/issues/29601) (2023-10-11T17:37:26Z)
