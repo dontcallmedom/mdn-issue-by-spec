@@ -10,8 +10,6 @@
   
 * [\[encoding\] TextDecoderStream constructor options](https://github.com/mdn/content/issues/29681) (2023-10-17T10:34:36Z)
   
-* [\[filter-effects-2\] backdrop-filter article states that a transparent background is required, but that doesn't seem to be the case](https://github.com/mdn/content/issues/29667) (2023-10-16T16:13:58Z)
-  
 * [\[webrtc\] The heading is mismatched to the paragraph content](https://github.com/mdn/content/issues/29640) (2023-10-14T10:45:48Z)
   
 * [\[cssom-view-1\] "offsetTop" definition is misleading / inaccurate](https://github.com/mdn/content/issues/29601) (2023-10-11T17:37:26Z)
