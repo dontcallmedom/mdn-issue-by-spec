@@ -4,41 +4,10 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Wed, 18 Oct 2023 20:18:57 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Oct 2023 05:25:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[html] `img` `alt` attribute information contains errors and misleading guidance]]></title>
-            <link>https://github.com/mdn/content/issues/29709</link>
-            <guid>https://github.com/mdn/content/issues/29709</guid>
-            <pubDate>Wed, 18 Oct 2023 20:18:57 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Attributes</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The text explaining the <code class="notranslate">alt</code> attribute does not agree with the the description of the attribute in the <a href="https://html.spec.whatwg.org/multipage/images.html#alt" rel="nofollow">HTML living standard</a>. The MDN page for the <code class="notranslate">img</code> element says that the <code class="notranslate">alt</code> attribute is meant to provide a description of the image. But the living standard flatly contradicts this:</p>
-<blockquote>
-<p dir="auto">It is important to realize that the alternative text is a replacement for the image, not a description of the image.</p>
-</blockquote>
-<p dir="auto">Also, several code examples on the page have an <code class="notranslate">alt</code> attribute that does not comply with the standard. For example, several examples show code for MDN's logo with the word "logo" in the <code class="notranslate">alt</code> attribute, which is explicitly proscribed by the standard:</p>
-<blockquote>
-<p dir="auto">If the logo is being used to represent the entity, e.g. as a page heading, the alt attribute must contain the name of the entity being represented by the logo. The alt attribute must not contain text like the word "logo", as it is not the fact that it is a logo that is being conveyed, it's the entity itself.</p>
-</blockquote>
-<p dir="auto">The <code class="notranslate">alt</code> text for the clock example is another example of what <em>not</em> to do. The point of the clock is not that is a clock, it is the <em>time</em> displayed on the clock. Thus, a better <code class="notranslate">alt</code> value is "The time is 12:45."</p>
-<p dir="auto">(There is a <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/alt" rel="nofollow">separate MDN page on the alt attribute</a>. That page generally comports with the standard.)</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Guidance and examples that comply with the living standard and the MDN page on the alt attribute.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<ul dir="auto">
-<li><a href="https://html.spec.whatwg.org/multipage/images.html#alt" rel="nofollow">https://html.spec.whatwg.org/multipage/images.html#alt</a></li>
-<li><a href="https://www.w3.org/html/wiki/Elements/img#Requirements_for_providing_text_to_act_as_an_alternative_for_images" rel="nofollow">https://www.w3.org/html/wiki/Elements/img#Requirements_for_providing_text_to_act_as_an_alternative_for_images</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/alt" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/alt</a></li>
-</ul>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html] Various articles relating to `DataTransfer` incorrectly state that it's only used for drag-and-drop]]></title>
             <link>https://github.com/mdn/content/issues/29696</link>
