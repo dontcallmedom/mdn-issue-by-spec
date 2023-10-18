@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] Various articles relating to \`DataTransfer\` incorrectly state that it's only used for drag events](https://github.com/mdn/content/issues/29696) (2023-10-18T05:25:37Z)
+* [\[html\] Various articles relating to \`DataTransfer\` incorrectly state that it's only used for drag-and-drop](https://github.com/mdn/content/issues/29696) (2023-10-18T05:25:37Z)
   
 * [\[html\] beforeunload demo not work at all](https://github.com/mdn/content/issues/29655) (2023-10-16T06:30:24Z)
   
