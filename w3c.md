@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[selectors-4\] :first-of-type – a question](https://github.com/mdn/content/issues/29701) (2023-10-18T09:29:27Z)
+  
 * [\[cssom-view-1\] Include detailed information about scaling on window.devicePixelRatio reference page](https://github.com/mdn/content/issues/29682) (2023-10-17T10:43:43Z)
   
 * [\[encoding\] TextDecoderStream constructor options](https://github.com/mdn/content/issues/29681) (2023-10-17T10:34:36Z)
