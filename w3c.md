@@ -6,7 +6,7 @@
   
 * [\[cssom-view-1\] Include detailed information about scaling on window.devicePixelRatio reference page](https://github.com/mdn/content/issues/29682) (2023-10-17T10:43:43Z)
   
-* [\[encoding\] TextDecoderStream constructor options](https://github.com/mdn/content/issues/29681) (2023-10-17T10:34:36Z)
+* [\[encoding\] TextDecoderStream constructor ignoreBOM option missing](https://github.com/mdn/content/issues/29681) (2023-10-17T10:34:36Z)
   
 * [\[webrtc\] The heading is mismatched to the paragraph content](https://github.com/mdn/content/issues/29640) (2023-10-14T10:45:48Z)
   
