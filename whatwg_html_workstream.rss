@@ -4,10 +4,44 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Wed, 18 Oct 2023 05:25:37 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 19 Oct 2023 13:24:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] HTMLSelectElement.checkValidity() return type should be "boolean", not "none"]]></title>
+            <link>https://github.com/mdn/content/issues/29726</link>
+            <guid>https://github.com/mdn/content/issues/29726</guid>
+            <pubDate>Thu, 19 Oct 2023 13:24:03 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/checkValidity" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/checkValidity</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Return value</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The return value is listed as <code class="notranslate">none</code> but the description says it may return a boolean.</p>
+<p dir="auto">Also, other <code class="notranslate">checkValidity()</code> methods report a boolean return type.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Something like:</p>
+<p dir="auto">Returns <code class="notranslate">true</code> if the value of the element has no validity problems; otherwise returns <code class="notranslate">false</code>.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/checkValidity" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/checkValidity</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLObjectElement/checkValidity" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLObjectElement/checkValidity</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/ElementInternals/checkValidity" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ElementInternals/checkValidity</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/htmlselectelement/checkvalidity</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/checkValidity" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/checkValidity</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlselectelement/checkvalidity/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlselectelement/checkvalidity/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/595cba0e07c70eda7f08a12890e00ea0281933d3/hovercard" href="https://github.com/mdn/content/commit/595cba0e07c70eda7f08a12890e00ea0281933d3"><tt>595cba0</tt></a></li>
+<li>Document last modified: 2023-04-07T00:32:52.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Various articles relating to `DataTransfer` incorrectly state that it's only used for drag-and-drop]]></title>
             <link>https://github.com/mdn/content/issues/29696</link>
