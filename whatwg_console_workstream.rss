@@ -50,8 +50,7 @@
 <p dir="auto">The part about passing in objects</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">What should this print?</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="console.assert(false, { a: 1 })"><pre lang="js" class="notranslate"><code class="notranslate">console.assert(false, { a: 1 })
-</code></pre></div>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="console.assert(false, { a: 1 })"><pre class="notranslate"><span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">assert</span><span class="pl-kos">(</span><span class="pl-c1">false</span><span class="pl-kos">,</span> <span class="pl-kos">{</span> <span class="pl-c1">a</span>: <span class="pl-c1">1</span> <span class="pl-kos">}</span><span class="pl-kos">)</span></pre></div>
 <p dir="auto">In the spec text <a href="https://console.spec.whatwg.org/#assert" rel="nofollow">https://console.spec.whatwg.org/#assert</a> it would <em>seem</em> (from my limited understanding) that it should forward everything to <code class="notranslate">Logger()</code> and it should print <code class="notranslate">Assertion failed  ▶ { a: 1 }</code> like most other console methods do. That's what Chrome and Firefox do at least.</p>
 <p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/61068799/268519857-2b1f5ace-5f6f-4b91-b9bc-731a31c98cb7.png"><img src="https://user-images.githubusercontent.com/61068799/268519857-2b1f5ace-5f6f-4b91-b9bc-731a31c98cb7.png" alt="image" style="max-width: 100%;"></a><br>
 <a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/61068799/268519861-c3cf19ae-0431-45d5-aa81-35312c5e1e77.png"><img src="https://user-images.githubusercontent.com/61068799/268519861-c3cf19ae-0431-45d5-aa81-35312c5e1e77.png" alt="image" style="max-width: 100%;"></a></p>
@@ -78,18 +77,17 @@
 <p dir="auto">Right now in a lot of the console.* methods there's this type of language used:<br>
 <a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/61068799/269010704-e2a289b5-8eea-49eb-94c6-8defd0c3af07.png"><img src="https://user-images.githubusercontent.com/61068799/269010704-e2a289b5-8eea-49eb-94c6-8defd0c3af07.png" alt="image" style="max-width: 100%;"></a></p>
 <p dir="auto">This is potentially confusing. It seems to indicate that said objects will all be <code class="notranslate">.toString()</code>-ed and concatenated together, sorta like this:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="// obj1 … objN
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="// obj1 … objN
 // A list of JavaScript objects to output. The string representations of each
 // of these objects are appended together in the order listed and output.
 console.info = (...objN) =&gt; {
   underlyingPrint(objN.map(x =&gt; String(x)).join(&quot; &quot;))
-}"><pre lang="js" class="notranslate"><code class="notranslate">// obj1 … objN
-// A list of JavaScript objects to output. The string representations of each
-// of these objects are appended together in the order listed and output.
-console.info = (...objN) =&gt; {
-  underlyingPrint(objN.map(x =&gt; String(x)).join(" "))
-}
-</code></pre></div>
+}"><pre class="notranslate"><span class="pl-c">// obj1 … objN</span>
+<span class="pl-c">// A list of JavaScript objects to output. The string representations of each</span>
+<span class="pl-c">// of these objects are appended together in the order listed and output.</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">info</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span>...<span class="pl-s1">objN</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-en">underlyingPrint</span><span class="pl-kos">(</span><span class="pl-s1">objN</span><span class="pl-kos">.</span><span class="pl-en">map</span><span class="pl-kos">(</span><span class="pl-s1">x</span> <span class="pl-c1">=&gt;</span> <span class="pl-v">String</span><span class="pl-kos">(</span><span class="pl-s1">x</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">join</span><span class="pl-kos">(</span><span class="pl-s">" "</span><span class="pl-kos">)</span><span class="pl-kos">)</span>
+<span class="pl-kos">}</span></pre></div>
 <p dir="auto">but that's obviously NOT what it means to convey. Instead, it means to convey that these objects are "inspected" or "pretty printed" and then "shown" (not necessarily "printed") to the console in the specified order.</p>
 <p dir="auto">The issue at hand: Should this change?</p>
 <p dir="auto">If so, here's an idea:</p>
