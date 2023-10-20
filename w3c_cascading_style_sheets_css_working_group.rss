@@ -4,10 +4,45 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Fri, 20 Oct 2023 12:52:29 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Oct 2023 21:50:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-contain-2] Please add clarification about affect on content-based sizing]]></title>
+            <link>https://github.com/mdn/content/issues/29748</link>
+            <guid>https://github.com/mdn/content/issues/29748</guid>
+            <pubDate>Fri, 20 Oct 2023 21:50:06 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/container-type" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/container-type</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Values or other</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">This section:</p>
+<blockquote>
+<p dir="auto">Note: to understand what happens when you apply layout, style, and size <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/contain" rel="nofollow">contain</a>ment to a box, see the contain property.</p>
+</blockquote>
+<p dir="auto">I don't think this is enough detail for people to understand the huge impact this property has on sizing, and the need to add an explicit size on all containers.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">This Stack Overflow question is a good example of the issue, and has a clear explanation of the answer: <a href="https://stackoverflow.com/questions/73975889/container-query-collapses-width-of-element/73980194#73980194" rel="nofollow">https://stackoverflow.com/questions/73975889/container-query-collapses-width-of-element/73980194#73980194</a></p>
+<p dir="auto">I think this MDN article should refer to this, becuase without it, users are left to discover this bomb for themselves. Having a link to the 'contain' property isn't enough, because that 'contain' article is very hard to understand and not clearly written to explain the potential issue with <code class="notranslate">container-type</code>. I think it should instead explain the sizing issue, then link to the 'contain' article for further reading.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Thank you for considering this request. I'm sorry I don't feel confident enough with these issues to write a proposed update myself.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/container-type</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/container-type" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/container-type</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/container-type/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/container-type/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/de76d381cb79a61813378963b66d98f68e74381c/hovercard" href="https://github.com/mdn/content/commit/de76d381cb79a61813378963b66d98f68e74381c"><tt>de76d38</tt></a></li>
+<li>Document last modified: 2023-07-26T23:50:46.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-logical-1] max-block-size is missing fit-content description]]></title>
             <link>https://github.com/mdn/content/issues/29741</link>
