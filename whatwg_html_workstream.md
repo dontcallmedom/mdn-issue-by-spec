@@ -32,8 +32,6 @@
   
 * [\[html, cssom-view-1, dom, uievents, pointerlock-2, selection-api, page-visibility-2\] Keydown, keyup, keypress pages should mention they work on document, body, etc](https://github.com/mdn/content/issues/28561) (2023-08-14T20:14:56Z)
   
-* [\[html\] Implicit role for \`\<summary\>\` element](https://github.com/mdn/content/issues/28446) (2023-08-08T09:37:51Z)
-  
 * [\[html\] No page for HTMLSelectElement.value](https://github.com/mdn/content/issues/28418) (2023-08-06T08:23:16Z)
   
 * [\[html\] Example given on blockquote page is incorrect according to the HTML spec](https://github.com/mdn/content/issues/28401) (2023-08-04T18:47:11Z)
