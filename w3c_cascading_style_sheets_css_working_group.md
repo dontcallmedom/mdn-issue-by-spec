@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-logical-1\] max-block-size is missing fit-content description](https://github.com/mdn/content/issues/29741) (2023-10-20T12:52:29Z)
+  
 * [\[css-ui-4\] "invert" or "auto" ?](https://github.com/mdn/content/issues/29723) (2023-10-19T10:53:47Z)
   
 * [\[css-position-3\] Position: sticky description needs info about top, right, bottom, left requirement](https://github.com/mdn/content/issues/29704) (2023-10-18T15:42:18Z)
