@@ -26,8 +26,6 @@
   
 * [\[permissions\] Navigator.permissions always returns prompt on firefox mobile. Even after the permission is granted.](https://github.com/mdn/content/issues/29291) (2023-09-26T04:29:04Z)
   
-* [\[service-workers-1\] Missing property \`WindowClient.ancestorOrigins\`](https://github.com/mdn/content/issues/29281) (2023-09-25T17:41:07Z)
-  
 * [\[pointerlock-2\] \`Element.requestPointerLock()\` conflict of Standard](https://github.com/mdn/content/issues/29259) (2023-09-23T16:53:47Z)
   
 * [\[html, css-conditional-3, selectors-4\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)

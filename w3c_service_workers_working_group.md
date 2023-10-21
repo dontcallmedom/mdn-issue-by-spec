@@ -6,8 +6,6 @@
   
 * [\[service-workers-1\] the description of \`ServiceWorkerRegistration: scope property\` is not quite accurate](https://github.com/mdn/content/issues/29367) (2023-09-29T16:25:11Z)
   
-* [\[service-workers-1\] Missing property \`WindowClient.ancestorOrigins\`](https://github.com/mdn/content/issues/29281) (2023-09-25T17:41:07Z)
-  
 * [\[service-workers-1\] Missing property \`ServiceWorkerGlobalScope.serviceWorker\`](https://github.com/mdn/content/issues/29123) (2023-09-14T19:14:58Z)
   
 * [\[service-workers-1\] Fetch Event client id is null](https://github.com/mdn/content/issues/20657) (2022-09-13T11:22:55Z)
