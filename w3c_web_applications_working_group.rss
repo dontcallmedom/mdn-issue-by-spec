@@ -366,8 +366,8 @@ This sentence in the <a href="https://developer.mozilla.org/en-US/docs/Web/API/I
 <p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/transaction" rel="nofollow">The documentation for the specific function</a> gives a different, (I'm guessing) more appropriate way of doing this:</p>
 <blockquote>
 <p dir="auto">If you need to access all object stores in the database, you can use the property <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/objectStoreNames" rel="nofollow"><code class="notranslate">IDBDatabase.objectStoreNames</code></a>:</p>
-<pre class="notranslate"><code class="notranslate">const transaction = db.transaction(db.objectStoreNames);
-</code></pre>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const transaction = db.transaction(db.objectStoreNames);"><pre class="notranslate"><code class="notranslate">const transaction = db.transaction(db.objectStoreNames);
+</code></pre></div>
 </blockquote>
 <p dir="auto">It then says specifically not to do what the guide suggests potentially doing</p>
 <blockquote>
