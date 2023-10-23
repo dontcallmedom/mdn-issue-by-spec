@@ -4,33 +4,10 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Sat, 21 Oct 2023 20:27:02 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Oct 2023 05:25:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[html] Demo doesn`t display an image and its URL]]></title>
-            <link>https://github.com/mdn/content/issues/29764</link>
-            <guid>https://github.com/mdn/content/issues/29764</guid>
-            <pubDate>Sat, 21 Oct 2023 20:27:02 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Result</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">An image and its URL are not displayed in the box.</p>
-<p dir="auto">Here's what it looks like in the document:</p>
-<a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/90051826/277132075-d40e0375-4661-4187-9d53-a55938fc95a1.png"><img width="725" alt="what it looks like in the document" src="https://user-images.githubusercontent.com/90051826/277132075-d40e0375-4661-4187-9d53-a55938fc95a1.png" style="max-width: 100%;"></a>
-<p dir="auto">And here`s what it looks like after clicking the link  labeled "Play" on the top right of demo screen:<br>
-<a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/90051826/277132159-3c8aeb42-126e-4bfe-80ea-84fcc677443a.png"><img width="733" alt="what it looks like after clicking the Play button" src="https://user-images.githubusercontent.com/90051826/277132159-3c8aeb42-126e-4bfe-80ea-84fcc677443a.png" style="max-width: 100%;"></a></p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">(I don`t know whether this is expected behavior)</p>
-<p dir="auto">An image and its URL are displayed in the box.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html] Various articles relating to `DataTransfer` incorrectly state that it's only used for drag-and-drop]]></title>
             <link>https://github.com/mdn/content/issues/29696</link>
@@ -1107,11 +1084,13 @@ But (especially for a beginner - like me) it would be super helpful to at least 
 <p dir="auto">General</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">Using an iframe with a srcdoc that includes an anchor tag, such as:</p>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;iframe srcdoc=&quot;&lt;html&gt;&lt;a href='#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;&quot;&gt;&lt;/iframe&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">iframe</span> <span class="pl-c1">srcdoc</span>="<span class="pl-s">&lt;html&gt;&lt;a href='#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">iframe</span><span class="pl-kos">&gt;</span></pre></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;iframe srcdoc=&quot;&lt;html&gt;&lt;a href='#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;&quot;&gt;&lt;/iframe&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;iframe srcdoc="&lt;html&gt;&lt;a href='#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;"&gt;&lt;/iframe&gt;
+</code></pre></div>
 <p dir="auto">Will not work, as the anchor tag should start with <code class="notranslate">about:srcdoc</code></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">Should give some info or warning that if one chooses to use srcdoc, they would need to use another method of rendering anchor links. Using simply <code class="notranslate">#tag</code> will redirect the whole iframe to another location, (and likely have a XSS error)</p>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;iframe srcdoc=&quot;&lt;html&gt;&lt;a href='about:srcdoc#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;&quot;&gt;&lt;/iframe&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">iframe</span> <span class="pl-c1">srcdoc</span>="<span class="pl-s">&lt;html&gt;&lt;a href='about:srcdoc#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">iframe</span><span class="pl-kos">&gt;</span></pre></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;iframe srcdoc=&quot;&lt;html&gt;&lt;a href='about:srcdoc#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;&quot;&gt;&lt;/iframe&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;iframe srcdoc="&lt;html&gt;&lt;a href='about:srcdoc#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;"&gt;&lt;/iframe&gt;
+</code></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><a href="https://stackoverflow.com/questions/42475012/how-to-make-href-anchors-in-iframe-srcdoc-actually-work" rel="nofollow">https://stackoverflow.com/questions/42475012/how-to-make-href-anchors-in-iframe-srcdoc-actually-work</a></p>
 <p dir="auto"><a href="https://en.wikipedia.org/wiki/About_URI_scheme#Standardization" rel="nofollow">https://en.wikipedia.org/wiki/About_URI_scheme#Standardization</a></p>

@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] Demo doesn\`t display an image and its URL](https://github.com/mdn/content/issues/29764) (2023-10-21T20:27:02Z)
-  
 * [\[html\] Various articles relating to \`DataTransfer\` incorrectly state that it's only used for drag-and-drop](https://github.com/mdn/content/issues/29696) (2023-10-18T05:25:37Z)
   
 * [\[dom\] Chrome behaves differently than described](https://github.com/mdn/content/issues/29660) (2023-10-16T08:39:40Z)
