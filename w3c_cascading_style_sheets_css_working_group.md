@@ -8,8 +8,6 @@
   
 * [\[css-ui-4\] "invert" or "auto" ?](https://github.com/mdn/content/issues/29723) (2023-10-19T10:53:47Z)
   
-* [\[css-position-3\] Position: sticky description needs info about top, right, bottom, left requirement](https://github.com/mdn/content/issues/29704) (2023-10-18T15:42:18Z)
-  
 * [\[cssom-view-1\] Include detailed information about scaling on window.devicePixelRatio reference page](https://github.com/mdn/content/issues/29682) (2023-10-17T10:43:43Z)
   
 * [\[cssom-view-1\] "offsetTop" definition is misleading / inaccurate](https://github.com/mdn/content/issues/29601) (2023-10-11T17:37:26Z)
