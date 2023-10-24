@@ -84,8 +84,6 @@
   
 * [\[html\] Missing documentation of methods and properties of \`HTMLOptionsCollections\`](https://github.com/mdn/content/issues/25190) (2023-03-09T02:30:04Z)
   
-* [\[html\] A srcset example contradicts instructions](https://github.com/mdn/content/issues/25150) (2023-03-07T21:00:37Z)
-  
 * [\[html\] event doesnt fire on fully cached pages (no event appears to)](https://github.com/mdn/content/issues/24770) (2023-02-22T21:34:14Z)
   
 * [\[dom\] Need to update lookupNamespaceURI() and createNSResolver()](https://github.com/mdn/content/issues/24724) (2023-02-22T02:32:44Z)

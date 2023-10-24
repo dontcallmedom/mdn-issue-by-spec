@@ -1101,40 +1101,6 @@ This method is <a href="https://developer.mozilla.org/en-US/docs/Glossary/Asynch
 <p dir="auto">The <code class="notranslate">HTMLSelectElement</code> interface also has the mentioned methods and properties, which function like their <code class="notranslate">HTMLOptionsCollection</code> counterparts.</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] A srcset example contradicts instructions]]></title>
-            <link>https://github.com/mdn/content/issues/25150</link>
-            <guid>https://github.com/mdn/content/issues/25150</guid>
-            <pubDate>Tue, 07 Mar 2023 21:00:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">The srcset attribute</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Earlier on the page, the reader is told:</p>
-<blockquote>
-<p dir="auto">If providing higher-density versions of an image for high-DPI (Retina) display, use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-srcset" rel="nofollow">srcset</a> on the <code class="notranslate">&lt;img&gt;</code> element instead. This lets browsers opt for lower-density versions in data-saving modes, and you don't have to write explicit media conditions.</p>
-</blockquote>
-<p dir="auto">But in "The srcset attribute" section, the example used to demonstrate how to include alternate images based on pixel density only uses <code class="notranslate">srcset</code> in the <code class="notranslate">&lt;source&gt;</code> elements and <code class="notranslate">src</code> in the <code class="notranslate">&lt;img&gt;</code> element.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">I expected the example to use <code class="notranslate">srcset</code> in the same way the page instructed earlier, in the <code class="notranslate">&lt;img&gt;</code> element.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/html/element/picture</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/picture/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/picture/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b24feefa4d8e807f77abe935d33f49fc92f84921/hovercard" href="https://github.com/mdn/content/commit/b24feefa4d8e807f77abe935d33f49fc92f84921"><tt>b24feef</tt></a></li>
-<li>Document last modified: 2023-03-03T04:26:54.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] event doesnt fire on fully cached pages (no event appears to)]]></title>
             <link>https://github.com/mdn/content/issues/24770</link>
             <guid>https://github.com/mdn/content/issues/24770</guid>
