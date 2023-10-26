@@ -4,10 +4,43 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Sat, 21 Oct 2023 19:12:37 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Oct 2023 08:03:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-backgrounds-4] css.properties.box-shadow - <SUMMARIZE THE PROBLEM>]]></title>
+            <link>https://github.com/mdn/content/issues/29835</link>
+            <guid>https://github.com/mdn/content/issues/29835</guid>
+            <pubDate>Mon, 23 Oct 2023 08:03:51 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">What type of issue is this?</h3>
+<p dir="auto">Incorrect support data (example: BrowserX says "86" but support was added in "40")</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Applies to | all elements. It also applies to ::first-letter.</p>
+<h3 dir="auto">What browsers does this problem apply to, if applicable?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Applies to | all elements. It also applies to ::first-letter.</p>
+<p dir="auto">Exception: doesn't apply to tr tag in Safari</p>
+<h3 dir="auto">Did you test this? If so, how?</h3>
+<p dir="auto">Yes, I had a bug report in my project, where this issue was found.<br>
+Also I tested it in codepen, to play around.</p>
+<h3 dir="auto">Can you link to any release notes, bugs, pull requests, or MDN pages related to this?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">It worth checking if thead, tbody also are able to drop shadow in Safari.</p>
+<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow</a></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>MDN page report details</summary>
+<ul dir="auto">
+<li>Query: <code class="notranslate">css.properties.box-shadow</code></li>
+<li>Report started: 2023-10-23T07:53:11.980Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[keyboard-map, keyboard-lock] Missing `Keyboard` interface `layoutchange` event]]></title>
             <link>https://github.com/mdn/content/issues/29762</link>

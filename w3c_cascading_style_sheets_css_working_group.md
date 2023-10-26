@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-backgrounds-4\] css.properties.box-shadow - \<SUMMARIZE THE PROBLEM\>](https://github.com/mdn/content/issues/29835) (2023-10-23T08:03:51Z)
+  
 * [\[css-contain-2\] Please add clarification about affect on content-based sizing](https://github.com/mdn/content/issues/29748) (2023-10-20T21:50:06Z)
   
 * [\[css-logical-1\] max-block-size is missing fit-content description](https://github.com/mdn/content/issues/29741) (2023-10-20T12:52:29Z)
