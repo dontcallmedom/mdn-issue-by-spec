@@ -20,8 +20,8 @@
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">For this section of the bookinstance .pug view the end html result for a selected option is <code class="notranslate">&lt;option selected="selected"&gt;</code> due to this ternary operator:</p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="for book in book_list
-          option(value=book._id, **selected=(selected_book==book._id.toString() ? 'selected' : false)** ) #{book.title}"><pre class="notranslate"><code class="notranslate">for book in book_list
-          option(value=book._id, **selected=(selected_book==book._id.toString() ? 'selected' : false)** ) #{book.title}
+          option(value=book._id, selected=(selected_book==book._id.toString() ? 'selected' : false) ) #{book.title}"><pre class="notranslate"><code class="notranslate">for book in book_list
+          option(value=book._id, selected=(selected_book==book._id.toString() ? 'selected' : false) ) #{book.title}
 </code></pre></div>
 <p dir="auto">This will not load the intended initial option later in the tutorial when this form is fed a selected_book value from implementing a bookinstance_update GET method in the bookinstance controller.</p>
 <p dir="auto">The attribute should be simply present in the html, for example <code class="notranslate">&lt;option selected&gt;</code></p>
@@ -29,8 +29,8 @@
 <p dir="auto">I am unsure of the .pug syntax, but the view should output an html option tag like <code class="notranslate">&lt;option selected&gt;</code> for the selected option.</p>
 <p dir="auto">Possibly this would be the correct way to write this in pug:</p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="for book in book_list
-          option(value=book._id, **(selected_book==book._id.toString() ? 'selected' : '')** ) #{book.title}"><pre class="notranslate"><code class="notranslate">for book in book_list
-          option(value=book._id, **(selected_book==book._id.toString() ? 'selected' : '')** ) #{book.title}
+          option(value=book._id, (selected_book==book._id.toString() ? 'selected' : '') ) #{book.title}"><pre class="notranslate"><code class="notranslate">for book in book_list
+          option(value=book._id, (selected_book==book._id.toString() ? 'selected' : '') ) #{book.title}
 </code></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">The selected attribute of the option tag is a boolean attribute, it should be present to indicate initial selection, not set to a string.</p>
