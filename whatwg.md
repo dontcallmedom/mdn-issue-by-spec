@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[fullscreen\] Confusing claim on JS for :fullscreen](https://github.com/mdn/content/issues/29856) (2023-10-27T16:20:06Z)
+  
 * [\[dom\] Not all observers will be removed when one call observe with same target node](https://github.com/mdn/content/issues/29814) (2023-10-24T15:19:23Z)
   
 * [\[html\] Missing \`navigator.usb\` documentation](https://github.com/mdn/content/issues/29808) (2023-10-24T14:02:52Z)
