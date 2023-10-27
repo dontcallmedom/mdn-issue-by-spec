@@ -3315,34 +3315,6 @@ the code in question is a simple xpath method:</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Issue with "<canvas>: The Graphics Canvas element": Firefox area limit incorrect]]></title>
-            <link>https://github.com/mdn/content/issues/9379</link>
-            <guid>https://github.com/mdn/content/issues/9379</guid>
-            <pubDate>Thu, 30 Sep 2021 16:32:42 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">The area limit for Firefox.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto">Maximum canvas size<br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas#maximum_canvas_size" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas#maximum_canvas_size</a></p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">134,217,728 pixels (i.e., something)</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">I tested a large canvas and got a failure. The issue was reported to Firefox and it was determined to be a memory allocation limit of 1/2 GB,  which at 4 bytes per pixel means 1/8 G pixel limit.<br>
-<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1719337" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=1719337</a></p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/html/element/canvas</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/canvas/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/canvas/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/bbaf3676373af6f6ce9817141d25fbf7ba88ef8d/hovercard" href="https://github.com/mdn/content/commit/bbaf3676373af6f6ce9817141d25fbf7ba88ef8d"><tt>bbaf367</tt></a></li>
-<li>Document last modified: 2021-09-29T14:51:58.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Content suggestion: WebSocket.readyState enum properties WebSocket.OPEN, WebSocket.CLOSING, etc]]></title>
             <link>https://github.com/mdn/content/issues/9156</link>
             <guid>https://github.com/mdn/content/issues/9156</guid>
