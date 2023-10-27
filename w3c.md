@@ -8,8 +8,6 @@
   
 * [\[css-contain-2\] Please add clarification about affect on content-based sizing](https://github.com/mdn/content/issues/29748) (2023-10-20T21:50:06Z)
   
-* [\[css-logical-1\] max-block-size is missing fit-content description](https://github.com/mdn/content/issues/29741) (2023-10-20T12:52:29Z)
-  
 * [\[cssom-view-1\] Include detailed information about scaling on window.devicePixelRatio reference page](https://github.com/mdn/content/issues/29682) (2023-10-17T10:43:43Z)
   
 * [\[encoding\] TextDecoderStream constructor ignoreBOM option missing](https://github.com/mdn/content/issues/29681) (2023-10-17T10:34:36Z)
