@@ -10,7 +10,7 @@
   
 * [\[html, dom\] The \`shadowrootmode\` attribute on \`\<template\>\` is about to be standardized](https://github.com/mdn/content/issues/29600) (2023-10-11T16:01:03Z)
   
-* [\[html\] Incomplete data](https://github.com/mdn/content/issues/29457) (2023-10-04T07:23:44Z)
+* [\[html\] SVG cross-browser example ignores browsers supporting SVG but not srcset attribute](https://github.com/mdn/content/issues/29457) (2023-10-04T07:23:44Z)
   
 * [\[html\] Missing documentation for \`StorageEvent\` interface member](https://github.com/mdn/content/issues/29419) (2023-10-02T08:37:09Z)
   

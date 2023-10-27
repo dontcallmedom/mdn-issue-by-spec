@@ -14,7 +14,7 @@
   
 * [\[html, dom\] The \`shadowrootmode\` attribute on \`\<template\>\` is about to be standardized](https://github.com/mdn/content/issues/29600) (2023-10-11T16:01:03Z)
   
-* [\[html\] Incomplete data](https://github.com/mdn/content/issues/29457) (2023-10-04T07:23:44Z)
+* [\[html\] SVG cross-browser example ignores browsers supporting SVG but not srcset attribute](https://github.com/mdn/content/issues/29457) (2023-10-04T07:23:44Z)
   
 * [\[streams\] getWriter exceptions](https://github.com/mdn/content/issues/29452) (2023-10-04T04:29:34Z)
   
