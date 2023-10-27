@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Selected attribute in bookinstance_form.pug example is set to a string, this does not set initial selection as intended](https://github.com/mdn/content/issues/29859) (2023-10-27T17:50:33Z)
+  
 * [\[fullscreen\] Confusing claim on JS for :fullscreen](https://github.com/mdn/content/issues/29856) (2023-10-27T16:20:06Z)
   
 * [\[dom\] Not all observers will be removed when one call observe with same target node](https://github.com/mdn/content/issues/29814) (2023-10-24T15:19:23Z)
