@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Missing documentation of \`WorkerGlobalScope.rejectionhandled\` and \`WorkerGlobalScope.unhandledrejection\`](https://github.com/mdn/content/issues/29869) (2023-10-28T06:21:24Z)
+  
 * [\[html\] Selected attribute in bookinstance_form.pug example is set to a string, this does not set initial selection as intended](https://github.com/mdn/content/issues/29859) (2023-10-27T17:50:33Z)
   
 * [\[html\] Missing \`navigator.usb\` documentation](https://github.com/mdn/content/issues/29808) (2023-10-24T14:02:52Z)
