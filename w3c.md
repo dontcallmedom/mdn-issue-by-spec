@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-conditional-3\] Docs/Web/CSS sidebar contains inconsistent spacing between sections](https://github.com/mdn/content/issues/29913) (2023-10-30T17:04:28Z)
+  
 * [\[css-fonts-5\] Demo of font-variant-caps not only applies to captial letters as described](https://github.com/mdn/content/issues/29910) (2023-10-30T15:49:07Z)
   
 * [\[css-sizing-4\] max-height value of "stretch" is missing from the listed Values](https://github.com/mdn/content/issues/29887) (2023-10-29T11:17:59Z)
