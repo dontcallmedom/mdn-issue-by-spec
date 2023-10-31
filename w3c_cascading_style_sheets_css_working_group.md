@@ -16,8 +16,6 @@
   
 * [\[cssom-view-1\] Include detailed information about scaling on window.devicePixelRatio reference page](https://github.com/mdn/content/issues/29682) (2023-10-17T10:43:43Z)
   
-* [\[cssom-view-1\] "offsetTop" definition is misleading / inaccurate](https://github.com/mdn/content/issues/29601) (2023-10-11T17:37:26Z)
-  
 * [\[css-overscroll-1\] Overscroll-Behavior is not working](https://github.com/mdn/content/issues/29384) (2023-09-30T14:20:23Z)
   
 * [\[html, css-conditional-3, selectors-4\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
