@@ -4,8 +4,6 @@
 
 * [\[css-easing-1\] Create function pages for easing functions](https://github.com/mdn/content/issues/29923) (2023-10-31T01:44:35Z)
   
-* [\[css-conditional-3\] Docs/Web/CSS sidebar contains inconsistent spacing between sections](https://github.com/mdn/content/issues/29913) (2023-10-30T17:04:28Z)
-  
 * [\[css-fonts-5\] Demo of font-variant-caps not only applies to captial letters as described](https://github.com/mdn/content/issues/29910) (2023-10-30T15:49:07Z)
   
 * [\[css-sizing-4\] max-height value of "stretch" is missing from the listed Values](https://github.com/mdn/content/issues/29887) (2023-10-29T11:17:59Z)
