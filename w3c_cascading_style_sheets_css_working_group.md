@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-easing-1\] Create function pages for easing functions](https://github.com/mdn/content/issues/29923) (2023-10-31T01:44:35Z)
+  
 * [\[css-conditional-3\] Docs/Web/CSS sidebar contains inconsistent spacing between sections](https://github.com/mdn/content/issues/29913) (2023-10-30T17:04:28Z)
   
 * [\[css-fonts-5\] Demo of font-variant-caps not only applies to captial letters as described](https://github.com/mdn/content/issues/29910) (2023-10-30T15:49:07Z)
