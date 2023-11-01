@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG Fullscreen API Workstream. [![RSS feed for WHATWG Fullscreen API Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[fullscreen\] Docs about :fullscreen is wrong and the example doesn't work](https://github.com/mdn/content/issues/29950) (2023-11-01T03:19:28Z)
+  
 * [\[fullscreen\] Confusing claim on JS for :fullscreen](https://github.com/mdn/content/issues/29856) (2023-10-27T16:20:06Z)
   
 * [\[cssom-view-1, dom, uievents, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)

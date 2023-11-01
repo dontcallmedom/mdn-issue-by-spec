@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[fullscreen\] Docs about :fullscreen is wrong and the example doesn't work](https://github.com/mdn/content/issues/29950) (2023-11-01T03:19:28Z)
+  
 * [\[html\] Missing documentation of \`WorkerGlobalScope.rejectionhandled\` and \`WorkerGlobalScope.unhandledrejection\`](https://github.com/mdn/content/issues/29869) (2023-10-28T06:21:24Z)
   
 * [\[html\] Selected attribute in bookinstance_form.pug example is set to a string, this does not set initial selection as intended](https://github.com/mdn/content/issues/29859) (2023-10-27T17:50:33Z)
