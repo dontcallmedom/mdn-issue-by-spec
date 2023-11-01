@@ -4,59 +4,10 @@
         <title>WHATWG Fullscreen API Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_fullscreen_api_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG Fullscreen API Workstream</description>
-        <lastBuildDate>Wed, 01 Nov 2023 03:19:28 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 27 Oct 2023 16:20:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[fullscreen] Docs about :fullscreen is wrong and the example doesn't work]]></title>
-            <link>https://github.com/mdn/content/issues/29950</link>
-            <guid>https://github.com/mdn/content/issues/29950</guid>
-            <pubDate>Wed, 01 Nov 2023 03:19:28 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:fullscreen" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:fullscreen</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Example</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<ul dir="auto">
-<li>The description of :fullscreen pseudo class is wrong. The pseudo class does not activate when the browser or document is in fullscreen mode at all. It matches <strong>element</strong> that is fullscreen.</li>
-<li>The example doesn't work without Javascript but the script is not provided.</li>
-</ul>
-<h3 dir="auto">What did you expect to see?</h3>
-<ul dir="auto">
-<li>The description should be correct to the specification.</li>
-<li>The example source code should work.</li>
-</ul>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://fullscreen.spec.whatwg.org/#:fullscreen-pseudo-class" rel="nofollow">https://fullscreen.spec.whatwg.org/#:fullscreen-pseudo-class</a></p>
-<blockquote>
-The :fullscreen pseudo-class must match any [element](https://dom.spec.whatwg.org/#concept-element) element for which one of the following conditions is true:
-<ul dir="auto">
-<li>
-<p dir="auto">element’s <a href="https://fullscreen.spec.whatwg.org/#fullscreen-flag" rel="nofollow">fullscreen flag</a> is set.</p>
-</li>
-<li>
-<p dir="auto">element is a <a href="https://dom.spec.whatwg.org/#element-shadow-host" rel="nofollow">shadow host</a> and the result of <a href="https://dom.spec.whatwg.org/#retarget" rel="nofollow">retargeting</a> its <a href="https://dom.spec.whatwg.org/#concept-node-document" rel="nofollow">node document</a>’s <a href="https://fullscreen.spec.whatwg.org/#fullscreen-element" rel="nofollow">fullscreen element</a> against element is element.</p>
-</li>
-</ul>
-</blockquote>
-<p dir="auto">Browser's fullscreen mode has nothing to do with the pseudo class.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">The issue was first reported by <code class="notranslate">@chargeitall:matrix.org</code> in the <a href="https://riot.im/app/#/room/#webdevelopment:matrix.org" rel="nofollow">#webdevelopment:matrix.org</a> room on 27th Oct.</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/91274/279566433-72235576-dda2-499a-9177-72ffc02e2b0f.png"><img src="https://user-images.githubusercontent.com/91274/279566433-72235576-dda2-499a-9177-72ffc02e2b0f.png" alt="image" style="max-width: 100%;"></a></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/_colon_fullscreen</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:fullscreen" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:fullscreen</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_fullscreen/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_fullscreen/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/6b1e3eebf22abf1b73bb219581335b1147b75d7a/hovercard" href="https://github.com/mdn/content/commit/6b1e3eebf22abf1b73bb219581335b1147b75d7a"><tt>6b1e3ee</tt></a></li>
-<li>Document last modified: 2023-03-12T09:29:44.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[fullscreen] Confusing claim on JS for :fullscreen]]></title>
             <link>https://github.com/mdn/content/issues/29856</link>
