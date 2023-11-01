@@ -12,8 +12,6 @@
   
 * [\[css-backgrounds-4\] box-shadow does not apply to \<tr\> tag in Safari](https://github.com/mdn/content/issues/29839) (2023-10-23T08:03:51Z)
   
-* [\[css-contain-2\] Please add clarification about affect on content-based sizing](https://github.com/mdn/content/issues/29748) (2023-10-20T21:50:06Z)
-  
 * [\[cssom-view-1\] Include detailed information about scaling on window.devicePixelRatio reference page](https://github.com/mdn/content/issues/29682) (2023-10-17T10:43:43Z)
   
 * [\[css-overscroll-1\] Overscroll-Behavior is not working](https://github.com/mdn/content/issues/29384) (2023-09-30T14:20:23Z)
