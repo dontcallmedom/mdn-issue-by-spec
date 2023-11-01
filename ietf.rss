@@ -4,10 +4,49 @@
         <title>IETF-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ietf.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by IETF</description>
-        <lastBuildDate>Fri, 08 Sep 2023 15:54:56 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Nov 2023 17:42:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[rfc7233] Incorrect explanation of example in 'Requesting multiple ranges']]></title>
+            <link>https://github.com/mdn/content/issues/29964</link>
+            <guid>https://github.com/mdn/content/issues/29964</guid>
+            <pubDate>Wed, 01 Nov 2023 17:42:33 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Range#requesting_multiple_ranges" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Range#requesting_multiple_ranges</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Requesting multiple ranges</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">An example Range header is given:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Range: bytes=200-1000, 2000-6576, 19000-"><pre class="notranslate"><code class="notranslate">Range: bytes=200-1000, 2000-6576, 19000-
+</code></pre></div>
+<p dir="auto">The text above this begins by saying: "The following example requests three separate parts of a file, from 200-1000 (the first 800 bytes),"</p>
+<p dir="auto">This seems to be doubly wrong. For one thing, the bytes from 200 to 1000 are not the first bytes of the file. Also, the range from 200-1000 consist of 801 bytes, not 800 bytes. This is very misleading as it suggests that the range end may not be inclusive.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Either the text or the example should be changed.</p>
+<p dir="auto">If the example is changed to match the text, I believe it should be:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Range: bytes=0-799, 2000-6576, 19000-"><pre class="notranslate"><code class="notranslate">Range: bytes=0-799, 2000-6576, 19000-
+</code></pre></div>
+<p dir="auto">If the text is changed to match the example, I believe it should be:<br>
+"The following example requests three separate parts of a file, from 200-1000 (the 801 bytes from 200 to 1000),"</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">RFC9110 makes it very clear that the start and end ranges are inclusive, and gives an example of 0-499 referring to the first 500 bytes: <a href="https://www.rfc-editor.org/rfc/rfc9110#section-14.1.2" rel="nofollow">https://www.rfc-editor.org/rfc/rfc9110#section-14.1.2</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">It might also be helpful to make a note elsewhere in this page to state clearly that the specified range positions are inclusive.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/http/headers/range</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Range" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Range</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/range/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/range/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/5e9631df85d021e84133e14f4bd3c712e4f8fe08/hovercard" href="https://github.com/mdn/content/commit/5e9631df85d021e84133e14f4bd3c712e4f8fe08"><tt>5e9631d</tt></a></li>
+<li>Document last modified: 2023-08-25T00:21:46.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[rfc6265] CHIPS no longer requires Path=/]]></title>
             <link>https://github.com/mdn/content/issues/29001</link>
