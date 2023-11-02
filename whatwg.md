@@ -14,7 +14,7 @@
   
 * [\[html\] Various articles relating to \`DataTransfer\` incorrectly state that it's only used for drag-and-drop](https://github.com/mdn/content/issues/29696) (2023-10-18T05:25:37Z)
   
-* [\[dom\] Chrome behaves differently than described](https://github.com/mdn/content/issues/29660) (2023-10-16T08:39:40Z)
+* [\[dom\] Chrome has XMLNS as default namespace](https://github.com/mdn/content/issues/29660) (2023-10-16T08:39:40Z)
   
 * [\[html\] beforeunload demo not work at all](https://github.com/mdn/content/issues/29655) (2023-10-16T06:30:24Z)
   
