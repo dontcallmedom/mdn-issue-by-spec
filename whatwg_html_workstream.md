@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Is the value attribute supported on the textarea tag?](https://github.com/mdn/content/issues/29982) (2023-11-02T13:13:09Z)
+  
 * [\[html\] Missing documentation of \`WorkerGlobalScope.rejectionhandled\` and \`WorkerGlobalScope.unhandledrejection\`](https://github.com/mdn/content/issues/29869) (2023-10-28T06:21:24Z)
   
 * [\[html\] Selected attribute in bookinstance_form.pug example is set to a string, this does not set initial selection as intended](https://github.com/mdn/content/issues/29859) (2023-10-27T17:50:33Z)
@@ -19,8 +21,6 @@
 * [\[html\] The "Navigator: languages property" documentation is missing some browser quirks](https://github.com/mdn/content/issues/29371) (2023-09-29T22:16:14Z)
   
 * [\[html\] Cookie Examples Broken](https://github.com/mdn/content/issues/29370) (2023-09-29T18:28:29Z)
-  
-* [\[html\] Window: beforeunload event: Clarify whether an empty string should trigger the confirmation dialog](https://github.com/mdn/content/issues/29314) (2023-09-26T18:36:01Z)
   
 * [\[html, css-conditional-3, selectors-4\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
   
