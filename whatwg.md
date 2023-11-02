@@ -10,8 +10,6 @@
   
 * [\[dom\] Not all observers will be removed when one call observe with same target node](https://github.com/mdn/content/issues/29814) (2023-10-24T15:19:23Z)
   
-* [\[html\] Missing \`navigator.usb\` documentation](https://github.com/mdn/content/issues/29808) (2023-10-24T14:02:52Z)
-  
 * [\[html\] Various articles relating to \`DataTransfer\` incorrectly state that it's only used for drag-and-drop](https://github.com/mdn/content/issues/29696) (2023-10-18T05:25:37Z)
   
 * [\[dom\] Chrome behaves differently than described](https://github.com/mdn/content/issues/29660) (2023-10-16T08:39:40Z)
