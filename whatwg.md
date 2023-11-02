@@ -12,7 +12,7 @@
   
 * [\[dom\] Not all observers will be removed when one call observe with same target node](https://github.com/mdn/content/issues/29814) (2023-10-24T15:19:23Z)
   
-* [\[html\] Various articles relating to \`DataTransfer\` incorrectly state that it's only used for drag-and-drop](https://github.com/mdn/content/issues/29696) (2023-10-18T05:25:37Z)
+* [\[html\] DataTransfer is not only used for Drag & Drop](https://github.com/mdn/content/issues/29696) (2023-10-18T05:25:37Z)
   
 * [\[dom\] Chrome has XMLNS as default namespace](https://github.com/mdn/content/issues/29660) (2023-10-16T08:39:40Z)
   
