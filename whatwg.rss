@@ -4,10 +4,54 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Thu, 02 Nov 2023 13:13:09 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 03 Nov 2023 06:55:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] `History: pushState() method` section-content is confusing]]></title>
+            <link>https://github.com/mdn/content/issues/30014</link>
+            <guid>https://github.com/mdn/content/issues/30014</guid>
+            <pubDate>Fri, 03 Nov 2023 06:55:37 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/History/pushState" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/History/pushState</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">section-content</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto">This method is <a href="https://developer.mozilla.org/en-US/docs/Glossary/Asynchronous" rel="nofollow">asynchronous</a>. Add a listener for the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/popstate_event" rel="nofollow">popstate</a> event in order to determine when the navigation has completed. The state parameter will be available in it.</p>
+</blockquote>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto"><code class="notranslate">This method is asynchronous.</code> sort of implies that the popstate event listener got a event when history.push has resolved.</p>
+<p dir="auto">And how do the user know when history.push has resolved? Or maybe it doesn't matter.</p>
+<p dir="auto">popstate event may never fired as <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/popstate_event" rel="nofollow">popstate</a> described.</p>
+<p dir="auto">I think it should made clear that history.push trigger no events, correct me if I'm wrong.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">From blank page to abc.html, abc.html includes below js</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="history.pushState({a: 1}, '');
+history.pushState({a: 2}, '');"><pre class="notranslate"><span class="pl-s1">history</span><span class="pl-kos">.</span><span class="pl-en">pushState</span><span class="pl-kos">(</span><span class="pl-kos">{</span><span class="pl-c1">a</span>: <span class="pl-c1">1</span><span class="pl-kos">}</span><span class="pl-kos">,</span> <span class="pl-s">''</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">history</span><span class="pl-kos">.</span><span class="pl-en">pushState</span><span class="pl-kos">(</span><span class="pl-kos">{</span><span class="pl-c1">a</span>: <span class="pl-c1">2</span><span class="pl-kos">}</span><span class="pl-kos">,</span> <span class="pl-s">''</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<p dir="auto">If pushState without change url, at least in Chrome,</p>
+<ol dir="auto">
+<li>click browser Back button will go back to the blank page</li>
+<li>do history.back() will stay at the abc.html and trigger a popstate event</li>
+</ol>
+<p dir="auto">Maybe this behavior worth a notice.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/history/pushstate</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/History/pushState" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/History/pushState</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/history/pushstate/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/history/pushstate/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ab8736c08a6664970fec04088182b8c5e29a570a/hovercard" href="https://github.com/mdn/content/commit/ab8736c08a6664970fec04088182b8c5e29a570a"><tt>ab8736c</tt></a></li>
+<li>Document last modified: 2023-09-27T04:57:54.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Is the value attribute supported on the textarea tag?]]></title>
             <link>https://github.com/mdn/content/issues/29982</link>
