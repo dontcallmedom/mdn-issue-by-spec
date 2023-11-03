@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by IETF Hypertext Transfer Protocol Bis APP Working Group. [![RSS feed for IETF Hypertext Transfer Protocol Bis APP Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[rfc7232\] Explanation of http code 304 - Not Modified, has the word OR but should have AND](https://github.com/mdn/content/issues/30016) (2023-11-03T13:20:28Z)
+  
 * [\[rfc7231\] Retry-After doesn't suggest what to do for \`Retry-After: 0\`](https://github.com/mdn/content/issues/28330) (2023-08-01T21:56:14Z)
   
 * [\[rfc7233\] Content suggestion: http content-type multipart/\*](https://github.com/mdn/content/issues/19353) (2022-08-10T08:44:58Z)
