@@ -4,8 +4,6 @@
 
 * [\[rfc7233\] Incorrect explanation of example in 'Requesting multiple ranges'](https://github.com/mdn/content/issues/29964) (2023-11-01T17:42:33Z)
   
-* [\[rfc7233\] Range HTTP Header offsets are inclusive](https://github.com/mdn/content/issues/28957) (2023-09-05T21:43:46Z)
-  
 * [\[rfc7231\] Retry-After doesn't suggest what to do for \`Retry-After: 0\`](https://github.com/mdn/content/issues/28330) (2023-08-01T21:56:14Z)
   
 * [\[rfc7233\] Content suggestion: http content-type multipart/\*](https://github.com/mdn/content/issues/19353) (2022-08-10T08:44:58Z)
