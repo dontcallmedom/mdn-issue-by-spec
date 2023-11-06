@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[push-api\] Web Push userVisibleOnly Details](https://github.com/mdn/content/issues/30077) (2023-11-06T21:13:53Z)
+  
 * [\[FileAPI\] Example code won't execute when invoked by its URL directly ](https://github.com/mdn/content/issues/30049) (2023-11-05T16:01:08Z)
   
 * [\[css-position-3\] Both top and bottom will be respected for position: sticky](https://github.com/mdn/content/issues/29952) (2023-11-01T10:24:00Z)
