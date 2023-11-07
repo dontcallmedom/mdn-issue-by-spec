@@ -4,8 +4,6 @@
 
 * [\[dom\] The AbortSignal.any static method not documented](https://github.com/mdn/content/issues/30095) (2023-11-07T14:46:48Z)
   
-* [\[html\] IFrame Post message , Message Event Can't able listen  on Window 11 but  it is work for mac](https://github.com/mdn/content/issues/30066) (2023-11-06T12:15:55Z)
-  
 * [\[html\] Url has some undocumented formats](https://github.com/mdn/content/issues/30017) (2023-11-03T13:23:33Z)
   
 * [\[html\] \`History: pushState() method\` section-content is confusing](https://github.com/mdn/content/issues/30014) (2023-11-03T06:55:37Z)
