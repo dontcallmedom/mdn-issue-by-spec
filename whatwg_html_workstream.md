@@ -10,8 +10,6 @@
   
 * [\[html\] Is the value attribute supported on the textarea tag?](https://github.com/mdn/content/issues/29982) (2023-11-02T13:13:09Z)
   
-* [\[html\] Missing documentation of \`WorkerGlobalScope.rejectionhandled\` and \`WorkerGlobalScope.unhandledrejection\`](https://github.com/mdn/content/issues/29869) (2023-10-28T06:21:24Z)
-  
 * [\[html\] Selected attribute in bookinstance_form.pug example is set to a string, this does not set initial selection as intended](https://github.com/mdn/content/issues/29859) (2023-10-27T17:50:33Z)
   
 * [\[html\] DataTransfer is not only used for Drag & Drop](https://github.com/mdn/content/issues/29696) (2023-10-18T05:25:37Z)
