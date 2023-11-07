@@ -4,8 +4,6 @@
 
 * [\[push-api\] Web Push userVisibleOnly Details](https://github.com/mdn/content/issues/30077) (2023-11-06T21:13:53Z)
   
-* [\[FileAPI\] Example code won't execute when invoked by its URL directly ](https://github.com/mdn/content/issues/30049) (2023-11-05T16:01:08Z)
-  
 * [\[pointerlock-2\] \`Element.requestPointerLock()\` conflict of Standard](https://github.com/mdn/content/issues/29259) (2023-09-23T16:53:47Z)
   
 * [\[uievents\] Screen global coordinates definition needed](https://github.com/mdn/content/issues/28676) (2023-08-21T13:37:56Z)

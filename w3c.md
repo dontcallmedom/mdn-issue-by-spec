@@ -4,8 +4,6 @@
 
 * [\[push-api\] Web Push userVisibleOnly Details](https://github.com/mdn/content/issues/30077) (2023-11-06T21:13:53Z)
   
-* [\[FileAPI\] Example code won't execute when invoked by its URL directly ](https://github.com/mdn/content/issues/30049) (2023-11-05T16:01:08Z)
-  
 * [\[css-position-3\] Both top and bottom will be respected for position: sticky](https://github.com/mdn/content/issues/29952) (2023-11-01T10:24:00Z)
   
 * [\[css-easing-1\] Create function pages for easing functions](https://github.com/mdn/content/issues/29923) (2023-10-31T01:44:35Z)
