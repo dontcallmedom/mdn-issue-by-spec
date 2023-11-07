@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[dom\] The AbortSignal.any static method not documented](https://github.com/mdn/content/issues/30095) (2023-11-07T14:46:48Z)
+  
 * [\[html\] IFrame Post message , Message Event Can't able listen  on Window 11 but  it is work for mac](https://github.com/mdn/content/issues/30066) (2023-11-06T12:15:55Z)
   
 * [\[html\] Url has some undocumented formats](https://github.com/mdn/content/issues/30017) (2023-11-03T13:23:33Z)
