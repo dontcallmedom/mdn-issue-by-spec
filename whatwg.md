@@ -14,8 +14,6 @@
   
 * [\[html\] Selected attribute in bookinstance_form.pug example is set to a string, this does not set initial selection as intended](https://github.com/mdn/content/issues/29859) (2023-10-27T17:50:33Z)
   
-* [\[fullscreen\] Confusing claim on JS for :fullscreen](https://github.com/mdn/content/issues/29856) (2023-10-27T16:20:06Z)
-  
 * [\[dom\] Not all observers will be removed when one call observe with same target node](https://github.com/mdn/content/issues/29814) (2023-10-24T15:19:23Z)
   
 * [\[html\] DataTransfer is not only used for Drag & Drop](https://github.com/mdn/content/issues/29696) (2023-10-18T05:25:37Z)
