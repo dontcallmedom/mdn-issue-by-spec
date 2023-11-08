@@ -319,8 +319,7 @@ Also I tested it in codepen, to play around.</p>
 <h3 dir="auto">What specific section or headline is this issue about?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="A ServiceWorker object is available in the `ServiceWorkerRegistration.active` property, and the `ServiceWorkerContainer.controller` property — this is a service worker that has been activated and is controlling the page (the service worker has been successfully registered, and the controlled page has been reloaded.)"><pre lang="md" class="notranslate"><code class="notranslate">A ServiceWorker object is available in the `ServiceWorkerRegistration.active` property, and the `ServiceWorkerContainer.controller` property — this is a service worker that has been activated and is controlling the page (the service worker has been successfully registered, and the controlled page has been reloaded.)
-</code></pre></div>
+<div class="highlight highlight-text-md notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="A ServiceWorker object is available in the `ServiceWorkerRegistration.active` property, and the `ServiceWorkerContainer.controller` property — this is a service worker that has been activated and is controlling the page (the service worker has been successfully registered, and the controlled page has been reloaded.)"><pre class="notranslate">A ServiceWorker object is available in the <span class="pl-s">`</span><span class="pl-c1">ServiceWorkerRegistration.active</span><span class="pl-s">`</span> property, and the <span class="pl-s">`</span><span class="pl-c1">ServiceWorkerContainer.controller</span><span class="pl-s">`</span> property — this is a service worker that has been activated and is controlling the page (the service worker has been successfully registered, and the controlled page has been reloaded.)</pre></div>
 <p dir="auto">The getter description of ServiceWorker only mentioned <code class="notranslate">ServiceWorkerRegistration.active</code> and <code class="notranslate">ServiceWorkerContainer.controller</code></p>
 <p dir="auto">However, ServiceWorker may get via <code class="notranslate">ServiceWorkerGlobalScope.serviceWorker</code> and <code class="notranslate">ServiceWorkerRegistration.installing</code> also <code class="notranslate">ServiceWorkerRegistration.waiting</code></p>
 <h3 dir="auto">What did you expect to see?</h3>
@@ -497,13 +496,12 @@ Also, it does not support passing the <code class="notranslate">options</code> p
 <p dir="auto">The :read-only <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" rel="nofollow">CSS</a> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" rel="nofollow">pseudo-class</a> represents an element (such as input or textarea) that is not editable by the user.</p>
 </blockquote>
 <p dir="auto">However, this is inaccurate. The <code class="notranslate">read-only</code> pseudo <em>targets editable fields that do not accept text</em>. This can be verified by the following code:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;input type=&quot;checkbox&quot; /&gt;
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;input type=&quot;checkbox&quot; /&gt;
 &lt;input type=&quot;radio&quot; /&gt;
-&lt;input type=&quot;text&quot; /&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;input type="checkbox" /&gt;
-&lt;input type="radio" /&gt;
-&lt;input type="text" /&gt;
-</code></pre></div>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="input {
+&lt;input type=&quot;text&quot; /&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">input</span> <span class="pl-c1">type</span>="<span class="pl-s">checkbox</span>" /&gt;
+<span class="pl-kos">&lt;</span><span class="pl-ent">input</span> <span class="pl-c1">type</span>="<span class="pl-s">radio</span>" /&gt;
+<span class="pl-kos">&lt;</span><span class="pl-ent">input</span> <span class="pl-c1">type</span>="<span class="pl-s">text</span>" /&gt;</pre></div>
+<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="input {
   outline: none;
 }
 
@@ -513,18 +511,17 @@ input:read-write {
 
 input:read-only {
   outline: thick double red;
-}"><pre lang="css" class="notranslate"><code class="notranslate">input {
-  outline: none;
+}"><pre class="notranslate"><span class="pl-ent">input</span> {
+  <span class="pl-c1">outline</span><span class="pl-kos">:</span> none;
 }
 
-input:read-write {
-  outline: thick double blue;
+<span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-write</span> {
+  <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double blue;
 }
 
-input:read-only {
-  outline: thick double red;
-}
-</code></pre></div>
+<span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
+  <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
+}</pre></div>
 <a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
