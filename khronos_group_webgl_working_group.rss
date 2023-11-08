@@ -4,10 +4,44 @@
         <title>Khronos Group WebGL Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/khronos_group_webgl_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Khronos Group WebGL Working Group</description>
-        <lastBuildDate>Sun, 06 Aug 2023 23:42:13 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Nov 2023 18:16:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[webgl2] texSubImage3D has wrong values for format param]]></title>
+            <link>https://github.com/mdn/content/issues/30128</link>
+            <guid>https://github.com/mdn/content/issues/30128</guid>
+            <pubDate>Wed, 08 Nov 2023 18:16:45 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/texSubImage3D" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/texSubImage3D</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">format parameter</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">It lists a lot of invalid formats.</p>
+<p dir="auto">For example, lists gl.R8 but that is not valid, but g.RED is.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The values seen in the OpenGL documentation: <a href="https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexSubImage3D.xhtml" rel="nofollow">https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexSubImage3D.xhtml</a></p>
+<p dir="auto">Specifically:</p>
+<p dir="auto">GL_RED, GL_RG, GL_RGB, GL_BGR, GL_RGBA, GL_DEPTH_COMPONENT, and GL_STENCIL_INDEX</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexSubImage3D.xhtml" rel="nofollow">https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexSubImage3D.xhtml</a></p>
+<p dir="auto"><a href="https://registry.khronos.org/webgl/specs/latest/2.0/#TEXTURE_TYPES_FORMATS_FROM_DOM_ELEMENTS_TABLE" rel="nofollow">https://registry.khronos.org/webgl/specs/latest/2.0/#TEXTURE_TYPES_FORMATS_FROM_DOM_ELEMENTS_TABLE</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/webgl2renderingcontext/texsubimage3d</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/texSubImage3D" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/texSubImage3D</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/texsubimage3d/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/texsubimage3d/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc/hovercard" href="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc"><tt>acfe8c9</tt></a></li>
+<li>Document last modified: 2023-07-07T07:19:19.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[webgl2, webgl1] vertexAttribPointer() type only accepts floating point types]]></title>
             <link>https://github.com/mdn/content/issues/28425</link>
