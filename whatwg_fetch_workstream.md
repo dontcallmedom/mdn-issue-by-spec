@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG Fetch Workstream. [![RSS feed for WHATWG Fetch Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[fetch\] request.body is undefined in the example, not a ReadableStream](https://github.com/mdn/content/issues/30104) (2023-11-08T09:40:52Z)
+  
 * [\[fetch\] \`Response.text()\` can throw a \`TypeError\`](https://github.com/mdn/content/issues/24466) (2023-02-15T16:35:17Z)
   
 * [\[fetch\] fetch could reject when 400 is returned](https://github.com/mdn/content/issues/17115) (2022-06-08T21:48:36Z)

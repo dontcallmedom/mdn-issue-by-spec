@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[fetch\] request.body is undefined in the example, not a ReadableStream](https://github.com/mdn/content/issues/30104) (2023-11-08T09:40:52Z)
+  
 * [\[dom\] The AbortSignal.any static method not documented](https://github.com/mdn/content/issues/30095) (2023-11-07T14:46:48Z)
   
 * [\[html\] Url has some undocumented formats](https://github.com/mdn/content/issues/30017) (2023-11-03T13:23:33Z)
