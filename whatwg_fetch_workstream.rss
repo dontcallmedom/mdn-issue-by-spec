@@ -55,53 +55,6 @@
 <p dir="auto">I've deliberately not tried very hard to look for false positives at this point, so there are definitely going to be some in there.</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[fetch] request.body is undefined in the example, not a ReadableStream]]></title>
-            <link>https://github.com/mdn/content/issues/30104</link>
-            <guid>https://github.com/mdn/content/issues/30104</guid>
-            <pubDate>Wed, 08 Nov 2023 09:40:52 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Request/body" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Request/body</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Examples</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The example states:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const request = new Request(&quot;/myEndpoint&quot;, {
-  method: &quot;POST&quot;,
-  body: &quot;Hello world&quot;,
-});
-
-request.body; // ReadableStream"><pre class="notranslate"><code class="notranslate">const request = new Request("/myEndpoint", {
-  method: "POST",
-  body: "Hello world",
-});
-
-request.body; // ReadableStream
-</code></pre></div>
-<p dir="auto">But if you run this in Firefox, <code class="notranslate">request.body</code> is instead <code class="notranslate">undefined</code>. The body is set in the request, just not accessible. If you run</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="let text = await request.text()"><pre class="notranslate"><code class="notranslate">let text = await request.text()
-</code></pre></div>
-<p dir="auto">Then <code class="notranslate">text</code> is correctly set to 'Hello world'.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">An explanation of cases where you can actually read <code class="notranslate">request.body</code>, and why it isn't available here would be helpful.</p>
-<p dir="auto">I've tried to see if it is a CORS issue, or perhaps tied to HTTP vs HTTPS, but the code behaves the same in all cases, and not as expected from the example.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/1006453/281348249-989494b9-5f6c-4de4-870a-9686bbc600bc.png"><img src="https://user-images.githubusercontent.com/1006453/281348249-989494b9-5f6c-4de4-870a-9686bbc600bc.png" alt="image" style="max-width: 100%;"></a></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/request/body</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Request/body" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Request/body</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/request/body/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/request/body/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/954612667bafd71241a93e8554e8f11afc474ff3/hovercard" href="https://github.com/mdn/content/commit/954612667bafd71241a93e8554e8f11afc474ff3"><tt>9546126</tt></a></li>
-<li>Document last modified: 2023-04-07T19:50:09.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[fetch] `Response.text()` can throw a `TypeError`]]></title>
             <link>https://github.com/mdn/content/issues/24466</link>
             <guid>https://github.com/mdn/content/issues/24466</guid>
