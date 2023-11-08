@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Khronos Group. [![RSS feed for Khronos Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[WEBGL_depth_texture\] Example code on WEBGL_depth_texture gives GL_INVALID_VALUE when run in WebGL 2](https://github.com/mdn/content/issues/30130) (2023-11-08T19:14:29Z)
+  
 * [\[webgl2\] texSubImage3D has wrong values for format param](https://github.com/mdn/content/issues/30128) (2023-11-08T18:16:45Z)
   
 * [\[webgl2, webgl1\] vertexAttribPointer() type only accepts floating point types](https://github.com/mdn/content/issues/28425) (2023-08-06T23:42:13Z)

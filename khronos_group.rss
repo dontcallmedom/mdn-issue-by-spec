@@ -4,10 +4,42 @@
         <title>Khronos Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/khronos_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Khronos Group</description>
-        <lastBuildDate>Wed, 08 Nov 2023 18:16:45 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Nov 2023 19:14:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[WEBGL_depth_texture] Example code on WEBGL_depth_texture gives GL_INVALID_VALUE when run in WebGL 2]]></title>
+            <link>https://github.com/mdn/content/issues/30130</link>
+            <guid>https://github.com/mdn/content/issues/30130</guid>
+            <pubDate>Wed, 08 Nov 2023 19:14:29 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WEBGL_depth_texture" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WEBGL_depth_texture</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Examples</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The example code calls</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="gl.texImage2D( gl.TEXTURE_2D, 0, gl.DEPTH_COMPONENT, 512, 512, 0, gl.DEPTH_COMPONENT, gl.UNSIGNED_SHORT, null );"><pre class="notranslate"><span class="pl-s1">gl</span><span class="pl-kos">.</span><span class="pl-en">texImage2D</span><span class="pl-kos">(</span> <span class="pl-s1">gl</span><span class="pl-kos">.</span><span class="pl-c1">TEXTURE_2D</span><span class="pl-kos">,</span> <span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-s1">gl</span><span class="pl-kos">.</span><span class="pl-c1">DEPTH_COMPONENT</span><span class="pl-kos">,</span> <span class="pl-c1">512</span><span class="pl-kos">,</span> <span class="pl-c1">512</span><span class="pl-kos">,</span> <span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-s1">gl</span><span class="pl-kos">.</span><span class="pl-c1">DEPTH_COMPONENT</span><span class="pl-kos">,</span> <span class="pl-s1">gl</span><span class="pl-kos">.</span><span class="pl-c1">UNSIGNED_SHORT</span><span class="pl-kos">,</span> <span class="pl-c1">null</span> <span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<p dir="auto">which will throw a <code class="notranslate">gl.INVALID_VALUE</code>.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The code should be modified by replacing the first <code class="notranslate">gl.DEPTH_COMPONENT</code> with <code class="notranslate">gl.DEPTH_COMPONENT16</code>.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/webgl_depth_texture</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WEBGL_depth_texture" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WEBGL_depth_texture</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl_depth_texture/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl_depth_texture/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc/hovercard" href="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc"><tt>acfe8c9</tt></a></li>
+<li>Document last modified: 2023-07-07T07:19:19.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[webgl2] texSubImage3D has wrong values for format param]]></title>
             <link>https://github.com/mdn/content/issues/30128</link>
