@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-flexbox-1\] Confusing demo](https://github.com/mdn/content/issues/30159) (2023-11-09T15:45:49Z)
+  
 * [\[selectors-4\] The element matched by :only-of-type do not need a parent element.](https://github.com/mdn/content/issues/30138) (2023-11-09T03:50:57Z)
   
 * [\[webaudio, html, cssom-view-1, service-workers-1, dom, FileAPI, pointerlock-2, xhr, fetch, resource-timing-2, DOM-Parsing, push-api, selection-api, page-visibility-2, media-source\] \[XHR\] Replace XMLHttpRequest with fetch() in Web/API](https://github.com/mdn/content/issues/30131) (2023-11-08T19:19:11Z)
