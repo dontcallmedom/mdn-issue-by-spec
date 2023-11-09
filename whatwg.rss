@@ -4,10 +4,40 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Wed, 08 Nov 2023 19:19:11 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 09 Nov 2023 16:07:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Document.domain setter was disabled in Chrome 115]]></title>
+            <link>https://github.com/mdn/content/issues/30161</link>
+            <guid>https://github.com/mdn/content/issues/30161</guid>
+            <pubDate>Thu, 09 Nov 2023 16:07:58 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/domain" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/domain</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Browser compatability</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The Information about the support of the feature at least in Chrome is outdated.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A note that states that Chrome 115 does no longer support the setting of this property by websites.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://developer.chrome.com/blog/document-domain-setter-deprecation/" rel="nofollow">https://developer.chrome.com/blog/document-domain-setter-deprecation/</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Since this is a change in Chromium, most likely other browsers will be affected. This should be observed, as I do not know when the other browsers will introduce this. I am almost certain that Edge has also taken this change of Chromium into effect, but I have no concrete evidence to support that claim. Perhaps someone with more experience in the field can investigate that?</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/document/domain</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/domain" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/domain</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/document/domain/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/document/domain/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/41a8b9c9832359d445d136b6d7a8a28737badc6b/hovercard" href="https://github.com/mdn/content/commit/41a8b9c9832359d445d136b6d7a8a28737badc6b"><tt>41a8b9c</tt></a></li>
+<li>Document last modified: 2023-04-07T05:52:28.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[webaudio, html, cssom-view-1, service-workers-1, dom, FileAPI, pointerlock-2, xhr, fetch, resource-timing-2, DOM-Parsing, push-api, selection-api, page-visibility-2, media-source] [XHR] Replace XMLHttpRequest with fetch() in Web/API]]></title>
             <link>https://github.com/mdn/content/issues/30131</link>
