@@ -6,8 +6,6 @@
   
 * [\[cssom-1\] No link to "Modern APIs" information in StyleSheetList notebox](https://github.com/mdn/content/issues/30170) (2023-11-09T23:15:50Z)
   
-* [\[css-flexbox-1\] Preview wrong](https://github.com/mdn/content/issues/30160) (2023-11-09T16:00:32Z)
-  
 * [\[css-flexbox-1\] Confusing demo](https://github.com/mdn/content/issues/30159) (2023-11-09T15:45:49Z)
   
 * [\[selectors-4\] The element matched by :only-of-type do not need a parent element.](https://github.com/mdn/content/issues/30138) (2023-11-09T03:50:57Z)
