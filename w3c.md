@@ -108,8 +108,6 @@
   
 * [\[IndexedDB-3\] Example uses nonexistent IDBCursor#value property](https://github.com/mdn/content/issues/25792) (2023-03-31T02:21:29Z)
   
-* [\[html, DOM-Parsing\] Inconsistency about if pushState() results in a popstate event](https://github.com/mdn/content/issues/25785) (2023-03-30T20:11:04Z)
-  
 * [\[css-images-3\] Outdated note for \`image-rendering\`](https://github.com/mdn/content/issues/25774) (2023-03-30T15:21:01Z)
   
 * [\[webrtc\] The new restartIce() method should replace the old "iceRestart" parameter in the documentation consistently.](https://github.com/mdn/content/issues/25732) (2023-03-29T09:34:05Z)
