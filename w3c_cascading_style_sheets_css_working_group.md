@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-display-3\] Value \`run-in\` missing from display](https://github.com/mdn/content/issues/30201) (2023-11-11T03:01:31Z)
+  
 * [\[CSS21, css-display-3\] Hiding things example - using absolute positioning](https://github.com/mdn/content/issues/30171) (2023-11-10T00:23:35Z)
   
 * [\[cssom-1\] No link to "Modern APIs" information in StyleSheetList notebox](https://github.com/mdn/content/issues/30170) (2023-11-09T23:15:50Z)
