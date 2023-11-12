@@ -4,10 +4,42 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Sun, 12 Nov 2023 08:11:17 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 12 Nov 2023 12:35:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] `await` in document.ready or any other UI event]]></title>
+            <link>https://github.com/mdn/content/issues/30214</link>
+            <guid>https://github.com/mdn/content/issues/30214</guid>
+            <pubDate>Sun, 12 Nov 2023 12:35:34 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Entire await, async and all examples</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Every sample in this page just runs the async function on top level javascript, and none of them explains how to wait for UI of the page become ready.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Since this is <code class="notranslate">Web Docs</code>, I'm expecting to see at list one example of integration of results into a Javascript running in an HTML page.</p>
+<p dir="auto">Yes, I know you can create one more script tag at the end of the page and await function in there so the UI is rendered and available. but I find it really terrible solution specially when we have a <code class="notranslate">document.ready</code> event that you can bind the event even at top of the page.</p>
+<p dir="auto">I like to see at least one example showing how to do <code class="notranslate">await</code> in document.ready event or any other event in fact.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/operators/await</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/await/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/await/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/3c33463072905e81ac620dd9780313369029b498/hovercard" href="https://github.com/mdn/content/commit/3c33463072905e81ac620dd9780313369029b498"><tt>3c33463</tt></a></li>
+<li>Document last modified: 2023-06-29T17:06:46.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Issue in javascript void doc.]]></title>
             <link>https://github.com/mdn/content/issues/30212</link>
