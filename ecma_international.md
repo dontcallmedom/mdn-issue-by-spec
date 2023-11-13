@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[ecmascript\] \`await\` in document.ready or any other UI event](https://github.com/mdn/content/issues/30214) (2023-11-12T12:35:34Z)
-  
 * [\[ecmascript\] void operator: onclick returning true and undefined are the same](https://github.com/mdn/content/issues/30212) (2023-11-12T08:11:17Z)
   
 * [\[ecmascript\] Import assertions proposal renamed to import attributes](https://github.com/mdn/content/issues/29572) (2023-10-10T08:50:02Z)
