@@ -4,94 +4,10 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Mon, 13 Nov 2023 08:55:47 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 12 Nov 2023 06:01:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[webrtc] RTCIceCandidate: usernameFragment property wrong function code]]></title>
-            <link>https://github.com/mdn/content/issues/30232</link>
-            <guid>https://github.com/mdn/content/issues/30232</guid>
-            <pubDate>Mon, 13 Nov 2023 08:55:47 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidate/usernameFragment" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidate/usernameFragment</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The description mentions an early return from the function.<br>
-However, the code uses <code class="notranslate">forEach</code> with return, so the <code class="notranslate">ssNewCandidate</code> function will not be aborted:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const ssNewCandidate = (signalMsg) =&gt; {
-  let candidate = new RTCIceCandidate(signalMsg.candidate);
-  let receivers = pc.getReceivers();
-
-  receivers.forEach((receiver) =&gt; {
-    let parameters = receiver.transport.getParameters();
-
-    if (parameters.usernameFragment === candidate.usernameFragment) {
-      return;
-    }
-  });
-
-  pc.addIceCandidate(candidate).catch(reportError);
-};"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-en">ssNewCandidate</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">signalMsg</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-  <span class="pl-k">let</span> <span class="pl-s1">candidate</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">RTCIceCandidate</span><span class="pl-kos">(</span><span class="pl-s1">signalMsg</span><span class="pl-kos">.</span><span class="pl-c1">candidate</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-  <span class="pl-k">let</span> <span class="pl-s1">receivers</span> <span class="pl-c1">=</span> <span class="pl-s1">pc</span><span class="pl-kos">.</span><span class="pl-en">getReceivers</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-
-  <span class="pl-s1">receivers</span><span class="pl-kos">.</span><span class="pl-en">forEach</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">receiver</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-    <span class="pl-k">let</span> <span class="pl-s1">parameters</span> <span class="pl-c1">=</span> <span class="pl-s1">receiver</span><span class="pl-kos">.</span><span class="pl-c1">transport</span><span class="pl-kos">.</span><span class="pl-en">getParameters</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-
-    <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">parameters</span><span class="pl-kos">.</span><span class="pl-c1">usernameFragment</span> <span class="pl-c1">===</span> <span class="pl-s1">candidate</span><span class="pl-kos">.</span><span class="pl-c1">usernameFragment</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-      <span class="pl-k">return</span><span class="pl-kos">;</span>
-    <span class="pl-kos">}</span>
-  <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-
-  <span class="pl-s1">pc</span><span class="pl-kos">.</span><span class="pl-en">addIceCandidate</span><span class="pl-kos">(</span><span class="pl-s1">candidate</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">catch</span><span class="pl-kos">(</span><span class="pl-s1">reportError</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span><span class="pl-kos">;</span></pre></div>
-<h3 dir="auto">What did you expect to see?</h3>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const ssNewCandidate = (signalMsg) =&gt; {
-  let candidate = new RTCIceCandidate(signalMsg.candidate);
-  let receivers = pc.getReceivers();
-
-  for (const receiver of receivers) {
-    let parameters = receiver.transport.getParameters();
-
-    if (parameters.usernameFragment === candidate.usernameFragment) {
-      return;
-    }
-  }
-
-  pc.addIceCandidate(candidate).catch(reportError);
-};"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-en">ssNewCandidate</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">signalMsg</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-  <span class="pl-k">let</span> <span class="pl-s1">candidate</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">RTCIceCandidate</span><span class="pl-kos">(</span><span class="pl-s1">signalMsg</span><span class="pl-kos">.</span><span class="pl-c1">candidate</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-  <span class="pl-k">let</span> <span class="pl-s1">receivers</span> <span class="pl-c1">=</span> <span class="pl-s1">pc</span><span class="pl-kos">.</span><span class="pl-en">getReceivers</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-
-  <span class="pl-k">for</span> <span class="pl-kos">(</span><span class="pl-k">const</span> <span class="pl-s1">receiver</span> <span class="pl-k">of</span> <span class="pl-s1">receivers</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-    <span class="pl-k">let</span> <span class="pl-s1">parameters</span> <span class="pl-c1">=</span> <span class="pl-s1">receiver</span><span class="pl-kos">.</span><span class="pl-c1">transport</span><span class="pl-kos">.</span><span class="pl-en">getParameters</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-
-    <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">parameters</span><span class="pl-kos">.</span><span class="pl-c1">usernameFragment</span> <span class="pl-c1">===</span> <span class="pl-s1">candidate</span><span class="pl-kos">.</span><span class="pl-c1">usernameFragment</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-      <span class="pl-k">return</span><span class="pl-kos">;</span>
-    <span class="pl-kos">}</span>
-  <span class="pl-kos">}</span>
-
-  <span class="pl-s1">pc</span><span class="pl-kos">.</span><span class="pl-en">addIceCandidate</span><span class="pl-kos">(</span><span class="pl-s1">candidate</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">catch</span><span class="pl-kos">(</span><span class="pl-s1">reportError</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span><span class="pl-kos">;</span></pre></div>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/rtcicecandidate/usernamefragment</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidate/usernameFragment" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidate/usernameFragment</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcicecandidate/usernamefragment/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcicecandidate/usernamefragment/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/954612667bafd71241a93e8554e8f11afc474ff3/hovercard" href="https://github.com/mdn/content/commit/954612667bafd71241a93e8554e8f11afc474ff3"><tt>9546126</tt></a></li>
-<li>Document last modified: 2023-04-07T19:50:09.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[cssom-view-1] Parts mentioning 76 DPI are incorrect]]></title>
             <link>https://github.com/mdn/content/issues/30211</link>

@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[webrtc\] RTCIceCandidate: usernameFragment property wrong function code](https://github.com/mdn/content/issues/30232) (2023-11-13T08:55:47Z)
-  
 * [\[cssom-view-1\] Parts mentioning 76 DPI are incorrect](https://github.com/mdn/content/issues/30211) (2023-11-12T06:01:15Z)
   
 * [\[css-display-3\] Value \`run-in\` missing from display](https://github.com/mdn/content/issues/30201) (2023-11-11T03:01:31Z)
