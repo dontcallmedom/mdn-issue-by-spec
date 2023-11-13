@@ -4,7 +4,7 @@
 
 * [\[ecmascript\] \`await\` in document.ready or any other UI event](https://github.com/mdn/content/issues/30214) (2023-11-12T12:35:34Z)
   
-* [\[ecmascript\] Issue in javascript void doc.](https://github.com/mdn/content/issues/30212) (2023-11-12T08:11:17Z)
+* [\[ecmascript\] void operator: onclick returning true and undefined are the same](https://github.com/mdn/content/issues/30212) (2023-11-12T08:11:17Z)
   
 * [\[ecmascript\] Import assertions proposal renamed to import attributes](https://github.com/mdn/content/issues/29572) (2023-10-10T08:50:02Z)
   
