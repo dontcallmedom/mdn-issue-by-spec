@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[ecmascript\] void operator: onclick returning true and undefined are the same](https://github.com/mdn/content/issues/30212) (2023-11-12T08:11:17Z)
-  
 * [\[ecmascript\] Import assertions proposal renamed to import attributes](https://github.com/mdn/content/issues/29572) (2023-10-10T08:50:02Z)
   
 * [\[ecmascript\] Include information/section on "Method definitions in object literals"](https://github.com/mdn/content/issues/29489) (2023-10-05T00:01:28Z)
