@@ -4,58 +4,10 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Tue, 14 Nov 2023 00:30:15 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 12 Nov 2023 06:01:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[filter-effects-2] CSS Filter's Formal Syntax section contains broken links on the filter functions ]]></title>
-            <link>https://github.com/mdn/content/issues/30249</link>
-            <guid>https://github.com/mdn/content/issues/30249</guid>
-            <pubDate>Tue, 14 Nov 2023 00:30:15 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/filter</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Formal Syntax</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The filter functions within the code block currently looks a little something like this:</p>
-<p dir="auto"><code class="notranslate">&lt;filter-function&gt;</code> =<br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/blur()" rel="nofollow">&lt;blur()&gt;</a>         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#single_bar" rel="nofollow">|</a><br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/brightness()" rel="nofollow">&lt;brightness()&gt;</a>   <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#single_bar" rel="nofollow">|</a><br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/contrast()" rel="nofollow">&lt;contrast()&gt;</a>     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#single_bar" rel="nofollow">|</a><br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/drop-shadow()" rel="nofollow">&lt;drop-shadow()&gt;</a>  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#single_bar" rel="nofollow">|</a><br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grayscale()" rel="nofollow">&lt;grayscale()&gt;</a>    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#single_bar" rel="nofollow">|</a><br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/hue-rotate()" rel="nofollow">&lt;hue-rotate()&gt;</a>   <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#single_bar" rel="nofollow">|</a><br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/invert()" rel="nofollow">&lt;invert()&gt;</a>       <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#single_bar" rel="nofollow">|</a><br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/opacity()" rel="nofollow">&lt;opacity()&gt;</a>      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#single_bar" rel="nofollow">|</a><br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/sepia()" rel="nofollow">&lt;sepia()&gt;</a>        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#single_bar" rel="nofollow">|</a><br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/saturate()" rel="nofollow">&lt;saturate()&gt;</a></p>
-<p dir="auto">all of the links for these functions are broken, because it seems as though the individual filter functions have been moved underneath a <code class="notranslate">filter-function</code> subpage, so clicking on any of these links on the Filter page doesn't quite get you where you need to go.</p>
-<p dir="auto">also the <code class="notranslate">&lt;url-modifier&gt;</code> tags at the bottom of the same code block are broken too but that seems a bit different because I wasn't able to find a specific page that seemed like it would have been the intended target of the link.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">I was expecting to be able to click on each of the individual filter functions to go to a live link, but they are currently pointing to dead links and have the spooky red squiggly + disabled cursor style</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/116124602/282625605-ffa7071e-afbc-4723-99db-ec68997d8d42.png"><img width="480" alt="image" src="https://user-images.githubusercontent.com/116124602/282625605-ffa7071e-afbc-4723-99db-ec68997d8d42.png" style="max-width: 100%;"></a>
-<p dir="auto">I tried following the steps outlined in the <a href="https://github.com/mdn/content/blob/6e39b839545a1cdd68fc3ee019f3a99ac20d1913/files/en-us/mdn/writing_guidelines/page_structures/syntax_sections/index.md?plain=1#L246">writing guidelines syntax sections md file</a>, and subsequently looked at the<br>
-<a href="https://github.com/mdn/data/blob/main/css/properties.json">mdn/data repo's properties.json file</a> and <a href="https://github.com/mdn/data/blob/main/css/types.json">types.json file</a> mentioned in that section, but I couldn't really wrap my head around things so I came back here to this repo's issue tracker :(</p>
-<p dir="auto">I did do some additional exploring over in the data repo and stumbled upon the <a href="https://github.com/mdn/data/blob/e68e09d2f8adc75e711af0b7f28f00d6325fe499/css/functions.json#L491">functions.json file</a>, but from what I could tell, the url paths for the filter functions all have that <code class="notranslate">filter-function</code> subpath in them, which seems ... fine?</p>
-<p dir="auto">I tried looking for phrases like <code class="notranslate">css</code>, <code class="notranslate">filter</code>, <code class="notranslate">broken url</code>, <code class="notranslate">page not found</code> in the issue tracker here and I went through the first page of results to see if someone else has reported this particular issue but I didn't see anything</p>
-<p dir="auto">thanks for taking the time to read all this, I hope I've provided enough information to locate the issue. have a good day! 🌻</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/filter</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/filter</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/filter/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/filter/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/de7d710496266ccf4fce5ade75a67e6605f60ce5/hovercard" href="https://github.com/mdn/content/commit/de7d710496266ccf4fce5ade75a67e6605f60ce5"><tt>de7d710</tt></a></li>
-<li>Document last modified: 2023-09-13T01:48:33.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[cssom-view-1] Parts mentioning 76 DPI are incorrect]]></title>
             <link>https://github.com/mdn/content/issues/30211</link>
