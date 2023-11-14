@@ -68,8 +68,6 @@
   
 * [\[web-animations-2\] KeyframeEffect.target: issues with the example](https://github.com/mdn/content/issues/25694) (2023-03-28T06:54:37Z)
   
-* [\[css-logical-1, css-page-4\] Should \`page-break-\*\` be explicitly mark as deprecated?](https://github.com/mdn/content/issues/25459) (2023-03-19T15:16:56Z)
-  
 * [\[css-conditional-3, css-sizing-4, css-sizing-3\] In correct statement about max-width](https://github.com/mdn/content/issues/25073) (2023-03-05T03:22:13Z)
   
 * [\[filter-effects-2\] SVG contrast filter](https://github.com/mdn/content/issues/24989) (2023-03-02T00:19:11Z)

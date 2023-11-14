@@ -1079,27 +1079,6 @@ If the user wants to add it by copying and pasting, the line itself isn’t a lo
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-logical-1, css-page-4] Should `page-break-*` be explicitly mark as deprecated?]]></title>
-            <link>https://github.com/mdn/content/issues/25459</link>
-            <guid>https://github.com/mdn/content/issues/25459</guid>
-            <pubDate>Sun, 19 Mar 2023 15:16:56 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/page-break-after" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/page-break-after</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Currently there's only a simple warning on the <code class="notranslate">page-break-after</code> and <code class="notranslate">page-break-before</code> pages saying that these properties have been renamed to <code class="notranslate">break-after</code> and <code class="notranslate">break-before</code>. However, <a href="https://w3c.github.io/csswg-drafts/css-break/#page-break-properties" rel="nofollow">CSS Fragmentation Module Level 3</a> (where <code class="notranslate">break-*</code> are defined) says that <code class="notranslate">page-break-*</code> must be treated as <em>legacy</em> shorthands for <code class="notranslate">break-*</code>. So it seems better to place an explicit deprecation note on the <code class="notranslate">page-break-*</code> pages.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">A deprecation note for each <code class="notranslate">page-break-*</code> property.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">CSS Fragmentation Module Level 3:<br>
-<a href="https://w3c.github.io/csswg-drafts/css-break/#page-break-properties" rel="nofollow">https://w3c.github.io/csswg-drafts/css-break/#page-break-properties</a><br>
-The relevant item in the change history in the spec:<br>
-<a href="https://w3c.github.io/csswg-drafts/css-break/#change-2018-aliasing" rel="nofollow">https://w3c.github.io/csswg-drafts/css-break/#change-2018-aliasing</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">The Chrome Platform Status shows that <code class="notranslate">page-break-*</code> (e.g. <a href="https://chromestatus.com/metrics/css/timeline/popularity/115" rel="nofollow"><code class="notranslate">page-break-after</code></a>) has significantly higher usage than <code class="notranslate">break-*</code> (e.g. <a href="https://chromestatus.com/metrics/css/timeline/popularity/520" rel="nofollow"><code class="notranslate">break-after</code></a>), which might be due to the fact that the former two properties have been supported since the early days of modern browsers.</p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[css-conditional-3, css-sizing-4, css-sizing-3] In correct statement about max-width]]></title>
             <link>https://github.com/mdn/content/issues/25073</link>
             <guid>https://github.com/mdn/content/issues/25073</guid>

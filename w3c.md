@@ -118,8 +118,6 @@
   
 * [\[webaudio\] AnalyserNode::getFloatTimeDomainData() doesn't specify the encoding of the waveform](https://github.com/mdn/content/issues/25571) (2023-03-23T14:41:18Z)
   
-* [\[css-logical-1, css-page-4\] Should \`page-break-\*\` be explicitly mark as deprecated?](https://github.com/mdn/content/issues/25459) (2023-03-19T15:16:56Z)
-  
 * [\[IndexedDB-3\] IDBObjectStore.openCursor incorrect direction docs](https://github.com/mdn/content/issues/25385) (2023-03-16T15:15:59Z)
   
 * [\[screen-capture\] MediaDevices#getDisplayMedia(): systemAudio is misleading](https://github.com/mdn/content/issues/25307) (2023-03-14T03:38:33Z)
