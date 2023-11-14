@@ -54,8 +54,6 @@
   
 * [\[cssom-view-1\] offsetParent is also changed by transform](https://github.com/mdn/content/issues/28991) (2023-09-08T00:41:19Z)
   
-* [\[css-fonts-5\] Formal syntax wrong](https://github.com/mdn/content/issues/28900) (2023-09-02T14:41:13Z)
-  
 * [\[css-ui-4\] Chrome intents to remove non-standard appearance keywords](https://github.com/mdn/content/issues/28687) (2023-08-21T21:20:42Z)
   
 * [\[uievents\] Screen global coordinates definition needed](https://github.com/mdn/content/issues/28676) (2023-08-21T13:37:56Z)
@@ -91,8 +89,6 @@
 * [\[IndexedDB-3\] versionchange is super important and hardly is given any attention](https://github.com/mdn/content/issues/26639) (2023-05-08T06:47:05Z)
   
 * [\[IndexedDB-3\] leading the developer down a dead end in onupgradeneeded](https://github.com/mdn/content/issues/26638) (2023-05-08T06:34:43Z)
-  
-* [\[css-backgrounds-4\] No documentation for css src(...)](https://github.com/mdn/content/issues/26621) (2023-05-06T22:26:03Z)
   
 * [\[css-backgrounds-4\] It is unclear why background-attachment: fixed is said to be incompatible with background-clip: text](https://github.com/mdn/content/issues/26445) (2023-04-27T02:31:12Z)
   
@@ -157,8 +153,6 @@
 * [\[html, uievents\] Document.activeElement : The lack of HTMLAnchorElement and macOS on a case by case basis](https://github.com/mdn/content/issues/22338) (2022-11-16T13:47:01Z)
   
 * [\[compositing-2\] Examples of isolation hard to understand](https://github.com/mdn/content/issues/22185) (2022-11-09T11:56:05Z)
-  
-* [\[css-logical-1\] The article on the CSS float property lists several non-standard values as supported, with no explanation of what they are or where they came from](https://github.com/mdn/content/issues/22069) (2022-11-04T20:55:23Z)
   
 * [\[WebIDL-1\] “Using the Web Storage API” has deprecated “DOMException.code” in example](https://github.com/mdn/content/issues/21910) (2022-10-28T12:08:01Z)
   
@@ -231,8 +225,6 @@
 * [\[web-animations-2, css-animations-2\] Issue with "Element.animate()": wrong scenario mentioned](https://github.com/mdn/content/issues/13487) (2022-03-04T07:40:26Z)
   
 * [\[css-lists-3\] Issue with "counter-reset": What is the difference in behavior between the latest Firefox (82 or later) and the older 81 or earlier or other browsers?](https://github.com/mdn/content/issues/13293) (2022-02-26T00:46:43Z)
-  
-* [\[css-values-3\] Content suggestion: Remove \<length-percentage\> and similar pages](https://github.com/mdn/content/issues/13066) (2022-02-17T10:45:31Z)
   
 * [\[permissions-policy-1\] Permissions API - update to docs needed](https://github.com/mdn/content/issues/13003) (2022-02-14T23:13:08Z)
   
