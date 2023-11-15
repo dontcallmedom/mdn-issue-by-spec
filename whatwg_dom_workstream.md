@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[dom\] preventDefault - default actions would be useful](https://github.com/mdn/content/issues/30284) (2023-11-15T06:26:55Z)
+  
 * [\[webaudio, html, cssom-view-1, service-workers-1, dom, FileAPI, pointerlock-2, xhr, fetch, resource-timing-2, DOM-Parsing, push-api, selection-api, page-visibility-2, media-source\] \[XHR\] Replace XMLHttpRequest with fetch() in Web/API](https://github.com/mdn/content/issues/30131) (2023-11-08T19:19:11Z)
   
 * [\[dom\] The AbortSignal.any static method not documented](https://github.com/mdn/content/issues/30095) (2023-11-07T14:46:48Z)
