@@ -4,10 +4,48 @@
         <title>W3C Service Workers Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_service_workers_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Service Workers Working Group</description>
-        <lastBuildDate>Wed, 08 Nov 2023 19:19:11 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 Nov 2023 11:39:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[service-workers-1] Confusing text on service worker registration scope broadening]]></title>
+            <link>https://github.com/mdn/content/issues/30306</link>
+            <guid>https://github.com/mdn/content/issues/30306</guid>
+            <pubDate>Thu, 16 Nov 2023 11:39:55 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Examples</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">In the examples the following text is written:</p>
+<blockquote>
+<p dir="auto">There is frequent confusion surrounding the meaning and use of scope. Since a service worker can't have a scope broader than its own location, only use the scope option when you need a scope that is narrower than the default.</p>
+</blockquote>
+<p dir="auto">Reading this, one might miss the detail a few paragraphs later, stating that this can be overridden by the Service-Worker-Allowed header. The default scope is still set to the service worker script's location, so one is still required to use the scope option when broadening the scope.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Since it is possible to broaden the service worker's scope, this text is somewhat inaccurate. Moving the information on the Service-Worker-Allowed header up, or changing the text to be clearer from the first paragraph.</p>
+<p dir="auto">Perhaps something along the lines of:</p>
+<blockquote>
+<p dir="auto">A service worker can't have a scope broader than its own location, unless the server specifies a broader scope in the Service-Worker-Allowed header on the service worker script. As such, you should use the scope option when you need a narrower scope than the default.</p>
+</blockquote>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/serviceworkercontainer/register</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkercontainer/register/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkercontainer/register/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc/hovercard" href="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc"><tt>acfe8c9</tt></a></li>
+<li>Document last modified: 2023-07-07T07:19:19.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[webaudio, html, cssom-view-1, service-workers-1, dom, FileAPI, pointerlock-2, xhr, fetch, resource-timing-2, DOM-Parsing, push-api, selection-api, page-visibility-2, media-source] [XHR] Replace XMLHttpRequest with fetch() in Web/API]]></title>
             <link>https://github.com/mdn/content/issues/30131</link>
