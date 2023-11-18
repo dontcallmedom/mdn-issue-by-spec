@@ -236,8 +236,6 @@
   
 * [\[css-fonts-5\] @font-face/font-weight: expand on \<font-weight-absolute\>{2} importance](https://github.com/mdn/content/issues/10910) (2021-12-01T18:54:16Z)
   
-* [\[service-workers-1\] Issue with "Client.postMessage()": Page does not give a full code example, or enough context to create one](https://github.com/mdn/content/issues/10573) (2021-11-16T20:28:09Z)
-  
 * [\[service-workers-1\] Issue with "ServiceWorkerContainer.register()": Second example unclear on intent](https://github.com/mdn/content/issues/10547) (2021-11-15T14:17:23Z)
   
 * [\[webrtc\] "Using DTMF" is using legacy APIs](https://github.com/mdn/content/issues/10020) (2021-10-22T18:00:50Z)
