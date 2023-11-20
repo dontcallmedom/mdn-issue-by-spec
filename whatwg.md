@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Navigator: onLine property false negatives](https://github.com/mdn/content/issues/30402) (2023-11-20T10:49:44Z)
+  
 * [\[dom\] preventDefault - default actions would be useful](https://github.com/mdn/content/issues/30284) (2023-11-15T06:26:55Z)
   
 * [\[streams\] pipeThrough conflicting return value](https://github.com/mdn/content/issues/30256) (2023-11-14T07:04:28Z)

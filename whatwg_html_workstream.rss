@@ -4,10 +4,42 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Wed, 08 Nov 2023 19:19:11 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 20 Nov 2023 10:49:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Navigator: onLine property false negatives]]></title>
+            <link>https://github.com/mdn/content/issues/30402</link>
+            <guid>https://github.com/mdn/content/issues/30402</guid>
+            <pubDate>Mon, 20 Nov 2023 10:49:44 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/onLine" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Navigator/onLine</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Top level description</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The description claims that there can be false positives, but not false negatives. However, browser not only check for LAN connectivity on Windows. Windows has two connectivity levels, internet and LAN connectivity for each network interface. If the a connection claims there is no internet connectivity, navigator.onLine returns false. Whether there's an internet connection or not, depends on a Microsoft service, that typically breaks down when using VPN. There are workarounds by editing the Windows registry to disable the check, or use a different address for the connectivity status check.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A mention of possible false negatives, at least on Windows. Several PWA services break down when they use navigator.onLine.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://answers.microsoft.com/en-us/windows/forum/all/windows-10-says-im-offline/24a9922f-e740-4b0a-94af-d7e37fef2fd3" rel="nofollow">https://answers.microsoft.com/en-us/windows/forum/all/windows-10-says-im-offline/24a9922f-e740-4b0a-94af-d7e37fef2fd3</a><br>
+<a href="https://answers.microsoft.com/en-us/windows/forum/all/icon-showing-no-internet-yet-there-is-internet/51f4d89c-d5e8-4b51-b781-7b8286fd33e1" rel="nofollow">https://answers.microsoft.com/en-us/windows/forum/all/icon-showing-no-internet-yet-there-is-internet/51f4d89c-d5e8-4b51-b781-7b8286fd33e1</a><br>
+<a href="https://www.reddit.com/r/PrivateInternetAccess/comments/9vz0fb/why_does_windows_think_im_offline_even_though_i/" rel="nofollow">https://www.reddit.com/r/PrivateInternetAccess/comments/9vz0fb/why_does_windows_think_im_offline_even_though_i/</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/navigator/online</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/onLine" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Navigator/onLine</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/navigator/online/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/navigator/online/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ef75c1741b450c2331204be5563ee964ad5f4c48/hovercard" href="https://github.com/mdn/content/commit/ef75c1741b450c2331204be5563ee964ad5f4c48"><tt>ef75c17</tt></a></li>
+<li>Document last modified: 2023-04-07T06:16:45.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[webaudio, html, cssom-view-1, service-workers-1, dom, FileAPI, pointerlock-2, xhr, fetch, resource-timing-2, DOM-Parsing, push-api, selection-api, page-visibility-2, media-source] [XHR] Replace XMLHttpRequest with fetch() in Web/API]]></title>
             <link>https://github.com/mdn/content/issues/30131</link>
