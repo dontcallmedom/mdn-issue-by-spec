@@ -6,8 +6,6 @@
   
 * [\[webaudio, html, cssom-view-1, service-workers-1, dom, FileAPI, pointerlock-2, xhr, fetch, resource-timing-2, DOM-Parsing, push-api, selection-api, page-visibility-2, media-source\] \[XHR\] Replace XMLHttpRequest with fetch() in Web/API](https://github.com/mdn/content/issues/30131) (2023-11-08T19:19:11Z)
   
-* [\[dom\] The AbortSignal.any static method not documented](https://github.com/mdn/content/issues/30095) (2023-11-07T14:46:48Z)
-  
 * [\[dom\] Not all observers will be removed when one call observe with same target node](https://github.com/mdn/content/issues/29814) (2023-10-24T15:19:23Z)
   
 * [\[dom\] Chrome has XMLNS as default namespace](https://github.com/mdn/content/issues/29660) (2023-10-16T08:39:40Z)
