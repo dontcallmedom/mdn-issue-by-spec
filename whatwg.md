@@ -126,8 +126,6 @@
   
 * [\[html, uievents\] Document.activeElement : The lack of HTMLAnchorElement and macOS on a case by case basis](https://github.com/mdn/content/issues/22338) (2022-11-16T13:47:01Z)
   
-* [\[html\] Document HTMLInputElement's (type=file) cancel event](https://github.com/mdn/content/issues/22157) (2022-11-08T13:02:34Z)
-  
 * [\[html\] contenteditable missing some allowed values description](https://github.com/mdn/content/issues/22048) (2022-11-04T06:39:50Z)
   
 * [\[html\] Add documentation for \<video posterloading=lazy\>](https://github.com/mdn/content/issues/21912) (2022-10-28T12:20:13Z)
