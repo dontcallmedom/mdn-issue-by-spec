@@ -4,8 +4,6 @@
 
 * [\[dom\] preventDefault - default actions would be useful](https://github.com/mdn/content/issues/30284) (2023-11-15T06:26:55Z)
   
-* [\[webaudio, html, cssom-view-1, service-workers-1, dom, FileAPI, pointerlock-2, xhr, fetch, resource-timing-2, DOM-Parsing, push-api, selection-api, page-visibility-2, media-source\] \[XHR\] Replace XMLHttpRequest with fetch() in Web/API](https://github.com/mdn/content/issues/30131) (2023-11-08T19:19:11Z)
-  
 * [\[dom\] Not all observers will be removed when one call observe with same target node](https://github.com/mdn/content/issues/29814) (2023-10-24T15:19:23Z)
   
 * [\[dom\] Chrome has XMLNS as default namespace](https://github.com/mdn/content/issues/29660) (2023-10-16T08:39:40Z)

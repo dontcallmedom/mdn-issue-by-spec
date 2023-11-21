@@ -4,8 +4,6 @@
 
 * [\[html\] Navigator: onLine property false negatives](https://github.com/mdn/content/issues/30402) (2023-11-20T10:49:44Z)
   
-* [\[webaudio, html, cssom-view-1, service-workers-1, dom, FileAPI, pointerlock-2, xhr, fetch, resource-timing-2, DOM-Parsing, push-api, selection-api, page-visibility-2, media-source\] \[XHR\] Replace XMLHttpRequest with fetch() in Web/API](https://github.com/mdn/content/issues/30131) (2023-11-08T19:19:11Z)
-  
 * [\[html\] Url has some undocumented formats](https://github.com/mdn/content/issues/30017) (2023-11-03T13:23:33Z)
   
 * [\[html\] Is the value attribute supported on the textarea tag?](https://github.com/mdn/content/issues/29982) (2023-11-02T13:13:09Z)

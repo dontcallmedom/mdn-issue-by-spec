@@ -16,8 +16,6 @@
   
 * [\[cssom-1\] No link to "Modern APIs" information in StyleSheetList notebox](https://github.com/mdn/content/issues/30170) (2023-11-09T23:15:50Z)
   
-* [\[webaudio, html, cssom-view-1, service-workers-1, dom, FileAPI, pointerlock-2, xhr, fetch, resource-timing-2, DOM-Parsing, push-api, selection-api, page-visibility-2, media-source\] \[XHR\] Replace XMLHttpRequest with fetch() in Web/API](https://github.com/mdn/content/issues/30131) (2023-11-08T19:19:11Z)
-  
 * [\[push-api\] Web Push userVisibleOnly Details](https://github.com/mdn/content/issues/30077) (2023-11-06T21:13:53Z)
   
 * [\[css-position-3\] Both top and bottom will be respected for position: sticky](https://github.com/mdn/content/issues/29952) (2023-11-01T10:24:00Z)
