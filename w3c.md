@@ -180,8 +180,6 @@
   
 * [\[WebCryptoAPI\] Precise max length for encoding algorithm](https://github.com/mdn/content/issues/18045) (2022-07-06T14:47:35Z)
   
-* [\[selectors-4\] Content suggestion: @scope](https://github.com/mdn/content/issues/17751) (2022-06-29T01:36:56Z)
-  
 * [\[cssom-view-1\] the demo's getBoundingClientRect has different result in console panel](https://github.com/mdn/content/issues/17588) (2022-06-24T02:34:27Z)
   
 * [\[css-overflow-3\] CSS overflow property is giving results inconsistant with guide](https://github.com/mdn/content/issues/17430) (2022-06-19T11:34:27Z)
