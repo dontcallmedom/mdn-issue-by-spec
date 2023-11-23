@@ -6,8 +6,6 @@
   
 * [\[dom\] preventDefault - default actions would be useful](https://github.com/mdn/content/issues/30284) (2023-11-15T06:26:55Z)
   
-* [\[streams\] pipeThrough conflicting return value](https://github.com/mdn/content/issues/30256) (2023-11-14T07:04:28Z)
-  
 * [\[html\] Url has some undocumented formats](https://github.com/mdn/content/issues/30017) (2023-11-03T13:23:33Z)
   
 * [\[html\] Is the value attribute supported on the textarea tag?](https://github.com/mdn/content/issues/29982) (2023-11-02T13:13:09Z)

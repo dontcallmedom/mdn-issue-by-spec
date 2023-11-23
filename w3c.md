@@ -194,8 +194,6 @@
   
 * [\[css-conditional-3, DOM-Parsing\] Defining page types](https://github.com/mdn/content/issues/15539) (2022-04-29T23:44:43Z)
   
-* [\[css-logical-1\] Possibly confusing note about floats, cleared items and grid](https://github.com/mdn/content/issues/15285) (2022-04-23T16:08:30Z)
-  
 * [\[css-contain-2\] Containing block via contain:paint vs other alternatives](https://github.com/mdn/content/issues/15210) (2022-04-21T19:05:51Z)
   
 * [\[html, gamepad\] Double checking the gamepad docs are correct](https://github.com/mdn/content/issues/14874) (2022-04-11T03:02:09Z)
