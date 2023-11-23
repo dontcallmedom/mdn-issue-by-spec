@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] Navigator: onLine property false negatives](https://github.com/mdn/content/issues/30402) (2023-11-20T10:49:44Z)
+* [\[html\] Document false negatives for navigator.onLine property ](https://github.com/mdn/content/issues/30402) (2023-11-20T10:49:44Z)
   
 * [\[html\] Url has some undocumented formats](https://github.com/mdn/content/issues/30017) (2023-11-03T13:23:33Z)
   
