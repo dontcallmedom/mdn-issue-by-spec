@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-flexbox-1\] justify-content stretch value is difficult to understand](https://github.com/mdn/content/issues/30415) (2023-11-21T00:15:30Z)
-  
 * [\[service-workers-1\] Confusing text on service worker registration scope broadening](https://github.com/mdn/content/issues/30306) (2023-11-16T11:39:55Z)
   
 * [\[uievents\] Incomplete information about click event](https://github.com/mdn/content/issues/30263) (2023-11-14T12:00:06Z)
