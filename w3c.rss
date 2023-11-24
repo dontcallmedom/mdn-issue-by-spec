@@ -899,11 +899,12 @@ input:read-only {
 <p dir="auto">Next, line breaks are converted to spaces[…]</p>
 </blockquote>
 <p dir="auto">In <a href="https://drafts.csswg.org/css-text/#line-break-transform" rel="nofollow">4.1.3. Segment Break Transformation Rules</a> of the CSS Text Module, in particular Step 2 and the note at the end of 4.1.3, it is explicitly stated that segment breaks can be removed contextually. This is verified by the following HTML code on Firefox:</p>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;h1&gt;你好
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;h1&gt;你好
   世界！&lt;/h1&gt;
-&lt;h1&gt;你好 世界！&lt;/h1&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>你好
-  世界！<span class="pl-kos">&lt;/</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>
-<span class="pl-kos">&lt;</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>你好 世界！<span class="pl-kos">&lt;/</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span></pre></div>
+&lt;h1&gt;你好 世界！&lt;/h1&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;h1&gt;你好
+  世界！&lt;/h1&gt;
+&lt;h1&gt;你好 世界！&lt;/h1&gt;
+</code></pre></div>
 </li>
 <li>
 <p dir="auto">In the same subsection, Step 5 is incorrect:</p>
@@ -923,9 +924,10 @@ input:read-only {
 </li>
 <li>
 <p dir="auto">This page doesn't mention whitespaces in <a href="https://developer.mozilla.org/en-US/docs/Web/API/Selection" rel="nofollow">selections</a>. For the following HTML code:</p>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;h1&gt;你好
-  世界！&lt;/h1&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>你好
-  世界！<span class="pl-kos">&lt;/</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span></pre></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;h1&gt;你好
+  世界！&lt;/h1&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;h1&gt;你好
+  世界！&lt;/h1&gt;
+</code></pre></div>
 <p dir="auto">the rendered text is <code class="notranslate">你好世界！</code>. But when selecting all the visible texts, e.g. pressing <kbd>Ctrl</kbd> + <kbd>A</kbd> on the page on Windows, <code class="notranslate">getSelection().toString()</code> returns <code class="notranslate">你好 世界！</code>, which is also what gets copied by <kbd>Ctrl</kbd> + <kbd>C</kbd> on Firefox on Windows (note that the tab is transformed into a space), whereas <code class="notranslate">getSelection().getRangeAt(0).toString()</code> returns <code class="notranslate">你好\n\t世界！</code>.</p>
 </li>
 </ol>
@@ -1120,7 +1122,7 @@ Selection API issue:<br>
 <p dir="auto">A list of all properties that this method returns.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">TypeScript says that this is the returned object (from lib.dom.d.ts):</p>
-<div class="highlight highlight-source-ts notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="type EpochTimeStamp = number;
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="type EpochTimeStamp = number;
 
 // ...
 
@@ -1128,15 +1130,16 @@ interface PushSubscriptionJSON {
     endpoint?: string;
     expirationTime?: EpochTimeStamp | null;
     keys?: Record&lt;string, string&gt;;
-}"><pre class="notranslate"><span class="pl-k">type</span> <span class="pl-smi">EpochTimeStamp</span> <span class="pl-c1">=</span> <span class="pl-smi">number</span><span class="pl-kos">;</span>
+}"><pre lang="ts" class="notranslate"><code class="notranslate">type EpochTimeStamp = number;
 
-<span class="pl-c">// ...</span>
+// ...
 
-<span class="pl-k">interface</span> <span class="pl-smi">PushSubscriptionJSON</span> <span class="pl-kos">{</span>
-    <span class="pl-c1">endpoint</span>?: <span class="pl-smi">string</span><span class="pl-kos">;</span>
-    <span class="pl-c1">expirationTime</span>?: <span class="pl-smi">EpochTimeStamp</span> <span class="pl-c1">|</span> <span class="pl-c1">null</span><span class="pl-kos">;</span>
-    <span class="pl-c1">keys</span>?: <span class="pl-smi">Record</span><span class="pl-kos">&lt;</span><span class="pl-smi">string</span><span class="pl-kos">,</span> <span class="pl-smi">string</span><span class="pl-kos">&gt;</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span></pre></div>
+interface PushSubscriptionJSON {
+    endpoint?: string;
+    expirationTime?: EpochTimeStamp | null;
+    keys?: Record&lt;string, string&gt;;
+}
+</code></pre></div>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">MDN metadata</h3>
