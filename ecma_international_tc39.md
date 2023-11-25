@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[ecmascript\] Promise.resolve() is incomplete or incorrect](https://github.com/mdn/content/issues/30530) (2023-11-25T07:31:46Z)
-  
 * [\[ecmascript\] Raw template literals could use better explanation: latex is confusing and regexps unmentioned](https://github.com/mdn/content/issues/30389) (2023-11-20T02:49:25Z)
   
 * [\[ecmascript\] Describe direct and indirect eval differences in each bullet point](https://github.com/mdn/content/issues/30281) (2023-11-14T22:14:49Z)
