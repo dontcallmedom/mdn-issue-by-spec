@@ -102,34 +102,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[rfc7234] "Cache-Control" doc: “if the response with Cache-Control: max-age=604800 was generated more than 3 hours ago” but 604800 is 7 days, not 3 hours]]></title>
-            <link>https://github.com/mdn/content/issues/14095</link>
-            <guid>https://github.com/mdn/content/issues/14095</guid>
-            <pubDate>Sun, 20 Mar 2022 15:34:18 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</a></p>
-<p dir="auto">under header <code class="notranslate">max-age</code> mentioned</p>
-<blockquote>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#max-age_2" rel="nofollow">max-age</a></p>
-<p dir="auto">The max-age=N request directive indicates that the client allows a stored response that is generated on the origin server within N &gt;seconds — where N may be any non-negative integer (including 0).<br>
-Cache-Control: max-age=604800</p>
-<p dir="auto">In the case above, if the response with Cache-Control: max-age=604800 was generated more than 3 hours ago (calculated from &gt;max-age and the Age header), the cache couldn't reuse that response.</p>
-</blockquote>
-<p dir="auto">The number 604800 (which is equal to 7 days) is used in multiple places</p>
-<p dir="auto">It is confusing that why client will not use the cached version 3 hours after it is created even though it is valid for 7 days after it is created.</p>
-<p dir="auto">I'm guessing it is a miss-copy miss-paste?</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/http/headers/cache-control</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/cache-control/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/cache-control/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/5f3cacbf4db23d0656aa3d231b7181ba2fc5743e/hovercard" href="https://github.com/mdn/content/commit/5f3cacbf4db23d0656aa3d231b7181ba2fc5743e"><tt>5f3cacb</tt></a></li>
-<li>Document last modified: 2022-03-16T02:50:06.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[rfc7231] Issue with "Content-Location": for 201 Created, use Location instead]]></title>
             <link>https://github.com/mdn/content/issues/10809</link>
             <guid>https://github.com/mdn/content/issues/10809</guid>

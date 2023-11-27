@@ -8,8 +8,6 @@
   
 * [\[rfc7233\] HTTP Range Request: Requesting a range of bytes (such as of a video file)](https://github.com/mdn/content/issues/18237) (2022-07-11T21:53:18Z)
   
-* [\[rfc7234\] "Cache-Control" doc: “if the response with Cache-Control: max-age=604800 was generated more than 3 hours ago” but 604800 is 7 days, not 3 hours](https://github.com/mdn/content/issues/14095) (2022-03-20T15:34:18Z)
-  
 * [\[rfc7231\] Issue with "Content-Location": for 201 Created, use Location instead](https://github.com/mdn/content/issues/10809) (2021-11-27T09:43:51Z)
   
 * [\[rfc7230\] Issue with "Trailer": page says all browsers are compatible but there is no way to use this feature](https://github.com/mdn/content/issues/7137) (2021-07-21T15:59:50Z)
