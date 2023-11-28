@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Event not called for modification on sessionStorage](https://github.com/mdn/content/issues/30598) (2023-11-28T11:28:49Z)
+  
 * [\[html\] Document img auto-sizes](https://github.com/mdn/content/issues/30596) (2023-11-28T10:39:06Z)
   
 * [\[html\] Remove or fix example of custom select element](https://github.com/mdn/content/issues/30574) (2023-11-27T15:50:46Z)
