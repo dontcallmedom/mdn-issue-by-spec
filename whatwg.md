@@ -10,8 +10,6 @@
   
 * [\[html\] Remove or fix example of custom select element](https://github.com/mdn/content/issues/30574) (2023-11-27T15:50:46Z)
   
-* [\[html\] Suggestions does not appear when typing in the output "Choose a flavor:" field (Android)](https://github.com/mdn/content/issues/30571) (2023-11-27T13:34:46Z)
-  
 * [\[html\] If possible, include an example of importing from an embedded module](https://github.com/mdn/content/issues/30520) (2023-11-25T03:11:40Z)
   
 * [\[html\] Document false negatives for navigator.onLine property ](https://github.com/mdn/content/issues/30402) (2023-11-20T10:49:44Z)
