@@ -14,8 +14,6 @@
   
 * [\[css-easing-1\] Create function pages for easing functions](https://github.com/mdn/content/issues/29923) (2023-10-31T01:44:35Z)
   
-* [\[css-fonts-5\] Demo of font-variant-caps not only applies to captial letters as described](https://github.com/mdn/content/issues/29910) (2023-10-30T15:49:07Z)
-  
 * [\[css-sizing-4\] max-height value of "stretch" is missing from the listed Values](https://github.com/mdn/content/issues/29887) (2023-10-29T11:17:59Z)
   
 * [\[css-backgrounds-4\] box-shadow does not apply to \<tr\> tag in Safari](https://github.com/mdn/content/issues/29839) (2023-10-23T08:03:51Z)
