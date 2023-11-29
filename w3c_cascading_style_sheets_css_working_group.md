@@ -10,8 +10,6 @@
   
 * [\[cssom-1\] No link to "Modern APIs" information in StyleSheetList notebox](https://github.com/mdn/content/issues/30170) (2023-11-09T23:15:50Z)
   
-* [\[css-position-3\] Both top and bottom will be respected for position: sticky](https://github.com/mdn/content/issues/29952) (2023-11-01T10:24:00Z)
-  
 * [\[css-easing-1\] Create function pages for easing functions](https://github.com/mdn/content/issues/29923) (2023-10-31T01:44:35Z)
   
 * [\[css-sizing-4\] max-height value of "stretch" is missing from the listed Values](https://github.com/mdn/content/issues/29887) (2023-10-29T11:17:59Z)

@@ -28,8 +28,6 @@
   
 * [\[html, dom\] The \`shadowrootmode\` attribute on \`\<template\>\` is about to be standardized](https://github.com/mdn/content/issues/29600) (2023-10-11T16:01:03Z)
   
-* [\[html\] Missing documentation for \`StorageEvent\` interface member](https://github.com/mdn/content/issues/29419) (2023-10-02T08:37:09Z)
-  
 * [\[html\] The "Navigator: languages property" documentation is missing some browser quirks](https://github.com/mdn/content/issues/29371) (2023-09-29T22:16:14Z)
   
 * [\[html\] Cookie Examples Broken](https://github.com/mdn/content/issues/29370) (2023-09-29T18:28:29Z)
