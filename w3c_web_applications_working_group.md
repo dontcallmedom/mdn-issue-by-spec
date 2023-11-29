@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[uievents\] metaKey changed in Firefox 118](https://github.com/mdn/content/issues/30638) (2023-11-29T17:10:18Z)
+  
 * [\[uievents\] The space-key doesn't work like the other keys in event.key](https://github.com/mdn/content/issues/30562) (2023-11-26T15:10:28Z)
   
 * [\[uievents\] Incomplete information about click event](https://github.com/mdn/content/issues/30263) (2023-11-14T12:00:06Z)
