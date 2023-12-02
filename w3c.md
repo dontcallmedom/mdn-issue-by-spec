@@ -4,8 +4,6 @@
 
 * [\[uievents\] metaKey changed in Firefox 118](https://github.com/mdn/content/issues/30638) (2023-11-29T17:10:18Z)
   
-* [\[uievents\] The space-key doesn't work like the other keys in event.key](https://github.com/mdn/content/issues/30562) (2023-11-26T15:10:28Z)
-  
 * [\[service-workers-1\] Confusing text on service worker registration scope broadening](https://github.com/mdn/content/issues/30306) (2023-11-16T11:39:55Z)
   
 * [\[cssom-view-1\] Parts mentioning 76 DPI are incorrect](https://github.com/mdn/content/issues/30211) (2023-11-12T06:01:15Z)

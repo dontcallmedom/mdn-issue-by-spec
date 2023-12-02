@@ -4,8 +4,6 @@
 
 * [\[uievents\] metaKey changed in Firefox 118](https://github.com/mdn/content/issues/30638) (2023-11-29T17:10:18Z)
   
-* [\[uievents\] The space-key doesn't work like the other keys in event.key](https://github.com/mdn/content/issues/30562) (2023-11-26T15:10:28Z)
-  
 * [\[push-api\] Web Push userVisibleOnly Details](https://github.com/mdn/content/issues/30077) (2023-11-06T21:13:53Z)
   
 * [\[html, cssom-view-1, dom, uievents, pointerlock-2, selection-api, page-visibility-2\] Keydown, keyup, keypress pages should mention they work on document, body, etc](https://github.com/mdn/content/issues/28561) (2023-08-14T20:14:56Z)
