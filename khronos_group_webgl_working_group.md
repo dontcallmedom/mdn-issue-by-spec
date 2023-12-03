@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Khronos Group WebGL Working Group. [![RSS feed for Khronos Group WebGL Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[webgl1\] AllowSharedBufferSource is not working properly.](https://github.com/mdn/content/issues/30749) (2023-12-03T05:06:20Z)
+  
 * [\[WEBGL_depth_texture\] Example code on WEBGL_depth_texture gives GL_INVALID_VALUE when run in WebGL 2](https://github.com/mdn/content/issues/30130) (2023-11-08T19:14:29Z)
   
 * [\[webgl2\] texSubImage3D has wrong values for format param](https://github.com/mdn/content/issues/30128) (2023-11-08T18:16:45Z)
