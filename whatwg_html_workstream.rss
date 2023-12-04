@@ -4,10 +4,76 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Fri, 01 Dec 2023 14:09:47 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 04 Dec 2023 14:43:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Docs for Image srcset has a note about a required sizes attributes which seems wrong]]></title>
+            <link>https://github.com/mdn/content/issues/30777</link>
+            <guid>https://github.com/mdn/content/issues/30777</guid>
+            <pubDate>Mon, 04 Dec 2023 14:43:52 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">HTMLImageElement: srcset property</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto">Note: If the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#srcset" rel="nofollow">srcset</a> attribute uses width descriptors, the sizes attribute must also be present, or the srcset itself will be ignored.</p>
+</blockquote>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">According to the spec, and browser behaviour (Firefox, Chrome, Safari) this note is wrong. The <code class="notranslate">srcset</code> attribute is not ignored when no <code class="notranslate">sizes</code> are set, or at least not in all cases (I did not read the whole spec, but at least for my sample code it works).</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">spec: <a href="https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-srcset" rel="nofollow">https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-srcset</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">my test code, the source set is used:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;picture&gt;
+        &lt;img
+            src=&quot;images/440x293/nasa.jpg&quot;
+            srcset=&quot;
+                images/362x242/nasa.jpg   362w,
+                images/456x304/nasa.jpg   456w,
+                images/440x293/nasa.jpg   440w,
+                images/500x334/nasa.jpg   500w,
+                images/725x484/nasa.jpg   725w,
+                images/728x485/nasa.jpg   728w,
+                images/880x586/nasa.jpg   880w,
+                images/912x608/nasa.jpg   912w,
+                images/1000x668/nasa.jpg 1000w,
+                images/1456x970/nasa.jpg 1456w
+            &quot;
+            alt=&quot;Blog&quot;
+    /&gt;&lt;/picture&gt;"><pre class="notranslate"><code class="notranslate">&lt;picture&gt;
+        &lt;img
+            src="images/440x293/nasa.jpg"
+            srcset="
+                images/362x242/nasa.jpg   362w,
+                images/456x304/nasa.jpg   456w,
+                images/440x293/nasa.jpg   440w,
+                images/500x334/nasa.jpg   500w,
+                images/725x484/nasa.jpg   725w,
+                images/728x485/nasa.jpg   728w,
+                images/880x586/nasa.jpg   880w,
+                images/912x608/nasa.jpg   912w,
+                images/1000x668/nasa.jpg 1000w,
+                images/1456x970/nasa.jpg 1456w
+            "
+            alt="Blog"
+    /&gt;&lt;/picture&gt;
+</code></pre></div>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/htmlimageelement/srcset</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlimageelement/srcset/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlimageelement/srcset/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2f56f8532de673cfcf4d37fe26503739b95d54ef/hovercard" href="https://github.com/mdn/content/commit/2f56f8532de673cfcf4d37fe26503739b95d54ef"><tt>2f56f85</tt></a></li>
+<li>Document last modified: 2023-10-23T14:39:09.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Autocomplete attribute supports multiple values]]></title>
             <link>https://github.com/mdn/content/issues/30706</link>
@@ -525,7 +591,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3MDA4NzMsIm5iZiI6MTcwMTcwMDU3MywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIwNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMDRUMTQzNjEzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NjVhMmQyY2E2MDJlODQyZmZlZWQ3MDk5MTg1ZjdkYTgzNDY1ZGVlYWMwY2RkM2ZiZTg2MzViODJhOGE0MTdiYyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.F_D2ptRDCaWkIV97SYep4usTmlSIPx4pUVpMFCh2_Zg"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3MDA4NzMsIm5iZiI6MTcwMTcwMDU3MywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIwNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMDRUMTQzNjEzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NjVhMmQyY2E2MDJlODQyZmZlZWQ3MDk5MTg1ZjdkYTgzNDY1ZGVlYWMwY2RkM2ZiZTg2MzViODJhOGE0MTdiYyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.F_D2ptRDCaWkIV97SYep4usTmlSIPx4pUVpMFCh2_Zg" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3MDE0OTksIm5iZiI6MTcwMTcwMTE5OSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIwNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMDRUMTQ0NjM5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZWM4YmJiZmIyMWY2ZTY3Yjk0NTc2M2UzMWFjNTU3MGE5ODhkZjBkNDg1NmRhOGFmZGM1ZGJkYmRjMGM0ZDhmYyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.QAGKQRkJ3VMqS7aetPjYsoIQjOGL8JBpmwBPSxXE7Mg"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3MDE0OTksIm5iZiI6MTcwMTcwMTE5OSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIwNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMDRUMTQ0NjM5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZWM4YmJiZmIyMWY2ZTY3Yjk0NTc2M2UzMWFjNTU3MGE5ODhkZjBkNDg1NmRhOGFmZGM1ZGJkYmRjMGM0ZDhmYyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.QAGKQRkJ3VMqS7aetPjYsoIQjOGL8JBpmwBPSxXE7Mg" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
