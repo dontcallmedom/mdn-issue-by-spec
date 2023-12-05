@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[uievents\] Add one last example when holding a special key pressed](https://github.com/mdn/content/issues/30792) (2023-12-05T08:53:43Z)
+  
 * [\[uievents\] metaKey changed in Firefox 118](https://github.com/mdn/content/issues/30638) (2023-11-29T17:10:18Z)
   
 * [\[push-api\] Web Push userVisibleOnly Details](https://github.com/mdn/content/issues/30077) (2023-11-06T21:13:53Z)

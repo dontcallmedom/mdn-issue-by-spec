@@ -4,10 +4,58 @@
         <title>W3C Web Applications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_applications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Applications Working Group</description>
-        <lastBuildDate>Wed, 29 Nov 2023 17:10:18 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 05 Dec 2023 08:53:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[uievents] Add one last example when holding a special key pressed]]></title>
+            <link>https://github.com/mdn/content/issues/30792</link>
+            <guid>https://github.com/mdn/content/issues/30792</guid>
+            <pubDate>Tue, 05 Dec 2023 08:53:43 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Add one last example when holding a special key pressed</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">At the moment on the webpage the first example is about to press any kind of key, while the second example is about to press special keys. I’m so thankful for the second example, because there are some comments in the code to understand better the code and because the code can be changed easily (some keys can be deleted and new keys can be added easily). But what I miss on the webpage is one last example when holding one special key pressed, so that a function will be repeated as long as the special key is not released. Repeating a function as long as a special key is pressed is a scenario that is often used for games, when moving or firing. So, it would make sense to offer therefor just one example with only one special key to understand better how to code in JavaScript for holding a special key pressed. I used down below the key ‘a’ as special key. I have no idea how to change the code to make it like this that a function will be repeated as long as the special key is not released. So, down below is just the very start of coding. It would be great if the code-solution is like this that other keys can be added easily. Thank you so much in advance for adding one last example on the webpage.</p>
+<p dir="auto">window.addEventListener(<br>
+  "keydown",<br>
+  (event) =&gt; {<br>
+    if (event.defaultPrevented) {<br>
+      return; // Do nothing if the event was already processed<br>
+    }</p>
+<p dir="auto">    switch (event.key) {<br>
+      case "a":<br>
+        // Do something for "a" key press.<br>
+        break;<br>
+      default:<br>
+        return; // Quit when this doesn't handle the key event.<br>
+    }</p>
+<p dir="auto">    // Cancel the default action to avoid it being handled twice<br>
+    event.preventDefault();<br>
+  },<br>
+  true,<br>
+);</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">see explication above</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/keyboardevent/key</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/keyboardevent/key/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/keyboardevent/key/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/6b2c43900d34722448500180430a52696037a432/hovercard" href="https://github.com/mdn/content/commit/6b2c43900d34722448500180430a52696037a432"><tt>6b2c439</tt></a></li>
+<li>Document last modified: 2023-12-02T07:53:50.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[uievents] metaKey changed in Firefox 118]]></title>
             <link>https://github.com/mdn/content/issues/30638</link>
@@ -311,10 +359,10 @@ interface PushSubscriptionJSON {
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The example doesn't work. Also. it has different errors depending on the platform you use. On desktop web:<br>
 <code class="notranslate">Error: TypeError: navigator.share is not a function</code></p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/102827935/247702540-0504c6fa-4020-4fa2-aa0b-4cdc1cc0bb66.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3NjYzMTQsIm5iZiI6MTcwMTc2NjAxNCwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNTQwLTA1MDRjNmZhLTQwMjAtNGZhMi1hYTBiLTRjZGMxY2MwYmI2Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNVQwODQ2NTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02NDg3ODA2MzE3OWFhYzAzZWYxMmMyZTBlZTdlY2JmN2JmMjc2MDU5ZjA1YmQ2ZDExNjk2NGJhYzFhZTFlM2U0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.XCTZSUOjqsn_rwL9G5frGRTvZnSE23LtusjWebExTuM"><img src="https://private-user-images.githubusercontent.com/102827935/247702540-0504c6fa-4020-4fa2-aa0b-4cdc1cc0bb66.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3NjYzMTQsIm5iZiI6MTcwMTc2NjAxNCwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNTQwLTA1MDRjNmZhLTQwMjAtNGZhMi1hYTBiLTRjZGMxY2MwYmI2Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNVQwODQ2NTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02NDg3ODA2MzE3OWFhYzAzZWYxMmMyZTBlZTdlY2JmN2JmMjc2MDU5ZjA1YmQ2ZDExNjk2NGJhYzFhZTFlM2U0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.XCTZSUOjqsn_rwL9G5frGRTvZnSE23LtusjWebExTuM" alt="1" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/102827935/247702540-0504c6fa-4020-4fa2-aa0b-4cdc1cc0bb66.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3NjY5MjgsIm5iZiI6MTcwMTc2NjYyOCwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNTQwLTA1MDRjNmZhLTQwMjAtNGZhMi1hYTBiLTRjZGMxY2MwYmI2Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNVQwODU3MDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mZTBjNjgwMjQzZDI3YTU5MDIwMmE0MGUwMmQ4NTA0YjM4OTYxNTdiYzU5MzQ1M2Q5Nzc2NWNlNmU1OGU4MDM1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.ZX64YMoJrb0b_QixEFTxLT531unydmTD4xwGTu2PamI"><img src="https://private-user-images.githubusercontent.com/102827935/247702540-0504c6fa-4020-4fa2-aa0b-4cdc1cc0bb66.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3NjY5MjgsIm5iZiI6MTcwMTc2NjYyOCwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNTQwLTA1MDRjNmZhLTQwMjAtNGZhMi1hYTBiLTRjZGMxY2MwYmI2Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIwNVQwODU3MDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mZTBjNjgwMjQzZDI3YTU5MDIwMmE0MGUwMmQ4NTA0YjM4OTYxNTdiYzU5MzQ1M2Q5Nzc2NWNlNmU1OGU4MDM1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.ZX64YMoJrb0b_QixEFTxLT531unydmTD4xwGTu2PamI" alt="1" style="max-width: 100%;"></a></p>
 <p dir="auto">on mWeb (iOS Safari):<br>
 <code class="notranslate">Error: NotAllowedError: Third-party iframes are not allowed to call share() unless explicitly allowed via Feature-Policy (web-share)</code></p>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/102827935/247702629-9c20d6ee-75cd-4319-b024-f3f7eac9bd49.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3NjYzMTQsIm5iZiI6MTcwMTc2NjAxNCwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNjI5LTljMjBkNmVlLTc1Y2QtNDMxOS1iMDI0LWYzZjdlYWM5YmQ0OS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIwNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMDVUMDg0NjU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDk3Yzg1MjQ3MGFmMjJkMDkyNzA1NmFkYjQ3NGU2OWEyYmExNWYwOGE1MTA0ZDczMzA0Mzg1ODYxOWY2YTVjZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.vmI0Zd4_aTHwxzMfQnSnPTt9PpKhaG3fvDtSnueIqtk"><img src="https://private-user-images.githubusercontent.com/102827935/247702629-9c20d6ee-75cd-4319-b024-f3f7eac9bd49.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3NjYzMTQsIm5iZiI6MTcwMTc2NjAxNCwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNjI5LTljMjBkNmVlLTc1Y2QtNDMxOS1iMDI0LWYzZjdlYWM5YmQ0OS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIwNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMDVUMDg0NjU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDk3Yzg1MjQ3MGFmMjJkMDkyNzA1NmFkYjQ3NGU2OWEyYmExNWYwOGE1MTA0ZDczMzA0Mzg1ODYxOWY2YTVjZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.vmI0Zd4_aTHwxzMfQnSnPTt9PpKhaG3fvDtSnueIqtk" width="300" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/102827935/247702629-9c20d6ee-75cd-4319-b024-f3f7eac9bd49.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3NjY5MjgsIm5iZiI6MTcwMTc2NjYyOCwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNjI5LTljMjBkNmVlLTc1Y2QtNDMxOS1iMDI0LWYzZjdlYWM5YmQ0OS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIwNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMDVUMDg1NzA4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTlhNzZlYmFhMTYzZGNlYTY4NTk0Y2RjMjZiMjNlNzRlZjcxODU1MzY2OGM2YTkyMjNlOWIzZjc3NGNlMzQ5NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.CEu38tq68YtzkA0v5sHtDtb6Fc_CAwXfVZ15FShudy0"><img src="https://private-user-images.githubusercontent.com/102827935/247702629-9c20d6ee-75cd-4319-b024-f3f7eac9bd49.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3NjY5MjgsIm5iZiI6MTcwMTc2NjYyOCwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNjI5LTljMjBkNmVlLTc1Y2QtNDMxOS1iMDI0LWYzZjdlYWM5YmQ0OS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIwNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMDVUMDg1NzA4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTlhNzZlYmFhMTYzZGNlYTY4NTk0Y2RjMjZiMjNlNzRlZjcxODU1MzY2OGM2YTkyMjNlOWIzZjc3NGNlMzQ5NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.CEu38tq68YtzkA0v5sHtDtb6Fc_CAwXfVZ15FShudy0" width="300" style="max-width: 100%;"></a>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The share dialog is supposed to launch when I click the button in the example.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
