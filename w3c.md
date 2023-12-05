@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-overflow-3\] Code snippet copy button not working](https://github.com/mdn/content/issues/30801) (2023-12-05T13:52:26Z)
+  
 * [\[uievents\] Add one last example when holding a special key pressed](https://github.com/mdn/content/issues/30792) (2023-12-05T08:53:43Z)
   
 * [\[uievents\] metaKey changed in Firefox 118](https://github.com/mdn/content/issues/30638) (2023-11-29T17:10:18Z)

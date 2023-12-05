@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-overflow-3\] Code snippet copy button not working](https://github.com/mdn/content/issues/30801) (2023-12-05T13:52:26Z)
+  
 * [\[cssom-view-1\] Parts mentioning 76 DPI are incorrect](https://github.com/mdn/content/issues/30211) (2023-11-12T06:01:15Z)
   
 * [\[css-display-3\] Value \`run-in\` missing from display](https://github.com/mdn/content/issues/30201) (2023-11-11T03:01:31Z)
