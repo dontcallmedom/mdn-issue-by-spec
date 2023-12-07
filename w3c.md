@@ -8,8 +8,6 @@
   
 * [\[uievents\] Add one last example when holding a special key pressed](https://github.com/mdn/content/issues/30792) (2023-12-05T08:53:43Z)
   
-* [\[uievents\] metaKey changed in Firefox 118](https://github.com/mdn/content/issues/30638) (2023-11-29T17:10:18Z)
-  
 * [\[service-workers-1\] Confusing text on service worker registration scope broadening](https://github.com/mdn/content/issues/30306) (2023-11-16T11:39:55Z)
   
 * [\[cssom-view-1\] Parts mentioning 76 DPI are incorrect](https://github.com/mdn/content/issues/30211) (2023-11-12T06:01:15Z)
