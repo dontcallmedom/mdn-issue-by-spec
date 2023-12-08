@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] onDOMContentLoaded as referenced in the documentation but doesn't exist?](https://github.com/mdn/content/issues/30861) (2023-12-08T03:31:17Z)
+  
 * [\[console\] In the context of arguments, what exactly is "a list of \<x\>"?](https://github.com/mdn/content/issues/30727) (2023-12-02T00:01:38Z)
   
 * [\[html\] Autocomplete attribute supports multiple values](https://github.com/mdn/content/issues/30706) (2023-12-01T14:09:47Z)
