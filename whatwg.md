@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] Animation example works in Chrome but not FF](https://github.com/mdn/content/issues/30882) (2023-12-08T20:58:55Z)
-  
 * [\[html\] Example code does not work](https://github.com/mdn/content/issues/30881) (2023-12-08T19:57:02Z)
   
 * [\[html\] "Play" page does not successfully run example at enclosed link](https://github.com/mdn/content/issues/30876) (2023-12-08T16:46:11Z)
