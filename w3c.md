@@ -4,8 +4,6 @@
 
 * [\[css-overflow-3\] \[Incomplete information on doc page\] What is the future of box-orient & line-clamp?](https://github.com/mdn/content/issues/30842) (2023-12-06T23:01:46Z)
   
-* [\[SVG11\] \<use\> svg example is not respecting the stroke override](https://github.com/mdn/content/issues/30832) (2023-12-06T11:51:14Z)
-  
 * [\[uievents\] Add one last example when holding a special key pressed](https://github.com/mdn/content/issues/30792) (2023-12-05T08:53:43Z)
   
 * [\[service-workers-1\] Confusing text on service worker registration scope broadening](https://github.com/mdn/content/issues/30306) (2023-11-16T11:39:55Z)
