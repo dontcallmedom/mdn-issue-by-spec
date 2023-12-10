@@ -111,6 +111,56 @@
 <p dir="auto"><em>No response</em></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[[webrtc] api.RTCDataChannel.send - Wrong or obsolete exception list]]></title>
+            <link>https://github.com/mdn/content/issues/30909</link>
+            <guid>https://github.com/mdn/content/issues/30909</guid>
+            <pubDate>Tue, 16 May 2023 11:38:12 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">What type of issue is this?</h3>
+<p dir="auto">Other</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The list of exceptions and their descriptions are partially erroneous and some types of exceptions returned are missing. Here is the latest version of the specification <a href="https://www.w3.org/TR/webrtc/" rel="nofollow">https://www.w3.org/TR/webrtc/</a></p>
+<p dir="auto">Moreover, the link of the specification in MDN is incorrect and refers to the Editor Draft instead of the final specification.</p>
+<p dir="auto">Specifically, the list of exceptions displayed for the <code class="notranslate">send</code> method omits the <code class="notranslate">OperationError</code> type and has an incorrect description for the following exception.</p>
+<blockquote>
+<p dir="auto"><code class="notranslate">NetworkError</code> <code class="notranslate">DOMException</code><br>
+Thrown when the specified data would need to be buffered, and there isn't room for it in the buffer. <strong>In this scenario, the underlying transport is immediately closed.</strong></p>
+</blockquote>
+<p dir="auto">Wrong, the error returned is an <code class="notranslate">OperationError</code> <strong>which does not result in the closure of the underlying connection.</strong><br>
+In accordance with the specification, here is what is written for the 5th step of the <code class="notranslate">send</code> method.</p>
+<blockquote>
+<p dir="auto"><strong>5.</strong> Queue data for transmission on channel's underlying data transport. <strong>If queuing data is not possible because not enough buffer space is available, throw an OperationError.</strong></p>
+</blockquote>
+<p dir="auto">This was validated in 2017 by the following change to the specification:<br>
+<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="228213610" data-permission-text="Title is private" data-url="https://github.com/w3c/webrtc-pc/issues/1209" data-hovercard-type="pull_request" data-hovercard-url="/w3c/webrtc-pc/pull/1209/hovercard" href="https://github.com/w3c/webrtc-pc/pull/1209">w3c/webrtc-pc#1209</a><br>
+<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="225275764" data-permission-text="Title is private" data-url="https://github.com/w3c/webrtc-pc/issues/1148" data-hovercard-type="issue" data-hovercard-url="/w3c/webrtc-pc/issues/1148/hovercard" href="https://github.com/w3c/webrtc-pc/issues/1148">w3c/webrtc-pc#1148</a></p>
+<h3 dir="auto">What browsers does this problem apply to, if applicable?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What did you expect to see?</h3>
+<blockquote>
+<p dir="auto"><code class="notranslate">OperationError</code><br>
+Thrown when the specified data would need to be buffered, and there isn't room for it in the buffer.</p>
+</blockquote>
+<h3 dir="auto">Did you test this? If so, how?</h3>
+<p dir="auto"><strong>N/A</strong></p>
+<h3 dir="auto">Can you link to any release notes, bugs, pull requests, or MDN pages related to this?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCDataChannel/send" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/RTCDataChannel/send</a><br>
+<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="228213610" data-permission-text="Title is private" data-url="https://github.com/w3c/webrtc-pc/issues/1209" data-hovercard-type="pull_request" data-hovercard-url="/w3c/webrtc-pc/pull/1209/hovercard" href="https://github.com/w3c/webrtc-pc/pull/1209">w3c/webrtc-pc#1209</a><br>
+<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="225275764" data-permission-text="Title is private" data-url="https://github.com/w3c/webrtc-pc/issues/1148" data-hovercard-type="issue" data-hovercard-url="/w3c/webrtc-pc/issues/1148/hovercard" href="https://github.com/w3c/webrtc-pc/issues/1148">w3c/webrtc-pc#1148</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCDataChannel/send" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/RTCDataChannel/send</a></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>MDN page report details</summary>
+<ul dir="auto">
+<li>Query: <code class="notranslate">api.RTCDataChannel.send</code></li>
+<li>Report started: 2023-05-16T11:19:36.996Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[[webrtc] The new restartIce() method should replace the old "iceRestart" parameter in the documentation consistently.]]></title>
             <link>https://github.com/mdn/content/issues/25732</link>
             <guid>https://github.com/mdn/content/issues/25732</guid>
