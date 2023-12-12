@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[mediacapture-streams\] Remove the \`MediaTrackSupportedConstraints\` directionary](https://github.com/mdn/content/issues/30961) (2023-12-12T14:52:11Z)
+  
 * [\[clipboard-apis\] Navigator.clipboard incorrect baseline availability](https://github.com/mdn/content/issues/30951) (2023-12-12T10:05:58Z)
   
 * [\[css-overflow-3\] Mouse selection behavior with overflow: auto](https://github.com/mdn/content/issues/30949) (2023-12-12T08:55:56Z)
