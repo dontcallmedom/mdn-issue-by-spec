@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] In the "Using custom elements" guide and related pages, add a disclaimer that WebKit does not plant to support Customized built-in elements](https://github.com/mdn/content/issues/30968) (2023-12-12T17:40:05Z)
+  
 * [\[html\] Wrong descriptiotn of one-time-code](https://github.com/mdn/content/issues/30952) (2023-12-12T10:07:58Z)
   
 * [\[html\] Example code does not work](https://github.com/mdn/content/issues/30881) (2023-12-08T19:57:02Z)
