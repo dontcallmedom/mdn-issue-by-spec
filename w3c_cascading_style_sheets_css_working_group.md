@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-backgrounds-4\] Add Some Explanation And Example](https://github.com/mdn/content/issues/30916) (2023-12-11T07:56:02Z)
-  
 * [\[css-logical-1, css-text-3\] Missing examples for decimal alignment in table](https://github.com/mdn/content/issues/30889) (2023-12-09T10:20:06Z)
   
 * [\[css-overflow-3\] \[Incomplete information on doc page\] What is the future of box-orient & line-clamp?](https://github.com/mdn/content/issues/30842) (2023-12-06T23:01:46Z)
