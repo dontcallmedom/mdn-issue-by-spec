@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Real-Time Communications Working Group. [![RSS feed for W3C Web Real-Time Communications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[mediacapture-streams\] Remove the \`MediaTrackSupportedConstraints\` directionary](https://github.com/mdn/content/issues/30961) (2023-12-12T14:52:11Z)
+* [\[mediacapture-streams\] Consider remove the \`MediaTrackSupportedConstraints\` \`MediaTrackSettings\` directionary and \`MediaTrackConstraints\` (if possible)](https://github.com/mdn/content/issues/30961) (2023-12-12T14:52:11Z)
   
 * [\[webrtc\] RTCDataChannel bufferedamountlow event not sent if the threshold is 0?](https://github.com/mdn/content/issues/29087) (2023-09-13T08:47:28Z)
   
