@@ -4,8 +4,6 @@
 
 * [\[service-workers-1\] Consider renaming Cache API's use of the word "request" to "resource" to align with fetch.](https://github.com/mdn/content/issues/30974) (2023-12-13T04:52:59Z)
   
-* [\[mediacapture-streams\] Consider remove the \`MediaTrackSupportedConstraints\` \`MediaTrackSettings\` directionary and \`MediaTrackConstraints\` (if possible)](https://github.com/mdn/content/issues/30961) (2023-12-12T14:52:11Z)
-  
 * [\[clipboard-apis\] Navigator.clipboard incorrect baseline availability](https://github.com/mdn/content/issues/30951) (2023-12-12T10:05:58Z)
   
 * [\[css-overflow-3\] Mouse selection behavior with overflow: auto](https://github.com/mdn/content/issues/30949) (2023-12-12T08:55:56Z)
