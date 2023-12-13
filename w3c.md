@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[service-workers-1\] Consider renaming Cache API's use of the word "request" to "resource" to align with fetch.](https://github.com/mdn/content/issues/30974) (2023-12-13T04:52:59Z)
+  
 * [\[mediacapture-streams\] Remove the \`MediaTrackSupportedConstraints\` directionary](https://github.com/mdn/content/issues/30961) (2023-12-12T14:52:11Z)
   
 * [\[clipboard-apis\] Navigator.clipboard incorrect baseline availability](https://github.com/mdn/content/issues/30951) (2023-12-12T10:05:58Z)

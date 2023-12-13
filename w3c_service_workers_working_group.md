@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Service Workers Working Group. [![RSS feed for W3C Service Workers Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[service-workers-1\] Consider renaming Cache API's use of the word "request" to "resource" to align with fetch.](https://github.com/mdn/content/issues/30974) (2023-12-13T04:52:59Z)
+  
 * [\[service-workers-1\] Confusing text on service worker registration scope broadening](https://github.com/mdn/content/issues/30306) (2023-11-16T11:39:55Z)
   
 * [\[service-workers-1\] The description of \`ServiceWorker\`'s getter is not comprehensive enough](https://github.com/mdn/content/issues/29541) (2023-10-08T15:59:56Z)
