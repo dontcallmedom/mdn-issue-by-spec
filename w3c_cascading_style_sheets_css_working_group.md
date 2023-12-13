@@ -8,8 +8,6 @@
   
 * [\[css-overflow-3\] \[Incomplete information on doc page\] What is the future of box-orient & line-clamp?](https://github.com/mdn/content/issues/30842) (2023-12-06T23:01:46Z)
   
-* [\[cssom-view-1\] Parts mentioning 76 DPI are incorrect](https://github.com/mdn/content/issues/30211) (2023-11-12T06:01:15Z)
-  
 * [\[css-display-3\] Value \`run-in\` missing from display](https://github.com/mdn/content/issues/30201) (2023-11-11T03:01:31Z)
   
 * [\[CSS21, css-display-3\] Hiding things example - using absolute positioning](https://github.com/mdn/content/issues/30171) (2023-11-10T00:23:35Z)
