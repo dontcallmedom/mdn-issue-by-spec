@@ -8,8 +8,6 @@
   
 * [\[html\] Example code does not work](https://github.com/mdn/content/issues/30881) (2023-12-08T19:57:02Z)
   
-* [\[html\] "Play" page does not successfully run example at enclosed link](https://github.com/mdn/content/issues/30876) (2023-12-08T16:46:11Z)
-  
 * [\[console\] In the context of arguments, what exactly is "a list of \<x\>"?](https://github.com/mdn/content/issues/30727) (2023-12-02T00:01:38Z)
   
 * [\[html\] Autocomplete attribute supports multiple values](https://github.com/mdn/content/issues/30706) (2023-12-01T14:09:47Z)
