@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] No information about "cancel" event on HTMLInputElement page](https://github.com/mdn/content/issues/31014) (2023-12-15T00:00:43Z)
+  
 * [\[html\] In the "Using custom elements" guide and related pages, add a disclaimer that WebKit does not plant to support Customized built-in elements](https://github.com/mdn/content/issues/30968) (2023-12-12T17:40:05Z)
   
 * [\[html\] Wrong descriptiotn of one-time-code](https://github.com/mdn/content/issues/30952) (2023-12-12T10:07:58Z)
