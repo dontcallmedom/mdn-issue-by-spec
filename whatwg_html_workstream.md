@@ -24,8 +24,6 @@
   
 * [\[html\] Document false negatives for navigator.onLine property ](https://github.com/mdn/content/issues/30402) (2023-11-20T10:49:44Z)
   
-* [\[html\] Url has some undocumented formats](https://github.com/mdn/content/issues/30017) (2023-11-03T13:23:33Z)
-  
 * [\[html\] Is the value attribute supported on the textarea tag?](https://github.com/mdn/content/issues/29982) (2023-11-02T13:13:09Z)
   
 * [\[html\] DataTransfer is not only used for Drag & Drop](https://github.com/mdn/content/issues/29696) (2023-10-18T05:25:37Z)

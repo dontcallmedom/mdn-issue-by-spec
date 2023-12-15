@@ -371,45 +371,6 @@ brief, easy to follow code examples</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Url has some undocumented formats]]></title>
-            <link>https://github.com/mdn/content/issues/30017</link>
-            <guid>https://github.com/mdn/content/issues/30017</guid>
-            <pubDate>Fri, 03 Nov 2023 13:23:33 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Location/assign" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Location/assign</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">#parameters</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">the section only talks about adding a full url as string, but there are different behaviors depending on the string given</p>
-<p dir="auto">I.E</p>
-<p dir="auto">In my browser I have open the url<br>
-<code class="notranslate">https://developer.mozilla.org/en-US/docs/Web/API/Location/assign</code></p>
-<p dir="auto">If I open the console and execute:</p>
-<p dir="auto"><code class="notranslate">document.location.assign("/foo")</code><br>
-the browser will redirect to: <code class="notranslate">https://developer.mozilla.org/foo</code></p>
-<p dir="auto"><code class="notranslate">document.location.assign("bar")</code><br>
-the browser will redirect to: <code class="notranslate">https://developer.mozilla.org/en-US/docs/Web/API/Location/bar</code></p>
-<p dir="auto">I have identified these two so far</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">the complete list of available formats to pass to the assign method with their corresponding behavior (maybe touch the #example section as well)</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/location/assign</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Location/assign" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Location/assign</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/location/assign/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/location/assign/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc/hovercard" href="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc"><tt>acfe8c9</tt></a></li>
-<li>Document last modified: 2023-07-07T07:19:19.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Is the value attribute supported on the textarea tag?]]></title>
             <link>https://github.com/mdn/content/issues/29982</link>
             <guid>https://github.com/mdn/content/issues/29982</guid>
@@ -663,7 +624,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDI2MTU0NzQsIm5iZiI6MTcwMjYxNTE3NCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIxNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMTVUMDQzOTM0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Mjg5YTI0MTEyZDcwYmFmMWQ2ZWU3ZjllNjQ0YjNlYjE2YmY2NDJlNmRkNDdjYTZmNThkOWJmZjYxYTFkZDU4OSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.A0GImqLSrMaUK-olLv0kAdiAx8XWOvgKV8nfF288wcY"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDI2MTU0NzQsIm5iZiI6MTcwMjYxNTE3NCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIxNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMTVUMDQzOTM0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Mjg5YTI0MTEyZDcwYmFmMWQ2ZWU3ZjllNjQ0YjNlYjE2YmY2NDJlNmRkNDdjYTZmNThkOWJmZjYxYTFkZDU4OSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.A0GImqLSrMaUK-olLv0kAdiAx8XWOvgKV8nfF288wcY" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDI2MTYwODMsIm5iZiI6MTcwMjYxNTc4MywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIxNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMTVUMDQ0OTQzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjRiYmE5MzVlNThkMTVmNjA0N2JjNThhNmEyMmFkMDI1MGZmYjBhN2U0MDIxYTMxODA0N2Q1ODA4MmJjMGM1NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.UBEOqSWA2uRXaEoCOSYAovjk0ygm_9MC0gyTjupABNY"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDI2MTYwODMsIm5iZiI6MTcwMjYxNTc4MywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIxNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMTVUMDQ0OTQzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjRiYmE5MzVlNThkMTVmNjA0N2JjNThhNmEyMmFkMDI1MGZmYjBhN2U0MDIxYTMxODA0N2Q1ODA4MmJjMGM1NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.UBEOqSWA2uRXaEoCOSYAovjk0ygm_9MC0gyTjupABNY" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
