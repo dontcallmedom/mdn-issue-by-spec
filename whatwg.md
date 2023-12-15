@@ -6,8 +6,6 @@
   
 * [\[html\] In the "Using custom elements" guide and related pages, add a disclaimer that WebKit does not plant to support Customized built-in elements](https://github.com/mdn/content/issues/30968) (2023-12-12T17:40:05Z)
   
-* [\[html\] Wrong descriptiotn of one-time-code](https://github.com/mdn/content/issues/30952) (2023-12-12T10:07:58Z)
-  
 * [\[html\] Example code does not work](https://github.com/mdn/content/issues/30881) (2023-12-08T19:57:02Z)
   
 * [\[html\] "Play" page does not successfully run example at enclosed link](https://github.com/mdn/content/issues/30876) (2023-12-08T16:46:11Z)
