@@ -4,10 +4,52 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Fri, 15 Dec 2023 00:00:43 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 16 Dec 2023 13:22:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] `hgroup` accessibility concerns might need an update]]></title>
+            <link>https://github.com/mdn/content/issues/31064</link>
+            <guid>https://github.com/mdn/content/issues/31064</guid>
+            <pubDate>Sat, 16 Dec 2023 13:22:38 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The accessibility note below the section <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup#try_it" rel="nofollow">Try it</a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">There has been a lot of work done around the <code class="notranslate">&lt;hgroup&gt;</code> tag that might warrant an update of the accessibility warnings on this MDN page. See below.</p>
+<p dir="auto">It says <code class="notranslate">&lt;hgroup&gt;</code> has been removed from the W3C HTML specification, but it seems this has been <a href="https://www.w3.org/TR/2011/WD-html5-20110405/sections.html#the-hgroup-element" rel="nofollow">added again</a></p>
+<p dir="auto">Quoted from an a11yproject <a href="https://www.a11yproject.com/posts/how-to-accessible-heading-structure/#hgroup" rel="nofollow">article</a>:</p>
+<blockquote>
+<p dir="auto">Update August 1, 2022: Steve Faulkner proposed a way to introducehgroup again, which is promising, in:<br>
+<a href="https://www.tpgi.com/subheadings-subtitles-alternative-titles-and-taglines-in-html/" rel="nofollow">Subheadings, subtitles, alternative titles and taglines in HTML</a></p>
+<p dir="auto">Until browsers add the information themselves do:</p>
+<p dir="auto">Add role="group" and aria-roledescription="Heading group" as attributes to the hgroup element.<br>
+Add the subtitles in a paragraph (not a heading) </p><p dir="auto">.<br>
+Then all information about the structure and connection of the headings group is given for assistive technology in the accessibility tree.</p>
+</blockquote>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A recommendation on how one can ensure their usage of <code class="notranslate">&lt;hroup&gt;</code> is accessible.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://github.com/w3c/html-aam/pull/398#issue-1218793599" data-hovercard-type="pull_request" data-hovercard-url="/w3c/html-aam/pull/398/hovercard">W3C PR on element mapping for <code class="notranslate">&lt;hgroup&gt;</code></a><br>
+<a href="https://github.com/w3c/html-aam/pull/398#issuecomment-1184581607" data-hovercard-type="pull_request" data-hovercard-url="/w3c/html-aam/pull/398/hovercard">Related PR on W3C</a></p>
+<p dir="auto">Topic stumbled upon from <a href="https://www.tpgi.com/subheadings-subtitles-alternative-titles-and-taglines-in-html/" rel="nofollow">this article</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/element/hgroup</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/hgroup/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/hgroup/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/fbb5b308788bdb63e9b2a2d010f49510f48b2e03/hovercard" href="https://github.com/mdn/content/commit/fbb5b308788bdb63e9b2a2d010f49510f48b2e03"><tt>fbb5b30</tt></a></li>
+<li>Document last modified: 2023-12-09T03:36:42.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] No information about "cancel" event on HTMLInputElement page]]></title>
             <link>https://github.com/mdn/content/issues/31014</link>
@@ -562,7 +604,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDI3MzMxMzMsIm5iZiI6MTcwMjczMjgzMywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIxNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMTZUMTMyMDMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NzJmZDc2ZjI0OTAzN2MwMzM3YmZlMDgwNDFiMjZkNjQ4ZTgzYmM0MjQ3ODFiZmEwZmQ2ODQxZmM3NDkwNDEyMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Bg69yXL0zjeI4VXyZzuWoMcUP1zynbAcZnHsdXJBve0"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDI3MzMxMzMsIm5iZiI6MTcwMjczMjgzMywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIxNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMTZUMTMyMDMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NzJmZDc2ZjI0OTAzN2MwMzM3YmZlMDgwNDFiMjZkNjQ4ZTgzYmM0MjQ3ODFiZmEwZmQ2ODQxZmM3NDkwNDEyMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Bg69yXL0zjeI4VXyZzuWoMcUP1zynbAcZnHsdXJBve0" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDI3MzM3NTYsIm5iZiI6MTcwMjczMzQ1NiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIxNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMTZUMTMzMDU2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTBhNzUxYWJhZjJiODk4MDQ2OTFiZjgxOWJiZDg2MjQ3YzEyYjkyMTM5MzZhZjQzMWZhNzUyOTM5NThiZDQxNyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.5nVqBQuLn9lYROv_x4BIm16qNDjBT03fBcpmnKUyzoc"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDI3MzM3NTYsIm5iZiI6MTcwMjczMzQ1NiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIxNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMTZUMTMzMDU2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTBhNzUxYWJhZjJiODk4MDQ2OTFiZjgxOWJiZDg2MjQ3YzEyYjkyMTM5MzZhZjQzMWZhNzUyOTM5NThiZDQxNyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.5nVqBQuLn9lYROv_x4BIm16qNDjBT03fBcpmnKUyzoc" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
