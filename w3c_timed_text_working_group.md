@@ -2,7 +2,5 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Timed Text Working Group. [![RSS feed for W3C Timed Text Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[webvtt1\] ::cue - Try it - Need for explanation](https://github.com/mdn/content/issues/31009) (2023-12-14T21:29:12Z)
-  
 * [\[webvtt1\] ::cue should include ::cue() information](https://github.com/mdn/content/issues/23209) (2022-12-27T02:43:21Z)
   

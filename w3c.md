@@ -4,8 +4,6 @@
 
 * [\[resize-observer-1\] How to prevent ResizeObserver Observation errors](https://github.com/mdn/content/issues/31021) (2023-12-15T08:03:20Z)
   
-* [\[webvtt1\] ::cue - Try it - Need for explanation](https://github.com/mdn/content/issues/31009) (2023-12-14T21:29:12Z)
-  
 * [\[service-workers-1\] Consider renaming Cache API's use of the word "request" to "resource" to align with fetch.](https://github.com/mdn/content/issues/30974) (2023-12-13T04:52:59Z)
   
 * [\[clipboard-apis\] Navigator.clipboard incorrect baseline availability](https://github.com/mdn/content/issues/30951) (2023-12-12T10:05:58Z)
