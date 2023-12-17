@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] hr missing new Permitted parent](https://github.com/mdn/content/issues/31085) (2023-12-17T19:59:34Z)
+  
 * [\[html\] \`hgroup\` accessibility concerns might need an update](https://github.com/mdn/content/issues/31064) (2023-12-16T13:22:38Z)
   
 * [\[html\] No information about "cancel" event on HTMLInputElement page](https://github.com/mdn/content/issues/31014) (2023-12-15T00:00:43Z)
