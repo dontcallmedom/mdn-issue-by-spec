@@ -132,8 +132,6 @@
   
 * [\[html\] Conflicting descriptions of whether Firefox respects the “autocomplete” attribute, specifically for \<input type="checkbox"\>](https://github.com/mdn/content/issues/13502) (2022-03-04T16:37:28Z)
   
-* [\[html\] Issue with "\<iframe\>: The Inline Frame element": document browser behaviour for onload and onerror events.](https://github.com/mdn/content/issues/12477) (2022-01-28T14:05:20Z)
-  
 * [\[html\] Issue with "DragEvent.dataTransfer": Clarify that \`dataTransfer\` can be null.](https://github.com/mdn/content/issues/11670) (2022-01-02T15:10:06Z)
   
 * [\[html, uievents\] Replace hand-written compat sections with BCD tables](https://github.com/mdn/content/issues/9972) (2021-10-21T07:40:45Z)

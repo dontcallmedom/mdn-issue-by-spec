@@ -180,8 +180,6 @@
   
 * [\[fetch\] Content bug: Inaccurate explanation on request credentials](https://github.com/mdn/content/issues/13063) (2022-02-17T09:18:12Z)
   
-* [\[html\] Issue with "\<iframe\>: The Inline Frame element": document browser behaviour for onload and onerror events.](https://github.com/mdn/content/issues/12477) (2022-01-28T14:05:20Z)
-  
 * [\[dom\] Issue with "AbortController": (missing info on behavior of .text() or .json() or other body promise)](https://github.com/mdn/content/issues/12387) (2022-01-24T16:10:11Z)
   
 * [\[html\] Issue with "DragEvent.dataTransfer": Clarify that \`dataTransfer\` can be null.](https://github.com/mdn/content/issues/11670) (2022-01-02T15:10:06Z)
