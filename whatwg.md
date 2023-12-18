@@ -8,7 +8,7 @@
   
 * [\[html\] No information about "cancel" event on HTMLInputElement page](https://github.com/mdn/content/issues/31014) (2023-12-15T00:00:43Z)
   
-* [\[html\] In the "Using custom elements" guide and related pages, add a disclaimer that WebKit does not plant to support Customized built-in elements](https://github.com/mdn/content/issues/30968) (2023-12-12T17:40:05Z)
+* [\[html\] In the "Using custom elements" guide and related pages, add a disclaimer that WebKit does not plan to support Customized built-in elements](https://github.com/mdn/content/issues/30968) (2023-12-12T17:40:05Z)
   
 * [\[html\] Example code does not work](https://github.com/mdn/content/issues/30881) (2023-12-08T19:57:02Z)
   
