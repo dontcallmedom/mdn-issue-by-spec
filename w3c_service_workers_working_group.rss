@@ -78,48 +78,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[service-workers-1] The description of `ServiceWorker`'s getter is not comprehensive enough]]></title>
-            <link>https://github.com/mdn/content/issues/29541</link>
-            <guid>https://github.com/mdn/content/issues/29541</guid>
-            <pubDate>Sun, 08 Oct 2023 15:59:56 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<div class="highlight highlight-text-md notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="A ServiceWorker object is available in the `ServiceWorkerRegistration.active` property, and the `ServiceWorkerContainer.controller` property — this is a service worker that has been activated and is controlling the page (the service worker has been successfully registered, and the controlled page has been reloaded.)"><pre class="notranslate">A ServiceWorker object is available in the <span class="pl-s">`</span><span class="pl-c1">ServiceWorkerRegistration.active</span><span class="pl-s">`</span> property, and the <span class="pl-s">`</span><span class="pl-c1">ServiceWorkerContainer.controller</span><span class="pl-s">`</span> property — this is a service worker that has been activated and is controlling the page (the service worker has been successfully registered, and the controlled page has been reloaded.)</pre></div>
-<p dir="auto">The getter description of ServiceWorker only mentioned <code class="notranslate">ServiceWorkerRegistration.active</code> and <code class="notranslate">ServiceWorkerContainer.controller</code></p>
-<p dir="auto">However, ServiceWorker may get via <code class="notranslate">ServiceWorkerGlobalScope.serviceWorker</code> and <code class="notranslate">ServiceWorkerRegistration.installing</code> also <code class="notranslate">ServiceWorkerRegistration.waiting</code></p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Update this description to fully reflect ServiceWorker's getter</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><strong>Added yet</strong></p>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/active" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/active</a></p>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/controller" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/controller</a></p>
-<p dir="auto"><strong>Need Add</strong></p>
-<p dir="auto">See <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1897157371" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/29123" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/29123/hovercard" href="https://github.com/mdn/content/issues/29123">#29123</a> and <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1925891600" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/29461" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/29461/hovercard" href="https://github.com/mdn/content/pull/29461">#29461</a></p>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/installing" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/installing</a></p>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/waiting" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/waiting</a></p>
-<p dir="auto"><strong>Related documentation</strong></p>
-<p dir="auto"><a href="https://w3c.github.io/ServiceWorker/#serviceworker-interface" rel="nofollow">https://w3c.github.io/ServiceWorker/#serviceworker-interface</a></p>
-<p dir="auto"><a href="https://w3c.github.io/ServiceWorker/#serviceworkerregistration-interface" rel="nofollow">https://w3c.github.io/ServiceWorker/#serviceworkerregistration-interface</a></p>
-<p dir="auto"><a href="https://w3c.github.io/ServiceWorker/#serviceworkercontainer-interface" rel="nofollow">https://w3c.github.io/ServiceWorker/#serviceworkercontainer-interface</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/serviceworker</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworker/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworker/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/33fe6977c5dcbf4d5d89ed1faa5559a778936b65/hovercard" href="https://github.com/mdn/content/commit/33fe6977c5dcbf4d5d89ed1faa5559a778936b65"><tt>33fe697</tt></a></li>
-<li>Document last modified: 2023-05-15T05:31:24.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[service-workers-1] the description of `ServiceWorkerRegistration: scope property` is not quite accurate]]></title>
             <link>https://github.com/mdn/content/issues/29367</link>
             <guid>https://github.com/mdn/content/issues/29367</guid>
@@ -136,7 +94,7 @@
 <p dir="auto">should mention <em><strong>service worker registration's serialized scope url</strong></em> and relation with the <code class="notranslate">options.scope</code> paremater with <code class="notranslate">ServiceWorkerContainer.register()</code></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><a href="https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-scope" rel="nofollow">https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-scope</a></p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/95597335/271661181-931030dc-ed2d-4bb7-b611-b3a8391470fe.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDI4NTc5MzcsIm5iZiI6MTcwMjg1NzYzNywicGF0aCI6Ii85NTU5NzMzNS8yNzE2NjExODEtOTMxMDMwZGMtZWQyZC00YmI3LWI2MTEtYjNhODM5MTQ3MGZlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMTglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjE4VDAwMDAzN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU2MDIwOGIyZjdkMjUyYzEwZmFlM2FkOTM0NGJjNmFjMWMzMTAxMGJkYjk4MzQ5NmEwOTczYzQ4YmYzM2I3N2QmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.SFpGB6h0yLusccXeO4e_9WVUnvyQCzByprHf_YxJHlU"><img src="https://private-user-images.githubusercontent.com/95597335/271661181-931030dc-ed2d-4bb7-b611-b3a8391470fe.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDI4NTc5MzcsIm5iZiI6MTcwMjg1NzYzNywicGF0aCI6Ii85NTU5NzMzNS8yNzE2NjExODEtOTMxMDMwZGMtZWQyZC00YmI3LWI2MTEtYjNhODM5MTQ3MGZlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMTglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjE4VDAwMDAzN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU2MDIwOGIyZjdkMjUyYzEwZmFlM2FkOTM0NGJjNmFjMWMzMTAxMGJkYjk4MzQ5NmEwOTczYzQ4YmYzM2I3N2QmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.SFpGB6h0yLusccXeO4e_9WVUnvyQCzByprHf_YxJHlU" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/95597335/271661181-931030dc-ed2d-4bb7-b611-b3a8391470fe.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDI4NjI5NTIsIm5iZiI6MTcwMjg2MjY1MiwicGF0aCI6Ii85NTU5NzMzNS8yNzE2NjExODEtOTMxMDMwZGMtZWQyZC00YmI3LWI2MTEtYjNhODM5MTQ3MGZlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMTglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjE4VDAxMjQxMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI1ZDhmM2Q2YWRhNWM1M2I3ZWQzMzVhN2IzMmIzZGEyMmEyNWI3NGY0MTgzM2ZhYTA2MDE3MWMyZmNhYTUwZTAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.ghrC4vXfZtX34E3LPr4ePuC2go5rHzP_fbeck_iU7mU"><img src="https://private-user-images.githubusercontent.com/95597335/271661181-931030dc-ed2d-4bb7-b611-b3a8391470fe.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDI4NjI5NTIsIm5iZiI6MTcwMjg2MjY1MiwicGF0aCI6Ii85NTU5NzMzNS8yNzE2NjExODEtOTMxMDMwZGMtZWQyZC00YmI3LWI2MTEtYjNhODM5MTQ3MGZlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMTglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjE4VDAxMjQxMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI1ZDhmM2Q2YWRhNWM1M2I3ZWQzMzVhN2IzMmIzZGEyMmEyNWI3NGY0MTgzM2ZhYTA2MDE3MWMyZmNhYTUwZTAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.ghrC4vXfZtX34E3LPr4ePuC2go5rHzP_fbeck_iU7mU" alt="image" style="max-width: 100%;"></a></p>
 <p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register#parameters" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register#parameters</a></p>
 <p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache</a></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
@@ -151,36 +109,6 @@
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkerregistration/scope/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkerregistration/scope/index.md</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/f2f9346c0c0e9f6676f2df9f1850933e274401de/hovercard" href="https://github.com/mdn/content/commit/f2f9346c0c0e9f6676f2df9f1850933e274401de"><tt>f2f9346</tt></a></li>
 <li>Document last modified: 2023-04-08T06:00:31.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[service-workers-1] Missing property `ServiceWorkerGlobalScope.serviceWorker`]]></title>
-            <link>https://github.com/mdn/content/issues/29123</link>
-            <guid>https://github.com/mdn/content/issues/29123</guid>
-            <pubDate>Thu, 14 Sep 2023 19:14:58 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The ServiceWorkerGlobalScope.serviceWorker property is missing in mdn</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Add a page for ServiceWorkerGlobalScope.serviceWorker and update ServiceWorkerGlobalScope summary page</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://w3c.github.io/ServiceWorker/#service-worker-global-scope-serviceworker" rel="nofollow">https://w3c.github.io/ServiceWorker/#service-worker-global-scope-serviceworker</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/serviceworkerglobalscope</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkerglobalscope/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkerglobalscope/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/56c76424a5edb45f6716ac4ee48861dac8e7ae38/hovercard" href="https://github.com/mdn/content/commit/56c76424a5edb45f6716ac4ee48861dac8e7ae38"><tt>56c7642</tt></a></li>
-<li>Document last modified: 2023-08-04T07:12:32.000Z</li>
 </ul>
 </details>]]></content:encoded>
         </item>

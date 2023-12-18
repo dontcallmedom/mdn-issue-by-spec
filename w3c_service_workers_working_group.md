@@ -6,11 +6,7 @@
   
 * [\[service-workers-1\] Confusing text on service worker registration scope broadening](https://github.com/mdn/content/issues/30306) (2023-11-16T11:39:55Z)
   
-* [\[service-workers-1\] The description of \`ServiceWorker\`'s getter is not comprehensive enough](https://github.com/mdn/content/issues/29541) (2023-10-08T15:59:56Z)
-  
 * [\[service-workers-1\] the description of \`ServiceWorkerRegistration: scope property\` is not quite accurate](https://github.com/mdn/content/issues/29367) (2023-09-29T16:25:11Z)
-  
-* [\[service-workers-1\] Missing property \`ServiceWorkerGlobalScope.serviceWorker\`](https://github.com/mdn/content/issues/29123) (2023-09-14T19:14:58Z)
   
 * [\[service-workers-1\] Fetch Event client id is null](https://github.com/mdn/content/issues/20657) (2022-09-13T11:22:55Z)
   
