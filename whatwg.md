@@ -4,8 +4,6 @@
 
 * [\[xhr\] Define XMLHttpRequest "failure" on the responseText MDN page?](https://github.com/mdn/content/issues/31129) (2023-12-18T18:57:49Z)
   
-* [\[html\] hr missing new Permitted parent](https://github.com/mdn/content/issues/31085) (2023-12-17T19:59:34Z)
-  
 * [\[html\] \`hgroup\` accessibility concerns might need an update](https://github.com/mdn/content/issues/31064) (2023-12-16T13:22:38Z)
   
 * [\[html\] No information about "cancel" event on HTMLInputElement page](https://github.com/mdn/content/issues/31014) (2023-12-15T00:00:43Z)
