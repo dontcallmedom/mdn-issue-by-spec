@@ -76,43 +76,6 @@ If you need automatic scrolling, you can use "overflow: auto" and "scrollbar-wid
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-logical-1, css-text-3] Missing examples for decimal alignment in table]]></title>
-            <link>https://github.com/mdn/content/issues/30889</link>
-            <guid>https://github.com/mdn/content/issues/30889</guid>
-            <pubDate>Sat, 09 Dec 2023 10:20:06 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/text-align</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Examples</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The examples are all trivial and virtually need not be there. Start, center, or justify are notions all of us have quite honed, and these pages are typically not for non-tech people, dare I say.</p>
-<p dir="auto">However, the single most demanding example, alignment of numbers in a column by their decimal point, is blatantly missing. A mention is made to add this to the cell elements and... my browser (Chrome 120, Debian 12, Gnome 43) is simply ignored with a <g-emoji class="g-emoji" alias="warning">⚠️</g-emoji> and a message of "Invalid property value."when I try a character:</p>
-<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="table tbody tr td {
-  text-align: &quot;.&quot; right;
-}"><pre class="notranslate"><span class="pl-ent">table</span> <span class="pl-ent">tbody</span> <span class="pl-ent">tr</span> <span class="pl-ent">td</span> {
-  <span class="pl-c1">text-align</span><span class="pl-kos">:</span> <span class="pl-s">"."</span> right;
-}</pre></div>
-<p dir="auto">It's everythinbg but clear where to apply this CSS rule. I tried all the way up to applying it to <code class="notranslate">table</code>, to the same result. Should I be applying this to a table <code class="notranslate">col</code> instead? This would make sense, but it should also be in the documentation, as it is mentioned.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Either an example of aligning by <code class="notranslate">&lt;string&gt;</code> or a link to one.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/text-align</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/text-align</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/text-align/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/text-align/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b82ff59aab7883b7bb2222cf9f9f9b6eed818e08/hovercard" href="https://github.com/mdn/content/commit/b82ff59aab7883b7bb2222cf9f9f9b6eed818e08"><tt>b82ff59</tt></a></li>
-<li>Document last modified: 2023-02-21T06:13:19.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[css-overflow-3] [Incomplete information on doc page] What is the future of box-orient & line-clamp?]]></title>
             <link>https://github.com/mdn/content/issues/30842</link>
             <guid>https://github.com/mdn/content/issues/30842</guid>
@@ -385,7 +348,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDI5MTE0NTgsIm5iZiI6MTcwMjkxMTE1OCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIxOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMThUMTQ1MjM4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Y2VlNWRiYWVlMmM0NDJjMGEyZDVjZTUzNWVlNjM1ZWRhMWMxNjlmOWMwMjBkZThjMmE3NzU4MGI1Zjk0YzUxOSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Tutd_N1nr9J6XwmDgyETvxPLZtd_PB69rJJRI6UKu_Y"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDI5MTE0NTgsIm5iZiI6MTcwMjkxMTE1OCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIxOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMThUMTQ1MjM4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Y2VlNWRiYWVlMmM0NDJjMGEyZDVjZTUzNWVlNjM1ZWRhMWMxNjlmOWMwMjBkZThjMmE3NzU4MGI1Zjk0YzUxOSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Tutd_N1nr9J6XwmDgyETvxPLZtd_PB69rJJRI6UKu_Y" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDI5MTI0OTAsIm5iZiI6MTcwMjkxMjE5MCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIxOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMThUMTUwOTUwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTMyMjJmYjc4ZTYzMTRjNTExY2E4NDJiODhmOGU4MzA2NGI0ZDE5NjJkMmZmOWU5NmFmMDNlZjRlZWE1NGRkYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.34dDsUBjsEVU7FWLlxrXReOaoR2a8kK3qrKtBT4NBk8"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDI5MTI0OTAsIm5iZiI6MTcwMjkxMjE5MCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMTIxOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzEyMThUMTUwOTUwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTMyMjJmYjc4ZTYzMTRjNTExY2E4NDJiODhmOGU4MzA2NGI0ZDE5NjJkMmZmOWU5NmFmMDNlZjRlZWE1NGRkYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.34dDsUBjsEVU7FWLlxrXReOaoR2a8kK3qrKtBT4NBk8" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
