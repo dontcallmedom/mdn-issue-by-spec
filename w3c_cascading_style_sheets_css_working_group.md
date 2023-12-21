@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-color-4\] Opacity property improvements](https://github.com/mdn/content/issues/31190) (2023-12-21T07:28:39Z)
+  
 * [\[resize-observer-1\] How to prevent ResizeObserver Observation errors](https://github.com/mdn/content/issues/31021) (2023-12-15T08:03:20Z)
   
 * [\[css-overflow-3\] Mouse selection behavior with overflow: auto](https://github.com/mdn/content/issues/30949) (2023-12-12T08:55:56Z)
