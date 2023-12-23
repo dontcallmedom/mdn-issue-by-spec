@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[ecmascript\] isNan for empty arrays](https://github.com/mdn/content/issues/31249) (2023-12-23T08:52:55Z)
+  
 * [\[ecmascript\] Raw template literals could use better explanation: latex is confusing and regexps unmentioned](https://github.com/mdn/content/issues/30389) (2023-11-20T02:49:25Z)
   
 * [\[ecmascript\] Describe direct and indirect eval differences in each bullet point](https://github.com/mdn/content/issues/30281) (2023-11-14T22:14:49Z)
