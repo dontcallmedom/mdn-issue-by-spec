@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[filter-effects-2\] List the feBlend modes](https://github.com/mdn/content/issues/31253) (2023-12-23T10:46:04Z)
+  
 * [\[vibration\] Vibrate Not causing issue](https://github.com/mdn/content/issues/31251) (2023-12-23T09:15:02Z)
   
 * [\[css-color-4\] Opacity property improvements](https://github.com/mdn/content/issues/31190) (2023-12-21T07:28:39Z)

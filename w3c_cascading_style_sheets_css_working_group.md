@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[filter-effects-2\] List the feBlend modes](https://github.com/mdn/content/issues/31253) (2023-12-23T10:46:04Z)
+  
 * [\[css-color-4\] Opacity property improvements](https://github.com/mdn/content/issues/31190) (2023-12-21T07:28:39Z)
   
 * [\[resize-observer-1\] How to prevent ResizeObserver Observation errors](https://github.com/mdn/content/issues/31021) (2023-12-15T08:03:20Z)
