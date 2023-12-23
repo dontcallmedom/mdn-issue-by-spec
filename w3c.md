@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[mediacapture-fromelement\] Firefox Browser Compatibility](https://github.com/mdn/content/issues/31233) (2023-12-22T23:31:02Z)
-  
 * [\[css-color-4\] Opacity property improvements](https://github.com/mdn/content/issues/31190) (2023-12-21T07:28:39Z)
   
 * [\[resize-observer-1\] How to prevent ResizeObserver Observation errors](https://github.com/mdn/content/issues/31021) (2023-12-15T08:03:20Z)
