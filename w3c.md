@@ -8,7 +8,7 @@
   
 * [\[vibration\] Vibrate Not causing issue](https://github.com/mdn/content/issues/31251) (2023-12-23T09:15:02Z)
   
-* [\[css-color-4\] Opacity property improvements](https://github.com/mdn/content/issues/31190) (2023-12-21T07:28:39Z)
+* [\[css-color-4\] CSS \`opacity\` property improvements](https://github.com/mdn/content/issues/31190) (2023-12-21T07:28:39Z)
   
 * [\[resize-observer-1\] How to prevent ResizeObserver Observation errors](https://github.com/mdn/content/issues/31021) (2023-12-15T08:03:20Z)
   
