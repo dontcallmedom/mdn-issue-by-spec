@@ -4,10 +4,40 @@
         <title>IETF-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ietf.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by IETF</description>
-        <lastBuildDate>Fri, 08 Sep 2023 15:54:56 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 25 Dec 2023 23:49:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[rfc7230] Please document why browsers typically send `Connection: keep-alive` despite that being the default]]></title>
+            <link>https://github.com/mdn/content/issues/31291</link>
+            <guid>https://github.com/mdn/content/issues/31291</guid>
+            <pubDate>Mon, 25 Dec 2023 23:49:08 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Connection" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Connection</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Browsers seem to send <code class="notranslate">Connection: keep-alive</code> by default, even though that's the default in HTTP/1.1. Based on the text of the page, it would make sense for them to do so if they were sending a <code class="notranslate">Keep-Alive</code> header, but they're not.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">If there's a historical compatibility reason why browsers send this header, it'd be helpful to document that.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/http/headers/connection</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Connection" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Connection</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/connection/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/connection/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0880a90f3811475d78bc4b2c344eb4146f25f66c/hovercard" href="https://github.com/mdn/content/commit/0880a90f3811475d78bc4b2c344eb4146f25f66c"><tt>0880a90</tt></a></li>
+<li>Document last modified: 2023-04-10T19:47:15.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[rfc6265] CHIPS no longer requires Path=/]]></title>
             <link>https://github.com/mdn/content/issues/29001</link>

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by IETF Hypertext Transfer Protocol Bis APP Working Group. [![RSS feed for IETF Hypertext Transfer Protocol Bis APP Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[rfc7230\] Please document why browsers typically send \`Connection: keep-alive\` despite that being the default](https://github.com/mdn/content/issues/31291) (2023-12-25T23:49:08Z)
+  
 * [\[rfc7231\] Retry-After doesn't suggest what to do for \`Retry-After: 0\`](https://github.com/mdn/content/issues/28330) (2023-08-01T21:56:14Z)
   
 * [\[rfc7233\] Content suggestion: http content-type multipart/\*](https://github.com/mdn/content/issues/19353) (2022-08-10T08:44:58Z)
