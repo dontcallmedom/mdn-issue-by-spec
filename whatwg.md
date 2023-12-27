@@ -48,8 +48,6 @@
   
 * [\[console\] Missing parameters for console.dir() ](https://github.com/mdn/content/issues/29329) (2023-09-27T14:23:41Z)
   
-* [\[dom\] CustomEvent documentation missing \`cloneInto\` information for web extension scripts](https://github.com/mdn/content/issues/29232) (2023-09-21T13:33:50Z)
-  
 * [\[console\] Clarify wording around "string representation" in console.\* related functions](https://github.com/mdn/content/issues/29172) (2023-09-17T18:09:54Z)
   
 * [\[html, css-conditional-3, selectors-4\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
