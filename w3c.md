@@ -4,8 +4,6 @@
 
 * [\[css-conditional-3\] CSSConditionRule.conditionText property is readonly](https://github.com/mdn/content/issues/31279) (2023-12-24T22:46:30Z)
   
-* [\[selection-api\] Confusing events' documentations' areas of Selection API](https://github.com/mdn/content/issues/31257) (2023-12-23T14:00:59Z)
-  
 * [\[filter-effects-2\] List the feBlend modes](https://github.com/mdn/content/issues/31253) (2023-12-23T10:46:04Z)
   
 * [\[vibration\] Vibrate Not causing issue](https://github.com/mdn/content/issues/31251) (2023-12-23T09:15:02Z)
