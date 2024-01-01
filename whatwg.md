@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] It wont capitalize anything...?](https://github.com/mdn/content/issues/31450) (2024-01-01T17:19:37Z)
+  
 * [\[dom\] "DOM request": the phrase found in the AbortSignal and AbortRequest pages seems improper.](https://github.com/mdn/content/issues/31427) (2023-12-31T10:31:58Z)
   
 * [\[xhr\] How about an example?](https://github.com/mdn/content/issues/31254) (2023-12-23T11:31:27Z)
