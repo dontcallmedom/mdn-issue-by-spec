@@ -8,8 +8,6 @@
   
 * [\[css-conditional-3\] CSSConditionRule.conditionText property is readonly](https://github.com/mdn/content/issues/31279) (2023-12-24T22:46:30Z)
   
-* [\[filter-effects-2\] List the feBlend modes](https://github.com/mdn/content/issues/31253) (2023-12-23T10:46:04Z)
-  
 * [\[vibration\] Vibrate Not causing issue](https://github.com/mdn/content/issues/31251) (2023-12-23T09:15:02Z)
   
 * [\[css-color-4\] CSS \`opacity\` property improvements](https://github.com/mdn/content/issues/31190) (2023-12-21T07:28:39Z)
