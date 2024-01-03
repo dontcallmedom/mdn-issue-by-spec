@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[dom\] "DOM request": the phrase found in the AbortSignal and AbortRequest pages seems improper.](https://github.com/mdn/content/issues/31427) (2023-12-31T10:31:58Z)
+* [\[dom\] "DOM request": the phrase found in the AbortSignal and AbortController pages seems improper.](https://github.com/mdn/content/issues/31427) (2023-12-31T10:31:58Z)
   
 * [\[dom\] preventDefault - default actions would be useful](https://github.com/mdn/content/issues/30284) (2023-11-15T06:26:55Z)
   
