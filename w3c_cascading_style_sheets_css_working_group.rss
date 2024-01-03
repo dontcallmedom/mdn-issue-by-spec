@@ -4,10 +4,46 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Sun, 31 Dec 2023 18:59:40 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 03 Jan 2024 09:14:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[cssom-1, css-logical-1] Float may be more compatible than cssFloat.]]></title>
+            <link>https://github.com/mdn/content/issues/31481</link>
+            <guid>https://github.com/mdn/content/issues/31481</guid>
+            <pubDate>Wed, 03 Jan 2024 09:14:24 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/float</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<h3 dir="auto">The MDN Note:</h3>
+<p dir="auto">Note: If you're referring to this property from JavaScript as a member of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style" rel="nofollow">HTMLElement.style</a> object, modern browsers support float, but in older browsers you have to spell it as cssFloat. This was an exception to the rule, that the name of the DOM member is the <a href="https://developer.mozilla.org/en-US/docs/Glossary/Camel_case" rel="nofollow">camel-case</a> name of the hyphenated CSS name (because "float" is a reserved word in JavaScript, as seen in the need to escape "class" as "className" and escape 's "for" as "htmlFor").</p>
+<p dir="auto">But looking at the compatibility, float seems to be better.</p>
+<p dir="auto">float on caniuse.com: <a href="https://caniuse.com/?search=float" rel="nofollow">https://caniuse.com/?search=float</a><br>
+float on MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssFloat" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssFloat</a></p>
+<p dir="auto">cssFloat on caniuse.com: <a href="https://caniuse.com/?search=cssFloat" rel="nofollow">https://caniuse.com/?search=cssFloat</a><br>
+cssFloat on MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssFloat" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssFloat</a></p>
+<h3 dir="auto">What did you expect to see?</h3>
+<hr>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/float</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/float</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/float/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/float/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/6aa664dc5ccb5edf0897f99ad5feb59325dff831/hovercard" href="https://github.com/mdn/content/commit/6aa664dc5ccb5edf0897f99ad5feb59325dff831"><tt>6aa664d</tt></a></li>
+<li>Document last modified: 2023-09-08T01:05:56.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-display-3] Wrong Visulation of Display Property]]></title>
             <link>https://github.com/mdn/content/issues/31437</link>
@@ -21,7 +57,7 @@
 <p dir="auto">In the display section, one of the properties is Display: block;</p>
 <p dir="auto">The corresponding visual effect is not what it should be.<br>
 Instead of being a display block, the boxes are being displayed inline.<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/59365222/293519655-b452760e-c128-40d2-88ca-bedead3a3c3d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQyNzI0NzEsIm5iZiI6MTcwNDI3MjE3MSwicGF0aCI6Ii81OTM2NTIyMi8yOTM1MTk2NTUtYjQ1Mjc2MGUtYzEyOC00MGQyLTg4Y2EtYmVkZWFkM2EzYzNkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTAzVDA4NTYxMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWJiMzNlYTM5MTM4Y2VlYjZlNTEzODMzZWU1ZjU1NDBiOTk1ZjhjNzEzMWMzOGVhMTAxZTA1ZjdiNzU2ZjAzNDgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.S9JmNW8WJKk50-T1TroRPPwej5eajWEjuPcxC4ApLjM"><img src="https://private-user-images.githubusercontent.com/59365222/293519655-b452760e-c128-40d2-88ca-bedead3a3c3d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQyNzI0NzEsIm5iZiI6MTcwNDI3MjE3MSwicGF0aCI6Ii81OTM2NTIyMi8yOTM1MTk2NTUtYjQ1Mjc2MGUtYzEyOC00MGQyLTg4Y2EtYmVkZWFkM2EzYzNkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTAzVDA4NTYxMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWJiMzNlYTM5MTM4Y2VlYjZlNTEzODMzZWU1ZjU1NDBiOTk1ZjhjNzEzMWMzOGVhMTAxZTA1ZjdiNzU2ZjAzNDgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.S9JmNW8WJKk50-T1TroRPPwej5eajWEjuPcxC4ApLjM" alt="Screenshot 2024-01-01 at 12 27 38 AM" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/59365222/293519655-b452760e-c128-40d2-88ca-bedead3a3c3d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQyNzM2NDAsIm5iZiI6MTcwNDI3MzM0MCwicGF0aCI6Ii81OTM2NTIyMi8yOTM1MTk2NTUtYjQ1Mjc2MGUtYzEyOC00MGQyLTg4Y2EtYmVkZWFkM2EzYzNkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTAzVDA5MTU0MFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdjZTUzZTdlMmIyYjFiZDJmZTliY2YzMjI5ZjgyYzA1NWJkN2IxMGU2Mzg1MThjZTEwM2RlNDNlMjk2MTZiMWQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.tgDDYYABA7y7vn3oZogbHC6BfoNIGBvKp3eFPguZEus"><img src="https://private-user-images.githubusercontent.com/59365222/293519655-b452760e-c128-40d2-88ca-bedead3a3c3d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQyNzM2NDAsIm5iZiI6MTcwNDI3MzM0MCwicGF0aCI6Ii81OTM2NTIyMi8yOTM1MTk2NTUtYjQ1Mjc2MGUtYzEyOC00MGQyLTg4Y2EtYmVkZWFkM2EzYzNkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTAzVDA5MTU0MFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdjZTUzZTdlMmIyYjFiZDJmZTliY2YzMjI5ZjgyYzA1NWJkN2IxMGU2Mzg1MThjZTEwM2RlNDNlMjk2MTZiMWQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.tgDDYYABA7y7vn3oZogbHC6BfoNIGBvKp3eFPguZEus" alt="Screenshot 2024-01-01 at 12 27 38 AM" style="max-width: 100%;"></a></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The inner boxes- one, two, three- should be displayed top to bottom, not left to right!</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
@@ -489,7 +525,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQyNzI0NjgsIm5iZiI6MTcwNDI3MjE2OCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDEwMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAxMDNUMDg1NjA4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MmQ5ZDAwYWFmM2E4YzVmOTY0OTBmNDU4MzE4OWVjNTNiMTRhMmZhZDM0ZjgyOTNlZjM2ZWQ5ZDA0ZTZhZTMyYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.4Hzf80OWVo5Ypb5ugE3UDQgSoys1l_t1anfcKFKQLJY"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQyNzI0NjgsIm5iZiI6MTcwNDI3MjE2OCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDEwMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAxMDNUMDg1NjA4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MmQ5ZDAwYWFmM2E4YzVmOTY0OTBmNDU4MzE4OWVjNTNiMTRhMmZhZDM0ZjgyOTNlZjM2ZWQ5ZDA0ZTZhZTMyYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.4Hzf80OWVo5Ypb5ugE3UDQgSoys1l_t1anfcKFKQLJY" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQyNzM2MzgsIm5iZiI6MTcwNDI3MzMzOCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDEwMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAxMDNUMDkxNTM4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZmU3NGU3MGZiYjRkM2VkY2M3YThkYzU4YTI5MTIxZDA5MGI4NDkxZmNjY2FhM2Y1MTIwNWYzNWQ2NzRhZWVhMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.CHTHbXoD5LoTwN8C2j9yYnGuXFLtWRmv5Snt3yBoZnM"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQyNzM2MzgsIm5iZiI6MTcwNDI3MzMzOCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDEwMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAxMDNUMDkxNTM4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZmU3NGU3MGZiYjRkM2VkY2M3YThkYzU4YTI5MTIxZDA5MGI4NDkxZmNjY2FhM2Y1MTIwNWYzNWQ2NzRhZWVhMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.CHTHbXoD5LoTwN8C2j9yYnGuXFLtWRmv5Snt3yBoZnM" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
