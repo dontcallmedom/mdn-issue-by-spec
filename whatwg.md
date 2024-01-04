@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Add information to \`DOMParser.parseFromString\` page about the \`includeShadowRoots\` option](https://github.com/mdn/content/issues/31501) (2024-01-04T00:14:08Z)
+  
 * [\[html\] code example is not referring to location interface](https://github.com/mdn/content/issues/31498) (2024-01-03T21:04:58Z)
   
 * [\[dom\] "DOM request": the phrase found in the AbortSignal and AbortController pages seems improper.](https://github.com/mdn/content/issues/31427) (2023-12-31T10:31:58Z)
