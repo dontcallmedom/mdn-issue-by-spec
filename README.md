@@ -5,8 +5,7 @@ This repository collects information on MDN Web Docs issues and group them based
 
 * [Ecma International](ecma_international.md): 8 issues [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ecma_international.rss)
 * [Ecma International TC39](ecma_international_tc39.md): 8 issues [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ecma_international_tc39.rss)
-* [IETF](ietf.md): 8 issues [![RSS feed for IETF-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ietf.rss)
-* [IETF HTTP State Management Mechanism Working Group](ietf_http_state_management_mechanism_working_group.md): 1 issues [![RSS feed for IETF HTTP State Management Mechanism Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ietf_http_state_management_mechanism_working_group.rss)
+* [IETF](ietf.md): 7 issues [![RSS feed for IETF-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ietf.rss)
 * [IETF Hypertext Transfer Protocol Bis APP Working Group](ietf_hypertext_transfer_protocol_bis_app_working_group.md): 7 issues [![RSS feed for IETF Hypertext Transfer Protocol Bis APP Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ietf_hypertext_transfer_protocol_bis_app_working_group.rss)
 * [Khronos Group](khronos_group.md): 8 issues [![RSS feed for Khronos Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](khronos_group.rss)
 * [Khronos Group WebGL Working Group](khronos_group_webgl_working_group.md): 8 issues [![RSS feed for Khronos Group WebGL Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](khronos_group_webgl_working_group.rss)
