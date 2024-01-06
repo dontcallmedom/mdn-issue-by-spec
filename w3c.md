@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[FileAPI\] File API missing "type" under Instance Properties](https://github.com/mdn/content/issues/31532) (2024-01-05T16:49:13Z)
-  
 * [\[cssom-1, css-logical-1\] Float seems to be more compatible than cssFloat.](https://github.com/mdn/content/issues/31481) (2024-01-03T09:14:24Z)
   
 * [\[css-display-3\] Wrong Visulation of Display Property](https://github.com/mdn/content/issues/31437) (2023-12-31T18:59:40Z)
