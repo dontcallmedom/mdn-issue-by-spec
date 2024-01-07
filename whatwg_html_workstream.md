@@ -4,8 +4,6 @@
 
 * [\[html\] Baseline component seems to show incorrect Baseline status or BCD is incorrect](https://github.com/mdn/content/issues/31566) (2024-01-07T18:13:09Z)
   
-* [\[html\] Possible typo in exception reasons text](https://github.com/mdn/content/issues/31562) (2024-01-07T15:34:14Z)
-  
 * [\[html\] \`\<param\>\` attribute deprecated - missing sources](https://github.com/mdn/content/issues/31523) (2024-01-05T12:39:23Z)
   
 * [\[html\] Add information to \`DOMParser.parseFromString\` page about the \`includeShadowRoots\` option](https://github.com/mdn/content/issues/31501) (2024-01-04T00:14:08Z)
