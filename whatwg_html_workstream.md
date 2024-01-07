@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Baseline component seems to show incorrect Baseline status or BCD is incorrect](https://github.com/mdn/content/issues/31566) (2024-01-07T18:13:09Z)
+  
 * [\[html\] Possible typo in exception reasons text](https://github.com/mdn/content/issues/31562) (2024-01-07T15:34:14Z)
   
 * [\[html\] \`\<param\>\` attribute deprecated - missing sources](https://github.com/mdn/content/issues/31523) (2024-01-05T12:39:23Z)
