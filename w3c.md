@@ -4,8 +4,6 @@
 
 * [\[netinfo\] Documents in different languages vary widely](https://github.com/mdn/content/issues/31575) (2024-01-08T09:54:04Z)
   
-* [\[clipboard-apis\] ClipboardEvent availability confusion](https://github.com/mdn/content/issues/31564) (2024-01-07T17:13:36Z)
-  
 * [\[cssom-1, css-logical-1\] Float seems to be more compatible than cssFloat.](https://github.com/mdn/content/issues/31481) (2024-01-03T09:14:24Z)
   
 * [\[css-display-3\] Wrong Visulation of Display Property](https://github.com/mdn/content/issues/31437) (2023-12-31T18:59:40Z)
