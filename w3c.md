@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[netinfo\] Documents in different languages vary widely](https://github.com/mdn/content/issues/31575) (2024-01-08T09:54:04Z)
+  
 * [\[clipboard-apis\] ClipboardEvent availability confusion](https://github.com/mdn/content/issues/31564) (2024-01-07T17:13:36Z)
   
 * [\[cssom-1, css-logical-1\] Float seems to be more compatible than cssFloat.](https://github.com/mdn/content/issues/31481) (2024-01-03T09:14:24Z)
