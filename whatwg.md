@@ -10,8 +10,6 @@
   
 * [\[html\] code example is not referring to location interface](https://github.com/mdn/content/issues/31498) (2024-01-03T21:04:58Z)
   
-* [\[dom\] "DOM request": the phrase found in the AbortSignal and AbortController pages seems improper.](https://github.com/mdn/content/issues/31427) (2023-12-31T10:31:58Z)
-  
 * [\[xhr\] How about an example?](https://github.com/mdn/content/issues/31254) (2023-12-23T11:31:27Z)
   
 * [\[html\] DOMContentLoaded does not fire in LiveSample](https://github.com/mdn/content/issues/31229) (2023-12-22T18:04:00Z)
