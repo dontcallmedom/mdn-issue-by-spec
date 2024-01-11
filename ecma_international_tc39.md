@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[ecmascript\] Documentation Issue /  Should provide more context](https://github.com/mdn/content/issues/31666) (2024-01-11T20:48:13Z)
+  
 * [\[ecmascript\] What's the difference between a class prototype property and a function prototype property?](https://github.com/mdn/content/issues/31649) (2024-01-11T02:32:17Z)
   
 * [\[ecmascript\] Raw template literals could use better explanation: latex is confusing and regexps unmentioned](https://github.com/mdn/content/issues/30389) (2023-11-20T02:49:25Z)
