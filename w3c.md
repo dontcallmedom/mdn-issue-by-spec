@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-text-decor-3\] text-underline-position](https://github.com/mdn/content/issues/31683) (2024-01-12T16:17:33Z)
+  
 * [\[SVG11\] SMIL is not an extension of SVG](https://github.com/mdn/content/issues/31610) (2024-01-09T10:11:46Z)
   
 * [\[netinfo\] Documents in different languages vary widely](https://github.com/mdn/content/issues/31575) (2024-01-08T09:54:04Z)

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-text-decor-3\] text-underline-position](https://github.com/mdn/content/issues/31683) (2024-01-12T16:17:33Z)
+  
 * [\[cssom-1, css-logical-1\] Float seems to be more compatible than cssFloat.](https://github.com/mdn/content/issues/31481) (2024-01-03T09:14:24Z)
   
 * [\[css-display-3\] Wrong Visulation of Display Property](https://github.com/mdn/content/issues/31437) (2023-12-31T18:59:40Z)
