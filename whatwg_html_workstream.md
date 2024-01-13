@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Incorrect information in the Try It example](https://github.com/mdn/content/issues/31710) (2024-01-13T21:07:27Z)
+  
 * [\[html\] Using Storage change event on same page.](https://github.com/mdn/content/issues/31665) (2024-01-11T19:25:49Z)
   
 * [\[html\] \`\<param\>\` attribute deprecated - missing sources](https://github.com/mdn/content/issues/31523) (2024-01-05T12:39:23Z)
