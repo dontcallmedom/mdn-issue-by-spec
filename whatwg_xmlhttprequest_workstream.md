@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG XMLHttpRequest Workstream. [![RSS feed for WHATWG XMLHttpRequest Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[xhr\] How about an example?](https://github.com/mdn/content/issues/31254) (2023-12-23T11:31:27Z)
+* [\[xhr\] ProgressEvent constructor needs an example](https://github.com/mdn/content/issues/31254) (2023-12-23T11:31:27Z)
   
 * [\[xhr\] Define XMLHttpRequest "failure" on the responseText MDN page?](https://github.com/mdn/content/issues/31129) (2023-12-18T18:57:49Z)
   

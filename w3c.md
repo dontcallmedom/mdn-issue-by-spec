@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-text-decor-3\] text-underline-position](https://github.com/mdn/content/issues/31683) (2024-01-12T16:17:33Z)
+* [\[css-text-decor-3\] text-underline-position left/right are no longer synonyms of under](https://github.com/mdn/content/issues/31683) (2024-01-12T16:17:33Z)
   
 * [\[SVG11\] SMIL is not an extension of SVG](https://github.com/mdn/content/issues/31610) (2024-01-09T10:11:46Z)
   
@@ -13,8 +13,6 @@
 * [\[css-display-3\] Wrong Visulation of Display Property](https://github.com/mdn/content/issues/31437) (2023-12-31T18:59:40Z)
   
 * [\[css-conditional-3\] CSSConditionRule.conditionText property is readonly](https://github.com/mdn/content/issues/31279) (2023-12-24T22:46:30Z)
-  
-* [\[vibration\] Vibrate Not causing issue](https://github.com/mdn/content/issues/31251) (2023-12-23T09:15:02Z)
   
 * [\[css-color-4\] CSS \`opacity\` property improvements](https://github.com/mdn/content/issues/31190) (2023-12-21T07:28:39Z)
   
