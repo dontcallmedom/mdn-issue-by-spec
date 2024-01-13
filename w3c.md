@@ -6,8 +6,6 @@
   
 * [\[SVG11\] SMIL is not an extension of SVG](https://github.com/mdn/content/issues/31610) (2024-01-09T10:11:46Z)
   
-* [\[netinfo\] Documents in different languages vary widely](https://github.com/mdn/content/issues/31575) (2024-01-08T09:54:04Z)
-  
 * [\[cssom-1, css-logical-1\] Float seems to be more compatible than cssFloat.](https://github.com/mdn/content/issues/31481) (2024-01-03T09:14:24Z)
   
 * [\[css-display-3\] Wrong Visulation of Display Property](https://github.com/mdn/content/issues/31437) (2023-12-31T18:59:40Z)
