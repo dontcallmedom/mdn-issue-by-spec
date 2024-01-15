@@ -275,62 +275,6 @@ So that rule also disallows</p>
 </ul>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[ecmascript] Include information/section on "Method definitions in object literals"]]></title>
-            <link>https://github.com/mdn/content/issues/29489</link>
-            <guid>https://github.com/mdn/content/issues/29489</guid>
-            <pubDate>Thu, 05 Oct 2023 00:01:28 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions#method_definitions_in_classes" rel="nofollow">Method definitions in classes</a></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto"><em>From my perspective</em>, this is incomplete:</p>
-<blockquote>
-<p dir="auto">Public instance methods are defined on the prototype property of the class and are thus shared by all instances of the class. They are writable, non-enumerable, and configurable.</p>
-</blockquote>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">I'm browsing the documentation because I'm trying to learn the difference between these two:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="class ClassWithPublicInstanceMethod {
-  publicMethod() {
-    return &quot;hello world&quot;;
-  }
-}
-
-const objectLiteralMethod = {
-  publicMethod() {
-    return &quot;hello world&quot;;
-  }
-}"><pre class="notranslate"><span class="pl-k">class</span> <span class="pl-v">ClassWithPublicInstanceMethod</span> <span class="pl-kos">{</span>
-  <span class="pl-en">publicMethod</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-    <span class="pl-k">return</span> <span class="pl-s">"hello world"</span><span class="pl-kos">;</span>
-  <span class="pl-kos">}</span>
-<span class="pl-kos">}</span>
-
-<span class="pl-k">const</span> <span class="pl-s1">objectLiteralMethod</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span>
-  <span class="pl-en">publicMethod</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-    <span class="pl-k">return</span> <span class="pl-s">"hello world"</span><span class="pl-kos">;</span>
-  <span class="pl-kos">}</span>
-<span class="pl-kos">}</span></pre></div>
-<p dir="auto">But as far as I can tell, the article only explains this for classes. If it mentions how this works on object literals, none of the following section names imply that. This also seems like the most appropriate article for this information; if it's documented elsewhere, I'm not sure where else to look.</p>
-<p dir="auto">I found some information in another page: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#method_definitions" rel="nofollow">Object initializer</a>. It doesn't answer my question, but maybe it could be linked to and/or updated to include the answer instead? I don't prefer the latter: I wouldn't expect the information to be there when there's another article title "Method definitions."</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">n/a</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">It might make sense to create a whole new section for this information? This section is called "<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions#method_definitions_in_classes" rel="nofollow">Method definitions in classes</a>", but I'm looking for information regarding "Method definitions in object literals."</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/functions/method_definitions</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/functions/method_definitions/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/functions/method_definitions/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/4f86aad2b0b66c0d2041354ec81400c574ab56ca/hovercard" href="https://github.com/mdn/content/commit/4f86aad2b0b66c0d2041354ec81400c574ab56ca"><tt>4f86aad</tt></a></li>
-<li>Document last modified: 2023-09-12T03:52:28.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[ecmascript] Macrotasks and Microtasks]]></title>
             <link>https://github.com/mdn/content/issues/28795</link>
             <guid>https://github.com/mdn/content/issues/28795</guid>
