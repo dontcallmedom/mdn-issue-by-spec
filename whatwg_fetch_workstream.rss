@@ -4,10 +4,43 @@
         <title>WHATWG Fetch Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_fetch_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG Fetch Workstream</description>
-        <lastBuildDate>Wed, 15 Feb 2023 16:35:17 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 16 Jan 2024 01:34:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[fetch] Missing Request constructor duplex option]]></title>
+            <link>https://github.com/mdn/content/issues/31735</link>
+            <guid>https://github.com/mdn/content/issues/31735</guid>
+            <pubDate>Tue, 16 Jan 2024 01:34:58 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Request/Request" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Request/Request</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Parameters</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The spec has a <code class="notranslate">duplex</code> option, but it's missing from the page</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A note about the parameter, and that it needs to be set to <code class="notranslate">"half"</code> when using a <code class="notranslate">ReadableStream</code> body.</p>
+<p dir="auto">It would also be nice to have a row for browser compatibility.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Spec: <a href="https://fetch.spec.whatwg.org/#request-class" rel="nofollow">https://fetch.spec.whatwg.org/#request-class</a><br>
+Chrome docs (showing how to do half-duplex fetch): <a href="https://developer.chrome.com/docs/capabilities/web-apis/fetch-streaming-requests" rel="nofollow">https://developer.chrome.com/docs/capabilities/web-apis/fetch-streaming-requests</a><br>
+Related web platform test: <a href="https://wpt.fyi/results/fetch/api/request/request-init-stream.any.html?label=master&amp;label=experimental&amp;aligned&amp;q=request-init-stream" rel="nofollow">https://wpt.fyi/results/fetch/api/request/request-init-stream.any.html?label=master&amp;label=experimental&amp;aligned&amp;q=request-init-stream</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">The <code class="notranslate">Request</code> class itself also has a <code class="notranslate">duplex</code> get-only property, so main page (<a href="https://developer.mozilla.org/en-US/docs/Web/API/Request" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Request</a>) is affected and an instance property page is missing too</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/request</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Request" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Request</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/request/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/request/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/261317e8b63f0e8923d38320639919569c4afe47/hovercard" href="https://github.com/mdn/content/commit/261317e8b63f0e8923d38320639919569c4afe47"><tt>261317e</tt></a></li>
+<li>Document last modified: 2023-09-16T16:24:12.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[fetch] `Response.text()` can throw a `TypeError`]]></title>
             <link>https://github.com/mdn/content/issues/24466</link>
