@@ -6,8 +6,6 @@
   
 * [\[cssom-1, css-logical-1\] Float seems to be more compatible than cssFloat.](https://github.com/mdn/content/issues/31481) (2024-01-03T09:14:24Z)
   
-* [\[css-display-3\] Wrong Visulation of Display Property](https://github.com/mdn/content/issues/31437) (2023-12-31T18:59:40Z)
-  
 * [\[css-conditional-3\] CSSConditionRule.conditionText property is readonly](https://github.com/mdn/content/issues/31279) (2023-12-24T22:46:30Z)
   
 * [\[css-color-4\] CSS \`opacity\` property improvements](https://github.com/mdn/content/issues/31190) (2023-12-21T07:28:39Z)
