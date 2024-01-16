@@ -4,8 +4,6 @@
 
 * [\[fetch\] Missing Request constructor duplex option](https://github.com/mdn/content/issues/31735) (2024-01-16T01:34:58Z)
   
-* [\[html\] Incorrect information in the Try It example](https://github.com/mdn/content/issues/31710) (2024-01-13T21:07:27Z)
-  
 * [\[html\] Using Storage change event on same page.](https://github.com/mdn/content/issues/31665) (2024-01-11T19:25:49Z)
   
 * [\[html\] \`\<param\>\` attribute deprecated - missing sources](https://github.com/mdn/content/issues/31523) (2024-01-05T12:39:23Z)
