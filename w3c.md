@@ -16,8 +16,6 @@
   
 * [\[service-workers-1\] Consider renaming Cache API's use of the word "request" to "resource" to align with fetch.](https://github.com/mdn/content/issues/30974) (2023-12-13T04:52:59Z)
   
-* [\[css-overflow-3\] Mouse selection behavior with overflow: auto](https://github.com/mdn/content/issues/30949) (2023-12-12T08:55:56Z)
-  
 * [\[WebCryptoAPI\] SubtleCrypto: sign() method missing Ed25519 in Supported algorithms](https://github.com/mdn/content/issues/30886) (2023-12-09T03:20:17Z)
   
 * [\[css-overflow-3\] \[Incomplete information on doc page\] What is the future of box-orient & line-clamp?](https://github.com/mdn/content/issues/30842) (2023-12-06T23:01:46Z)
