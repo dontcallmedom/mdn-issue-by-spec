@@ -4,10 +4,47 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Thu, 11 Jan 2024 19:25:49 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 17 Jan 2024 10:29:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Wrong or mistakable "<dialog> elements are not top-layer" statement in PopoverAPI introduction]]></title>
+            <link>https://github.com/mdn/content/issues/31757</link>
+            <guid>https://github.com/mdn/content/issues/31757</guid>
+            <pubDate>Wed, 17 Jan 2024 10:29:16 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Popover_API" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Popover_API</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Concepts and usage</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto">[...]although bear in mind that <code class="notranslate">&lt;dialog&gt;</code> elements are not put in the <a href="https://developer.mozilla.org/en-US/docs/Glossary/Top_layer" rel="nofollow">top layer</a> by default[...]</p>
+</blockquote>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">According to the mdn documentation for the <code class="notranslate">&lt;dialog&gt;</code> element dialogs are promoted to the top-layer when visible - so exactly like popovers, and there really is not any difference between popover and dialog with regard to the top-layer usage.<br>
+So as far as I understood the quoted section the statement is wrong. (Maybe it was right with regard to an old draft of the spec?)<br>
+If I misunderstood the meaning of the quoted part then the wording is misleading and would benefit from rewording.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<blockquote>
+<p dir="auto"><code class="notranslate">&lt;dialog&gt;</code>s are set to <code class="notranslate">display: none;</code> when hidden and <code class="notranslate">display: block;</code> when shown, as well as being removed from / added to the <a href="https://developer.mozilla.org/en-US/docs/Glossary/Top_layer" rel="nofollow">top layer</a> and the <a href="https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work#building_the_accessibility_tree" rel="nofollow">accessibility tree</a>.</p>
+</blockquote>
+<p dir="auto">Source: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog#animating_dialogs" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog#animating_dialogs</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/popover_api</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Popover_API" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Popover_API</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/popover_api/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/popover_api/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e492ae4891e1f0a454fd452ee2e67986f8e1150f/hovercard" href="https://github.com/mdn/content/commit/e492ae4891e1f0a454fd452ee2e67986f8e1150f"><tt>e492ae4</tt></a></li>
+<li>Document last modified: 2023-12-21T23:37:24.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Using Storage change event on same page.]]></title>
             <link>https://github.com/mdn/content/issues/31665</link>
@@ -790,7 +827,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU0ODY3NzIsIm5iZiI6MTcwNTQ4NjQ3MiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDExNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAxMTdUMTAxNDMyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTVjY2M4MDQ5OGY1OGFlMzkzYjI2YWZmYmFmM2ZkYzI0ZTYyYjJmN2ViMDIwNmVlZGFiZWU0ODQ1OGQ2NTdiYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Vcw0yMtidIx46N5LyUArC3V3mjlxTjX-OoYP6DOmWfQ"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU0ODY3NzIsIm5iZiI6MTcwNTQ4NjQ3MiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDExNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAxMTdUMTAxNDMyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTVjY2M4MDQ5OGY1OGFlMzkzYjI2YWZmYmFmM2ZkYzI0ZTYyYjJmN2ViMDIwNmVlZGFiZWU0ODQ1OGQ2NTdiYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Vcw0yMtidIx46N5LyUArC3V3mjlxTjX-OoYP6DOmWfQ" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU0ODc4NTcsIm5iZiI6MTcwNTQ4NzU1NywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDExNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAxMTdUMTAzMjM3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ODhhZDZjMmJjNGY2NWZlM2JjNjc2OTcwNWYxZDk5MDM0MTQ5N2I5NDFkMzI2NDYxYWY4NWI5MTRkMTUxZjk5NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.KMG2UPA82AK6rKwNCM5D9FmpCiMowrggEZYm2sFoqD4"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU0ODc4NTcsIm5iZiI6MTcwNTQ4NzU1NywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDExNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAxMTdUMTAzMjM3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ODhhZDZjMmJjNGY2NWZlM2JjNjc2OTcwNWYxZDk5MDM0MTQ5N2I5NDFkMzI2NDYxYWY4NWI5MTRkMTUxZjk5NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.KMG2UPA82AK6rKwNCM5D9FmpCiMowrggEZYm2sFoqD4" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>

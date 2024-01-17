@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Wrong or mistakable "\<dialog\> elements are not top-layer" statement in PopoverAPI introduction](https://github.com/mdn/content/issues/31757) (2024-01-17T10:29:16Z)
+  
 * [\[fetch\] Missing Request constructor duplex option](https://github.com/mdn/content/issues/31735) (2024-01-16T01:34:58Z)
   
 * [\[html\] Using Storage change event on same page.](https://github.com/mdn/content/issues/31665) (2024-01-11T19:25:49Z)
