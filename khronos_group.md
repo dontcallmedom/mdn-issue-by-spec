@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Khronos Group. [![RSS feed for Khronos Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[webgl2, webgl1\] \`texSubImage2D\` documentation does not document the \`source\`, \`srcOffset\` parameters](https://github.com/mdn/content/issues/31787) (2024-01-18T18:45:51Z)
+  
 * [\[webgl1\] SharedArrayBuffer is not usable as a source data parameter.](https://github.com/mdn/content/issues/30749) (2023-12-03T05:06:20Z)
   
 * [\[WEBGL_depth_texture\] Example code on WEBGL_depth_texture gives GL_INVALID_VALUE when run in WebGL 2](https://github.com/mdn/content/issues/30130) (2023-11-08T19:14:29Z)
