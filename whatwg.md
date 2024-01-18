@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] Blog post is very out of date](https://github.com/mdn/content/issues/31790) (2024-01-18T19:21:25Z)
-  
 * [\[html\] Connected or not?](https://github.com/mdn/content/issues/31768) (2024-01-17T18:55:09Z)
   
 * [\[html\] CustomElementRegistry.define() "This feature is not Baseline because it does not work in some of the most widely-used browsers."](https://github.com/mdn/content/issues/31764) (2024-01-17T15:18:46Z)
