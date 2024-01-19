@@ -8,8 +8,6 @@
   
 * [\[css-conditional-3\] CSSConditionRule.conditionText property is readonly](https://github.com/mdn/content/issues/31279) (2023-12-24T22:46:30Z)
   
-* [\[css-color-4\] CSS \`opacity\` property improvements](https://github.com/mdn/content/issues/31190) (2023-12-21T07:28:39Z)
-  
 * [\[resize-observer-1\] How to prevent ResizeObserver Observation errors](https://github.com/mdn/content/issues/31021) (2023-12-15T08:03:20Z)
   
 * [\[css-overflow-3\] \[Incomplete information on doc page\] What is the future of box-orient & line-clamp?](https://github.com/mdn/content/issues/30842) (2023-12-06T23:01:46Z)

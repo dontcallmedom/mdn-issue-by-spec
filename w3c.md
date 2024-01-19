@@ -10,8 +10,6 @@
   
 * [\[css-conditional-3\] CSSConditionRule.conditionText property is readonly](https://github.com/mdn/content/issues/31279) (2023-12-24T22:46:30Z)
   
-* [\[css-color-4\] CSS \`opacity\` property improvements](https://github.com/mdn/content/issues/31190) (2023-12-21T07:28:39Z)
-  
 * [\[resize-observer-1\] How to prevent ResizeObserver Observation errors](https://github.com/mdn/content/issues/31021) (2023-12-15T08:03:20Z)
   
 * [\[service-workers-1\] Consider renaming Cache API's use of the word "request" to "resource" to align with fetch.](https://github.com/mdn/content/issues/30974) (2023-12-13T04:52:59Z)
