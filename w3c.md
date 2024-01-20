@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[SVG11\] SVG preserveAspectRatio documentation flow/ordering is confusing](https://github.com/mdn/content/issues/31825) (2024-01-20T08:32:03Z)
+  
 * [\[css-box-3\] margin-left don't applies to ::first-line](https://github.com/mdn/content/issues/31806) (2024-01-19T15:08:36Z)
   
 * [\[SVG11\] SMIL is not an extension of SVG](https://github.com/mdn/content/issues/31610) (2024-01-09T10:11:46Z)
