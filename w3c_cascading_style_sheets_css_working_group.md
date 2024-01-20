@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-box-3\] margin-left don't applies to ::first-line](https://github.com/mdn/content/issues/31806) (2024-01-19T15:08:36Z)
-  
 * [\[cssom-1, css-logical-1\] Float seems to be more compatible than cssFloat.](https://github.com/mdn/content/issues/31481) (2024-01-03T09:14:24Z)
   
 * [\[css-conditional-3\] CSSConditionRule.conditionText property is readonly](https://github.com/mdn/content/issues/31279) (2023-12-24T22:46:30Z)

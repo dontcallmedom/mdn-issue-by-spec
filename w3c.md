@@ -4,8 +4,6 @@
 
 * [\[SVG11\] SVG preserveAspectRatio documentation flow/ordering is confusing](https://github.com/mdn/content/issues/31825) (2024-01-20T08:32:03Z)
   
-* [\[css-box-3\] margin-left don't applies to ::first-line](https://github.com/mdn/content/issues/31806) (2024-01-19T15:08:36Z)
-  
 * [\[SVG11\] SMIL is not an extension of SVG](https://github.com/mdn/content/issues/31610) (2024-01-09T10:11:46Z)
   
 * [\[cssom-1, css-logical-1\] Float seems to be more compatible than cssFloat.](https://github.com/mdn/content/issues/31481) (2024-01-03T09:14:24Z)
