@@ -76,8 +76,6 @@
   
 * [\[dom\] Document syntax restrictions for functional \`id\`s](https://github.com/mdn/content/issues/28752) (2023-08-25T12:12:43Z)
   
-* [\[html\] Explain why tabindex may not be used on the dialog element](https://github.com/mdn/content/issues/28750) (2023-08-25T10:39:27Z)
-  
 * [\[html\] HTMLElement.dataset: using the \`in\` operator is unsafe](https://github.com/mdn/content/issues/28693) (2023-08-22T08:32:02Z)
   
 * [\[html\] Issue with explanations, and  order of tokens ](https://github.com/mdn/content/issues/28636) (2023-08-17T23:15:09Z)
