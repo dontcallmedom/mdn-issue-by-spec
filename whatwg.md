@@ -10,8 +10,6 @@
   
 * [\[html\] CustomElementRegistry.define() "This feature is not Baseline because it does not work in some of the most widely-used browsers."](https://github.com/mdn/content/issues/31764) (2024-01-17T15:18:46Z)
   
-* [\[html\] Wrong or mistakable "\<dialog\> elements are not top-layer" statement in PopoverAPI introduction](https://github.com/mdn/content/issues/31757) (2024-01-17T10:29:16Z)
-  
 * [\[fetch\] Missing Request constructor duplex option](https://github.com/mdn/content/issues/31735) (2024-01-16T01:34:58Z)
   
 * [\[html\] Using Storage change event on same page.](https://github.com/mdn/content/issues/31665) (2024-01-11T19:25:49Z)
