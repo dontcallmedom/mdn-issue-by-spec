@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[fetch\] Browser compatibility has no column for nodejs](https://github.com/mdn/content/issues/31873) (2024-01-23T22:49:55Z)
-  
 * [\[html\] cancelAnimationFrame using mismatched time values in sample](https://github.com/mdn/content/issues/31840) (2024-01-21T18:53:32Z)
   
 * [\[html\] ambiguous about slash in br tag](https://github.com/mdn/content/issues/31838) (2024-01-21T15:02:38Z)
