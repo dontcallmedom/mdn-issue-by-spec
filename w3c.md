@@ -6,8 +6,6 @@
   
 * [\[css-conditional-3, CSS21\] \`@charset\` is not deprecated](https://github.com/mdn/content/issues/31882) (2024-01-24T07:40:57Z)
   
-* [\[filter-effects-2\] The live rendering is darker than the expected rendering on FF and WebKitGTK ](https://github.com/mdn/content/issues/31860) (2024-01-23T12:51:38Z)
-  
 * [\[SVG11\] SVG preserveAspectRatio documentation flow/ordering is confusing](https://github.com/mdn/content/issues/31825) (2024-01-20T08:32:03Z)
   
 * [\[SVG11\] SMIL is not an extension of SVG](https://github.com/mdn/content/issues/31610) (2024-01-09T10:11:46Z)
