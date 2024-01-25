@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Default focus for \<dialog\> no longer accurate?](https://github.com/mdn/content/issues/31917) (2024-01-25T17:54:36Z)
+  
 * [\[html\] cancelAnimationFrame using mismatched time values in sample](https://github.com/mdn/content/issues/31840) (2024-01-21T18:53:32Z)
   
 * [\[html\] ambiguous about slash in br tag](https://github.com/mdn/content/issues/31838) (2024-01-21T15:02:38Z)
