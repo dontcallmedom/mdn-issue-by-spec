@@ -114,8 +114,6 @@
   
 * [\[dom\] More information about what HTMLCollection is replaced with](https://github.com/mdn/content/issues/26470) (2023-04-28T04:34:16Z)
   
-* [\[html\] Some issues / inconsistencies on the \<tr\> reference page](https://github.com/mdn/content/issues/26088) (2023-04-10T14:59:46Z)
-  
 * [\[html\] Missing documentation of methods and properties of \`HTMLOptionsCollections\`](https://github.com/mdn/content/issues/25190) (2023-03-09T02:30:04Z)
   
 * [\[html\] event doesnt fire on fully cached pages (no event appears to)](https://github.com/mdn/content/issues/24770) (2023-02-22T21:34:14Z)
