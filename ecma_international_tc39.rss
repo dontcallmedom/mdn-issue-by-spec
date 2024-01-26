@@ -4,10 +4,45 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Thu, 11 Jan 2024 02:32:17 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 26 Jan 2024 05:14:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] [JavaScript] Date.parse only checks first 3 characters of month name]]></title>
+            <link>https://github.com/mdn/content/issues/31930</link>
+            <guid>https://github.com/mdn/content/issues/31930</guid>
+            <pubDate>Fri, 26 Jan 2024 05:14:17 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 dir="auto">Acceptance Criteria</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> The listed features are documented sufficiently on MDN</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> BCD is updated - NA</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Interactive example and data repos are updated if appropriate - NA</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> The content has been reviewed as needed</li>
+</ul>
+<h3 dir="auto">For folks helping with Firefox related documentation</h3>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Set bugs to <code class="notranslate">dev-doc-complete</code></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Add entry to Firefox release notes if feature is enabled in release</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Add entry to Firefox experimental features page if feature is not yet enabled in release</li>
+</ul>
+<h2 dir="auto">Features to document</h2>
+<p dir="auto">There is only <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#date_time_string_format" rel="nofollow">one standard date format</a> that all browsers support: <code class="notranslate">YYYY-MM-DDTHH:mm:ss.sssZ</code>.</p>
+<ul dir="auto">
+<li>But most browsers take non-standard formats like "December 17, 1995".</li>
+<li>Other browsers just use the first three letters, so above Dec, Dece, December, DecLemberXxx would work, but De or Fje would not.</li>
+<li>Firefox previously supported any substring of the correct name <code class="notranslate">Dec[ember]</code>, but now it matches the others. It's a little less good, but more consistent.</li>
+</ul>
+<p dir="auto">It isn't standardized so there is no way to report this in compat. But reasonable to provide a brief update in <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#non-standard_date_strings" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#non-standard_date_strings</a> and a release note.</p>
+<h2 dir="auto">Related Gecko bugs</h2>
+<p dir="auto"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1862910" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=1862910</a></p>
+<h2 dir="auto">Other</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Check content open issues to see if any pertain to the subject matter. If there are any that can be closed because of the work, do so. If there are any that can be fixed relatively quickly because of the knowledge from completing this issue and you have time, feel free to go ahead and fix them.</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Check if glossary updates are required for the feature you're documenting - whether an existing term needs to be updated or a new term should be added.</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Check if BCD update means that content pages need to have experimental markup removed or deprecated markup added (front matter tags and macros).</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] What's the difference between a class prototype property and a function prototype property?]]></title>
             <link>https://github.com/mdn/content/issues/31649</link>
