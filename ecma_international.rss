@@ -4,46 +4,10 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Thu, 25 Jan 2024 22:15:39 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 11 Jan 2024 02:32:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript] parseInt with 0x and 0]]></title>
-            <link>https://github.com/mdn/content/issues/31921</link>
-            <guid>https://github.com/mdn/content/issues/31921</guid>
-            <pubDate>Thu, 25 Jan 2024 22:15:39 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Description</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">If the input string, with leading whitespace and possible +/- signs removed, begins with 0x or 0X (a zero, followed by lowercase or uppercase X), radix is assumed to be 16 and the rest of the string is parsed as a hexadecimal number.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">If the input string, with leading whitespace and possible +/- signs removed, begins with 0x or 0X (a zero, followed by lowercase or uppercase X), radix is assumed to be 10 and the rest of the string is parsed as a hexadecimal number.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">Maybe I misunderstand this, but the fallowing javascript produces 16:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="parseInt(0xa, 16);"><pre class="notranslate"><span class="pl-en">parseInt</span><span class="pl-kos">(</span><span class="pl-c1">0xa</span><span class="pl-kos">,</span> <span class="pl-c1">16</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
-<p dir="auto">While the fallowing produces 10:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="parseInt(0xa, 10);"><pre class="notranslate"><span class="pl-en">parseInt</span><span class="pl-kos">(</span><span class="pl-c1">0xa</span><span class="pl-kos">,</span> <span class="pl-c1">10</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
-<p dir="auto">And the fallowing also produces 10:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="parseInt(0xa, 0);"><pre class="notranslate"><span class="pl-en">parseInt</span><span class="pl-kos">(</span><span class="pl-c1">0xa</span><span class="pl-kos">,</span> <span class="pl-c1">0</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
-<p dir="auto">So it seems to me, that 0 is behaving as 10 not as 16.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/parseint</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/parseint/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/parseint/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/a3102e6154717a0dda3f3e1b759b1c9e0f0b7275/hovercard" href="https://github.com/mdn/content/commit/a3102e6154717a0dda3f3e1b759b1c9e0f0b7275"><tt>a3102e6</tt></a></li>
-<li>Document last modified: 2023-12-29T14:17:41.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[ecmascript] What's the difference between a class prototype property and a function prototype property?]]></title>
             <link>https://github.com/mdn/content/issues/31649</link>

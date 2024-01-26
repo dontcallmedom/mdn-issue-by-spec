@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by IETF. [![RSS feed for IETF-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[rfc7230\] Connection: Keep-Alive - Docs state it is blocked in Safari when using HTTP2/3, is no longer blocked](https://github.com/mdn/content/issues/31923) (2024-01-25T15:23:54Z)
+  
 * [\[rfc7230\] Please document why browsers typically send \`Connection: keep-alive\` despite that being the default](https://github.com/mdn/content/issues/31291) (2023-12-25T23:49:08Z)
   
 * [\[rfc7231\] Retry-After doesn't suggest what to do for \`Retry-After: 0\`](https://github.com/mdn/content/issues/28330) (2023-08-01T21:56:14Z)
