@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[uievents\] Deprecated vent property keyCode is used in examples, but also not explained](https://github.com/mdn/content/issues/31988) (2024-01-29T19:24:13Z)
+  
 * [\[clipboard-apis\] Clipboard API not compatible for Safari](https://github.com/mdn/content/issues/31983) (2024-01-29T14:44:46Z)
   
 * [\[css-shadow-parts-1\] WRONG: wrong warning for \`CSS\` \`::part()\`. It warns "Limited availability", but actually not.](https://github.com/mdn/content/issues/31932) (2024-01-26T06:25:46Z)
