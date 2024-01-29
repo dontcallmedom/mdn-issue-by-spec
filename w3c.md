@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[clipboard-apis\] Clipboard API not compatible for Safari](https://github.com/mdn/content/issues/31983) (2024-01-29T14:44:46Z)
+  
 * [\[css-shadow-parts-1\] WRONG: wrong warning for \`CSS\` \`::part()\`. It warns "Limited availability", but actually not.](https://github.com/mdn/content/issues/31932) (2024-01-26T06:25:46Z)
   
 * [\[selectors-4\] No mention of blank page pseudo-class](https://github.com/mdn/content/issues/31885) (2024-01-24T10:43:17Z)
