@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] CSS :defined says "limited availability" despite meeting Baseline requirements according to browser support table](https://github.com/mdn/content/issues/32008) (2024-01-30T17:14:44Z)
-  
 * [\[html\] No mention of "as" attribute](https://github.com/mdn/content/issues/31960) (2024-01-28T03:54:55Z)
   
 * [\[html\] cancelAnimationFrame using mismatched time values in sample](https://github.com/mdn/content/issues/31840) (2024-01-21T18:53:32Z)
@@ -11,8 +9,6 @@
 * [\[html\] ambiguous about slash in br tag](https://github.com/mdn/content/issues/31838) (2024-01-21T15:02:38Z)
   
 * [\[html\] Connected or not?](https://github.com/mdn/content/issues/31768) (2024-01-17T18:55:09Z)
-  
-* [\[html\] CustomElementRegistry.define() "This feature is not Baseline because it does not work in some of the most widely-used browsers."](https://github.com/mdn/content/issues/31764) (2024-01-17T15:18:46Z)
   
 * [\[fetch\] Missing Request constructor duplex option](https://github.com/mdn/content/issues/31735) (2024-01-16T01:34:58Z)
   
