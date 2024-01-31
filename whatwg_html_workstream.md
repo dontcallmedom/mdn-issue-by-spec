@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] First sentence very academic and hard to understand](https://github.com/mdn/content/issues/32042) (2024-01-31T22:17:25Z)
+  
 * [\[html\] No mention of "as" attribute](https://github.com/mdn/content/issues/31960) (2024-01-28T03:54:55Z)
   
 * [\[html\] cancelAnimationFrame using mismatched time values in sample](https://github.com/mdn/content/issues/31840) (2024-01-21T18:53:32Z)
