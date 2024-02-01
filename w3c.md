@@ -8,8 +8,6 @@
   
 * [\[clipboard-apis\] Clipboard API not compatible for Safari](https://github.com/mdn/content/issues/31983) (2024-01-29T14:44:46Z)
   
-* [\[css-shadow-parts-1\] WRONG: wrong warning for \`CSS\` \`::part()\`. It warns "Limited availability", but actually not.](https://github.com/mdn/content/issues/31932) (2024-01-26T06:25:46Z)
-  
 * [\[selectors-4\] No mention of blank page pseudo-class](https://github.com/mdn/content/issues/31885) (2024-01-24T10:43:17Z)
   
 * [\[css-conditional-3, CSS21\] \`@charset\` is not deprecated](https://github.com/mdn/content/issues/31882) (2024-01-24T07:40:57Z)

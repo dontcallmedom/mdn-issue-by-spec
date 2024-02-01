@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-shadow-parts-1\] WRONG: wrong warning for \`CSS\` \`::part()\`. It warns "Limited availability", but actually not.](https://github.com/mdn/content/issues/31932) (2024-01-26T06:25:46Z)
-  
 * [\[selectors-4\] No mention of blank page pseudo-class](https://github.com/mdn/content/issues/31885) (2024-01-24T10:43:17Z)
   
 * [\[css-conditional-3, CSS21\] \`@charset\` is not deprecated](https://github.com/mdn/content/issues/31882) (2024-01-24T07:40:57Z)
