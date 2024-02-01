@@ -4,8 +4,6 @@
 
 * [\[html\] No mention of buffered attribute](https://github.com/mdn/content/issues/32048) (2024-02-01T07:27:59Z)
   
-* [\[html\] First sentence very academic and hard to understand](https://github.com/mdn/content/issues/32042) (2024-01-31T22:17:25Z)
-  
 * [\[html\] No mention of "as" attribute](https://github.com/mdn/content/issues/31960) (2024-01-28T03:54:55Z)
   
 * [\[html\] cancelAnimationFrame using mismatched time values in sample](https://github.com/mdn/content/issues/31840) (2024-01-21T18:53:32Z)
