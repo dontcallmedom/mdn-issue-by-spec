@@ -4,44 +4,10 @@
         <title>W3C Web Platform Incubator Community Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_platform_incubator_community_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Platform Incubator Community Group</description>
-        <lastBuildDate>Wed, 31 Jan 2024 17:54:16 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Oct 2023 19:12:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[speech-api] Edge does not actually support SpeechRecognition Web Speech API]]></title>
-            <link>https://github.com/mdn/content/issues/32033</link>
-            <guid>https://github.com/mdn/content/issues/32033</guid>
-            <pubDate>Wed, 31 Jan 2024 17:54:16 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Browser compatibility</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Microsoft Edge does not actually support the SpeechRecognition Web Speech API. It's listed that it is "Implemented with the vendor prefix: webkit." While using it does not generate any errors, the implementation does nothing. No results are ever returned.</p>
-<p dir="auto">This may be an issue of semantics. Does implementing with a no-op count as implementing? :-)</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The Edge column should either have a "No" or a warning sign because the implementation is broken.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">Two users have tested on two different devices, each on two separate pages (4 total tests). For all of them, Chrome's speech recognition works correctly, and Edge never returns any results.</p>
-<p dir="auto">n=4 isn't huge, but it's been consistent. I also believe this issue is known by Edge.</p>
-<p dir="auto">Here's an example test page this can be used to verify SpeechRecognition on the Web Speech API:<br>
-<a href="https://www.google.com/intl/en/chrome/demos/speech.html" rel="nofollow">https://www.google.com/intl/en/chrome/demos/speech.html</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/speechrecognition</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/speechrecognition/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/speechrecognition/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/6b1e3eebf22abf1b73bb219581335b1147b75d7a/hovercard" href="https://github.com/mdn/content/commit/6b1e3eebf22abf1b73bb219581335b1147b75d7a"><tt>6b1e3ee</tt></a></li>
-<li>Document last modified: 2023-03-12T09:29:44.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[keyboard-map, keyboard-lock] Missing `Keyboard` interface `layoutchange` event]]></title>
             <link>https://github.com/mdn/content/issues/29762</link>
