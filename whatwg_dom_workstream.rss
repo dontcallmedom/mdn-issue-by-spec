@@ -611,19 +611,20 @@ ctrl.abort();
 <p dir="auto">was updated to point from a broken mdn link to a specification page on w3.org. However, this page doesn't actually have the promised utility method.</p>
 <p dir="auto">The source code that the link alludes to is actually present on the mdn page at internet archive: <a href="https://web.archive.org/web/20140408083257/https://developer.mozilla.org/en-US/docs/xml/xml:id" rel="nofollow">https://web.archive.org/web/20140408083257/https://developer.mozilla.org/en-US/docs/xml/xml:id</a><br>
 the code in question is a simple xpath method:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="var getElementByIdWrapper = function (xmldoc, myID) {
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="var getElementByIdWrapper = function (xmldoc, myID) {
         return xmldoc.evaluate('//*[@xml:id=&quot;'+myID+'&quot;]', xmldoc, 
                 function () {
                   return 'http://www.w3.org/XML/1998/namespace';},
                 XPathResult.FIRST_ORDERED_NODE_TYPE, 
                 null).singleNodeValue;
-};"><pre class="notranslate"><span class="pl-k">var</span> <span class="pl-en">getElementByIdWrapper</span> <span class="pl-c1">=</span> <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-s1">xmldoc</span><span class="pl-kos">,</span> <span class="pl-s1">myID</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-        <span class="pl-k">return</span> <span class="pl-s1">xmldoc</span><span class="pl-kos">.</span><span class="pl-en">evaluate</span><span class="pl-kos">(</span><span class="pl-s">'//*[@xml:id="'</span><span class="pl-c1">+</span><span class="pl-s1">myID</span><span class="pl-c1">+</span><span class="pl-s">'"]'</span><span class="pl-kos">,</span> <span class="pl-s1">xmldoc</span><span class="pl-kos">,</span> 
-                <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-                  <span class="pl-k">return</span> <span class="pl-s">'http://www.w3.org/XML/1998/namespace'</span><span class="pl-kos">;</span><span class="pl-kos">}</span><span class="pl-kos">,</span>
-                <span class="pl-v">XPathResult</span><span class="pl-kos">.</span><span class="pl-c1">FIRST_ORDERED_NODE_TYPE</span><span class="pl-kos">,</span> 
-                <span class="pl-c1">null</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">singleNodeValue</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span><span class="pl-kos">;</span></pre></div>
+};"><pre lang="js" class="notranslate"><code class="notranslate">var getElementByIdWrapper = function (xmldoc, myID) {
+        return xmldoc.evaluate('//*[@xml:id="'+myID+'"]', xmldoc, 
+                function () {
+                  return 'http://www.w3.org/XML/1998/namespace';},
+                XPathResult.FIRST_ORDERED_NODE_TYPE, 
+                null).singleNodeValue;
+};
+</code></pre></div>
 <p dir="auto">I'm not sure if it makes sense to include this code in-line on this doc page, for most people it'd probably introduce more confusion, however in my specific case I was actually looking for this code and didn't understand why it wasn't available on the linked w3.org page.</p>
 <h4 dir="auto">Specific section or headline?</h4>
 <p dir="auto">"See also"</p>
