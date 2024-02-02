@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[SVG11\] The \`x\` and \`y\` attributes on text is actually a list](https://github.com/mdn/content/issues/32081) (2024-02-02T15:10:47Z)
+  
 * [\[web-share\] The 'Sharing Files' example doesn't work on iOS](https://github.com/mdn/content/issues/32019) (2024-01-31T00:04:43Z)
   
 * [\[uievents\] Deprecated event property keyCode is used in examples, but also not explained](https://github.com/mdn/content/issues/31988) (2024-01-29T19:24:13Z)

@@ -4,50 +4,10 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Fri, 02 Feb 2024 13:52:05 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 26 Jan 2024 05:14:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript] Wrong code snippet in async function documentation]]></title>
-            <link>https://github.com/mdn/content/issues/32078</link>
-            <guid>https://github.com/mdn/content/issues/32078</guid>
-            <pubDate>Fri, 02 Feb 2024 13:52:05 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Example following "The body of an async function can be thought of as being split by zero or more await expressions. &lt;...&gt;"</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The return statement was missing in one of the code snippets for them to be equivalent to one another.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="async function foo() {
-  return await 1;
-}"><pre class="notranslate"><span class="pl-k">async</span> <span class="pl-k">function</span> <span class="pl-en">foo</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-  <span class="pl-k">return</span> <span class="pl-k">await</span> <span class="pl-c1">1</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span></pre></div>
-<p dir="auto">To be shown as equivalent to the code snippet below:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function foo() {
-  return Promise.resolve(1).then(() =&gt; undefined);
-}"><pre class="notranslate"><span class="pl-k">function</span> <span class="pl-en">foo</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-  <span class="pl-k">return</span> <span class="pl-v">Promise</span><span class="pl-kos">.</span><span class="pl-en">resolve</span><span class="pl-kos">(</span><span class="pl-c1">1</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-c1">undefined</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span></pre></div>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/statements/async_function</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/async_function/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/async_function/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b15c892914bbaa51a8c8f288426ebc6d5c1d57f8/hovercard" href="https://github.com/mdn/content/commit/b15c892914bbaa51a8c8f288426ebc6d5c1d57f8"><tt>b15c892</tt></a></li>
-<li>Document last modified: 2024-01-12T13:09:47.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[ecmascript] [JavaScript] Date.parse only checks first 3 characters of month name]]></title>
             <link>https://github.com/mdn/content/issues/31930</link>
