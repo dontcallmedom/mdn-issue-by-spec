@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[ecmascript\] Wrong code snippet in async function documentation](https://github.com/mdn/content/issues/32078) (2024-02-02T13:52:05Z)
+  
 * [\[ecmascript\] \[JavaScript\] Date.parse only checks first 3 characters of month name](https://github.com/mdn/content/issues/31930) (2024-01-26T05:14:17Z)
   
 * [\[ecmascript\] What's the difference between a class prototype property and a function prototype property?](https://github.com/mdn/content/issues/31649) (2024-01-11T02:32:17Z)
