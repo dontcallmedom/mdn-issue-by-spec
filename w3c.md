@@ -12,6 +12,8 @@
   
 * [\[clipboard-apis\] Clipboard API not compatible for Safari](https://github.com/mdn/content/issues/31983) (2024-01-29T14:44:46Z)
   
+* [\[cssom-view-1\] Add "window.pageYOffset" and "window.pageXoffset" attributes description](https://github.com/mdn/content/issues/32102) (2024-01-26T08:25:53Z)
+  
 * [\[selectors-4\] No mention of blank page pseudo-class](https://github.com/mdn/content/issues/31885) (2024-01-24T10:43:17Z)
   
 * [\[css-conditional-3, CSS21\] \`@charset\` is not deprecated](https://github.com/mdn/content/issues/31882) (2024-01-24T07:40:57Z)
