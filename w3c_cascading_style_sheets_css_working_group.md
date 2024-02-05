@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-masking-1\] mask-position Initial value](https://github.com/mdn/content/issues/32119) (2024-02-05T09:16:09Z)
+  
 * [\[cssom-view-1\] Add "window.pageYOffset" and "window.pageXoffset" attributes description](https://github.com/mdn/content/issues/32102) (2024-01-26T08:25:53Z)
   
 * [\[selectors-4\] No mention of blank page pseudo-class](https://github.com/mdn/content/issues/31885) (2024-01-24T10:43:17Z)
