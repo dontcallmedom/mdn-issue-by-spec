@@ -8,8 +8,6 @@
   
 * [\[css-conditional-3, CSS21\] \`@charset\` is not deprecated](https://github.com/mdn/content/issues/31882) (2024-01-24T07:40:57Z)
   
-* [\[cssom-1, css-logical-1\] Float seems to be more compatible than cssFloat.](https://github.com/mdn/content/issues/31481) (2024-01-03T09:14:24Z)
-  
 * [\[css-conditional-3\] CSSConditionRule.conditionText property is readonly](https://github.com/mdn/content/issues/31279) (2023-12-24T22:46:30Z)
   
 * [\[resize-observer-1\] How to prevent ResizeObserver Observation errors](https://github.com/mdn/content/issues/31021) (2023-12-15T08:03:20Z)
