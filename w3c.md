@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[web-share\] Navigator: share() live example missing permission](https://github.com/mdn/content/issues/32130) (2024-02-05T20:27:54Z)
+  
 * [\[css-masking-1\] mask-position Initial value](https://github.com/mdn/content/issues/32119) (2024-02-05T09:16:09Z)
   
 * [\[SVG11\] The \`x\` and \`y\` attributes on text is actually a list](https://github.com/mdn/content/issues/32081) (2024-02-02T15:10:47Z)
