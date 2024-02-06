@@ -14,8 +14,6 @@
   
 * [\[html\] Using Storage change event on same page.](https://github.com/mdn/content/issues/31665) (2024-01-11T19:25:49Z)
   
-* [\[html\] \`\<param\>\` attribute deprecated - missing sources](https://github.com/mdn/content/issues/31523) (2024-01-05T12:39:23Z)
-  
 * [\[html\] code example is not referring to location interface](https://github.com/mdn/content/issues/31498) (2024-01-03T21:04:58Z)
   
 * [\[html\] DOMContentLoaded does not fire in LiveSample](https://github.com/mdn/content/issues/31229) (2023-12-22T18:04:00Z)

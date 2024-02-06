@@ -172,44 +172,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] `<param>` attribute deprecated - missing sources]]></title>
-            <link>https://github.com/mdn/content/issues/31523</link>
-            <guid>https://github.com/mdn/content/issues/31523</guid>
-            <pubDate>Fri, 05 Jan 2024 12:39:23 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/param" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/param</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">deprecated: <code class="notranslate">&lt;param&gt;</code>: The Object Parameter element</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">It is said that this element is deprecated, contrary to multiple sources. It was deprived of a very specific behavior, but there are still use cases like providing dynamic parameters to an SVG image.</p>
-<ul dir="auto">
-<li><a href="https://chromestatus.com/feature/6283184588193792" rel="nofollow">https://chromestatus.com/feature/6283184588193792</a> &lt;-- <code class="notranslate">&lt;param&gt;</code> was not removed, just a particular behaviour/attribute is no longer a part of its implementation</li>
-</ul>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Either sources for deprecation statement (along with W3C recommendation or a doc) and a verified link to one of browsers' code that would suggest <code class="notranslate">&lt;param&gt;</code> element removal.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<ul dir="auto">
-<li><a href="https://chromestatus.com/feature/6283184588193792" rel="nofollow">https://chromestatus.com/feature/6283184588193792</a></li>
-<li><a href="https://www.w3.org/TR/SVGParamPrimer/" rel="nofollow">https://www.w3.org/TR/SVGParamPrimer/</a></li>
-<li><a href="https://www.w3.org/TR/2012/WD-html-markup-20121025/param.html" rel="nofollow">https://www.w3.org/TR/2012/WD-html-markup-20121025/param.html</a> - pretty old</li>
-<li>latest spec: <a href="https://html.spec.whatwg.org/" rel="nofollow">https://html.spec.whatwg.org/</a> (no word about  element being deprecated or obsolete)</li>
-</ul>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/html/element/param</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/param" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/param</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/param/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/param/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/942a529383ee7ee3996fb234187641c08935f3ff/hovercard" href="https://github.com/mdn/content/commit/942a529383ee7ee3996fb234187641c08935f3ff"><tt>942a529</tt></a></li>
-<li>Document last modified: 2023-04-13T06:13:15.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] code example is not referring to location interface]]></title>
             <link>https://github.com/mdn/content/issues/31498</link>
             <guid>https://github.com/mdn/content/issues/31498</guid>
@@ -872,7 +834,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDcyMTM1OTIsIm5iZiI6MTcwNzIxMzI5MiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIwNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMDZUMDk1NDUyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDU1ODMyZWQyYTI2MTEyZjc3YThjMGE4MjFlNjY0MzA1MjQxZDNmZDFlNDZjNzAyMzU2NGU5ZGYxYTVhNTFmNCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.HMnReoDVRN8vnt5m2Gw55298i6VYtIPsyedO_iJ3JfM"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDcyMTM1OTIsIm5iZiI6MTcwNzIxMzI5MiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIwNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMDZUMDk1NDUyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDU1ODMyZWQyYTI2MTEyZjc3YThjMGE4MjFlNjY0MzA1MjQxZDNmZDFlNDZjNzAyMzU2NGU5ZGYxYTVhNTFmNCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.HMnReoDVRN8vnt5m2Gw55298i6VYtIPsyedO_iJ3JfM" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDcyMTQ2OTQsIm5iZiI6MTcwNzIxNDM5NCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIwNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMDZUMTAxMzE0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9N2E3ZDMxZWEwMDAwYTFkMTgxNDkyNmZjMmMzOTM3MzI0ZTNhMTE3MTExOWNkMWQ0NDJiMDUzZTJiNjVjMjg2OSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.aXjujV2tZy1b0RLNT2roUhxlwhfxOFQhrjbZ0YTPJ5k"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDcyMTQ2OTQsIm5iZiI6MTcwNzIxNDM5NCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIwNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMDZUMTAxMzE0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9N2E3ZDMxZWEwMDAwYTFkMTgxNDkyNmZjMmMzOTM3MzI0ZTNhMTE3MTExOWNkMWQ0NDJiMDUzZTJiNjVjMjg2OSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.aXjujV2tZy1b0RLNT2roUhxlwhfxOFQhrjbZ0YTPJ5k" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
