@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-shadow-parts-1\] Baseline widget incorrectly indicates "Limited availability"](https://github.com/mdn/content/issues/32138) (2024-02-06T07:37:29Z)
+  
 * [\[web-share\] Navigator: share() live example missing permission](https://github.com/mdn/content/issues/32130) (2024-02-05T20:27:54Z)
   
 * [\[css-masking-1\] mask-position Initial value](https://github.com/mdn/content/issues/32119) (2024-02-05T09:16:09Z)
