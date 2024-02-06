@@ -8,8 +8,6 @@
   
 * [\[uievents\] Deprecated event property keyCode is used in examples, but also not explained](https://github.com/mdn/content/issues/31988) (2024-01-29T19:24:13Z)
   
-* [\[clipboard-apis\] Clipboard API not compatible for Safari](https://github.com/mdn/content/issues/31983) (2024-01-29T14:44:46Z)
-  
 * [\[push-api\] Web Push userVisibleOnly Details](https://github.com/mdn/content/issues/30077) (2023-11-06T21:13:53Z)
   
 * [\[html, cssom-view-1, dom, uievents, pointerlock-2, selection-api, page-visibility-2\] Keydown, keyup, keypress pages should mention they work on document, body, etc](https://github.com/mdn/content/issues/28561) (2023-08-14T20:14:56Z)
