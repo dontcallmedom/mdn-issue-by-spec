@@ -4,10 +4,46 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Tue, 06 Feb 2024 14:39:35 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 07 Feb 2024 12:06:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html, selectors-4] input type time and datetime-local don't match :out-of-range]]></title>
+            <link>https://github.com/mdn/content/issues/32156</link>
+            <guid>https://github.com/mdn/content/issues/32156</guid>
+            <pubDate>Wed, 07 Feb 2024 12:06:32 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/max" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/max</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Syntax</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">"Note: When the data entered by the user doesn't adhere to the maximum value set, the value is considered invalid in constraint validation and will match the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:invalid" rel="nofollow">:invalid</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:out-of-range" rel="nofollow">:out-of-range</a> pseudo-classes."</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Clarifying information about input type date and datetime-local</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://codepen.io/Akindin/pen/yLwqvvJ" rel="nofollow">https://codepen.io/Akindin/pen/yLwqvvJ</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Was tested in<br>
+Google Chrome Version 121.0.6167.140 (Official Build) (64-bit)<br>
+Yandex Browser 24.1.0.2571 (64-bit)<br>
+Mozilla Firefox 122.0.1 (64-bit)<br>
+Edge Version 121.0.2277.98 (64-bit)<br>
+Opera One(version: 106.0.4998.70)<br>
+Brave [Version 1.62.156]</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/attributes/max</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/max" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/max</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/attributes/max/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/attributes/max/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/940cd0b4ec3a07a5d5895459145cee15065fbb2c/hovercard" href="https://github.com/mdn/content/commit/940cd0b4ec3a07a5d5895459145cee15065fbb2c"><tt>940cd0b</tt></a></li>
+<li>Document last modified: 2023-04-17T00:05:31.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Wrong advice]]></title>
             <link>https://github.com/mdn/content/issues/32140</link>
@@ -865,7 +901,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDczMDcwNTYsIm5iZiI6MTcwNzMwNjc1NiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIwNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMDdUMTE1MjM2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NGJlZTY2MzExOWYzMWMzYzUyYmU4ZTYwM2I0OThjYTAzYzA5ZWJjMmE5ZWVhMzRiZmEyZGM1MmVjZmQ1YTA0MSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.2KxFdwD1GUspA5gB3Ae-HjXQgTNumVD-lXKB4QHNnSo"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDczMDcwNTYsIm5iZiI6MTcwNzMwNjc1NiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIwNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMDdUMTE1MjM2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NGJlZTY2MzExOWYzMWMzYzUyYmU4ZTYwM2I0OThjYTAzYzA5ZWJjMmE5ZWVhMzRiZmEyZGM1MmVjZmQ1YTA0MSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.2KxFdwD1GUspA5gB3Ae-HjXQgTNumVD-lXKB4QHNnSo" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDczMDg0MTMsIm5iZiI6MTcwNzMwODExMywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIwNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMDdUMTIxNTEzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjRiMGI1OWJhMzAwOWE1ZDYwMzFmZTUzNjFkZGUxNDE3NTE5YTg1NDZmMzVkNGUxNWE1ZDBiYzU5MDJlNmE4NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.s6ITU-319fLwxqw5sv6e6tN1UkF9cOh1fSxTTswn1wc"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDczMDg0MTMsIm5iZiI6MTcwNzMwODExMywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIwNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMDdUMTIxNTEzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjRiMGI1OWJhMzAwOWE1ZDYwMzFmZTUzNjFkZGUxNDE3NTE5YTg1NDZmMzVkNGUxNWE1ZDBiYzU5MDJlNmE4NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.s6ITU-319fLwxqw5sv6e6tN1UkF9cOh1fSxTTswn1wc" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>

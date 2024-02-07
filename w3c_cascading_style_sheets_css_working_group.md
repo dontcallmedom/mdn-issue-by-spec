@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, selectors-4\] input type time and datetime-local don't match :out-of-range](https://github.com/mdn/content/issues/32156) (2024-02-07T12:06:32Z)
+  
 * [\[cssom-view-1\] The example does not render](https://github.com/mdn/content/issues/32145) (2024-02-06T19:30:00Z)
   
 * [\[css-shadow-parts-1\] Baseline widget incorrectly indicates "Limited availability"](https://github.com/mdn/content/issues/32138) (2024-02-06T07:37:29Z)
