@@ -96,8 +96,6 @@
   
 * [\[html, cssom-view-1\] window.open() has a partial list of features](https://github.com/mdn/content/issues/27357) (2023-06-15T19:36:20Z)
   
-* [\[geolocation-API\] Outdated info about what APIs browsers support to query via Permissions API](https://github.com/mdn/content/issues/27341) (2023-06-15T09:24:16Z)
-  
 * [\[IndexedDB-3\] "Using IndexedDB" guide seems to be out of sync with the more specific documentation](https://github.com/mdn/content/issues/27330) (2023-06-14T18:17:39Z)
   
 * [\[webrtc\] api.RTCDataChannel.send - Wrong or obsolete exception list](https://github.com/mdn/content/issues/30909) (2023-05-16T11:38:12Z)
