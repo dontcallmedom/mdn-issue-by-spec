@@ -6,8 +6,6 @@
   
 * [\[cssom-view-1\] The example does not render](https://github.com/mdn/content/issues/32145) (2024-02-06T19:30:00Z)
   
-* [\[css-shadow-parts-1\] Baseline widget incorrectly indicates "Limited availability"](https://github.com/mdn/content/issues/32138) (2024-02-06T07:37:29Z)
-  
 * [\[web-share\] Navigator: share() live example missing permission](https://github.com/mdn/content/issues/32130) (2024-02-05T20:27:54Z)
   
 * [\[css-masking-1\] mask-position Initial value](https://github.com/mdn/content/issues/32119) (2024-02-05T09:16:09Z)

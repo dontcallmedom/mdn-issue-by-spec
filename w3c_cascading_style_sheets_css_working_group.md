@@ -6,8 +6,6 @@
   
 * [\[cssom-view-1\] The example does not render](https://github.com/mdn/content/issues/32145) (2024-02-06T19:30:00Z)
   
-* [\[css-shadow-parts-1\] Baseline widget incorrectly indicates "Limited availability"](https://github.com/mdn/content/issues/32138) (2024-02-06T07:37:29Z)
-  
 * [\[css-masking-1\] mask-position Initial value](https://github.com/mdn/content/issues/32119) (2024-02-05T09:16:09Z)
   
 * [\[cssom-view-1\] Add "window.pageYOffset" and "window.pageXoffset" attributes description](https://github.com/mdn/content/issues/32102) (2024-01-26T08:25:53Z)
