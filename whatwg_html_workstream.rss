@@ -4,10 +4,40 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Wed, 07 Feb 2024 12:06:32 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 08 Feb 2024 03:54:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Col as a child of colgroup]]></title>
+            <link>https://github.com/mdn/content/issues/32172</link>
+            <guid>https://github.com/mdn/content/issues/32172</guid>
+            <pubDate>Thu, 08 Feb 2024 03:54:24 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Introduction paragraph</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The para makes it sound like col must be in a colgroup, but that is not true</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Rewrite the paragraph to clarify its intent without leading to this misconception</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://www.w3.org/TR/html401/struct/tables.html#h-11.2.4.2%22%3EW3C:~:text=They%20may%20appear%20inside%20or%20outside%20an%20explicit%20column%20group%20(i.e.%2C%20COLGROUP%20element)" rel="nofollow">https://www.w3.org/TR/html401/struct/tables.html#h-11.2.4.2%22%3EW3C:~:text=They%20may%20appear%20inside%20or%20outside%20an%20explicit%20column%20group%20(i.e.%2C%20COLGROUP%20element)</a>.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/element/col</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/col/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/col/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/fffabdeeb9a069e40a070dadeedc93298b2aca7e/hovercard" href="https://github.com/mdn/content/commit/fffabdeeb9a069e40a070dadeedc93298b2aca7e"><tt>fffabde</tt></a></li>
+<li>Document last modified: 2024-01-25T23:02:20.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, selectors-4] input type time and datetime-local don't match :out-of-range]]></title>
             <link>https://github.com/mdn/content/issues/32156</link>
@@ -871,7 +901,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDczNjQxNDYsIm5iZiI6MTcwNzM2Mzg0NiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMDhUMDM0NDA2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDVhOTBmZjEwMmI5NDE4YWEyZjZkZmM1YjlkMTZhNGQyNGFmNTYzM2Q2ODI1NDhjM2E0Y2Y1M2Q1ODRjZDM3YiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.8KOi-nsfP-0giH1hR1UmVUIM3ye1pWLheBRrF1lKtao"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDczNjQxNDYsIm5iZiI6MTcwNzM2Mzg0NiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMDhUMDM0NDA2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDVhOTBmZjEwMmI5NDE4YWEyZjZkZmM1YjlkMTZhNGQyNGFmNTYzM2Q2ODI1NDhjM2E0Y2Y1M2Q1ODRjZDM3YiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.8KOi-nsfP-0giH1hR1UmVUIM3ye1pWLheBRrF1lKtao" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDczNjQ3NjQsIm5iZiI6MTcwNzM2NDQ2NCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMDhUMDM1NDI0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MTYxNzU2MjVmOTRhNGQ0YTFmMzFiNzk1MzZiMDNjYzlkNTMzNmE4NzQ0ZGY4M2IzODk3ODYwMTE4OGUxMDhiMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.E-hvXeqpzVmSjv367xaLp6ZNcVtdufG4I3wLlS_kqp0"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDczNjQ3NjQsIm5iZiI6MTcwNzM2NDQ2NCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMDhUMDM1NDI0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MTYxNzU2MjVmOTRhNGQ0YTFmMzFiNzk1MzZiMDNjYzlkNTMzNmE4NzQ0ZGY4M2IzODk3ODYwMTE4OGUxMDhiMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.E-hvXeqpzVmSjv367xaLp6ZNcVtdufG4I3wLlS_kqp0" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
