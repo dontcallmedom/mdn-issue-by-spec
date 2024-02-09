@@ -4,10 +4,29 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Thu, 08 Feb 2024 03:54:24 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 09 Feb 2024 06:10:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] HTML <iframe>: allow attribute needs stand-alone topic]]></title>
+            <link>https://github.com/mdn/content/issues/32188</link>
+            <guid>https://github.com/mdn/content/issues/32188</guid>
+            <pubDate>Fri, 09 Feb 2024 06:10:46 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#allow" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#allow</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The topic named iframes</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The iframes attribute <code class="notranslate">allow</code> is used to set a permission policy for the frame. The current documentation in <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#allow" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#allow</a> is insufficient. There is quite useful information in <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#iframes" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#iframes</a> - probably too much to stick into the above document.</p>
+<p dir="auto">So the proposal is to create a stand-alone document for the <code class="notranslate">allow</code> attribute, pulling in the information from the Permissions-Policy document linked above. The Permissions-Policy document then might have a reduced set of information and a cross link.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Much of the information in <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#iframes" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#iframes</a></p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Discussion originates in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2119936251" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/32135" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/32135/hovercard?comment_id=1483876854&amp;comment_type=review_comment" href="https://github.com/mdn/content/pull/32135#discussion_r1483876854">#32135 (comment)</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Col as a child of colgroup]]></title>
             <link>https://github.com/mdn/content/issues/32172</link>
@@ -901,7 +920,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDc0NTg2NzUsIm5iZiI6MTcwNzQ1ODM3NSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIwOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMDlUMDU1OTM1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YjdiZjY5YWI5MTk3MmIyOGMwNGI5NjFmMDFjNWExMDVkOGFhZjBmZTQ0Yjg1MDJjYzZiZDEzYmM5ZmFjZjE4OSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Y5dpbusHq90--pOoW2YMMgH-WnCxI9iKmstnIeFPgpY"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDc0NTg2NzUsIm5iZiI6MTcwNzQ1ODM3NSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIwOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMDlUMDU1OTM1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YjdiZjY5YWI5MTk3MmIyOGMwNGI5NjFmMDFjNWExMDVkOGFhZjBmZTQ0Yjg1MDJjYzZiZDEzYmM5ZmFjZjE4OSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Y5dpbusHq90--pOoW2YMMgH-WnCxI9iKmstnIeFPgpY" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDc0NjAxMDIsIm5iZiI6MTcwNzQ1OTgwMiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIwOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMDlUMDYyMzIyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MDg5M2E3MzA2YTI5NDBjNWNlYmQwODM2ODFlOTI2YzU5MDhlZDQ1MmVjNTM0OTYwOTkzNDg4MjA2OTJjM2E2ZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.WUu6TfvcQcoWqBIu22hv5MfxiaBQ_iv23vxoaxw4fE4"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDc0NjAxMDIsIm5iZiI6MTcwNzQ1OTgwMiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIwOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMDlUMDYyMzIyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MDg5M2E3MzA2YTI5NDBjNWNlYmQwODM2ODFlOTI2YzU5MDhlZDQ1MmVjNTM0OTYwOTkzNDg4MjA2OTJjM2E2ZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.WUu6TfvcQcoWqBIu22hv5MfxiaBQ_iv23vxoaxw4fE4" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
