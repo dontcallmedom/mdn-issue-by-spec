@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[ecmascript\] Wrong use of \`isNaN()\`.](https://github.com/mdn/content/issues/32210) (2024-02-10T21:53:19Z)
+  
 * [\[ecmascript\] A JavaScript value of type symbol is not an object.](https://github.com/mdn/content/issues/32207) (2024-02-10T14:09:09Z)
   
 * [\[ecmascript\] \[JavaScript\] Date.parse only checks first 3 characters of month name](https://github.com/mdn/content/issues/31930) (2024-01-26T05:14:17Z)

@@ -4,10 +4,43 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Sat, 10 Feb 2024 14:09:09 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 10 Feb 2024 21:53:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Wrong use of `isNaN()`.]]></title>
+            <link>https://github.com/mdn/content/issues/32210</link>
+            <guid>https://github.com/mdn/content/issues/32210</guid>
+            <pubDate>Sat, 10 Feb 2024 21:53:19 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_Math" rel="nofollow">https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_Math</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Math 2</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">const finalNumberCheck = isNaN(finalNumber) === false ? 'finalNumber is a number type. Well done!' : <code class="notranslate">Ooops! finalNumber is not a number.</code>;</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN#return_value" rel="nofollow">is NaN Return value</a><br>
+true if the given value is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN" rel="nofollow">NaN</a> after being <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number#number_coercion" rel="nofollow">converted to a number</a>; otherwise, false.</p>
+<p dir="auto">And because we shouldn't convert the value '4633.33' to number ourselves instead of the learner, we could use NaN method.</p>
+<p dir="auto">const finalNumberCheck = NaN(finalNumber) === false ? 'finalNumber is a number type. Well done!' : <code class="notranslate">Ooops! finalNumber is not a number.</code>;</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/learn/javascript/first_steps/test_your_skills_colon__math</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_Math" rel="nofollow">https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_Math</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/learn/javascript/first_steps/test_your_skills_colon__math/index.md">https://github.com/mdn/content/blob/main/files/en-us/learn/javascript/first_steps/test_your_skills_colon__math/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/60358aa4fdd02bda2573dfd9fdf038b4ead2cd06/hovercard" href="https://github.com/mdn/content/commit/60358aa4fdd02bda2573dfd9fdf038b4ead2cd06"><tt>60358aa</tt></a></li>
+<li>Document last modified: 2024-02-02T19:50:32.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] A JavaScript value of type symbol is not an object.]]></title>
             <link>https://github.com/mdn/content/issues/32207</link>
