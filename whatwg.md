@@ -12,8 +12,6 @@
   
 * [\[html\] cancelAnimationFrame using mismatched time values in sample](https://github.com/mdn/content/issues/31840) (2024-01-21T18:53:32Z)
   
-* [\[html\] ambiguous about slash in br tag](https://github.com/mdn/content/issues/31838) (2024-01-21T15:02:38Z)
-  
 * [\[html\] Connected or not?](https://github.com/mdn/content/issues/31768) (2024-01-17T18:55:09Z)
   
 * [\[fetch\] Missing Request constructor duplex option](https://github.com/mdn/content/issues/31735) (2024-01-16T01:34:58Z)
