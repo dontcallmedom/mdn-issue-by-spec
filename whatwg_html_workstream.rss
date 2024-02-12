@@ -4,10 +4,83 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Fri, 09 Feb 2024 06:10:46 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 12 Feb 2024 22:46:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] <dialog> return value example combines two conflicting approaches]]></title>
+            <link>https://github.com/mdn/content/issues/32242</link>
+            <guid>https://github.com/mdn/content/issues/32242</guid>
+            <pubDate>Mon, 12 Feb 2024 22:46:36 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Handling the return value from the dialog</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The sample JavaScript includes</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="// &quot;Favorite animal&quot; input sets the value of the submit button
+selectEl.addEventListener(&quot;change&quot;, (e) =&gt; {
+  confirmBtn.value = selectEl.value;
+});"><pre class="notranslate"><span class="pl-c">// "Favorite animal" input sets the value of the submit button</span>
+<span class="pl-s1">selectEl</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"change"</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-s1">confirmBtn</span><span class="pl-kos">.</span><span class="pl-c1">value</span> <span class="pl-c1">=</span> <span class="pl-s1">selectEl</span><span class="pl-kos">.</span><span class="pl-c1">value</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<p dir="auto">but <code class="notranslate">confirmBtn.value</code> is never read because <code class="notranslate">favDialog.close(selectEl.value);</code> sets the <code class="notranslate">favDialog.returnValue</code>.</p>
+<p dir="auto">This example feels like it is trying to show two different, conflicting ways to pass the return value. Either as the argument to the <code class="notranslate">.close</code> method or as the value of the <code class="notranslate">confirmBtn</code>.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">There are two possible fixes and I'm not sure which ones is preferred. If I knew I would have opened a PR.</p>
+<ol dir="auto">
+<li>Take the line:</li>
+</ol>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;button id=&quot;confirmBtn&quot; value=&quot;default&quot;&gt;Confirm&lt;/button&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">button</span> <span class="pl-c1">id</span>="<span class="pl-s">confirmBtn</span>" <span class="pl-c1">value</span>="<span class="pl-s">default</span>"<span class="pl-kos">&gt;</span>Confirm<span class="pl-kos">&lt;/</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span></pre></div>
+<p dir="auto">and add the <code class="notranslate">formmethod</code> attribute:</p>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;button id=&quot;confirmBtn&quot; value=&quot;default&quot; formmethod=&quot;dialog&quot;&gt;Confirm&lt;/button&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">button</span> <span class="pl-c1">id</span>="<span class="pl-s">confirmBtn</span>" <span class="pl-c1">value</span>="<span class="pl-s">default</span>" <span class="pl-c1">formmethod</span>="<span class="pl-s">dialog</span>"<span class="pl-kos">&gt;</span>Confirm<span class="pl-kos">&lt;/</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span></pre></div>
+<p dir="auto">then delete this event handler entirely</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="// Prevent the &quot;confirm&quot; button from the default behavior of submitting the form, and close the dialog with the `close()` method, which triggers the &quot;close&quot; event.
+confirmBtn.addEventListener(&quot;click&quot;, (event) =&gt; {
+  event.preventDefault(); // We don't want to submit this fake form
+  favDialog.close(selectEl.value); // Have to send the select box value here.
+});"><pre class="notranslate"><span class="pl-c">// Prevent the "confirm" button from the default behavior of submitting the form, and close the dialog with the `close()` method, which triggers the "close" event.</span>
+<span class="pl-s1">confirmBtn</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"click"</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-en">preventDefault</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// We don't want to submit this fake form</span>
+  <span class="pl-s1">favDialog</span><span class="pl-kos">.</span><span class="pl-en">close</span><span class="pl-kos">(</span><span class="pl-s1">selectEl</span><span class="pl-kos">.</span><span class="pl-c1">value</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// Have to send the select box value here.</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<p dir="auto">now clicks on <code class="notranslate">confirmBtn</code> should use the value of the button being set in the change listener.</p>
+<ol start="2" dir="auto">
+<li>Delete the change listener entirely (these lines):</li>
+</ol>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="// &quot;Favorite animal&quot; input sets the value of the submit button
+selectEl.addEventListener(&quot;change&quot;, (e) =&gt; {
+  confirmBtn.value = selectEl.value;
+});"><pre class="notranslate"><span class="pl-c">// "Favorite animal" input sets the value of the submit button</span>
+<span class="pl-s1">selectEl</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"change"</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-s1">confirmBtn</span><span class="pl-kos">.</span><span class="pl-c1">value</span> <span class="pl-c1">=</span> <span class="pl-s1">selectEl</span><span class="pl-kos">.</span><span class="pl-c1">value</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">The <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/close" rel="nofollow">docs for the <code class="notranslate">.close</code> method</a> say:</p>
+<blockquote>
+<p dir="auto">An optional string may be passed as an argument, updating the <code class="notranslate">returnValue</code> of the dialog.</p>
+</blockquote>
+<p dir="auto">Alternatively the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/returnValue" rel="nofollow">docs for the <code class="notranslate">returnValue</code></a> say:</p>
+<blockquote>
+<p dir="auto">Submitting a form with a <code class="notranslate">method="dialog"</code> closes the dialog and sets the return value to the <code class="notranslate">value</code>, if any, of the <code class="notranslate">button</code> or <code class="notranslate">input</code> elements of <code class="notranslate">type=submit</code>.</p>
+</blockquote>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Both examples seem useful so it might help people to include both just separated so it's clear what the difference between using the <code class="notranslate">.close</code> method and the <code class="notranslate">formmethod="dialog"</code> with button values is.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/element/dialog</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/dialog/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/dialog/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/9d1f2bdacf5cd7d1cd266c0c51e2d6e9a0f5e15c/hovercard" href="https://github.com/mdn/content/commit/9d1f2bdacf5cd7d1cd266c0c51e2d6e9a0f5e15c"><tt>9d1f2bd</tt></a></li>
+<li>Document last modified: 2024-01-22T09:31:01.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] HTML <iframe>: allow attribute needs stand-alone topic]]></title>
             <link>https://github.com/mdn/content/issues/32188</link>
@@ -889,7 +962,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDc3Nzc5MjEsIm5iZiI6MTcwNzc3NzYyMSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIxMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMTJUMjI0MDIxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjdhYTU4ZDdiZDgwNDQ2YzY2YmI2NWQ3N2ViYTI4MDBmYWY4NGEwMWMxMGJkN2ZiMGExNTRkNWIzZjZmOWY2YiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.OPfjRI6AQgxtHLuqCLFwS-lcxqfLwDr2WwZdZDmmAEU"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDc3Nzc5MjEsIm5iZiI6MTcwNzc3NzYyMSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIxMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMTJUMjI0MDIxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjdhYTU4ZDdiZDgwNDQ2YzY2YmI2NWQ3N2ViYTI4MDBmYWY4NGEwMWMxMGJkN2ZiMGExNTRkNWIzZjZmOWY2YiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.OPfjRI6AQgxtHLuqCLFwS-lcxqfLwDr2WwZdZDmmAEU" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDc3Nzg1NTAsIm5iZiI6MTcwNzc3ODI1MCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIxMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMTJUMjI1MDUwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTdkMmEyYzcyMmZkODMxNmMwYTczNWU2NGFjYjA1MGUwZmU2MTk4MDgzZTI2MmQ0NjNiNTMxMWFlODlmMDZjOSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.5Cp3ciqsjMQC4m0qQtoTyNc4BhQ8IVlzHhkysCgOJPE"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDc3Nzg1NTAsIm5iZiI6MTcwNzc3ODI1MCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIxMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMTJUMjI1MDUwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTdkMmEyYzcyMmZkODMxNmMwYTczNWU2NGFjYjA1MGUwZmU2MTk4MDgzZTI2MmQ0NjNiNTMxMWFlODlmMDZjOSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.5Cp3ciqsjMQC4m0qQtoTyNc4BhQ8IVlzHhkysCgOJPE" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>

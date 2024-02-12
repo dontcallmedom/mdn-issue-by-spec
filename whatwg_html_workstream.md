@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] \<dialog\> return value example combines two conflicting approaches](https://github.com/mdn/content/issues/32242) (2024-02-12T22:46:36Z)
+  
 * [\[html\] HTML \<iframe\>: allow attribute needs stand-alone topic](https://github.com/mdn/content/issues/32188) (2024-02-09T06:10:46Z)
   
 * [\[html\] Col as a child of colgroup](https://github.com/mdn/content/issues/32172) (2024-02-08T03:54:24Z)
