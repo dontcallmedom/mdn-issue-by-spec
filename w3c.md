@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html, uievents\] MDN Play regressed Window load example](https://github.com/mdn/content/issues/32243) (2024-02-12T23:52:04Z)
+* [\[html, uievents\] Window load example regression](https://github.com/mdn/content/issues/32243) (2024-02-12T23:52:04Z)
   
 * [\[SVG11\] paint-order also applies to HTML content (not only SVG)](https://github.com/mdn/content/issues/32236) (2024-02-12T11:01:21Z)
   
