@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] HTMLMediaElement/textTracks example video does not load](https://github.com/mdn/content/issues/32262) (2024-02-13T22:47:24Z)
+  
 * [\[html, uievents\] Window load example regression](https://github.com/mdn/content/issues/32243) (2024-02-12T23:52:04Z)
   
 * [\[html\] \<dialog\> return value example combines two conflicting approaches](https://github.com/mdn/content/issues/32242) (2024-02-12T22:46:36Z)
