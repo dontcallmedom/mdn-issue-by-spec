@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, uievents\] MDN Play regressed Window load example](https://github.com/mdn/content/issues/32243) (2024-02-12T23:52:04Z)
+  
 * [\[html\] \<dialog\> return value example combines two conflicting approaches](https://github.com/mdn/content/issues/32242) (2024-02-12T22:46:36Z)
   
 * [\[html\] HTML \<iframe\>: allow attribute needs stand-alone topic](https://github.com/mdn/content/issues/32188) (2024-02-09T06:10:46Z)
