@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-scroll-snap-1\] CSS snippet missing overflow: auto;](https://github.com/mdn/content/issues/32249) (2024-02-13T11:08:38Z)
+  
 * [\[css-backgrounds-4\] No information on border-color  \<stripes()\>](https://github.com/mdn/content/issues/32234) (2024-02-12T07:33:50Z)
   
 * [\[html, selectors-4\] input type time and datetime-local don't match :out-of-range](https://github.com/mdn/content/issues/32156) (2024-02-07T12:06:32Z)
