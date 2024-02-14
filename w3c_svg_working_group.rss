@@ -385,9 +385,10 @@ Example (works in Firefox and Safari or with the runtime flag in Chrome): <a hre
             <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement</a></p>
 <h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
 <p dir="auto">There are differences between the browsers implementation of the initial values of the viewBox (baseVal) property.</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const svg = document.createElementNS(&quot;http://www.w3.org/2000/svg&quot;, &quot;svg&quot;);
-const baseVal = svg.viewBox.baseVal;"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">svg</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createElementNS</span><span class="pl-kos">(</span><span class="pl-s">"http://www.w3.org/2000/svg"</span><span class="pl-kos">,</span> <span class="pl-s">"svg"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-k">const</span> <span class="pl-s1">baseVal</span> <span class="pl-c1">=</span> <span class="pl-s1">svg</span><span class="pl-kos">.</span><span class="pl-c1">viewBox</span><span class="pl-kos">.</span><span class="pl-c1">baseVal</span><span class="pl-kos">;</span></pre></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const svg = document.createElementNS(&quot;http://www.w3.org/2000/svg&quot;, &quot;svg&quot;);
+const baseVal = svg.viewBox.baseVal;"><pre lang="js" class="notranslate"><code class="notranslate">const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+const baseVal = svg.viewBox.baseVal;
+</code></pre></div>
 <p dir="auto">In Firefox <code class="notranslate">baseVal </code> is <code class="notranslate">null</code>. In Chrome it is an <code class="notranslate">SVGRect {x: 0, y: 0, width: 0, height: 0}</code>.<br>
 In my opinion it is nice to just write the values on the pre-initialized SVGRect and to let the browser synchronize the attribute.</p>
 <p dir="auto">Since the bug on this topic (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=888307" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=888307</a>) is closed and no one seems to care, at least developers should be informed of this difference.</p>
