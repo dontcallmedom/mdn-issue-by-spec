@@ -8,8 +8,6 @@
   
 * [\[html, selectors-4\] input type time and datetime-local don't match :out-of-range](https://github.com/mdn/content/issues/32156) (2024-02-07T12:06:32Z)
   
-* [\[css-masking-1\] mask-position Initial value](https://github.com/mdn/content/issues/32119) (2024-02-05T09:16:09Z)
-  
 * [\[cssom-view-1\] Add "window.pageYOffset" and "window.pageXoffset" attributes description](https://github.com/mdn/content/issues/32102) (2024-01-26T08:25:53Z)
   
 * [\[selectors-4\] No mention of blank page pseudo-class](https://github.com/mdn/content/issues/31885) (2024-01-24T10:43:17Z)

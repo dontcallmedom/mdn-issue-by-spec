@@ -4,8 +4,6 @@
 
 * [\[SVG11\] paint-order also applies to HTML content (not only SVG)](https://github.com/mdn/content/issues/32236) (2024-02-12T11:01:21Z)
   
-* [\[css-masking-1\] mask-position Initial value](https://github.com/mdn/content/issues/32119) (2024-02-05T09:16:09Z)
-  
 * [\[SVG11\] The \`x\` and \`y\` attributes on text is actually a list](https://github.com/mdn/content/issues/32081) (2024-02-02T15:10:47Z)
   
 * [\[SVG11\] SVG preserveAspectRatio documentation flow/ordering is confusing](https://github.com/mdn/content/issues/31825) (2024-01-20T08:32:03Z)
