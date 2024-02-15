@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, dom\] There have been a few changes to declarative shadow DOM](https://github.com/mdn/content/issues/32289) (2024-02-15T00:44:52Z)
+  
 * [\[html\] HTMLMediaElement/textTracks example video does not load](https://github.com/mdn/content/issues/32262) (2024-02-13T22:47:24Z)
   
 * [\[html, uievents\] Window load example regression](https://github.com/mdn/content/issues/32243) (2024-02-12T23:52:04Z)

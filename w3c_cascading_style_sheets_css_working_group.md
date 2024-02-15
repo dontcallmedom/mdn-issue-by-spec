@@ -76,8 +76,6 @@
   
 * [\[filter-effects-2\] feGaussianBlur needs guidance about setting height and width ](https://github.com/mdn/content/issues/24169) (2023-02-04T21:15:51Z)
   
-* [\[cssom-1\] JS names for CSS properties](https://github.com/mdn/content/issues/24084) (2023-02-01T20:11:45Z)
-  
 * [\[css-shadow-parts-1\] ::part(): Missing information](https://github.com/mdn/content/issues/23471) (2023-01-08T11:05:39Z)
   
 * [\[css-fonts-5\] getComputedStyle() does not respect the Fallback weights algorithm](https://github.com/mdn/content/issues/22496) (2022-11-23T12:04:06Z)
