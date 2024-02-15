@@ -24,8 +24,6 @@
   
 * [\[html\] Using Storage change event on same page.](https://github.com/mdn/content/issues/31665) (2024-01-11T19:25:49Z)
   
-* [\[html\] code example is not referring to location interface](https://github.com/mdn/content/issues/31498) (2024-01-03T21:04:58Z)
-  
 * [\[html\] DOMContentLoaded does not fire in LiveSample](https://github.com/mdn/content/issues/31229) (2023-12-22T18:04:00Z)
   
 * [\[html\] \`hgroup\` accessibility concerns might need an update](https://github.com/mdn/content/issues/31064) (2023-12-16T13:22:38Z)
