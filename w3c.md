@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[badging\] Why here is said that Badges supported on android?](https://github.com/mdn/content/issues/32386) (2024-02-22T11:44:50Z)
+  
 * [\[html, clipboard-apis\] Code snippet using the void return of canvas toBlob() function](https://github.com/mdn/content/issues/32385) (2024-02-22T10:33:40Z)
   
 * [\[css-scroll-snap-1\] CSS snippet missing overflow: auto;](https://github.com/mdn/content/issues/32249) (2024-02-13T11:08:38Z)
