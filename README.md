@@ -3,8 +3,8 @@
 
 This repository collects information on MDN Web Docs issues and group them based on the specifications they relate to and the orgs / groups that produce these specifications.
 
-* [Ecma International](ecma_international.md): 11 issues [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ecma_international.rss)
-* [Ecma International TC39](ecma_international_tc39.md): 11 issues [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ecma_international_tc39.rss)
+* [Ecma International](ecma_international.md): 12 issues [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ecma_international.rss)
+* [Ecma International TC39](ecma_international_tc39.md): 12 issues [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ecma_international_tc39.rss)
 * [IETF](ietf.md): 9 issues [![RSS feed for IETF-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ietf.rss)
 * [IETF HTTP State Management Mechanism Working Group](ietf_http_state_management_mechanism_working_group.md): 1 issues [![RSS feed for IETF HTTP State Management Mechanism Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ietf_http_state_management_mechanism_working_group.rss)
 * [IETF Hypertext Transfer Protocol Bis APP Working Group](ietf_hypertext_transfer_protocol_bis_app_working_group.md): 8 issues [![RSS feed for IETF Hypertext Transfer Protocol Bis APP Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ietf_hypertext_transfer_protocol_bis_app_working_group.rss)
@@ -30,7 +30,7 @@ This repository collects information on MDN Web Docs issues and group them based
 * [W3C Web Platform Incubator Community Group](w3c_web_platform_incubator_community_group.md): 6 issues [![RSS feed for W3C Web Platform Incubator Community Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_web_platform_incubator_community_group.rss)
 * [W3C Web Platform Working Group](w3c_web_platform_working_group.md): 5 issues [![RSS feed for W3C Web Platform Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_web_platform_working_group.rss)
 * [W3C Web Real-Time Communications Working Group](w3c_web_real_time_communications_working_group.md): 10 issues [![RSS feed for W3C Web Real-Time Communications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_web_real_time_communications_working_group.rss)
-* [WHATWG](whatwg.md): 119 issues [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](whatwg.rss)
+* [WHATWG](whatwg.md): 120 issues [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](whatwg.rss)
 * [WHATWG Compatibility Workstream](whatwg_compatibility_workstream.md): 1 issues [![RSS feed for WHATWG Compatibility Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](whatwg_compatibility_workstream.rss)
 * [WHATWG Console Workstream](whatwg_console_workstream.md): 3 issues [![RSS feed for WHATWG Console Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](whatwg_console_workstream.rss)
 * [WHATWG DOM Workstream](whatwg_dom_workstream.md): 21 issues [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](whatwg_dom_workstream.rss)
@@ -38,4 +38,5 @@ This repository collects information on MDN Web Docs issues and group them based
 * [WHATWG Fullscreen API Workstream](whatwg_fullscreen_api_workstream.md): 2 issues [![RSS feed for WHATWG Fullscreen API Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](whatwg_fullscreen_api_workstream.rss)
 * [WHATWG HTML Workstream](whatwg_html_workstream.md): 88 issues [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](whatwg_html_workstream.rss)
 * [WHATWG Notifications API Workstream](whatwg_notifications_api_workstream.md): 3 issues [![RSS feed for WHATWG Notifications API Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](whatwg_notifications_api_workstream.rss)
+* [WHATWG URL Workstream](whatwg_url_workstream.md): 1 issues [![RSS feed for WHATWG URL Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](whatwg_url_workstream.rss)
 * [WHATWG XMLHttpRequest Workstream](whatwg_xmlhttprequest_workstream.md): 3 issues [![RSS feed for WHATWG XMLHttpRequest Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](whatwg_xmlhttprequest_workstream.rss)
