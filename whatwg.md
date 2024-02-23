@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[ecmascript, url\] Inconsistency in delineation between instance and static methods](https://github.com/mdn/content/issues/32402) (2024-02-22T23:09:01Z)
-  
 * [\[html, clipboard-apis\] Code snippet using the void return of canvas toBlob() function](https://github.com/mdn/content/issues/32385) (2024-02-22T10:33:40Z)
   
 * [\[html\] Issue with resizing of textarea elements in the example](https://github.com/mdn/content/issues/32314) (2024-02-16T14:25:23Z)
