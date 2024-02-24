@@ -107,51 +107,6 @@ true if the given value is <a href="https://developer.mozilla.org/en-US/docs/Web
 </ul>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[ecmascript] What's the difference between a class prototype property and a function prototype property?]]></title>
-            <link>https://github.com/mdn/content/issues/31649</link>
-            <guid>https://github.com/mdn/content/issues/31649</guid>
-            <pubDate>Thu, 11 Jan 2024 02:32:17 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype#value" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype#value</a></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Apologies upfront for misusing terminology. I'm still learning. By "class prototype property" I'm referring to the second line of this code:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="class X { };
-X.prototype;"><pre class="notranslate"><span class="pl-k">class</span> <span class="pl-v">X</span> <span class="pl-kos">{</span> <span class="pl-kos">}</span><span class="pl-kos">;</span>
-<span class="pl-v">X</span><span class="pl-kos">.</span><span class="pl-c1">prototype</span><span class="pl-kos">;</span></pre></div>
-<p dir="auto">I'm assuming this is very similar to the topic of this article, the function instance <code class="notranslate">prototype</code> property.</p>
-<hr>
-<p dir="auto">The article says:</p>
-<blockquote>
-<h2 dir="auto">Property attributes of Function: prototype</h2>
-<p dir="auto">Writable | yes<br>
-Enumerable | no<br>
-Configurable | no</p>
-<p dir="auto">Note: The prototype property of <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes" rel="nofollow">classes</a> is not writable.</p>
-</blockquote>
-<ol dir="auto">
-<li>Is this the only difference between the function prototype property and the class prototype property?
-<ol dir="auto">
-<li>Regardless, could this be explicitly stated in the note for clarification?</li>
-</ol>
-</li>
-<li>Is there a reference article about the the <em>class prototype property</em>? The link in the note goes to a reference to classes in general, but I'm looking for something as focused as this function prototype article.</li>
-</ol>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/function/prototype</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/function/prototype/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/function/prototype/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/c2274293475b0a5b4febf85a49c1f91bf43ebac7/hovercard" href="https://github.com/mdn/content/commit/c2274293475b0a5b4febf85a49c1f91bf43ebac7"><tt>c227429</tt></a></li>
-<li>Document last modified: 2023-05-03T02:24:26.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[ecmascript] Raw template literals could use better explanation: latex is confusing and regexps unmentioned]]></title>
             <link>https://github.com/mdn/content/issues/30389</link>
             <guid>https://github.com/mdn/content/issues/30389</guid>
