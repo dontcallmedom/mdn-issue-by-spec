@@ -4,10 +4,46 @@
         <title>WHATWG DOM Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_dom_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG DOM Workstream</description>
-        <lastBuildDate>Thu, 15 Feb 2024 00:44:52 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 25 Feb 2024 19:03:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] Possible Typo: Expected `setAttributeNodeNS` instead of `hasAttributeNS`]]></title>
+            <link>https://github.com/mdn/content/issues/32430</link>
+            <guid>https://github.com/mdn/content/issues/32430</guid>
+            <pubDate>Sun, 25 Feb 2024 19:03:54 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttributeNodeNS" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttributeNodeNS</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Element: setAttributeNodeNS() method</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto">The hasAttributeNS() method of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element" rel="nofollow">Element</a> interface adds a new namespaced <a href="https://developer.mozilla.org/en-US/docs/Web/API/Attr" rel="nofollow">Attr</a> node to an element.</p>
+</blockquote>
+<p dir="auto">In the above paragraph, the text <code class="notranslate">hasAttributeNS</code> seems to be a copy/paste error.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I expected to see <code class="notranslate">setAttributeNodeNS</code>.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/element/setattributenodens</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttributeNodeNS" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttributeNodeNS</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/element/setattributenodens/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/element/setattributenodens/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/990ab6637bb4d44f059597262cbf3c51abae79eb/hovercard" href="https://github.com/mdn/content/commit/990ab6637bb4d44f059597262cbf3c51abae79eb"><tt>990ab66</tt></a></li>
+<li>Document last modified: 2024-02-15T00:03:54.000Z</li>
+</ul>
+</details>
+```[tasklist]
+### Tasks
+```]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, dom] There have been a few changes to declarative shadow DOM]]></title>
             <link>https://github.com/mdn/content/issues/32289</link>

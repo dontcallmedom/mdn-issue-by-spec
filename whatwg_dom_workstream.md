@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] Possible Typo: Expected \`setAttributeNodeNS\` instead of \`hasAttributeNS\`](https://github.com/mdn/content/issues/32430) (2024-02-25T19:03:54Z)
+  
 * [\[html, dom\] There have been a few changes to declarative shadow DOM](https://github.com/mdn/content/issues/32289) (2024-02-15T00:44:52Z)
   
 * [\[dom\] preventDefault - default actions would be useful](https://github.com/mdn/content/issues/30284) (2023-11-15T06:26:55Z)
