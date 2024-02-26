@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[filter-effects-2\] slope is not deprecated](https://github.com/mdn/content/issues/32449) (2024-02-26T19:37:18Z)
+  
 * [\[css-values-3\] \[css-color\] Percent reference ranges do not imply maximum allowed values in color functions](https://github.com/mdn/content/issues/32408) (2024-02-23T09:12:05Z)
   
 * [\[css-backgrounds-4, css-ui-4\] Align border and outline shorthands sub-properties order with the spec](https://github.com/mdn/content/issues/32388) (2024-02-22T12:38:41Z)
