@@ -25,7 +25,7 @@
 </ul>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">Something using toDataUrl() like in this doc <a href="https://web.dev/patterns/clipboard/copy-images" rel="nofollow">https://web.dev/patterns/clipboard/copy-images</a> :</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="// Get canvas can add an event handler for the click event.
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="// Get canvas can add an event handler for the click event.
 const canvas = document.getElementById(&quot;canvas&quot;);
 canvas.addEventListener(&quot;click&quot;, copyCanvasContentsToClipboard());
 
@@ -37,20 +37,19 @@ async function copyCanvasContentsToClipboard() {
   const data = [new ClipboardItem({ [blob.type]: blob })];
   // Write the data to the clipboard
   await navigator.clipboard.write(data);
-}"><pre lang="js" class="notranslate"><code class="notranslate">// Get canvas can add an event handler for the click event.
-const canvas = document.getElementById("canvas");
-canvas.addEventListener("click", copyCanvasContentsToClipboard());
+}"><pre class="notranslate"><span class="pl-c">// Get canvas can add an event handler for the click event.</span>
+<span class="pl-k">const</span> <span class="pl-s1">canvas</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">getElementById</span><span class="pl-kos">(</span><span class="pl-s">"canvas"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"click"</span><span class="pl-kos">,</span> <span class="pl-en">copyCanvasContentsToClipboard</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
-async function copyCanvasContentsToClipboard() {
-  // Copy canvas to blob
-  const url = canvas.toDataURL();
-  const blob = await fetch(url).then(response =&gt; response.blob());
-  // Create ClipboardItem with blob and it's type, and add to an array
-  const data = [new ClipboardItem({ [blob.type]: blob })];
-  // Write the data to the clipboard
-  await navigator.clipboard.write(data);
-}
-</code></pre></div>
+<span class="pl-k">async</span> <span class="pl-k">function</span> <span class="pl-en">copyCanvasContentsToClipboard</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-c">// Copy canvas to blob</span>
+  <span class="pl-k">const</span> <span class="pl-s1">url</span> <span class="pl-c1">=</span> <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-en">toDataURL</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-k">const</span> <span class="pl-s1">blob</span> <span class="pl-c1">=</span> <span class="pl-k">await</span> <span class="pl-en">fetch</span><span class="pl-kos">(</span><span class="pl-s1">url</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-s1">response</span> <span class="pl-c1">=&gt;</span> <span class="pl-s1">response</span><span class="pl-kos">.</span><span class="pl-en">blob</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-c">// Create ClipboardItem with blob and it's type, and add to an array</span>
+  <span class="pl-k">const</span> <span class="pl-s1">data</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-k">new</span> <span class="pl-v">ClipboardItem</span><span class="pl-kos">(</span><span class="pl-kos">{</span> <span class="pl-kos">[</span><span class="pl-s1">blob</span><span class="pl-kos">.</span><span class="pl-c1">type</span><span class="pl-kos">]</span>: <span class="pl-s1">blob</span> <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">]</span><span class="pl-kos">;</span>
+  <span class="pl-c">// Write the data to the clipboard</span>
+  <span class="pl-k">await</span> <span class="pl-s1">navigator</span><span class="pl-kos">.</span><span class="pl-c1">clipboard</span><span class="pl-kos">.</span><span class="pl-en">write</span><span class="pl-kos">(</span><span class="pl-s1">data</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span></pre></div>
 <p dir="auto">It may be slower than just using toBlob(), but it's simpler. Actually it may be better to use the toBlob() just to see how we use the toBlob with simple code.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob</a></p>
@@ -94,7 +93,7 @@ async function copyCanvasContentsToClipboard() {
     <span class="dropdown-caret"></span>
   </summary>
 
-  <video src="https://private-user-images.githubusercontent.com/34963401/305442630-6f79bd53-ed64-4867-9147-c4c8455b02a8.mov?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDkwMjY0MzEsIm5iZiI6MTcwOTAyNjEzMSwicGF0aCI6Ii8zNDk2MzQwMS8zMDU0NDI2MzAtNmY3OWJkNTMtZWQ2NC00ODY3LTkxNDctYzRjODQ1NWIwMmE4Lm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjI3VDA5Mjg1MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY1NjYyNzRkMmQzOTBkMjhkNWFhNGY1MmYyZDgxZjk1OWQ2NGNmMDhiYTFjM2U2OGRlMTAyNThkMjYyZTNiNmQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.FV8EOWrDGZlQtxPvOZQQLan6i6EhRAwOSsQHAgCYJqI" data-canonical-src="https://private-user-images.githubusercontent.com/34963401/305442630-6f79bd53-ed64-4867-9147-c4c8455b02a8.mov?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDkwMjY0MzEsIm5iZiI6MTcwOTAyNjEzMSwicGF0aCI6Ii8zNDk2MzQwMS8zMDU0NDI2MzAtNmY3OWJkNTMtZWQ2NC00ODY3LTkxNDctYzRjODQ1NWIwMmE4Lm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjI3VDA5Mjg1MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY1NjYyNzRkMmQzOTBkMjhkNWFhNGY1MmYyZDgxZjk1OWQ2NGNmMDhiYTFjM2U2OGRlMTAyNThkMjYyZTNiNmQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.FV8EOWrDGZlQtxPvOZQQLan6i6EhRAwOSsQHAgCYJqI" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px">
+  <video src="https://private-user-images.githubusercontent.com/34963401/305442630-6f79bd53-ed64-4867-9147-c4c8455b02a8.mov?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDkwMjcwNTcsIm5iZiI6MTcwOTAyNjc1NywicGF0aCI6Ii8zNDk2MzQwMS8zMDU0NDI2MzAtNmY3OWJkNTMtZWQ2NC00ODY3LTkxNDctYzRjODQ1NWIwMmE4Lm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjI3VDA5MzkxN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg3N2QwMDEzZmNiYmFiYzk1ZTRmODc4OWU1NzJlNTY0Y2ZhMTQ0N2JlNDE3MDgwZWFlN2RhYWRhMmQ2ZGJjYWMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.x_xwGsnsftwrD2E1eJ92xKvl70_rtaFMFeKpW-U0aw4" data-canonical-src="https://private-user-images.githubusercontent.com/34963401/305442630-6f79bd53-ed64-4867-9147-c4c8455b02a8.mov?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDkwMjcwNTcsIm5iZiI6MTcwOTAyNjc1NywicGF0aCI6Ii8zNDk2MzQwMS8zMDU0NDI2MzAtNmY3OWJkNTMtZWQ2NC00ODY3LTkxNDctYzRjODQ1NWIwMmE4Lm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjI3VDA5MzkxN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg3N2QwMDEzZmNiYmFiYzk1ZTRmODc4OWU1NzJlNTY0Y2ZhMTQ0N2JlNDE3MDgwZWFlN2RhYWRhMmQ2ZGJjYWMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.x_xwGsnsftwrD2E1eJ92xKvl70_rtaFMFeKpW-U0aw4" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px">
 
   </video>
 </details>
@@ -179,45 +178,40 @@ async function copyCanvasContentsToClipboard() {
 <p dir="auto">Handling the return value from the dialog</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The sample JavaScript includes</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="// &quot;Favorite animal&quot; input sets the value of the submit button
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="// &quot;Favorite animal&quot; input sets the value of the submit button
 selectEl.addEventListener(&quot;change&quot;, (e) =&gt; {
   confirmBtn.value = selectEl.value;
-});"><pre lang="javascript" class="notranslate"><code class="notranslate">// "Favorite animal" input sets the value of the submit button
-selectEl.addEventListener("change", (e) =&gt; {
-  confirmBtn.value = selectEl.value;
-});
-</code></pre></div>
+});"><pre class="notranslate"><span class="pl-c">// "Favorite animal" input sets the value of the submit button</span>
+<span class="pl-s1">selectEl</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"change"</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-s1">confirmBtn</span><span class="pl-kos">.</span><span class="pl-c1">value</span> <span class="pl-c1">=</span> <span class="pl-s1">selectEl</span><span class="pl-kos">.</span><span class="pl-c1">value</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">but <code class="notranslate">confirmBtn.value</code> is never read because <code class="notranslate">favDialog.close(selectEl.value);</code> sets the <code class="notranslate">favDialog.returnValue</code>.</p>
 <p dir="auto">This example feels like it is trying to show two different, conflicting ways to pass the return value. Either as the argument to the <code class="notranslate">.close</code> method or as the value of the <code class="notranslate">confirmBtn</code>.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">There are two possible fixes and I'm not sure which ones is preferred. If I knew I would have opened a PR.</p>
 <h4 dir="auto">1. Take the line:</h4>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;button id=&quot;confirmBtn&quot; value=&quot;default&quot;&gt;Confirm&lt;/button&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;button id="confirmBtn" value="default"&gt;Confirm&lt;/button&gt;
-</code></pre></div>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;button id=&quot;confirmBtn&quot; value=&quot;default&quot;&gt;Confirm&lt;/button&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">button</span> <span class="pl-c1">id</span>="<span class="pl-s">confirmBtn</span>" <span class="pl-c1">value</span>="<span class="pl-s">default</span>"<span class="pl-kos">&gt;</span>Confirm<span class="pl-kos">&lt;/</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span></pre></div>
 <p dir="auto">and add the <code class="notranslate">formmethod</code> attribute:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;button id=&quot;confirmBtn&quot; value=&quot;default&quot; formmethod=&quot;dialog&quot;&gt;Confirm&lt;/button&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;button id="confirmBtn" value="default" formmethod="dialog"&gt;Confirm&lt;/button&gt;
-</code></pre></div>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;button id=&quot;confirmBtn&quot; value=&quot;default&quot; formmethod=&quot;dialog&quot;&gt;Confirm&lt;/button&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">button</span> <span class="pl-c1">id</span>="<span class="pl-s">confirmBtn</span>" <span class="pl-c1">value</span>="<span class="pl-s">default</span>" <span class="pl-c1">formmethod</span>="<span class="pl-s">dialog</span>"<span class="pl-kos">&gt;</span>Confirm<span class="pl-kos">&lt;/</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span></pre></div>
 <p dir="auto">then delete this event handler entirely</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="// Prevent the &quot;confirm&quot; button from the default behavior of submitting the form, and close the dialog with the `close()` method, which triggers the &quot;close&quot; event.
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="// Prevent the &quot;confirm&quot; button from the default behavior of submitting the form, and close the dialog with the `close()` method, which triggers the &quot;close&quot; event.
 confirmBtn.addEventListener(&quot;click&quot;, (event) =&gt; {
   event.preventDefault(); // We don't want to submit this fake form
   favDialog.close(selectEl.value); // Have to send the select box value here.
-});"><pre lang="javascript" class="notranslate"><code class="notranslate">// Prevent the "confirm" button from the default behavior of submitting the form, and close the dialog with the `close()` method, which triggers the "close" event.
-confirmBtn.addEventListener("click", (event) =&gt; {
-  event.preventDefault(); // We don't want to submit this fake form
-  favDialog.close(selectEl.value); // Have to send the select box value here.
-});
-</code></pre></div>
+});"><pre class="notranslate"><span class="pl-c">// Prevent the "confirm" button from the default behavior of submitting the form, and close the dialog with the `close()` method, which triggers the "close" event.</span>
+<span class="pl-s1">confirmBtn</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"click"</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-en">preventDefault</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// We don't want to submit this fake form</span>
+  <span class="pl-s1">favDialog</span><span class="pl-kos">.</span><span class="pl-en">close</span><span class="pl-kos">(</span><span class="pl-s1">selectEl</span><span class="pl-kos">.</span><span class="pl-c1">value</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// Have to send the select box value here.</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">now clicks on <code class="notranslate">confirmBtn</code> should use the value of the button being set in the change listener.</p>
 <h4 dir="auto">2. Delete the change listener entirely (these lines):</h4>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="// &quot;Favorite animal&quot; input sets the value of the submit button
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="// &quot;Favorite animal&quot; input sets the value of the submit button
 selectEl.addEventListener(&quot;change&quot;, (e) =&gt; {
   confirmBtn.value = selectEl.value;
-});"><pre lang="javascript" class="notranslate"><code class="notranslate">// "Favorite animal" input sets the value of the submit button
-selectEl.addEventListener("change", (e) =&gt; {
-  confirmBtn.value = selectEl.value;
-});
-</code></pre></div>
+});"><pre class="notranslate"><span class="pl-c">// "Favorite animal" input sets the value of the submit button</span>
+<span class="pl-s1">selectEl</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"change"</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-s1">confirmBtn</span><span class="pl-kos">.</span><span class="pl-c1">value</span> <span class="pl-c1">=</span> <span class="pl-s1">selectEl</span><span class="pl-kos">.</span><span class="pl-c1">value</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">The <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/close" rel="nofollow">docs for the <code class="notranslate">.close</code> method</a> say:</p>
 <blockquote>
@@ -1092,7 +1086,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDkwMjY0MjQsIm5iZiI6MTcwOTAyNjEyNCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIyNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMjdUMDkyODQ0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjYwOWU4ZWVlMjZkYzE4ZTAyYzFkMTJhYWExYjIxZjdlZmZkMmZmYTMxNmIzMTNlMGQ3YWUzYjAxNThhOGEwNiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.HbFji6w3UPfJJ7L2UTf3xZrPhRKe6sqFNAGMXIyuEpk"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDkwMjY0MjQsIm5iZiI6MTcwOTAyNjEyNCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIyNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMjdUMDkyODQ0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjYwOWU4ZWVlMjZkYzE4ZTAyYzFkMTJhYWExYjIxZjdlZmZkMmZmYTMxNmIzMTNlMGQ3YWUzYjAxNThhOGEwNiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.HbFji6w3UPfJJ7L2UTf3xZrPhRKe6sqFNAGMXIyuEpk" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDkwMjcwNTIsIm5iZiI6MTcwOTAyNjc1MiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIyNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMjdUMDkzOTEyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9N2QwMWUzNzgxYTI5ODFiMDIzYzM2ZDc5MGU1YjdhNjI1ZGRlNjIyMTJhOTM4Yzc1YzQ4MDc3YjMxOTY0ZGMxNiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.yoTYtVzkJeiWkwRtm0BlSfwbThNunMjfqo1I7yQTqow"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDkwMjcwNTIsIm5iZiI6MTcwOTAyNjc1MiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIyNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMjdUMDkzOTEyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9N2QwMWUzNzgxYTI5ODFiMDIzYzM2ZDc5MGU1YjdhNjI1ZGRlNjIyMTJhOTM4Yzc1YzQ4MDc3YjMxOTY0ZGMxNiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.yoTYtVzkJeiWkwRtm0BlSfwbThNunMjfqo1I7yQTqow" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
