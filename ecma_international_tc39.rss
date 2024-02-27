@@ -4,10 +4,48 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Sat, 10 Feb 2024 21:53:19 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 27 Feb 2024 16:39:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Uninitialized const, let, var]]></title>
+            <link>https://github.com/mdn/content/issues/32459</link>
+            <guid>https://github.com/mdn/content/issues/32459</guid>
+            <pubDate>Tue, 27 Feb 2024 16:39:38 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Wherever generic memory is allocated.</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The following code is only an example. At the time "let myArray" is evaluated I assume some space is reserved and since "myArray" only implies an Array in the mind of us users, is it possible while explaining the scoping et al for these named memory allocations that through prototyping, I assume, these generic naming strings assume the proper object characteristics. That is to say, how does the string myArray become a bonified Array? In this user's mind, it's via the mechanics of "while", and I'm sure somewhere in the reading materials in javascript speak, all is defined, but for those that get wrapped around the axil on the detail clarification via example would help.</p>
+<p dir="auto">const myRe = /ab*/g;<br>
+const str = "abbcdefabh";<br>
+let myArray;<br>
+while ((myArray = myRe.exec(str)) !== null) {<br>
+let msg = <code class="notranslate">Found ${myArray[0]}. </code>;<br>
+msg += <code class="notranslate">Next match starts at ${myRe.lastIndex}</code>;<br>
+console.log(msg);<br>
+}</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Nothing. What I've observed is that "things" are defined using the technical terminology, quite necessary, and examples are employed possibly using yet-to-be-defined "stuff".  An abbreviated explanation, like what I've observed in the groups and backreferences section, would be helpful to the novice.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">In all these materials are excellent.  My experience as a designer may have made me detail-picky as I read each word and then attempt to sypher an author's meaning.  I also read my study materials twice. So as far as the above-mentioned short example explanations an ah-ha moment occurs on the second pass as the look-ahead "Stuff" is then known.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/statements/var</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/var/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/var/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/4f86aad2b0b66c0d2041354ec81400c574ab56ca/hovercard" href="https://github.com/mdn/content/commit/4f86aad2b0b66c0d2041354ec81400c574ab56ca"><tt>4f86aad</tt></a></li>
+<li>Document last modified: 2023-09-12T03:52:28.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Wrong use of `isNaN()`.]]></title>
             <link>https://github.com/mdn/content/issues/32210</link>

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[ecmascript\] Uninitialized const, let, var](https://github.com/mdn/content/issues/32459) (2024-02-27T16:39:38Z)
+  
 * [\[ecmascript\] Wrong use of \`isNaN()\`.](https://github.com/mdn/content/issues/32210) (2024-02-10T21:53:19Z)
   
 * [\[ecmascript\] A JavaScript value of type symbol is not an object.](https://github.com/mdn/content/issues/32207) (2024-02-10T14:09:09Z)
