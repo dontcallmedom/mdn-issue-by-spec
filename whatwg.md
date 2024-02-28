@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, css-images-3\] Statement about applicable object-position and object-fit is wrong (?)](https://github.com/mdn/content/issues/32474) (2024-02-28T16:22:14Z)
+  
 * [\[html, clipboard-apis\] Code snippet using the void return of canvas toBlob() function](https://github.com/mdn/content/issues/32385) (2024-02-22T10:33:40Z)
   
 * [\[html\] Issue with resizing of textarea elements in the example](https://github.com/mdn/content/issues/32314) (2024-02-16T14:25:23Z)

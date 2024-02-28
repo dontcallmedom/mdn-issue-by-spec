@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, css-images-3\] Statement about applicable object-position and object-fit is wrong (?)](https://github.com/mdn/content/issues/32474) (2024-02-28T16:22:14Z)
+  
 * [\[filter-effects-2\] slope is not deprecated](https://github.com/mdn/content/issues/32449) (2024-02-26T19:37:18Z)
   
 * [\[css-values-3\] \[css-color\] Percent reference ranges do not imply maximum allowed values in color functions](https://github.com/mdn/content/issues/32408) (2024-02-23T09:12:05Z)
