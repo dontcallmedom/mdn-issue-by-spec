@@ -12,8 +12,6 @@
   
 * [\[css-backgrounds-4, css-ui-4\] Align border and outline shorthands sub-properties order with the spec](https://github.com/mdn/content/issues/32388) (2024-02-22T12:38:41Z)
   
-* [\[badging\] Why here is said that Badges supported on android?](https://github.com/mdn/content/issues/32386) (2024-02-22T11:44:50Z)
-  
 * [\[html, clipboard-apis\] Code snippet using the void return of canvas toBlob() function](https://github.com/mdn/content/issues/32385) (2024-02-22T10:33:40Z)
   
 * [\[css-scroll-snap-1\] CSS snippet missing overflow: auto;](https://github.com/mdn/content/issues/32249) (2024-02-13T11:08:38Z)
