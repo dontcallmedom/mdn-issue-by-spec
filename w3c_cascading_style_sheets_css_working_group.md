@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, selectors-4\] :disabled example doesn't work](https://github.com/mdn/content/issues/32481) (2024-02-29T08:20:47Z)
+  
 * [\[html, css-images-3\] Statement about applicable object-position and object-fit is wrong (?)](https://github.com/mdn/content/issues/32474) (2024-02-28T16:22:14Z)
   
 * [\[filter-effects-2\] slope is not deprecated](https://github.com/mdn/content/issues/32449) (2024-02-26T19:37:18Z)
