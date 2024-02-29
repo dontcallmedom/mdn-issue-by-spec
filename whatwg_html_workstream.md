@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html, selectors-4\] :disabled example doesn't work](https://github.com/mdn/content/issues/32481) (2024-02-29T08:20:47Z)
-  
 * [\[html, css-images-3\] Statement about applicable object-position and object-fit is wrong (?)](https://github.com/mdn/content/issues/32474) (2024-02-28T16:22:14Z)
   
 * [\[html, clipboard-apis\] Code snippet using the void return of canvas toBlob() function](https://github.com/mdn/content/issues/32385) (2024-02-22T10:33:40Z)
