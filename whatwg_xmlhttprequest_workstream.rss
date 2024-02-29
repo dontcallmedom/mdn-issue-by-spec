@@ -4,40 +4,10 @@
         <title>WHATWG XMLHttpRequest Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_xmlhttprequest_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG XMLHttpRequest Workstream</description>
-        <lastBuildDate>Mon, 18 Dec 2023 18:57:49 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 29 Jan 2023 01:52:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[xhr] Define XMLHttpRequest "failure" on the responseText MDN page?]]></title>
-            <link>https://github.com/mdn/content/issues/31129</link>
-            <guid>https://github.com/mdn/content/issues/31129</guid>
-            <pubDate>Mon, 18 Dec 2023 18:57:49 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/responseText" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/responseText</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/responseText#value" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/responseText#value</a></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">"or null if the request failed" is confusing to me because there is no definition of <code class="notranslate">failed</code>. Does this refer to a network failure? a 5XX error?</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">An explanation that leaves me confident about when <code class="notranslate">responseText</code> will be a string and when it will be <code class="notranslate">null</code>.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">The linked section of the spec at <a href="https://xhr.spec.whatwg.org/#the-responsetext-attribute" rel="nofollow">https://xhr.spec.whatwg.org/#the-responsetext-attribute</a> was interesting, and perhaps hints that <code class="notranslate">null</code> would not be associated with a 5XX error because it does not discuss response codes at all, but it was quite hard to read this part of the spec and reason about when <code class="notranslate">responseText</code> would be <code class="notranslate">null</code> due to the many layers of spec indirection required to even find a mention of <code class="notranslate">null</code>.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/xmlhttprequest/responsetext</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/responseText" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/responseText</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/xmlhttprequest/responsetext/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/xmlhttprequest/responsetext/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0a726c0a04ab286873ad91b5ddee478dd938832d/hovercard" href="https://github.com/mdn/content/commit/0a726c0a04ab286873ad91b5ddee478dd938832d"><tt>0a726c0</tt></a></li>
-<li>Document last modified: 2023-11-08T06:06:49.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[xhr] xhr.abort is inaccurate]]></title>
             <link>https://github.com/mdn/content/issues/23961</link>
