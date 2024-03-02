@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Khronos Group WebGL Working Group. [![RSS feed for Khronos Group WebGL Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[webgl2\] texSubImage3D: Wrong List of Formats](https://github.com/mdn/content/issues/32524) (2024-03-02T17:18:28Z)
+  
 * [\[webgl1\] WebGL uniformMatrix\[234\]fv() method documentation is wrong.](https://github.com/mdn/content/issues/31939) (2024-01-26T14:21:11Z)
   
 * [\[webgl2, webgl1\] \`texSubImage2D\` documentation does not document the \`source\`, \`srcOffset\` parameters](https://github.com/mdn/content/issues/31787) (2024-01-18T18:45:51Z)
