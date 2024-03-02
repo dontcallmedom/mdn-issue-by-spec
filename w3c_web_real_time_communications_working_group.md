@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Real-Time Communications Working Group. [![RSS feed for W3C Web Real-Time Communications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[audio-output\] selectAudioOutput() selectAudioOutput(options)](https://github.com/mdn/content/issues/32523) (2024-03-02T16:29:56Z)
-  
 * [\[webrtc\] RTCDataChannel bufferedamountlow event not sent if the threshold is 0?](https://github.com/mdn/content/issues/29087) (2023-09-13T08:47:28Z)
   
 * [\[webrtc\] usernameFragment Examples section contains method that does not exist](https://github.com/mdn/content/issues/28171) (2023-07-25T13:19:31Z)
