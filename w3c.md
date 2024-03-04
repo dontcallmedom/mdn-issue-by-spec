@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-logical-1, css-text-3\] text-align values (left, center and right) mistakenly marked as deprecated and non-standard?](https://github.com/mdn/content/issues/32545) (2024-03-04T15:02:20Z)
-  
 * [\[ecmascript, web-bluetooth\] \[Web Bluetooth\] Unclear wording abuot the Bluethoot interface returning something](https://github.com/mdn/content/issues/32529) (2024-03-03T12:19:47Z)
   
 * [\[cssom-view-1\] Window.innerwidth giving wrong value](https://github.com/mdn/content/issues/32499) (2024-03-01T06:23:15Z)
