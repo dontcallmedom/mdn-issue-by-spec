@@ -4,10 +4,41 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Sun, 03 Mar 2024 12:19:47 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 04 Mar 2024 15:02:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-logical-1, css-text-3] text-align values (left, center and right) mistakenly marked as deprecated and non-standard?]]></title>
+            <link>https://github.com/mdn/content/issues/32545</link>
+            <guid>https://github.com/mdn/content/issues/32545</guid>
+            <pubDate>Mon, 04 Mar 2024 15:02:20 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/text-align</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">See also <a href="https://stackoverflow.com/questions/78102109/is-css-text-align-center-really-deprecated-if-so-whats-the-alternative" rel="nofollow">StackOverflow</a>.</p>
+<p dir="auto">Right now there doesn't seem to be anything indicating the 3 values are deprecated. I think there is a mistake with <a href="https://github.com/mdn/content/commit/05a463a3bc1af6e1b1e0d6a273582d954ae00ed0">this commit change</a>.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The values <code class="notranslate">left</code>, <code class="notranslate">center</code> and <code class="notranslate">right</code> should not have deprecated and non-standard tags.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://drafts.csswg.org/css-text/#text-align-property" rel="nofollow">https://drafts.csswg.org/css-text/#text-align-property</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/text-align</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/text-align</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/text-align/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/text-align/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/05a463a3bc1af6e1b1e0d6a273582d954ae00ed0/hovercard" href="https://github.com/mdn/content/commit/05a463a3bc1af6e1b1e0d6a273582d954ae00ed0"><tt>05a463a</tt></a></li>
+<li>Document last modified: 2024-02-21T08:43:26.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript, web-bluetooth] [Web Bluetooth] Unclear wording abuot the Bluethoot interface returning something]]></title>
             <link>https://github.com/mdn/content/issues/32529</link>
@@ -50,7 +81,7 @@
 <h3 dir="auto">What specific section or headline is this issue about?</h3>
 <p dir="auto">Window.innerWidth not working properly</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/129654598/309166431-51e5d4ce-cea2-44ca-baab-98db376be872.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjQ1ODcsIm5iZiI6MTcwOTU2NDI4NywicGF0aCI6Ii8xMjk2NTQ1OTgvMzA5MTY2NDMxLTUxZTVkNGNlLWNlYTItNDRjYS1iYWFiLTk4ZGIzNzZiZTg3Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxNDU4MDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNzgyZTA2NGJmZmFmOGE0MjBkMzE0NDg3YWRlMjI5NjQyYjRlYzZmYWFkOTFhZGI2OThjZTVjM2VkZDVlM2I3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.nr9Or0gRMiBQuZJrAM0nDSivQ9yZ_NkWyyYSEeck9xc"><img src="https://private-user-images.githubusercontent.com/129654598/309166431-51e5d4ce-cea2-44ca-baab-98db376be872.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjQ1ODcsIm5iZiI6MTcwOTU2NDI4NywicGF0aCI6Ii8xMjk2NTQ1OTgvMzA5MTY2NDMxLTUxZTVkNGNlLWNlYTItNDRjYS1iYWFiLTk4ZGIzNzZiZTg3Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxNDU4MDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNzgyZTA2NGJmZmFmOGE0MjBkMzE0NDg3YWRlMjI5NjQyYjRlYzZmYWFkOTFhZGI2OThjZTVjM2VkZDVlM2I3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.nr9Or0gRMiBQuZJrAM0nDSivQ9yZ_NkWyyYSEeck9xc" alt="error_honeycomg" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/129654598/309166431-51e5d4ce-cea2-44ca-baab-98db376be872.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjU4NjAsIm5iZiI6MTcwOTU2NTU2MCwicGF0aCI6Ii8xMjk2NTQ1OTgvMzA5MTY2NDMxLTUxZTVkNGNlLWNlYTItNDRjYS1iYWFiLTk4ZGIzNzZiZTg3Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxNTE5MjBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00NzE3ZDRiYmZhOTQ2YjkzNmFiMzgwMzI4ZTY0NWE5YWY3YzUwZTU4YTkxMzViZGUwMDM5MDZjODg1MTZlZjcxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.fQESG0Ii4WKEP2yqqqoYdNsqbPE4A7X02oKNBRmMo9M"><img src="https://private-user-images.githubusercontent.com/129654598/309166431-51e5d4ce-cea2-44ca-baab-98db376be872.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjU4NjAsIm5iZiI6MTcwOTU2NTU2MCwicGF0aCI6Ii8xMjk2NTQ1OTgvMzA5MTY2NDMxLTUxZTVkNGNlLWNlYTItNDRjYS1iYWFiLTk4ZGIzNzZiZTg3Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxNTE5MjBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00NzE3ZDRiYmZhOTQ2YjkzNmFiMzgwMzI4ZTY0NWE5YWY3YzUwZTU4YTkxMzViZGUwMDM5MDZjODg1MTZlZjcxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.fQESG0Ii4WKEP2yqqqoYdNsqbPE4A7X02oKNBRmMo9M" alt="error_honeycomg" style="max-width: 100%;"></a></p>
 <p dir="auto">can you observe the width given in console it is 334 and see in the actuval it is 333</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">expected that the width displayed is 333</p>
@@ -376,36 +407,6 @@ Brave [Version 1.62.156]</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[web-share] Navigator: share() live example missing permission]]></title>
-            <link>https://github.com/mdn/content/issues/32130</link>
-            <guid>https://github.com/mdn/content/issues/32130</guid>
-            <pubDate>Mon, 05 Feb 2024 20:27:54 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Sharing a URL</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Example shows "Error: NotAllowedError: Third-party iframes are not allowed to call share() unless explicitly allowed via Feature-Policy (web-share)"</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Working example</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/navigator/share</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/navigator/share/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/navigator/share/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0f20b09ca00bc43ff68a212a4c9aa6a81bd0bd40/hovercard" href="https://github.com/mdn/content/commit/0f20b09ca00bc43ff68a212a4c9aa6a81bd0bd40"><tt>0f20b09</tt></a></li>
-<li>Document last modified: 2023-10-30T22:09:50.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[SVG11] The `x` and `y` attributes on text is actually a list]]></title>
             <link>https://github.com/mdn/content/issues/32081</link>
             <guid>https://github.com/mdn/content/issues/32081</guid>
@@ -538,9 +539,9 @@ I think that's what the example should show, and maybe show an image or video sh
 </label>    
   <div class="FormControl-input-wrap">
     
-      <input value="Tasks" data-target="primer-text-field.inputElement tasklist-block-title.titleInput" data-action="keydown:tasklist-block-title#handleKeyDown keyup:tasklist-block-title#handleKeyUp" test_selector="tasklist-block-title-input" aria-describedby="validation-45d49ebe-8818-44b5-bf21-5f63fbfbca06" class="FormControl-input FormControl-medium js-tasklist-title-input" type="text" name="tasklist_title" id="tasklist_title">
+      <input value="Tasks" data-target="primer-text-field.inputElement tasklist-block-title.titleInput" data-action="keydown:tasklist-block-title#handleKeyDown keyup:tasklist-block-title#handleKeyUp" test_selector="tasklist-block-title-input" aria-describedby="validation-5c9526df-e121-4a6e-aa11-44a002915ab3" class="FormControl-input FormControl-medium js-tasklist-title-input" type="text" name="tasklist_title" id="tasklist_title">
 </div>
-      <div class="FormControl-inlineValidation" id="validation-45d49ebe-8818-44b5-bf21-5f63fbfbca06" hidden="hidden">
+      <div class="FormControl-inlineValidation" id="validation-5c9526df-e121-4a6e-aa11-44a002915ab3" hidden="hidden">
   <span class="FormControl-inlineValidation--visual" data-target="primer-text-field.validationSuccessIcon" hidden=""><svg aria-hidden="true" height="12" viewBox="0 0 12 12" version="1.1" width="12" data-view-component="true" class="octicon octicon-check-circle-fill">
     <path d="M6 0a6 6 0 1 1 0 12A6 6 0 0 1 6 0Zm-.705 8.737L9.63 4.403 8.392 3.166 5.295 6.263l-1.7-1.702L2.356 5.8l2.938 2.938Z"></path>
 </svg></span>
@@ -564,10 +565,10 @@ I think that's what the example should show, and maybe show an image or video sh
 </div>
     <div data-target="tracking-block.titleViewMode tasklist-block-title.titleViewMode" data-view-component="true" class="d-flex flex-items-center">
       <h3 data-target="tasklist-block-title.titleText" data-view-component="true" class="m-0 flex-1">Tasks</h3>
-          <button data-action="click:tracking-block#showTitleEditMode" id="icon-button-1e7c5d38-1452-4e4d-8150-34f3d733e27d" aria-labelledby="tooltip-5bfb00d2-4d3f-4bfb-bffb-69274d8f4091" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium tasklist-title-edit-button ml-2">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pencil Button-visual">
+          <button data-action="click:tracking-block#showTitleEditMode" id="icon-button-0bb5ba43-3467-4ae2-bc29-7e30c77876fe" aria-labelledby="tooltip-28f335b1-baac-4e28-926d-642781067d76" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium tasklist-title-edit-button ml-2">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pencil Button-visual">
     <path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path>
 </svg>
-</button><tool-tip id="tooltip-5bfb00d2-4d3f-4bfb-bffb-69274d8f4091" for="icon-button-1e7c5d38-1452-4e4d-8150-34f3d733e27d" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Edit tasklist title</tool-tip>
+</button><tool-tip id="tooltip-28f335b1-baac-4e28-926d-642781067d76" for="icon-button-0bb5ba43-3467-4ae2-bc29-7e30c77876fe" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Edit tasklist title</tool-tip>
 
 </div></tasklist-block-title>
 
@@ -578,10 +579,10 @@ I think that's what the example should show, and maybe show an image or video sh
 
             <action-menu data-target="tracking-block-main.dropdownMenu" data-select-variant="none" data-view-component="true" class="tracking-block-list-item-dropdown-menu">
   <focus-group direction="vertical" mnemonics="" retain="">
-    <button data-targets="tracking-block.dropdownMenu" id="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-button" popovertarget="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-overlay" aria-controls="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-list" aria-haspopup="true" aria-labelledby="tooltip-a6280e92-9b71-44bc-870f-d98f59eb7342" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--small Truncate tracking-block-menu-btn color-bg-transparent p-1 m-0 position-relative">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
+    <button data-targets="tracking-block.dropdownMenu" id="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-button" popovertarget="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-overlay" aria-controls="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-list" aria-haspopup="true" aria-labelledby="tooltip-2077c29a-e174-41c0-871f-f6982fa8f292" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--small Truncate tracking-block-menu-btn color-bg-transparent p-1 m-0 position-relative">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
     <path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
 </svg>
-</button><tool-tip id="tooltip-a6280e92-9b71-44bc-870f-d98f59eb7342" for="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Tasklist Tasks, more options</tool-tip>
+</button><tool-tip id="tooltip-2077c29a-e174-41c0-871f-f6982fa8f292" for="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Tasklist Tasks, more options</tool-tip>
 
 
 <anchored-position id="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-overlay" anchor="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-button" align="start" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true">
@@ -591,7 +592,7 @@ I think that's what the example should show, and maybe show an image or video sh
   <ul aria-labelledby="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-button" id="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
       <li type="button" data-action="click:tracking-block#showTitleEditMode" data-analytics-event="{&quot;category&quot;:&quot;Tasklist Block&quot;,&quot;action&quot;:&quot;rename&quot;,&quot;label&quot;:null}" data-targets="action-list.items action-list.items" role="none" data-view-component="true" class="ActionListItem">
     
-    <button tabindex="-1" id="item-d997d0a1-d3ac-428c-8bfb-bad00ff22e1a" role="menuitem" data-view-component="true" class="ActionListContent">
+    <button tabindex="-1" id="item-2b183e58-4584-4db2-b30e-949ec0c63e0f" role="menuitem" data-view-component="true" class="ActionListContent">
       
         <span data-view-component="true" class="ActionListItem-label">
                           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pencil">
@@ -605,7 +606,7 @@ I think that's what the example should show, and maybe show an image or video sh
 </li>
       <li type="button" data-action="click:tracking-block#copyBlockMarkdown" data-analytics-event="{&quot;category&quot;:&quot;Tasklist Block&quot;,&quot;action&quot;:&quot;copy markdown&quot;,&quot;label&quot;:null}" data-targets="action-list.items action-list.items" role="none" data-view-component="true" class="ActionListItem">
     
-    <button tabindex="-1" id="item-c51f5f75-d3d7-4251-b048-bf35cece7ce3" role="menuitem" data-view-component="true" class="ActionListContent">
+    <button tabindex="-1" id="item-0c4b1753-7e59-4bc2-ad4c-81a69cd68700" role="menuitem" data-view-component="true" class="ActionListContent">
       
         <span data-view-component="true" class="ActionListItem-label">
                           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy">
@@ -703,10 +704,10 @@ I think that's what the example should show, and maybe show an image or video sh
           <div data-targets="tracking-block.itemMenus">
             <action-menu data-select-variant="none" data-view-component="true" class="tracking-block-list-item-dropdown-menu">
   <focus-group direction="vertical" mnemonics="" retain="">
-    <button style="max-height:24px" data-targets="tracking-block.dropdownMenu" id="tracking-block-list-item-dropdown-menu-1234-1-button" popovertarget="tracking-block-list-item-dropdown-menu-1234-1-overlay" aria-controls="tracking-block-list-item-dropdown-menu-1234-1-list" aria-haspopup="true" aria-labelledby="tooltip-c670978b-d060-4ccc-b407-925bb592cf02" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--small Truncate color-bg-transparent p-1 m-0 position-relative">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
+    <button style="max-height:24px" data-targets="tracking-block.dropdownMenu" id="tracking-block-list-item-dropdown-menu-1234-1-button" popovertarget="tracking-block-list-item-dropdown-menu-1234-1-overlay" aria-controls="tracking-block-list-item-dropdown-menu-1234-1-list" aria-haspopup="true" aria-labelledby="tooltip-538bde39-ea44-4703-bd65-28e9d0b26256" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--small Truncate color-bg-transparent p-1 m-0 position-relative">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
     <path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
 </svg>
-</button><tool-tip id="tooltip-c670978b-d060-4ccc-b407-925bb592cf02" for="tracking-block-list-item-dropdown-menu-1234-1-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Options</tool-tip>
+</button><tool-tip id="tooltip-538bde39-ea44-4703-bd65-28e9d0b26256" for="tracking-block-list-item-dropdown-menu-1234-1-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Options</tool-tip>
 
 
 <anchored-position id="tracking-block-list-item-dropdown-menu-1234-1-overlay" anchor="tracking-block-list-item-dropdown-menu-1234-1-button" align="end" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true">
@@ -716,7 +717,7 @@ I think that's what the example should show, and maybe show an image or video sh
   <ul aria-labelledby="tracking-block-list-item-dropdown-menu-1234-1-button" id="tracking-block-list-item-dropdown-menu-1234-1-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
       <li type="button" data-targets="action-list.items action-list.items" data-tracking-block-convert-button="" role="none" data-view-component="true" class="ActionListItem color-fg-default d-flex">
     
-    <button tabindex="-1" id="item-1fec8158-6965-4727-833a-0940068d02e9" role="menuitem" data-view-component="true" class="ActionListContent">
+    <button tabindex="-1" id="item-5caf3330-e522-4f18-b69b-b4d9f2d538a9" role="menuitem" data-view-component="true" class="ActionListContent">
       
         <span data-view-component="true" class="ActionListItem-label">
                           <div data-view-component="true" class="d-flex flex-items-center flex-justify-between">
@@ -728,7 +729,7 @@ I think that's what the example should show, and maybe show an image or video sh
 </li>
       <li type="button" data-action="click:tracking-block#handleMarkAsDone" data-targets="action-list.items action-list.items" role="none" data-view-component="true" class="ActionListItem color-fg-default">
     
-    <button tabindex="-1" id="item-d033afe9-1f48-43f7-896c-f34728f81c39" role="menuitem" data-view-component="true" class="ActionListContent">
+    <button tabindex="-1" id="item-37369776-b35a-4237-8fb5-4cc21560f11a" role="menuitem" data-view-component="true" class="ActionListContent">
       
         <span data-view-component="true" class="ActionListItem-label">
                         <div data-view-component="true" class="d-flex flex-items-center flex-justify-between">
@@ -740,7 +741,7 @@ I think that's what the example should show, and maybe show an image or video sh
 </li>
       <li type="button" data-action="click:tracking-block#handleRename" data-targets="action-list.items action-list.items" role="none" data-view-component="true" class="ActionListItem color-fg-default d-flex">
     
-    <button tabindex="-1" id="item-88e10409-3901-404b-b8de-7478a3e718da" role="menuitem" data-view-component="true" class="ActionListContent">
+    <button tabindex="-1" id="item-26e25b53-169a-4512-9944-5c841ca6f9a1" role="menuitem" data-view-component="true" class="ActionListContent">
       
         <span data-view-component="true" class="ActionListItem-label">
                         <div data-view-component="true" class="d-flex flex-items-center flex-justify-between">
@@ -752,7 +753,7 @@ I think that's what the example should show, and maybe show an image or video sh
 </li>
       <li type="button" data-targets="action-list.items action-list.items" data-tracking-block-remove-button="" role="none" data-view-component="true" class="ActionListItem--danger ActionListItem d-flex">
     
-    <button tabindex="-1" id="item-141cd7cd-b427-4da3-b4c2-2a96b19db00c" role="menuitem" data-view-component="true" class="ActionListContent">
+    <button tabindex="-1" id="item-41f0076e-ab5b-469a-9a33-32289b7ecc2e" role="menuitem" data-view-component="true" class="ActionListContent">
       
         <span data-view-component="true" class="ActionListItem-label">
                         <div data-view-component="true" class="d-flex flex-items-center flex-justify-between">
@@ -1498,7 +1499,7 @@ Also I tested it in codepen, to play around.</p>
 <p dir="auto">should mention <em><strong>service worker registration's serialized scope url</strong></em> and relation with the <code class="notranslate">options.scope</code> paremater with <code class="notranslate">ServiceWorkerContainer.register()</code></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><a href="https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-scope" rel="nofollow">https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-scope</a></p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/95597335/271661181-931030dc-ed2d-4bb7-b611-b3a8391470fe.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjQ1ODUsIm5iZiI6MTcwOTU2NDI4NSwicGF0aCI6Ii85NTU5NzMzNS8yNzE2NjExODEtOTMxMDMwZGMtZWQyZC00YmI3LWI2MTEtYjNhODM5MTQ3MGZlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzA0VDE0NTgwNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRlNmFkMDQ0MGMxMTY0OTMzZTc1YzUyYWJmNDY0NGE3OWI4ZGIyZWFiNmFiOTM3OTI4YWI3Zjc5MGIwN2ZlYjcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.rWnkyc4VsWEF0c37dNEiVD3w_adj9KoqfM6cOKwb5l4"><img src="https://private-user-images.githubusercontent.com/95597335/271661181-931030dc-ed2d-4bb7-b611-b3a8391470fe.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjQ1ODUsIm5iZiI6MTcwOTU2NDI4NSwicGF0aCI6Ii85NTU5NzMzNS8yNzE2NjExODEtOTMxMDMwZGMtZWQyZC00YmI3LWI2MTEtYjNhODM5MTQ3MGZlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzA0VDE0NTgwNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRlNmFkMDQ0MGMxMTY0OTMzZTc1YzUyYWJmNDY0NGE3OWI4ZGIyZWFiNmFiOTM3OTI4YWI3Zjc5MGIwN2ZlYjcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.rWnkyc4VsWEF0c37dNEiVD3w_adj9KoqfM6cOKwb5l4" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/95597335/271661181-931030dc-ed2d-4bb7-b611-b3a8391470fe.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjU4NTcsIm5iZiI6MTcwOTU2NTU1NywicGF0aCI6Ii85NTU5NzMzNS8yNzE2NjExODEtOTMxMDMwZGMtZWQyZC00YmI3LWI2MTEtYjNhODM5MTQ3MGZlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzA0VDE1MTkxN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTZjY2JkODkxNjA0ZDFjNjY3ZGY2Mzk1ZTkzNDRlYmYzOTkzZThlMGRjYTZlNDYwNmUzODUxYTA5ZmE2NzY4YWMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.2kdke87QJZoaiQIkHv8shfl4D6UNpj4-LToiapNTX6U"><img src="https://private-user-images.githubusercontent.com/95597335/271661181-931030dc-ed2d-4bb7-b611-b3a8391470fe.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjU4NTcsIm5iZiI6MTcwOTU2NTU1NywicGF0aCI6Ii85NTU5NzMzNS8yNzE2NjExODEtOTMxMDMwZGMtZWQyZC00YmI3LWI2MTEtYjNhODM5MTQ3MGZlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzA0VDE1MTkxN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTZjY2JkODkxNjA0ZDFjNjY3ZGY2Mzk1ZTkzNDRlYmYzOTkzZThlMGRjYTZlNDYwNmUzODUxYTA5ZmE2NzY4YWMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.2kdke87QJZoaiQIkHv8shfl4D6UNpj4-LToiapNTX6U" alt="image" style="max-width: 100%;"></a></p>
 <p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register#parameters" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register#parameters</a></p>
 <p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache</a></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
@@ -1587,7 +1588,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjQ1ODIsIm5iZiI6MTcwOTU2NDI4MiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDRUMTQ1ODAyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YThmOGY4NzVkMjJiOTZhNWNlNzlkMzA5N2UzMDY5YWFhNjVkMDJjYjU3NWEzMGQ5M2U0MmE3ZGJkYWNmM2UzYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.LKo2ZacPE1ZEld7OhL7VPvONq67uBesVWi2nuqScY98"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjQ1ODIsIm5iZiI6MTcwOTU2NDI4MiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDRUMTQ1ODAyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YThmOGY4NzVkMjJiOTZhNWNlNzlkMzA5N2UzMDY5YWFhNjVkMDJjYjU3NWEzMGQ5M2U0MmE3ZGJkYWNmM2UzYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.LKo2ZacPE1ZEld7OhL7VPvONq67uBesVWi2nuqScY98" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjU4NTQsIm5iZiI6MTcwOTU2NTU1NCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDRUMTUxOTE0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTVkYTQ5MzI2YTdmZDM2ZWM0MTEzYjMwODMzMWRmMWM5MTJhZjljMTdiM2EwNTcyNmVmNmMxMTdmZDM4NGExZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.lLD5IN4ZvHu3cSI6Bi04QIi3ighln4yKftMx5D9ajtM"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjU4NTQsIm5iZiI6MTcwOTU2NTU1NCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDRUMTUxOTE0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTVkYTQ5MzI2YTdmZDM2ZWM0MTEzYjMwODMzMWRmMWM5MTJhZjljMTdiM2EwNTcyNmVmNmMxMTdmZDM4NGExZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.lLD5IN4ZvHu3cSI6Bi04QIi3ighln4yKftMx5D9ajtM" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
@@ -2107,10 +2108,10 @@ interface PushSubscriptionJSON {
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The example doesn't work. Also. it has different errors depending on the platform you use. On desktop web:<br>
 <code class="notranslate">Error: TypeError: navigator.share is not a function</code></p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/102827935/247702540-0504c6fa-4020-4fa2-aa0b-4cdc1cc0bb66.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjQ1ODMsIm5iZiI6MTcwOTU2NDI4MywicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNTQwLTA1MDRjNmZhLTQwMjAtNGZhMi1hYTBiLTRjZGMxY2MwYmI2Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxNDU4MDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yMmFhNjFiNjgzZWFhOTNjNzg1NzU3ZTZlOGI1NTc5N2NiYmZiZTM0NDU1MGE2OGRhYWViODI0ZDQ3YzUyMjlhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9._JhXWuDd_U_TwtFTm2KLHhqS3Sx32Vsf-4dCZQjK0oY"><img src="https://private-user-images.githubusercontent.com/102827935/247702540-0504c6fa-4020-4fa2-aa0b-4cdc1cc0bb66.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjQ1ODMsIm5iZiI6MTcwOTU2NDI4MywicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNTQwLTA1MDRjNmZhLTQwMjAtNGZhMi1hYTBiLTRjZGMxY2MwYmI2Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxNDU4MDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yMmFhNjFiNjgzZWFhOTNjNzg1NzU3ZTZlOGI1NTc5N2NiYmZiZTM0NDU1MGE2OGRhYWViODI0ZDQ3YzUyMjlhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9._JhXWuDd_U_TwtFTm2KLHhqS3Sx32Vsf-4dCZQjK0oY" alt="1" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/102827935/247702540-0504c6fa-4020-4fa2-aa0b-4cdc1cc0bb66.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjU4NTUsIm5iZiI6MTcwOTU2NTU1NSwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNTQwLTA1MDRjNmZhLTQwMjAtNGZhMi1hYTBiLTRjZGMxY2MwYmI2Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxNTE5MTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03MzIwOTE5ZmJhMzQ1YWE3YTUxMzExY2I2ZWYzYjk2ZTkwODc2NmMzN2UwNTFlNTIwZDk0MWY1NzE2MDYxMjc5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.1j6Bx-FFc3FmPw8bMNf4lOZFUIxZg5FCGubkvHB4Oik"><img src="https://private-user-images.githubusercontent.com/102827935/247702540-0504c6fa-4020-4fa2-aa0b-4cdc1cc0bb66.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjU4NTUsIm5iZiI6MTcwOTU2NTU1NSwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNTQwLTA1MDRjNmZhLTQwMjAtNGZhMi1hYTBiLTRjZGMxY2MwYmI2Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxNTE5MTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03MzIwOTE5ZmJhMzQ1YWE3YTUxMzExY2I2ZWYzYjk2ZTkwODc2NmMzN2UwNTFlNTIwZDk0MWY1NzE2MDYxMjc5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.1j6Bx-FFc3FmPw8bMNf4lOZFUIxZg5FCGubkvHB4Oik" alt="1" style="max-width: 100%;"></a></p>
 <p dir="auto">on mWeb (iOS Safari):<br>
 <code class="notranslate">Error: NotAllowedError: Third-party iframes are not allowed to call share() unless explicitly allowed via Feature-Policy (web-share)</code></p>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/102827935/247702629-9c20d6ee-75cd-4319-b024-f3f7eac9bd49.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjQ1ODMsIm5iZiI6MTcwOTU2NDI4MywicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNjI5LTljMjBkNmVlLTc1Y2QtNDMxOS1iMDI0LWYzZjdlYWM5YmQ0OS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDRUMTQ1ODAzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OGQ1ZWM5NzJlMWQ0Yjg0OTJlYzlkNmQzYWE1NmY0NWZjYjk5OTRkYTAxOTc4OTI1ZGUzYjY5YjU2YTA1YmE0MCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Kov2HxDr3H3BOUDMdqXuaz-GGcNe-ZWGmSFCgvf1t-I"><img src="https://private-user-images.githubusercontent.com/102827935/247702629-9c20d6ee-75cd-4319-b024-f3f7eac9bd49.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjQ1ODMsIm5iZiI6MTcwOTU2NDI4MywicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNjI5LTljMjBkNmVlLTc1Y2QtNDMxOS1iMDI0LWYzZjdlYWM5YmQ0OS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDRUMTQ1ODAzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OGQ1ZWM5NzJlMWQ0Yjg0OTJlYzlkNmQzYWE1NmY0NWZjYjk5OTRkYTAxOTc4OTI1ZGUzYjY5YjU2YTA1YmE0MCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Kov2HxDr3H3BOUDMdqXuaz-GGcNe-ZWGmSFCgvf1t-I" width="300" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/102827935/247702629-9c20d6ee-75cd-4319-b024-f3f7eac9bd49.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjU4NTUsIm5iZiI6MTcwOTU2NTU1NSwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNjI5LTljMjBkNmVlLTc1Y2QtNDMxOS1iMDI0LWYzZjdlYWM5YmQ0OS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDRUMTUxOTE1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZmNhNTE2MTM0YzcyNTBjODUyN2Y1ZDE1MWY5YjBhMTFhM2RlZDRmYWMxZDQzYjk1N2JkMWQ0NGE0MDQ1ZDlkYyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.YP7dz9HgqisJxOFE5ODDzZ8mWSWieIvk-t46ayky_44"><img src="https://private-user-images.githubusercontent.com/102827935/247702629-9c20d6ee-75cd-4319-b024-f3f7eac9bd49.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjU4NTUsIm5iZiI6MTcwOTU2NTU1NSwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNjI5LTljMjBkNmVlLTc1Y2QtNDMxOS1iMDI0LWYzZjdlYWM5YmQ0OS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDRUMTUxOTE1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZmNhNTE2MTM0YzcyNTBjODUyN2Y1ZDE1MWY5YjBhMTFhM2RlZDRmYWMxZDQzYjk1N2JkMWQ0NGE0MDQ1ZDlkYyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.YP7dz9HgqisJxOFE5ODDzZ8mWSWieIvk-t46ayky_44" width="300" style="max-width: 100%;"></a>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The share dialog is supposed to launch when I click the button in the example.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>

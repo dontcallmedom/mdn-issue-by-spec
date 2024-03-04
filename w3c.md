@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-logical-1, css-text-3\] text-align values (left, center and right) mistakenly marked as deprecated and non-standard?](https://github.com/mdn/content/issues/32545) (2024-03-04T15:02:20Z)
+  
 * [\[ecmascript, web-bluetooth\] \[Web Bluetooth\] Unclear wording abuot the Bluethoot interface returning something](https://github.com/mdn/content/issues/32529) (2024-03-03T12:19:47Z)
   
 * [\[cssom-view-1\] Window.innerwidth giving wrong value](https://github.com/mdn/content/issues/32499) (2024-03-01T06:23:15Z)
@@ -23,8 +25,6 @@
 * [\[css-backgrounds-4\] No information on border-color  \<stripes()\>](https://github.com/mdn/content/issues/32234) (2024-02-12T07:33:50Z)
   
 * [\[html, selectors-4\] input type time and datetime-local don't match :out-of-range](https://github.com/mdn/content/issues/32156) (2024-02-07T12:06:32Z)
-  
-* [\[web-share\] Navigator: share() live example missing permission](https://github.com/mdn/content/issues/32130) (2024-02-05T20:27:54Z)
   
 * [\[SVG11\] The \`x\` and \`y\` attributes on text is actually a list](https://github.com/mdn/content/issues/32081) (2024-02-02T15:10:47Z)
   
