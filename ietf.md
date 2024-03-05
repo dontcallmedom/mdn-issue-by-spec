@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by IETF. [![RSS feed for IETF-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[rfc7234\] Deprecation of Warning header should link to alternative or new way of doing things.](https://github.com/mdn/content/issues/32564) (2024-03-05T22:29:20Z)
+  
 * [\[rfc7230\] Chunk sizes are wrong in the example](https://github.com/mdn/content/issues/32528) (2024-03-03T09:32:18Z)
   
 * [\[rfc6265\] Set-Cookie domain attribute actually needs leading dot to work](https://github.com/mdn/content/issues/32050) (2024-02-01T08:40:17Z)

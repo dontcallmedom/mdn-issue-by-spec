@@ -4,10 +4,40 @@
         <title>IETF-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ietf.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by IETF</description>
-        <lastBuildDate>Sun, 03 Mar 2024 09:32:18 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 05 Mar 2024 22:29:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[rfc7234] Deprecation of Warning header should link to alternative or new way of doing things.]]></title>
+            <link>https://github.com/mdn/content/issues/32564</link>
+            <guid>https://github.com/mdn/content/issues/32564</guid>
+            <pubDate>Tue, 05 Mar 2024 22:29:20 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Warning" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Warning</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Deprecated</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Incomplete: No indication or pointer to replacement for the Warning header. A lot of proxy, etc. apps are using this to indicate error status. It is a long-standing standard and thus deprecation warrants explanation and a link to the new way of doing things. This is a problem on many MDN pages.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A link to what should be used instead.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">No, no idea what is the replacement. I just ran into this header using a proxy library. We can't read minds of people that devise these deprecations, what are we supposed to do instead if not use this on any new web sites or apps? If okay to use on backends or apps, and only deprecated in end-user browsers, this should be indicated. But still, an alternative should be provided.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/http/headers/warning</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Warning" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Warning</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/warning/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/warning/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/501093f8973bf996ff5fa0fbf4e4146090cb08b5/hovercard" href="https://github.com/mdn/content/commit/501093f8973bf996ff5fa0fbf4e4146090cb08b5"><tt>501093f</tt></a></li>
+<li>Document last modified: 2023-08-03T08:49:27.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[rfc7230] Chunk sizes are wrong in the example]]></title>
             <link>https://github.com/mdn/content/issues/32528</link>
@@ -112,11 +142,11 @@ Developer Network\r\n<br>
 </thead>
 <tbody>
 <tr>
-<td><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5629994/299715016-b678286b-65b0-4a67-8b4b-eb330f1673ef.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk2Nzc4MzgsIm5iZiI6MTcwOTY3NzUzOCwicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTAxNi1iNjc4Mjg2Yi02NWIwLTRhNjctOGI0Yi1lYjMzMGYxNjczZWYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDVUMjIyNTM4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MjQzMDM4NmYyNTFlNjkzZTY4Y2IwZGU5MWJjNGZjOGI1YTU1MTZiOGI4YTZmNTZmNjRlYzc4ZWFlMGEwOTM4NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.oaMCCoK-jFPZpXx4lc4RE_OH4MOSEp-Qoiis7cWUzt0"><img src="https://private-user-images.githubusercontent.com/5629994/299715016-b678286b-65b0-4a67-8b4b-eb330f1673ef.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk2Nzc4MzgsIm5iZiI6MTcwOTY3NzUzOCwicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTAxNi1iNjc4Mjg2Yi02NWIwLTRhNjctOGI0Yi1lYjMzMGYxNjczZWYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDVUMjIyNTM4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MjQzMDM4NmYyNTFlNjkzZTY4Y2IwZGU5MWJjNGZjOGI1YTU1MTZiOGI4YTZmNTZmNjRlYzc4ZWFlMGEwOTM4NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.oaMCCoK-jFPZpXx4lc4RE_OH4MOSEp-Qoiis7cWUzt0" alt="Screenshot 2024-01-25 at 15 19 29" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5629994/299715016-b678286b-65b0-4a67-8b4b-eb330f1673ef.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk2Nzg0NjUsIm5iZiI6MTcwOTY3ODE2NSwicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTAxNi1iNjc4Mjg2Yi02NWIwLTRhNjctOGI0Yi1lYjMzMGYxNjczZWYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDVUMjIzNjA1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MjFlNWY4Mjg5ODgzZWExYWU3MDdlNTU2NGFkNjA1MDM5ZWE4YmQ5MGQwOTlmZGVlNDI1MWY0YTY0ZWE5ZjAxZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.NPKV4aiiIZM4o203gZ5Ms2-zVT5JADBu4rnH8mB8A2A"><img src="https://private-user-images.githubusercontent.com/5629994/299715016-b678286b-65b0-4a67-8b4b-eb330f1673ef.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk2Nzg0NjUsIm5iZiI6MTcwOTY3ODE2NSwicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTAxNi1iNjc4Mjg2Yi02NWIwLTRhNjctOGI0Yi1lYjMzMGYxNjczZWYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDVUMjIzNjA1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MjFlNWY4Mjg5ODgzZWExYWU3MDdlNTU2NGFkNjA1MDM5ZWE4YmQ5MGQwOTlmZGVlNDI1MWY0YTY0ZWE5ZjAxZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.NPKV4aiiIZM4o203gZ5Ms2-zVT5JADBu4rnH8mB8A2A" alt="Screenshot 2024-01-25 at 15 19 29" style="max-width: 100%;"></a></td>
 <td>Request working using http3</td>
 </tr>
 <tr>
-<td><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5629994/299715119-870cf1cd-c64f-43b4-b39b-b240ef35fb69.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk2Nzc4MzgsIm5iZiI6MTcwOTY3NzUzOCwicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTExOS04NzBjZjFjZC1jNjRmLTQzYjQtYjM5Yi1iMjQwZWYzNWZiNjkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDVUMjIyNTM4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDJhMGRmZWE1ZmEwMTUxZTU3ZTExZjhlOWQ1OTRiNmE0ZjdkMWViMDhkMzcyNzE2ZDE3ZDkzYzRkNDUzYzMwZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.S7YkbsaAZAsY-RnXWwn4v7Rmy0RbB8wR0hoKWtXuOOo"><img src="https://private-user-images.githubusercontent.com/5629994/299715119-870cf1cd-c64f-43b4-b39b-b240ef35fb69.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk2Nzc4MzgsIm5iZiI6MTcwOTY3NzUzOCwicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTExOS04NzBjZjFjZC1jNjRmLTQzYjQtYjM5Yi1iMjQwZWYzNWZiNjkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDVUMjIyNTM4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDJhMGRmZWE1ZmEwMTUxZTU3ZTExZjhlOWQ1OTRiNmE0ZjdkMWViMDhkMzcyNzE2ZDE3ZDkzYzRkNDUzYzMwZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.S7YkbsaAZAsY-RnXWwn4v7Rmy0RbB8wR0hoKWtXuOOo" alt="Screenshot 2024-01-25 at 15 19 32" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5629994/299715119-870cf1cd-c64f-43b4-b39b-b240ef35fb69.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk2Nzg0NjUsIm5iZiI6MTcwOTY3ODE2NSwicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTExOS04NzBjZjFjZC1jNjRmLTQzYjQtYjM5Yi1iMjQwZWYzNWZiNjkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDVUMjIzNjA1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NTRhOGJjMjdlMjIzOTMzOTI3ZDY1MTVlZWJkNDQ1MmZhMjFmZWJhNGUzNThjZTQ4M2I2YjlhNjlmYzY4OTViMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.DzS6NJ8eY8a8u-ZPgmlLTX3xOM5jbQfkHqfhTtNQGOQ"><img src="https://private-user-images.githubusercontent.com/5629994/299715119-870cf1cd-c64f-43b4-b39b-b240ef35fb69.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk2Nzg0NjUsIm5iZiI6MTcwOTY3ODE2NSwicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTExOS04NzBjZjFjZC1jNjRmLTQzYjQtYjM5Yi1iMjQwZWYzNWZiNjkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDVUMjIzNjA1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NTRhOGJjMjdlMjIzOTMzOTI3ZDY1MTVlZWJkNDQ1MmZhMjFmZWJhNGUzNThjZTQ4M2I2YjlhNjlmYzY4OTViMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.DzS6NJ8eY8a8u-ZPgmlLTX3xOM5jbQfkHqfhTtNQGOQ" alt="Screenshot 2024-01-25 at 15 19 32" style="max-width: 100%;"></a></td>
 <td>Showing appropriate header set</td>
 </tr>
 </tbody>
