@@ -4,31 +4,10 @@
         <title>WHATWG XMLHttpRequest Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_xmlhttprequest_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG XMLHttpRequest Workstream</description>
-        <lastBuildDate>Sun, 29 Jan 2023 01:52:09 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 05 Aug 2021 12:02:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[xhr] xhr.abort is inaccurate]]></title>
-            <link>https://github.com/mdn/content/issues/23961</link>
-            <guid>https://github.com/mdn/content/issues/23961</guid>
-            <pubDate>Sun, 29 Jan 2023 01:52:09 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/abort" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/abort</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">"The XMLHttpRequest.abort() method aborts the request if it has already been sent. When a request is aborted, its <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/readyState" rel="nofollow">readyState</a> is changed to XMLHttpRequest.UNSENT (0) and the request's <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/status" rel="nofollow">status</a> code is set to 0."</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Compare to the spec, it's clear that this doesn't cover the second case:</p>
-<blockquote>
-<p dir="auto">If <a href="https://webidl.spec.whatwg.org/#this" rel="nofollow">this</a>’s <a href="https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state" rel="nofollow">state</a> is opened with <a href="https://webidl.spec.whatwg.org/#this" rel="nofollow">this</a>’s <a href="https://xhr.spec.whatwg.org/#send-flag" rel="nofollow">send() flag</a> set, headers received, or loading, then run the <a href="https://xhr.spec.whatwg.org/#request-error-steps" rel="nofollow">request error steps</a> for <a href="https://webidl.spec.whatwg.org/#this" rel="nofollow">this</a> and <a href="https://xhr.spec.whatwg.org/#event-xhr-abort" rel="nofollow">abort</a>.</p>
-</blockquote>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[xhr] Issue with "FormData()": missing formdata event documentation]]></title>
             <link>https://github.com/mdn/content/issues/7613</link>
