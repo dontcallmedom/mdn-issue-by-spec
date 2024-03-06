@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] HTMLElement: click() method Doesn't Specify which elements have a "click"](https://github.com/mdn/content/issues/32567) (2024-03-06T00:06:29Z)
+  
 * [\[html\] Cellpadding description does not correspond to reality](https://github.com/mdn/content/issues/32554) (2024-03-05T07:56:10Z)
   
 * [\[html, css-images-3\] Statement about applicable object-position and object-fit is wrong (?)](https://github.com/mdn/content/issues/32474) (2024-02-28T16:22:14Z)
