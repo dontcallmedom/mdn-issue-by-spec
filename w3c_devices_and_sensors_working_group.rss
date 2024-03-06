@@ -4,10 +4,57 @@
         <title>W3C Devices and Sensors Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_devices_and_sensors_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Devices and Sensors Working Group</description>
-        <lastBuildDate>Fri, 23 Apr 2021 02:57:45 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 11 Dec 2022 22:18:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[orientation-event] Explanation of X, y, z coordinates of DeviceMotionEvent.acceleration and DeviceMotionEvent.accelerationIncludingGravity is either completely wrong or extremely confusing (or both)]]></title>
+            <link>https://github.com/mdn/content/issues/22885</link>
+            <guid>https://github.com/mdn/content/issues/22885</guid>
+            <pubDate>Sun, 11 Dec 2022 22:18:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/DeviceMotionEvent/acceleration" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DeviceMotionEvent/acceleration</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">It says:</p>
+<blockquote>
+<p dir="auto">x<br>
+Represents the acceleration upon the x axis which is the <strong>west to east axis</strong><br>
+y<br>
+Represents the acceleration upon the y axis which is the <strong>south to north axis</strong></p>
+<p dir="auto">z<br>
+Represents the acceleration upon the z axis which is the <strong>down to up axis</strong></p>
+</blockquote>
+<p dir="auto">Now, the definitions of "west to east" and "south to north" axes are completely unambiguous (unless you are on one of the poles), and crystal clear. And it's <strong>definitely not true</strong> that <code class="notranslate">x</code> and <code class="notranslate">y</code> correspond to west to east and north to south.</p>
+<p dir="auto">"Down to up" on its own would be potentially ambiguous, but given the other two are east to west and south to north, one can only reasonably assume that <strong>"up to down" is referring to the surface of the earth</strong>. And of course, that is <strong>also not true</strong>.</p>
+<p dir="auto">By  that description, one would unambiguously understand (wrongly) that the coordinates are <strong>absolute and in no way influenced by the orientation of the device</strong>. One can only infer that the system has already done the necessary calculations behind the scene to compute those values (which by the way is only possible by using also the compass as well as the accelerometer; and also I think it would involve some heuristics, not entirely sure about that).</p>
+<p dir="auto">I couldn't believe it but it is so crystal clear and unambiguously stated, that I assumed it had to be true. But of course my gut instinct was right 🤦</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">From some quick experiments, I think the reality is:</p>
+<p dir="auto">x: corresponds to the x axis of the html document (not sure if with the same sign or opposite)<br>
+y: corresponds to the y axis of the html document (not sure if with the same sign or opposite)<br>
+z: corresponds to the remaining perpendicular axis, so one that either points into the screen or out of the screen.</p>
+<p dir="auto">Which of course makes way more sense 🤦</p>
+<p dir="auto">And this is true both for <code class="notranslate">acceleration</code> and <code class="notranslate">accelerationIncludingGravity</code></p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/devicemotionevent/acceleration</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/DeviceMotionEvent/acceleration" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DeviceMotionEvent/acceleration</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/devicemotionevent/acceleration/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/devicemotionevent/acceleration/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/1511e914c6b1ce6f88056bfefd48a6aa585cebce/hovercard" href="https://github.com/mdn/content/commit/1511e914c6b1ce6f88056bfefd48a6aa585cebce"><tt>1511e91</tt></a></li>
+<li>Document last modified: 2022-09-09T05:10:34.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[orientation-event, compat] Content bug: Improve device/screen orientation event doc]]></title>
             <link>https://github.com/mdn/content/issues/4400</link>

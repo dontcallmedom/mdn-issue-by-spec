@@ -4,10 +4,48 @@
         <title>W3C Pointer Events Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_pointer_events_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Pointer Events Working Group</description>
-        <lastBuildDate>Thu, 16 Sep 2021 10:09:38 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 11 Jul 2023 08:38:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[cssom-view-1, dom, uievents, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ]]></title>
+            <link>https://github.com/mdn/content/issues/27878</link>
+            <guid>https://github.com/mdn/content/issues/27878</guid>
+            <pubDate>Tue, 11 Jul 2023 08:38:52 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseup_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseup_event</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Introduction, for Mouse Up, Pointer Up, MouseDown and PointerDown</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">"The mouseup event is fired at an <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element" rel="nofollow">Element</a> when a button on a pointing device (such as a mouse or trackpad) is released while the pointer is located inside it."</p>
+<p dir="auto">The way I interpret this is, MouseUp happens when ANY of the buttons on the mouse is released.  So , if user is holding down Left and Right buttons, releases the Left, then a mouseUp happens, even though the Right button is still down.</p>
+<p dir="auto">compare with the intro for PointerUp:<br>
+"The pointerup event is fired when a pointer is no longer active."</p>
+<p dir="auto">The way I interpret this is, PointerUp only happens when the last of all the buttons is released, so zero buttons are still pressed.  So , if user is holding down Left and Right buttons, releases the Left, then no PointerUp happens, because the Right button is still down.  Only when hte Right button is finally released, does the PointerUP event happen.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Is what I just wrote right?  Kindof vaguely implied by comparing the PointerUp and MouseUp articles.  The MouseDown article is similllarly vague, although the POinterDown article nails down the issue better:</p>
+<p dir="auto">"The pointerdown event is fired when a pointer becomes active. For mouse, it is fired when the device transitions from no buttons pressed to at least one button pressed. For touch, ...."</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://w3c.github.io/pointerevents/#dfn-chorded-buttons" rel="nofollow">https://w3c.github.io/pointerevents/#dfn-chorded-buttons</a></p>
+<p dir="auto"><em>Pointer Events do not fire overlapping <a href="https://w3c.github.io/pointerevents/#dfn-pointerdown" rel="nofollow">pointerdown</a> and <a href="https://w3c.github.io/pointerevents/#dfn-pointerup" rel="nofollow">pointerup</a> events for chorded button presses (depressing an additional button while another button on the pointer device is already depressed).</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Most seriously, <strong>neither of the Mouse articles mention the Pointer events, and neither of the Pointer articles mention the Mouse events</strong>.  These are important distinctions, and part of the reason why the Pointer events were invented.</p>
+<p dir="auto">Another example: the user can press the Left button down (MouseDown and PointerDown), then press and release the Right button, and no PointerDown or Up events will result, although MouseDown and Up events will happen.  And, the user can then hold down both, and then release and press the Left button: Mouse Up and Down events will happen, but still no Pointer Up/Down events, because the whole time, at least one button remains pressed.</p>
+<p dir="auto">So, this relationship should be explained in one or another article(s).  You can probably just expand the PointerDown article with such an explanation, and make sure the other three briefly describe it, and point to the PointerDown article for details.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/element/mouseup_event</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseup_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseup_event</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/element/mouseup_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/element/mouseup_event/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/757f33efcbdf2de4995920e41ab7dd20f0a9192b/hovercard" href="https://github.com/mdn/content/commit/757f33efcbdf2de4995920e41ab7dd20f0a9192b"><tt>757f33e</tt></a></li>
+<li>Document last modified: 2023-06-26T04:47:03.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[notifications, cssom-view-1, service-workers-1, dom, pointerevents3] Better naming of pages]]></title>
             <link>https://github.com/mdn/content/issues/8977</link>

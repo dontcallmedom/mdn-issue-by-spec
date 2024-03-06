@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>W3C Internationalization Working Group-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_internationalization_working_group.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Internationalization Working Group</description>
+        <lastBuildDate>Tue, 17 Oct 2023 10:34:36 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[encoding] TextDecoderStream constructor ignoreBOM option missing]]></title>
+            <link>https://github.com/mdn/content/issues/29681</link>
+            <guid>https://github.com/mdn/content/issues/29681</guid>
+            <pubDate>Tue, 17 Oct 2023 10:34:36 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/TextDecoderStream/TextDecoderStream" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/TextDecoderStream/TextDecoderStream</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Parameters</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">I'm pretty sure the options parameter allows for an optional key "ignoreBOM" with boolean value.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The options parameter should provide detail about the ignorBOM key</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://encoding.spec.whatwg.org/#ref-for-dom-textdecoderstream%E2%91%A0" rel="nofollow">https://encoding.spec.whatwg.org/#ref-for-dom-textdecoderstream%E2%91%A0</a> constructor step 5</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/textdecoderstream/textdecoderstream</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/TextDecoderStream/TextDecoderStream" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/TextDecoderStream/TextDecoderStream</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/textdecoderstream/textdecoderstream/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/textdecoderstream/textdecoderstream/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2c6e4dc4393fb1e60d4ff293f011b62b23659cab/hovercard" href="https://github.com/mdn/content/commit/2c6e4dc4393fb1e60d4ff293f011b62b23659cab"><tt>2c6e4dc</tt></a></li>
+<li>Document last modified: 2023-05-03T05:11:42.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[encoding] "Buffer sizing" in `TextEncoder.encodeInto()` is English-centric]]></title>
+            <link>https://github.com/mdn/content/issues/16805</link>
+            <guid>https://github.com/mdn/content/issues/16805</guid>
+            <pubDate>Tue, 31 May 2022 02:24:05 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder/encodeInto" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder/encodeInto</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Buffer sizing</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The section says:</p>
+<blockquote>
+<p dir="auto">Note that the s.length * 3 is rare because the string would have to be packed with some of the few characters that expand into 3 bytes. It is unlikely that long text will exceed s.length * 2 bytes in length. Thus, a more optimistic approach might be to allocate s.length * 2 + 5 bytes, and perform reallocation in the rare circumstance that the optimistic prediction was wrong.</p>
+</blockquote>
+<p dir="auto">It may be true if the <code class="notranslate">s</code> is written in European languages, but in most case, to encode CJK strings needs <code class="notranslate">s.length * 3</code> bytes because most of CJK characters are represented as three bytes per a character in UTF-8. So, it causes too frequent reallocation if <code class="notranslate">s</code> contains a string in CJK languages (which are used by about 20% people in the world).</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">In the first place, should be such a section in a reference page? (I think it is preferred in guide pages).</p>
+<p dir="auto">If it is written in the page, it should just say that the max length needed for buffer is <code class="notranslate">s.length * 3</code>.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[encoding] Content suggestion: ImageDecoder & ImageTrackList how-to/tutorial]]></title>
+            <link>https://github.com/mdn/content/issues/12791</link>
+            <guid>https://github.com/mdn/content/issues/12791</guid>
+            <pubDate>Mon, 07 Feb 2022 04:15:29 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 dir="auto">What is the new suggestion?</h2>
+<p dir="auto">Webcodecs introduce ImageDecoder and ImageDecoder come with ImageTrackList.<br>
+It sounds like a nice feature but I can't figure out how to provide an image file containing multiple tracks...<br>
+I even never heard about tracks inside an image and google doesn't help me at all with that.</p>
+<p dir="auto">ImageTrackList exists so I'm sure it's doable but how to package multiple tracks inside a single image file ?</p>
+<h2 dir="auto">Why is it important or useful?</h2>
+<p dir="auto">I think it would be a great way to organised assets compared to a spritesheet but I have no idea how to create the multi-tracks-image.  What tool am I suppose to use ?  What would be the format of the file ?</p>
+<p dir="auto">"Does it address critical needs in the web industry?"<br>
+Probably not but this feature existed in Adobe Flash (the ability to package multiple assets, easy to target, inside a single file) and I really miss it. The idea I could do it again soon with ImageDecoder &amp; ImageTrackList makes me very happy. Please show us a step by step example to create such images .</p>
+<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Learn/" rel="nofollow">https://developer.mozilla.org/en-US/docs/Learn/</a><br>
+MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

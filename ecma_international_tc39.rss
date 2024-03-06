@@ -4,10 +4,502 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Fri, 14 May 2021 18:14:38 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 03 Mar 2024 12:19:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript, web-bluetooth] [Web Bluetooth] Unclear wording abuot the Bluethoot interface returning something]]></title>
+            <link>https://github.com/mdn/content/issues/32529</link>
+            <guid>https://github.com/mdn/content/issues/32529</guid>
+            <pubDate>Sun, 03 Mar 2024 12:19:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto">The <code class="notranslate">Bluetooth</code> interface of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Bluetooth_API" rel="nofollow">Web Bluetooth API</a> returns a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" rel="nofollow">Promise</a></p>
+</blockquote>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">As far as I understand, <code class="notranslate">Bluethoot</code> cannot be called (<code class="notranslate">Bluethoot()</code>) or constructed (<code class="notranslate">new Bluethoot()</code>). How can it return a promise?</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/bluetooth</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Bluetooth</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/bluetooth/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/bluetooth/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/676b6ef50b4e4ca45149e5942a21a538fa5c9119/hovercard" href="https://github.com/mdn/content/commit/676b6ef50b4e4ca45149e5942a21a538fa5c9119"><tt>676b6ef</tt></a></li>
+<li>Document last modified: 2023-12-19T12:57:32.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Mention 3n is BigInt syntax]]></title>
+            <link>https://github.com/mdn/content/issues/32492</link>
+            <guid>https://github.com/mdn/content/issues/32492</guid>
+            <pubDate>Thu, 29 Feb 2024 19:50:11 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication_assignment" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication_assignment</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Using multiplication assignment</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">let foo = 3n;<br>
+foo *= 2n; // 6n</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Specifically at the last line, should be:<br>
+foo *= 2n; // 6n²</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">I mean, when you multiply a undefined variable by itself, it should square up the variable, multiplying any numbers alongside it</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">(I'm not a moron T.T)</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/operators/multiplication_assignment</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication_assignment" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication_assignment</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/multiplication_assignment/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/multiplication_assignment/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/71cf0cb885d46d83af054ae4df350248e246f006/hovercard" href="https://github.com/mdn/content/commit/71cf0cb885d46d83af054ae4df350248e246f006"><tt>71cf0cb</tt></a></li>
+<li>Document last modified: 2023-10-13T19:34:44.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Wrong use of `isNaN()`.]]></title>
+            <link>https://github.com/mdn/content/issues/32210</link>
+            <guid>https://github.com/mdn/content/issues/32210</guid>
+            <pubDate>Sat, 10 Feb 2024 21:53:19 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_Math" rel="nofollow">https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_Math</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Math 2</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">const finalNumberCheck = isNaN(finalNumber) === false ? 'finalNumber is a number type. Well done!' : <code class="notranslate">Ooops! finalNumber is not a number.</code>;</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN#return_value" rel="nofollow">is NaN Return value</a><br>
+true if the given value is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN" rel="nofollow">NaN</a> after being <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number#number_coercion" rel="nofollow">converted to a number</a>; otherwise, false.</p>
+<p dir="auto">And because we shouldn't convert the value '4633.33' to number ourselves instead of the learner, we could use NaN method.</p>
+<p dir="auto">const finalNumberCheck = NaN(finalNumber) === false ? 'finalNumber is a number type. Well done!' : <code class="notranslate">Ooops! finalNumber is not a number.</code>;</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/learn/javascript/first_steps/test_your_skills_colon__math</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_Math" rel="nofollow">https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Test_your_skills:_Math</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/learn/javascript/first_steps/test_your_skills_colon__math/index.md">https://github.com/mdn/content/blob/main/files/en-us/learn/javascript/first_steps/test_your_skills_colon__math/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/60358aa4fdd02bda2573dfd9fdf038b4ead2cd06/hovercard" href="https://github.com/mdn/content/commit/60358aa4fdd02bda2573dfd9fdf038b4ead2cd06"><tt>60358aa</tt></a></li>
+<li>Document last modified: 2024-02-02T19:50:32.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] A JavaScript value of type symbol is not an object.]]></title>
+            <link>https://github.com/mdn/content/issues/32207</link>
+            <guid>https://github.com/mdn/content/issues/32207</guid>
+            <pubDate>Sat, 10 Feb 2024 14:09:09 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Constructor</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">This section states that <code class="notranslate">Symbol()</code> "Creates a new Symbol object." It doesn't. <code class="notranslate">Symbol()</code> creates a (primitive) value of type <code class="notranslate">symbol</code>. Note that <code class="notranslate">BigInt</code> and <code class="notranslate">Symbol</code> are similar in that both return <code class="notranslate">TypeError</code> when call as a constructor (with the <code class="notranslate">new</code> operator) and both return a primitive value when called as a function. There is an argument to be made that neither is a constructor function object at all, but ECMA-262 groups them with constructors. I like how the MDN <code class="notranslate">BigInt</code> page deals with this ambiguity. The Constructor section on the <code class="notranslate">BigInt</code> page states, "The <code class="notranslate">BigInt()</code> function returns primitive values of type <code class="notranslate">BigInt</code>." I suggest you do the same in the Constructor section of the <code class="notranslate">Symbol</code> page: "The <code class="notranslate">Symbol()</code> function returns primitive values of type <code class="notranslate">Symbol</code>."</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The <code class="notranslate">Symbol()</code> function returns primitive values of type <code class="notranslate">Symbol</code>.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/BigInt" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/BigInt</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/symbol</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/symbol/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/symbol/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e01fd6206ce2fad2fe09a485bb2d3ceda53a62de/hovercard" href="https://github.com/mdn/content/commit/e01fd6206ce2fad2fe09a485bb2d3ceda53a62de"><tt>e01fd62</tt></a></li>
+<li>Document last modified: 2023-09-07T01:45:56.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] [JavaScript] Date.parse only checks first 3 characters of month name]]></title>
+            <link>https://github.com/mdn/content/issues/31930</link>
+            <guid>https://github.com/mdn/content/issues/31930</guid>
+            <pubDate>Fri, 26 Jan 2024 05:14:17 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 dir="auto">Acceptance Criteria</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> The listed features are documented sufficiently on MDN</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> BCD is updated - NA</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Interactive example and data repos are updated if appropriate - NA</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> The content has been reviewed as needed</li>
+</ul>
+<h3 dir="auto">For folks helping with Firefox related documentation</h3>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Set bugs to <code class="notranslate">dev-doc-complete</code></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Add entry to Firefox release notes if feature is enabled in release</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Add entry to Firefox experimental features page if feature is not yet enabled in release</li>
+</ul>
+<h2 dir="auto">Features to document</h2>
+<p dir="auto">There is only <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#date_time_string_format" rel="nofollow">one standard date format</a> that all browsers support: <code class="notranslate">YYYY-MM-DDTHH:mm:ss.sssZ</code>.</p>
+<ul dir="auto">
+<li>But most browsers take non-standard formats like "December 17, 1995".</li>
+<li>Other browsers just use the first three letters, so above Dec, Dece, December, DecLemberXxx would work, but De or Fje would not.</li>
+<li>Firefox previously supported any substring of the correct name <code class="notranslate">Dec[ember]</code>, but now it matches the others. It's a little less good, but more consistent.</li>
+</ul>
+<p dir="auto">It isn't standardized so there is no way to report this in compat. But reasonable to provide a brief update in <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#non-standard_date_strings" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#non-standard_date_strings</a> and a release note.</p>
+<h2 dir="auto">Related Gecko bugs</h2>
+<p dir="auto"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1862910" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=1862910</a></p>
+<h2 dir="auto">Other</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Check content open issues to see if any pertain to the subject matter. If there are any that can be closed because of the work, do so. If there are any that can be fixed relatively quickly because of the knowledge from completing this issue and you have time, feel free to go ahead and fix them.</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Check if glossary updates are required for the feature you're documenting - whether an existing term needs to be updated or a new term should be added.</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Check if BCD update means that content pages need to have experimental markup removed or deprecated markup added (front matter tags and macros).</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Raw template literals could use better explanation: latex is confusing and regexps unmentioned]]></title>
+            <link>https://github.com/mdn/content/issues/30389</link>
+            <guid>https://github.com/mdn/content/issues/30389</guid>
+            <pubDate>Mon, 20 Nov 2023 02:49:25 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Raw strings</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Raw strings are a confusing subtopic of template literals. They have some value, but the MDN article doesn't do a good job of explaining them or giving useful examples. The <code class="notranslate">latex</code> example presented is not given sufficient context to be useful, and there is no example using regular expressions, where (it seems to me) raw strings can give some real value.</p>
+<p dir="auto">I'd be happy to submit a pull request with the text following the <code class="notranslate">&lt;hr&gt;</code> tag below for regular expressions.<br>
+I am less sure what's appropriate for the <code class="notranslate">latex</code> example.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<h4 dir="auto">Regular Expressions</h4>
+<p dir="auto">With respect to regular expressions, raw strings allow you to avoid double-escaping backslashes (just as the <code class="notranslate">/foobar/</code> regexp literal does) at the same time as allowing a delimiter that is not <code class="notranslate">/</code> (as is available in many other languages).<br>
+For instance, an example like this might be helpful:</p>
+<hr>
+<p dir="auto">Combining a <code class="notranslate">String.raw</code> template literal with the <code class="notranslate">new RegExp()</code> constructor allows you to create regular expressions with an alternative delimiter other than a forward slash (<code class="notranslate">/</code>) without requiring double-escaping (<code class="notranslate">\\</code>) of regular expression escape sequences. This is especially valuable in strings that contain a lot of slashes, such as file paths or URLs.</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="// A String.raw template allows a fairly readable regular expression matching a URL:
+const mdnJS_srtl = new RegExp(String.raw`https://developer\.mozilla\.org/en-US/docs/Web/JavaScript/Reference/`);
+
+// The same thing with a regexp literal looks like this, with \/ for each forward slash:
+const mdnJS_rl = /https:\/\/developer\.mozilla\.org\/en-US\/docs\/Web\/JavaScript\/Reference\//;
+
+// And the same thing written with the RegExp constructor and a traditional string literal, with \\. for each period:
+const mdnJS_str = new RegExp('https://developer\\.mozilla\\.org/en-US/docs/Web/JavaScript/Reference/');
+
+console.log(mdnJS_srtl.source == mdnJS_rl.source)
+// true
+console.log(mdnJS_srtl.source == mdnJS_str.source)
+// true
+console.log(mdnJS_srtl.source)
+// https:\/\/developer\.mozilla\.org\/en-US\/docs\/Web\/JavaScript\/Reference\/"><pre class="notranslate"><span class="pl-c">// A String.raw template allows a fairly readable regular expression matching a URL:</span>
+<span class="pl-k">const</span> <span class="pl-s1">mdnJS_srtl</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">RegExp</span><span class="pl-kos">(</span><span class="pl-v">String</span><span class="pl-kos">.</span><span class="pl-en">raw</span><span class="pl-s">`https://developer\.mozilla\.org/en-US/docs/Web/JavaScript/Reference/`</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+<span class="pl-c">// The same thing with a regexp literal looks like this, with \/ for each forward slash:</span>
+<span class="pl-k">const</span> <span class="pl-s1">mdnJS_rl</span> <span class="pl-c1">=</span> <span class="pl-pds"><span class="pl-c1">/</span>https:<span class="pl-cce">\/</span><span class="pl-cce">\/</span>developer<span class="pl-cce">\.</span>mozilla<span class="pl-cce">\.</span>org<span class="pl-cce">\/</span>en-US<span class="pl-cce">\/</span>docs<span class="pl-cce">\/</span>Web<span class="pl-cce">\/</span>JavaScript<span class="pl-cce">\/</span>Reference<span class="pl-cce">\/</span><span class="pl-c1">/</span></span><span class="pl-kos">;</span>
+
+<span class="pl-c">// And the same thing written with the RegExp constructor and a traditional string literal, with \\. for each period:</span>
+<span class="pl-k">const</span> <span class="pl-s1">mdnJS_str</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">RegExp</span><span class="pl-kos">(</span><span class="pl-s">'https://developer\\.mozilla\\.org/en-US/docs/Web/JavaScript/Reference/'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">mdnJS_srtl</span><span class="pl-kos">.</span><span class="pl-c1">source</span> <span class="pl-c1">==</span> <span class="pl-s1">mdnJS_rl</span><span class="pl-kos">.</span><span class="pl-c1">source</span><span class="pl-kos">)</span>
+<span class="pl-c">// true</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">mdnJS_srtl</span><span class="pl-kos">.</span><span class="pl-c1">source</span> <span class="pl-c1">==</span> <span class="pl-s1">mdnJS_str</span><span class="pl-kos">.</span><span class="pl-c1">source</span><span class="pl-kos">)</span>
+<span class="pl-c">// true</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">mdnJS_srtl</span><span class="pl-kos">.</span><span class="pl-c1">source</span><span class="pl-kos">)</span>
+<span class="pl-c">// https:\/\/developer\.mozilla\.org\/en-US\/docs\/Web\/JavaScript\/Reference\/</span></pre></div>
+<h4 dir="auto">The <code class="notranslate">latex</code> tag</h4>
+<p dir="auto">The page sketches an example of a <code class="notranslate">latex</code> tag template literal, but doesn't explain why it might be useful:</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function latex(str) {
+  return { cooked: str[0], raw: str.raw[0] };
+}
+
+latex`\unicode`;
+
+// { cooked: undefined, raw: &quot;\\unicode&quot; }"><pre class="notranslate"><span class="pl-k">function</span> <span class="pl-en">latex</span><span class="pl-kos">(</span><span class="pl-s1">str</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-k">return</span> <span class="pl-kos">{</span> <span class="pl-c1">cooked</span>: <span class="pl-s1">str</span><span class="pl-kos">[</span><span class="pl-c1">0</span><span class="pl-kos">]</span><span class="pl-kos">,</span> <span class="pl-c1">raw</span>: <span class="pl-s1">str</span><span class="pl-kos">.</span><span class="pl-c1">raw</span><span class="pl-kos">[</span><span class="pl-c1">0</span><span class="pl-kos">]</span> <span class="pl-kos">}</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span>
+
+<span class="pl-en">latex</span><span class="pl-s">`\u<span class="pl-s1">nicode</span>`</span><span class="pl-kos">;</span>
+
+<span class="pl-c">// { cooked: undefined, raw: "\\unicode" }</span></pre></div>
+<p dir="auto">It appears that this would need to be used in some context where code expected an object with a raw attribute, and mostly ignored presence of the cooked attribute. I don't know quite what that context would be. I suppose it could be something like:</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="beginObject= latex`\documentclass{article}`;
+// {  &quot;cooked&quot;: &quot;documentclass{article}&quot;,  &quot;raw&quot;: &quot;\\documentclass{article}&quot;
+console.log(`It's normal in LaTeX to begin your document with ${beginObject.raw}`);"><pre class="notranslate"><span class="pl-s1">beginObject</span><span class="pl-c1">=</span> <span class="pl-en">latex</span><span class="pl-s">`\documentclass{article}`</span><span class="pl-kos">;</span>
+<span class="pl-c">// {  "cooked": "documentclass{article}",  "raw": "\\documentclass{article}"</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`It's normal in LaTeX to begin your document with <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">beginObject</span><span class="pl-kos">.</span><span class="pl-c1">raw</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<p dir="auto">But this feels convoluted and confusing. I don't understand why it's the example.<br>
+A more straightforward way to write this would be either:</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="beginString = String.raw`\documentclass{article}`;
+console.log(`It's normal in LaTeX to begin your document with ${beginString}`);"><pre class="notranslate"><span class="pl-s1">beginString</span> <span class="pl-c1">=</span> <span class="pl-v">String</span><span class="pl-kos">.</span><span class="pl-en">raw</span><span class="pl-s">`\documentclass{article}`</span><span class="pl-kos">;</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`It's normal in LaTeX to begin your document with <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">beginString</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<p dir="auto">Or if the goal is to demonstrate the value of tagged templates, then a simpler template:</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function LaTeX(str) { 
+  return str.raw[0];
+}
+
+beginString = LaTeX`\documentclass{article}`;
+console.log(`It's normal in LaTeX to begin your document with ${beginString}`);"><pre class="notranslate"><span class="pl-k">function</span> <span class="pl-v">LaTeX</span><span class="pl-kos">(</span><span class="pl-s1">str</span><span class="pl-kos">)</span> <span class="pl-kos">{</span> 
+  <span class="pl-k">return</span> <span class="pl-s1">str</span><span class="pl-kos">.</span><span class="pl-c1">raw</span><span class="pl-kos">[</span><span class="pl-c1">0</span><span class="pl-kos">]</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span>
+
+<span class="pl-s1">beginString</span> <span class="pl-c1">=</span> <span class="pl-v">LaTeX</span><span class="pl-s">`\documentclass{article}`</span><span class="pl-kos">;</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`It's normal in LaTeX to begin your document with <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">beginString</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<p dir="auto">Because I'm not sure what the current example is trying to demonstrate, I'm not sure how to improve the example to show it better. Help?</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">I've found very few examples of raw strings in template literals for regular expressions.<br>
+I suspect they would be a more used pattern if they were better understood and explained.</p>
+<p dir="auto">There are some decent examples as <a href="https://exploringjs.com/impatient-js/ch_template-literals.html#raw-string-literals" rel="nofollow">https://exploringjs.com/impatient-js/ch_template-literals.html#raw-string-literals</a> although it doesn't explain the outer delimiter advantage.</p>
+<p dir="auto">One not-very-helpful-place is this optional ESlint rule, <a href="https://eslint.org/docs/latest/rules/prefer-regex-literals" rel="nofollow">https://eslint.org/docs/latest/rules/prefer-regex-literals</a>, which discourages the use of the <code class="notranslate">new RegExp()</code> constructor in place of regexp literals for static content.<br>
+So that rule also disallows</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="new RegExp(String.raw`^\d\.$`);"><pre class="notranslate"><span class="pl-k">new</span> <span class="pl-v">RegExp</span><span class="pl-kos">(</span><span class="pl-v">String</span><span class="pl-kos">.</span><span class="pl-en">raw</span><span class="pl-s">`^\d\.$`</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<p dir="auto">which is an example of this. But this ESlint rule is not enabled by default (and probably should not be, because of the readability value of raw strings combined with RegExp literals).</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">I had trouble finding the history of who wrote the text about the <code class="notranslate">latex</code> template and whether there was originally more to the example.</p>
+<p dir="auto">The text is essentially unchanged since <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cbe151a06d6e5b4d1fbb46081bd16e69ef4c1630/hovercard" href="https://github.com/mdn/content/commit/cbe151a06d6e5b4d1fbb46081bd16e69ef4c1630"><tt>cbe151a</tt></a> when it was imported from the prior MDN system, which I guess was a wiki stored in SQL? I'm not sure where to find that history, if it even matters.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/template_literals</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/template_literals/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/template_literals/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cbfc561e5e577975a51acceadbd7d2fec9b8e45e/hovercard" href="https://github.com/mdn/content/commit/cbfc561e5e577975a51acceadbd7d2fec9b8e45e"><tt>cbfc561</tt></a></li>
+<li>Document last modified: 2023-11-14T13:08:57.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Describe direct and indirect eval differences in each bullet point]]></title>
+            <link>https://github.com/mdn/content/issues/30281</link>
+            <guid>https://github.com/mdn/content/issues/30281</guid>
+            <pubDate>Tue, 14 Nov 2023 22:14:49 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Direct and indirect eval</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">In this issue, I'm referring to the contents between these two lines of text (exclusive):</p>
+<blockquote>
+<p dir="auto">Indirect eval can be seen as if the code is evaluated within a separate <code class="notranslate">&lt;script&gt;</code> tag. This means:<br>
+...</p>
+<h3 dir="auto">Never use eval()!</h3>
+</blockquote>
+<p dir="auto">The <code class="notranslate">...</code> is a bullet point list containing explanations and examples of the differences between the two eval modes.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">It's difficult for me to parse some bullet points because:</p>
+<ol dir="auto">
+<li>The text (as opposed to the example code) sometimes explains one eval mode but not the other. On the other hand, sometimes it explains both:
+<ol dir="auto">
+<li>At first glance, it can appear like a bullet point only applies to one mode even though that's not the case.</li>
+<li>It can take more effort to read example code than an English sentence.</li>
+</ol>
+</li>
+<li>Some text is written in negative form—e.g., "<strong>In</strong>direct eval <strong>would not</strong> inherit the strictness of the surrounding context"—which, in my opinion, is harder to read than positive form: "Direct eval inherits the strictness of the surrounding context."</li>
+<li>Some example code blocks contain examples of both modes, some contain only one mode.
+<ol dir="auto">
+<li>This can obscure where a bullet point starts and where it ends.</li>
+<li>This makes it challenging to scan for differences between the two modes.</li>
+</ol>
+</li>
+<li>There is another section named <code class="notranslate">Using indirect eval()</code>, giving me a sense that some information is divided between both sections.
+<ol dir="auto">
+<li>Even if this isn't true, it gives me the impression that neither section is comprehensive.</li>
+</ol>
+</li>
+</ol>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Apologies if my wording offended anyone. My intent was to be concise, not rude.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/eval</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/eval/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/eval/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/4c26e8a3fb50d06963b06017f51ce19364350564/hovercard" href="https://github.com/mdn/content/commit/4c26e8a3fb50d06963b06017f51ce19364350564"><tt>4c26e8a</tt></a></li>
+<li>Document last modified: 2023-08-11T08:07:46.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Import assertions proposal renamed to import attributes]]></title>
+            <link>https://github.com/mdn/content/issues/29572</link>
+            <guid>https://github.com/mdn/content/issues/29572</guid>
+            <pubDate>Tue, 10 Oct 2023 08:50:02 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">That page mention import assertions, with the <code class="notranslate">import ... assert { ... }</code> syntax.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The proposal has been renamed to "import attributes", and the keyword has been replaced from <code class="notranslate">assert</code> to <code class="notranslate">with</code>. <code class="notranslate">assert</code> is now "deprecated and should not be relied upon".</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://tc39.es/proposal-import-attributes/" rel="nofollow">https://tc39.es/proposal-import-attributes/</a>, specifically <a href="https://tc39.es/proposal-import-attributes/#sec-deprecated-assert-keyword-for-import-attributes" rel="nofollow">https://tc39.es/proposal-import-attributes/#sec-deprecated-assert-keyword-for-import-attributes</a>.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Chrome is the only browser implementing <code class="notranslate">assert</code> (and V8-based platforms).</p>
+<p dir="auto">Chrome implements <code class="notranslate">with</code> under a flag (and V8-based platforms), Safari implements <code class="notranslate">with</code> in TP and Firefox is implementing it.</p>
+<p dir="auto">The proposal update comes also with some semantic changes, however these details have never been documented so there is no change needed to the docs:</p>
+<ul dir="auto">
+<li>invalid attribute keys are now disallowed, rather than silently ignored</li>
+<li>JSON and CSS modules are fetched with the appropriate HTTP headers (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1787684142" data-permission-text="Title is private" data-url="https://github.com/whatwg/html/issues/9486" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/html/pull/9486/hovercard" href="https://github.com/whatwg/html/pull/9486">whatwg/html#9486</a>)</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Macrotasks and Microtasks]]></title>
+            <link>https://github.com/mdn/content/issues/28795</link>
+            <guid>https://github.com/mdn/content/issues/28795</guid>
+            <pubDate>Mon, 28 Aug 2023 09:55:38 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Control flow effects of await</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">When an await is encountered in code (either in an async function or in a module), the awaited expression is executed, while all code that depends on the expression's value is paused and pushed into the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop" rel="nofollow">microtask queue</a>. The main thread is then freed for the next task in the event loop...</p>
+<p dir="auto">For me, <em><strong>The main thread is then freed for the next task in the event loop</strong></em>, sounds like that next task from macrotask queue will be executed before any microtask that was pushed into the microtask queue.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The main thread is then freed for the next task in the event loop which will be executed after any microtask e.g. code that depends on the expression's value.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://javascript.info/event-loop#macrotasks-and-microtasks" rel="nofollow">https://javascript.info/event-loop#macrotasks-and-microtasks</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/operators/await</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/await/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/await/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/3c33463072905e81ac620dd9780313369029b498/hovercard" href="https://github.com/mdn/content/commit/3c33463072905e81ac620dd9780313369029b498"><tt>3c33463</tt></a></li>
+<li>Document last modified: 2023-06-29T17:06:46.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Accessing WebAssembly memory using TypedArrays is incorrect on Big Endian systems]]></title>
+            <link>https://github.com/mdn/content/issues/25569</link>
+            <guid>https://github.com/mdn/content/issues/25569</guid>
+            <pubDate>Thu, 23 Mar 2023 12:09:31 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/JavaScript_interface/Memory" rel="nofollow">https://developer.mozilla.org/en-US/docs/WebAssembly/JavaScript_interface/Memory</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Examples</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The examples access values from WebAssembly using <code class="notranslate">new Uint32Array</code>:</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="  const summands = new Uint32Array(memory.buffer);
+...
+  const values = new Uint32Array(obj.instance.exports.memory.buffer);"><pre class="notranslate">  <span class="pl-k">const</span> <span class="pl-s1">summands</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Uint32Array</span><span class="pl-kos">(</span><span class="pl-s1">memory</span><span class="pl-kos">.</span><span class="pl-c1">buffer</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+...
+  <span class="pl-k">const</span> <span class="pl-s1">values</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Uint32Array</span><span class="pl-kos">(</span><span class="pl-s1">obj</span><span class="pl-kos">.</span><span class="pl-c1">instance</span><span class="pl-kos">.</span><span class="pl-c1">exports</span><span class="pl-kos">.</span><span class="pl-c1">memory</span><span class="pl-kos">.</span><span class="pl-c1">buffer</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<p dir="auto">However in the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array" rel="nofollow">Uint32Array docs</a> it says:</p>
+<blockquote>
+<p dir="auto">The Uint32Array typed array represents an array of 32-bit unsigned integers in the platform byte order. If control over byte order is needed, use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView" rel="nofollow">DataView</a> instead.</p>
+</blockquote>
+<p dir="auto">(This is backed up by the ECMAScript spec: <a href="https://tc39.es/ecma262/#sec-properties-of-typedarray-instances" rel="nofollow">Typed Arrays are integer-indexed exotic objects</a>, <a href="https://tc39.es/ecma262/#sec-integer-indexed-exotic-objects-get-p-receiver" rel="nofollow">which have the [[Get]] internal method</a>, which calls <a href="https://tc39.es/ecma262/#sec-integerindexedelementget" rel="nofollow">IntegerIndexedElementGet</a>, which calls <a href="https://tc39.es/ecma262/#sec-getvaluefrombuffer" rel="nofollow">GetValueFromBuffer</a>, which uses the platforms endianness in steps 8 and 9.)</p>
+<p dir="auto">However the <a href="https://webassembly.github.io/spec/core/syntax/instructions.html?highlight=endian#memory-instructions" rel="nofollow">WebAssembly docs</a> say:</p>
+<blockquote>
+<p dir="auto">All values are read and written in <em><strong>little endian</strong></em> byte order.</p>
+</blockquote>
+<p dir="auto">So it appears that the example will return incorrect results on big-endian systems.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">An example using a <code class="notranslate">DataView.setInt32(byteOffset, value, littleEndian)</code> instead.</p>
+<p dir="auto">Exposing endian-ness like this has worrying implications for web page portability.<br>
+If this is a real portability pitfall, there should be warnings about it on the WebAssembly.memory and TypedArray pages.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">I've already seen this pattern proliferating in several other places, such as:</p>
+<ul dir="auto">
+<li><a href="https://crates.io/crates/wasm-bindgen" rel="nofollow">wasm-bindgen</a> (I think)</li>
+<li>Tutorials <a href="https://ariya.io/2019/05/basics-of-memory-access-in-webassembly" rel="nofollow">1</a> <a href="https://www.oreilly.com/library/view/webassembly-the-definitive/9781492089834/ch04.html" rel="nofollow">2</a> <a href="https://rob-blackbourn.github.io/blog/webassembly/wasm/array/arrays/javascript/c/2020/06/07/wasm-arrays.html" rel="nofollow">3</a></li>
+<li>Questions <a href="https://groups.google.com/g/teavm/c/BlO4lkGNi40" rel="nofollow">1</a> <a href="https://stackoverflow.com/questions/41875728/pass-a-javascript-array-as-argument-to-a-webassembly-function" rel="nofollow">2</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API" rel="nofollow">MDN: Using the WebAssembly Javascript API</a></li>
+<li><a href="https://webassembly.org/getting-started/js-api/" rel="nofollow">webassembly.org: Understanding the JS API</a></li>
+</ul>
+<p dir="auto">So the amount of code already using this buggy pattern is already probably quite large.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Perhaps javascript could use a <code class="notranslate">LittleEndianTypedArray</code> or similar. And maybe <code class="notranslate">new Uint32Array(wasmmemory.buffer)</code> should throw a type error, only allowing <code class="notranslate">Uint8Array</code> and <code class="notranslate">Int8Array</code>.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/webassembly/javascript_interface/memory</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/WebAssembly/JavaScript_interface/Memory" rel="nofollow">https://developer.mozilla.org/en-US/docs/WebAssembly/JavaScript_interface/Memory</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/webassembly/javascript_interface/memory/index.md">https://github.com/mdn/content/blob/main/files/en-us/webassembly/javascript_interface/memory/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/fe898ddf33314ee129256c3862c5c53106eeec1f/hovercard" href="https://github.com/mdn/content/commit/fe898ddf33314ee129256c3862c5c53106eeec1f"><tt>fe898dd</tt></a></li>
+<li>Document last modified: 2023-02-23T10:05:41.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[ecmascript] Misleading information around await's interaction with microtask/task queues]]></title>
+            <link>https://github.com/mdn/content/issues/24177</link>
+            <guid>https://github.com/mdn/content/issues/24177</guid>
+            <pubDate>Sun, 05 Feb 2023 16:19:19 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Control flow effects of await</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto">...all code that depends on the expression's value is paused and pushed into the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop" rel="nofollow">microtask queue</a>.</p>
+</blockquote>
+<p dir="auto"><code class="notranslate">await</code> does not inherently push anything into the microtask queue, at least not unless the promise being awaited is already settled.  The microtask queue is where promise tasks go after the promise is settled. <code class="notranslate">await</code> simply pauses the function. The microtask of resuming the function is added to the queue when the promise ultimately settles.</p>
+<p dir="auto">The "microtask queue" link to the EventLoop page also has no mention of the microtask queue.</p>
+<blockquote>
+<p dir="auto">The main thread is then freed for the next task in the event loop. This happens even if the awaited value is an already-resolved promise or not a promise.</p>
+</blockquote>
+<p dir="auto">This only happens if the promise is not already settled (or does not get settled within further execution of the current task). If settled, function continuation is added to the microtask queue and the current task of the event loop continues to run until its microtask queue is empty.  You can create an event loop-blocking async function demonstrating this</p>
+<div class="highlight highlight-source-ts notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="// blocks the event loop
+async function loop(){
+  await Promise.resolve()
+  loop()
+}
+loop()"><pre class="notranslate"><span class="pl-c">// blocks the event loop</span>
+<span class="pl-k">async</span> <span class="pl-k">function</span> <span class="pl-en">loop</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">{</span>
+  <span class="pl-k">await</span> <span class="pl-smi">Promise</span><span class="pl-kos">.</span><span class="pl-en">resolve</span><span class="pl-kos">(</span><span class="pl-kos">)</span>
+  <span class="pl-en">loop</span><span class="pl-kos">(</span><span class="pl-kos">)</span>
+<span class="pl-kos">}</span>
+<span class="pl-en">loop</span><span class="pl-kos">(</span><span class="pl-kos">)</span></pre></div>
+<p dir="auto">Despite the use of await, the main thread is not freed to run the next task.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A more accurate description await and its interactions with the task and microtask queues.</p>
+<p dir="auto"><del>The microtask link is probably better directed to:</del><br>
+<del><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide</a></del><br>
+(see comment below)</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/operators/await</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/await/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/await/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0e1f404f68142031b8f8d663af15ed6902352256/hovercard" href="https://github.com/mdn/content/commit/0e1f404f68142031b8f8d663af15ed6902352256"><tt>0e1f404</tt></a></li>
+<li>Document last modified: 2022-12-27T01:31:43.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Need a page on Execution context]]></title>
             <link>https://github.com/mdn/content/issues/5006</link>

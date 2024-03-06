@@ -4,10 +4,108 @@
         <title>W3C Web Platform Incubator Community Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_platform_incubator_community_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Platform Incubator Community Group</description>
-        <lastBuildDate>Tue, 13 Jul 2021 13:35:32 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Oct 2023 19:12:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[keyboard-map, keyboard-lock] Missing `Keyboard` interface `layoutchange` event]]></title>
+            <link>https://github.com/mdn/content/issues/29762</link>
+            <guid>https://github.com/mdn/content/issues/29762</guid>
+            <pubDate>Sat, 21 Oct 2023 19:12:37 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Keyboard" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Keyboard</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Missing <code class="notranslate">Keyboard</code> interface <code class="notranslate">layoutchange</code> event</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Missing <code class="notranslate">Keyboard</code> interface <code class="notranslate">layoutchange</code> event, as it was provided in <a href="https://wicg.github.io/keyboard-map" rel="nofollow">https://wicg.github.io/keyboard-map</a> with <code class="notranslate">Keyboard.getLayoutMap()</code></p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">See the standard <a href="https://wicg.github.io/keyboard-map" rel="nofollow">https://wicg.github.io/keyboard-map</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/keyboard</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Keyboard" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Keyboard</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/keyboard/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/keyboard/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/21d3e89589aaf9e5cfa667de679134513ab833f3/hovercard" href="https://github.com/mdn/content/commit/21d3e89589aaf9e5cfa667de679134513ab833f3"><tt>21d3e89</tt></a></li>
+<li>Document last modified: 2023-02-28T12:02:51.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webhid] Confusing phrase "input report" is used for HIDConnectionEvent]]></title>
+            <link>https://github.com/mdn/content/issues/22419</link>
+            <guid>https://github.com/mdn/content/issues/22419</guid>
+            <pubDate>Sun, 20 Nov 2022 02:34:52 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HIDConnectionEvent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HIDConnectionEvent</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">(the first part), Constructor</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">This article says that this event (<code class="notranslate">HIDConnectionEvent</code>) is create and passed when <em>an input report is received</em>.</p>
+<p dir="auto">However, this event is for connection and disconnection of devices and doesn't look related to input reports (handled with <code class="notranslate">HIDInputReportEvent</code>).</p>
+<p dir="auto">If the "input report" in this article is something different from "input report" haneled with <code class="notranslate">HIDInputReportEvent</code>, it looks confusing to use the same phrase.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Clearer wording without using "input report", if it stands for different thing than "input report" handled with <code class="notranslate">HIDInputReportEvent</code>.<br>
+For example, "events are created when devices are connected or disconnected" for the Constructor part.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">The constructor page<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/HIDConnectionEvent/HIDConnectionEvent" rel="nofollow">HIDConnectionEvent() - Web APIs | MDN</a><br>
+also uses the phrase "input report" in similar ways in the first part and the Parameters section.<br>
+These should also be replaced if they in the main article are replaced.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/hidconnectionevent</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HIDConnectionEvent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HIDConnectionEvent</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/hidconnectionevent/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/hidconnectionevent/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/066257cb0d23e29e269703450e4b1216a65e3b26/hovercard" href="https://github.com/mdn/content/commit/066257cb0d23e29e269703450e4b1216a65e3b26"><tt>066257c</tt></a></li>
+<li>Document last modified: 2022-10-10T08:28:51.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[file-system-access] `FileSystemHandle.requestPermission()` can throw `SecurityError`]]></title>
+            <link>https://github.com/mdn/content/issues/15831</link>
+            <guid>https://github.com/mdn/content/issues/15831</guid>
+            <pubDate>Mon, 09 May 2022 19:45:01 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle/requestPermission" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle/requestPermission</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Exceptions</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Only TypeError is listed, but it's possible for <code class="notranslate">requestPermission()</code> to reject with a <code class="notranslate">SecurityError</code></p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Mentioning that a <code class="notranslate">SecurityError</code> can be thrown and when.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://handle-request-permission-security-error.glitch.me/" rel="nofollow">Here is a demonstration</a> of a situation where you might get a <code class="notranslate">SecurityError</code>. Click 'pick' to select a file or folder on disk, then click 'request write permission' and wait 6 seconds for the <code class="notranslate">SecurityError</code> to occur.<br>
+Source code for this <a href="https://glitch.com/edit/#!/handle-request-permission-security-error" rel="nofollow">is available here</a>.</p>
+<p dir="auto">Also, here is <code class="notranslate">SecurityError</code> <a href="https://wicg.github.io/file-system-access/#:~:text=a%20SecurityError.-,If%20global%20does%20not%20have%20transient%20activation%2C%20throw%20a%20SecurityError.,-If%20settings%E2%80%99s" rel="nofollow">mentioned in the spec</a>.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/filesystemhandle/requestpermission</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle/requestPermission" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle/requestPermission</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/filesystemhandle/requestpermission/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/filesystemhandle/requestpermission/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/71e15c419b606875a6ee77adde4b39de607de5e6/hovercard" href="https://github.com/mdn/content/commit/71e15c419b606875a6ee77adde4b39de607de5e6"><tt>71e15c4</tt></a></li>
+<li>Document last modified: 2022-04-28T06:41:36.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, web-locks] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator]]></title>
             <link>https://github.com/mdn/content/issues/6856</link>

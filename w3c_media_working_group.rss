@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>W3C Media Working Group-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_media_working_group.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Media Working Group</description>
+        <lastBuildDate>Sat, 24 Sep 2022 20:32:11 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[picture-in-picture] Clarify/note Document.pictureInPictureElement is null for PiP launched from iframe]]></title>
+            <link>https://github.com/mdn/content/issues/21048</link>
+            <guid>https://github.com/mdn/content/issues/21048</guid>
+            <pubDate>Sat, 24 Sep 2022 20:32:11 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/pictureInPictureElement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/pictureInPictureElement</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Clarify <code class="notranslate">Document.pictureInPictureElement</code> is <code class="notranslate">null</code> for <code class="notranslate">iframe</code> with different origin than the parent <code class="notranslate">document</code>.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Note or explanation that <code class="notranslate">Document.pictureInPictureElement</code> is <code class="notranslate">null</code> for <code class="notranslate">iframe</code> with different origin than the parent <code class="notranslate">document</code>.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<blockquote>
+<p dir="auto">4.3. Extension to DocumentOrShadowRoot</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="partial interface mixin [DocumentOrShadowRoot](https://dom.spec.whatwg.org/#documentorshadowroot) {
+  readonly attribute [Element](https://dom.spec.whatwg.org/#element)? pictureInPictureElement;
+};"><pre class="notranslate"><code class="notranslate">partial interface mixin [DocumentOrShadowRoot](https://dom.spec.whatwg.org/#documentorshadowroot) {
+  readonly attribute [Element](https://dom.spec.whatwg.org/#element)? pictureInPictureElement;
+};
+</code></pre></div>
+<p dir="auto">The <a href="https://www.w3.org/TR/picture-in-picture/#dom-documentorshadowroot-pictureinpictureelement" rel="nofollow">pictureInPictureElement</a> attribute’s getter must run these steps:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="If the context object is not [connected](https://dom.spec.whatwg.org/#connected), return null and abort these steps.
+
+Let candidate be the result of [retargeting](https://dom.spec.whatwg.org/#retarget) Picture-in-Picture element against the context object.
+
+If candidate and the context object are in the same [tree](https://dom.spec.whatwg.org/#concept-tree), return candidate and abort these steps.
+
+Return null."><pre class="notranslate"><code class="notranslate">If the context object is not [connected](https://dom.spec.whatwg.org/#connected), return null and abort these steps.
+
+Let candidate be the result of [retargeting](https://dom.spec.whatwg.org/#retarget) Picture-in-Picture element against the context object.
+
+If candidate and the context object are in the same [tree](https://dom.spec.whatwg.org/#concept-tree), return candidate and abort these steps.
+
+Return null.
+</code></pre></div>
+</blockquote>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Steps to reproduce (where W3C Picture-in-Picture specification is supported):</p>
+<ol dir="auto">
+<li>Append an <code class="notranslate">iframe</code> with <code class="notranslate">src</code> to an origin other than parent <code class="notranslate">document</code>'s containing a media element that autoplays and is in auto picture in picture mode;</li>
+<li>When Picture-in-Picture loads call <code class="notranslate">document.pictureInPictureElement</code>; observe return value is <code class="notranslate">null</code></li>
+</ol>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/document/pictureinpictureelement</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/pictureInPictureElement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/pictureInPictureElement</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/document/pictureinpictureelement/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/document/pictureinpictureelement/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/1511e914c6b1ce6f88056bfefd48a6aa585cebce/hovercard" href="https://github.com/mdn/content/commit/1511e914c6b1ce6f88056bfefd48a6aa585cebce"><tt>1511e91</tt></a></li>
+<li>Document last modified: 2022-09-09T05:10:34.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

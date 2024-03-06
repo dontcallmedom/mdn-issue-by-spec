@@ -4,10 +4,365 @@
         <title>Khronos Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/khronos_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Khronos Group</description>
-        <lastBuildDate>Mon, 26 Jul 2021 07:39:35 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 02 Mar 2024 17:18:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[webgl2] texSubImage3D: Wrong List of Formats]]></title>
+            <link>https://github.com/mdn/content/issues/32524</link>
+            <guid>https://github.com/mdn/content/issues/32524</guid>
+            <pubDate>Sat, 02 Mar 2024 17:18:28 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/texSubImage3D#format" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/texSubImage3D#format</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Parameter <code class="notranslate">format</code></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The list of possible enum values under the <code class="notranslate">format</code> parameter is wrong. It lists OpenGL <code class="notranslate">internal formats</code>.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I believe it needs to list OpenGL <code class="notranslate">formats</code> not <code class="notranslate">internal formats</code>.</p>
+<p dir="auto">By experimentation, using the internal format <code class="notranslate">gl.R8</code> does not work. Chromium gives the error "WebGL: INVALID_ENUM: texSubImage3D: invalid format"</p>
+<p dir="auto">It needs to be the format equivalent, <code class="notranslate">gl.RED</code>, which works correctly, but is not on this list.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Following to the <a href="https://registry.khronos.org/webgl/specs/latest/2.0/#3.7.6" rel="nofollow">specification linked on the MDN page</a>, under the first <code class="notranslate">texSubImage3D</code> overload definition, it states:</p>
+<blockquote>
+<p dir="auto">The combination of format, type, and WebGLTexture's internal format must be listed in Table 1 or 2 from <a href="https://www.khronos.org/opengles/sdk/docs/man3/html/glTexImage3D.xhtml" rel="nofollow">man page</a>.</p>
+</blockquote>
+<p dir="auto">This link takes you to the OpenGL specification for <code class="notranslate">glTexImage3D</code>, which lists both internal formats and formats. But comparing with the list of <em>formats</em> in tables 1 and 2 (<em>formats</em> which matches the parameter name, not <em>internal formats</em>), you get the following list:</p>
+<p dir="auto">Table 1</p>
+<ul dir="auto">
+<li>GL_RGB</li>
+<li>GL_RGBA</li>
+<li>GL_LUMINANCE_ALPHA</li>
+<li>GL_LUMINANCE</li>
+<li>GL_ALPHA</li>
+</ul>
+<p dir="auto">Table 2</p>
+<ul dir="auto">
+<li>GL_RED</li>
+<li>GL_RED_INTEGER</li>
+<li>GL_RG</li>
+<li>GL_RG_INTEGER</li>
+<li>GL_RGB</li>
+<li>GL_RGB_INTEGER</li>
+<li>GL_RGBA</li>
+<li>GL_RGBA_INTEGER</li>
+</ul>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Since <code class="notranslate">texSubImage3D</code> is only an upload method, and not a texture configuration method (like <code class="notranslate">texStorage3D</code> / <code class="notranslate">texImage3D</code>) it makes sense that it doesn't require layout configuration.</p>
+<p dir="auto">Even still, I'd prefer that someone else double-check my understanding here. Otherwise, I'd have probably just updated the page myself.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/webgl2renderingcontext/texsubimage3d</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/texSubImage3D" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/texSubImage3D</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/texsubimage3d/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/texsubimage3d/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc/hovercard" href="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc"><tt>acfe8c9</tt></a></li>
+<li>Document last modified: 2023-07-07T07:19:19.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webgl1] WebGL uniformMatrix[234]fv() method documentation is wrong.]]></title>
+            <link>https://github.com/mdn/content/issues/31939</link>
+            <guid>https://github.com/mdn/content/issues/31939</guid>
+            <pubDate>Fri, 26 Jan 2024 14:21:11 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/uniformMatrix" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/uniformMatrix</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Parameters</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto">A <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Types" rel="nofollow">GLboolean</a> specifying whether to transpose the matrix. <strong>Must be false.</strong></p>
+</blockquote>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">This can be true <strong>or</strong> false.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/webglrenderingcontext/uniformmatrix</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/uniformMatrix" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/uniformMatrix</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webglrenderingcontext/uniformmatrix/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/webglrenderingcontext/uniformmatrix/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/eda49877b9078b24cd18f794470e5e225add9b94/hovercard" href="https://github.com/mdn/content/commit/eda49877b9078b24cd18f794470e5e225add9b94"><tt>eda4987</tt></a></li>
+<li>Document last modified: 2023-04-08T06:46:30.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webgl2, webgl1] `texSubImage2D` documentation does not document the `source`, `srcOffset` parameters]]></title>
+            <link>https://github.com/mdn/content/issues/31787</link>
+            <guid>https://github.com/mdn/content/issues/31787</guid>
+            <pubDate>Thu, 18 Jan 2024 18:45:51 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/texSubImage2D" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/texSubImage2D</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Parameters</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">There is no documentation for the parameters called <code class="notranslate">source</code> or <code class="notranslate">srcOffset</code>. In particular, the relation between the <code class="notranslate">source</code> and the <code class="notranslate">pixels</code> parameter is confusing.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I expect to see a description of what the <code class="notranslate">source</code> parameter means, and what types it expects.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/webglrenderingcontext/texsubimage2d</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/texSubImage2D" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/texSubImage2D</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webglrenderingcontext/texsubimage2d/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/webglrenderingcontext/texsubimage2d/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/eda49877b9078b24cd18f794470e5e225add9b94/hovercard" href="https://github.com/mdn/content/commit/eda49877b9078b24cd18f794470e5e225add9b94"><tt>eda4987</tt></a></li>
+<li>Document last modified: 2023-04-08T06:46:30.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webgl1] SharedArrayBuffer is not usable as a source data parameter.]]></title>
+            <link>https://github.com/mdn/content/issues/30749</link>
+            <guid>https://github.com/mdn/content/issues/30749</guid>
+            <pubDate>Sun, 03 Dec 2023 05:06:20 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bufferSubData" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bufferSubData</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">One of allowed argument types is not allowed.</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The third argument of bufferSubData method is <em>srcData</em> and it needs to be one of allowed values which they are: <em>ArrayBuffer, SharedArrayBuffer, DataView</em> or a <em>TypedArray</em> But if SharedArrayBuffer is used then the TypeError is thrown with "<em>the argument is not an ArrayBufferView</em>" and this issue forces users to use and DataView or TypedArray for srcData argument.</p>
+<p dir="auto"><em><strong>Throws:</strong></em><br>
+<em>TypeError: Failed to execute 'bufferSubData' on 'WebGL2RenderingContext': parameter 3 is not of type 'ArrayBufferView'</em></p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The khronos page says it is allowed to use the SharedArrayBuffers as a source data and it would be awesome if we can :)</p>
+<p dir="auto"><strong><em>Khronos abstract:</em></strong><br>
+<strong>void</strong> <strong><em>bufferSubData</em></strong> (<strong>GLenum</strong> <em>target</em>, <strong>GLintptr</strong> <em>offset</em>, <strong><em>AllowSharedBufferSource</em></strong> <em>data</em>)</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">The <strong><em>bufferSubData</em></strong> method's third parameter <strong><em>srcData</em></strong> links:<br>
+MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bufferSubData#srcdata" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bufferSubData#srcdata</a><br>
+Khronos: <a href="https://registry.khronos.org/webgl/specs/latest/1.0/#5.14.5" rel="nofollow">https://registry.khronos.org/webgl/specs/latest/1.0/#5.14.5</a><br>
+OpenGL: <a href="https://registry.khronos.org/OpenGL-Refpages/es2.0/xhtml/glBufferSubData.xml" rel="nofollow">https://registry.khronos.org/OpenGL-Refpages/es2.0/xhtml/glBufferSubData.xml</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Beautiful code that needs to be working:<br>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/924685/287498114-ce289d79-db72-4290-b894-935dfe793b83.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk3NjE5MjIsIm5iZiI6MTcwOTc2MTYyMiwicGF0aCI6Ii85MjQ2ODUvMjg3NDk4MTE0LWNlMjg5ZDc5LWRiNzItNDI5MC1iODk0LTkzNWRmZTc5M2I4My5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNlQyMTQ3MDJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jYTAwOWEwODk3MjQwMGYyNjBlMDRjODIyMDVmNDMyYWZiNTdjYTg4ZjE5MDY3ODQ4YzEwMjI2ZmMyYjQxNmUzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.gwisKHsPN4LDdZWdbxfvge4NAvdt1yOP07h2BtSigxc"><img width="819" alt="image" src="https://private-user-images.githubusercontent.com/924685/287498114-ce289d79-db72-4290-b894-935dfe793b83.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk3NjE5MjIsIm5iZiI6MTcwOTc2MTYyMiwicGF0aCI6Ii85MjQ2ODUvMjg3NDk4MTE0LWNlMjg5ZDc5LWRiNzItNDI5MC1iODk0LTkzNWRmZTc5M2I4My5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNlQyMTQ3MDJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jYTAwOWEwODk3MjQwMGYyNjBlMDRjODIyMDVmNDMyYWZiNTdjYTg4ZjE5MDY3ODQ4YzEwMjI2ZmMyYjQxNmUzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.gwisKHsPN4LDdZWdbxfvge4NAvdt1yOP07h2BtSigxc" style="max-width: 100%;"></a></p>
+<p dir="auto">The bug is hanging around and says u're not my type..<br>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/924685/287498010-ec87ae98-87be-4b05-8962-deda4005c4ff.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk3NjE5MjIsIm5iZiI6MTcwOTc2MTYyMiwicGF0aCI6Ii85MjQ2ODUvMjg3NDk4MDEwLWVjODdhZTk4LTg3YmUtNGIwNS04OTYyLWRlZGE0MDA1YzRmZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNlQyMTQ3MDJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01MTYyMjVkZGYzMjI1NDM5MWZiYzk3YThkMzJmOTc1YjYxMjY1ZTJjNmIzMThhNmJkZTk4OTA3YTc1ZDFkZmEyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.3gufIQFuivB81T0aqZYmTl2-gqyd3VzCyOW_N8BBkLM"><img width="852" alt="image" src="https://private-user-images.githubusercontent.com/924685/287498010-ec87ae98-87be-4b05-8962-deda4005c4ff.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk3NjE5MjIsIm5iZiI6MTcwOTc2MTYyMiwicGF0aCI6Ii85MjQ2ODUvMjg3NDk4MDEwLWVjODdhZTk4LTg3YmUtNGIwNS04OTYyLWRlZGE0MDA1YzRmZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNlQyMTQ3MDJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01MTYyMjVkZGYzMjI1NDM5MWZiYzk3YThkMzJmOTc1YjYxMjY1ZTJjNmIzMThhNmJkZTk4OTA3YTc1ZDFkZmEyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.3gufIQFuivB81T0aqZYmTl2-gqyd3VzCyOW_N8BBkLM" style="max-width: 100%;"></a></p>
+<p dir="auto">Then i changes my type for this little ..:<br>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/924685/287498301-2bc2506b-2030-42c8-a7d7-7e9144e37e3e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk3NjE5MjIsIm5iZiI6MTcwOTc2MTYyMiwicGF0aCI6Ii85MjQ2ODUvMjg3NDk4MzAxLTJiYzI1MDZiLTIwMzAtNDJjOC1hN2Q3LTdlOTE0NGUzN2UzZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNlQyMTQ3MDJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lMzZlYjNkODUyOWNlNDNmOGY5ZWEwZjBhM2EwNzlkM2Q1MThlNTEwZjE0OGMxOTk5ZDJmODE1NTljNjc0MGE3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.fUzNgBkYB3RKWxBRTOKQKyPRcra8AI-RJC4_hh8NvJc"><img width="781" alt="image" src="https://private-user-images.githubusercontent.com/924685/287498301-2bc2506b-2030-42c8-a7d7-7e9144e37e3e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk3NjE5MjIsIm5iZiI6MTcwOTc2MTYyMiwicGF0aCI6Ii85MjQ2ODUvMjg3NDk4MzAxLTJiYzI1MDZiLTIwMzAtNDJjOC1hN2Q3LTdlOTE0NGUzN2UzZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNlQyMTQ3MDJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lMzZlYjNkODUyOWNlNDNmOGY5ZWEwZjBhM2EwNzlkM2Q1MThlNTEwZjE0OGMxOTk5ZDJmODE1NTljNjc0MGE3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.fUzNgBkYB3RKWxBRTOKQKyPRcra8AI-RJC4_hh8NvJc" style="max-width: 100%;"></a></p>
+<p dir="auto">It works but i'm not feeling like won against the bug (in addition, <em>i don't know why some chars -<strong>like a f or 1</strong>- is not shown properly. it could be another bug but i need to be sure before report as an issue</em>).<br>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/924685/287498241-0fbf6997-f754-4b8c-9db1-983e9c6b22f2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk3NjE5MjIsIm5iZiI6MTcwOTc2MTYyMiwicGF0aCI6Ii85MjQ2ODUvMjg3NDk4MjQxLTBmYmY2OTk3LWY3NTQtNGI4Yy05ZGIxLTk4M2U5YzZiMjJmMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNlQyMTQ3MDJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01OTNlMGZlZTI4NWU0MzcyY2U1NmNmN2YxZWVkZGI3OWE1YTI0YjA2OWJmZWU4M2RlYmRiMWU4YzFjNjY5Y2RjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.OtzRyFc0fgcipk9inlDV74F6pFaXyfuLoosQWpavzE8"><img width="1733" alt="image" src="https://private-user-images.githubusercontent.com/924685/287498241-0fbf6997-f754-4b8c-9db1-983e9c6b22f2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk3NjE5MjIsIm5iZiI6MTcwOTc2MTYyMiwicGF0aCI6Ii85MjQ2ODUvMjg3NDk4MjQxLTBmYmY2OTk3LWY3NTQtNGI4Yy05ZGIxLTk4M2U5YzZiMjJmMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNlQyMTQ3MDJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01OTNlMGZlZTI4NWU0MzcyY2U1NmNmN2YxZWVkZGI3OWE1YTI0YjA2OWJmZWU4M2RlYmRiMWU4YzFjNjY5Y2RjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.OtzRyFc0fgcipk9inlDV74F6pFaXyfuLoosQWpavzE8" style="max-width: 100%;"></a></p>
+<p dir="auto">I think if we merge our powers as humankind then we'll have a chance to defeat the bug, we started this war and we need to fight.. for the king! (<em>can i be king for next time?</em> pleaseee)</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/webglrenderingcontext/buffersubdata</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bufferSubData" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/bufferSubData</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webglrenderingcontext/buffersubdata/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/webglrenderingcontext/buffersubdata/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/eda49877b9078b24cd18f794470e5e225add9b94/hovercard" href="https://github.com/mdn/content/commit/eda49877b9078b24cd18f794470e5e225add9b94"><tt>eda4987</tt></a></li>
+<li>Document last modified: 2023-04-08T06:46:30.000Z</li>
+</ul>
+</details>
+```[tasklist]
+### Tasks
+```]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[WEBGL_depth_texture] Example code on WEBGL_depth_texture gives GL_INVALID_VALUE when run in WebGL 2]]></title>
+            <link>https://github.com/mdn/content/issues/30130</link>
+            <guid>https://github.com/mdn/content/issues/30130</guid>
+            <pubDate>Wed, 08 Nov 2023 19:14:29 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WEBGL_depth_texture" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WEBGL_depth_texture</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Examples</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The example code calls</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="gl.texImage2D( gl.TEXTURE_2D, 0, gl.DEPTH_COMPONENT, 512, 512, 0, gl.DEPTH_COMPONENT, gl.UNSIGNED_SHORT, null );"><pre class="notranslate"><span class="pl-s1">gl</span><span class="pl-kos">.</span><span class="pl-en">texImage2D</span><span class="pl-kos">(</span> <span class="pl-s1">gl</span><span class="pl-kos">.</span><span class="pl-c1">TEXTURE_2D</span><span class="pl-kos">,</span> <span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-s1">gl</span><span class="pl-kos">.</span><span class="pl-c1">DEPTH_COMPONENT</span><span class="pl-kos">,</span> <span class="pl-c1">512</span><span class="pl-kos">,</span> <span class="pl-c1">512</span><span class="pl-kos">,</span> <span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-s1">gl</span><span class="pl-kos">.</span><span class="pl-c1">DEPTH_COMPONENT</span><span class="pl-kos">,</span> <span class="pl-s1">gl</span><span class="pl-kos">.</span><span class="pl-c1">UNSIGNED_SHORT</span><span class="pl-kos">,</span> <span class="pl-c1">null</span> <span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<p dir="auto">which will throw a <code class="notranslate">gl.INVALID_VALUE</code>.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The code should be modified by replacing the first <code class="notranslate">gl.DEPTH_COMPONENT</code> with <code class="notranslate">gl.DEPTH_COMPONENT16</code>.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/webgl_depth_texture</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WEBGL_depth_texture" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WEBGL_depth_texture</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl_depth_texture/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl_depth_texture/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc/hovercard" href="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc"><tt>acfe8c9</tt></a></li>
+<li>Document last modified: 2023-07-07T07:19:19.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webgl2] texSubImage3D has wrong values for format param]]></title>
+            <link>https://github.com/mdn/content/issues/30128</link>
+            <guid>https://github.com/mdn/content/issues/30128</guid>
+            <pubDate>Wed, 08 Nov 2023 18:16:45 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/texSubImage3D" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/texSubImage3D</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">format parameter</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">It lists a lot of invalid formats.</p>
+<p dir="auto">For example, lists gl.R8 but that is not valid, but g.RED is.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The values seen in the OpenGL documentation: <a href="https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexSubImage3D.xhtml" rel="nofollow">https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexSubImage3D.xhtml</a></p>
+<p dir="auto">Specifically:</p>
+<p dir="auto">GL_RED, GL_RG, GL_RGB, GL_BGR, GL_RGBA, GL_DEPTH_COMPONENT, and GL_STENCIL_INDEX</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexSubImage3D.xhtml" rel="nofollow">https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexSubImage3D.xhtml</a></p>
+<p dir="auto"><a href="https://registry.khronos.org/webgl/specs/latest/2.0/#TEXTURE_TYPES_FORMATS_FROM_DOM_ELEMENTS_TABLE" rel="nofollow">https://registry.khronos.org/webgl/specs/latest/2.0/#TEXTURE_TYPES_FORMATS_FROM_DOM_ELEMENTS_TABLE</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/webgl2renderingcontext/texsubimage3d</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/texSubImage3D" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/texSubImage3D</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/texsubimage3d/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/texsubimage3d/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc/hovercard" href="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc"><tt>acfe8c9</tt></a></li>
+<li>Document last modified: 2023-07-07T07:19:19.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webgl2, webgl1] vertexAttribPointer() type only accepts floating point types]]></title>
+            <link>https://github.com/mdn/content/issues/28425</link>
+            <guid>https://github.com/mdn/content/issues/28425</guid>
+            <pubDate>Sun, 06 Aug 2023 23:42:13 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer#parameters" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer#parameters</a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">I tried using <code class="notranslate">gl.UNSIGNED_INT</code> but kept getting <code class="notranslate">WebGL warning: drawArraysInstanced: Vertex attrib 0 requires data of type UINT, but is being supplied with type FLOAT.</code> errors.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Turns out I have to use <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/vertexAttribIPointer" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/vertexAttribIPointer</a> instead for integer types.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://stackoverflow.com/a/17261259/866521" rel="nofollow">https://stackoverflow.com/a/17261259/866521</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/webglrenderingcontext/vertexattribpointer</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webglrenderingcontext/vertexattribpointer/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/webglrenderingcontext/vertexattribpointer/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/eda49877b9078b24cd18f794470e5e225add9b94/hovercard" href="https://github.com/mdn/content/commit/eda49877b9078b24cd18f794470e5e225add9b94"><tt>eda4987</tt></a></li>
+<li>Document last modified: 2023-04-08T06:46:30.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webgl2] srcOffset and srcLength not documented for WebGL2RenderingContext.uniform]]></title>
+            <link>https://github.com/mdn/content/issues/20225</link>
+            <guid>https://github.com/mdn/content/issues/20225</guid>
+            <pubDate>Fri, 02 Sep 2022 00:42:19 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/uniform" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/uniform</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Parameters</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The <code class="notranslate">srcOffset</code> and <code class="notranslate">srcLength</code> parameters aren't explained.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Explanation of whether these are byte offsets, array indices, etc.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">I like turtles.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/webgl2renderingcontext/uniform</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/uniform" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/uniform</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/uniform/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/uniform/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/22432fdd83e50053c00eb26aefb3e9c7e6477bce/hovercard" href="https://github.com/mdn/content/commit/22432fdd83e50053c00eb26aefb3e9c7e6477bce"><tt>22432fd</tt></a></li>
+<li>Document last modified: 2022-06-03T04:12:52.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webgl2] WebGL2RenderingContext»texSubImage3D page: List of valid "format" parameter values does not match WebGL2 spec]]></title>
+            <link>https://github.com/mdn/content/issues/19610</link>
+            <guid>https://github.com/mdn/content/issues/19610</guid>
+            <pubDate>Tue, 16 Aug 2022 03:37:51 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/texSubImage3D" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/texSubImage3D</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Parameters</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The "Parameters" section of the <code class="notranslate">WebGL2RenderingContext.texSubImage3D()</code> documentation appears to list values that do not agree with the documentation provided by Khronos. They also do not seem to agree with the values linked via the "WebGL 2.0 Specification 3.7.6" link under the "Specifications" section.</p>
+<p dir="auto">For example, Tables 1 &amp; 2 of the <code class="notranslate">glTexImage3D()</code> method (indicated as the authoritative source of information regarding the legal combinations of the <code class="notranslate">format</code> and <code class="notranslate">type</code> parameters for WebGL2's <code class="notranslate">texSubImage3D()</code> method) include <code class="notranslate">format</code> values of e.g. <code class="notranslate">GL_RED</code> and <code class="notranslate">GL_RED_INTEGER</code> that are not listed in the MDN documentation for this method.</p>
+<p dir="auto">Furthermore, the MDN documentation claims that <code class="notranslate">gl.R8</code>, <code class="notranslate">gl.R16F</code>, <code class="notranslate">gl.R32F</code> etc are valid <code class="notranslate">format</code> parameters - but these values are <em>not</em> listed as valid <code class="notranslate">format</code> parameters by Khronos. Indeed, trying to use <code class="notranslate">gl.R8</code> as a <code class="notranslate">format</code> parameter with a <code class="notranslate">type</code> parameter of <code class="notranslate">gl.UNSIGNED_BYTE</code> and <code class="notranslate">uint8</code> source data produced the following error in Chrome:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="WebGL: INVALID_ENUM: texSubImage3D: invalid format"><pre class="notranslate"><code class="notranslate">WebGL: INVALID_ENUM: texSubImage3D: invalid format
+</code></pre></div>
+<p dir="auto">... but using <code class="notranslate">gl.RED_INTEGER</code> (as per the Khronos specifications) fixed that error message.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Values for <code class="notranslate">format</code> that agree with the Khronos documentation for this method.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Khronos documentation for <code class="notranslate">texSubImage3D</code> : <a href="https://registry.khronos.org/webgl/specs/latest/2.0/#3.7.6" rel="nofollow">https://registry.khronos.org/webgl/specs/latest/2.0/#3.7.6</a></p>
+<p dir="auto">The documentation above links to the Khronos documentation for Tables 1 &amp; 2 of the <code class="notranslate">glTexImage3D()</code> documentation:</p>
+<p dir="auto"><a href="https://registry.khronos.org/OpenGL-Refpages/es3.0/html/glTexImage3D.xhtml" rel="nofollow">https://registry.khronos.org/OpenGL-Refpages/es3.0/html/glTexImage3D.xhtml</a></p>
+<p dir="auto">These tables contain the "valid" values (and their combinations) for the <code class="notranslate">format</code> and <code class="notranslate">type</code> parameters of <code class="notranslate">texSubImage3D()</code>.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/webgl2renderingcontext/texsubimage3d</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/texSubImage3D" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/texSubImage3D</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/texsubimage3d/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/texsubimage3d/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/3381c87b92394ef5c68b72d40367d93c796e0870/hovercard" href="https://github.com/mdn/content/commit/3381c87b92394ef5c68b72d40367d93c796e0870"><tt>3381c87</tt></a></li>
+<li>Document last modified: 2022-07-28T09:27:35.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[OES_standard_derivatives] Issue with "OES_standard_derivatives": missing function explanation ]]></title>
+            <link>https://github.com/mdn/content/issues/14715</link>
+            <guid>https://github.com/mdn/content/issues/14715</guid>
+            <pubDate>Tue, 05 Apr 2022 16:44:46 GMT</pubDate>
+            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/OES_standard_derivatives" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/OES_standard_derivatives</a></p>
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">the page introduced 3 functions without saying anything about what those functions do</p>
+<h4 dir="auto">Specific section or headline?</h4>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/OES_standard_derivatives#glsl_built-in_functions" rel="nofollow">GLSL built-in functions</a></p>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">The functions should be explained</p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/oes_standard_derivatives</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/OES_standard_derivatives" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/OES_standard_derivatives</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/oes_standard_derivatives/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/oes_standard_derivatives/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/93ae23dec42bba9d71d6f1ed45668d8d26847e9c/hovercard" href="https://github.com/mdn/content/commit/93ae23dec42bba9d71d6f1ed45668d8d26847e9c"><tt>93ae23d</tt></a></li>
+<li>Document last modified: 2022-02-18T09:26:54.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[OVR_multiview2] WebXR guide material tracking issue]]></title>
             <link>https://github.com/mdn/content/issues/7276</link>

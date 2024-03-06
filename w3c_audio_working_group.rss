@@ -4,10 +4,166 @@
         <title>W3C Audio Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_audio_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Audio Working Group</description>
-        <lastBuildDate>Fri, 17 Sep 2021 18:01:03 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 11 Apr 2023 18:49:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[webaudio] interrupted state not listed as a valid state value, but an example of interrupted state was given]]></title>
+            <link>https://github.com/mdn/content/issues/26129</link>
+            <guid>https://github.com/mdn/content/issues/26129</guid>
+            <pubDate>Tue, 11 Apr 2023 18:49:59 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/state" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/state</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">interrupted state not listed as a valid state value, but an example of interrupted state was given for iOS Safari.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Does the interrupted state not apply to other browsers besides iOS/Safari? If not, it should be clear that the interrupted state is a noon-standard value</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/baseaudiocontext/state</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/state" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/state</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/baseaudiocontext/state/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/baseaudiocontext/state/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/135b8311a5e3d12789e8421845be3ce026ef72b8/hovercard" href="https://github.com/mdn/content/commit/135b8311a5e3d12789e8421845be3ce026ef72b8"><tt>135b831</tt></a></li>
+<li>Document last modified: 2023-04-06T14:57:25.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webaudio] AnalyserNode::getFloatTimeDomainData() doesn't specify the encoding of the waveform]]></title>
+            <link>https://github.com/mdn/content/issues/25571</link>
+            <guid>https://github.com/mdn/content/issues/25571</guid>
+            <pubDate>Thu, 23 Mar 2023 14:41:18 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getFloatTimeDomainData" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getFloatTimeDomainData</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Top-level description</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Missing encoding of the waveform. Because the parameter is a <code class="notranslate">Float32Array</code>, one can reasonably assume that the encoding is <code class="notranslate">f32</code> (that is, PCM data amplitude in [-1:1]). However it would be better to confirm this in writing instead of leaving developers to their guess. There's also no mention of planar/non-planar encoding, which is necessary to do anything with the data retrieved (unless the signal has a single channel).</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Something akin to:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="The time-domain data is encoded in `f32` format with the amplitude of samples in [-1:1]."><pre class="notranslate"><code class="notranslate">The time-domain data is encoded in `f32` format with the amplitude of samples in [-1:1].
+</code></pre></div>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">The 3 other instance methods of <code class="notranslate">AnalyzerNode</code> have the same issue. Especially for the <code class="notranslate">byte</code> variant where it's unclear if the data is signed [-128:127] or unsigned [0:255]. The example in <a href="https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getByteTimeDomainData" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getByteTimeDomainData</a> hints that it may be the former.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/analysernode/getfloattimedomaindata</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getFloatTimeDomainData" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getFloatTimeDomainData</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/analysernode/getfloattimedomaindata/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/analysernode/getfloattimedomaindata/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/bca8d1ab2bc4f5a1ef6b39c454b0229539178e98/hovercard" href="https://github.com/mdn/content/commit/bca8d1ab2bc4f5a1ef6b39c454b0229539178e98"><tt>bca8d1a</tt></a></li>
+<li>Document last modified: 2023-02-18T07:09:59.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webaudio] BiquadFilterNode»Q: Incorrect range for Q?]]></title>
+            <link>https://github.com/mdn/content/issues/23592</link>
+            <guid>https://github.com/mdn/content/issues/23592</guid>
+            <pubDate>Fri, 13 Jan 2023 01:05:43 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/Q" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/Q</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The first section. No subheading.</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">"It is a dimensionless value with a default value of 1 and a nominal range of 0.0001 to 1000."</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">According to the W3C document this article links to, the range of Q is +/-770.63678 for lowpass and highpass filters and [0,3.4028235e38] for bandpass, notch and peaking filters and for lowpass and highpass filters the units are decibels, so it's not dimensionless in those cases. Where are the 0.0001 and 1000 values  stated in this article derived from?</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-q" rel="nofollow">https://webaudio.github.io/web-audio-api/#dom-biquadfilternode-q</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/biquadfilternode/q</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/Q" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/Q</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/biquadfilternode/q/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/biquadfilternode/q/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/8fd76eb81b57c66405db132e361380d812d550b4/hovercard" href="https://github.com/mdn/content/commit/8fd76eb81b57c66405db132e361380d812d550b4"><tt>8fd76eb</tt></a></li>
+<li>Document last modified: 2022-10-07T16:44:44.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webaudio] AudioParam - automationRate undocumented]]></title>
+            <link>https://github.com/mdn/content/issues/14637</link>
+            <guid>https://github.com/mdn/content/issues/14637</guid>
+            <pubDate>Sun, 03 Apr 2022 13:16:23 GMT</pubDate>
+            <content:encoded><![CDATA[
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">The link to automationRate leads to a 404.</p>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">A page which documents what <code class="notranslate">automationRate</code> is or was good for, whether it is deprecated or not, and "how new/old" it is (introduced 2020-02, e.g.)</p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+<p dir="auto">I found a bit of info here:<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioParamDescriptor" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioParamDescriptor</a><br>
+But that does not really cover the topic.</p>
+
+<details>
+<summary>MDN page report details</summary>
+<ul dir="auto">
+<li>Query: <code class="notranslate">api.AudioParam</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioParam" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioParam</a></li>
+<li>Report started: 2022-04-03T11:05:12.802Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[webaudio] "ConvolverNode": provide a simpler example that I can adapt to more complex examples (connecting it to another node does not work)]]></title>
+            <link>https://github.com/mdn/content/issues/14022</link>
+            <guid>https://github.com/mdn/content/issues/14022</guid>
+            <pubDate>Fri, 18 Mar 2022 14:35:29 GMT</pubDate>
+            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode</a></p>
+<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
+<p dir="auto">The convolver node doesn't seem to work when connected to another node directly</p>
+<h4 dir="auto">Specific section or headline?</h4>
+<p dir="auto">The example section, it's only for samples</p>
+<h4 dir="auto">What did you expect to see?</h4>
+<p dir="auto">to see a simpler example that i can adapt to more complex examples</p>
+<h4 dir="auto">Did you test this? If so, how?</h4>
+<p dir="auto">I'm trying to create an emulation of a eurorack module.</p>
+<p dir="auto">I'm failing to connect the convolver node to the enveloppe output.</p>
+<p dir="auto">The convolver node doesn't seem to work for any oscillator also</p>
+<p dir="auto">I expected it to be because of the fact that the buffer is null which seemed a weird design at first but I tried it and it also didn't work.</p>
+<p dir="auto">I was expecting the code to run like this:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const osc = ctx.createOscillator();
+const reverb = ctx.createConvolver();
+reverb.buffer = ctx.createBuffer(1, ctx.sampleRate, ctx.sampleRate);
+osc.connect(reverb).connect(ctx.destination);"><pre class="notranslate"><code class="notranslate">const osc = ctx.createOscillator();
+const reverb = ctx.createConvolver();
+reverb.buffer = ctx.createBuffer(1, ctx.sampleRate, ctx.sampleRate);
+osc.connect(reverb).connect(ctx.destination);
+</code></pre></div>
+<p dir="auto">this js fiddle contains my code. <a href="http://jsfiddle.net/5ndbfypj/7/" rel="nofollow">http://jsfiddle.net/5ndbfypj/7/</a></p>
+<p dir="auto">i've connected both the convolver node and the nvelop output to the context's destination.</p>
+
+<details>
+<summary>MDN Content page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/convolvernode</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/convolvernode/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/convolvernode/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/caaae4e675413aa1c44054883d7e1baa3fa910ff/hovercard" href="https://github.com/mdn/content/commit/caaae4e675413aa1c44054883d7e1baa3fa910ff"><tt>caaae4e</tt></a></li>
+<li>Document last modified: 2022-02-03T16:33:06.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[webaudio] AudioContext.createMediaElementSource does not work in Safari]]></title>
             <link>https://github.com/mdn/content/issues/9042</link>
