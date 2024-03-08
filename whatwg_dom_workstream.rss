@@ -4,10 +4,40 @@
         <title>WHATWG DOM Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_dom_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG DOM Workstream</description>
-        <lastBuildDate>Thu, 15 Feb 2024 00:44:52 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 08 Mar 2024 14:53:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] querySelectorAll() does not state how the results are sorted]]></title>
+            <link>https://github.com/mdn/content/issues/32615</link>
+            <guid>https://github.com/mdn/content/issues/32615</guid>
+            <pubDate>Fri, 08 Mar 2024 14:53:28 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Incomplete: IMO the docs should state how are the reslts sorted.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element" rel="nofollow">Element</a> method querySelectorAll() returns a static (not live) <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList" rel="nofollow">NodeList</a> representing a list of elements matching the specified group of selectors which are descendants of the element on which the method was called, <strong>sorted by their appearance order inside the queried scope</strong>. (or whatever, I don't know)</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">I'm so glad MDN displaced the infamous "HTML school" or whatever it's name was, a truly SEO master job!</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/element/queryselectorall</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/element/queryselectorall/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/element/queryselectorall/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b85bf9fcc2c0062a765d104799d7d45d9e9b13bb/hovercard" href="https://github.com/mdn/content/commit/b85bf9fcc2c0062a765d104799d7d45d9e9b13bb"><tt>b85bf9f</tt></a></li>
+<li>Document last modified: 2023-07-22T00:55:30.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, dom] There have been a few changes to declarative shadow DOM]]></title>
             <link>https://github.com/mdn/content/issues/32289</link>
