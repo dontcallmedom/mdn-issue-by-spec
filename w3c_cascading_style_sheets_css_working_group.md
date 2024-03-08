@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-ui-4\] user-select contain is obsolete](https://github.com/mdn/content/issues/32607) (2024-03-08T04:23:22Z)
+  
 * [\[css-display-3\] All major browsers now support \`display: contents\`](https://github.com/mdn/content/issues/32605) (2024-03-08T02:10:29Z)
   
 * [\[cssom-view-1\] Window.innerwidth giving wrong value](https://github.com/mdn/content/issues/32499) (2024-03-01T06:23:15Z)

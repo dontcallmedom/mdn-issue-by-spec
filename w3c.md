@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-ui-4\] user-select contain is obsolete](https://github.com/mdn/content/issues/32607) (2024-03-08T04:23:22Z)
+  
 * [\[css-display-3\] All major browsers now support \`display: contents\`](https://github.com/mdn/content/issues/32605) (2024-03-08T02:10:29Z)
   
 * [\[uievents\] Element: focusout event: Browser compatibility example](https://github.com/mdn/content/issues/32580) (2024-03-06T12:40:49Z)
