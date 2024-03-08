@@ -4,8 +4,6 @@
 
 * [\[html\] \`Canvas\` \`clear\` on resize not mentioned](https://github.com/mdn/content/issues/32603) (2024-03-07T23:53:26Z)
   
-* [\[html\] HTMLElement: click() method Doesn't Specify which elements have a "click"](https://github.com/mdn/content/issues/32567) (2024-03-06T00:06:29Z)
-  
 * [\[html\] Cellpadding description does not correspond to reality](https://github.com/mdn/content/issues/32554) (2024-03-05T07:56:10Z)
   
 * [\[html, css-images-3\] Statement about applicable object-position and object-fit is wrong (?)](https://github.com/mdn/content/issues/32474) (2024-02-28T16:22:14Z)
