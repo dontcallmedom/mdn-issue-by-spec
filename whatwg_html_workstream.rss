@@ -4,10 +4,41 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Wed, 06 Mar 2024 00:06:29 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 07 Mar 2024 23:53:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] `Canvas` `clear` on resize not mentioned]]></title>
+            <link>https://github.com/mdn/content/issues/32603</link>
+            <guid>https://github.com/mdn/content/issues/32603</guid>
+            <pubDate>Thu, 07 Mar 2024 23:53:26 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/width" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/width</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">1st (main)</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">A side-effect of assigning a value to that property</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">It's missing the fact that some (all?) browsers <code class="notranslate">clear</code> when changing in-memory dimensions.</p>
+<p dir="auto">This may include <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/height" rel="nofollow">h</a> (not tested)</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://stackoverflow.com/questions/5517783/preventing-canvas-clear-when-resizing-window" rel="nofollow">https://stackoverflow.com/questions/5517783/preventing-canvas-clear-when-resizing-window</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><a href="https://stackoverflow.com/a/70124883/765294" rel="nofollow">This technique for preserving content after resizing</a>,  which is very helpful as a tutorial</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/htmlcanvaselement/width</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/width" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/width</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlcanvaselement/width/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlcanvaselement/width/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/d8a52569d8d465eb626af3d33600c8c638a7a322/hovercard" href="https://github.com/mdn/content/commit/d8a52569d8d465eb626af3d33600c8c638a7a322"><tt>d8a5256</tt></a></li>
+<li>Document last modified: 2024-02-06T08:10:10.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] HTMLElement: click() method Doesn't Specify which elements have a "click"]]></title>
             <link>https://github.com/mdn/content/issues/32567</link>
@@ -189,7 +220,7 @@ async function copyCanvasContentsToClipboard() {
     <span class="dropdown-caret"></span>
   </summary>
 
-  <video src="https://private-user-images.githubusercontent.com/34963401/305442630-6f79bd53-ed64-4867-9147-c4c8455b02a8.mov?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk4NTU3NzcsIm5iZiI6MTcwOTg1NTQ3NywicGF0aCI6Ii8zNDk2MzQwMS8zMDU0NDI2MzAtNmY3OWJkNTMtZWQ2NC00ODY3LTkxNDctYzRjODQ1NWIwMmE4Lm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzA3VDIzNTExN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQwMzlhNTJmZmJhYTk1ZjYzYjBlOGM2YWNlZDA0NWRmNDU3MGRiM2JlN2Y2M2FkMDk4ZThiYTYwNDY1YjgyYzEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.DkRsuX5BI_CUu8ULvCgSUwvw7ytxAFrDrz9JWAnFQK0" data-canonical-src="https://private-user-images.githubusercontent.com/34963401/305442630-6f79bd53-ed64-4867-9147-c4c8455b02a8.mov?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk4NTU3NzcsIm5iZiI6MTcwOTg1NTQ3NywicGF0aCI6Ii8zNDk2MzQwMS8zMDU0NDI2MzAtNmY3OWJkNTMtZWQ2NC00ODY3LTkxNDctYzRjODQ1NWIwMmE4Lm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzA3VDIzNTExN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQwMzlhNTJmZmJhYTk1ZjYzYjBlOGM2YWNlZDA0NWRmNDU3MGRiM2JlN2Y2M2FkMDk4ZThiYTYwNDY1YjgyYzEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.DkRsuX5BI_CUu8ULvCgSUwvw7ytxAFrDrz9JWAnFQK0" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px">
+  <video src="https://private-user-images.githubusercontent.com/34963401/305442630-6f79bd53-ed64-4867-9147-c4c8455b02a8.mov?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk4NjE4NTgsIm5iZiI6MTcwOTg2MTU1OCwicGF0aCI6Ii8zNDk2MzQwMS8zMDU0NDI2MzAtNmY3OWJkNTMtZWQ2NC00ODY3LTkxNDctYzRjODQ1NWIwMmE4Lm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzA4VDAxMzIzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdkNmFkZmU4YTg1NjRlYzhiOTIwN2MxMWNiZGEyMDNhZTA5N2NkYWRkOTdmNzQ4ODk4YWQwMDkzM2IxMzdmNDgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.YnswdUdqNiRHquR1Zi_NighbFLRGM9ZA2recN6drh98" data-canonical-src="https://private-user-images.githubusercontent.com/34963401/305442630-6f79bd53-ed64-4867-9147-c4c8455b02a8.mov?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk4NjE4NTgsIm5iZiI6MTcwOTg2MTU1OCwicGF0aCI6Ii8zNDk2MzQwMS8zMDU0NDI2MzAtNmY3OWJkNTMtZWQ2NC00ODY3LTkxNDctYzRjODQ1NWIwMmE4Lm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzA4VDAxMzIzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdkNmFkZmU4YTg1NjRlYzhiOTIwN2MxMWNiZGEyMDNhZTA5N2NkYWRkOTdmNzQ4ODk4YWQwMDkzM2IxMzdmNDgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.YnswdUdqNiRHquR1Zi_NighbFLRGM9ZA2recN6drh98" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px">
 
   </video>
 </details>
@@ -1182,7 +1213,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk4NTU3NzIsIm5iZiI6MTcwOTg1NTQ3MiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDdUMjM1MTEyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MWEwODAyNTViYWNlZjMyNmU1ZDkxMmRiYjg0Y2VlMmZmOGRmYjQ0MTU1YzVmOTFlOWExNTNlNzQ2YzU1MGRmOCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.MfkEIMhWpy8k-HXb_YS1fDxd8ADj-jkRyv3obyBdf9g"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk4NTU3NzIsIm5iZiI6MTcwOTg1NTQ3MiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDdUMjM1MTEyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MWEwODAyNTViYWNlZjMyNmU1ZDkxMmRiYjg0Y2VlMmZmOGRmYjQ0MTU1YzVmOTFlOWExNTNlNzQ2YzU1MGRmOCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.MfkEIMhWpy8k-HXb_YS1fDxd8ADj-jkRyv3obyBdf9g" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk4NjE4NTMsIm5iZiI6MTcwOTg2MTU1MywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDhUMDEzMjMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MWI4OGZjMjQyZjg5ZjA4YjRhMjljYmEwNWUzYTZiYjBkMmQ0ZDM4NTJlOWMzNDBiYTVjMGY0ODExY2E0YTVhYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.oDcsfUZB_OZiRdWcy60JMvwcSOfXKT8obzW6FhMqGnM"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk4NjE4NTMsIm5iZiI6MTcwOTg2MTU1MywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDhUMDEzMjMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MWI4OGZjMjQyZjg5ZjA4YjRhMjljYmEwNWUzYTZiYjBkMmQ0ZDM4NTJlOWMzNDBiYTVjMGY0ODExY2E0YTVhYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.oDcsfUZB_OZiRdWcy60JMvwcSOfXKT8obzW6FhMqGnM" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
