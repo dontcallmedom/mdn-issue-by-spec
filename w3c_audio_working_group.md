@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Audio Working Group. [![RSS feed for W3C Audio Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[webaudio\] AnalyzerNode::getByteFrequencyData claims that an element in the Uint8array is set to negative infinity](https://github.com/mdn/content/issues/32640) (2024-03-11T11:20:35Z)
+  
 * [\[webaudio\] interrupted state not listed as a valid state value, but an example of interrupted state was given](https://github.com/mdn/content/issues/26129) (2023-04-11T18:49:59Z)
   
 * [\[webaudio\] AnalyserNode::getFloatTimeDomainData() doesn't specify the encoding of the waveform](https://github.com/mdn/content/issues/25571) (2023-03-23T14:41:18Z)

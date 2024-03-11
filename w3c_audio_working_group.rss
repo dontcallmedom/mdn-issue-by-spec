@@ -4,10 +4,33 @@
         <title>W3C Audio Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_audio_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Audio Working Group</description>
-        <lastBuildDate>Tue, 11 Apr 2023 18:49:59 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 11 Mar 2024 11:20:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[webaudio] AnalyzerNode::getByteFrequencyData claims that an element in the Uint8array is set to negative infinity]]></title>
+            <link>https://github.com/mdn/content/issues/32640</link>
+            <guid>https://github.com/mdn/content/issues/32640</guid>
+            <pubDate>Mon, 11 Mar 2024 11:20:35 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getByteFrequencyData#array" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getByteFrequencyData#array</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The <code class="notranslate">array</code> parameter</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">For the <code class="notranslate">array</code> parameter in <code class="notranslate">AnalyzerNode::getByteFrequencyData</code>, the docs claim that</p>
+<blockquote>
+<p dir="auto">The Uint8array that the frequency domain data will be copied to. For any sample which is silent, the value is -Infinity</p>
+</blockquote>
+<p dir="auto">This is wrong since an Uint8 cannot be set to negative infinity.<br>
+It was probably copy-pasted from <code class="notranslate">getFloatFrequencyData</code>, which does the same as this method, but fills out a <code class="notranslate">Float32Array</code> instead of a <code class="notranslate">Uint8array</code></p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">It shouldn't be claimed that an uint8 will be set to negative infinity.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[webaudio] interrupted state not listed as a valid state value, but an example of interrupted state was given]]></title>
             <link>https://github.com/mdn/content/issues/26129</link>
