@@ -4,10 +4,72 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Thu, 07 Mar 2024 23:53:26 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 11 Mar 2024 05:50:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Discrepancies in tag omission description for void elements]]></title>
+            <link>https://github.com/mdn/content/issues/32637</link>
+            <guid>https://github.com/mdn/content/issues/32637</guid>
+            <pubDate>Mon, 11 Mar 2024 05:50:38 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Tag omission description is different for the same effect</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Same description unless there is a real difference in the way it works</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Descriptions for tag omission in different void elements</p>
+<p dir="auto"> - Must have a start tag and must not have an end tag.</p>
+ - There must be no closing tag.
+<br> - Must have a start tag, and must not have an end tag. In XHTML documents, write this element as <br>.
+ - It must have start tag, but must not have an end tag.
+ - Must have a start tag, and must not have an end tag.
+<hr> - It must have start tag, but must not have an end tag.
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href=""><img style="max-width: 100%;"></a></p> - Must have a start tag and must not have an end tag.
+ - Must have a start tag and must not have an end tag.
+ - As it is a void element, the start tag must be present and the end tag must not be present
+ - As it is a void element, the start tag must be present and the end tag must not be present.
+ - As it is a void element, the start tag must be present and the end tag must not be present.
+<source> - It must have a start tag, but must not have an end tag.
+ - As it is a void element, the start tag must be present and the end tag must not be present.
+ - It is a void element; it must have a start tag, but must not have an end tag.
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[html] Technical summary for input is not on navigation list]]></title>
+            <link>https://github.com/mdn/content/issues/32636</link>
+            <guid>https://github.com/mdn/content/issues/32636</guid>
+            <pubDate>Mon, 11 Mar 2024 05:45:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Technical summary</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Page doesn't have Technical Summary in navigation</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Technical summary in navigation sidebar</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/element/input</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/input/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/input/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/337fde08da46e0861c40458357831bba582439c5/hovercard" href="https://github.com/mdn/content/commit/337fde08da46e0861c40458357831bba582439c5"><tt>337fde0</tt></a></li>
+<li>Document last modified: 2023-12-04T14:28:33.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] `Canvas` `clear` on resize not mentioned]]></title>
             <link>https://github.com/mdn/content/issues/32603</link>
@@ -186,7 +248,7 @@ async function copyCanvasContentsToClipboard() {
     <span class="dropdown-caret"></span>
   </summary>
 
-  <video src="https://private-user-images.githubusercontent.com/34963401/305442630-6f79bd53-ed64-4867-9147-c4c8455b02a8.mov?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAxMzU5MzUsIm5iZiI6MTcxMDEzNTYzNSwicGF0aCI6Ii8zNDk2MzQwMS8zMDU0NDI2MzAtNmY3OWJkNTMtZWQ2NC00ODY3LTkxNDctYzRjODQ1NWIwMmE4Lm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMTElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzExVDA1NDAzNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTA1NWQ3ZDI0MTRmM2ZlYzg3MzQzOGQ2Yjk2YjEyYWFiYTExMjYxMjA2OWY2ZDVjMjMyYjI2NmEwYmU5MGRmYjkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.a6OTMuehCWBIKO9i8Fp8BO7fWXdvaQq7bfDCRmqtvWE" data-canonical-src="https://private-user-images.githubusercontent.com/34963401/305442630-6f79bd53-ed64-4867-9147-c4c8455b02a8.mov?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAxMzU5MzUsIm5iZiI6MTcxMDEzNTYzNSwicGF0aCI6Ii8zNDk2MzQwMS8zMDU0NDI2MzAtNmY3OWJkNTMtZWQ2NC00ODY3LTkxNDctYzRjODQ1NWIwMmE4Lm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMTElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzExVDA1NDAzNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTA1NWQ3ZDI0MTRmM2ZlYzg3MzQzOGQ2Yjk2YjEyYWFiYTExMjYxMjA2OWY2ZDVjMjMyYjI2NmEwYmU5MGRmYjkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.a6OTMuehCWBIKO9i8Fp8BO7fWXdvaQq7bfDCRmqtvWE" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px">
+  <video src="https://private-user-images.githubusercontent.com/34963401/305442630-6f79bd53-ed64-4867-9147-c4c8455b02a8.mov?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAxMzY1NjAsIm5iZiI6MTcxMDEzNjI2MCwicGF0aCI6Ii8zNDk2MzQwMS8zMDU0NDI2MzAtNmY3OWJkNTMtZWQ2NC00ODY3LTkxNDctYzRjODQ1NWIwMmE4Lm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMTElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzExVDA1NTEwMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQwNDFmNjI4ZDdjNzNkZDYxNDUzNDlkMDI4MWIzYWI4NGMyOTllOTkwMDhlZWY5MWQ3YWJiZmU3YjEwYjhhMDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.5xcdRM0kiRXQzzmHe9picbzZrj3WdVdtlRCh4yc7iDg" data-canonical-src="https://private-user-images.githubusercontent.com/34963401/305442630-6f79bd53-ed64-4867-9147-c4c8455b02a8.mov?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAxMzY1NjAsIm5iZiI6MTcxMDEzNjI2MCwicGF0aCI6Ii8zNDk2MzQwMS8zMDU0NDI2MzAtNmY3OWJkNTMtZWQ2NC00ODY3LTkxNDctYzRjODQ1NWIwMmE4Lm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMTElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzExVDA1NTEwMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQwNDFmNjI4ZDdjNzNkZDYxNDUzNDlkMDI4MWIzYWI4NGMyOTllOTkwMDhlZWY5MWQ3YWJiZmU3YjEwYjhhMDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.5xcdRM0kiRXQzzmHe9picbzZrj3WdVdtlRCh4yc7iDg" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px">
 
   </video>
 </details>
@@ -1179,7 +1241,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAxMzU5MjksIm5iZiI6MTcxMDEzNTYyOSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMxMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMTFUMDU0MDI5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MWViYTJlY2U3ODI2OGM0NGM0YzEwZDVhZTc1ZWI0YmEyYWMwMTg4YmVhOWJmMTVjNWJhMDUyODI1ZDY5NWJiNyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Nma2IBJi_Xqq97OFLi9xUhwk4khyubuVO3Fnh2TJUo4"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAxMzU5MjksIm5iZiI6MTcxMDEzNTYyOSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMxMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMTFUMDU0MDI5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MWViYTJlY2U3ODI2OGM0NGM0YzEwZDVhZTc1ZWI0YmEyYWMwMTg4YmVhOWJmMTVjNWJhMDUyODI1ZDY5NWJiNyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Nma2IBJi_Xqq97OFLi9xUhwk4khyubuVO3Fnh2TJUo4" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAxMzY1NTUsIm5iZiI6MTcxMDEzNjI1NSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMxMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMTFUMDU1MDU1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YzYwNmY3MjNlOTg4ZWZlMzUyOTJlYzc1MGNlZjFjYzA2Y2VlOTMyZWZiNmE1N2NlNmQ1YTQ5Nzg3YTU1Yzc0ZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.9YeapUiQzYzZ6xH9skoEU4290FCIxT-XBwGZ0rF_yzM"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAxMzY1NTUsIm5iZiI6MTcxMDEzNjI1NSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMxMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMTFUMDU1MDU1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YzYwNmY3MjNlOTg4ZWZlMzUyOTJlYzc1MGNlZjFjYzA2Y2VlOTMyZWZiNmE1N2NlNmQ1YTQ5Nzg3YTU1Yzc0ZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.9YeapUiQzYzZ6xH9skoEU4290FCIxT-XBwGZ0rF_yzM" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
