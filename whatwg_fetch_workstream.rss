@@ -110,7 +110,7 @@ But in reality it's possible for this promise to reject with a TypeError.</p>
 <li>Send a request with and without the field and check which callback is fired inside <code class="notranslate">then()</code>.</li>
 </ul>
 <p dir="auto">Request code example:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="  function test_fetch(){
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="  function test_fetch(){
 	  let message = JSON.stringify({
              // 'ids' is the expected field. Change it latter for 'id' or something else to see the error.
              ids: [1] 
@@ -128,26 +128,25 @@ But in reality it's possible for this promise to reject with a TypeError.</p>
 		  body: message
 	  })
 	  .then(data =&gt; console.log('success'),data =&gt; console.log('error'))
-  }"><pre lang="javascript" class="notranslate"><code class="notranslate">  function test_fetch(){
-	  let message = JSON.stringify({
-             // 'ids' is the expected field. Change it latter for 'id' or something else to see the error.
-             ids: [1] 
-	  })
+  }"><pre class="notranslate">  <span class="pl-k">function</span> <span class="pl-en">test_fetch</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">{</span>
+	  <span class="pl-k">let</span> <span class="pl-s1">message</span> <span class="pl-c1">=</span> <span class="pl-c1">JSON</span><span class="pl-kos">.</span><span class="pl-en">stringify</span><span class="pl-kos">(</span><span class="pl-kos">{</span>
+             <span class="pl-c">// 'ids' is the expected field. Change it latter for 'id' or something else to see the error.</span>
+             <span class="pl-c1">ids</span>: <span class="pl-kos">[</span><span class="pl-c1">1</span><span class="pl-kos">]</span> 
+	  <span class="pl-kos">}</span><span class="pl-kos">)</span>
   
-	  fetch('http://your.api/get_data',{
-		  method: 'post',
-                  // Adding Content-Type header to enable preflight. 
-                  // It's still not working even with normal(no-preflight) requests.
-                  // To test with normal instead of preflight requests,
-                  // remove the line below from the fetch options object and
-                  // make sure your server can handle text/plain data or else
-                  // you may face some error due to wrong parsing of request body.
-		  headers: {'Content-Type': 'application/json'},
-		  body: message
-	  })
-	  .then(data =&gt; console.log('success'),data =&gt; console.log('error'))
-  }
-</code></pre></div>
+	  <span class="pl-en">fetch</span><span class="pl-kos">(</span><span class="pl-s">'http://your.api/get_data'</span><span class="pl-kos">,</span><span class="pl-kos">{</span>
+		  <span class="pl-c1">method</span>: <span class="pl-s">'post'</span><span class="pl-kos">,</span>
+                  <span class="pl-c">// Adding Content-Type header to enable preflight. </span>
+                  <span class="pl-c">// It's still not working even with normal(no-preflight) requests.</span>
+                  <span class="pl-c">// To test with normal instead of preflight requests,</span>
+                  <span class="pl-c">// remove the line below from the fetch options object and</span>
+                  <span class="pl-c">// make sure your server can handle text/plain data or else</span>
+                  <span class="pl-c">// you may face some error due to wrong parsing of request body.</span>
+		  <span class="pl-c1">headers</span>: <span class="pl-kos">{</span><span class="pl-s">'Content-Type'</span>: <span class="pl-s">'application/json'</span><span class="pl-kos">}</span><span class="pl-kos">,</span>
+		  <span class="pl-c1">body</span>: <span class="pl-s1">message</span>
+	  <span class="pl-kos">}</span><span class="pl-kos">)</span>
+	  <span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-s1">data</span> <span class="pl-c1">=&gt;</span> <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">'success'</span><span class="pl-kos">)</span><span class="pl-kos">,</span><span class="pl-s1">data</span> <span class="pl-c1">=&gt;</span> <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">'error'</span><span class="pl-kos">)</span><span class="pl-kos">)</span>
+  <span class="pl-kos">}</span></pre></div>
 <p dir="auto">I've tested in <code class="notranslate">Chrome, version 102.0.5005.61 (Official Build) (64-bit)</code> and <code class="notranslate">Firefox, version 75.0 (64-bit)</code>. Got the same unexpected behaviour in both.</p>
 <h3 dir="auto">MDN metadata</h3>
 
