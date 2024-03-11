@@ -10,8 +10,6 @@
   
 * [\[uievents\] Element: focusout event: Browser compatibility example](https://github.com/mdn/content/issues/32580) (2024-03-06T12:40:49Z)
   
-* [\[ecmascript, web-bluetooth\] \[Web Bluetooth\] Unclear wording abuot the Bluethoot interface returning something](https://github.com/mdn/content/issues/32529) (2024-03-03T12:19:47Z)
-  
 * [\[cssom-view-1\] Window.innerwidth giving wrong value](https://github.com/mdn/content/issues/32499) (2024-03-01T06:23:15Z)
   
 * [\[html, css-images-3\] Statement about applicable object-position and object-fit is wrong (?)](https://github.com/mdn/content/issues/32474) (2024-02-28T16:22:14Z)
