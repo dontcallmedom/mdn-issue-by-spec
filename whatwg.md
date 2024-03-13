@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Content category is missing](https://github.com/mdn/content/issues/32674) (2024-03-13T05:58:52Z)
+  
 * [\[streams\] Example script error](https://github.com/mdn/content/issues/32655) (2024-03-12T05:30:21Z)
   
 * [\[html\] Discrepancies in tag omission description for void elements](https://github.com/mdn/content/issues/32637) (2024-03-11T05:50:38Z)

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Content category is missing](https://github.com/mdn/content/issues/32674) (2024-03-13T05:58:52Z)
+  
 * [\[html\] Discrepancies in tag omission description for void elements](https://github.com/mdn/content/issues/32637) (2024-03-11T05:50:38Z)
   
 * [\[html\] \`Canvas\` \`clear\` on resize not mentioned](https://github.com/mdn/content/issues/32603) (2024-03-07T23:53:26Z)
