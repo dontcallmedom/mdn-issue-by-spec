@@ -42,8 +42,6 @@
   
 * [\[fetch\] Missing Request constructor duplex option](https://github.com/mdn/content/issues/31735) (2024-01-16T01:34:58Z)
   
-* [\[html\] Using Storage change event on same page.](https://github.com/mdn/content/issues/31665) (2024-01-11T19:25:49Z)
-  
 * [\[html\] DOMContentLoaded does not fire in LiveSample](https://github.com/mdn/content/issues/31229) (2023-12-22T18:04:00Z)
   
 * [\[html\] \`hgroup\` accessibility concerns might need an update](https://github.com/mdn/content/issues/31064) (2023-12-16T13:22:38Z)
