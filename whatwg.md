@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] Content category is missing](https://github.com/mdn/content/issues/32674) (2024-03-13T05:58:52Z)
-  
 * [\[streams\] Example script error](https://github.com/mdn/content/issues/32655) (2024-03-12T05:30:21Z)
   
 * [\[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] querySelectorAll() does not state how the results are sorted](https://github.com/mdn/content/issues/32615) (2024-03-08T14:53:28Z)
