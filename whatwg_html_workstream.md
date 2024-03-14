@@ -4,8 +4,6 @@
 
 * [\[html\] Content category is missing](https://github.com/mdn/content/issues/32674) (2024-03-13T05:58:52Z)
   
-* [\[html\] Discrepancies in tag omission description for void elements](https://github.com/mdn/content/issues/32637) (2024-03-11T05:50:38Z)
-  
 * [\[html\] \`Canvas\` \`clear\` on resize not mentioned](https://github.com/mdn/content/issues/32603) (2024-03-07T23:53:26Z)
   
 * [\[html\] Cellpadding description does not correspond to reality](https://github.com/mdn/content/issues/32554) (2024-03-05T07:56:10Z)

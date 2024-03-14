@@ -6,8 +6,6 @@
   
 * [\[streams\] Example script error](https://github.com/mdn/content/issues/32655) (2024-03-12T05:30:21Z)
   
-* [\[html\] Discrepancies in tag omission description for void elements](https://github.com/mdn/content/issues/32637) (2024-03-11T05:50:38Z)
-  
 * [\[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] querySelectorAll() does not state how the results are sorted](https://github.com/mdn/content/issues/32615) (2024-03-08T14:53:28Z)
   
 * [\[html\] \`Canvas\` \`clear\` on resize not mentioned](https://github.com/mdn/content/issues/32603) (2024-03-07T23:53:26Z)

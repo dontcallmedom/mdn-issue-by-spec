@@ -39,52 +39,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Discrepancies in tag omission description for void elements]]></title>
-            <link>https://github.com/mdn/content/issues/32637</link>
-            <guid>https://github.com/mdn/content/issues/32637</guid>
-            <pubDate>Mon, 11 Mar 2024 05:50:38 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Tag omission description is different for the same effect</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Same description unless there is a real difference in the way it works</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">Descriptions for tag omission in different void elements</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;area&gt;     - Must have a start tag and must not have an end tag.
-&lt;base&gt;     - There must be no closing tag.
-&lt;br&gt;         - Must have a start tag, and must not have an end tag. In XHTML documents, write this element as &lt;br /&gt;.
-&lt;col&gt;        - It must have start tag, but must not have an end tag.
-&lt;embed&gt; - Must have a start tag, and must not have an end tag.
-&lt;hr&gt;         - It must have start tag, but must not have an end tag.
-&lt;img&gt;      - Must have a start tag and must not have an end tag.
-&lt;input&gt;    - Must have a start tag and must not have an end tag.
-&lt;link&gt;       - As it is a void element, the start tag must be present and the end tag must not be present
-&lt;meta&gt;    - As it is a void element, the start tag must be present and the end tag must not be present.
-&lt;param&gt;   - As it is a void element, the start tag must be present and the end tag must not be present.
-&lt;source&gt;  - It must have a start tag, but must not have an end tag.
-&lt;track&gt;    - As it is a void element, the start tag must be present and the end tag must not be present.
-&lt;wbr&gt;      - It is a void element; it must have a start tag, but must not have an end tag."><pre class="notranslate"><code class="notranslate">&lt;area&gt;     - Must have a start tag and must not have an end tag.
-&lt;base&gt;     - There must be no closing tag.
-&lt;br&gt;         - Must have a start tag, and must not have an end tag. In XHTML documents, write this element as &lt;br /&gt;.
-&lt;col&gt;        - It must have start tag, but must not have an end tag.
-&lt;embed&gt; - Must have a start tag, and must not have an end tag.
-&lt;hr&gt;         - It must have start tag, but must not have an end tag.
-&lt;img&gt;      - Must have a start tag and must not have an end tag.
-&lt;input&gt;    - Must have a start tag and must not have an end tag.
-&lt;link&gt;       - As it is a void element, the start tag must be present and the end tag must not be present
-&lt;meta&gt;    - As it is a void element, the start tag must be present and the end tag must not be present.
-&lt;param&gt;   - As it is a void element, the start tag must be present and the end tag must not be present.
-&lt;source&gt;  - It must have a start tag, but must not have an end tag.
-&lt;track&gt;    - As it is a void element, the start tag must be present and the end tag must not be present.
-&lt;wbr&gt;      - It is a void element; it must have a start tag, but must not have an end tag.
-</code></pre></div>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] `Canvas` `clear` on resize not mentioned]]></title>
             <link>https://github.com/mdn/content/issues/32603</link>
             <guid>https://github.com/mdn/content/issues/32603</guid>
@@ -262,7 +216,7 @@ async function copyCanvasContentsToClipboard() {
     <span class="dropdown-caret"></span>
   </summary>
 
-  <video src="https://private-user-images.githubusercontent.com/34963401/305442630-6f79bd53-ed64-4867-9147-c4c8455b02a8.mov?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAzNzQ3MDQsIm5iZiI6MTcxMDM3NDQwNCwicGF0aCI6Ii8zNDk2MzQwMS8zMDU0NDI2MzAtNmY3OWJkNTMtZWQ2NC00ODY3LTkxNDctYzRjODQ1NWIwMmE4Lm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzE0VDAwMDAwNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWY2YTMzYmJmZWM2MDY4ZmY1MGQxNzJiZjVmM2M2YzZjYzE4ODk1ZDVlMzE0YjU4NGQzNWI3MjJiNmViNTY1ZDQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.-d7R_SO_ddGDmVSX-ofAb2pYQREk2FXKUdhDI-WEQA0" data-canonical-src="https://private-user-images.githubusercontent.com/34963401/305442630-6f79bd53-ed64-4867-9147-c4c8455b02a8.mov?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAzNzQ3MDQsIm5iZiI6MTcxMDM3NDQwNCwicGF0aCI6Ii8zNDk2MzQwMS8zMDU0NDI2MzAtNmY3OWJkNTMtZWQ2NC00ODY3LTkxNDctYzRjODQ1NWIwMmE4Lm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzE0VDAwMDAwNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWY2YTMzYmJmZWM2MDY4ZmY1MGQxNzJiZjVmM2M2YzZjYzE4ODk1ZDVlMzE0YjU4NGQzNWI3MjJiNmViNTY1ZDQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.-d7R_SO_ddGDmVSX-ofAb2pYQREk2FXKUdhDI-WEQA0" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px">
+  <video src="https://private-user-images.githubusercontent.com/34963401/305442630-6f79bd53-ed64-4867-9147-c4c8455b02a8.mov?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAzNzkzNTMsIm5iZiI6MTcxMDM3OTA1MywicGF0aCI6Ii8zNDk2MzQwMS8zMDU0NDI2MzAtNmY3OWJkNTMtZWQ2NC00ODY3LTkxNDctYzRjODQ1NWIwMmE4Lm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzE0VDAxMTczM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWFkYzAzYmQ0ZDRkMjE2YWYyMGNjZjEwODEzYjhhMGE5YzQ0MGU4ZDRkNjAwYmJiZGM4ODAwMTBjNDVmZmRmZTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.asT1Djgh761dXLK1J0diALduN6ssR5FJsltmiWtScW8" data-canonical-src="https://private-user-images.githubusercontent.com/34963401/305442630-6f79bd53-ed64-4867-9147-c4c8455b02a8.mov?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAzNzkzNTMsIm5iZiI6MTcxMDM3OTA1MywicGF0aCI6Ii8zNDk2MzQwMS8zMDU0NDI2MzAtNmY3OWJkNTMtZWQ2NC00ODY3LTkxNDctYzRjODQ1NWIwMmE4Lm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzE0VDAxMTczM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWFkYzAzYmQ0ZDRkMjE2YWYyMGNjZjEwODEzYjhhMGE5YzQ0MGU4ZDRkNjAwYmJiZGM4ODAwMTBjNDVmZmRmZTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.asT1Djgh761dXLK1J0diALduN6ssR5FJsltmiWtScW8" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px">
 
   </video>
 </details>
@@ -1221,7 +1175,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAzNzQ3MDAsIm5iZiI6MTcxMDM3NDQwMCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMxNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMTRUMDAwMDAwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OTM5YTljZTY5YmJjOTdiMzM3ZjVjODc3MmM0MjMxOTk2NGEwMTFiZWExN2QwOTM2MGJiZTgyN2VmOGU4MGZiMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.W006jUU2phbjXTV56aNOXrHGngExM1jZ9SKkje6ie7I"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAzNzQ3MDAsIm5iZiI6MTcxMDM3NDQwMCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMxNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMTRUMDAwMDAwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OTM5YTljZTY5YmJjOTdiMzM3ZjVjODc3MmM0MjMxOTk2NGEwMTFiZWExN2QwOTM2MGJiZTgyN2VmOGU4MGZiMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.W006jUU2phbjXTV56aNOXrHGngExM1jZ9SKkje6ie7I" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAzNzkzNDgsIm5iZiI6MTcxMDM3OTA0OCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMxNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMTRUMDExNzI4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NzliODA3YzY0MDI0ZmVmZTVjMDIxYmQ3Y2FiYjE4MmVkNDVjNzFjMTljNzdlZDI4MzQyMmJiNjA4Mzc1Njc3OSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.cRLqTiuEAYrXl49yIiIwwgmvIgrKpOF09BB2OgLzTf0"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAzNzkzNDgsIm5iZiI6MTcxMDM3OTA0OCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMxNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMTRUMDExNzI4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NzliODA3YzY0MDI0ZmVmZTVjMDIxYmQ3Y2FiYjE4MmVkNDVjNzFjMTljNzdlZDI4MzQyMmJiNjA4Mzc1Njc3OSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.cRLqTiuEAYrXl49yIiIwwgmvIgrKpOF09BB2OgLzTf0" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
