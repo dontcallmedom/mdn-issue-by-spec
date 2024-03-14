@@ -4,41 +4,10 @@
         <title>W3C Service Workers Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_service_workers_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Service Workers Working Group</description>
-        <lastBuildDate>Wed, 13 Dec 2023 04:52:59 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 Nov 2023 11:39:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[service-workers-1] Consider renaming Cache API's use of the word "request" to "resource" to align with fetch.]]></title>
-            <link>https://github.com/mdn/content/issues/30974</link>
-            <guid>https://github.com/mdn/content/issues/30974</guid>
-            <pubDate>Wed, 13 Dec 2023 04:52:59 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Cache/add" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Cache/add</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Cache/add#request" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Cache/add#request</a></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">I'm reporting via the docs for <code class="notranslate">cache.add(request)</code>, but really this would apply to all uses of the name "request" in all the Cache API method docs.</p>
-<p dir="auto">There's nothing incorrect, but I think using the name "resource" instead would align with the naming used in the <a href="https://developer.mozilla.org/en-US/docs/Web/API/fetch#resource" rel="nofollow">fetch docs</a>. And I think that name - "resource" - is a better name because it helps communicate the nuance that your arg doesn't have to be a <code class="notranslate">Request</code> object, it can be a string or URL object too.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The name "resource", like fetch.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/cache/add</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Cache/add" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Cache/add</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/cache/add/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/cache/add/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/1f216a70d94c3901c5767e6108a29daa48edc070/hovercard" href="https://github.com/mdn/content/commit/1f216a70d94c3901c5767e6108a29daa48edc070"><tt>1f216a7</tt></a></li>
-<li>Document last modified: 2023-04-07T06:13:50.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[service-workers-1] Confusing text on service worker registration scope broadening]]></title>
             <link>https://github.com/mdn/content/issues/30306</link>
@@ -94,7 +63,7 @@
 <p dir="auto">should mention <em><strong>service worker registration's serialized scope url</strong></em> and relation with the <code class="notranslate">options.scope</code> paremater with <code class="notranslate">ServiceWorkerContainer.register()</code></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><a href="https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-scope" rel="nofollow">https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-scope</a></p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/95597335/271661181-931030dc-ed2d-4bb7-b611-b3a8391470fe.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA0MzI3MjYsIm5iZiI6MTcxMDQzMjQyNiwicGF0aCI6Ii85NTU5NzMzNS8yNzE2NjExODEtOTMxMDMwZGMtZWQyZC00YmI3LWI2MTEtYjNhODM5MTQ3MGZlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzE0VDE2MDcwNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQ3NzNkMjhkY2E1MjkyNGI4N2FjN2YyMDY3NjU4MzFkNjljMDAwYzA1NjU3NWNkZThkZTExN2Y0YWJkYmZhYWMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.UeomY6ZjZmc2ReJR-mTSt4oBtyog9t_QZSYHEZrd6Pg"><img src="https://private-user-images.githubusercontent.com/95597335/271661181-931030dc-ed2d-4bb7-b611-b3a8391470fe.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA0MzI3MjYsIm5iZiI6MTcxMDQzMjQyNiwicGF0aCI6Ii85NTU5NzMzNS8yNzE2NjExODEtOTMxMDMwZGMtZWQyZC00YmI3LWI2MTEtYjNhODM5MTQ3MGZlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzE0VDE2MDcwNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQ3NzNkMjhkY2E1MjkyNGI4N2FjN2YyMDY3NjU4MzFkNjljMDAwYzA1NjU3NWNkZThkZTExN2Y0YWJkYmZhYWMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.UeomY6ZjZmc2ReJR-mTSt4oBtyog9t_QZSYHEZrd6Pg" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/95597335/271661181-931030dc-ed2d-4bb7-b611-b3a8391470fe.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA0MzM5NjIsIm5iZiI6MTcxMDQzMzY2MiwicGF0aCI6Ii85NTU5NzMzNS8yNzE2NjExODEtOTMxMDMwZGMtZWQyZC00YmI3LWI2MTEtYjNhODM5MTQ3MGZlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzE0VDE2Mjc0MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTc1MDQ2YWIxZDcwZjg5NjQ5MzA5Y2Q3MjEwNjliZjRhOGU5ODZhYjRiNzdiZjg5YmFlODE2Y2Y3MjI1YTk1ODcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.pfPBrYxWFFRbDwnHIrdGr8D8oje6LuenZKby1NRFL0c"><img src="https://private-user-images.githubusercontent.com/95597335/271661181-931030dc-ed2d-4bb7-b611-b3a8391470fe.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA0MzM5NjIsIm5iZiI6MTcxMDQzMzY2MiwicGF0aCI6Ii85NTU5NzMzNS8yNzE2NjExODEtOTMxMDMwZGMtZWQyZC00YmI3LWI2MTEtYjNhODM5MTQ3MGZlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzE0VDE2Mjc0MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTc1MDQ2YWIxZDcwZjg5NjQ5MzA5Y2Q3MjEwNjliZjRhOGU5ODZhYjRiNzdiZjg5YmFlODE2Y2Y3MjI1YTk1ODcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.pfPBrYxWFFRbDwnHIrdGr8D8oje6LuenZKby1NRFL0c" alt="image" style="max-width: 100%;"></a></p>
 <p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register#parameters" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register#parameters</a></p>
 <p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/updateViaCache</a></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
