@@ -64,8 +64,6 @@
   
 * [\[CSS21, css-display-3\] Hiding things example - using absolute positioning](https://github.com/mdn/content/issues/30171) (2023-11-10T00:23:35Z)
   
-* [\[cssom-1\] No link to "Modern APIs" information in StyleSheetList notebox](https://github.com/mdn/content/issues/30170) (2023-11-09T23:15:50Z)
-  
 * [\[push-api\] Web Push userVisibleOnly Details](https://github.com/mdn/content/issues/30077) (2023-11-06T21:13:53Z)
   
 * [\[css-easing-1\] Create function pages for easing functions](https://github.com/mdn/content/issues/29923) (2023-10-31T01:44:35Z)
