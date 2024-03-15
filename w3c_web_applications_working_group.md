@@ -6,8 +6,6 @@
   
 * [\[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] querySelectorAll() does not state how the results are sorted](https://github.com/mdn/content/issues/32615) (2024-03-08T14:53:28Z)
   
-* [\[uievents\] Element: focusout event: Browser compatibility example](https://github.com/mdn/content/issues/32580) (2024-03-06T12:40:49Z)
-  
 * [\[html, clipboard-apis\] Code snippet using the void return of canvas toBlob() function](https://github.com/mdn/content/issues/32385) (2024-02-22T10:33:40Z)
   
 * [\[html, uievents\] Window load example regression](https://github.com/mdn/content/issues/32243) (2024-02-12T23:52:04Z)

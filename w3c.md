@@ -12,8 +12,6 @@
   
 * [\[css-display-3\] All major browsers now support \`display: contents\`](https://github.com/mdn/content/issues/32605) (2024-03-08T02:10:29Z)
   
-* [\[uievents\] Element: focusout event: Browser compatibility example](https://github.com/mdn/content/issues/32580) (2024-03-06T12:40:49Z)
-  
 * [\[cssom-view-1\] Window.innerwidth giving wrong value](https://github.com/mdn/content/issues/32499) (2024-03-01T06:23:15Z)
   
 * [\[html, css-images-3\] Statement about applicable object-position and object-fit is wrong (?)](https://github.com/mdn/content/issues/32474) (2024-02-28T16:22:14Z)
