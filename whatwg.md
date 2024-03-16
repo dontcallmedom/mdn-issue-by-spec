@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Blink/Chrome does NOT support the defer attribute](https://github.com/mdn/content/issues/32708) (2024-03-16T07:19:44Z)
+  
 * [\[html\] \<figcaption\> : accessible description or accessible name of \<figure\>?](https://github.com/mdn/content/issues/32698) (2024-03-15T10:20:30Z)
   
 * [\[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] querySelectorAll() does not state how the results are sorted](https://github.com/mdn/content/issues/32615) (2024-03-08T14:53:28Z)
