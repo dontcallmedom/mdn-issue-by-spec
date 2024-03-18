@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[FileAPI\] The example on this page doesn't work](https://github.com/mdn/content/issues/32681) (2024-03-13T23:49:54Z)
-  
 * [\[webaudio\] AnalyzerNode::getByteFrequencyData claims that an element in the Uint8array is set to negative infinity](https://github.com/mdn/content/issues/32640) (2024-03-11T11:20:35Z)
   
 * [\[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] querySelectorAll() does not state how the results are sorted](https://github.com/mdn/content/issues/32615) (2024-03-08T14:53:28Z)

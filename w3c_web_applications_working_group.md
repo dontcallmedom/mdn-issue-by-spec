@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[FileAPI\] The example on this page doesn't work](https://github.com/mdn/content/issues/32681) (2024-03-13T23:49:54Z)
-  
 * [\[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] querySelectorAll() does not state how the results are sorted](https://github.com/mdn/content/issues/32615) (2024-03-08T14:53:28Z)
   
 * [\[html, clipboard-apis\] Code snippet using the void return of canvas toBlob() function](https://github.com/mdn/content/issues/32385) (2024-02-22T10:33:40Z)
