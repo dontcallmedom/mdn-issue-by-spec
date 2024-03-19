@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Single SELECT "labeled" with a FIELDSET and LEGEND? (bad or even invalid use for FIELDSET?)](https://github.com/mdn/content/issues/32749) (2024-03-19T18:17:58Z)
+  
 * [\[html\] Blink/Chrome does NOT support the defer attribute](https://github.com/mdn/content/issues/32708) (2024-03-16T07:19:44Z)
   
 * [\[html\] \<figcaption\> : accessible description or accessible name of \<figure\>?](https://github.com/mdn/content/issues/32698) (2024-03-15T10:20:30Z)

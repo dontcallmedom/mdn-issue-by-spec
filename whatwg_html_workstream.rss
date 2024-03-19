@@ -4,10 +4,50 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Sat, 16 Mar 2024 07:19:44 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 19 Mar 2024 18:17:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Single SELECT "labeled" with a FIELDSET and LEGEND? (bad or even invalid use for FIELDSET?)]]></title>
+            <link>https://github.com/mdn/content/issues/32749</link>
+            <guid>https://github.com/mdn/content/issues/32749</guid>
+            <pubDate>Tue, 19 Mar 2024 18:17:58 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Customizing select styles</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Under <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select#customizing_select_styles" rel="nofollow">this section</a> (heading, <q>Customizing select styles</q>), the HTML model used is a single <code class="notranslate">select</code> (no other interactive elements) inside a <code class="notranslate">fieldset</code>. Nowhere else on the page is the <code class="notranslate">select</code> "labeled" with a <code class="notranslate">fieldset</code> + <code class="notranslate">legend</code>, which is great, since the <a href="https://html.spec.whatwg.org/multipage/form-elements.html#the-fieldset-element" rel="nofollow">HTML Living spec</a> notes <code class="notranslate">fieldset</code> is for a <q> set of form controls</q> (plural):</p>
+<blockquote>
+<p dir="auto">The <code class="notranslate">fieldset</code> element represents a set of form controls (or other content) grouped together, optionally with a caption. The caption is given by the first <code class="notranslate">legend</code> element that is a child of the <code class="notranslate">fieldset</code> element, if any. The remainder of the descendants form the group.</p>
+</blockquote>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset" rel="nofollow">This MDN page</a> also notes <code class="notranslate">fieldset</code> are to <q>group several controls</q> (again, plural):</p>
+<blockquote>
+<p dir="auto">The <code class="notranslate">fieldset</code> HTML element is used to group several controls as well as labels (<code class="notranslate">label</code>) within a web form.</p>
+</blockquote>
+<p dir="auto">So is it even valid, let alone exemplary, that a <strong>single</strong> <code class="notranslate">select</code> is <em>effectively</em> being labeled by a <code class="notranslate">fieldset</code> (+<code class="notranslate">legend</code>)?</p>
+<p dir="auto">Shouldn't it be labeled with a <code class="notranslate">label</code> as it is elsewhere on the page?</p>
+<p dir="auto">I assume it is effectively invalid to use <code class="notranslate">fieldset</code> (+<code class="notranslate">legend</code>) to contain a single interactive element, given the wording of the spec' (and the wording in the MDN stated page)?</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto"><code class="notranslate">label</code> not <code class="notranslate">fieldset</code> used as the label in the code example.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">See above.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">I use these docs to demonstrate best practices and I either want to understand how the code used at present is a best practice, and learn from it, or, if I am correct and it is poor, I would love the page to be changed so I can continue to link to it to demonstrate how <code class="notranslate">select</code> is used and not "pollute" that demo by people seeing it being "wrongly" labeled.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/element/select</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/select/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/select/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/fdd3ac5598c3ddceb71e59949b003936ae99f647/hovercard" href="https://github.com/mdn/content/commit/fdd3ac5598c3ddceb71e59949b003936ae99f647"><tt>fdd3ac5</tt></a></li>
+<li>Document last modified: 2024-02-22T19:57:33.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Blink/Chrome does NOT support the defer attribute]]></title>
             <link>https://github.com/mdn/content/issues/32708</link>
@@ -256,7 +296,7 @@ async function copyCanvasContentsToClipboard() {
     <span class="dropdown-caret"></span>
   </summary>
 
-  <video src="https://private-user-images.githubusercontent.com/34963401/305442630-6f79bd53-ed64-4867-9147-c4c8455b02a8.mov?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA4NzEzMjYsIm5iZiI6MTcxMDg3MTAyNiwicGF0aCI6Ii8zNDk2MzQwMS8zMDU0NDI2MzAtNmY3OWJkNTMtZWQ2NC00ODY3LTkxNDctYzRjODQ1NWIwMmE4Lm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzE5VDE3NTcwNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTE0NzVlYTFhMGU4ZTIzYmYxMmJjOThiNWExNWM2MTc5YjcyY2M4ZWUwOTQzMTAyMWYwMGRhYTFmZThlNDVkOGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.jYxvLYzqqy_Dv5z0d1k_S8iX_O23C7QuLuchQ-EoJz0" data-canonical-src="https://private-user-images.githubusercontent.com/34963401/305442630-6f79bd53-ed64-4867-9147-c4c8455b02a8.mov?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA4NzEzMjYsIm5iZiI6MTcxMDg3MTAyNiwicGF0aCI6Ii8zNDk2MzQwMS8zMDU0NDI2MzAtNmY3OWJkNTMtZWQ2NC00ODY3LTkxNDctYzRjODQ1NWIwMmE4Lm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzE5VDE3NTcwNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTE0NzVlYTFhMGU4ZTIzYmYxMmJjOThiNWExNWM2MTc5YjcyY2M4ZWUwOTQzMTAyMWYwMGRhYTFmZThlNDVkOGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.jYxvLYzqqy_Dv5z0d1k_S8iX_O23C7QuLuchQ-EoJz0" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px">
+  <video src="https://private-user-images.githubusercontent.com/34963401/305442630-6f79bd53-ed64-4867-9147-c4c8455b02a8.mov?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA4NzI3MDcsIm5iZiI6MTcxMDg3MjQwNywicGF0aCI6Ii8zNDk2MzQwMS8zMDU0NDI2MzAtNmY3OWJkNTMtZWQ2NC00ODY3LTkxNDctYzRjODQ1NWIwMmE4Lm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzE5VDE4MjAwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWExMWJlMTYyNzQ5ODU5M2NjNGY4MDlkODUzNmRlNDNhMTMyMTY3Yzg2OThhYjcwNTE1Mzk2NWIwY2Y3NDYxMzkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.LPAxbJ12-gGA43_r7fC9Nte_O_DmBlPX_SRVFRb5OAA" data-canonical-src="https://private-user-images.githubusercontent.com/34963401/305442630-6f79bd53-ed64-4867-9147-c4c8455b02a8.mov?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA4NzI3MDcsIm5iZiI6MTcxMDg3MjQwNywicGF0aCI6Ii8zNDk2MzQwMS8zMDU0NDI2MzAtNmY3OWJkNTMtZWQ2NC00ODY3LTkxNDctYzRjODQ1NWIwMmE4Lm1vdj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzE5VDE4MjAwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWExMWJlMTYyNzQ5ODU5M2NjNGY4MDlkODUzNmRlNDNhMTMyMTY3Yzg2OThhYjcwNTE1Mzk2NWIwY2Y3NDYxMzkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.LPAxbJ12-gGA43_r7fC9Nte_O_DmBlPX_SRVFRb5OAA" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px">
 
   </video>
 </details>
@@ -1215,7 +1255,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA4NzEzMjIsIm5iZiI6MTcxMDg3MTAyMiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMxOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMTlUMTc1NzAyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTJiZTI2NDFmMDk2ZjQwYzllZjg5MTM3MTVkNDNlYjUxMDZkYzBiMWNmZDU0YmExMmQxZTZmODY2MTVhZGVkZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.34XIdbf0CJm3vJNotY55H4EYOfpiFNJiO7yGqJPX-Bo"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA4NzEzMjIsIm5iZiI6MTcxMDg3MTAyMiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMxOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMTlUMTc1NzAyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTJiZTI2NDFmMDk2ZjQwYzllZjg5MTM3MTVkNDNlYjUxMDZkYzBiMWNmZDU0YmExMmQxZTZmODY2MTVhZGVkZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.34XIdbf0CJm3vJNotY55H4EYOfpiFNJiO7yGqJPX-Bo" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA4NzI3MDMsIm5iZiI6MTcxMDg3MjQwMywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMxOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMTlUMTgyMDAzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDkyNzg1Zjk0Mzc5YTJiMTllY2Y2ODEwN2ExYmIyYTg4NDU4ZmNhZTE5YzFhNDcwNWE5ZjExODE0NjE4ZjFmNSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.ySXKdGFf1iCXarX3DZ_oUmPD7W0kn_OJJa1CPmTnXpI"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA4NzI3MDMsIm5iZiI6MTcxMDg3MjQwMywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMxOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMTlUMTgyMDAzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDkyNzg1Zjk0Mzc5YTJiMTllY2Y2ODEwN2ExYmIyYTg4NDU4ZmNhZTE5YzFhNDcwNWE5ZjExODE0NjE4ZjFmNSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.ySXKdGFf1iCXarX3DZ_oUmPD7W0kn_OJJa1CPmTnXpI" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
