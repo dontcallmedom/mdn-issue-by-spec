@@ -402,11 +402,12 @@ So that rule also disallows</p>
 <p dir="auto">Examples</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The examples access values from WebAssembly using <code class="notranslate">new Uint32Array</code>:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="  const summands = new Uint32Array(memory.buffer);
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="  const summands = new Uint32Array(memory.buffer);
 ...
-  const values = new Uint32Array(obj.instance.exports.memory.buffer);"><pre class="notranslate">  <span class="pl-k">const</span> <span class="pl-s1">summands</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Uint32Array</span><span class="pl-kos">(</span><span class="pl-s1">memory</span><span class="pl-kos">.</span><span class="pl-c1">buffer</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  const values = new Uint32Array(obj.instance.exports.memory.buffer);"><pre lang="javascript" class="notranslate"><code class="notranslate">  const summands = new Uint32Array(memory.buffer);
 ...
-  <span class="pl-k">const</span> <span class="pl-s1">values</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Uint32Array</span><span class="pl-kos">(</span><span class="pl-s1">obj</span><span class="pl-kos">.</span><span class="pl-c1">instance</span><span class="pl-kos">.</span><span class="pl-c1">exports</span><span class="pl-kos">.</span><span class="pl-c1">memory</span><span class="pl-kos">.</span><span class="pl-c1">buffer</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+  const values = new Uint32Array(obj.instance.exports.memory.buffer);
+</code></pre></div>
 <p dir="auto">However in the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array" rel="nofollow">Uint32Array docs</a> it says:</p>
 <blockquote>
 <p dir="auto">The Uint32Array typed array represents an array of 32-bit unsigned integers in the platform byte order. If control over byte order is needed, use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView" rel="nofollow">DataView</a> instead.</p>
@@ -465,17 +466,18 @@ If this is a real portability pitfall, there should be warnings about it on the 
 <p dir="auto">The main thread is then freed for the next task in the event loop. This happens even if the awaited value is an already-resolved promise or not a promise.</p>
 </blockquote>
 <p dir="auto">This only happens if the promise is not already settled (or does not get settled within further execution of the current task). If settled, function continuation is added to the microtask queue and the current task of the event loop continues to run until its microtask queue is empty.  You can create an event loop-blocking async function demonstrating this</p>
-<div class="highlight highlight-source-ts notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="// blocks the event loop
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="// blocks the event loop
 async function loop(){
   await Promise.resolve()
   loop()
 }
-loop()"><pre class="notranslate"><span class="pl-c">// blocks the event loop</span>
-<span class="pl-k">async</span> <span class="pl-k">function</span> <span class="pl-en">loop</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">{</span>
-  <span class="pl-k">await</span> <span class="pl-smi">Promise</span><span class="pl-kos">.</span><span class="pl-en">resolve</span><span class="pl-kos">(</span><span class="pl-kos">)</span>
-  <span class="pl-en">loop</span><span class="pl-kos">(</span><span class="pl-kos">)</span>
-<span class="pl-kos">}</span>
-<span class="pl-en">loop</span><span class="pl-kos">(</span><span class="pl-kos">)</span></pre></div>
+loop()"><pre lang="typescript" class="notranslate"><code class="notranslate">// blocks the event loop
+async function loop(){
+  await Promise.resolve()
+  loop()
+}
+loop()
+</code></pre></div>
 <p dir="auto">Despite the use of await, the main thread is not freed to run the next task.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">A more accurate description await and its interactions with the task and microtask queues.</p>
