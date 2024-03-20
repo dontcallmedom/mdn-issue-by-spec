@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] There was no proper example of the HTML used for the Nesting example, instead it looked like someone was trying to explain it outside of an example like in the other sections of the web page.](https://github.com/mdn/content/issues/32758) (2024-03-20T07:11:44Z)
+  
 * [\[html\] Single SELECT "labeled" with a FIELDSET and LEGEND? (bad or even invalid use for FIELDSET?)](https://github.com/mdn/content/issues/32749) (2024-03-19T18:17:58Z)
   
 * [\[html\] \<figcaption\> : accessible description or accessible name of \<figure\>?](https://github.com/mdn/content/issues/32698) (2024-03-15T10:20:30Z)
