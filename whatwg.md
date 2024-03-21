@@ -8,8 +8,6 @@
   
 * [\[html\] There was no proper example of the HTML used for the Nesting example, instead it looked like someone was trying to explain it outside of an example like in the other sections of the web page.](https://github.com/mdn/content/issues/32758) (2024-03-20T07:11:44Z)
   
-* [\[html\] Single SELECT "labeled" with a FIELDSET and LEGEND? (bad or even invalid use for FIELDSET?)](https://github.com/mdn/content/issues/32749) (2024-03-19T18:17:58Z)
-  
 * [\[html\] \<figcaption\> : accessible description or accessible name of \<figure\>?](https://github.com/mdn/content/issues/32698) (2024-03-15T10:20:30Z)
   
 * [\[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] querySelectorAll() does not state how the results are sorted](https://github.com/mdn/content/issues/32615) (2024-03-08T14:53:28Z)
