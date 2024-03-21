@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by IETF Hypertext Transfer Protocol Bis APP Working Group. [![RSS feed for IETF Hypertext Transfer Protocol Bis APP Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[rfc7230\] Chunk sizes are wrong in the example](https://github.com/mdn/content/issues/32528) (2024-03-03T09:32:18Z)
-  
 * [\[rfc7230\] Connection: Keep-Alive - Docs state it is blocked in Safari when using HTTP2/3, is no longer blocked](https://github.com/mdn/content/issues/31923) (2024-01-25T15:23:54Z)
   
 * [\[rfc7230\] Please document why browsers typically send \`Connection: keep-alive\` despite that being the default](https://github.com/mdn/content/issues/31291) (2023-12-25T23:49:08Z)
