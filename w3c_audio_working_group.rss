@@ -4,10 +4,46 @@
         <title>W3C Audio Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_audio_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Audio Working Group</description>
-        <lastBuildDate>Mon, 11 Mar 2024 11:20:35 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 21 Mar 2024 14:03:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[webaudio] Contradictions in documentation https://developer.mozilla.org/en-US/docs/Web/API/ChannelMergerNode Channel count mode =  	"explicit" Channel count = 2 (not used in the default count mode)]]></title>
+            <link>https://github.com/mdn/content/issues/32783</link>
+            <guid>https://github.com/mdn/content/issues/32783</guid>
+            <pubDate>Thu, 21 Mar 2024 14:03:50 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ChannelMergerNode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ChannelMergerNode</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ChannelMergerNode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ChannelMergerNode</a><br>
+Channel count mode =  	"explicit"<br>
+Channel count = 2 (not used in the default count mode)</p>
+<p dir="auto">But:<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioNode/channelCountMode#explicit" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioNode/channelCountMode#explicit</a><br>
+explicit<br>
+The number of channels is defined by the value of channelCount.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I think it should be something like (not used in the default count mode), not (not used in this Node).</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/channelmergernode</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ChannelMergerNode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ChannelMergerNode</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/channelmergernode/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/channelmergernode/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/fa1301aead2cee37516b7ad5a5ec2fb21e004227/hovercard" href="https://github.com/mdn/content/commit/fa1301aead2cee37516b7ad5a5ec2fb21e004227"><tt>fa1301a</tt></a></li>
+<li>Document last modified: 2023-04-06T05:00:32.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[webaudio] AnalyzerNode::getByteFrequencyData claims that an element in the Uint8array is set to negative infinity]]></title>
             <link>https://github.com/mdn/content/issues/32640</link>
