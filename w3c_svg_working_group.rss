@@ -182,32 +182,32 @@
       stroke=&quot;#000&quot; stroke-opacity=&quot;0.5&quot; /&gt;
 &lt;/svg&gt;"><pre class="notranslate"><span class="pl-c"><span class="pl-c">&lt;!--</span> Testing attribute method with cursive Google font <span class="pl-c">--&gt;</span></span>
 &lt;<span class="pl-ent">svg</span> <span class="pl-e">width</span>=<span class="pl-s"><span class="pl-pds">"</span>1250<span class="pl-pds">"</span></span> <span class="pl-e">height</span>=<span class="pl-s"><span class="pl-pds">"</span>650<span class="pl-pds">"</span></span>&gt;
-  &lt;<span class="pl-e">title</span>&gt;<span class="pl-e">Text</span> <span class="pl-e">following</span> <span class="pl-e">a</span> <span class="pl-e">path</span> <span class="pl-e">using</span> <span class="pl-e">textPath</span> <span class="pl-e">testing</span> <span class="pl-e">attribute</span> "<span class="pl-e">method</span>".&lt;/<span class="pl-e">title</span>&gt;
-  &lt;<span class="pl-e">defs</span>&gt;
-    &lt;<span class="pl-e">style</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span>&gt;@<span class="pl-e">import</span>
-        <span class="pl-e">url</span>('<span class="pl-e">https:</span>//<span class="pl-e">fonts.googleapis.com</span>/<span class="pl-e">css2</span>?<span class="pl-e">family</span>=<span class="pl-s">Dancing+Script</span>');
-    &lt;/<span class="pl-e">style</span>&gt;
-    &lt;<span class="pl-e">path</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>method-test-path<span class="pl-pds">"</span></span>
+  &lt;<span class="pl-ent">title</span>&gt;Text following a path using textPath testing attribute "method".&lt;/<span class="pl-ent">title</span>&gt;
+  &lt;<span class="pl-ent">defs</span>&gt;
+    &lt;<span class="pl-ent">style</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span>&gt;<span class="pl-s1"><span class="pl-k">@import</span></span>
+<span class="pl-s1">        url('https://fonts.googleapis.com/css2?family<span class="pl-k">=</span>Dancing+Script');</span>
+<span class="pl-s1"></span>    &lt;/<span class="pl-ent">style</span>&gt;
+    &lt;<span class="pl-ent">path</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>method-test-path<span class="pl-pds">"</span></span>
         <span class="pl-e">d</span>=<span class="pl-s"><span class="pl-pds">"</span>M70 500 C 100 0, 200 0, 400 400 S 800 500, 1200 40<span class="pl-pds">"</span></span>
         <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span><span class="pl-s1"><span class="pl-c1"><span class="pl-c1">stroke</span></span>: <span class="pl-c1">gray</span>; <span class="pl-c1"><span class="pl-c1">fill</span></span>: <span class="pl-c1">none</span>;</span><span class="pl-pds">"</span></span>/&gt;
-  <span class="pl-ii">&lt;/defs&gt;</span>
+  &lt;/<span class="pl-ent">defs</span>&gt;
 
   &lt;<span class="pl-ent">use</span> <span class="pl-e">xlink</span>:<span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>#method-test-path<span class="pl-pds">"</span></span>/&gt;
 
   &lt;<span class="pl-ent">text</span> <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span><span class="pl-s1"><span class="pl-c1"><span class="pl-c1">font-size</span></span>: <span class="pl-c1">72</span>; <span class="pl-c1"><span class="pl-c1">font-family</span></span>: Dancing Script</span><span class="pl-pds">"</span></span>&gt;
-    &lt;<span class="pl-e">textPath</span> <span class="pl-e">xlink</span>:<span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>#method-test-path<span class="pl-pds">"</span></span> <span class="pl-e">method</span>=<span class="pl-s"><span class="pl-pds">"</span>align<span class="pl-pds">"</span></span>&gt;
-        <span class="pl-e">An</span> <span class="pl-e">example</span> <span class="pl-e">that</span> <span class="pl-e">tests</span> <span class="pl-e">the</span> "<span class="pl-e">method</span>" <span class="pl-e">attribute</span> <span class="pl-e">with</span> <span class="pl-e">value</span> <span class="pl-e">of</span> "<span class="pl-e">align</span>".
-    &lt;/<span class="pl-e">textPath</span>&gt;
-  &lt;/<span class="pl-e">text</span>&gt;
+    &lt;<span class="pl-ent">textPath</span> <span class="pl-e">xlink</span>:<span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>#method-test-path<span class="pl-pds">"</span></span> <span class="pl-e">method</span>=<span class="pl-s"><span class="pl-pds">"</span>align<span class="pl-pds">"</span></span>&gt;
+        An example that tests the "method" attribute with value of "align".
+    &lt;/<span class="pl-ent">textPath</span>&gt;
+  &lt;/<span class="pl-ent">text</span>&gt;
 
-  &lt;<span class="pl-e">text</span> <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span><span class="pl-s1"><span class="pl-c1"><span class="pl-c1">font-size</span></span>: <span class="pl-c1">72</span>; <span class="pl-c1"><span class="pl-c1">font-family</span></span>: Dancing Script</span><span class="pl-pds">"</span></span>&gt;
-    &lt;<span class="pl-e">textPath</span> <span class="pl-e">xlink</span>:<span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>#method-test-path<span class="pl-pds">"</span></span> <span class="pl-e">method</span>=<span class="pl-s"><span class="pl-pds">"</span>stretch<span class="pl-pds">"</span></span>&gt;
-        <span class="pl-e">An</span> <span class="pl-e">example</span> <span class="pl-e">that</span> <span class="pl-e">tests</span> <span class="pl-e">the</span> "<span class="pl-e">method</span>" <span class="pl-e">attribute</span> <span class="pl-e">with</span> <span class="pl-e">value</span> <span class="pl-e">of</span> "<span class="pl-e">stretch</span>".
-    &lt;/<span class="pl-e">textPath</span>&gt;
-  &lt;/<span class="pl-e">text</span>&gt;
-  &lt;<span class="pl-e">rect</span> <span class="pl-e">width</span>=<span class="pl-s"><span class="pl-pds">"</span>100%<span class="pl-pds">"</span></span> <span class="pl-e">height</span>=<span class="pl-s"><span class="pl-pds">"</span>100%<span class="pl-pds">"</span></span> <span class="pl-e">fill</span>=<span class="pl-s"><span class="pl-pds">"</span>none<span class="pl-pds">"</span></span>
+  &lt;<span class="pl-ent">text</span> <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span><span class="pl-s1"><span class="pl-c1"><span class="pl-c1">font-size</span></span>: <span class="pl-c1">72</span>; <span class="pl-c1"><span class="pl-c1">font-family</span></span>: Dancing Script</span><span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">textPath</span> <span class="pl-e">xlink</span>:<span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>#method-test-path<span class="pl-pds">"</span></span> <span class="pl-e">method</span>=<span class="pl-s"><span class="pl-pds">"</span>stretch<span class="pl-pds">"</span></span>&gt;
+        An example that tests the "method" attribute with value of "stretch".
+    &lt;/<span class="pl-ent">textPath</span>&gt;
+  &lt;/<span class="pl-ent">text</span>&gt;
+  &lt;<span class="pl-ent">rect</span> <span class="pl-e">width</span>=<span class="pl-s"><span class="pl-pds">"</span>100%<span class="pl-pds">"</span></span> <span class="pl-e">height</span>=<span class="pl-s"><span class="pl-pds">"</span>100%<span class="pl-pds">"</span></span> <span class="pl-e">fill</span>=<span class="pl-s"><span class="pl-pds">"</span>none<span class="pl-pds">"</span></span>
       <span class="pl-e">stroke</span>=<span class="pl-s"><span class="pl-pds">"</span>#000<span class="pl-pds">"</span></span> <span class="pl-e">stroke-opacity</span>=<span class="pl-s"><span class="pl-pds">"</span>0.5<span class="pl-pds">"</span></span> /&gt;
-<span class="pl-ii">&lt;/svg&gt;</span></pre></div>
+&lt;/<span class="pl-ent">svg</span>&gt;</pre></div>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">There should have been changes to the glyphs when the "stretch" option was used with larger differences where the path was more curved.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
@@ -245,32 +245,32 @@
       stroke=&quot;#000&quot; stroke-opacity=&quot;0.5&quot; /&gt;
 &lt;/svg&gt;"><pre class="notranslate"><span class="pl-c"><span class="pl-c">&lt;!--</span> Testing attribute method with cursive Google font <span class="pl-c">--&gt;</span></span>
 &lt;<span class="pl-ent">svg</span> <span class="pl-e">width</span>=<span class="pl-s"><span class="pl-pds">"</span>1250<span class="pl-pds">"</span></span> <span class="pl-e">height</span>=<span class="pl-s"><span class="pl-pds">"</span>650<span class="pl-pds">"</span></span>&gt;
-  &lt;<span class="pl-e">title</span>&gt;<span class="pl-e">Text</span> <span class="pl-e">following</span> <span class="pl-e">a</span> <span class="pl-e">path</span> <span class="pl-e">using</span> <span class="pl-e">textPath</span> <span class="pl-e">testing</span> <span class="pl-e">attribute</span> "<span class="pl-e">method</span>".&lt;/<span class="pl-e">title</span>&gt;
-  &lt;<span class="pl-e">defs</span>&gt;
-    &lt;<span class="pl-e">style</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span>&gt;@<span class="pl-e">import</span>
-        <span class="pl-e">url</span>('<span class="pl-e">https:</span>//<span class="pl-e">fonts.googleapis.com</span>/<span class="pl-e">css2</span>?<span class="pl-e">family</span>=<span class="pl-s">Dancing+Script</span>');
-    &lt;/<span class="pl-e">style</span>&gt;
-    &lt;<span class="pl-e">path</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>method-test-path<span class="pl-pds">"</span></span>
+  &lt;<span class="pl-ent">title</span>&gt;Text following a path using textPath testing attribute "method".&lt;/<span class="pl-ent">title</span>&gt;
+  &lt;<span class="pl-ent">defs</span>&gt;
+    &lt;<span class="pl-ent">style</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span>&gt;<span class="pl-s1"><span class="pl-k">@import</span></span>
+<span class="pl-s1">        url('https://fonts.googleapis.com/css2?family<span class="pl-k">=</span>Dancing+Script');</span>
+<span class="pl-s1"></span>    &lt;/<span class="pl-ent">style</span>&gt;
+    &lt;<span class="pl-ent">path</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>method-test-path<span class="pl-pds">"</span></span>
         <span class="pl-e">d</span>=<span class="pl-s"><span class="pl-pds">"</span>M70 500 C 100 0, 200 0, 400 400 S 800 500, 1200 40<span class="pl-pds">"</span></span>
         <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span><span class="pl-s1"><span class="pl-c1"><span class="pl-c1">stroke</span></span>: <span class="pl-c1">gray</span>; <span class="pl-c1"><span class="pl-c1">fill</span></span>: <span class="pl-c1">none</span>;</span><span class="pl-pds">"</span></span>/&gt;
-  <span class="pl-ii">&lt;/defs&gt;</span>
+  &lt;/<span class="pl-ent">defs</span>&gt;
 
   &lt;<span class="pl-ent">use</span> <span class="pl-e">xlink</span>:<span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>#method-test-path<span class="pl-pds">"</span></span>/&gt;
 
   &lt;<span class="pl-ent">text</span> <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span><span class="pl-s1"><span class="pl-c1"><span class="pl-c1">font-size</span></span>: <span class="pl-c1">72</span>; <span class="pl-c1"><span class="pl-c1">font-family</span></span>: Dancing Script</span><span class="pl-pds">"</span></span>&gt;
-    &lt;<span class="pl-e">textPath</span> <span class="pl-e">xlink</span>:<span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>#method-test-path<span class="pl-pds">"</span></span> <span class="pl-e">method</span>=<span class="pl-s"><span class="pl-pds">"</span>align<span class="pl-pds">"</span></span>&gt;
-        <span class="pl-e">An</span> <span class="pl-e">example</span> <span class="pl-e">that</span> <span class="pl-e">tests</span> <span class="pl-e">the</span> "<span class="pl-e">method</span>" <span class="pl-e">attribute</span> <span class="pl-e">with</span> <span class="pl-e">value</span> <span class="pl-e">of</span> "<span class="pl-e">align</span>".
-    &lt;/<span class="pl-e">textPath</span>&gt;
-  &lt;/<span class="pl-e">text</span>&gt;
+    &lt;<span class="pl-ent">textPath</span> <span class="pl-e">xlink</span>:<span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>#method-test-path<span class="pl-pds">"</span></span> <span class="pl-e">method</span>=<span class="pl-s"><span class="pl-pds">"</span>align<span class="pl-pds">"</span></span>&gt;
+        An example that tests the "method" attribute with value of "align".
+    &lt;/<span class="pl-ent">textPath</span>&gt;
+  &lt;/<span class="pl-ent">text</span>&gt;
 
-  &lt;<span class="pl-e">text</span> <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span><span class="pl-s1"><span class="pl-c1"><span class="pl-c1">font-size</span></span>: <span class="pl-c1">72</span>; <span class="pl-c1"><span class="pl-c1">font-family</span></span>: Dancing Script</span><span class="pl-pds">"</span></span>&gt;
-    &lt;<span class="pl-e">textPath</span> <span class="pl-e">xlink</span>:<span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>#method-test-path<span class="pl-pds">"</span></span> <span class="pl-e">method</span>=<span class="pl-s"><span class="pl-pds">"</span>stretch<span class="pl-pds">"</span></span>&gt;
-        <span class="pl-e">An</span> <span class="pl-e">example</span> <span class="pl-e">that</span> <span class="pl-e">tests</span> <span class="pl-e">the</span> "<span class="pl-e">method</span>" <span class="pl-e">attribute</span> <span class="pl-e">with</span> <span class="pl-e">value</span> <span class="pl-e">of</span> "<span class="pl-e">stretch</span>".
-    &lt;/<span class="pl-e">textPath</span>&gt;
-  &lt;/<span class="pl-e">text</span>&gt;
-  &lt;<span class="pl-e">rect</span> <span class="pl-e">width</span>=<span class="pl-s"><span class="pl-pds">"</span>100%<span class="pl-pds">"</span></span> <span class="pl-e">height</span>=<span class="pl-s"><span class="pl-pds">"</span>100%<span class="pl-pds">"</span></span> <span class="pl-e">fill</span>=<span class="pl-s"><span class="pl-pds">"</span>none<span class="pl-pds">"</span></span>
+  &lt;<span class="pl-ent">text</span> <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span><span class="pl-s1"><span class="pl-c1"><span class="pl-c1">font-size</span></span>: <span class="pl-c1">72</span>; <span class="pl-c1"><span class="pl-c1">font-family</span></span>: Dancing Script</span><span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">textPath</span> <span class="pl-e">xlink</span>:<span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>#method-test-path<span class="pl-pds">"</span></span> <span class="pl-e">method</span>=<span class="pl-s"><span class="pl-pds">"</span>stretch<span class="pl-pds">"</span></span>&gt;
+        An example that tests the "method" attribute with value of "stretch".
+    &lt;/<span class="pl-ent">textPath</span>&gt;
+  &lt;/<span class="pl-ent">text</span>&gt;
+  &lt;<span class="pl-ent">rect</span> <span class="pl-e">width</span>=<span class="pl-s"><span class="pl-pds">"</span>100%<span class="pl-pds">"</span></span> <span class="pl-e">height</span>=<span class="pl-s"><span class="pl-pds">"</span>100%<span class="pl-pds">"</span></span> <span class="pl-e">fill</span>=<span class="pl-s"><span class="pl-pds">"</span>none<span class="pl-pds">"</span></span>
       <span class="pl-e">stroke</span>=<span class="pl-s"><span class="pl-pds">"</span>#000<span class="pl-pds">"</span></span> <span class="pl-e">stroke-opacity</span>=<span class="pl-s"><span class="pl-pds">"</span>0.5<span class="pl-pds">"</span></span> /&gt;
-<span class="pl-ii">&lt;/svg&gt;</span></pre></div>
+&lt;/<span class="pl-ent">svg</span>&gt;</pre></div>
 <h3 dir="auto">MDN metadata</h3>
 
 <details>
