@@ -22,8 +22,6 @@
   
 * [\[html\] HTMLMediaElement/textTracks example video does not load](https://github.com/mdn/content/issues/32262) (2024-02-13T22:47:24Z)
   
-* [\[html, uievents\] Window load example regression](https://github.com/mdn/content/issues/32243) (2024-02-12T23:52:04Z)
-  
 * [\[html\] \<dialog\> return value example combines two conflicting approaches](https://github.com/mdn/content/issues/32242) (2024-02-12T22:46:36Z)
   
 * [\[html\] HTML \<iframe\>: allow attribute needs stand-alone topic](https://github.com/mdn/content/issues/32188) (2024-02-09T06:10:46Z)
