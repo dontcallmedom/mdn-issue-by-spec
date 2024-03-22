@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[webaudio, ecmascript\] Incorrect value for silent samples in AnalyserNode.getByteFrequencyData](https://github.com/mdn/content/issues/32803) (2024-03-22T20:56:37Z)
+  
 * [\[ecmascript\] Mention 3n is BigInt syntax](https://github.com/mdn/content/issues/32492) (2024-02-29T19:50:11Z)
   
 * [\[ecmascript\] Wrong use of \`isNaN()\`.](https://github.com/mdn/content/issues/32210) (2024-02-10T21:53:19Z)
