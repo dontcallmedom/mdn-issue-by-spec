@@ -12,8 +12,6 @@
   
 * [\[css-display-3\] All major browsers now support \`display: contents\`](https://github.com/mdn/content/issues/32605) (2024-03-08T02:10:29Z)
   
-* [\[css-logical-1, css-text-3\] Is "text-align: center" really deprecated and non-standard?!?](https://github.com/mdn/content/issues/32700) (2024-03-03T16:02:15Z)
-  
 * [\[html, css-images-3\] Statement about applicable object-position and object-fit is wrong (?)](https://github.com/mdn/content/issues/32474) (2024-02-28T16:22:14Z)
   
 * [\[filter-effects-2\] slope is not deprecated](https://github.com/mdn/content/issues/32449) (2024-02-26T19:37:18Z)

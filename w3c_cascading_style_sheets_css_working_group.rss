@@ -99,16 +99,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-logical-1, css-text-3] Is "text-align: center" really deprecated and non-standard?!?]]></title>
-            <link>https://github.com/mdn/content/issues/32700</link>
-            <guid>https://github.com/mdn/content/issues/32700</guid>
-            <pubDate>Sun, 03 Mar 2024 16:02:15 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">I noticed that <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" rel="nofollow">the MDN page for text-align</a> claims that <code class="notranslate">text-align: left</code>, <code class="notranslate">text-align: right</code> and <code class="notranslate">text-align: center</code> are all <em>deprecated and non-standard</em>.</p>
-<p dir="auto">I can understand in the case of <code class="notranslate">text-align: left</code> and <code class="notranslate">text-align: right</code>, since <code class="notranslate">text-align: start</code> and <code class="notranslate">text-align: end</code> seem like better alternatives anyway, but <strong>I think <code class="notranslate">text-align: center</code> is obviously the best option in many cases, with no universal replacement.</strong> Even that page itself uses <code class="notranslate">text-align: center</code> as an example, and I couldn't find any authoritative source explaining why <code class="notranslate">text-align: center</code> is or should be deprecated.</p>
-<p dir="auto">I think this is a bug in the MDN documentation and <code class="notranslate">text-align: center</code> is not in any way deprecated or non-standard.</p>
-<p dir="auto">(I don't think any of these 3 values are "non-standard" either, since they have been specified and universally supported for decades, and I am quite sure no sane browser is going to drop support for them anytime soon.)</p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html, css-images-3] Statement about applicable object-position and object-fit is wrong (?)]]></title>
             <link>https://github.com/mdn/content/issues/32474</link>
             <guid>https://github.com/mdn/content/issues/32474</guid>
@@ -340,9 +330,9 @@ Brave [Version 1.62.156]</p>
 </label>    
   <div class="FormControl-input-wrap">
     
-      <input value="Tasks" data-target="primer-text-field.inputElement tasklist-block-title.titleInput" data-action="keydown:tasklist-block-title#handleKeyDown keyup:tasklist-block-title#handleKeyUp" test_selector="tasklist-block-title-input" aria-describedby="validation-afeffa57-739c-4031-a155-de850f8cb2f7" class="FormControl-input FormControl-medium js-tasklist-title-input" type="text" name="tasklist_title" id="tasklist_title">
+      <input value="Tasks" data-target="primer-text-field.inputElement tasklist-block-title.titleInput" data-action="keydown:tasklist-block-title#handleKeyDown keyup:tasklist-block-title#handleKeyUp" test_selector="tasklist-block-title-input" aria-describedby="validation-cd8814dc-e907-424f-9e16-8019c4ec5bfc" class="FormControl-input FormControl-medium js-tasklist-title-input" type="text" name="tasklist_title" id="tasklist_title">
 </div>
-      <div class="FormControl-inlineValidation" id="validation-afeffa57-739c-4031-a155-de850f8cb2f7" hidden="hidden">
+      <div class="FormControl-inlineValidation" id="validation-cd8814dc-e907-424f-9e16-8019c4ec5bfc" hidden="hidden">
   <span class="FormControl-inlineValidation--visual" data-target="primer-text-field.validationSuccessIcon" hidden=""><svg aria-hidden="true" height="12" viewBox="0 0 12 12" version="1.1" width="12" data-view-component="true" class="octicon octicon-check-circle-fill">
     <path d="M6 0a6 6 0 1 1 0 12A6 6 0 0 1 6 0Zm-.705 8.737L9.63 4.403 8.392 3.166 5.295 6.263l-1.7-1.702L2.356 5.8l2.938 2.938Z"></path>
 </svg></span>
@@ -366,10 +356,10 @@ Brave [Version 1.62.156]</p>
 </div>
     <div data-target="tracking-block.titleViewMode tasklist-block-title.titleViewMode" data-view-component="true" class="d-flex flex-items-center">
       <h3 data-target="tasklist-block-title.titleText" data-view-component="true" class="m-0 flex-1">Tasks</h3>
-          <button data-action="click:tracking-block#showTitleEditMode" id="icon-button-bd1592b7-5f86-431b-9851-5c347db85043" aria-labelledby="tooltip-1c8581db-bfd1-4066-aa1c-6abd4e9455e9" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium tasklist-title-edit-button ml-2">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pencil Button-visual">
+          <button data-action="click:tracking-block#showTitleEditMode" id="icon-button-8b275832-905f-4c13-8e10-561be48bc783" aria-labelledby="tooltip-964e3fa5-4f95-4fe9-a33a-b10f195d6a41" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium tasklist-title-edit-button ml-2">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pencil Button-visual">
     <path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path>
 </svg>
-</button><tool-tip id="tooltip-1c8581db-bfd1-4066-aa1c-6abd4e9455e9" for="icon-button-bd1592b7-5f86-431b-9851-5c347db85043" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Edit tasklist title</tool-tip>
+</button><tool-tip id="tooltip-964e3fa5-4f95-4fe9-a33a-b10f195d6a41" for="icon-button-8b275832-905f-4c13-8e10-561be48bc783" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Edit tasklist title</tool-tip>
 
 </div></tasklist-block-title>
 
@@ -380,10 +370,10 @@ Brave [Version 1.62.156]</p>
 
             <action-menu data-target="tracking-block-main.dropdownMenu" data-select-variant="none" data-view-component="true" class="tracking-block-list-item-dropdown-menu">
   <focus-group direction="vertical" mnemonics="" retain="">
-    <button data-targets="tracking-block.dropdownMenu" id="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-button" popovertarget="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-overlay" aria-controls="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-list" aria-haspopup="true" aria-labelledby="tooltip-291779b5-dcab-4730-a82b-2d235172f5e8" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--small Truncate tracking-block-menu-btn color-bg-transparent p-1 m-0 position-relative">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
+    <button data-targets="tracking-block.dropdownMenu" id="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-button" popovertarget="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-overlay" aria-controls="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-list" aria-haspopup="true" aria-labelledby="tooltip-0114d984-9638-4e04-ae0b-f5ddf043d177" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--small Truncate tracking-block-menu-btn color-bg-transparent p-1 m-0 position-relative">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
     <path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
 </svg>
-</button><tool-tip id="tooltip-291779b5-dcab-4730-a82b-2d235172f5e8" for="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Tasklist Tasks, more options</tool-tip>
+</button><tool-tip id="tooltip-0114d984-9638-4e04-ae0b-f5ddf043d177" for="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Tasklist Tasks, more options</tool-tip>
 
 
 <anchored-position id="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-overlay" anchor="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-button" align="start" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true">
@@ -394,7 +384,7 @@ Brave [Version 1.62.156]</p>
     <ul aria-labelledby="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-button" id="tracking-block-dropdown-menu-92da96e7-f335-463e-b837-ccfcaba29dc9-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
         <li type="button" data-action="click:tracking-block#showTitleEditMode" data-analytics-event="{&quot;category&quot;:&quot;Tasklist Block&quot;,&quot;action&quot;:&quot;rename&quot;,&quot;label&quot;:null}" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
     
-    <button tabindex="-1" id="item-e629159f-dc82-47b6-a748-4504d11ee02b" role="menuitem" data-view-component="true" class="ActionListContent">
+    <button tabindex="-1" id="item-8068c6be-7384-42f1-aeb7-148eba985c14" role="menuitem" data-view-component="true" class="ActionListContent">
       
         <span data-view-component="true" class="ActionListItem-label">
                           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pencil">
@@ -408,7 +398,7 @@ Brave [Version 1.62.156]</p>
 </li>
         <li type="button" data-action="click:tracking-block#copyBlockMarkdown" data-analytics-event="{&quot;category&quot;:&quot;Tasklist Block&quot;,&quot;action&quot;:&quot;copy markdown&quot;,&quot;label&quot;:null}" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem">
     
-    <button tabindex="-1" id="item-1ee2468d-a057-47ad-a57f-bea2997b9831" role="menuitem" data-view-component="true" class="ActionListContent">
+    <button tabindex="-1" id="item-68d43416-b64e-4d49-b70b-14d0115544a4" role="menuitem" data-view-component="true" class="ActionListContent">
       
         <span data-view-component="true" class="ActionListItem-label">
                           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy">
@@ -507,10 +497,10 @@ Brave [Version 1.62.156]</p>
           <div data-targets="tracking-block.itemMenus">
             <action-menu data-select-variant="none" data-view-component="true" class="tracking-block-list-item-dropdown-menu">
   <focus-group direction="vertical" mnemonics="" retain="">
-    <button style="max-height:24px" data-targets="tracking-block.dropdownMenu" id="tracking-block-list-item-dropdown-menu-1234-1-button" popovertarget="tracking-block-list-item-dropdown-menu-1234-1-overlay" aria-controls="tracking-block-list-item-dropdown-menu-1234-1-list" aria-haspopup="true" aria-labelledby="tooltip-559215e2-8522-457d-860e-c94038fd4299" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--small Truncate color-bg-transparent p-1 m-0 position-relative">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
+    <button style="max-height:24px" data-targets="tracking-block.dropdownMenu" id="tracking-block-list-item-dropdown-menu-1234-1-button" popovertarget="tracking-block-list-item-dropdown-menu-1234-1-overlay" aria-controls="tracking-block-list-item-dropdown-menu-1234-1-list" aria-haspopup="true" aria-labelledby="tooltip-d4bf09cc-52c6-4635-a9e6-57f9c89a7a9a" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--small Truncate color-bg-transparent p-1 m-0 position-relative">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-kebab-horizontal Button-visual">
     <path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
 </svg>
-</button><tool-tip id="tooltip-559215e2-8522-457d-860e-c94038fd4299" for="tracking-block-list-item-dropdown-menu-1234-1-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Options</tool-tip>
+</button><tool-tip id="tooltip-d4bf09cc-52c6-4635-a9e6-57f9c89a7a9a" for="tracking-block-list-item-dropdown-menu-1234-1-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Options</tool-tip>
 
 
 <anchored-position id="tracking-block-list-item-dropdown-menu-1234-1-overlay" anchor="tracking-block-list-item-dropdown-menu-1234-1-button" align="end" side="outside-bottom" anchor-offset="normal" popover="auto" data-view-component="true">
@@ -521,7 +511,7 @@ Brave [Version 1.62.156]</p>
     <ul aria-labelledby="tracking-block-list-item-dropdown-menu-1234-1-button" id="tracking-block-list-item-dropdown-menu-1234-1-list" role="menu" data-view-component="true" class="ActionListWrap--inset ActionListWrap">
         <li type="button" data-tracking-block-convert-button="" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem color-fg-default d-flex">
     
-    <button tabindex="-1" id="item-b9d47158-380a-4d86-826a-3248a648c53f" role="menuitem" data-view-component="true" class="ActionListContent">
+    <button tabindex="-1" id="item-7e358dd9-7152-41dd-ae64-72bddc2ad11e" role="menuitem" data-view-component="true" class="ActionListContent">
       
         <span data-view-component="true" class="ActionListItem-label">
                           <div data-view-component="true" class="d-flex flex-items-center flex-justify-between">
@@ -533,7 +523,7 @@ Brave [Version 1.62.156]</p>
 </li>
         <li type="button" data-action="click:tracking-block#handleMarkAsDone" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem color-fg-default">
     
-    <button tabindex="-1" id="item-27c327c5-2dd2-4731-96fe-5c000a012476" role="menuitem" data-view-component="true" class="ActionListContent">
+    <button tabindex="-1" id="item-a1ac3547-5ee1-456d-b46a-1de1f23af3a6" role="menuitem" data-view-component="true" class="ActionListContent">
       
         <span data-view-component="true" class="ActionListItem-label">
                         <div data-view-component="true" class="d-flex flex-items-center flex-justify-between">
@@ -545,7 +535,7 @@ Brave [Version 1.62.156]</p>
 </li>
         <li type="button" data-action="click:tracking-block#handleRename" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem color-fg-default d-flex">
     
-    <button tabindex="-1" id="item-32eaa9c3-646e-463f-a0b3-f90c16cfc781" role="menuitem" data-view-component="true" class="ActionListContent">
+    <button tabindex="-1" id="item-a0e6d260-ad13-460e-bc74-ce08e1984b65" role="menuitem" data-view-component="true" class="ActionListContent">
       
         <span data-view-component="true" class="ActionListItem-label">
                         <div data-view-component="true" class="d-flex flex-items-center flex-justify-between">
@@ -557,7 +547,7 @@ Brave [Version 1.62.156]</p>
 </li>
         <li type="button" data-tracking-block-remove-button="" data-targets="action-list.items" role="none" data-view-component="true" class="ActionListItem--danger ActionListItem d-flex">
     
-    <button tabindex="-1" id="item-60103cf8-8e11-40cb-a4d3-3fcc01a204e1" role="menuitem" data-view-component="true" class="ActionListContent">
+    <button tabindex="-1" id="item-d58a756a-988e-43e5-83b6-304ed7b0c8df" role="menuitem" data-view-component="true" class="ActionListContent">
       
         <span data-view-component="true" class="ActionListItem-label">
                         <div data-view-component="true" class="d-flex flex-items-center flex-justify-between">
@@ -998,7 +988,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTE0MDY1OTksIm5iZiI6MTcxMTQwNjI5OSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMjVUMjIzODE5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NzA1OGU2YzVlNjAyMmE4YmVhODRiOGRlNTBhYjMzYzU1ODEyM2Y2ZThhMDAxMmNlMWQ2YzFmZjY4ZTg5Zjc5NiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.XQC8YlnY0Dxy_1bbB_rQuzd6O9afWAsTUQkl1QSx32w"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTE0MDY1OTksIm5iZiI6MTcxMTQwNjI5OSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMjVUMjIzODE5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NzA1OGU2YzVlNjAyMmE4YmVhODRiOGRlNTBhYjMzYzU1ODEyM2Y2ZThhMDAxMmNlMWQ2YzFmZjY4ZTg5Zjc5NiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.XQC8YlnY0Dxy_1bbB_rQuzd6O9afWAsTUQkl1QSx32w" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTE0MDcyMzEsIm5iZiI6MTcxMTQwNjkzMSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMjVUMjI0ODUxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MTJjMDg0NDA3MGU5MjE4YzcwNmM4NWNhNmU3MGYwYTVmN2RmNDE0MzA0NmY1NzM2MTA5YzhhNmE4ZGQ3NjEyMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.wNTEl5bd3TrzHZgPg6OZU2pf-HwDpvrVpvfwGRS2iqY"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTE0MDcyMzEsIm5iZiI6MTcxMTQwNjkzMSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMjVUMjI0ODUxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MTJjMDg0NDA3MGU5MjE4YzcwNmM4NWNhNmU3MGYwYTVmN2RmNDE0MzA0NmY1NzM2MTA5YzhhNmE4ZGQ3NjEyMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.wNTEl5bd3TrzHZgPg6OZU2pf-HwDpvrVpvfwGRS2iqY" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
