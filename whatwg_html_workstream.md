@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Restore event init options tables (bubbles, cancelable, composed)](https://github.com/mdn/content/issues/32832) (2024-03-26T00:59:04Z)
+  
 * [\[html\] Video/Audio source event handling](https://github.com/mdn/content/issues/32784) (2024-03-21T15:30:15Z)
   
 * [\[html\] 🐛 cancel button invalid in EmbedLiveSample("Handling the return value from the dialog")](https://github.com/mdn/content/issues/32774) (2024-03-21T07:54:19Z)
