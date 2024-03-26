@@ -6,7 +6,7 @@
   
 * [\[html\] Video/Audio source event handling](https://github.com/mdn/content/issues/32784) (2024-03-21T15:30:15Z)
   
-* [\[html\] 🐛 cancel button invalid in EmbedLiveSample("Handling the return value from the dialog")](https://github.com/mdn/content/issues/32774) (2024-03-21T07:54:19Z)
+* [\[html\] 🐛 form submission invalid in playground](https://github.com/mdn/content/issues/32774) (2024-03-21T07:54:19Z)
   
 * [\[html\] There was no proper example of the HTML used for the Nesting example, instead it looked like someone was trying to explain it outside of an example like in the other sections of the web page.](https://github.com/mdn/content/issues/32758) (2024-03-20T07:11:44Z)
   
