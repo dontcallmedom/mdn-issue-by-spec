@@ -58,36 +58,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Restore event init options tables (bubbles, cancelable, composed)]]></title>
-            <link>https://github.com/mdn/content/issues/32832</link>
-            <guid>https://github.com/mdn/content/issues/32832</guid>
-            <pubDate>Tue, 26 Mar 2024 00:59:04 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/toggle_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/toggle_event</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">The event init flags table</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">In this particular case, there is no mention that this event does not bubble, or when it's cancelable (<a href="https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute:event-beforetoggle" rel="nofollow">when toggling from closed to open</a>, but <a href="https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute:event-beforetoggle-4" rel="nofollow">not the other way around</a>).</p>
-<p dir="auto">But the problem is more general than just this one case, for instance the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/toggle_event" rel="nofollow">toggle</a> event is not cancelable and doesn't bubble, or the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/invalid_event" rel="nofollow">invalid</a> event which doesn't bubble either, or the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/animationstart_event" rel="nofollow">animationstart</a> event isn't cancelable, and that's only the few I looked at. I'm afraid the vast majority is now wrong.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">For every event, there used to be a table which listed the various event-init flags that a particular event would be created with, i.e. <code class="notranslate">bubbles</code>, <code class="notranslate">cancelable</code>, or, <code class="notranslate">composed</code>. This was</p>
-<ul dir="auto">
-<li>easy to read,</li>
-<li>easy to review,</li>
-<li>hard to forget when documenting a new event (which I guess is what happened for the popover case).</li>
-</ul>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">In this <a href="https://github.com/mdn/content/issues/22198" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/22198/hovercard">duplicate but locked issue</a>, <a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/queengooborg/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/queengooborg">@queengooborg</a> explained</p>
-<blockquote>
-<p dir="auto">during the migration to a new page layout for event pages, we removed those tables as we merged the information into the writing itself. If an event is cancellable or does not bubble, you will now see a line near the top that says "This event is not cancellable" or "This event does not bubble". In other words, the information has not been removed, it's just represented in a different form.</p>
-</blockquote>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">One issue here is that as the linked <code class="notranslate">beforetoggle</code> case demonstrates, it's not always obvious which flags are set for a particular event since it can differ based on where it's actually fired, so the table data can't really be automated.<br>
-Still, I believe MDN <em>is</em> the place to document this and asking web-devs to do the hunting in the specs isn't appropriate, and I hope the old data is still available somewhere, which should help for the majority of events.</p>
-<hr>
-<p dir="auto">Ps: Sorry for opening a new issue when there was already <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1442456314" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/22198" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/22198/hovercard" href="https://github.com/mdn/content/issues/22198">#22198</a> but as I said, it's been locked and I can't comment on that one anymore.</p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Video/Audio source event handling]]></title>
             <link>https://github.com/mdn/content/issues/32784</link>
             <guid>https://github.com/mdn/content/issues/32784</guid>
@@ -1209,7 +1179,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTE1MjI0MjUsIm5iZiI6MTcxMTUyMjEyNSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMyNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMjdUMDY0ODQ1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDBjZjc5NTQ1NjUwM2YyOGVhMDNlMDE3ZjllMDQ5NDFhYmM4ZDA3OTVmMTQ5NjMzZGZiZTJjMTRjMDFhZWZlYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.3PO9PsyKFsTEAl_AtnscycwIcgkxVouO9az5WRS7iwU"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTE1MjI0MjUsIm5iZiI6MTcxMTUyMjEyNSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMyNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMjdUMDY0ODQ1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDBjZjc5NTQ1NjUwM2YyOGVhMDNlMDE3ZjllMDQ5NDFhYmM4ZDA3OTVmMTQ5NjMzZGZiZTJjMTRjMDFhZWZlYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.3PO9PsyKFsTEAl_AtnscycwIcgkxVouO9az5WRS7iwU" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTE1MjMwNTMsIm5iZiI6MTcxMTUyMjc1MywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMyNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMjdUMDY1OTEzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MmE0ZGNjYzNjZjUyNzQwMzExYjI4OTc2Y2M5MjFmNTUzYWJmZWI5ZjFhYWI0NWMwYzQ1M2FjNzcwNGQxZjNmYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.7m1eDKABSTJBWFpboOWTz06_Ccsj4qdZRp_xkst-E04"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTE1MjMwNTMsIm5iZiI6MTcxMTUyMjc1MywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMyNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMjdUMDY1OTEzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MmE0ZGNjYzNjZjUyNzQwMzExYjI4OTc2Y2M5MjFmNTUzYWJmZWI5ZjFhYWI0NWMwYzQ1M2FjNzcwNGQxZjNmYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.7m1eDKABSTJBWFpboOWTz06_Ccsj4qdZRp_xkst-E04" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>

@@ -6,8 +6,6 @@
   
 * [\[html\] Mention \`self\` and \`frames\` in Global object](https://github.com/mdn/content/issues/32841) (2024-03-26T10:54:38Z)
   
-* [\[html\] Restore event init options tables (bubbles, cancelable, composed)](https://github.com/mdn/content/issues/32832) (2024-03-26T00:59:04Z)
-  
 * [\[html\] Video/Audio source event handling](https://github.com/mdn/content/issues/32784) (2024-03-21T15:30:15Z)
   
 * [\[html\] There was no proper example of the HTML used for the Nesting example, instead it looked like someone was trying to explain it outside of an example like in the other sections of the web page.](https://github.com/mdn/content/issues/32758) (2024-03-20T07:11:44Z)
