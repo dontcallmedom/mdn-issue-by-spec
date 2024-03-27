@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[dom\] Remove "spends" from a sentence](https://github.com/mdn/content/issues/32860) (2024-03-27T13:24:48Z)
+  
 * [\[html\] Navigator: cookieEnabled property warning regarding Safari](https://github.com/mdn/content/issues/32845) (2024-03-26T15:50:22Z)
   
 * [\[html\] Mention \`self\` and \`frames\` in Global object](https://github.com/mdn/content/issues/32841) (2024-03-26T10:54:38Z)
