@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-values-3\] Missing units on Values_and_units page](https://github.com/mdn/content/issues/32896) (2024-03-30T06:16:40Z)
+  
 * [\[selectors-4\] \`:not()\` missing complex selector list examples](https://github.com/mdn/content/issues/32880) (2024-03-29T08:10:06Z)
   
 * [\[webaudio\] Contradictions in documentation https://developer.mozilla.org/en-US/docs/Web/API/ChannelMergerNode Channel count mode =  	"explicit" Channel count = 2 (not used in the default count mode)](https://github.com/mdn/content/issues/32783) (2024-03-21T14:03:50Z)
