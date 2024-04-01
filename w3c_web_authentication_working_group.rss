@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>W3C Web Authentication Working Group-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_authentication_working_group.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Authentication Working Group</description>
+        <lastBuildDate>Mon, 01 Apr 2024 00:44:44 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[webauthn-3] mistake in the ClientDataJSON parent object]]></title>
+            <link>https://github.com/mdn/content/issues/32905</link>
+            <guid>https://github.com/mdn/content/issues/32905</guid>
+            <pubDate>Mon, 01 Apr 2024 00:44:44 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorResponse/clientDataJSON" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorResponse/clientDataJSON</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Examples</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">i see a mistake in the property<br>
+const clientDataStr = arrayBufferToStr(pk.clientDataJSON);</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">it should be<br>
+const clientDataStr = arrayBufferToStr(pk.response.clientDataJSON);</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/authenticatorresponse/clientdatajson</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorResponse/clientDataJSON" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AuthenticatorResponse/clientDataJSON</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/authenticatorresponse/clientdatajson/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/authenticatorresponse/clientdatajson/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/eb18c44b6758003b85228455e54c491bc98ef0c3/hovercard" href="https://github.com/mdn/content/commit/eb18c44b6758003b85228455e54c491bc98ef0c3"><tt>eb18c44</tt></a></li>
+<li>Document last modified: 2023-05-09T13:21:58.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
