@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[webauthn-3\] mistake in the ClientDataJSON parent object](https://github.com/mdn/content/issues/32905) (2024-04-01T00:44:44Z)
-  
 * [\[css-values-3\] Missing units on Values_and_units page](https://github.com/mdn/content/issues/32896) (2024-03-30T06:16:40Z)
   
 * [\[selectors-4\] \`:not()\` missing complex selector list examples](https://github.com/mdn/content/issues/32880) (2024-03-29T08:10:06Z)
