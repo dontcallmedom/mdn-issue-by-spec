@@ -397,59 +397,6 @@ This page should mention 'xml' and 'xmlns' prefixes handling.</p>
 <p dir="auto"><em>No response</em></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[dom] addEventListener - which browsers/events default to passive]]></title>
-            <link>https://github.com/mdn/content/issues/24181</link>
-            <guid>https://github.com/mdn/content/issues/24181</guid>
-            <pubDate>Sun, 05 Feb 2023 18:59:51 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#improving_scrolling_performance_with_passive_listeners" rel="nofollow">Improving scrolling performance with passive listeners</a></p>
-<p dir="auto">Documentation of which browsers default to passive</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The page says "browsers other than Safari and Internet Explorer" default certain events to passive, suggesting Chrome and Firefox do this. But it seems to be Chrome and Safari that default those events to passive.</p>
-<p dir="auto">This is also mentioned in the description of the <code class="notranslate">passive</code> flag.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">I expect it to say "Chrome and Safari change the default value of the passive option to true for {wheel, mousewheel, touchstart, touchmove}".</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">I looked up the history of the touch events defaulting to passive:</p>
-<ol dir="auto">
-<li>2017 <a href="https://developer.chrome.com/blog/scrolling-intervention/" rel="nofollow">https://developer.chrome.com/blog/scrolling-intervention/</a> Chrome says they will default touchstart, touchmove to passive</li>
-<li>2018 <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="151140612" data-permission-text="Title is private" data-url="https://github.com/WICG/interventions/issues/18" data-hovercard-type="issue" data-hovercard-url="/WICG/interventions/issues/18/hovercard?comment_id=368703063&amp;comment_type=issue_comment" href="https://github.com/WICG/interventions/issues/18#issuecomment-368703063">WICG/interventions#18 (comment)</a> Safari defaults touch events to passive</li>
-</ol>
-<p dir="auto">I've also tested the <code class="notranslate">touchstart</code> event myself to see if <code class="notranslate">.cancelable</code> is set, and</p>
-<ul dir="auto">
-<li>iOS 16.3/Safari: it's false (implying passive)</li>
-<li>Android/Chrome 109: it's false (implying passive)</li>
-<li>Android/Firefox 109: it's true (implying not passive)</li>
-</ul>
-<p dir="auto">Separately, wheel events:</p>
-<ol dir="auto">
-<li>2019 <a href="https://developer.chrome.com/blog/scrolling-intervention-2/" rel="nofollow">https://developer.chrome.com/blog/scrolling-intervention-2/</a> Chrome says they will default wheel events to passive, but also says that Firefox implemented the touchstart passive already (which doesn't match my tests)</li>
-</ol>
-<p dir="auto">I tested the <code class="notranslate">wheel</code> event to see if <code class="notranslate">.cancelable</code> is set, and</p>
-<ul dir="auto">
-<li>Mac/Safari 16.3: it's false (passive)</li>
-<li>Mac/Chrome 109: it's false (passive)</li>
-<li>Mac/Firefox 109: it's true (not passive)</li>
-</ul>
-<p dir="auto">So here too it seems to be Chrome and Safari that default to passive, not "browsers other than Safari and Internet Explorer".</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">I'm happy to make a pull request but thought I should file an issue first.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/eventtarget/addeventlistener</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/eventtarget/addeventlistener/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/eventtarget/addeventlistener/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/a122e87245c624ba56197641b4d7b21b643a6021/hovercard" href="https://github.com/mdn/content/commit/a122e87245c624ba56197641b4d7b21b643a6021"><tt>a122e87</tt></a></li>
-<li>Document last modified: 2022-09-14T06:08:23.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[dom] Missing NodeFilter.FILTER_SKIP description]]></title>
             <link>https://github.com/mdn/content/issues/23728</link>
             <guid>https://github.com/mdn/content/issues/23728</guid>

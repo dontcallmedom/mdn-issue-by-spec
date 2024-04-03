@@ -134,8 +134,6 @@
   
 * [\[fetch\] \`Response.text()\` can throw a \`TypeError\`](https://github.com/mdn/content/issues/24466) (2023-02-15T16:35:17Z)
   
-* [\[dom\] addEventListener - which browsers/events default to passive](https://github.com/mdn/content/issues/24181) (2023-02-05T18:59:51Z)
-  
 * [\[xhr\] xhr.abort is inaccurate](https://github.com/mdn/content/issues/23961) (2023-01-29T01:52:09Z)
   
 * [\[html\] autofocus on dialog page](https://github.com/mdn/content/issues/23915) (2023-01-26T19:55:03Z)
