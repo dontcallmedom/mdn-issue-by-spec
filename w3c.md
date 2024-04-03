@@ -6,8 +6,6 @@
   
 * [\[css-display-3, css-color-4\] CSS only visually hiding](https://github.com/mdn/content/issues/32921) (2024-04-02T08:24:43Z)
   
-* [\[css-values-3\] Missing units on Values_and_units page](https://github.com/mdn/content/issues/32896) (2024-03-30T06:16:40Z)
-  
 * [\[selectors-4\] \`:not()\` missing complex selector list examples](https://github.com/mdn/content/issues/32880) (2024-03-29T08:10:06Z)
   
 * [\[webaudio\] Contradictions in documentation https://developer.mozilla.org/en-US/docs/Web/API/ChannelMergerNode Channel count mode =  	"explicit" Channel count = 2 (not used in the default count mode)](https://github.com/mdn/content/issues/32783) (2024-03-21T14:03:50Z)

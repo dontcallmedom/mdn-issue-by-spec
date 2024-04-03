@@ -4,8 +4,6 @@
 
 * [\[css-display-3, css-color-4\] CSS only visually hiding](https://github.com/mdn/content/issues/32921) (2024-04-02T08:24:43Z)
   
-* [\[css-values-3\] Missing units on Values_and_units page](https://github.com/mdn/content/issues/32896) (2024-03-30T06:16:40Z)
-  
 * [\[selectors-4\] \`:not()\` missing complex selector list examples](https://github.com/mdn/content/issues/32880) (2024-03-29T08:10:06Z)
   
 * [\[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] querySelectorAll() does not state how the results are sorted](https://github.com/mdn/content/issues/32615) (2024-03-08T14:53:28Z)
