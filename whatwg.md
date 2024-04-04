@@ -74,8 +74,6 @@
   
 * [\[html\] Cookie Examples Broken](https://github.com/mdn/content/issues/29370) (2023-09-29T18:28:29Z)
   
-* [\[console\] Missing parameters for console.dir() ](https://github.com/mdn/content/issues/29329) (2023-09-27T14:23:41Z)
-  
 * [\[console\] Clarify wording around "string representation" in console.\* related functions](https://github.com/mdn/content/issues/29172) (2023-09-17T18:09:54Z)
   
 * [\[html, css-conditional-3, selectors-4\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
