@@ -160,8 +160,6 @@
   
 * [\[html\] Content suggestion: WebSocket.readyState enum properties WebSocket.OPEN, WebSocket.CLOSING, etc](https://github.com/mdn/content/issues/9156) (2021-09-21T22:32:24Z)
   
-* [\[html\] Content suggestion: Add one-liner to former WindowOrWorkerGlobalScope methods](https://github.com/mdn/content/issues/8979) (2021-09-16T10:44:51Z)
-  
 * [\[html\] Issue with "Location": does not mention IDN domain names at all](https://github.com/mdn/content/issues/8895) (2021-09-13T22:55:17Z)
   
 * [\[html, cssom-view-1, dom, WebIDL-1, FileAPI, uievents, pointerlock-2\] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
