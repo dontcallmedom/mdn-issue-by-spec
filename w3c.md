@@ -42,8 +42,6 @@
   
 * [\[css-conditional-3, CSS21\] \`@charset\` is not deprecated](https://github.com/mdn/content/issues/31882) (2024-01-24T07:40:57Z)
   
-* [\[SVG11\] SVG preserveAspectRatio documentation flow/ordering is confusing](https://github.com/mdn/content/issues/31825) (2024-01-20T08:32:03Z)
-  
 * [\[css-conditional-3\] CSSConditionRule.conditionText property is readonly](https://github.com/mdn/content/issues/31279) (2023-12-24T22:46:30Z)
   
 * [\[resize-observer-1\] How to prevent ResizeObserver Observation errors](https://github.com/mdn/content/issues/31021) (2023-12-15T08:03:20Z)

@@ -4,8 +4,6 @@
 
 * [\[SVG11\] The \`x\` and \`y\` attributes on text is actually a list](https://github.com/mdn/content/issues/32081) (2024-02-02T15:10:47Z)
   
-* [\[SVG11\] SVG preserveAspectRatio documentation flow/ordering is confusing](https://github.com/mdn/content/issues/31825) (2024-01-20T08:32:03Z)
-  
 * [\[css-masking-1\] mask-image: url() function doesn't work with file://](https://github.com/mdn/content/issues/29106) (2023-09-14T09:24:04Z)
   
 * [\[SVG11\] Inconsistency with experimental status of textPath attribute method](https://github.com/mdn/content/issues/24079) (2023-02-01T16:11:22Z)
