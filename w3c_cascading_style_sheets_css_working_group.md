@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-fonts-5\] Flaw in Formal Syntax?](https://github.com/mdn/content/issues/33024) (2024-04-10T14:04:09Z)
+  
 * [\[css-shadow-parts-1\] Incorrect statement about pseudo-elements needing to come last in a selector](https://github.com/mdn/content/issues/32971) (2024-04-05T20:16:52Z)
   
 * [\[selectors-4\] \`:not()\` missing complex selector list examples](https://github.com/mdn/content/issues/32880) (2024-03-29T08:10:06Z)
