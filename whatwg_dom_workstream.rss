@@ -139,13 +139,14 @@ For each node of this’s node list, remove all transient registered observers w
 <p dir="auto">Example</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The first js comment is correct for the current version of Firefox, but incorrect for Chrome Version 117.0.5938.149:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="  result[0].value = aHtmlElt.isDefaultNamespace(&quot;&quot;); // true
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="  result[0].value = aHtmlElt.isDefaultNamespace(&quot;&quot;); // true
   result[1].value = aHtmlElt.isDefaultNamespace(&quot;http://www.w3.org/2000/svg&quot;); // false
   result[2].value = aSvgElt.isDefaultNamespace(&quot;&quot;); // false
-  result[3].value = aSvgElt.isDefaultNamespace(&quot;http://www.w3.org/2000/svg&quot;); // true"><pre class="notranslate">  <span class="pl-s1">result</span><span class="pl-kos">[</span><span class="pl-c1">0</span><span class="pl-kos">]</span><span class="pl-kos">.</span><span class="pl-c1">value</span> <span class="pl-c1">=</span> <span class="pl-s1">aHtmlElt</span><span class="pl-kos">.</span><span class="pl-en">isDefaultNamespace</span><span class="pl-kos">(</span><span class="pl-s">""</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// true</span>
-  <span class="pl-s1">result</span><span class="pl-kos">[</span><span class="pl-c1">1</span><span class="pl-kos">]</span><span class="pl-kos">.</span><span class="pl-c1">value</span> <span class="pl-c1">=</span> <span class="pl-s1">aHtmlElt</span><span class="pl-kos">.</span><span class="pl-en">isDefaultNamespace</span><span class="pl-kos">(</span><span class="pl-s">"http://www.w3.org/2000/svg"</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// false</span>
-  <span class="pl-s1">result</span><span class="pl-kos">[</span><span class="pl-c1">2</span><span class="pl-kos">]</span><span class="pl-kos">.</span><span class="pl-c1">value</span> <span class="pl-c1">=</span> <span class="pl-s1">aSvgElt</span><span class="pl-kos">.</span><span class="pl-en">isDefaultNamespace</span><span class="pl-kos">(</span><span class="pl-s">""</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// false</span>
-  <span class="pl-s1">result</span><span class="pl-kos">[</span><span class="pl-c1">3</span><span class="pl-kos">]</span><span class="pl-kos">.</span><span class="pl-c1">value</span> <span class="pl-c1">=</span> <span class="pl-s1">aSvgElt</span><span class="pl-kos">.</span><span class="pl-en">isDefaultNamespace</span><span class="pl-kos">(</span><span class="pl-s">"http://www.w3.org/2000/svg"</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// true</span></pre></div>
+  result[3].value = aSvgElt.isDefaultNamespace(&quot;http://www.w3.org/2000/svg&quot;); // true"><pre lang="js" class="notranslate"><code class="notranslate">  result[0].value = aHtmlElt.isDefaultNamespace(""); // true
+  result[1].value = aHtmlElt.isDefaultNamespace("http://www.w3.org/2000/svg"); // false
+  result[2].value = aSvgElt.isDefaultNamespace(""); // false
+  result[3].value = aSvgElt.isDefaultNamespace("http://www.w3.org/2000/svg"); // true
+</code></pre></div>
 <p dir="auto">In current Chrome, the default namespace is the XMLNS namespace.</p>
 <p dir="auto">This might also necessitate changing the following note at the top of the page:</p>
 <blockquote>

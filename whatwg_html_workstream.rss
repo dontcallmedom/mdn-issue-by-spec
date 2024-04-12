@@ -786,7 +786,7 @@ brief, easy to follow code examples</p>
 <p dir="auto">If this isn't possible, can it be explicitly stated somewhere?</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I'm trying to find the syntax to import from an embedded script module. e.g.,:</p>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;!doctype html&gt;
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;utf-8&quot; /&gt;
@@ -800,21 +800,22 @@ brief, easy to follow code examples</p>
   &lt;/head&gt;
   &lt;body&gt;
   &lt;/body&gt;
-&lt;/html&gt;"><pre class="notranslate"><span class="pl-c1">&lt;!doctype html<span class="pl-kos">&gt;</span></span>
-<span class="pl-kos">&lt;</span><span class="pl-ent">html</span> <span class="pl-c1">lang</span>="<span class="pl-s">en</span>"<span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">meta</span> <span class="pl-c1">charset</span>="<span class="pl-s">utf-8</span>" /&gt;
-    <span class="pl-kos">&lt;</span><span class="pl-ent">title</span><span class="pl-kos">&gt;</span>title<span class="pl-kos">&lt;/</span><span class="pl-ent">title</span><span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">script</span> <span class="pl-c1">type</span>="<span class="pl-s">module</span>"<span class="pl-kos">&gt;</span>
-        <span class="pl-k">export</span> <span class="pl-k">const</span> <span class="pl-s1">x</span> <span class="pl-c1">=</span> <span class="pl-c1">1</span><span class="pl-kos">;</span>
-    <span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">script</span> <span class="pl-c1">type</span>="<span class="pl-s">module</span>"<span class="pl-kos">&gt;</span>
-        <span class="pl-k">import</span> <span class="pl-kos">{</span> <span class="pl-s1">x</span> <span class="pl-kos">}</span> <span class="pl-k">from</span> <span class="pl-c">// what do I type here?</span>
-    <span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;/</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;/</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
-<span class="pl-kos">&lt;/</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span></pre></div>
+&lt;/html&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;title&gt;title&lt;/title&gt;
+    &lt;script type="module"&gt;
+        export const x = 1;
+    &lt;/script&gt;
+    &lt;script type="module"&gt;
+        import { x } from // what do I type here?
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div>
 <p dir="auto">I don't know if this syntax is possible, but I expected to find an answer to that within this page.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
@@ -922,24 +923,26 @@ brief, easy to follow code examples</p>
 <p dir="auto">Examples of non-drag-and-drop use cases:</p>
 <ul dir="auto">
 <li><code class="notranslate">ClipboardEvent#clipboardData</code> is a <code class="notranslate">DataTransfer</code> object (used in clipboard events like <code class="notranslate">copy</code>):
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="document.addEventListener('copy', (e) =&gt; {
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="document.addEventListener('copy', (e) =&gt; {
     assert(e.clipboardData instanceof DataTransfer)
     e.clipboardData.setData('text/html', '&lt;h1&gt;hello world&lt;/h1&gt;')
-})"><pre class="notranslate"><span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">'copy'</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-    <span class="pl-en">assert</span><span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">clipboardData</span> <span class="pl-k">instanceof</span> <span class="pl-v">DataTransfer</span><span class="pl-kos">)</span>
-    <span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">clipboardData</span><span class="pl-kos">.</span><span class="pl-en">setData</span><span class="pl-kos">(</span><span class="pl-s">'text/html'</span><span class="pl-kos">,</span> <span class="pl-s">'&lt;h1&gt;hello world&lt;/h1&gt;'</span><span class="pl-kos">)</span>
-<span class="pl-kos">}</span><span class="pl-kos">)</span></pre></div>
+})"><pre lang="js" class="notranslate"><code class="notranslate">document.addEventListener('copy', (e) =&gt; {
+    assert(e.clipboardData instanceof DataTransfer)
+    e.clipboardData.setData('text/html', '&lt;h1&gt;hello world&lt;/h1&gt;')
+})
+</code></pre></div>
 </li>
 <li>Manually creating a <code class="notranslate">DataTransfer</code> object to programmatically generate a <code class="notranslate">FileList</code> to add files to an <code class="notranslate">&lt;input type="file"&gt;</code>:
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const dt = new DataTransfer()
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const dt = new DataTransfer()
 dt.items.add(new File(['hello world'], 'hello.txt'))
 
 assert(dt.files instanceof FileList)
-document.querySelector('input[type=file]').files = dt.files"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">dt</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">DataTransfer</span><span class="pl-kos">(</span><span class="pl-kos">)</span>
-<span class="pl-s1">dt</span><span class="pl-kos">.</span><span class="pl-c1">items</span><span class="pl-kos">.</span><span class="pl-en">add</span><span class="pl-kos">(</span><span class="pl-k">new</span> <span class="pl-v">File</span><span class="pl-kos">(</span><span class="pl-kos">[</span><span class="pl-s">'hello world'</span><span class="pl-kos">]</span><span class="pl-kos">,</span> <span class="pl-s">'hello.txt'</span><span class="pl-kos">)</span><span class="pl-kos">)</span>
+document.querySelector('input[type=file]').files = dt.files"><pre lang="js" class="notranslate"><code class="notranslate">const dt = new DataTransfer()
+dt.items.add(new File(['hello world'], 'hello.txt'))
 
-<span class="pl-en">assert</span><span class="pl-kos">(</span><span class="pl-s1">dt</span><span class="pl-kos">.</span><span class="pl-c1">files</span> <span class="pl-k">instanceof</span> <span class="pl-v">FileList</span><span class="pl-kos">)</span>
-<span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">'input[type=file]'</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">files</span> <span class="pl-c1">=</span> <span class="pl-s1">dt</span><span class="pl-kos">.</span><span class="pl-c1">files</span></pre></div>
+assert(dt.files instanceof FileList)
+document.querySelector('input[type=file]').files = dt.files
+</code></pre></div>
 </li>
 </ul>
 <p dir="auto">Possibly other use cases I'm not aware of.</p>]]></content:encoded>
@@ -1084,7 +1087,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTI5MzI5NDIsIm5iZiI6MTcxMjkzMjY0MiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQxMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MTJUMTQzNzIyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZThjOTU2NDJkNTNkNDFkY2JjYWY0NTNjZTcyNTU5NDkzOTU0MzRjNDRmNmZlMjczMzczOTdlODVlMWMwZGE2MCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.3XLpSci8PkMkfZZcSp6qNQtod2iNiiBvo_ySL3hgK3s"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTI5MzI5NDIsIm5iZiI6MTcxMjkzMjY0MiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQxMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MTJUMTQzNzIyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZThjOTU2NDJkNTNkNDFkY2JjYWY0NTNjZTcyNTU5NDkzOTU0MzRjNDRmNmZlMjczMzczOTdlODVlMWMwZGE2MCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.3XLpSci8PkMkfZZcSp6qNQtod2iNiiBvo_ySL3hgK3s" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTI5MzM1NjcsIm5iZiI6MTcxMjkzMzI2NywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQxMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MTJUMTQ0NzQ3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NzU2ZmI0NzhiNTUzMDBmZmMyMmExMjUyZjUxYWE5ZmQ3NjIyOTkyYmMwMjhkYWZiNGE0YjdhZjQyMjNmODYxZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.-vYenZ9-jqKPfEIf7JCKCTYsAsj3XdYq2UWeuD3Lgiw"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTI5MzM1NjcsIm5iZiI6MTcxMjkzMzI2NywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQxMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MTJUMTQ0NzQ3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NzU2ZmI0NzhiNTUzMDBmZmMyMmExMjUyZjUxYWE5ZmQ3NjIyOTkyYmMwMjhkYWZiNGE0YjdhZjQyMjNmODYxZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.-vYenZ9-jqKPfEIf7JCKCTYsAsj3XdYq2UWeuD3Lgiw" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
