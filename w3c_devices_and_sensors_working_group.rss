@@ -4,46 +4,10 @@
         <title>W3C Devices and Sensors Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_devices_and_sensors_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Devices and Sensors Working Group</description>
-        <lastBuildDate>Fri, 12 Apr 2024 07:17:16 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 11 Dec 2022 22:18:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[orientation-sensor] Incorrect code example in AbsoluteOrientationSensor docs]]></title>
-            <link>https://github.com/mdn/content/issues/33053</link>
-            <guid>https://github.com/mdn/content/issues/33053</guid>
-            <pubDate>Fri, 12 Apr 2024 07:17:16 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/AbsoluteOrientationSensor" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AbsoluteOrientationSensor</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Basic Example</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The function argument of the error callback has an incorrect name</p>
-<p dir="auto">sensor.addEventListener("error", (error) =&gt; { // the argument should be called <code class="notranslate">event</code> so that it's used on the following line<br>
-if (event.error.name === "NotReadableError") {<br>
-console.log("Sensor is not available.");<br>
-}<br>
-});<br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/AbsoluteOrientationSensor#basic_example" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AbsoluteOrientationSensor#basic_example</a></p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">sensor.addEventListener("error", (event) =&gt; {</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/absoluteorientationsensor</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AbsoluteOrientationSensor" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AbsoluteOrientationSensor</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/absoluteorientationsensor/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/absoluteorientationsensor/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/4ea748e5f025c2a00a8ca8babd7c505e73ad9def/hovercard" href="https://github.com/mdn/content/commit/4ea748e5f025c2a00a8ca8babd7c505e73ad9def"><tt>4ea748e</tt></a></li>
-<li>Document last modified: 2024-02-01T08:22:16.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[orientation-event] Explanation of X, y, z coordinates of DeviceMotionEvent.acceleration and DeviceMotionEvent.accelerationIncludingGravity is either completely wrong or extremely confusing (or both)]]></title>
             <link>https://github.com/mdn/content/issues/22885</link>

@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[orientation-sensor\] Incorrect code example in AbsoluteOrientationSensor docs](https://github.com/mdn/content/issues/33053) (2024-04-12T07:17:16Z)
-  
 * [\[css-fonts-5\] Flaw in Formal Syntax?](https://github.com/mdn/content/issues/33024) (2024-04-10T14:04:09Z)
   
 * [\[css-shadow-parts-1\] Incorrect statement about pseudo-elements needing to come last in a selector](https://github.com/mdn/content/issues/32971) (2024-04-05T20:16:52Z)
