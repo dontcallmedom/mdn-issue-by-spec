@@ -187,7 +187,7 @@ I am less sure what's appropriate for the <code class="notranslate">latex</code>
 For instance, an example like this might be helpful:</p>
 <hr>
 <p dir="auto">Combining a <code class="notranslate">String.raw</code> template literal with the <code class="notranslate">new RegExp()</code> constructor allows you to create regular expressions with an alternative delimiter other than a forward slash (<code class="notranslate">/</code>) without requiring double-escaping (<code class="notranslate">\\</code>) of regular expression escape sequences. This is especially valuable in strings that contain a lot of slashes, such as file paths or URLs.</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="// A String.raw template allows a fairly readable regular expression matching a URL:
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="// A String.raw template allows a fairly readable regular expression matching a URL:
 const mdnJS_srtl = new RegExp(String.raw`https://developer\.mozilla\.org/en-US/docs/Web/JavaScript/Reference/`);
 
 // The same thing with a regexp literal looks like this, with \/ for each forward slash:
@@ -201,64 +201,59 @@ console.log(mdnJS_srtl.source == mdnJS_rl.source)
 console.log(mdnJS_srtl.source == mdnJS_str.source)
 // true
 console.log(mdnJS_srtl.source)
-// https:\/\/developer\.mozilla\.org\/en-US\/docs\/Web\/JavaScript\/Reference\/"><pre lang="js" class="notranslate"><code class="notranslate">// A String.raw template allows a fairly readable regular expression matching a URL:
-const mdnJS_srtl = new RegExp(String.raw`https://developer\.mozilla\.org/en-US/docs/Web/JavaScript/Reference/`);
+// https:\/\/developer\.mozilla\.org\/en-US\/docs\/Web\/JavaScript\/Reference\/"><pre class="notranslate"><span class="pl-c">// A String.raw template allows a fairly readable regular expression matching a URL:</span>
+<span class="pl-k">const</span> <span class="pl-s1">mdnJS_srtl</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">RegExp</span><span class="pl-kos">(</span><span class="pl-v">String</span><span class="pl-kos">.</span><span class="pl-en">raw</span><span class="pl-s">`https://developer\.mozilla\.org/en-US/docs/Web/JavaScript/Reference/`</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
-// The same thing with a regexp literal looks like this, with \/ for each forward slash:
-const mdnJS_rl = /https:\/\/developer\.mozilla\.org\/en-US\/docs\/Web\/JavaScript\/Reference\//;
+<span class="pl-c">// The same thing with a regexp literal looks like this, with \/ for each forward slash:</span>
+<span class="pl-k">const</span> <span class="pl-s1">mdnJS_rl</span> <span class="pl-c1">=</span> <span class="pl-pds"><span class="pl-c1">/</span>https:\/\/developer\.mozilla\.org\/en-US\/docs\/Web\/JavaScript\/Reference\/<span class="pl-c1">/</span></span><span class="pl-kos">;</span>
 
-// And the same thing written with the RegExp constructor and a traditional string literal, with \\. for each period:
-const mdnJS_str = new RegExp('https://developer\\.mozilla\\.org/en-US/docs/Web/JavaScript/Reference/');
+<span class="pl-c">// And the same thing written with the RegExp constructor and a traditional string literal, with \\. for each period:</span>
+<span class="pl-k">const</span> <span class="pl-s1">mdnJS_str</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">RegExp</span><span class="pl-kos">(</span><span class="pl-s">'https://developer\\.mozilla\\.org/en-US/docs/Web/JavaScript/Reference/'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 
-console.log(mdnJS_srtl.source == mdnJS_rl.source)
-// true
-console.log(mdnJS_srtl.source == mdnJS_str.source)
-// true
-console.log(mdnJS_srtl.source)
-// https:\/\/developer\.mozilla\.org\/en-US\/docs\/Web\/JavaScript\/Reference\/
-</code></pre></div>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">mdnJS_srtl</span><span class="pl-kos">.</span><span class="pl-c1">source</span> <span class="pl-c1">==</span> <span class="pl-s1">mdnJS_rl</span><span class="pl-kos">.</span><span class="pl-c1">source</span><span class="pl-kos">)</span>
+<span class="pl-c">// true</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">mdnJS_srtl</span><span class="pl-kos">.</span><span class="pl-c1">source</span> <span class="pl-c1">==</span> <span class="pl-s1">mdnJS_str</span><span class="pl-kos">.</span><span class="pl-c1">source</span><span class="pl-kos">)</span>
+<span class="pl-c">// true</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">mdnJS_srtl</span><span class="pl-kos">.</span><span class="pl-c1">source</span><span class="pl-kos">)</span>
+<span class="pl-c">// https:\/\/developer\.mozilla\.org\/en-US\/docs\/Web\/JavaScript\/Reference\/</span></pre></div>
 <h4 dir="auto">The <code class="notranslate">latex</code> tag</h4>
 <p dir="auto">The page sketches an example of a <code class="notranslate">latex</code> tag template literal, but doesn't explain why it might be useful:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="function latex(str) {
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function latex(str) {
   return { cooked: str[0], raw: str.raw[0] };
 }
 
 latex`\unicode`;
 
-// { cooked: undefined, raw: &quot;\\unicode&quot; }"><pre lang="js" class="notranslate"><code class="notranslate">function latex(str) {
-  return { cooked: str[0], raw: str.raw[0] };
-}
+// { cooked: undefined, raw: &quot;\\unicode&quot; }"><pre class="notranslate"><span class="pl-k">function</span> <span class="pl-en">latex</span><span class="pl-kos">(</span><span class="pl-s1">str</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-k">return</span> <span class="pl-kos">{</span> <span class="pl-c1">cooked</span>: <span class="pl-s1">str</span><span class="pl-kos">[</span><span class="pl-c1">0</span><span class="pl-kos">]</span><span class="pl-kos">,</span> <span class="pl-c1">raw</span>: <span class="pl-s1">str</span><span class="pl-kos">.</span><span class="pl-c1">raw</span><span class="pl-kos">[</span><span class="pl-c1">0</span><span class="pl-kos">]</span> <span class="pl-kos">}</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span>
 
-latex`\unicode`;
+<span class="pl-en">latex</span><span class="pl-s">`\u<span class="pl-s1">nicode</span>`</span><span class="pl-kos">;</span>
 
-// { cooked: undefined, raw: "\\unicode" }
-</code></pre></div>
+<span class="pl-c">// { cooked: undefined, raw: "\\unicode" }</span></pre></div>
 <p dir="auto">It appears that this would need to be used in some context where code expected an object with a raw attribute, and mostly ignored presence of the cooked attribute. I don't know quite what that context would be. I suppose it could be something like:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="beginObject= latex`\documentclass{article}`;
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="beginObject= latex`\documentclass{article}`;
 // {  &quot;cooked&quot;: &quot;documentclass{article}&quot;,  &quot;raw&quot;: &quot;\\documentclass{article}&quot;
-console.log(`It's normal in LaTeX to begin your document with ${beginObject.raw}`);"><pre lang="js" class="notranslate"><code class="notranslate">beginObject= latex`\documentclass{article}`;
-// {  "cooked": "documentclass{article}",  "raw": "\\documentclass{article}"
-console.log(`It's normal in LaTeX to begin your document with ${beginObject.raw}`);
-</code></pre></div>
+console.log(`It's normal in LaTeX to begin your document with ${beginObject.raw}`);"><pre class="notranslate"><span class="pl-s1">beginObject</span><span class="pl-c1">=</span> <span class="pl-en">latex</span><span class="pl-s">`\documentclass{article}`</span><span class="pl-kos">;</span>
+<span class="pl-c">// {  "cooked": "documentclass{article}",  "raw": "\\documentclass{article}"</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`It's normal in LaTeX to begin your document with <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">beginObject</span><span class="pl-kos">.</span><span class="pl-c1">raw</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">But this feels convoluted and confusing. I don't understand why it's the example.<br>
 A more straightforward way to write this would be either:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="beginString = String.raw`\documentclass{article}`;
-console.log(`It's normal in LaTeX to begin your document with ${beginString}`);"><pre lang="js" class="notranslate"><code class="notranslate">beginString = String.raw`\documentclass{article}`;
-console.log(`It's normal in LaTeX to begin your document with ${beginString}`);
-</code></pre></div>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="beginString = String.raw`\documentclass{article}`;
+console.log(`It's normal in LaTeX to begin your document with ${beginString}`);"><pre class="notranslate"><span class="pl-s1">beginString</span> <span class="pl-c1">=</span> <span class="pl-v">String</span><span class="pl-kos">.</span><span class="pl-en">raw</span><span class="pl-s">`\documentclass{article}`</span><span class="pl-kos">;</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`It's normal in LaTeX to begin your document with <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">beginString</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">Or if the goal is to demonstrate the value of tagged templates, then a simpler template:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="function LaTeX(str) { 
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function LaTeX(str) { 
   return str.raw[0];
 }
 
 beginString = LaTeX`\documentclass{article}`;
-console.log(`It's normal in LaTeX to begin your document with ${beginString}`);"><pre lang="js" class="notranslate"><code class="notranslate">function LaTeX(str) { 
-  return str.raw[0];
-}
+console.log(`It's normal in LaTeX to begin your document with ${beginString}`);"><pre class="notranslate"><span class="pl-k">function</span> <span class="pl-v">LaTeX</span><span class="pl-kos">(</span><span class="pl-s1">str</span><span class="pl-kos">)</span> <span class="pl-kos">{</span> 
+  <span class="pl-k">return</span> <span class="pl-s1">str</span><span class="pl-kos">.</span><span class="pl-c1">raw</span><span class="pl-kos">[</span><span class="pl-c1">0</span><span class="pl-kos">]</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span>
 
-beginString = LaTeX`\documentclass{article}`;
-console.log(`It's normal in LaTeX to begin your document with ${beginString}`);
-</code></pre></div>
+<span class="pl-s1">beginString</span> <span class="pl-c1">=</span> <span class="pl-v">LaTeX</span><span class="pl-s">`\documentclass{article}`</span><span class="pl-kos">;</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`It's normal in LaTeX to begin your document with <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">beginString</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">Because I'm not sure what the current example is trying to demonstrate, I'm not sure how to improve the example to show it better. Help?</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">I've found very few examples of raw strings in template literals for regular expressions.<br>
@@ -266,8 +261,7 @@ I suspect they would be a more used pattern if they were better understood and e
 <p dir="auto">There are some decent examples as <a href="https://exploringjs.com/impatient-js/ch_template-literals.html#raw-string-literals" rel="nofollow">https://exploringjs.com/impatient-js/ch_template-literals.html#raw-string-literals</a> although it doesn't explain the outer delimiter advantage.</p>
 <p dir="auto">One not-very-helpful-place is this optional ESlint rule, <a href="https://eslint.org/docs/latest/rules/prefer-regex-literals" rel="nofollow">https://eslint.org/docs/latest/rules/prefer-regex-literals</a>, which discourages the use of the <code class="notranslate">new RegExp()</code> constructor in place of regexp literals for static content.<br>
 So that rule also disallows</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="new RegExp(String.raw`^\d\.$`);"><pre lang="js" class="notranslate"><code class="notranslate">new RegExp(String.raw`^\d\.$`);
-</code></pre></div>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="new RegExp(String.raw`^\d\.$`);"><pre class="notranslate"><span class="pl-k">new</span> <span class="pl-v">RegExp</span><span class="pl-kos">(</span><span class="pl-v">String</span><span class="pl-kos">.</span><span class="pl-en">raw</span><span class="pl-s">`^\d\.$`</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">which is an example of this. But this ESlint rule is not enabled by default (and probably should not be, because of the readability value of raw strings combined with RegExp literals).</p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto">I had trouble finding the history of who wrote the text about the <code class="notranslate">latex</code> template and whether there was originally more to the example.</p>
