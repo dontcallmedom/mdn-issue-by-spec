@@ -4,10 +4,46 @@
         <title>IETF Hypertext Transfer Protocol Bis APP Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ietf_hypertext_transfer_protocol_bis_app_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by IETF Hypertext Transfer Protocol Bis APP Working Group</description>
-        <lastBuildDate>Thu, 25 Jan 2024 15:23:54 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 14 Apr 2024 05:41:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[rfc7231] [HTTP] Import zstd library]]></title>
+            <link>https://github.com/mdn/content/issues/33086</link>
+            <guid>https://github.com/mdn/content/issues/33086</guid>
+            <pubDate>Sun, 14 Apr 2024 05:41:51 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 dir="auto">Acceptance criteria</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> The listed features are documented sufficiently on MDN</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> BCD is updated</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Interactive example and data repos are updated if appropriate</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> The content has been reviewed as needed</li>
+</ul>
+<h3 dir="auto">For folks helping with Firefox related documentation</h3>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Set bugs to <code class="notranslate">dev-doc-complete</code></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Add entry to Firefox release notes for enabled/preview features</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Add/remove entry to Firefox experimental features page for preference/released features</li>
+</ul>
+<h2 dir="auto">Features to document</h2>
+<p dir="auto">MDN page: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Encoding#zstd" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Encoding#zstd</a><br>
+BCD to be updated:</p>
+<ul dir="auto">
+<li>Firefox version: <a href="https://github.com/mdn/browser-compat-data/blob/main/http/headers/Content-Encoding.json#L100">https://github.com/mdn/browser-compat-data/blob/main/http/headers/Content-Encoding.json#L100</a></li>
+<li>MDN URL is no longer valid:</li>
+</ul>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="             &quot;description&quot;: &quot;&lt;code&gt;zstd&lt;/code&gt;&quot;,
+             &quot;mdn_url&quot;: &quot;https://developer.mozilla.org/docs/Web/HTTP/Headers/Zstandard_compression&quot;,"><pre class="notranslate"><code class="notranslate">             "description": "&lt;code&gt;zstd&lt;/code&gt;",
+             "mdn_url": "https://developer.mozilla.org/docs/Web/HTTP/Headers/Zstandard_compression",
+</code></pre></div>
+<h2 dir="auto">Related Gecko bugs</h2>
+<p dir="auto"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1871963" rel="nofollow">Bug 1871963: Import zstd library</a></p>
+<h2 dir="auto">Other</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Check content open issues to see if any pertain to the subject matter. If there are any that can be closed because of the work, do so. If there are any that can be fixed relatively quickly because of the knowledge from completing this issue and you have time, feel free to go ahead and fix them.</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[rfc7230] Connection: Keep-Alive - Docs state it is blocked in Safari when using HTTP2/3, is no longer blocked]]></title>
             <link>https://github.com/mdn/content/issues/31923</link>
@@ -33,11 +69,11 @@
 </thead>
 <tbody>
 <tr>
-<td><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5629994/299715016-b678286b-65b0-4a67-8b4b-eb330f1673ef.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTMwNzA3ODUsIm5iZiI6MTcxMzA3MDQ4NSwicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTAxNi1iNjc4Mjg2Yi02NWIwLTRhNjctOGI0Yi1lYjMzMGYxNjczZWYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQxNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MTRUMDQ1NDQ1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDdlNGNiMjg4ZTgzYTZlM2I5MDEwODRjODJkZWE1ZTFjYjk3MDMxZTQ5MGYzZGRjN2I3ZTkzMzE5OWQzN2VhMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.M6XsPEVVJR9ZB8tLLMJ0O_qtIz7CNPqFH-6B-BbgphA"><img src="https://private-user-images.githubusercontent.com/5629994/299715016-b678286b-65b0-4a67-8b4b-eb330f1673ef.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTMwNzA3ODUsIm5iZiI6MTcxMzA3MDQ4NSwicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTAxNi1iNjc4Mjg2Yi02NWIwLTRhNjctOGI0Yi1lYjMzMGYxNjczZWYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQxNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MTRUMDQ1NDQ1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDdlNGNiMjg4ZTgzYTZlM2I5MDEwODRjODJkZWE1ZTFjYjk3MDMxZTQ5MGYzZGRjN2I3ZTkzMzE5OWQzN2VhMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.M6XsPEVVJR9ZB8tLLMJ0O_qtIz7CNPqFH-6B-BbgphA" alt="Screenshot 2024-01-25 at 15 19 29" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5629994/299715016-b678286b-65b0-4a67-8b4b-eb330f1673ef.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTMwNzQ2MzgsIm5iZiI6MTcxMzA3NDMzOCwicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTAxNi1iNjc4Mjg2Yi02NWIwLTRhNjctOGI0Yi1lYjMzMGYxNjczZWYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQxNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MTRUMDU1ODU4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MDc5ODNlZDdlNWQ1OTlmZDBkYzZmZTRlZWZlNDZlOTFmMjMzOWQyZTA2ZGNjOWJhNzA3ZDg2NmNmNjFkZWYwNSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.221TfJGQNsv9-wWzKSUz_uaMO3LXKEg165Ts9Cz8hAY"><img src="https://private-user-images.githubusercontent.com/5629994/299715016-b678286b-65b0-4a67-8b4b-eb330f1673ef.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTMwNzQ2MzgsIm5iZiI6MTcxMzA3NDMzOCwicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTAxNi1iNjc4Mjg2Yi02NWIwLTRhNjctOGI0Yi1lYjMzMGYxNjczZWYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQxNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MTRUMDU1ODU4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MDc5ODNlZDdlNWQ1OTlmZDBkYzZmZTRlZWZlNDZlOTFmMjMzOWQyZTA2ZGNjOWJhNzA3ZDg2NmNmNjFkZWYwNSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.221TfJGQNsv9-wWzKSUz_uaMO3LXKEg165Ts9Cz8hAY" alt="Screenshot 2024-01-25 at 15 19 29" style="max-width: 100%;"></a></td>
 <td>Request working using http3</td>
 </tr>
 <tr>
-<td><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5629994/299715119-870cf1cd-c64f-43b4-b39b-b240ef35fb69.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTMwNzA3ODUsIm5iZiI6MTcxMzA3MDQ4NSwicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTExOS04NzBjZjFjZC1jNjRmLTQzYjQtYjM5Yi1iMjQwZWYzNWZiNjkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQxNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MTRUMDQ1NDQ1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTlhMjA3OTMyNjM4NTk5OTZmMDBjOGE3OWIxNGZlZmVjYTc2MjhjZmVhYzYxZmVlYWRmMWE4MGE0YTNkZmY2OSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.IRp378Dm2kJfZ59QohhOtg_xRjp5-b5Gr2JwHA0uEdQ"><img src="https://private-user-images.githubusercontent.com/5629994/299715119-870cf1cd-c64f-43b4-b39b-b240ef35fb69.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTMwNzA3ODUsIm5iZiI6MTcxMzA3MDQ4NSwicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTExOS04NzBjZjFjZC1jNjRmLTQzYjQtYjM5Yi1iMjQwZWYzNWZiNjkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQxNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MTRUMDQ1NDQ1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTlhMjA3OTMyNjM4NTk5OTZmMDBjOGE3OWIxNGZlZmVjYTc2MjhjZmVhYzYxZmVlYWRmMWE4MGE0YTNkZmY2OSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.IRp378Dm2kJfZ59QohhOtg_xRjp5-b5Gr2JwHA0uEdQ" alt="Screenshot 2024-01-25 at 15 19 32" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5629994/299715119-870cf1cd-c64f-43b4-b39b-b240ef35fb69.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTMwNzQ2MzgsIm5iZiI6MTcxMzA3NDMzOCwicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTExOS04NzBjZjFjZC1jNjRmLTQzYjQtYjM5Yi1iMjQwZWYzNWZiNjkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQxNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MTRUMDU1ODU4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9N2E5YzdkNWY3MmNhYmQ0ZjA5Nzk2NjlkNGJmOTMxZGJmMTYzNGM0ZGExY2M1NTdhMGE2ZjljODBkZTExZDMyOCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.yAFxy1iwSEYb9eL650elMWWCDH9JKHNpGpqiVnYIbbs"><img src="https://private-user-images.githubusercontent.com/5629994/299715119-870cf1cd-c64f-43b4-b39b-b240ef35fb69.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTMwNzQ2MzgsIm5iZiI6MTcxMzA3NDMzOCwicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTExOS04NzBjZjFjZC1jNjRmLTQzYjQtYjM5Yi1iMjQwZWYzNWZiNjkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQxNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MTRUMDU1ODU4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9N2E5YzdkNWY3MmNhYmQ0ZjA5Nzk2NjlkNGJmOTMxZGJmMTYzNGM0ZGExY2M1NTdhMGE2ZjljODBkZTExZDMyOCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.yAFxy1iwSEYb9eL650elMWWCDH9JKHNpGpqiVnYIbbs" alt="Screenshot 2024-01-25 at 15 19 32" style="max-width: 100%;"></a></td>
 <td>Showing appropriate header set</td>
 </tr>
 </tbody>
