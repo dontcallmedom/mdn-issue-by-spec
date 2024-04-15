@@ -4,8 +4,6 @@
 
 * [\[service-workers-1\] Confusing text on service worker registration scope broadening](https://github.com/mdn/content/issues/30306) (2023-11-16T11:39:55Z)
   
-* [\[service-workers-1\] the description of \`ServiceWorkerRegistration: scope property\` is not quite accurate](https://github.com/mdn/content/issues/29367) (2023-09-29T16:25:11Z)
-  
 * [\[service-workers-1\] Fetch Event client id is null](https://github.com/mdn/content/issues/20657) (2022-09-13T11:22:55Z)
   
 * [\[service-workers-1\] Issue with "ServiceWorkerContainer.register()": Second example unclear on intent](https://github.com/mdn/content/issues/10547) (2021-11-15T14:17:23Z)

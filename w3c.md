@@ -78,8 +78,6 @@
   
 * [\[encoding\] TextDecoderStream constructor ignoreBOM option missing](https://github.com/mdn/content/issues/29681) (2023-10-17T10:34:36Z)
   
-* [\[service-workers-1\] the description of \`ServiceWorkerRegistration: scope property\` is not quite accurate](https://github.com/mdn/content/issues/29367) (2023-09-29T16:25:11Z)
-  
 * [\[permissions\] Navigator.permissions always returns prompt on firefox mobile. Even after the permission is granted.](https://github.com/mdn/content/issues/29291) (2023-09-26T04:29:04Z)
   
 * [\[html, css-conditional-3, selectors-4\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
