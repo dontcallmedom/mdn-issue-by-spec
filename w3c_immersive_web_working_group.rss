@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>W3C Immersive Web Working Group-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_immersive_web_working_group.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Immersive Web Working Group</description>
+        <lastBuildDate>Tue, 16 Apr 2024 04:22:18 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[webxr] Explanation of `bounded-floor`/`local`/`local-floor` needs improvement]]></title>
+            <link>https://github.com/mdn/content/issues/33111</link>
+            <guid>https://github.com/mdn/content/issues/33111</guid>
+            <pubDate>Tue, 16 Apr 2024 04:22:18 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpace" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpace</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><code class="notranslate">bounded-floor</code>/<code class="notranslate">local</code>/<code class="notranslate">local-floor</code>/etc explanations</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The explanations being based around phrases like "the user is not expected to" weren't helpful for me.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">If my understanding is correct, then I think it'd be helpful to add a couple more sentences to each explanation - something like these:</p>
+<ul dir="auto">
+<li><strong>local</strong>: [...] Recentering affects all three axes. So, for example, if you crouch down and then recenter, that will cause the virtual world to be "lowered" relative to the real world.</li>
+<li><strong>local-floor</strong>: [...] Recentering affects the two horizontal axes while keeping the vertical aligned with your real floor. So, for example, if you crouch down and then recenter, the world will not be "lowered" relative to the real world - i.e. recentering after a vertical movement will not move the virtual world relative to the real world at all.</li>
+</ul>
+<p dir="auto">Please include some plain language and examples like this to help the reader understand.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">I asked a friend who was just starting to do some WebXR stuff too, and they didn't understand the explanations on that page either, so I don't think this is a 'me' problem.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/xrreferencespace</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpace" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpace</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/xrreferencespace/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/xrreferencespace/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc/hovercard" href="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc"><tt>acfe8c9</tt></a></li>
+<li>Document last modified: 2023-07-07T07:19:19.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[webxr\] Explanation of \`bounded-floor\`/\`local\`/\`local-floor\` needs improvement](https://github.com/mdn/content/issues/33111) (2024-04-16T04:22:18Z)
+  
 * [\[selectors-4\] Algorithm for \`:user-valid\` seems invalid in itself](https://github.com/mdn/content/issues/33104) (2024-04-15T16:13:31Z)
   
 * [\[IndexedDB-3\] \[WebAPI\] Implement IDBFactory.databases()](https://github.com/mdn/content/issues/33084) (2024-04-14T05:15:22Z)
