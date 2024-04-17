@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-flexbox-1\] Directory page order and name](https://github.com/mdn/content/issues/33128) (2024-04-17T06:26:58Z)
+  
 * [\[selectors-4\] Algorithm for \`:user-valid\` seems invalid in itself](https://github.com/mdn/content/issues/33104) (2024-04-15T16:13:31Z)
   
 * [\[css-grid-3\] Confusing/wrong explanation of the span keyword](https://github.com/mdn/content/issues/33066) (2024-04-12T22:03:28Z)
