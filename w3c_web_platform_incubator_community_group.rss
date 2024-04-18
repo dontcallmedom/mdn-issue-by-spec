@@ -133,20 +133,19 @@ Source code for this <a href="https://glitch.com/edit/#!/handle-request-permissi
 <h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
 <p dir="auto">define <code class="notranslate">dirEntry</code> is type of  <code class="notranslate">FileSystemDirectoryEntry</code>;<br>
 the condition that is file: exist, when i use</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="dirEntry.getFile(
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="dirEntry.getFile(
   fileName,
   { create: true, exclusive: false },
   (fileEntry) =&gt; {
     console.log(fileEntry);
   }
-);"><pre lang="js" class="notranslate"><code class="notranslate">dirEntry.getFile(
-  fileName,
-  { create: true, exclusive: false },
-  (fileEntry) =&gt; {
-    console.log(fileEntry);
-  }
-);
-</code></pre></div>
+);"><pre class="notranslate"><span class="pl-s1">dirEntry</span><span class="pl-kos">.</span><span class="pl-en">getFile</span><span class="pl-kos">(</span>
+  <span class="pl-s1">fileName</span><span class="pl-kos">,</span>
+  <span class="pl-kos">{</span> <span class="pl-c1">create</span>: <span class="pl-c1">true</span><span class="pl-kos">,</span> <span class="pl-c1">exclusive</span>: <span class="pl-c1">false</span> <span class="pl-kos">}</span><span class="pl-kos">,</span>
+  <span class="pl-kos">(</span><span class="pl-s1">fileEntry</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">fileEntry</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span>
+<span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">i find this condition it cant create new file to cover origin file in this page api introduction;</p>
 <h4 dir="auto">Specific section or headline?</h4>
 <h4 dir="auto">What did you expect to see?</h4>
