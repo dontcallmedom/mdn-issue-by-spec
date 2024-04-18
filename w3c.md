@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-position-3\] Update the content in Sticky positioning in position - CSS section](https://github.com/mdn/content/issues/33146) (2024-04-18T08:15:12Z)
+  
 * [\[cssom-view-1\] Using \`width\` instead of \`height\`](https://github.com/mdn/content/issues/33131) (2024-04-17T10:50:50Z)
   
 * [\[css-flexbox-1\] Directory page order and name](https://github.com/mdn/content/issues/33128) (2024-04-17T06:26:58Z)
