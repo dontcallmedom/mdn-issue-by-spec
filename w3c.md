@@ -4,8 +4,6 @@
 
 * [\[css-position-3\] Update the content in Sticky positioning in position - CSS section](https://github.com/mdn/content/issues/33146) (2024-04-18T08:15:12Z)
   
-* [\[cssom-view-1\] Using \`width\` instead of \`height\`](https://github.com/mdn/content/issues/33131) (2024-04-17T10:50:50Z)
-  
 * [\[css-flexbox-1\] Directory page order and name](https://github.com/mdn/content/issues/33128) (2024-04-17T06:26:58Z)
   
 * [\[webxr\] Explanation of \`bounded-floor\`/\`local\`/\`local-floor\` needs improvement](https://github.com/mdn/content/issues/33111) (2024-04-16T04:22:18Z)
