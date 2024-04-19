@@ -4,10 +4,66 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Tue, 26 Mar 2024 15:50:22 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Apr 2024 06:59:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] [WebAPI] Add HTMLTemplateElement.shadowrootclonable attribute]]></title>
+            <link>https://github.com/mdn/content/issues/33160</link>
+            <guid>https://github.com/mdn/content/issues/33160</guid>
+            <pubDate>Fri, 19 Apr 2024 06:59:41 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 dir="auto">Acceptance criteria</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> The listed features are documented sufficiently on MDN</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> BCD is updated <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2248122331" data-permission-text="Title is private" data-url="https://github.com/mdn/browser-compat-data/issues/22856" data-hovercard-type="pull_request" data-hovercard-url="/mdn/browser-compat-data/pull/22856/hovercard" href="https://github.com/mdn/browser-compat-data/pull/22856">mdn/browser-compat-data#22856</a></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Interactive example and data repos are updated if appropriate</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> The content has been reviewed as needed</li>
+</ul>
+<h3 dir="auto">For folks helping with Firefox related documentation</h3>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Set bugs to <code class="notranslate">dev-doc-complete</code></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Add entry to Firefox release notes for enabled/preview features</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Add/remove entry to Firefox experimental features page for preference/released features</li>
+</ul>
+<h2 dir="auto">Features to document</h2>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTemplateElement" rel="nofollow"><code class="notranslate">HTMLTemplateElement.shadowRootClonable</code></a> is supported in FF125 and needs to be documented.</p>
+<p dir="auto">Also document <code class="notranslate">HTMLTemplateElement</code>: <code class="notranslate">shadowRootDelegatesFocus</code> and <code class="notranslate">shadowRootMode</code> which are in BCD but not in doc (already in BCD from FF123)</p>
+<p dir="auto">The IDL changes for shadowRootClonable are shown below. I don't know if <code class="notranslate">SetterThrows</code> is relevant.</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content=" [Exposed=Window]
+ interface HTMLTemplateElement : HTMLElement {
+   [HTMLConstructor] constructor();
+ 
+   readonly attribute DocumentFragment content;
+   [CEReactions, Pref=&quot;dom.webcomponents.shadowdom.declarative.enabled&quot;]
+   attribute DOMString shadowRootMode;
+-  [CEReactions, Pref=&quot;dom.webcomponents.shadowdom.declarative.enabled&quot;]
++  [CEReactions, SetterThrows, Pref=&quot;dom.webcomponents.shadowdom.declarative.enabled&quot;]
+   attribute boolean shadowRootDelegatesFocus;
++  [CEReactions, SetterThrows, Pref=&quot;dom.webcomponents.shadowdom.declarative.enabled&quot;]
++  attribute boolean shadowRootClonable;
+ };"><pre class="notranslate"><code class="notranslate"> [Exposed=Window]
+ interface HTMLTemplateElement : HTMLElement {
+   [HTMLConstructor] constructor();
+ 
+   readonly attribute DocumentFragment content;
+   [CEReactions, Pref="dom.webcomponents.shadowdom.declarative.enabled"]
+   attribute DOMString shadowRootMode;
+-  [CEReactions, Pref="dom.webcomponents.shadowdom.declarative.enabled"]
++  [CEReactions, SetterThrows, Pref="dom.webcomponents.shadowdom.declarative.enabled"]
+   attribute boolean shadowRootDelegatesFocus;
++  [CEReactions, SetterThrows, Pref="dom.webcomponents.shadowdom.declarative.enabled"]
++  attribute boolean shadowRootClonable;
+ };
+</code></pre></div>
+<p dir="auto">Dunno how this relates to FF122 project item <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1428888560" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/21948" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/21948/hovercard" href="https://github.com/mdn/content/pull/21948">#21948</a></p>
+<h2 dir="auto">Related Gecko bugs</h2>
+<p dir="auto"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1880188" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=1880188</a></p>
+<h2 dir="auto">Other</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> Check content open issues to see if any pertain to the subject matter. If there are any that can be closed because of the work, do so. If there are any that can be fixed relatively quickly because of the knowledge from completing this issue and you have time, feel free to go ahead and fix them.</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Navigator: cookieEnabled property warning regarding Safari]]></title>
             <link>https://github.com/mdn/content/issues/32845</link>
@@ -1084,7 +1140,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTM1MTAwNTgsIm5iZiI6MTcxMzUwOTc1OCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQxOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MTlUMDY1NTU4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NTU4OTA4Mzg5NmJhMGMyZDcwMWZkZTgzNjk3YWE1MTAyM2E3MTdiOWRhM2I0ZGJiN2QwYjllYWNiYzliMWZiOCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.7Rsp5G8cGZrYRk1eotNlJpHLM-IPKdXKzh9Vgue7tAo"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTM1MTAwNTgsIm5iZiI6MTcxMzUwOTc1OCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQxOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MTlUMDY1NTU4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NTU4OTA4Mzg5NmJhMGMyZDcwMWZkZTgzNjk3YWE1MTAyM2E3MTdiOWRhM2I0ZGJiN2QwYjllYWNiYzliMWZiOCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.7Rsp5G8cGZrYRk1eotNlJpHLM-IPKdXKzh9Vgue7tAo" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTM1MTEyMDAsIm5iZiI6MTcxMzUxMDkwMCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQxOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MTlUMDcxNTAwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjJlZWIxYTA3MTNlNzRhNzRiZmY1MTk2MDU2YjIyNTEwODdlN2ZiMjkwYjQxZmVlYmE4Yzc1MDM0ZWFiNTM2MCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.CiqBF3n7Z9jSXhqRsJXj12_kKCt3F5X1uM8-pu8Q0p4"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTM1MTEyMDAsIm5iZiI6MTcxMzUxMDkwMCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQxOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MTlUMDcxNTAwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjJlZWIxYTA3MTNlNzRhNzRiZmY1MTk2MDU2YjIyNTEwODdlN2ZiMjkwYjQxZmVlYmE4Yzc1MDM0ZWFiNTM2MCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.CiqBF3n7Z9jSXhqRsJXj12_kKCt3F5X1uM8-pu8Q0p4" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
