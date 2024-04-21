@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[ecmascript\] Found a liitle bug or typo in the documentation.](https://github.com/mdn/content/issues/33189) (2024-04-21T09:35:35Z)
-  
 * [\[ecmascript\] Incorrect information about "return await" performance penalty](https://github.com/mdn/content/issues/32847) (2024-03-26T16:08:40Z)
   
 * [\[ecmascript\] Mention 3n is BigInt syntax](https://github.com/mdn/content/issues/32492) (2024-02-29T19:50:11Z)
