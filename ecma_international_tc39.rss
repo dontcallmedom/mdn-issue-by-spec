@@ -4,10 +4,57 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Tue, 26 Mar 2024 16:08:40 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 21 Apr 2024 09:35:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Found a liitle bug or typo in the documentation.]]></title>
+            <link>https://github.com/mdn/content/issues/33189</link>
+            <guid>https://github.com/mdn/content/issues/33189</guid>
+            <pubDate>Sun, 21 Apr 2024 09:35:35 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">However, ({ a, b } = { a: 1, b: 2 }) is valid, as is const { a, b } = { a: 1, b: 2 }.</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">However, ({ a, b } = { a: 1, b: 2 }) is valid, as is const { a, b } = { a: 1, b: 2 }.<br>
+Here it says , (In my point of view),  ({ a, b } = { a: 1, b: 2 })  is equal to const { a, b } = { a: 1, b: 2 }.<br>
+but when i'm trying to modify this variable a &amp; b, then it is fine. Then how it is possible?? how can i modify a const variable.</p>
+<p dir="auto">for example,<br>
+({ a, b } = { a: 1, b: 2 });</p>
+<p dir="auto">console.log(a, b)  =&gt;&gt; 1 , 2</p>
+<p dir="auto">a = 100; b = 200;</p>
+<p dir="auto">console.log(a, b) =&gt;&gt; 100, 200</p>
+<p dir="auto">so i think this should be, ==&gt;&gt;   ({ a, b } = { a: 1, b: 2 }) --&gt;&gt;  is equal to ---&gt;&gt;  let { a, b } = { a: 1, b: 2 }.</p>
+<p dir="auto">//...............</p>
+<p dir="auto">Because -- const {a, b} = {a: 10, b: 100};<br>
+console.log(a, b) =&gt;&gt; 10, 100<br>
+a = 100; b = 200;   =&gt;&gt; Not possible because these are const</p>
+<p dir="auto">but in this case ({ a, b } = { a: 1, b: 2 }) ;<br>
+how it is possible to modify a and b;<br>
+a = 100; b = 200 ==&gt; NO ERROR</p>
+<p dir="auto">so i think , ({ a, b } = { a: 1, b: 2 }) --&gt;&gt;  is equal to ---&gt;&gt;  const { a, b } = { a: 1, b: 2 }. is a wrong statement.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">i want to see,</p>
+<p dir="auto">({ a, b } = { a: 1, b: 2 }) --&gt;&gt;  is equal to ---&gt;&gt;  let { a, b } = { a: 1, b: 2 }.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/operators/destructuring_assignment</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/destructuring_assignment/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/destructuring_assignment/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e3faa375b0179de77a5eff00074e3d168a0a904c/hovercard" href="https://github.com/mdn/content/commit/e3faa375b0179de77a5eff00074e3d168a0a904c"><tt>e3faa37</tt></a></li>
+<li>Document last modified: 2023-10-04T23:23:49.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Incorrect information about "return await" performance penalty]]></title>
             <link>https://github.com/mdn/content/issues/32847</link>
