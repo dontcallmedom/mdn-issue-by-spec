@@ -316,11 +316,12 @@ I think that's what the example should show, and maybe show an image or video sh
 <p dir="auto">Next, line breaks are converted to spaces[…]</p>
 </blockquote>
 <p dir="auto">In <a href="https://drafts.csswg.org/css-text/#line-break-transform" rel="nofollow">4.1.3. Segment Break Transformation Rules</a> of the CSS Text Module, in particular Step 2 and the note at the end of 4.1.3, it is explicitly stated that segment breaks can be removed contextually. This is verified by the following HTML code on Firefox:</p>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;h1&gt;你好
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;h1&gt;你好
   世界！&lt;/h1&gt;
-&lt;h1&gt;你好 世界！&lt;/h1&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>你好
-  世界！<span class="pl-kos">&lt;/</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>
-<span class="pl-kos">&lt;</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>你好 世界！<span class="pl-kos">&lt;/</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span></pre></div>
+&lt;h1&gt;你好 世界！&lt;/h1&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;h1&gt;你好
+  世界！&lt;/h1&gt;
+&lt;h1&gt;你好 世界！&lt;/h1&gt;
+</code></pre></div>
 </li>
 <li>
 <p dir="auto">In the same subsection, Step 5 is incorrect:</p>
@@ -340,9 +341,10 @@ I think that's what the example should show, and maybe show an image or video sh
 </li>
 <li>
 <p dir="auto">This page doesn't mention whitespaces in <a href="https://developer.mozilla.org/en-US/docs/Web/API/Selection" rel="nofollow">selections</a>. For the following HTML code:</p>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;h1&gt;你好
-  世界！&lt;/h1&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>你好
-  世界！<span class="pl-kos">&lt;/</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span></pre></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;h1&gt;你好
+  世界！&lt;/h1&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;h1&gt;你好
+  世界！&lt;/h1&gt;
+</code></pre></div>
 <p dir="auto">the rendered text is <code class="notranslate">你好世界！</code>. But when selecting all the visible texts, e.g. pressing <kbd>Ctrl</kbd> + <kbd>A</kbd> on the page on Windows, <code class="notranslate">getSelection().toString()</code> returns <code class="notranslate">你好 世界！</code>, which is also what gets copied by <kbd>Ctrl</kbd> + <kbd>C</kbd> on Firefox on Windows (note that the tab is transformed into a space), whereas <code class="notranslate">getSelection().getRangeAt(0).toString()</code> returns <code class="notranslate">你好\n\t世界！</code>.</p>
 </li>
 </ol>
@@ -463,7 +465,7 @@ Selection API issue:<br>
 <p dir="auto">A list of all properties that this method returns.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">TypeScript says that this is the returned object (from lib.dom.d.ts):</p>
-<div class="highlight highlight-source-ts notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="type EpochTimeStamp = number;
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="type EpochTimeStamp = number;
 
 // ...
 
@@ -471,15 +473,16 @@ interface PushSubscriptionJSON {
     endpoint?: string;
     expirationTime?: EpochTimeStamp | null;
     keys?: Record&lt;string, string&gt;;
-}"><pre class="notranslate"><span class="pl-k">type</span> <span class="pl-smi">EpochTimeStamp</span> <span class="pl-c1">=</span> <span class="pl-smi">number</span><span class="pl-kos">;</span>
+}"><pre lang="ts" class="notranslate"><code class="notranslate">type EpochTimeStamp = number;
 
-<span class="pl-c">// ...</span>
+// ...
 
-<span class="pl-k">interface</span> <span class="pl-smi">PushSubscriptionJSON</span> <span class="pl-kos">{</span>
-    <span class="pl-c1">endpoint</span>?: <span class="pl-smi">string</span><span class="pl-kos">;</span>
-    <span class="pl-c1">expirationTime</span>?: <span class="pl-smi">EpochTimeStamp</span> <span class="pl-c1">|</span> <span class="pl-c1">null</span><span class="pl-kos">;</span>
-    <span class="pl-c1">keys</span>?: <span class="pl-smi">Record</span><span class="pl-kos">&lt;</span><span class="pl-smi">string</span><span class="pl-kos">,</span> <span class="pl-smi">string</span><span class="pl-kos">&gt;</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span></pre></div>
+interface PushSubscriptionJSON {
+    endpoint?: string;
+    expirationTime?: EpochTimeStamp | null;
+    keys?: Record&lt;string, string&gt;;
+}
+</code></pre></div>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">MDN metadata</h3>
@@ -510,10 +513,10 @@ interface PushSubscriptionJSON {
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The example doesn't work. Also. it has different errors depending on the platform you use. On desktop web:<br>
 <code class="notranslate">Error: TypeError: navigator.share is not a function</code></p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/102827935/247702540-0504c6fa-4020-4fa2-aa0b-4cdc1cc0bb66.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTM4MTc3MDAsIm5iZiI6MTcxMzgxNzQwMCwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNTQwLTA1MDRjNmZhLTQwMjAtNGZhMi1hYTBiLTRjZGMxY2MwYmI2Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQyMlQyMDIzMjBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hZTNmNGY5ODdlNDg3ZjAyZWM4MTMyZmFiNjhhODNlYzcwNzQxMmUyMTBhZWU3YTYwNjgxMzkyZjY2YmU5NWU1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.8z7Y1MPNy-k0xme6zTeY2GeZ9VThRCQ7s0OqqtTt6Es"><img src="https://private-user-images.githubusercontent.com/102827935/247702540-0504c6fa-4020-4fa2-aa0b-4cdc1cc0bb66.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTM4MTc3MDAsIm5iZiI6MTcxMzgxNzQwMCwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNTQwLTA1MDRjNmZhLTQwMjAtNGZhMi1hYTBiLTRjZGMxY2MwYmI2Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQyMlQyMDIzMjBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hZTNmNGY5ODdlNDg3ZjAyZWM4MTMyZmFiNjhhODNlYzcwNzQxMmUyMTBhZWU3YTYwNjgxMzkyZjY2YmU5NWU1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.8z7Y1MPNy-k0xme6zTeY2GeZ9VThRCQ7s0OqqtTt6Es" alt="1" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/102827935/247702540-0504c6fa-4020-4fa2-aa0b-4cdc1cc0bb66.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTM4MTgzOTgsIm5iZiI6MTcxMzgxODA5OCwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNTQwLTA1MDRjNmZhLTQwMjAtNGZhMi1hYTBiLTRjZGMxY2MwYmI2Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQyMlQyMDM0NThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iNGU2ODc4ODY3YTcwZDc1YWY3ODM1Zjg4OTgzYjFhZTJlNDYzZGE4ZGY2MmQ4ZGUwNDgxNTliZDQzODVlZmM5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.GME5tySt3xr6TwIeKeZaPG4u3Qlkq4zQGMfgS2KfGec"><img src="https://private-user-images.githubusercontent.com/102827935/247702540-0504c6fa-4020-4fa2-aa0b-4cdc1cc0bb66.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTM4MTgzOTgsIm5iZiI6MTcxMzgxODA5OCwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNTQwLTA1MDRjNmZhLTQwMjAtNGZhMi1hYTBiLTRjZGMxY2MwYmI2Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQyMlQyMDM0NThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iNGU2ODc4ODY3YTcwZDc1YWY3ODM1Zjg4OTgzYjFhZTJlNDYzZGE4ZGY2MmQ4ZGUwNDgxNTliZDQzODVlZmM5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.GME5tySt3xr6TwIeKeZaPG4u3Qlkq4zQGMfgS2KfGec" alt="1" style="max-width: 100%;"></a></p>
 <p dir="auto">on mWeb (iOS Safari):<br>
 <code class="notranslate">Error: NotAllowedError: Third-party iframes are not allowed to call share() unless explicitly allowed via Feature-Policy (web-share)</code></p>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/102827935/247702629-9c20d6ee-75cd-4319-b024-f3f7eac9bd49.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTM4MTc3MDAsIm5iZiI6MTcxMzgxNzQwMCwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNjI5LTljMjBkNmVlLTc1Y2QtNDMxOS1iMDI0LWYzZjdlYWM5YmQ0OS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MjJUMjAyMzIwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZWY5MjJlMDA5NWNkYmI4NTYzMGUwYWQ3MzJhYzQ1ZjRlNjBjMGE5YzkxMGQwYjNkMTE0ODBlMjEzZDhiZjgxNSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.3RCN0F-ifKbMlgddv3hlJp6uPOCSsE0tVEaP6gg26PQ"><img src="https://private-user-images.githubusercontent.com/102827935/247702629-9c20d6ee-75cd-4319-b024-f3f7eac9bd49.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTM4MTc3MDAsIm5iZiI6MTcxMzgxNzQwMCwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNjI5LTljMjBkNmVlLTc1Y2QtNDMxOS1iMDI0LWYzZjdlYWM5YmQ0OS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MjJUMjAyMzIwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZWY5MjJlMDA5NWNkYmI4NTYzMGUwYWQ3MzJhYzQ1ZjRlNjBjMGE5YzkxMGQwYjNkMTE0ODBlMjEzZDhiZjgxNSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.3RCN0F-ifKbMlgddv3hlJp6uPOCSsE0tVEaP6gg26PQ" width="300" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/102827935/247702629-9c20d6ee-75cd-4319-b024-f3f7eac9bd49.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTM4MTgzOTgsIm5iZiI6MTcxMzgxODA5OCwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNjI5LTljMjBkNmVlLTc1Y2QtNDMxOS1iMDI0LWYzZjdlYWM5YmQ0OS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MjJUMjAzNDU4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NzNjM2I5MjY4ZmEwNDBiNGM3YzE2ZDNmMGMxMzJjOTJiYjM0NGE5MmY1ZGFmNmZlMzFiNGM3NDE5NzczYWExZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.eI4n_x6stYxm1P6itl91_3nbWvnwBS4c6b4CowQ_7kg"><img src="https://private-user-images.githubusercontent.com/102827935/247702629-9c20d6ee-75cd-4319-b024-f3f7eac9bd49.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTM4MTgzOTgsIm5iZiI6MTcxMzgxODA5OCwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNjI5LTljMjBkNmVlLTc1Y2QtNDMxOS1iMDI0LWYzZjdlYWM5YmQ0OS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MjJUMjAzNDU4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NzNjM2I5MjY4ZmEwNDBiNGM3YzE2ZDNmMGMxMzJjOTJiYjM0NGE5MmY1ZGFmNmZlMzFiNGM3NDE5NzczYWExZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.eI4n_x6stYxm1P6itl91_3nbWvnwBS4c6b4CowQ_7kg" width="300" style="max-width: 100%;"></a>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The share dialog is supposed to launch when I click the button in the example.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
