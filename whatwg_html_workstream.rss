@@ -1114,13 +1114,12 @@ document.querySelector('input[type=file]').files = dt.files"><pre class="notrans
 <p dir="auto">The :read-only <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" rel="nofollow">CSS</a> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" rel="nofollow">pseudo-class</a> represents an element (such as input or textarea) that is not editable by the user.</p>
 </blockquote>
 <p dir="auto">However, this is inaccurate. The <code class="notranslate">read-only</code> pseudo <em>targets editable fields that do not accept text</em>. This can be verified by the following code:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;input type=&quot;checkbox&quot; /&gt;
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;input type=&quot;checkbox&quot; /&gt;
 &lt;input type=&quot;radio&quot; /&gt;
-&lt;input type=&quot;text&quot; /&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;input type="checkbox" /&gt;
-&lt;input type="radio" /&gt;
-&lt;input type="text" /&gt;
-</code></pre></div>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="input {
+&lt;input type=&quot;text&quot; /&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">input</span> <span class="pl-c1">type</span>="<span class="pl-s">checkbox</span>" /&gt;
+<span class="pl-kos">&lt;</span><span class="pl-ent">input</span> <span class="pl-c1">type</span>="<span class="pl-s">radio</span>" /&gt;
+<span class="pl-kos">&lt;</span><span class="pl-ent">input</span> <span class="pl-c1">type</span>="<span class="pl-s">text</span>" /&gt;</pre></div>
+<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="input {
   outline: none;
 }
 
@@ -1130,19 +1129,18 @@ input:read-write {
 
 input:read-only {
   outline: thick double red;
-}"><pre lang="css" class="notranslate"><code class="notranslate">input {
-  outline: none;
+}"><pre class="notranslate"><span class="pl-ent">input</span> {
+  <span class="pl-c1">outline</span><span class="pl-kos">:</span> none;
 }
 
-input:read-write {
-  outline: thick double blue;
+<span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-write</span> {
+  <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double blue;
 }
 
-input:read-only {
-  outline: thick double red;
-}
-</code></pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTM4MTgzOTksIm5iZiI6MTcxMzgxODA5OSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MjJUMjAzNDU5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OGY2NGFjMDUzOWU4ZTBhNjBjZDNmN2IxYTdmMjI4OGY2OGIzNzQwYzRmOTNiNDZlNWZiNDg3YTcxMWZiYTI3NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.3iQ9G-6YkDOMbP3nDUYtSWmEi2e-JJVZ3ggt1G5B4_M"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTM4MTgzOTksIm5iZiI6MTcxMzgxODA5OSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MjJUMjAzNDU5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OGY2NGFjMDUzOWU4ZTBhNjBjZDNmN2IxYTdmMjI4OGY2OGIzNzQwYzRmOTNiNDZlNWZiNDg3YTcxMWZiYTI3NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.3iQ9G-6YkDOMbP3nDUYtSWmEi2e-JJVZ3ggt1G5B4_M" style="max-width: 100%;"></a>
+<span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
+  <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
+}</pre></div>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTM4MTkwMTEsIm5iZiI6MTcxMzgxODcxMSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MjJUMjA0NTExWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTZhNDM1MzNiNDYxMjIxZTZkYTZhZTc1MThmMzEzMGQxOWMzZmI5MGNjMWJlNmFmYWJmYmRjZDM0MTAxMWI1OCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.U_MB5dnRDE2qorsU-hADPuLbI-i2mGF_mb00hSVW1zQ"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTM4MTkwMTEsIm5iZiI6MTcxMzgxODcxMSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MjJUMjA0NTExWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTZhNDM1MzNiNDYxMjIxZTZkYTZhZTc1MThmMzEzMGQxOWMzZmI5MGNjMWJlNmFmYWJmYmRjZDM0MTAxMWI1OCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.U_MB5dnRDE2qorsU-hADPuLbI-i2mGF_mb00hSVW1zQ" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
@@ -1199,18 +1197,16 @@ input:read-only {
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">Change <code class="notranslate">in</code> to <code class="notranslate">hasOwnProperty</code> or add a caveat.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="	Object.prototype.bad = function() { console.log(&quot;bad prop&quot;)};
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="	Object.prototype.bad = function() { console.log(&quot;bad prop&quot;)};
 	var e = document.body.querySelector(&quot;#test&quot;); // &lt;span id=&quot;test&quot; data-man=&quot;1&quot;&gt;
 	console.log(&quot;man&quot;, &quot;man&quot; in e.dataset, &quot;bad&quot;, &quot;bad&quot; in e.dataset); // man true, bad true
 	console.log(&quot;man&quot;, e.dataset.hasOwnProperty(&quot;man&quot;), 
             &quot;bad&quot;, e.dataset.hasOwnProperty(&quot;bad&quot;));// man true, bad false
-"><pre lang="javascript" class="notranslate"><code class="notranslate">	Object.prototype.bad = function() { console.log("bad prop")};
-	var e = document.body.querySelector("#test"); // &lt;span id="test" data-man="1"&gt;
-	console.log("man", "man" in e.dataset, "bad", "bad" in e.dataset); // man true, bad true
-	console.log("man", e.dataset.hasOwnProperty("man"), 
-            "bad", e.dataset.hasOwnProperty("bad"));// man true, bad false
-
-</code></pre></div>
+"><pre class="notranslate">	<span class="pl-v">Object</span><span class="pl-kos">.</span><span class="pl-c1">prototype</span><span class="pl-kos">.</span><span class="pl-en">bad</span> <span class="pl-c1">=</span> <span class="pl-k">function</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span> <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"bad prop"</span><span class="pl-kos">)</span><span class="pl-kos">}</span><span class="pl-kos">;</span>
+	<span class="pl-k">var</span> <span class="pl-s1">e</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">body</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">"#test"</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// &lt;span id="test" data-man="1"&gt;</span>
+	<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"man"</span><span class="pl-kos">,</span> <span class="pl-s">"man"</span> <span class="pl-k">in</span> <span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">dataset</span><span class="pl-kos">,</span> <span class="pl-s">"bad"</span><span class="pl-kos">,</span> <span class="pl-s">"bad"</span> <span class="pl-k">in</span> <span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">dataset</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// man true, bad true</span>
+	<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"man"</span><span class="pl-kos">,</span> <span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">dataset</span><span class="pl-kos">.</span><span class="pl-en">hasOwnProperty</span><span class="pl-kos">(</span><span class="pl-s">"man"</span><span class="pl-kos">)</span><span class="pl-kos">,</span> 
+            <span class="pl-s">"bad"</span><span class="pl-kos">,</span> <span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">dataset</span><span class="pl-kos">.</span><span class="pl-en">hasOwnProperty</span><span class="pl-kos">(</span><span class="pl-s">"bad"</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span><span class="pl-c">// man true, bad false</span></pre></div>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">MDN metadata</h3>
@@ -1296,7 +1292,7 @@ input:read-only {
 </ol>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">What helped me to understand &amp; try out the relation (as mentioned above) was the interactive example of <a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_select_value" rel="nofollow">w3schools Select value Property</a>.</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;!DOCTYPE html&gt;
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
 
@@ -1322,34 +1318,33 @@ function myFunction() {
 &lt;/script&gt;
 
 &lt;/body&gt;
-&lt;/html&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;body&gt;
+&lt;/html&gt;"><pre class="notranslate"><span class="pl-c1">&lt;!DOCTYPE html<span class="pl-kos">&gt;</span></span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
 
-&lt;form&gt;
+<span class="pl-kos">&lt;</span><span class="pl-ent">form</span><span class="pl-kos">&gt;</span>
   Select your favorite fruit:
-  &lt;select id="mySelect"&gt;
-    &lt;option value="apple"&gt;Apple&lt;/option&gt;
-    &lt;option value="orange"&gt;Orange&lt;/option&gt;
-    &lt;option value="pineapple"&gt;Pineapple&lt;/option&gt;
-    &lt;option value="banana"&gt;Banana&lt;/option&gt;
-  &lt;/select&gt;
-&lt;/form&gt;
+  <span class="pl-kos">&lt;</span><span class="pl-ent">select</span> <span class="pl-c1">id</span>="<span class="pl-s">mySelect</span>"<span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">option</span> <span class="pl-c1">value</span>="<span class="pl-s">apple</span>"<span class="pl-kos">&gt;</span>Apple<span class="pl-kos">&lt;/</span><span class="pl-ent">option</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">option</span> <span class="pl-c1">value</span>="<span class="pl-s">orange</span>"<span class="pl-kos">&gt;</span>Orange<span class="pl-kos">&lt;/</span><span class="pl-ent">option</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">option</span> <span class="pl-c1">value</span>="<span class="pl-s">pineapple</span>"<span class="pl-kos">&gt;</span>Pineapple<span class="pl-kos">&lt;/</span><span class="pl-ent">option</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">option</span> <span class="pl-c1">value</span>="<span class="pl-s">banana</span>"<span class="pl-kos">&gt;</span>Banana<span class="pl-kos">&lt;/</span><span class="pl-ent">option</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;/</span><span class="pl-ent">select</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">form</span><span class="pl-kos">&gt;</span>
 
-&lt;p&gt;Click the button to change the selected fruit to banana.&lt;/p&gt;
+<span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>Click the button to change the selected fruit to banana.<span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>
 
-&lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;
+<span class="pl-kos">&lt;</span><span class="pl-ent">button</span> <span class="pl-c1">type</span>="<span class="pl-s">button</span>" <span class="pl-c1">onclick</span>="<span class="pl-s">myFunction()</span>"<span class="pl-kos">&gt;</span>Try it<span class="pl-kos">&lt;/</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span>
 
-&lt;script&gt;
-function myFunction() {
-  let val = document.getElementById("mySelect").value
-  alert(val)             // (*)
-}
-&lt;/script&gt;
+<span class="pl-kos">&lt;</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span>
+<span class="pl-k">function</span> <span class="pl-en">myFunction</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-k">let</span> <span class="pl-s1">val</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">getElementById</span><span class="pl-kos">(</span><span class="pl-s">"mySelect"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">value</span>
+  <span class="pl-en">alert</span><span class="pl-kos">(</span><span class="pl-s1">val</span><span class="pl-kos">)</span>             <span class="pl-c">// (*)</span>
+<span class="pl-kos">}</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span>
 
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre></div>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span></pre></div>
 <p dir="auto">I added the (*)-line so that I could see the changing value of <code class="notranslate">&lt;selected&gt;</code> in action (depending on the selected option.</p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto">I'm sure that the relation between <code class="notranslate">&lt;select&gt;</code> and its <code class="notranslate">&lt;options&gt;</code> is described somewhere (on a lower level(?)) - probably some article that describes general behavior of form elements.<br>
@@ -1543,13 +1538,11 @@ But (especially for a beginner - like me) it would be super helpful to at least 
 <p dir="auto">General</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">Using an iframe with a srcdoc that includes an anchor tag, such as:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;iframe srcdoc=&quot;&lt;html&gt;&lt;a href='#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;&quot;&gt;&lt;/iframe&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;iframe srcdoc="&lt;html&gt;&lt;a href='#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;"&gt;&lt;/iframe&gt;
-</code></pre></div>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;iframe srcdoc=&quot;&lt;html&gt;&lt;a href='#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;&quot;&gt;&lt;/iframe&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">iframe</span> <span class="pl-c1">srcdoc</span>="<span class="pl-s">&lt;html&gt;&lt;a href='#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">iframe</span><span class="pl-kos">&gt;</span></pre></div>
 <p dir="auto">Will not work, as the anchor tag should start with <code class="notranslate">about:srcdoc</code></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">Should give some info or warning that if one chooses to use srcdoc, they would need to use another method of rendering anchor links. Using simply <code class="notranslate">#tag</code> will redirect the whole iframe to another location, (and likely have a XSS error)</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;iframe srcdoc=&quot;&lt;html&gt;&lt;a href='about:srcdoc#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;&quot;&gt;&lt;/iframe&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;iframe srcdoc="&lt;html&gt;&lt;a href='about:srcdoc#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;"&gt;&lt;/iframe&gt;
-</code></pre></div>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;iframe srcdoc=&quot;&lt;html&gt;&lt;a href='about:srcdoc#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;&quot;&gt;&lt;/iframe&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">iframe</span> <span class="pl-c1">srcdoc</span>="<span class="pl-s">&lt;html&gt;&lt;a href='about:srcdoc#tag'&gt;go to tag&lt;/a&gt;&lt;h1 id='tag'&gt;Tag&lt;/h1&gt;&lt;/html&gt;</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">iframe</span><span class="pl-kos">&gt;</span></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><a href="https://stackoverflow.com/questions/42475012/how-to-make-href-anchors-in-iframe-srcdoc-actually-work" rel="nofollow">https://stackoverflow.com/questions/42475012/how-to-make-href-anchors-in-iframe-srcdoc-actually-work</a></p>
 <p dir="auto"><a href="https://en.wikipedia.org/wiki/About_URI_scheme#Standardization" rel="nofollow">https://en.wikipedia.org/wiki/About_URI_scheme#Standardization</a></p>

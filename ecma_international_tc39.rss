@@ -4,10 +4,41 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Tue, 26 Mar 2024 16:08:40 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 22 Apr 2024 20:44:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Operators page doesn't mention . or ?.]]></title>
+            <link>https://github.com/mdn/content/issues/33215</link>
+            <guid>https://github.com/mdn/content/issues/33215</guid>
+            <pubDate>Mon, 22 Apr 2024 20:44:17 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Doesn't really fit the existing sections, maybe a new "Chaining operators" section?</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The Expressions and operators page doesn't seem to mention . or ?. at all. Elsewhere (for example, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining</a>) they're both called operators, so it seems they should be on the operators page. While . is pretty obvious and used in even the introduction, at least for completeness, it should be on the operators page. ?. isn't as obvious and is (relatively) new, so should definitely be there.</p>
+<p dir="auto">Also, ?? is mentioned in the text in the short-circuiting section in the Logical operators section, but not in any of the operator tables.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">At least ?. and probably . as well on the operators page.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/guide/expressions_and_operators</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/guide/expressions_and_operators/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/guide/expressions_and_operators/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/9b73bdea5458572f77a401596fef9a06ed8bba1b/hovercard" href="https://github.com/mdn/content/commit/9b73bdea5458572f77a401596fef9a06ed8bba1b"><tt>9b73bde</tt></a></li>
+<li>Document last modified: 2024-04-16T06:27:06.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Incorrect information about "return await" performance penalty]]></title>
             <link>https://github.com/mdn/content/issues/32847</link>
