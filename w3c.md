@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[webrtc\] document of RTCIceCandidate's properties { url, relayProtocol}  are miss](https://github.com/mdn/content/issues/33228) (2024-04-23T11:26:42Z)
+  
 * [\[webrtc\] RTCIceCandidate: relatedAddress Examples section error](https://github.com/mdn/content/issues/33227) (2024-04-23T10:50:55Z)
   
 * [\[webaudio\] Sample doesn't work without modification](https://github.com/mdn/content/issues/33175) (2024-04-19T12:46:49Z)
