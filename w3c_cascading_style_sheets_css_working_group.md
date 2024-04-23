@@ -4,8 +4,6 @@
 
 * [\[css-position-3\] Update the content in Sticky positioning in position - CSS section](https://github.com/mdn/content/issues/33146) (2024-04-18T08:15:12Z)
   
-* [\[css-flexbox-1\] Directory page order and name](https://github.com/mdn/content/issues/33128) (2024-04-17T06:26:58Z)
-  
 * [\[css-grid-3\] Confusing/wrong explanation of the span keyword](https://github.com/mdn/content/issues/33066) (2024-04-12T22:03:28Z)
   
 * [\[css-fonts-5\] Flaw in Formal Syntax?](https://github.com/mdn/content/issues/33024) (2024-04-10T14:04:09Z)
