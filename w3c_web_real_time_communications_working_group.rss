@@ -4,10 +4,119 @@
         <title>W3C Web Real-Time Communications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_real_time_communications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Real-Time Communications Working Group</description>
-        <lastBuildDate>Wed, 13 Sep 2023 08:47:28 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 23 Apr 2024 10:50:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[webrtc] RTCIceCandidate: relatedAddress Examples section error]]></title>
+            <link>https://github.com/mdn/content/issues/33227</link>
+            <guid>https://github.com/mdn/content/issues/33227</guid>
+            <pubDate>Tue, 23 Apr 2024 10:50:55 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidate/relatedAddress" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidate/relatedAddress</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<h2 dir="auto">Examples</h2>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="switch (candidate.type) {
+  case &quot;host&quot;:
+    console.log(`Host candidate's IP address is ${candidate.ip}`);
+    break;
+  case &quot;srflx&quot;:
+    console.log(
+      `Server reflexive candidate's base address is ${candidate.relatedAddress}; reachable at ${candidate.ip}`,
+    );
+    break;
+  case &quot;prflx&quot;:
+    console.log(
+      `Peer reflexive candidate's base address is ${candidate.relatedAddress}; reachable at ${candidate.ip}`,
+    );
+    break;
+  case &quot;relay&quot;:
+    console.log(
+      `Relay candidate's address assigned by the TURN server is ${candidate.relatedAddress}; reachable at ${candidate.ip}`,
+    );
+    break;
+}"><pre class="notranslate"><span class="pl-k">switch</span> <span class="pl-kos">(</span><span class="pl-s1">candidate</span><span class="pl-kos">.</span><span class="pl-c1">type</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-k">case</span> <span class="pl-s">"host"</span>:
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`Host candidate's IP address is <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">candidate</span><span class="pl-kos">.</span><span class="pl-c1">ip</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-k">break</span><span class="pl-kos">;</span>
+  <span class="pl-k">case</span> <span class="pl-s">"srflx"</span>:
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span>
+      <span class="pl-s">`Server reflexive candidate's base address is <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">candidate</span><span class="pl-kos">.</span><span class="pl-c1">relatedAddress</span><span class="pl-kos">}</span></span>; reachable at <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">candidate</span><span class="pl-kos">.</span><span class="pl-c1">ip</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">,</span>
+    <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-k">break</span><span class="pl-kos">;</span>
+  <span class="pl-k">case</span> <span class="pl-s">"prflx"</span>:
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span>
+      <span class="pl-s">`Peer reflexive candidate's base address is <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">candidate</span><span class="pl-kos">.</span><span class="pl-c1">relatedAddress</span><span class="pl-kos">}</span></span>; reachable at <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">candidate</span><span class="pl-kos">.</span><span class="pl-c1">ip</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">,</span>
+    <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-k">break</span><span class="pl-kos">;</span>
+  <span class="pl-k">case</span> <span class="pl-s">"relay"</span>:
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span>
+      <span class="pl-s">`Relay candidate's address assigned by the TURN server is <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">candidate</span><span class="pl-kos">.</span><span class="pl-c1">relatedAddress</span><span class="pl-kos">}</span></span>; reachable at <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">candidate</span><span class="pl-kos">.</span><span class="pl-c1">ip</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">,</span>
+    <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-k">break</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span></pre></div>
+<p dir="auto">the candidate has no <code class="notranslate">ip</code> property but <code class="notranslate">address</code> in <a href="https://w3c.github.io/webrtc-pc/#attributes-4" rel="nofollow">WebRTC Candidate's Attributes</a></p>
+<h3 dir="auto">What did you expect to see?</h3>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="switch (candidate.type) {
+  case &quot;host&quot;:
+    console.log(`Host candidate's IP address is ${candidate.address}`);
+    break;
+  case &quot;srflx&quot;:
+    console.log(
+      `Server reflexive candidate's base address is ${candidate.relatedAddress}; reachable at ${candidate.address}`,
+    );
+    break;
+  case &quot;prflx&quot;:
+    console.log(
+      `Peer reflexive candidate's base address is ${candidate.relatedAddress}; reachable at ${candidate.address}`,
+    );
+    break;
+  case &quot;relay&quot;:
+    console.log(
+      `Relay candidate's address assigned by the TURN server is ${candidate.relatedAddress}; reachable at ${candidate.address}`,
+    );
+    break;
+}"><pre class="notranslate"><span class="pl-k">switch</span> <span class="pl-kos">(</span><span class="pl-s1">candidate</span><span class="pl-kos">.</span><span class="pl-c1">type</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-k">case</span> <span class="pl-s">"host"</span>:
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`Host candidate's IP address is <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">candidate</span><span class="pl-kos">.</span><span class="pl-c1">address</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-k">break</span><span class="pl-kos">;</span>
+  <span class="pl-k">case</span> <span class="pl-s">"srflx"</span>:
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span>
+      <span class="pl-s">`Server reflexive candidate's base address is <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">candidate</span><span class="pl-kos">.</span><span class="pl-c1">relatedAddress</span><span class="pl-kos">}</span></span>; reachable at <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">candidate</span><span class="pl-kos">.</span><span class="pl-c1">address</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">,</span>
+    <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-k">break</span><span class="pl-kos">;</span>
+  <span class="pl-k">case</span> <span class="pl-s">"prflx"</span>:
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span>
+      <span class="pl-s">`Peer reflexive candidate's base address is <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">candidate</span><span class="pl-kos">.</span><span class="pl-c1">relatedAddress</span><span class="pl-kos">}</span></span>; reachable at <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">candidate</span><span class="pl-kos">.</span><span class="pl-c1">address</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">,</span>
+    <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-k">break</span><span class="pl-kos">;</span>
+  <span class="pl-k">case</span> <span class="pl-s">"relay"</span>:
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span>
+      <span class="pl-s">`Relay candidate's address assigned by the TURN server is <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">candidate</span><span class="pl-kos">.</span><span class="pl-c1">relatedAddress</span><span class="pl-kos">}</span></span>; reachable at <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">candidate</span><span class="pl-kos">.</span><span class="pl-c1">address</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">,</span>
+    <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-k">break</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span></pre></div>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://w3c.github.io/webrtc-pc/#attributes-4" rel="nofollow">WebRTC Candidate's Attributes</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">also in<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidate/relatedAddress" rel="nofollow">relatedAddress</a>,<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidate/relatedAddress" rel="nofollow">relatedPort</a></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/rtcicecandidate/relatedaddress</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidate/relatedAddress" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidate/relatedAddress</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcicecandidate/relatedaddress/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcicecandidate/relatedaddress/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/592f6ec42e54981b6573b58ec0343c9aa8cbbda8/hovercard" href="https://github.com/mdn/content/commit/592f6ec42e54981b6573b58ec0343c9aa8cbbda8"><tt>592f6ec</tt></a></li>
+<li>Document last modified: 2023-07-25T00:27:48.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[webrtc] RTCDataChannel bufferedamountlow event not sent if the threshold is 0?]]></title>
             <link>https://github.com/mdn/content/issues/29087</link>
