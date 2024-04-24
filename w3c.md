@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[cssom-view-1\] offsetParent affected by transform, filter, etc](https://github.com/mdn/content/issues/33252) (2024-04-24T08:56:33Z)
+  
 * [\[cssom-view-1\] There is no 'instant' option in 'behavior'](https://github.com/mdn/content/issues/33246) (2024-04-24T02:06:47Z)
   
 * [\[webrtc\] document of RTCIceCandidate's properties { url, relayProtocol}  are missing](https://github.com/mdn/content/issues/33228) (2024-04-23T11:26:42Z)

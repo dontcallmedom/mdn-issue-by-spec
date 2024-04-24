@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[cssom-view-1\] offsetParent affected by transform, filter, etc](https://github.com/mdn/content/issues/33252) (2024-04-24T08:56:33Z)
+  
 * [\[cssom-view-1\] There is no 'instant' option in 'behavior'](https://github.com/mdn/content/issues/33246) (2024-04-24T02:06:47Z)
   
 * [\[css-position-3\] Update the content in Sticky positioning in position - CSS section](https://github.com/mdn/content/issues/33146) (2024-04-18T08:15:12Z)
