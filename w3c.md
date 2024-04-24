@@ -4,7 +4,7 @@
 
 * [\[cssom-view-1\] There is no 'instant' option in 'behavior'](https://github.com/mdn/content/issues/33246) (2024-04-24T02:06:47Z)
   
-* [\[webrtc\] document of RTCIceCandidate's properties { url, relayProtocol}  are miss](https://github.com/mdn/content/issues/33228) (2024-04-23T11:26:42Z)
+* [\[webrtc\] document of RTCIceCandidate's properties { url, relayProtocol}  are missing](https://github.com/mdn/content/issues/33228) (2024-04-23T11:26:42Z)
   
 * [\[webrtc\] RTCIceCandidate: relatedAddress Examples section error](https://github.com/mdn/content/issues/33227) (2024-04-23T10:50:55Z)
   
