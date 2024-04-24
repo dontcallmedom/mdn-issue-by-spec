@@ -4,10 +4,43 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Fri, 19 Apr 2024 06:59:41 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 24 Apr 2024 14:24:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] autocapitalize=off is considered deprecated by wpt]]></title>
+            <link>https://github.com/mdn/content/issues/33258</link>
+            <guid>https://github.com/mdn/content/issues/33258</guid>
+            <pubDate>Wed, 24 Apr 2024 14:24:55 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/autocapitalize" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/autocapitalize</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">According to <a href="https://github.com/web-platform-tests/wpt/blame/55cb997b1b096774ac1b8f386b7f4e871e3902e1/html/editing/editing-0/autocapitalization/autocapitalize.html#L33">https://github.com/web-platform-tests/wpt/blame/55cb997b1b096774ac1b8f386b7f4e871e3902e1/html/editing/editing-0/autocapitalization/autocapitalize.html#L33</a> <code class="notranslate">on</code> and <code class="notranslate">off</code> are deprecated.<br>
+If I change the attribute in the inspector <code class="notranslate">off</code> gets replaced by <code class="notranslate">none</code> immediately.</p>
+<p dir="auto">This can lead to hydration errors if your server render lib such as <code class="notranslate">react-dom</code> take the given value for granted, but your browser normalizes the value to <code class="notranslate">none</code>.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Some mentions about the status of <code class="notranslate">off</code> and <code class="notranslate">on</code>.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://github.com/web-platform-tests/wpt/blame/55cb997b1b096774ac1b8f386b7f4e871e3902e1/html/editing/editing-0/autocapitalization/autocapitalize.html#L33">https://github.com/web-platform-tests/wpt/blame/55cb997b1b096774ac1b8f386b7f4e871e3902e1/html/editing/editing-0/autocapitalization/autocapitalize.html#L33</a></p>
+<p dir="auto"><a href="https://phabricator.services.mozilla.com/D86674#2839687" rel="nofollow">https://phabricator.services.mozilla.com/D86674#2839687</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/global_attributes/autocapitalize</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/autocapitalize" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/autocapitalize</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/global_attributes/autocapitalize/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/global_attributes/autocapitalize/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/26ea1a065b861bb59ae1dd14dea053e62ad39969/hovercard" href="https://github.com/mdn/content/commit/26ea1a065b861bb59ae1dd14dea053e62ad39969"><tt>26ea1a0</tt></a></li>
+<li>Document last modified: 2024-01-02T04:26:07.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] [WebAPI] Add HTMLTemplateElement.shadowrootclonable attribute]]></title>
             <link>https://github.com/mdn/content/issues/33160</link>
@@ -1140,7 +1173,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTM5Njc5NDIsIm5iZiI6MTcxMzk2NzY0MiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQyNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MjRUMTQwNzIyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MjEwNDZiNzZkNmRjM2EwMjIwZmVlMDQxOGM0Y2QwZWRlYmJkODU5MGY4NjQ0ZmRkZWYxODkyMzkwYTgwZDU0ZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.orIpClZxh8RJWBqxOdpXu7Fr1Ec2zpbfKZpyq6rahSs"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTM5Njc5NDIsIm5iZiI6MTcxMzk2NzY0MiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQyNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MjRUMTQwNzIyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MjEwNDZiNzZkNmRjM2EwMjIwZmVlMDQxOGM0Y2QwZWRlYmJkODU5MGY4NjQ0ZmRkZWYxODkyMzkwYTgwZDU0ZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.orIpClZxh8RJWBqxOdpXu7Fr1Ec2zpbfKZpyq6rahSs" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTM5NjkyMDAsIm5iZiI6MTcxMzk2ODkwMCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQyNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MjRUMTQyODIwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Mzg0NDAxODI3ZjY0MzQzNTI3MDJmN2QxYjRmOGIwOTFiMDMxMjIwYzFjNmM3NDRiZjU0OGI4ZjgzZGNkN2RkZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.LgQ9MKnhC7fRD-QyQ3jnIy2DCOUE7RXtM2Reo-JDK7s"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTM5NjkyMDAsIm5iZiI6MTcxMzk2ODkwMCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQyNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MjRUMTQyODIwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Mzg0NDAxODI3ZjY0MzQzNTI3MDJmN2QxYjRmOGIwOTFiMDMxMjIwYzFjNmM3NDRiZjU0OGI4ZjgzZGNkN2RkZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.LgQ9MKnhC7fRD-QyQ3jnIy2DCOUE7RXtM2Reo-JDK7s" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
