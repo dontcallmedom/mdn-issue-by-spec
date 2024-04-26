@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Accessibility advice is misleading](https://github.com/mdn/content/issues/33283) (2024-04-26T14:13:16Z)
+  
 * [\[html\] autocapitalize=off is considered deprecated by wpt](https://github.com/mdn/content/issues/33258) (2024-04-24T14:24:55Z)
   
 * [\[html\] \[WebAPI\] Add HTMLTemplateElement.shadowrootclonable attribute](https://github.com/mdn/content/issues/33160) (2024-04-19T06:59:41Z)
