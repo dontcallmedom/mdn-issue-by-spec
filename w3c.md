@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
+  
 * [\[cssom-view-1\] offsetParent affected by transform, filter, etc](https://github.com/mdn/content/issues/33252) (2024-04-24T08:56:33Z)
   
 * [\[cssom-view-1\] There is no 'instant' option in 'behavior'](https://github.com/mdn/content/issues/33246) (2024-04-24T02:06:47Z)

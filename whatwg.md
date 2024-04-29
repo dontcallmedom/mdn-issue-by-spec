@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
+  
 * [\[notifications\] It looks like notificationclick events are actually fired on iOS Safari - please verify](https://github.com/mdn/content/issues/33309) (2024-04-29T11:28:27Z)
   
 * [\[html\] Accessibility advice is misleading](https://github.com/mdn/content/issues/33283) (2024-04-26T14:13:16Z)
