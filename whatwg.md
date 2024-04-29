@@ -4,8 +4,6 @@
 
 * [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
   
-* [\[notifications\] It looks like notificationclick events are actually fired on iOS Safari - please verify](https://github.com/mdn/content/issues/33309) (2024-04-29T11:28:27Z)
-  
 * [\[html\] Accessibility advice is misleading](https://github.com/mdn/content/issues/33283) (2024-04-26T14:13:16Z)
   
 * [\[html\] autocapitalize=off is considered deprecated by wpt](https://github.com/mdn/content/issues/33258) (2024-04-24T14:24:55Z)
