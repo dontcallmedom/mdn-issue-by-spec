@@ -6,8 +6,6 @@
   
 * [\[ecmascript\] Incorrect information about "return await" performance penalty](https://github.com/mdn/content/issues/32847) (2024-03-26T16:08:40Z)
   
-* [\[ecmascript\] Mention 3n is BigInt syntax](https://github.com/mdn/content/issues/32492) (2024-02-29T19:50:11Z)
-  
 * [\[ecmascript\] Wrong use of \`isNaN()\`.](https://github.com/mdn/content/issues/32210) (2024-02-10T21:53:19Z)
   
 * [\[ecmascript\] A JavaScript value of type symbol is not an object.](https://github.com/mdn/content/issues/32207) (2024-02-10T14:09:09Z)
