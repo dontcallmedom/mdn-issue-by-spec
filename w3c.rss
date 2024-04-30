@@ -4,10 +4,157 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Mon, 29 Apr 2024 11:34:54 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 30 Apr 2024 23:14:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[entries-api] The `readEntries` method of `FileSystemDirectoryReader` was incorrectly used in a synchronous manner instead of asynchronously.]]></title>
+            <link>https://github.com/mdn/content/issues/33342</link>
+            <guid>https://github.com/mdn/content/issues/33342</guid>
+            <pubDate>Tue, 30 Apr 2024 23:14:07 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryEntry/createReader" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryEntry/createReader</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Examples</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<ul dir="auto">
+<li>The returned <code class="notranslate">entries</code> always remains an empty array ([]), because by the time <code class="notranslate">readDirectory</code> function completes, the callback of <code class="notranslate">readEntries</code> hasn't executed yet, leaving <code class="notranslate">entries</code> unaltered.</li>
+<li>The <code class="notranslate">toArray()</code> function is not defined here.</li>
+<li>The recursive logic is flawed. <code class="notranslate">getEntries()</code> fails to retrieve subfolders, preventing further traversal and acquisition of all files within directories. It also potentially leads to an infinite loop.</li>
+</ul>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function readDirectory(directory) {
+  let dirReader = directory.createReader();
+  let entries = [];
+
+  let getEntries = () =&gt; {
+    dirReader.readEntries(
+      (results) =&gt; {
+        if (results.length) {
+          entries = entries.concat(toArray(results));
+          getEntries();
+        }
+      },
+      (error) =&gt; {
+        /* handle error — error is a FileError object */
+      },
+    );
+  };
+
+  getEntries();
+  return entries;
+}"><pre class="notranslate"><span class="pl-k">function</span> <span class="pl-en">readDirectory</span><span class="pl-kos">(</span><span class="pl-s1">directory</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-k">let</span> <span class="pl-s1">dirReader</span> <span class="pl-c1">=</span> <span class="pl-s1">directory</span><span class="pl-kos">.</span><span class="pl-en">createReader</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-k">let</span> <span class="pl-s1">entries</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-kos">]</span><span class="pl-kos">;</span>
+
+  <span class="pl-k">let</span> <span class="pl-en">getEntries</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+    <span class="pl-s1">dirReader</span><span class="pl-kos">.</span><span class="pl-en">readEntries</span><span class="pl-kos">(</span>
+      <span class="pl-kos">(</span><span class="pl-s1">results</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+        <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">results</span><span class="pl-kos">.</span><span class="pl-c1">length</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+          <span class="pl-s1">entries</span> <span class="pl-c1">=</span> <span class="pl-s1">entries</span><span class="pl-kos">.</span><span class="pl-en">concat</span><span class="pl-kos">(</span><span class="pl-en">toArray</span><span class="pl-kos">(</span><span class="pl-s1">results</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+          <span class="pl-en">getEntries</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+        <span class="pl-kos">}</span>
+      <span class="pl-kos">}</span><span class="pl-kos">,</span>
+      <span class="pl-kos">(</span><span class="pl-s1">error</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+        <span class="pl-c">/* handle error — error is a FileError object */</span>
+      <span class="pl-kos">}</span><span class="pl-kos">,</span>
+    <span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span><span class="pl-kos">;</span>
+
+  <span class="pl-en">getEntries</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-k">return</span> <span class="pl-s1">entries</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Given a <code class="notranslate">FileSystemDirectoryEntry</code>, obtain all files within the directory (including subdirectories) represented by this object.</p>
+<p dir="auto">Below is my attempted modification using promises.</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function readDirectory(directory) {
+  return new Promise((resolve, reject) =&gt; {
+    let dirReader = directory.createReader();
+    let entries = [];
+
+    let getEntries = () =&gt; {
+      dirReader.readEntries(
+        (results) =&gt; {
+          if (results.length) {
+            const p = [];
+            for (const entry of results) {
+              if (entry.isDirectory) {
+                p.push(readDirectory(entry));
+              } else {
+                p.push(Promise.resolve(entry));
+              }
+            }
+            Promise.all(p).then((res) =&gt; {
+              for (const e of res) {
+                if (Array.isArray(e)) entries.push(...e);
+                else entries.push(e);
+              }
+              resolve(entries);
+            });
+          } else {
+            resolve([]);
+          }
+        },
+        (error) =&gt; {
+          /* handle error — error is a FileError object */
+        }
+      );
+    };
+    getEntries();
+  });
+}"><pre class="notranslate"><span class="pl-k">function</span> <span class="pl-en">readDirectory</span><span class="pl-kos">(</span><span class="pl-s1">directory</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-k">return</span> <span class="pl-k">new</span> <span class="pl-v">Promise</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">resolve</span><span class="pl-kos">,</span> <span class="pl-s1">reject</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+    <span class="pl-k">let</span> <span class="pl-s1">dirReader</span> <span class="pl-c1">=</span> <span class="pl-s1">directory</span><span class="pl-kos">.</span><span class="pl-en">createReader</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-k">let</span> <span class="pl-s1">entries</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-kos">]</span><span class="pl-kos">;</span>
+
+    <span class="pl-k">let</span> <span class="pl-en">getEntries</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+      <span class="pl-s1">dirReader</span><span class="pl-kos">.</span><span class="pl-en">readEntries</span><span class="pl-kos">(</span>
+        <span class="pl-kos">(</span><span class="pl-s1">results</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+          <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">results</span><span class="pl-kos">.</span><span class="pl-c1">length</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+            <span class="pl-k">const</span> <span class="pl-s1">p</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-kos">]</span><span class="pl-kos">;</span>
+            <span class="pl-k">for</span> <span class="pl-kos">(</span><span class="pl-k">const</span> <span class="pl-s1">entry</span> <span class="pl-k">of</span> <span class="pl-s1">results</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+              <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">entry</span><span class="pl-kos">.</span><span class="pl-c1">isDirectory</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+                <span class="pl-s1">p</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-en">readDirectory</span><span class="pl-kos">(</span><span class="pl-s1">entry</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+              <span class="pl-kos">}</span> <span class="pl-k">else</span> <span class="pl-kos">{</span>
+                <span class="pl-s1">p</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-v">Promise</span><span class="pl-kos">.</span><span class="pl-en">resolve</span><span class="pl-kos">(</span><span class="pl-s1">entry</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+              <span class="pl-kos">}</span>
+            <span class="pl-kos">}</span>
+            <span class="pl-v">Promise</span><span class="pl-kos">.</span><span class="pl-en">all</span><span class="pl-kos">(</span><span class="pl-s1">p</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">res</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+              <span class="pl-k">for</span> <span class="pl-kos">(</span><span class="pl-k">const</span> <span class="pl-s1">e</span> <span class="pl-k">of</span> <span class="pl-s1">res</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+                <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-v">Array</span><span class="pl-kos">.</span><span class="pl-en">isArray</span><span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-s1">entries</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span>...<span class="pl-s1">e</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+                <span class="pl-k">else</span> <span class="pl-s1">entries</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+              <span class="pl-kos">}</span>
+              <span class="pl-s1">resolve</span><span class="pl-kos">(</span><span class="pl-s1">entries</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+            <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+          <span class="pl-kos">}</span> <span class="pl-k">else</span> <span class="pl-kos">{</span>
+            <span class="pl-s1">resolve</span><span class="pl-kos">(</span><span class="pl-kos">[</span><span class="pl-kos">]</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+          <span class="pl-kos">}</span>
+        <span class="pl-kos">}</span><span class="pl-kos">,</span>
+        <span class="pl-kos">(</span><span class="pl-s1">error</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+          <span class="pl-c">/* handle error — error is a FileError object */</span>
+        <span class="pl-kos">}</span>
+      <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span><span class="pl-kos">;</span>
+    <span class="pl-en">getEntries</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span></pre></div>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/filesystemdirectoryentry/createreader</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryEntry/createReader" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryEntry/createReader</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/filesystemdirectoryentry/createreader/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/filesystemdirectoryentry/createreader/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ce85e3fb7865330e4ac2a6dad25db5cf5d27ea74/hovercard" href="https://github.com/mdn/content/commit/ce85e3fb7865330e4ac2a6dad25db5cf5d27ea74"><tt>ce85e3f</tt></a></li>
+<li>Document last modified: 2024-03-11T23:58:17.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, mediacapture-streams] Unclear example of MediaStream: getTrackById() method]]></title>
             <link>https://github.com/mdn/content/issues/33310</link>
@@ -244,8 +391,8 @@ Required: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory/d
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">[Span](Contributes a grid span to the grid item's placement such that the corresponding edge of the grid item's grid area is n lines from the opposite edge.)</p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/519988/322149279-8919dbdd-fbc2-416f-b9b8-0d211c057b16.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ1MTg3MjAsIm5iZiI6MTcxNDUxODQyMCwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjc5LTg5MTlkYmRkLWZiYzItNDE2Zi1iOWI4LTBkMjExYzA1N2IxNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQzMFQyMzA3MDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03Y2VlNzE5M2I0NDlmMWI4ZTI4NTBkNmZmODQ0YmQ4OWMyNGIxY2ZmMDU3NmY5M2Q0ODRlN2ZjMzQwZWU5OTE2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.q9tlt2zkR-PB2vbTrYp_g5vkLrNZrEbOSNqsK0OEUsw"><img src="https://private-user-images.githubusercontent.com/519988/322149279-8919dbdd-fbc2-416f-b9b8-0d211c057b16.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ1MTg3MjAsIm5iZiI6MTcxNDUxODQyMCwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjc5LTg5MTlkYmRkLWZiYzItNDE2Zi1iOWI4LTBkMjExYzA1N2IxNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQzMFQyMzA3MDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03Y2VlNzE5M2I0NDlmMWI4ZTI4NTBkNmZmODQ0YmQ4OWMyNGIxY2ZmMDU3NmY5M2Q0ODRlN2ZjMzQwZWU5OTE2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.q9tlt2zkR-PB2vbTrYp_g5vkLrNZrEbOSNqsK0OEUsw" alt="Screenshot 2024-04-13 at 00 56 05" style="max-width: 100%;"></a><br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/519988/322149289-5d9f55ca-0cfc-4aa7-b1f6-406707214d1a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ1MTg3MjAsIm5iZiI6MTcxNDUxODQyMCwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjg5LTVkOWY1NWNhLTBjZmMtNGFhNy1iMWY2LTQwNjcwNzIxNGQxYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQzMFQyMzA3MDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01ODMxNzRmNjNlZjA2ODlhNDVlM2ZlYzJjZWU4ZWRjYTUxYWVkNTg5OTQwYmNkYTgyODAxYTg5MTA4ZmJhNzUxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.OCm-Qi2NW0HnTJ7ZhvinTrbQcBDJYGq21DKbFpmk_Fg"><img src="https://private-user-images.githubusercontent.com/519988/322149289-5d9f55ca-0cfc-4aa7-b1f6-406707214d1a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ1MTg3MjAsIm5iZiI6MTcxNDUxODQyMCwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjg5LTVkOWY1NWNhLTBjZmMtNGFhNy1iMWY2LTQwNjcwNzIxNGQxYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQzMFQyMzA3MDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01ODMxNzRmNjNlZjA2ODlhNDVlM2ZlYzJjZWU4ZWRjYTUxYWVkNTg5OTQwYmNkYTgyODAxYTg5MTA4ZmJhNzUxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.OCm-Qi2NW0HnTJ7ZhvinTrbQcBDJYGq21DKbFpmk_Fg" alt="Screenshot 2024-04-13 at 00 56 24" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/519988/322149279-8919dbdd-fbc2-416f-b9b8-0d211c057b16.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ1MTk1ODUsIm5iZiI6MTcxNDUxOTI4NSwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjc5LTg5MTlkYmRkLWZiYzItNDE2Zi1iOWI4LTBkMjExYzA1N2IxNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQzMFQyMzIxMjVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03MWMyMTM5ZGQ0ZmFlZmU1YjBjOWUzMzM1NGIwYjk4OTRjZGQwYTUwNmI2ZTliY2I5MjUwM2UzMmJhMzQ2MWZlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.XrEpMJGUHoisRPgAMHA3wME4PqvzSU11nQimTfoCiig"><img src="https://private-user-images.githubusercontent.com/519988/322149279-8919dbdd-fbc2-416f-b9b8-0d211c057b16.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ1MTk1ODUsIm5iZiI6MTcxNDUxOTI4NSwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjc5LTg5MTlkYmRkLWZiYzItNDE2Zi1iOWI4LTBkMjExYzA1N2IxNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQzMFQyMzIxMjVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03MWMyMTM5ZGQ0ZmFlZmU1YjBjOWUzMzM1NGIwYjk4OTRjZGQwYTUwNmI2ZTliY2I5MjUwM2UzMmJhMzQ2MWZlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.XrEpMJGUHoisRPgAMHA3wME4PqvzSU11nQimTfoCiig" alt="Screenshot 2024-04-13 at 00 56 05" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/519988/322149289-5d9f55ca-0cfc-4aa7-b1f6-406707214d1a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ1MTk1ODUsIm5iZiI6MTcxNDUxOTI4NSwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjg5LTVkOWY1NWNhLTBjZmMtNGFhNy1iMWY2LTQwNjcwNzIxNGQxYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQzMFQyMzIxMjVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yN2YxM2RiZDFmZjIwOTg1NDk0YTY4ODQwNjRmMGJjMTZmYTA2YTFmMzliMmMyN2E4MGFkNzUzZGYyODBmODE5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9._jbaH8694wY4W3UXSzneT85Zj11OE-OUztgpaQKtzcg"><img src="https://private-user-images.githubusercontent.com/519988/322149289-5d9f55ca-0cfc-4aa7-b1f6-406707214d1a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ1MTk1ODUsIm5iZiI6MTcxNDUxOTI4NSwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjg5LTVkOWY1NWNhLTBjZmMtNGFhNy1iMWY2LTQwNjcwNzIxNGQxYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQzMFQyMzIxMjVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yN2YxM2RiZDFmZjIwOTg1NDk0YTY4ODQwNjRmMGJjMTZmYTA2YTFmMzliMmMyN2E4MGFkNzUzZGYyODBmODE5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9._jbaH8694wY4W3UXSzneT85Zj11OE-OUztgpaQKtzcg" alt="Screenshot 2024-04-13 at 00 56 24" style="max-width: 100%;"></a></p>
 <h3 dir="auto">MDN metadata</h3>
 
 <details>
@@ -1495,7 +1642,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ1MTg3MTQsIm5iZiI6MTcxNDUxODQxNCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQzMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MzBUMjMwNjU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MWJiZjFhNWVlMGRjOWEyMzhlNzE5OTc0NTY5MzgyZWZhM2M2YzRkZGM2MTQ5YjAxYjk2MjhkZTdjMDQ1YzJjZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.DbFBS4fearcTUHAXxXJgayDeqn_EizadFMmZFmhjYis"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ1MTg3MTQsIm5iZiI6MTcxNDUxODQxNCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQzMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MzBUMjMwNjU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MWJiZjFhNWVlMGRjOWEyMzhlNzE5OTc0NTY5MzgyZWZhM2M2YzRkZGM2MTQ5YjAxYjk2MjhkZTdjMDQ1YzJjZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.DbFBS4fearcTUHAXxXJgayDeqn_EizadFMmZFmhjYis" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ1MTk1NzksIm5iZiI6MTcxNDUxOTI3OSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQzMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MzBUMjMyMTE5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MGQ3ZTAxMzdkY2ZmMzQ2NDNkNWM2NTdlZDEzMmVjMTlmNmM1NmUzYTYyM2IyNzMzNmJkODMxNzM4YTg1NTlmMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.PnBlmEBq1LTGjmJx0QQW7m9-t0ieeLBkViAYwkEzrH0"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ1MTk1NzksIm5iZiI6MTcxNDUxOTI3OSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQzMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MzBUMjMyMTE5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MGQ3ZTAxMzdkY2ZmMzQ2NDNkNWM2NTdlZDEzMmVjMTlmNmM1NmUzYTYyM2IyNzMzNmJkODMxNzM4YTg1NTlmMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.PnBlmEBq1LTGjmJx0QQW7m9-t0ieeLBkViAYwkEzrH0" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
@@ -2015,10 +2162,10 @@ interface PushSubscriptionJSON {
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The example doesn't work. Also. it has different errors depending on the platform you use. On desktop web:<br>
 <code class="notranslate">Error: TypeError: navigator.share is not a function</code></p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/102827935/247702540-0504c6fa-4020-4fa2-aa0b-4cdc1cc0bb66.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ1MTg3MTQsIm5iZiI6MTcxNDUxODQxNCwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNTQwLTA1MDRjNmZhLTQwMjAtNGZhMi1hYTBiLTRjZGMxY2MwYmI2Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQzMFQyMzA2NTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wMmU4ODY3MzkzZjExYzVhMDZkNWEyM2U5OWQ0NzQxZTEwNWNiMWU3MmJjNzExYWE5MDBiZDIzY2I1YjI0NzBmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.LrcbbgS-HG3fEOzBMK5soKG4gfIIp22Z9JbRakl271Y"><img src="https://private-user-images.githubusercontent.com/102827935/247702540-0504c6fa-4020-4fa2-aa0b-4cdc1cc0bb66.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ1MTg3MTQsIm5iZiI6MTcxNDUxODQxNCwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNTQwLTA1MDRjNmZhLTQwMjAtNGZhMi1hYTBiLTRjZGMxY2MwYmI2Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQzMFQyMzA2NTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wMmU4ODY3MzkzZjExYzVhMDZkNWEyM2U5OWQ0NzQxZTEwNWNiMWU3MmJjNzExYWE5MDBiZDIzY2I1YjI0NzBmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.LrcbbgS-HG3fEOzBMK5soKG4gfIIp22Z9JbRakl271Y" alt="1" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/102827935/247702540-0504c6fa-4020-4fa2-aa0b-4cdc1cc0bb66.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ1MTk1NzksIm5iZiI6MTcxNDUxOTI3OSwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNTQwLTA1MDRjNmZhLTQwMjAtNGZhMi1hYTBiLTRjZGMxY2MwYmI2Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQzMFQyMzIxMTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wZGFiYjM1ZjE1Njg3ZWU4ZDQ1ZDFkMThlYjE2MDAxNzJkNzQ2NjZjMDFkODQ3NTRlYTQ4NTdhYTk2NDhhNzZjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.5YUjK4-1L0L56-UXRuh0MpdLpcQmcOhLExyHcXzml4Q"><img src="https://private-user-images.githubusercontent.com/102827935/247702540-0504c6fa-4020-4fa2-aa0b-4cdc1cc0bb66.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ1MTk1NzksIm5iZiI6MTcxNDUxOTI3OSwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNTQwLTA1MDRjNmZhLTQwMjAtNGZhMi1hYTBiLTRjZGMxY2MwYmI2Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQzMFQyMzIxMTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wZGFiYjM1ZjE1Njg3ZWU4ZDQ1ZDFkMThlYjE2MDAxNzJkNzQ2NjZjMDFkODQ3NTRlYTQ4NTdhYTk2NDhhNzZjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.5YUjK4-1L0L56-UXRuh0MpdLpcQmcOhLExyHcXzml4Q" alt="1" style="max-width: 100%;"></a></p>
 <p dir="auto">on mWeb (iOS Safari):<br>
 <code class="notranslate">Error: NotAllowedError: Third-party iframes are not allowed to call share() unless explicitly allowed via Feature-Policy (web-share)</code></p>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/102827935/247702629-9c20d6ee-75cd-4319-b024-f3f7eac9bd49.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ1MTg3MTQsIm5iZiI6MTcxNDUxODQxNCwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNjI5LTljMjBkNmVlLTc1Y2QtNDMxOS1iMDI0LWYzZjdlYWM5YmQ0OS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQzMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MzBUMjMwNjU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MDFkYzU4MzVkMmEzMDk4Y2MxNTlkMThiYThmM2RhODQ5MWQxOThkZTYxODUxMWM4MWY1NDkzNzMwODc3Mzc1MiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.YbLpSoXLUri0K1AQu_AA_8-uwx06lnKFH4AVqVINgVA"><img src="https://private-user-images.githubusercontent.com/102827935/247702629-9c20d6ee-75cd-4319-b024-f3f7eac9bd49.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ1MTg3MTQsIm5iZiI6MTcxNDUxODQxNCwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNjI5LTljMjBkNmVlLTc1Y2QtNDMxOS1iMDI0LWYzZjdlYWM5YmQ0OS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQzMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MzBUMjMwNjU0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MDFkYzU4MzVkMmEzMDk4Y2MxNTlkMThiYThmM2RhODQ5MWQxOThkZTYxODUxMWM4MWY1NDkzNzMwODc3Mzc1MiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.YbLpSoXLUri0K1AQu_AA_8-uwx06lnKFH4AVqVINgVA" width="300" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/102827935/247702629-9c20d6ee-75cd-4319-b024-f3f7eac9bd49.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ1MTk1NzksIm5iZiI6MTcxNDUxOTI3OSwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNjI5LTljMjBkNmVlLTc1Y2QtNDMxOS1iMDI0LWYzZjdlYWM5YmQ0OS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQzMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MzBUMjMyMTE5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDkwNmViZTY4MGQ1ZWUzOTQwMTA1MTFmMTQxZWRmMDUyYTRhZThiNGQyOWZlNjE2YzMwNGNlZjVmMDhjODE1YyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.j-mFKYDdi_fe_7D43NyYfbDvRbxZkiERweKTbMM0Fdo"><img src="https://private-user-images.githubusercontent.com/102827935/247702629-9c20d6ee-75cd-4319-b024-f3f7eac9bd49.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ1MTk1NzksIm5iZiI6MTcxNDUxOTI3OSwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNjI5LTljMjBkNmVlLTc1Y2QtNDMxOS1iMDI0LWYzZjdlYWM5YmQ0OS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDQzMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MzBUMjMyMTE5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDkwNmViZTY4MGQ1ZWUzOTQwMTA1MTFmMTQxZWRmMDUyYTRhZThiNGQyOWZlNjE2YzMwNGNlZjVmMDhjODE1YyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.j-mFKYDdi_fe_7D43NyYfbDvRbxZkiERweKTbMM0Fdo" width="300" style="max-width: 100%;"></a>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The share dialog is supposed to launch when I click the button in the example.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
