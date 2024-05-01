@@ -4,31 +4,10 @@
         <title>WHATWG Fetch Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_fetch_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG Fetch Workstream</description>
-        <lastBuildDate>Mon, 29 Apr 2024 15:43:47 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 16 Jan 2024 01:34:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[fetch] Imprecise Access-Control-Request-Headers examples give practitioners false expectations]]></title>
-            <link>https://github.com/mdn/content/issues/33313</link>
-            <guid>https://github.com/mdn/content/issues/33313</guid>
-            <pubDate>Mon, 29 Apr 2024 15:43:47 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Request-Headers" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Request-Headers</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>Directives</em> and <em>Examples</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The text and examples are misleading about the laxity of the format that the Fetch standard imposes on the <code class="notranslate">Access-Control-Request-Headers</code> header. This lack of precision can trip practitioners up: <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2269012744" data-permission-text="Title is private" data-url="https://github.com/rs/cors/issues/176" data-hovercard-type="issue" data-hovercard-url="/rs/cors/issues/176/hovercard" href="https://github.com/rs/cors/issues/176">rs/cors#176</a></p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The Fetch standard requires browsers to construct a sorted list of unique, comma-delimited, byte-lowercase tokens corresponding to the CORS-unsafe request-header names. The text and the examples should reflect that.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<ul dir="auto">
-<li><a href="https://fetch.spec.whatwg.org/#cors-unsafe-request-header-names" rel="nofollow">https://fetch.spec.whatwg.org/#cors-unsafe-request-header-names</a></li>
-<li><a href="https://fetch.spec.whatwg.org/#convert-header-names-to-a-sorted-lowercase-set" rel="nofollow">https://fetch.spec.whatwg.org/#convert-header-names-to-a-sorted-lowercase-set</a></li>
-</ul>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">Other pages of MDN Web Docs are affected.</p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[fetch] Missing Request constructor duplex option]]></title>
             <link>https://github.com/mdn/content/issues/31735</link>
