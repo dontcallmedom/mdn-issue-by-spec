@@ -4,10 +4,78 @@
         <title>W3C Web Application Security Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_application_security_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Application Security Working Group</description>
-        <lastBuildDate>Tue, 26 Sep 2023 04:29:04 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 May 2024 10:37:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[fetch-metadata] Definition of "same-site" is not correct]]></title>
+            <link>https://github.com/mdn/content/issues/33348</link>
+            <guid>https://github.com/mdn/content/issues/33348</guid>
+            <pubDate>Wed, 01 May 2024 10:37:01 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Directives/same-site</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">According to the current wording a request is considered same-site if only the port is different. But it is also set to same-site for different subdomains.</p>
+<p dir="auto">For example, when I send this request from <a href="https://samesitedemo-attacker.jub0bs.com/" rel="nofollow">https://samesitedemo-attacker.jub0bs.com/</a>:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="fetch(&quot;https://samesitedemo.jub0bs.com/readcookie&quot;, {method: &quot;POST&quot;, headers: {&quot;Content-Type&quot;: &quot;application/x-www-form-urlencoded&quot;}, credentials: &quot;include&quot;})"><pre class="notranslate"><code class="notranslate">fetch("https://samesitedemo.jub0bs.com/readcookie", {method: "POST", headers: {"Content-Type": "application/x-www-form-urlencoded"}, credentials: "include"})
+</code></pre></div>
+<p dir="auto">The request headers I see in the Chromium devtools are:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content=":authority: samesitedemo.jub0bs.com
+:method: POST
+Content-Length: 0
+Content-Type: application/x-www-form-urlencoded
+Cookie: StrictCookie=foo; __Host-abc=val
+Origin: https://samesitedemo-attacker.jub0bs.com
+Referer: https://samesitedemo-attacker.jub0bs.com/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+..."><pre class="notranslate"><code class="notranslate">:authority: samesitedemo.jub0bs.com
+:method: POST
+Content-Length: 0
+Content-Type: application/x-www-form-urlencoded
+Cookie: StrictCookie=foo; __Host-abc=val
+Origin: https://samesitedemo-attacker.jub0bs.com
+Referer: https://samesitedemo-attacker.jub0bs.com/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+...
+</code></pre></div>
+<p dir="auto">Notice that <code class="notranslate">Sec-Fetch-Site</code> is <code class="notranslate">same-site</code> but the originating domain (<code class="notranslate">https://samesitedemo-attacker.jub0bs.com</code>) is different than the target domain (<code class="notranslate">https://samesitedemo.jub0bs.com</code>).</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto"><code class="notranslate">same-site</code> is set when the scheme + (eTLD+1) is the same for the originator and the target (ref: <a href="https://web.dev/articles/schemeful-samesite" rel="nofollow">https://web.dev/articles/schemeful-samesite</a>). I'd expect this is more pronounced in the documentation page.</p>
+<p dir="auto">For example:</p>
+<blockquote>
+<p dir="auto">The request initiator and the server hosting the resource have the same scheme and registrable domain (its public suffix plus one subdomain) but not necessarily have the exact domains or ports.</p>
+<p dir="auto">See the <a href="https://publicsuffix.org/list/public_suffix_list.dat" rel="nofollow">Public suffix list</a></p>
+<p dir="auto">Examples:</p>
+<ul dir="auto">
+<li><code class="notranslate">https://example.com</code> and <code class="notranslate">https://sub.example.com</code>, as their registrable domains are the same (public suffix is <code class="notranslate">.com</code>, plus one subdomain is <code class="notranslate">example.com</code> for both cases)</li>
+<li><code class="notranslate">https://test.github.io</code> and <code class="notranslate">https://sub.test.github.io</code>, same reason (public suffix is <code class="notranslate">github.io</code>)</li>
+<li><code class="notranslate">https://example.com</code> and <code class="notranslate">https://example:8443.com</code>, as only the port is different</li>
+</ul>
+</blockquote>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">I was reading the <a href="https://jub0bs.com/posts/2021-01-29-great-samesite-confusion/" rel="nofollow">https://jub0bs.com/posts/2021-01-29-great-samesite-confusion/</a> article and made some tests when I realized that the documentation on MDN is not correct.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/http/headers/sec-fetch-site</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/sec-fetch-site/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/sec-fetch-site/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/835d6632d59993861a0458510402787f8a2c3cb3/hovercard" href="https://github.com/mdn/content/commit/835d6632d59993861a0458510402787f8a2c3cb3"><tt>835d663</tt></a></li>
+<li>Document last modified: 2023-10-25T17:27:32.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[permissions] Navigator.permissions always returns prompt on firefox mobile. Even after the permission is granted.]]></title>
             <link>https://github.com/mdn/content/issues/29291</link>

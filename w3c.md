@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[fetch-metadata\] Definition of "same-site" is not correct](https://github.com/mdn/content/issues/33348) (2024-05-01T10:37:01Z)
+  
 * [\[entries-api\] The \`readEntries\` method of \`FileSystemDirectoryReader\` was incorrectly used in a synchronous manner instead of asynchronously.](https://github.com/mdn/content/issues/33342) (2024-04-30T23:14:07Z)
   
 * [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
