@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Media events: Mention that \`ended\` is not fired if \`loop\` is set to true](https://github.com/mdn/content/issues/33398) (2024-05-03T16:57:46Z)
+  
 * [\[fetch\] Subresource Integrity check on Request instance with integrity property](https://github.com/mdn/content/issues/33356) (2024-05-01T17:43:54Z)
   
 * [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
