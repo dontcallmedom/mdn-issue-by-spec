@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-grid-3\] Add information about the use of a period in grid-template-areas strings](https://github.com/mdn/content/issues/33420) (2024-05-05T13:00:21Z)
+  
 * [\[cssom-view-1\] offsetParent affected by transform, filter, etc](https://github.com/mdn/content/issues/33252) (2024-04-24T08:56:33Z)
   
 * [\[css-position-3\] Update the content in Sticky positioning in position - CSS section](https://github.com/mdn/content/issues/33146) (2024-04-18T08:15:12Z)
