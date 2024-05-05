@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-lists-3\] Misinformation in the counter-reset example for the list-item counter](https://github.com/mdn/content/issues/33422) (2024-05-05T13:41:06Z)
+  
 * [\[css-grid-3\] Add information about the use of a period in grid-template-areas strings](https://github.com/mdn/content/issues/33420) (2024-05-05T13:00:21Z)
   
 * [\[entries-api\] The \`readEntries\` method of \`FileSystemDirectoryReader\` was incorrectly used in a synchronous manner instead of asynchronously.](https://github.com/mdn/content/issues/33342) (2024-04-30T23:14:07Z)
