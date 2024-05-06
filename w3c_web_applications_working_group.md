@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[uievents\] KeyboardEvent key property clarification on how to use ShiftKey modifier](https://github.com/mdn/content/issues/33451) (2024-05-06T21:53:57Z)
+  
 * [\[IndexedDB-3\] \[WebAPI\] Implement IDBFactory.databases()](https://github.com/mdn/content/issues/33084) (2024-04-14T05:15:22Z)
   
 * [\[appmanifest\] Manifest::scope documentation incorrectly states that out-of-scope navigation happens in new browser context](https://github.com/mdn/content/issues/32948) (2024-04-03T19:24:15Z)
