@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[ecmascript, webrtc\] Confusing wording around return value of RTCPeerConnection.createOffer](https://github.com/mdn/content/issues/33453) (2024-05-06T23:27:07Z)
+  
 * [\[uievents\] KeyboardEvent key property clarification on how to use ShiftKey modifier](https://github.com/mdn/content/issues/33451) (2024-05-06T21:53:57Z)
   
 * [\[css-transforms-2, css-transforms-1\] CSS Animation examples inefficient ?](https://github.com/mdn/content/issues/33426) (2024-05-05T23:45:31Z)
