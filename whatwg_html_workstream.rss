@@ -4,10 +4,49 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Fri, 03 May 2024 16:57:46 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 May 2024 20:07:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Consider removing language suggesting `<tr>` is a valid child of `<table>`]]></title>
+            <link>https://github.com/mdn/content/issues/33505</link>
+            <guid>https://github.com/mdn/content/issues/33505</guid>
+            <pubDate>Wed, 08 May 2024 20:07:24 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Usage Notes</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto">The  may be placed as a direct child of its parent <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" rel="nofollow"></a></p> element<p dir="auto"></p><ul dir="auto">
+<li><a href="https://github.com/mdn/content/blob/56de3bc3b3304ecc18775a1d0049ae4415c7cf51/files/en-us/web/html/element/tr/index.md?plain=1#L44">Perma link</a></li>
+</ul><h3 dir="auto">What did you expect to see?</h3><p dir="auto">I suppose not this?</p><h3 dir="auto">Do you have any supporting links, references, or citations?</h3><p dir="auto">While <code class="notranslate">&lt;tr&gt;</code> is "allowed" as a child of <code class="notranslate">&lt;table&gt;</code>, all parsers will wrap it in a <code class="notranslate">&lt;tbody&gt;</code>, turning this:</p><div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;table&gt;
+  &lt;tr /&gt;
+&lt;/table&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">table</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">tr</span> /&gt;
+<span class="pl-kos">&lt;/</span><span class="pl-ent">table</span><span class="pl-kos">&gt;</span></pre></div><p dir="auto">into this:</p><div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">table</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">tbody</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;/</span><span class="pl-ent">tbody</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">table</span><span class="pl-kos">&gt;</span></pre></div><p dir="auto">Saying <code class="notranslate">&lt;tr&gt;</code> "may be placed as a direct child" I think is a bit questionable. Even if parsers will fix this, it shouldn't be done.</p><h3 dir="auto">Do you have anything more you want to share?</h3><p dir="auto"><em>No response</em></p><table role="table">
+
+
+
+
+
+
+
+
+
+
+
+</table></blockquote>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Media events: Mention that `ended` is not fired if `loop` is set to true]]></title>
             <link>https://github.com/mdn/content/issues/33398</link>
@@ -1289,7 +1328,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTUxOTgxODAsIm5iZiI6MTcxNTE5Nzg4MCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDUwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA1MDhUMTk1MTIwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTBhOWIwYmI0MTEwOGMyNDk1NmQ5NmZlZmUzZmU2ZTUzZjFkZjY2NDljNzlhNDhlNTI3Yjg4YTRjZDExYjJhZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.fk4OjWrtKxS5rX9rnbRPgjZVsMQmMDUYcF0Axom2Xmo"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTUxOTgxODAsIm5iZiI6MTcxNTE5Nzg4MCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDUwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA1MDhUMTk1MTIwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTBhOWIwYmI0MTEwOGMyNDk1NmQ5NmZlZmUzZmU2ZTUzZjFkZjY2NDljNzlhNDhlNTI3Yjg4YTRjZDExYjJhZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.fk4OjWrtKxS5rX9rnbRPgjZVsMQmMDUYcF0Axom2Xmo" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTUxOTkxNDcsIm5iZiI6MTcxNTE5ODg0NywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDUwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA1MDhUMjAwNzI3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9M2JlYTk2ZTZhOTFjOWExYWQ1YTJkYTRkYzVlMjBlOWM1MzEyYzIxZWI2ZDUyYjA0MDI0MmQ0MTgyZGMyMzZkMSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.JzcXh396RE0soIEukUgd2RySd2sAcnsKmZodg1a_Cck"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTUxOTkxNDcsIm5iZiI6MTcxNTE5ODg0NywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDUwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA1MDhUMjAwNzI3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9M2JlYTk2ZTZhOTFjOWExYWQ1YTJkYTRkYzVlMjBlOWM1MzEyYzIxZWI2ZDUyYjA0MDI0MmQ0MTgyZGMyMzZkMSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.JzcXh396RE0soIEukUgd2RySd2sAcnsKmZodg1a_Cck" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
