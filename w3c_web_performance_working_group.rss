@@ -4,10 +4,55 @@
         <title>W3C Web Performance Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_performance_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Performance Working Group</description>
-        <lastBuildDate>Mon, 14 Aug 2023 20:14:56 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 May 2024 20:38:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[performance-timeline-2] droppedEntriesCount documentation incorrect]]></title>
+            <link>https://github.com/mdn/content/issues/33506</link>
+            <guid>https://github.com/mdn/content/issues/33506</guid>
+            <pubDate>Wed, 08 May 2024 20:38:57 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserver/PerformanceObserver" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserver/PerformanceObserver</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserver/PerformanceObserver#droppedentriescount" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserver/PerformanceObserver#droppedentriescount</a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">This page (added in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1450163193" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/22318" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/22318/hovercard" href="https://github.com/mdn/content/pull/22318">#22318</a>) says that <code class="notranslate">droppedEntriesCount</code> is an optional property of <code class="notranslate">PerformanceObserverCallback</code> but it's a nested property from within a <code class="notranslate">PerformanceObserverCallbackOptions</code>.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto"><code class="notranslate">PerformanceObserverCallback</code> can return an optional <code class="notranslate">[PerformanceObserverCallbackOptions](https://w3c.github.io/performance-timeline/#dom-performanceobservercallbackoptions)</code> dictionary property which will contain <code class="notranslate">droppedEntriesCount</code> (when supported).</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">The code sample is also wrong and should be like this:</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function perfObserver(list, observer, options) {
+  list.getEntries().forEach((entry) =&gt; {
+    // do something with the entries
+  });
+  if (options?.droppedEntriesCount &gt; 0) {
+    console.warn(
+      `${options?.droppedEntriesCount} entries got dropped due to the buffer being full.`,
+    );
+  }
+}
+const observer = new PerformanceObserver(perfObserver);
+observer.observe({ type: &quot;resource&quot;, buffered: true });"><pre class="notranslate"><span class="pl-k">function</span> <span class="pl-en">perfObserver</span><span class="pl-kos">(</span><span class="pl-s1">list</span><span class="pl-kos">,</span> <span class="pl-s1">observer</span><span class="pl-kos">,</span> <span class="pl-s1">options</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-s1">list</span><span class="pl-kos">.</span><span class="pl-en">getEntries</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">forEach</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">entry</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+    <span class="pl-c">// do something with the entries</span>
+  <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">options</span><span class="pl-kos">?.</span><span class="pl-c1">droppedEntriesCount</span> <span class="pl-c1">&gt;</span> <span class="pl-c1">0</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">warn</span><span class="pl-kos">(</span>
+      <span class="pl-s">`<span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">options</span><span class="pl-kos">?.</span><span class="pl-c1">droppedEntriesCount</span><span class="pl-kos">}</span></span> entries got dropped due to the buffer being full.`</span><span class="pl-kos">,</span>
+    <span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span>
+<span class="pl-kos">}</span>
+<span class="pl-k">const</span> <span class="pl-s1">observer</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">PerformanceObserver</span><span class="pl-kos">(</span><span class="pl-s1">perfObserver</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">observer</span><span class="pl-kos">.</span><span class="pl-en">observe</span><span class="pl-kos">(</span><span class="pl-kos">{</span> <span class="pl-c1">type</span>: <span class="pl-s">"resource"</span><span class="pl-kos">,</span> <span class="pl-c1">buffered</span>: <span class="pl-c1">true</span> <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<p dir="auto">You can also see this in the spec: <a href="https://w3c.github.io/performance-timeline/#dom-performanceobservercallbackoptions" rel="nofollow">https://w3c.github.io/performance-timeline/#dom-performanceobservercallbackoptions</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">I'd fix this myself, but seems a little complicated as to how <code class="notranslate">PerformanceObserverCallback</code> would be set up and got a little lost when trying it myself.</p>
+<p dir="auto">Also not sure whether bcd should be updated to nest <code class="notranslate">droppedEntriesCount</code> under <code class="notranslate">PerformanceObserverCallbackOptions</code> or if it's fine to leave where it is?</p>
+<p dir="auto">All in all, could do with someone more familiar with the structure of MDN to tackle this.</p>
+<p dir="auto">Happy to help review any changes here though!</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, cssom-view-1, dom, uievents, pointerlock-2, selection-api, page-visibility-2] Keydown, keyup, keypress pages should mention they work on document, body, etc]]></title>
             <link>https://github.com/mdn/content/issues/28561</link>
