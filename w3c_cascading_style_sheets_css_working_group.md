@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-color-4\] \[CSS\]\[Nightly\] Enable relative color syntax on nightly](https://github.com/mdn/content/issues/33517) (2024-05-09T18:02:11Z)
+  
 * [\[css-transforms-2, css-transforms-1\] CSS Animation examples inefficient ?](https://github.com/mdn/content/issues/33426) (2024-05-05T23:45:31Z)
   
 * [\[css-lists-3\] Misinformation in the counter-reset example for the list-item counter](https://github.com/mdn/content/issues/33422) (2024-05-05T13:41:06Z)

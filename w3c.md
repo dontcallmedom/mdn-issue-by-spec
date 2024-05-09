@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-color-4\] \[CSS\]\[Nightly\] Enable relative color syntax on nightly](https://github.com/mdn/content/issues/33517) (2024-05-09T18:02:11Z)
+  
 * [\[performance-timeline-2\] droppedEntriesCount documentation incorrect](https://github.com/mdn/content/issues/33506) (2024-05-08T20:38:57Z)
   
 * [\[ecmascript, webrtc\] Confusing wording around return value of RTCPeerConnection.createOffer](https://github.com/mdn/content/issues/33453) (2024-05-06T23:27:07Z)
