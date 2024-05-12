@@ -4,10 +4,48 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Wed, 08 May 2024 20:07:24 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 12 May 2024 09:42:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Wrong attr of HTML `body` tag]]></title>
+            <link>https://github.com/mdn/content/issues/33559</link>
+            <guid>https://github.com/mdn/content/issues/33559</guid>
+            <pubDate>Sun, 12 May 2024 09:42:58 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Attributes.onundo and Attributes.onredo</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Don't see any info about <code class="notranslate">onundo</code> and <code class="notranslate">onredo</code> attr in HTML Spec.</p>
+<p dir="auto">Is the two attrs exist??</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">If attrs do not exist, remove it.<br>
+if attrs is experimental or deprecated, mark it.<br>
+Sync all translated content.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<ul dir="auto">
+<li><a href="https://html.spec.whatwg.org/multipage/sections.html#the-body-element" rel="nofollow">https://html.spec.whatwg.org/multipage/sections.html#the-body-element</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement</a></li>
+<li><a href="https://www.webkitx.com/doc/light/WebKitXCEF3Lib~WebKitXCEF3~OnRedo_EV.html" rel="nofollow">https://www.webkitx.com/doc/light/WebKitXCEF3Lib~WebKitXCEF3~OnRedo_EV.html</a></li>
+<li><a href="https://www.webkitx.com/doc/light/WebKitXCEF3Lib~WebKitXCEF3~OnUndo_EV.html" rel="nofollow">https://www.webkitx.com/doc/light/WebKitXCEF3Lib~WebKitXCEF3~OnUndo_EV.html</a></li>
+</ul>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/element/body</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/body/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/body/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/829db137a01feb14af7beaec178a3ea0118b4777/hovercard" href="https://github.com/mdn/content/commit/829db137a01feb14af7beaec178a3ea0118b4777"><tt>829db13</tt></a></li>
+<li>Document last modified: 2024-03-25T18:37:02.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Consider removing language suggesting `<tr>` is a valid child of `<table>`]]></title>
             <link>https://github.com/mdn/content/issues/33505</link>
@@ -1328,7 +1366,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTU1MDY2NjIsIm5iZiI6MTcxNTUwNjM2MiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDUxMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA1MTJUMDkzMjQyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZmJjNzFhZWI3NzFjNDk4OWNhOGVmY2U4NTcxNjc5MGYzN2NhODM1YmUzZmY3ZWEwYTg3NjA0NWIwZmIyYmE4YyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.9_JcCw5LU2fEHH3vGvmf4Wp5oh1I-S2Yrb_t7Zi5qA4"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTU1MDY2NjIsIm5iZiI6MTcxNTUwNjM2MiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDUxMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA1MTJUMDkzMjQyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZmJjNzFhZWI3NzFjNDk4OWNhOGVmY2U4NTcxNjc5MGYzN2NhODM1YmUzZmY3ZWEwYTg3NjA0NWIwZmIyYmE4YyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.9_JcCw5LU2fEHH3vGvmf4Wp5oh1I-S2Yrb_t7Zi5qA4" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTU1MDcyODMsIm5iZiI6MTcxNTUwNjk4MywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDUxMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA1MTJUMDk0MzAzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZWQ4MGM0N2JlYTU3NmViM2M4YWI0NDBlMjhkYjJiNWY0NDM4ZDkxZGQ1MjYzN2I5NzdjZDhiYjBmZTg2ZDk1MiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.crf76TimDt93AGmKVOAaaCyGoyJLjGiztcjhcXBgmng"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTU1MDcyODMsIm5iZiI6MTcxNTUwNjk4MywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDUxMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA1MTJUMDk0MzAzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZWQ4MGM0N2JlYTU3NmViM2M4YWI0NDBlMjhkYjJiNWY0NDM4ZDkxZGQ1MjYzN2I5NzdjZDhiYjBmZTg2ZDk1MiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.crf76TimDt93AGmKVOAaaCyGoyJLjGiztcjhcXBgmng" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>

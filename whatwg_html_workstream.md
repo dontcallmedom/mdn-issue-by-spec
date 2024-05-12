@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Wrong attr of HTML \`body\` tag](https://github.com/mdn/content/issues/33559) (2024-05-12T09:42:58Z)
+  
 * [\[html\] Consider removing language suggesting \`\<tr\>\` is a valid child of \`\<table\>\`](https://github.com/mdn/content/issues/33505) (2024-05-08T20:07:24Z)
   
 * [\[html\] Media events: Mention that \`ended\` is not fired if \`loop\` is set to true](https://github.com/mdn/content/issues/33398) (2024-05-03T16:57:46Z)
