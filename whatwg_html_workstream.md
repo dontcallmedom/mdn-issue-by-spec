@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] IMPORTANT description and example missing](https://github.com/mdn/content/issues/33573) (2024-05-13T01:38:50Z)
+  
 * [\[html\] Wrong attr of HTML \`body\` tag](https://github.com/mdn/content/issues/33559) (2024-05-12T09:42:58Z)
   
 * [\[html\] Consider removing language suggesting \`\<tr\>\` is a valid child of \`\<table\>\`](https://github.com/mdn/content/issues/33505) (2024-05-08T20:07:24Z)
