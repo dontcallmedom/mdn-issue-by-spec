@@ -4,8 +4,6 @@
 
 * [\[uievents\] KeyboardEvent key property clarification on how to use ShiftKey modifier](https://github.com/mdn/content/issues/33451) (2024-05-06T21:53:57Z)
   
-* [\[IndexedDB-3\] \[WebAPI\] Implement IDBFactory.databases()](https://github.com/mdn/content/issues/33084) (2024-04-14T05:15:22Z)
-  
 * [\[appmanifest\] Manifest::scope documentation incorrectly states that out-of-scope navigation happens in new browser context](https://github.com/mdn/content/issues/32948) (2024-04-03T19:24:15Z)
   
 * [\[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] querySelectorAll() does not state how the results are sorted](https://github.com/mdn/content/issues/32615) (2024-03-08T14:53:28Z)

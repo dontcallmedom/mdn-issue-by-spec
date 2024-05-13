@@ -4,8 +4,6 @@
 
 * [\[rfc7231, rfc7233\] Security concern in the HTTP headers Server document](https://github.com/mdn/content/issues/33543) (2024-05-10T22:50:35Z)
   
-* [\[rfc7231\] \[HTTP\] Import zstd library](https://github.com/mdn/content/issues/33086) (2024-04-14T05:41:51Z)
-  
 * [\[rfc7230\] Connection: Keep-Alive - Docs state it is blocked in Safari when using HTTP2/3, is no longer blocked](https://github.com/mdn/content/issues/31923) (2024-01-25T15:23:54Z)
   
 * [\[rfc7230\] Please document why browsers typically send \`Connection: keep-alive\` despite that being the default](https://github.com/mdn/content/issues/31291) (2023-12-25T23:49:08Z)
