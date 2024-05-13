@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[layout-instability\] Create "Cumulative Layout Shift" glossary page](https://github.com/mdn/content/issues/33587) (2024-05-13T17:55:22Z)
+  
 * [\[css-break-3\] text-wrap-style Values](https://github.com/mdn/content/issues/33549) (2024-05-11T08:17:34Z)
   
 * [\[css-logical-1\] \[CSS\] Implement margin at-rules](https://github.com/mdn/content/issues/33519) (2024-05-09T18:48:48Z)
