@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] Opening a specific section in a new tab or window, or from the address bar, doesn't scroll to that section](https://github.com/mdn/content/issues/33606) (2024-05-14T09:13:37Z)
-  
 * [\[html\] IMPORTANT description and example missing](https://github.com/mdn/content/issues/33573) (2024-05-13T01:38:50Z)
   
 * [\[html\] Wrong attr of HTML \`body\` tag](https://github.com/mdn/content/issues/33559) (2024-05-12T09:42:58Z)

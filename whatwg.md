@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] Opening a specific section in a new tab or window, or from the address bar, doesn't scroll to that section](https://github.com/mdn/content/issues/33606) (2024-05-14T09:13:37Z)
-  
 * [\[dom\] see the W3C DOM FAQ no link and node wrong format](https://github.com/mdn/content/issues/33578) (2024-05-13T07:12:57Z)
   
 * [\[html\] IMPORTANT description and example missing](https://github.com/mdn/content/issues/33573) (2024-05-13T01:38:50Z)
