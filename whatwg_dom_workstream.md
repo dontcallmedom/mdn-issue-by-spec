@@ -4,8 +4,6 @@
 
 * [\[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] querySelectorAll() does not state how the results are sorted](https://github.com/mdn/content/issues/32615) (2024-03-08T14:53:28Z)
   
-* [\[html, dom\] There have been a few changes to declarative shadow DOM](https://github.com/mdn/content/issues/32289) (2024-02-15T00:44:52Z)
-  
 * [\[dom\] preventDefault - default actions would be useful](https://github.com/mdn/content/issues/30284) (2023-11-15T06:26:55Z)
   
 * [\[dom\] Not all observers will be removed when one call observe with same target node](https://github.com/mdn/content/issues/29814) (2023-10-24T15:19:23Z)
