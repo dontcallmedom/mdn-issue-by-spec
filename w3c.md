@@ -100,8 +100,6 @@
   
 * [\[css-sizing-4\] max-height value of "stretch" is missing from the listed Values](https://github.com/mdn/content/issues/29887) (2023-10-29T11:17:59Z)
   
-* [\[css-backgrounds-4\] box-shadow does not apply to \<tr\> tag in Safari](https://github.com/mdn/content/issues/29839) (2023-10-23T08:03:51Z)
-  
 * [\[keyboard-map, keyboard-lock\] Missing \`Keyboard\` interface \`layoutchange\` event](https://github.com/mdn/content/issues/29762) (2023-10-21T19:12:37Z)
   
 * [\[cssom-view-1\] Include detailed information about scaling on window.devicePixelRatio reference page](https://github.com/mdn/content/issues/29682) (2023-10-17T10:43:43Z)
