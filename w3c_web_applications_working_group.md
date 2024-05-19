@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[cssom-view-1, appmanifest, screen-orientation\] Orientation can not be changed at runtime via the Screen Orientation API](https://github.com/mdn/content/issues/33670) (2024-05-19T16:39:01Z)
+  
 * [\[uievents\] KeyboardEvent key property clarification on how to use ShiftKey modifier](https://github.com/mdn/content/issues/33451) (2024-05-06T21:53:57Z)
   
 * [\[appmanifest\] Manifest::scope documentation incorrectly states that out-of-scope navigation happens in new browser context](https://github.com/mdn/content/issues/32948) (2024-04-03T19:24:15Z)
