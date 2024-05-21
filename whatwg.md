@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Problems with page icon display](https://github.com/mdn/content/issues/33688) (2024-05-21T01:50:34Z)
+  
 * [\[html\] Unclear whether omitting \`\<tbody\>\` tags (putting \`\<tr\>\` directly under \`\<table\>\`) is valid](https://github.com/mdn/content/issues/33618) (2024-05-15T04:07:43Z)
   
 * [\[html\] IMPORTANT description and example missing](https://github.com/mdn/content/issues/33573) (2024-05-13T01:38:50Z)
