@@ -4,10 +4,44 @@
         <title>W3C Web Platform Incubator Community Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_platform_incubator_community_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Platform Incubator Community Group</description>
-        <lastBuildDate>Tue, 30 Apr 2024 23:14:07 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 21 May 2024 08:55:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[periodic-background-sync] The description of "periodicSync" is flawed.]]></title>
+            <link>https://github.com/mdn/content/issues/33692</link>
+            <guid>https://github.com/mdn/content/issues/33692</guid>
+            <pubDate>Tue, 21 May 2024 08:55:15 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/PeriodicSyncManager/register" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PeriodicSyncManager/register</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Exceptions</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">In chromium browsers, this feature also requires the "periodic-background-sync" permission, which throws an error if not obtained: "Permission denied. "</p>
+<p dir="auto">This permission is not available through code, and will only be granted if the user installs the website (with PWA enabled) on their computer.</p>
+<p dir="auto">I haven't tested it in other browsers, at least in edge and Chrome.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I would like to add a description of the error to the error list.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://developer.chrome.com/docs/capabilities/periodic-background-sync#try_it" rel="nofollow">https://developer.chrome.com/docs/capabilities/periodic-background-sync#try_it</a></p>
+<p dir="auto">Google has mentioned here that the feature is available only after installing the app.</p>
+<p dir="auto">You can determine if you have permissions using this code: <code class="notranslate">navigator.permissions.query({ name: 'periodic-background-sync' })</code>.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/serviceworkerregistration/periodicsync</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/periodicSync" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/periodicSync</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkerregistration/periodicsync/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkerregistration/periodicsync/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b74d47ab6e99d2bd43ef9638367d9c69fca04402/hovercard" href="https://github.com/mdn/content/commit/b74d47ab6e99d2bd43ef9638367d9c69fca04402"><tt>b74d47a</tt></a></li>
+<li>Document last modified: 2024-04-15T05:04:07.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[entries-api] The `readEntries` method of `FileSystemDirectoryReader` was incorrectly used in a synchronous manner instead of asynchronously.]]></title>
             <link>https://github.com/mdn/content/issues/33342</link>

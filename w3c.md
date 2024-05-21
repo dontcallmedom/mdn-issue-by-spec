@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[periodic-background-sync\] The description of "periodicSync" is flawed.](https://github.com/mdn/content/issues/33692) (2024-05-21T08:55:15Z)
+  
 * [\[cssom-view-1, appmanifest, screen-orientation\] Orientation can not be changed at runtime via the Screen Orientation API](https://github.com/mdn/content/issues/33670) (2024-05-19T16:39:01Z)
   
 * [\[SVG11\] CSS pointer-events description is inaccurate](https://github.com/mdn/content/issues/33633) (2024-05-15T20:00:25Z)
