@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-text-decor-3\] Using 点 as an example for text-emphasis-style feels weird exclamation mark](https://github.com/mdn/content/issues/33723) (2024-05-22T23:30:22Z)
+  
 * [\[uievents\] KeyboardEvent: keyCode deprecation hints have contradicting info wrt what to use instead](https://github.com/mdn/content/issues/33694) (2024-05-21T10:18:54Z)
   
 * [\[periodic-background-sync\] The description of "periodicSync" is flawed.](https://github.com/mdn/content/issues/33692) (2024-05-21T08:55:15Z)
