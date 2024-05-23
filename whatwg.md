@@ -4,8 +4,6 @@
 
 * [\[fetch\] What happens in the case of invalid JSON?](https://github.com/mdn/content/issues/33726) (2024-05-23T07:32:13Z)
   
-* [\[html\] The second param of Window.postMessage might not be optional](https://github.com/mdn/content/issues/33716) (2024-05-22T11:36:12Z)
-  
 * [\[html\] Missing example](https://github.com/mdn/content/issues/33693) (2024-05-21T09:41:38Z)
   
 * [\[html\] Problems with page icon display](https://github.com/mdn/content/issues/33688) (2024-05-21T01:50:34Z)
