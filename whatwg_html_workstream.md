@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Add a warning/suggestion to canvas.toDataURL to prefer toBlob](https://github.com/mdn/content/issues/33748) (2024-05-25T10:54:03Z)
+  
 * [\[html\] Missing example](https://github.com/mdn/content/issues/33693) (2024-05-21T09:41:38Z)
   
 * [\[html\] Problems with page icon display](https://github.com/mdn/content/issues/33688) (2024-05-21T01:50:34Z)
