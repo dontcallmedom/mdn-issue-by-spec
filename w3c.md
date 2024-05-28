@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[selection-api\] Clarification of the selection object returned](https://github.com/mdn/content/issues/33803) (2024-05-28T22:35:51Z)
+  
 * [\[hr-time-3\] What are the ramifications of \`performance.now()\` bugs?](https://github.com/mdn/content/issues/33760) (2024-05-26T19:52:08Z)
   
 * [\[css-text-decor-3\] Using 点 as an example for text-emphasis-style feels weird exclamation mark](https://github.com/mdn/content/issues/33723) (2024-05-22T23:30:22Z)
