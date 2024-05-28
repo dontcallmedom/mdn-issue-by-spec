@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[ecmascript\] Incorrect analogy of promise chains resembling a stack in documentation](https://github.com/mdn/content/issues/33788) (2024-05-28T09:04:40Z)
+  
 * [\[ecmascript\] TypedArray subclass pages say contents are initialized to 0](https://github.com/mdn/content/issues/33743) (2024-05-24T17:30:30Z)
   
 * [\[ecmascript, webrtc\] Confusing wording around return value of RTCPeerConnection.createOffer](https://github.com/mdn/content/issues/33453) (2024-05-06T23:27:07Z)
