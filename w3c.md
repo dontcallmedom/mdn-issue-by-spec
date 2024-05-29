@@ -120,7 +120,7 @@
   
 * [\[permissions\] Navigator.permissions always returns prompt on firefox mobile. Even after the permission is granted.](https://github.com/mdn/content/issues/29291) (2023-09-26T04:29:04Z)
   
-* [\[html, css-conditional-3, selectors-4\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
+* [\[html, selectors-4, css-conditional-3\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
   
 * [\[css-masking-1\] mask-image: url() function doesn't work with file://](https://github.com/mdn/content/issues/29106) (2023-09-14T09:24:04Z)
   
@@ -188,7 +188,7 @@
   
 * [\[screen-capture\] MediaDevices#getDisplayMedia(): systemAudio is misleading](https://github.com/mdn/content/issues/25307) (2023-03-14T03:38:33Z)
   
-* [\[css-conditional-3, css-sizing-4, css-sizing-3\] In correct statement about max-width](https://github.com/mdn/content/issues/25073) (2023-03-05T03:22:13Z)
+* [\[css-sizing-4, css-conditional-3, css-sizing-3\] In correct statement about max-width](https://github.com/mdn/content/issues/25073) (2023-03-05T03:22:13Z)
   
 * [\[filter-effects-2\] SVG contrast filter](https://github.com/mdn/content/issues/24989) (2023-03-02T00:19:11Z)
   
@@ -267,8 +267,6 @@
 * [\[encoding\] "Buffer sizing" in \`TextEncoder.encodeInto()\` is English-centric](https://github.com/mdn/content/issues/16805) (2022-05-31T02:24:05Z)
   
 * [\[file-system-access\] \`FileSystemHandle.requestPermission()\` can throw \`SecurityError\`](https://github.com/mdn/content/issues/15831) (2022-05-09T19:45:01Z)
-  
-* [\[css-conditional-3, DOM-Parsing\] Defining page types](https://github.com/mdn/content/issues/15539) (2022-04-29T23:44:43Z)
   
 * [\[css-contain-2\] Containing block via contain:paint vs other alternatives](https://github.com/mdn/content/issues/15210) (2022-04-21T19:05:51Z)
   

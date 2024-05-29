@@ -70,7 +70,7 @@
   
 * [\[cssom-view-1\] Include detailed information about scaling on window.devicePixelRatio reference page](https://github.com/mdn/content/issues/29682) (2023-10-17T10:43:43Z)
   
-* [\[html, css-conditional-3, selectors-4\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
+* [\[html, selectors-4, css-conditional-3\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
   
 * [\[css-masking-1\] mask-image: url() function doesn't work with file://](https://github.com/mdn/content/issues/29106) (2023-09-14T09:24:04Z)
   
@@ -104,7 +104,7 @@
   
 * [\[web-animations-2\] KeyframeEffect.target: issues with the example](https://github.com/mdn/content/issues/25694) (2023-03-28T06:54:37Z)
   
-* [\[css-conditional-3, css-sizing-4, css-sizing-3\] In correct statement about max-width](https://github.com/mdn/content/issues/25073) (2023-03-05T03:22:13Z)
+* [\[css-sizing-4, css-conditional-3, css-sizing-3\] In correct statement about max-width](https://github.com/mdn/content/issues/25073) (2023-03-05T03:22:13Z)
   
 * [\[filter-effects-2\] SVG contrast filter](https://github.com/mdn/content/issues/24989) (2023-03-02T00:19:11Z)
   
@@ -137,8 +137,6 @@
 * [\[css-overflow-3\] CSS overflow property is giving results inconsistant with guide](https://github.com/mdn/content/issues/17430) (2022-06-19T11:34:27Z)
   
 * [\[selectors-4\] \`:any-link\` privacy exception not explained](https://github.com/mdn/content/issues/17366) (2022-06-17T02:50:38Z)
-  
-* [\[css-conditional-3, DOM-Parsing\] Defining page types](https://github.com/mdn/content/issues/15539) (2022-04-29T23:44:43Z)
   
 * [\[css-contain-2\] Containing block via contain:paint vs other alternatives](https://github.com/mdn/content/issues/15210) (2022-04-21T19:05:51Z)
   
