@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[selection-api\] Typo](https://github.com/mdn/content/issues/33823) (2024-05-29T18:00:19Z)
-  
 * [\[selection-api\] Clarification of the selection object returned](https://github.com/mdn/content/issues/33803) (2024-05-28T22:35:51Z)
   
 * [\[uievents\] KeyboardEvent: keyCode deprecation hints have contradicting info wrt what to use instead](https://github.com/mdn/content/issues/33694) (2024-05-21T10:18:54Z)

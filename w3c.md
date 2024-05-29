@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[selection-api\] Typo](https://github.com/mdn/content/issues/33823) (2024-05-29T18:00:19Z)
-  
 * [\[speech-api\] SpeechRecognition: continuous property is ignored on Chrome on Android](https://github.com/mdn/content/issues/33820) (2024-05-29T09:36:45Z)
   
 * [\[selection-api\] Clarification of the selection object returned](https://github.com/mdn/content/issues/33803) (2024-05-28T22:35:51Z)
