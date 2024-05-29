@@ -4,10 +4,41 @@
         <title>W3C Web Platform Incubator Community Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_platform_incubator_community_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Platform Incubator Community Group</description>
-        <lastBuildDate>Tue, 21 May 2024 08:55:15 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 29 May 2024 09:36:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[speech-api] SpeechRecognition: continuous property is ignored on Chrome on Android]]></title>
+            <link>https://github.com/mdn/content/issues/33820</link>
+            <guid>https://github.com/mdn/content/issues/33820</guid>
+            <pubDate>Wed, 29 May 2024 09:36:45 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/continuous" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/continuous</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Browser compatibility</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">In the browser compatibility table it is stated, that chrome on Android implements the continuous flag. In my Testing with mutliple devices and android and chrome versions it becomes clear, that this flag is ignored.</p>
+<p dir="auto">If you set continuous to true and test on chrome Desktop, you can dictate multiple sentences. On android chrome it will cut off after one sentence.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Android chrome should listen for more than one sentence.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://stackoverflow.com/questions/74630420/web-speechrecognition-api-workaround-for-mobile-devices-not-supporting-continuo" rel="nofollow">https://stackoverflow.com/questions/74630420/web-speechrecognition-api-workaround-for-mobile-devices-not-supporting-continuo</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/speechrecognition/continuous</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/continuous" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/continuous</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/speechrecognition/continuous/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/speechrecognition/continuous/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/f2f9346c0c0e9f6676f2df9f1850933e274401de/hovercard" href="https://github.com/mdn/content/commit/f2f9346c0c0e9f6676f2df9f1850933e274401de"><tt>f2f9346</tt></a></li>
+<li>Document last modified: 2023-04-08T06:00:31.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[periodic-background-sync] The description of "periodicSync" is flawed.]]></title>
             <link>https://github.com/mdn/content/issues/33692</link>
