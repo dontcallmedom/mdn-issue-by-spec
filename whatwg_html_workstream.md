@@ -10,8 +10,6 @@
   
 * [\[html\] Missing example](https://github.com/mdn/content/issues/33693) (2024-05-21T09:41:38Z)
   
-* [\[html\] Problems with page icon display](https://github.com/mdn/content/issues/33688) (2024-05-21T01:50:34Z)
-  
 * [\[html\] Unclear whether omitting \`\<tbody\>\` tags (putting \`\<tr\>\` directly under \`\<table\>\`) is valid](https://github.com/mdn/content/issues/33618) (2024-05-15T04:07:43Z)
   
 * [\[html\] IMPORTANT description and example missing](https://github.com/mdn/content/issues/33573) (2024-05-13T01:38:50Z)
