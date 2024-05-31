@@ -117,37 +117,6 @@ Related, the last yield in a generator without a 'return' provides an object lik
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[ecmascript] Incorrect analogy of promise chains resembling a stack in documentation]]></title>
-            <link>https://github.com/mdn/content/issues/33788</link>
-            <guid>https://github.com/mdn/content/issues/33788</guid>
-            <pubDate>Tue, 28 May 2024 09:04:40 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Chained Promises</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The documentation on the MDN page <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise#chained_promises" rel="nofollow">Promise</a> uses an analogy to describe the behavior of promise chains: "The promises of a chain are nested in one another, but get popped like the top of a stack. The first promise in the chain is most deeply nested and is the first to pop." This analogy is misleading because it inaccurately describes the order in which promises are resolved. A stack follows a Last In, First Out (LIFO) order, while promises in a chain are resolved in a First In, First Out (FIFO) order, more like a queue.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">I expected to see a description that accurately reflects the sequential nature of promise chains. A correct explanation would clarify that promises in a chain are executed in the order they are created, with each promise waiting for the previous one to resolve.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<h2 dir="auto">Suggested Revision:</h2>
-<p dir="auto">The promises in a chain are executed in sequence, where each promise waits for the previous one to resolve before continuing. The first promise in the chain is the first to be resolved, and subsequent promises are resolved in the order they appear in the chain.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/promise</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/promise/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/promise/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/10b342385644e822d123694ad3bc8c2ca9abb2dc/hovercard" href="https://github.com/mdn/content/commit/10b342385644e822d123694ad3bc8c2ca9abb2dc"><tt>10b3423</tt></a></li>
-<li>Document last modified: 2023-11-29T09:09:55.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[ecmascript] TypedArray subclass pages say contents are initialized to 0]]></title>
             <link>https://github.com/mdn/content/issues/33743</link>
             <guid>https://github.com/mdn/content/issues/33743</guid>
