@@ -18,8 +18,6 @@
   
 * [\[ecmascript\] \[JavaScript\] Date.parse only checks first 3 characters of month name](https://github.com/mdn/content/issues/31930) (2024-01-26T05:14:17Z)
   
-* [\[ecmascript\] Raw template literals could use better explanation: latex is confusing and regexps unmentioned](https://github.com/mdn/content/issues/30389) (2023-11-20T02:49:25Z)
-  
 * [\[ecmascript\] Describe direct and indirect eval differences in each bullet point](https://github.com/mdn/content/issues/30281) (2023-11-14T22:14:49Z)
   
 * [\[ecmascript\] Import assertions proposal renamed to import attributes](https://github.com/mdn/content/issues/29572) (2023-10-10T08:50:02Z)
