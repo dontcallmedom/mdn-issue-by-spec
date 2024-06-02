@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Broken image](https://github.com/mdn/content/issues/33879) (2024-06-02T08:18:26Z)
+  
 * [\[html\] date-in-GMTString-format =\> date-in-UTCString-format](https://github.com/mdn/content/issues/33821) (2024-05-29T09:37:17Z)
   
 * [\[html\] Anchor tech summary does not list permitted content types in a meaningful way](https://github.com/mdn/content/issues/33814) (2024-05-29T07:14:49Z)
