@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C SVG Working Group. [![RSS feed for W3C SVG Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[SVG11, html\] Gramatical mistake in fist line of Patterns ](https://github.com/mdn/content/issues/33880) (2024-06-02T13:44:48Z)
+  
 * [\[SVG11\] CSS pointer-events description is inaccurate](https://github.com/mdn/content/issues/33633) (2024-05-15T20:00:25Z)
   
 * [\[SVG11\] The \`x\` and \`y\` attributes on text is actually a list](https://github.com/mdn/content/issues/32081) (2024-02-02T15:10:47Z)
