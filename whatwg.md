@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] No instructions on using \`aria-label\` and \`aria-labelledby\` attributes for accessible naming of icon buttons.](https://github.com/mdn/content/issues/33895) (2024-06-03T13:34:12Z)
+  
 * [\[dom\] Conflict on information about CDATA in HTML](https://github.com/mdn/content/issues/33894) (2024-06-03T10:13:03Z)
   
 * [\[html\] Broken image](https://github.com/mdn/content/issues/33879) (2024-06-02T08:18:26Z)
