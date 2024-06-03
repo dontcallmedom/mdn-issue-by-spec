@@ -2,6 +2,10 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-sizing-4\] Typo in CSS property \`contain-intrinsic-size\`](https://github.com/mdn/content/issues/33887) (2024-06-03T00:40:25Z)
+  
+* [\[selectors-4\] Document how to escape CSS attribute selectors](https://github.com/mdn/content/issues/33886) (2024-06-03T00:01:08Z)
+  
 * [\[cssom-view-1, appmanifest, screen-orientation\] Orientation can not be changed at runtime via the Screen Orientation API](https://github.com/mdn/content/issues/33670) (2024-05-19T16:39:01Z)
   
 * [\[css-content-3\] \[CSS\] Support alt text in the \`content\` property](https://github.com/mdn/content/issues/33590) (2024-05-13T20:16:02Z)

@@ -2,6 +2,10 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-sizing-4\] Typo in CSS property \`contain-intrinsic-size\`](https://github.com/mdn/content/issues/33887) (2024-06-03T00:40:25Z)
+  
+* [\[selectors-4\] Document how to escape CSS attribute selectors](https://github.com/mdn/content/issues/33886) (2024-06-03T00:01:08Z)
+  
 * [\[SVG11, html\] Gramatical mistake in fist line of Patterns ](https://github.com/mdn/content/issues/33880) (2024-06-02T13:44:48Z)
   
 * [\[speech-api\] SpeechRecognition: continuous property is ignored on Chrome on Android](https://github.com/mdn/content/issues/33820) (2024-05-29T09:36:45Z)

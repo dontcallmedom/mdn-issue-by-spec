@@ -4,10 +4,97 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Sun, 19 May 2024 16:39:01 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 03 Jun 2024 00:40:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-sizing-4] Typo in CSS property `contain-intrinsic-size`]]></title>
+            <link>https://github.com/mdn/content/issues/33887</link>
+            <guid>https://github.com/mdn/content/issues/33887</guid>
+            <pubDate>Mon, 03 Jun 2024 00:40:25 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-size" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-size</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Syntax</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="/* Keyword values */
+contain-intrinsic-width: none;"><pre class="notranslate"><code class="notranslate">/* Keyword values */
+contain-intrinsic-width: none;
+</code></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="/* Keyword values */
+contain-intrinsic-size: none;"><pre class="notranslate"><code class="notranslate">/* Keyword values */
+contain-intrinsic-size: none;
+</code></pre></div>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/contain-intrinsic-size</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-size" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/contain-intrinsic-size</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/contain-intrinsic-size/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/contain-intrinsic-size/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ca382504420485ed1efbeaad49fe4c7b70a6d145/hovercard" href="https://github.com/mdn/content/commit/ca382504420485ed1efbeaad49fe4c7b70a6d145"><tt>ca38250</tt></a></li>
+<li>Document last modified: 2024-04-19T07:51:56.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[selectors-4] Document how to escape CSS attribute selectors]]></title>
+            <link>https://github.com/mdn/content/issues/33886</link>
+            <guid>https://github.com/mdn/content/issues/33886</guid>
+            <pubDate>Mon, 03 Jun 2024 00:01:08 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Given <code class="notranslate">[attr=value]</code> as a CSS selector, I have the following questions.</p>
+<h3 dir="auto"><code class="notranslate">attr</code> questions</h3>
+<ol dir="auto">
+<li>What characters are allowed for <code class="notranslate">attr</code>?</li>
+<li>Are there <code class="notranslate">attr</code> characters that need to be escaped?
+<ol dir="auto">
+<li>If yes, what are these characters and how do you escape them?</li>
+</ol>
+</li>
+<li>Are you allowed to wrap <code class="notranslate">attr</code> in quotes?
+<ol dir="auto">
+<li>If yes, which quotes are allowed? <code class="notranslate">'</code>, <code class="notranslate">"</code>, <code class="notranslate">`</code>?</li>
+</ol>
+</li>
+</ol>
+<h3 dir="auto"><code class="notranslate">value</code> questions</h3>
+<ol dir="auto">
+<li>What characters are allowed for <code class="notranslate">value</code>?</li>
+<li>Are there <code class="notranslate">value</code> characters that need to be escaped?
+<ol dir="auto">
+<li>If yes, what are these characters and how do you escape them?</li>
+</ol>
+</li>
+<li>Are quotes required?</li>
+<li>Which quotes are allowed to wrap <code class="notranslate">value</code>? <code class="notranslate">'</code>, <code class="notranslate">"</code>, <code class="notranslate">`</code>?</li>
+<li>How do you escape nested quotes within <code class="notranslate">value</code>?</li>
+</ol>
+<p dir="auto">If these questions are too low level for the article, it would be nice to link to where (some of?) the answers can be found. I looked at <a href="https://drafts.csswg.org/selectors/#attribute-selectors" rel="nofollow">the specification linked in the article</a>, but I didn't see this documented there either.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/attribute_selectors</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/attribute_selectors/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/attribute_selectors/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/8d4fb1e2934111a13989d2796152dc601468e7b5/hovercard" href="https://github.com/mdn/content/commit/8d4fb1e2934111a13989d2796152dc601468e7b5"><tt>8d4fb1e</tt></a></li>
+<li>Document last modified: 2024-03-25T22:39:01.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[cssom-view-1, appmanifest, screen-orientation] Orientation can not be changed at runtime via the Screen Orientation API]]></title>
             <link>https://github.com/mdn/content/issues/33670</link>
@@ -360,8 +447,8 @@ Maybe someone has more insight on this, but the article definitely lacks some in
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">[Span](Contributes a grid span to the grid item's placement such that the corresponding edge of the grid item's grid area is n lines from the opposite edge.)</p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/519988/322149279-8919dbdd-fbc2-416f-b9b8-0d211c057b16.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTczNzI5MDAsIm5iZiI6MTcxNzM3MjYwMCwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjc5LTg5MTlkYmRkLWZiYzItNDE2Zi1iOWI4LTBkMjExYzA1N2IxNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjAyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYwMlQyMzU2NDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02OWUzNTMwZDAwZjFhZmJmMTQxOTNkMjY1YjQ4ZTExYjg1MWE1YTk3ZDVmY2U2NTNkNzg0YzQ2Y2FjZDQ4ZmEwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.pt_jUWuBw0Tj46IpsyMNigDpFKcLQl9i9EYKBr8Q0dQ"><img src="https://private-user-images.githubusercontent.com/519988/322149279-8919dbdd-fbc2-416f-b9b8-0d211c057b16.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTczNzI5MDAsIm5iZiI6MTcxNzM3MjYwMCwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjc5LTg5MTlkYmRkLWZiYzItNDE2Zi1iOWI4LTBkMjExYzA1N2IxNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjAyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYwMlQyMzU2NDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02OWUzNTMwZDAwZjFhZmJmMTQxOTNkMjY1YjQ4ZTExYjg1MWE1YTk3ZDVmY2U2NTNkNzg0YzQ2Y2FjZDQ4ZmEwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.pt_jUWuBw0Tj46IpsyMNigDpFKcLQl9i9EYKBr8Q0dQ" alt="Screenshot 2024-04-13 at 00 56 05" style="max-width: 100%;"></a><br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/519988/322149289-5d9f55ca-0cfc-4aa7-b1f6-406707214d1a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTczNzI5MDAsIm5iZiI6MTcxNzM3MjYwMCwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjg5LTVkOWY1NWNhLTBjZmMtNGFhNy1iMWY2LTQwNjcwNzIxNGQxYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjAyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYwMlQyMzU2NDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kZTY4NmM4NWM5ZGZhNzc2MzBkYjBjZTI4YWY2YmE0ZDA4NzU4MDc5MzAyNmRlZTdjM2M3YzFhMGU4ODlmMzU3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.u6h71Wg9id9-x8NXnzMImUMTZVzoUELU0gcNTqWOYDI"><img src="https://private-user-images.githubusercontent.com/519988/322149289-5d9f55ca-0cfc-4aa7-b1f6-406707214d1a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTczNzI5MDAsIm5iZiI6MTcxNzM3MjYwMCwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjg5LTVkOWY1NWNhLTBjZmMtNGFhNy1iMWY2LTQwNjcwNzIxNGQxYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjAyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYwMlQyMzU2NDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kZTY4NmM4NWM5ZGZhNzc2MzBkYjBjZTI4YWY2YmE0ZDA4NzU4MDc5MzAyNmRlZTdjM2M3YzFhMGU4ODlmMzU3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.u6h71Wg9id9-x8NXnzMImUMTZVzoUELU0gcNTqWOYDI" alt="Screenshot 2024-04-13 at 00 56 24" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/519988/322149279-8919dbdd-fbc2-416f-b9b8-0d211c057b16.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTczNzc1NjksIm5iZiI6MTcxNzM3NzI2OSwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjc5LTg5MTlkYmRkLWZiYzItNDE2Zi1iOWI4LTBkMjExYzA1N2IxNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjAzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYwM1QwMTE0MjlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMWU4ZWJhOWEwY2Y5OTIzNDNiZTljMzhlM2JhODc0OTYzNzk0MWU3ZjBjNzg4NzFjMzdmNDlhNmQ1ZDBmZjE4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.LALyJ-zM6VIEfpCzCjXR3_a4yHwqu-uCU-s1c0g77pk"><img src="https://private-user-images.githubusercontent.com/519988/322149279-8919dbdd-fbc2-416f-b9b8-0d211c057b16.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTczNzc1NjksIm5iZiI6MTcxNzM3NzI2OSwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjc5LTg5MTlkYmRkLWZiYzItNDE2Zi1iOWI4LTBkMjExYzA1N2IxNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjAzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYwM1QwMTE0MjlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMWU4ZWJhOWEwY2Y5OTIzNDNiZTljMzhlM2JhODc0OTYzNzk0MWU3ZjBjNzg4NzFjMzdmNDlhNmQ1ZDBmZjE4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.LALyJ-zM6VIEfpCzCjXR3_a4yHwqu-uCU-s1c0g77pk" alt="Screenshot 2024-04-13 at 00 56 05" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/519988/322149289-5d9f55ca-0cfc-4aa7-b1f6-406707214d1a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTczNzc1NjksIm5iZiI6MTcxNzM3NzI2OSwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjg5LTVkOWY1NWNhLTBjZmMtNGFhNy1iMWY2LTQwNjcwNzIxNGQxYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjAzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYwM1QwMTE0MjlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zODhjOTYwYmQxZjcyMzQ4ZDUwOGFjMjZiODlkNWMyYzBhNzY4YWRlNDEwOWEyMDQzMDliZWU2MGRjMjdmZThjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.IWewy0X86ixer2CctAecaWOYh7e1gDJ1VrSXRbjEvgQ"><img src="https://private-user-images.githubusercontent.com/519988/322149289-5d9f55ca-0cfc-4aa7-b1f6-406707214d1a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTczNzc1NjksIm5iZiI6MTcxNzM3NzI2OSwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjg5LTVkOWY1NWNhLTBjZmMtNGFhNy1iMWY2LTQwNjcwNzIxNGQxYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjAzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYwM1QwMTE0MjlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zODhjOTYwYmQxZjcyMzQ4ZDUwOGFjMjZiODlkNWMyYzBhNzY4YWRlNDEwOWEyMDQzMDliZWU2MGRjMjdmZThjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.IWewy0X86ixer2CctAecaWOYh7e1gDJ1VrSXRbjEvgQ" alt="Screenshot 2024-04-13 at 00 56 24" style="max-width: 100%;"></a></p>
 <h3 dir="auto">MDN metadata</h3>
 
 <details>
@@ -1093,7 +1180,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTczNzI4OTYsIm5iZiI6MTcxNzM3MjU5NiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYwMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MDJUMjM1NjM2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDc3ODg2YTRkMjg3ODg1M2ZlM2ZkN2FlMDc4N2E5NjJiM2RhMjlkMjJmYmIwYjkwZjYzN2U0NWYyNzBkYzI2ZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.n4mS-3n-eYXlqPQtB8quTWU77Yuble0_DThxXq1FoB4"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTczNzI4OTYsIm5iZiI6MTcxNzM3MjU5NiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYwMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MDJUMjM1NjM2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDc3ODg2YTRkMjg3ODg1M2ZlM2ZkN2FlMDc4N2E5NjJiM2RhMjlkMjJmYmIwYjkwZjYzN2U0NWYyNzBkYzI2ZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.n4mS-3n-eYXlqPQtB8quTWU77Yuble0_DThxXq1FoB4" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTczNzc1NjQsIm5iZiI6MTcxNzM3NzI2NCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYwMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MDNUMDExNDI0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NGYzNTc1YmI4MjE1ODE0ZGZkMTFmOTA3NDliOWY5NjNjNDU0OWJlMzMyNjQwZWE5MTU0ZGViNDA5MzJlNDE4MCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.SkV22q-e2qXRhSQHr6MwakmxOzJzpKczfddC8MxhOfY"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTczNzc1NjQsIm5iZiI6MTcxNzM3NzI2NCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYwMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MDNUMDExNDI0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NGYzNTc1YmI4MjE1ODE0ZGZkMTFmOTA3NDliOWY5NjNjNDU0OWJlMzMyNjQwZWE5MTU0ZGViNDA5MzJlNDE4MCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.SkV22q-e2qXRhSQHr6MwakmxOzJzpKczfddC8MxhOfY" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
