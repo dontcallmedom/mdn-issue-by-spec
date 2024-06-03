@@ -204,21 +204,23 @@ The link to <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Content_c
 <p dir="auto">A <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" rel="nofollow"><code class="notranslate">&lt;tbody&gt;</code></a> element's start tag can be omitted if the first thing inside the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" rel="nofollow"><code class="notranslate">&lt;tbody&gt;</code></a> element is a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr" rel="nofollow"><code class="notranslate">&lt;tr&gt;</code></a> element, and if the element is not immediately preceded by a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" rel="nofollow"><code class="notranslate">&lt;tbody&gt;</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead" rel="nofollow"><code class="notranslate">&lt;thead&gt;</code></a>, or <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot" rel="nofollow"><code class="notranslate">&lt;tfoot&gt;</code></a> element whose end tag has been omitted. (It can't be omitted if the element is empty.) A <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" rel="nofollow"><code class="notranslate">&lt;tbody&gt;</code></a> element's end tag can be omitted if the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" rel="nofollow"><code class="notranslate">&lt;tbody&gt;</code></a> element is immediately followed by a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" rel="nofollow"><code class="notranslate">&lt;tbody&gt;</code></a> or <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot" rel="nofollow"><code class="notranslate">&lt;tfoot&gt;</code></a> element, or if there is no more content in the parent element.</p>
 </blockquote>
 <p dir="auto">That implies that this markup, which omits the <code class="notranslate">&lt;tbody&gt;</code> tag and puts <code class="notranslate">&lt;tr&gt;</code> directly under <code class="notranslate">&lt;table&gt;</code>, is valid:</p>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;table&gt;
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;table&gt;
     &lt;tr&gt;&lt;/tr&gt;
-&lt;/table&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">table</span><span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
-<span class="pl-kos">&lt;/</span><span class="pl-ent">table</span><span class="pl-kos">&gt;</span></pre></div>
+&lt;/table&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;table&gt;
+    &lt;tr&gt;&lt;/tr&gt;
+&lt;/table&gt;
+</code></pre></div>
 <p dir="auto">It should be considered valid, even though it really means this:</p>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;table&gt;
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;table&gt;
     &lt;tbody&gt;
         &lt;tr&gt;&lt;/tr&gt;
     &lt;/tbody&gt;
-&lt;/table&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">table</span><span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">tbody</span><span class="pl-kos">&gt;</span>
-        <span class="pl-kos">&lt;</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;/</span><span class="pl-ent">tbody</span><span class="pl-kos">&gt;</span>
-<span class="pl-kos">&lt;/</span><span class="pl-ent">table</span><span class="pl-kos">&gt;</span></pre></div>
+&lt;/table&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;table&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre></div>
 <p dir="auto">But in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2286351497" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/33505" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/33505/hovercard" href="https://github.com/mdn/content/issues/33505">#33505</a>, which is basically the same issue on the <code class="notranslate">&lt;tr&gt;</code> page, the reporter <a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/rschristian/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/rschristian">@rschristian</a> is adament that the shorter form is <em>not</em> valid. I did mention the <code class="notranslate">&lt;tbody&gt;</code> page, but nothing came of it, so I am opening an issue specifically for the <code class="notranslate">&lt;tbody&gt;</code> page.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">See above.</p>
@@ -273,7 +275,7 @@ It is important that <code class="notranslate">&lt;base href[="https"] target="_
 <p dir="auto"><em>No-Response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto">2024 May 12, Safari 17.4.1 requires that both <code class="notranslate">&lt;base&gt;</code> targets must be placed in the following order.  First, <code class="notranslate">base href[="https"] target="_blank"</code> followed by the <code class="notranslate">base target="_self"</code>. So that the browser can access described html document external <code class="notranslate">_blank</code> and interna <code class="notranslate">_self</code>l link behaviors. Thus deploying the herein described ease-of-use Base URL element metadata accessibility efficiencies.</p>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/6208716/329907499-8e3d6dcd-89d4-42df-a951-87dc93dd8258.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc0MzcxOTgsIm5iZiI6MTcxNzQzNjg5OCwicGF0aCI6Ii82MjA4NzE2LzMyOTkwNzQ5OS04ZTNkNmRjZC04OWQ0LTQyZGYtYTk1MS04N2RjOTNkZDgyNTgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYwMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MDNUMTc0ODE4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MmE0M2ZmNjIyNzJlMDFkM2UyNGI0ZDNlZTgxZGE1M2JlZDFkYzQ3NDQ3NTgxYzU5MzdjYjJhNGMwN2MxNWZhMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ._-_PHEb8YQJ1bz__EoaVGI2z38091d4-EPc3f139dxU"><img width="942" alt="Screen Shot 2024-05-12 at 19 44 55" src="https://private-user-images.githubusercontent.com/6208716/329907499-8e3d6dcd-89d4-42df-a951-87dc93dd8258.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc0MzcxOTgsIm5iZiI6MTcxNzQzNjg5OCwicGF0aCI6Ii82MjA4NzE2LzMyOTkwNzQ5OS04ZTNkNmRjZC04OWQ0LTQyZGYtYTk1MS04N2RjOTNkZDgyNTgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYwMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MDNUMTc0ODE4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MmE0M2ZmNjIyNzJlMDFkM2UyNGI0ZDNlZTgxZGE1M2JlZDFkYzQ3NDQ3NTgxYzU5MzdjYjJhNGMwN2MxNWZhMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ._-_PHEb8YQJ1bz__EoaVGI2z38091d4-EPc3f139dxU" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/6208716/329907499-8e3d6dcd-89d4-42df-a951-87dc93dd8258.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc0Mzc4MTIsIm5iZiI6MTcxNzQzNzUxMiwicGF0aCI6Ii82MjA4NzE2LzMyOTkwNzQ5OS04ZTNkNmRjZC04OWQ0LTQyZGYtYTk1MS04N2RjOTNkZDgyNTgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYwMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MDNUMTc1ODMyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTBkMjI2YzY0NmY0M2E1MDYxMDYxMmRkNTA4MDk5OGRjMzQzZmJhYjA5YjI4MjJmYTBiYzIxZDgzZWE3ZjhjOSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.UmWZZjQ5WMbasyu4mHT0Ej9y4yznPk7jorUsyUtQyII"><img width="942" alt="Screen Shot 2024-05-12 at 19 44 55" src="https://private-user-images.githubusercontent.com/6208716/329907499-8e3d6dcd-89d4-42df-a951-87dc93dd8258.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc0Mzc4MTIsIm5iZiI6MTcxNzQzNzUxMiwicGF0aCI6Ii82MjA4NzE2LzMyOTkwNzQ5OS04ZTNkNmRjZC04OWQ0LTQyZGYtYTk1MS04N2RjOTNkZDgyNTgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYwMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MDNUMTc1ODMyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTBkMjI2YzY0NmY0M2E1MDYxMDYxMmRkNTA4MDk5OGRjMzQzZmJhYjA5YjI4MjJmYTBiYzIxZDgzZWE3ZjhjOSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.UmWZZjQ5WMbasyu4mHT0Ej9y4yznPk7jorUsyUtQyII" style="max-width: 100%;"></a>
 (Safari default settings)
 <h3 dir="auto">MDN metadata</h3>
 
@@ -346,21 +348,23 @@ Sync all translated content.</p>
 <p dir="auto">I suppose not this?</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">While <code class="notranslate">&lt;tr&gt;</code> is "allowed" as a child of <code class="notranslate">&lt;table&gt;</code>, all parsers will wrap it in a <code class="notranslate">&lt;tbody&gt;</code>, turning this:</p>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;table&gt;
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;table&gt;
   &lt;tr /&gt;
-&lt;/table&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">table</span><span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;</span><span class="pl-ent">tr</span> /&gt;
-<span class="pl-kos">&lt;/</span><span class="pl-ent">table</span><span class="pl-kos">&gt;</span></pre></div>
+&lt;/table&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;table&gt;
+  &lt;tr /&gt;
+&lt;/table&gt;
+</code></pre></div>
 <p dir="auto">into this:</p>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;table&gt;
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;table&gt;
   &lt;tbody&gt;
     &lt;tr&gt;&lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">table</span><span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;</span><span class="pl-ent">tbody</span><span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;/</span><span class="pl-ent">tbody</span><span class="pl-kos">&gt;</span>
-<span class="pl-kos">&lt;/</span><span class="pl-ent">table</span><span class="pl-kos">&gt;</span></pre></div>
+&lt;/table&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre></div>
 <p dir="auto">Saying <code class="notranslate">&lt;tr&gt;</code> "may be placed as a direct child" I think is a bit questionable. Even if parsers will fix this, it shouldn't be done.</p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>]]></content:encoded>
@@ -514,13 +518,14 @@ Fire an event named ended at the media element.
 </blockquote>
 <p dir="auto">This text is misleading because <code class="notranslate">button</code> is itself a labellable element.</p>
 <p dir="auto">For example:</p>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;label&gt;
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;label&gt;
     &lt;button&gt;&lt;img src=&quot;icon.png&quot; alt=&quot;&quot;&gt;&lt;/button&gt;
     Agree
-&lt;/label&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">label</span><span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;</span><span class="pl-ent">img</span> <span class="pl-c1">src</span>="<span class="pl-s">icon.png</span>" <span class="pl-c1">alt</span>=""<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span>
+&lt;/label&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;label&gt;
+    &lt;button&gt;&lt;img src="icon.png" alt=""&gt;&lt;/button&gt;
     Agree
-<span class="pl-kos">&lt;/</span><span class="pl-ent">label</span><span class="pl-kos">&gt;</span></pre></div>
+&lt;/label&gt;
+</code></pre></div>
 <p dir="auto">In this example, the button is the element being labelled. The text is not intended to discourage this, but I have encountered experienced developers telling me that this pattern is inaccessible citing the above text in MDN.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The text should make it clear that:</p>
@@ -1622,7 +1627,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc0MzcxOTAsIm5iZiI6MTcxNzQzNjg5MCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYwMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MDNUMTc0ODEwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NjA0ZTk0NmMwZDcyMDQyNzViMDY5NjJmYTc3MjM2ZmQxMmVhMTJhOTJkMzM3YjMwOTk5MjZmNTNkNTgyZTI1NSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.S1eNlh2I214p3M6Xe_KmT_tcX3-sY-kmkTulplPzmBI"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc0MzcxOTAsIm5iZiI6MTcxNzQzNjg5MCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYwMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MDNUMTc0ODEwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NjA0ZTk0NmMwZDcyMDQyNzViMDY5NjJmYTc3MjM2ZmQxMmVhMTJhOTJkMzM3YjMwOTk5MjZmNTNkNTgyZTI1NSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.S1eNlh2I214p3M6Xe_KmT_tcX3-sY-kmkTulplPzmBI" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc0Mzc4MDMsIm5iZiI6MTcxNzQzNzUwMywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYwMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MDNUMTc1ODIzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OGYwYjAwNjQzYmMxNDVhYTM1NDZhMDc4NTIyYjdkMGQ0MzlmMjkxYjdlMjY5M2E1NmU0MTNlOTQ1OTI0ODBhZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Ne8KNWlZSoUmAAHhzEsSk7C_xTeGeNs0oAQSmdis6AU"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc0Mzc4MDMsIm5iZiI6MTcxNzQzNzUwMywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYwMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MDNUMTc1ODIzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OGYwYjAwNjQzYmMxNDVhYTM1NDZhMDc4NTIyYjdkMGQ0MzlmMjkxYjdlMjY5M2E1NmU0MTNlOTQ1OTI0ODBhZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Ne8KNWlZSoUmAAHhzEsSk7C_xTeGeNs0oAQSmdis6AU" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
