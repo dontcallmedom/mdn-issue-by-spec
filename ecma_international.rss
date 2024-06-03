@@ -4,10 +4,52 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Fri, 31 May 2024 07:02:46 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 03 Jun 2024 08:53:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Global class constructors incorrectly links to Object.prototype.constructor]]></title>
+            <link>https://github.com/mdn/content/issues/33893</link>
+            <guid>https://github.com/mdn/content/issues/33893</guid>
+            <pubDate>Mon, 03 Jun 2024 08:53:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Instance properties =&gt; <code class="notranslate">Map.prototype.constructor</code></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The <code class="notranslate">Map.prototype.constructor</code> entry under <em>Instance properties</em> section links to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor" rel="nofollow"><code class="notranslate">Object.prototype.constructor</code></a>.</p>
+<p dir="auto">Yet in the description, it states that:</p>
+<blockquote>
+<p dir="auto">For Map instances, the initial value is the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/Map" rel="nofollow">Map</a> constructor.</p>
+</blockquote>
+<p dir="auto">where the link here correctly refers to the <code class="notranslate">Map()</code> constructor.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The <code class="notranslate">Map.prototype.constructor</code> should correctly link to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/Map" rel="nofollow">Map</a>.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">According to <a href="https://tc39.es/ecma262/multipage/keyed-collections.html#sec-map.prototype.constructor" rel="nofollow">the standard</a>:</p>
+<blockquote>
+<p dir="auto">The initial value of Map.prototype.constructor is <a href="https://tc39.es/ecma262/multipage/keyed-collections.html#sec-map-constructor" rel="nofollow">%Map%</a>.</p>
+</blockquote>
+<p dir="auto">There should be no reason for <code class="notranslate">Map.prototype.constructor</code> to link to <code class="notranslate">Object.prototype.constructor</code>.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Related source code:</p>
+<p dir="auto"><a href="https://github.com/mdn/content/blame/d377045efe5d13531b73f8823301f8cc1dc58f84/files/en-us/web/javascript/reference/global_objects/map/index.md#L314">https://github.com/mdn/content/blame/d377045efe5d13531b73f8823301f8cc1dc58f84/files/en-us/web/javascript/reference/global_objects/map/index.md#L314</a></p>
+<p dir="auto">The modification was made by commit <a href="https://github.com/mdn/content/commit/d19dc31570f62196a5837be38bd0b11c45e67b05#diff-24d0aab1f8d007cc2fac950232b782271f892761ed5a9c9a6e1f72a5d7ccbe90">d19dc315</a>, which fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1592555947" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/24658" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/24658/hovercard" href="https://github.com/mdn/content/pull/24658">#24658</a> .</p>
+<p dir="auto">It seems that the commit has modified a bunch of files for global objects, linking all their constructors to <code class="notranslate">Object.prototype.constructor</code>, which I believe is a mistake. All those links should be modified to link to their actual constructor pages.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/map</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/map/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/map/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/8a9085b96d0135920be9b281d4500ff72a7a8369/hovercard" href="https://github.com/mdn/content/commit/8a9085b96d0135920be9b281d4500ff72a7a8369"><tt>8a9085b</tt></a></li>
+<li>Document last modified: 2024-03-11T23:58:09.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] yield* has unexpected result when internal generator body contains a 'return']]></title>
             <link>https://github.com/mdn/content/issues/33852</link>
