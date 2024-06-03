@@ -4,8 +4,6 @@
 
 * [\[selectors-4\] Document how to escape CSS attribute selectors](https://github.com/mdn/content/issues/33886) (2024-06-03T00:01:08Z)
   
-* [\[SVG11, html\] Gramatical mistake in fist line of Patterns ](https://github.com/mdn/content/issues/33880) (2024-06-02T13:44:48Z)
-  
 * [\[speech-api\] SpeechRecognition: continuous property is ignored on Chrome on Android](https://github.com/mdn/content/issues/33820) (2024-05-29T09:36:45Z)
   
 * [\[selection-api\] Clarification of the selection object returned](https://github.com/mdn/content/issues/33803) (2024-05-28T22:35:51Z)
