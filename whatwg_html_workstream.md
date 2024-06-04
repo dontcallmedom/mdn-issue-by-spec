@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] No instructions on using \`aria-label\` and \`aria-labelledby\` attributes for accessible naming of icon buttons.](https://github.com/mdn/content/issues/33895) (2024-06-03T13:34:12Z)
-  
 * [\[html\] Broken image](https://github.com/mdn/content/issues/33879) (2024-06-02T08:18:26Z)
   
 * [\[html\] date-in-GMTString-format =\> date-in-UTCString-format](https://github.com/mdn/content/issues/33821) (2024-05-29T09:37:17Z)
