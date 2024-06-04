@@ -26,8 +26,6 @@
   
 * [\[html\] Accessibility advice is misleading](https://github.com/mdn/content/issues/33283) (2024-04-26T14:13:16Z)
   
-* [\[html\] autocapitalize=off is considered deprecated by wpt](https://github.com/mdn/content/issues/33258) (2024-04-24T14:24:55Z)
-  
 * [\[html\] \[WebAPI\] Add HTMLTemplateElement.shadowrootclonable attribute](https://github.com/mdn/content/issues/33160) (2024-04-19T06:59:41Z)
   
 * [\[html\] Navigator: cookieEnabled property warning regarding Safari](https://github.com/mdn/content/issues/32845) (2024-03-26T15:50:22Z)
