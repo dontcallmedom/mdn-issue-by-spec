@@ -88,7 +88,7 @@
 <li>The <code class="notranslate">toArray()</code> function is not defined here.</li>
 <li>The recursive logic is flawed. <code class="notranslate">getEntries()</code> fails to retrieve subfolders, preventing further traversal and acquisition of all files within directories. It also potentially leads to an infinite loop.</li>
 </ul>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="function readDirectory(directory) {
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function readDirectory(directory) {
   let dirReader = directory.createReader();
   let entries = [];
 
@@ -108,32 +108,31 @@
 
   getEntries();
   return entries;
-}"><pre lang="js" class="notranslate"><code class="notranslate">function readDirectory(directory) {
-  let dirReader = directory.createReader();
-  let entries = [];
+}"><pre class="notranslate"><span class="pl-k">function</span> <span class="pl-en">readDirectory</span><span class="pl-kos">(</span><span class="pl-s1">directory</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-k">let</span> <span class="pl-s1">dirReader</span> <span class="pl-c1">=</span> <span class="pl-s1">directory</span><span class="pl-kos">.</span><span class="pl-en">createReader</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-k">let</span> <span class="pl-s1">entries</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-kos">]</span><span class="pl-kos">;</span>
 
-  let getEntries = () =&gt; {
-    dirReader.readEntries(
-      (results) =&gt; {
-        if (results.length) {
-          entries = entries.concat(toArray(results));
-          getEntries();
-        }
-      },
-      (error) =&gt; {
-        /* handle error — error is a FileError object */
-      },
-    );
-  };
+  <span class="pl-k">let</span> <span class="pl-en">getEntries</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+    <span class="pl-s1">dirReader</span><span class="pl-kos">.</span><span class="pl-en">readEntries</span><span class="pl-kos">(</span>
+      <span class="pl-kos">(</span><span class="pl-s1">results</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+        <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">results</span><span class="pl-kos">.</span><span class="pl-c1">length</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+          <span class="pl-s1">entries</span> <span class="pl-c1">=</span> <span class="pl-s1">entries</span><span class="pl-kos">.</span><span class="pl-en">concat</span><span class="pl-kos">(</span><span class="pl-en">toArray</span><span class="pl-kos">(</span><span class="pl-s1">results</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+          <span class="pl-en">getEntries</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+        <span class="pl-kos">}</span>
+      <span class="pl-kos">}</span><span class="pl-kos">,</span>
+      <span class="pl-kos">(</span><span class="pl-s1">error</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+        <span class="pl-c">/* handle error — error is a FileError object */</span>
+      <span class="pl-kos">}</span><span class="pl-kos">,</span>
+    <span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span><span class="pl-kos">;</span>
 
-  getEntries();
-  return entries;
-}
-</code></pre></div>
+  <span class="pl-en">getEntries</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-k">return</span> <span class="pl-s1">entries</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span></pre></div>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">Given a <code class="notranslate">FileSystemDirectoryEntry</code>, obtain all files within the directory (including subdirectories) represented by this object.</p>
 <p dir="auto">Below is my attempted modification using promises.</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="function readDirectory(directory) {
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function readDirectory(directory) {
   return new Promise((resolve, reject) =&gt; {
     let dirReader = directory.createReader();
     let entries = [];
@@ -168,43 +167,42 @@
     };
     getEntries();
   });
-}"><pre lang="js" class="notranslate"><code class="notranslate">function readDirectory(directory) {
-  return new Promise((resolve, reject) =&gt; {
-    let dirReader = directory.createReader();
-    let entries = [];
+}"><pre class="notranslate"><span class="pl-k">function</span> <span class="pl-en">readDirectory</span><span class="pl-kos">(</span><span class="pl-s1">directory</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-k">return</span> <span class="pl-k">new</span> <span class="pl-v">Promise</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">resolve</span><span class="pl-kos">,</span> <span class="pl-s1">reject</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+    <span class="pl-k">let</span> <span class="pl-s1">dirReader</span> <span class="pl-c1">=</span> <span class="pl-s1">directory</span><span class="pl-kos">.</span><span class="pl-en">createReader</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-k">let</span> <span class="pl-s1">entries</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-kos">]</span><span class="pl-kos">;</span>
 
-    let getEntries = () =&gt; {
-      dirReader.readEntries(
-        (results) =&gt; {
-          if (results.length) {
-            const p = [];
-            for (const entry of results) {
-              if (entry.isDirectory) {
-                p.push(readDirectory(entry));
-              } else {
-                p.push(Promise.resolve(entry));
-              }
-            }
-            Promise.all(p).then((res) =&gt; {
-              for (const e of res) {
-                if (Array.isArray(e)) entries.push(...e);
-                else entries.push(e);
-              }
-              resolve(entries);
-            });
-          } else {
-            resolve([]);
-          }
-        },
-        (error) =&gt; {
-          /* handle error — error is a FileError object */
-        }
-      );
-    };
-    getEntries();
-  });
-}
-</code></pre></div>
+    <span class="pl-k">let</span> <span class="pl-en">getEntries</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+      <span class="pl-s1">dirReader</span><span class="pl-kos">.</span><span class="pl-en">readEntries</span><span class="pl-kos">(</span>
+        <span class="pl-kos">(</span><span class="pl-s1">results</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+          <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">results</span><span class="pl-kos">.</span><span class="pl-c1">length</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+            <span class="pl-k">const</span> <span class="pl-s1">p</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-kos">]</span><span class="pl-kos">;</span>
+            <span class="pl-k">for</span> <span class="pl-kos">(</span><span class="pl-k">const</span> <span class="pl-s1">entry</span> <span class="pl-k">of</span> <span class="pl-s1">results</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+              <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">entry</span><span class="pl-kos">.</span><span class="pl-c1">isDirectory</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+                <span class="pl-s1">p</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-en">readDirectory</span><span class="pl-kos">(</span><span class="pl-s1">entry</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+              <span class="pl-kos">}</span> <span class="pl-k">else</span> <span class="pl-kos">{</span>
+                <span class="pl-s1">p</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-v">Promise</span><span class="pl-kos">.</span><span class="pl-en">resolve</span><span class="pl-kos">(</span><span class="pl-s1">entry</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+              <span class="pl-kos">}</span>
+            <span class="pl-kos">}</span>
+            <span class="pl-v">Promise</span><span class="pl-kos">.</span><span class="pl-en">all</span><span class="pl-kos">(</span><span class="pl-s1">p</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">res</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+              <span class="pl-k">for</span> <span class="pl-kos">(</span><span class="pl-k">const</span> <span class="pl-s1">e</span> <span class="pl-k">of</span> <span class="pl-s1">res</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+                <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-v">Array</span><span class="pl-kos">.</span><span class="pl-en">isArray</span><span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-s1">entries</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span>...<span class="pl-s1">e</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+                <span class="pl-k">else</span> <span class="pl-s1">entries</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+              <span class="pl-kos">}</span>
+              <span class="pl-s1">resolve</span><span class="pl-kos">(</span><span class="pl-s1">entries</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+            <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+          <span class="pl-kos">}</span> <span class="pl-k">else</span> <span class="pl-kos">{</span>
+            <span class="pl-s1">resolve</span><span class="pl-kos">(</span><span class="pl-kos">[</span><span class="pl-kos">]</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+          <span class="pl-kos">}</span>
+        <span class="pl-kos">}</span><span class="pl-kos">,</span>
+        <span class="pl-kos">(</span><span class="pl-s1">error</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+          <span class="pl-c">/* handle error — error is a FileError object */</span>
+        <span class="pl-kos">}</span>
+      <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span><span class="pl-kos">;</span>
+    <span class="pl-en">getEntries</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>

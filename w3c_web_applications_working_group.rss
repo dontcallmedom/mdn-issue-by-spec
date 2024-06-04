@@ -118,7 +118,7 @@ Nicely explains the (main?) difference between <code class="notranslate">key</co
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">While the page does mention that what's being checked is the printed output, it was not clear to me that to get, for example, shift + b, I needed to check for a capital B. As in:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="//looking for shift + b
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="//looking for shift + b
 if(e.shiftKey &amp;&amp; e.key == 'b') {
   //does not work
 }
@@ -130,20 +130,19 @@ if(e.key == 'B') {
 //looking for just b
 if(e.key == 'b') {
   //works
-}"><pre lang="js" class="notranslate"><code class="notranslate">//looking for shift + b
-if(e.shiftKey &amp;&amp; e.key == 'b') {
-  //does not work
-}
+}"><pre class="notranslate"><span class="pl-c">//looking for shift + b</span>
+<span class="pl-k">if</span><span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">shiftKey</span> <span class="pl-c1">&amp;&amp;</span> <span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">key</span> <span class="pl-c1">==</span> <span class="pl-s">'b'</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-c">//does not work</span>
+<span class="pl-kos">}</span>
 
-if(e.key == 'B') {
-  //works
-}
+<span class="pl-k">if</span><span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">key</span> <span class="pl-c1">==</span> <span class="pl-s">'B'</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-c">//works</span>
+<span class="pl-kos">}</span>
 
-//looking for just b
-if(e.key == 'b') {
-  //works
-}
-</code></pre></div>
+<span class="pl-c">//looking for just b</span>
+<span class="pl-k">if</span><span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">key</span> <span class="pl-c1">==</span> <span class="pl-s">'b'</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-c">//works</span>
+<span class="pl-kos">}</span></pre></div>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">More clarification on how to check for key combinations with modifiers. Adding an example would have been helpful 😢</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
@@ -572,10 +571,10 @@ interface PushSubscriptionJSON {
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The example doesn't work. Also. it has different errors depending on the platform you use. On desktop web:<br>
 <code class="notranslate">Error: TypeError: navigator.share is not a function</code></p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/102827935/247702540-0504c6fa-4020-4fa2-aa0b-4cdc1cc0bb66.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc1MTQ4MzIsIm5iZiI6MTcxNzUxNDUzMiwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNTQwLTA1MDRjNmZhLTQwMjAtNGZhMi1hYTBiLTRjZGMxY2MwYmI2Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYwNFQxNTIyMTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01NDBlYTU1Y2VjYmVhMTY2MmZlNjQ5YzhkYmUwMjhjYmYyNjBlNTk3NTY2ZWNhMTE0NzZlZmZjOTUwZWUxNmIyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.7K2yezhkx4pBofpSr2GuRoBB4loUwq4y6OZjkL55KhA"><img src="https://private-user-images.githubusercontent.com/102827935/247702540-0504c6fa-4020-4fa2-aa0b-4cdc1cc0bb66.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc1MTQ4MzIsIm5iZiI6MTcxNzUxNDUzMiwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNTQwLTA1MDRjNmZhLTQwMjAtNGZhMi1hYTBiLTRjZGMxY2MwYmI2Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYwNFQxNTIyMTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01NDBlYTU1Y2VjYmVhMTY2MmZlNjQ5YzhkYmUwMjhjYmYyNjBlNTk3NTY2ZWNhMTE0NzZlZmZjOTUwZWUxNmIyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.7K2yezhkx4pBofpSr2GuRoBB4loUwq4y6OZjkL55KhA" alt="1" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/102827935/247702540-0504c6fa-4020-4fa2-aa0b-4cdc1cc0bb66.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc1MTU0NzcsIm5iZiI6MTcxNzUxNTE3NywicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNTQwLTA1MDRjNmZhLTQwMjAtNGZhMi1hYTBiLTRjZGMxY2MwYmI2Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYwNFQxNTMyNTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04YWMyMjUwN2QzMDE3ZjI3NjA4ODU0ZTJmZmFhNjI5MTZkNzliZjUxNmQ1MmYwYTViZTI2NmQ5YTg0ZTE3MTg3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.0CGbH3vlnoRD1SqQL62Z5Vq5p-hzHdfmXT-MpbnfbQw"><img src="https://private-user-images.githubusercontent.com/102827935/247702540-0504c6fa-4020-4fa2-aa0b-4cdc1cc0bb66.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc1MTU0NzcsIm5iZiI6MTcxNzUxNTE3NywicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNTQwLTA1MDRjNmZhLTQwMjAtNGZhMi1hYTBiLTRjZGMxY2MwYmI2Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYwNFQxNTMyNTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04YWMyMjUwN2QzMDE3ZjI3NjA4ODU0ZTJmZmFhNjI5MTZkNzliZjUxNmQ1MmYwYTViZTI2NmQ5YTg0ZTE3MTg3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.0CGbH3vlnoRD1SqQL62Z5Vq5p-hzHdfmXT-MpbnfbQw" alt="1" style="max-width: 100%;"></a></p>
 <p dir="auto">on mWeb (iOS Safari):<br>
 <code class="notranslate">Error: NotAllowedError: Third-party iframes are not allowed to call share() unless explicitly allowed via Feature-Policy (web-share)</code></p>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/102827935/247702629-9c20d6ee-75cd-4319-b024-f3f7eac9bd49.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc1MTQ4MzIsIm5iZiI6MTcxNzUxNDUzMiwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNjI5LTljMjBkNmVlLTc1Y2QtNDMxOS1iMDI0LWYzZjdlYWM5YmQ0OS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYwNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MDRUMTUyMjEyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjZmZWM0MTJmNTg4Y2U3MzgzYWY0YjY4NjE4YWMyNWNiZWIzYzFhNmE1NmQxNTM4ZTk2MmI5MDYzYTc3YmY0NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.gpH88OCS2zzgWEqzZ583E_zTdL2zwLT1gH-LaSOayw0"><img src="https://private-user-images.githubusercontent.com/102827935/247702629-9c20d6ee-75cd-4319-b024-f3f7eac9bd49.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc1MTQ4MzIsIm5iZiI6MTcxNzUxNDUzMiwicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNjI5LTljMjBkNmVlLTc1Y2QtNDMxOS1iMDI0LWYzZjdlYWM5YmQ0OS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYwNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MDRUMTUyMjEyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjZmZWM0MTJmNTg4Y2U3MzgzYWY0YjY4NjE4YWMyNWNiZWIzYzFhNmE1NmQxNTM4ZTk2MmI5MDYzYTc3YmY0NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.gpH88OCS2zzgWEqzZ583E_zTdL2zwLT1gH-LaSOayw0" width="300" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/102827935/247702629-9c20d6ee-75cd-4319-b024-f3f7eac9bd49.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc1MTU0NzcsIm5iZiI6MTcxNzUxNTE3NywicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNjI5LTljMjBkNmVlLTc1Y2QtNDMxOS1iMDI0LWYzZjdlYWM5YmQ0OS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYwNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MDRUMTUzMjU3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDFmMWQ1OTFjMjI5ZDZiM2Y5OWEzZTUwMWZkYjNlZmYzMDE2OTVmZDUyYzRhMGRkOWJiMDU5ZTcwZTg5ZDFiYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.axEA8SAJZeN7-3spKyjYIc88GI-HVkKOXzpywjPJyF4"><img src="https://private-user-images.githubusercontent.com/102827935/247702629-9c20d6ee-75cd-4319-b024-f3f7eac9bd49.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc1MTU0NzcsIm5iZiI6MTcxNzUxNTE3NywicGF0aCI6Ii8xMDI4Mjc5MzUvMjQ3NzAyNjI5LTljMjBkNmVlLTc1Y2QtNDMxOS1iMDI0LWYzZjdlYWM5YmQ0OS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYwNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MDRUMTUzMjU3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDFmMWQ1OTFjMjI5ZDZiM2Y5OWEzZTUwMWZkYjNlZmYzMDE2OTVmZDUyYzRhMGRkOWJiMDU5ZTcwZTg5ZDFiYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.axEA8SAJZeN7-3spKyjYIc88GI-HVkKOXzpywjPJyF4" width="300" style="max-width: 100%;"></a>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The share dialog is supposed to launch when I click the button in the example.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
