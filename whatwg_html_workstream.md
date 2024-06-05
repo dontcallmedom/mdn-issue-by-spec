@@ -36,8 +36,6 @@
   
 * [\[html\] There was no proper example of the HTML used for the Nesting example, instead it looked like someone was trying to explain it outside of an example like in the other sections of the web page.](https://github.com/mdn/content/issues/32758) (2024-03-20T07:11:44Z)
   
-* [\[html\] \<figcaption\> : accessible description or accessible name of \<figure\>?](https://github.com/mdn/content/issues/32698) (2024-03-15T10:20:30Z)
-  
 * [\[html\] \`Canvas\` \`clear\` on resize not mentioned](https://github.com/mdn/content/issues/32603) (2024-03-07T23:53:26Z)
   
 * [\[html, css-images-3\] Statement about applicable object-position and object-fit is wrong (?)](https://github.com/mdn/content/issues/32474) (2024-02-28T16:22:14Z)
