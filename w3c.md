@@ -98,7 +98,7 @@
   
 * [\[WebCryptoAPI\] SubtleCrypto: sign() method missing Ed25519 in Supported algorithms](https://github.com/mdn/content/issues/30886) (2023-12-09T03:20:17Z)
   
-* [\[css-overflow-3\] \[Incomplete information on doc page\] What is the future of box-orient & line-clamp?](https://github.com/mdn/content/issues/30842) (2023-12-06T23:01:46Z)
+* [\[css-overflow-3\] Information about how to use -webkit-line-clamp independent of -webkit-box-orient, and its future](https://github.com/mdn/content/issues/30842) (2023-12-06T23:01:46Z)
   
 * [\[service-workers-1\] Confusing text on service worker registration scope broadening](https://github.com/mdn/content/issues/30306) (2023-11-16T11:39:55Z)
   

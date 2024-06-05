@@ -58,7 +58,7 @@
   
 * [\[resize-observer-1\] How to prevent ResizeObserver Observation errors](https://github.com/mdn/content/issues/31021) (2023-12-15T08:03:20Z)
   
-* [\[css-overflow-3\] \[Incomplete information on doc page\] What is the future of box-orient & line-clamp?](https://github.com/mdn/content/issues/30842) (2023-12-06T23:01:46Z)
+* [\[css-overflow-3\] Information about how to use -webkit-line-clamp independent of -webkit-box-orient, and its future](https://github.com/mdn/content/issues/30842) (2023-12-06T23:01:46Z)
   
 * [\[css-display-3\] Value \`run-in\` missing from display](https://github.com/mdn/content/issues/30201) (2023-11-11T03:01:31Z)
   
