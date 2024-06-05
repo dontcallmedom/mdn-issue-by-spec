@@ -14,7 +14,7 @@
   
 * [\[periodic-background-sync\] The description of "periodicSync" is flawed.](https://github.com/mdn/content/issues/33692) (2024-05-21T08:55:15Z)
   
-* [\[cssom-view-1, appmanifest, screen-orientation\] Orientation can not be changed at runtime via the Screen Orientation API](https://github.com/mdn/content/issues/33670) (2024-05-19T16:39:01Z)
+* [\[cssom-view-1, appmanifest, screen-orientation\] Manifest#orientation: should link to screen orientation API landing page](https://github.com/mdn/content/issues/33670) (2024-05-19T16:39:01Z)
   
 * [\[SVG11\] CSS pointer-events description is inaccurate](https://github.com/mdn/content/issues/33633) (2024-05-15T20:00:25Z)
   

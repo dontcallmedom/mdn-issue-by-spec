@@ -6,7 +6,7 @@
   
 * [\[uievents\] KeyboardEvent: keyCode deprecation hints have contradicting info wrt what to use instead](https://github.com/mdn/content/issues/33694) (2024-05-21T10:18:54Z)
   
-* [\[cssom-view-1, appmanifest, screen-orientation\] Orientation can not be changed at runtime via the Screen Orientation API](https://github.com/mdn/content/issues/33670) (2024-05-19T16:39:01Z)
+* [\[cssom-view-1, appmanifest, screen-orientation\] Manifest#orientation: should link to screen orientation API landing page](https://github.com/mdn/content/issues/33670) (2024-05-19T16:39:01Z)
   
 * [\[uievents\] KeyboardEvent key property clarification on how to use ShiftKey modifier](https://github.com/mdn/content/issues/33451) (2024-05-06T21:53:57Z)
   
