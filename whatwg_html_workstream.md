@@ -6,7 +6,7 @@
   
 * [\[html\] Add a warning/suggestion to canvas.toDataURL to prefer toBlob](https://github.com/mdn/content/issues/33748) (2024-05-25T10:54:03Z)
   
-* [\[html\] Missing example](https://github.com/mdn/content/issues/33693) (2024-05-21T09:41:38Z)
+* [\[html\] Need example of details with name attribute](https://github.com/mdn/content/issues/33693) (2024-05-21T09:41:38Z)
   
 * [\[html\] Unclear whether omitting \`\<tbody\>\` tags (putting \`\<tr\>\` directly under \`\<table\>\`) is valid](https://github.com/mdn/content/issues/33618) (2024-05-15T04:07:43Z)
   
