@@ -4,46 +4,10 @@
         <title>WHATWG DOM Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_dom_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG DOM Workstream</description>
-        <lastBuildDate>Mon, 03 Jun 2024 10:13:03 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 08 Mar 2024 14:53:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[dom] Conflict on information about CDATA in HTML]]></title>
-            <link>https://github.com/mdn/content/issues/33894</link>
-            <guid>https://github.com/mdn/content/issues/33894</guid>
-            <pubDate>Mon, 03 Jun 2024 10:13:03 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/CDATASection" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CDATASection</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<blockquote>
-<p dir="auto">Note: CDATA sections should not be used within HTML they are considered as comments and not displayed.</p>
-</blockquote>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">This information says that CDATA sections are treated like comments, but in <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createCDATASection" rel="nofollow">createCDATASection</a> it says:</p>
-<blockquote>
-<p dir="auto">This will only work with XML, not HTML documents (as HTML documents do not support CDATA sections); attempting it on an HTML document will throw NOT_SUPPORTED_ERR.</p>
-</blockquote>
-<p dir="auto">These statements conflict. Either its supported as a comment, or its not supported.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Consistent information</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/cdatasection</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CDATASection" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CDATASection</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/cdatasection/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/cdatasection/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b280ea1234452ff553caa466bf532a66ba51db01/hovercard" href="https://github.com/mdn/content/commit/b280ea1234452ff553caa466bf532a66ba51db01"><tt>b280ea1</tt></a></li>
-<li>Document last modified: 2023-02-19T06:34:57.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] querySelectorAll() does not state how the results are sorted]]></title>
             <link>https://github.com/mdn/content/issues/32615</link>

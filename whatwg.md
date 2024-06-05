@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[dom\] Conflict on information about CDATA in HTML](https://github.com/mdn/content/issues/33894) (2024-06-03T10:13:03Z)
-  
 * [\[html\] date-in-GMTString-format =\> date-in-UTCString-format](https://github.com/mdn/content/issues/33821) (2024-05-29T09:37:17Z)
   
 * [\[html\] Add a warning/suggestion to canvas.toDataURL to prefer toBlob](https://github.com/mdn/content/issues/33748) (2024-05-25T10:54:03Z)
@@ -54,7 +52,7 @@
   
 * [\[html\] cancelAnimationFrame using mismatched time values in sample](https://github.com/mdn/content/issues/31840) (2024-01-21T18:53:32Z)
   
-* [\[html\] Connected or not?](https://github.com/mdn/content/issues/31768) (2024-01-17T18:55:09Z)
+* [\[html\] WebSocket constructor example should demonstrate waiting for connection or handling connection failure](https://github.com/mdn/content/issues/31768) (2024-01-17T18:55:09Z)
   
 * [\[fetch\] Missing Request constructor duplex option](https://github.com/mdn/content/issues/31735) (2024-01-16T01:34:58Z)
   

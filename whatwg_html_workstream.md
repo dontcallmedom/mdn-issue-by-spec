@@ -46,7 +46,7 @@
   
 * [\[html\] cancelAnimationFrame using mismatched time values in sample](https://github.com/mdn/content/issues/31840) (2024-01-21T18:53:32Z)
   
-* [\[html\] Connected or not?](https://github.com/mdn/content/issues/31768) (2024-01-17T18:55:09Z)
+* [\[html\] WebSocket constructor example should demonstrate waiting for connection or handling connection failure](https://github.com/mdn/content/issues/31768) (2024-01-17T18:55:09Z)
   
 * [\[html\] \`hgroup\` accessibility concerns might need an update](https://github.com/mdn/content/issues/31064) (2023-12-16T13:22:38Z)
   

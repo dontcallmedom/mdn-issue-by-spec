@@ -88,7 +88,7 @@
   
 * [\[uievents\] Deprecated event property keyCode is used in examples, but also not explained](https://github.com/mdn/content/issues/31988) (2024-01-29T19:24:13Z)
   
-* [\[selectors-4\] No mention of blank page pseudo-class](https://github.com/mdn/content/issues/31885) (2024-01-24T10:43:17Z)
+* [\[selectors-4\] :blank is also a blank page pseudo-class](https://github.com/mdn/content/issues/31885) (2024-01-24T10:43:17Z)
   
 * [\[css-conditional-3, CSS21\] \`@charset\` is not deprecated](https://github.com/mdn/content/issues/31882) (2024-01-24T07:40:57Z)
   

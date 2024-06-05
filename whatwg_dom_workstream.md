@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[dom\] Conflict on information about CDATA in HTML](https://github.com/mdn/content/issues/33894) (2024-06-03T10:13:03Z)
-  
 * [\[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] querySelectorAll() does not state how the results are sorted](https://github.com/mdn/content/issues/32615) (2024-03-08T14:53:28Z)
   
 * [\[dom\] Not all observers will be removed when one call observe with same target node](https://github.com/mdn/content/issues/29814) (2023-10-24T15:19:23Z)
