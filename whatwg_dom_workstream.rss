@@ -45,37 +45,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[dom] NodeList is not an array and you cannot use standard array notation to access the list]]></title>
-            <link>https://github.com/mdn/content/issues/33734</link>
-            <guid>https://github.com/mdn/content/issues/33734</guid>
-            <pubDate>Thu, 23 May 2024 19:20:42 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Accessing the matches</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The section states that elements of the NodeList can be accessed using "<em>standard array notation</em>" and goes on to show an example which uses the <strong>Array.forEach()</strong> function. This is misleading at best because, although the NodeList does have a forEach() method, none of the other array functions (e.g. map, find, etc), will work.</p>
-<p dir="auto">The <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList" rel="nofollow">NodeList page</a> specifies this near the top of the page by stating that the NodeList must be converted to an array first using <strong>Array.from()</strong>.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">A disclaimer similar to the one near the top of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList" rel="nofollow">NodeList page</a> which states that the NodeList must be converted to an array using Array.from().</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/document/queryselectorall</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/document/queryselectorall/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/document/queryselectorall/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b85bf9fcc2c0062a765d104799d7d45d9e9b13bb/hovercard" href="https://github.com/mdn/content/commit/b85bf9fcc2c0062a765d104799d7d45d9e9b13bb"><tt>b85bf9f</tt></a></li>
-<li>Document last modified: 2023-07-22T00:55:30.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing] querySelectorAll() does not state how the results are sorted]]></title>
             <link>https://github.com/mdn/content/issues/32615</link>
             <guid>https://github.com/mdn/content/issues/32615</guid>

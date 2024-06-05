@@ -10,8 +10,6 @@
   
 * [\[html\] Add a warning/suggestion to canvas.toDataURL to prefer toBlob](https://github.com/mdn/content/issues/33748) (2024-05-25T10:54:03Z)
   
-* [\[dom\] NodeList is not an array and you cannot use standard array notation to access the list](https://github.com/mdn/content/issues/33734) (2024-05-23T19:20:42Z)
-  
 * [\[fetch\] What happens in the case of invalid JSON?](https://github.com/mdn/content/issues/33726) (2024-05-23T07:32:13Z)
   
 * [\[html\] Missing example](https://github.com/mdn/content/issues/33693) (2024-05-21T09:41:38Z)

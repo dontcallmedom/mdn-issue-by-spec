@@ -4,8 +4,6 @@
 
 * [\[dom\] Conflict on information about CDATA in HTML](https://github.com/mdn/content/issues/33894) (2024-06-03T10:13:03Z)
   
-* [\[dom\] NodeList is not an array and you cannot use standard array notation to access the list](https://github.com/mdn/content/issues/33734) (2024-05-23T19:20:42Z)
-  
 * [\[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] querySelectorAll() does not state how the results are sorted](https://github.com/mdn/content/issues/32615) (2024-03-08T14:53:28Z)
   
 * [\[dom\] preventDefault - default actions would be useful](https://github.com/mdn/content/issues/30284) (2023-11-15T06:26:55Z)
