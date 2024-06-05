@@ -182,7 +182,5 @@
   
 * [\[html\] CustomElementRegistry needs updating](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
   
-* [\[html\] Issue with "clearTimeout()": Can failure be detected?](https://github.com/mdn/content/issues/5553) (2021-06-01T19:35:39Z)
-  
 * [\[html\] api.HTMLSelectElement - write page for 'autocomplete'](https://github.com/mdn/content/issues/2016) (2021-01-20T05:13:05Z)
   

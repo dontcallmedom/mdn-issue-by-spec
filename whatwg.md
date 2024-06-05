@@ -238,8 +238,6 @@
   
 * [\[console\] Issue with "console", how does number formatting work? Number formatting doesn't work on Chrome.](https://github.com/mdn/content/issues/6614) (2021-07-06T06:31:49Z)
   
-* [\[html\] Issue with "clearTimeout()": Can failure be detected?](https://github.com/mdn/content/issues/5553) (2021-06-01T19:35:39Z)
-  
 * [\[orientation-event, compat\] Content bug: Improve device/screen orientation event doc](https://github.com/mdn/content/issues/4400) (2021-04-23T02:57:45Z)
   
 * [\[notifications\] Demo in Notification() constructor article causes error: “The Notification permission may only be requested from inside a short running user-generated event handler”](https://github.com/mdn/content/issues/2615) (2021-02-23T13:20:50Z)
