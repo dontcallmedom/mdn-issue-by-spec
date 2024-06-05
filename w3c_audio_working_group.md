@@ -4,9 +4,7 @@
 
 * [\[webaudio\] ConvolverNode example needs user interaction](https://github.com/mdn/content/issues/33175) (2024-04-19T12:46:49Z)
   
-* [\[webaudio\] Contradictions in documentation https://developer.mozilla.org/en-US/docs/Web/API/ChannelMergerNode Channel count mode =  	"explicit" Channel count = 2 (not used in the default count mode)](https://github.com/mdn/content/issues/32783) (2024-03-21T14:03:50Z)
-  
-* [\[webaudio\] AnalyzerNode::getByteFrequencyData claims that an element in the Uint8array is set to negative infinity](https://github.com/mdn/content/issues/32640) (2024-03-11T11:20:35Z)
+* [\[webaudio\] ChannelMergerNode contradiction: Channel count mode = "explicit" Channel count = 2 (not used in the default count mode)](https://github.com/mdn/content/issues/32783) (2024-03-21T14:03:50Z)
   
 * [\[webaudio\] interrupted state not listed as a valid state value, but an example of interrupted state was given](https://github.com/mdn/content/issues/26129) (2023-04-11T18:49:59Z)
   
