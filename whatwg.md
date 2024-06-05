@@ -6,8 +6,6 @@
   
 * [\[html\] date-in-GMTString-format =\> date-in-UTCString-format](https://github.com/mdn/content/issues/33821) (2024-05-29T09:37:17Z)
   
-* [\[html\] Anchor tech summary does not list permitted content types in a meaningful way](https://github.com/mdn/content/issues/33814) (2024-05-29T07:14:49Z)
-  
 * [\[html\] Add a warning/suggestion to canvas.toDataURL to prefer toBlob](https://github.com/mdn/content/issues/33748) (2024-05-25T10:54:03Z)
   
 * [\[fetch\] What happens in the case of invalid JSON?](https://github.com/mdn/content/issues/33726) (2024-05-23T07:32:13Z)
