@@ -316,7 +316,7 @@
   
 * [\[webaudio\] AudioContext.createMediaElementSource does not work in Safari](https://github.com/mdn/content/issues/9042) (2021-09-17T18:01:03Z)
   
-* [\[notifications, cssom-view-1, service-workers-1, dom, pointerevents3\] Better naming of pages](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
+* [\[notifications, cssom-view-1, service-workers-1, dom, pointerevents3\] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
 * [\[SVG11\] Issue with "SVGSVGElement": In FF an unset viewBox property means viewBox.baseVal = null. For Chrome it is an SVGRect initialized to 0.](https://github.com/mdn/content/issues/8907) (2021-09-14T14:00:23Z)
   
