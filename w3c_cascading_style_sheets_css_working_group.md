@@ -32,6 +32,8 @@
   
 * [\[selectors-4\] \`:not()\` missing complex selector list examples](https://github.com/mdn/content/issues/32880) (2024-03-29T08:10:06Z)
   
+* [\[cssom-1\] Mention how getPropertyValue serializes values (color representation, etc.)](https://github.com/mdn/content/issues/32826) (2024-03-25T16:39:00Z)
+  
 * [\[cssom-view-1, dom, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] querySelectorAll() does not state how the results are sorted](https://github.com/mdn/content/issues/32615) (2024-03-08T14:53:28Z)
   
 * [\[css-ui-4\] user-select contain is obsolete](https://github.com/mdn/content/issues/32607) (2024-03-08T04:23:22Z)

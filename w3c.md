@@ -60,6 +60,8 @@
   
 * [\[selectors-4\] \`:not()\` missing complex selector list examples](https://github.com/mdn/content/issues/32880) (2024-03-29T08:10:06Z)
   
+* [\[cssom-1\] Mention how getPropertyValue serializes values (color representation, etc.)](https://github.com/mdn/content/issues/32826) (2024-03-25T16:39:00Z)
+  
 * [\[webaudio\] Contradictions in documentation https://developer.mozilla.org/en-US/docs/Web/API/ChannelMergerNode Channel count mode =  	"explicit" Channel count = 2 (not used in the default count mode)](https://github.com/mdn/content/issues/32783) (2024-03-21T14:03:50Z)
   
 * [\[webaudio\] AnalyzerNode::getByteFrequencyData claims that an element in the Uint8array is set to negative infinity](https://github.com/mdn/content/issues/32640) (2024-03-11T11:20:35Z)
