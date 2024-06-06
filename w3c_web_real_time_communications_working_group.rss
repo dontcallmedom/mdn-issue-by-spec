@@ -4,10 +4,47 @@
         <title>W3C Web Real-Time Communications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_real_time_communications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Real-Time Communications Working Group</description>
-        <lastBuildDate>Mon, 06 May 2024 23:27:07 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 06 Jun 2024 05:26:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[webrtc]  RTCDTMFSender.canInsertDTMF missing]]></title>
+            <link>https://github.com/mdn/content/issues/33951</link>
+            <guid>https://github.com/mdn/content/issues/33951</guid>
+            <pubDate>Thu, 06 Jun 2024 05:26:14 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCDTMFSender" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/RTCDTMFSender</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">According to the WebRTC specification ( <a href="https://github.com/w3c/webrtc-pc">https://github.com/w3c/webrtc-pc</a> ), the <code class="notranslate">RTCDTMFSender</code> interface should have a <code class="notranslate">canInsertDTMF</code> attribute. However, I can't find any mention of it in this MDN page.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Here's an example of what I expected to see:</p>
+<div class="highlight highlight-text-md notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="## Instance properties
+
+- `RTCDTMFSender.canInsertDTMF`
+  - A boolean value which is `true` if the `RTCDTMFSender` is capable of sending DTMF tones, or `false` if it is not."><pre class="notranslate"><span class="pl-mh">## <span class="pl-en">Instance properties</span></span>
+
+<span class="pl-v">-</span> <span class="pl-s">`</span><span class="pl-c1">RTCDTMFSender.canInsertDTMF</span><span class="pl-s">`</span>
+  <span class="pl-v">-</span> A boolean value which is <span class="pl-s">`</span><span class="pl-c1">true</span><span class="pl-s">`</span> if the <span class="pl-s">`</span><span class="pl-c1">RTCDTMFSender</span><span class="pl-s">`</span> is capable of sending DTMF tones, or <span class="pl-s">`</span><span class="pl-c1">false</span><span class="pl-s">`</span> if it is not.</pre></div>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://w3c.github.io/webrtc-pc/#dom-rtcdtmfsender-caninsertdtmf" rel="nofollow">https://w3c.github.io/webrtc-pc/#dom-rtcdtmfsender-caninsertdtmf</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/rtcdtmfsender</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCDTMFSender" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/RTCDTMFSender</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcdtmfsender/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcdtmfsender/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/50ed08d7b506c19b7d073b05ea1e02a15f276878/hovercard" href="https://github.com/mdn/content/commit/50ed08d7b506c19b7d073b05ea1e02a15f276878"><tt>50ed08d</tt></a></li>
+<li>Document last modified: 2023-02-19T09:57:47.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript, webrtc] Confusing wording around return value of RTCPeerConnection.createOffer]]></title>
             <link>https://github.com/mdn/content/issues/33453</link>
