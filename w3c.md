@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[webrtc\] Missing Link for \`RTCPeerConnection.createDTMFSender()\` in "Obsolete Methods" Section](https://github.com/mdn/content/issues/33954) (2024-06-06T06:52:29Z)
+  
 * [\[webrtc\]  RTCDTMFSender.canInsertDTMF missing](https://github.com/mdn/content/issues/33951) (2024-06-06T05:26:14Z)
   
 * [\[selectors-4\] Document how to escape CSS attribute selectors](https://github.com/mdn/content/issues/33886) (2024-06-03T00:01:08Z)
