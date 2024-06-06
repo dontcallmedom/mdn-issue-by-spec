@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[ecmascript\] yield\* has unexpected result when internal generator body contains a 'return'](https://github.com/mdn/content/issues/33852) (2024-05-31T07:02:46Z)
-  
 * [\[ecmascript\] TypedArray subclass pages say contents are initialized to 0](https://github.com/mdn/content/issues/33743) (2024-05-24T17:30:30Z)
   
 * [\[ecmascript, webrtc\] Confusing wording around return value of RTCPeerConnection.createOffer](https://github.com/mdn/content/issues/33453) (2024-05-06T23:27:07Z)
