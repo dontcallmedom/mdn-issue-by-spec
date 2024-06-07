@@ -4,5 +4,5 @@
 
 * [\[xhr\] xhr.abort is inaccurate](https://github.com/mdn/content/issues/23961) (2023-01-29T01:52:09Z)
   
-* [\[xhr\] Issue with "FormData()": missing formdata event documentation](https://github.com/mdn/content/issues/7613) (2021-08-05T12:02:00Z)
+* [\[xhr\] FormData() constructor should link to formdata event](https://github.com/mdn/content/issues/7613) (2021-08-05T12:02:00Z)
   
