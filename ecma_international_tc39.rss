@@ -4,10 +4,52 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Fri, 24 May 2024 17:30:30 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 07 Jun 2024 16:28:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Clarify or replace "additional lines of processing"]]></title>
+            <link>https://github.com/mdn/content/issues/34006</link>
+            <guid>https://github.com/mdn/content/issues/34006</guid>
+            <pubDate>Fri, 07 Jun 2024 16:28:20 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Description</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">"If the body has additional lines of processing" in "The braces can only be omitted if the function directly returns an expression. If the body has additional lines of processing, the braces are required — and so is the return keyword." is a little misleading.<br>
+Because e.g.:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="(a) =&gt; (
+    a = [3,2,1],
+    delete a[1],
+    a.reduce((x,y) =&gt; x+y)
+)"><pre class="notranslate"><code class="notranslate">(a) =&gt; (
+    a = [3,2,1],
+    delete a[1],
+    a.reduce((x,y) =&gt; x+y)
+)
+</code></pre></div>
+<p dir="auto">Is completely valid expression, that consists of multiple expressions and has additional lines. Quick search for term "lines of processing" does not return anything relevant.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I would expect something like "If the body has to include statements". (Although, any program can be written with only expressions)</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/functions/arrow_functions</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/functions/arrow_functions/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/functions/arrow_functions/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e3faa375b0179de77a5eff00074e3d168a0a904c/hovercard" href="https://github.com/mdn/content/commit/e3faa375b0179de77a5eff00074e3d168a0a904c"><tt>e3faa37</tt></a></li>
+<li>Document last modified: 2023-10-04T23:23:49.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] TypedArray subclass pages say contents are initialized to 0]]></title>
             <link>https://github.com/mdn/content/issues/33743</link>
