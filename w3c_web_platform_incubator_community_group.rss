@@ -4,10 +4,88 @@
         <title>W3C Web Platform Incubator Community Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_platform_incubator_community_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Platform Incubator Community Group</description>
-        <lastBuildDate>Wed, 29 May 2024 09:36:45 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 07 Jun 2024 03:51:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[compression] Missing "zstd" compression in CompressionStream]]></title>
+            <link>https://github.com/mdn/content/issues/33971</link>
+            <guid>https://github.com/mdn/content/issues/33971</guid>
+            <pubDate>Fri, 07 Jun 2024 03:51:08 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/CompressionStream/CompressionStream" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CompressionStream/CompressionStream</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">CompressionStream does not support "zstd" compression</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const compression = new CompressionStream(&quot;zstd&quot;);
+const decompression = new DecompressionStream(&quot;zstd&quot;)"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">compression</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">CompressionStream</span><span class="pl-kos">(</span><span class="pl-s">"zstd"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-s1">decompression</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">DecompressionStream</span><span class="pl-kos">(</span><span class="pl-s">"zstd"</span><span class="pl-kos">)</span></pre></div>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="(async () =&gt; {
+  const compression = async item =&gt; {
+    const compression = new CompressionStream('zstd'), writer = compression.writable.getWriter();
+    
+    writer.write(item);
+    writer.close();
+    
+    return await new Response(compression.readable).arrayBuffer();
+  };
+
+  const decompression = async compress =&gt; {
+    const decompression = new DecompressionStream('zstd'), writer = decompression.writable.getWriter();
+  
+      writer.write(compress);
+      writer.close();
+      
+      return await new Response(decompression.readable).arrayBuffer();
+  };
+	
+  const text = 'this is text';
+  const encoder = new TextEncoder;
+  const compress = await compression(encoder.encode(text));
+  
+  console.log('compress = ', compress);
+  
+  const decompress = await decompression(compress);
+  const decoder = new TextDecoder;
+  
+  console.log('decompress = ', decompress);
+  console.log('text = ', decoder.decode(decompress));"><pre class="notranslate"><span class="pl-kos">(</span><span class="pl-k">async</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-k">const</span> <span class="pl-en">compression</span> <span class="pl-c1">=</span> <span class="pl-k">async</span> <span class="pl-s1">item</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+    <span class="pl-k">const</span> <span class="pl-s1">compression</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">CompressionStream</span><span class="pl-kos">(</span><span class="pl-s">'zstd'</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-s1">writer</span> <span class="pl-c1">=</span> <span class="pl-s1">compression</span><span class="pl-kos">.</span><span class="pl-c1">writable</span><span class="pl-kos">.</span><span class="pl-en">getWriter</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    
+    <span class="pl-s1">writer</span><span class="pl-kos">.</span><span class="pl-en">write</span><span class="pl-kos">(</span><span class="pl-s1">item</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-s1">writer</span><span class="pl-kos">.</span><span class="pl-en">close</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    
+    <span class="pl-k">return</span> <span class="pl-k">await</span> <span class="pl-k">new</span> <span class="pl-v">Response</span><span class="pl-kos">(</span><span class="pl-s1">compression</span><span class="pl-kos">.</span><span class="pl-c1">readable</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">arrayBuffer</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span><span class="pl-kos">;</span>
+
+  <span class="pl-k">const</span> <span class="pl-en">decompression</span> <span class="pl-c1">=</span> <span class="pl-k">async</span> <span class="pl-s1">compress</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+    <span class="pl-k">const</span> <span class="pl-s1">decompression</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">DecompressionStream</span><span class="pl-kos">(</span><span class="pl-s">'zstd'</span><span class="pl-kos">)</span><span class="pl-kos">,</span> <span class="pl-s1">writer</span> <span class="pl-c1">=</span> <span class="pl-s1">decompression</span><span class="pl-kos">.</span><span class="pl-c1">writable</span><span class="pl-kos">.</span><span class="pl-en">getWriter</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  
+      <span class="pl-s1">writer</span><span class="pl-kos">.</span><span class="pl-en">write</span><span class="pl-kos">(</span><span class="pl-s1">compress</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+      <span class="pl-s1">writer</span><span class="pl-kos">.</span><span class="pl-en">close</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+      
+      <span class="pl-k">return</span> <span class="pl-k">await</span> <span class="pl-k">new</span> <span class="pl-v">Response</span><span class="pl-kos">(</span><span class="pl-s1">decompression</span><span class="pl-kos">.</span><span class="pl-c1">readable</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">arrayBuffer</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span><span class="pl-kos">;</span>
+	
+  <span class="pl-k">const</span> <span class="pl-s1">text</span> <span class="pl-c1">=</span> <span class="pl-s">'this is text'</span><span class="pl-kos">;</span>
+  <span class="pl-k">const</span> <span class="pl-s1">encoder</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">TextEncoder</span><span class="pl-kos">;</span>
+  <span class="pl-k">const</span> <span class="pl-s1">compress</span> <span class="pl-c1">=</span> <span class="pl-k">await</span> <span class="pl-en">compression</span><span class="pl-kos">(</span><span class="pl-s1">encoder</span><span class="pl-kos">.</span><span class="pl-en">encode</span><span class="pl-kos">(</span><span class="pl-s1">text</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  
+  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">'compress = '</span><span class="pl-kos">,</span> <span class="pl-s1">compress</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  
+  <span class="pl-k">const</span> <span class="pl-s1">decompress</span> <span class="pl-c1">=</span> <span class="pl-k">await</span> <span class="pl-en">decompression</span><span class="pl-kos">(</span><span class="pl-s1">compress</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-k">const</span> <span class="pl-s1">decoder</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">TextDecoder</span><span class="pl-kos">;</span>
+  
+  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">'decompress = '</span><span class="pl-kos">,</span> <span class="pl-s1">decompress</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">'text = '</span><span class="pl-kos">,</span> <span class="pl-s1">decoder</span><span class="pl-kos">.</span><span class="pl-en">decode</span><span class="pl-kos">(</span><span class="pl-s1">decompress</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[speech-api] SpeechRecognition: continuous property is ignored on Chrome on Android]]></title>
             <link>https://github.com/mdn/content/issues/33820</link>

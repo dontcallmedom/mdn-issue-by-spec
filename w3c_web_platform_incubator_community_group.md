@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Platform Incubator Community Group. [![RSS feed for W3C Web Platform Incubator Community Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[compression\] Missing "zstd" compression in CompressionStream](https://github.com/mdn/content/issues/33971) (2024-06-07T03:51:08Z)
+  
 * [\[speech-api\] SpeechRecognition: continuous property is ignored on Chrome on Android](https://github.com/mdn/content/issues/33820) (2024-05-29T09:36:45Z)
   
 * [\[periodic-background-sync\] The description of "periodicSync" is flawed.](https://github.com/mdn/content/issues/33692) (2024-05-21T08:55:15Z)
