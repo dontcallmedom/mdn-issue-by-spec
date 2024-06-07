@@ -349,61 +349,6 @@ true if the given value is <a href="https://developer.mozilla.org/en-US/docs/Web
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[ecmascript] Accessing WebAssembly memory using TypedArrays is incorrect on Big Endian systems]]></title>
-            <link>https://github.com/mdn/content/issues/25569</link>
-            <guid>https://github.com/mdn/content/issues/25569</guid>
-            <pubDate>Thu, 23 Mar 2023 12:09:31 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/JavaScript_interface/Memory" rel="nofollow">https://developer.mozilla.org/en-US/docs/WebAssembly/JavaScript_interface/Memory</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Examples</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The examples access values from WebAssembly using <code class="notranslate">new Uint32Array</code>:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="  const summands = new Uint32Array(memory.buffer);
-...
-  const values = new Uint32Array(obj.instance.exports.memory.buffer);"><pre class="notranslate">  <span class="pl-k">const</span> <span class="pl-s1">summands</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Uint32Array</span><span class="pl-kos">(</span><span class="pl-s1">memory</span><span class="pl-kos">.</span><span class="pl-c1">buffer</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-...
-  <span class="pl-k">const</span> <span class="pl-s1">values</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Uint32Array</span><span class="pl-kos">(</span><span class="pl-s1">obj</span><span class="pl-kos">.</span><span class="pl-c1">instance</span><span class="pl-kos">.</span><span class="pl-c1">exports</span><span class="pl-kos">.</span><span class="pl-c1">memory</span><span class="pl-kos">.</span><span class="pl-c1">buffer</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
-<p dir="auto">However in the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array" rel="nofollow">Uint32Array docs</a> it says:</p>
-<blockquote>
-<p dir="auto">The Uint32Array typed array represents an array of 32-bit unsigned integers in the platform byte order. If control over byte order is needed, use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView" rel="nofollow">DataView</a> instead.</p>
-</blockquote>
-<p dir="auto">(This is backed up by the ECMAScript spec: <a href="https://tc39.es/ecma262/#sec-properties-of-typedarray-instances" rel="nofollow">Typed Arrays are integer-indexed exotic objects</a>, <a href="https://tc39.es/ecma262/#sec-integer-indexed-exotic-objects-get-p-receiver" rel="nofollow">which have the [[Get]] internal method</a>, which calls <a href="https://tc39.es/ecma262/#sec-integerindexedelementget" rel="nofollow">IntegerIndexedElementGet</a>, which calls <a href="https://tc39.es/ecma262/#sec-getvaluefrombuffer" rel="nofollow">GetValueFromBuffer</a>, which uses the platforms endianness in steps 8 and 9.)</p>
-<p dir="auto">However the <a href="https://webassembly.github.io/spec/core/syntax/instructions.html?highlight=endian#memory-instructions" rel="nofollow">WebAssembly docs</a> say:</p>
-<blockquote>
-<p dir="auto">All values are read and written in <em><strong>little endian</strong></em> byte order.</p>
-</blockquote>
-<p dir="auto">So it appears that the example will return incorrect results on big-endian systems.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">An example using a <code class="notranslate">DataView.setInt32(byteOffset, value, littleEndian)</code> instead.</p>
-<p dir="auto">Exposing endian-ness like this has worrying implications for web page portability.<br>
-If this is a real portability pitfall, there should be warnings about it on the WebAssembly.memory and TypedArray pages.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">I've already seen this pattern proliferating in several other places, such as:</p>
-<ul dir="auto">
-<li><a href="https://crates.io/crates/wasm-bindgen" rel="nofollow">wasm-bindgen</a> (I think)</li>
-<li>Tutorials <a href="https://ariya.io/2019/05/basics-of-memory-access-in-webassembly" rel="nofollow">1</a> <a href="https://www.oreilly.com/library/view/webassembly-the-definitive/9781492089834/ch04.html" rel="nofollow">2</a> <a href="https://rob-blackbourn.github.io/blog/webassembly/wasm/array/arrays/javascript/c/2020/06/07/wasm-arrays.html" rel="nofollow">3</a></li>
-<li>Questions <a href="https://groups.google.com/g/teavm/c/BlO4lkGNi40" rel="nofollow">1</a> <a href="https://stackoverflow.com/questions/41875728/pass-a-javascript-array-as-argument-to-a-webassembly-function" rel="nofollow">2</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Using_the_JavaScript_API" rel="nofollow">MDN: Using the WebAssembly Javascript API</a></li>
-<li><a href="https://webassembly.org/getting-started/js-api/" rel="nofollow">webassembly.org: Understanding the JS API</a></li>
-</ul>
-<p dir="auto">So the amount of code already using this buggy pattern is already probably quite large.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">Perhaps javascript could use a <code class="notranslate">LittleEndianTypedArray</code> or similar. And maybe <code class="notranslate">new Uint32Array(wasmmemory.buffer)</code> should throw a type error, only allowing <code class="notranslate">Uint8Array</code> and <code class="notranslate">Int8Array</code>.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/webassembly/javascript_interface/memory</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/WebAssembly/JavaScript_interface/Memory" rel="nofollow">https://developer.mozilla.org/en-US/docs/WebAssembly/JavaScript_interface/Memory</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/webassembly/javascript_interface/memory/index.md">https://github.com/mdn/content/blob/main/files/en-us/webassembly/javascript_interface/memory/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/fe898ddf33314ee129256c3862c5c53106eeec1f/hovercard" href="https://github.com/mdn/content/commit/fe898ddf33314ee129256c3862c5c53106eeec1f"><tt>fe898dd</tt></a></li>
-<li>Document last modified: 2023-02-23T10:05:41.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[ecmascript] Misleading information around await's interaction with microtask/task queues]]></title>
             <link>https://github.com/mdn/content/issues/24177</link>
             <guid>https://github.com/mdn/content/issues/24177</guid>

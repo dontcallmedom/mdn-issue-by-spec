@@ -22,8 +22,6 @@
   
 * [\[ecmascript\] Macrotasks and Microtasks](https://github.com/mdn/content/issues/28795) (2023-08-28T09:55:38Z)
   
-* [\[ecmascript\] Accessing WebAssembly memory using TypedArrays is incorrect on Big Endian systems](https://github.com/mdn/content/issues/25569) (2023-03-23T12:09:31Z)
-  
 * [\[ecmascript\] Misleading information around await's interaction with microtask/task queues](https://github.com/mdn/content/issues/24177) (2023-02-05T16:19:19Z)
   
 * [\[ecmascript\] Need a page on Execution context](https://github.com/mdn/content/issues/5006) (2021-05-14T18:14:38Z)
