@@ -166,13 +166,9 @@
   
 * [\[html\] document-domain feature policy is being removed](https://github.com/mdn/content/issues/22732) (2022-12-05T04:44:41Z)
   
-* [\[html\] Example custom select is not keyboard focusable](https://github.com/mdn/content/issues/22513) (2022-11-24T13:16:19Z)
-  
 * [\[html\] dataset is also available on SVGElement](https://github.com/mdn/content/issues/22352) (2022-11-16T20:40:40Z)
   
 * [\[html, uievents\] Document.activeElement : The lack of HTMLAnchorElement and macOS on a case by case basis](https://github.com/mdn/content/issues/22338) (2022-11-16T13:47:01Z)
-  
-* [\[html\] contenteditable missing some allowed values description](https://github.com/mdn/content/issues/22048) (2022-11-04T06:39:50Z)
   
 * [\[html\] Add documentation for \<video posterloading=lazy\>](https://github.com/mdn/content/issues/21912) (2022-10-28T12:20:13Z)
   
