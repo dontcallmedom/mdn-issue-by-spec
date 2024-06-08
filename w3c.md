@@ -118,8 +118,6 @@
   
 * [\[encoding\] TextDecoderStream constructor ignoreBOM option missing](https://github.com/mdn/content/issues/29681) (2023-10-17T10:34:36Z)
   
-* [\[permissions\] Navigator.permissions always returns prompt on firefox mobile. Even after the permission is granted.](https://github.com/mdn/content/issues/29291) (2023-09-26T04:29:04Z)
-  
 * [\[html, selectors-4, css-conditional-3\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
   
 * [\[css-masking-1\] mask-image: url() function doesn't work with file://](https://github.com/mdn/content/issues/29106) (2023-09-14T09:24:04Z)

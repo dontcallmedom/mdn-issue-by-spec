@@ -86,8 +86,6 @@
   
 * [\[html\] The "Navigator: languages property" documentation is missing some browser quirks](https://github.com/mdn/content/issues/29371) (2023-09-29T22:16:14Z)
   
-* [\[html\] Cookie Examples Broken](https://github.com/mdn/content/issues/29370) (2023-09-29T18:28:29Z)
-  
 * [\[console\] Clarify wording around "string representation" in console.\* related functions](https://github.com/mdn/content/issues/29172) (2023-09-17T18:09:54Z)
   
 * [\[html, selectors-4, css-conditional-3\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
