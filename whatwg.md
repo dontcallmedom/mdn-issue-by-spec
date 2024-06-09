@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] The "Image Embed element" page supposed to contain an error](https://github.com/mdn/content/issues/34026) (2024-06-09T21:18:04Z)
+  
 * [\[html\] Summary as headline - a11y-proven?](https://github.com/mdn/content/issues/33961) (2024-06-06T12:29:35Z)
   
 * [\[fullscreen\] HTML Demo for ::backdrop pseudo-element has invisible button](https://github.com/mdn/content/issues/33957) (2024-06-06T07:49:59Z)
