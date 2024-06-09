@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-flexbox-1\] flex-inital typo](https://github.com/mdn/content/issues/34027) (2024-06-09T22:23:00Z)
+  
 * [\[webrtc\] \[WebAPI\] Implement |setCodecPreferences| in RTCRtpTransceiver](https://github.com/mdn/content/issues/33981) (2024-06-07T09:38:04Z)
   
 * [\[webrtc\] Broken link to RTCSessionDescriptionInit, RTCLocalSessionDescriptionInit](https://github.com/mdn/content/issues/33962) (2024-06-06T12:39:29Z)
