@@ -100,8 +100,6 @@
   
 * [\[css-overflow-3\] Information about how to use -webkit-line-clamp independent of -webkit-box-orient, and its future](https://github.com/mdn/content/issues/30842) (2023-12-06T23:01:46Z)
   
-* [\[service-workers-1\] Confusing text on service worker registration scope broadening](https://github.com/mdn/content/issues/30306) (2023-11-16T11:39:55Z)
-  
 * [\[css-display-3\] Value \`run-in\` missing from display](https://github.com/mdn/content/issues/30201) (2023-11-11T03:01:31Z)
   
 * [\[CSS21, css-display-3\] Hiding things example - using absolute positioning](https://github.com/mdn/content/issues/30171) (2023-11-10T00:23:35Z)
@@ -299,8 +297,6 @@
 * [\[uievents\] Content bug: Missing information about what WheelEvent.delta\* can be](https://github.com/mdn/content/issues/11811) (2022-01-07T12:25:45Z)
   
 * [\[css-fonts-5\] @font-face/font-weight: expand on \<font-weight-absolute\>{2} importance](https://github.com/mdn/content/issues/10910) (2021-12-01T18:54:16Z)
-  
-* [\[service-workers-1\] Issue with "ServiceWorkerContainer.register()": Second example unclear on intent](https://github.com/mdn/content/issues/10547) (2021-11-15T14:17:23Z)
   
 * [\[webrtc\] "Using DTMF" is using legacy APIs](https://github.com/mdn/content/issues/10020) (2021-10-22T18:00:50Z)
   

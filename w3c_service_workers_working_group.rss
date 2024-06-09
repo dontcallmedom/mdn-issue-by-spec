@@ -4,48 +4,10 @@
         <title>W3C Service Workers Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_service_workers_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Service Workers Working Group</description>
-        <lastBuildDate>Thu, 16 Nov 2023 11:39:55 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 13 Sep 2022 11:22:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[service-workers-1] Confusing text on service worker registration scope broadening]]></title>
-            <link>https://github.com/mdn/content/issues/30306</link>
-            <guid>https://github.com/mdn/content/issues/30306</guid>
-            <pubDate>Thu, 16 Nov 2023 11:39:55 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Examples</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">In the examples the following text is written:</p>
-<blockquote>
-<p dir="auto">There is frequent confusion surrounding the meaning and use of scope. Since a service worker can't have a scope broader than its own location, only use the scope option when you need a scope that is narrower than the default.</p>
-</blockquote>
-<p dir="auto">Reading this, one might miss the detail a few paragraphs later, stating that this can be overridden by the Service-Worker-Allowed header. The default scope is still set to the service worker script's location, so one is still required to use the scope option when broadening the scope.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Since it is possible to broaden the service worker's scope, this text is somewhat inaccurate. Moving the information on the Service-Worker-Allowed header up, or changing the text to be clearer from the first paragraph.</p>
-<p dir="auto">Perhaps something along the lines of:</p>
-<blockquote>
-<p dir="auto">A service worker can't have a scope broader than its own location, unless the server specifies a broader scope in the Service-Worker-Allowed header on the service worker script. As such, you should use the scope option when you need a narrower scope than the default.</p>
-</blockquote>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/serviceworkercontainer/register</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkercontainer/register/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkercontainer/register/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc/hovercard" href="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc"><tt>acfe8c9</tt></a></li>
-<li>Document last modified: 2023-07-07T07:19:19.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[service-workers-1] Fetch Event client id is null]]></title>
             <link>https://github.com/mdn/content/issues/20657</link>
@@ -73,41 +35,6 @@
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/fetchevent/clientid/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/fetchevent/clientid/index.md</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/1511e914c6b1ce6f88056bfefd48a6aa585cebce/hovercard" href="https://github.com/mdn/content/commit/1511e914c6b1ce6f88056bfefd48a6aa585cebce"><tt>1511e91</tt></a></li>
 <li>Document last modified: 2022-09-09T05:10:34.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[service-workers-1] Issue with "ServiceWorkerContainer.register()": Second example unclear on intent]]></title>
-            <link>https://github.com/mdn/content/issues/10547</link>
-            <guid>https://github.com/mdn/content/issues/10547</guid>
-            <pubDate>Mon, 15 Nov 2021 14:17:23 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">It's unclear if second example is meant to show invalid usage or not</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<blockquote>
-<p dir="auto">Alternatively, if this code were included in a page at example.com/product/description.html, with the Javascript file residing at example.com/product/sw.js, then the service worker would only apply to resources under example.com/product.</p>
-<p dir="auto">if ('serviceWorker' in navigator) {<br>
-// declaring scope manually<br>
-navigator.serviceWorker.register('/sw.js', {scope: './'}).then(function(registration) {</p>
-</blockquote>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">The text talks about sw.js residing in <code class="notranslate">example.com/product/sw.js</code>, however example uses <code class="notranslate">/sw.js</code> which is <code class="notranslate">It is relative to the base URL of the application</code>, meaning in this case <code class="notranslate">example.com/sw.js</code>.</p>
-<p dir="auto">So either the text or the example is wrong, maybe something like this would be more clear / correct?</p>
-<blockquote>
-<p dir="auto">Alternatively, if this code were included in a page at example.com/product/description.html, with the Javascript file residing at example.com/sw.js, then the following example shows how to limit scope to example.com/product by using relative scope.</p>
-<p dir="auto">if ('serviceWorker' in navigator) {<br>
-// declaring scope manually, relative to current URI scope<br>
-navigator.serviceWorker.register('/sw.js', {scope: './'}).then(function(registration) {</p>
-</blockquote>
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/serviceworkercontainer/register</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkercontainer/register/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkercontainer/register/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f/hovercard" href="https://github.com/mdn/content/commit/2279e5ae6c229c707a014a22aa1ec4635a0f981f"><tt>2279e5a</tt></a></li>
-<li>Document last modified: 2021-09-14T18:08:09.000Z</li>
 </ul>
 </details>]]></content:encoded>
         </item>
