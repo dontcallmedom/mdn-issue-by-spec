@@ -102,8 +102,6 @@
   
 * [\[filter-effects-2\] SVG contrast filter](https://github.com/mdn/content/issues/24989) (2023-03-02T00:19:11Z)
   
-* [\[filter-effects-2\] SVG slope attribute can be used on \<feFunc\*\> elements](https://github.com/mdn/content/issues/24935) (2023-02-28T00:02:49Z)
-  
 * [\[filter-effects-2\] feGaussianBlur needs guidance about setting height and width ](https://github.com/mdn/content/issues/24169) (2023-02-04T21:15:51Z)
   
 * [\[css-shadow-parts-1\] ::part(): Missing information](https://github.com/mdn/content/issues/23471) (2023-01-08T11:05:39Z)

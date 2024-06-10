@@ -188,8 +188,6 @@
   
 * [\[filter-effects-2\] SVG contrast filter](https://github.com/mdn/content/issues/24989) (2023-03-02T00:19:11Z)
   
-* [\[filter-effects-2\] SVG slope attribute can be used on \<feFunc\*\> elements](https://github.com/mdn/content/issues/24935) (2023-02-28T00:02:49Z)
-  
 * [\[filter-effects-2\] feGaussianBlur needs guidance about setting height and width ](https://github.com/mdn/content/issues/24169) (2023-02-04T21:15:51Z)
   
 * [\[SVG11\] Inconsistency with experimental status of textPath attribute method](https://github.com/mdn/content/issues/24079) (2023-02-01T16:11:22Z)
