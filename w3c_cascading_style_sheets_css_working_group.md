@@ -14,8 +14,6 @@
   
 * [\[css-color-4\] \[CSS\]\[Nightly\] Enable relative color syntax on nightly](https://github.com/mdn/content/issues/33517) (2024-05-09T18:02:11Z)
   
-* [\[css-transforms-2, css-transforms-1\] CSS Animation examples inefficient ?](https://github.com/mdn/content/issues/33426) (2024-05-05T23:45:31Z)
-  
 * [\[css-lists-3\] Misinformation in the counter-reset example for the list-item counter](https://github.com/mdn/content/issues/33422) (2024-05-05T13:41:06Z)
   
 * [\[css-grid-3\] Add information about the use of a period in grid-template-areas strings](https://github.com/mdn/content/issues/33420) (2024-05-05T13:00:21Z)
