@@ -206,8 +206,6 @@
   
 * [\[IndexedDB-3\] Example of a key to be logged is not in the IDBCursor.key page](https://github.com/mdn/content/issues/23328) (2023-01-02T23:59:08Z)
   
-* [\[webvtt1\] ::cue should include ::cue() information](https://github.com/mdn/content/issues/23209) (2022-12-27T02:43:21Z)
-  
 * [\[clipboard-apis\] clipboard.readText() is behind flag on Firefox](https://github.com/mdn/content/issues/23188) (2022-12-25T21:43:10Z)
   
 * [\[orientation-event\] Explanation of X, y, z coordinates of DeviceMotionEvent.acceleration and DeviceMotionEvent.accelerationIncludingGravity is either completely wrong or extremely confusing (or both)](https://github.com/mdn/content/issues/22885) (2022-12-11T22:18:39Z)
