@@ -58,8 +58,6 @@
   
 * [\[html\] In the "Using custom elements" guide and related pages, add a disclaimer that WebKit does not plan to support Customized built-in elements](https://github.com/mdn/content/issues/30968) (2023-12-12T17:40:05Z)
   
-* [\[html\] Example code does not work](https://github.com/mdn/content/issues/30881) (2023-12-08T19:57:02Z)
-  
 * [\[html\] Event not called for modification on sessionStorage](https://github.com/mdn/content/issues/30598) (2023-11-28T11:28:49Z)
   
 * [\[html\] Document img auto-sizes](https://github.com/mdn/content/issues/30596) (2023-11-28T10:39:06Z)
@@ -69,8 +67,6 @@
 * [\[html\] If possible, include an example of importing from an embedded module](https://github.com/mdn/content/issues/30520) (2023-11-25T03:11:40Z)
   
 * [\[html\] Document false negatives for navigator.onLine property ](https://github.com/mdn/content/issues/30402) (2023-11-20T10:49:44Z)
-  
-* [\[html\] Is the value attribute supported on the textarea tag?](https://github.com/mdn/content/issues/29982) (2023-11-02T13:13:09Z)
   
 * [\[dom\] Not all observers will be removed when one call observe with same target node](https://github.com/mdn/content/issues/29814) (2023-10-24T15:19:23Z)
   

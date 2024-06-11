@@ -114,8 +114,6 @@
   
 * [\[cssom-view-1\] Include detailed information about scaling on window.devicePixelRatio reference page](https://github.com/mdn/content/issues/29682) (2023-10-17T10:43:43Z)
   
-* [\[encoding\] TextDecoderStream constructor ignoreBOM option missing](https://github.com/mdn/content/issues/29681) (2023-10-17T10:34:36Z)
-  
 * [\[html, selectors-4, css-conditional-3\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
   
 * [\[css-masking-1\] mask-image: url() function doesn't work with file://](https://github.com/mdn/content/issues/29106) (2023-09-14T09:24:04Z)
