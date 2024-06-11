@@ -52,7 +52,7 @@
   
 * [\[webaudio\] ConvolverNode example needs user interaction](https://github.com/mdn/content/issues/33175) (2024-04-19T12:46:49Z)
   
-* [\[css-position-3\] Update the content in Sticky positioning in position - CSS section](https://github.com/mdn/content/issues/33146) (2024-04-18T08:15:12Z)
+* [\[css-position-3\] "Sticky positioning is a hybrid of relative and fixed positioning" is slightly confusing](https://github.com/mdn/content/issues/33146) (2024-04-18T08:15:12Z)
   
 * [\[webxr\] Explanation of \`bounded-floor\`/\`local\`/\`local-floor\` needs improvement](https://github.com/mdn/content/issues/33111) (2024-04-16T04:22:18Z)
   
