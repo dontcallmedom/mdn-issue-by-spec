@@ -90,8 +90,6 @@
   
 * [\[html\] HTMLElement.dataset: using the \`in\` operator is unsafe](https://github.com/mdn/content/issues/28693) (2023-08-22T08:32:02Z)
   
-* [\[html\] Issue with explanations, and  order of tokens ](https://github.com/mdn/content/issues/28636) (2023-08-17T23:15:09Z)
-  
 * [\[html, cssom-view-1, dom, uievents, pointerlock-2, selection-api, page-visibility-2\] Keydown, keyup, keypress pages should mention they work on document, body, etc](https://github.com/mdn/content/issues/28561) (2023-08-14T20:14:56Z)
   
 * [\[html\] Example given on blockquote page is incorrect according to the HTML spec](https://github.com/mdn/content/issues/28401) (2023-08-04T18:47:11Z)
