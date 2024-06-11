@@ -10,8 +10,6 @@
   
 * [\[webrtc\]  RTCDTMFSender.canInsertDTMF missing](https://github.com/mdn/content/issues/33951) (2024-06-06T05:26:14Z)
   
-* [\[ecmascript, webrtc\] Confusing wording around return value of RTCPeerConnection.createOffer](https://github.com/mdn/content/issues/33453) (2024-05-06T23:27:07Z)
-  
 * [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
   
 * [\[webrtc\] document of RTCIceCandidate's properties { url, relayProtocol}  are missing](https://github.com/mdn/content/issues/33228) (2024-04-23T11:26:42Z)

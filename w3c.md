@@ -36,8 +36,6 @@
   
 * [\[css-color-4\] \[CSS\]\[Nightly\] Enable relative color syntax on nightly](https://github.com/mdn/content/issues/33517) (2024-05-09T18:02:11Z)
   
-* [\[ecmascript, webrtc\] Confusing wording around return value of RTCPeerConnection.createOffer](https://github.com/mdn/content/issues/33453) (2024-05-06T23:27:07Z)
-  
 * [\[uievents\] KeyboardEvent key property clarification on how to use ShiftKey modifier](https://github.com/mdn/content/issues/33451) (2024-05-06T21:53:57Z)
   
 * [\[css-lists-3\] Misinformation in the counter-reset example for the list-item counter](https://github.com/mdn/content/issues/33422) (2024-05-05T13:41:06Z)

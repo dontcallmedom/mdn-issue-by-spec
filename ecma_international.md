@@ -4,8 +4,6 @@
 
 * [\[ecmascript\] TypedArray subclass pages say contents are initialized to 0](https://github.com/mdn/content/issues/33743) (2024-05-24T17:30:30Z)
   
-* [\[ecmascript, webrtc\] Confusing wording around return value of RTCPeerConnection.createOffer](https://github.com/mdn/content/issues/33453) (2024-05-06T23:27:07Z)
-  
 * [\[ecmascript\] Operators page doesn't mention . or ?.](https://github.com/mdn/content/issues/33215) (2024-04-22T20:44:17Z)
   
 * [\[ecmascript\] Incorrect information about "return await" performance penalty](https://github.com/mdn/content/issues/32847) (2024-03-26T16:08:40Z)
