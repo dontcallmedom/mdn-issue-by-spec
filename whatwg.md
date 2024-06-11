@@ -6,8 +6,6 @@
   
 * [\[fullscreen\] HTML Demo for ::backdrop pseudo-element has invisible button](https://github.com/mdn/content/issues/33957) (2024-06-06T07:49:59Z)
   
-* [\[html\] date-in-GMTString-format =\> date-in-UTCString-format](https://github.com/mdn/content/issues/33821) (2024-05-29T09:37:17Z)
-  
 * [\[html\] Add a warning/suggestion to canvas.toDataURL to prefer toBlob](https://github.com/mdn/content/issues/33748) (2024-05-25T10:54:03Z)
   
 * [\[html\] Need example of details with name attribute](https://github.com/mdn/content/issues/33693) (2024-05-21T09:41:38Z)
