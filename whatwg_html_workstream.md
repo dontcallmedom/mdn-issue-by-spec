@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] \<pre\> code examples should show wrapping other elements like code and samp](https://github.com/mdn/content/issues/34056) (2024-06-11T14:02:53Z)
+  
 * [\[html\] Summary as headline - a11y-proven?](https://github.com/mdn/content/issues/33961) (2024-06-06T12:29:35Z)
   
 * [\[html\] Add a warning/suggestion to canvas.toDataURL to prefer toBlob](https://github.com/mdn/content/issues/33748) (2024-05-25T10:54:03Z)

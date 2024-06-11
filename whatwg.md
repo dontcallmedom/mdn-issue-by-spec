@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] \<pre\> code examples should show wrapping other elements like code and samp](https://github.com/mdn/content/issues/34056) (2024-06-11T14:02:53Z)
+  
 * [\[html\] Summary as headline - a11y-proven?](https://github.com/mdn/content/issues/33961) (2024-06-06T12:29:35Z)
   
 * [\[fullscreen\] HTML Demo for ::backdrop pseudo-element has invisible button](https://github.com/mdn/content/issues/33957) (2024-06-06T07:49:59Z)
