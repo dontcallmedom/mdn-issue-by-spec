@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[FileAPI\] \[WebAPI\] Syntax examples for FileReader events are missing target](https://github.com/mdn/content/issues/34048) (2024-06-11T00:20:50Z)
+* [\[FileAPI\] \[WebAPI\] Syntax examples for all methods are missing target](https://github.com/mdn/content/issues/34048) (2024-06-11T00:20:50Z)
   
 * [\[selection-api\] Clarification of the selection object returned](https://github.com/mdn/content/issues/33803) (2024-05-28T22:35:51Z)
   
