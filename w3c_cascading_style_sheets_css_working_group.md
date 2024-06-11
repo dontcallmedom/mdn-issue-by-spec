@@ -8,8 +8,6 @@
   
 * [\[css-content-3\] \[CSS\] Support alt text in the \`content\` property](https://github.com/mdn/content/issues/33590) (2024-05-13T20:16:02Z)
   
-* [\[css-break-3\] text-wrap-style Values](https://github.com/mdn/content/issues/33549) (2024-05-11T08:17:34Z)
-  
 * [\[css-logical-1\] \[CSS\] Implement margin at-rules](https://github.com/mdn/content/issues/33519) (2024-05-09T18:48:48Z)
   
 * [\[css-color-4\] \[CSS\]\[Nightly\] Enable relative color syntax on nightly](https://github.com/mdn/content/issues/33517) (2024-05-09T18:02:11Z)
