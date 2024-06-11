@@ -132,8 +132,6 @@
   
 * [\[html\] Add documentation for \<video posterloading=lazy\>](https://github.com/mdn/content/issues/21912) (2022-10-28T12:20:13Z)
   
-* [\[html\] Information missing for "hidden" \<input\>s](https://github.com/mdn/content/issues/21857) (2022-10-26T21:27:57Z)
-  
 * [\[html, dom\] Event.returnValue: further deprecation information needed](https://github.com/mdn/content/issues/20730) (2022-09-14T18:18:13Z)
   
 * [\[html\] RadioNodeList.value example does not support fieldset](https://github.com/mdn/content/issues/20588) (2022-09-12T11:06:34Z)
