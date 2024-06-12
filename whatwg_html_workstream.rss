@@ -4,42 +4,10 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Wed, 12 Jun 2024 18:45:51 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 06 Jun 2024 12:29:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[html] <details> element, open attribute]]></title>
-            <link>https://github.com/mdn/content/issues/34086</link>
-            <guid>https://github.com/mdn/content/issues/34086</guid>
-            <pubDate>Wed, 12 Jun 2024 18:45:51 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">open attribute</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The following note:</p>
-<p dir="auto">Note: You have to remove this attribute entirely to make the details hidden. open="false" makes the details visible because this attribute is Boolean.</p>
-<p dir="auto">is not correct. You do not need to remove this attribute, but you have to set it to false, as in open=false (and not open = String(false), like in the example).</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">See above: the note is incorrect.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">Tested on Iridium v116, 64 bit (a Chromium clone) and Firefox Version 123.0.1 (64-bit).</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/html/element/details</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/details/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/details/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/bd5e6a973f2706bb902ee915e751614d3a4af5aa/hovercard" href="https://github.com/mdn/content/commit/bd5e6a973f2706bb902ee915e751614d3a4af5aa"><tt>bd5e6a9</tt></a></li>
-<li>Document last modified: 2024-06-11T09:53:22.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html] Summary as headline - a11y-proven?]]></title>
             <link>https://github.com/mdn/content/issues/33961</link>
@@ -179,7 +147,7 @@ It is important that <code class="notranslate">&lt;base href[="https"] target="_
 <p dir="auto"><em>No-Response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto">2024 May 12, Safari 17.4.1 requires that both <code class="notranslate">&lt;base&gt;</code> targets must be placed in the following order.  First, <code class="notranslate">base href[="https"] target="_blank"</code> followed by the <code class="notranslate">base target="_self"</code>. So that the browser can access described html document external <code class="notranslate">_blank</code> and interna <code class="notranslate">_self</code>l link behaviors. Thus deploying the herein described ease-of-use Base URL element metadata accessibility efficiencies.</p>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/6208716/329907499-8e3d6dcd-89d4-42df-a951-87dc93dd8258.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgyMTg4NTYsIm5iZiI6MTcxODIxODU1NiwicGF0aCI6Ii82MjA4NzE2LzMyOTkwNzQ5OS04ZTNkNmRjZC04OWQ0LTQyZGYtYTk1MS04N2RjOTNkZDgyNTgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTJUMTg1NTU2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NTljYTkyNzc1MDBkZWQ4ZjY5Yjc3ZGIyNWE4MWEyNDA3Mjc1MDUwNDA4Mzg5ZDFjZjZiNGIyYzJkMTczMTM4MSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.0z8aAn2reMi8F7Js89wOxMUxXfc02yL1mXHZROy6r0o"><img width="942" alt="Screen Shot 2024-05-12 at 19 44 55" src="https://private-user-images.githubusercontent.com/6208716/329907499-8e3d6dcd-89d4-42df-a951-87dc93dd8258.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgyMTg4NTYsIm5iZiI6MTcxODIxODU1NiwicGF0aCI6Ii82MjA4NzE2LzMyOTkwNzQ5OS04ZTNkNmRjZC04OWQ0LTQyZGYtYTk1MS04N2RjOTNkZDgyNTgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTJUMTg1NTU2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NTljYTkyNzc1MDBkZWQ4ZjY5Yjc3ZGIyNWE4MWEyNDA3Mjc1MDUwNDA4Mzg5ZDFjZjZiNGIyYzJkMTczMTM4MSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.0z8aAn2reMi8F7Js89wOxMUxXfc02yL1mXHZROy6r0o" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/6208716/329907499-8e3d6dcd-89d4-42df-a951-87dc93dd8258.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgyMTk5MDgsIm5iZiI6MTcxODIxOTYwOCwicGF0aCI6Ii82MjA4NzE2LzMyOTkwNzQ5OS04ZTNkNmRjZC04OWQ0LTQyZGYtYTk1MS04N2RjOTNkZDgyNTgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTJUMTkxMzI4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MWM2MDFkZGExMzcyM2ExMTAwMGUxM2M1NTJlNTNlMWZjOTg2YjkyMDU1NjZlYzI5YWYyMjIwNWMyZDk1MDliNyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.JqJu_Hsy7jbNtBfRndS9O4W-Oi6U-g1HLt9DUCUM8HE"><img width="942" alt="Screen Shot 2024-05-12 at 19 44 55" src="https://private-user-images.githubusercontent.com/6208716/329907499-8e3d6dcd-89d4-42df-a951-87dc93dd8258.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgyMTk5MDgsIm5iZiI6MTcxODIxOTYwOCwicGF0aCI6Ii82MjA4NzE2LzMyOTkwNzQ5OS04ZTNkNmRjZC04OWQ0LTQyZGYtYTk1MS04N2RjOTNkZDgyNTgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTJUMTkxMzI4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MWM2MDFkZGExMzcyM2ExMTAwMGUxM2M1NTJlNTNlMWZjOTg2YjkyMDU1NjZlYzI5YWYyMjIwNWMyZDk1MDliNyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.JqJu_Hsy7jbNtBfRndS9O4W-Oi6U-g1HLt9DUCUM8HE" style="max-width: 100%;"></a>
 (Safari default settings)
 <h3 dir="auto">MDN metadata</h3>
 
@@ -1188,7 +1156,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgyMTg4NTEsIm5iZiI6MTcxODIxODU1MSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTJUMTg1NTUxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OTg5MTZjYTk4YTI2ZDY5YzJjMDk4ZWMyNzE0Njk4NzUxZGIzOGI5MGIzYzRhNzVjYmNiYWU4NGJiZTM5NWIzYyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.AizQyxZgO-bVepkNxWUnZYa07JfMsKD_sv7sjZViwpM"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgyMTg4NTEsIm5iZiI6MTcxODIxODU1MSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTJUMTg1NTUxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OTg5MTZjYTk4YTI2ZDY5YzJjMDk4ZWMyNzE0Njk4NzUxZGIzOGI5MGIzYzRhNzVjYmNiYWU4NGJiZTM5NWIzYyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.AizQyxZgO-bVepkNxWUnZYa07JfMsKD_sv7sjZViwpM" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgyMTk5MDIsIm5iZiI6MTcxODIxOTYwMiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTJUMTkxMzIyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YmQzMmFhMWNjNjA5MzQ4YTBhYmQ1MmQ5M2M3YzM1MjllOTM2NTQzZGRjNTFkZjVkMGRmNzA4OGIwMzJjYzcyOSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.LhePTL2LTovpvTt4LQkbBdOTgInwi9LAM8EbfDugzAc"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgyMTk5MDIsIm5iZiI6MTcxODIxOTYwMiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTJUMTkxMzIyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YmQzMmFhMWNjNjA5MzQ4YTBhYmQ1MmQ5M2M3YzM1MjllOTM2NTQzZGRjNTFkZjVkMGRmNzA4OGIwMzJjYzcyOSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.LhePTL2LTovpvTt4LQkbBdOTgInwi9LAM8EbfDugzAc" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
