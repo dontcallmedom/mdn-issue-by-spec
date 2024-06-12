@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[dom\] Various Node subclass replaceWith methods should link to each other](https://github.com/mdn/content/issues/34084) (2024-06-12T15:46:35Z)
+  
 * [\[html\] Summary as headline - a11y-proven?](https://github.com/mdn/content/issues/33961) (2024-06-06T12:29:35Z)
   
 * [\[fullscreen\] HTML Demo for ::backdrop pseudo-element has invisible button](https://github.com/mdn/content/issues/33957) (2024-06-06T07:49:59Z)
@@ -39,8 +41,6 @@
 * [\[html, css-images-3\] Statement about applicable object-position and object-fit is wrong (?)](https://github.com/mdn/content/issues/32474) (2024-02-28T16:22:14Z)
   
 * [\[html\] HTMLMediaElement/textTracks example video does not load](https://github.com/mdn/content/issues/32262) (2024-02-13T22:47:24Z)
-  
-* [\[html\] \<dialog\> return value example combines two conflicting approaches](https://github.com/mdn/content/issues/32242) (2024-02-12T22:46:36Z)
   
 * [\[html\] HTML \<iframe\>: allow attribute needs stand-alone topic](https://github.com/mdn/content/issues/32188) (2024-02-09T06:10:46Z)
   
