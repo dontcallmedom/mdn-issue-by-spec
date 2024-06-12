@@ -10,8 +10,6 @@
   
 * [\[ecmascript\] A JavaScript value of type symbol is not an object.](https://github.com/mdn/content/issues/32207) (2024-02-10T14:09:09Z)
   
-* [\[ecmascript\] \[JavaScript\] Date.parse only checks first 3 characters of month name](https://github.com/mdn/content/issues/31930) (2024-01-26T05:14:17Z)
-  
 * [\[ecmascript\] Describe direct and indirect eval differences in each bullet point](https://github.com/mdn/content/issues/30281) (2023-11-14T22:14:49Z)
   
 * [\[ecmascript\] Import assertions proposal renamed to import attributes](https://github.com/mdn/content/issues/29572) (2023-10-10T08:50:02Z)

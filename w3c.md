@@ -246,8 +246,6 @@
   
 * [\[SVG11\] SVG Tutorial discussed strokes and fills without paint-order](https://github.com/mdn/content/issues/17040) (2022-06-06T18:32:51Z)
   
-* [\[encoding\] "Buffer sizing" in \`TextEncoder.encodeInto()\` is English-centric](https://github.com/mdn/content/issues/16805) (2022-05-31T02:24:05Z)
-  
 * [\[file-system-access\] \`FileSystemHandle.requestPermission()\` can throw \`SecurityError\`](https://github.com/mdn/content/issues/15831) (2022-05-09T19:45:01Z)
   
 * [\[css-contain-2\] Containing block via contain:paint vs other alternatives](https://github.com/mdn/content/issues/15210) (2022-04-21T19:05:51Z)
