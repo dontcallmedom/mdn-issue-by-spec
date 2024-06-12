@@ -24,8 +24,6 @@
   
 * [\[dom\] Missing NodeFilter.FILTER_SKIP description](https://github.com/mdn/content/issues/23728) (2023-01-17T19:26:34Z)
   
-* [\[dom\] Clarifying scope in event listener definition and execution](https://github.com/mdn/content/issues/23253) (2022-12-29T07:11:31Z)
-  
 * [\[dom\] api.Element.replaceWith - Misleading details and prototype](https://github.com/mdn/content/issues/21497) (2022-10-11T19:50:51Z)
   
 * [\[html, dom\] Event.returnValue: further deprecation information needed](https://github.com/mdn/content/issues/20730) (2022-09-14T18:18:13Z)
