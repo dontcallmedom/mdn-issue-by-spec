@@ -8,8 +8,6 @@
   
 * [\[html\] Add a warning/suggestion to canvas.toDataURL to prefer toBlob](https://github.com/mdn/content/issues/33748) (2024-05-25T10:54:03Z)
   
-* [\[html\] Unclear whether omitting \`\<tbody\>\` tags (putting \`\<tr\>\` directly under \`\<table\>\`) is valid](https://github.com/mdn/content/issues/33618) (2024-05-15T04:07:43Z)
-  
 * [\[html\] IMPORTANT description and example missing](https://github.com/mdn/content/issues/33573) (2024-05-13T01:38:50Z)
   
 * [\[html\] Consider removing language suggesting \`\<tr\>\` is a valid child of \`\<table\>\`](https://github.com/mdn/content/issues/33505) (2024-05-08T20:07:24Z)
