@@ -120,8 +120,6 @@
   
 * [\[cssom-view-1\] Include solution to checking if content is overflown in clientHeight page](https://github.com/mdn/content/issues/19153) (2022-08-04T11:29:19Z)
   
-* [\[cssom-view-1\] False claim: window.pageYOffset === window.scrollY; // always true](https://github.com/mdn/content/issues/18735) (2022-07-24T13:47:54Z)
-  
 * [\[cssom-view-1\] the demo's getBoundingClientRect has different result in console panel](https://github.com/mdn/content/issues/17588) (2022-06-24T02:34:27Z)
   
 * [\[css-overflow-3\] CSS overflow property is giving results inconsistant with guide](https://github.com/mdn/content/issues/17430) (2022-06-19T11:34:27Z)
@@ -145,8 +143,6 @@
 * [\[html, cssom-view-1, dom, WebIDL-1, FileAPI, uievents, pointerlock-2\] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
 * [\[css-lists-3\] Issue with "counter-reset": the example is a bit confusing](https://github.com/mdn/content/issues/6277) (2021-06-23T22:25:29Z)
-  
-* [\[cssom-view-1\] Issue with "Element.scrollTop": note that scrollTop value is negative when display: flex and flex-direction: column-reverse used](https://github.com/mdn/content/issues/4142) (2021-04-15T21:36:13Z)
   
 * [\[cssom-view-1\] Issue with "Document.elementFromPoint()": Add info about nodes dragged and their position in the DOM tree](https://github.com/mdn/content/issues/3520) (2021-03-26T07:48:07Z)
   

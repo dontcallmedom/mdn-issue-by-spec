@@ -232,8 +232,6 @@
   
 * [\[cssom-view-1\] Include solution to checking if content is overflown in clientHeight page](https://github.com/mdn/content/issues/19153) (2022-08-04T11:29:19Z)
   
-* [\[cssom-view-1\] False claim: window.pageYOffset === window.scrollY; // always true](https://github.com/mdn/content/issues/18735) (2022-07-24T13:47:54Z)
-  
 * [\[uievents\] Document the ability to preventDefault() a pinch-zoom gesture on a touchpad](https://github.com/mdn/content/issues/18342) (2022-07-14T03:33:35Z)
   
 * [\[WebCryptoAPI\] Precise max length for encoding algorithm](https://github.com/mdn/content/issues/18045) (2022-07-06T14:47:35Z)
@@ -311,8 +309,6 @@
 * [\[webaudio\] Content bug: AudioListener and attributes need better examples. ](https://github.com/mdn/content/issues/4468) (2021-04-26T03:22:48Z)
   
 * [\[orientation-event, compat\] Content bug: Improve device/screen orientation event doc](https://github.com/mdn/content/issues/4400) (2021-04-23T02:57:45Z)
-  
-* [\[cssom-view-1\] Issue with "Element.scrollTop": note that scrollTop value is negative when display: flex and flex-direction: column-reverse used](https://github.com/mdn/content/issues/4142) (2021-04-15T21:36:13Z)
   
 * [\[presentation-api\] Issue with "getAvailability": needs improvement (currently just contains a dump of the spec for the method)](https://github.com/mdn/content/issues/4025) (2021-04-12T01:16:00Z)
   
