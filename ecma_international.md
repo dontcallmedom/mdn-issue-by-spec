@@ -8,8 +8,6 @@
   
 * [\[ecmascript\] Wrong use of \`isNaN()\`.](https://github.com/mdn/content/issues/32210) (2024-02-10T21:53:19Z)
   
-* [\[ecmascript\] A JavaScript value of type symbol is not an object.](https://github.com/mdn/content/issues/32207) (2024-02-10T14:09:09Z)
-  
 * [\[ecmascript\] Describe direct and indirect eval differences in each bullet point](https://github.com/mdn/content/issues/30281) (2023-11-14T22:14:49Z)
   
 * [\[ecmascript\] Import assertions proposal renamed to import attributes](https://github.com/mdn/content/issues/29572) (2023-10-10T08:50:02Z)

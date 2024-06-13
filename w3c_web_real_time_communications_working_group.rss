@@ -615,34 +615,5 @@ I ended up implementing my own "stopwatch" to keep track of the recorded duratio
 <p dir="auto">You shouldn't use this legacy property. Instead, use RTCRtpTransceiver to control whether or not to accept incoming audio.</p>
 </blockquote>]]></content:encoded>
         </item>
-        <item>
-            <title><![CDATA[[mediacapture-streams] Issue with "MediaStreamTrack: ended event": note that this event is not fired when the user calls .stop() on the track]]></title>
-            <link>https://github.com/mdn/content/issues/4939</link>
-            <guid>https://github.com/mdn/content/issues/4939</guid>
-            <pubDate>Wed, 12 May 2021 10:02:23 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/ended_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/ended_event</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">It would be worth noting that this event is not fired when the user calls .stop() on the track.</p>
-<p dir="auto">Also this page should include this information somehow in my Opinion:<br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack#events" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack#events</a><br>
-ended<br>
-Sent when playback of the track ends <strong>(when the value readyState changes to ended)</strong>.<br>
-Also available using the onended event handler property.</p>
-<p dir="auto">In the case of calling .stop() yourself, readyState DOES change to ended but the event is not fired.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<h4 dir="auto">What did you expect to see?</h4>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/mediastreamtrack/ended_event</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/ended_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/ended_event</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/mediastreamtrack/ended_event/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/mediastreamtrack/ended_event/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/c016a6b893578b1f39794983682c6d9107910226/hovercard" href="https://github.com/mdn/content/commit/c016a6b893578b1f39794983682c6d9107910226"><tt>c016a6b</tt></a></li>
-<li>Document last modified: 2020-12-21T07:50:05.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
     </channel>
 </rss>

@@ -172,17 +172,6 @@
                 "name": "wbamberg",
                 "url": "https://github.com/wbamberg"
             }
-        },
-        {
-            "id": "https://github.com/mdn/content/issues/4939",
-            "content_html": "<p dir=\"auto\">MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/ended_event\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/ended_event</a></p>\n<h4 dir=\"auto\">What information was incorrect, unhelpful, or incomplete?</h4>\n<p dir=\"auto\">It would be worth noting that this event is not fired when the user calls .stop() on the track.</p>\n<p dir=\"auto\">Also this page should include this information somehow in my Opinion:<br>\n<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack#events\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack#events</a><br>\nended<br>\nSent when playback of the track ends <strong>(when the value readyState changes to ended)</strong>.<br>\nAlso available using the onended event handler property.</p>\n<p dir=\"auto\">In the case of calling .stop() yourself, readyState DOES change to ended but the event is not fired.</p>\n<h4 dir=\"auto\">Specific section or headline?</h4>\n<h4 dir=\"auto\">What did you expect to see?</h4>\n<h4 dir=\"auto\">Did you test this? If so, how?</h4>\n\n<details>\n<summary>MDN Content page report details</summary>\n<ul dir=\"auto\">\n<li>Folder: <code class=\"notranslate\">en-us/web/api/mediastreamtrack/ended_event</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/ended_event\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/ended_event</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/api/mediastreamtrack/ended_event/index.html\">https://github.com/mdn/content/blob/main/files/en-us/web/api/mediastreamtrack/ended_event/index.html</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/c016a6b893578b1f39794983682c6d9107910226/hovercard\" href=\"https://github.com/mdn/content/commit/c016a6b893578b1f39794983682c6d9107910226\"><tt>c016a6b</tt></a></li>\n<li>Document last modified: 2020-12-21T07:50:05.000Z</li>\n</ul>\n</details>",
-            "url": "https://github.com/mdn/content/issues/4939",
-            "title": "[mediacapture-streams] Issue with \"MediaStreamTrack: ended event\": note that this event is not fired when the user calls .stop() on the track",
-            "date_modified": "2021-05-12T10:02:23.000Z",
-            "author": {
-                "name": "receter",
-                "url": "https://github.com/receter"
-            }
         }
     ]
 }
