@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[CSS21, css-display-3\] CSS reference gives instructions that might be considered incomplete for the display: none property](https://github.com/mdn/content/issues/34115) (2024-06-13T13:03:57Z)
+  
 * [\[css-flexbox-1\] flex-initial element doesn't explicitly use flex: initial](https://github.com/mdn/content/issues/34027) (2024-06-09T22:23:00Z)
   
 * [\[cssom-view-1, appmanifest, screen-orientation\] Manifest#orientation: should link to screen orientation API landing page](https://github.com/mdn/content/issues/33670) (2024-05-19T16:39:01Z)

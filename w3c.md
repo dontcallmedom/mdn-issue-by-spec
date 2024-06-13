@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[CSS21, css-display-3\] CSS reference gives instructions that might be considered incomplete for the display: none property](https://github.com/mdn/content/issues/34115) (2024-06-13T13:03:57Z)
+  
 * [\[FileAPI\] The example code generates DomException using Firefox and is blocked in Chrome and Edge](https://github.com/mdn/content/issues/34103) (2024-06-13T07:33:17Z)
   
 * [\[css-flexbox-1\] flex-initial element doesn't explicitly use flex: initial](https://github.com/mdn/content/issues/34027) (2024-06-09T22:23:00Z)
