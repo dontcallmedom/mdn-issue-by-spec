@@ -78,6 +78,8 @@
   
 * [\[SVG11\] The \`x\` and \`y\` attributes on text is actually a list](https://github.com/mdn/content/issues/32081) (2024-02-02T15:10:47Z)
   
+* [\[web-share\] The 'Sharing Files' example doesn't work on iOS](https://github.com/mdn/content/issues/32019) (2024-01-31T00:04:43Z)
+  
 * [\[uievents\] Deprecated event property keyCode is used in examples, but also not explained](https://github.com/mdn/content/issues/31988) (2024-01-29T19:24:13Z)
   
 * [\[selectors-4\] :blank is also a blank page pseudo-class](https://github.com/mdn/content/issues/31885) (2024-01-24T10:43:17Z)
