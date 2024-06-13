@@ -206,8 +206,6 @@
   
 * [\[WebIDL-1\] “Using the Web Storage API” has deprecated “DOMException.code” in example](https://github.com/mdn/content/issues/21910) (2022-10-28T12:08:01Z)
   
-* [\[cssom-view-1, uievents, pointerlock-2\] MouseEvent.clientX and MouseEvent.clientY is  the coordinates of the window, but the documentation is written relative to the local dom ](https://github.com/mdn/content/issues/21876) (2022-10-27T13:46:15Z)
-  
 * [\[DOM-Parsing\] No mention of comments in reference](https://github.com/mdn/content/issues/21761) (2022-10-23T12:49:25Z)
   
 * [\[css-backgrounds-4\] Border-image generator should allow "auto" as a border-image-width value](https://github.com/mdn/content/issues/21582) (2022-10-16T09:04:29Z)
