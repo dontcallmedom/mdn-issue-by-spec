@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by IETF Hypertext Transfer Protocol Bis APP Working Group. [![RSS feed for IETF Hypertext Transfer Protocol Bis APP Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[rfc7232, rfc7231\] Typo error in If-Modified-Since page makes content seem seem wrong and/or confusing](https://github.com/mdn/content/issues/34123) (2024-06-13T15:18:36Z)
-  
 * [\[rfc7231, rfc7233\] Security concern in the HTTP headers Server document](https://github.com/mdn/content/issues/33543) (2024-05-10T22:50:35Z)
   
 * [\[rfc7230\] Connection: Keep-Alive - Docs state it is blocked in Safari when using HTTP2/3, is no longer blocked](https://github.com/mdn/content/issues/31923) (2024-01-25T15:23:54Z)
