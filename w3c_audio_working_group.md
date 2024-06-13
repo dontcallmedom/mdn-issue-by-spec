@@ -16,8 +16,6 @@
   
 * [\[webaudio\] "ConvolverNode": provide a simpler example that I can adapt to more complex examples (connecting it to another node does not work)](https://github.com/mdn/content/issues/14022) (2022-03-18T14:35:29Z)
   
-* [\[webaudio\] AudioContext.createMediaElementSource does not work in Safari](https://github.com/mdn/content/issues/9042) (2021-09-17T18:01:03Z)
-  
 * [\[webaudio\] Content bug: AudioListener and attributes need better examples. ](https://github.com/mdn/content/issues/4468) (2021-04-26T03:22:48Z)
   
 * [\[webmidi\] Issue with "MIDIMessageEvent": deprecated example method ](https://github.com/mdn/content/issues/3569) (2021-03-27T17:06:36Z)
