@@ -14,8 +14,6 @@
   
 * [\[webrtc\] Missing Link for \`RTCPeerConnection.createDTMFSender()\` in "Obsolete Methods" Section](https://github.com/mdn/content/issues/33954) (2024-06-06T06:52:29Z)
   
-* [\[webrtc\]  RTCDTMFSender.canInsertDTMF missing](https://github.com/mdn/content/issues/33951) (2024-06-06T05:26:14Z)
-  
 * [\[speech-api\] SpeechRecognition: continuous property is ignored on Chrome on Android](https://github.com/mdn/content/issues/33820) (2024-05-29T09:36:45Z)
   
 * [\[selection-api\] Clarification of the selection object returned](https://github.com/mdn/content/issues/33803) (2024-05-28T22:35:51Z)

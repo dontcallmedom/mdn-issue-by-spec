@@ -8,8 +8,6 @@
   
 * [\[webrtc\] Missing Link for \`RTCPeerConnection.createDTMFSender()\` in "Obsolete Methods" Section](https://github.com/mdn/content/issues/33954) (2024-06-06T06:52:29Z)
   
-* [\[webrtc\]  RTCDTMFSender.canInsertDTMF missing](https://github.com/mdn/content/issues/33951) (2024-06-06T05:26:14Z)
-  
 * [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
   
 * [\[webrtc\] document of RTCIceCandidate's properties { url, relayProtocol}  are missing](https://github.com/mdn/content/issues/33228) (2024-04-23T11:26:42Z)
