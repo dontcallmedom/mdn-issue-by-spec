@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] Updating \`sessionStorage\` is not firing storage event. Only updating \`localStorage\` fires the storage event.](https://github.com/mdn/content/issues/34162) (2024-06-14T13:15:09Z)
-  
 * [\[html\] terms "this", "target", "recipient", "window", "origin" appear indistinctly used](https://github.com/mdn/content/issues/34090) (2024-06-12T21:06:36Z)
   
 * [\[html\] Summary as headline - a11y-proven?](https://github.com/mdn/content/issues/33961) (2024-06-06T12:29:35Z)
