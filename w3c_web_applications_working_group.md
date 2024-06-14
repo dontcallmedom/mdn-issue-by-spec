@@ -6,8 +6,6 @@
   
 * [\[selection-api\] Clarification of the selection object returned](https://github.com/mdn/content/issues/33803) (2024-05-28T22:35:51Z)
   
-* [\[uievents\] KeyboardEvent: keyCode deprecation hints have contradicting info wrt what to use instead](https://github.com/mdn/content/issues/33694) (2024-05-21T10:18:54Z)
-  
 * [\[cssom-view-1, appmanifest, screen-orientation\] Manifest#orientation: should link to screen orientation API landing page](https://github.com/mdn/content/issues/33670) (2024-05-19T16:39:01Z)
   
 * [\[appmanifest\] Manifest::scope documentation incorrectly states that out-of-scope navigation happens in new browser context](https://github.com/mdn/content/issues/32948) (2024-04-03T19:24:15Z)
@@ -15,8 +13,6 @@
 * [\[dom, cssom-view-1, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] querySelectorAll() does not state how the results are sorted](https://github.com/mdn/content/issues/32615) (2024-03-08T14:53:28Z)
   
 * [\[web-share\] The 'Sharing Files' example doesn't work on iOS](https://github.com/mdn/content/issues/32019) (2024-01-31T00:04:43Z)
-  
-* [\[uievents\] Deprecated event property keyCode is used in examples, but also not explained](https://github.com/mdn/content/issues/31988) (2024-01-29T19:24:13Z)
   
 * [\[push-api\] Web Push userVisibleOnly Details](https://github.com/mdn/content/issues/30077) (2023-11-06T21:13:53Z)
   

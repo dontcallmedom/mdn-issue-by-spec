@@ -20,8 +20,6 @@
   
 * [\[hr-time-3\] What are the ramifications of \`performance.now()\` bugs?](https://github.com/mdn/content/issues/33760) (2024-05-26T19:52:08Z)
   
-* [\[uievents\] KeyboardEvent: keyCode deprecation hints have contradicting info wrt what to use instead](https://github.com/mdn/content/issues/33694) (2024-05-21T10:18:54Z)
-  
 * [\[periodic-background-sync\] The description of "periodicSync" is flawed.](https://github.com/mdn/content/issues/33692) (2024-05-21T08:55:15Z)
   
 * [\[cssom-view-1, appmanifest, screen-orientation\] Manifest#orientation: should link to screen orientation API landing page](https://github.com/mdn/content/issues/33670) (2024-05-19T16:39:01Z)
@@ -77,8 +75,6 @@
 * [\[SVG11\] The \`x\` and \`y\` attributes on text is actually a list](https://github.com/mdn/content/issues/32081) (2024-02-02T15:10:47Z)
   
 * [\[web-share\] The 'Sharing Files' example doesn't work on iOS](https://github.com/mdn/content/issues/32019) (2024-01-31T00:04:43Z)
-  
-* [\[uievents\] Deprecated event property keyCode is used in examples, but also not explained](https://github.com/mdn/content/issues/31988) (2024-01-29T19:24:13Z)
   
 * [\[selectors-4\] :blank is also a blank page pseudo-class](https://github.com/mdn/content/issues/31885) (2024-01-24T10:43:17Z)
   
