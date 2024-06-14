@@ -58,8 +58,6 @@
   
 * [\[cssom-1\] Mention how getPropertyValue serializes values (color representation, etc.)](https://github.com/mdn/content/issues/32826) (2024-03-25T16:39:00Z)
   
-* [\[webaudio\] ChannelMergerNode contradiction: Channel count mode = "explicit" Channel count = 2 (not used in the default count mode)](https://github.com/mdn/content/issues/32783) (2024-03-21T14:03:50Z)
-  
 * [\[dom, cssom-view-1, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] querySelectorAll() does not state how the results are sorted](https://github.com/mdn/content/issues/32615) (2024-03-08T14:53:28Z)
   
 * [\[css-display-3\] All major browsers now support \`display: contents\`](https://github.com/mdn/content/issues/32605) (2024-03-08T02:10:29Z)
@@ -71,8 +69,6 @@
 * [\[css-backgrounds-4, css-ui-4\] Align border and outline shorthands sub-properties order with the spec](https://github.com/mdn/content/issues/32388) (2024-02-22T12:38:41Z)
   
 * [\[css-backgrounds-4\] No information on border-color  \<stripes()\>](https://github.com/mdn/content/issues/32234) (2024-02-12T07:33:50Z)
-  
-* [\[html, selectors-4\] input type time and datetime-local don't match :out-of-range](https://github.com/mdn/content/issues/32156) (2024-02-07T12:06:32Z)
   
 * [\[SVG11\] The \`x\` and \`y\` attributes on text is actually a list](https://github.com/mdn/content/issues/32081) (2024-02-02T15:10:47Z)
   

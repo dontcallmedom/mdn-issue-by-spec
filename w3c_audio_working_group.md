@@ -4,8 +4,6 @@
 
 * [\[webaudio\] ConvolverNode example needs user interaction](https://github.com/mdn/content/issues/33175) (2024-04-19T12:46:49Z)
   
-* [\[webaudio\] ChannelMergerNode contradiction: Channel count mode = "explicit" Channel count = 2 (not used in the default count mode)](https://github.com/mdn/content/issues/32783) (2024-03-21T14:03:50Z)
-  
 * [\[webaudio\] interrupted state not listed as a valid state value, but an example of interrupted state was given](https://github.com/mdn/content/issues/26129) (2023-04-11T18:49:59Z)
   
 * [\[webaudio\] AnalyserNode::getFloatTimeDomainData() doesn't specify the encoding of the waveform](https://github.com/mdn/content/issues/25571) (2023-03-23T14:41:18Z)
