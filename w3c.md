@@ -8,7 +8,7 @@
   
 * [\[css-flexbox-1\] flex-initial element doesn't explicitly use flex: initial](https://github.com/mdn/content/issues/34027) (2024-06-09T22:23:00Z)
   
-* [\[webrtc\] \[WebAPI\] Implement |setCodecPreferences| in RTCRtpTransceiver](https://github.com/mdn/content/issues/33981) (2024-06-07T09:38:04Z)
+* [\[webrtc\] \[WebAPI\] Implement RTCRtpTransceiver.setCodecPreferences()](https://github.com/mdn/content/issues/33981) (2024-06-07T09:38:04Z)
   
 * [\[webrtc\] Broken link to RTCSessionDescriptionInit, RTCLocalSessionDescriptionInit](https://github.com/mdn/content/issues/33962) (2024-06-06T12:39:29Z)
   
