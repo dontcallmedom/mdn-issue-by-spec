@@ -84,8 +84,6 @@
   
 * [\[dom\] Document syntax restrictions for functional \`id\`s](https://github.com/mdn/content/issues/28752) (2023-08-25T12:12:43Z)
   
-* [\[html\] HTMLElement.dataset: using the \`in\` operator is unsafe](https://github.com/mdn/content/issues/28693) (2023-08-22T08:32:02Z)
-  
 * [\[html, dom, uievents, cssom-view-1, pointerlock-2, selection-api, page-visibility-2\] Keydown, keyup, keypress pages should mention they work on document, body, etc](https://github.com/mdn/content/issues/28561) (2023-08-14T20:14:56Z)
   
 * [\[html\] Example given on blockquote page is incorrect according to the HTML spec](https://github.com/mdn/content/issues/28401) (2023-08-04T18:47:11Z)
