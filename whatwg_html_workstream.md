@@ -72,10 +72,6 @@
   
 * [\[html\] Explain how to put dialog elements in the top layer](https://github.com/mdn/content/issues/27912) (2023-07-13T04:28:06Z)
   
-* [\[html\] No examples for iframe usage given](https://github.com/mdn/content/issues/27753) (2023-07-04T09:28:24Z)
-  
-* [\[html\] srcdocs page does not include anchor tags caveat](https://github.com/mdn/content/issues/27630) (2023-06-28T16:31:51Z)
-  
 * [\[html\] There is an easier way to get form data](https://github.com/mdn/content/issues/27543) (2023-06-25T09:33:22Z)
   
 * [\[html, cssom-view-1\] window.open() has a partial list of features](https://github.com/mdn/content/issues/27357) (2023-06-15T19:36:20Z)

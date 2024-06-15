@@ -90,10 +90,6 @@
   
 * [\[dom, uievents, cssom-view-1, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
   
-* [\[html\] No examples for iframe usage given](https://github.com/mdn/content/issues/27753) (2023-07-04T09:28:24Z)
-  
-* [\[html\] srcdocs page does not include anchor tags caveat](https://github.com/mdn/content/issues/27630) (2023-06-28T16:31:51Z)
-  
 * [\[html\] There is an easier way to get form data](https://github.com/mdn/content/issues/27543) (2023-06-25T09:33:22Z)
   
 * [\[dom\] Event.preventDefault: Inaccessible example](https://github.com/mdn/content/issues/27478) (2023-06-22T14:18:14Z)
