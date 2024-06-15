@@ -298,9 +298,7 @@
   
 * [\[orientation-event, compat\] Content bug: Improve device/screen orientation event doc](https://github.com/mdn/content/issues/4400) (2021-04-23T02:57:45Z)
   
-* [\[presentation-api\] Issue with "getAvailability": needs improvement (currently just contains a dump of the spec for the method)](https://github.com/mdn/content/issues/4025) (2021-04-12T01:16:00Z)
-  
-* [\[webmidi\] Issue with "MIDIMessageEvent": deprecated example method ](https://github.com/mdn/content/issues/3569) (2021-03-27T17:06:36Z)
+* [\[presentation-api\] Presentation API docs need rewrite](https://github.com/mdn/content/issues/4025) (2021-04-12T01:16:00Z)
   
 * [\[SVG11\] Issue with "\<foreignObject\>": doesn't render in Safari](https://github.com/mdn/content/issues/1319) (2021-01-14T17:25:42Z)
   
