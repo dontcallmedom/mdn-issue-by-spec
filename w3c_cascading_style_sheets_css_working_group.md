@@ -70,8 +70,6 @@
   
 * [\[css-ui-4\] \<input type="range"\>: slider-vertical to be removed from Chrome](https://github.com/mdn/content/issues/28550) (2023-08-14T05:47:35Z)
   
-* [\[css-writing-modes-4\] More differences between HTML dir and CSS direction](https://github.com/mdn/content/issues/28320) (2023-08-01T12:10:15Z)
-  
 * [\[css-typed-om-2\] CSSMathNegate() constructor page is a stub](https://github.com/mdn/content/issues/28118) (2023-07-22T02:25:00Z)
   
 * [\[dom, uievents, cssom-view-1, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
