@@ -184,8 +184,6 @@
   
 * [\[html\] Issue with "\<form\>": describe running javascript on submit: \`onsubmit\` and javascript pseudo-protocol](https://github.com/mdn/content/issues/7142) (2021-07-21T22:09:52Z)
   
-* [\[html\] RadioNodeList - Missing an example](https://github.com/mdn/content/issues/11476) (2021-07-21T11:30:00Z)
-  
 * [\[html, web-locks\] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator](https://github.com/mdn/content/issues/6856) (2021-07-13T13:35:32Z)
   
 * [\[html\] CustomElementRegistry needs updating](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
