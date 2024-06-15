@@ -208,8 +208,6 @@
   
 * [\[IndexedDB-3\] indexedDB.deleteDatabase doc: Mention that deleting a database isn't completed until the upgradeNeeded result is closed](https://github.com/mdn/content/issues/20368) (2022-09-07T00:12:45Z)
   
-* [\[uievents\] Page for \`MouseEvent()\` doesn't show how to use it](https://github.com/mdn/content/issues/20329) (2022-09-05T19:44:07Z)
-  
 * [\[html, cssom-view-1\] \[GEH\] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
   
 * [\[uievents\] Event references should list bubbles, cancelable, and composed values](https://github.com/mdn/content/issues/19590) (2022-08-15T13:38:07Z)
@@ -233,8 +231,6 @@
 * [\[SVG11\] SVG Tutorial discussed strokes and fills without paint-order](https://github.com/mdn/content/issues/17040) (2022-06-06T18:32:51Z)
   
 * [\[file-system-access\] \`FileSystemHandle.requestPermission()\` can throw \`SecurityError\`](https://github.com/mdn/content/issues/15831) (2022-05-09T19:45:01Z)
-  
-* [\[css-contain-2\] Containing block via contain:paint vs other alternatives](https://github.com/mdn/content/issues/15210) (2022-04-21T19:05:51Z)
   
 * [\[html, gamepad\] Double checking the gamepad docs are correct](https://github.com/mdn/content/issues/14874) (2022-04-11T03:02:09Z)
   

@@ -122,8 +122,6 @@
   
 * [\[selectors-4\] \`:any-link\` privacy exception not explained](https://github.com/mdn/content/issues/17366) (2022-06-17T02:50:38Z)
   
-* [\[css-contain-2\] Containing block via contain:paint vs other alternatives](https://github.com/mdn/content/issues/15210) (2022-04-21T19:05:51Z)
-  
 * [\[css-fonts-5\] Issue with "font-size": recommend to users not to set font-size with "em" units](https://github.com/mdn/content/issues/14282) (2022-03-25T06:00:02Z)
   
 * [\[web-animations-2, css-animations-2\] Issue with "Element.animate()": wrong scenario mentioned](https://github.com/mdn/content/issues/13487) (2022-03-04T07:40:26Z)

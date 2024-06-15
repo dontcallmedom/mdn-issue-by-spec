@@ -44,8 +44,6 @@
   
 * [\[IndexedDB-3\] indexedDB.deleteDatabase doc: Mention that deleting a database isn't completed until the upgradeNeeded result is closed](https://github.com/mdn/content/issues/20368) (2022-09-07T00:12:45Z)
   
-* [\[uievents\] Page for \`MouseEvent()\` doesn't show how to use it](https://github.com/mdn/content/issues/20329) (2022-09-05T19:44:07Z)
-  
 * [\[uievents\] Event references should list bubbles, cancelable, and composed values](https://github.com/mdn/content/issues/19590) (2022-08-15T13:38:07Z)
   
 * [\[uievents\] Document the ability to preventDefault() a pinch-zoom gesture on a touchpad](https://github.com/mdn/content/issues/18342) (2022-07-14T03:33:35Z)
