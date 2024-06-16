@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] Confusing "nearest \<section\> ancestor"](https://github.com/mdn/content/issues/34195) (2024-06-16T07:58:55Z)
-  
 * [\[html\] terms "this", "target", "recipient", "window", "origin" appear indistinctly used](https://github.com/mdn/content/issues/34090) (2024-06-12T21:06:36Z)
   
 * [\[dom\] Various Node subclass replaceWith methods should link to each other](https://github.com/mdn/content/issues/34084) (2024-06-12T15:46:35Z)
