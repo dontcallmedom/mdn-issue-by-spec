@@ -116,8 +116,6 @@
   
 * [\[cssom-view-1\] Include solution to checking if content is overflown in clientHeight page](https://github.com/mdn/content/issues/19153) (2022-08-04T11:29:19Z)
   
-* [\[cssom-view-1\] the demo's getBoundingClientRect has different result in console panel](https://github.com/mdn/content/issues/17588) (2022-06-24T02:34:27Z)
-  
 * [\[css-overflow-3\] CSS overflow property is giving results inconsistant with guide](https://github.com/mdn/content/issues/17430) (2022-06-19T11:34:27Z)
   
 * [\[selectors-4\] \`:any-link\` privacy exception not explained](https://github.com/mdn/content/issues/17366) (2022-06-17T02:50:38Z)
