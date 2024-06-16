@@ -238,8 +238,6 @@
   
 * [\[webaudio\] AudioParam - automationRate undocumented](https://github.com/mdn/content/issues/14637) (2022-04-03T13:16:23Z)
   
-* [\[css-fonts-5\] Issue with "font-size": recommend to users not to set font-size with "em" units](https://github.com/mdn/content/issues/14282) (2022-03-25T06:00:02Z)
-  
 * [\[webaudio\] "ConvolverNode": provide a simpler example that I can adapt to more complex examples (connecting it to another node does not work)](https://github.com/mdn/content/issues/14022) (2022-03-18T14:35:29Z)
   
 * [\[SVG11\] Issue with "\<tspan\>": No mention of multiple x values](https://github.com/mdn/content/issues/13831) (2022-03-13T18:05:24Z)
