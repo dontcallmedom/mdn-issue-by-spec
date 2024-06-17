@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by IETF Hypertext Transfer Protocol Bis APP Working Group. [![RSS feed for IETF Hypertext Transfer Protocol Bis APP Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[rfc7234\] Cache-control: incorrect example of max-stale](https://github.com/mdn/content/issues/34221) (2024-06-17T09:49:55Z)
+  
 * [\[rfc7231, rfc7233\] Security concern in the HTTP headers Server document](https://github.com/mdn/content/issues/33543) (2024-05-10T22:50:35Z)
   
 * [\[rfc7230\] Connection: Keep-Alive - Docs state it is blocked in Safari when using HTTP2/3, is no longer blocked](https://github.com/mdn/content/issues/31923) (2024-01-25T15:23:54Z)

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by IETF. [![RSS feed for IETF-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[rfc7234\] Cache-control: incorrect example of max-stale](https://github.com/mdn/content/issues/34221) (2024-06-17T09:49:55Z)
+  
 * [\[rfc7231, rfc7233\] Security concern in the HTTP headers Server document](https://github.com/mdn/content/issues/33543) (2024-05-10T22:50:35Z)
   
 * [\[rfc6265\] Set-Cookie domain attribute actually needs leading dot to work](https://github.com/mdn/content/issues/32050) (2024-02-01T08:40:17Z)

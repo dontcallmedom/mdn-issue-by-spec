@@ -4,10 +4,48 @@
         <title>IETF-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ietf.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by IETF</description>
-        <lastBuildDate>Fri, 10 May 2024 22:50:35 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 17 Jun 2024 09:49:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[rfc7234] Cache-control: incorrect example of max-stale]]></title>
+            <link>https://github.com/mdn/content/issues/34221</link>
+            <guid>https://github.com/mdn/content/issues/34221</guid>
+            <pubDate>Mon, 17 Jun 2024 09:49:55 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">max-stale</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto">The max-stale=N request directive indicates that the client allows a stored response that is <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching#fresh_and_stale_based_on_age" rel="nofollow">stale</a> within N seconds.</p>
+<div class="highlight highlight-source-httpspec notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="Cache-Control: max-stale=3600"><pre class="notranslate"><span class="pl-s"><span class="pl-v">Cache-Control:</span> max-stale=3600</span></pre></div>
+<p dir="auto">In the case above, if the response with <code class="notranslate">Cache-Control: max-age=604800</code> was generated more than 3 hours ago (calculated from max-age and the Age header), the cache couldn't reuse that response.</p>
+</blockquote>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I believe the text should be changed to below:</p>
+<blockquote>
+<p dir="auto">... if the response with <code class="notranslate">Cache-Control: max-age=7200</code> was generated more than 3 hours ago ...</p>
+</blockquote>
+<p dir="auto"><code class="notranslate">max-stale=3600</code> in request means that cached responses that were stale up to 3600 seconds (1h) may be served. So the response should be considered stale after 7200 seconds (2h), set in <code class="notranslate">max-age</code>.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://datatracker.ietf.org/doc/html/rfc7234#section-5.2.1.2" rel="nofollow">https://datatracker.ietf.org/doc/html/rfc7234#section-5.2.1.2</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/http/headers/cache-control</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/cache-control/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/cache-control/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/8052747752b4f4701cd594f4565bab033610166a/hovercard" href="https://github.com/mdn/content/commit/8052747752b4f4701cd594f4565bab033610166a"><tt>8052747</tt></a></li>
+<li>Document last modified: 2024-05-17T12:11:53.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[rfc7231, rfc7233] Security concern in the HTTP headers Server document]]></title>
             <link>https://github.com/mdn/content/issues/33543</link>
@@ -91,11 +129,11 @@ Thus, revealing server information contradicts the security warnings in the docu
 </thead>
 <tbody>
 <tr>
-<td><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5629994/299715016-b678286b-65b0-4a67-8b4b-eb330f1673ef.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg2MTc2MTcsIm5iZiI6MTcxODYxNzMxNywicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTAxNi1iNjc4Mjg2Yi02NWIwLTRhNjctOGI0Yi1lYjMzMGYxNjczZWYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTdUMDk0MTU3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MmQ4MWFiZTViN2Y3YWNkNTU1NzFkOGUxMjBmZGIwZWUwOTk4NTY3MDlhYWMxYmNjMzI3NDIyZTA3ODg5MGVhZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.K9_z59zbddcK4PM3Qwad8cA8wXFWEAjLxbbnK1z0ktE"><img src="https://private-user-images.githubusercontent.com/5629994/299715016-b678286b-65b0-4a67-8b4b-eb330f1673ef.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg2MTc2MTcsIm5iZiI6MTcxODYxNzMxNywicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTAxNi1iNjc4Mjg2Yi02NWIwLTRhNjctOGI0Yi1lYjMzMGYxNjczZWYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTdUMDk0MTU3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MmQ4MWFiZTViN2Y3YWNkNTU1NzFkOGUxMjBmZGIwZWUwOTk4NTY3MDlhYWMxYmNjMzI3NDIyZTA3ODg5MGVhZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.K9_z59zbddcK4PM3Qwad8cA8wXFWEAjLxbbnK1z0ktE" alt="Screenshot 2024-01-25 at 15 19 29" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5629994/299715016-b678286b-65b0-4a67-8b4b-eb330f1673ef.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg2MTgyNTAsIm5iZiI6MTcxODYxNzk1MCwicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTAxNi1iNjc4Mjg2Yi02NWIwLTRhNjctOGI0Yi1lYjMzMGYxNjczZWYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTdUMDk1MjMwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9M2E0OWJhYWRiOGJiN2VkZmY4ZDA4NzQ1Mjc3NDEyMTYzZGMwYzEzMmYyNmFmNTdhZGRhOTBkODk1YjkxNjNmNCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.YRcg-hkC2ytd5Ztc8aJ7ucMwZaVi-ftARG6MDlTG-uk"><img src="https://private-user-images.githubusercontent.com/5629994/299715016-b678286b-65b0-4a67-8b4b-eb330f1673ef.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg2MTgyNTAsIm5iZiI6MTcxODYxNzk1MCwicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTAxNi1iNjc4Mjg2Yi02NWIwLTRhNjctOGI0Yi1lYjMzMGYxNjczZWYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTdUMDk1MjMwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9M2E0OWJhYWRiOGJiN2VkZmY4ZDA4NzQ1Mjc3NDEyMTYzZGMwYzEzMmYyNmFmNTdhZGRhOTBkODk1YjkxNjNmNCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.YRcg-hkC2ytd5Ztc8aJ7ucMwZaVi-ftARG6MDlTG-uk" alt="Screenshot 2024-01-25 at 15 19 29" style="max-width: 100%;"></a></td>
 <td>Request working using http3</td>
 </tr>
 <tr>
-<td><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5629994/299715119-870cf1cd-c64f-43b4-b39b-b240ef35fb69.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg2MTc2MTcsIm5iZiI6MTcxODYxNzMxNywicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTExOS04NzBjZjFjZC1jNjRmLTQzYjQtYjM5Yi1iMjQwZWYzNWZiNjkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTdUMDk0MTU3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MGU2ZjlhZjE0ZDljY2VkMTQxNjRhNGUzMmUzNjE1MTMyYThiMjhmNWNiMGU1ZTA5ZWU0Y2ZmNjM1MjIwNTZmMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Kh7-jmvuXgeAjGn9w_NRxI2fKFlq0Cfk8VdWWbfpui0"><img src="https://private-user-images.githubusercontent.com/5629994/299715119-870cf1cd-c64f-43b4-b39b-b240ef35fb69.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg2MTc2MTcsIm5iZiI6MTcxODYxNzMxNywicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTExOS04NzBjZjFjZC1jNjRmLTQzYjQtYjM5Yi1iMjQwZWYzNWZiNjkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTdUMDk0MTU3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MGU2ZjlhZjE0ZDljY2VkMTQxNjRhNGUzMmUzNjE1MTMyYThiMjhmNWNiMGU1ZTA5ZWU0Y2ZmNjM1MjIwNTZmMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Kh7-jmvuXgeAjGn9w_NRxI2fKFlq0Cfk8VdWWbfpui0" alt="Screenshot 2024-01-25 at 15 19 32" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5629994/299715119-870cf1cd-c64f-43b4-b39b-b240ef35fb69.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg2MTgyNTAsIm5iZiI6MTcxODYxNzk1MCwicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTExOS04NzBjZjFjZC1jNjRmLTQzYjQtYjM5Yi1iMjQwZWYzNWZiNjkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTdUMDk1MjMwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDhjY2YxYTUwMTdiMmYyYzgxZTljOTEyZjdhMWQyZGIyMjFiODBjZWM1YjJjNTBmNTFkOTIyMTNkMTAxZGY1MiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.kz8KMAkwUQaZJSuuAQtcK4-JO73EYaLUgUg46OgXdrI"><img src="https://private-user-images.githubusercontent.com/5629994/299715119-870cf1cd-c64f-43b4-b39b-b240ef35fb69.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg2MTgyNTAsIm5iZiI6MTcxODYxNzk1MCwicGF0aCI6Ii81NjI5OTk0LzI5OTcxNTExOS04NzBjZjFjZC1jNjRmLTQzYjQtYjM5Yi1iMjQwZWYzNWZiNjkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTdUMDk1MjMwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDhjY2YxYTUwMTdiMmYyYzgxZTljOTEyZjdhMWQyZGIyMjFiODBjZWM1YjJjNTBmNTFkOTIyMTNkMTAxZGY1MiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.kz8KMAkwUQaZJSuuAQtcK4-JO73EYaLUgUg46OgXdrI" alt="Screenshot 2024-01-25 at 15 19 32" style="max-width: 100%;"></a></td>
 <td>Showing appropriate header set</td>
 </tr>
 </tbody>
