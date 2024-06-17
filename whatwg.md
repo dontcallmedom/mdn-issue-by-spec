@@ -58,8 +58,6 @@
   
 * [\[html\] Document img auto-sizes](https://github.com/mdn/content/issues/30596) (2023-11-28T10:39:06Z)
   
-* [\[html\] If possible, include an example of importing from an embedded module](https://github.com/mdn/content/issues/30520) (2023-11-25T03:11:40Z)
-  
 * [\[html\] Document false negatives for navigator.onLine property ](https://github.com/mdn/content/issues/30402) (2023-11-20T10:49:44Z)
   
 * [\[dom\] Not all observers will be removed when one call observe with same target node](https://github.com/mdn/content/issues/29814) (2023-10-24T15:19:23Z)
