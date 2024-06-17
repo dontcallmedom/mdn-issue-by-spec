@@ -170,8 +170,6 @@
   
 * [\[html, uievents\] Replace hand-written compat sections with BCD tables](https://github.com/mdn/content/issues/9972) (2021-10-21T07:40:45Z)
   
-* [\[dom\] Issue with "Document.getElementById()": link to xml:id doesn't include expected source snippet](https://github.com/mdn/content/issues/9777) (2021-10-13T19:50:56Z)
-  
 * [\[html\] Content suggestion: WebSocket.readyState enum properties WebSocket.OPEN, WebSocket.CLOSING, etc](https://github.com/mdn/content/issues/9156) (2021-09-21T22:32:24Z)
   
 * [\[notifications, service-workers-1, dom, cssom-view-1, pointerevents3\] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
