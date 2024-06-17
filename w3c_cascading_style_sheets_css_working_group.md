@@ -100,8 +100,6 @@
   
 * [\[css-fonts-5\] getComputedStyle() does not respect the Fallback weights algorithm](https://github.com/mdn/content/issues/22496) (2022-11-23T12:04:06Z)
   
-* [\[compositing-2\] Examples of isolation hard to understand](https://github.com/mdn/content/issues/22185) (2022-11-09T11:56:05Z)
-  
 * [\[css-backgrounds-4\] Border-image generator should allow "auto" as a border-image-width value](https://github.com/mdn/content/issues/21582) (2022-10-16T09:04:29Z)
   
 * [\[css-align-3\] Content suggestion: display owns CSS shorthand property.](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
