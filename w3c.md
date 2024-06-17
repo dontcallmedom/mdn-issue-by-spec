@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-color-4\] Interpolating colors from different spaces: analogous components](https://github.com/mdn/content/issues/34229) (2024-06-17T18:47:04Z)
+  
 * [\[cssom-1\] CSSStyleDeclaration's \`@@iterator\` link goes to a "Page not found"](https://github.com/mdn/content/issues/34193) (2024-06-15T22:04:49Z)
   
 * [\[webauthn-3\] Webauthn latest specs](https://github.com/mdn/content/issues/34167) (2024-06-14T14:21:13Z)

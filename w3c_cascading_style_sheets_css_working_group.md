@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-color-4\] Interpolating colors from different spaces: analogous components](https://github.com/mdn/content/issues/34229) (2024-06-17T18:47:04Z)
+  
 * [\[cssom-1\] CSSStyleDeclaration's \`@@iterator\` link goes to a "Page not found"](https://github.com/mdn/content/issues/34193) (2024-06-15T22:04:49Z)
   
 * [\[CSS21, css-display-3\] CSS reference gives instructions that might be considered incomplete for the display: none property](https://github.com/mdn/content/issues/34115) (2024-06-13T13:03:57Z)
