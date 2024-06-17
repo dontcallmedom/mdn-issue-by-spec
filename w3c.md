@@ -32,8 +32,6 @@
   
 * [\[css-logical-1\] \[CSS\] Implement margin at-rules](https://github.com/mdn/content/issues/33519) (2024-05-09T18:48:48Z)
   
-* [\[css-color-4\] \[CSS\]\[Nightly\] Enable relative color syntax on nightly](https://github.com/mdn/content/issues/33517) (2024-05-09T18:02:11Z)
-  
 * [\[css-lists-3\] Misinformation in the counter-reset example for the list-item counter](https://github.com/mdn/content/issues/33422) (2024-05-05T13:41:06Z)
   
 * [\[entries-api\] The \`readEntries\` method of \`FileSystemDirectoryReader\` was incorrectly used in a synchronous manner instead of asynchronously.](https://github.com/mdn/content/issues/33342) (2024-04-30T23:14:07Z)

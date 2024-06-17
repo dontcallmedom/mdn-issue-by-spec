@@ -14,8 +14,6 @@
   
 * [\[css-logical-1\] \[CSS\] Implement margin at-rules](https://github.com/mdn/content/issues/33519) (2024-05-09T18:48:48Z)
   
-* [\[css-color-4\] \[CSS\]\[Nightly\] Enable relative color syntax on nightly](https://github.com/mdn/content/issues/33517) (2024-05-09T18:02:11Z)
-  
 * [\[css-lists-3\] Misinformation in the counter-reset example for the list-item counter](https://github.com/mdn/content/issues/33422) (2024-05-05T13:41:06Z)
   
 * [\[cssom-view-1\] offsetParent affected by transform, filter, etc](https://github.com/mdn/content/issues/33252) (2024-04-24T08:56:33Z)
