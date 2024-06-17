@@ -4,7 +4,7 @@
 
 * [\[speech-api\] SpeechRecognition: continuous property is ignored on Chrome on Android](https://github.com/mdn/content/issues/33820) (2024-05-29T09:36:45Z)
   
-* [\[periodic-background-sync\] The description of "periodicSync" is flawed.](https://github.com/mdn/content/issues/33692) (2024-05-21T08:55:15Z)
+* [\[periodic-background-sync\] periodicSync needs "periodic-background-sync" permission](https://github.com/mdn/content/issues/33692) (2024-05-21T08:55:15Z)
   
 * [\[entries-api\] The \`readEntries\` method of \`FileSystemDirectoryReader\` was incorrectly used in a synchronous manner instead of asynchronously.](https://github.com/mdn/content/issues/33342) (2024-04-30T23:14:07Z)
   
