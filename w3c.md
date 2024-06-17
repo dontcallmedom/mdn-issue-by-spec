@@ -212,8 +212,6 @@
   
 * [\[mediastream-recording\] Emitted blobs do not always exactly adhere to the timeslice value](https://github.com/mdn/content/issues/19369) (2022-08-10T14:39:46Z)
   
-* [\[cssom-view-1\] scrollIntoView: how to control the top margin](https://github.com/mdn/content/issues/19322) (2022-08-09T11:35:31Z)
-  
 * [\[cssom-view-1\] Include solution to checking if content is overflown in clientHeight page](https://github.com/mdn/content/issues/19153) (2022-08-04T11:29:19Z)
   
 * [\[uievents\] Document the ability to preventDefault() a pinch-zoom gesture on a touchpad](https://github.com/mdn/content/issues/18342) (2022-07-14T03:33:35Z)
