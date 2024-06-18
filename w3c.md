@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-fonts-5\] Non-Scrolling Sidebars Trigger Migraines](https://github.com/mdn/content/issues/34252) (2024-06-18T15:44:39Z)
+  
 * [\[selectors-4\] The first selector is missing with the child combinator used in the example CSS file](https://github.com/mdn/content/issues/34230) (2024-06-17T22:07:06Z)
   
 * [\[css-color-4\] Interpolating colors from different spaces: analogous components](https://github.com/mdn/content/issues/34229) (2024-06-17T18:47:04Z)
