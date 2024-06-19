@@ -158,8 +158,6 @@
   
 * [\[fullscreen\] Using F11 to enter fullscreen mode doesn’t set fullscreenElement (it remains null) and document.exitFullscreen() doesn’t work](https://github.com/mdn/content/issues/13674) (2022-03-09T00:38:35Z)
   
-* [\[html\] Conflicting descriptions of whether Firefox respects the “autocomplete” attribute, specifically for \<input type="checkbox"\>](https://github.com/mdn/content/issues/13502) (2022-03-04T16:37:28Z)
-  
 * [\[fetch\] Issue with "Response.json()": Possible exceptions not documented](https://github.com/mdn/content/issues/13208) (2022-02-22T13:11:28Z)
   
 * [\[fetch\] Content bug: Inaccurate explanation on request credentials](https://github.com/mdn/content/issues/13063) (2022-02-17T09:18:12Z)
