@@ -24,8 +24,6 @@
   
 * [\[dom\] Missing NodeFilter.FILTER_SKIP description](https://github.com/mdn/content/issues/23728) (2023-01-17T19:26:34Z)
   
-* [\[dom\] api.Element.replaceWith - Misleading details and prototype](https://github.com/mdn/content/issues/21497) (2022-10-11T19:50:51Z)
-  
 * [\[html, dom\] Event.returnValue: further deprecation information needed](https://github.com/mdn/content/issues/20730) (2022-09-14T18:18:13Z)
   
 * [\[dom\] Issue with "AbortController": (missing info on behavior of .text() or .json() or other body promise)](https://github.com/mdn/content/issues/12387) (2022-01-24T16:10:11Z)

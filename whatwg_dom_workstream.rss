@@ -367,41 +367,6 @@ This page should mention 'xml' and 'xmlns' prefixes handling.</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[dom] api.Element.replaceWith - Misleading details and prototype]]></title>
-            <link>https://github.com/mdn/content/issues/21497</link>
-            <guid>https://github.com/mdn/content/issues/21497</guid>
-            <pubDate>Tue, 11 Oct 2022 19:50:51 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">What type of issue is this?</h3>
-<p dir="auto">Other</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">As you correctly link to the standard, <code class="notranslate">replaceWith</code> is a <a href="https://dom.spec.whatwg.org/#interface-childnode" rel="nofollow">ChildNode mixin</a> and not an Element method.</p>
-<p dir="auto">That means that even text nodes or comments can use <code class="notranslate">replaceWith</code> while not being <code class="notranslate">instanceof Element</code>.</p>
-<p dir="auto">This is rather a misleading link in MDN, but also changing it would kinda <em>rot</em> such misleading information, so something must change though, as the info is everything but reliable or accurate.</p>
-<h3 dir="auto">What browsers does this problem apply to, if applicable?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">At least a link to ChildNode mixin, but also nothing strictly related to Element prototype.</p>
-<h3 dir="auto">Did you test this? If so, how?</h3>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="document.createComment('').replaceWith ; // function
-document.createComment('') instanceof Element; // false"><pre class="notranslate"><span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createComment</span><span class="pl-kos">(</span><span class="pl-s">''</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">replaceWith</span> <span class="pl-kos">;</span> <span class="pl-c">// function</span>
-<span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createComment</span><span class="pl-kos">(</span><span class="pl-s">''</span><span class="pl-kos">)</span> <span class="pl-k">instanceof</span> <span class="pl-v">Element</span><span class="pl-kos">;</span> <span class="pl-c">// false</span></pre></div>
-<h3 dir="auto">Can you link to any release notes, bugs, pull requests, or MDN pages related to this?</h3>
-<p dir="auto"><a href="https://dom.spec.whatwg.org/#interface-childnode" rel="nofollow">https://dom.spec.whatwg.org/#interface-childnode</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/replaceWith" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/replaceWith</a></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>MDN page report details</summary>
-<ul dir="auto">
-<li>Query: <code class="notranslate">api.Element.replaceWith</code></li>
-<li>Report started: 2022-10-11T19:41:59.573Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html, dom] Event.returnValue: further deprecation information needed]]></title>
             <link>https://github.com/mdn/content/issues/20730</link>
             <guid>https://github.com/mdn/content/issues/20730</guid>
