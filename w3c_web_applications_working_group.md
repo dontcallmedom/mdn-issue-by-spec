@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[pointerlock-2\] Updated Baseline Information](https://github.com/mdn/content/issues/34263) (2024-06-19T08:06:56Z)
+* [\[pointerlock-2\] MouseEvent: movementX shown as limited availability in Baseline despite wide support](https://github.com/mdn/content/issues/34263) (2024-06-19T08:06:56Z)
   
 * [\[FileAPI\] The example code generates DomException using Firefox and is blocked in Chrome and Edge](https://github.com/mdn/content/issues/34103) (2024-06-13T07:33:17Z)
   
