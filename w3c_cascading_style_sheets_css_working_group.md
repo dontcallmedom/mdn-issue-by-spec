@@ -6,8 +6,6 @@
   
 * [\[css-color-4\] Interpolating colors from different spaces: analogous components](https://github.com/mdn/content/issues/34229) (2024-06-17T18:47:04Z)
   
-* [\[cssom-1\] CSSStyleDeclaration's \`@@iterator\` link goes to a "Page not found"](https://github.com/mdn/content/issues/34193) (2024-06-15T22:04:49Z)
-  
 * [\[css-flexbox-1\] flex-initial element doesn't explicitly use flex: initial](https://github.com/mdn/content/issues/34027) (2024-06-09T22:23:00Z)
   
 * [\[cssom-view-1, appmanifest, screen-orientation\] Manifest#orientation: should link to screen orientation API landing page](https://github.com/mdn/content/issues/33670) (2024-05-19T16:39:01Z)

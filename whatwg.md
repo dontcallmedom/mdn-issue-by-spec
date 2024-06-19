@@ -10,8 +10,6 @@
   
 * [\[dom\] Various Node subclass replaceWith methods should link to each other](https://github.com/mdn/content/issues/34084) (2024-06-12T15:46:35Z)
   
-* [\[html\] Summary as headline - a11y-proven?](https://github.com/mdn/content/issues/33961) (2024-06-06T12:29:35Z)
-  
 * [\[html\] Add a warning/suggestion to canvas.toDataURL to prefer toBlob](https://github.com/mdn/content/issues/33748) (2024-05-25T10:54:03Z)
   
 * [\[html\] IMPORTANT description and example missing](https://github.com/mdn/content/issues/33573) (2024-05-13T01:38:50Z)

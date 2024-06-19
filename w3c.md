@@ -6,8 +6,6 @@
   
 * [\[css-color-4\] Interpolating colors from different spaces: analogous components](https://github.com/mdn/content/issues/34229) (2024-06-17T18:47:04Z)
   
-* [\[cssom-1\] CSSStyleDeclaration's \`@@iterator\` link goes to a "Page not found"](https://github.com/mdn/content/issues/34193) (2024-06-15T22:04:49Z)
-  
 * [\[webauthn-3\] Webauthn latest specs](https://github.com/mdn/content/issues/34167) (2024-06-14T14:21:13Z)
   
 * [\[FileAPI\] The example code generates DomException using Firefox and is blocked in Chrome and Edge](https://github.com/mdn/content/issues/34103) (2024-06-13T07:33:17Z)
@@ -19,8 +17,6 @@
 * [\[webrtc\] Broken link to RTCSessionDescriptionInit, RTCLocalSessionDescriptionInit](https://github.com/mdn/content/issues/33962) (2024-06-06T12:39:29Z)
   
 * [\[webrtc\] Missing Link for \`RTCPeerConnection.createDTMFSender()\` in "Obsolete Methods" Section](https://github.com/mdn/content/issues/33954) (2024-06-06T06:52:29Z)
-  
-* [\[speech-api\] SpeechRecognition: continuous property is ignored on Chrome on Android](https://github.com/mdn/content/issues/33820) (2024-05-29T09:36:45Z)
   
 * [\[selection-api\] Clarification of the selection object returned](https://github.com/mdn/content/issues/33803) (2024-05-28T22:35:51Z)
   
