@@ -1,0 +1,23 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "WHATWG Streams Workstream-relevant MDN issues",
+    "home_page_url": "https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_streams_workstream.rss",
+    "description": "Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG Streams Workstream",
+    "author": {
+        "name": "mdn-issue-by-spec",
+        "url": "https://github.com/dontcallmedom/mdn-issue-by-spec"
+    },
+    "items": [
+        {
+            "id": "https://github.com/mdn/content/issues/34282",
+            "content_html": "<p dir=\"auto\">The constructor to the <code class=\"notranslate\">ByteLengthQueuingStrategy</code> looks to reference <code class=\"notranslate\">highWaterMark</code> directly (as if a number type).</p>\n<p dir=\"auto\">Where it is likely <code class=\"notranslate\">QueuingStrategyInit</code> (or colloquial <code class=\"notranslate\">{ highWaterMark }</code>) was the intention.</p>\n<p dir=\"auto\"><a href=\"https://streams.spec.whatwg.org/#blqs-class-definition\" rel=\"nofollow\">https://streams.spec.whatwg.org/#blqs-class-definition</a></p>\n<p dir=\"auto\">here:<br>\n<a href=\"https://github.com/mdn/content/blob/a7a85e309c1fad7fb2d791f34a2533a3866428db/files/en-us/web/api/bytelengthqueuingstrategy/bytelengthqueuingstrategy/index.md?plain=1#L18C31-L18C44\">https://github.com/mdn/content/blob/a7a85e309c1fad7fb2d791f34a2533a3866428db/files/en-us/web/api/bytelengthqueuingstrategy/bytelengthqueuingstrategy/index.md?plain=1#L18C31-L18C44</a></p>\n<p dir=\"auto\">this may be a common shorthand for all the queuing strategy pages?<br>\n<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/CountQueuingStrategy/CountQueuingStrategy\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/CountQueuingStrategy/CountQueuingStrategy</a></p>\n<p dir=\"auto\">thanks for you time</p>",
+            "url": "https://github.com/mdn/content/issues/34282",
+            "title": "[streams] ByteLengthQueuingStrategy constructor",
+            "date_modified": "2024-06-20T08:29:02.000Z",
+            "author": {
+                "name": "johntalton",
+                "url": "https://github.com/johntalton"
+            }
+        }
+    ]
+}
