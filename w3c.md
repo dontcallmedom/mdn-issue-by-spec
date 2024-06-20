@@ -32,8 +32,6 @@
   
 * [\[css-lists-3\] Misinformation in the counter-reset example for the list-item counter](https://github.com/mdn/content/issues/33422) (2024-05-05T13:41:06Z)
   
-* [\[entries-api\] The \`readEntries\` method of \`FileSystemDirectoryReader\` was incorrectly used in a synchronous manner instead of asynchronously.](https://github.com/mdn/content/issues/33342) (2024-04-30T23:14:07Z)
-  
 * [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
   
 * [\[cssom-view-1\] offsetParent affected by transform, filter, etc](https://github.com/mdn/content/issues/33252) (2024-04-24T08:56:33Z)
