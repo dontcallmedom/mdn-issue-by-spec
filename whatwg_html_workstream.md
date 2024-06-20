@@ -20,8 +20,6 @@
   
 * [\[html\] label accessibility advice is misleading](https://github.com/mdn/content/issues/33283) (2024-04-26T14:13:16Z)
   
-* [\[html\] \[WebAPI\] Add HTMLTemplateElement.shadowrootclonable attribute](https://github.com/mdn/content/issues/33160) (2024-04-19T06:59:41Z)
-  
 * [\[html\] Navigator: cookieEnabled warning regarding Safari is outdated](https://github.com/mdn/content/issues/32845) (2024-03-26T15:50:22Z)
   
 * [\[html\] Mention \`self\` and \`frames\` in Global object](https://github.com/mdn/content/issues/32841) (2024-03-26T10:54:38Z)
