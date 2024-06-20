@@ -134,8 +134,6 @@
   
 * [\[webaudio\] interrupted state not listed as a valid state value, but an example of interrupted state was given](https://github.com/mdn/content/issues/26129) (2023-04-11T18:49:59Z)
   
-* [\[css-overflow-3\] Deviation of the \`overflow-clip-margin\` page from the spec](https://github.com/mdn/content/issues/25906) (2023-04-04T14:38:09Z)
-  
 * [\[css-backgrounds-4\] add note on \`border-image\` and \`border-radius\` lack of interaction ](https://github.com/mdn/content/issues/25875) (2023-04-03T12:49:30Z)
   
 * [\[css-transforms-2\] transform-style docs should mention that there are scenarios where the value is forced](https://github.com/mdn/content/issues/25801) (2023-03-31T11:03:24Z)
