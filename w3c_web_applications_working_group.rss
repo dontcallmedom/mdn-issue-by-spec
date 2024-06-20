@@ -1108,34 +1108,6 @@ And the change in Firefox caused by <a href="https://groups.google.com/g/mozilla
 <p dir="auto">We should replace all of these with some alternative. A common alternative is to write the output into an element in the example's document.</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[IndexedDB-3] Issue with "IDBTransaction":Example needs explanation]]></title>
-            <link>https://github.com/mdn/content/issues/7160</link>
-            <guid>https://github.com/mdn/content/issues/7160</guid>
-            <pubDate>Thu, 22 Jul 2021 15:31:43 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">Arguments passed to db.transaction in an example are unexplained.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto">First js code example (under IDBTransaction), for example the line db.transaction("foo", "readwrite");</p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">Anything describing the meaning of the arguments, esp "foo" (which turns out to be a store name, and a special case of that first argument, which otherwise would be a <em>list</em>, not a string).  A link to the "transaction" article i found (see below) would be useful here.</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">Did not test, but answered my own question with a google search for <em>indexedDB transaction method</em>, found the mozilla article ...IDBDatabase/transaction, which provided a lucid explanation.</p>
-<p dir="auto">A link to that article would be useful to rank amateurs like me.</p>
-<p dir="auto">At the same time, I have to comment that this mechanism for commenting on articles is new to me.  Thank you for providing it.  Earlier alternatives seemed to offer the opportunity to edit the article, and no way was I going to do that. It's especially nice to be able to reference the tab where the question arose as I complete this form.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/idbtransaction</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/idbtransaction/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/idbtransaction/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e7a0bb19fe8960c2f3ee1a1d0f28e567b1219735/hovercard" href="https://github.com/mdn/content/commit/e7a0bb19fe8960c2f3ee1a1d0f28e567b1219735"><tt>e7a0bb1</tt></a></li>
-<li>Document last modified: 2021-06-14T00:14:09.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[intersection-observer] Issue with "IntersectionObserver()": needs description/example of how rootMargin works]]></title>
             <link>https://github.com/mdn/content/issues/4710</link>
             <guid>https://github.com/mdn/content/issues/4710</guid>

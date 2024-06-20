@@ -58,7 +58,5 @@
   
 * [\[html, dom, WebIDL-1, FileAPI, uievents, cssom-view-1, pointerlock-2\] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
-* [\[IndexedDB-3\] Issue with "IDBTransaction":Example needs explanation](https://github.com/mdn/content/issues/7160) (2021-07-22T15:31:43Z)
-  
 * [\[intersection-observer\] Issue with "IntersectionObserver()": needs description/example of how rootMargin works](https://github.com/mdn/content/issues/4710) (2021-05-04T15:10:10Z)
   

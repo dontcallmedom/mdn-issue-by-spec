@@ -260,8 +260,6 @@
   
 * [\[html, dom, WebIDL-1, FileAPI, uievents, cssom-view-1, pointerlock-2\] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
-* [\[IndexedDB-3\] Issue with "IDBTransaction":Example needs explanation](https://github.com/mdn/content/issues/7160) (2021-07-22T15:31:43Z)
-  
 * [\[service-workers-1\] Issue with "ServiceWorkerContainer.register()": may be advisable to check for an existing registration](https://github.com/mdn/content/issues/7138) (2021-07-21T16:35:44Z)
   
 * [\[html, web-locks\] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator](https://github.com/mdn/content/issues/6856) (2021-07-13T13:35:32Z)
