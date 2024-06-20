@@ -78,8 +78,6 @@
   
 * [\[html\] ValidityState broken link to customError](https://github.com/mdn/content/issues/26522) (2023-05-01T18:58:31Z)
   
-* [\[html\] Missing documentation of methods and properties of \`HTMLOptionsCollections\`](https://github.com/mdn/content/issues/25190) (2023-03-09T02:30:04Z)
-  
 * [\[html\] event doesnt fire on fully cached pages (no event appears to)](https://github.com/mdn/content/issues/24770) (2023-02-22T21:34:14Z)
   
 * [\[html\] autofocus on dialog page](https://github.com/mdn/content/issues/23915) (2023-01-26T19:55:03Z)
@@ -91,8 +89,6 @@
 * [\[html\] Using requestAnimationFrame with async DOM updating](https://github.com/mdn/content/issues/23197) (2022-12-26T11:40:49Z)
   
 * [\[html\] document-domain feature policy is being removed](https://github.com/mdn/content/issues/22732) (2022-12-05T04:44:41Z)
-  
-* [\[html\] dataset is also available on SVGElement](https://github.com/mdn/content/issues/22352) (2022-11-16T20:40:40Z)
   
 * [\[html, uievents\] Document.activeElement : The lack of HTMLAnchorElement and macOS on a case by case basis](https://github.com/mdn/content/issues/22338) (2022-11-16T13:47:01Z)
   
@@ -107,8 +103,6 @@
 * [\[html\] Missing info of copying sessionStorage on creating new context](https://github.com/mdn/content/issues/18323) (2022-07-13T16:09:36Z)
   
 * [\[html, gamepad\] Double checking the gamepad docs are correct](https://github.com/mdn/content/issues/14874) (2022-04-11T03:02:09Z)
-  
-* [\[html\] All the BCD table links are broken on the HTMLBodyElement page](https://github.com/mdn/content/issues/14865) (2022-04-10T14:35:48Z)
   
 * [\[html\] "HTMLElement.dir": Misleading info about how the value is determined](https://github.com/mdn/content/issues/14484) (2022-03-30T22:18:42Z)
   
@@ -127,6 +121,4 @@
 * [\[html, web-locks\] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator](https://github.com/mdn/content/issues/6856) (2021-07-13T13:35:32Z)
   
 * [\[html\] CustomElementRegistry needs updating](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
-  
-* [\[html\] api.HTMLSelectElement - write page for 'autocomplete'](https://github.com/mdn/content/issues/2016) (2021-01-20T05:13:05Z)
   
