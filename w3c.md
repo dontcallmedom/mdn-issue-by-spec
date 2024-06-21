@@ -222,7 +222,7 @@
   
 * [\[SVG11\] Issue with "\<tspan\>": No mention of multiple x values](https://github.com/mdn/content/issues/13831) (2022-03-13T18:05:24Z)
   
-* [\[uievents\] mouseleave is also fired when cursor enters an area contained in an img](https://github.com/mdn/content/issues/13534) (2022-03-05T21:18:17Z)
+* [\[uievents\] mouseleave is also fired when cursor enters a non-descendant that's visually overlapping](https://github.com/mdn/content/issues/13534) (2022-03-05T21:18:17Z)
   
 * [\[web-animations-2, css-animations-2\] Issue with "Element.animate()": wrong scenario mentioned](https://github.com/mdn/content/issues/13487) (2022-03-04T07:40:26Z)
   
