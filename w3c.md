@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-overflow-3\] Ambiguous explanation of how a Block Formatting Context is created in the given example.](https://github.com/mdn/content/issues/34306) (2024-06-21T04:16:54Z)
+  
 * [\[selectors-4\] The first selector is missing with the child combinator used in the example CSS file](https://github.com/mdn/content/issues/34230) (2024-06-17T22:07:06Z)
   
 * [\[css-color-4\] Interpolating colors from different spaces: analogous components](https://github.com/mdn/content/issues/34229) (2024-06-17T18:47:04Z)
