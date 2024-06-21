@@ -68,8 +68,6 @@
   
 * [\[html\] The "Navigator: languages property" documentation is missing some browser quirks](https://github.com/mdn/content/issues/29371) (2023-09-29T22:16:14Z)
   
-* [\[console\] Clarify wording around "string representation" in console.\* related functions](https://github.com/mdn/content/issues/29172) (2023-09-17T18:09:54Z)
-  
 * [\[html, selectors-4, css-conditional-3\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
   
 * [\[html\] Wrong explanation of the example inside Inline formatting context](https://github.com/mdn/content/issues/29035) (2023-09-10T13:07:32Z)
@@ -130,8 +128,6 @@
   
 * [\[html, dom\] Event.returnValue: further deprecation information needed](https://github.com/mdn/content/issues/20730) (2022-09-14T18:18:13Z)
   
-* [\[html\] RadioNodeList.value example does not support fieldset](https://github.com/mdn/content/issues/20588) (2022-09-12T11:06:34Z)
-  
 * [\[html, cssom-view-1\] \[GEH\] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
   
 * [\[html\] Missing info of copying sessionStorage on creating new context](https://github.com/mdn/content/issues/18323) (2022-07-13T16:09:36Z)
@@ -169,8 +165,6 @@
 * [\[html, web-locks\] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator](https://github.com/mdn/content/issues/6856) (2021-07-13T13:35:32Z)
   
 * [\[html\] CustomElementRegistry needs updating](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
-  
-* [\[console\] Issue with "console", how does number formatting work? Number formatting doesn't work on Chrome.](https://github.com/mdn/content/issues/6614) (2021-07-06T06:31:49Z)
   
 * [\[orientation-event, compat\] Content bug: Improve device/screen orientation event doc](https://github.com/mdn/content/issues/4400) (2021-04-23T02:57:45Z)
   
