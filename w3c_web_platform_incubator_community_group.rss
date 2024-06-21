@@ -73,42 +73,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[webhid] Confusing phrase "input report" is used for HIDConnectionEvent]]></title>
-            <link>https://github.com/mdn/content/issues/22419</link>
-            <guid>https://github.com/mdn/content/issues/22419</guid>
-            <pubDate>Sun, 20 Nov 2022 02:34:52 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HIDConnectionEvent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HIDConnectionEvent</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">(the first part), Constructor</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">This article says that this event (<code class="notranslate">HIDConnectionEvent</code>) is create and passed when <em>an input report is received</em>.</p>
-<p dir="auto">However, this event is for connection and disconnection of devices and doesn't look related to input reports (handled with <code class="notranslate">HIDInputReportEvent</code>).</p>
-<p dir="auto">If the "input report" in this article is something different from "input report" haneled with <code class="notranslate">HIDInputReportEvent</code>, it looks confusing to use the same phrase.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Clearer wording without using "input report", if it stands for different thing than "input report" handled with <code class="notranslate">HIDInputReportEvent</code>.<br>
-For example, "events are created when devices are connected or disconnected" for the Constructor part.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">The constructor page<br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/HIDConnectionEvent/HIDConnectionEvent" rel="nofollow">HIDConnectionEvent() - Web APIs | MDN</a><br>
-also uses the phrase "input report" in similar ways in the first part and the Parameters section.<br>
-These should also be replaced if they in the main article are replaced.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/hidconnectionevent</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HIDConnectionEvent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HIDConnectionEvent</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/hidconnectionevent/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/hidconnectionevent/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/066257cb0d23e29e269703450e4b1216a65e3b26/hovercard" href="https://github.com/mdn/content/commit/066257cb0d23e29e269703450e4b1216a65e3b26"><tt>066257c</tt></a></li>
-<li>Document last modified: 2022-10-10T08:28:51.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[file-system-access] `FileSystemHandle.requestPermission()` can throw `SecurityError`]]></title>
             <link>https://github.com/mdn/content/issues/15831</link>
             <guid>https://github.com/mdn/content/issues/15831</guid>
