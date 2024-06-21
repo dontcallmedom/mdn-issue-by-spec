@@ -180,8 +180,6 @@
   
 * [\[html, uievents\] Document.activeElement : The lack of HTMLAnchorElement and macOS on a case by case basis](https://github.com/mdn/content/issues/22338) (2022-11-16T13:47:01Z)
   
-* [\[WebIDL-1\] “Using the Web Storage API” has deprecated “DOMException.code” in example](https://github.com/mdn/content/issues/21910) (2022-10-28T12:08:01Z)
-  
 * [\[DOM-Parsing\] No mention of comments in reference](https://github.com/mdn/content/issues/21761) (2022-10-23T12:49:25Z)
   
 * [\[css-backgrounds-4\] Border-image generator should allow "auto" as a border-image-width value](https://github.com/mdn/content/issues/21582) (2022-10-16T09:04:29Z)
