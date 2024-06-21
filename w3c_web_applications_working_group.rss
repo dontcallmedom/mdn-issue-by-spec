@@ -801,14 +801,13 @@ Alternatively, the sentence the <em>"Often activeElement will return a <a href="
 <p dir="auto">When calling <code class="notranslate">IDBFactory.deleteDatabase()</code>, the database isn't deleted until the <code class="notranslate">upgradeneeded</code> event is garbage collected, which can by triggered by calling <code class="notranslate">request.result.close()</code> on the <code class="notranslate">indexedDB.open()</code> result.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">Mention that <code class="notranslate">onsuccess</code> won't be fired until the <code class="notranslate">indexedDB.open()</code> result is closed like so:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const request = indexedDB.open(dbName);
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const request = indexedDB.open(dbName);
 request.onupgradeneeded = () =&gt; {
   request.result.close();
-}"><pre lang="js" class="notranslate"><code class="notranslate">const request = indexedDB.open(dbName);
-request.onupgradeneeded = () =&gt; {
-  request.result.close();
-}
-</code></pre></div>
+}"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">request</span> <span class="pl-c1">=</span> <span class="pl-s1">indexedDB</span><span class="pl-kos">.</span><span class="pl-en">open</span><span class="pl-kos">(</span><span class="pl-s1">dbName</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">request</span><span class="pl-kos">.</span><span class="pl-en">onupgradeneeded</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-s1">request</span><span class="pl-kos">.</span><span class="pl-c1">result</span><span class="pl-kos">.</span><span class="pl-en">close</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span></pre></div>
 <p dir="auto">though to be honest I'm not sure how much of this depends on my specific situation. I reckon there might be other calls that similarly cause a database to stay open like this.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">Initially I thought this was a bug in Chrome, so I reported <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1359843" rel="nofollow">https://bugs.chromium.org/p/chromium/issues/detail?id=1359843</a>. But it seems like this behaviour is intentional.<br>
