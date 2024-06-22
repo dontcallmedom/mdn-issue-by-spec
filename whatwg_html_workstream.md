@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, FileAPI\] Live examples using window.open are broken](https://github.com/mdn/content/issues/34350) (2024-06-22T21:35:10Z)
+  
 * [\[html\] What characters are allowed in a class name?](https://github.com/mdn/content/issues/34253) (2024-06-18T17:46:37Z)
   
 * [\[html\] OGG video format does not fallback on chrome desktop](https://github.com/mdn/content/issues/34217) (2024-06-17T04:06:00Z)
