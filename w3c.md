@@ -4,8 +4,6 @@
 
 * [\[cssom-view-1\] Remove 2 links to yari-demos.prod.mdn.mozit.cloud](https://github.com/mdn/content/issues/34326) (2024-06-21T15:55:42Z)
   
-* [\[css-overflow-3\] Ambiguous explanation of how a Block Formatting Context is created in the given example.](https://github.com/mdn/content/issues/34306) (2024-06-21T04:16:54Z)
-  
 * [\[css-color-4\] Interpolating colors from different spaces: analogous components](https://github.com/mdn/content/issues/34229) (2024-06-17T18:47:04Z)
   
 * [\[webauthn-3\] Webauthn latest specs](https://github.com/mdn/content/issues/34167) (2024-06-14T14:21:13Z)
