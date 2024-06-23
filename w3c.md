@@ -66,8 +66,6 @@
   
 * [\[css-backgrounds-4\] No information on border-color  \<stripes()\>](https://github.com/mdn/content/issues/32234) (2024-02-12T07:33:50Z)
   
-* [\[SVG11\] The \`x\` and \`y\` attributes on text is actually a list](https://github.com/mdn/content/issues/32081) (2024-02-02T15:10:47Z)
-  
 * [\[selectors-4\] :blank is also a blank page pseudo-class](https://github.com/mdn/content/issues/31885) (2024-01-24T10:43:17Z)
   
 * [\[css-conditional-3, CSS21\] \`@charset\` is not deprecated](https://github.com/mdn/content/issues/31882) (2024-01-24T07:40:57Z)
@@ -209,8 +207,6 @@
 * [\[webaudio\] AudioParam - automationRate undocumented](https://github.com/mdn/content/issues/14637) (2022-04-03T13:16:23Z)
   
 * [\[webaudio\] "ConvolverNode": provide a simpler example that I can adapt to more complex examples (connecting it to another node does not work)](https://github.com/mdn/content/issues/14022) (2022-03-18T14:35:29Z)
-  
-* [\[SVG11\] Issue with "\<tspan\>": No mention of multiple x values](https://github.com/mdn/content/issues/13831) (2022-03-13T18:05:24Z)
   
 * [\[uievents\] mouseleave is also fired when cursor enters a non-descendant that's visually overlapping](https://github.com/mdn/content/issues/13534) (2022-03-05T21:18:17Z)
   
