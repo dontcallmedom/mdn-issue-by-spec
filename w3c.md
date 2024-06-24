@@ -194,8 +194,6 @@
   
 * [\[selectors-4\] \`:any-link\` privacy exception not explained](https://github.com/mdn/content/issues/17366) (2022-06-17T02:50:38Z)
   
-* [\[SVG11\] SVG Tutorial discussed strokes and fills without paint-order](https://github.com/mdn/content/issues/17040) (2022-06-06T18:32:51Z)
-  
 * [\[file-system-access\] \`FileSystemHandle.requestPermission()\` can throw \`SecurityError\`](https://github.com/mdn/content/issues/15831) (2022-05-09T19:45:01Z)
   
 * [\[html, gamepad\] Double checking the gamepad docs are correct](https://github.com/mdn/content/issues/14874) (2022-04-11T03:02:09Z)

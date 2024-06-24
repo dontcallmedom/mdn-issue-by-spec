@@ -6,8 +6,6 @@
   
 * [\[SVG11\] Inconsistency with experimental status of textPath attribute method](https://github.com/mdn/content/issues/24079) (2023-02-01T16:11:22Z)
   
-* [\[SVG11\] SVG Tutorial discussed strokes and fills without paint-order](https://github.com/mdn/content/issues/17040) (2022-06-06T18:32:51Z)
-  
 * [\[SVG11\] Issue with "SVGSVGElement": In FF an unset viewBox property means viewBox.baseVal = null. For Chrome it is an SVGRect initialized to 0.](https://github.com/mdn/content/issues/8907) (2021-09-14T14:00:23Z)
   
 * [\[SVG11, svg-animations\] Issue with "\<animate\>": Firefox is inconsistent in rendering svg - graphic](https://github.com/mdn/content/issues/8551) (2021-09-02T04:54:48Z)
