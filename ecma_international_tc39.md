@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[ecmascript\] Incorrect explanation of what \`this\` is](https://github.com/mdn/content/issues/34357) (2024-06-23T12:31:34Z)
-  
 * [\[ecmascript\] Operators page doesn't mention . or ?.](https://github.com/mdn/content/issues/33215) (2024-04-22T20:44:17Z)
   
 * [\[ecmascript\] Incorrect information about "return await" performance penalty](https://github.com/mdn/content/issues/32847) (2024-03-26T16:08:40Z)
