@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] \<a\>: The Anchor element - rel property description](https://github.com/mdn/content/issues/34390) (2024-06-25T00:57:24Z)
+  
 * [\[html, FileAPI\] Live examples using window.open are broken](https://github.com/mdn/content/issues/34350) (2024-06-22T21:35:10Z)
   
 * [\[streams\] ByteLengthQueuingStrategy constructor syntax should match guidelines](https://github.com/mdn/content/issues/34282) (2024-06-20T08:29:02Z)
