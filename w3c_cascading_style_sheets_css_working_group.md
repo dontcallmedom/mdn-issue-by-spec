@@ -78,8 +78,6 @@
   
 * [\[css-backgrounds-4\] add note on \`border-image\` and \`border-radius\` lack of interaction ](https://github.com/mdn/content/issues/25875) (2023-04-03T12:49:30Z)
   
-* [\[css-transforms-2\] transform-style docs should mention that there are scenarios where the value is forced](https://github.com/mdn/content/issues/25801) (2023-03-31T11:03:24Z)
-  
 * [\[css-images-3\] Outdated note for \`image-rendering\`](https://github.com/mdn/content/issues/25774) (2023-03-30T15:21:01Z)
   
 * [\[web-animations-2\] KeyframeEffect.target: issues with the example](https://github.com/mdn/content/issues/25694) (2023-03-28T06:54:37Z)
