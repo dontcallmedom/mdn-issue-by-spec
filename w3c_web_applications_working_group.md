@@ -46,8 +46,6 @@
   
 * [\[html, gamepad\] Double checking the gamepad docs are correct](https://github.com/mdn/content/issues/14874) (2022-04-11T03:02:09Z)
   
-* [\[uievents\] mouseleave is also fired when cursor enters a non-descendant that's visually overlapping](https://github.com/mdn/content/issues/13534) (2022-03-05T21:18:17Z)
-  
 * [\[IndexedDB-3\] Issue with "IDBTransaction.oncomplete": When transaction's oncomplete is actually called?](https://github.com/mdn/content/issues/11901) (2022-01-11T02:17:36Z)
   
 * [\[uievents\] Content bug: Missing information about what WheelEvent.delta\* can be](https://github.com/mdn/content/issues/11811) (2022-01-07T12:25:45Z)
