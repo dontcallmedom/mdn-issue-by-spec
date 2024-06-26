@@ -114,8 +114,6 @@
   
 * [\[xhr\] xhr.abort is inaccurate](https://github.com/mdn/content/issues/23961) (2023-01-29T01:52:09Z)
   
-* [\[html\] autofocus on dialog page](https://github.com/mdn/content/issues/23915) (2023-01-26T19:55:03Z)
-  
 * [\[dom\] Missing NodeFilter.FILTER_SKIP description](https://github.com/mdn/content/issues/23728) (2023-01-17T19:26:34Z)
   
 * [\[html\] In the example, isn't the requestAnimationFrame always called more than once if once queued were fired within a single frame?](https://github.com/mdn/content/issues/23635) (2023-01-14T14:28:24Z)

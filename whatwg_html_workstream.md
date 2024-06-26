@@ -86,8 +86,6 @@
   
 * [\[html\] event doesnt fire on fully cached pages (no event appears to)](https://github.com/mdn/content/issues/24770) (2023-02-22T21:34:14Z)
   
-* [\[html\] autofocus on dialog page](https://github.com/mdn/content/issues/23915) (2023-01-26T19:55:03Z)
-  
 * [\[html\] In the example, isn't the requestAnimationFrame always called more than once if once queued were fired within a single frame?](https://github.com/mdn/content/issues/23635) (2023-01-14T14:28:24Z)
   
 * [\[html\] Window.opener clarification of cross-origin behavior](https://github.com/mdn/content/issues/23204) (2022-12-26T23:45:01Z)
