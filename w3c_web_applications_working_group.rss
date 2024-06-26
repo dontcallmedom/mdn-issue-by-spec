@@ -925,53 +925,6 @@ And the change in Firefox caused by <a href="https://groups.google.com/g/mozilla
 </ul>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html, uievents] Replace hand-written compat sections with BCD tables]]></title>
-            <link>https://github.com/mdn/content/issues/9972</link>
-            <guid>https://github.com/mdn/content/issues/9972</guid>
-            <pubDate>Thu, 21 Oct 2021 07:40:45 GMT</pubDate>
-            <content:encoded><![CDATA[<h2 dir="auto">What page(s) did you find the problem on?</h2>
-<p dir="auto">These pages show browser compat without using BCD tables:</p>
-<ul class="contains-task-list">
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Games/Techniques/Controls_Gamepad_API#api_status_and_browser_support" rel="nofollow">https://developer.mozilla.org/en-US/docs/Games/Techniques/Controls_Gamepad_API#api_status_and_browser_support</a> (prose)</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode#value_of_keycode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode#value_of_keycode</a> (prose and tables)</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> <a href="https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Using_readable_streams#browser_support" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Using_readable_streams#browser_support</a> (prose)
-<ul dir="auto">
-<li><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1747168442" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/27215" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/27215/hovercard" href="https://github.com/mdn/content/pull/27215">#27215</a></li>
-</ul>
-</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API#browser_support" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API#browser_support</a> (prose)
-<ul dir="auto">
-<li><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1559096112" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/23925" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/23925/hovercard" href="https://github.com/mdn/content/pull/23925">#23925</a></li>
-</ul>
-</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Cross-browser_audio_basics#browser_support" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Cross-browser_audio_basics#browser_support</a> (tables)
-<ul dir="auto">
-<li><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2211773540" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/32868" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/32868/hovercard" href="https://github.com/mdn/content/pull/32868">#32868</a></li>
-</ul>
-</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Live_streaming_web_audio_and_video#streaming_file_format_support" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Live_streaming_web_audio_and_video#streaming_file_format_support</a> (table)
-<ul dir="auto">
-<li><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2211773540" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/32868" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/32868/hovercard" href="https://github.com/mdn/content/pull/32868">#32868</a></li>
-</ul>
-</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#clicking_and_focus" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#clicking_and_focus</a> (tables)
-<ul dir="auto">
-<li><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1418875539" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/21721" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/21721/hovercard" href="https://github.com/mdn/content/pull/21721">#21721</a></li>
-</ul>
-</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/Media/Audio_and_video_delivery/WebAudio_playbackRate_explained#browser_support" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Media/Audio_and_video_delivery/WebAudio_playbackRate_explained#browser_support</a> (bullet points)</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Containers" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Containers</a> (tables)</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> <a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types</a> (tables)</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts/features_restricted_to_secure_contexts" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts/features_restricted_to_secure_contexts</a> (tables)
-<ul dir="auto">
-<li><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1314076715" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/18621" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/18621/hovercard" href="https://github.com/mdn/content/pull/18621">#18621</a></li>
-</ul>
-</li>
-</ul>
-<h2 dir="auto">What is the problem?</h2>
-<p dir="auto">The information is presented in a different way to BCD tables used on most pages. For some of these pages there may be good reasons to maintain it by hand, but I suspect most could be replaced by linked BCD tables.</p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html, dom, WebIDL-1, FileAPI, uievents, cssom-view-1, pointerlock-2] Remove alert() from live samples]]></title>
             <link>https://github.com/mdn/content/issues/7566</link>
             <guid>https://github.com/mdn/content/issues/7566</guid>
