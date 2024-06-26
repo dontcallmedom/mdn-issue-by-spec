@@ -54,8 +54,6 @@
   
 * [\[html, uievents\] Replace hand-written compat sections with BCD tables](https://github.com/mdn/content/issues/9972) (2021-10-21T07:40:45Z)
   
-* [\[uievents\] Issue with "Element: keydown event": What generates a KeyboardEvent?](https://github.com/mdn/content/issues/9321) (2021-09-28T15:22:02Z)
-  
 * [\[html, dom, WebIDL-1, FileAPI, uievents, cssom-view-1, pointerlock-2\] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
 * [\[intersection-observer\] Issue with "IntersectionObserver()": needs description/example of how rootMargin works](https://github.com/mdn/content/issues/4710) (2021-05-04T15:10:10Z)
