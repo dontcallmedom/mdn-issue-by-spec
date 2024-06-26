@@ -222,7 +222,7 @@ I am aware that this property is inherited from SVGFitToViewBox, but there is no
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[SVG11, svg-animations] Issue with "<animate>": Firefox is inconsistent in rendering svg - graphic]]></title>
+            <title><![CDATA[[svg-animations, SVG11] Issue with "<animate>": Firefox is inconsistent in rendering svg - graphic]]></title>
             <link>https://github.com/mdn/content/issues/8551</link>
             <guid>https://github.com/mdn/content/issues/8551</guid>
             <pubDate>Thu, 02 Sep 2021 04:54:48 GMT</pubDate>
@@ -250,42 +250,6 @@ I am aware that this property is inherited from SVGFitToViewBox, but there is no
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/svg/element/animate/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/svg/element/animate/index.html</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/91456ead4017ad5b6c5be3cacc83cc72007483ca/hovercard" href="https://github.com/mdn/content/commit/91456ead4017ad5b6c5be3cacc83cc72007483ca"><tt>91456ea</tt></a></li>
 <li>Document last modified: 2021-06-10T20:25:11.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[SVG11] Issue with "<foreignObject>": doesn't render in Safari]]></title>
-            <link>https://github.com/mdn/content/issues/1319</link>
-            <guid>https://github.com/mdn/content/issues/1319</guid>
-            <pubDate>Thu, 14 Jan 2021 17:25:42 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">If a foreignObject is not supplied a width and a height on Safari, it will not display.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">a foreignObject rendered in Safari</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">D3 rendering of an svg:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const labelTexts = barsGroup
-      .append(&quot;foreignObject&quot;)
-      .attr(&quot;class&quot;, &quot;label&quot;)
-      .attr(&quot;width&quot;, barWidth + spaceBetween)
-      .attr(&quot;height&quot;, 200) // Wouldn't render without this attribute
-      .text((d) =&gt; d[0]);"><pre class="notranslate"><code class="notranslate">const labelTexts = barsGroup
-      .append("foreignObject")
-      .attr("class", "label")
-      .attr("width", barWidth + spaceBetween)
-      .attr("height", 200) // Wouldn't render without this attribute
-      .text((d) =&gt; d[0]);
-</code></pre></div>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/svg/element/foreignobject</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/master/files/en-us/web/svg/element/foreignobject/index.html">https://github.com/mdn/content/blob/master/files/en-us/web/svg/element/foreignobject/index.html</a></li>
-<li>Report started: 2021-01-14T16:50:47.897Z</li>
 </ul>
 </details>]]></content:encoded>
         </item>
