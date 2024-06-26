@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Issue with example in "\<meter\>: The HTML Meter Element" Closing tag in first example in wrong place?](https://github.com/mdn/content/issues/34413) (2024-06-26T00:31:23Z)
+  
 * [\[html\] Make attribute lists in HTML element pages link to attribute reference pages](https://github.com/mdn/content/issues/34390) (2024-06-25T00:57:24Z)
   
 * [\[html, FileAPI\] Live examples using window.open are broken](https://github.com/mdn/content/issues/34350) (2024-06-22T21:35:10Z)
