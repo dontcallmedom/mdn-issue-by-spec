@@ -122,7 +122,7 @@
   
 * [\[css-backgrounds-4\] It is unclear why background-attachment: fixed is said to be incompatible with background-clip: text](https://github.com/mdn/content/issues/26445) (2023-04-27T02:31:12Z)
   
-* [\[cssom-view-1\] Please add a note about getBoundingClientRect() forcing a reflow and performance issues](https://github.com/mdn/content/issues/26330) (2023-04-21T01:08:41Z)
+* [\[cssom-view-1\] Guide on reflow and performance optimizations](https://github.com/mdn/content/issues/26330) (2023-04-21T01:08:41Z)
   
 * [\[webaudio\] interrupted state not listed as a valid state value, but an example of interrupted state was given](https://github.com/mdn/content/issues/26129) (2023-04-11T18:49:59Z)
   
