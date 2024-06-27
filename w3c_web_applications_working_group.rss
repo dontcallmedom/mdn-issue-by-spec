@@ -870,32 +870,6 @@ you'll see that unless you have the 'close indexedDB.open() result' checkbox che
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[IndexedDB-3] Issue with "IDBTransaction.oncomplete": When transaction's oncomplete is actually called?]]></title>
-            <link>https://github.com/mdn/content/issues/11901</link>
-            <guid>https://github.com/mdn/content/issues/11901</guid>
-            <pubDate>Tue, 11 Jan 2022 02:17:36 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/oncomplete" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/oncomplete</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">It mentioned <code class="notranslate">open a read/write transaction on our database and add SOME data to an object store</code> but in example only shows single <code class="notranslate">objectStore.add()</code>. So it's still confusing when transaction's <code class="notranslate">oncomplete</code> is actually called since there is no transaction closing command anywhere.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto">In <code class="notranslate">Example</code> part</p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">Show an example with multiple <code class="notranslate">objectStore</code>'s operations to make it clear when <code class="notranslate">oncomplete</code> is actually called</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">No. It should be well documented.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/idbtransaction/oncomplete</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/oncomplete" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/oncomplete</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/idbtransaction/oncomplete/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/idbtransaction/oncomplete/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/c1be872363ef4132db76ed446f7b41a9ee275e8f/hovercard" href="https://github.com/mdn/content/commit/c1be872363ef4132db76ed446f7b41a9ee275e8f"><tt>c1be872</tt></a></li>
-<li>Document last modified: 2021-12-07T10:49:24.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[uievents] Content bug: Missing information about what WheelEvent.delta* can be]]></title>
             <link>https://github.com/mdn/content/issues/11811</link>
             <guid>https://github.com/mdn/content/issues/11811</guid>
