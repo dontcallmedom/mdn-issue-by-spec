@@ -130,8 +130,6 @@
   
 * [\[html\] Add documentation for \<video posterloading=lazy\>](https://github.com/mdn/content/issues/21912) (2022-10-28T12:20:13Z)
   
-* [\[html, dom\] Event.returnValue: further deprecation information needed](https://github.com/mdn/content/issues/20730) (2022-09-14T18:18:13Z)
-  
 * [\[html, cssom-view-1\] \[GEH\] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
   
 * [\[html\] Missing info of copying sessionStorage on creating new context](https://github.com/mdn/content/issues/18323) (2022-07-13T16:09:36Z)
