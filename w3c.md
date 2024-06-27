@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-ui-4\] outline-color: invert is still used in compatibility table](https://github.com/mdn/content/issues/34452) (2024-06-27T12:40:13Z)
+  
 * [\[filter-effects-2\] missing important note - feColorMatrix uses linearRGB by default](https://github.com/mdn/content/issues/34444) (2024-06-27T08:33:04Z)
   
 * [\[css-overflow-3\] overflow-{x,y}: clip/visible interaction is inaccurate](https://github.com/mdn/content/issues/34436) (2024-06-26T20:50:45Z)
