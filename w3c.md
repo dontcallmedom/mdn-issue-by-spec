@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[filter-effects-2\] missing important note - feColorMatrix uses linearRGB by default](https://github.com/mdn/content/issues/34444) (2024-06-27T08:33:04Z)
+  
 * [\[css-overflow-3\] overflow-{x,y}: clip/visible interaction is inaccurate](https://github.com/mdn/content/issues/34436) (2024-06-26T20:50:45Z)
   
 * [\[html, FileAPI\] Live examples using window.open are broken](https://github.com/mdn/content/issues/34350) (2024-06-22T21:35:10Z)

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[filter-effects-2\] missing important note - feColorMatrix uses linearRGB by default](https://github.com/mdn/content/issues/34444) (2024-06-27T08:33:04Z)
+  
 * [\[css-overflow-3\] overflow-{x,y}: clip/visible interaction is inaccurate](https://github.com/mdn/content/issues/34436) (2024-06-26T20:50:45Z)
   
 * [\[cssom-view-1\] Remove 2 links to yari-demos.prod.mdn.mozit.cloud](https://github.com/mdn/content/issues/34326) (2024-06-21T15:55:42Z)
