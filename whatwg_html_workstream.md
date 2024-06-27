@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] missing important note - datalist may result unexpected for different value/textContent](https://github.com/mdn/content/issues/34441) (2024-06-27T05:10:37Z)
+* [\[html\] datalist behaves differently from select with handling option value/textContent](https://github.com/mdn/content/issues/34441) (2024-06-27T05:10:37Z)
   
 * [\[html\] \<meter\> examples have confusing meter bars inline](https://github.com/mdn/content/issues/34413) (2024-06-26T00:31:23Z)
   
