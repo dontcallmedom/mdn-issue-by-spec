@@ -32,8 +32,6 @@
   
 * [\[css-logical-1\] \[CSS\] Implement margin at-rules](https://github.com/mdn/content/issues/33519) (2024-05-09T18:48:48Z)
   
-* [\[css-lists-3\] Misinformation in the counter-reset example for the list-item counter](https://github.com/mdn/content/issues/33422) (2024-05-05T13:41:06Z)
-  
 * [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
   
 * [\[cssom-view-1\] offsetParent affected by transform, filter, etc](https://github.com/mdn/content/issues/33252) (2024-04-24T08:56:33Z)
