@@ -30,8 +30,6 @@
   
 * [\[dom, cssom-view-1, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] querySelectorAll() does not state how the results are sorted](https://github.com/mdn/content/issues/32615) (2024-03-08T14:53:28Z)
   
-* [\[css-display-3\] All major browsers now support \`display: contents\`](https://github.com/mdn/content/issues/32605) (2024-03-08T02:10:29Z)
-  
 * [\[html, css-images-3\] Statement about applicable object-position and object-fit is wrong (?)](https://github.com/mdn/content/issues/32474) (2024-02-28T16:22:14Z)
   
 * [\[filter-effects-2\] slope is not deprecated](https://github.com/mdn/content/issues/32449) (2024-02-26T19:37:18Z)
@@ -84,7 +82,7 @@
   
 * [\[css-sizing-4, css-conditional-3, css-sizing-3\] Document length-fitting on \<select\>](https://github.com/mdn/content/issues/25073) (2023-03-05T03:22:13Z)
   
-* [\[filter-effects-2\] SVG contrast filter](https://github.com/mdn/content/issues/24989) (2023-03-02T00:19:11Z)
+* [\[filter-effects-2\] SVG custom contrast() implementation using \<filter\>](https://github.com/mdn/content/issues/24989) (2023-03-02T00:19:11Z)
   
 * [\[filter-effects-2\] feGaussianBlur needs guidance about setting height and width ](https://github.com/mdn/content/issues/24169) (2023-02-04T21:15:51Z)
   
