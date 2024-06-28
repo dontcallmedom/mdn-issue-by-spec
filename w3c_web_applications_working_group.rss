@@ -503,45 +503,6 @@ The <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Usin
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[IndexedDB-3] Example of a key to be logged is not in the IDBCursor.key page]]></title>
-            <link>https://github.com/mdn/content/issues/23328</link>
-            <guid>https://github.com/mdn/content/issues/23328</guid>
-            <pubDate>Mon, 02 Jan 2023 23:59:08 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/key" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/key</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Examples</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The article says:</p>
-<blockquote>
-<p dir="auto">Within each iteration we log the key of the cursor to the console, something like this</p>
-</blockquote>
-<p dir="auto">However, there looks no examples of keys to be logged corresponding to "something like this" in the page.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">An example of a key to be logged is added.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">These pages have similar structure, and have examples of values to be logged.</p>
-<ul dir="auto">
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/source" rel="nofollow">IDBCursor.source - Web APIs | MDN</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/direction" rel="nofollow">IDBCursor.direction - Web APIs | MDN</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/primaryKey" rel="nofollow">IDBCursor.primaryKey - Web APIs | MDN</a></li>
-</ul>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/idbcursor/key</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/key" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/key</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/idbcursor/key/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/idbcursor/key/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/d42b609444efb915ab46117f59985d67dda21eb6/hovercard" href="https://github.com/mdn/content/commit/d42b609444efb915ab46117f59985d67dda21eb6"><tt>d42b609</tt></a></li>
-<li>Document last modified: 2022-09-30T09:50:26.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[clipboard-apis] clipboard.readText() is behind flag on Firefox]]></title>
             <link>https://github.com/mdn/content/issues/23188</link>
             <guid>https://github.com/mdn/content/issues/23188</guid>
@@ -727,35 +688,6 @@ you'll see that unless you have the 'close indexedDB.open() result' checkbox che
 <p dir="auto"><a href="https://web.archive.org/web/20220104000330/https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event" rel="nofollow">https://web.archive.org/web/20220104000330/https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event</a></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto">I gave an example of one event, "click", but this issue applies to every event reference.</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[uievents] Document the ability to preventDefault() a pinch-zoom gesture on a touchpad]]></title>
-            <link>https://github.com/mdn/content/issues/18342</link>
-            <guid>https://github.com/mdn/content/issues/18342</guid>
-            <pubDate>Thu, 14 Jul 2022 03:33:35 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/wheel_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/wheel_event</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Firefox and Chrome (and maybe other browsers) allow websites to opt out of the browser's default handling of a touchpad pinch gesture (which is to zoom the page, either in a reflowing or a smooth/non-reflowing way depending on the browser version and touchpad hardware), by synthesizing a <code class="notranslate">wheel</code> event (with a modifier, usually <code class="notranslate">Ctrl</code> or <code class="notranslate">Cmd</code> depending on the platform) and giving the page a chance to <code class="notranslate">preventDefault()</code> the <code class="notranslate">wheel</code> event.</p>
-<p dir="auto">This is not very discoverable, since there isn't an obvious link between a pinch gesture and a <code class="notranslate">wheel</code> event.</p>
-<p dir="auto">(My understanding is, a <code class="notranslate">wheel</code> event was chosen for the following reasons:</p>
-<ol dir="auto">
-<li>There isn't another event type in the web platform that would correspond more directly to a touchpad pinch gesture.</li>
-<li>Ctrl+wheel also causes zooming, and <code class="notranslate">preventDefault()</code>ing Ctrl+wheel was an existing way for sites to opt out of zooming, so it made sense to extend that to zooming caused by a touchpad gesture.)</li>
-</ol>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">It would be nice to document this behaviour on MDN. Specifically, that:</p>
-<ol dir="auto">
-<li>A touchpad pinch-zoom gesture results in the browser synthesizing a <code class="notranslate">wheel</code> event</li>
-<li>The zooming that's the browser's default behaviour in reponse to the gesture can be prevented using <code class="notranslate">preventDefault()</code> on that event</li>
-</ol>
-<p dir="auto">Not sure where the best place to document this is -- maybe the <code class="notranslate">wheel</code> event page? I'm open to suggestions.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">I implemented this behaviour in Firefox. Investigation of Chrome's similar behaviour is documented in <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1619187" rel="nofollow">bug 1619187</a>. More recent testing suggests Safari now has the same behaviour as well.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[html, gamepad] Double checking the gamepad docs are correct]]></title>

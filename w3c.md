@@ -152,8 +152,6 @@
   
 * [\[css-shadow-parts-1\] ::part(): Missing information](https://github.com/mdn/content/issues/23471) (2023-01-08T11:05:39Z)
   
-* [\[IndexedDB-3\] Example of a key to be logged is not in the IDBCursor.key page](https://github.com/mdn/content/issues/23328) (2023-01-02T23:59:08Z)
-  
 * [\[clipboard-apis\] clipboard.readText() is behind flag on Firefox](https://github.com/mdn/content/issues/23188) (2022-12-25T21:43:10Z)
   
 * [\[orientation-event\] Explanation of X, y, z coordinates of DeviceMotionEvent.acceleration and DeviceMotionEvent.accelerationIncludingGravity is either completely wrong or extremely confusing (or both)](https://github.com/mdn/content/issues/22885) (2022-12-11T22:18:39Z)
@@ -179,8 +177,6 @@
 * [\[mediastream-recording\] Emitted blobs do not always exactly adhere to the timeslice value](https://github.com/mdn/content/issues/19369) (2022-08-10T14:39:46Z)
   
 * [\[cssom-view-1\] Include solution to checking if content is overflown in clientHeight page](https://github.com/mdn/content/issues/19153) (2022-08-04T11:29:19Z)
-  
-* [\[uievents\] Document the ability to preventDefault() a pinch-zoom gesture on a touchpad](https://github.com/mdn/content/issues/18342) (2022-07-14T03:33:35Z)
   
 * [\[WebCryptoAPI\] Precise max length for encoding algorithm](https://github.com/mdn/content/issues/18045) (2022-07-06T14:47:35Z)
   
