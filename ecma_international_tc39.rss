@@ -4,10 +4,55 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Mon, 22 Apr 2024 20:44:17 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 28 Jun 2024 15:37:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Change use of "has a name" for arrow functions which are "always unnamed"]]></title>
+            <link>https://github.com/mdn/content/issues/34488</link>
+            <guid>https://github.com/mdn/content/issues/34488</guid>
+            <pubDate>Fri, 28 Jun 2024 15:37:48 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Description</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto">Arrow functions are always unnamed. If the arrow function needs to call itself, use a named function expression instead. You can also assign the arrow function to a variable so it has a name.</p>
+</blockquote>
+<p dir="auto">Specifically the first and last parts seem contradictory:</p>
+<blockquote>
+<p dir="auto">Arrow functions are always unnamed.</p>
+</blockquote>
+<p dir="auto">and</p>
+<blockquote>
+<p dir="auto">...assign the arrow function to a variable so it has a name.</p>
+</blockquote>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Something to the effect of:</p>
+<blockquote>
+<p dir="auto">You can also assign the arrow function to a variable so you could refer to it through that variable.</p>
+</blockquote>
+<p dir="auto">Or something not suggesting the arrow function would be named.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://tc39.es/ecma262/#sec-static-semantics-hasname" rel="nofollow">https://tc39.es/ecma262/#sec-static-semantics-hasname</a></p>
+<p dir="auto"><code class="notranslate">HasName</code> returns false for all arrow functions.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/functions/arrow_functions</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/functions/arrow_functions/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/functions/arrow_functions/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/9562249b86b8ba8f477f30e0fc3886996c896bfb/hovercard" href="https://github.com/mdn/content/commit/9562249b86b8ba8f477f30e0fc3886996c896bfb"><tt>9562249</tt></a></li>
+<li>Document last modified: 2024-06-10T06:41:59.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Operators page doesn't mention . or ?.]]></title>
             <link>https://github.com/mdn/content/issues/33215</link>
