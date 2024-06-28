@@ -134,8 +134,6 @@
   
 * [\[webaudio\] AnalyserNode::getFloatTimeDomainData() doesn't specify the encoding of the waveform](https://github.com/mdn/content/issues/25571) (2023-03-23T14:41:18Z)
   
-* [\[IndexedDB-3\] IDBObjectStore.openCursor incorrect direction docs](https://github.com/mdn/content/issues/25385) (2023-03-16T15:15:59Z)
-  
 * [\[screen-capture\] MediaDevices#getDisplayMedia(): systemAudio is misleading](https://github.com/mdn/content/issues/25307) (2023-03-14T03:38:33Z)
   
 * [\[css-sizing-4, css-conditional-3, css-sizing-3\] Document length-fitting on \<select\>](https://github.com/mdn/content/issues/25073) (2023-03-05T03:22:13Z)
@@ -216,7 +214,7 @@
   
 * [\[webrtc\] "Using DTMF" is using legacy APIs](https://github.com/mdn/content/issues/10020) (2021-10-22T18:00:50Z)
   
-* [\[notifications, service-workers-1, dom, cssom-view-1, pointerevents3\] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
+* [\[service-workers-1, dom, cssom-view-1, notifications, pointerevents3\] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
 * [\[SVG11\] Issue with "SVGSVGElement": In FF an unset viewBox property means viewBox.baseVal = null. For Chrome it is an SVGRect initialized to 0.](https://github.com/mdn/content/issues/8907) (2021-09-14T14:00:23Z)
   

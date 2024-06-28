@@ -473,37 +473,6 @@ The <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Usin
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[IndexedDB-3] IDBObjectStore.openCursor incorrect direction docs]]></title>
-            <link>https://github.com/mdn/content/issues/25385</link>
-            <guid>https://github.com/mdn/content/issues/25385</guid>
-            <pubDate>Thu, 16 Mar 2023 15:15:59 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/openCursor#parameters" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/openCursor#parameters</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">IDBObjectStore.openCursor direction argument</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto"><code class="notranslate">prev</code> option gets very confusing (The cursor is opened at the start(??) of the store) until you find out that it's just incorrectly documented specifically on this page.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Definitely not that <code class="notranslate">direction=prev</code> would open cursor at the start of the store.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">Example of properly documented <code class="notranslate">openKeyCursor</code>: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/openKeyCursor#parameters" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/openKeyCursor#parameters</a>.<br>
-Properly documented <code class="notranslate">IDBCursor.direction</code>: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/direction#value" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor/direction#value</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/idbobjectstore/opencursor</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/openCursor" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/openCursor</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/idbobjectstore/opencursor/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/idbobjectstore/opencursor/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/387d0d4d8690c0d2c9db1b85eae28ffea0f3ac1f/hovercard" href="https://github.com/mdn/content/commit/387d0d4d8690c0d2c9db1b85eae28ffea0f3ac1f"><tt>387d0d4</tt></a></li>
-<li>Document last modified: 2023-02-20T04:32:55.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[push-api] Subscriptions are lost after page reload]]></title>
             <link>https://github.com/mdn/content/issues/23747</link>
             <guid>https://github.com/mdn/content/issues/23747</guid>

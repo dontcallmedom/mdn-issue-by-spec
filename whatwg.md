@@ -152,7 +152,7 @@
   
 * [\[html\] Issue with "DragEvent.dataTransfer": Clarify that \`dataTransfer\` can be null.](https://github.com/mdn/content/issues/11670) (2022-01-02T15:10:06Z)
   
-* [\[notifications, service-workers-1, dom, cssom-view-1, pointerevents3\] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
+* [\[service-workers-1, dom, cssom-view-1, notifications, pointerevents3\] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
 * [\[html\] Issue with "Location": does not mention IDN domain names at all](https://github.com/mdn/content/issues/8895) (2021-09-13T22:55:17Z)
   
@@ -163,6 +163,4 @@
 * [\[html\] CustomElementRegistry needs updating](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
   
 * [\[orientation-event, compat\] Content bug: Improve device/screen orientation event doc](https://github.com/mdn/content/issues/4400) (2021-04-23T02:57:45Z)
-  
-* [\[notifications\] Demo in Notification() constructor article causes error: “The Notification permission may only be requested from inside a short running user-generated event handler”](https://github.com/mdn/content/issues/2615) (2021-02-23T13:20:50Z)
   

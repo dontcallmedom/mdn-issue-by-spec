@@ -28,7 +28,7 @@
 <p dir="auto"><em>No response</em></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[notifications, service-workers-1, dom, cssom-view-1, pointerevents3] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()]]></title>
+            <title><![CDATA[[service-workers-1, dom, cssom-view-1, notifications, pointerevents3] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()]]></title>
             <link>https://github.com/mdn/content/issues/8977</link>
             <guid>https://github.com/mdn/content/issues/8977</guid>
             <pubDate>Thu, 16 Sep 2021 10:09:38 GMT</pubDate>
@@ -62,24 +62,6 @@
 </ul>
 </li>
 </ol>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[notifications] Demo in Notification() constructor article causes error: “The Notification permission may only be requested from inside a short running user-generated event handler”]]></title>
-            <link>https://github.com/mdn/content/issues/2615</link>
-            <guid>https://github.com/mdn/content/issues/2615</guid>
-            <pubDate>Tue, 23 Feb 2021 13:20:50 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">The demo on</p>
-<p dir="auto"><a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/notification/notification/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/notification/notification/index.html</a></p>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Notification/Notification" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Notification/Notification</a></p>
-<p dir="auto">throws the following error;</p>
-<blockquote>
-<p dir="auto">The Notification permission may only be requested from inside a short running user-generated event handler.</p>
-</blockquote>
-<p dir="auto">Chromium on Android reports:</p>
-<blockquote>
-<p dir="auto">Uncaught TypeError: Failed to construct 'Notification': Illegal constructor. Use ServiceWorkerRegistration.showNotification() instead.</p>
-</blockquote>
-<p dir="auto">and ServiceWorkerRegistration.showNotification only works if google services is installed.</p>]]></content:encoded>
         </item>
     </channel>
 </rss>

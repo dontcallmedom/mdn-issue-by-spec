@@ -106,7 +106,7 @@
   
 * [\[css-fonts-5\] @font-face/font-weight: expand on \<font-weight-absolute\>{2} importance](https://github.com/mdn/content/issues/10910) (2021-12-01T18:54:16Z)
   
-* [\[notifications, service-workers-1, dom, cssom-view-1, pointerevents3\] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
+* [\[service-workers-1, dom, cssom-view-1, notifications, pointerevents3\] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
 * [\[html, dom, WebIDL-1, FileAPI, uievents, cssom-view-1, pointerlock-2\] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
