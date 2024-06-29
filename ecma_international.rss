@@ -4,42 +4,10 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Sat, 29 Jun 2024 01:36:22 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 28 Jun 2024 15:37:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript] Using map with backtick]]></title>
-            <link>https://github.com/mdn/content/issues/34498</link>
-            <guid>https://github.com/mdn/content/issues/34498</guid>
-            <pubDate>Sat, 29 Jun 2024 01:36:22 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">array.map inside Template literals</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/77315058/344358575-a65b0bd3-93e5-4497-9bb8-6d5f6e86743e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTk2Mjk3MjcsIm5iZiI6MTcxOTYyOTQyNywicGF0aCI6Ii83NzMxNTA1OC8zNDQzNTg1NzUtYTY1YjBiZDMtOTNlNS00NDk3LTliYjgtNmQ1ZjZlODY3NDNlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MjklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjI5VDAyNTAyN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTc2YjkyZjQ4YWI0NmFjMWQ4OGFmNGM1YWU2ZmVjZDQxZmZiMGE3YjlmMGRlNGMxYWY4MGI5ZGIzYjQzZThjZGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.NZpyhrh97zt7PNyADT9Fy2vLPL3khSuBNJAqUT9m_zQ"><img src="https://private-user-images.githubusercontent.com/77315058/344358575-a65b0bd3-93e5-4497-9bb8-6d5f6e86743e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTk2Mjk3MjcsIm5iZiI6MTcxOTYyOTQyNywicGF0aCI6Ii83NzMxNTA1OC8zNDQzNTg1NzUtYTY1YjBiZDMtOTNlNS00NDk3LTliYjgtNmQ1ZjZlODY3NDNlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MjklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjI5VDAyNTAyN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTc2YjkyZjQ4YWI0NmFjMWQ4OGFmNGM1YWU2ZmVjZDQxZmZiMGE3YjlmMGRlNGMxYWY4MGI5ZGIzYjQzZThjZGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.NZpyhrh97zt7PNyADT9Fy2vLPL3khSuBNJAqUT9m_zQ" alt="image" style="max-width: 100%;"></a></p>
-<p dir="auto">When map is used inside Template literals , It automatically puts ","</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/77315058/344358575-a65b0bd3-93e5-4497-9bb8-6d5f6e86743e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTk2Mjk3MjcsIm5iZiI6MTcxOTYyOTQyNywicGF0aCI6Ii83NzMxNTA1OC8zNDQzNTg1NzUtYTY1YjBiZDMtOTNlNS00NDk3LTliYjgtNmQ1ZjZlODY3NDNlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MjklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjI5VDAyNTAyN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTc2YjkyZjQ4YWI0NmFjMWQ4OGFmNGM1YWU2ZmVjZDQxZmZiMGE3YjlmMGRlNGMxYWY4MGI5ZGIzYjQzZThjZGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.NZpyhrh97zt7PNyADT9Fy2vLPL3khSuBNJAqUT9m_zQ"><img src="https://private-user-images.githubusercontent.com/77315058/344358575-a65b0bd3-93e5-4497-9bb8-6d5f6e86743e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTk2Mjk3MjcsIm5iZiI6MTcxOTYyOTQyNywicGF0aCI6Ii83NzMxNTA1OC8zNDQzNTg1NzUtYTY1YjBiZDMtOTNlNS00NDk3LTliYjgtNmQ1ZjZlODY3NDNlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MjklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjI5VDAyNTAyN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTc2YjkyZjQ4YWI0NmFjMWQ4OGFmNGM1YWU2ZmVjZDQxZmZiMGE3YjlmMGRlNGMxYWY4MGI5ZGIzYjQzZThjZGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.NZpyhrh97zt7PNyADT9Fy2vLPL3khSuBNJAqUT9m_zQ" alt="image" style="max-width: 100%;"></a></p>
-<p dir="auto">When map is used inside Template literals , It automatically puts ","</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">Keep up the good work.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/template_literals</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/template_literals/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/template_literals/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/585f0c0961ccda516cd6241d8b36ba63129a8f27/hovercard" href="https://github.com/mdn/content/commit/585f0c0961ccda516cd6241d8b36ba63129a8f27"><tt>585f0c0</tt></a></li>
-<li>Document last modified: 2024-05-31T13:41:38.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[ecmascript] Change use of "has a name" for arrow functions which are "always unnamed"]]></title>
             <link>https://github.com/mdn/content/issues/34488</link>
