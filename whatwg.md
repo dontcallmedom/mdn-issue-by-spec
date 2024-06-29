@@ -88,8 +88,6 @@
   
 * [\[dom, uievents, cssom-view-1, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
   
-* [\[html\] There is an easier way to get form data](https://github.com/mdn/content/issues/27543) (2023-06-25T09:33:22Z)
-  
 * [\[dom\] Event.preventDefault: Inaccessible example](https://github.com/mdn/content/issues/27478) (2023-06-22T14:18:14Z)
   
 * [\[html, cssom-view-1\] window.open() has a partial list of features](https://github.com/mdn/content/issues/27357) (2023-06-15T19:36:20Z)

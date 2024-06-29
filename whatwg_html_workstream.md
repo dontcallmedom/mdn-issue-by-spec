@@ -70,8 +70,6 @@
   
 * [\[html\] Explain how to put dialog elements in the top layer](https://github.com/mdn/content/issues/27912) (2023-07-13T04:28:06Z)
   
-* [\[html\] There is an easier way to get form data](https://github.com/mdn/content/issues/27543) (2023-06-25T09:33:22Z)
-  
 * [\[html, cssom-view-1\] window.open() has a partial list of features](https://github.com/mdn/content/issues/27357) (2023-06-15T19:36:20Z)
   
 * [\[html\] HTMLImageElement.srcset: sizes attribute doesn't need to be present](https://github.com/mdn/content/issues/27291) (2023-06-12T21:33:46Z)
