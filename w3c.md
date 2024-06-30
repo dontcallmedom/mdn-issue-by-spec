@@ -198,8 +198,6 @@
   
 * [\[permissions-policy-1\] Permissions API - update to docs needed](https://github.com/mdn/content/issues/13003) (2022-02-14T23:13:08Z)
   
-* [\[tracking-dnt\] Issue with "Navigator.doNotTrack": What was this deprecated tech replaced with?](https://github.com/mdn/content/issues/12912) (2022-02-11T13:32:47Z)
-  
 * [\[encoding\] Content suggestion: ImageDecoder & ImageTrackList how-to/tutorial](https://github.com/mdn/content/issues/12791) (2022-02-07T04:15:29Z)
   
 * [\[cssom-view-1\] Issue with "Document: scroll event": Example using rAF in scroll-event callbacks is outdated, and anti-performance](https://github.com/mdn/content/issues/12701) (2022-02-04T00:25:49Z)
