@@ -38,8 +38,6 @@
   
 * [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
   
-* [\[cssom-view-1\] offsetParent affected by transform, filter, etc](https://github.com/mdn/content/issues/33252) (2024-04-24T08:56:33Z)
-  
 * [\[webrtc\] document of RTCIceCandidate's properties { url, relayProtocol}  are missing](https://github.com/mdn/content/issues/33228) (2024-04-23T11:26:42Z)
   
 * [\[webaudio\] ConvolverNode example needs user interaction](https://github.com/mdn/content/issues/33175) (2024-04-19T12:46:49Z)

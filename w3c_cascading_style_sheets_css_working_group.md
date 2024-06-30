@@ -20,8 +20,6 @@
   
 * [\[css-logical-1\] \[CSS\] Implement margin at-rules](https://github.com/mdn/content/issues/33519) (2024-05-09T18:48:48Z)
   
-* [\[cssom-view-1\] offsetParent affected by transform, filter, etc](https://github.com/mdn/content/issues/33252) (2024-04-24T08:56:33Z)
-  
 * [\[css-position-3\] "Sticky positioning is a hybrid of relative and fixed positioning" is slightly confusing](https://github.com/mdn/content/issues/33146) (2024-04-18T08:15:12Z)
   
 * [\[css-grid-3\] Is span used to span tracks or lines?](https://github.com/mdn/content/issues/33066) (2024-04-12T22:03:28Z)
