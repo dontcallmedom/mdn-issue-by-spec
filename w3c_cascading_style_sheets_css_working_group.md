@@ -8,8 +8,6 @@
   
 * [\[css-overflow-3\] overflow-{x,y}: clip/visible interaction is inaccurate](https://github.com/mdn/content/issues/34436) (2024-06-26T20:50:45Z)
   
-* [\[cssom-view-1\] Remove 2 links to yari-demos.prod.mdn.mozit.cloud](https://github.com/mdn/content/issues/34326) (2024-06-21T15:55:42Z)
-  
 * [\[css-color-4\] Interpolating colors from different spaces: analogous components](https://github.com/mdn/content/issues/34229) (2024-06-17T18:47:04Z)
   
 * [\[css-flexbox-1\] flex-initial element doesn't explicitly use flex: initial](https://github.com/mdn/content/issues/34027) (2024-06-09T22:23:00Z)
