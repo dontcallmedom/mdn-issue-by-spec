@@ -8,8 +8,6 @@
   
 * [\[html\] \<meter\> examples have confusing meter bars inline](https://github.com/mdn/content/issues/34413) (2024-06-26T00:31:23Z)
   
-* [\[html\] Make attribute lists in HTML element pages link to attribute reference pages](https://github.com/mdn/content/issues/34390) (2024-06-25T00:57:24Z)
-  
 * [\[html, FileAPI\] Live examples using window.open are broken](https://github.com/mdn/content/issues/34350) (2024-06-22T21:35:10Z)
   
 * [\[streams\] ByteLengthQueuingStrategy constructor syntax should match guidelines](https://github.com/mdn/content/issues/34282) (2024-06-20T08:29:02Z)
