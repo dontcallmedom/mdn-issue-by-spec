@@ -26,8 +26,6 @@
   
 * [\[html\] Media events: Mention that \`ended\` is not fired if \`loop\` is set to true](https://github.com/mdn/content/issues/33398) (2024-05-03T16:57:46Z)
   
-* [\[fetch\] Subresource Integrity check on Request instance with integrity property](https://github.com/mdn/content/issues/33356) (2024-05-01T17:43:54Z)
-  
 * [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
   
 * [\[html\] label accessibility advice is misleading](https://github.com/mdn/content/issues/33283) (2024-04-26T14:13:16Z)
@@ -133,8 +131,6 @@
 * [\[fullscreen\] Using F11 to enter fullscreen mode doesn’t set fullscreenElement (it remains null) and document.exitFullscreen() doesn’t work](https://github.com/mdn/content/issues/13674) (2022-03-09T00:38:35Z)
   
 * [\[fetch\] Issue with "Response.json()": Possible exceptions not documented](https://github.com/mdn/content/issues/13208) (2022-02-22T13:11:28Z)
-  
-* [\[fetch\] Content bug: Inaccurate explanation on request credentials](https://github.com/mdn/content/issues/13063) (2022-02-17T09:18:12Z)
   
 * [\[dom\] Issue with "AbortController": (missing info on behavior of .text() or .json() or other body promise)](https://github.com/mdn/content/issues/12387) (2022-01-24T16:10:11Z)
   
