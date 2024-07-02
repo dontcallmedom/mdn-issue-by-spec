@@ -6,8 +6,6 @@
   
 * [\[html\] Usage notes has misleading instructions for \`\<menu\>\` element](https://github.com/mdn/content/issues/34476) (2024-06-28T07:04:22Z)
   
-* [\[html\] datalist behaves differently from select with handling option value/textContent](https://github.com/mdn/content/issues/34441) (2024-06-27T05:10:37Z)
-  
 * [\[html\] \<meter\> examples have confusing meter bars inline](https://github.com/mdn/content/issues/34413) (2024-06-26T00:31:23Z)
   
 * [\[html, FileAPI\] Live examples using window.open are broken](https://github.com/mdn/content/issues/34350) (2024-06-22T21:35:10Z)
