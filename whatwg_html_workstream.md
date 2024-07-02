@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] The html \<center\> tag has been deprecated for years, but is still supported by all major browsers. Maybe it's time to un-deprecate this element, and just let it be a feature again.](https://github.com/mdn/content/issues/34572) (2024-07-02T21:23:53Z)
+  
 * [\[html\] \<pre\> elements - problematic characters and auto replacement](https://github.com/mdn/content/issues/34545) (2024-07-01T23:43:33Z)
   
 * [\[html\] Usage notes has misleading instructions for \`\<menu\>\` element](https://github.com/mdn/content/issues/34476) (2024-06-28T07:04:22Z)
