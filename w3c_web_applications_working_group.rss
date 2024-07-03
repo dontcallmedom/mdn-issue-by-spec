@@ -533,40 +533,6 @@ The <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Usin
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[clipboard-apis] clipboard.readText() is behind flag on Firefox]]></title>
-            <link>https://github.com/mdn/content/issues/23188</link>
-            <guid>https://github.com/mdn/content/issues/23188</guid>
-            <pubDate>Sun, 25 Dec 2022 21:43:10 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Interact_with_the_clipboard" rel="nofollow">https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Interact_with_the_clipboard</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">However, while navigator.clipboard.readText() and navigator.clipboard.writeText() work on all browsers</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">clipboard.readText() is behind flag on Firefox dom.events.asyncClipboard.readText in about:config, which is also not mentioned on <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/readText" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/readText</a>.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Conspicuous notes on both <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/readText" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/readText</a> and <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Interact_with_the_clipboard" rel="nofollow">https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Interact_with_the_clipboard</a> stating the flag that needs to be used on Firefox to enable navigator.clipboard.readText() and removal of the claim</p>
-<blockquote>
-<p dir="auto">However, while navigator.clipboard.readText() and navigator.clipboard.writeText() work on all browsers</p>
-</blockquote>
-<p dir="auto">which is not accurate when running Nightly 110 out of the box.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/mozilla/add-ons/webextensions/interact_with_the_clipboard</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Interact_with_the_clipboard" rel="nofollow">https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Interact_with_the_clipboard</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/mozilla/add-ons/webextensions/interact_with_the_clipboard/index.md">https://github.com/mdn/content/blob/main/files/en-us/mozilla/add-ons/webextensions/interact_with_the_clipboard/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/05d8b0eb3591009b6b7fee274bb7ed1bc5638f18/hovercard" href="https://github.com/mdn/content/commit/05d8b0eb3591009b6b7fee274bb7ed1bc5638f18"><tt>05d8b0e</tt></a></li>
-<li>Document last modified: 2022-09-14T12:03:40.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html, uievents] Document.activeElement : The lack of HTMLAnchorElement and macOS on a case by case basis]]></title>
             <link>https://github.com/mdn/content/issues/22338</link>
             <guid>https://github.com/mdn/content/issues/22338</guid>

@@ -30,8 +30,6 @@
   
 * [\[push-api\] Subscriptions are lost after page reload](https://github.com/mdn/content/issues/23747) (2023-01-18T15:29:52Z)
   
-* [\[clipboard-apis\] clipboard.readText() is behind flag on Firefox](https://github.com/mdn/content/issues/23188) (2022-12-25T21:43:10Z)
-  
 * [\[html, uievents\] Document.activeElement : The lack of HTMLAnchorElement and macOS on a case by case basis](https://github.com/mdn/content/issues/22338) (2022-11-16T13:47:01Z)
   
 * [\[IndexedDB-3\] indexedDB.deleteDatabase doc: Mention that deleting a database isn't completed until the upgradeNeeded result is closed](https://github.com/mdn/content/issues/20368) (2022-09-07T00:12:45Z)
