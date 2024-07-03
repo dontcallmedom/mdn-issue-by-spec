@@ -4,44 +4,10 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Wed, 03 Jul 2024 04:12:10 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 22 Apr 2024 20:44:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript] Error in WeakMap cache example]]></title>
-            <link>https://github.com/mdn/content/issues/34583</link>
-            <guid>https://github.com/mdn/content/issues/34583</guid>
-            <pubDate>Wed, 03 Jul 2024 04:12:10 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap#caching" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap#caching</a></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The example shows caching the value of an objection-&gt;object function into a WeakMap, which is fine, but the discussion below it says:</p>
-<blockquote>
-<p dir="auto">Moreover, even if the input is never passed in again, the result still remains forever in the cache.</p>
-</blockquote>
-<p dir="auto">This is very confusing/misleading/arguably incorrect. If the input is garbage collected, and there are no other strong references to the result remaining, the result becomes eligible for garbage collection.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">A correct explanation about the lifetime of objects in the cache indicating that whenever the input is garbage collected, the entry is removed and the result becomes eligible for garbage collection if there are no other strong references to it.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/weakmap</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/weakmap/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/weakmap/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/41cddfdaeed4a73fb8234c332150df8e54df31e9/hovercard" href="https://github.com/mdn/content/commit/41cddfdaeed4a73fb8234c332150df8e54df31e9"><tt>41cddfd</tt></a></li>
-<li>Document last modified: 2023-11-08T04:45:53.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[ecmascript] Operators page doesn't mention . or ?.]]></title>
             <link>https://github.com/mdn/content/issues/33215</link>
