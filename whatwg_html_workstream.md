@@ -42,7 +42,7 @@
   
 * [\[html\] WebSocket constructor example should demonstrate waiting for connection or handling connection failure](https://github.com/mdn/content/issues/31768) (2024-01-17T18:55:09Z)
   
-* [\[html\] \`hgroup\` accessibility concerns might need an update](https://github.com/mdn/content/issues/31064) (2023-12-16T13:22:38Z)
+* [\[html\] \`hgroup\` now has \`role="group"\`](https://github.com/mdn/content/issues/31064) (2023-12-16T13:22:38Z)
   
 * [\[html\] No information about "cancel" event on HTMLInputElement page](https://github.com/mdn/content/issues/31014) (2023-12-15T00:00:43Z)
   
