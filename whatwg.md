@@ -24,8 +24,6 @@
   
 * [\[html\] IMPORTANT description and example missing](https://github.com/mdn/content/issues/33573) (2024-05-13T01:38:50Z)
   
-* [\[html\] Consider removing language suggesting \`\<tr\>\` is a valid child of \`\<table\>\`](https://github.com/mdn/content/issues/33505) (2024-05-08T20:07:24Z)
-  
 * [\[html\] Media events: Mention that \`ended\` is not fired if \`loop\` is set to true](https://github.com/mdn/content/issues/33398) (2024-05-03T16:57:46Z)
   
 * [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
