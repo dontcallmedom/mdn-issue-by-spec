@@ -302,55 +302,6 @@ This page should mention 'xml' and 'xmlns' prefixes handling.</p>
 <p dir="auto"><em>No response</em></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[dom] Issue with "AbortController": (missing info on behavior of .text() or .json() or other body promise)]]></title>
-            <link>https://github.com/mdn/content/issues/12387</link>
-            <guid>https://github.com/mdn/content/issues/12387</guid>
-            <pubDate>Mon, 24 Jan 2022 16:10:11 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AbortController" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AbortController</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">This was missing information about whether calling the <code class="notranslate">controller.abort()</code> function would cause the promise returned from <code class="notranslate">.json()</code>, <code class="notranslate">.text()</code>, (or any of the body-downloading functions on the resolved <code class="notranslate">Request</code> object) to fail with <code class="notranslate">Uncaught DOMException: The user aborted a request.</code> (Chrome's behavior), From experimentation, it seemed that calling <code class="notranslate">controller.abort()</code> would cancel either the request promise or the body promise, so I think that detail should be added to save others the trouble.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto">2 found pages: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AbortController" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AbortController</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal</a><br>
-The section was the Note under the examples on these pages</p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">Details on the promise abortions returned from <code class="notranslate">Response.prototype.text()</code>, or <code class="notranslate">.json()</code>, or others.</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">Yep, tested chrome console interaction when downloading a large file with Slow 3G network throttling. Test code:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="var ctrl = new AbortController();
-var res = await fetch('https://www.ledger-cli.org/3.0/doc/ledger3.pdf', { signal: ctrl.signal });
-console.log('response received');
-var data = await res.text();
-console.log('text downloaded');
-
-// ^ Executed the above, then after &quot;response received&quot; and before &quot;text downloaded&quot;, manually executed:
-ctrl.abort();
-
-// Resultant behavior is that &quot;text downloaded&quot; never was displayed, and we received this:
-// (x) Uncaught DOMException: The user aborted a request."><pre class="notranslate"><code class="notranslate">var ctrl = new AbortController();
-var res = await fetch('https://www.ledger-cli.org/3.0/doc/ledger3.pdf', { signal: ctrl.signal });
-console.log('response received');
-var data = await res.text();
-console.log('text downloaded');
-
-// ^ Executed the above, then after "response received" and before "text downloaded", manually executed:
-ctrl.abort();
-
-// Resultant behavior is that "text downloaded" never was displayed, and we received this:
-// (x) Uncaught DOMException: The user aborted a request.
-</code></pre></div>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/abortcontroller</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AbortController" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AbortController</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/abortcontroller/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/abortcontroller/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e89a324e54cfc261f00ae08052d63c697cd99ba2/hovercard" href="https://github.com/mdn/content/commit/e89a324e54cfc261f00ae08052d63c697cd99ba2"><tt>e89a324</tt></a></li>
-<li>Document last modified: 2022-01-12T16:54:36.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[service-workers-1, dom, cssom-view-1, notifications, pointerevents3] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()]]></title>
             <link>https://github.com/mdn/content/issues/8977</link>
             <guid>https://github.com/mdn/content/issues/8977</guid>

@@ -42,48 +42,6 @@ Related web platform test: <a href="https://wpt.fyi/results/fetch/api/request/re
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[fetch] `Response.text()` can throw a `TypeError`]]></title>
-            <link>https://github.com/mdn/content/issues/24466</link>
-            <guid>https://github.com/mdn/content/issues/24466</guid>
-            <pubDate>Wed, 15 Feb 2023 16:35:17 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Response/text" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Response/text</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Return value</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">It says that it returns "A Promise that resolves with a String."<br>
-But in reality it's possible for this promise to reject with a TypeError.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Mentioning of the rejected promise similar to what's shown at <a href="https://developer.mozilla.org/en-US/docs/Web/API/fetch#exceptions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/fetch#exceptions</a></p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://fetch.spec.whatwg.org/#concept-body-consume-body" rel="nofollow">https://fetch.spec.whatwg.org/#concept-body-consume-body</a> mentions:</p>
-<blockquote>
-<p dir="auto">If object is <a href="https://fetch.spec.whatwg.org/#body-unusable" rel="nofollow">unusable</a>, then return <a href="https://webidl.spec.whatwg.org/#a-promise-rejected-with" rel="nofollow">a promise rejected with</a> a <a href="https://webidl.spec.whatwg.org/#exceptiondef-typeerror" rel="nofollow">TypeError</a>.</p>
-</blockquote>
-<p dir="auto">which is called by <a href="https://fetch.spec.whatwg.org/#dom-body-text" rel="nofollow">https://fetch.spec.whatwg.org/#dom-body-text</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<ul dir="auto">
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Response/arrayBuffer" rel="nofollow"><code class="notranslate">Response.arrayBuffer()</code></a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Response/blob" rel="nofollow"><code class="notranslate">Response.blob()</code></a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Response/formData" rel="nofollow"><code class="notranslate">Response.formData()</code></a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Response/json" rel="nofollow"><code class="notranslate">Response.json()</code></a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Response/text" rel="nofollow"><code class="notranslate">Response.text()</code></a></li>
-</ul>
-<p dir="auto">all refer to <a href="https://fetch.spec.whatwg.org/#concept-body-consume-body" rel="nofollow"><code class="notranslate">consume body</code></a> in the spec, and would benefit from similar documentation.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/response/text</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Response/text" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Response/text</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/response/text/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/response/text/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/16e398809d62247dbadc89ff4024a0ffa4781f0e/hovercard" href="https://github.com/mdn/content/commit/16e398809d62247dbadc89ff4024a0ffa4781f0e"><tt>16e3988</tt></a></li>
-<li>Document last modified: 2022-09-13T06:27:50.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[fetch] fetch could reject when 400 is returned]]></title>
             <link>https://github.com/mdn/content/issues/17115</link>
             <guid>https://github.com/mdn/content/issues/17115</guid>
@@ -158,30 +116,6 @@ But in reality it's possible for this promise to reject with a TypeError.</p>
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/fetch/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/fetch/index.md</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/196cc4ff3068a59b962a3fe1cbb960eb72ef542b/hovercard" href="https://github.com/mdn/content/commit/196cc4ff3068a59b962a3fe1cbb960eb72ef542b"><tt>196cc4f</tt></a></li>
 <li>Document last modified: 2022-05-31T04:47:00.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[fetch] Issue with "Response.json()": Possible exceptions not documented]]></title>
-            <link>https://github.com/mdn/content/issues/13208</link>
-            <guid>https://github.com/mdn/content/issues/13208</guid>
-            <pubDate>Tue, 22 Feb 2022 13:11:28 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Response/json" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Response/json</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">This function can raise exceptions, but these are not documented. Try using it on a response that is not actually JSON, e.g.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto">Exceptions</p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">The list of possible exceptions and their causes. See the <a href="https://developer.mozilla.org/en-US/docs/Web/API/fetch#exceptions" rel="nofollow"><code class="notranslate">fetch</code></a> documentation for an example of a function that documents its exceptions well.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/response/json</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Response/json" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Response/json</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/response/json/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/response/json/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/93ae23dec42bba9d71d6f1ed45668d8d26847e9c/hovercard" href="https://github.com/mdn/content/commit/93ae23dec42bba9d71d6f1ed45668d8d26847e9c"><tt>93ae23d</tt></a></li>
-<li>Document last modified: 2022-02-18T09:26:54.000Z</li>
 </ul>
 </details>]]></content:encoded>
         </item>
