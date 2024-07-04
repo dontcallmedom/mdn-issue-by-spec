@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] "escape inertness" mentioned but never explained how to](https://github.com/mdn/content/issues/34619) (2024-07-04T10:02:29Z)
+  
 * [\[html\] \<pre\> elements - problematic characters and auto replacement](https://github.com/mdn/content/issues/34545) (2024-07-01T23:43:33Z)
   
 * [\[html\] Usage notes has misleading instructions for \`\<menu\>\` element](https://github.com/mdn/content/issues/34476) (2024-06-28T07:04:22Z)

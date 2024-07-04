@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] "escape inertness" mentioned but never explained how to](https://github.com/mdn/content/issues/34619) (2024-07-04T10:02:29Z)
+  
 * [\[ecmascript, streams\] ReadableStreamDefaultController: undocumented error conditions](https://github.com/mdn/content/issues/34597) (2024-07-03T14:49:56Z)
   
 * [\[html\] \<pre\> elements - problematic characters and auto replacement](https://github.com/mdn/content/issues/34545) (2024-07-01T23:43:33Z)
