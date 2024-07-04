@@ -10,8 +10,6 @@
   
 * [\[ecmascript\] Wrong use of \`isNaN()\`.](https://github.com/mdn/content/issues/32210) (2024-02-10T21:53:19Z)
   
-* [\[ecmascript\] Describe direct and indirect eval differences in each bullet point](https://github.com/mdn/content/issues/30281) (2023-11-14T22:14:49Z)
-  
 * [\[ecmascript\] Import assertions proposal renamed to import attributes](https://github.com/mdn/content/issues/29572) (2023-10-10T08:50:02Z)
   
 * [\[ecmascript\] Macrotasks and Microtasks](https://github.com/mdn/content/issues/28795) (2023-08-28T09:55:38Z)
