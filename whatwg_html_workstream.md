@@ -40,8 +40,6 @@
   
 * [\[html\] WebSocket constructor example should demonstrate waiting for connection or handling connection failure](https://github.com/mdn/content/issues/31768) (2024-01-17T18:55:09Z)
   
-* [\[html\] \`hgroup\` now has \`role="group"\`](https://github.com/mdn/content/issues/31064) (2023-12-16T13:22:38Z)
-  
 * [\[html\] No information about "cancel" event on HTMLInputElement page](https://github.com/mdn/content/issues/31014) (2023-12-15T00:00:43Z)
   
 * [\[html\] In the "Using custom elements" guide and related pages, add a disclaimer that WebKit does not plan to support Customized built-in elements](https://github.com/mdn/content/issues/30968) (2023-12-12T17:40:05Z)
