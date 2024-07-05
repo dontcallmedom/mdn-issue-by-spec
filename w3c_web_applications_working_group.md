@@ -4,8 +4,6 @@
 
 * [\[uievents\] KeyboardEvent: code does not produce ShiftRight](https://github.com/mdn/content/issues/34606) (2024-07-04T00:11:21Z)
   
-* [\[appmanifest\] Describe what the default behavior is for manifest::scope](https://github.com/mdn/content/issues/34519) (2024-06-30T20:27:36Z)
-  
 * [\[html, FileAPI\] Live examples using window.open are broken](https://github.com/mdn/content/issues/34350) (2024-06-22T21:35:10Z)
   
 * [\[selection-api\] Clarification of the selection object returned](https://github.com/mdn/content/issues/33803) (2024-05-28T22:35:51Z)

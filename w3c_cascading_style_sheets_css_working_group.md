@@ -38,8 +38,6 @@
   
 * [\[selectors-4\] :blank is also a blank page pseudo-class](https://github.com/mdn/content/issues/31885) (2024-01-24T10:43:17Z)
   
-* [\[css-conditional-3, CSS21\] \`@charset\` is not deprecated](https://github.com/mdn/content/issues/31882) (2024-01-24T07:40:57Z)
-  
 * [\[resize-observer-1\] How to prevent ResizeObserver Observation errors](https://github.com/mdn/content/issues/31021) (2023-12-15T08:03:20Z)
   
 * [\[css-overflow-3\] Information about how to use -webkit-line-clamp independent of -webkit-box-orient, and its future](https://github.com/mdn/content/issues/30842) (2023-12-06T23:01:46Z)

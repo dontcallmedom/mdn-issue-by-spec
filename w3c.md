@@ -6,8 +6,6 @@
   
 * [\[css-fonts-5\] font-variant-ligatures doesn't describe combining values](https://github.com/mdn/content/issues/34582) (2024-07-03T03:13:56Z)
   
-* [\[appmanifest\] Describe what the default behavior is for manifest::scope](https://github.com/mdn/content/issues/34519) (2024-06-30T20:27:36Z)
-  
 * [\[cssom-view-1\] document.caretPositionFromPoint() API needs update](https://github.com/mdn/content/issues/34492) (2024-06-28T18:22:16Z)
   
 * [\[filter-effects-2\] missing important note - feColorMatrix uses linearRGB by default](https://github.com/mdn/content/issues/34444) (2024-06-27T08:33:04Z)
@@ -67,8 +65,6 @@
 * [\[css-backgrounds-4\] No information on border-color  \<stripes()\>](https://github.com/mdn/content/issues/32234) (2024-02-12T07:33:50Z)
   
 * [\[selectors-4\] :blank is also a blank page pseudo-class](https://github.com/mdn/content/issues/31885) (2024-01-24T10:43:17Z)
-  
-* [\[css-conditional-3, CSS21\] \`@charset\` is not deprecated](https://github.com/mdn/content/issues/31882) (2024-01-24T07:40:57Z)
   
 * [\[resize-observer-1\] How to prevent ResizeObserver Observation errors](https://github.com/mdn/content/issues/31021) (2023-12-15T08:03:20Z)
   

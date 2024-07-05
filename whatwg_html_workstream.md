@@ -52,8 +52,6 @@
   
 * [\[html\] Document false negatives for navigator.onLine property ](https://github.com/mdn/content/issues/30402) (2023-11-20T10:49:44Z)
   
-* [\[html\] DataTransfer is not only used for Drag & Drop](https://github.com/mdn/content/issues/29696) (2023-10-18T05:25:37Z)
-  
 * [\[html, selectors-4, css-conditional-3\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
   
 * [\[html\] Wrong explanation of the example inside Inline formatting context](https://github.com/mdn/content/issues/29035) (2023-09-10T13:07:32Z)
@@ -93,8 +91,6 @@
 * [\[html\] "HTMLElement.dir": Misleading info about how the value is determined](https://github.com/mdn/content/issues/14484) (2022-03-30T22:18:42Z)
   
 * [\[html\] Clarify "Permitted parents: any element that accepts metadata content"](https://github.com/mdn/content/issues/14398) (2022-03-28T12:11:28Z)
-  
-* [\[html\] Issue with "DragEvent.dataTransfer": Clarify that \`dataTransfer\` can be null.](https://github.com/mdn/content/issues/11670) (2022-01-02T15:10:06Z)
   
 * [\[html\] Issue with "Location": does not mention IDN domain names at all](https://github.com/mdn/content/issues/8895) (2021-09-13T22:55:17Z)
   

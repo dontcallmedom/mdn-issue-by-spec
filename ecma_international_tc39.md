@@ -4,10 +4,6 @@
 
 * [\[ecmascript, streams\] ReadableStreamDefaultController: undocumented error conditions](https://github.com/mdn/content/issues/34597) (2024-07-03T14:49:56Z)
   
-* [\[ecmascript\] Operators page doesn't mention . or ?.](https://github.com/mdn/content/issues/33215) (2024-04-22T20:44:17Z)
-  
-* [\[ecmascript\] Incorrect information about "return await" performance penalty](https://github.com/mdn/content/issues/32847) (2024-03-26T16:08:40Z)
-  
 * [\[ecmascript\] Wrong use of \`isNaN()\`.](https://github.com/mdn/content/issues/32210) (2024-02-10T21:53:19Z)
   
 * [\[ecmascript\] Import assertions proposal renamed to import attributes](https://github.com/mdn/content/issues/29572) (2023-10-10T08:50:02Z)
