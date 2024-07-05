@@ -40,8 +40,6 @@
   
 * [\[resize-observer-1\] How to prevent ResizeObserver Observation errors](https://github.com/mdn/content/issues/31021) (2023-12-15T08:03:20Z)
   
-* [\[css-overflow-3\] Information about how to use -webkit-line-clamp independent of -webkit-box-orient, and its future](https://github.com/mdn/content/issues/30842) (2023-12-06T23:01:46Z)
-  
 * [\[CSS21, css-display-3\] Hiding things example - using absolute positioning](https://github.com/mdn/content/issues/30171) (2023-11-10T00:23:35Z)
   
 * [\[css-easing-1\] Create function pages for easing functions](https://github.com/mdn/content/issues/29923) (2023-10-31T01:44:35Z)
