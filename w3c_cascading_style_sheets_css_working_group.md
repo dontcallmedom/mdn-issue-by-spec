@@ -14,8 +14,6 @@
   
 * [\[css-flexbox-1\] flex-initial element doesn't explicitly use flex: initial](https://github.com/mdn/content/issues/34027) (2024-06-09T22:23:00Z)
   
-* [\[cssom-view-1, appmanifest, screen-orientation\] Manifest#orientation: should link to screen orientation API landing page](https://github.com/mdn/content/issues/33670) (2024-05-19T16:39:01Z)
-  
 * [\[css-logical-1\] \[CSS\] Implement margin at-rules](https://github.com/mdn/content/issues/33519) (2024-05-09T18:48:48Z)
   
 * [\[css-position-3\] "Sticky positioning is a hybrid of relative and fixed positioning" is slightly confusing](https://github.com/mdn/content/issues/33146) (2024-04-18T08:15:12Z)
