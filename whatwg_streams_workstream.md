@@ -4,5 +4,3 @@
 
 * [\[ecmascript, streams\] ReadableStreamDefaultController: undocumented error conditions](https://github.com/mdn/content/issues/34597) (2024-07-03T14:49:56Z)
   
-* [\[streams\] ByteLengthQueuingStrategy constructor syntax should match guidelines](https://github.com/mdn/content/issues/34282) (2024-06-20T08:29:02Z)
-  

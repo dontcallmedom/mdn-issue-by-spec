@@ -14,8 +14,6 @@
   
 * [\[html, FileAPI\] Live examples using window.open are broken](https://github.com/mdn/content/issues/34350) (2024-06-22T21:35:10Z)
   
-* [\[streams\] ByteLengthQueuingStrategy constructor syntax should match guidelines](https://github.com/mdn/content/issues/34282) (2024-06-20T08:29:02Z)
-  
 * [\[html\] What characters are allowed in a class name?](https://github.com/mdn/content/issues/34253) (2024-06-18T17:46:37Z)
   
 * [\[dom\] Various Node subclass replaceWith methods should link to each other](https://github.com/mdn/content/issues/34084) (2024-06-12T15:46:35Z)

@@ -18,17 +18,6 @@
                 "name": "rotu",
                 "url": "https://github.com/rotu"
             }
-        },
-        {
-            "id": "https://github.com/mdn/content/issues/34282",
-            "content_html": "<p dir=\"auto\">The constructor to the <code class=\"notranslate\">ByteLengthQueuingStrategy</code> looks to reference <code class=\"notranslate\">highWaterMark</code> directly (as if a number type).</p>\n<p dir=\"auto\">Where it is likely <code class=\"notranslate\">QueuingStrategyInit</code> (or colloquial <code class=\"notranslate\">{ highWaterMark }</code>) was the intention.</p>\n<p dir=\"auto\"><a href=\"https://streams.spec.whatwg.org/#blqs-class-definition\" rel=\"nofollow\">https://streams.spec.whatwg.org/#blqs-class-definition</a></p>\n<p dir=\"auto\">here:<br>\n<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/ByteLengthQueuingStrategy/ByteLengthQueuingStrategy\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/ByteLengthQueuingStrategy/ByteLengthQueuingStrategy</a></p>\n<p dir=\"auto\">this may be a common shorthand for all the queuing strategy pages?<br>\n<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/CountQueuingStrategy/CountQueuingStrategy\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/CountQueuingStrategy/CountQueuingStrategy</a></p>\n<p dir=\"auto\">thanks for you time</p>",
-            "url": "https://github.com/mdn/content/issues/34282",
-            "title": "[streams] ByteLengthQueuingStrategy constructor syntax should match guidelines",
-            "date_modified": "2024-06-20T08:29:02.000Z",
-            "author": {
-                "name": "johntalton",
-                "url": "https://github.com/johntalton"
-            }
         }
     ]
 }

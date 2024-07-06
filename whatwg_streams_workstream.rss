@@ -43,19 +43,5 @@ Thrown if the source object is not a ReadableStreamDefaultController.</p>
 </ul>
 </details>]]></content:encoded>
         </item>
-        <item>
-            <title><![CDATA[[streams] ByteLengthQueuingStrategy constructor syntax should match guidelines]]></title>
-            <link>https://github.com/mdn/content/issues/34282</link>
-            <guid>https://github.com/mdn/content/issues/34282</guid>
-            <pubDate>Thu, 20 Jun 2024 08:29:02 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">The constructor to the <code class="notranslate">ByteLengthQueuingStrategy</code> looks to reference <code class="notranslate">highWaterMark</code> directly (as if a number type).</p>
-<p dir="auto">Where it is likely <code class="notranslate">QueuingStrategyInit</code> (or colloquial <code class="notranslate">{ highWaterMark }</code>) was the intention.</p>
-<p dir="auto"><a href="https://streams.spec.whatwg.org/#blqs-class-definition" rel="nofollow">https://streams.spec.whatwg.org/#blqs-class-definition</a></p>
-<p dir="auto">here:<br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/ByteLengthQueuingStrategy/ByteLengthQueuingStrategy" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ByteLengthQueuingStrategy/ByteLengthQueuingStrategy</a></p>
-<p dir="auto">this may be a common shorthand for all the queuing strategy pages?<br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/CountQueuingStrategy/CountQueuingStrategy" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CountQueuingStrategy/CountQueuingStrategy</a></p>
-<p dir="auto">thanks for you time</p>]]></content:encoded>
-        </item>
     </channel>
 </rss>
