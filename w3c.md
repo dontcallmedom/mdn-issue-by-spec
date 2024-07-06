@@ -10,8 +10,6 @@
   
 * [\[filter-effects-2\] missing important note - feColorMatrix uses linearRGB by default](https://github.com/mdn/content/issues/34444) (2024-06-27T08:33:04Z)
   
-* [\[css-overflow-3\] overflow-{x,y}: clip/visible interaction is inaccurate](https://github.com/mdn/content/issues/34436) (2024-06-26T20:50:45Z)
-  
 * [\[html, FileAPI\] Live examples using window.open are broken](https://github.com/mdn/content/issues/34350) (2024-06-22T21:35:10Z)
   
 * [\[css-color-4\] Interpolating colors from different spaces: analogous components](https://github.com/mdn/content/issues/34229) (2024-06-17T18:47:04Z)
