@@ -6,8 +6,6 @@
   
 * [\[html, FileAPI\] Live examples using window.open are broken](https://github.com/mdn/content/issues/34350) (2024-06-22T21:35:10Z)
   
-* [\[selection-api\] Clarification of the selection object returned](https://github.com/mdn/content/issues/33803) (2024-05-28T22:35:51Z)
-  
 * [\[cssom-view-1, appmanifest, screen-orientation\] Manifest#orientation: should link to screen orientation API landing page](https://github.com/mdn/content/issues/33670) (2024-05-19T16:39:01Z)
   
 * [\[appmanifest\] Manifest::scope documentation incorrectly states that out-of-scope navigation happens in new browser context](https://github.com/mdn/content/issues/32948) (2024-04-03T19:24:15Z)

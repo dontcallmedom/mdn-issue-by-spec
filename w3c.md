@@ -24,8 +24,6 @@
   
 * [\[webrtc\] Missing Link for \`RTCPeerConnection.createDTMFSender()\` in "Obsolete Methods" Section](https://github.com/mdn/content/issues/33954) (2024-06-06T06:52:29Z)
   
-* [\[selection-api\] Clarification of the selection object returned](https://github.com/mdn/content/issues/33803) (2024-05-28T22:35:51Z)
-  
 * [\[hr-time-3\] What are the ramifications of \`performance.now()\` bugs?](https://github.com/mdn/content/issues/33760) (2024-05-26T19:52:08Z)
   
 * [\[periodic-background-sync\] periodicSync needs "periodic-background-sync" permission](https://github.com/mdn/content/issues/33692) (2024-05-21T08:55:15Z)
@@ -63,8 +61,6 @@
 * [\[css-backgrounds-4\] No information on border-color  \<stripes()\>](https://github.com/mdn/content/issues/32234) (2024-02-12T07:33:50Z)
   
 * [\[selectors-4\] :blank is also a blank page pseudo-class](https://github.com/mdn/content/issues/31885) (2024-01-24T10:43:17Z)
-  
-* [\[resize-observer-1\] How to prevent ResizeObserver Observation errors](https://github.com/mdn/content/issues/31021) (2023-12-15T08:03:20Z)
   
 * [\[WebCryptoAPI\] SubtleCrypto: sign() method missing Ed25519 in Supported algorithms](https://github.com/mdn/content/issues/30886) (2023-12-09T03:20:17Z)
   
@@ -147,8 +143,6 @@
 * [\[DOM-Parsing\] No mention of comments in reference](https://github.com/mdn/content/issues/21761) (2022-10-23T12:49:25Z)
   
 * [\[css-backgrounds-4\] Border-image generator should allow "auto" as a border-image-width value](https://github.com/mdn/content/issues/21582) (2022-10-16T09:04:29Z)
-  
-* [\[picture-in-picture\] Clarify/note Document.pictureInPictureElement is null for PiP launched from iframe](https://github.com/mdn/content/issues/21048) (2022-09-24T20:32:11Z)
   
 * [\[css-align-3\] Content suggestion: display owns CSS shorthand property.](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
   

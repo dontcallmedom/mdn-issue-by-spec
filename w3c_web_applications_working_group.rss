@@ -65,37 +65,6 @@
 <p dir="auto">(By the way, if you actually paste that URL in a new tab the page is blank, so I suspect it just doesn't work)</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[selection-api] Clarification of the selection object returned]]></title>
-            <link>https://github.com/mdn/content/issues/33803</link>
-            <guid>https://github.com/mdn/content/issues/33803</guid>
-            <pubDate>Tue, 28 May 2024 22:35:51 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getSelection" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/getSelection</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">First paragraph</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">It says the method returns a selection object.   It would be more accurate to say it returns <strong>the</strong> selection object.  It seems a document can only have one selection object and the one you get is the actual system object.   This can change as the user makes inputs to the document, say by making another selection.</p>
-<p dir="auto">This implies the object you get is 'live', and can change after you "get" it.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">I thought it would return a static copy of the selection object.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">It might be helpful to add somewhere that the selection object is a live object.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/document/getselection</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getSelection" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/getSelection</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/document/getselection/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/document/getselection/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/41a8b9c9832359d445d136b6d7a8a28737badc6b/hovercard" href="https://github.com/mdn/content/commit/41a8b9c9832359d445d136b6d7a8a28737badc6b"><tt>41a8b9c</tt></a></li>
-<li>Document last modified: 2023-04-07T05:52:28.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[cssom-view-1, appmanifest, screen-orientation] Manifest#orientation: should link to screen orientation API landing page]]></title>
             <link>https://github.com/mdn/content/issues/33670</link>
             <guid>https://github.com/mdn/content/issues/33670</guid>
