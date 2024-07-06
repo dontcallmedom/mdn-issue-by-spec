@@ -4,10 +4,147 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Wed, 03 Jul 2024 03:13:56 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 06 Jul 2024 08:40:18 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[CSS21] border-spacing default is 2px]]></title>
+            <link>https://github.com/mdn/content/issues/34671</link>
+            <guid>https://github.com/mdn/content/issues/34671</guid>
+            <pubDate>Sat, 06 Jul 2024 08:40:18 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-spacing" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/border-spacing</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto"><a href="https://www.w3schools.com/csSref/pr_border-spacing.php" rel="nofollow">https://www.w3schools.com/csSref/pr_border-spacing.php</a></p>
+<p dir="auto">Default value: 2px</p>
+<p dir="auto">for example:</p>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+    &lt;title&gt;Separated (and thus separate) cell borders&lt;/title&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+        html {
+            background: silver;
+        }
+
+        body {
+            background: white;
+            padding: 1em;
+        }
+
+        table {
+            border-collapse: separate;
+            width: 300px;
+            height: 300px;
+        }
+
+        #t2 {
+            /* border-spacing: 2px; */
+        }
+
+        td {
+            border: 30px solid black;
+            padding: 30px;
+        }
+
+        tr:nth-child(2) td:nth-child(2) {
+            border-color: gray;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;table id=&quot;t2&quot;&gt;
+        &lt;tr&gt;
+            &lt;td&gt;cell one&lt;/td&gt;
+            &lt;td&gt;cell two&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;cell three&lt;/td&gt;
+            &lt;td&gt;cell four&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;"><pre class="notranslate"><span class="pl-c1">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"<span class="pl-kos">&gt;</span></span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span>
+
+<span class="pl-kos">&lt;</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">meta</span> <span class="pl-c1">http-equiv</span>="<span class="pl-s">content-type</span>" <span class="pl-c1">content</span>="<span class="pl-s">text/html; charset=utf-8</span>"<span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">title</span><span class="pl-kos">&gt;</span>Separated (and thus separate) cell borders<span class="pl-kos">&lt;/</span><span class="pl-ent">title</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">style</span> <span class="pl-c1">type</span>="<span class="pl-s">text/css</span>"<span class="pl-kos">&gt;</span>
+        html {
+            background: silver;
+        }
+
+        body {
+            background: white;
+            padding: 1em;
+        }
+
+        table {
+            border-collapse: separate;
+            width: 300px;
+            height: 300px;
+        }
+
+        #t2 {
+            /* border-spacing: 2px; */
+        }
+
+        td {
+            border: 30px solid black;
+            padding: 30px;
+        }
+
+        tr:nth-child(2) td:nth-child(2) {
+            border-color: gray;
+        }
+    <span class="pl-kos">&lt;/</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
+
+<span class="pl-kos">&lt;</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
+
+    <span class="pl-kos">&lt;</span><span class="pl-ent">table</span> <span class="pl-c1">id</span>="<span class="pl-s">t2</span>"<span class="pl-kos">&gt;</span>
+        <span class="pl-kos">&lt;</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
+            <span class="pl-kos">&lt;</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>cell one<span class="pl-kos">&lt;/</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>
+            <span class="pl-kos">&lt;</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>cell two<span class="pl-kos">&lt;/</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>
+        <span class="pl-kos">&lt;/</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
+        <span class="pl-kos">&lt;</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
+            <span class="pl-kos">&lt;</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>cell three<span class="pl-kos">&lt;/</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>
+            <span class="pl-kos">&lt;</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>cell four<span class="pl-kos">&lt;/</span><span class="pl-ent">td</span><span class="pl-kos">&gt;</span>
+        <span class="pl-kos">&lt;/</span><span class="pl-ent">tr</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;/</span><span class="pl-ent">table</span><span class="pl-kos">&gt;</span>
+
+<span class="pl-kos">&lt;/</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
+
+<span class="pl-kos">&lt;/</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">initial value for border-spacing should be 2px instead of 0.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/border-spacing</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-spacing" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/border-spacing</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/border-spacing/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/border-spacing/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b319e190a9f9df504e84f8b49d06008f6d60b396/hovercard" href="https://github.com/mdn/content/commit/b319e190a9f9df504e84f8b49d06008f6d60b396"><tt>b319e19</tt></a></li>
+<li>Document last modified: 2024-04-25T16:23:45.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-fonts-5] font-variant-ligatures doesn't describe combining values]]></title>
             <link>https://github.com/mdn/content/issues/34582</link>
@@ -208,7 +345,7 @@ to also include flex:initial, bit it doesnt.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/100818373/338013641-fbc5bd37-f3ae-4879-ab3d-340c7331170b.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAyNTUzNzgsIm5iZiI6MTcyMDI1NTA3OCwicGF0aCI6Ii8xMDA4MTgzNzMvMzM4MDEzNjQxLWZiYzViZDM3LWYzYWUtNDg3OS1hYjNkLTM0MGM3MzMxMTcwYi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNlQwODM3NThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03ZDJmYTVlYWRkYTQ0Njk2OGY5MGEyMTc5NDViODY5ZWRjMzMxNzc1M2I0NDMyM2UxNDBjMWRlOGMwY2IwYmRhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.SjucO0fd7erA7tU7zQIMLNF_ZkbY42yKbOIONFFu7l8"><img src="https://private-user-images.githubusercontent.com/100818373/338013641-fbc5bd37-f3ae-4879-ab3d-340c7331170b.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAyNTUzNzgsIm5iZiI6MTcyMDI1NTA3OCwicGF0aCI6Ii8xMDA4MTgzNzMvMzM4MDEzNjQxLWZiYzViZDM3LWYzYWUtNDg3OS1hYjNkLTM0MGM3MzMxMTcwYi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNlQwODM3NThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03ZDJmYTVlYWRkYTQ0Njk2OGY5MGEyMTc5NDViODY5ZWRjMzMxNzc1M2I0NDMyM2UxNDBjMWRlOGMwY2IwYmRhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.SjucO0fd7erA7tU7zQIMLNF_ZkbY42yKbOIONFFu7l8" alt="Screen Shot 2024-06-09 at 5 18 51 PM" style="max-width: 100%;"></a></p>]]></content:encoded>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/100818373/338013641-fbc5bd37-f3ae-4879-ab3d-340c7331170b.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAyNTYwMDIsIm5iZiI6MTcyMDI1NTcwMiwicGF0aCI6Ii8xMDA4MTgzNzMvMzM4MDEzNjQxLWZiYzViZDM3LWYzYWUtNDg3OS1hYjNkLTM0MGM3MzMxMTcwYi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNlQwODQ4MjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iNzdlNWY3ZDY1OWRkNGNiN2M4ZDcwYzM5NzUwYTZmNjZhZWFmODdiMzEyN2NmZWY0YTQ3NGU3YTFjNDQ2MzQ3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.RDhttkIY2XeZ7HVa7beiuQp_iWWnCVN4kTsExrxfyfw"><img src="https://private-user-images.githubusercontent.com/100818373/338013641-fbc5bd37-f3ae-4879-ab3d-340c7331170b.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAyNTYwMDIsIm5iZiI6MTcyMDI1NTcwMiwicGF0aCI6Ii8xMDA4MTgzNzMvMzM4MDEzNjQxLWZiYzViZDM3LWYzYWUtNDg3OS1hYjNkLTM0MGM3MzMxMTcwYi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNlQwODQ4MjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iNzdlNWY3ZDY1OWRkNGNiN2M4ZDcwYzM5NzUwYTZmNjZhZWFmODdiMzEyN2NmZWY0YTQ3NGU3YTFjNDQ2MzQ3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.RDhttkIY2XeZ7HVa7beiuQp_iWWnCVN4kTsExrxfyfw" alt="Screen Shot 2024-06-09 at 5 18 51 PM" style="max-width: 100%;"></a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[css-logical-1] [CSS] Implement margin at-rules]]></title>
@@ -285,8 +422,8 @@ to also include flex:initial, bit it doesnt.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">[Span](Contributes a grid span to the grid item's placement such that the corresponding edge of the grid item's grid area is n lines from the opposite edge.)</p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/519988/322149279-8919dbdd-fbc2-416f-b9b8-0d211c057b16.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAyNTUzNzUsIm5iZiI6MTcyMDI1NTA3NSwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjc5LTg5MTlkYmRkLWZiYzItNDE2Zi1iOWI4LTBkMjExYzA1N2IxNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNlQwODM3NTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xNDM4YjlmNTQ3Mzk0ODhlOGQ1ZDAyN2Y3OTIxYmU4Y2NlOTBmMTc5MThhZWU3YWQ4YzY5NTdiNDE4MTQzOGUxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.5BO7vkZFaE-y9W8HvEcLl18GNRmM8bcW5yKjTfidP70"><img src="https://private-user-images.githubusercontent.com/519988/322149279-8919dbdd-fbc2-416f-b9b8-0d211c057b16.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAyNTUzNzUsIm5iZiI6MTcyMDI1NTA3NSwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjc5LTg5MTlkYmRkLWZiYzItNDE2Zi1iOWI4LTBkMjExYzA1N2IxNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNlQwODM3NTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xNDM4YjlmNTQ3Mzk0ODhlOGQ1ZDAyN2Y3OTIxYmU4Y2NlOTBmMTc5MThhZWU3YWQ4YzY5NTdiNDE4MTQzOGUxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.5BO7vkZFaE-y9W8HvEcLl18GNRmM8bcW5yKjTfidP70" alt="Screenshot 2024-04-13 at 00 56 05" style="max-width: 100%;"></a><br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/519988/322149289-5d9f55ca-0cfc-4aa7-b1f6-406707214d1a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAyNTUzNzUsIm5iZiI6MTcyMDI1NTA3NSwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjg5LTVkOWY1NWNhLTBjZmMtNGFhNy1iMWY2LTQwNjcwNzIxNGQxYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNlQwODM3NTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNmYyMGFlZDhjYTkwNmZhZTRhODI5YmU3NGRlMWYwNWFmODFhZTVlMDM4ZmU2OTg0NmQyOWI3YmIwMzcyMGFiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.ooDNE2AWoi4_Eo7buRSrX0ei0veMQn4ZrYMrUc8I6EE"><img src="https://private-user-images.githubusercontent.com/519988/322149289-5d9f55ca-0cfc-4aa7-b1f6-406707214d1a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAyNTUzNzUsIm5iZiI6MTcyMDI1NTA3NSwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjg5LTVkOWY1NWNhLTBjZmMtNGFhNy1iMWY2LTQwNjcwNzIxNGQxYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNlQwODM3NTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNmYyMGFlZDhjYTkwNmZhZTRhODI5YmU3NGRlMWYwNWFmODFhZTVlMDM4ZmU2OTg0NmQyOWI3YmIwMzcyMGFiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.ooDNE2AWoi4_Eo7buRSrX0ei0veMQn4ZrYMrUc8I6EE" alt="Screenshot 2024-04-13 at 00 56 24" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/519988/322149279-8919dbdd-fbc2-416f-b9b8-0d211c057b16.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAyNTU5OTksIm5iZiI6MTcyMDI1NTY5OSwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjc5LTg5MTlkYmRkLWZiYzItNDE2Zi1iOWI4LTBkMjExYzA1N2IxNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNlQwODQ4MTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wNjE3NzE5MWJhODQxZDJmZGNiNjMyN2QwM2VhNjkwZDQzODcxM2UwMDFmMWZjMzEzNmQxNzAwYTFlNTY4NWVjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.R5h12JfevXftH7rnfUeIGrgTHfQT_GVL62D6HAxeAWo"><img src="https://private-user-images.githubusercontent.com/519988/322149279-8919dbdd-fbc2-416f-b9b8-0d211c057b16.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAyNTU5OTksIm5iZiI6MTcyMDI1NTY5OSwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjc5LTg5MTlkYmRkLWZiYzItNDE2Zi1iOWI4LTBkMjExYzA1N2IxNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNlQwODQ4MTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wNjE3NzE5MWJhODQxZDJmZGNiNjMyN2QwM2VhNjkwZDQzODcxM2UwMDFmMWZjMzEzNmQxNzAwYTFlNTY4NWVjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.R5h12JfevXftH7rnfUeIGrgTHfQT_GVL62D6HAxeAWo" alt="Screenshot 2024-04-13 at 00 56 05" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/519988/322149289-5d9f55ca-0cfc-4aa7-b1f6-406707214d1a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAyNTU5OTksIm5iZiI6MTcyMDI1NTY5OSwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjg5LTVkOWY1NWNhLTBjZmMtNGFhNy1iMWY2LTQwNjcwNzIxNGQxYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNlQwODQ4MTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02NzJjMzg1MjJjNjMwYjg4YTJjNzZiOWI5Yzc3NjNjYWIzMTU0NmUzMjZmMDAzYzBhM2EwMDNmYWNjODlkZDY3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.h3W-E7x6KCYUw907KjDqfTNK38tbswfbb-jRf0UyAk4"><img src="https://private-user-images.githubusercontent.com/519988/322149289-5d9f55ca-0cfc-4aa7-b1f6-406707214d1a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAyNTU5OTksIm5iZiI6MTcyMDI1NTY5OSwicGF0aCI6Ii81MTk5ODgvMzIyMTQ5Mjg5LTVkOWY1NWNhLTBjZmMtNGFhNy1iMWY2LTQwNjcwNzIxNGQxYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNlQwODQ4MTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02NzJjMzg1MjJjNjMwYjg4YTJjNzZiOWI5Yzc3NjNjYWIzMTU0NmUzMjZmMDAzYzBhM2EwMDNmYWNjODlkZDY3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.h3W-E7x6KCYUw907KjDqfTNK38tbswfbb-jRf0UyAk4" alt="Screenshot 2024-04-13 at 00 56 24" style="max-width: 100%;"></a></p>
 <h3 dir="auto">MDN metadata</h3>
 
 <details>
@@ -690,7 +827,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAyNTUzNzMsIm5iZiI6MTcyMDI1NTA3MywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcwNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MDZUMDgzNzUzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MGEyYzQ4ZDJmODNjZjM5MWQyMDQyODYwNjJiMjkwODQyYTNlMDE4N2M2NWYzODBlZmY4Yjk5OWVmZjFjMmVmYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.2mGsWSVBbjoOUdOcDTg44Ec0yJjSxzU3oxBwhH6Y3Lc"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAyNTUzNzMsIm5iZiI6MTcyMDI1NTA3MywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcwNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MDZUMDgzNzUzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MGEyYzQ4ZDJmODNjZjM5MWQyMDQyODYwNjJiMjkwODQyYTNlMDE4N2M2NWYzODBlZmY4Yjk5OWVmZjFjMmVmYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.2mGsWSVBbjoOUdOcDTg44Ec0yJjSxzU3oxBwhH6Y3Lc" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAyNTU5OTcsIm5iZiI6MTcyMDI1NTY5NywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcwNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MDZUMDg0ODE3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NWNlOWEwZjI5ZTY1ZTBjYzkyM2M0MTdkMDQxMGJhYmYzNzJhNWEwNzI1MThmODQ2ZTYzYTIzNzk0MmIyNTBkZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.nRPSgAEgDR6n8QXpw8bgSwfgRo_Dma8xh53ZNSc9bwA"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAyNTU5OTcsIm5iZiI6MTcyMDI1NTY5NywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcwNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MDZUMDg0ODE3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NWNlOWEwZjI5ZTY1ZTBjYzkyM2M0MTdkMDQxMGJhYmYzNzJhNWEwNzI1MThmODQ2ZTYzYTIzNzk0MmIyNTBkZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.nRPSgAEgDR6n8QXpw8bgSwfgRo_Dma8xh53ZNSc9bwA" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
