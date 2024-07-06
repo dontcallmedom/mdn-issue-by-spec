@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[CSS21\] border-spacing default is 2px](https://github.com/mdn/content/issues/34671) (2024-07-06T08:40:18Z)
-  
 * [\[uievents\] KeyboardEvent: code does not produce ShiftRight](https://github.com/mdn/content/issues/34606) (2024-07-04T00:11:21Z)
   
 * [\[css-fonts-5\] font-variant-ligatures doesn't describe combining values](https://github.com/mdn/content/issues/34582) (2024-07-03T03:13:56Z)

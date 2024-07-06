@@ -181,12 +181,11 @@
 <p dir="auto">Next, line breaks are converted to spaces[…]</p>
 </blockquote>
 <p dir="auto">In <a href="https://drafts.csswg.org/css-text/#line-break-transform" rel="nofollow">4.1.3. Segment Break Transformation Rules</a> of the CSS Text Module, in particular Step 2 and the note at the end of 4.1.3, it is explicitly stated that segment breaks can be removed contextually. This is verified by the following HTML code on Firefox:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;h1&gt;你好
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;h1&gt;你好
   世界！&lt;/h1&gt;
-&lt;h1&gt;你好 世界！&lt;/h1&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;h1&gt;你好
-  世界！&lt;/h1&gt;
-&lt;h1&gt;你好 世界！&lt;/h1&gt;
-</code></pre></div>
+&lt;h1&gt;你好 世界！&lt;/h1&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>你好
+  世界！<span class="pl-kos">&lt;/</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>你好 世界！<span class="pl-kos">&lt;/</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span></pre></div>
 </li>
 <li>
 <p dir="auto">In the same subsection, Step 5 is incorrect:</p>
@@ -206,10 +205,9 @@
 </li>
 <li>
 <p dir="auto">This page doesn't mention whitespaces in <a href="https://developer.mozilla.org/en-US/docs/Web/API/Selection" rel="nofollow">selections</a>. For the following HTML code:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;h1&gt;你好
-  世界！&lt;/h1&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;h1&gt;你好
-  世界！&lt;/h1&gt;
-</code></pre></div>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;h1&gt;你好
+  世界！&lt;/h1&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>你好
+  世界！<span class="pl-kos">&lt;/</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span></pre></div>
 <p dir="auto">the rendered text is <code class="notranslate">你好世界！</code>. But when selecting all the visible texts, e.g. pressing <kbd>Ctrl</kbd> + <kbd>A</kbd> on the page on Windows, <code class="notranslate">getSelection().toString()</code> returns <code class="notranslate">你好 世界！</code>, which is also what gets copied by <kbd>Ctrl</kbd> + <kbd>C</kbd> on Firefox on Windows (note that the tab is transformed into a space), whereas <code class="notranslate">getSelection().getRangeAt(0).toString()</code> returns <code class="notranslate">你好\n\t世界！</code>.</p>
 </li>
 </ol>
