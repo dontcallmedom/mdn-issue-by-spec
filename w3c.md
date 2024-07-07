@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, uievents\] \`onerror\` (and others) missing from HTMLBodyElement "Event Handlers" section](https://github.com/mdn/content/issues/34684) (2024-07-07T17:44:00Z)
+  
 * [\[uievents\] KeyboardEvent: code does not produce ShiftRight](https://github.com/mdn/content/issues/34606) (2024-07-04T00:11:21Z)
   
 * [\[css-fonts-5\] font-variant-ligatures doesn't describe combining values](https://github.com/mdn/content/issues/34582) (2024-07-03T03:13:56Z)
