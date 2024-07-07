@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[dom\] Case of node.nodeName](https://github.com/mdn/content/issues/34685) (2024-07-07T18:39:14Z)
+  
 * [\[html, uievents\] \`onerror\` (and others) missing from HTMLBodyElement "Event Handlers" section](https://github.com/mdn/content/issues/34684) (2024-07-07T17:44:00Z)
   
 * [\[html\] "escape inertness" mentioned but never explained how to](https://github.com/mdn/content/issues/34619) (2024-07-04T10:02:29Z)
