@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[dom\] Case of node.nodeName](https://github.com/mdn/content/issues/34685) (2024-07-07T18:39:14Z)
+* [\[dom\] Incorrect casing in example of node.nodeName](https://github.com/mdn/content/issues/34685) (2024-07-07T18:39:14Z)
   
 * [\[dom\] Various Node subclass replaceWith methods should link to each other](https://github.com/mdn/content/issues/34084) (2024-06-12T15:46:35Z)
   
