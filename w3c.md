@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-masking-1, css-shapes-2\] Demo for "rect" doesnt work on Chrome](https://github.com/mdn/content/issues/34741) (2024-07-09T17:40:50Z)
+  
 * [\[html, uievents\] \`onerror\` (and others) missing from HTMLBodyElement "Event Handlers" section](https://github.com/mdn/content/issues/34684) (2024-07-07T17:44:00Z)
   
 * [\[uievents\] KeyboardEvent: code does not produce ShiftRight](https://github.com/mdn/content/issues/34606) (2024-07-04T00:11:21Z)
