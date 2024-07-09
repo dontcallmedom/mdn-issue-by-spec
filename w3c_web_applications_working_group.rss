@@ -561,7 +561,7 @@ Alternatively, the sentence the <em>"Often activeElement will return a <a href="
 <p dir="auto">For example, on the page <a href="https://developer.mozilla.org/fr/docs/Web/API/Document/activeElement" rel="nofollow">Document.activeElement</a>, by counting focusable elements.</p>
 <h3 dir="auto">Most common cases</h3>
 <p dir="auto">The HTMLAnchorElement are focusable on Linux, on Windows and on macOS (with the keyboard setting "<em>Use keyboard navigation to move focus between controls</em>"), and it seems that this is for all browsers :</p>
-<table role="table">
+<markdown-accessiblity-table><table role="table">
 <thead>
 <tr>
 <th>Brower</th>
@@ -578,10 +578,10 @@ Alternatively, the sentence the <em>"Often activeElement will return a <a href="
 <td>1</td>
 </tr>
 </tbody>
-</table>
+</table></markdown-accessiblity-table>
 <h3 dir="auto">The case of macOS</h3>
 <p dir="auto">On macOS, with default OS configuration (without the keyboard setting "<em>Use keyboard navigation to move focus between controls</em>" so) :</p>
-<table role="table">
+<markdown-accessiblity-table><table role="table">
 <thead>
 <tr>
 <th>Brower</th>
@@ -616,7 +616,7 @@ Alternatively, the sentence the <em>"Often activeElement will return a <a href="
 <td>1</td>
 </tr>
 </tbody>
-</table>]]></content:encoded>
+</table></markdown-accessiblity-table>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[IndexedDB-3] indexedDB.deleteDatabase doc: Mention that deleting a database isn't completed until the upgradeNeeded result is closed]]></title>
