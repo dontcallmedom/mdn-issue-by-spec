@@ -40,8 +40,6 @@
   
 * [\[webxr\] Explanation of \`bounded-floor\`/\`local\`/\`local-floor\` needs improvement](https://github.com/mdn/content/issues/33111) (2024-04-16T04:22:18Z)
   
-* [\[css-grid-3\] Is span used to span tracks or lines?](https://github.com/mdn/content/issues/33066) (2024-04-12T22:03:28Z)
-  
 * [\[css-shadow-parts-1\] Incorrect statement about pseudo-elements needing to come last in a selector](https://github.com/mdn/content/issues/32971) (2024-04-05T20:16:52Z)
   
 * [\[appmanifest\] Manifest::scope documentation incorrectly states that out-of-scope navigation happens in new browser context](https://github.com/mdn/content/issues/32948) (2024-04-03T19:24:15Z)
