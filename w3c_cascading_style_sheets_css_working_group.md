@@ -54,8 +54,6 @@
   
 * [\[cssom-view-1\] Guide on reflow and performance optimizations](https://github.com/mdn/content/issues/26330) (2023-04-21T01:08:41Z)
   
-* [\[css-backgrounds-4\] add note on \`border-image\` and \`border-radius\` lack of interaction ](https://github.com/mdn/content/issues/25875) (2023-04-03T12:49:30Z)
-  
 * [\[css-images-3\] Outdated note for \`image-rendering\`](https://github.com/mdn/content/issues/25774) (2023-03-30T15:21:01Z)
   
 * [\[web-animations-2\] KeyframeEffect.target: issues with the example](https://github.com/mdn/content/issues/25694) (2023-03-28T06:54:37Z)
