@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] The code example doesn't run](https://github.com/mdn/content/issues/34783) (2024-07-11T16:38:50Z)
+  
 * [\[html, uievents\] \`onerror\` (and others) missing from HTMLBodyElement "Event Handlers" section](https://github.com/mdn/content/issues/34684) (2024-07-07T17:44:00Z)
   
 * [\[html\] "escape inertness" mentioned but never explained how to](https://github.com/mdn/content/issues/34619) (2024-07-04T10:02:29Z)
