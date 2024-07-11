@@ -4,10 +4,46 @@
         <title>W3C Web Cryptography Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_cryptography_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Cryptography Working Group</description>
-        <lastBuildDate>Sat, 09 Dec 2023 03:20:17 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 11 Jul 2024 11:49:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[WebCryptoAPI] Invalid Uint8Array constructor used in HKDF SubtleCrypto.deriveKey example]]></title>
+            <link>https://github.com/mdn/content/issues/34778</link>
+            <guid>https://github.com/mdn/content/issues/34778</guid>
+            <pubDate>Thu, 11 Jul 2024 11:49:22 GMT</pubDate>
+            <content:encoded><![CDATA[<p dir="auto">In the MDN <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/deriveKey#hkdf_2" rel="nofollow">HKDF SubtleCrypto.deriveKey example</a> a Uint8Array is constructed using a string. While it does not throw an error, the Uint8Array created does not contain ANY data and the string used in construction is ignored.</p>
+<p dir="auto">Issue line:<br>
+</p><div class="Box Box--condensed my-2">
+  <div class="Box-header f6">
+    <p class="mb-0 text-bold">
+      <a href="https://github.com/mdn/content/blob/17e4cd3a2a62db162788a63ec3879ae0de491ddb/files/en-us/web/api/subtlecrypto/derivekey/index.md?plain=1#L259">content/files/en-us/web/api/subtlecrypto/derivekey/index.md</a>
+    </p>
+    <p class="mb-0 color-fg-muted">
+         Line 259
+      in
+      <a data-pjax="true" class="commit-tease-sha Link--inTextBlock" href="/mdn/content/commit/17e4cd3a2a62db162788a63ec3879ae0de491ddb">17e4cd3</a>
+    </p>
+  </div>
+  <div itemprop="text" class="Box-body p-0 blob-wrapper blob-wrapper-embedded data">
+    <table class="highlight tab-size mb-0 js-file-line-container" data-tab-size="8" data-paste-markdown-skip="">
+
+        <tbody><tr class="border-0">
+          <td id="L259" class="blob-num border-0 px-3 py-0 color-bg-default" data-line-number="259"></td>
+          <td id="LC259" class="blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line"> info<span class="pl-k">:</span> <span class="pl-k">new</span> <span class="pl-en">Uint8Array</span>(<span class="pl-s"><span class="pl-pds">"</span>Encryption example<span class="pl-pds">"</span></span>), </td>
+        </tr>
+    </tbody></table>
+  </div>
+</div>
+<p></p>
+<p dir="auto">Issue page:<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/deriveKey" rel="nofollow">SubtleCrypto: deriveKey() method<br>
+</a></p>
+<p dir="auto">A fix that would actually create a Uint8Array from the given string would be:</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="      info: new TextEncoder().encode(&quot;Encryption example&quot;),"><pre class="notranslate">      <span class="pl-s1">info</span>: <span class="pl-k">new</span> <span class="pl-v">TextEncoder</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">encode</span><span class="pl-kos">(</span><span class="pl-s">"Encryption example"</span><span class="pl-kos">)</span><span class="pl-kos">,</span></pre></div>
+<p dir="auto">I have a pull request ready.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[WebCryptoAPI] SubtleCrypto: sign() method missing Ed25519 in Supported algorithms]]></title>
             <link>https://github.com/mdn/content/issues/30886</link>
