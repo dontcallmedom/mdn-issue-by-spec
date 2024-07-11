@@ -104,8 +104,6 @@
   
 * [\[webaudio\] interrupted state not listed as a valid state value, but an example of interrupted state was given](https://github.com/mdn/content/issues/26129) (2023-04-11T18:49:59Z)
   
-* [\[css-images-3\] Outdated note for \`image-rendering\`](https://github.com/mdn/content/issues/25774) (2023-03-30T15:21:01Z)
-  
 * [\[webrtc\] The new restartIce() method should replace the old "iceRestart" parameter in the documentation consistently.](https://github.com/mdn/content/issues/25732) (2023-03-29T09:34:05Z)
   
 * [\[web-animations-2\] KeyframeEffect.target: issues with the example](https://github.com/mdn/content/issues/25694) (2023-03-28T06:54:37Z)

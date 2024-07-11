@@ -54,8 +54,6 @@
   
 * [\[cssom-view-1\] Guide on reflow and performance optimizations](https://github.com/mdn/content/issues/26330) (2023-04-21T01:08:41Z)
   
-* [\[css-images-3\] Outdated note for \`image-rendering\`](https://github.com/mdn/content/issues/25774) (2023-03-30T15:21:01Z)
-  
 * [\[web-animations-2\] KeyframeEffect.target: issues with the example](https://github.com/mdn/content/issues/25694) (2023-03-28T06:54:37Z)
   
 * [\[css-sizing-4, css-conditional-3, css-sizing-3\] Document length-fitting on \<select\>](https://github.com/mdn/content/issues/25073) (2023-03-05T03:22:13Z)
