@@ -18,8 +18,6 @@
   
 * [\[css-shadow-parts-1\] Incorrect statement about pseudo-elements needing to come last in a selector](https://github.com/mdn/content/issues/32971) (2024-04-05T20:16:52Z)
   
-* [\[cssom-1\] Mention how getPropertyValue serializes values (color representation, etc.)](https://github.com/mdn/content/issues/32826) (2024-03-25T16:39:00Z)
-  
 * [\[dom, cssom-view-1, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] querySelectorAll() does not state how the results are sorted](https://github.com/mdn/content/issues/32615) (2024-03-08T14:53:28Z)
   
 * [\[html, css-images-3\] Statement about applicable object-position and object-fit is wrong (?)](https://github.com/mdn/content/issues/32474) (2024-02-28T16:22:14Z)
