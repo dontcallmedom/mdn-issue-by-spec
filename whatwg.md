@@ -20,11 +20,7 @@
   
 * [\[dom\] Various Node subclass replaceWith methods should link to each other](https://github.com/mdn/content/issues/34084) (2024-06-12T15:46:35Z)
   
-* [\[html\] Add a warning/suggestion to canvas.toDataURL to prefer toBlob](https://github.com/mdn/content/issues/33748) (2024-05-25T10:54:03Z)
-  
 * [\[html\] IMPORTANT description and example missing](https://github.com/mdn/content/issues/33573) (2024-05-13T01:38:50Z)
-  
-* [\[html\] Media events: Mention that \`ended\` is not fired if \`loop\` is set to true](https://github.com/mdn/content/issues/33398) (2024-05-03T16:57:46Z)
   
 * [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
   
