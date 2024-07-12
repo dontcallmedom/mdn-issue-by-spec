@@ -6,7 +6,5 @@
   
 * [\[dom, uievents, cssom-view-1, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
   
-* [\[DOM-Parsing\] No mention of comments in reference](https://github.com/mdn/content/issues/21761) (2022-10-23T12:49:25Z)
-  
 * [\[html, dom, WebIDL-1, FileAPI, uievents, cssom-view-1, pointerlock-2\] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
