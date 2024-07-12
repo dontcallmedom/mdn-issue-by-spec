@@ -106,8 +106,6 @@
   
 * [\[webrtc\] The new restartIce() method should replace the old "iceRestart" parameter in the documentation consistently.](https://github.com/mdn/content/issues/25732) (2023-03-29T09:34:05Z)
   
-* [\[web-animations-2\] KeyframeEffect.target: issues with the example](https://github.com/mdn/content/issues/25694) (2023-03-28T06:54:37Z)
-  
 * [\[webaudio\] AnalyserNode::getFloatTimeDomainData() doesn't specify the encoding of the waveform](https://github.com/mdn/content/issues/25571) (2023-03-23T14:41:18Z)
   
 * [\[screen-capture\] MediaDevices#getDisplayMedia(): systemAudio is misleading](https://github.com/mdn/content/issues/25307) (2023-03-14T03:38:33Z)
