@@ -86,7 +86,7 @@
   
 * [\[dom, uievents, cssom-view-1, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
   
-* [\[webrtc\] MDN Web Docs state incorrectly that RTCRtpTransceiver.mid is null until negotiation is completed.](https://github.com/mdn/content/issues/27502) (2023-06-23T10:39:29Z)
+* [\[webrtc\] Incorrectly states that RTCRtpTransceiver.mid is null until negotiation is completed.](https://github.com/mdn/content/issues/27502) (2023-06-23T10:39:29Z)
   
 * [\[IndexedDB-3\] "Using IndexedDB" guide seems to be out of sync with the more specific documentation](https://github.com/mdn/content/issues/27330) (2023-06-14T18:17:39Z)
   
