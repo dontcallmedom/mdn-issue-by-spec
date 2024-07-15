@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Remove CanvasRenderingContext2d scrollPathIntoView](https://github.com/mdn/content/issues/34845) (2024-07-15T19:35:37Z)
+  
 * [\[html\] document.write example doesn't work](https://github.com/mdn/content/issues/34783) (2024-07-11T16:38:50Z)
   
 * [\[html\] "escape inertness" mentioned but never explained how to](https://github.com/mdn/content/issues/34619) (2024-07-04T10:02:29Z)
