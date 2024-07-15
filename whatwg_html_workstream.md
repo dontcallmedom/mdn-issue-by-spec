@@ -58,8 +58,6 @@
   
 * [\[html\] Image request fired as soon as src is set](https://github.com/mdn/content/issues/26560) (2023-05-03T17:23:34Z)
   
-* [\[html\] ValidityState broken link to customError](https://github.com/mdn/content/issues/26522) (2023-05-01T18:58:31Z)
-  
 * [\[html\] event doesnt fire on fully cached pages (no event appears to)](https://github.com/mdn/content/issues/24770) (2023-02-22T21:34:14Z)
   
 * [\[html\] In the example, isn't the requestAnimationFrame always called more than once if once queued were fired within a single frame?](https://github.com/mdn/content/issues/23635) (2023-01-14T14:28:24Z)
