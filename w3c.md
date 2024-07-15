@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[service-workers-1\] New page for Service-Worker-Allowed](https://github.com/mdn/content/issues/34854) (2024-07-15T21:48:21Z)
+  
 * [\[css-fonts-5\] font-variant-ligatures doesn't describe combining values](https://github.com/mdn/content/issues/34582) (2024-07-03T03:13:56Z)
   
 * [\[cssom-view-1\] document.caretPositionFromPoint() API needs update](https://github.com/mdn/content/issues/34492) (2024-06-28T18:22:16Z)
