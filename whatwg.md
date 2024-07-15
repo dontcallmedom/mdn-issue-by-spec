@@ -18,8 +18,6 @@
   
 * [\[dom\] Various Node subclass replaceWith methods should link to each other](https://github.com/mdn/content/issues/34084) (2024-06-12T15:46:35Z)
   
-* [\[html\] IMPORTANT description and example missing](https://github.com/mdn/content/issues/33573) (2024-05-13T01:38:50Z)
-  
 * [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
   
 * [\[html\] label accessibility advice is misleading](https://github.com/mdn/content/issues/33283) (2024-04-26T14:13:16Z)
