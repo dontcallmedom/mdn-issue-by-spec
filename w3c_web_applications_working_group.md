@@ -2,10 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html, uievents\] \`onerror\` (and others) missing from HTMLBodyElement "Event Handlers" section](https://github.com/mdn/content/issues/34684) (2024-07-07T17:44:00Z)
-  
-* [\[uievents\] KeyboardEvent: code does not produce ShiftRight](https://github.com/mdn/content/issues/34606) (2024-07-04T00:11:21Z)
-  
 * [\[html, FileAPI\] Live examples using window.open are broken](https://github.com/mdn/content/issues/34350) (2024-06-22T21:35:10Z)
   
 * [\[appmanifest\] Manifest::scope documentation incorrectly states that out-of-scope navigation happens in new browser context](https://github.com/mdn/content/issues/32948) (2024-04-03T19:24:15Z)

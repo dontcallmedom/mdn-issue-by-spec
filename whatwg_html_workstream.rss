@@ -39,66 +39,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html, uievents] `onerror` (and others) missing from HTMLBodyElement "Event Handlers" section]]></title>
-            <link>https://github.com/mdn/content/issues/34684</link>
-            <guid>https://github.com/mdn/content/issues/34684</guid>
-            <pubDate>Sun, 07 Jul 2024 17:44:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Event handlers</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The list in this section is incomplete. <code class="notranslate">onerror</code> is not listed, for example.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto"><code class="notranslate">onerror</code> should be shown as one of the cases (along with a few others, see attached code).</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">Notice that in the page documenting <code class="notranslate">onerror</code> on the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/error_event#:~:text=Note%3A%20These%20parameter%20names%20are%20observable%20with%20an%20HTML%20event%20handler%20attribute%2C%20where%20the%20first%20parameter%20is%20called%20event%20instead%20of%20message." rel="nofollow">window</a> it mentions HTML event handler attributes, which wouldn't be possible to assign if not via the document's body.</p>
-<p dir="auto">Also of interest is the content found in the <a href="https://html.spec.whatwg.org/multipage/indices.html#event-error:~:text=List%20of%20event%20handler%20content%20attributes" rel="nofollow">WHATWG HTML Standard</a> that lists the <code class="notranslate">body</code> specifically as an alias for a number of window events which clued me to the possibility that onerror would be one of these cases (along with that MDN notice above), even if it isn't explicitly listed as such on this page.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">When running the following code we can get a fuller list of aliased events:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const checkAliasedEvents = (a = document.body, b = window) =&gt; {
-    const aliases = []
-
-    for (const key in a) {
-        if (!key.startsWith('on')) continue;
-        if (a[key] !== b[key]) continue;
-        a[key] = () =&gt; {}
-        if (a[key] === b[key]) aliases.push(key)
-    }
-
-    return aliases.sort()
-}
-
-console.log(checkAliasedEvents())"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-en">checkAliasedEvents</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">body</span><span class="pl-kos">,</span> <span class="pl-s1">b</span> <span class="pl-c1">=</span> <span class="pl-smi">window</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-    <span class="pl-k">const</span> <span class="pl-s1">aliases</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-kos">]</span>
-
-    <span class="pl-k">for</span> <span class="pl-kos">(</span><span class="pl-k">const</span> <span class="pl-s1">key</span> <span class="pl-k">in</span> <span class="pl-s1">a</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-        <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-c1">!</span><span class="pl-s1">key</span><span class="pl-kos">.</span><span class="pl-en">startsWith</span><span class="pl-kos">(</span><span class="pl-s">'on'</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-k">continue</span><span class="pl-kos">;</span>
-        <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">a</span><span class="pl-kos">[</span><span class="pl-s1">key</span><span class="pl-kos">]</span> <span class="pl-c1">!==</span> <span class="pl-s1">b</span><span class="pl-kos">[</span><span class="pl-s1">key</span><span class="pl-kos">]</span><span class="pl-kos">)</span> <span class="pl-k">continue</span><span class="pl-kos">;</span>
-        <span class="pl-s1">a</span><span class="pl-kos">[</span><span class="pl-s1">key</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span><span class="pl-kos">}</span>
-        <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">a</span><span class="pl-kos">[</span><span class="pl-s1">key</span><span class="pl-kos">]</span> <span class="pl-c1">===</span> <span class="pl-s1">b</span><span class="pl-kos">[</span><span class="pl-s1">key</span><span class="pl-kos">]</span><span class="pl-kos">)</span> <span class="pl-s1">aliases</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-s1">key</span><span class="pl-kos">)</span>
-    <span class="pl-kos">}</span>
-
-    <span class="pl-k">return</span> <span class="pl-s1">aliases</span><span class="pl-kos">.</span><span class="pl-en">sort</span><span class="pl-kos">(</span><span class="pl-kos">)</span>
-<span class="pl-kos">}</span>
-
-<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-en">checkAliasedEvents</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span></pre></div>
-<p dir="auto">There are a few entries beyond <code class="notranslate">onerror</code>, that are listed when running the code above, that are not listed on the HTMLBodyElement page.</p>
-<p dir="auto">The list will only contain the events that the current browser actually supports, for example, the<code class="notranslate">ongamepadconnected</code> event  only showed up in Firefox, and not in Chrome. That being said, <code class="notranslate">onerror</code> showed up in both.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/htmlbodyelement</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlbodyelement/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlbodyelement/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/387d0d4d8690c0d2c9db1b85eae28ffea0f3ac1f/hovercard" href="https://github.com/mdn/content/commit/387d0d4d8690c0d2c9db1b85eae28ffea0f3ac1f"><tt>387d0d4</tt></a></li>
-<li>Document last modified: 2023-02-20T04:32:55.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] "escape inertness" mentioned but never explained how to]]></title>
             <link>https://github.com/mdn/content/issues/34619</link>
             <guid>https://github.com/mdn/content/issues/34619</guid>
@@ -285,7 +225,7 @@ It is important that <code class="notranslate">&lt;base href[="https"] target="_
 <p dir="auto"><em>No-Response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto">2024 May 12, Safari 17.4.1 requires that both <code class="notranslate">&lt;base&gt;</code> targets must be placed in the following order.  First, <code class="notranslate">base href[="https"] target="_blank"</code> followed by the <code class="notranslate">base target="_self"</code>. So that the browser can access described html document external <code class="notranslate">_blank</code> and interna <code class="notranslate">_self</code>l link behaviors. Thus deploying the herein described ease-of-use Base URL element metadata accessibility efficiencies.</p>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/6208716/329907499-8e3d6dcd-89d4-42df-a951-87dc93dd8258.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEwMTA1NzIsIm5iZiI6MTcyMTAxMDI3MiwicGF0aCI6Ii82MjA4NzE2LzMyOTkwNzQ5OS04ZTNkNmRjZC04OWQ0LTQyZGYtYTk1MS04N2RjOTNkZDgyNTgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MTVUMDIyNDMyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjlhMTljZmU2MDdkMTRjY2UzMGViM2Q4N2NiODkxZjM1ZDBjZTg0NDU2NTAxYTE2ZWU4ZmY1MzZlNmUwOTc1ZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.XvZtFTVb9f5stUntAiedkhLEUcPkdT05OU35grQ44ks"><img width="942" alt="Screen Shot 2024-05-12 at 19 44 55" src="https://private-user-images.githubusercontent.com/6208716/329907499-8e3d6dcd-89d4-42df-a951-87dc93dd8258.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEwMTA1NzIsIm5iZiI6MTcyMTAxMDI3MiwicGF0aCI6Ii82MjA4NzE2LzMyOTkwNzQ5OS04ZTNkNmRjZC04OWQ0LTQyZGYtYTk1MS04N2RjOTNkZDgyNTgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MTVUMDIyNDMyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjlhMTljZmU2MDdkMTRjY2UzMGViM2Q4N2NiODkxZjM1ZDBjZTg0NDU2NTAxYTE2ZWU4ZmY1MzZlNmUwOTc1ZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.XvZtFTVb9f5stUntAiedkhLEUcPkdT05OU35grQ44ks" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/6208716/329907499-8e3d6dcd-89d4-42df-a951-87dc93dd8258.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEwMTIwNjEsIm5iZiI6MTcyMTAxMTc2MSwicGF0aCI6Ii82MjA4NzE2LzMyOTkwNzQ5OS04ZTNkNmRjZC04OWQ0LTQyZGYtYTk1MS04N2RjOTNkZDgyNTgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MTVUMDI0OTIxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NjMxNTkzYzg4NTViMDA1ZDEyMGI3YjAwYTg3YjEyYWM5NDUxNTgxYTkwMDA1M2ZmNmJhYTI4Mzk1YTc2OTI3YyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.QRtDNNaOtD5hr2bjnFrpBEjWCxgwt1Fg1DW6KrEg2eg"><img width="942" alt="Screen Shot 2024-05-12 at 19 44 55" src="https://private-user-images.githubusercontent.com/6208716/329907499-8e3d6dcd-89d4-42df-a951-87dc93dd8258.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEwMTIwNjEsIm5iZiI6MTcyMTAxMTc2MSwicGF0aCI6Ii82MjA4NzE2LzMyOTkwNzQ5OS04ZTNkNmRjZC04OWQ0LTQyZGYtYTk1MS04N2RjOTNkZDgyNTgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MTVUMDI0OTIxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NjMxNTkzYzg4NTViMDA1ZDEyMGI3YjAwYTg3YjEyYWM5NDUxNTgxYTkwMDA1M2ZmNmJhYTI4Mzk1YTc2OTI3YyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.QRtDNNaOtD5hr2bjnFrpBEjWCxgwt1Fg1DW6KrEg2eg" style="max-width: 100%;"></a>
 (Safari default settings)
 <h3 dir="auto">MDN metadata</h3>
 
@@ -744,7 +684,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEwMTA1NzAsIm5iZiI6MTcyMTAxMDI3MCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MTVUMDIyNDMwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9N2MwODQ3MGEzZDdlZDg5MWNiYmMyYTEwMDA0YjI3OTExNjkyNDRiZDAwNzIxM2Q2MTBiZGE0MDQxODhiNmM4NiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.bdBxW-2IRiJy3OFotElVHoqxUKaQBTf5o1Aq5BEoVCE"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEwMTA1NzAsIm5iZiI6MTcyMTAxMDI3MCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MTVUMDIyNDMwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9N2MwODQ3MGEzZDdlZDg5MWNiYmMyYTEwMDA0YjI3OTExNjkyNDRiZDAwNzIxM2Q2MTBiZGE0MDQxODhiNmM4NiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.bdBxW-2IRiJy3OFotElVHoqxUKaQBTf5o1Aq5BEoVCE" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEwMTIwNTksIm5iZiI6MTcyMTAxMTc1OSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MTVUMDI0OTE5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjMyMDk0Y2M2OTliNDgzZWIwOTczODI4MGFlMjM4YWJlNDRjNzMyMDZjZWFkNGZkNTMxZjkzNTJkM2ZmZWUxNCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.-ZyMNjzY_j2ihEGH-kjPO1HzBFKEuPwZvP_uf5Hfubo"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEwMTIwNTksIm5iZiI6MTcyMTAxMTc1OSwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MTVUMDI0OTE5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjMyMDk0Y2M2OTliNDgzZWIwOTczODI4MGFlMjM4YWJlNDRjNzMyMDZjZWFkNGZkNTMxZjkzNTJkM2ZmZWUxNCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.-ZyMNjzY_j2ihEGH-kjPO1HzBFKEuPwZvP_uf5Hfubo" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>

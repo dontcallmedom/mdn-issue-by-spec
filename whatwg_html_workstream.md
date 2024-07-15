@@ -4,8 +4,6 @@
 
 * [\[html\] document.write example doesn't work](https://github.com/mdn/content/issues/34783) (2024-07-11T16:38:50Z)
   
-* [\[html, uievents\] \`onerror\` (and others) missing from HTMLBodyElement "Event Handlers" section](https://github.com/mdn/content/issues/34684) (2024-07-07T17:44:00Z)
-  
 * [\[html\] "escape inertness" mentioned but never explained how to](https://github.com/mdn/content/issues/34619) (2024-07-04T10:02:29Z)
   
 * [\[html\] \<pre\> elements - problematic characters and auto replacement](https://github.com/mdn/content/issues/34545) (2024-07-01T23:43:33Z)
