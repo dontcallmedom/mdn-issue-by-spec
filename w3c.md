@@ -36,8 +36,6 @@
   
 * [\[webaudio\] ConvolverNode example needs user interaction](https://github.com/mdn/content/issues/33175) (2024-04-19T12:46:49Z)
   
-* [\[css-position-3\] "Sticky positioning is a hybrid of relative and fixed positioning" is slightly confusing](https://github.com/mdn/content/issues/33146) (2024-04-18T08:15:12Z)
-  
 * [\[webxr\] Explanation of \`bounded-floor\`/\`local\`/\`local-floor\` needs improvement](https://github.com/mdn/content/issues/33111) (2024-04-16T04:22:18Z)
   
 * [\[css-shadow-parts-1\] Incorrect statement about pseudo-elements needing to come last in a selector](https://github.com/mdn/content/issues/32971) (2024-04-05T20:16:52Z)
