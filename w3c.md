@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[service-workers-1\] Cache API is listed as a Service Worker API, but the API is not specific to Service Workers](https://github.com/mdn/content/issues/34889) (2024-07-17T22:04:43Z)
+  
 * [\[css-break-3\] \[CSS\] Screenshots of examples in \`box-decoration-break\` can be embedded as live samples instead](https://github.com/mdn/content/issues/34884) (2024-07-17T08:33:08Z)
   
 * [\[service-workers-1\] New page for Service-Worker-Allowed](https://github.com/mdn/content/issues/34854) (2024-07-15T21:48:21Z)
