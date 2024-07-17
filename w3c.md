@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-break-3\] \[CSS\] Screenshots of examples in \`box-decoration-break\` can be embedded as live samples instead](https://github.com/mdn/content/issues/34884) (2024-07-17T08:33:08Z)
+  
 * [\[service-workers-1\] New page for Service-Worker-Allowed](https://github.com/mdn/content/issues/34854) (2024-07-15T21:48:21Z)
   
 * [\[html, uievents\] \`onerror\` (and others) missing from HTMLBodyElement "Event Handlers" section](https://github.com/mdn/content/issues/34684) (2024-07-07T17:44:00Z)
