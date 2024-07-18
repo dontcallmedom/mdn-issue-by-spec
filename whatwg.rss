@@ -4,10 +4,52 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Thu, 11 Jul 2024 16:38:50 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 17 Jul 2024 13:22:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[url] api.URLSearchParams.delete - Using URLSearchParams.delete method changes the enconding of unrelated search params]]></title>
+            <link>https://github.com/mdn/content/issues/34896</link>
+            <guid>https://github.com/mdn/content/issues/34896</guid>
+            <pubDate>Wed, 17 Jul 2024 13:22:45 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">What type of issue is this?</h3>
+<p dir="auto">Browser bug (a bug with a feature that may impact site compatibility)</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">There should be a warning about the lack of consistency of the method while working with URI Encoded Search Params.</p>
+<h3 dir="auto">What browsers does this problem apply to, if applicable?</h3>
+<p dir="auto">Chromium (Chrome, Edge 79+, Opera, Samsung Internet), Firefox</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A section with a example involving the usage of a Encoded URI search param. Such as:</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const url = new URL(&quot;https://example.com?search=1234&amp;param=my%20param&quot;);
+console.log(`Query string (before):\t ${url.search}`);
+url.searchParams.delete(&quot;search&quot;);
+console.log(`Query string (after):\t ${url.search}`); "><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">url</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-c1">URL</span><span class="pl-kos">(</span><span class="pl-s">"https://example.com?search=1234&amp;param=my%20param"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`Query string (before):\t <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">url</span><span class="pl-kos">.</span><span class="pl-c1">search</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">url</span><span class="pl-kos">.</span><span class="pl-c1">searchParams</span><span class="pl-kos">.</span><span class="pl-en">delete</span><span class="pl-kos">(</span><span class="pl-s">"search"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`Query string (after):\t <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">url</span><span class="pl-kos">.</span><span class="pl-c1">search</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">)</span><span class="pl-kos">;</span> </pre></div>
+<h3 dir="auto">Did you test this? If so, how?</h3>
+<p dir="auto">You can simply paste it on Firefox/Chromium console and get this output:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Query string (before):	 ?search=1234&amp;param=my%20param
+Query string (after):	 ?param=my+param"><pre class="notranslate"><code class="notranslate">Query string (before):	 ?search=1234&amp;param=my%20param
+Query string (after):	 ?param=my+param
+</code></pre></div>
+<h3 dir="auto">Can you link to any release notes, bugs, pull requests, or MDN pages related to this?</h3>
+<p dir="auto">Couldn't find any</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/delete" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/delete</a></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>MDN page report details</summary>
+<ul dir="auto">
+<li>Query: <code class="notranslate">api.URLSearchParams.delete</code></li>
+<li>Report started: 2024-07-17T13:07:48.355Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] document.write example doesn't work]]></title>
             <link>https://github.com/mdn/content/issues/34783</link>
@@ -892,7 +934,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEyODM3NjIsIm5iZiI6MTcyMTI4MzQ2MiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MThUMDYxNzQyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NmQ0YjY5NjUxYTI2NjczY2YyYzA5OWJiYmVhYTcxYWI1ODNlNmYwYWVjNTdlMGZiYmYzNmY2MDgxNDZjYmJhZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.a8_y4XSly3eGbiP0Tsp4hgZw0WamxVdt9LIz8EohtHQ"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEyODM3NjIsIm5iZiI6MTcyMTI4MzQ2MiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MThUMDYxNzQyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NmQ0YjY5NjUxYTI2NjczY2YyYzA5OWJiYmVhYTcxYWI1ODNlNmYwYWVjNTdlMGZiYmYzNmY2MDgxNDZjYmJhZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.a8_y4XSly3eGbiP0Tsp4hgZw0WamxVdt9LIz8EohtHQ" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEyODQ5MTYsIm5iZiI6MTcyMTI4NDYxNiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MThUMDYzNjU2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjIwYzJlZjAyOWI2YWM2YjEyYTBkMTU0OGM5ZTE2ZjFkMDFlNGE4YTY2OWEyZjlmYTVmOGJmM2M4OWZlYTU3NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.rB8rwSf9umFUFsefN-bHZ7YwhhvsE_YbbM91CaxZaIM"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEyODQ5MTYsIm5iZiI6MTcyMTI4NDYxNiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MThUMDYzNjU2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjIwYzJlZjAyOWI2YWM2YjEyYTBkMTU0OGM5ZTE2ZjFkMDFlNGE4YTY2OWEyZjlmYTVmOGJmM2M4OWZlYTU3NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.rB8rwSf9umFUFsefN-bHZ7YwhhvsE_YbbM91CaxZaIM" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
