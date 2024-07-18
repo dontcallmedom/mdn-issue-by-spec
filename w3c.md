@@ -10,8 +10,6 @@
   
 * [\[html, uievents\] \`onerror\` (and others) missing from HTMLBodyElement "Event Handlers" section](https://github.com/mdn/content/issues/34684) (2024-07-07T17:44:00Z)
   
-* [\[css-fonts-5\] font-variant-ligatures doesn't describe combining values](https://github.com/mdn/content/issues/34582) (2024-07-03T03:13:56Z)
-  
 * [\[cssom-view-1\] document.caretPositionFromPoint() API needs update](https://github.com/mdn/content/issues/34492) (2024-06-28T18:22:16Z)
   
 * [\[filter-effects-2\] missing important note - feColorMatrix uses linearRGB by default](https://github.com/mdn/content/issues/34444) (2024-06-27T08:33:04Z)

@@ -39,61 +39,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[css-fonts-5] font-variant-ligatures doesn't describe combining values]]></title>
-            <link>https://github.com/mdn/content/issues/34582</link>
-            <guid>https://github.com/mdn/content/issues/34582</guid>
-            <pubDate>Wed, 03 Jul 2024 03:13:56 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-ligatures" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-ligatures</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Syntax</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Current text:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="The font-variant-ligatures property is specified as one of the keyword values listed below."><pre class="notranslate"><code class="notranslate">The font-variant-ligatures property is specified as one of the keyword values listed below.
-</code></pre></div>
-<p dir="auto"><a href="https://drafts.csswg.org/css-fonts/#font-variant-ligatures-prop" rel="nofollow">Grammar</a>:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="normal | none | [ &lt;common-lig-values&gt; || &lt;discretionary-lig-values&gt; || &lt;historical-lig-values&gt; || &lt;contextual-alt-values&gt; ]
-&lt;common-lig-values&gt;        = [ common-ligatures | no-common-ligatures ]
-&lt;discretionary-lig-values&gt; = [ discretionary-ligatures | no-discretionary-ligatures ]
-&lt;historical-lig-values&gt;    = [ historical-ligatures | no-historical-ligatures ]
-&lt;contextual-alt-values&gt;    = [ contextual | no-contextual ]"><pre class="notranslate"><code class="notranslate">normal | none | [ &lt;common-lig-values&gt; || &lt;discretionary-lig-values&gt; || &lt;historical-lig-values&gt; || &lt;contextual-alt-values&gt; ]
-&lt;common-lig-values&gt;        = [ common-ligatures | no-common-ligatures ]
-&lt;discretionary-lig-values&gt; = [ discretionary-ligatures | no-discretionary-ligatures ]
-&lt;historical-lig-values&gt;    = [ historical-ligatures | no-historical-ligatures ]
-&lt;contextual-alt-values&gt;    = [ contextual | no-contextual ]
-</code></pre></div>
-<p dir="auto"><a href="https://drafts.csswg.org/css-values-4/#comb-any" rel="nofollow">Double bar</a>:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="A double bar (||) separates two or more options: one or more of them must occur, in any order."><pre class="notranslate"><code class="notranslate">A double bar (||) separates two or more options: one or more of them must occur, in any order.
-</code></pre></div>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Something like syntax description in <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric#syntax" rel="nofollow">font-variant-numeric</a>, for example:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="This property can take one of two forms:
-
-- either the keyword value `normal` or `none`
-- or one or more of the other (positive or negative) values listed below, space-separated, in any order."><pre class="notranslate"><code class="notranslate">This property can take one of two forms:
-
-- either the keyword value `normal` or `none`
-- or one or more of the other (positive or negative) values listed below, space-separated, in any order.
-</code></pre></div>
-<p dir="auto">It's a pretty complicated grammar, so maybe a much larger explanation would help instead though.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/font-variant-ligatures</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-ligatures" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-ligatures</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/font-variant-ligatures/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/font-variant-ligatures/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/aac4966bd12c77281f9374bbfaf4e17e2680ac3b/hovercard" href="https://github.com/mdn/content/commit/aac4966bd12c77281f9374bbfaf4e17e2680ac3b"><tt>aac4966</tt></a></li>
-<li>Document last modified: 2024-06-13T20:20:50.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[cssom-view-1] document.caretPositionFromPoint() API needs update]]></title>
             <link>https://github.com/mdn/content/issues/34492</link>
             <guid>https://github.com/mdn/content/issues/34492</guid>
@@ -205,7 +150,7 @@ to also include flex:initial, bit it doesnt.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/100818373/338013641-fbc5bd37-f3ae-4879-ab3d-340c7331170b.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEzMDI4ODIsIm5iZiI6MTcyMTMwMjU4MiwicGF0aCI6Ii8xMDA4MTgzNzMvMzM4MDEzNjQxLWZiYzViZDM3LWYzYWUtNDg3OS1hYjNkLTM0MGM3MzMxMTcwYi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcxOFQxMTM2MjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wMjM5MzgxYjViYzliNjk3ZmVhZTUwN2YxNDI3YThlODkwY2QxZmU2N2E4OTNiMGVjZmI5MDFkNjQzNWFlZjcxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.XghYwLvqC-g6AQ5l0hF1tC-PxXHUlteVvtXa9T2hqUk"><img src="https://private-user-images.githubusercontent.com/100818373/338013641-fbc5bd37-f3ae-4879-ab3d-340c7331170b.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEzMDI4ODIsIm5iZiI6MTcyMTMwMjU4MiwicGF0aCI6Ii8xMDA4MTgzNzMvMzM4MDEzNjQxLWZiYzViZDM3LWYzYWUtNDg3OS1hYjNkLTM0MGM3MzMxMTcwYi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcxOFQxMTM2MjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wMjM5MzgxYjViYzliNjk3ZmVhZTUwN2YxNDI3YThlODkwY2QxZmU2N2E4OTNiMGVjZmI5MDFkNjQzNWFlZjcxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.XghYwLvqC-g6AQ5l0hF1tC-PxXHUlteVvtXa9T2hqUk" alt="Screen Shot 2024-06-09 at 5 18 51 PM" style="max-width: 100%;"></a></p>]]></content:encoded>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/100818373/338013641-fbc5bd37-f3ae-4879-ab3d-340c7331170b.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEzMDM1MDAsIm5iZiI6MTcyMTMwMzIwMCwicGF0aCI6Ii8xMDA4MTgzNzMvMzM4MDEzNjQxLWZiYzViZDM3LWYzYWUtNDg3OS1hYjNkLTM0MGM3MzMxMTcwYi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcxOFQxMTQ2NDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wZDM0N2NlNmUwOGZmOGQyMzZjMGUyY2UwZTg0MDIxNDA1ZDMwNTY2ZGE1MzQ4YjFkYmQzZjJjM2JiNmNiY2RhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.jPFmy2lMjDSrYbHAdjq5LubQCtkHJI4tqX3SwNy-gGI"><img src="https://private-user-images.githubusercontent.com/100818373/338013641-fbc5bd37-f3ae-4879-ab3d-340c7331170b.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEzMDM1MDAsIm5iZiI6MTcyMTMwMzIwMCwicGF0aCI6Ii8xMDA4MTgzNzMvMzM4MDEzNjQxLWZiYzViZDM3LWYzYWUtNDg3OS1hYjNkLTM0MGM3MzMxMTcwYi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcxOFQxMTQ2NDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wZDM0N2NlNmUwOGZmOGQyMzZjMGUyY2UwZTg0MDIxNDA1ZDMwNTY2ZGE1MzQ4YjFkYmQzZjJjM2JiNmNiY2RhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.jPFmy2lMjDSrYbHAdjq5LubQCtkHJI4tqX3SwNy-gGI" alt="Screen Shot 2024-06-09 at 5 18 51 PM" style="max-width: 100%;"></a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[css-logical-1] [CSS] Implement margin at-rules]]></title>
@@ -553,7 +498,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEzMDI4NzcsIm5iZiI6MTcyMTMwMjU3NywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MThUMTEzNjE3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NmYyZmQ0NGU3ZmMzOTIxNTU4MjNkMDRhODQyMzg2MDZiY2QwNTFkODRmNzM0YzZlMTRjOTQxYWJmOTM2NmM4ZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.uIVletZM6GhQ3Wt-mZMj25wM11MajULSbp4MlPFkDC0"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEzMDI4NzcsIm5iZiI6MTcyMTMwMjU3NywicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MThUMTEzNjE3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NmYyZmQ0NGU3ZmMzOTIxNTU4MjNkMDRhODQyMzg2MDZiY2QwNTFkODRmNzM0YzZlMTRjOTQxYWJmOTM2NmM4ZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.uIVletZM6GhQ3Wt-mZMj25wM11MajULSbp4MlPFkDC0" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEzMDM0OTQsIm5iZiI6MTcyMTMwMzE5NCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MThUMTE0NjM0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NTQyNTNkYzlhOTEzMGM2MTEwYmRjOWJhY2JhMDNlNWM0NGM3YTQyYTVhNTJiYjc1NGI2ZGIwN2MzOTBkYzNjMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.LeC-7G4XQYE9fb1-d17krIPzxBp-E7zIZXuWh9vbbIw"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEzMDM0OTQsIm5iZiI6MTcyMTMwMzE5NCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MThUMTE0NjM0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NTQyNTNkYzlhOTEzMGM2MTEwYmRjOWJhY2JhMDNlNWM0NGM3YTQyYTVhNTJiYjc1NGI2ZGIwN2MzOTBkYzNjMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.LeC-7G4XQYE9fb1-d17krIPzxBp-E7zIZXuWh9vbbIw" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
