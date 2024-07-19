@@ -4,10 +4,42 @@
         <title>W3C Web Applications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_applications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Applications Working Group</description>
-        <lastBuildDate>Fri, 19 Jul 2024 15:16:42 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Jul 2024 15:53:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[appmanifest] IsStandaloneContent does not work with `display: fullscreen` in Chrome Android]]></title>
+            <link>https://github.com/mdn/content/issues/34928</link>
+            <guid>https://github.com/mdn/content/issues/34928</guid>
+            <pubDate>Fri, 19 Jul 2024 15:53:57 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Create_a_standalone_app" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Create_a_standalone_app</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The <code class="notranslate">isStandaloneApp</code> code provided on that page is false when running in an installed fullscreen PWA app (<a href="https://developer.mozilla.org/en-US/docs/Web/Manifest/display#fullscreen" rel="nofollow">manifest display: fullscreen</a>) in Chrome on Android.</p>
+<p dir="auto">Weirdly, this is true on Chrome Desktop, and using <code class="notranslate">window.matchMedia("(display-mode: fullscreen)").matches</code> is also false.</p>
+<p dir="auto">I wonder if this is a Chrome bug which I am happy to file if you confirm whether according to the spec, Chrome on Android should match <code class="notranslate">display-mode: fullscreen</code> OR <code class="notranslate">display-mode: standalone</code> in that case (and which one of those).</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">An isStandaloneApp function that works regardless of what's set in the PWA manifest <code class="notranslate">display</code>.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/progressive_web_apps/how_to/create_a_standalone_app</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Create_a_standalone_app" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Create_a_standalone_app</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/progressive_web_apps/how_to/create_a_standalone_app/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/progressive_web_apps/how_to/create_a_standalone_app/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/835d6632d59993861a0458510402787f8a2c3cb3/hovercard" href="https://github.com/mdn/content/commit/835d6632d59993861a0458510402787f8a2c3cb3"><tt>835d663</tt></a></li>
+<li>Document last modified: 2023-10-25T17:27:32.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[appmanifest] Descriptions of orientation values missing]]></title>
             <link>https://github.com/mdn/content/issues/34927</link>
