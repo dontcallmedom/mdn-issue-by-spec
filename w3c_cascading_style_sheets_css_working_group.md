@@ -4,8 +4,6 @@
 
 * [\[css-color-adjust-1\] Behavior of colors in gradient-images differes between browsers](https://github.com/mdn/content/issues/34926) (2024-07-19T10:49:54Z)
   
-* [\[css-inline-3\] Line-height does not mention vertical text](https://github.com/mdn/content/issues/34907) (2024-07-18T17:39:36Z)
-  
 * [\[cssom-view-1\] document.caretPositionFromPoint() API needs update](https://github.com/mdn/content/issues/34492) (2024-06-28T18:22:16Z)
   
 * [\[filter-effects-2\] missing important note - feColorMatrix uses linearRGB by default](https://github.com/mdn/content/issues/34444) (2024-06-27T08:33:04Z)
