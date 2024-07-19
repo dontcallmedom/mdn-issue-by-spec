@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[appmanifest\] Descriptions of orientation values missing](https://github.com/mdn/content/issues/34927) (2024-07-19T15:16:42Z)
+  
 * [\[css-color-adjust-1\] Behavior of colors in gradient-images differes between browsers](https://github.com/mdn/content/issues/34926) (2024-07-19T10:49:54Z)
   
 * [\[css-inline-3\] Line-height does not mention vertical text](https://github.com/mdn/content/issues/34907) (2024-07-18T17:39:36Z)
