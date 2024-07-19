@@ -4,10 +4,51 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Thu, 18 Jul 2024 17:39:36 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Jul 2024 10:49:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-color-adjust-1] Behavior of colors in gradient-images differes between browsers]]></title>
+            <link>https://github.com/mdn/content/issues/34926</link>
+            <guid>https://github.com/mdn/content/issues/34926</guid>
+            <pubDate>Fri, 19 Jul 2024 10:49:54 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Styling based on color schemes</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Missing information on behavior when using scheme-dependent color in gradient functions.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Colors like Canvas, CanvasText and light-dark(silver, blue) are rendered as expected for the different color-schemes.</p>
+<p dir="auto">However, when used inside an image-gradient, the gradient-colors respect the color-scheme in Firefox, but not in Chrome and Safari.</p>
+<p dir="auto"><code class="notranslate">div { color-scheme: light dark; color: CanvasText; font-weight: bold; border: 2px solid light-dark(silver, blue); background-image: linear-gradient(Canvas, light-dark(silver, blue)); } .light { color-scheme: light; } .dark { color-scheme: dark; }</code></p>
+<p dir="auto">`</p><div dir="auto"><br>
+Normal <p dir="auto"></p>
+</div>
+<div dir="auto">
+	Light 
+</div>
+<div dir="auto">
+	Dark 
+</div>`
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/color-scheme</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/color-scheme/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/color-scheme/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/5f13cbe7517ce96deeb521d4c8e6923266a22913/hovercard" href="https://github.com/mdn/content/commit/5f13cbe7517ce96deeb521d4c8e6923266a22913"><tt>5f13cbe</tt></a></li>
+<li>Document last modified: 2024-04-25T17:43:13.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-inline-3] Line-height does not mention vertical text]]></title>
             <link>https://github.com/mdn/content/issues/34907</link>
@@ -141,7 +182,7 @@ to also include flex:initial, bit it doesnt.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/100818373/338013641-fbc5bd37-f3ae-4879-ab3d-340c7331170b.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEzODU5MjksIm5iZiI6MTcyMTM4NTYyOSwicGF0aCI6Ii8xMDA4MTgzNzMvMzM4MDEzNjQxLWZiYzViZDM3LWYzYWUtNDg3OS1hYjNkLTM0MGM3MzMxMTcwYi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcxOVQxMDQwMjlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kODk4MTY2ZWM0YjZjNzYwMTYzZWNkMWJjZjJiYzU0Yzc5MDgwMjE5NTA1YTJiNDBmNTcwYzcxYzI3YWUwYWIwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.y_3-8yGxeeCVC9foFl0sM1kbBvgFXslHZLiD2K12_jg"><img src="https://private-user-images.githubusercontent.com/100818373/338013641-fbc5bd37-f3ae-4879-ab3d-340c7331170b.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEzODU5MjksIm5iZiI6MTcyMTM4NTYyOSwicGF0aCI6Ii8xMDA4MTgzNzMvMzM4MDEzNjQxLWZiYzViZDM3LWYzYWUtNDg3OS1hYjNkLTM0MGM3MzMxMTcwYi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcxOVQxMDQwMjlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kODk4MTY2ZWM0YjZjNzYwMTYzZWNkMWJjZjJiYzU0Yzc5MDgwMjE5NTA1YTJiNDBmNTcwYzcxYzI3YWUwYWIwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.y_3-8yGxeeCVC9foFl0sM1kbBvgFXslHZLiD2K12_jg" alt="Screen Shot 2024-06-09 at 5 18 51 PM" style="max-width: 100%;"></a></p>]]></content:encoded>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/100818373/338013641-fbc5bd37-f3ae-4879-ab3d-340c7331170b.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEzODY1MzIsIm5iZiI6MTcyMTM4NjIzMiwicGF0aCI6Ii8xMDA4MTgzNzMvMzM4MDEzNjQxLWZiYzViZDM3LWYzYWUtNDg3OS1hYjNkLTM0MGM3MzMxMTcwYi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcxOVQxMDUwMzJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01YWVkNmVjNzJjYWUxOTkzYWEwZjIwZGRhNDZkOGM5NWY0ZGJhYTNkY2RjZDU1NzczYmE0ZDNiZTZjNzU1M2M3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.RO8LCmwY_cRKexWkRArGOW6ujZotPWGCQcvHiStMdc0"><img src="https://private-user-images.githubusercontent.com/100818373/338013641-fbc5bd37-f3ae-4879-ab3d-340c7331170b.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEzODY1MzIsIm5iZiI6MTcyMTM4NjIzMiwicGF0aCI6Ii8xMDA4MTgzNzMvMzM4MDEzNjQxLWZiYzViZDM3LWYzYWUtNDg3OS1hYjNkLTM0MGM3MzMxMTcwYi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcxOVQxMDUwMzJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01YWVkNmVjNzJjYWUxOTkzYWEwZjIwZGRhNDZkOGM5NWY0ZGJhYTNkY2RjZDU1NzczYmE0ZDNiZTZjNzU1M2M3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.RO8LCmwY_cRKexWkRArGOW6ujZotPWGCQcvHiStMdc0" alt="Screen Shot 2024-06-09 at 5 18 51 PM" style="max-width: 100%;"></a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[css-logical-1] [CSS] Implement margin at-rules]]></title>
@@ -489,7 +530,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEzODU5MjQsIm5iZiI6MTcyMTM4NTYyNCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MTlUMTA0MDI0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDcwNTc5OGRlNjBlMTJiMjBjNzVmOWRkMDEyYThhMDhjZjk0YmYwMWU4YjM2OWM5NDY4NDhkYzg5MTY3ZTM5YyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Y59IrxDJRzjDlUWr18G5OMl6sqEFqUD2YAwblPtP1b4"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEzODU5MjQsIm5iZiI6MTcyMTM4NTYyNCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MTlUMTA0MDI0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDcwNTc5OGRlNjBlMTJiMjBjNzVmOWRkMDEyYThhMDhjZjk0YmYwMWU4YjM2OWM5NDY4NDhkYzg5MTY3ZTM5YyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Y59IrxDJRzjDlUWr18G5OMl6sqEFqUD2YAwblPtP1b4" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEzODY1MjgsIm5iZiI6MTcyMTM4NjIyOCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MTlUMTA1MDI4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MThhZWZhNTFlMjY4ZmNiYjVjMWVlNjk4Yjc1ODJkMTc1ZGI4Y2NhZDdjOTk3MjJjNTA4NGIyNTVkNjU0ZTU3MCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.4TLteBH01C-IzgS0mBrRSrfFDrbXpNY1LwI9xXpPrXk"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjEzODY1MjgsIm5iZiI6MTcyMTM4NjIyOCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MTlUMTA1MDI4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MThhZWZhNTFlMjY4ZmNiYjVjMWVlNjk4Yjc1ODJkMTc1ZGI4Y2NhZDdjOTk3MjJjNTA4NGIyNTVkNjU0ZTU3MCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.4TLteBH01C-IzgS0mBrRSrfFDrbXpNY1LwI9xXpPrXk" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
