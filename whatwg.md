@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Wrong mention of inline layers in example](https://github.com/mdn/content/issues/34953) (2024-07-21T14:42:42Z)
+  
 * [\[html\] Missing autocomplete contact token values](https://github.com/mdn/content/issues/34915) (2024-07-19T03:37:15Z)
   
 * [\[url\] Using URLSearchParams.delete method changes the enconding of unrelated search params](https://github.com/mdn/content/issues/34896) (2024-07-17T13:22:45Z)
