@@ -4,8 +4,6 @@
 
 * [\[html\] Missing autocomplete contact token values](https://github.com/mdn/content/issues/34915) (2024-07-19T03:37:15Z)
   
-* [\[html\] document.write example doesn't work](https://github.com/mdn/content/issues/34783) (2024-07-11T16:38:50Z)
-  
 * [\[html, uievents\] \`onerror\` (and others) missing from HTMLBodyElement "Event Handlers" section](https://github.com/mdn/content/issues/34684) (2024-07-07T17:44:00Z)
   
 * [\[html\] "escape inertness" mentioned but never explained how to](https://github.com/mdn/content/issues/34619) (2024-07-04T10:02:29Z)
@@ -37,8 +35,6 @@
 * [\[html\] WebSocket constructor example should demonstrate waiting for connection or handling connection failure](https://github.com/mdn/content/issues/31768) (2024-01-17T18:55:09Z)
   
 * [\[html\] No information about "cancel" event on HTMLInputElement page](https://github.com/mdn/content/issues/31014) (2023-12-15T00:00:43Z)
-  
-* [\[html\] In the "Using custom elements" guide and related pages, add a disclaimer that WebKit does not plan to support Customized built-in elements](https://github.com/mdn/content/issues/30968) (2023-12-12T17:40:05Z)
   
 * [\[html\] Event not called for modification on sessionStorage](https://github.com/mdn/content/issues/30598) (2023-11-28T11:28:49Z)
   
