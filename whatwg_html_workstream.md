@@ -4,8 +4,6 @@
 
 * [\[html\] Wrong mention of inline layers in example](https://github.com/mdn/content/issues/34953) (2024-07-21T14:42:42Z)
   
-* [\[html\] Missing autocomplete contact token values](https://github.com/mdn/content/issues/34915) (2024-07-19T03:37:15Z)
-  
 * [\[html, uievents\] \`onerror\` (and others) missing from HTMLBodyElement "Event Handlers" section](https://github.com/mdn/content/issues/34684) (2024-07-07T17:44:00Z)
   
 * [\[html\] "escape inertness" mentioned but never explained how to](https://github.com/mdn/content/issues/34619) (2024-07-04T10:02:29Z)
