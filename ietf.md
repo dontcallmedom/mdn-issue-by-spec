@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by IETF. [![RSS feed for IETF-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[rfc7232\] Summary paragraph for HTTP status code 412 refers to If-None-Match but this should be If-Match](https://github.com/mdn/content/issues/34965) (2024-07-22T13:30:42Z)
+  
 * [\[rfc7231\] Does DELETE permit body?](https://github.com/mdn/content/issues/34721) (2024-07-08T18:17:51Z)
   
 * [\[rfc7231\] POST requests and 301/302 status codes](https://github.com/mdn/content/issues/34222) (2024-06-17T10:02:44Z)
