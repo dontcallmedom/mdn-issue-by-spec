@@ -4,10 +4,41 @@
         <title>WHATWG DOM Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_dom_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG DOM Workstream</description>
-        <lastBuildDate>Wed, 12 Jun 2024 15:46:35 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 23 Jul 2024 19:09:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[dom] Element.querySelectorAll() examples: HTML & JS don't correspond]]></title>
+            <link>https://github.com/mdn/content/issues/35003</link>
+            <guid>https://github.com/mdn/content/issues/35003</guid>
+            <pubDate>Tue, 23 Jul 2024 19:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Examples</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">In first example, in the HTML, the div elements set the <code class="notranslate">class</code> name.  But in the JS for that example, the query selector uses the <code class="notranslate">data-name</code> attribute.</p>
+<p dir="auto">Also, they all use <code class="notranslate">document.querySelectorAll</code> though they are purported to be examples of <code class="notranslate">Element.querySelectorAll</code>.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The second commented-out example in the JS is the one that corresponds to the HTML code.  If the name of the example is "dataset selector &amp; attribute selectors", then the HTML should probably use some data-* attributes.  There should be at least one relevant example, i.e. corresponding to the HTML, that isn't commented out.  The other examples probably aren't helpful, but a link to an overview of <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors" rel="nofollow">Attribute Selectors</a> would be helpful.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/element/queryselectorall</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/element/queryselectorall/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/element/queryselectorall/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/dc7167c80c8b387bcd54636ac8692ec465603121/hovercard" href="https://github.com/mdn/content/commit/dc7167c80c8b387bcd54636ac8692ec465603121"><tt>dc7167c</tt></a></li>
+<li>Document last modified: 2024-05-28T12:29:13.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[dom] Various Node subclass replaceWith methods should link to each other]]></title>
             <link>https://github.com/mdn/content/issues/34084</link>
