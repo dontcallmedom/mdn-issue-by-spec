@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[ecmascript, file-system-access, permissions\] Wrong return value](https://github.com/mdn/content/issues/34993) (2024-07-23T12:55:46Z)
+* [\[ecmascript, file-system-access, permissions\] Wrong return value of \`queryPermission\`](https://github.com/mdn/content/issues/34993) (2024-07-23T12:55:46Z)
   
 * [\[ecmascript, streams\] ReadableStreamDefaultController: undocumented error conditions](https://github.com/mdn/content/issues/34597) (2024-07-03T14:49:56Z)
   
