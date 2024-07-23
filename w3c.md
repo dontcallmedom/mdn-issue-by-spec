@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[ecmascript, file-system-access, permissions\] Wrong return value](https://github.com/mdn/content/issues/34993) (2024-07-23T12:55:46Z)
+  
 * [\[selection-api\] deleteFromDocument deletes more than just text](https://github.com/mdn/content/issues/34943) (2024-07-20T19:06:19Z)
   
 * [\[appmanifest\] IsStandaloneContent does not work with \`display: fullscreen\` in Chrome Android](https://github.com/mdn/content/issues/34928) (2024-07-19T15:53:57Z)

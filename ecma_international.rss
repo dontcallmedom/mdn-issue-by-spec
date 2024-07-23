@@ -4,10 +4,43 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Wed, 03 Jul 2024 14:49:56 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 23 Jul 2024 12:55:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript, file-system-access, permissions] Wrong return value]]></title>
+            <link>https://github.com/mdn/content/issues/34993</link>
+            <guid>https://github.com/mdn/content/issues/34993</guid>
+            <pubDate>Tue, 23 Jul 2024 12:55:46 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle/queryPermission" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle/queryPermission</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Return value</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">A <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" rel="nofollow">Promise</a> that resolves to a <a href="https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus" rel="nofollow">PermissionStatus</a> object.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" rel="nofollow">Promise</a> that resolves to a <a href="https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus/state" rel="nofollow">PermissionStatus.state</a> string.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Specification says it returns a string:<br>
+<a href="https://wicg.github.io/file-system-access/#api-filesystemhandle-querypermission" rel="nofollow">https://wicg.github.io/file-system-access/#api-filesystemhandle-querypermission</a></p>
+<p dir="auto">Screenshot of the proof:<br>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/6358971/351331579-c2242fff-268e-41ea-87ae-59392fe463c9.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjE3Mzk2NzksIm5iZiI6MTcyMTczOTM3OSwicGF0aCI6Ii82MzU4OTcxLzM1MTMzMTU3OS1jMjI0MmZmZi0yNjhlLTQxZWEtODdhZS01OTM5MmZlNDYzYzkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MjNUMTI1NjE5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NmY3ZGRjM2UyZWE0MjFiNGJlM2VlNDJlZjgwNjIwZWM3OTc5YjJjN2ZjMWRmOTQ2M2MwNjQwM2M2ZDBmM2Y5NSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.GZQ0fEr4h4BL8ywAeWB_hIlCgYrrJD1FFJ5HaKwE29M"><img src="https://private-user-images.githubusercontent.com/6358971/351331579-c2242fff-268e-41ea-87ae-59392fe463c9.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjE3Mzk2NzksIm5iZiI6MTcyMTczOTM3OSwicGF0aCI6Ii82MzU4OTcxLzM1MTMzMTU3OS1jMjI0MmZmZi0yNjhlLTQxZWEtODdhZS01OTM5MmZlNDYzYzkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MjNUMTI1NjE5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NmY3ZGRjM2UyZWE0MjFiNGJlM2VlNDJlZjgwNjIwZWM3OTc5YjJjN2ZjMWRmOTQ2M2MwNjQwM2M2ZDBmM2Y5NSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.GZQ0fEr4h4BL8ywAeWB_hIlCgYrrJD1FFJ5HaKwE29M" alt="image" style="max-width: 100%;"></a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/filesystemhandle/querypermission</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle/queryPermission" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle/queryPermission</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/filesystemhandle/querypermission/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/filesystemhandle/querypermission/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/be3c45cd7a4d5c04139eceae10f7368251cdca64/hovercard" href="https://github.com/mdn/content/commit/be3c45cd7a4d5c04139eceae10f7368251cdca64"><tt>be3c45c</tt></a></li>
+<li>Document last modified: 2024-05-13T06:15:07.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript, streams] ReadableStreamDefaultController: undocumented error conditions]]></title>
             <link>https://github.com/mdn/content/issues/34597</link>
