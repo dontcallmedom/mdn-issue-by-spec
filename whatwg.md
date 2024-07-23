@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Interactive explorer of Location anatomy clips last "l" of "protocol"](https://github.com/mdn/content/issues/34999) (2024-07-23T16:59:27Z)
+  
 * [\[html\] Wrong mention of inline layers in example](https://github.com/mdn/content/issues/34953) (2024-07-21T14:42:42Z)
   
 * [\[url\] Using URLSearchParams.delete method changes the enconding of unrelated search params](https://github.com/mdn/content/issues/34896) (2024-07-17T13:22:45Z)
