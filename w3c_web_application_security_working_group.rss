@@ -4,43 +4,10 @@
         <title>W3C Web Application Security Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_application_security_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Application Security Working Group</description>
-        <lastBuildDate>Tue, 23 Jul 2024 12:55:46 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Feb 2022 23:13:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript, file-system-access, permissions] Wrong return value of `queryPermission`]]></title>
-            <link>https://github.com/mdn/content/issues/34993</link>
-            <guid>https://github.com/mdn/content/issues/34993</guid>
-            <pubDate>Tue, 23 Jul 2024 12:55:46 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle/queryPermission" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle/queryPermission</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Return value</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">A <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" rel="nofollow">Promise</a> that resolves to a <a href="https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus" rel="nofollow">PermissionStatus</a> object.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">A <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" rel="nofollow">Promise</a> that resolves to a <a href="https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus/state" rel="nofollow">PermissionStatus.state</a> string.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">Specification says it returns a string:<br>
-<a href="https://wicg.github.io/file-system-access/#api-filesystemhandle-querypermission" rel="nofollow">https://wicg.github.io/file-system-access/#api-filesystemhandle-querypermission</a></p>
-<p dir="auto">Screenshot of the proof:<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/6358971/351331579-c2242fff-268e-41ea-87ae-59392fe463c9.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjE3ODgzNjUsIm5iZiI6MTcyMTc4ODA2NSwicGF0aCI6Ii82MzU4OTcxLzM1MTMzMTU3OS1jMjI0MmZmZi0yNjhlLTQxZWEtODdhZS01OTM5MmZlNDYzYzkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcyNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MjRUMDIyNzQ1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9M2JkMjFmNDM3OWUyYTI3NDZiOTRmNWM1NWMzNDkwYmRkZjA1ZjliMDZjMjc1YWJhM2I5N2IxYTdjMDQzZmNjNCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.0a_ymnEN6kHI8JHObs1iv0EZVGMZkpajuO_6AA-HbP4"><img src="https://private-user-images.githubusercontent.com/6358971/351331579-c2242fff-268e-41ea-87ae-59392fe463c9.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjE3ODgzNjUsIm5iZiI6MTcyMTc4ODA2NSwicGF0aCI6Ii82MzU4OTcxLzM1MTMzMTU3OS1jMjI0MmZmZi0yNjhlLTQxZWEtODdhZS01OTM5MmZlNDYzYzkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcyNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MjRUMDIyNzQ1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9M2JkMjFmNDM3OWUyYTI3NDZiOTRmNWM1NWMzNDkwYmRkZjA1ZjliMDZjMjc1YWJhM2I5N2IxYTdjMDQzZmNjNCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.0a_ymnEN6kHI8JHObs1iv0EZVGMZkpajuO_6AA-HbP4" alt="image" style="max-width: 100%;"></a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/filesystemhandle/querypermission</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle/queryPermission" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle/queryPermission</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/filesystemhandle/querypermission/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/filesystemhandle/querypermission/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/be3c45cd7a4d5c04139eceae10f7368251cdca64/hovercard" href="https://github.com/mdn/content/commit/be3c45cd7a4d5c04139eceae10f7368251cdca64"><tt>be3c45c</tt></a></li>
-<li>Document last modified: 2024-05-13T06:15:07.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[permissions-policy-1] Permissions API - update to docs needed]]></title>
             <link>https://github.com/mdn/content/issues/13003</link>
