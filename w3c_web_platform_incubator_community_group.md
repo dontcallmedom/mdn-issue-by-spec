@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Platform Incubator Community Group. [![RSS feed for W3C Web Platform Incubator Community Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[file-system-access\] Missing information about \`requestPermission\` requiring a "Transient user activation"](https://github.com/mdn/content/issues/35019) (2024-07-24T09:46:51Z)
+  
 * [\[periodic-background-sync\] periodicSync needs "periodic-background-sync" permission](https://github.com/mdn/content/issues/33692) (2024-05-21T08:55:15Z)
   
 * [\[keyboard-map, keyboard-lock\] Missing \`Keyboard\` interface \`layoutchange\` event](https://github.com/mdn/content/issues/29762) (2023-10-21T19:12:37Z)

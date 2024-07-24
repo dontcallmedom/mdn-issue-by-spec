@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[file-system-access\] Missing information about \`requestPermission\` requiring a "Transient user activation"](https://github.com/mdn/content/issues/35019) (2024-07-24T09:46:51Z)
+  
 * [\[css-sizing-4\] If you set the % unit for max-height, css is not applied.](https://github.com/mdn/content/issues/35018) (2024-07-24T08:49:51Z)
   
 * [\[selection-api\] deleteFromDocument deletes more than just text](https://github.com/mdn/content/issues/34943) (2024-07-20T19:06:19Z)
