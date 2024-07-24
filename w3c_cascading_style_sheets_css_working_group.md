@@ -40,8 +40,6 @@
   
 * [\[dom, cssom-view-1, uievents, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
   
-* [\[css-backgrounds-4\] It is unclear why background-attachment: fixed is said to be incompatible with background-clip: text](https://github.com/mdn/content/issues/26445) (2023-04-27T02:31:12Z)
-  
 * [\[cssom-view-1\] Guide on reflow and performance optimizations](https://github.com/mdn/content/issues/26330) (2023-04-21T01:08:41Z)
   
 * [\[css-sizing-4, css-conditional-3, css-sizing-3\] Document length-fitting on \<select\>](https://github.com/mdn/content/issues/25073) (2023-03-05T03:22:13Z)
