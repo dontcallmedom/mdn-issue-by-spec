@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-sizing-4\] If you set the % unit for max-height, css is not applied.](https://github.com/mdn/content/issues/35018) (2024-07-24T08:49:51Z)
+  
 * [\[cssom-view-1\] document.caretPositionFromPoint() API needs update](https://github.com/mdn/content/issues/34492) (2024-06-28T18:22:16Z)
   
 * [\[filter-effects-2\] missing important note - feColorMatrix uses linearRGB by default](https://github.com/mdn/content/issues/34444) (2024-06-27T08:33:04Z)
