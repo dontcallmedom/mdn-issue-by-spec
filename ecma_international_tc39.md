@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[ecmascript\] improper use of the word "lossy"](https://github.com/mdn/content/issues/35040) (2024-07-24T22:10:24Z)
+  
 * [\[ecmascript, streams\] ReadableStreamDefaultController: undocumented error conditions](https://github.com/mdn/content/issues/34597) (2024-07-03T14:49:56Z)
   
 * [\[ecmascript\] Import assertions proposal renamed to import attributes](https://github.com/mdn/content/issues/29572) (2023-10-10T08:50:02Z)
