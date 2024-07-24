@@ -32,8 +32,6 @@
   
 * [\[html, selectors-4, css-conditional-3\] \`read-only\` pseudo class behavior ambiguities in the documentation.](https://github.com/mdn/content/issues/29140) (2023-09-15T17:26:16Z)
   
-* [\[css-masking-1\] mask-image: url() function doesn't work with file://](https://github.com/mdn/content/issues/29106) (2023-09-14T09:24:04Z)
-  
 * [\[html, dom, cssom-view-1, uievents, pointerlock-2, selection-api, page-visibility-2\] Keydown, keyup, keypress pages should mention they work on document, body, etc](https://github.com/mdn/content/issues/28561) (2023-08-14T20:14:56Z)
   
 * [\[css-typed-om-2\] CSSMathNegate() constructor page is a stub](https://github.com/mdn/content/issues/28118) (2023-07-22T02:25:00Z)
