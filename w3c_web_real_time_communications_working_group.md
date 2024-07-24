@@ -24,7 +24,5 @@
   
 * [\[webrtc\] What is \`RTCPeerConnection.generateCertificate(..)\` good for?](https://github.com/mdn/content/issues/23993) (2023-01-30T20:28:26Z)
   
-* [\[mediastream-recording\] Emitted blobs do not always exactly adhere to the timeslice value](https://github.com/mdn/content/issues/19369) (2022-08-10T14:39:46Z)
-  
 * [\[webrtc\] "Using DTMF" is using legacy APIs](https://github.com/mdn/content/issues/10020) (2021-10-22T18:00:50Z)
   

@@ -482,64 +482,6 @@ It says you can store the certificate in IndexedDB.</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[mediastream-recording] Emitted blobs do not always exactly adhere to the timeslice value]]></title>
-            <link>https://github.com/mdn/content/issues/19369</link>
-            <guid>https://github.com/mdn/content/issues/19369</guid>
-            <pubDate>Wed, 10 Aug 2022 14:39:46 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder/dataavailable_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder/dataavailable_event</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">First section, fourth bullet point about the timeslice parameter</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The documentation currently says this:</p>
-<blockquote>
-<p dir="auto">If a timeslice property was passed into the <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder/start" rel="nofollow">MediaRecorder.start()</a> method that started media capture, a dataavailable event is fired every timeslice milliseconds.</p>
-</blockquote>
-<p dir="auto">However, I used to record videos with a MediaRecorder like this (in vuejs):</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="startRecording: function () {
-    this.recorder = new MediaRecorder(this.streamSrc, {mimeType: &quot;video/webm;codecs:vp8&quot;});
-    this.recorder.ondataavailable = this.onData;
-    this.recorder.start(500);
-},
-onData: function (event) {
-    // append the latest chunk of video data to an array
-    this.chunks.push(event.data);
-    this.duration = this.chunks.length * 500 / 1000;
-}"><pre class="notranslate">startRecording: <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-    <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">recorder</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">MediaRecorder</span><span class="pl-kos">(</span><span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">streamSrc</span><span class="pl-kos">,</span> <span class="pl-kos">{</span><span class="pl-c1">mimeType</span>: <span class="pl-s">"video/webm;codecs:vp8"</span><span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-    <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">recorder</span><span class="pl-kos">.</span><span class="pl-c1">ondataavailable</span> <span class="pl-c1">=</span> <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">onData</span><span class="pl-kos">;</span>
-    <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">recorder</span><span class="pl-kos">.</span><span class="pl-en">start</span><span class="pl-kos">(</span><span class="pl-c1">500</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span><span class="pl-kos">,</span>
-<span class="pl-s1">onData</span>: <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-    <span class="pl-c">// append the latest chunk of video data to an array</span>
-    <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">chunks</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-c1">data</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-    <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">duration</span> <span class="pl-c1">=</span> <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">chunks</span><span class="pl-kos">.</span><span class="pl-c1">length</span> <span class="pl-c1">*</span> <span class="pl-c1">500</span> <span class="pl-c1">/</span> <span class="pl-c1">1000</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span></pre></div>
-<p dir="auto">and expected each blob emitted to the <code class="notranslate">onData</code> handler to contain exactly 500 ms of video. Hence, I simply used the length of the array to show the total recorded video duration to the user.</p>
-<p dir="auto">As it turns out, the computed duration would accumulate a substantial drift from the real duration as the video got longer. After around 10 minutes of video, the displayed <code class="notranslate">duration</code> value would differ from the actual video duration by multiple seconds.<br>
-I ended up implementing my own "stopwatch" to keep track of the recorded duration, which works much more accurately.</p>
-<p dir="auto">From my understanding of how video codecs work, I imagine it's hard to make a sensible "cut" precisely after a given <code class="notranslate">timeslice</code> value and that's perhaps why we cannot rely on emitted blobs to have exactly the specified duration.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">If my usage of the <code class="notranslate">timeslice</code> option and the assumption about video codecs is correct, I would suggest to adapt the documentation in a way to reflect this.</p>
-<p dir="auto">From reading the current description, I thought the blob duration was reliable and had to spend effort debugging it when it wasn't.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">I observed the described behaviour in Firefox and Chrome and suspect other browsers to behave the same way.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/mediarecorder/dataavailable_event</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder/dataavailable_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder/dataavailable_event</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/mediarecorder/dataavailable_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/mediarecorder/dataavailable_event/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/542ec1e002ae3c340f0925adfd1f0d870c14ff32/hovercard" href="https://github.com/mdn/content/commit/542ec1e002ae3c340f0925adfd1f0d870c14ff32"><tt>542ec1e</tt></a></li>
-<li>Document last modified: 2022-08-09T12:24:48.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[webrtc] "Using DTMF" is using legacy APIs]]></title>
             <link>https://github.com/mdn/content/issues/10020</link>
             <guid>https://github.com/mdn/content/issues/10020</guid>

@@ -132,8 +132,6 @@
   
 * [\[uievents\] Event references should list bubbles, cancelable, and composed values](https://github.com/mdn/content/issues/19590) (2022-08-15T13:38:07Z)
   
-* [\[mediastream-recording\] Emitted blobs do not always exactly adhere to the timeslice value](https://github.com/mdn/content/issues/19369) (2022-08-10T14:39:46Z)
-  
 * [\[WebCryptoAPI\] Precise max length for encoding algorithm](https://github.com/mdn/content/issues/18045) (2022-07-06T14:47:35Z)
   
 * [\[selectors-4\] \`:any-link\` privacy exception not explained](https://github.com/mdn/content/issues/17366) (2022-06-17T02:50:38Z)
