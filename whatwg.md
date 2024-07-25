@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Improve \`messageerror\` example to show a case in which the event is fired](https://github.com/mdn/content/issues/35064) (2024-07-25T16:05:45Z)
+  
 * [\[dom\] Element.querySelectorAll() examples: HTML & JS don't correspond](https://github.com/mdn/content/issues/35003) (2024-07-23T19:09:47Z)
   
 * [\[html\] Interactive explorer of Location anatomy clips last "l" of "protocol"](https://github.com/mdn/content/issues/34999) (2024-07-23T16:59:27Z)
