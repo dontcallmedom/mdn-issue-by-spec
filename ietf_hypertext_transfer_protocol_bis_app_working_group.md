@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by IETF Hypertext Transfer Protocol Bis APP Working Group. [![RSS feed for IETF Hypertext Transfer Protocol Bis APP Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[rfc7234\] Cache-Control Erroneous Request Directive max-age HTTP specification citation](https://github.com/mdn/content/issues/35169) (2024-07-26T20:15:30Z)
+  
 * [\[rfc7231\] Does DELETE permit body?](https://github.com/mdn/content/issues/34721) (2024-07-08T18:17:51Z)
   
 * [\[rfc7231\] POST requests and 301/302 status codes](https://github.com/mdn/content/issues/34222) (2024-06-17T10:02:44Z)
