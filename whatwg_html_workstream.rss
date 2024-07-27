@@ -4,10 +4,50 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Fri, 26 Jul 2024 10:10:58 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 27 Jul 2024 22:31:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Description of how inert of .showModal() works does not cover how it behaves with iframe]]></title>
+            <link>https://github.com/mdn/content/issues/35189</link>
+            <guid>https://github.com/mdn/content/issues/35189</guid>
+            <pubDate>Sat, 27 Jul 2024 22:31:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Missing section</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Needs more description or explanation of how inert works for use cases such as using .showModal() from inside an iframe.</p>
+<p dir="auto">Iframe usage has 2 main cases:</p>
+<ul dir="auto">
+<li>iframing another domain content</li>
+<li>Using iframe to scope a local content</li>
+</ul>
+<p dir="auto">In the case of domain content, I believe it is working correctly, but for using iframe to scope a local content, this isn't covered well. A good example of this is Storybook use case.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<ul dir="auto">
+<li>Having deeper explanation of how inert works for .showModal()</li>
+<li>Having explanation of how it works with iframe - ideally for both cases</li>
+<li>Having alternative solution presented for 2nd use case mentioned above (scoping local content)</li>
+</ul>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://matrix.to/#/!AGetWbsMpFPdSgUrbs:matrix.org/$CnD20n29QzpExnykMFkfG17F1ZKq8aEBRTk-vMNCBkA?via=matrix.org&amp;via=mozilla.org&amp;via=igalia.com" rel="nofollow">https://matrix.to/#/!AGetWbsMpFPdSgUrbs:matrix.org/$CnD20n29QzpExnykMFkfG17F1ZKq8aEBRTk-vMNCBkA?via=matrix.org&amp;via=mozilla.org&amp;via=igalia.com</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/htmldialogelement/showmodal</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmldialogelement/showmodal/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmldialogelement/showmodal/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b71d118ffc6d72b77efad9661110fcc9ede464eb/hovercard" href="https://github.com/mdn/content/commit/b71d118ffc6d72b77efad9661110fcc9ede464eb"><tt>b71d118</tt></a></li>
+<li>Document last modified: 2024-07-25T14:22:56.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, SVG11] CanvasRenderingContext2D: drawImage() method: takes natural height and width into account docs incomplete.]]></title>
             <link>https://github.com/mdn/content/issues/35141</link>
@@ -78,7 +118,7 @@ Which tripped me off, anyways I don't know why that behavior is and would love t
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The black background on each segment's name does not fully cover the word "protocol". The last letter ("l") is outside the box.</p>
 <p dir="auto">This is only occurring on Firefox (Linux, from Mozilla deb package, version 128.0). When I brought up the page in Chrome (also on Linux) the display was correct.</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjIxMTk1MzcsIm5iZiI6MTcyMjExOTIzNywicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzI3VDIyMjcxN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRhY2MxYjZhYzUzNDM5ZGRmOWU3NGJhOTY1MGI1NGM1ZDZlYTNhOTc5YjVjMTU1Njg5YTRiMGFjNDEzNWQ1ZGImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.i8pP5y3WBcjoXtNHMAWRC_SuG-8eGRqHAxgBKncK3ao"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjIxMTk1MzcsIm5iZiI6MTcyMjExOTIzNywicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzI3VDIyMjcxN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRhY2MxYjZhYzUzNDM5ZGRmOWU3NGJhOTY1MGI1NGM1ZDZlYTNhOTc5YjVjMTU1Njg5YTRiMGFjNDEzNWQ1ZGImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.i8pP5y3WBcjoXtNHMAWRC_SuG-8eGRqHAxgBKncK3ao" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjIxMjAxNjMsIm5iZiI6MTcyMjExOTg2MywicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzI3VDIyMzc0M1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQ4MTU0YmRlMmU5MjMxNWNjZWYxNThmYmUxYTdlZDc3YTFlOWNlODk3MmVkNGE4ODc5MzQyNWE2OTBhNzQ4ZjAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.3geAxkjgH5oUba9rpXtnrqipvcoirOC-I0svdCGTVrk"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjIxMjAxNjMsIm5iZiI6MTcyMjExOTg2MywicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzI3VDIyMzc0M1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQ4MTU0YmRlMmU5MjMxNWNjZWYxNThmYmUxYTdlZDc3YTFlOWNlODk3MmVkNGE4ODc5MzQyNWE2OTBhNzQ4ZjAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.3geAxkjgH5oUba9rpXtnrqipvcoirOC-I0svdCGTVrk" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The background color should cover the full word.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
@@ -733,7 +773,7 @@ input:read-only {
 <span class="pl-ent">input</span><span class="pl-kos">:</span><span class="pl-c1">read-only</span> {
   <span class="pl-c1">outline</span><span class="pl-kos">:</span> thick double red;
 }</pre></div>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjIxMTk1MzIsIm5iZiI6MTcyMjExOTIzMiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcyNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MjdUMjIyNzEyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NmQyNTczYjJlZDllZDE2ZmFjMmNkOGQzZWM3NWI3MDUzZjA0YTEyMzZkYjUwYjg4MjI5YWU1OGViMTA5NDM3NiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.xmY8VzFyw3opIr5pDziDkbTYBUzTHDuFu848gCHjSOc"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjIxMTk1MzIsIm5iZiI6MTcyMjExOTIzMiwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcyNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MjdUMjIyNzEyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NmQyNTczYjJlZDllZDE2ZmFjMmNkOGQzZWM3NWI3MDUzZjA0YTEyMzZkYjUwYjg4MjI5YWU1OGViMTA5NDM3NiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.xmY8VzFyw3opIr5pDziDkbTYBUzTHDuFu848gCHjSOc" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjIxMjAxNTgsIm5iZiI6MTcyMjExOTg1OCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcyNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MjdUMjIzNzM4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MDBkNzE1ODBhNjdmOGIwMmM2NzJjZGQxZDE2Nzk1YzQxZmUxNTc4NTNjZWIwMDM4YzEwYWMyZTk4ZTBkYjI3ZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.xTRpkyN4xBFsacVlwa5wVlGSdjnsq8rRoZH3iad0Uvk"><img width="719" alt="Screenshot 2023-09-15 at 1 21 25 PM" src="https://private-user-images.githubusercontent.com/5562161/268351944-a9affa94-b437-4cee-bbd8-7bd87ee8ce8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjIxMjAxNTgsIm5iZiI6MTcyMjExOTg1OCwicGF0aCI6Ii81NTYyMTYxLzI2ODM1MTk0NC1hOWFmZmE5NC1iNDM3LTRjZWUtYmJkOC03YmQ4N2VlOGNlOGMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcyNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MjdUMjIzNzM4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MDBkNzE1ODBhNjdmOGIwMmM2NzJjZGQxZDE2Nzk1YzQxZmUxNTc4NTNjZWIwMDM4YzEwYWMyZTk4ZTBkYjI3ZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.xTRpkyN4xBFsacVlwa5wVlGSdjnsq8rRoZH3iad0Uvk" style="max-width: 100%;"></a>
 <p dir="auto"><em>Sample output. Note how the checkbox, despite being "editable by the user," is targeted by the read-only styles.</em></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think this should be mentioned in the documentation. That read only has unexpected (at least from my perspective) behavior. This could be an ambiguity-related issue similar to what can occur with <code class="notranslate">in-range</code> or other input-type specific pseudos, but I believe the documentation could benefit from this clarity.</p>
