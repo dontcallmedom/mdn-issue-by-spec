@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, cssom-1\] Return info missing](https://github.com/mdn/content/issues/35205) (2024-07-28T22:38:13Z)
+  
 * [\[html\] Description of how inert of .showModal() works does not cover how it behaves with iframe](https://github.com/mdn/content/issues/35189) (2024-07-27T22:31:00Z)
   
 * [\[html, SVG11\] CanvasRenderingContext2D: drawImage() method: takes natural height and width into account docs incomplete.](https://github.com/mdn/content/issues/35141) (2024-07-26T10:10:58Z)
