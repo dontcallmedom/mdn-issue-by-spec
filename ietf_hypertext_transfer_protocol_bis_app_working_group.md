@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by IETF Hypertext Transfer Protocol Bis APP Working Group. [![RSS feed for IETF Hypertext Transfer Protocol Bis APP Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[rfc7230\] Transfer Encoding identity missing on English but exists on other languages](https://github.com/mdn/content/issues/35200) (2024-07-28T17:27:26Z)
-  
 * [\[rfc7231\] Does DELETE permit body?](https://github.com/mdn/content/issues/34721) (2024-07-08T18:17:51Z)
   
 * [\[rfc7231\] POST requests and 301/302 status codes](https://github.com/mdn/content/issues/34222) (2024-06-17T10:02:44Z)

@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-position-3\] Add fixed](https://github.com/mdn/content/issues/35232) (2024-07-29T22:19:02Z)
-  
 * [\[html, cssom-1\] Link HTML style attribute with HTMLElement.style page](https://github.com/mdn/content/issues/35205) (2024-07-28T22:38:13Z)
   
 * [\[touch-events\] Added explanation of touchcancel to "TouchEvent: changedTouches](https://github.com/mdn/content/issues/35194) (2024-07-28T13:15:54Z)
