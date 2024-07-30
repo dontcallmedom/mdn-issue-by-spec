@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] How accurate is currentTime?](https://github.com/mdn/content/issues/35239) (2024-07-30T09:34:47Z)
+  
 * [\[html, cssom-1\] Link HTML style attribute with HTMLElement.style page](https://github.com/mdn/content/issues/35205) (2024-07-28T22:38:13Z)
   
 * [\[html\] Description of how inert of .showModal() works does not cover how it behaves with iframe](https://github.com/mdn/content/issues/35189) (2024-07-27T22:31:00Z)
