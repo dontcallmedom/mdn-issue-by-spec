@@ -4,8 +4,6 @@
 
 * [\[html\] How accurate is currentTime?](https://github.com/mdn/content/issues/35239) (2024-07-30T09:34:47Z)
   
-* [\[html, cssom-1\] Link HTML style attribute with HTMLElement.style page](https://github.com/mdn/content/issues/35205) (2024-07-28T22:38:13Z)
-  
 * [\[html\] Description of how inert of .showModal() works does not cover how it behaves with iframe](https://github.com/mdn/content/issues/35189) (2024-07-27T22:31:00Z)
   
 * [\[html, SVG11\] CanvasRenderingContext2D: drawImage() method: takes natural height and width into account docs incomplete.](https://github.com/mdn/content/issues/35141) (2024-07-26T10:10:58Z)
