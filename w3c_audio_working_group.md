@@ -10,8 +10,6 @@
   
 * [\[webaudio\] BiquadFilterNode»Q: Incorrect range for Q?](https://github.com/mdn/content/issues/23592) (2023-01-13T01:05:43Z)
   
-* [\[webaudio\] AudioParam - automationRate undocumented](https://github.com/mdn/content/issues/14637) (2022-04-03T13:16:23Z)
-  
 * [\[webaudio\] "ConvolverNode": provide a simpler example that I can adapt to more complex examples (connecting it to another node does not work)](https://github.com/mdn/content/issues/14022) (2022-03-18T14:35:29Z)
   
 * [\[webaudio\] Content bug: AudioListener and attributes need better examples. ](https://github.com/mdn/content/issues/4468) (2021-04-26T03:22:48Z)

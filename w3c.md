@@ -148,8 +148,6 @@
   
 * [\[hr-time-3, performance-timeline-2, resource-timing-2, user-timing-2\] Topic on setting HTTP priority of resource requests](https://github.com/mdn/content/issues/14803) (2022-04-08T02:53:08Z)
   
-* [\[webaudio\] AudioParam - automationRate undocumented](https://github.com/mdn/content/issues/14637) (2022-04-03T13:16:23Z)
-  
 * [\[webaudio\] "ConvolverNode": provide a simpler example that I can adapt to more complex examples (connecting it to another node does not work)](https://github.com/mdn/content/issues/14022) (2022-03-18T14:35:29Z)
   
 * [\[web-animations-2, css-animations-2\] Issue with "Element.animate()": wrong scenario mentioned](https://github.com/mdn/content/issues/13487) (2022-03-04T07:40:26Z)
