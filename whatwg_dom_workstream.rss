@@ -138,44 +138,6 @@ For each node of this’s node list, remove all transient registered observers w
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[dom] Document syntax restrictions for functional `id`s]]></title>
-            <link>https://github.com/mdn/content/issues/28752</link>
-            <guid>https://github.com/mdn/content/issues/28752</guid>
-            <pubDate>Fri, 25 Aug 2023 12:12:43 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Syntax -&gt; Exceptions (or wherever the information should go)</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">A contributor on translated-content (<a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AppyGG/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AppyGG">@AppyGG</a>) asked about adding an example to the <code class="notranslate">querySelector</code> page to explain how to deal with CSS <code class="notranslate">id</code>s that start with a number.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">If possible, a note, example, or some sort of mention regarding this special case. Below is the example proposed by <a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/AppyGG/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/AppyGG">@AppyGG</a> in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1835432811" data-permission-text="Title is private" data-url="https://github.com/mdn/translated-content/issues/14872" data-hovercard-type="pull_request" data-hovercard-url="/mdn/translated-content/pull/14872/hovercard" href="https://github.com/mdn/translated-content/pull/14872">mdn/translated-content#14872</a>, though I think it could also be helpful to give an example of how to escape <code class="notranslate">id</code>s starting with a number as explained in <a href="https://stackoverflow.com/questions/20306204/using-queryselector-with-ids-that-are-numbers" rel="nofollow">this StackOverflow post/answer</a>:</p>
-<blockquote>
-<p dir="auto"><strong>Note :</strong> If the selector selects an <code class="notranslate">id</code> and this <code class="notranslate">id</code> starts with a number (0-9), a syntax error is returned.</p>
-</blockquote>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;div id=&quot;0123&quot;&gt;&lt;/div&gt;
-&lt;div id=&quot;abcd&quot;&gt;&lt;/div&gt;
-
-&lt;script&gt;
-  document.querySelector(&quot;#0123&quot;); // syntax error
-  document.querySelector(&quot;#abcd&quot;); // selects the second div
-&lt;/script&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">id</span>="<span class="pl-s">0123</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span>
-<span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">id</span>="<span class="pl-s">abcd</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span>
-
-<span class="pl-kos">&lt;</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span>
-  <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">"#0123"</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// syntax error</span>
-  <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">"#abcd"</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// selects the second div</span>
-<span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span></pre></div>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">From the translated-content PR:</p>
-<ul dir="auto">
-<li><a href="https://stackoverflow.com/questions/20306204/using-queryselector-with-ids-that-are-numbers" rel="nofollow">StackOverflow discussion about this problem</a></li>
-<li><a href="https://www.w3docs.com/snippets/html/which-are-the-valid-values-for-the-id-attribute.html#:~:text=In%20HTML5%2C%20the%20id%20attribute,id%20attribute%20is%20case%20sensitive." rel="nofollow">W3Docs about HTML5 IDs</a></li>
-</ul>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">cf. <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1835432811" data-permission-text="Title is private" data-url="https://github.com/mdn/translated-content/issues/14872" data-hovercard-type="pull_request" data-hovercard-url="/mdn/translated-content/pull/14872/hovercard" href="https://github.com/mdn/translated-content/pull/14872">mdn/translated-content#14872</a> for the related pull request.</p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html, dom, cssom-view-1, uievents, pointerlock-2, selection-api, page-visibility-2] Keydown, keyup, keypress pages should mention they work on document, body, etc]]></title>
             <link>https://github.com/mdn/content/issues/28561</link>
             <guid>https://github.com/mdn/content/issues/28561</guid>
