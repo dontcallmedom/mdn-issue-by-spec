@@ -4,10 +4,155 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Tue, 30 Jul 2024 09:34:47 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 04 Aug 2024 07:30:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] CSS :defined pseudo-class: Rotten example and a typo]]></title>
+            <link>https://github.com/mdn/content/issues/35296</link>
+            <guid>https://github.com/mdn/content/issues/35296</guid>
+            <pubDate>Sun, 04 Aug 2024 07:30:33 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:defined" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:defined</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">First, a typo in the first paragraph:</p>
+<blockquote>
+<p dir="auto">... built in to the browser ...</p>
+</blockquote>
+<p dir="auto">Should be:</p>
+<blockquote>
+<p dir="auto">... built into the browser ...</p>
+</blockquote>
+<p dir="auto"><a href="https://dictionary.cambridge.org/dictionary/english/build-into" rel="nofollow">source</a></p>
+<p dir="auto">Second, the example given is bad on multiple levels.</p>
+<ol dir="auto">
+<li>If the point of the example is to show what difference it makes, then it seems like you'd want to allow some time for the user to look at it while it's <code class="notranslate">:not(:defined)</code>.  As is, the element is only <code class="notranslate">display: none</code> for the split second it takes to load the page.</li>
+<li>The example makes the styling completely irrelevant.  In the HTML, before the upgrade, it's an empty element with no margin, borders, etc., and so occupies no space, making it invisible.  So the <code class="notranslate">display: none</code> isn't making any visible change.</li>
+<li>The constructor does something which is against the "conformance requirements" given in <a href="https://html.spec.whatwg.org/multipage/custom-elements.html#custom-element-conformance" rel="nofollow">the spec</a>.  It sort of works, thanks to the <code class="notranslate">defer</code> attribute of the script tag (which is not mentioned at all on this page; you have to look at the github hosted files, as this page makes it appear that the JS comes first and then the HTML).  This delayed execution makes the <code class="notranslate">&lt;simple-custom&gt;</code> element be upgraded after its creation.  But that doesn't negate the fact that the constructor is contrary the requirements.</li>
+</ol>
+<blockquote>
+<p dir="auto">The element's attributes and children must not be inspected, as in the non-<a href="https://html.spec.whatwg.org/multipage/custom-elements.html#upgrades" rel="nofollow">upgrade</a> case none will be present, and relying on upgrades makes the element less usable.</p>
+</blockquote>
+<p dir="auto">And as <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements#implementing_a_custom_element" rel="nofollow">MDN explains</a> when linking to this spec:</p>
+<blockquote>
+<p dir="auto">At this point, you should not inspect the element's attributes...</p>
+</blockquote>
+<p dir="auto">It's quite normal for examples to be frivolous or silly, but we should not be confusing learners by giving them examples that are so blatantly against the spec.</p>
+<ol start="4" dir="auto">
+<li>The example is over-complicated.  There's no need to trot out a shadow root or add a <code class="notranslate">div</code> with text based on some attribute that we weren't supposed to read in the constructor.  You don't need the constructor to do anything, as the point of the example is merely about whether the tag has been defined.  Readers can learn elsewhere about how to make author-defined elements useful.</li>
+</ol>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Here's a suggestion of how to improve the example.  It could be even simpler, but I think this largely fixes the deficiencies I noted above.</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;:defined demo&lt;/title&gt;
+    &lt;script&gt;
+function defineSimpleCustom() {
+  customElements.define(&quot;simple-custom&quot;,
+    class extends HTMLElement {
+      constructor() {
+        super();
+      }
+    }
+  );
+  document.getElementById(&quot;button1&quot;).remove();
+}
+    &lt;/script&gt;
+    &lt;style&gt;
+      p {
+        background: yellow;
+      }
+
+      :defined {
+        font-style: italic;
+      }
+
+      simple-custom {
+        text-transform: uppercase;
+        background: cyan;
+      }
+
+      simple-custom:not(:defined) {
+        display: none;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;&lt;code&gt;:defined&lt;/code&gt; demo&lt;/h1&gt;
+
+    &lt;p&gt;The &lt;code&gt;&amp;lt;simple-custom&amp;gt;&lt;/code&gt; element type is &lt;simple-custom&gt;NOT&lt;/simple-custom&gt; undefined.&lt;/p&gt;
+
+    &lt;button id=&quot;button1&quot; onclick=&quot;defineSimpleCustom()&quot;&gt;Define &lt;code&gt;&amp;lt;simple-custom&amp;gt;&lt;/code&gt;&lt;/button&gt;    
+
+  &lt;/body&gt;
+&lt;/html&gt;"><pre class="notranslate"><code class="notranslate">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;:defined demo&lt;/title&gt;
+    &lt;script&gt;
+function defineSimpleCustom() {
+  customElements.define("simple-custom",
+    class extends HTMLElement {
+      constructor() {
+        super();
+      }
+    }
+  );
+  document.getElementById("button1").remove();
+}
+    &lt;/script&gt;
+    &lt;style&gt;
+      p {
+        background: yellow;
+      }
+
+      :defined {
+        font-style: italic;
+      }
+
+      simple-custom {
+        text-transform: uppercase;
+        background: cyan;
+      }
+
+      simple-custom:not(:defined) {
+        display: none;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;&lt;code&gt;:defined&lt;/code&gt; demo&lt;/h1&gt;
+
+    &lt;p&gt;The &lt;code&gt;&amp;lt;simple-custom&amp;gt;&lt;/code&gt; element type is &lt;simple-custom&gt;NOT&lt;/simple-custom&gt; undefined.&lt;/p&gt;
+
+    &lt;button id="button1" onclick="defineSimpleCustom()"&gt;Define &lt;code&gt;&amp;lt;simple-custom&amp;gt;&lt;/code&gt;&lt;/button&gt;    
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/_colon_defined</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:defined" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:defined</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_defined/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_defined/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc/hovercard" href="https://github.com/mdn/content/commit/acfe8c9f1f4145f77653a2bc64a9744b001358dc"><tt>acfe8c9</tt></a></li>
+<li>Document last modified: 2023-07-07T07:19:19.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] How accurate is currentTime?]]></title>
             <link>https://github.com/mdn/content/issues/35239</link>
@@ -140,7 +285,7 @@ Which tripped me off, anyways I don't know why that behavior is and would love t
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The black background on each segment's name does not fully cover the word "protocol". The last letter ("l") is outside the box.</p>
 <p dir="auto">This is only occurring on Firefox (Linux, from Mozilla deb package, version 128.0). When I brought up the page in Chrome (also on Linux) the display was correct.</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjI3NTY0NDUsIm5iZiI6MTcyMjc1NjE0NSwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODA0VDA3MjIyNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg0NzA2MDA0YmEwMzkxNTc1OWYyN2NlYjkzMzA5ZmI3NTI3ZTU2YmE1MGQyN2JmYjNiZWZlMTE5OGIzNWFlM2ImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.iX6yvJ-WH0pTwOYcR1midFpjh3Oa2SkV0dsTVFtLsy4"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjI3NTY0NDUsIm5iZiI6MTcyMjc1NjE0NSwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODA0VDA3MjIyNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg0NzA2MDA0YmEwMzkxNTc1OWYyN2NlYjkzMzA5ZmI3NTI3ZTU2YmE1MGQyN2JmYjNiZWZlMTE5OGIzNWFlM2ImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.iX6yvJ-WH0pTwOYcR1midFpjh3Oa2SkV0dsTVFtLsy4" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjI3NTcwODMsIm5iZiI6MTcyMjc1Njc4MywicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODA0VDA3MzMwM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQxYWIzOTlmOTkzOTY2ZDE1MWNmMjJmOWEzZmE2ZTFjZDM0ZjNmMjU0NGVhNjAxNTNkN2M0ODYwZjNiZmNjZGImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.tyFXnE7MWOSsq4w31jCsovZSIkUla-t57PrlLAcVFBo"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjI3NTcwODMsIm5iZiI6MTcyMjc1Njc4MywicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODA0VDA3MzMwM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQxYWIzOTlmOTkzOTY2ZDE1MWNmMjJmOWEzZmE2ZTFjZDM0ZjNmMjU0NGVhNjAxNTNkN2M0ODYwZjNiZmNjZGImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.tyFXnE7MWOSsq4w31jCsovZSIkUla-t57PrlLAcVFBo" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The background color should cover the full word.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
