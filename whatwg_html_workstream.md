@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] CSS :defined pseudo-class: Rotten example and a typo](https://github.com/mdn/content/issues/35296) (2024-08-04T07:30:33Z)
+* [\[html\] CSS :defined pseudo-class: Improve example and fix typo](https://github.com/mdn/content/issues/35296) (2024-08-04T07:30:33Z)
   
 * [\[html\] How accurate is currentTime?](https://github.com/mdn/content/issues/35239) (2024-07-30T09:34:47Z)
   
