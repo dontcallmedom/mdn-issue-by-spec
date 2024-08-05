@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[dom\] Incorrect wording](https://github.com/mdn/content/issues/35317) (2024-08-05T20:52:45Z)
+  
 * [\[html\] CSS :defined pseudo-class: Improve example and fix typo](https://github.com/mdn/content/issues/35296) (2024-08-04T07:30:33Z)
   
 * [\[dom\] Element.shadowRoot should note browser shadow roots aren't accessible](https://github.com/mdn/content/issues/35286) (2024-08-02T19:32:27Z)
