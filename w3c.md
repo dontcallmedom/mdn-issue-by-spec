@@ -64,8 +64,6 @@
   
 * [\[selectors-4\] :blank is also a blank page pseudo-class](https://github.com/mdn/content/issues/31885) (2024-01-24T10:43:17Z)
   
-* [\[WebCryptoAPI\] SubtleCrypto: sign() method missing Ed25519 in Supported algorithms](https://github.com/mdn/content/issues/30886) (2023-12-09T03:20:17Z)
-  
 * [\[CSS21, css-display-3\] Hiding things example - using absolute positioning](https://github.com/mdn/content/issues/30171) (2023-11-10T00:23:35Z)
   
 * [\[css-easing-1\] Create function pages for easing functions](https://github.com/mdn/content/issues/29923) (2023-10-31T01:44:35Z)
