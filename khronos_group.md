@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Khronos Group. [![RSS feed for Khronos Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[webgl1\] mention that \`gl.clear(gl.DEPTH_BUFFER_BIT)\` has no effect when \`gl.depthMask()\` has been set to \`false\`](https://github.com/mdn/content/issues/35362) (2024-08-07T18:39:11Z)
+  
 * [\[webgl1\] WebGLRenderingContext.createBuffer() may return \`null\`.](https://github.com/mdn/content/issues/33471) (2024-05-07T14:47:46Z)
   
 * [\[webgl1\] compressedTexImage2D does not support a form with 6 arguments](https://github.com/mdn/content/issues/33026) (2024-04-10T15:10:38Z)
