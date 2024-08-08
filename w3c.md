@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-font-loading-3\] Add prominent note to \`FontFaceSet.check()\` about non-existent fonts](https://github.com/mdn/content/issues/35369) (2024-08-08T10:00:06Z)
+  
 * [\[CSP3\] SecurityPolicyViolationEvent docs have unexpected HTTP sidebar](https://github.com/mdn/content/issues/35320) (2024-08-06T04:08:17Z)
   
 * [\[css-contain-2\] Containing_block: content-visibility can form a new containing block](https://github.com/mdn/content/issues/35312) (2024-08-05T15:15:58Z)
