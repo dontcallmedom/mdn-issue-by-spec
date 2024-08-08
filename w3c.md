@@ -6,8 +6,6 @@
   
 * [\[CSP3\] SecurityPolicyViolationEvent docs have unexpected HTTP sidebar](https://github.com/mdn/content/issues/35320) (2024-08-06T04:08:17Z)
   
-* [\[css-contain-2\] Containing_block: content-visibility can form a new containing block](https://github.com/mdn/content/issues/35312) (2024-08-05T15:15:58Z)
-  
 * [\[touch-events\] Added explanation of touchcancel to "TouchEvent: changedTouches](https://github.com/mdn/content/issues/35194) (2024-07-28T13:15:54Z)
   
 * [\[css-animations-2, css-easing-1\] animation-timing-function neglects to mention linear() easing function](https://github.com/mdn/content/issues/35187) (2024-07-27T18:24:48Z)

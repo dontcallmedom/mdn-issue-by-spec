@@ -4,8 +4,6 @@
 
 * [\[css-font-loading-3\] Add prominent note to \`FontFaceSet.check()\` about non-existent fonts](https://github.com/mdn/content/issues/35369) (2024-08-08T10:00:06Z)
   
-* [\[css-contain-2\] Containing_block: content-visibility can form a new containing block](https://github.com/mdn/content/issues/35312) (2024-08-05T15:15:58Z)
-  
 * [\[css-animations-2, css-easing-1\] animation-timing-function neglects to mention linear() easing function](https://github.com/mdn/content/issues/35187) (2024-07-27T18:24:48Z)
   
 * [\[cssom-view-1\] document.caretPositionFromPoint() API needs update](https://github.com/mdn/content/issues/34492) (2024-06-28T18:22:16Z)
