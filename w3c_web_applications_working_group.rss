@@ -4,51 +4,10 @@
         <title>W3C Web Applications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_applications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Applications Working Group</description>
-        <lastBuildDate>Sat, 03 Aug 2024 03:10:33 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 20 Jul 2024 19:06:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[cssom-view-1, uievents, pointerlock-2, css-box-3] `offsetX` and `offsetY` definition error as it relates to padding-left]]></title>
-            <link>https://github.com/mdn/content/issues/35292</link>
-            <guid>https://github.com/mdn/content/issues/35292</guid>
-            <pubDate>Sat, 03 Aug 2024 03:10:33 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSSOM_view/Coordinate_systems" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/CSSOM_view/Coordinate_systems</a></p>
-<p dir="auto">The following line seems to be wrong.</p>
-<blockquote>
-<p dir="auto">For example, when a <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent" rel="nofollow">mouse event</a> occurs, the position of the mouse as specified in the event's <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/offsetX" rel="nofollow"><code class="notranslate">offsetX</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/offsetY" rel="nofollow"><code class="notranslate">offsetY</code></a> properties are given relative to the top-left corner of the node to which the event has been delivered. The origin is inset by the distances specified by <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left" rel="nofollow"><code class="notranslate">padding-left</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-top" rel="nofollow"><code class="notranslate">padding-top</code></a>.</p>
-</blockquote>
-<p dir="auto"></p><div class="Box Box--condensed my-2">
-  <div class="Box-header f6">
-    <p class="mb-0 text-bold">
-      <a href="https://github.com/mdn/content/blob/fa702e1046cb2656ae3f2ae7bccb5589a53b6d82/files/en-us/web/css/cssom_view/coordinate_systems/index.md?plain=1#L37">content/files/en-us/web/css/cssom_view/coordinate_systems/index.md</a>
-    </p>
-    <p class="mb-0 color-fg-muted">
-         Line 37
-      in
-      <a data-pjax="true" class="commit-tease-sha Link--inTextBlock" href="/mdn/content/commit/fa702e1046cb2656ae3f2ae7bccb5589a53b6d82">fa702e1</a>
-    </p>
-  </div>
-  <div itemprop="text" class="Box-body p-0 blob-wrapper blob-wrapper-embedded data">
-    <table class="highlight tab-size mb-0 js-file-line-container" data-tab-size="8" data-paste-markdown-skip="">
-
-        <tbody><tr class="border-0">
-          <td id="L37" class="blob-num border-0 px-3 py-0 color-bg-default" data-line-number="37"></td>
-          <td id="LC37" class="blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line"> For example, when a {{domxref("MouseEvent", "mouse event", "", 1)}} occurs, the position of the mouse as specified in the event's {{domxref("MouseEvent.offsetX", "offsetX")}} and {{domxref("MouseEvent.offsetY", "offsetY")}} properties are given relative to the top-left corner of the node to which the event has been delivered. The origin is inset by the distances specified by {{cssxref("padding-left")}} and {{cssxref("padding-top")}}. </td>
-        </tr>
-    </tbody></table>
-  </div>
-</div>
-<p></p>
-<p dir="auto">Specifically the following sentence:</p>
-<blockquote>
-<p dir="auto">The origin is inset by the distances specified by {{cssxref("padding-left")}} and {{cssxref("padding-top")}}.</p>
-</blockquote>
-<p dir="auto">The origin is not inset by <code class="notranslate">padding-left</code> and <code class="notranslate">padding-top</code> but rather by the <code class="notranslate">padding-edge</code> which is the edge between the padding area and the border area.</p>
-<p dir="auto">This statement is in accordance with the linked <a href="https://drafts.csswg.org/cssom-view/#dom-mouseevent-offsetx" rel="nofollow">cssom view module specification</a> of offsetX.</p>
-<p dir="auto">Specifically following the reference to <a href="https://drafts.csswg.org/css-box-4/#box-model" rel="nofollow">padding-edge</a> clarifies the intent nicely with an accompanying diagram.</p>
-<p dir="auto">This was tested on firefox and chrome.</p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[selection-api] deleteFromDocument deletes more than just text]]></title>
             <link>https://github.com/mdn/content/issues/34943</link>

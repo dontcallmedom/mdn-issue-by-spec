@@ -6,13 +6,9 @@
   
 * [\[css-contain-2\] Containing_block: content-visibility can form a new containing block](https://github.com/mdn/content/issues/35312) (2024-08-05T15:15:58Z)
   
-* [\[cssom-view-1, uievents, pointerlock-2, css-box-3\] \`offsetX\` and \`offsetY\` definition error as it relates to padding-left](https://github.com/mdn/content/issues/35292) (2024-08-03T03:10:33Z)
-  
 * [\[touch-events\] Added explanation of touchcancel to "TouchEvent: changedTouches](https://github.com/mdn/content/issues/35194) (2024-07-28T13:15:54Z)
   
 * [\[css-animations-2, css-easing-1\] animation-timing-function neglects to mention linear() easing function](https://github.com/mdn/content/issues/35187) (2024-07-27T18:24:48Z)
-  
-* [\[SVG11\] missing description for pointer-events: bounding-box value](https://github.com/mdn/content/issues/35164) (2024-07-26T16:14:21Z)
   
 * [\[html, SVG11\] CanvasRenderingContext2D: drawImage() method: takes natural height and width into account docs incomplete.](https://github.com/mdn/content/issues/35141) (2024-07-26T10:10:58Z)
   
