@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-text-decor-3\] Ambiguous wording](https://github.com/mdn/content/issues/35365) (2024-08-07T22:57:57Z)
-  
 * [\[css-contain-2\] Containing_block: content-visibility can form a new containing block](https://github.com/mdn/content/issues/35312) (2024-08-05T15:15:58Z)
   
 * [\[cssom-view-1, uievents, pointerlock-2, css-box-3\] \`offsetX\` and \`offsetY\` definition error as it relates to padding-left](https://github.com/mdn/content/issues/35292) (2024-08-03T03:10:33Z)
