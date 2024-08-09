@@ -36,8 +36,6 @@
   
 * [\[webauthn-3\] Webauthn latest specs](https://github.com/mdn/content/issues/34167) (2024-06-14T14:21:13Z)
   
-* [\[css-flexbox-1\] flex-initial element doesn't explicitly use flex: initial](https://github.com/mdn/content/issues/34027) (2024-06-09T22:23:00Z)
-  
 * [\[webrtc\] Broken link to RTCSessionDescriptionInit, RTCLocalSessionDescriptionInit](https://github.com/mdn/content/issues/33962) (2024-06-06T12:39:29Z)
   
 * [\[webrtc\] Missing Link for \`RTCPeerConnection.createDTMFSender()\` in "Obsolete Methods" Section](https://github.com/mdn/content/issues/33954) (2024-06-06T06:52:29Z)

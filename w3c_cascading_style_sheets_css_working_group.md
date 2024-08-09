@@ -12,8 +12,6 @@
   
 * [\[css-color-4\] Interpolating colors from different spaces: analogous components](https://github.com/mdn/content/issues/34229) (2024-06-17T18:47:04Z)
   
-* [\[css-flexbox-1\] flex-initial element doesn't explicitly use flex: initial](https://github.com/mdn/content/issues/34027) (2024-06-09T22:23:00Z)
-  
 * [\[css-logical-1\] \[CSS\] Implement margin at-rules](https://github.com/mdn/content/issues/33519) (2024-05-09T18:48:48Z)
   
 * [\[css-shadow-parts-1\] Incorrect statement about pseudo-elements needing to come last in a selector](https://github.com/mdn/content/issues/32971) (2024-04-05T20:16:52Z)
