@@ -42,7 +42,7 @@
   
 * [\[html\] Video/Audio source event handling](https://github.com/mdn/content/issues/32784) (2024-03-21T15:30:15Z)
   
-* [\[html\] There was no proper example of the HTML used for the Nesting example, instead it looked like someone was trying to explain it outside of an example like in the other sections of the web page.](https://github.com/mdn/content/issues/32758) (2024-03-20T07:11:44Z)
+* [\[html\] HTML heading element nesting example looks out of context](https://github.com/mdn/content/issues/32758) (2024-03-20T07:11:44Z)
   
 * [\[dom, cssom-view-1, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] querySelectorAll() does not state how the results are sorted](https://github.com/mdn/content/issues/32615) (2024-03-08T14:53:28Z)
   

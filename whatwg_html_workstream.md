@@ -34,7 +34,7 @@
   
 * [\[html\] Video/Audio source event handling](https://github.com/mdn/content/issues/32784) (2024-03-21T15:30:15Z)
   
-* [\[html\] There was no proper example of the HTML used for the Nesting example, instead it looked like someone was trying to explain it outside of an example like in the other sections of the web page.](https://github.com/mdn/content/issues/32758) (2024-03-20T07:11:44Z)
+* [\[html\] HTML heading element nesting example looks out of context](https://github.com/mdn/content/issues/32758) (2024-03-20T07:11:44Z)
   
 * [\[html\] HTMLMediaElement/textTracks example video does not load](https://github.com/mdn/content/issues/32262) (2024-02-13T22:47:24Z)
   
