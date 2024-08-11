@@ -111,44 +111,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[dom] Not all observers will be removed when one call observe with same target node]]></title>
-            <link>https://github.com/mdn/content/issues/29814</link>
-            <guid>https://github.com/mdn/content/issues/29814</guid>
-            <pubDate>Tue, 24 Oct 2023 15:19:23 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe#reusing_mutationobservers" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe#reusing_mutationobservers</a></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">It says:</p>
-<blockquote>
-<p dir="auto">all existing observers are automatically removed from all targets being observed</p>
-</blockquote>
-<p dir="auto">it sounds like total disaster, that all observers will be removed, but specification says something much much lighter, that all transient observers will be removed which is much much lower damage</p>
-<blockquote>
-<p dir="auto">For each node of this’s node list, remove all transient registered observers whose source is registered from node’s registered observer list.</p>
-</blockquote>
-<p dir="auto"><a href="https://dom.spec.whatwg.org/#interface-mutationobserver" rel="nofollow">https://dom.spec.whatwg.org/#interface-mutationobserver</a> section with <code class="notranslate">observe()</code> method steps</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Something more clear that only transient observers are removed with briefly explanation of what those are.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/mutationobserver/observe</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/mutationobserver/observe/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/mutationobserver/observe/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0029350cf0aa473b0f14cfda0365b15655aadd4e/hovercard" href="https://github.com/mdn/content/commit/0029350cf0aa473b0f14cfda0365b15655aadd4e"><tt>0029350</tt></a></li>
-<li>Document last modified: 2023-06-07T12:27:03.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[dom] Chrome has XMLNS as default namespace]]></title>
             <link>https://github.com/mdn/content/issues/29660</link>
             <guid>https://github.com/mdn/content/issues/29660</guid>
