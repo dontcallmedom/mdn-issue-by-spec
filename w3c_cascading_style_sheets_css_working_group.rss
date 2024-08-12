@@ -4,47 +4,10 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Mon, 12 Aug 2024 05:30:28 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 08 Aug 2024 10:00:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[css-transforms-1, css-values-3] Misleading Explanation of Single-Value Syntax for `transform-origin`]]></title>
-            <link>https://github.com/mdn/content/issues/35411</link>
-            <guid>https://github.com/mdn/content/issues/35411</guid>
-            <pubDate>Mon, 12 Aug 2024 05:30:28 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Syntax</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">In the MDN documentation for the transform-origin property, it states:</p>
-<p dir="auto">If a single <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length" rel="nofollow"></a> or <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/percentage" rel="nofollow"></a> value is defined, it represents the horizontal offset.</p>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin#syntax" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin#syntax</a></p>
-<p dir="auto">This explanation can be misleading because when the keywords <code class="notranslate">top</code> and <code class="notranslate">bottom</code> are used, they affect the vertical axis rather than the horizontal one. In these cases, the horizontal axis defaults to center.</p>
-<p dir="auto">The W3C specification clarifies this behaviour:</p>
-<p dir="auto">If only one value is specified, the second value is assumed to be <a href="https://www.w3.org/TR/css-transforms-1/#valdef-transform-origin-center" rel="nofollow">center</a>. If one or two values are specified, the third value is assumed to be 0px.</p>
-<p dir="auto">Here’s the relevant link to the W3C spec: <a href="https://www.w3.org/TR/css-transforms-1/#transform-origin-property" rel="nofollow">https://www.w3.org/TR/css-transforms-1/#transform-origin-property</a></p>
-<p dir="auto">This might confuse readers, so I suggest revising the documentation to accurately reflect the behaviour when only one value is specified.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Update the single use <code class="notranslate">keyword</code> values behaviour description for <code class="notranslate">transform-origin</code> property.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://www.w3.org/TR/css-transforms-1/#transform-origin-property" rel="nofollow">https://www.w3.org/TR/css-transforms-1/#transform-origin-property</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/transform-origin</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/transform-origin/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/transform-origin/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/fc1cc5684c98d19816d5cc81702d70f2a0debbad/hovercard" href="https://github.com/mdn/content/commit/fc1cc5684c98d19816d5cc81702d70f2a0debbad"><tt>fc1cc56</tt></a></li>
-<li>Document last modified: 2024-07-26T14:35:43.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[css-font-loading-3] Add prominent note to `FontFaceSet.check()` about non-existent fonts]]></title>
             <link>https://github.com/mdn/content/issues/35369</link>
