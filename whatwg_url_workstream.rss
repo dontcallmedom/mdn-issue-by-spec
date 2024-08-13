@@ -21,13 +21,14 @@
 <p dir="auto">Chromium (Chrome, Edge 79+, Opera, Samsung Internet), Firefox</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">A section with a example involving the usage of a Encoded URI search param. Such as:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const url = new URL(&quot;https://example.com?search=1234&amp;param=my%20param&quot;);
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const url = new URL(&quot;https://example.com?search=1234&amp;param=my%20param&quot;);
 console.log(`Query string (before):\t ${url.search}`);
 url.searchParams.delete(&quot;search&quot;);
-console.log(`Query string (after):\t ${url.search}`); "><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">url</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-c1">URL</span><span class="pl-kos">(</span><span class="pl-s">"https://example.com?search=1234&amp;param=my%20param"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`Query string (before):\t <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">url</span><span class="pl-kos">.</span><span class="pl-c1">search</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-s1">url</span><span class="pl-kos">.</span><span class="pl-c1">searchParams</span><span class="pl-kos">.</span><span class="pl-en">delete</span><span class="pl-kos">(</span><span class="pl-s">"search"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`Query string (after):\t <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">url</span><span class="pl-kos">.</span><span class="pl-c1">search</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">)</span><span class="pl-kos">;</span> </pre></div>
+console.log(`Query string (after):\t ${url.search}`); "><pre lang="js" class="notranslate"><code class="notranslate">const url = new URL("https://example.com?search=1234&amp;param=my%20param");
+console.log(`Query string (before):\t ${url.search}`);
+url.searchParams.delete("search");
+console.log(`Query string (after):\t ${url.search}`); 
+</code></pre></div>
 <h3 dir="auto">Did you test this? If so, how?</h3>
 <p dir="auto">You can simply paste it on Firefox/Chromium console and get this output:</p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Query string (before):	 ?search=1234&amp;param=my%20param

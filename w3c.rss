@@ -248,7 +248,7 @@ And copy/paste of the SecurityError from:<br>
 <p dir="auto">If the state of the read permission of this handle is anything other than "<a href="https://w3c.github.io/permissions/#dom-permissionstate-prompt" rel="nofollow">prompt</a>", this will return that state directly. If it is "<a href="https://w3c.github.io/permissions/#dom-permissionstate-prompt" rel="nofollow">prompt</a>" however, user activation is needed</p>
 </blockquote>
 <p dir="auto">Real world example:<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/6358971/351664963-b67e1d4f-306e-42ab-9ea4-cb5ab7b1d6ed.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM1ODAyNTAsIm5iZiI6MTcyMzU3OTk1MCwicGF0aCI6Ii82MzU4OTcxLzM1MTY2NDk2My1iNjdlMWQ0Zi0zMDZlLTQyYWItOWVhNC1jYjVhYjdiMWQ2ZWQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDgxMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA4MTNUMjAxMjMwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTEyOWQwMzQ2ZGQ3MWJhYTBjMDZjYmE1MDk2N2Q1ODIwYTYyNTVhMjk5ZGM0ODA2YjVlZDA5MjVlN2U3YTZmZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.qiwmPiG9wc61bu0krN8MAWgcbKm0_chma1DgLcdpVF0"><img src="https://private-user-images.githubusercontent.com/6358971/351664963-b67e1d4f-306e-42ab-9ea4-cb5ab7b1d6ed.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM1ODAyNTAsIm5iZiI6MTcyMzU3OTk1MCwicGF0aCI6Ii82MzU4OTcxLzM1MTY2NDk2My1iNjdlMWQ0Zi0zMDZlLTQyYWItOWVhNC1jYjVhYjdiMWQ2ZWQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDgxMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA4MTNUMjAxMjMwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTEyOWQwMzQ2ZGQ3MWJhYTBjMDZjYmE1MDk2N2Q1ODIwYTYyNTVhMjk5ZGM0ODA2YjVlZDA5MjVlN2U3YTZmZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.qiwmPiG9wc61bu0krN8MAWgcbKm0_chma1DgLcdpVF0" alt="image" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/6358971/351664963-b67e1d4f-306e-42ab-9ea4-cb5ab7b1d6ed.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM1ODExOTksIm5iZiI6MTcyMzU4MDg5OSwicGF0aCI6Ii82MzU4OTcxLzM1MTY2NDk2My1iNjdlMWQ0Zi0zMDZlLTQyYWItOWVhNC1jYjVhYjdiMWQ2ZWQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDgxMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA4MTNUMjAyODE5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MzFhMWM2ZDlkYWMzNzRmOTcwM2JhZWRjOTg2NDFlNTU4MzRjMzU0MDU0YWVmMDcyNGIyZGQwMzVmZWJhNTQ5ZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.vyxQFXb-Qxa8JesK3lkLArC343uAxfrfvfc2szthg-w"><img src="https://private-user-images.githubusercontent.com/6358971/351664963-b67e1d4f-306e-42ab-9ea4-cb5ab7b1d6ed.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM1ODExOTksIm5iZiI6MTcyMzU4MDg5OSwicGF0aCI6Ii82MzU4OTcxLzM1MTY2NDk2My1iNjdlMWQ0Zi0zMDZlLTQyYWItOWVhNC1jYjVhYjdiMWQ2ZWQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDgxMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA4MTNUMjAyODE5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MzFhMWM2ZDlkYWMzNzRmOTcwM2JhZWRjOTg2NDFlNTU4MzRjMzU0MDU0YWVmMDcyNGIyZGQwMzVmZWJhNTQ5ZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.vyxQFXb-Qxa8JesK3lkLArC343uAxfrfvfc2szthg-w" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">MDN metadata</h3>
@@ -393,7 +393,7 @@ And copy/paste of the SecurityError from:<br>
 <p dir="auto">Also of interest is the content found in the <a href="https://html.spec.whatwg.org/multipage/indices.html#event-error:~:text=List%20of%20event%20handler%20content%20attributes" rel="nofollow">WHATWG HTML Standard</a> that lists the <code class="notranslate">body</code> specifically as an alias for a number of window events which clued me to the possibility that onerror would be one of these cases (along with that MDN notice above), even if it isn't explicitly listed as such on this page.</p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto">When running the following code we can get a fuller list of aliased events:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const checkAliasedEvents = (a = document.body, b = window) =&gt; {
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const checkAliasedEvents = (a = document.body, b = window) =&gt; {
     const aliases = []
 
     for (const key in a) {
@@ -406,20 +406,21 @@ And copy/paste of the SecurityError from:<br>
     return aliases.sort()
 }
 
-console.log(checkAliasedEvents())"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-en">checkAliasedEvents</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">body</span><span class="pl-kos">,</span> <span class="pl-s1">b</span> <span class="pl-c1">=</span> <span class="pl-smi">window</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-    <span class="pl-k">const</span> <span class="pl-s1">aliases</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-kos">]</span>
+console.log(checkAliasedEvents())"><pre lang="javascript" class="notranslate"><code class="notranslate">const checkAliasedEvents = (a = document.body, b = window) =&gt; {
+    const aliases = []
 
-    <span class="pl-k">for</span> <span class="pl-kos">(</span><span class="pl-k">const</span> <span class="pl-s1">key</span> <span class="pl-k">in</span> <span class="pl-s1">a</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-        <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-c1">!</span><span class="pl-s1">key</span><span class="pl-kos">.</span><span class="pl-en">startsWith</span><span class="pl-kos">(</span><span class="pl-s">'on'</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-k">continue</span><span class="pl-kos">;</span>
-        <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">a</span><span class="pl-kos">[</span><span class="pl-s1">key</span><span class="pl-kos">]</span> <span class="pl-c1">!==</span> <span class="pl-s1">b</span><span class="pl-kos">[</span><span class="pl-s1">key</span><span class="pl-kos">]</span><span class="pl-kos">)</span> <span class="pl-k">continue</span><span class="pl-kos">;</span>
-        <span class="pl-s1">a</span><span class="pl-kos">[</span><span class="pl-s1">key</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span><span class="pl-kos">}</span>
-        <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">a</span><span class="pl-kos">[</span><span class="pl-s1">key</span><span class="pl-kos">]</span> <span class="pl-c1">===</span> <span class="pl-s1">b</span><span class="pl-kos">[</span><span class="pl-s1">key</span><span class="pl-kos">]</span><span class="pl-kos">)</span> <span class="pl-s1">aliases</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-s1">key</span><span class="pl-kos">)</span>
-    <span class="pl-kos">}</span>
+    for (const key in a) {
+        if (!key.startsWith('on')) continue;
+        if (a[key] !== b[key]) continue;
+        a[key] = () =&gt; {}
+        if (a[key] === b[key]) aliases.push(key)
+    }
 
-    <span class="pl-k">return</span> <span class="pl-s1">aliases</span><span class="pl-kos">.</span><span class="pl-en">sort</span><span class="pl-kos">(</span><span class="pl-kos">)</span>
-<span class="pl-kos">}</span>
+    return aliases.sort()
+}
 
-<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-en">checkAliasedEvents</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span></pre></div>
+console.log(checkAliasedEvents())
+</code></pre></div>
 <p dir="auto">There are a few entries beyond <code class="notranslate">onerror</code>, that are listed when running the code above, that are not listed on the HTMLBodyElement page.</p>
 <p dir="auto">The list will only contain the events that the current browser actually supports, for example, the<code class="notranslate">ongamepadconnected</code> event  only showed up in Firefox, and not in Chrome. That being said, <code class="notranslate">onerror</code> showed up in both.</p>
 <h3 dir="auto">MDN metadata</h3>
@@ -501,7 +502,8 @@ console.log(checkAliasedEvents())"><pre class="notranslate"><span class="pl-k">c
 <p dir="auto"><a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/OnkarRuikar/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/OnkarRuikar">@OnkarRuikar</a> from Slack (in response to an attempt to add <code class="notranslate">allow-popups</code> to the macro argument):</p>
 <blockquote>
 <p dir="auto">Your macro call yields :</p>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;iframe allow=&quot;allow-popups&quot; sandbox=&quot;allow-same-origin allow-scripts&quot; loading=&quot;lazy&quot;&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">iframe</span> <span class="pl-c1">allow</span>="<span class="pl-s">allow-popups</span>" <span class="pl-c1">sandbox</span>="<span class="pl-s">allow-same-origin allow-scripts</span>" <span class="pl-c1">loading</span>="<span class="pl-s">lazy</span>"<span class="pl-kos">&gt;</span></pre></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;iframe allow=&quot;allow-popups&quot; sandbox=&quot;allow-same-origin allow-scripts&quot; loading=&quot;lazy&quot;&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;iframe allow="allow-popups" sandbox="allow-same-origin allow-scripts" loading="lazy"&gt;
+</code></pre></div>
 <p dir="auto">The allow-popups need to be value of <code class="notranslate">sandbox</code> and not <code class="notranslate">allow</code>.</p>
 <p dir="auto">Need to edit macro to permanently add the value to sandbox: <a href="https://github.com/mdn/yari/blob/118f71bd9a0d3e7eb56524f4479d1dd83d2283d2/kumascript/macros/EmbedLiveSample.ejs#L103">https://github.com/mdn/yari/blob/118f71bd9a0d3e7eb56524f4479d1dd83d2283d2/kumascript/macros/EmbedLiveSample.ejs#L103</a></p>
 </blockquote>
@@ -594,7 +596,7 @@ Level 3</a>, for example <code class="notranslate">getClientCapabilities</code> 
 <details>
 <summary>Details</summary>
 <p dir="auto">Relevant WebIDL definitions for RTCSessionDescription, RTCSessionDescriptionInit, and RTCLocalSessionDescriptionInit (from <a href="https://w3c.github.io/webrtc-pc" rel="nofollow">https://w3c.github.io/webrtc-pc</a>):</p>
-<div class="highlight highlight-source-webidl notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="[Exposed=Window]
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="[Exposed=Window]
 interface RTCSessionDescription {
   constructor(RTCSessionDescriptionInit descriptionInitDict);
   readonly attribute RTCSdpType type;
@@ -627,40 +629,41 @@ interface RTCPeerConnection : EventTarget  {
   readonly attribute RTCSessionDescription? currentRemoteDescription;
   readonly attribute RTCSessionDescription? pendingRemoteDescription;
 ...
-}"><pre class="notranslate">[<span class="pl-k">Exposed</span>=<span class="pl-k">Window</span>]
-<span class="pl-k">interface</span> <span class="pl-en">RTCSessionDescription</span> {
-  <span class="pl-en">constructor</span>(RTCSessionDescriptionInit descriptionInitDict);
+}"><pre lang="webidl" class="notranslate"><code class="notranslate">[Exposed=Window]
+interface RTCSessionDescription {
+  constructor(RTCSessionDescriptionInit descriptionInitDict);
   readonly attribute RTCSdpType type;
   readonly attribute DOMString sdp;
-  [<span class="pl-k">Default</span>] RTCSessionDescriptionInit <span class="pl-en">toJSON</span>();
+  [Default] RTCSessionDescriptionInit toJSON();
 };
 
 dictionary RTCSessionDescriptionInit {
   required RTCSdpType type;
-  DOMString sdp = <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>;
+  DOMString sdp = "";
 };
 
 dictionary RTCLocalSessionDescriptionInit {
   RTCSdpType type;
-  DOMString sdp = <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>;
+  DOMString sdp = "";
 };
 
-[<span class="pl-k">Exposed</span>=<span class="pl-k">Window</span>]
-<span class="pl-k">interface</span> <span class="pl-en">RTCPeerConnection</span> : EventTarget  {
+[Exposed=Window]
+interface RTCPeerConnection : EventTarget  {
 ...
-  Promise&lt;RTCSessionDescriptionInit&gt; <span class="pl-en">createOffer</span>(optional RTCOfferOptions options = {});
-  Promise&lt;RTCSessionDescriptionInit&gt; <span class="pl-en">createAnswer</span>(optional RTCAnswerOptions options = {});
+  Promise&lt;RTCSessionDescriptionInit&gt; createOffer(optional RTCOfferOptions options = {});
+  Promise&lt;RTCSessionDescriptionInit&gt; createAnswer(optional RTCAnswerOptions options = {});
 
-  Promise&lt;undefined&gt; <span class="pl-en">setLocalDescription</span>(optional RTCLocalSessionDescriptionInit description = {});
+  Promise&lt;undefined&gt; setLocalDescription(optional RTCLocalSessionDescriptionInit description = {});
   readonly attribute RTCSessionDescription? localDescription;
   readonly attribute RTCSessionDescription? currentLocalDescription;
   readonly attribute RTCSessionDescription? pendingLocalDescription;
-  Promise&lt;undefined&gt; <span class="pl-en">setRemoteDescription</span>(RTCSessionDescriptionInit description);
+  Promise&lt;undefined&gt; setRemoteDescription(RTCSessionDescriptionInit description);
   readonly attribute RTCSessionDescription? remoteDescription;
   readonly attribute RTCSessionDescription? currentRemoteDescription;
   readonly attribute RTCSessionDescription? pendingRemoteDescription;
 ...
-}<span class="pl-ii"></span></pre></div>
+}
+</code></pre></div>
 <p dir="auto"><strong>Understanding RTCSessionDescription:</strong></p>
 <ul dir="auto">
 <li><strong>Core Interface:</strong> RTCSessionDescription is the fundamental interface representing a session description in WebRTC signaling.</li>
@@ -763,9 +766,9 @@ dictionary RTCLocalSessionDescriptionInit {
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I expected to understand when <code class="notranslate">performance.now()</code> should/shouldn't be used because of these bugs.</p>
 <p dir="auto">I also expected to find a definition for "sleep," but when I search for that word there are no articles with that title:</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/373675/333905620-332ddc0b-642e-4912-aed8-af2abb400b2a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM1ODAyNDgsIm5iZiI6MTcyMzU3OTk0OCwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjIwLTMzMmRkYzBiLTY0MmUtNDkxMi1hZWQ4LWFmMmFiYjQwMGIyYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgxM1QyMDEyMjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02MmI1NDRiNDMzMzM3YTM5MWQ0ZDA1NWIxN2YxNWI1MTcxYWY1YTY0NzE0MGRkNGYwZTk2ZTgxZGFlMTE5MzU1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.PLPBWouilTBrEirhWKcBP89uR3WqCDtKR74157OBPak"><img src="https://private-user-images.githubusercontent.com/373675/333905620-332ddc0b-642e-4912-aed8-af2abb400b2a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM1ODAyNDgsIm5iZiI6MTcyMzU3OTk0OCwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjIwLTMzMmRkYzBiLTY0MmUtNDkxMi1hZWQ4LWFmMmFiYjQwMGIyYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgxM1QyMDEyMjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02MmI1NDRiNDMzMzM3YTM5MWQ0ZDA1NWIxN2YxNWI1MTcxYWY1YTY0NzE0MGRkNGYwZTk2ZTgxZGFlMTE5MzU1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.PLPBWouilTBrEirhWKcBP89uR3WqCDtKR74157OBPak" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/373675/333905620-332ddc0b-642e-4912-aed8-af2abb400b2a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM1ODExOTgsIm5iZiI6MTcyMzU4MDg5OCwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjIwLTMzMmRkYzBiLTY0MmUtNDkxMi1hZWQ4LWFmMmFiYjQwMGIyYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgxM1QyMDI4MThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zZjYxMTU2YjIzOGNhYmViMWY3MzUyNjRhMTI2MDRiYzczNTAwYTU3ODNhMzBlNTM1OGMyMGRjZDFjZDdiY2Y4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.gp0ZMSyiMVlGKmF1bOJX287WMkzzV0OeOOG0QKTvpfk"><img src="https://private-user-images.githubusercontent.com/373675/333905620-332ddc0b-642e-4912-aed8-af2abb400b2a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM1ODExOTgsIm5iZiI6MTcyMzU4MDg5OCwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjIwLTMzMmRkYzBiLTY0MmUtNDkxMi1hZWQ4LWFmMmFiYjQwMGIyYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgxM1QyMDI4MThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zZjYxMTU2YjIzOGNhYmViMWY3MzUyNjRhMTI2MDRiYzczNTAwYTU3ODNhMzBlNTM1OGMyMGRjZDFjZDdiY2Y4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.gp0ZMSyiMVlGKmF1bOJX287WMkzzV0OeOOG0QKTvpfk" alt="image" style="max-width: 100%;"></a></p>
 <p dir="auto">And when I submit the search, there are results, but none of them seem relevant:</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/373675/333905637-56f3c600-2f17-449a-aa2e-5237de87b844.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM1ODAyNDgsIm5iZiI6MTcyMzU3OTk0OCwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjM3LTU2ZjNjNjAwLTJmMTctNDQ5YS1hYTJlLTUyMzdkZTg3Yjg0NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgxM1QyMDEyMjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xOTU1ZTJlZGQyODY4NTU4ZTgyNmMyNzQxMDM5OWY0YmQ5ZmYwZDhhYWI5MjdiNGE0NDFhNmQ0YTIyYzQyNmZmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.pYqQbeoP70Y92kFh_uVrtOhjl3D16nJ7eU5IOyqL9yA"><img src="https://private-user-images.githubusercontent.com/373675/333905637-56f3c600-2f17-449a-aa2e-5237de87b844.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM1ODAyNDgsIm5iZiI6MTcyMzU3OTk0OCwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjM3LTU2ZjNjNjAwLTJmMTctNDQ5YS1hYTJlLTUyMzdkZTg3Yjg0NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgxM1QyMDEyMjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xOTU1ZTJlZGQyODY4NTU4ZTgyNmMyNzQxMDM5OWY0YmQ5ZmYwZDhhYWI5MjdiNGE0NDFhNmQ0YTIyYzQyNmZmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.pYqQbeoP70Y92kFh_uVrtOhjl3D16nJ7eU5IOyqL9yA" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/373675/333905637-56f3c600-2f17-449a-aa2e-5237de87b844.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM1ODExOTgsIm5iZiI6MTcyMzU4MDg5OCwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjM3LTU2ZjNjNjAwLTJmMTctNDQ5YS1hYTJlLTUyMzdkZTg3Yjg0NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgxM1QyMDI4MThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMDk4YzA3ZDEyZmU2YTVjNmFjYzdmNDk1MWUwMDEzOGM2NWU5Njk5MWRmYzQ2NDY1YTk5MTk1M2NmZGJkZGU4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.w5E-EDbbSBNRJQ_LrIpGCWw7ep4E7H7oSWsR3T11L_E"><img src="https://private-user-images.githubusercontent.com/373675/333905637-56f3c600-2f17-449a-aa2e-5237de87b844.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM1ODExOTgsIm5iZiI6MTcyMzU4MDg5OCwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjM3LTU2ZjNjNjAwLTJmMTctNDQ5YS1hYTJlLTUyMzdkZTg3Yjg0NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgxM1QyMDI4MThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMDk4YzA3ZDEyZmU2YTVjNmFjYzdmNDk1MWUwMDEzOGM2NWU5Njk5MWRmYzQ2NDY1YTk5MTk1M2NmZGJkZGU4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.w5E-EDbbSBNRJQ_LrIpGCWw7ep4E7H7oSWsR3T11L_E" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">n/a</p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
@@ -906,17 +909,18 @@ dictionary RTCLocalSessionDescriptionInit {
 <ol dir="auto">
 <li>Change the sample code to init the sounds after clicking Start e.g.</li>
 </ol>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function toggleSound(toggleButton) {
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="function toggleSound(toggleButton) {
   if (!init) {
     initSound();
     init = true;
   }
-///...."><pre class="notranslate"><span class="pl-k">function</span> <span class="pl-en">toggleSound</span><span class="pl-kos">(</span><span class="pl-s1">toggleButton</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-  <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-c1">!</span><span class="pl-s1">init</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-    <span class="pl-en">initSound</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-    <span class="pl-s1">init</span> <span class="pl-c1">=</span> <span class="pl-c1">true</span><span class="pl-kos">;</span>
-  <span class="pl-kos">}</span>
-<span class="pl-c">///....</span><span class="pl-kos"></span></pre></div>
+///...."><pre lang="js" class="notranslate"><code class="notranslate">function toggleSound(toggleButton) {
+  if (!init) {
+    initSound();
+    init = true;
+  }
+///....
+</code></pre></div>
 <ol start="2" dir="auto">
 <li>Move the example to StackBlitz with as a complete example instead of linking to multiple codepen script files that hide part of the example.</li>
 </ol>

@@ -29,7 +29,7 @@
 <details>
 <summary>Details</summary>
 <p dir="auto">Relevant WebIDL definitions for RTCSessionDescription, RTCSessionDescriptionInit, and RTCLocalSessionDescriptionInit (from <a href="https://w3c.github.io/webrtc-pc" rel="nofollow">https://w3c.github.io/webrtc-pc</a>):</p>
-<div class="highlight highlight-source-webidl notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="[Exposed=Window]
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="[Exposed=Window]
 interface RTCSessionDescription {
   constructor(RTCSessionDescriptionInit descriptionInitDict);
   readonly attribute RTCSdpType type;
@@ -62,40 +62,41 @@ interface RTCPeerConnection : EventTarget  {
   readonly attribute RTCSessionDescription? currentRemoteDescription;
   readonly attribute RTCSessionDescription? pendingRemoteDescription;
 ...
-}"><pre class="notranslate">[<span class="pl-k">Exposed</span>=<span class="pl-k">Window</span>]
-<span class="pl-k">interface</span> <span class="pl-en">RTCSessionDescription</span> {
-  <span class="pl-en">constructor</span>(RTCSessionDescriptionInit descriptionInitDict);
+}"><pre lang="webidl" class="notranslate"><code class="notranslate">[Exposed=Window]
+interface RTCSessionDescription {
+  constructor(RTCSessionDescriptionInit descriptionInitDict);
   readonly attribute RTCSdpType type;
   readonly attribute DOMString sdp;
-  [<span class="pl-k">Default</span>] RTCSessionDescriptionInit <span class="pl-en">toJSON</span>();
+  [Default] RTCSessionDescriptionInit toJSON();
 };
 
 dictionary RTCSessionDescriptionInit {
   required RTCSdpType type;
-  DOMString sdp = <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>;
+  DOMString sdp = "";
 };
 
 dictionary RTCLocalSessionDescriptionInit {
   RTCSdpType type;
-  DOMString sdp = <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>;
+  DOMString sdp = "";
 };
 
-[<span class="pl-k">Exposed</span>=<span class="pl-k">Window</span>]
-<span class="pl-k">interface</span> <span class="pl-en">RTCPeerConnection</span> : EventTarget  {
+[Exposed=Window]
+interface RTCPeerConnection : EventTarget  {
 ...
-  Promise&lt;RTCSessionDescriptionInit&gt; <span class="pl-en">createOffer</span>(optional RTCOfferOptions options = {});
-  Promise&lt;RTCSessionDescriptionInit&gt; <span class="pl-en">createAnswer</span>(optional RTCAnswerOptions options = {});
+  Promise&lt;RTCSessionDescriptionInit&gt; createOffer(optional RTCOfferOptions options = {});
+  Promise&lt;RTCSessionDescriptionInit&gt; createAnswer(optional RTCAnswerOptions options = {});
 
-  Promise&lt;undefined&gt; <span class="pl-en">setLocalDescription</span>(optional RTCLocalSessionDescriptionInit description = {});
+  Promise&lt;undefined&gt; setLocalDescription(optional RTCLocalSessionDescriptionInit description = {});
   readonly attribute RTCSessionDescription? localDescription;
   readonly attribute RTCSessionDescription? currentLocalDescription;
   readonly attribute RTCSessionDescription? pendingLocalDescription;
-  Promise&lt;undefined&gt; <span class="pl-en">setRemoteDescription</span>(RTCSessionDescriptionInit description);
+  Promise&lt;undefined&gt; setRemoteDescription(RTCSessionDescriptionInit description);
   readonly attribute RTCSessionDescription? remoteDescription;
   readonly attribute RTCSessionDescription? currentRemoteDescription;
   readonly attribute RTCSessionDescription? pendingRemoteDescription;
 ...
-}<span class="pl-ii"></span></pre></div>
+}
+</code></pre></div>
 <p dir="auto"><strong>Understanding RTCSessionDescription:</strong></p>
 <ul dir="auto">
 <li><strong>Core Interface:</strong> RTCSessionDescription is the fundamental interface representing a session description in WebRTC signaling.</li>
