@@ -4,10 +4,70 @@
         <title>IETF-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ietf.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by IETF</description>
-        <lastBuildDate>Mon, 08 Jul 2024 18:17:51 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 13 Aug 2024 04:45:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[rfc7231] `Content-type` -> `Content-Type` casing errata]]></title>
+            <link>https://github.com/mdn/content/issues/35430</link>
+            <guid>https://github.com/mdn/content/issues/35430</guid>
+            <pubDate>Tue, 13 Aug 2024 04:45:46 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">request example</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto"></p><div class="Box Box--condensed my-2">
+  <div class="Box-header f6">
+    <p class="mb-0 text-bold">
+      <a href="https://github.com/mdn/content/blob/1a7695e13c51d85a81e3e5d85feedbc5dbd2a379/files/en-us/web/http/methods/put/index.md?plain=1#L58-L59">content/files/en-us/web/http/methods/put/index.md</a>
+    </p>
+    <p class="mb-0 color-fg-muted">
+        Lines 58 to 59
+      in
+      <a data-pjax="true" class="commit-tease-sha Link--inTextBlock" href="/mdn/content/commit/1a7695e13c51d85a81e3e5d85feedbc5dbd2a379">1a7695e</a>
+    </p>
+  </div>
+  <div itemprop="text" class="Box-body p-0 blob-wrapper blob-wrapper-embedded data">
+    <table class="highlight tab-size mb-0 js-file-line-container" data-tab-size="8" data-paste-markdown-skip="">
+
+        <tbody><tr class="border-0">
+          <td id="L58" class="blob-num border-0 px-3 py-0 color-bg-default" data-line-number="58"></td>
+          <td id="LC58" class="blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line"> <span class="pl-c1">Content-type: text/html</span> </td>
+        </tr>
+
+        <tr class="border-0">
+          <td id="L59" class="blob-num border-0 px-3 py-0 color-bg-default" data-line-number="59"></td>
+          <td id="LC59" class="blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line"> <span class="pl-c1">Content-length: 16</span> </td>
+        </tr>
+    </tbody></table>
+  </div>
+</div>
+<p></p>
+<p dir="auto"><code class="notranslate">Content-type</code><br>
+<code class="notranslate">Content-length</code></p>
+<p dir="auto">This is not wrong but conventionally unnatural.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto"><code class="notranslate">Content-Type</code><br>
+<code class="notranslate">Content-Length</code></p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/learn/forms</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms" rel="nofollow">https://developer.mozilla.org/en-US/docs/Learn/Forms</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/learn/forms/index.md">https://github.com/mdn/content/blob/main/files/en-us/learn/forms/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b76266228bd0900aa1256902c7858971156a58c9/hovercard" href="https://github.com/mdn/content/commit/b76266228bd0900aa1256902c7858971156a58c9"><tt>b762662</tt></a></li>
+<li>Document last modified: 2024-07-25T19:07:12.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[rfc7231] Does DELETE permit body?]]></title>
             <link>https://github.com/mdn/content/issues/34721</link>
