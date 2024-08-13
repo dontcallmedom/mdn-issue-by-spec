@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-text-3\] \[CSS\] css.properties.hyphens - language_czech and language_slovak](https://github.com/mdn/content/issues/35425) (2024-08-13T00:48:00Z)
+  
 * [\[css-font-loading-3\] Add prominent note to \`FontFaceSet.check()\` about non-existent fonts](https://github.com/mdn/content/issues/35369) (2024-08-08T10:00:06Z)
   
 * [\[css-animations-2, css-easing-1\] animation-timing-function neglects to mention linear() easing function](https://github.com/mdn/content/issues/35187) (2024-07-27T18:24:48Z)
