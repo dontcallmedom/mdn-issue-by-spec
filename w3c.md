@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-text-3\] Perhaps mention tab defaults?](https://github.com/mdn/content/issues/35462) (2024-08-14T05:16:45Z)
+  
 * [\[uievents\] Click event: not any focusable element triggers a click when enter/space is pressed](https://github.com/mdn/content/issues/35450) (2024-08-13T15:05:10Z)
   
 * [\[css-text-3\] \[CSS\] css.properties.hyphens - language_czech and language_slovak](https://github.com/mdn/content/issues/35425) (2024-08-13T00:48:00Z)
