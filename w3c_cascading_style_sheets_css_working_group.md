@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[cssom-view-1\] Can't get a fractional value from getBoundingClientRect().](https://github.com/mdn/content/issues/35466) (2024-08-14T13:36:33Z)
+* [\[cssom-view-1\] getBoundingClientRect().width is not the same as scrollWidth](https://github.com/mdn/content/issues/35466) (2024-08-14T13:36:33Z)
   
 * [\[css-text-3\] Mention tab-size in white-space](https://github.com/mdn/content/issues/35462) (2024-08-14T05:16:45Z)
   
