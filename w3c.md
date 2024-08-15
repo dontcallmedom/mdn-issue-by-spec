@@ -6,8 +6,6 @@
   
 * [\[css-text-3\] Mention tab-size in white-space](https://github.com/mdn/content/issues/35462) (2024-08-14T05:16:45Z)
   
-* [\[uievents\] Click event: not any focusable element triggers a click when enter/space is pressed](https://github.com/mdn/content/issues/35450) (2024-08-13T15:05:10Z)
-  
 * [\[css-text-3\] \[CSS\] css.properties.hyphens - language_czech and language_slovak](https://github.com/mdn/content/issues/35425) (2024-08-13T00:48:00Z)
   
 * [\[html, dom, uievents\] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not](https://github.com/mdn/content/issues/35382) (2024-08-09T02:19:02Z)

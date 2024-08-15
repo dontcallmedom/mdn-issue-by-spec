@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[uievents\] Click event: not any focusable element triggers a click when enter/space is pressed](https://github.com/mdn/content/issues/35450) (2024-08-13T15:05:10Z)
-  
 * [\[html, dom, uievents\] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not](https://github.com/mdn/content/issues/35382) (2024-08-09T02:19:02Z)
   
 * [\[selection-api\] deleteFromDocument deletes more than just text](https://github.com/mdn/content/issues/34943) (2024-07-20T19:06:19Z)
