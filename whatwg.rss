@@ -4,10 +4,40 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Thu, 15 Aug 2024 03:26:58 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 16 Aug 2024 10:22:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] The Permitted content of the <summary> element has not been updated.]]></title>
+            <link>https://github.com/mdn/content/issues/35487</link>
+            <guid>https://github.com/mdn/content/issues/35487</guid>
+            <pubDate>Fri, 16 Aug 2024 10:22:16 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Technical summary</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">I think the “Permitted content” of the summary element seems to be out of date.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">In the current HTML Standard, the Content model of the summary element is “Phrasing content, optionally intermixed with heading content.", not "Phrasing content or one element of Heading content".</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://html.spec.whatwg.org/multipage/interactive-elements.html#the-summary-element" rel="nofollow">https://html.spec.whatwg.org/multipage/interactive-elements.html#the-summary-element</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/element/summary</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/summary/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/summary/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b7955e77cd4293adf45ef23686df50b0305f02ad/hovercard" href="https://github.com/mdn/content/commit/b7955e77cd4293adf45ef23686df50b0305f02ad"><tt>b7955e7</tt></a></li>
+<li>Document last modified: 2024-07-25T21:13:49.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Bundlers recommend worker URLs to be fully resolved]]></title>
             <link>https://github.com/mdn/content/issues/35475</link>
@@ -406,7 +436,7 @@ Which tripped me off, anyways I don't know why that behavior is and would love t
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The black background on each segment's name does not fully cover the word "protocol". The last letter ("l") is outside the box.</p>
 <p dir="auto">This is only occurring on Firefox (Linux, from Mozilla deb package, version 128.0). When I brought up the page in Chrome (also on Linux) the display was correct.</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM4MDM4NTksIm5iZiI6MTcyMzgwMzU1OSwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODE2VDEwMTkxOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWRhZjI0NGZiZWNhMDljY2MwNGIxY2MzMTdiYzhhMDlkMjJiMGQ5YzQzMjRhYzM2YjYxYzkzNzAxMDI3NjhmY2YmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.QraKcduJ-C3E3sU4sIaxMHu2MbQ7Em99aym34txjeW4"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM4MDM4NTksIm5iZiI6MTcyMzgwMzU1OSwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODE2VDEwMTkxOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWRhZjI0NGZiZWNhMDljY2MwNGIxY2MzMTdiYzhhMDlkMjJiMGQ5YzQzMjRhYzM2YjYxYzkzNzAxMDI3NjhmY2YmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.QraKcduJ-C3E3sU4sIaxMHu2MbQ7Em99aym34txjeW4" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM4MDQ4NDgsIm5iZiI6MTcyMzgwNDU0OCwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODE2VDEwMzU0OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTExNThiMGQ4YjVkMzc0ZTkzMThjNWM4Y2FhNzJjYzlhY2U4ZGNhNTFlYmM1MjY1MTM0MmNhYzRmZTljNzE0ODUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.d7VZz7hkPFxS-ScmmBOtxXFaGOv3sfjbk3S-OTQZBXg"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM4MDQ4NDgsIm5iZiI6MTcyMzgwNDU0OCwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODE2VDEwMzU0OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTExNThiMGQ4YjVkMzc0ZTkzMThjNWM4Y2FhNzJjYzlhY2U4ZGNhNTFlYmM1MjY1MTM0MmNhYzRmZTljNzE0ODUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.d7VZz7hkPFxS-ScmmBOtxXFaGOv3sfjbk3S-OTQZBXg" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The background color should cover the full word.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>

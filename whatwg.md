@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] The Permitted content of the \<summary\> element has not been updated.](https://github.com/mdn/content/issues/35487) (2024-08-16T10:22:16Z)
+  
 * [\[html\] Bundlers recommend worker URLs to be fully resolved](https://github.com/mdn/content/issues/35475) (2024-08-15T03:26:58Z)
   
 * [\[html\] \<output\>: use event listener instead of oninput attribute](https://github.com/mdn/content/issues/35470) (2024-08-14T20:41:22Z)
