@@ -32,8 +32,6 @@
   
 * [\[css-easing-1\] Create function pages for easing functions](https://github.com/mdn/content/issues/29923) (2023-10-31T01:44:35Z)
   
-* [\[css-sizing-4\] max-height value of "stretch" is missing from the listed Values](https://github.com/mdn/content/issues/29887) (2023-10-29T11:17:59Z)
-  
 * [\[cssom-view-1\] Include detailed information about scaling on window.devicePixelRatio reference page](https://github.com/mdn/content/issues/29682) (2023-10-17T10:43:43Z)
   
 * [\[html, dom, cssom-view-1, uievents, pointerlock-2, selection-api, page-visibility-2\] Keydown, keyup, keypress pages should mention they work on document, body, etc](https://github.com/mdn/content/issues/28561) (2023-08-14T20:14:56Z)
