@@ -4,10 +4,23 @@
         <title>WHATWG Fetch Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_fetch_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG Fetch Workstream</description>
-        <lastBuildDate>Tue, 16 Jan 2024 01:34:58 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 16 Aug 2024 12:18:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[fetch] Request's mode incorrectly documented]]></title>
+            <link>https://github.com/mdn/content/issues/35488</link>
+            <guid>https://github.com/mdn/content/issues/35488</guid>
+            <pubDate>Fri, 16 Aug 2024 12:18:54 GMT</pubDate>
+            <content:encoded><![CDATA[<p dir="auto">In <a href="https://developer.mozilla.org/en-US/docs/Web/API/Request/mode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Request/mode</a> it states</p>
+<blockquote>
+<p dir="auto">Prevents the method from being anything other than HEAD, GET or POST, and the headers from being anything other than <a href="https://developer.mozilla.org/en-US/docs/Glossary/CORS-safelisted_request_header" rel="nofollow">CORS-safelisted request headers</a>.</p>
+</blockquote>
+<p dir="auto">However, that is incorrect. The only no-CORS headers that are safelisted are here: <a href="https://fetch.spec.whatwg.org/#no-cors-safelisted-request-header-name" rel="nofollow">https://fetch.spec.whatwg.org/#no-cors-safelisted-request-header-name</a>. And that's a subset of the CORS-safelisted requested headers.</p>
+<p dir="auto">This probably came to be when the <code class="notranslate">Range</code> header was added for CORS.</p>
+<p dir="auto">Context: <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1006456977" data-permission-text="Title is private" data-url="https://github.com/whatwg/fetch/issues/1310" data-hovercard-type="issue" data-hovercard-url="/whatwg/fetch/issues/1310/hovercard?comment_id=2293381855&amp;comment_type=issue_comment" href="https://github.com/whatwg/fetch/issues/1310#issuecomment-2293381855">whatwg/fetch#1310 (comment)</a>. Credit: <a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/anson0370/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/anson0370">@anson0370</a>.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[fetch] Missing Request constructor duplex option]]></title>
             <link>https://github.com/mdn/content/issues/31735</link>
