@@ -4,10 +4,64 @@
         <title>W3C Web Applications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_applications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Applications Working Group</description>
-        <lastBuildDate>Sat, 17 Aug 2024 22:29:50 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 18 Aug 2024 15:05:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[IndexedDB-3] The page "Using IndexedDB" confusingly uses the outdated property "errorCode"]]></title>
+            <link>https://github.com/mdn/content/issues/35497</link>
+            <guid>https://github.com/mdn/content/issues/35497</guid>
+            <pubDate>Sun, 18 Aug 2024 15:05:16 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Handling Errors and Generating handlers</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The property "errorCode" of the IDBOpenDBRequest has been deprecated and it's still being used in the code examples, which threw me for a loop wondering why it wasn't being typechecked by TypeScript.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">It appears that "error" has taken its place, an instance of Error according to its TypeScript types. It'd be less confusing to see that being used instead.</p>
+<p dir="auto">The "error" property doesn't appear in the API either:<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest</a></p>
+<p dir="auto">I was thinking of editing the sample codes to the following but I'm not sure if it fits the style:</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="request.onerror = (event) =&gt; {
+  // Do something with request.error!
+};
+request.onsuccess = (event) =&gt; {
+  // Do something with request.result!
+};"><pre class="notranslate"><span class="pl-s1">request</span><span class="pl-kos">.</span><span class="pl-en">onerror</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-c">// Do something with request.error!</span>
+<span class="pl-kos">}</span><span class="pl-kos">;</span>
+<span class="pl-s1">request</span><span class="pl-kos">.</span><span class="pl-en">onsuccess</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-c">// Do something with request.result!</span>
+<span class="pl-kos">}</span><span class="pl-kos">;</span></pre></div>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="db.onerror = (event) =&gt; {
+  // Generic error handler for all errors targeted at this database's
+  // requests!
+  console.error(error);
+};"><pre class="notranslate"><span class="pl-s1">db</span><span class="pl-kos">.</span><span class="pl-en">onerror</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-c">// Generic error handler for all errors targeted at this database's</span>
+  <span class="pl-c">// requests!</span>
+  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">error</span><span class="pl-kos">(</span><span class="pl-s1">error</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">;</span></pre></div>
+<p dir="auto">Thoughts?</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/indexeddb_api/using_indexeddb</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/indexeddb_api/using_indexeddb/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/indexeddb_api/using_indexeddb/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/d71da812ee94c20658cb1916a123a42254ea545c/hovercard" href="https://github.com/mdn/content/commit/d71da812ee94c20658cb1916a123a42254ea545c"><tt>d71da81</tt></a></li>
+<li>Document last modified: 2024-08-07T22:02:28.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[appmanifest] standalone display not working, https required?]]></title>
             <link>https://github.com/mdn/content/issues/35494</link>
