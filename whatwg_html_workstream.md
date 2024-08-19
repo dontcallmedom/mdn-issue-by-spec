@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Add information about an error that happens when calling \`history.replaceState\` frequently](https://github.com/mdn/content/issues/35504) (2024-08-19T02:52:37Z)
+  
 * [\[html\] Whitespace is not insignificant in HTMLImageElement.srcset](https://github.com/mdn/content/issues/35492) (2024-08-17T15:44:16Z)
   
 * [\[html\] The Permitted content of the \<summary\> element has not been updated.](https://github.com/mdn/content/issues/35487) (2024-08-16T10:22:16Z)
