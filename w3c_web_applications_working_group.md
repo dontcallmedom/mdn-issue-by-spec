@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[IndexedDB-3\] The page "Using IndexedDB" confusingly uses the outdated property "errorCode"](https://github.com/mdn/content/issues/35497) (2024-08-18T15:05:16Z)
-  
 * [\[appmanifest\] standalone display not working, https required?](https://github.com/mdn/content/issues/35494) (2024-08-17T22:29:50Z)
   
 * [\[html, dom, uievents\] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not](https://github.com/mdn/content/issues/35382) (2024-08-09T02:19:02Z)

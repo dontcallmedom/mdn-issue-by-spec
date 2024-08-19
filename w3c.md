@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[IndexedDB-3\] The page "Using IndexedDB" confusingly uses the outdated property "errorCode"](https://github.com/mdn/content/issues/35497) (2024-08-18T15:05:16Z)
-  
 * [\[appmanifest\] standalone display not working, https required?](https://github.com/mdn/content/issues/35494) (2024-08-17T22:29:50Z)
   
 * [\[cssom-view-1\] getBoundingClientRect().width is not the same as scrollWidth](https://github.com/mdn/content/issues/35466) (2024-08-14T13:36:33Z)
