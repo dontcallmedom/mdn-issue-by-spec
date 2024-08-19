@@ -4,8 +4,6 @@
 
 * [\[ecmascript, streams\] ReadableStreamDefaultController: undocumented error conditions](https://github.com/mdn/content/issues/34597) (2024-07-03T14:49:56Z)
   
-* [\[ecmascript\] Import assertions proposal renamed to import attributes](https://github.com/mdn/content/issues/29572) (2023-10-10T08:50:02Z)
-  
 * [\[ecmascript\] Macrotasks and Microtasks](https://github.com/mdn/content/issues/28795) (2023-08-28T09:55:38Z)
   
 * [\[ecmascript\] Misleading information around await's interaction with microtask/task queues](https://github.com/mdn/content/issues/24177) (2023-02-05T16:19:19Z)

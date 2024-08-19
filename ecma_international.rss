@@ -44,30 +44,6 @@ Thrown if the source object is not a ReadableStreamDefaultController.</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[ecmascript] Import assertions proposal renamed to import attributes]]></title>
-            <link>https://github.com/mdn/content/issues/29572</link>
-            <guid>https://github.com/mdn/content/issues/29572</guid>
-            <pubDate>Tue, 10 Oct 2023 08:50:02 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">That page mention import assertions, with the <code class="notranslate">import ... assert { ... }</code> syntax.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The proposal has been renamed to "import attributes", and the keyword has been replaced from <code class="notranslate">assert</code> to <code class="notranslate">with</code>. <code class="notranslate">assert</code> is now "deprecated and should not be relied upon".</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://tc39.es/proposal-import-attributes/" rel="nofollow">https://tc39.es/proposal-import-attributes/</a>, specifically <a href="https://tc39.es/proposal-import-attributes/#sec-deprecated-assert-keyword-for-import-attributes" rel="nofollow">https://tc39.es/proposal-import-attributes/#sec-deprecated-assert-keyword-for-import-attributes</a>.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">Chrome is the only browser implementing <code class="notranslate">assert</code> (and V8-based platforms).</p>
-<p dir="auto">Chrome implements <code class="notranslate">with</code> under a flag (and V8-based platforms), Safari implements <code class="notranslate">with</code> in TP and Firefox is implementing it.</p>
-<p dir="auto">The proposal update comes also with some semantic changes, however these details have never been documented so there is no change needed to the docs:</p>
-<ul dir="auto">
-<li>invalid attribute keys are now disallowed, rather than silently ignored</li>
-<li>JSON and CSS modules are fetched with the appropriate HTTP headers (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1787684142" data-permission-text="Title is private" data-url="https://github.com/whatwg/html/issues/9486" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/html/pull/9486/hovercard" href="https://github.com/whatwg/html/pull/9486">whatwg/html#9486</a>)</li>
-</ul>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[ecmascript] Macrotasks and Microtasks]]></title>
             <link>https://github.com/mdn/content/issues/28795</link>
             <guid>https://github.com/mdn/content/issues/28795</guid>
