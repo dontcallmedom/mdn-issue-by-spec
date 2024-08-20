@@ -18,8 +18,6 @@
   
 * [\[touch-events\] Added explanation of touchcancel to "TouchEvent: changedTouches](https://github.com/mdn/content/issues/35194) (2024-07-28T13:15:54Z)
   
-* [\[css-animations-2, css-easing-1\] animation-timing-function neglects to mention linear() easing function](https://github.com/mdn/content/issues/35187) (2024-07-27T18:24:48Z)
-  
 * [\[html, SVG11\] CanvasRenderingContext2D: drawImage() method: takes natural height and width into account docs incomplete.](https://github.com/mdn/content/issues/35141) (2024-07-26T10:10:58Z)
   
 * [\[file-system-access\] Missing information about \`requestPermission\` requiring a "Transient user activation"](https://github.com/mdn/content/issues/35019) (2024-07-24T09:46:51Z)
