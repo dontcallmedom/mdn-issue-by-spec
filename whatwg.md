@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[dom\] AbortSignal.timeout example mistake](https://github.com/mdn/content/issues/35543) (2024-08-21T12:44:34Z)
-  
 * [\[html\] Whitespace is not insignificant in HTMLImageElement.srcset](https://github.com/mdn/content/issues/35492) (2024-08-17T15:44:16Z)
   
 * [\[fetch\] Request's mode incorrectly documented](https://github.com/mdn/content/issues/35488) (2024-08-16T12:18:54Z)

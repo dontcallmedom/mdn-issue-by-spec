@@ -4,73 +4,10 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Wed, 21 Aug 2024 12:44:34 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 17 Aug 2024 15:44:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[dom] AbortSignal.timeout example mistake]]></title>
-            <link>https://github.com/mdn/content/issues/35543</link>
-            <guid>https://github.com/mdn/content/issues/35543</guid>
-            <pubDate>Wed, 21 Aug 2024 12:44:34 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal#aborting_a_fetch_operation_with_a_timeout" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal#aborting_a_fetch_operation_with_a_timeout</a></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">In error handling example</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="if (err.name === &quot;TypeError&quot;) {
-    console.error(&quot;AbortSignal.timeout() method is not supported&quot;);
-} "><pre class="notranslate"><code class="notranslate">if (err.name === "TypeError") {
-    console.error("AbortSignal.timeout() method is not supported");
-} 
-</code></pre></div>
-<p dir="auto">is incorrect. Fetch can throw "TypeError" in many cases: blocked, invalid headers etc. So there is 2 sources of Error. Creating a request and performing a request.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">You can check for message instead of a name as quick fix.</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="if (err.message === 'AbortSignal.timeout is not a function') { 
-    console.error(&quot;AbortSignal.timeout() method is not supported&quot;);
-} "><pre class="notranslate"><code class="notranslate">if (err.message === 'AbortSignal.timeout is not a function') { 
-    console.error("AbortSignal.timeout() method is not supported");
-} 
-</code></pre></div>
-<p dir="auto">More graceful approach would be to try to create a signal beforehand and make a request anyway. Usually it's better to make a request without a timeout than not to make it at all</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="let signal;
-
-try {
-  signal = AbortSignal.timeout(timeout);
-} catch {
-  console.log('AbortSignal.timeout() method is not supported)
-}
-
-const res = await fetch(url, { signal });"><pre class="notranslate"><code class="notranslate">let signal;
-
-try {
-  signal = AbortSignal.timeout(timeout);
-} catch {
-  console.log('AbortSignal.timeout() method is not supported)
-}
-
-const res = await fetch(url, { signal });
-</code></pre></div>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">List of reasons for TypeError<br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch#exceptions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch#exceptions</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/abortsignal</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/abortsignal/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/abortsignal/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ec1006afdf68a5808a48ab6301f9ccff3cd7ecc2/hovercard" href="https://github.com/mdn/content/commit/ec1006afdf68a5808a48ab6301f9ccff3cd7ecc2"><tt>ec1006a</tt></a></li>
-<li>Document last modified: 2024-07-26T03:17:12.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html] Whitespace is not insignificant in HTMLImageElement.srcset]]></title>
             <link>https://github.com/mdn/content/issues/35492</link>
@@ -516,7 +453,7 @@ Which tripped me off, anyways I don't know why that behavior is and would love t
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The black background on each segment's name does not fully cover the word "protocol". The last letter ("l") is outside the box.</p>
 <p dir="auto">This is only occurring on Firefox (Linux, from Mozilla deb package, version 128.0). When I brought up the page in Chrome (also on Linux) the display was correct.</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjQzNTMwOTMsIm5iZiI6MTcyNDM1Mjc5MywicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODIyVDE4NTMxM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdmOWM5YmIxNjdhNTdhMTgwNGU1NDk5MTEyOTVmYTAzY2FkMWJhNmVmY2ZjMzE5ODI4NDNiNGE3MmRiNzY4ZGQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.hlMSX2qWtEQPWT2J9YS3hKBloWwrl2QJn14IjzimG7M"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjQzNTMwOTMsIm5iZiI6MTcyNDM1Mjc5MywicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODIyVDE4NTMxM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdmOWM5YmIxNjdhNTdhMTgwNGU1NDk5MTEyOTVmYTAzY2FkMWJhNmVmY2ZjMzE5ODI4NDNiNGE3MmRiNzY4ZGQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.hlMSX2qWtEQPWT2J9YS3hKBloWwrl2QJn14IjzimG7M" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjQzNTQwODYsIm5iZiI6MTcyNDM1Mzc4NiwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODIyVDE5MDk0NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTA0NTQ1ZWRlNGUyY2QwNDVjMTU4ZDg2NzE1YjgxMmU4Y2Y3MTkyNGM3ZmJhNmQ4YzBhMGU4ZDExMzBkYWNkYjYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.6DuNGH4zm1nrdOqK_vh8NkvXvQHKkvCv9oiRmSw3iLk"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjQzNTQwODYsIm5iZiI6MTcyNDM1Mzc4NiwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODIyVDE5MDk0NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTA0NTQ1ZWRlNGUyY2QwNDVjMTU4ZDg2NzE1YjgxMmU4Y2Y3MTkyNGM3ZmJhNmQ4YzBhMGU4ZDExMzBkYWNkYjYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.6DuNGH4zm1nrdOqK_vh8NkvXvQHKkvCv9oiRmSw3iLk" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The background color should cover the full word.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
