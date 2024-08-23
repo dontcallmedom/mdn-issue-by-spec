@@ -4,10 +4,47 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Fri, 23 Aug 2024 12:45:01 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 23 Aug 2024 20:47:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[url] Description of pathname property value when path has no segments is incorrect]]></title>
+            <link>https://github.com/mdn/content/issues/35574</link>
+            <guid>https://github.com/mdn/content/issues/35574</guid>
+            <pubDate>Fri, 23 Aug 2024 20:47:54 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/pathname" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/URL/pathname</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">First paragraph of page (under "URL: pathname property" header)</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">If the URL has no path segments, the value of its pathname property will be the empty string." is incorrect, it can be either "" or "/". For the vast majority of end-user use cases involving schemes like http and https it will be "/", so this is especially confusing.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">If the URL has no path segments, the value of its pathname property will be the string "/" if the protocol scheme is <strong>special</strong> (ftp, file, http, https, ws, wss), or "" if the protocol scheme is non-special</p>
+<p dir="auto">Special scheme reference: <a href="https://url.spec.whatwg.org/#special-scheme" rel="nofollow">https://url.spec.whatwg.org/#special-scheme</a></p>
+<p dir="auto">Reference: whatwg test data for URL: <a href="https://github.com/web-platform-tests/wpt/blob/master/url/resources/urltestdata.json">https://github.com/web-platform-tests/wpt/blob/master/url/resources/urltestdata.json</a></p>
+<p dir="auto">note that tests involving "special" schemes always return "/" for a pathname when there's no path, and "" only for "non-special" schemes</p>
+<p dir="auto">Full spec: <a href="https://url.spec.whatwg.org/" rel="nofollow">https://url.spec.whatwg.org/</a></p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Tested in both browsers and nodejs, instance of URL.pathname is never "" and always "/" when path is empty for special schems.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">in browser console or node repl, to demonstrate</p>
+<blockquote>
+<p dir="auto">new URL("<a href="http://foo.bar%22).pathname" rel="nofollow">http://foo.bar").pathname</a></p>
+</blockquote>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/url/pathname</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/pathname" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/URL/pathname</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/url/pathname/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/url/pathname/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/4de6f76bbfd76229db78ffb7d52cf6b4cb9f31f8/hovercard" href="https://github.com/mdn/content/commit/4de6f76bbfd76229db78ffb7d52cf6b4cb9f31f8"><tt>4de6f76</tt></a></li>
+<li>Document last modified: 2024-03-06T06:23:15.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] WorkerGlobalScope.importScripts URLs relative to what base URL?]]></title>
             <link>https://github.com/mdn/content/issues/35568</link>
@@ -556,7 +593,7 @@ Which tripped me off, anyways I don't know why that behavior is and would love t
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The black background on each segment's name does not fully cover the word "protocol". The last letter ("l") is outside the box.</p>
 <p dir="auto">This is only occurring on Firefox (Linux, from Mozilla deb package, version 128.0). When I brought up the page in Chrome (also on Linux) the display was correct.</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjQ0NDU4MTUsIm5iZiI6MTcyNDQ0NTUxNSwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODIzVDIwMzgzNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk2N2NhYzhmOTc0NjNiYzY3NmMxMjA3OTE5NDA4MDI3YzUxYzMyYmJkZjEyMDE3MmQzMzk4NjI5NGY5MWJmNzUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.kuiwqLtqlY99euSLLlgp4dhLpiURHN8pB2Yd0fmpcYQ"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjQ0NDU4MTUsIm5iZiI6MTcyNDQ0NTUxNSwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODIzVDIwMzgzNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk2N2NhYzhmOTc0NjNiYzY3NmMxMjA3OTE5NDA4MDI3YzUxYzMyYmJkZjEyMDE3MmQzMzk4NjI5NGY5MWJmNzUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.kuiwqLtqlY99euSLLlgp4dhLpiURHN8pB2Yd0fmpcYQ" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjQ0NDY0NDksIm5iZiI6MTcyNDQ0NjE0OSwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODIzVDIwNDkwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWRmNDcwYzZiOTIzOTVmZGQ5YmY3ODA0ZDk3YzYyZDllOGZmMzM1YzAyYjVmY2ZhMzk2Njk4NDAyZGYyN2VhMjEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.4QSRBhsKLHtHpYjGhF481UJY53qwQedchcilN814R5M"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjQ0NDY0NDksIm5iZiI6MTcyNDQ0NjE0OSwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODIzVDIwNDkwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWRmNDcwYzZiOTIzOTVmZGQ5YmY3ODA0ZDk3YzYyZDllOGZmMzM1YzAyYjVmY2ZhMzk2Njk4NDAyZGYyN2VhMjEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.4QSRBhsKLHtHpYjGhF481UJY53qwQedchcilN814R5M" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The background color should cover the full word.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
