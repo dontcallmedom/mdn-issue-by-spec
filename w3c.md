@@ -126,8 +126,6 @@
   
 * [\[html, uievents\] Document.activeElement : The lack of HTMLAnchorElement and macOS on a case by case basis](https://github.com/mdn/content/issues/22338) (2022-11-16T13:47:01Z)
   
-* [\[css-backgrounds-4\] Border-image generator should allow "auto" as a border-image-width value](https://github.com/mdn/content/issues/21582) (2022-10-16T09:04:29Z)
-  
 * [\[css-align-3\] Content suggestion: display owns CSS shorthand property.](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
   
 * [\[service-workers-1\] Fetch Event client id is null](https://github.com/mdn/content/issues/20657) (2022-09-13T11:22:55Z)
