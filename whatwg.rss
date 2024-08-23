@@ -4,10 +4,80 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Sat, 17 Aug 2024 15:44:16 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 23 Aug 2024 01:58:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Missing documentation that SharedArrayBuffers not compatible with MessagePort]]></title>
+            <link>https://github.com/mdn/content/issues/35561</link>
+            <guid>https://github.com/mdn/content/issues/35561</guid>
+            <pubDate>Fri, 23 Aug 2024 01:58:03 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/MessagePort/messageerror_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MessagePort/messageerror_event</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">After experimenting with SharedWorkers, it looks like it is not documented on MDN that you cannot send a SharedArrayBuffer or a TypedArray backed by one to a SharedWorker via postMessage.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I would expect this to be mentioned on at least one of SharedWorker, MessagePort, SharedArrayBuffer, or MessagePort.postMessage, but I did not find such documentation. I'm not sure where exactly this would be best documented so it is possible it is documented somewhere I didn't think to check.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">I was able to find both the Firefox and Chrome teams discussing that they did not want to permit SharedArrayBuffers to be passed to SharedWorkers. I couldn't find where in the spec this behavior is defined, however.<br>
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1232973" rel="nofollow">Bugzilla discussion</a><br>
+<a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/d-0ibJwCS24" rel="nofollow">Chromium discussion</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">The following code can illustrate this behavior. Interestingly, no error is received my <code class="notranslate">onmessageerror</code> when sending the array and no message is received by the SharedWorker. However, this code will work if you send some other valid message, as shown by the second invocation of postMessage. I wasn't able to find the relevant portion of the spec so I'm not sure if this is intended behavior or not. This works as described in Firefox 129.0.2, Edge 127.0.2651.105, and Chrome 127.0.6533.120.<br>
+index.html</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;!DOCTYPE HTML&gt;
+&lt;script&gt;
+	const buffer = new SharedArrayBuffer(2);
+	const array = new Uint16Array(buffer);
+	const myWorker = new SharedWorker(&quot;worker.js&quot;);
+	myWorker.port.onmessage = function (e) {
+		console.log(e.data)
+	}
+	myWorker.port.onmessageerror= event=&gt;console.log(event);
+	myWorker.port.postMessage(array);
+&lt;/script&gt;
+
+&lt;body&gt;
+
+&lt;/body&gt;"><pre class="notranslate"><code class="notranslate">&lt;!DOCTYPE HTML&gt;
+&lt;script&gt;
+	const buffer = new SharedArrayBuffer(2);
+	const array = new Uint16Array(buffer);
+	const myWorker = new SharedWorker("worker.js");
+	myWorker.port.onmessage = function (e) {
+		console.log(e.data)
+	}
+	myWorker.port.onmessageerror= event=&gt;console.log(event);
+	myWorker.port.postMessage(array);
+&lt;/script&gt;
+
+&lt;body&gt;
+
+&lt;/body&gt;
+</code></pre></div>
+<p dir="auto">worker.js</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="onconnect = function (event) {
+    const port = event.ports[0];
+  
+    port.onmessage = function (e) {
+      const workerResult = `Result: ${e.data}`;
+      port.postMessage(workerResult);
+      myWorker.port.postMessage(1);
+    };
+  };"><pre class="notranslate"><code class="notranslate">onconnect = function (event) {
+    const port = event.ports[0];
+  
+    port.onmessage = function (e) {
+      const workerResult = `Result: ${e.data}`;
+      port.postMessage(workerResult);
+      myWorker.port.postMessage(1);
+    };
+  };
+</code></pre></div>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Whitespace is not insignificant in HTMLImageElement.srcset]]></title>
             <link>https://github.com/mdn/content/issues/35492</link>
@@ -453,7 +523,7 @@ Which tripped me off, anyways I don't know why that behavior is and would love t
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The black background on each segment's name does not fully cover the word "protocol". The last letter ("l") is outside the box.</p>
 <p dir="auto">This is only occurring on Firefox (Linux, from Mozilla deb package, version 128.0). When I brought up the page in Chrome (also on Linux) the display was correct.</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjQzNzc0NTEsIm5iZiI6MTcyNDM3NzE1MSwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODIzVDAxMzkxMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWJjYzcyOGZlZjA4YjRlZjY0Mzc4MzY4MjYyZmFlMjZlNGU3YzBkMTBmNTUzMWYzZjE4MTU1YzFjMGQ1NDM2OGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.FaBoel4HIQh-cULJhUF8jwBLotF0CqtHJ6saWUXcEPo"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjQzNzc0NTEsIm5iZiI6MTcyNDM3NzE1MSwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODIzVDAxMzkxMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWJjYzcyOGZlZjA4YjRlZjY0Mzc4MzY4MjYyZmFlMjZlNGU3YzBkMTBmNTUzMWYzZjE4MTU1YzFjMGQ1NDM2OGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.FaBoel4HIQh-cULJhUF8jwBLotF0CqtHJ6saWUXcEPo" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjQzODA0MTMsIm5iZiI6MTcyNDM4MDExMywicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODIzVDAyMjgzM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg1Y2UwZmI2NTAwZDU3ZmMyYWViOWJiNjg4ZWM1NmY5NzNkYzM5M2M3ZDhlMzBlODI1YzdhYjJiYTkzZDQxMWQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.Q1VT_vcNvseaX5TFw8vN9IrWN3kWQXCXvSIaJDfFr9E"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjQzODA0MTMsIm5iZiI6MTcyNDM4MDExMywicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODIzVDAyMjgzM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg1Y2UwZmI2NTAwZDU3ZmMyYWViOWJiNjg4ZWM1NmY5NzNkYzM5M2M3ZDhlMzBlODI1YzdhYjJiYTkzZDQxMWQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.Q1VT_vcNvseaX5TFw8vN9IrWN3kWQXCXvSIaJDfFr9E" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The background color should cover the full word.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
