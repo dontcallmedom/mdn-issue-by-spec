@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-fonts-5\] Clarification for kerning vs spacing/tracking](https://github.com/mdn/content/issues/35579) (2024-08-24T15:35:10Z)
+  
 * [\[css-flexbox-1\] Browsers interpret flex shorthand to have 0% flex-basis](https://github.com/mdn/content/issues/35515) (2024-08-19T20:36:53Z)
   
 * [\[appmanifest\] standalone display not working, https required?](https://github.com/mdn/content/issues/35494) (2024-08-17T22:29:50Z)
