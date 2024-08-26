@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Real-Time Communications Working Group. [![RSS feed for W3C Web Real-Time Communications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[webrtc\] Issue in example provided for RTCIceTransport::getLocalCandidates() method](https://github.com/mdn/content/issues/35587) (2024-08-26T05:44:17Z)
+  
 * [\[webrtc\] Broken link to RTCSessionDescriptionInit, RTCLocalSessionDescriptionInit](https://github.com/mdn/content/issues/33962) (2024-06-06T12:39:29Z)
   
 * [\[webrtc\] Missing Link for \`RTCPeerConnection.createDTMFSender()\` in "Obsolete Methods" Section](https://github.com/mdn/content/issues/33954) (2024-06-06T06:52:29Z)
