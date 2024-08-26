@@ -4,8 +4,6 @@
 
 * [\[css-fonts-5\] Clarification for kerning vs spacing/tracking](https://github.com/mdn/content/issues/35579) (2024-08-24T15:35:10Z)
   
-* [\[css-flexbox-1\] Browsers interpret flex shorthand to have 0% flex-basis](https://github.com/mdn/content/issues/35515) (2024-08-19T20:36:53Z)
-  
 * [\[cssom-view-1\] getBoundingClientRect().width is not the same as scrollWidth](https://github.com/mdn/content/issues/35466) (2024-08-14T13:36:33Z)
   
 * [\[css-text-3\] Mention tab-size in white-space](https://github.com/mdn/content/issues/35462) (2024-08-14T05:16:45Z)
