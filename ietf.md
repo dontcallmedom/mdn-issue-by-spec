@@ -4,8 +4,6 @@
 
 * [\[rfc7231\] 503 error cause](https://github.com/mdn/content/issues/35565) (2024-08-23T09:23:36Z)
   
-* [\[rfc7231\] Does DELETE permit body?](https://github.com/mdn/content/issues/34721) (2024-07-08T18:17:51Z)
-  
 * [\[rfc7231\] POST requests and 301/302 status codes](https://github.com/mdn/content/issues/34222) (2024-06-17T10:02:44Z)
   
 * [\[rfc7231, rfc7233\] Security concern in the HTTP headers Server document](https://github.com/mdn/content/issues/33543) (2024-05-10T22:50:35Z)

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[resource-timing-2\] PerformanceResourceTiming transferSize support in safari](https://github.com/mdn/content/issues/35591) (2024-08-26T09:03:35Z)
+  
 * [\[webrtc\] Issue in example provided for RTCIceTransport::getLocalCandidates() method](https://github.com/mdn/content/issues/35587) (2024-08-26T05:44:17Z)
   
 * [\[css-fonts-5\] Clarification for kerning vs spacing/tracking](https://github.com/mdn/content/issues/35579) (2024-08-24T15:35:10Z)
