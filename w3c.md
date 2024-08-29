@@ -154,8 +154,6 @@
   
 * [\[web-animations-2, css-animations-2\] Issue with "Element.animate()": wrong scenario mentioned](https://github.com/mdn/content/issues/13487) (2022-03-04T07:40:26Z)
   
-* [\[css-lists-3\] Issue with "counter-reset": What is the difference in behavior between the latest Firefox (82 or later) and the older 81 or earlier or other browsers?](https://github.com/mdn/content/issues/13293) (2022-02-26T00:46:43Z)
-  
 * [\[permissions-policy-1\] Permissions API - update to docs needed](https://github.com/mdn/content/issues/13003) (2022-02-14T23:13:08Z)
   
 * [\[encoding\] Content suggestion: ImageDecoder & ImageTrackList how-to/tutorial](https://github.com/mdn/content/issues/12791) (2022-02-07T04:15:29Z)

@@ -54,8 +54,6 @@
   
 * [\[web-animations-2, css-animations-2\] Issue with "Element.animate()": wrong scenario mentioned](https://github.com/mdn/content/issues/13487) (2022-03-04T07:40:26Z)
   
-* [\[css-lists-3\] Issue with "counter-reset": What is the difference in behavior between the latest Firefox (82 or later) and the older 81 or earlier or other browsers?](https://github.com/mdn/content/issues/13293) (2022-02-26T00:46:43Z)
-  
 * [\[cssom-view-1\] Issue with "Document: scroll event": Example using rAF in scroll-event callbacks is outdated, and anti-performance](https://github.com/mdn/content/issues/12701) (2022-02-04T00:25:49Z)
   
 * [\[css-fonts-5\] @font-face/font-weight: expand on \<font-weight-absolute\>{2} importance](https://github.com/mdn/content/issues/10910) (2021-12-01T18:54:16Z)
