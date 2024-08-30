@@ -12,8 +12,6 @@
   
 * [\[cssom-view-1\] getBoundingClientRect().width is not the same as scrollWidth](https://github.com/mdn/content/issues/35466) (2024-08-14T13:36:33Z)
   
-* [\[css-text-3\] Mention tab-size in white-space](https://github.com/mdn/content/issues/35462) (2024-08-14T05:16:45Z)
-  
 * [\[css-text-3\] \[CSS\] css.properties.hyphens - language_czech and language_slovak](https://github.com/mdn/content/issues/35425) (2024-08-13T00:48:00Z)
   
 * [\[html, dom, uievents\] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not](https://github.com/mdn/content/issues/35382) (2024-08-09T02:19:02Z)

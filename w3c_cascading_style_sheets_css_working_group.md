@@ -6,8 +6,6 @@
   
 * [\[cssom-view-1\] getBoundingClientRect().width is not the same as scrollWidth](https://github.com/mdn/content/issues/35466) (2024-08-14T13:36:33Z)
   
-* [\[css-text-3\] Mention tab-size in white-space](https://github.com/mdn/content/issues/35462) (2024-08-14T05:16:45Z)
-  
 * [\[css-text-3\] \[CSS\] css.properties.hyphens - language_czech and language_slovak](https://github.com/mdn/content/issues/35425) (2024-08-13T00:48:00Z)
   
 * [\[css-font-loading-3\] Add prominent note to \`FontFaceSet.check()\` about non-existent fonts](https://github.com/mdn/content/issues/35369) (2024-08-08T10:00:06Z)
