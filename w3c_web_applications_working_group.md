@@ -48,5 +48,3 @@
   
 * [\[html, dom, WebIDL-1, cssom-view-1, FileAPI, uievents, pointerlock-2\] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
-* [\[intersection-observer\] Issue with "IntersectionObserver()": needs description/example of how rootMargin works](https://github.com/mdn/content/issues/4710) (2021-05-04T15:10:10Z)
-  

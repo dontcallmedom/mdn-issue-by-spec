@@ -910,31 +910,5 @@ And the change in Firefox caused by <a href="https://groups.google.com/g/mozilla
 </ul>
 <p dir="auto">We should replace all of these with some alternative. A common alternative is to write the output into an element in the example's document.</p>]]></content:encoded>
         </item>
-        <item>
-            <title><![CDATA[[intersection-observer] Issue with "IntersectionObserver()": needs description/example of how rootMargin works]]></title>
-            <link>https://github.com/mdn/content/issues/4710</link>
-            <guid>https://github.com/mdn/content/issues/4710</guid>
-            <pubDate>Tue, 04 May 2021 15:10:10 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">The description for <code class="notranslate">rootMargin</code> should indicate whether positive margins increase or decrease the threshold for intersection detection. This is particularly important because I can use margins to change the relative position of a box in CSS (e.g. I can move an element up 5 pixels by setting its top-margin to "-5px". The way the document describes this, it sounds like it functions more like CSS padding, such that setting the top value to "-5px" would <em>decrease</em> the size of the bounding box by 5px without moving the element.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto">Parameters</p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">I'd like to see the description of how <code class="notranslate">rootMargin</code> works show how the option works, or at least describe its operations by stating more precisely which direction the bounding box grows (or moves?) when the value is positive vs when it is negative.</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">N/A</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/intersectionobserver/intersectionobserver</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/intersectionobserver/intersectionobserver/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/api/intersectionobserver/intersectionobserver/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/11c96e424b376432f8ab8ebb12a40e5383e31e9d/hovercard" href="https://github.com/mdn/content/commit/11c96e424b376432f8ab8ebb12a40e5383e31e9d"><tt>11c96e4</tt></a></li>
-<li>Document last modified: 2021-03-30T03:01:23.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
     </channel>
 </rss>

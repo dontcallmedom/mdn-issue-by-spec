@@ -176,8 +176,6 @@
   
 * [\[html, web-locks\] Avoiding duplication/confusion between Location+WorkerLocation and Navigator+WorkerNavigator](https://github.com/mdn/content/issues/6856) (2021-07-13T13:35:32Z)
   
-* [\[intersection-observer\] Issue with "IntersectionObserver()": needs description/example of how rootMargin works](https://github.com/mdn/content/issues/4710) (2021-05-04T15:10:10Z)
-  
 * [\[webaudio\] Content bug: AudioListener and attributes need better examples. ](https://github.com/mdn/content/issues/4468) (2021-04-26T03:22:48Z)
   
 * [\[orientation-event, compat\] Content bug: Improve device/screen orientation event doc](https://github.com/mdn/content/issues/4400) (2021-04-23T02:57:45Z)
