@@ -10,8 +10,6 @@
   
 * [\[html\] The Permitted content of the \<summary\> element has not been updated.](https://github.com/mdn/content/issues/35487) (2024-08-16T10:22:16Z)
   
-* [\[html\] Bundlers recommend worker URLs to be fully resolved](https://github.com/mdn/content/issues/35475) (2024-08-15T03:26:58Z)
-  
 * [\[html, dom, uievents\] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not](https://github.com/mdn/content/issues/35382) (2024-08-09T02:19:02Z)
   
 * [\[html\] CSS :defined pseudo-class: Improve example and fix typo](https://github.com/mdn/content/issues/35296) (2024-08-04T07:30:33Z)
