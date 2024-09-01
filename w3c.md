@@ -16,8 +16,6 @@
   
 * [\[html, dom, uievents\] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not](https://github.com/mdn/content/issues/35382) (2024-08-09T02:19:02Z)
   
-* [\[css-font-loading-3\] Add prominent note to \`FontFaceSet.check()\` about non-existent fonts](https://github.com/mdn/content/issues/35369) (2024-08-08T10:00:06Z)
-  
 * [\[touch-events\] Added explanation of touchcancel to "TouchEvent: changedTouches](https://github.com/mdn/content/issues/35194) (2024-07-28T13:15:54Z)
   
 * [\[html, SVG11\] CanvasRenderingContext2D: drawImage() method: takes natural height and width into account docs incomplete.](https://github.com/mdn/content/issues/35141) (2024-07-26T10:10:58Z)
