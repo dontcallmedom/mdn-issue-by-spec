@@ -20,8 +20,6 @@
   
 * [\[html, SVG11\] CanvasRenderingContext2D: drawImage() method: takes natural height and width into account docs incomplete.](https://github.com/mdn/content/issues/35141) (2024-07-26T10:10:58Z)
   
-* [\[file-system-access\] Missing information about \`requestPermission\` requiring a "Transient user activation"](https://github.com/mdn/content/issues/35019) (2024-07-24T09:46:51Z)
-  
 * [\[selection-api\] deleteFromDocument deletes more than just text](https://github.com/mdn/content/issues/34943) (2024-07-20T19:06:19Z)
   
 * [\[appmanifest\] IsStandaloneContent does not work with \`display: fullscreen\` in Chrome Android](https://github.com/mdn/content/issues/34928) (2024-07-19T15:53:57Z)
@@ -139,8 +137,6 @@
 * [\[WebCryptoAPI\] Precise max length for encoding algorithm](https://github.com/mdn/content/issues/18045) (2022-07-06T14:47:35Z)
   
 * [\[selectors-4\] \`:any-link\` privacy exception not explained](https://github.com/mdn/content/issues/17366) (2022-06-17T02:50:38Z)
-  
-* [\[file-system-access\] \`FileSystemHandle.requestPermission()\` can throw \`SecurityError\`](https://github.com/mdn/content/issues/15831) (2022-05-09T19:45:01Z)
   
 * [\[html, gamepad\] Double checking the gamepad docs are correct](https://github.com/mdn/content/issues/14874) (2022-04-11T03:02:09Z)
   
