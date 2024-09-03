@@ -84,8 +84,6 @@
   
 * [\[html\] HTMLImageElement.srcset: sizes attribute doesn't need to be present](https://github.com/mdn/content/issues/27291) (2023-06-12T21:33:46Z)
   
-* [\[notifications\] NotificationOptions and Notification silent default has change](https://github.com/mdn/content/issues/26812) (2023-05-17T14:25:50Z)
-  
 * [\[html\] HTMLMediaElement: suspend: Improve wording on what it means to be suspended](https://github.com/mdn/content/issues/26625) (2023-05-07T04:43:55Z)
   
 * [\[html\] Image request fired as soon as src is set](https://github.com/mdn/content/issues/26560) (2023-05-03T17:23:34Z)
