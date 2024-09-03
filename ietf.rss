@@ -4,44 +4,10 @@
         <title>IETF-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ietf.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by IETF</description>
-        <lastBuildDate>Mon, 17 Jun 2024 10:02:44 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 10 May 2024 22:50:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[rfc7231] POST requests and 301/302 status codes]]></title>
-            <link>https://github.com/mdn/content/issues/34222</link>
-            <guid>https://github.com/mdn/content/issues/34222</guid>
-            <pubDate>Mon, 17 Jun 2024 10:02:44 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The sentence "Even if the specification requires the method (and the body) not to be altered when the redirection is performed, not all user-agents conform here - you can still find this type of bugged software out there." on <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302</a> and the similar sentence "Note: Although the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301#specifications" rel="nofollow">specification</a> requires the method and the body to remain unchanged when the redirection is performed" on <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301</a> are plainly wrong nowadays.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The Fetch Standard <a href="https://fetch.spec.whatwg.org/#ref-for-concept-response-status%E2%91%A0%E2%91%A2" rel="nofollow">requires</a> user agents to change the method to <code class="notranslate">GET</code> (iff it originally was <code class="notranslate">POST</code>), the HTTP specification <a href="https://www.rfc-editor.org/rfc/rfc9110#status.302" rel="nofollow">permits ("MAY")</a> them to do so.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<ul dir="auto">
-<li><a href="https://fetch.spec.whatwg.org/#ref-for-concept-response-status%E2%91%A0%E2%91%A2" rel="nofollow">https://fetch.spec.whatwg.org/#ref-for-concept-response-status%E2%91%A0%E2%91%A2</a></li>
-<li><a href="https://www.rfc-editor.org/rfc/rfc9110#status.302" rel="nofollow">https://www.rfc-editor.org/rfc/rfc9110#status.302</a></li>
-<li><a href="https://www.rfc-editor.org/rfc/rfc9110#status.301" rel="nofollow">https://www.rfc-editor.org/rfc/rfc9110#status.301</a></li>
-</ul>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/http/status/301</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/http/status/301/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/http/status/301/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0880a90f3811475d78bc4b2c344eb4146f25f66c/hovercard" href="https://github.com/mdn/content/commit/0880a90f3811475d78bc4b2c344eb4146f25f66c"><tt>0880a90</tt></a></li>
-<li>Document last modified: 2023-04-10T19:47:15.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[rfc7231, rfc7233] Security concern in the HTTP headers Server document]]></title>
             <link>https://github.com/mdn/content/issues/33543</link>
