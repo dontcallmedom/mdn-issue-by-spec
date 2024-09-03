@@ -20,8 +20,6 @@
   
 * [\[html, SVG11\] CanvasRenderingContext2D: drawImage() method: takes natural height and width into account docs incomplete.](https://github.com/mdn/content/issues/35141) (2024-07-26T10:10:58Z)
   
-* [\[selection-api\] deleteFromDocument deletes more than just text](https://github.com/mdn/content/issues/34943) (2024-07-20T19:06:19Z)
-  
 * [\[appmanifest\] IsStandaloneContent does not work with \`display: fullscreen\` in Chrome Android](https://github.com/mdn/content/issues/34928) (2024-07-19T15:53:57Z)
   
 * [\[appmanifest\] Descriptions of orientation values missing](https://github.com/mdn/content/issues/34927) (2024-07-19T15:16:42Z)
