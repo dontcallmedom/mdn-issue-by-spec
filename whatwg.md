@@ -2,10 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] \`PopStateEvent.hasUAVisualTransition\` is not described](https://github.com/mdn/content/issues/35719) (2024-09-03T09:23:19Z)
-  
-* [\[dom\] MutationObserver no "Baseline Widely available" badge](https://github.com/mdn/content/issues/35718) (2024-09-03T07:58:23Z)
-  
 * [\[html\] Tutorial site "recommends" the deprecated \<param\> element](https://github.com/mdn/content/issues/35681) (2024-09-01T19:25:16Z)
   
 * [\[html\] Missing documentation that SharedArrayBuffers not compatible with MessagePort](https://github.com/mdn/content/issues/35561) (2024-08-23T01:58:03Z)
