@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[ecmascript\] Clarify where the base is for relative module specifiers](https://github.com/mdn/content/issues/35754) (2024-09-05T06:14:33Z)
+  
 * [\[ecmascript\] The Set has a compatibility issue with the Samsung browser](https://github.com/mdn/content/issues/35742) (2024-09-04T10:15:30Z)
   
 * [\[ecmascript, streams\] ReadableStreamDefaultController: undocumented error conditions](https://github.com/mdn/content/issues/34597) (2024-07-03T14:49:56Z)
