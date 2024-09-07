@@ -6,5 +6,3 @@
   
 * [\[fetch\] Missing Request constructor duplex option](https://github.com/mdn/content/issues/31735) (2024-01-16T01:34:58Z)
   
-* [\[fetch\] fetch could reject when 400 is returned](https://github.com/mdn/content/issues/17115) (2022-06-08T21:48:36Z)
-  

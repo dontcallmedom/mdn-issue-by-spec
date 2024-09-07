@@ -98,8 +98,6 @@
   
 * [\[html\] Missing info of copying sessionStorage on creating new context](https://github.com/mdn/content/issues/18323) (2022-07-13T16:09:36Z)
   
-* [\[fetch\] fetch could reject when 400 is returned](https://github.com/mdn/content/issues/17115) (2022-06-08T21:48:36Z)
-  
 * [\[html, gamepad\] Double checking the gamepad docs are correct](https://github.com/mdn/content/issues/14874) (2022-04-11T03:02:09Z)
   
 * [\[html\] "HTMLElement.dir": Misleading info about how the value is determined](https://github.com/mdn/content/issues/14484) (2022-03-30T22:18:42Z)
