@@ -18,7 +18,7 @@
   
 * [\[dom\] Element.shadowRoot should note browser shadow roots aren't accessible](https://github.com/mdn/content/issues/35286) (2024-08-02T19:32:27Z)
   
-* [\[html\] How accurate is currentTime?](https://github.com/mdn/content/issues/35239) (2024-07-30T09:34:47Z)
+* [\[html\] HTMLMediaElement.currentTime: precision seems different from Date.now](https://github.com/mdn/content/issues/35239) (2024-07-30T09:34:47Z)
   
 * [\[html\] Description of how inert of .showModal() works does not cover how it behaves with iframe](https://github.com/mdn/content/issues/35189) (2024-07-27T22:31:00Z)
   

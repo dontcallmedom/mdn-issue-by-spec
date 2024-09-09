@@ -4,8 +4,6 @@
 
 * [\[ecmascript\] Clarify where the base is for relative module specifiers](https://github.com/mdn/content/issues/35754) (2024-09-05T06:14:33Z)
   
-* [\[ecmascript\] The Set has a compatibility issue with the Samsung browser](https://github.com/mdn/content/issues/35742) (2024-09-04T10:15:30Z)
-  
 * [\[ecmascript, streams\] ReadableStreamDefaultController: undocumented error conditions](https://github.com/mdn/content/issues/34597) (2024-07-03T14:49:56Z)
   
 * [\[ecmascript\] Macrotasks and Microtasks](https://github.com/mdn/content/issues/28795) (2023-08-28T09:55:38Z)
