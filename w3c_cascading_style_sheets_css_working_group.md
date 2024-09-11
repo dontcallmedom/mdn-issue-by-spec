@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-scrollbars-1\] Add missing info](https://github.com/mdn/content/issues/35835) (2024-09-11T13:16:56Z)
+  
 * [\[css-backgrounds-4, css-box-3\] Potentially inaccurate statement about "background-clip" without background-image or background-color](https://github.com/mdn/content/issues/35819) (2024-09-10T14:52:06Z)
   
 * [\[css-fonts-5\] Clarification for kerning vs spacing/tracking](https://github.com/mdn/content/issues/35579) (2024-08-24T15:35:10Z)
