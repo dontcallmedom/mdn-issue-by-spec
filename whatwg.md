@@ -2,6 +2,10 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[dom\] Range: comparePoint() method return not actually explained](https://github.com/mdn/content/issues/35830) (2024-09-11T09:07:39Z)
+  
+* [\[dom\] Range: compareBoundaryPoints() method examples and explanation unclear](https://github.com/mdn/content/issues/35829) (2024-09-11T08:59:47Z)
+  
 * [\[html\] Location: port property incorrectly documented](https://github.com/mdn/content/issues/35732) (2024-09-04T02:20:53Z)
   
 * [\[html\] Tutorial site "recommends" the deprecated \<param\> element](https://github.com/mdn/content/issues/35681) (2024-09-01T19:25:16Z)

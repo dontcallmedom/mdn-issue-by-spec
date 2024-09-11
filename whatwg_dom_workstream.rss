@@ -4,10 +4,151 @@
         <title>WHATWG DOM Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_dom_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG DOM Workstream</description>
-        <lastBuildDate>Fri, 09 Aug 2024 02:19:02 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Sep 2024 09:07:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[dom] Range: comparePoint() method return not actually explained]]></title>
+            <link>https://github.com/mdn/content/issues/35830</link>
+            <guid>https://github.com/mdn/content/issues/35830</guid>
+            <pubDate>Wed, 11 Sep 2024 09:07:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Range/comparePoint" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Range/comparePoint</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">At the start of the page it says:</p>
+<blockquote>
+<p dir="auto">depending on whether the referenceNode is before, the same as, or after the <code class="notranslate">Range</code>.</p>
+</blockquote>
+<p dir="auto">What is meant by a specific point being the "same as" an entire range is not explained at all.</p>
+<p dir="auto">Also this is the description of the <code class="notranslate">offset</code> parameter:</p>
+<blockquote>
+<p dir="auto">An integer greater than or equal to zero representing the offset inside the referenceNode.</p>
+</blockquote>
+<p dir="auto">In other words, "the offset is an offset." There is a better explanation in the opening to the page, but if you go straight to the part you want to learn about, the <code class="notranslate">offset</code> section, there's nothing useful there.</p>
+<p dir="auto">The return value section says this:</p>
+<blockquote>
+<p dir="auto">Returns -1, 0, or 1.</p>
+</blockquote>
+<p dir="auto">With even less explanation as to what any of it means. And then unhelpful basic example code is given, that does not aid understanding.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">These concepts should actually be explained.</p>
+<p dir="auto">For readers to correctly and clearly understand the method, these things should be explained (probably in the <em>return</em> section, which is where it's relevant):</p>
+<ul dir="auto">
+<li>"Before" (-1) means the point is within a node earlier in the document. <em>Or</em> within the same node with a lower offset than the start offset of the range.</li>
+<li>"Same as" (0) means the point is within the start container of the range, and at or after the start offset within that node. <em>Or</em> within a later node that is before the end container. <em>Or</em> within the end container of the range, and at or before the end offset within that node.</li>
+<li>"After" (1) means the point is within a node after the end container of the range. <em>Or</em> is the end container or within it, and has a higher offset than the end offset of the range.</li>
+</ul>
+<p dir="auto">For the offset, the explanation should <em>at least</em> be in the offset section. It can be the same elsewhere on the page, but if you use MDN as a reference and so skip straight to the thing you want to learn about you should be able to learn about it <em>right there</em> instead of needing to look over the whole page. The intro can be an <em>introduction</em>, that's fine. But to my thinking it shouldn't be the entire explanation that's then not used in the relevant sections on the page.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[dom] Range: compareBoundaryPoints() method examples and explanation unclear]]></title>
+            <link>https://github.com/mdn/content/issues/35829</link>
+            <guid>https://github.com/mdn/content/issues/35829</guid>
+            <pubDate>Wed, 11 Sep 2024 08:59:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Range/compareBoundaryPoints" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Range/compareBoundaryPoints</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">In the list of <code class="notranslate">how</code> parameter values it speaks in terms of:</p>
+<blockquote>
+<p dir="auto">compares the end boundary-point of sourceRange to the start boundary-point of <code class="notranslate">Range</code>.</p>
+</blockquote>
+<p dir="auto">This is misleading. It seems as though it's saying the result will be <em>source</em> compared to <em>arg</em>. Which is not correct. I'd recommend that section should be rewritten to be clearer. (It's a shame the enum names are so confusing, but probably not much anyone can do about it now.)</p>
+<p dir="auto">The return value puts things in a different order:</p>
+<blockquote>
+<p dir="auto">indicating whether the corresponding boundary-point of the <code class="notranslate">Range</code> is respectively before, equal to, or after the corresponding boundary-point of sourceRange.</p>
+</blockquote>
+<p dir="auto">This, though technically accurate, is just plain hard to get your head around.</p>
+<p dir="auto">The example is just a very general code snippet that does not help the reader understand how the method works.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Here's an example of how the <code class="notranslate">how</code> section could be rewritten:</p>
+<blockquote>
+<p dir="auto"><code class="notranslate">how</code> A constant describing the comparison method. The first part of the name indicates the boundary of the passed-in Range, which will be compared relative to the boundary of the source Range as indicated by the second part of the name.</p>
+<ul dir="auto">
+<li><code class="notranslate">Range.END_TO_START</code>: passed-in Range's end, relative to source's start.</li>
+</ul>
+</blockquote>
+<p dir="auto">Here's a possible different example that could be used. The goal with this version is to visually demonstrate the ranges involved, making it easy to see their relative start and end points, and associate that with how the method functions. Multiple example calls are included with their return values shown and explained. Clearer variable names are used that reflect how the two ranges are referred to in the (updated) text.</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="var text = new Text(&quot;0123456789&quot;);
+
+var sourceRange = new Range();
+sourceRange.setStart(text, 1); // the position after the 1st node/character
+//                         v-----
+//                        0 1 2 3 4 5 6 7 8 9
+//                          ---------^
+        sourceRange.setEnd(text, 6); // the position after the 6th node/character
+
+
+var passedRange = new Range();
+passedRange.setStart(text, 1); // the position after the 0th node/character
+//                         v----
+//                        0 1 2 3 4 5 6 7 8 9
+//                         ------^
+      passedRange.setEnd(text, 4); // the position after the 4th node/character
+
+// The ranges compared so far...
+// sourceRange start v---------v sourceRange end
+//                  0 1 2 3 4 5 6 7 8 9
+// passedRange start ^-----^ passRange end
+
+// passed start is *same as* source start
+sourceRange.compareBoundaryPoints(Range.START_TO_START, passedRange); // == 0 *same as*
+
+// passed start is *after* source end
+sourceRange.compareBoundaryPoints(Range.START_TO_END, passedRange); // == 1 *after*
+
+// passed end is *after* source start
+sourceRange.compareBoundaryPoints(Range.END_TO_START, passedRange); // == 1 *after*
+
+// passed end is *before* source end
+sourceRange.compareBoundaryPoints(Range.END_TO_END, passedRange); // == -1 *before*"><pre class="notranslate"><code class="notranslate">var text = new Text("0123456789");
+
+var sourceRange = new Range();
+sourceRange.setStart(text, 1); // the position after the 1st node/character
+//                         v-----
+//                        0 1 2 3 4 5 6 7 8 9
+//                          ---------^
+        sourceRange.setEnd(text, 6); // the position after the 6th node/character
+
+
+var passedRange = new Range();
+passedRange.setStart(text, 1); // the position after the 0th node/character
+//                         v----
+//                        0 1 2 3 4 5 6 7 8 9
+//                         ------^
+      passedRange.setEnd(text, 4); // the position after the 4th node/character
+
+// The ranges compared so far...
+// sourceRange start v---------v sourceRange end
+//                  0 1 2 3 4 5 6 7 8 9
+// passedRange start ^-----^ passRange end
+
+// passed start is *same as* source start
+sourceRange.compareBoundaryPoints(Range.START_TO_START, passedRange); // == 0 *same as*
+
+// passed start is *after* source end
+sourceRange.compareBoundaryPoints(Range.START_TO_END, passedRange); // == 1 *after*
+
+// passed end is *after* source start
+sourceRange.compareBoundaryPoints(Range.END_TO_START, passedRange); // == 1 *after*
+
+// passed end is *before* source end
+sourceRange.compareBoundaryPoints(Range.END_TO_END, passedRange); // == -1 *before*
+</code></pre></div>
+<p dir="auto">It's a little harder to read on this site than it would be on MDN. Or some graphics could be made that are even easier to understand and just as clear.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, dom, uievents] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not]]></title>
             <link>https://github.com/mdn/content/issues/35382</link>
