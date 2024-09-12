@@ -4,10 +4,50 @@
         <title>W3C Web Applications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_applications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Applications Working Group</description>
-        <lastBuildDate>Sat, 17 Aug 2024 22:29:50 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Sep 2024 20:50:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[clipboard-apis] Clipboard API example iframe - permission policy error]]></title>
+            <link>https://github.com/mdn/content/issues/35862</link>
+            <guid>https://github.com/mdn/content/issues/35862</guid>
+            <pubDate>Thu, 12 Sep 2024 20:50:49 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/read" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/read</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/read#examples" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/read#examples</a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The examples set in the Clipboard API don't work, when copying an image as indicated in the doc to paste it, nothing happens, only errors are thrown.</p>
+<p dir="auto">These demos are presented through an Iframe which causes permission policy issues.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The examples are to work correctly when copying and pasting the image and no errors are to be thrown.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<h2 dir="auto">OS</h2>
+<p dir="auto">Linux Ubuntu 22.04</p>
+<h2 dir="auto">Browsers</h2>
+<h3 dir="auto">Google Chrome</h3>
+<p dir="auto"><code class="notranslate">127.0.6533.72 </code></p>
+<p dir="auto">The error appears in the <code class="notranslate">DevTools</code> console and the iframe.</p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/24453700/367054336-feb18d00-dc2a-40bb-8be4-277f6decee49.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjYxNzQ5NDksIm5iZiI6MTcyNjE3NDY0OSwicGF0aCI6Ii8yNDQ1MzcwMC8zNjcwNTQzMzYtZmViMThkMDAtZGMyYS00MGJiLThiZTQtMjc3ZjZkZWNlZTQ5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTEyVDIwNTcyOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWVlOWZlODczNjQ4YzM4MDRiYzRlNjNjZTkxMjE4YmVkNjM2ODI2ZTliMTdkMjFhNWVhMGJlZjU2OGRjYzYzYTImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.1v2-A6jZnbDOTxgCQYYuHZRh0pS-ONq2t4YB4miIVvw"><img src="https://private-user-images.githubusercontent.com/24453700/367054336-feb18d00-dc2a-40bb-8be4-277f6decee49.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjYxNzQ5NDksIm5iZiI6MTcyNjE3NDY0OSwicGF0aCI6Ii8yNDQ1MzcwMC8zNjcwNTQzMzYtZmViMThkMDAtZGMyYS00MGJiLThiZTQtMjc3ZjZkZWNlZTQ5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTEyVDIwNTcyOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWVlOWZlODczNjQ4YzM4MDRiYzRlNjNjZTkxMjE4YmVkNjM2ODI2ZTliMTdkMjFhNWVhMGJlZjU2OGRjYzYzYTImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.1v2-A6jZnbDOTxgCQYYuHZRh0pS-ONq2t4YB4miIVvw" alt="Capture d’écran du 2024-09-12 22-40-41" style="max-width: 100%;"></a></p>
+<h3 dir="auto">Firefox</h3>
+<p dir="auto"><code class="notranslate">130.0</code></p>
+<p dir="auto">The error appears directly in the Iframe itself <code class="notranslate">Error: Clipboard read operation is not allowed.</code></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/clipboard/read</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/read" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/read</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/clipboard/read/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/clipboard/read/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/c7edf2734fccb185c5e93ee114ea3d5edc0177b5/hovercard" href="https://github.com/mdn/content/commit/c7edf2734fccb185c5e93ee114ea3d5edc0177b5"><tt>c7edf27</tt></a></li>
+<li>Document last modified: 2024-07-26T02:57:09.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[appmanifest] standalone display not working, https required?]]></title>
             <link>https://github.com/mdn/content/issues/35494</link>

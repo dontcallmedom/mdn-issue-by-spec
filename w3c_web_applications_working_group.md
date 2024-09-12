@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[clipboard-apis\] Clipboard API example iframe - permission policy error](https://github.com/mdn/content/issues/35862) (2024-09-12T20:50:49Z)
+  
 * [\[appmanifest\] standalone display not working, https required?](https://github.com/mdn/content/issues/35494) (2024-08-17T22:29:50Z)
   
 * [\[html, dom, uievents\] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not](https://github.com/mdn/content/issues/35382) (2024-08-09T02:19:02Z)
