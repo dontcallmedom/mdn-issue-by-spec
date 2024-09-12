@@ -56,8 +56,6 @@
   
 * [\[html\] label accessibility advice is misleading](https://github.com/mdn/content/issues/33283) (2024-04-26T14:13:16Z)
   
-* [\[html\] Navigator: cookieEnabled warning regarding Safari is outdated](https://github.com/mdn/content/issues/32845) (2024-03-26T15:50:22Z)
-  
 * [\[html\] Video/Audio source event handling](https://github.com/mdn/content/issues/32784) (2024-03-21T15:30:15Z)
   
 * [\[html\] HTMLMediaElement/textTracks example video does not load](https://github.com/mdn/content/issues/32262) (2024-02-13T22:47:24Z)
