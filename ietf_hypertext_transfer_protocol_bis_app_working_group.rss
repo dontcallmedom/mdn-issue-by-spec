@@ -4,35 +4,10 @@
         <title>IETF Hypertext Transfer Protocol Bis APP Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ietf_hypertext_transfer_protocol_bis_app_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by IETF Hypertext Transfer Protocol Bis APP Working Group</description>
-        <lastBuildDate>Fri, 10 May 2024 22:50:35 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 10 Aug 2022 08:44:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[rfc7231, rfc7233] Security concern in the HTTP headers Server document]]></title>
-            <link>https://github.com/mdn/content/issues/33543</link>
-            <guid>https://github.com/mdn/content/issues/33543</guid>
-            <pubDate>Fri, 10 May 2024 22:50:35 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Server#directives" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Server#directives</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Directives</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The HTTP headers Server documentation includes potentially misleading security advice.<br>
-It mentions that having "Server" information in the HTTP header can expose the server to exploitation by attackers.<br>
-However, the directive section suggests that revealing Apache versions helps browsers work around bugs.<br>
-Instead, developers should patch bugs without exposing vulnerable information to potential attackers.<br>
-Thus, revealing server information contradicts the security warnings in the document.</p>
-<p dir="auto">Below is the statement from the document:<br>
-"How much detail to include is an interesting balance to strike; exposing the OS version is probably a bad idea, as mentioned in the earlier warning about overly-detailed values. However, exposed Apache versions helped browsers to work around a bug of the versions with <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Encoding" rel="nofollow">Content-Encoding</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Range" rel="nofollow">Range</a> in combination."</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Update the document so that contradicting statements will be removed.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">RFC-2616 states that server information should be confidential.<br>
-<a href="https://datatracker.ietf.org/doc/html/rfc2616#section-15.1.1" rel="nofollow">https://datatracker.ietf.org/doc/html/rfc2616#section-15.1.1</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[rfc7233] Content suggestion: http content-type multipart/*]]></title>
             <link>https://github.com/mdn/content/issues/19353</link>
