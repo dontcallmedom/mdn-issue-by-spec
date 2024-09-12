@@ -4,10 +4,47 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Wed, 11 Sep 2024 15:30:33 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Sep 2024 14:20:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[dom] Range.extractContents() and Range.surroundContents() describe behaviour incorrectly]]></title>
+            <link>https://github.com/mdn/content/issues/35854</link>
+            <guid>https://github.com/mdn/content/issues/35854</guid>
+            <pubDate>Thu, 12 Sep 2024 14:20:49 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Range/extractContents" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Range/extractContents</a></p>
+<p dir="auto">(Also <a href="https://developer.mozilla.org/en-US/docs/Web/API/Range/surroundContents" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Range/surroundContents</a>)</p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Both pages describe:</p>
+<blockquote>
+<p dir="auto">moves content of the Range</p>
+</blockquote>
+<p dir="auto">This is not the behaviour as far as I can see in 126.0.6478.214 (Official Build) (64-bit), if a text node is the startContainer or endContainer or both. And is not the intended behaviour according to <a href="https://dom.spec.whatwg.org/#dom-range-extractcontents" rel="nofollow">the spec</a>:</p>
+<blockquote>
+<p dir="auto">To <em>clone</em> the contents of a <a href="https://dom.spec.whatwg.org/#concept-live-range" rel="nofollow">live range</a> range, run these steps...</p>
+</blockquote>
+<p dir="auto">(Unsure why that doesn't also apply to elements, but there you go.)</p>
+<p dir="auto">A range that is "partial" through text nodes (even if the offsets are at the beginning and end of the text nodes in question) will be <em>cloned</em>. They <em>are not</em> the original nodes. As such, they <em>are not</em> "moved." And that is the intended and correct behaviour. Therefore, the wording in the reference page is misleading at best or just wrong.</p>
+<p dir="auto">The closest I see to any explanation of this is in the extractContents() page:</p>
+<blockquote>
+<p dir="auto">Partially selected nodes are cloned to include the parent tags necessary to make the document fragment valid.</p>
+</blockquote>
+<p dir="auto">Which does not explain the definition of a "partially selected node" which is a misleading term anyway. In practise, the usage on the extractContents() page means "if a text node is the starting or ending boundary node." Whether or not all of that text node is included in the range.</p>
+<p dir="auto">And does not always have anything to do with parent tags. In fact, I've not been able to see any case in my testing where the parent tag <em>is</em> cloned. Maybe they are "included", but that term is not explained either and I cannot figure out what is meant by it.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">An accurate description of the behaviour, without unexplained terms, or with such terms properly explained:</p>
+<blockquote>
+<p dir="auto">The Range.extractContents() method moves all nodes within the Range from the document tree into a DocumentFragment. Where a text node is the starting or ending boundary of the Range, a <em>clone</em> of it is added to the fragment instead.</p>
+</blockquote>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[dom] Range: isPointInRange() method, offset not explained]]></title>
             <link>https://github.com/mdn/content/issues/35840</link>
@@ -725,7 +762,7 @@ Which tripped me off, anyways I don't know why that behavior is and would love t
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The black background on each segment's name does not fully cover the word "protocol". The last letter ("l") is outside the box.</p>
 <p dir="auto">This is only occurring on Firefox (Linux, from Mozilla deb package, version 128.0). When I brought up the page in Chrome (also on Linux) the display was correct.</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjYxNTQzMjQsIm5iZiI6MTcyNjE1NDAyNCwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTEyVDE1MTM0NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM1ZTI0MjAwNmY5OTU0N2NlMjQ3NmVlYjNmOWU5NjAyMGUwYTEwZDgwNTk3MGUzNGQxYTBiMTlkMGM2NGFmYTkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.cvx1KqPdrbUhUDrVTTD-WCJZvUCm32Vm88R5y4LhRQ4"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjYxNTQzMjQsIm5iZiI6MTcyNjE1NDAyNCwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTEyVDE1MTM0NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM1ZTI0MjAwNmY5OTU0N2NlMjQ3NmVlYjNmOWU5NjAyMGUwYTEwZDgwNTk3MGUzNGQxYTBiMTlkMGM2NGFmYTkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.cvx1KqPdrbUhUDrVTTD-WCJZvUCm32Vm88R5y4LhRQ4" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjYxNTUzNTgsIm5iZiI6MTcyNjE1NTA1OCwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTEyVDE1MzA1OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTViNzQwOGIwNDU2Yzg1NDI4NDg3NmVlMzdiYzFlNDc3YTRiNjkzODYzZTY5ZjZiMTRkYTZiNmU4ZjgwZTNjMWImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.lFVxFyvwr_IlIGE2VWQxSFs3ccJrhA9hKm5tqvizhKI"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjYxNTUzNTgsIm5iZiI6MTcyNjE1NTA1OCwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTEyVDE1MzA1OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTViNzQwOGIwNDU2Yzg1NDI4NDg3NmVlMzdiYzFlNDc3YTRiNjkzODYzZTY5ZjZiMTRkYTZiNmU4ZjgwZTNjMWImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.lFVxFyvwr_IlIGE2VWQxSFs3ccJrhA9hKm5tqvizhKI" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The background color should cover the full word.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
