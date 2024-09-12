@@ -4,10 +4,41 @@
         <title>WHATWG DOM Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_dom_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG DOM Workstream</description>
-        <lastBuildDate>Wed, 11 Sep 2024 15:30:33 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Sep 2024 14:20:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[dom] Range.extractContents() and Range.surroundContents() describe behaviour incorrectly]]></title>
+            <link>https://github.com/mdn/content/issues/35854</link>
+            <guid>https://github.com/mdn/content/issues/35854</guid>
+            <pubDate>Thu, 12 Sep 2024 14:20:49 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Range/extractContents" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Range/extractContents</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">(Also an issue with the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Range/surroundContents" rel="nofollow">surroundContents() page</a>.)</p>
+<p dir="auto">Both describe:</p>
+<blockquote>
+<p dir="auto">moves content of the Range into a new node</p>
+</blockquote>
+<p dir="auto">This is not the behaviour as far as I can see in 126.0.6478.214 (Official Build) (64-bit). And is not the intended behaviour according to <a href="https://dom.spec.whatwg.org/#dom-range-extractcontents" rel="nofollow">the spec</a>:</p>
+<blockquote>
+<p dir="auto">To <em>clone</em> the contents of a <a href="https://dom.spec.whatwg.org/#concept-live-range" rel="nofollow">live range</a> range, run these steps...</p>
+</blockquote>
+<p dir="auto">No nodes are the original nodes, not even fully selected ones within the range. As such, they <em>are not</em> "moved." And that is the intended and correct behaviour. Therefore, the wording in the reference page is misleading at best or just wrong.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">An accurate description of the behaviour:</p>
+<blockquote>
+<p dir="auto">Nodes within the range are <em>cloned</em> and appended to the surrounding node, etc.</p>
+</blockquote>
+<p dir="auto">All extracted nodes in the range are <em>clones</em>, and <em>are not</em> the same objects. They are recreated, and the originals are detached/deleted/removed from the document entirely. And as such cannot be usefully referenced for, say, rebuilding a new range based on them, accessing the contents on the page etc.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[dom] Range: isPointInRange() method, offset not explained]]></title>
             <link>https://github.com/mdn/content/issues/35840</link>
