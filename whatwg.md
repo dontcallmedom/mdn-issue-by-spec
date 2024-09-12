@@ -6,8 +6,6 @@
   
 * [\[dom\] Range: isPointInRange() method, offset not explained](https://github.com/mdn/content/issues/35840) (2024-09-11T15:30:33Z)
   
-* [\[html\] MDN incorrectly claims the spec allows \`datalist\` on \`type=password\`](https://github.com/mdn/content/issues/35837) (2024-09-11T13:48:56Z)
-  
 * [\[dom\] Range: comparePoint() method return not actually explained](https://github.com/mdn/content/issues/35830) (2024-09-11T09:07:39Z)
   
 * [\[dom\] Range: compareBoundaryPoints() method examples and explanation unclear](https://github.com/mdn/content/issues/35829) (2024-09-11T08:59:47Z)
