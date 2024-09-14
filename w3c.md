@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[WebCryptoAPI\] Outdated compat data](https://github.com/mdn/content/issues/35882) (2024-09-14T02:18:53Z)
+  
 * [\[clipboard-apis\] Clipboard API example iframe - permission policy error](https://github.com/mdn/content/issues/35862) (2024-09-12T20:50:49Z)
   
 * [\[css-scrollbars-1\] Add missing info about scrollbar-width intended use case](https://github.com/mdn/content/issues/35835) (2024-09-11T13:16:56Z)
