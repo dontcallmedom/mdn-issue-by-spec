@@ -62,8 +62,6 @@
   
 * [\[html\] HTML \<iframe\>: allow attribute needs stand-alone topic](https://github.com/mdn/content/issues/32188) (2024-02-09T06:10:46Z)
   
-* [\[html\] cancelAnimationFrame using mismatched time values in sample](https://github.com/mdn/content/issues/31840) (2024-01-21T18:53:32Z)
-  
 * [\[html\] WebSocket constructor example should demonstrate waiting for connection or handling connection failure](https://github.com/mdn/content/issues/31768) (2024-01-17T18:55:09Z)
   
 * [\[fetch\] Missing Request constructor duplex option](https://github.com/mdn/content/issues/31735) (2024-01-16T01:34:58Z)

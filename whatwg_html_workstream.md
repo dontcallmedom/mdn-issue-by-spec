@@ -44,8 +44,6 @@
   
 * [\[html\] HTML \<iframe\>: allow attribute needs stand-alone topic](https://github.com/mdn/content/issues/32188) (2024-02-09T06:10:46Z)
   
-* [\[html\] cancelAnimationFrame using mismatched time values in sample](https://github.com/mdn/content/issues/31840) (2024-01-21T18:53:32Z)
-  
 * [\[html\] WebSocket constructor example should demonstrate waiting for connection or handling connection failure](https://github.com/mdn/content/issues/31768) (2024-01-17T18:55:09Z)
   
 * [\[html\] No information about "cancel" event on HTMLInputElement page](https://github.com/mdn/content/issues/31014) (2023-12-15T00:00:43Z)
