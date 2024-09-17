@@ -4,54 +4,10 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Tue, 17 Sep 2024 20:53:35 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Sep 2024 14:20:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[html] Unused variable]]></title>
-            <link>https://github.com/mdn/content/issues/35921</link>
-            <guid>https://github.com/mdn/content/issues/35921</guid>
-            <pubDate>Tue, 17 Sep 2024 20:53:35 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/TextMetrics/fontBoundingBoxAscent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/TextMetrics/fontBoundingBoxAscent</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">An unused variable in the code example</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">A variable, text, was created, but never used. Instead, a new string was created and used to serve its purpose.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const canvas = document.createElement(&quot;canvas&quot;);
-const ctx = canvas.getContext(&quot;2d&quot;);
-
-ctx.font = &quot;25px serif&quot;;
-const text = &quot;Foo&quot;;
-
-const textMetrics = ctx.measureText(text); // returns TextMetrics object
-const ascentCssPixels = textMetrics.fontBoundingBoxAscent;"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">canvas</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createElement</span><span class="pl-kos">(</span><span class="pl-s">"canvas"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-k">const</span> <span class="pl-s1">ctx</span> <span class="pl-c1">=</span> <span class="pl-s1">canvas</span><span class="pl-kos">.</span><span class="pl-en">getContext</span><span class="pl-kos">(</span><span class="pl-s">"2d"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-
-<span class="pl-s1">ctx</span><span class="pl-kos">.</span><span class="pl-c1">font</span> <span class="pl-c1">=</span> <span class="pl-s">"25px serif"</span><span class="pl-kos">;</span>
-<span class="pl-k">const</span> <span class="pl-s1">text</span> <span class="pl-c1">=</span> <span class="pl-s">"Foo"</span><span class="pl-kos">;</span>
-
-<span class="pl-k">const</span> <span class="pl-s1">textMetrics</span> <span class="pl-c1">=</span> <span class="pl-s1">ctx</span><span class="pl-kos">.</span><span class="pl-en">measureText</span><span class="pl-kos">(</span><span class="pl-s1">text</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// returns TextMetrics object</span>
-<span class="pl-k">const</span> <span class="pl-s1">ascentCssPixels</span> <span class="pl-c1">=</span> <span class="pl-s1">textMetrics</span><span class="pl-kos">.</span><span class="pl-c1">fontBoundingBoxAscent</span><span class="pl-kos">;</span></pre></div>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/textmetrics/fontboundingboxascent</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/TextMetrics/fontBoundingBoxAscent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/TextMetrics/fontBoundingBoxAscent</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/textmetrics/fontboundingboxascent/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/textmetrics/fontboundingboxascent/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/daeff1a2efaae366bcc8b6d911d86985646e665e/hovercard" href="https://github.com/mdn/content/commit/daeff1a2efaae366bcc8b6d911d86985646e665e"><tt>daeff1a</tt></a></li>
-<li>Document last modified: 2024-04-22T04:54:38.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[dom] Range.extractContents() and Range.surroundContents() describe behaviour incorrectly]]></title>
             <link>https://github.com/mdn/content/issues/35854</link>
@@ -628,7 +584,7 @@ Which tripped me off, anyways I don't know why that behavior is and would love t
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The black background on each segment's name does not fully cover the word "protocol". The last letter ("l") is outside the box.</p>
 <p dir="auto">This is only occurring on Firefox (Linux, from Mozilla deb package, version 128.0). When I brought up the page in Chrome (also on Linux) the display was correct.</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY2MDk2NjIsIm5iZiI6MTcyNjYwOTM2MiwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTE3VDIxNDI0MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTBjNDkzMzRhZDFlYzlmYWI1ZTE4ZDJjMzIzMWUzYjFlN2Y5MWRmMDhjMjBlNDYyNGI0OWYzNzViY2E2NjZhNmUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.kzjA1-QgCAHLERBCU0R4v7iA7ymZFPgOOy9sF9OxN70"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY2MDk2NjIsIm5iZiI6MTcyNjYwOTM2MiwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTE3VDIxNDI0MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTBjNDkzMzRhZDFlYzlmYWI1ZTE4ZDJjMzIzMWUzYjFlN2Y5MWRmMDhjMjBlNDYyNGI0OWYzNzViY2E2NjZhNmUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.kzjA1-QgCAHLERBCU0R4v7iA7ymZFPgOOy9sF9OxN70" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY2MTAyNzgsIm5iZiI6MTcyNjYwOTk3OCwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTE3VDIxNTI1OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTE2MDg5YTU2YjYwNjgzMDlmMWExMGI5MTljYjEwNTJlNzE2NjBiODE0YjA4ZjI0YmE1MWVmMGM3ODE5ZWQ5NGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.J1QLVYSeKwF32FN9W-mwjc7j9ncDdTiB3-vruSssRgc"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY2MTAyNzgsIm5iZiI6MTcyNjYwOTk3OCwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTE3VDIxNTI1OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTE2MDg5YTU2YjYwNjgzMDlmMWExMGI5MTljYjEwNTJlNzE2NjBiODE0YjA4ZjI0YmE1MWVmMGM3ODE5ZWQ5NGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.J1QLVYSeKwF32FN9W-mwjc7j9ncDdTiB3-vruSssRgc" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The background color should cover the full word.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
