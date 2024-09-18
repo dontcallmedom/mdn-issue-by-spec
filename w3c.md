@@ -4,8 +4,6 @@
 
 * [\[WebCryptoAPI\] Outdated compat data](https://github.com/mdn/content/issues/35882) (2024-09-14T02:18:53Z)
   
-* [\[clipboard-apis\] Clipboard API example iframe - permission policy error](https://github.com/mdn/content/issues/35862) (2024-09-12T20:50:49Z)
-  
 * [\[css-backgrounds-4, css-box-3\] Potentially inaccurate statement about "background-clip" without background-image or background-color](https://github.com/mdn/content/issues/35819) (2024-09-10T14:52:06Z)
   
 * [\[webrtc\] Issue in example provided for RTCIceTransport::getLocalCandidates() method](https://github.com/mdn/content/issues/35587) (2024-08-26T05:44:17Z)
