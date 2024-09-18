@@ -4,10 +4,44 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Thu, 12 Sep 2024 14:20:49 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Sep 2024 15:26:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Contradictory Information]]></title>
+            <link>https://github.com/mdn/content/issues/35939</link>
+            <guid>https://github.com/mdn/content/issues/35939</guid>
+            <pubDate>Wed, 18 Sep 2024 15:26:19 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Nesting a list</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">It says here at <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul#technical_summary" rel="nofollow">technical summary</a></p>
+<blockquote>
+<p dir="auto">Permitted content: Zero or more <code class="notranslate">&lt;li&gt;</code>, <code class="notranslate">&lt;script&gt;</code> and <code class="notranslate">&lt;template&gt;</code> elements.</p>
+</blockquote>
+<p dir="auto">but above at <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul#nesting_a_list" rel="nofollow">nested lists</a> they do exactly the opposite, putting <code class="notranslate">&lt;ul&gt;</code>s inside an <code class="notranslate">&lt;ul&gt;</code> without wrapping it in <code class="notranslate">&lt;li&gt;</code>s.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Technical summary seems correct. Weirdly, if you adhere to the spec, the default styling is off. Maybe that's a problem of the rendering engine?</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element" rel="nofollow">https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/element/ul</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/ul/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/ul/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/9c09b183a5ce844a75c2f22e909d03f71ca329fc/hovercard" href="https://github.com/mdn/content/commit/9c09b183a5ce844a75c2f22e909d03f71ca329fc"><tt>9c09b18</tt></a></li>
+<li>Document last modified: 2024-07-26T02:20:41.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[dom] Range.extractContents() and Range.surroundContents() describe behaviour incorrectly]]></title>
             <link>https://github.com/mdn/content/issues/35854</link>
@@ -584,7 +618,7 @@ Which tripped me off, anyways I don't know why that behavior is and would love t
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The black background on each segment's name does not fully cover the word "protocol". The last letter ("l") is outside the box.</p>
 <p dir="auto">This is only occurring on Firefox (Linux, from Mozilla deb package, version 128.0). When I brought up the page in Chrome (also on Linux) the display was correct.</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY2NzI2ODUsIm5iZiI6MTcyNjY3MjM4NSwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTE4VDE1MTMwNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTZiOTEyNThiY2MwNTI0NGUwYzFkYjc2ZDcxNGZkZTAxYmY2ODViYzQyYTVjMmVhZWEwYjQwYzRjYzNkMzExYjgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.87za3VhIZiHEUFxSdDxX4WJEo-6LIEYizDl9PPE1I80"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY2NzI2ODUsIm5iZiI6MTcyNjY3MjM4NSwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTE4VDE1MTMwNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTZiOTEyNThiY2MwNTI0NGUwYzFkYjc2ZDcxNGZkZTAxYmY2ODViYzQyYTVjMmVhZWEwYjQwYzRjYzNkMzExYjgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.87za3VhIZiHEUFxSdDxX4WJEo-6LIEYizDl9PPE1I80" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY2NzM3NjksIm5iZiI6MTcyNjY3MzQ2OSwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTE4VDE1MzEwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWMxYjQzNzljODFjODU4YjdhZTNiNTAzMWJkZWRhMTczYzJhMDkxOGE5Y2ZjMTA1OWMxODA0NWEzNWFhYjBiYTgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.fXF8f3FMEe1VcNlQCBQGHg8TmqzJ0MFxvVjWIS7kPWU"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY2NzM3NjksIm5iZiI6MTcyNjY3MzQ2OSwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTE4VDE1MzEwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWMxYjQzNzljODFjODU4YjdhZTNiNTAzMWJkZWRhMTczYzJhMDkxOGE5Y2ZjMTA1OWMxODA0NWEzNWFhYjBiYTgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.fXF8f3FMEe1VcNlQCBQGHg8TmqzJ0MFxvVjWIS7kPWU" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The background color should cover the full word.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
