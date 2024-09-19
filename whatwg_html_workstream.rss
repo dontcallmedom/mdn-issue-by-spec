@@ -4,30 +4,10 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Thu, 19 Sep 2024 19:28:16 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 04 Sep 2024 02:20:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[html] <dialog> example broken]]></title>
-            <link>https://github.com/mdn/content/issues/35962</link>
-            <guid>https://github.com/mdn/content/issues/35962</guid>
-            <pubDate>Thu, 19 Sep 2024 19:28:16 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">html-only_dialog</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The embedded HTML-only dialog example seems broken. Clicking the <code class="notranslate">Ok</code> button does nothing, on either Firefox or Chromium.</p>
-<p dir="auto">Following the <code class="notranslate">Play</code> link through and interacting on the playground behaves as expected.</p>
-<p dir="auto">I am not quite sure what could be causing this issue. I've poked around in the developer console a little bit, but didn't notice anything out of the ordinary.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">I am using uBlock Origin. Disabling it did not affect the issue, however.</p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html] Location: port property incorrectly documented]]></title>
             <link>https://github.com/mdn/content/issues/35732</link>
@@ -359,7 +339,7 @@ Which tripped me off, anyways I don't know why that behavior is and would love t
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The black background on each segment's name does not fully cover the word "protocol". The last letter ("l") is outside the box.</p>
 <p dir="auto">This is only occurring on Firefox (Linux, from Mozilla deb package, version 128.0). When I brought up the page in Chrome (also on Linux) the display was correct.</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY3NzkzNzQsIm5iZiI6MTcyNjc3OTA3NCwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTE5VDIwNTExNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTA4MDQ5MTg0Y2IwY2Q1YjdjMzJiNTRjNzA1Mzc5NGY3NDBjNjlhZDMyNjQwNTRkMTVmM2FkNmU1OTc5MmFhMWYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.u7w4Qlwj2JFvf8rZfDABKnmYFAJEg1rUDAJLFGu5PpI"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY3NzkzNzQsIm5iZiI6MTcyNjc3OTA3NCwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTE5VDIwNTExNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTA4MDQ5MTg0Y2IwY2Q1YjdjMzJiNTRjNzA1Mzc5NGY3NDBjNjlhZDMyNjQwNTRkMTVmM2FkNmU1OTc5MmFhMWYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.u7w4Qlwj2JFvf8rZfDABKnmYFAJEg1rUDAJLFGu5PpI" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY3ODAzNjcsIm5iZiI6MTcyNjc4MDA2NywicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTE5VDIxMDc0N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRhMmJhNzZjMGEyYjk5ZTFjODMxM2I0NDdjODc3OTQ4MGFjMTc2MmE5N2ZhOGU4MmQ5NDhlMzc0ZDg0MzMxNTcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.2bRHa0l0tPvaP6GaMCQaZRN66sxCgvDUurdVWLkkDhY"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY3ODAzNjcsIm5iZiI6MTcyNjc4MDA2NywicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTE5VDIxMDc0N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRhMmJhNzZjMGEyYjk5ZTFjODMxM2I0NDdjODc3OTQ4MGFjMTc2MmE5N2ZhOGU4MmQ5NDhlMzc0ZDg0MzMxNTcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.2bRHa0l0tPvaP6GaMCQaZRN66sxCgvDUurdVWLkkDhY" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The background color should cover the full word.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
