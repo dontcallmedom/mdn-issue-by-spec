@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] \<dialog\> example broken](https://github.com/mdn/content/issues/35962) (2024-09-19T19:28:16Z)
+  
 * [\[html\] Location: port property incorrectly documented](https://github.com/mdn/content/issues/35732) (2024-09-04T02:20:53Z)
   
 * [\[html\] Tutorial site "recommends" the deprecated \<param\> element](https://github.com/mdn/content/issues/35681) (2024-09-01T19:25:16Z)

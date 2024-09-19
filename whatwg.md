@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] \<dialog\> example broken](https://github.com/mdn/content/issues/35962) (2024-09-19T19:28:16Z)
+  
 * [\[dom\] Range.extractContents() and Range.surroundContents() describe behaviour incorrectly](https://github.com/mdn/content/issues/35854) (2024-09-12T14:20:49Z)
   
 * [\[dom\] Range: isPointInRange() method, offset not explained](https://github.com/mdn/content/issues/35840) (2024-09-11T15:30:33Z)
