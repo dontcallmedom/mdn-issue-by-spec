@@ -4,8 +4,6 @@
 
 * [\[webrtc\] webrtc: Call createDataChannel after createOffer](https://github.com/mdn/content/issues/35932) (2024-09-18T12:11:30Z)
   
-* [\[WebCryptoAPI\] Outdated compat data](https://github.com/mdn/content/issues/35882) (2024-09-14T02:18:53Z)
-  
 * [\[webrtc\] Issue in example provided for RTCIceTransport::getLocalCandidates() method](https://github.com/mdn/content/issues/35587) (2024-08-26T05:44:17Z)
   
 * [\[css-fonts-5\] Clarification for kerning vs spacing/tracking](https://github.com/mdn/content/issues/35579) (2024-08-24T15:35:10Z)
