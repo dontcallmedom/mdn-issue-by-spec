@@ -74,8 +74,6 @@
   
 * [\[html, gamepad\] Double checking the gamepad docs are correct](https://github.com/mdn/content/issues/14874) (2022-04-11T03:02:09Z)
   
-* [\[html\] "HTMLElement.dir": Misleading info about how the value is determined](https://github.com/mdn/content/issues/14484) (2022-03-30T22:18:42Z)
-  
 * [\[html\] Issue with "Location": does not mention IDN domain names at all](https://github.com/mdn/content/issues/8895) (2021-09-13T22:55:17Z)
   
 * [\[html, dom, WebIDL-1, cssom-view-1, FileAPI, uievents, pointerlock-2\] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
