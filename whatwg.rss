@@ -4,10 +4,121 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Thu, 12 Sep 2024 14:20:49 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Sep 2024 03:15:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] globalCompositeOperation = 'xor' Overlapping area problem]]></title>
+            <link>https://github.com/mdn/content/issues/35981</link>
+            <guid>https://github.com/mdn/content/issues/35981</guid>
+            <pubDate>Sat, 21 Sep 2024 03:15:49 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">CanvasRenderingContext2D: globalCompositeOperation</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">When drawing two triangles with overlapping hypotenuses on a canvas, when globalCompositeOperation = 'xor' , the hypotenuse part does not become transparent? Is there a way to make it transparent?<br>
+The following is a code example：</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;html lang=&quot;zh&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Canvas XOR &lt;/title&gt;
+    &lt;style&gt;
+        canvas {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;canvas id=&quot;myCanvas&quot; &gt;&lt;/canvas&gt;
+    &lt;script&gt;
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        const dpr = window.devicePixelRatio;
+        canvas.height = 300 *dpr;
+        canvas.width = 300 *dpr;
+        ctx.fillStyle = 'red';
+        ctx.beginPath();
+        ctx.moveTo(120, 120);
+        ctx.lineTo(220, 120);
+        ctx.lineTo(170, 70);
+        ctx.closePath();
+        ctx.fill();
+
+        ctx.globalCompositeOperation = 'xor';
+        ctx.fillStyle = 'blue';
+        ctx.beginPath();
+        ctx.moveTo(150, 150);
+        ctx.lineTo(250, 150);
+        ctx.lineTo(200, 100);
+        ctx.closePath();
+        ctx.fill();
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;"><pre lang="&lt;!DOCTYPE" class="notranslate"><code class="notranslate">&lt;html lang="zh"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Canvas XOR &lt;/title&gt;
+    &lt;style&gt;
+        canvas {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;canvas id="myCanvas" &gt;&lt;/canvas&gt;
+    &lt;script&gt;
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        const dpr = window.devicePixelRatio;
+        canvas.height = 300 *dpr;
+        canvas.width = 300 *dpr;
+        ctx.fillStyle = 'red';
+        ctx.beginPath();
+        ctx.moveTo(120, 120);
+        ctx.lineTo(220, 120);
+        ctx.lineTo(170, 70);
+        ctx.closePath();
+        ctx.fill();
+
+        ctx.globalCompositeOperation = 'xor';
+        ctx.fillStyle = 'blue';
+        ctx.beginPath();
+        ctx.moveTo(150, 150);
+        ctx.lineTo(250, 150);
+        ctx.lineTo(200, 100);
+        ctx.closePath();
+        ctx.fill();
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">For the part where the hypotenuses of the two triangles overlap, I hope it can still remain completely transparent.Hope this email finds you well.Thank you so much!</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/44043900/369591666-4886406b-e271-4192-af15-9b2acc6c330d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY4ODkzNzUsIm5iZiI6MTcyNjg4OTA3NSwicGF0aCI6Ii80NDA0MzkwMC8zNjk1OTE2NjYtNDg4NjQwNmItZTI3MS00MTkyLWFmMTUtOWIyYWNjNmMzMzBkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTIxVDAzMjQzNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTUzYzI3ZGY2MzMxNDBmMGEyMzU3MWE0YmUzMTEyYjUyYTk5OTQxN2Y1NTdhNTdiNDVjOTdjNTJlMDE2MmYyN2MmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Srpei9E3r323V1NA0ImmLp41fDFsm-fGVE1HYHti8A0"><img src="https://private-user-images.githubusercontent.com/44043900/369591666-4886406b-e271-4192-af15-9b2acc6c330d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY4ODkzNzUsIm5iZiI6MTcyNjg4OTA3NSwicGF0aCI6Ii80NDA0MzkwMC8zNjk1OTE2NjYtNDg4NjQwNmItZTI3MS00MTkyLWFmMTUtOWIyYWNjNmMzMzBkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTIxVDAzMjQzNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTUzYzI3ZGY2MzMxNDBmMGEyMzU3MWE0YmUzMTEyYjUyYTk5OTQxN2Y1NTdhNTdiNDVjOTdjNTJlMDE2MmYyN2MmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Srpei9E3r323V1NA0ImmLp41fDFsm-fGVE1HYHti8A0" alt="image" style="max-width: 100%;"></a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/canvasrenderingcontext2d/globalcompositeoperation</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/canvasrenderingcontext2d/globalcompositeoperation/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/canvasrenderingcontext2d/globalcompositeoperation/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/005cc1fd55aadcdcbd9aabbed7d648a275f8f23a/hovercard" href="https://github.com/mdn/content/commit/005cc1fd55aadcdcbd9aabbed7d648a275f8f23a"><tt>005cc1f</tt></a></li>
+<li>Document last modified: 2024-01-15T21:58:53.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[dom] Range.extractContents() and Range.surroundContents() describe behaviour incorrectly]]></title>
             <link>https://github.com/mdn/content/issues/35854</link>
@@ -584,7 +695,7 @@ Which tripped me off, anyways I don't know why that behavior is and would love t
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The black background on each segment's name does not fully cover the word "protocol". The last letter ("l") is outside the box.</p>
 <p dir="auto">This is only occurring on Firefox (Linux, from Mozilla deb package, version 128.0). When I brought up the page in Chrome (also on Linux) the display was correct.</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY4ODc4NDUsIm5iZiI6MTcyNjg4NzU0NSwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTIxVDAyNTkwNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTlkZmM1YjAwMWViNWI2MjIwOTM5Y2YwOTAwNzZjYTIwODkyNTkxYjg5MDQzZTNiNTA1NmUyNjZhYzljYzBjNDAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.UKAb296pNR0lidScDVl7EJloHWeshpp36Dc_GeUf1i8"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY4ODc4NDUsIm5iZiI6MTcyNjg4NzU0NSwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTIxVDAyNTkwNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTlkZmM1YjAwMWViNWI2MjIwOTM5Y2YwOTAwNzZjYTIwODkyNTkxYjg5MDQzZTNiNTA1NmUyNjZhYzljYzBjNDAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.UKAb296pNR0lidScDVl7EJloHWeshpp36Dc_GeUf1i8" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY4ODkzNzQsIm5iZiI6MTcyNjg4OTA3NCwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTIxVDAzMjQzNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY4N2YxMzdmZmMwYzVkNjJjM2NhODBhNzgzYTIxZDY1ZDA4NzMwZjIwMjBhMDU4Y2QzMGVmMzRlMzIzMTczYzgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.wpYczQy0WppdY5wwC-Cou0mZBd8Tc80vEdd8bosDZKA"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY4ODkzNzQsIm5iZiI6MTcyNjg4OTA3NCwicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTIxVDAzMjQzNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY4N2YxMzdmZmMwYzVkNjJjM2NhODBhNzgzYTIxZDY1ZDA4NzMwZjIwMjBhMDU4Y2QzMGVmMzRlMzIzMTczYzgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.wpYczQy0WppdY5wwC-Cou0mZBd8Tc80vEdd8bosDZKA" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The background color should cover the full word.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
