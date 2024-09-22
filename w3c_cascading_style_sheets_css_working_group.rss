@@ -4,69 +4,10 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Sun, 22 Sep 2024 21:09:26 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 24 Aug 2024 15:35:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[css-sizing-3, css-multicol-2] Wrong syntax of column-width, not actually implemented]]></title>
-            <link>https://github.com/mdn/content/issues/36001</link>
-            <guid>https://github.com/mdn/content/issues/36001</guid>
-            <pubDate>Sun, 22 Sep 2024 21:09:26 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-width" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/column-width</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Formal syntax</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="column-width = 
-  auto                                |
-  &lt;length [0,∞]&gt;                      |
-  min-content                         |
-  max-content                         |
-  fit-content( &lt;length-percentage&gt; )  
-
-&lt;length-percentage&gt; = 
-  &lt;length&gt;      |
-  &lt;percentage&gt;  "><pre class="notranslate"><code class="notranslate">column-width = 
-  auto                                |
-  &lt;length [0,∞]&gt;                      |
-  min-content                         |
-  max-content                         |
-  fit-content( &lt;length-percentage&gt; )  
-
-&lt;length-percentage&gt; = 
-  &lt;length&gt;      |
-  &lt;percentage&gt;  
-</code></pre></div>
-<h3 dir="auto">What did you expect to see?</h3>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="column-width = 
-  auto                                |
-  &lt;length [0,∞]&gt;                      |"><pre class="notranslate"><code class="notranslate">column-width = 
-  auto                                |
-  &lt;length [0,∞]&gt;                      |
-</code></pre></div>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">Here is the current syntax:<br>
-<a href="https://www.w3.org/TR/css-multicol-1/#propdef-column-width" rel="nofollow">https://www.w3.org/TR/css-multicol-1/#propdef-column-width</a></p>
-<p dir="auto">This is an autocomplete in Chrome (similar in Firefox):<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1045235/369717509-177670bb-9d86-4b90-9ba0-534aa8ca41bc.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjcwNDQ1MDQsIm5iZiI6MTcyNzA0NDIwNCwicGF0aCI6Ii8xMDQ1MjM1LzM2OTcxNzUwOS0xNzc2NzBiYi05ZDg2LTRiOTAtOWJhMC01MzRhYThjYTQxYmMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDkyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA5MjJUMjIzMDA0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjQyNmJlNmZjZTJmNDYwNDVjZjNkMTJkN2I3OGVhNDdjNmZlZmY2NjY2ZTBhY2MwYzA0NWI0ZWE1ODFhOTY5OSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.cj1yMFKqHwb5RhrI8X2oZUkeR_cF4j6VQzpPLJrL1f0"><img src="https://private-user-images.githubusercontent.com/1045235/369717509-177670bb-9d86-4b90-9ba0-534aa8ca41bc.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjcwNDQ1MDQsIm5iZiI6MTcyNzA0NDIwNCwicGF0aCI6Ii8xMDQ1MjM1LzM2OTcxNzUwOS0xNzc2NzBiYi05ZDg2LTRiOTAtOWJhMC01MzRhYThjYTQxYmMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDkyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA5MjJUMjIzMDA0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjQyNmJlNmZjZTJmNDYwNDVjZjNkMTJkN2I3OGVhNDdjNmZlZmY2NjY2ZTBhY2MwYzA0NWI0ZWE1ODFhOTY5OSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.cj1yMFKqHwb5RhrI8X2oZUkeR_cF4j6VQzpPLJrL1f0" alt="screen from Chrome devtools" style="max-width: 100%;"></a></p>
-<p dir="auto">As you can see, <code class="notranslate">auto | &lt;length [0,∞]&gt;</code> is what's actually implemented in browsers.</p>
-<p dir="auto">Note that additions to <code class="notranslate">column-width</code> were already considered <em>at-risk</em> in Level 3: <a href="https://www.w3.org/TR/css-sizing-3/" rel="nofollow">https://www.w3.org/TR/css-sizing-3/</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/column-width</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-width" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/column-width</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/column-width/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/column-width/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/9231a7046973685f4600e1891fa644ecce41ef3b/hovercard" href="https://github.com/mdn/content/commit/9231a7046973685f4600e1891fa644ecce41ef3b"><tt>9231a70</tt></a></li>
-<li>Document last modified: 2024-07-26T14:44:17.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[css-fonts-5] Clarification for kerning vs spacing/tracking]]></title>
             <link>https://github.com/mdn/content/issues/35579</link>
@@ -115,7 +56,7 @@ Font kerning applies to proportional fonts (variable character widths) – monos
 <h3 dir="auto">What specific section or headline is this issue about?</h3>
 <p dir="auto">Note</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/74136983/357833812-01417b70-90b4-4c1f-a6ff-33e7f80ab690.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjcwNDQ1MDIsIm5iZiI6MTcyNzA0NDIwMiwicGF0aCI6Ii83NDEzNjk4My8zNTc4MzM4MTItMDE0MTdiNzAtOTBiNC00YzFmLWE2ZmYtMzNlN2Y4MGFiNjkwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTIyVDIyMzAwMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI2MzFmNDMwMDI2MjMwNWI2YTVhNDdmNzZiZWQwNjFmYjNmNDMwMjBhMTYyMTdmYWRkZWFjNmU3OTIyZDAxYzkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.YT_Ag9wRs4SjFvlJ1Pyr4G9IFEWKsUa_wCf1-fFU-1c"><img src="https://private-user-images.githubusercontent.com/74136983/357833812-01417b70-90b4-4c1f-a6ff-33e7f80ab690.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjcwNDQ1MDIsIm5iZiI6MTcyNzA0NDIwMiwicGF0aCI6Ii83NDEzNjk4My8zNTc4MzM4MTItMDE0MTdiNzAtOTBiNC00YzFmLWE2ZmYtMzNlN2Y4MGFiNjkwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTIyVDIyMzAwMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI2MzFmNDMwMDI2MjMwNWI2YTVhNDdmNzZiZWQwNjFmYjNmNDMwMjBhMTYyMTdmYWRkZWFjNmU3OTIyZDAxYzkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.YT_Ag9wRs4SjFvlJ1Pyr4G9IFEWKsUa_wCf1-fFU-1c" alt="image" style="max-width: 100%;"></a><br>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/74136983/357833812-01417b70-90b4-4c1f-a6ff-33e7f80ab690.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjcwNDUxODIsIm5iZiI6MTcyNzA0NDg4MiwicGF0aCI6Ii83NDEzNjk4My8zNTc4MzM4MTItMDE0MTdiNzAtOTBiNC00YzFmLWE2ZmYtMzNlN2Y4MGFiNjkwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTIyVDIyNDEyMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU4NWQ1ZDhlYzBjNzAwOTFjY2YzMGM5NmFkMDk4ZGQzMTdlOTJkNjExY2ExMGQ1MThjMmMxNGJiN2I5YWRjMGImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.TmVnFCyUr55RTrAOrXsj67lwilcVFowTK4TzpQoDE50"><img src="https://private-user-images.githubusercontent.com/74136983/357833812-01417b70-90b4-4c1f-a6ff-33e7f80ab690.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjcwNDUxODIsIm5iZiI6MTcyNzA0NDg4MiwicGF0aCI6Ii83NDEzNjk4My8zNTc4MzM4MTItMDE0MTdiNzAtOTBiNC00YzFmLWE2ZmYtMzNlN2Y4MGFiNjkwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTIyVDIyNDEyMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU4NWQ1ZDhlYzBjNzAwOTFjY2YzMGM5NmFkMDk4ZGQzMTdlOTJkNjExY2ExMGQ1MThjMmMxNGJiN2I5YWRjMGImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.TmVnFCyUr55RTrAOrXsj67lwilcVFowTK4TzpQoDE50" alt="image" style="max-width: 100%;"></a><br>
 The note says we can get a fractional value for <code class="notranslate">scrollWidth</code> using <code class="notranslate">getBoundingClientRect</code>, but I didn't see this property in <code class="notranslate">getBoundingClientRect</code>.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">Either delete the note or provide the correct method to get a fractional value.</p>
