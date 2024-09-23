@@ -4,7 +4,7 @@
 
 * [\[webrtc\] webrtc: Call createDataChannel after createOffer](https://github.com/mdn/content/issues/35932) (2024-09-18T12:11:30Z)
   
-* [\[webrtc\] Issue in example provided for RTCIceTransport::getLocalCandidates() method](https://github.com/mdn/content/issues/35587) (2024-08-26T05:44:17Z)
+* [\[webrtc\] RTCIceTransport::getLocalCandidates() example accesses wrong property](https://github.com/mdn/content/issues/35587) (2024-08-26T05:44:17Z)
   
 * [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
   
