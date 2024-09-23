@@ -4,8 +4,6 @@
 
 * [\[webrtc\] webrtc: Call createDataChannel after createOffer](https://github.com/mdn/content/issues/35932) (2024-09-18T12:11:30Z)
   
-* [\[webrtc\] RTCIceTransport::getLocalCandidates() example accesses wrong property](https://github.com/mdn/content/issues/35587) (2024-08-26T05:44:17Z)
-  
 * [\[css-fonts-5\] Clarification for kerning vs spacing/tracking](https://github.com/mdn/content/issues/35579) (2024-08-24T15:35:10Z)
   
 * [\[appmanifest\] standalone display not working, https required?](https://github.com/mdn/content/issues/35494) (2024-08-17T22:29:50Z)
