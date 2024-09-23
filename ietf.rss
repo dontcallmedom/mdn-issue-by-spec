@@ -156,32 +156,5 @@
 </ul>
 </details>]]></content:encoded>
         </item>
-        <item>
-            <title><![CDATA[[rfc7232] Issue with "If-None-Match": note that Apache reverse proxies will append "-gzip" suffix to well-formed ETag headers when gzip-encoding content, but they do not remove them from If-None-Match headers]]></title>
-            <link>https://github.com/mdn/content/issues/4343</link>
-            <guid>https://github.com/mdn/content/issues/4343</guid>
-            <pubDate>Wed, 21 Apr 2021 13:02:54 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">Apache reverse proxies will append "-gzip" suffix to well-formed <code class="notranslate">ETag</code> headers when gzip-encoding content, but they do not remove them from <code class="notranslate">If-None-Match</code> headers.  See <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=39727" rel="nofollow">https://bz.apache.org/bugzilla/show_bug.cgi?id=39727</a></p>
-<p dir="auto">There are good reasons for this, since gzip-encoding the content will affect how range requests can be used.  But server software that compares If-None-Match headers in requests with ETags may need to account for this.</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto">Unsure.</p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">It should be mentioned somewhere.</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">I came across this while working on server code.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/http/headers/if-none-match</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/if-none-match/index.html">https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/if-none-match/index.html</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/f6f11d2a249520f01bad93d7c4a5e5cdf6ed914a/hovercard" href="https://github.com/mdn/content/commit/f6f11d2a249520f01bad93d7c4a5e5cdf6ed914a"><tt>f6f11d2</tt></a></li>
-<li>Document last modified: 2021-02-19T19:33:30.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
     </channel>
 </rss>
