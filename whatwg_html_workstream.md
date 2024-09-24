@@ -6,8 +6,6 @@
   
 * [\[html\] Location: port property incorrectly documented](https://github.com/mdn/content/issues/35732) (2024-09-04T02:20:53Z)
   
-* [\[html\] Tutorial site "recommends" the deprecated \<param\> element](https://github.com/mdn/content/issues/35681) (2024-09-01T19:25:16Z)
-  
 * [\[html\] Missing documentation that SharedArrayBuffers not compatible with MessagePort](https://github.com/mdn/content/issues/35561) (2024-08-23T01:58:03Z)
   
 * [\[html\] Whitespace is not insignificant in HTMLImageElement.srcset](https://github.com/mdn/content/issues/35492) (2024-08-17T15:44:16Z)
