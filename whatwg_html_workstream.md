@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] EmbedLiveSample simultaneously displays examples](https://github.com/mdn/content/issues/36049) (2024-09-25T14:57:05Z)
-  
 * [\[html\] window.postMessage needs targetOrigin=\* for dataurl](https://github.com/mdn/content/issues/36039) (2024-09-25T08:53:00Z)
   
 * [\[html\] globalCompositeOperation = 'xor' Overlapping area problem](https://github.com/mdn/content/issues/35981) (2024-09-21T03:15:49Z)
