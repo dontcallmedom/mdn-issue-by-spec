@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-backgrounds-4\] Doesn't \`background-position-x\` not support \`Side-relative values\`?](https://github.com/mdn/content/issues/36036) (2024-09-25T05:43:49Z)
-  
 * [\[webrtc\] webrtc: Call createDataChannel after createOffer](https://github.com/mdn/content/issues/35932) (2024-09-18T12:11:30Z)
   
 * [\[css-fonts-5\] Clarification for kerning vs spacing/tracking](https://github.com/mdn/content/issues/35579) (2024-08-24T15:35:10Z)
