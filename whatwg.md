@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] img alt text examples need more context](https://github.com/mdn/content/issues/36050) (2024-09-25T15:54:41Z)
+  
 * [\[html\] window.postMessage needs targetOrigin=\* for dataurl](https://github.com/mdn/content/issues/36039) (2024-09-25T08:53:00Z)
   
 * [\[html\] globalCompositeOperation = 'xor' Overlapping area problem](https://github.com/mdn/content/issues/35981) (2024-09-21T03:15:49Z)
