@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-pseudo-4\] File selector can be styled](https://github.com/mdn/content/issues/36090) (2024-09-28T18:18:41Z)
+  
 * [\[css-fonts-5\] Clarification for kerning vs spacing/tracking](https://github.com/mdn/content/issues/35579) (2024-08-24T15:35:10Z)
   
 * [\[cssom-view-1\] getBoundingClientRect().width is not the same as scrollWidth](https://github.com/mdn/content/issues/35466) (2024-08-14T13:36:33Z)

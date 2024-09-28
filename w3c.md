@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-pseudo-4\] File selector can be styled](https://github.com/mdn/content/issues/36090) (2024-09-28T18:18:41Z)
+  
 * [\[webaudio\] Incorrect description of function output for getFloatFrequencyData()](https://github.com/mdn/content/issues/36071) (2024-09-27T05:44:03Z)
   
 * [\[webrtc\] webrtc: Call createDataChannel after createOffer](https://github.com/mdn/content/issues/35932) (2024-09-18T12:11:30Z)
