@@ -308,53 +308,6 @@ sourceRange.compareBoundaryPoints(Range.END_TO_END, passedRange); // == -1 *befo
 <p dir="auto"><em>No response</em></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Location: port property incorrectly documented]]></title>
-            <link>https://github.com/mdn/content/issues/35732</link>
-            <guid>https://github.com/mdn/content/issues/35732</guid>
-            <pubDate>Wed, 04 Sep 2024 02:20:53 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Location/port" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Location/port</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Example and description</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Example and description are incorrect according to Firefox, Chrome, and Safari.</p>
-<p dir="auto">Description:</p>
-<blockquote>
-<p dir="auto">The port property of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Location" rel="nofollow">Location</a> interface is a string containing the port number of the URL. If the URL does not contain an explicit port number, it will be set to ''.</p>
-</blockquote>
-<p dir="auto">Example:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="// Let's an &lt;a id=&quot;myAnchor&quot; href=&quot;https://developer.mozilla.org:443/en-US/docs/Location.port&quot;&gt; element be in the document
-const anchor = document.getElementByID(&quot;myAnchor&quot;);
-const result = anchor.port; // Returns:'443'"><pre class="notranslate"><code class="notranslate">// Let's an &lt;a id="myAnchor" href="https://developer.mozilla.org:443/en-US/docs/Location.port"&gt; element be in the document
-const anchor = document.getElementByID("myAnchor");
-const result = anchor.port; // Returns:'443'
-</code></pre></div>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="let a = document.createElement(&quot;a&quot;);
-a.href = 'https://developer.mozilla.org:443/en-US/docs/Location.port';
-console.log(a.port) // prints &quot;&quot;"><pre class="notranslate"><span class="pl-k">let</span> <span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createElement</span><span class="pl-kos">(</span><span class="pl-s">"a"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-s1">a</span><span class="pl-kos">.</span><span class="pl-c1">href</span> <span class="pl-c1">=</span> <span class="pl-s">'https://developer.mozilla.org:443/en-US/docs/Location.port'</span><span class="pl-kos">;</span>
-<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">a</span><span class="pl-kos">.</span><span class="pl-c1">port</span><span class="pl-kos">)</span> <span class="pl-c">// prints ""</span></pre></div>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Port seems to be null if the url has the default port for the protocol, not just if it's unset.</p>
-<p dir="auto">If the example was correct, it should probably have an indication of WHEN it changed.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/location/port</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Location/port" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Location/port</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/location/port/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/location/port/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/1238ffad886924b20549d0cf3adca735cb0d074f/hovercard" href="https://github.com/mdn/content/commit/1238ffad886924b20549d0cf3adca735cb0d074f"><tt>1238ffa</tt></a></li>
-<li>Document last modified: 2023-11-26T22:27:03.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Missing documentation that SharedArrayBuffers not compatible with MessagePort]]></title>
             <link>https://github.com/mdn/content/issues/35561</link>
             <guid>https://github.com/mdn/content/issues/35561</guid>
@@ -655,7 +608,7 @@ Which tripped me off, anyways I don't know why that behavior is and would love t
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The black background on each segment's name does not fully cover the word "protocol". The last letter ("l") is outside the box.</p>
 <p dir="auto">This is only occurring on Firefox (Linux, from Mozilla deb package, version 128.0). When I brought up the page in Chrome (also on Linux) the display was correct.</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjc4MDUwMzcsIm5iZiI6MTcyNzgwNDczNywicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDAxVDE3NDUzN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWVlMDg0NWRhYjIwODJlMzJiYWZmNzA2MzE3ZDViY2U4OGE1ZTYxNTljMzUyZDFjYjAwMGJhODZiZDJlMThmNTkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.pCdNsEVP4Usf6uw-mcs3MGetekYaxblk2ZqL-3WgouI"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjc4MDUwMzcsIm5iZiI6MTcyNzgwNDczNywicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDAxVDE3NDUzN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWVlMDg0NWRhYjIwODJlMzJiYWZmNzA2MzE3ZDViY2U4OGE1ZTYxNTljMzUyZDFjYjAwMGJhODZiZDJlMThmNTkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.pCdNsEVP4Usf6uw-mcs3MGetekYaxblk2ZqL-3WgouI" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjc4MDU2NjcsIm5iZiI6MTcyNzgwNTM2NywicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDAxVDE3NTYwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWY5N2I2MDEyZDI3YzI3ZmRhYjk5MDk2NmFlNzJiZGUwM2NhZDIzYjBhYTY0NGVmNzI4NmY3MDQ5ZTA5ODNmZDkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.xCDkN5DdQsBocgLxGs8Gq8NegCquNPHjeiar2IoMPj0"><img src="https://private-user-images.githubusercontent.com/48159/351420691-79e387fe-da89-4411-9aab-6fcc49e48051.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjc4MDU2NjcsIm5iZiI6MTcyNzgwNTM2NywicGF0aCI6Ii80ODE1OS8zNTE0MjA2OTEtNzllMzg3ZmUtZGE4OS00NDExLTlhYWItNmZjYzQ5ZTQ4MDUxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDAxVDE3NTYwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWY5N2I2MDEyZDI3YzI3ZmRhYjk5MDk2NmFlNzJiZGUwM2NhZDIzYjBhYTY0NGVmNzI4NmY3MDQ5ZTA5ODNmZDkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.xCDkN5DdQsBocgLxGs8Gq8NegCquNPHjeiar2IoMPj0" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The background color should cover the full word.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
