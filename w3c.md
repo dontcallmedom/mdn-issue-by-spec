@@ -20,8 +20,6 @@
   
 * [\[appmanifest\] IsStandaloneContent does not work with \`display: fullscreen\` in Chrome Android](https://github.com/mdn/content/issues/34928) (2024-07-19T15:53:57Z)
   
-* [\[appmanifest\] Descriptions of orientation values missing](https://github.com/mdn/content/issues/34927) (2024-07-19T15:16:42Z)
-  
 * [\[service-workers-1\] New page for Service-Worker-Allowed](https://github.com/mdn/content/issues/34854) (2024-07-15T21:48:21Z)
   
 * [\[html, uievents\] \`onerror\` (and others) missing from HTMLBodyElement "Event Handlers" section](https://github.com/mdn/content/issues/34684) (2024-07-07T17:44:00Z)
