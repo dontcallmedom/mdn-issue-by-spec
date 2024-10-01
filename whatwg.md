@@ -8,8 +8,6 @@
   
 * [\[html\] window.postMessage needs targetOrigin=\* for dataurl](https://github.com/mdn/content/issues/36039) (2024-09-25T08:53:00Z)
   
-* [\[html\] globalCompositeOperation = 'xor' Overlapping area problem](https://github.com/mdn/content/issues/35981) (2024-09-21T03:15:49Z)
-  
 * [\[dom\] Range.extractContents() and Range.surroundContents() describe behaviour incorrectly](https://github.com/mdn/content/issues/35854) (2024-09-12T14:20:49Z)
   
 * [\[dom\] Range: isPointInRange() method, offset not explained](https://github.com/mdn/content/issues/35840) (2024-09-11T15:30:33Z)

@@ -8,8 +8,6 @@
   
 * [\[html\] window.postMessage needs targetOrigin=\* for dataurl](https://github.com/mdn/content/issues/36039) (2024-09-25T08:53:00Z)
   
-* [\[html\] globalCompositeOperation = 'xor' Overlapping area problem](https://github.com/mdn/content/issues/35981) (2024-09-21T03:15:49Z)
-  
 * [\[html\] Location: port property incorrectly documented](https://github.com/mdn/content/issues/35732) (2024-09-04T02:20:53Z)
   
 * [\[html\] Missing documentation that SharedArrayBuffers not compatible with MessagePort](https://github.com/mdn/content/issues/35561) (2024-08-23T01:58:03Z)
