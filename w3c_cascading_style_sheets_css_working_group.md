@@ -10,8 +10,6 @@
   
 * [\[cssom-view-1\] getBoundingClientRect().width is not the same as scrollWidth](https://github.com/mdn/content/issues/35466) (2024-08-14T13:36:33Z)
   
-* [\[css-text-3\] \[CSS\] css.properties.hyphens - language_czech and language_slovak](https://github.com/mdn/content/issues/35425) (2024-08-13T00:48:00Z)
-  
 * [\[cssom-view-1\] document.caretPositionFromPoint() API needs update](https://github.com/mdn/content/issues/34492) (2024-06-28T18:22:16Z)
   
 * [\[filter-effects-2\] missing important note - feColorMatrix uses linearRGB by default](https://github.com/mdn/content/issues/34444) (2024-06-27T08:33:04Z)
