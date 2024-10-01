@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-logical-1, css-text-3\] justify-all missing browser support](https://github.com/mdn/content/issues/36091) (2024-09-28T19:17:02Z)
+* [\[css-logical-1, css-text-3\] justify-all unsupported](https://github.com/mdn/content/issues/36091) (2024-09-28T19:17:02Z)
   
 * [\[css-pseudo-4\] File selector can be styled](https://github.com/mdn/content/issues/36090) (2024-09-28T18:18:41Z)
   
