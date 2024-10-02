@@ -4,8 +4,6 @@
 
 * [\[screen-capture, mediacapture-streams\] Remove deprecated displaySurface "application" value.](https://github.com/mdn/content/issues/36160) (2024-10-02T08:25:47Z)
   
-* [\[css-logical-1, css-text-3\] justify-all unsupported](https://github.com/mdn/content/issues/36091) (2024-09-28T19:17:02Z)
-  
 * [\[css-pseudo-4\] File selector can be styled](https://github.com/mdn/content/issues/36090) (2024-09-28T18:18:41Z)
   
 * [\[webaudio\] Incorrect description of function output for getFloatFrequencyData()](https://github.com/mdn/content/issues/36071) (2024-09-27T05:44:03Z)
