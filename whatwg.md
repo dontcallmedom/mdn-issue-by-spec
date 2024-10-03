@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[ecmascript, dom\] document.implementation.hasFeature() returns value is wrong](https://github.com/mdn/content/issues/36174) (2024-10-03T13:20:47Z)
-  
 * [\[html\] Subpar accessibility recommendation ](https://github.com/mdn/content/issues/36068) (2024-09-27T01:43:17Z)
   
 * [\[html\] img alt text examples need more context](https://github.com/mdn/content/issues/36050) (2024-09-25T15:54:41Z)
