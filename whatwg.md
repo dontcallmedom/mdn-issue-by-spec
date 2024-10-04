@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Incorrect info about Safari](https://github.com/mdn/content/issues/36195) (2024-10-04T20:53:29Z)
+  
 * [\[html\] Subpar accessibility recommendation ](https://github.com/mdn/content/issues/36068) (2024-09-27T01:43:17Z)
   
 * [\[html\] img alt text examples need more context](https://github.com/mdn/content/issues/36050) (2024-09-25T15:54:41Z)
