@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Khronos Group. [![RSS feed for Khronos Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[webgl2, webgl1\] WebGL2RenderingContext: uniform\[1234\]\[uif\]\[v\]() method doesn't mention typed arrays for f or i variants](https://github.com/mdn/content/issues/36208) (2024-10-05T19:14:07Z)
+  
 * [\[webgl1\] mention that \`gl.clear(gl.DEPTH_BUFFER_BIT)\` has no effect when \`gl.depthMask()\` has been set to \`false\`](https://github.com/mdn/content/issues/35362) (2024-08-07T18:39:11Z)
   
 * [\[webgl1\] WebGLRenderingContext.createBuffer() may return \`null\`.](https://github.com/mdn/content/issues/33471) (2024-05-07T14:47:46Z)
