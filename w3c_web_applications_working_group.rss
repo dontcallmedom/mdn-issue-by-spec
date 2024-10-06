@@ -4,10 +4,47 @@
         <title>W3C Web Applications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_applications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Applications Working Group</description>
-        <lastBuildDate>Fri, 09 Aug 2024 02:19:02 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 06 Oct 2024 18:26:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[cssom-view-1, uievents, pointerlock-2] Element: click event > Event type > Note - needs to be updated (Firefox & Safari are fixed)]]></title>
+            <link>https://github.com/mdn/content/issues/36219</link>
+            <guid>https://github.com/mdn/content/issues/36219</guid>
+            <pubDate>Sun, 06 Oct 2024 18:26:17 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Event type</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">This note is no longer accurate:</p>
+<blockquote>
+<p dir="auto">Note: In earlier versions of the specification the event type for this event was a <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent" rel="nofollow">MouseEvent</a>, and this is still the type passed in Firefox and Safari.</p>
+</blockquote>
+<p dir="auto">Firefox and Safari have closed the bugs as "RESOLVED FIXED".</p>
+<p dir="auto">I opened an issue for compat data here: <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2568807862" data-permission-text="Title is private" data-url="https://github.com/mdn/browser-compat-data/issues/24649" data-hovercard-type="issue" data-hovercard-url="/mdn/browser-compat-data/issues/24649/hovercard" href="https://github.com/mdn/browser-compat-data/issues/24649">mdn/browser-compat-data#24649</a></p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Maybe the note should be updated to indicate that this used to be the case?</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event#event_type" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event#event_type</a><br>
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1675847" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=1675847</a><br>
+<a href="https://bugs.webkit.org/show_bug.cgi?id=218665" rel="nofollow">https://bugs.webkit.org/show_bug.cgi?id=218665</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/element/click_event</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/element/click_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/element/click_event/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/3966162a0b22be0b3221265b9ae68136fc3d4772/hovercard" href="https://github.com/mdn/content/commit/3966162a0b22be0b3221265b9ae68136fc3d4772"><tt>3966162</tt></a></li>
+<li>Document last modified: 2024-08-15T13:29:30.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, dom, uievents] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not]]></title>
             <link>https://github.com/mdn/content/issues/35382</link>
