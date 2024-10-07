@@ -79,122 +79,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[selectors-4] [Form styling] Code can by simplified using pseudoclass :has()]]></title>
-            <link>https://github.com/mdn/content/issues/36211</link>
-            <guid>https://github.com/mdn/content/issues/36211</guid>
-            <pubDate>Sun, 06 Oct 2024 08:36:22 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes" rel="nofollow">https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Styling enabled and disabled inputs, and read-only and read-write</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">We've directly selected the inputs we want to disable using input[type="text"]:disabled, but we also wanted to gray out the corresponding text labels. These weren't quite as easy to select, so we've used a class to provide them with that styling.</p>
-<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="input[type=&quot;text&quot;]:disabled {
-  background: #eee;
-  border: 1px solid #ccc;
-}
-
-.disabled-label {
-  color: #aaa;
-}
-"><pre class="notranslate"><span class="pl-ent">input</span>[<span class="pl-c1">type</span><span class="pl-c1">=</span><span class="pl-s">"text"</span>]<span class="pl-kos">:</span><span class="pl-c1">disabled</span> {
-  <span class="pl-c1">background</span><span class="pl-kos">:</span> <span class="pl-pds"><span class="pl-kos">#</span>eee</span>;
-  <span class="pl-c1">border</span><span class="pl-kos">:</span> <span class="pl-c1">1<span class="pl-smi">px</span></span> solid <span class="pl-pds"><span class="pl-kos">#</span>ccc</span>;
-}
-
-.<span class="pl-c1">disabled-label</span> {
-  <span class="pl-c1">color</span><span class="pl-kos">:</span> <span class="pl-pds"><span class="pl-kos">#</span>aaa</span>;
-}</pre></div>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function toggleBilling() {
-  // Select the billing text fields
-  const billingItems = document.querySelectorAll('#billing input[type=&quot;text&quot;]');
-  // Select the billing text labels
-  const billingLabels = document.querySelectorAll(&quot;.billing-label&quot;);
-
-  // Toggle the billing text fields and labels
-  for (let i = 0; i &lt; billingItems.length; i++) {
-    billingItems[i].disabled = !billingItems[i].disabled;
-
-    if (
-      billingLabels[i].getAttribute(&quot;class&quot;) === &quot;billing-label disabled-label&quot;
-    ) {
-      billingLabels[i].setAttribute(&quot;class&quot;, &quot;billing-label&quot;);
-    } else {
-      billingLabels[i].setAttribute(&quot;class&quot;, &quot;billing-label disabled-label&quot;);
-    }
-  }
-}"><pre class="notranslate"><span class="pl-k">function</span> <span class="pl-en">toggleBilling</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-  <span class="pl-c">// Select the billing text fields</span>
-  <span class="pl-k">const</span> <span class="pl-s1">billingItems</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelectorAll</span><span class="pl-kos">(</span><span class="pl-s">'#billing input[type="text"]'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-  <span class="pl-c">// Select the billing text labels</span>
-  <span class="pl-k">const</span> <span class="pl-s1">billingLabels</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelectorAll</span><span class="pl-kos">(</span><span class="pl-s">".billing-label"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-
-  <span class="pl-c">// Toggle the billing text fields and labels</span>
-  <span class="pl-k">for</span> <span class="pl-kos">(</span><span class="pl-k">let</span> <span class="pl-s1">i</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span><span class="pl-kos">;</span> <span class="pl-s1">i</span> <span class="pl-c1">&lt;</span> <span class="pl-s1">billingItems</span><span class="pl-kos">.</span><span class="pl-c1">length</span><span class="pl-kos">;</span> <span class="pl-s1">i</span><span class="pl-c1">++</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-    <span class="pl-s1">billingItems</span><span class="pl-kos">[</span><span class="pl-s1">i</span><span class="pl-kos">]</span><span class="pl-kos">.</span><span class="pl-c1">disabled</span> <span class="pl-c1">=</span> <span class="pl-c1">!</span><span class="pl-s1">billingItems</span><span class="pl-kos">[</span><span class="pl-s1">i</span><span class="pl-kos">]</span><span class="pl-kos">.</span><span class="pl-c1">disabled</span><span class="pl-kos">;</span>
-
-    <span class="pl-k">if</span> <span class="pl-kos">(</span>
-      <span class="pl-s1">billingLabels</span><span class="pl-kos">[</span><span class="pl-s1">i</span><span class="pl-kos">]</span><span class="pl-kos">.</span><span class="pl-en">getAttribute</span><span class="pl-kos">(</span><span class="pl-s">"class"</span><span class="pl-kos">)</span> <span class="pl-c1">===</span> <span class="pl-s">"billing-label disabled-label"</span>
-    <span class="pl-kos">)</span> <span class="pl-kos">{</span>
-      <span class="pl-s1">billingLabels</span><span class="pl-kos">[</span><span class="pl-s1">i</span><span class="pl-kos">]</span><span class="pl-kos">.</span><span class="pl-en">setAttribute</span><span class="pl-kos">(</span><span class="pl-s">"class"</span><span class="pl-kos">,</span> <span class="pl-s">"billing-label"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-    <span class="pl-kos">}</span> <span class="pl-k">else</span> <span class="pl-kos">{</span>
-      <span class="pl-s1">billingLabels</span><span class="pl-kos">[</span><span class="pl-s1">i</span><span class="pl-kos">]</span><span class="pl-kos">.</span><span class="pl-en">setAttribute</span><span class="pl-kos">(</span><span class="pl-s">"class"</span><span class="pl-kos">,</span> <span class="pl-s">"billing-label disabled-label"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-    <span class="pl-kos">}</span>
-  <span class="pl-kos">}</span>
-<span class="pl-kos">}</span></pre></div>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">We've directly selected the inputs we want to disable using <code class="notranslate">input[type="text"]:disabled</code>, but we also wanted to gray out the corresponding text labels. As the labels are right before their inputs, we selected those using the pseudo-class <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:has" rel="nofollow">:has</a>.</p>
-<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="input[type=&quot;text&quot;]:disabled {
-  background: #eee;
-  border: 1px solid #ccc;
-}
-
-label:has(+ :disabled) {
-  color: #aaa;
-}
-"><pre class="notranslate"><span class="pl-ent">input</span>[<span class="pl-c1">type</span><span class="pl-c1">=</span><span class="pl-s">"text"</span>]<span class="pl-kos">:</span><span class="pl-c1">disabled</span> {
-  <span class="pl-c1">background</span><span class="pl-kos">:</span> <span class="pl-pds"><span class="pl-kos">#</span>eee</span>;
-  <span class="pl-c1">border</span><span class="pl-kos">:</span> <span class="pl-c1">1<span class="pl-smi">px</span></span> solid <span class="pl-pds"><span class="pl-kos">#</span>ccc</span>;
-}
-
-<span class="pl-ent">label</span><span class="pl-kos">:</span><span class="pl-c1">has</span>(<span class="pl-ent"></span><span class="pl-c1"></span><span class="pl-c1">+</span> <span class="pl-kos">:</span><span class="pl-c1">disabled</span>) {
-  <span class="pl-c1">color</span><span class="pl-kos">:</span> <span class="pl-pds"><span class="pl-kos">#</span>aaa</span>;
-}</pre></div>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function toggleBilling() {
-  // Select the billing text fields
-  const billingItems = document.querySelectorAll('#billing input[type=&quot;text&quot;]');
-
-  // Toggle the billing text fields
-  for (let i = 0; i &lt; billingItems.length; i++) {
-    billingItems[i].disabled = !billingItems[i].disabled;
-  }
-}"><pre class="notranslate"><span class="pl-k">function</span> <span class="pl-en">toggleBilling</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-  <span class="pl-c">// Select the billing text fields</span>
-  <span class="pl-k">const</span> <span class="pl-s1">billingItems</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelectorAll</span><span class="pl-kos">(</span><span class="pl-s">'#billing input[type="text"]'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-
-  <span class="pl-c">// Toggle the billing text fields</span>
-  <span class="pl-k">for</span> <span class="pl-kos">(</span><span class="pl-k">let</span> <span class="pl-s1">i</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span><span class="pl-kos">;</span> <span class="pl-s1">i</span> <span class="pl-c1">&lt;</span> <span class="pl-s1">billingItems</span><span class="pl-kos">.</span><span class="pl-c1">length</span><span class="pl-kos">;</span> <span class="pl-s1">i</span><span class="pl-c1">++</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-    <span class="pl-s1">billingItems</span><span class="pl-kos">[</span><span class="pl-s1">i</span><span class="pl-kos">]</span><span class="pl-kos">.</span><span class="pl-c1">disabled</span> <span class="pl-c1">=</span> <span class="pl-c1">!</span><span class="pl-s1">billingItems</span><span class="pl-kos">[</span><span class="pl-s1">i</span><span class="pl-kos">]</span><span class="pl-kos">.</span><span class="pl-c1">disabled</span><span class="pl-kos">;</span>
-  <span class="pl-kos">}</span>
-<span class="pl-kos">}</span></pre></div>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/learn/forms/ui_pseudo-classes</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes" rel="nofollow">https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/learn/forms/ui_pseudo-classes/index.md">https://github.com/mdn/content/blob/main/files/en-us/learn/forms/ui_pseudo-classes/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/27a7cd721d227deb47b8b6837d8eba0a0ae06ffb/hovercard" href="https://github.com/mdn/content/commit/27a7cd721d227deb47b8b6837d8eba0a0ae06ffb"><tt>27a7cd7</tt></a></li>
-<li>Document last modified: 2024-07-25T20:44:14.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[css-pseudo-4] File selector can be styled]]></title>
             <link>https://github.com/mdn/content/issues/36090</link>
             <guid>https://github.com/mdn/content/issues/36090</guid>
@@ -302,7 +186,7 @@ Font kerning applies to proportional fonts (variable character widths) – monos
 <h3 dir="auto">What specific section or headline is this issue about?</h3>
 <p dir="auto">Note</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/74136983/357833812-01417b70-90b4-4c1f-a6ff-33e7f80ab690.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjgyOTEyNjYsIm5iZiI6MTcyODI5MDk2NiwicGF0aCI6Ii83NDEzNjk4My8zNTc4MzM4MTItMDE0MTdiNzAtOTBiNC00YzFmLWE2ZmYtMzNlN2Y4MGFiNjkwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDA3VDA4NDkyNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWMxZGE0OTk2Y2ZkNjgzNGNkNTQyOWQ2MTEyMDhhOGU1MmRjMDlmMjAwNmNkMzJmOGNiOWRlY2JkMmNkOTdmMzYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.e2QEwe6TAf5Zh-JzSfb8lgTaRRi_ys4TEGihaDZQqg4"><img src="https://private-user-images.githubusercontent.com/74136983/357833812-01417b70-90b4-4c1f-a6ff-33e7f80ab690.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjgyOTEyNjYsIm5iZiI6MTcyODI5MDk2NiwicGF0aCI6Ii83NDEzNjk4My8zNTc4MzM4MTItMDE0MTdiNzAtOTBiNC00YzFmLWE2ZmYtMzNlN2Y4MGFiNjkwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDA3VDA4NDkyNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWMxZGE0OTk2Y2ZkNjgzNGNkNTQyOWQ2MTEyMDhhOGU1MmRjMDlmMjAwNmNkMzJmOGNiOWRlY2JkMmNkOTdmMzYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.e2QEwe6TAf5Zh-JzSfb8lgTaRRi_ys4TEGihaDZQqg4" alt="image" style="max-width: 100%;"></a><br>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/74136983/357833812-01417b70-90b4-4c1f-a6ff-33e7f80ab690.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjgyOTE4NzgsIm5iZiI6MTcyODI5MTU3OCwicGF0aCI6Ii83NDEzNjk4My8zNTc4MzM4MTItMDE0MTdiNzAtOTBiNC00YzFmLWE2ZmYtMzNlN2Y4MGFiNjkwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDA3VDA4NTkzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTM1MzA2NGQ2ZmI2M2QyMGM2NDdjMjMxMjk4YzY2ZmU0NjAxYjJhMWJhMGE1NDY2ODE5MjhkNzFkNmFjN2YzYWYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.AV4bTDp95jHWfYUmDppmbzCPI9_AbPBWMZrjT524aWQ"><img src="https://private-user-images.githubusercontent.com/74136983/357833812-01417b70-90b4-4c1f-a6ff-33e7f80ab690.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjgyOTE4NzgsIm5iZiI6MTcyODI5MTU3OCwicGF0aCI6Ii83NDEzNjk4My8zNTc4MzM4MTItMDE0MTdiNzAtOTBiNC00YzFmLWE2ZmYtMzNlN2Y4MGFiNjkwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDA3VDA4NTkzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTM1MzA2NGQ2ZmI2M2QyMGM2NDdjMjMxMjk4YzY2ZmU0NjAxYjJhMWJhMGE1NDY2ODE5MjhkNzFkNmFjN2YzYWYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.AV4bTDp95jHWfYUmDppmbzCPI9_AbPBWMZrjT524aWQ" alt="image" style="max-width: 100%;"></a><br>
 The note says we can get a fractional value for <code class="notranslate">scrollWidth</code> using <code class="notranslate">getBoundingClientRect</code>, but I didn't see this property in <code class="notranslate">getBoundingClientRect</code>.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">Either delete the note or provide the correct method to get a fractional value.</p>
@@ -653,9 +537,9 @@ Level 3</a>, for example <code class="notranslate">getClientCapabilities</code> 
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I expected to understand when <code class="notranslate">performance.now()</code> should/shouldn't be used because of these bugs.</p>
 <p dir="auto">I also expected to find a definition for "sleep," but when I search for that word there are no articles with that title:</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/373675/333905620-332ddc0b-642e-4912-aed8-af2abb400b2a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjgyOTEyNjYsIm5iZiI6MTcyODI5MDk2NiwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjIwLTMzMmRkYzBiLTY0MmUtNDkxMi1hZWQ4LWFmMmFiYjQwMGIyYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMDA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTAwN1QwODQ5MjZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yYTZkMjk1NjQ1MDQ3MDIxMWZhZDAyNTNhZmJlYzI5MzgxOTFhZDg2NTQ1MTRlNWU5NjcyMmRlNTkzYWRkNDJmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.IkN6_19-A8VU-Fi8S3UgsOrr2ehErzIiz1q6xcdQ2KQ"><img src="https://private-user-images.githubusercontent.com/373675/333905620-332ddc0b-642e-4912-aed8-af2abb400b2a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjgyOTEyNjYsIm5iZiI6MTcyODI5MDk2NiwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjIwLTMzMmRkYzBiLTY0MmUtNDkxMi1hZWQ4LWFmMmFiYjQwMGIyYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMDA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTAwN1QwODQ5MjZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yYTZkMjk1NjQ1MDQ3MDIxMWZhZDAyNTNhZmJlYzI5MzgxOTFhZDg2NTQ1MTRlNWU5NjcyMmRlNTkzYWRkNDJmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.IkN6_19-A8VU-Fi8S3UgsOrr2ehErzIiz1q6xcdQ2KQ" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/373675/333905620-332ddc0b-642e-4912-aed8-af2abb400b2a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjgyOTE4NzgsIm5iZiI6MTcyODI5MTU3OCwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjIwLTMzMmRkYzBiLTY0MmUtNDkxMi1hZWQ4LWFmMmFiYjQwMGIyYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMDA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTAwN1QwODU5MzhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMGMyZDBhOTNhMGM4NGVlOGYzMjBkNTNmZjFjZWE2M2Y2ZjJjYTg5NGYxYmE5YmMyM2NiNzE0ODg2OGIyY2ExJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.4EbxvIaXKQRymJlSYaKfRxmcvfrruNBTAv4_xM8i9dw"><img src="https://private-user-images.githubusercontent.com/373675/333905620-332ddc0b-642e-4912-aed8-af2abb400b2a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjgyOTE4NzgsIm5iZiI6MTcyODI5MTU3OCwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjIwLTMzMmRkYzBiLTY0MmUtNDkxMi1hZWQ4LWFmMmFiYjQwMGIyYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMDA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTAwN1QwODU5MzhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMGMyZDBhOTNhMGM4NGVlOGYzMjBkNTNmZjFjZWE2M2Y2ZjJjYTg5NGYxYmE5YmMyM2NiNzE0ODg2OGIyY2ExJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.4EbxvIaXKQRymJlSYaKfRxmcvfrruNBTAv4_xM8i9dw" alt="image" style="max-width: 100%;"></a></p>
 <p dir="auto">And when I submit the search, there are results, but none of them seem relevant:</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/373675/333905637-56f3c600-2f17-449a-aa2e-5237de87b844.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjgyOTEyNjYsIm5iZiI6MTcyODI5MDk2NiwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjM3LTU2ZjNjNjAwLTJmMTctNDQ5YS1hYTJlLTUyMzdkZTg3Yjg0NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMDA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTAwN1QwODQ5MjZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05NTg5MDYyMWFhYTk0NjM2OTAxMTg5OWJjYWI4Y2Q3ZjU4NGNkY2NkZjdjYWU3MTNjYmEwNGJmY2QzZmRhMmZlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.VCknNlg8yg3DwAwFQryKjryfb27PIMQKq5zubib2CUU"><img src="https://private-user-images.githubusercontent.com/373675/333905637-56f3c600-2f17-449a-aa2e-5237de87b844.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjgyOTEyNjYsIm5iZiI6MTcyODI5MDk2NiwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjM3LTU2ZjNjNjAwLTJmMTctNDQ5YS1hYTJlLTUyMzdkZTg3Yjg0NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMDA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTAwN1QwODQ5MjZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05NTg5MDYyMWFhYTk0NjM2OTAxMTg5OWJjYWI4Y2Q3ZjU4NGNkY2NkZjdjYWU3MTNjYmEwNGJmY2QzZmRhMmZlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.VCknNlg8yg3DwAwFQryKjryfb27PIMQKq5zubib2CUU" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/373675/333905637-56f3c600-2f17-449a-aa2e-5237de87b844.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjgyOTE4NzgsIm5iZiI6MTcyODI5MTU3OCwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjM3LTU2ZjNjNjAwLTJmMTctNDQ5YS1hYTJlLTUyMzdkZTg3Yjg0NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMDA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTAwN1QwODU5MzhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wOGRhNDVlYmJkYTMzMmQ2NDc2YWNhYTI1ZTQ3YzcwOGNlNWU0MDdmNmQwNWI5MzllNTAzYWMxMWFlMjRhYmIxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.D3YqlsZAvHHCcsP3E7_9RvengDRA_mjwTMjqHzGZuS4"><img src="https://private-user-images.githubusercontent.com/373675/333905637-56f3c600-2f17-449a-aa2e-5237de87b844.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjgyOTE4NzgsIm5iZiI6MTcyODI5MTU3OCwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjM3LTU2ZjNjNjAwLTJmMTctNDQ5YS1hYTJlLTUyMzdkZTg3Yjg0NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMDA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTAwN1QwODU5MzhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wOGRhNDVlYmJkYTMzMmQ2NDc2YWNhYTI1ZTQ3YzcwOGNlNWU0MDdmNmQwNWI5MzllNTAzYWMxMWFlMjRhYmIxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.D3YqlsZAvHHCcsP3E7_9RvengDRA_mjwTMjqHzGZuS4" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">n/a</p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>

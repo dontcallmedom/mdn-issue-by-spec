@@ -6,8 +6,6 @@
   
 * [\[cssom-view-1, uievents, pointerlock-2\] Element: click event \> Event type \> Note - needs to be updated (Firefox & Safari are fixed)](https://github.com/mdn/content/issues/36219) (2024-10-06T18:26:17Z)
   
-* [\[selectors-4\] \[Form styling\] Code can by simplified using pseudoclass :has()](https://github.com/mdn/content/issues/36211) (2024-10-06T08:36:22Z)
-  
 * [\[css-pseudo-4\] File selector can be styled](https://github.com/mdn/content/issues/36090) (2024-09-28T18:18:41Z)
   
 * [\[webrtc\] webrtc: Call createDataChannel after createOffer](https://github.com/mdn/content/issues/35932) (2024-09-18T12:11:30Z)
