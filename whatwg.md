@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[fetch\] Explain what is a "forged redirect"](https://github.com/mdn/content/issues/36231) (2024-10-07T09:53:54Z)
+  
 * [\[html\] Safari supports autocapitalize](https://github.com/mdn/content/issues/36195) (2024-10-04T20:53:29Z)
   
 * [\[html\] Subpar accessibility recommendation ](https://github.com/mdn/content/issues/36068) (2024-09-27T01:43:17Z)
