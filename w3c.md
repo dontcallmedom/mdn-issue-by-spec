@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[filter-effects-2\] Missing an attribute: specularConstant](https://github.com/mdn/content/issues/36238) (2024-10-07T13:06:42Z)
+  
 * [\[css-color-adjust-1\] Replace link](https://github.com/mdn/content/issues/36230) (2024-10-07T08:48:34Z)
   
 * [\[cssom-view-1, uievents, pointerlock-2\] Element: click event \> Event type \> Note - needs to be updated (Firefox & Safari are fixed)](https://github.com/mdn/content/issues/36219) (2024-10-06T18:26:17Z)
