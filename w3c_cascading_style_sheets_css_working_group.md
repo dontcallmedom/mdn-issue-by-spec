@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-color-adjust-1\] Replace link](https://github.com/mdn/content/issues/36230) (2024-10-07T08:48:34Z)
+  
 * [\[cssom-view-1, uievents, pointerlock-2\] Element: click event \> Event type \> Note - needs to be updated (Firefox & Safari are fixed)](https://github.com/mdn/content/issues/36219) (2024-10-06T18:26:17Z)
   
 * [\[selectors-4\] \[Form styling\] Code can by simplified using pseudoclass :has()](https://github.com/mdn/content/issues/36211) (2024-10-06T08:36:22Z)
