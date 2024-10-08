@@ -38,8 +38,6 @@
   
 * [\[periodic-background-sync\] periodicSync needs "periodic-background-sync" permission](https://github.com/mdn/content/issues/33692) (2024-05-21T08:55:15Z)
   
-* [\[css-logical-1\] \[CSS\] Implement margin at-rules](https://github.com/mdn/content/issues/33519) (2024-05-09T18:48:48Z)
-  
 * [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
   
 * [\[webaudio\] ConvolverNode example needs user interaction](https://github.com/mdn/content/issues/33175) (2024-04-19T12:46:49Z)
