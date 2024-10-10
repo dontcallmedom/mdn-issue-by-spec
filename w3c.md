@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[mathml-core\] MathML ms lquote/rquote documentation should be removed](https://github.com/mdn/content/issues/36291) (2024-10-10T07:36:22Z)
+  
 * [\[input-events-2\] dataTransfer is null](https://github.com/mdn/content/issues/36276) (2024-10-09T03:33:08Z)
   
 * [\[css-pseudo-4\] Use of different color scheme in examples](https://github.com/mdn/content/issues/36268) (2024-10-08T17:34:47Z)
