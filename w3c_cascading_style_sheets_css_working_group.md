@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-fonts-5\] Example demonstrates different \`font-variant-ligatures\` values, but they have no effect. Examples' specified font-family not in use.](https://github.com/mdn/content/issues/36306) (2024-10-11T15:56:57Z)
+  
 * [\[css-pseudo-4\] Use of different color scheme in examples](https://github.com/mdn/content/issues/36268) (2024-10-08T17:34:47Z)
   
 * [\[css-scroll-snap-1\] "Snapport" is used but not defined](https://github.com/mdn/content/issues/36241) (2024-10-07T19:58:29Z)
