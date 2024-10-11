@@ -8,8 +8,6 @@
   
 * [\[input-events-2\] dataTransfer is null](https://github.com/mdn/content/issues/36276) (2024-10-09T03:33:08Z)
   
-* [\[css-pseudo-4\] Use of different color scheme in examples](https://github.com/mdn/content/issues/36268) (2024-10-08T17:34:47Z)
-  
 * [\[css-scroll-snap-1\] "Snapport" is used but not defined](https://github.com/mdn/content/issues/36241) (2024-10-07T19:58:29Z)
   
 * [\[cssom-view-1, uievents, pointerlock-2\] Element: click event \> Event type \> Note - needs to be updated (Firefox & Safari are fixed)](https://github.com/mdn/content/issues/36219) (2024-10-06T18:26:17Z)
