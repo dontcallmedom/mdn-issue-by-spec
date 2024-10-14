@@ -1,0 +1,23 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "W3C Web Events Working Group-relevant MDN issues",
+    "home_page_url": "https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_events_working_group.rss",
+    "description": "Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Events Working Group",
+    "author": {
+        "name": "mdn-issue-by-spec",
+        "url": "https://github.com/dontcallmedom/mdn-issue-by-spec"
+    },
+    "items": [
+        {
+            "id": "https://github.com/mdn/content/issues/36326",
+            "content_html": "<h3 dir=\"auto\">MDN URL</h3>\n<p dir=\"auto\"><a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Touch\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/Touch</a></p>\n<h3 dir=\"auto\">What specific section or headline is this issue about?</h3>\n<p dir=\"auto\">Instance properties</p>\n<h3 dir=\"auto\">What information was incorrect, unhelpful, or incomplete?</h3>\n<p dir=\"auto\">The descriptions of Touch.screenX/screenY, Touch.clientX/clientY and Touch.pageX/pageY make it seem like the only difference between them is the location of the coordinate origin.</p>\n<h3 dir=\"auto\">What did you expect to see?</h3>\n<p dir=\"auto\">In practice there is another important difference: If you zoom in using pinch zoom, then Touch.clientX/clientY and Touch.pageX/pageY will use the same pixel size that CSS uses (i.e. dragging over an element with <code class=\"notranslate\">width: 1px</code> will always result in a change of 1 in the coordinates).<br>\nHowever, Touch.screenX/screenY uses the some kind of screen-space CSS pixels. If you have not zoomed in then 1 client/page pixel matches 1 screen pixel, but if you have zoomed in, then screen pixels will be smaller (i.e. dragging over an element with <code class=\"notranslate\">width: 1px</code> will result in a change of more than 1 in the screen coordinates).</p>\n<h3 dir=\"auto\">Do you have any supporting links, references, or citations?</h3>\n<p dir=\"auto\">I tested the behavior on Chrome. I do not know for sure if other mobile browsers have the same behavior and I could not find anything in the spec that actually requires this behavior.</p>\n<h3 dir=\"auto\">Do you have anything more you want to share?</h3>\n<p dir=\"auto\"><em>No response</em></p>\n<h3 dir=\"auto\">MDN metadata</h3>\n\n<details>\n<summary>Page report details</summary>\n<ul dir=\"auto\">\n<li>Folder: <code class=\"notranslate\">en-us/web/api/touch</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Touch\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/Touch</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/api/touch/index.md\">https://github.com/mdn/content/blob/main/files/en-us/web/api/touch/index.md</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/22080a7cc403f7f45c8e85065b182c9f0d4d383c/hovercard\" href=\"https://github.com/mdn/content/commit/22080a7cc403f7f45c8e85065b182c9f0d4d383c\"><tt>22080a7</tt></a></li>\n<li>Document last modified: 2024-07-26T15:28:56.000Z</li>\n</ul>\n</details>",
+            "url": "https://github.com/mdn/content/issues/36326",
+            "title": "[touch-events] Note difference in how Touch.screenX/screenY, Touch.clientX/clientY and Touch.pageX/pageY handle zooming",
+            "date_modified": "2024-10-14T10:01:23.000Z",
+            "author": {
+                "name": "FeldrinH",
+                "url": "https://github.com/FeldrinH"
+            }
+        }
+    ]
+}

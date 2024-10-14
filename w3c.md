@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[touch-events\] Note difference in how Touch.screenX/screenY, Touch.clientX/clientY and Touch.pageX/pageY handle zooming](https://github.com/mdn/content/issues/36326) (2024-10-14T10:01:23Z)
+  
 * [\[css-fonts-5\] Example demonstrates different \`font-variant-ligatures\` values, but they have no effect. Examples' specified font-family not in use.](https://github.com/mdn/content/issues/36306) (2024-10-11T15:56:57Z)
   
 * [\[mathml-core\] MathML ms lquote/rquote documentation should be removed](https://github.com/mdn/content/issues/36291) (2024-10-10T07:36:22Z)
