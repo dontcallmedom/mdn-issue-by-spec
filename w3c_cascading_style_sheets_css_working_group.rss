@@ -4,10 +4,41 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Fri, 11 Oct 2024 15:56:57 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Oct 2024 19:53:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-content-3] css.properties.content - Missing browser support for "contents" value]]></title>
+            <link>https://github.com/mdn/content/issues/36333</link>
+            <guid>https://github.com/mdn/content/issues/36333</guid>
+            <pubDate>Mon, 14 Oct 2024 19:53:24 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">What type of issue is this?</h3>
+<p dir="auto">Missing compatibility data</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The draft spec says that <code class="notranslate">contents</code> is a valid value for the CSS <code class="notranslate">content</code> attribute, and the page lists it as a valid choice, but browsers don't actually support it.  I tried with at least Firefox and Edge and it is not a valid property in either.  I believe that the compatibility table should be updated to show that this attribute value does not work.</p>
+<h3 dir="auto">What browsers does this problem apply to, if applicable?</h3>
+<p dir="auto">Chromium (Chrome, Edge 79+, Opera, Samsung Internet), Firefox</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I expected to see that browsers don't support <code class="notranslate">content: contents</code>.</p>
+<h3 dir="auto">Did you test this? If so, how?</h3>
+<p dir="auto">I tested this in Firefox and Edge (Chromium) by trying to use it.  Both browsers say that <code class="notranslate">contents</code> is an invalid property value and neither displays the expected results on the webpage.</p>
+<h3 dir="auto">Can you link to any release notes, bugs, pull requests, or MDN pages related to this?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/content</a></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>MDN page report details</summary>
+<ul dir="auto">
+<li>Query: <code class="notranslate">css.properties.content</code></li>
+<li>Report started: 2024-10-14T19:46:03.891Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-fonts-5] Example demonstrates different `font-variant-ligatures` values, but they have no effect. Examples' specified font-family not in use.]]></title>
             <link>https://github.com/mdn/content/issues/36306</link>
@@ -176,7 +207,7 @@ Font kerning applies to proportional fonts (variable character widths) – monos
 <h3 dir="auto">What specific section or headline is this issue about?</h3>
 <p dir="auto">Note</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/74136983/357833812-01417b70-90b4-4c1f-a6ff-33e7f80ab690.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjg5MzYwMzgsIm5iZiI6MTcyODkzNTczOCwicGF0aCI6Ii83NDEzNjk4My8zNTc4MzM4MTItMDE0MTdiNzAtOTBiNC00YzFmLWE2ZmYtMzNlN2Y4MGFiNjkwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDE0VDE5NTUzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQwNWQyY2M2ZThiMDVkYmRjMWZkZmRlZWExYTE2M2Y5NGVmNjk5MWEyYjQ3Y2VjYTI5MjA1MjQ4MTdlMGRmOWEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.EVbjfleGfS44uqiPH4g-udhv3Mtfi9GnsHPksgbAyeU"><img src="https://private-user-images.githubusercontent.com/74136983/357833812-01417b70-90b4-4c1f-a6ff-33e7f80ab690.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjg5MzYwMzgsIm5iZiI6MTcyODkzNTczOCwicGF0aCI6Ii83NDEzNjk4My8zNTc4MzM4MTItMDE0MTdiNzAtOTBiNC00YzFmLWE2ZmYtMzNlN2Y4MGFiNjkwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDE0VDE5NTUzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQwNWQyY2M2ZThiMDVkYmRjMWZkZmRlZWExYTE2M2Y5NGVmNjk5MWEyYjQ3Y2VjYTI5MjA1MjQ4MTdlMGRmOWEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.EVbjfleGfS44uqiPH4g-udhv3Mtfi9GnsHPksgbAyeU" alt="image" style="max-width: 100%;"></a><br>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/74136983/357833812-01417b70-90b4-4c1f-a6ff-33e7f80ab690.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjg5Mzc0NDIsIm5iZiI6MTcyODkzNzE0MiwicGF0aCI6Ii83NDEzNjk4My8zNTc4MzM4MTItMDE0MTdiNzAtOTBiNC00YzFmLWE2ZmYtMzNlN2Y4MGFiNjkwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDE0VDIwMTkwMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTYxODQ3YjI1ZTY3OGQ4Y2RkMTUyZDdmYzVlZGUxNjAwMGQ1NGVmZjQzYmZlM2FkNWYwYjk0ZmFlMjg4ZjVjNzUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.KhwhW1Qw1byrFFXAD4oUN5XbrMh8tVxUA4mlfi8y2LY"><img src="https://private-user-images.githubusercontent.com/74136983/357833812-01417b70-90b4-4c1f-a6ff-33e7f80ab690.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjg5Mzc0NDIsIm5iZiI6MTcyODkzNzE0MiwicGF0aCI6Ii83NDEzNjk4My8zNTc4MzM4MTItMDE0MTdiNzAtOTBiNC00YzFmLWE2ZmYtMzNlN2Y4MGFiNjkwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDE0VDIwMTkwMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTYxODQ3YjI1ZTY3OGQ4Y2RkMTUyZDdmYzVlZGUxNjAwMGQ1NGVmZjQzYmZlM2FkNWYwYjk0ZmFlMjg4ZjVjNzUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.KhwhW1Qw1byrFFXAD4oUN5XbrMh8tVxUA4mlfi8y2LY" alt="image" style="max-width: 100%;"></a><br>
 The note says we can get a fractional value for <code class="notranslate">scrollWidth</code> using <code class="notranslate">getBoundingClientRect</code>, but I didn't see this property in <code class="notranslate">getBoundingClientRect</code>.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">Either delete the note or provide the correct method to get a fractional value.</p>
