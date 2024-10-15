@@ -2,9 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-content-3\] css.properties.content - Missing browser support for "contents" value](https://github.com/mdn/content/issues/36333) (2024-10-14T19:53:24Z)
-  
-* [\[css-fonts-5\] Example demonstrates different \`font-variant-ligatures\` values, but they have no effect. Examples' specified font-family not in use.](https://github.com/mdn/content/issues/36306) (2024-10-11T15:56:57Z)
+* [\[css-content-3\] \`content: contents\` is unimplemented](https://github.com/mdn/content/issues/36333) (2024-10-14T19:53:24Z)
   
 * [\[css-scroll-snap-1\] "Snapport" is used but not defined](https://github.com/mdn/content/issues/36241) (2024-10-07T19:58:29Z)
   
