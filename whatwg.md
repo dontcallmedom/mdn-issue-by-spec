@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] What else can be inserted into audio tags?](https://github.com/mdn/content/issues/36338) (2024-10-15T05:54:52Z)
+  
 * [\[fetch\] AudioBufferSourceNode missing context parameter](https://github.com/mdn/content/issues/36292) (2024-10-10T08:12:05Z)
   
 * [\[fetch\] Explain what is a "forged redirect"](https://github.com/mdn/content/issues/36231) (2024-10-07T09:53:54Z)
