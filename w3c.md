@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[permissions\] Typo ― Duplication within enumeration](https://github.com/mdn/content/issues/36347) (2024-10-15T14:18:07Z)
+  
 * [\[css-content-3\] css.properties.content - Missing browser support for "contents" value](https://github.com/mdn/content/issues/36333) (2024-10-14T19:53:24Z)
   
 * [\[touch-events\] Note difference in how Touch.screenX/screenY, Touch.clientX/clientY and Touch.pageX/pageY handle zooming](https://github.com/mdn/content/issues/36326) (2024-10-14T10:01:23Z)
