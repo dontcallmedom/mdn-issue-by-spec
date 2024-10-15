@@ -4,10 +4,40 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Mon, 14 Oct 2024 19:53:24 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 15 Oct 2024 20:05:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[cssom-view-1] Unexpected "isRead()" behavior]]></title>
+            <link>https://github.com/mdn/content/issues/36365</link>
+            <guid>https://github.com/mdn/content/issues/36365</guid>
+            <pubDate>Tue, 15 Oct 2024 20:05:06 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">"Checking that the user has read a text" example result</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">On Google Chrome and Microsoft Edge, when scrolling all the way through the example's "result", the browser won't get down to the very last pixel when scrolling with a mouse and the checkbox won't get enabled even if the scrollbar down arrow is clicked. The only way to get the maximum scrollTop is to select the last row(s) of the text content.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Some isRead() tolerance in the example itself to avoid problems like this.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/element/scrollheight</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/element/scrollheight/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/element/scrollheight/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/d0b23f3f26637aa405ee9ee0a0892fc6e9b742ef/hovercard" href="https://github.com/mdn/content/commit/d0b23f3f26637aa405ee9ee0a0892fc6e9b742ef"><tt>d0b23f3</tt></a></li>
+<li>Document last modified: 2024-07-26T02:56:49.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-content-3] `content: contents` is unimplemented]]></title>
             <link>https://github.com/mdn/content/issues/36333</link>
@@ -176,7 +206,7 @@ Font kerning applies to proportional fonts (variable character widths) – monos
 <h3 dir="auto">What specific section or headline is this issue about?</h3>
 <p dir="auto">Note</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/74136983/357833812-01417b70-90b4-4c1f-a6ff-33e7f80ab690.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjkwMjI1MDAsIm5iZiI6MTcyOTAyMjIwMCwicGF0aCI6Ii83NDEzNjk4My8zNTc4MzM4MTItMDE0MTdiNzAtOTBiNC00YzFmLWE2ZmYtMzNlN2Y4MGFiNjkwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMTUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDE1VDE5NTY0MFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTIxZTZhMjdiMDczMGJiY2U2ZGVkMDVmOWM5MzljYzQyMjBiNGIyZDUzNjY1NjgwODAxNGVjNjdmOTVlYmQxYmQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.EzsBI-KNWN0_zpiKL2X0b3P9ieaVHu-mfcnVLDV4GXQ"><img src="https://private-user-images.githubusercontent.com/74136983/357833812-01417b70-90b4-4c1f-a6ff-33e7f80ab690.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjkwMjI1MDAsIm5iZiI6MTcyOTAyMjIwMCwicGF0aCI6Ii83NDEzNjk4My8zNTc4MzM4MTItMDE0MTdiNzAtOTBiNC00YzFmLWE2ZmYtMzNlN2Y4MGFiNjkwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMTUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDE1VDE5NTY0MFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTIxZTZhMjdiMDczMGJiY2U2ZGVkMDVmOWM5MzljYzQyMjBiNGIyZDUzNjY1NjgwODAxNGVjNjdmOTVlYmQxYmQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.EzsBI-KNWN0_zpiKL2X0b3P9ieaVHu-mfcnVLDV4GXQ" alt="image" style="max-width: 100%;"></a><br>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/74136983/357833812-01417b70-90b4-4c1f-a6ff-33e7f80ab690.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjkwMjM5NjEsIm5iZiI6MTcyOTAyMzY2MSwicGF0aCI6Ii83NDEzNjk4My8zNTc4MzM4MTItMDE0MTdiNzAtOTBiNC00YzFmLWE2ZmYtMzNlN2Y4MGFiNjkwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMTUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDE1VDIwMjEwMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTEwZGE2ZTZjYjg2OGUyZmE2NjY0MGJkYjhlYzY1ZWUyMzE3ZDg3YmIwMDFmYmUxM2RkNDlhN2Y4MzdjNjJhN2MmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.A5yV53BxyML38Nr3jmH7PJ2dXtwr1y7oKk5F8YhqcwM"><img src="https://private-user-images.githubusercontent.com/74136983/357833812-01417b70-90b4-4c1f-a6ff-33e7f80ab690.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjkwMjM5NjEsIm5iZiI6MTcyOTAyMzY2MSwicGF0aCI6Ii83NDEzNjk4My8zNTc4MzM4MTItMDE0MTdiNzAtOTBiNC00YzFmLWE2ZmYtMzNlN2Y4MGFiNjkwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMTUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDE1VDIwMjEwMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTEwZGE2ZTZjYjg2OGUyZmE2NjY0MGJkYjhlYzY1ZWUyMzE3ZDg3YmIwMDFmYmUxM2RkNDlhN2Y4MzdjNjJhN2MmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.A5yV53BxyML38Nr3jmH7PJ2dXtwr1y7oKk5F8YhqcwM" alt="image" style="max-width: 100%;"></a><br>
 The note says we can get a fractional value for <code class="notranslate">scrollWidth</code> using <code class="notranslate">getBoundingClientRect</code>, but I didn't see this property in <code class="notranslate">getBoundingClientRect</code>.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">Either delete the note or provide the correct method to get a fractional value.</p>
