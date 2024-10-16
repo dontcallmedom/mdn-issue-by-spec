@@ -4,8 +4,6 @@
 
 * [\[html\] What else can be inserted into audio tags?](https://github.com/mdn/content/issues/36338) (2024-10-15T05:54:52Z)
   
-* [\[fetch\] AudioBufferSourceNode missing context parameter](https://github.com/mdn/content/issues/36292) (2024-10-10T08:12:05Z)
-  
 * [\[fetch\] Explain what is a "forged redirect"](https://github.com/mdn/content/issues/36231) (2024-10-07T09:53:54Z)
   
 * [\[html\] Safari supports autocapitalize](https://github.com/mdn/content/issues/36195) (2024-10-04T20:53:29Z)
