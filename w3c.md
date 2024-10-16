@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[cssom-view-1\] Unexpected "isRead()" behavior](https://github.com/mdn/content/issues/36365) (2024-10-15T20:05:06Z)
+* [\[cssom-view-1\] Add subpixel tolerance for scrollHeight demo](https://github.com/mdn/content/issues/36365) (2024-10-15T20:05:06Z)
   
 * [\[css-content-3\] \`content: contents\` is unimplemented](https://github.com/mdn/content/issues/36333) (2024-10-14T19:53:24Z)
   
