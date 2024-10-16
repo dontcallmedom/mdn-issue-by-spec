@@ -4,8 +4,6 @@
 
 * [\[html\] Specify that "canplay" event, not being fired by mobile Safari on Audio](https://github.com/mdn/content/issues/36378) (2024-10-16T12:18:31Z)
   
-* [\[html\] textarea incorrect information](https://github.com/mdn/content/issues/36369) (2024-10-16T05:22:42Z)
-  
 * [\[html\] What else can be inserted into audio tags?](https://github.com/mdn/content/issues/36338) (2024-10-15T05:54:52Z)
   
 * [\[fetch\] Explain what is a "forged redirect"](https://github.com/mdn/content/issues/36231) (2024-10-07T09:53:54Z)
