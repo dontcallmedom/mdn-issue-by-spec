@@ -10,8 +10,6 @@
   
 * [\[html\] Subpar accessibility recommendation ](https://github.com/mdn/content/issues/36068) (2024-09-27T01:43:17Z)
   
-* [\[html\] img alt text examples need more context](https://github.com/mdn/content/issues/36050) (2024-09-25T15:54:41Z)
-  
 * [\[html\] window.postMessage needs targetOrigin=\* for dataurl](https://github.com/mdn/content/issues/36039) (2024-09-25T08:53:00Z)
   
 * [\[html\] Missing documentation that SharedArrayBuffers not compatible with MessagePort](https://github.com/mdn/content/issues/35561) (2024-08-23T01:58:03Z)
