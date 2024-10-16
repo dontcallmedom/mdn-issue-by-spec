@@ -4,10 +4,52 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Tue, 15 Oct 2024 05:54:52 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Oct 2024 05:22:42 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] textarea incorrect information]]></title>
+            <link>https://github.com/mdn/content/issues/36369</link>
+            <guid>https://github.com/mdn/content/issues/36369</guid>
+            <pubDate>Wed, 16 Oct 2024 05:22:42 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+&lt;textarea&gt; does not support the value attribute.
+
+### What information was incorrect, unhelpful, or incomplete?
+
+The sentence "&lt;textarea&gt; does not support the value attribute." is incorrect: textarea does have a value attribute.
+
+### What did you expect to see?
+
+&lt;textarea&gt; does support the value attribute.
+
+### Do you have any supporting links, references, or citations?
+
+The information is correct on the [HTMLTextArea page](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement/value), where it is noted that:
+
+"The value property of the [HTMLTextAreaElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement) interface represents the value of the [&lt;textarea&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) element as a string, which is an empty string if the widget contains no content. It returns or sets the raw value contained in the control."
+
+### Do you have anything more you want to share?
+
+A lot, but probably NSFW.
+
+### MDN metadata
+
+
+<details>
+<summary>Page report details</summary>
+
+* Folder: `en-us/web/html/element/textarea`
+* MDN URL: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea
+* GitHub URL: https://github.com/mdn/content/blob/main/files/en-us/web/html/element/textarea/index.md
+* Last commit: https://github.com/mdn/content/commit/783ffd9c1cf35421242e028a1b8743cf2b1918dd
+* Document last modified: 2024-10-08T05:47:21.000Z
+
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] What else can be inserted into audio tags?]]></title>
             <link>https://github.com/mdn/content/issues/36338</link>
