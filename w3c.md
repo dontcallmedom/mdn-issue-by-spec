@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[media-source\] SourceBuffer.appendBuffer() can cause an exception to be thrown because of QuotaExceeded](https://github.com/mdn/content/issues/36404) (2024-10-18T20:01:55Z)
+  
 * [\[cssom-view-1\] Add subpixel tolerance for scrollHeight demo](https://github.com/mdn/content/issues/36365) (2024-10-15T20:05:06Z)
   
 * [\[touch-events\] Note difference in how Touch.screenX/screenY, Touch.clientX/clientY and Touch.pageX/pageY handle zooming](https://github.com/mdn/content/issues/36326) (2024-10-14T10:01:23Z)
