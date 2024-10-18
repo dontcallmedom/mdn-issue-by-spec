@@ -4,8 +4,6 @@
 
 * [\[cssom-view-1\] Add subpixel tolerance for scrollHeight demo](https://github.com/mdn/content/issues/36365) (2024-10-15T20:05:06Z)
   
-* [\[css-content-3\] \`content: contents\` is unimplemented](https://github.com/mdn/content/issues/36333) (2024-10-14T19:53:24Z)
-  
 * [\[touch-events\] Note difference in how Touch.screenX/screenY, Touch.clientX/clientY and Touch.pageX/pageY handle zooming](https://github.com/mdn/content/issues/36326) (2024-10-14T10:01:23Z)
   
 * [\[mathml-core\] MathML ms lquote/rquote documentation should be removed](https://github.com/mdn/content/issues/36291) (2024-10-10T07:36:22Z)
