@@ -4,8 +4,6 @@
 
 * [\[cssom-view-1\] Add subpixel tolerance for scrollHeight demo](https://github.com/mdn/content/issues/36365) (2024-10-15T20:05:06Z)
   
-* [\[css-scroll-snap-1\] "Snapport" is used but not defined](https://github.com/mdn/content/issues/36241) (2024-10-07T19:58:29Z)
-  
 * [\[cssom-view-1, uievents, pointerlock-2\] Element: click event \> Event type \> Note - needs to be updated (Firefox & Safari are fixed)](https://github.com/mdn/content/issues/36219) (2024-10-06T18:26:17Z)
   
 * [\[css-pseudo-4\] File selector can be styled](https://github.com/mdn/content/issues/36090) (2024-09-28T18:18:41Z)

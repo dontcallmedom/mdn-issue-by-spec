@@ -10,8 +10,6 @@
   
 * [\[input-events-2\] dataTransfer is null](https://github.com/mdn/content/issues/36276) (2024-10-09T03:33:08Z)
   
-* [\[css-scroll-snap-1\] "Snapport" is used but not defined](https://github.com/mdn/content/issues/36241) (2024-10-07T19:58:29Z)
-  
 * [\[cssom-view-1, uievents, pointerlock-2\] Element: click event \> Event type \> Note - needs to be updated (Firefox & Safari are fixed)](https://github.com/mdn/content/issues/36219) (2024-10-06T18:26:17Z)
   
 * [\[css-pseudo-4\] File selector can be styled](https://github.com/mdn/content/issues/36090) (2024-09-28T18:18:41Z)
