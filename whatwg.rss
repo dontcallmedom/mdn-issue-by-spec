@@ -4,10 +4,44 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Wed, 16 Oct 2024 12:18:31 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 20 Oct 2024 10:12:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Missing info on EventSource]]></title>
+            <link>https://github.com/mdn/content/issues/36416</link>
+            <guid>https://github.com/mdn/content/issues/36416</guid>
+            <pubDate>Sun, 20 Oct 2024 10:12:32 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/EventSource" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/EventSource</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">There is absolutely no specification on what the URL should look like and what it should be returning. Cause in the examples there is an incomplete url being used and it is absolutely unclear what it should do.</p>
+<p dir="auto">By logic, it should be returning SSE messages and the eventSource should be catching them, but that's not the case at all it seems.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<ol dir="auto">
+<li>How to properly see the error messages you are receiving, cause now onerror just returns an error event with absolutely no useful information</li>
+<li>What the called url should look like and what exact formatting and messages EventSource is expecting, what it returns. Overall how the object is used, initialized and how it handles things in detail</li>
+</ol>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/eventsource</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventSource" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/EventSource</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/eventsource/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/eventsource/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/f216422c99b6c7014e398803b70600501bce8a48/hovercard" href="https://github.com/mdn/content/commit/f216422c99b6c7014e398803b70600501bce8a48"><tt>f216422</tt></a></li>
+<li>Document last modified: 2024-10-16T05:12:45.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Specify that "canplay" event, not being fired by mobile Safari on Audio]]></title>
             <link>https://github.com/mdn/content/issues/36378</link>
