@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[speech-api\] Not getting same voices as in Speech synthesizer demo](https://github.com/mdn/content/issues/36414) (2024-10-20T03:02:41Z)
-  
 * [\[pointerevents3\] maxTouchPoints are different (depending which browser is used) !](https://github.com/mdn/content/issues/36410) (2024-10-19T11:26:40Z)
   
 * [\[media-source\] SourceBuffer.appendBuffer() can cause an exception to be thrown because of QuotaExceeded](https://github.com/mdn/content/issues/36404) (2024-10-18T20:01:55Z)
