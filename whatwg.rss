@@ -4,10 +4,44 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Sun, 20 Oct 2024 10:12:32 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 22 Oct 2024 19:14:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[dom] Incomplete doctype property return value description under HTML]]></title>
+            <link>https://github.com/mdn/content/issues/36448</link>
+            <guid>https://github.com/mdn/content/issues/36448</guid>
+            <pubDate>Tue, 22 Oct 2024 19:14:06 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/DocumentType" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DocumentType</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Instance properties</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The return values for the properties <code class="notranslate">doctype.publicId</code> and <code class="notranslate">.systemId</code> are stated to always be <code class="notranslate">""</code> in HTML.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">This behavior as-written is only true if both are missing in the document type declaration string as written, i.e. if literally <code class="notranslate">&lt;!DOCTYPE html&gt;</code>.</p>
+<p dir="auto">However, if the public and/or system IDs <em>are</em> present (as, for example, on <a href="http://www.w3.org/1999/xhtml/" rel="nofollow">http://www.w3.org/1999/xhtml</a>), then the returned strings will be set correspondingly.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">HTML standard, <a href="https://html.spec.whatwg.org/multipage/parsing.html#parsing-main-inhtml" rel="nofollow">§13.2.6.4 The rules for parsing tokens in HTML content</a></p>
+<blockquote>
+<p dir="auto">Append a <a href="https://dom.spec.whatwg.org/#interface-documenttype" rel="nofollow">DocumentType</a> node to the <a href="https://html.spec.whatwg.org/multipage/dom.html#document" rel="nofollow">Document</a> node, with its <a href="https://dom.spec.whatwg.org/#concept-doctype-name" rel="nofollow">name</a> set to the name given in the DOCTYPE token, or the empty string if the name was missing; its <a href="https://dom.spec.whatwg.org/#concept-doctype-publicid" rel="nofollow">public ID</a> set to the public identifier given in the DOCTYPE token, or the empty string if the public identifier was missing; and its <a href="https://dom.spec.whatwg.org/#concept-doctype-systemid" rel="nofollow">system ID</a> set to the system identifier given in the DOCTYPE token, or the empty string if the system identifier was missing.</p>
+</blockquote>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/documenttype</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/DocumentType" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DocumentType</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/documenttype/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/documenttype/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/bd15d43260b7e72b1066c04d9d9f3b79129c619c/hovercard" href="https://github.com/mdn/content/commit/bd15d43260b7e72b1066c04d9d9f3b79129c619c"><tt>bd15d43</tt></a></li>
+<li>Document last modified: 2024-07-12T03:13:07.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Missing info on EventSource]]></title>
             <link>https://github.com/mdn/content/issues/36416</link>
