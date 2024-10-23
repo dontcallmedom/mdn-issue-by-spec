@@ -4,10 +4,52 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Tue, 22 Oct 2024 19:14:06 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 23 Oct 2024 00:50:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[FileAPI, xhr] ProgressEvent.loaded documentation incorrectly describes progress ratio]]></title>
+            <link>https://github.com/mdn/content/issues/36451</link>
+            <guid>https://github.com/mdn/content/issues/36451</guid>
+            <pubDate>Wed, 23 Oct 2024 00:50:32 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ProgressEvent/loaded" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ProgressEvent/loaded</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">ProgressEvent: loaded property</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The ratio can be calculated by dividing ProgressEvent.total by the value of this property.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The ratio can be calculated by dividing the value of this property by ProgressEvent.total.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">I added the following listener to my file reader code and saw the the ratio is correctly calculated and ends at 100:</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="reader.addEventListener('progress', (e) =&gt; {
+           if (!e.lengthComputable) {
+                return;
+           }
+           console.log('progress:', e.loaded / e.total * 100);
+}"><pre class="notranslate"><span class="pl-s1">reader</span><span class="pl-kos">.</span><span class="pl-c1">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">'progress'</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+           <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-c1">!</span><span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">lengthComputable</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+                <span class="pl-k">return</span><span class="pl-kos">;</span>
+           <span class="pl-kos">}</span>
+           <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">'progress:'</span><span class="pl-kos">,</span> <span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">loaded</span> <span class="pl-c1">/</span> <span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">total</span> <span class="pl-c1">*</span> <span class="pl-c1">100</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span></pre></div>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Issue is duplicated on <a href="https://developer.mozilla.org/en-US/docs/Web/API/FileReader/progress_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FileReader/progress_event</a></p>
+<p dir="auto">In the "Event Properties" section</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/progressevent/loaded</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ProgressEvent/loaded" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ProgressEvent/loaded</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/progressevent/loaded/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/progressevent/loaded/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/6b8c7b7dade8173f148031a0695bbf609e10f9f9/hovercard" href="https://github.com/mdn/content/commit/6b8c7b7dade8173f148031a0695bbf609e10f9f9"><tt>6b8c7b7</tt></a></li>
+<li>Document last modified: 2024-10-08T19:32:59.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[dom] Incomplete doctype property return value description under HTML]]></title>
             <link>https://github.com/mdn/content/issues/36448</link>
