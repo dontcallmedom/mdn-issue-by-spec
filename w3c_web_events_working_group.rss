@@ -23,7 +23,7 @@
 <p dir="auto">In practice there is another important difference: If you zoom in using pinch zoom, then Touch.clientX/clientY and Touch.pageX/pageY will use the same pixel size that CSS uses (i.e. dragging over an element with <code class="notranslate">width: 1px</code> will always result in a change of 1 in the coordinates).<br>
 However, Touch.screenX/screenY uses the some kind of screen-space CSS pixels. If you have not zoomed in then 1 client/page pixel matches 1 screen pixel, but if you have zoomed in, then screen pixels will be smaller (i.e. dragging over an element with <code class="notranslate">width: 1px</code> will result in a change of more than 1 in the screen coordinates).</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">I tested the behavior on Chrome. I do not know for sure if other mobile browsers have the same behavior and I could not find anything in the spec that actually requires this behavior.</p>
+<p dir="auto">I tested the behavior on Chrome on Android. I do not know for sure if other mobile browsers have the same behavior and I could not find anything in the spec that actually requires this behavior.</p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">MDN metadata</h3>
