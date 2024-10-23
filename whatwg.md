@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] returnValue (html dialog element) code example appears to be broken (tested with Chrome, Firefox, Edge)](https://github.com/mdn/content/issues/36456) (2024-10-23T07:49:09Z)
+  
 * [\[FileAPI, xhr\] ProgressEvent.loaded documentation incorrectly describes progress ratio](https://github.com/mdn/content/issues/36451) (2024-10-23T00:50:32Z)
   
 * [\[dom\] Incomplete doctype property return value description under HTML](https://github.com/mdn/content/issues/36448) (2024-10-22T19:14:06Z)

@@ -4,10 +4,51 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Sun, 20 Oct 2024 10:12:32 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 23 Oct 2024 07:49:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] returnValue (html dialog element) code example appears to be broken (tested with Chrome, Firefox, Edge)]]></title>
+            <link>https://github.com/mdn/content/issues/36456</link>
+            <guid>https://github.com/mdn/content/issues/36456</guid>
+            <pubDate>Wed, 23 Oct 2024 07:49:09 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/returnValue" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/returnValue</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">'Result' (i.e. the runnable code sample)</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">In the "Examples" section, it reads:</p>
+<blockquote>
+<p dir="auto">The following example displays a button to open a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" rel="nofollow"></a> containing a form via the showModal() method. The script assigns the returnValue an initial value of initialValue. The confirm button (confirmBtn) submits the form with validation and the "X" button submits the form without validation. Submitting a form with a method="dialog" closes the dialog and sets the return value to the value, if any, of the button or input elements of type=submit.</p>
+</blockquote>
+<p dir="auto">When I click the button from the runnable code sample, the dialog opens, but clicking either the "X" button, or the "Confirm" button fails to close the dialog. Also, the returnValue property of the dialog appears not to be changed when clicking the "Confirm" button.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I expected the dialog to close after clicking either the "X" or the "Confirm" button, and I expected the code sample to print the dialog's "returnValue" property to indicate it changed due to clicking the "Confirm" button.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">I tested on windows 11 pro with</p>
+<ul dir="auto">
+<li>firefox 131.0.3 (64-bit)</li>
+<li>google chrome 130.0.6723.70 (Official Build) (64-bit)</li>
+<li>microsoft edge 130.0.2849.52 (Official build) (64-bit)</li>
+</ul>
+<p dir="auto">In the console of chrome and edge, I see this error  message:</p>
+<p dir="auto"><code class="notranslate">Blocked form submission to '' because the form's frame is sandboxed and the 'allow-forms' permission is not set.</code></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/htmldialogelement/returnvalue</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/returnValue" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/returnValue</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmldialogelement/returnvalue/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmldialogelement/returnvalue/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/d47348199a379f68bea876a403eb510628ec4ccb/hovercard" href="https://github.com/mdn/content/commit/d47348199a379f68bea876a403eb510628ec4ccb"><tt>d473481</tt></a></li>
+<li>Document last modified: 2024-10-16T00:20:59.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Missing info on EventSource]]></title>
             <link>https://github.com/mdn/content/issues/36416</link>
