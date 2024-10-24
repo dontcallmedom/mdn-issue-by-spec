@@ -4,8 +4,6 @@
 
 * [\[html\] returnValue (html dialog element) code example appears to be broken (tested with Chrome, Firefox, Edge)](https://github.com/mdn/content/issues/36456) (2024-10-23T07:49:09Z)
   
-* [\[html\] Missing info on EventSource](https://github.com/mdn/content/issues/36416) (2024-10-20T10:12:32Z)
-  
 * [\[html\] Specify that "canplay" event, not being fired by mobile Safari on Audio](https://github.com/mdn/content/issues/36378) (2024-10-16T12:18:31Z)
   
 * [\[html\] What else can be inserted into audio tags?](https://github.com/mdn/content/issues/36338) (2024-10-15T05:54:52Z)
