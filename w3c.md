@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[SVG11\] Confusing note about presentation attributes](https://github.com/mdn/content/issues/36483) (2024-10-24T10:27:55Z)
-  
 * [\[css-align-3\] place-items applies to more than just grid and flexbox](https://github.com/mdn/content/issues/36469) (2024-10-23T21:41:51Z)
   
 * [\[css-pseudo-4\] Add new information about recent CSS inheritance changes with CSS selection and highlight pseudo-classes](https://github.com/mdn/content/issues/36458) (2024-10-23T11:07:23Z)
