@@ -6,8 +6,6 @@
   
 * [\[FileAPI, xhr\] ProgressEvent.loaded documentation incorrectly describes progress ratio](https://github.com/mdn/content/issues/36451) (2024-10-23T00:50:32Z)
   
-* [\[dom\] Incomplete doctype property return value description under HTML](https://github.com/mdn/content/issues/36448) (2024-10-22T19:14:06Z)
-  
 * [\[html\] Missing info on EventSource](https://github.com/mdn/content/issues/36416) (2024-10-20T10:12:32Z)
   
 * [\[html\] Specify that "canplay" event, not being fired by mobile Safari on Audio](https://github.com/mdn/content/issues/36378) (2024-10-16T12:18:31Z)
