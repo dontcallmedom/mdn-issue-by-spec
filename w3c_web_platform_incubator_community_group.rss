@@ -4,10 +4,28 @@
         <title>W3C Web Platform Incubator Community Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_platform_incubator_community_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Platform Incubator Community Group</description>
-        <lastBuildDate>Tue, 21 May 2024 08:55:15 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Oct 2024 18:22:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[file-system-access] Broken example code for DataTransferItem.getAsFileSystemHandle()]]></title>
+            <link>https://github.com/mdn/content/issues/36496</link>
+            <guid>https://github.com/mdn/content/issues/36496</guid>
+            <pubDate>Thu, 24 Oct 2024 18:22:51 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/DataTransferItem/getAsFileSystemHandle" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DataTransferItem/getAsFileSystemHandle</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Examples</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The "Return value" section states the method must be "accessed in the dragstart or drop event handlers". However, the example code uses <code class="notranslate">await</code>, meaning that if more than one item is dropped, the second item's getAsFileSystemHandle will not be invoked "during" the event handler and will not return a file handle.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The example code should be updated so it accesses the items correctly during the event handler</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[periodic-background-sync] periodicSync needs "periodic-background-sync" permission]]></title>
             <link>https://github.com/mdn/content/issues/33692</link>

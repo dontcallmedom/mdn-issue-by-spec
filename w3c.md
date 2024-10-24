@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[file-system-access\] Broken example code for DataTransferItem.getAsFileSystemHandle()](https://github.com/mdn/content/issues/36496) (2024-10-24T18:22:51Z)
+  
 * [\[css-align-3\] place-items applies to more than just grid and flexbox](https://github.com/mdn/content/issues/36469) (2024-10-23T21:41:51Z)
   
 * [\[css-pseudo-4\] Add new information about recent CSS inheritance changes with CSS selection and highlight pseudo-classes](https://github.com/mdn/content/issues/36458) (2024-10-23T11:07:23Z)
