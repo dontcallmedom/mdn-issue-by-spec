@@ -10,8 +10,6 @@
   
 * [\[FileAPI\] No examples provided on using the FileReader API](https://github.com/mdn/content/issues/36443) (2024-10-22T14:44:17Z)
   
-* [\[pointerevents3\] maxTouchPoints are different (depending which browser is used) !](https://github.com/mdn/content/issues/36410) (2024-10-19T11:26:40Z)
-  
 * [\[media-source\] SourceBuffer.appendBuffer() can cause an exception to be thrown because of QuotaExceeded](https://github.com/mdn/content/issues/36404) (2024-10-18T20:01:55Z)
   
 * [\[cssom-view-1\] Add subpixel tolerance for scrollHeight demo](https://github.com/mdn/content/issues/36365) (2024-10-15T20:05:06Z)
