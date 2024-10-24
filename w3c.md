@@ -4,8 +4,6 @@
 
 * [\[css-align-3\] place-items applies to more than just grid and flexbox](https://github.com/mdn/content/issues/36469) (2024-10-23T21:41:51Z)
   
-* [\[css-conditional-3\] Major Documentation Oversight -- What is MDN?](https://github.com/mdn/content/issues/36461) (2024-10-23T13:52:03Z)
-  
 * [\[css-pseudo-4\] Add new information about recent CSS inheritance changes with CSS selection and highlight pseudo-classes](https://github.com/mdn/content/issues/36458) (2024-10-23T11:07:23Z)
   
 * [\[FileAPI, xhr\] ProgressEvent.loaded documentation incorrectly describes progress ratio](https://github.com/mdn/content/issues/36451) (2024-10-23T00:50:32Z)
