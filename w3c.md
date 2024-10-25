@@ -4,11 +4,7 @@
 
 * [\[file-system-access\] Broken example code for DataTransferItem.getAsFileSystemHandle()](https://github.com/mdn/content/issues/36496) (2024-10-24T18:22:51Z)
   
-* [\[css-align-3\] place-items applies to more than just grid and flexbox](https://github.com/mdn/content/issues/36469) (2024-10-23T21:41:51Z)
-  
 * [\[css-pseudo-4\] Add new information about recent CSS inheritance changes with CSS selection and highlight pseudo-classes](https://github.com/mdn/content/issues/36458) (2024-10-23T11:07:23Z)
-  
-* [\[FileAPI, xhr\] ProgressEvent.loaded documentation incorrectly describes progress ratio](https://github.com/mdn/content/issues/36451) (2024-10-23T00:50:32Z)
   
 * [\[FileAPI\] No examples provided on using the FileReader API](https://github.com/mdn/content/issues/36443) (2024-10-22T14:44:17Z)
   

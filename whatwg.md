@@ -4,8 +4,6 @@
 
 * [\[html, fetch\] \`credentialless\` - explanation of "navigate" requests requiring \`Cross-Origin-Resource-Policy\` response header](https://github.com/mdn/content/issues/36503) (2024-10-25T17:04:26Z)
   
-* [\[FileAPI, xhr\] ProgressEvent.loaded documentation incorrectly describes progress ratio](https://github.com/mdn/content/issues/36451) (2024-10-23T00:50:32Z)
-  
 * [\[html\] What else can be inserted into audio tags?](https://github.com/mdn/content/issues/36338) (2024-10-15T05:54:52Z)
   
 * [\[fetch\] Explain what is a "forged redirect"](https://github.com/mdn/content/issues/36231) (2024-10-07T09:53:54Z)
