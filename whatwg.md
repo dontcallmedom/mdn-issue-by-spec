@@ -26,8 +26,6 @@
   
 * [\[html\] Whitespace is not insignificant in HTMLImageElement.srcset](https://github.com/mdn/content/issues/35492) (2024-08-17T15:44:16Z)
   
-* [\[fetch\] Request's mode incorrectly documented](https://github.com/mdn/content/issues/35488) (2024-08-16T12:18:54Z)
-  
 * [\[html, dom, uievents\] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not](https://github.com/mdn/content/issues/35382) (2024-08-09T02:19:02Z)
   
 * [\[dom\] Element.shadowRoot should note browser shadow roots aren't accessible](https://github.com/mdn/content/issues/35286) (2024-08-02T19:32:27Z)
