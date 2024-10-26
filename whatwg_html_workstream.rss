@@ -4,10 +4,46 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Fri, 25 Oct 2024 17:04:26 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 26 Oct 2024 03:40:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] All `ElementInternals` docs for `ARIAMixin` properties are incorrect]]></title>
+            <link>https://github.com/mdn/content/issues/36508</link>
+            <guid>https://github.com/mdn/content/issues/36508</guid>
+            <pubDate>Sat, 26 Oct 2024 03:40:30 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ElementInternals" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ElementInternals</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Instance properties included from ARIA</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The issue I am reporting isn’t just for the page I’ve reported the issue for, but for all of the linked pages in the noted section as well.</p>
+<p dir="auto"><code class="notranslate">ARIAMixin</code> properties are implemented differently for <code class="notranslate">ElementInternals</code> than they are for <code class="notranslate">Element</code>, however, the docs describe them how they work for <code class="notranslate">Element</code> (i.e. as <em>reflecting</em> content attributes). For <code class="notranslate">ElementInternals</code> the properties set default semantics or “implicit ARIA” for the element. There are a number of notes that correctly point that out, but the main content remains incorrect.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The docs should correctly describe how <code class="notranslate">ARIAMixin</code> properties for <code class="notranslate">ElementInternals</code> work: that they don’t reflect any attributes, but rather represent the default semantics of the custom element.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Relevant spec work (that does not describe how <code class="notranslate">ARIAMixin</code> should work for <code class="notranslate">ElementInternals</code>):</p>
+<ul dir="auto">
+<li><a href="https://html.spec.whatwg.org/multipage/custom-elements.html#elementinternals" rel="nofollow">https://html.spec.whatwg.org/multipage/custom-elements.html#elementinternals</a></li>
+<li><a href="https://w3c.github.io/aria/#ARIAMixin" rel="nofollow">https://w3c.github.io/aria/#ARIAMixin</a></li>
+</ul>
+<p dir="auto"><a href="https://wicg.github.io/aom/explainer.html#default-semantics-for-custom-elements-via-the-elementinternals-object" rel="nofollow">The AOM explainer describes how <code class="notranslate">ElementInternals</code> works</a> and notes that they do not reflect.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/elementinternals</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ElementInternals" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ElementInternals</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/elementinternals/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/elementinternals/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/8b920a5e7567dcc9d642dfbd704b0ddbe2005d30/hovercard" href="https://github.com/mdn/content/commit/8b920a5e7567dcc9d642dfbd704b0ddbe2005d30"><tt>8b920a5</tt></a></li>
+<li>Document last modified: 2024-07-27T01:21:26.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, fetch] `credentialless` - explanation of "navigate" requests requiring `Cross-Origin-Resource-Policy` response header]]></title>
             <link>https://github.com/mdn/content/issues/36503</link>
