@@ -6,8 +6,6 @@
   
 * [\[html, fetch\] \`credentialless\` - explanation of "navigate" requests requiring \`Cross-Origin-Resource-Policy\` response header](https://github.com/mdn/content/issues/36503) (2024-10-25T17:04:26Z)
   
-* [\[html\] What else can be inserted into audio tags?](https://github.com/mdn/content/issues/36338) (2024-10-15T05:54:52Z)
-  
 * [\[html\] Safari supports autocapitalize](https://github.com/mdn/content/issues/36195) (2024-10-04T20:53:29Z)
   
 * [\[html\] Subpar accessibility recommendation ](https://github.com/mdn/content/issues/36068) (2024-09-27T01:43:17Z)
