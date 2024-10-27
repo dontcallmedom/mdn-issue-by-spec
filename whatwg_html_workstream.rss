@@ -24,9 +24,9 @@
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto">There is a common missunderstanding that <code class="notranslate">window.frames</code> or <code class="notranslate">frames</code> do anything special as an array-like thing. <code class="notranslate">window</code> is the same beast.<br>
 It is just as easy as this:</p>
-<p dir="auto"><code class="notranslate">window === window.frames === frames</code><br>
-<code class="notranslate">frames[42] === window[42]</code><br>
-<code class="notranslate">window.onload === frames.onload</code></p>
+<p dir="auto"><code class="notranslate">window === window.frames === frames  // true</code><br>
+<code class="notranslate">frames[42] === window[42]           // true</code><br>
+<code class="notranslate">window.onload === frames.onload    // true</code></p>
 <p dir="auto">and so on.</p>
 <h3 dir="auto">MDN metadata</h3>
 
