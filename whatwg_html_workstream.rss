@@ -4,10 +4,45 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Sat, 26 Oct 2024 03:40:30 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 27 Oct 2024 13:30:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] frames === window]]></title>
+            <link>https://github.com/mdn/content/issues/36518</link>
+            <guid>https://github.com/mdn/content/issues/36518</guid>
+            <pubDate>Sun, 27 Oct 2024 13:30:39 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/frames" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/frames</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto"><code class="notranslate">frameList === window</code> evaluates to true.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto"><code class="notranslate">frames === window</code> evaluates to true.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://groups.google.com/g/mozilla.dev.platform/c/VijG80aFnU8" rel="nofollow">https://groups.google.com/g/mozilla.dev.platform/c/VijG80aFnU8</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">There is a common missunderstanding that <code class="notranslate">window.frames</code> or <code class="notranslate">frames</code> do anything special as an array-like thing. <code class="notranslate">window</code> is the same beast.<br>
+It is just as easy as this:</p>
+<p dir="auto"><code class="notranslate">window === window.frames === frames</code><br>
+<code class="notranslate">frames[42] === window[42]</code><br>
+<code class="notranslate">window.onload === frames.onload</code></p>
+<p dir="auto">and so on.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/window/frames</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/frames" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/frames</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/frames/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/frames/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b065c09b79d18abf0f04778c9307e1c312b8c6f9/hovercard" href="https://github.com/mdn/content/commit/b065c09b79d18abf0f04778c9307e1c312b8c6f9"><tt>b065c09</tt></a></li>
+<li>Document last modified: 2024-08-02T15:47:51.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, wai-aria-1.2] All `ElementInternals` docs for `ARIAMixin` properties are incorrect]]></title>
             <link>https://github.com/mdn/content/issues/36508</link>
