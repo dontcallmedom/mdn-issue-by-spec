@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>W3C Web Application Security Working Group-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_application_security_working_group.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Application Security Working Group</description>
+        <lastBuildDate>Mon, 28 Oct 2024 18:04:13 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[referrer-policy] Add information to Referrer-Policy docs about how it can affect the Origin header]]></title>
+            <link>https://github.com/mdn/content/issues/36543</link>
+            <guid>https://github.com/mdn/content/issues/36543</guid>
+            <pubDate>Mon, 28 Oct 2024 18:04:13 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">When reading through this page, I don't see any references to how the Referrer-Policy settings may affect the <code class="notranslate">origin</code> header. It sounds as though it only affects the <code class="notranslate">referer</code> header, but it can also affect the <code class="notranslate">origin</code> header.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">In the description for the <code class="notranslate">origin</code> header, it mentions that <code class="notranslate">origin</code> may be set to <code class="notranslate">null</code> depending on the value of <code class="notranslate">referr-policy</code>.</p>
+<blockquote>
+<p dir="auto">The <code class="notranslate">Origin</code> header value may be <code class="notranslate">null</code> in a number of cases, including (non-exhaustively):</p>
+<ul dir="auto">
+<li>...</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy" rel="nofollow">Referrer-Policy</a> set to <code class="notranslate">no-referrer</code> for non-<code class="notranslate">cors</code> request modes (e.g. simple form posts).</li>
+</ul>
+</blockquote>
+<p dir="auto">When choosing a referrer-policy, I wasn't aware of this side-effect. It would be really helpful to mention this clearly on this page as well, or at least link back to the Origin docs.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Origin#description" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Origin#description</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">I'd be happy to start a PR but it may take a bit of time to make sure it's accurate. I would need to understand more clearly in which cases the <code class="notranslate">origin</code> header is affected and how. I would guess it's not just for <code class="notranslate">no-referrer</code> but also for some cross origin requests or e.g. <code class="notranslate">no-referrer-when-downgrade</code>. Also I'd imagine this can vary by browser.</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

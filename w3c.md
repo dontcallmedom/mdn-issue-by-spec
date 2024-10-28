@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[referrer-policy\] Add information to Referrer-Policy docs about how it can affect the Origin header](https://github.com/mdn/content/issues/36543) (2024-10-28T18:04:13Z)
+  
 * [\[webrtc\] RTCTrackEvent.receiver property value is incorrect](https://github.com/mdn/content/issues/36539) (2024-10-28T15:19:10Z)
   
 * [\[html, wai-aria-1.2\] All \`ElementInternals\` docs for \`ARIAMixin\` properties are incorrect](https://github.com/mdn/content/issues/36508) (2024-10-26T03:40:30Z)
