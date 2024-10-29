@@ -68,8 +68,6 @@
   
 * [\[fetch\] Missing Request constructor duplex option](https://github.com/mdn/content/issues/31735) (2024-01-16T01:34:58Z)
   
-* [\[html\] No information about "cancel" event on HTMLInputElement page](https://github.com/mdn/content/issues/31014) (2023-12-15T00:00:43Z)
-  
 * [\[html\] Event not called for modification on sessionStorage](https://github.com/mdn/content/issues/30598) (2023-11-28T11:28:49Z)
   
 * [\[html\] Document img auto-sizes](https://github.com/mdn/content/issues/30596) (2023-11-28T10:39:06Z)
