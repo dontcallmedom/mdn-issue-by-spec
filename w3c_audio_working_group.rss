@@ -4,45 +4,10 @@
         <title>W3C Audio Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_audio_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Audio Working Group</description>
-        <lastBuildDate>Tue, 29 Oct 2024 03:18:23 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Apr 2024 12:46:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[webaudio] options parameter of AudioBuffer constructor is different with AudioBufferOptions interface in Web Audio API 1.1]]></title>
-            <link>https://github.com/mdn/content/issues/36555</link>
-            <guid>https://github.com/mdn/content/issues/36555</guid>
-            <pubDate>Tue, 29 Oct 2024 03:18:23 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/AudioBuffer" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/AudioBuffer</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Hi! I am a newbie in web development. And when I use AudioBuffer, I noticed that the interface definition of AudioBufferOptions in <a href="https://webaudio.github.io/web-audio-api/#AudioBufferOptions" rel="nofollow">webaudio specification</a> does not have channelCount, channelCountMode and channelInterpretation member, which are listed in <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/AudioBuffer" rel="nofollow">mdn web docs</a>.</p>
-<p dir="auto">And I found that before <a href="https://www.w3.org/TR/2012/WD-webaudio-20120315/" rel="nofollow">WD-webaudio-20120315</a> version of webaudio specification, <a href="https://www.w3.org/TR/2012/WD-webaudio-20120315/#AudioBuffer" rel="nofollow">AudioBuffer</a> has a gain node member, whose initialization may needs channelCount, channelCountMode and channelInterpretation parameters.</p>
-<p dir="auto">So are these parameters still in the document because the document content is compatible with previous web audio standards?</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">According to AudioBufferOptions interface in current <a href="https://webaudio.github.io/web-audio-api/#AudioBufferOptions" rel="nofollow">web audio specification</a>, it is more appropriate for the AudioBufferOptions interface to have only three members: length, numberOfChannels and sampleRate.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<ol dir="auto">
-<li>current AudioBufferOptions: <a href="https://webaudio.github.io/web-audio-api/#AudioBufferOptions" rel="nofollow">https://webaudio.github.io/web-audio-api/#AudioBufferOptions</a></li>
-<li>current options(AudioBufferOptions) of AudioBuffer constructor in mdn web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/AudioBuffer#options" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/AudioBuffer#options</a></li>
-</ol>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/audiobuffer/audiobuffer</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/AudioBuffer" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer/AudioBuffer</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/audiobuffer/audiobuffer/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/audiobuffer/audiobuffer/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/135b8311a5e3d12789e8421845be3ce026ef72b8/hovercard" href="https://github.com/mdn/content/commit/135b8311a5e3d12789e8421845be3ce026ef72b8"><tt>135b831</tt></a></li>
-<li>Document last modified: 2023-04-06T14:57:25.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[webaudio] ConvolverNode example needs user interaction]]></title>
             <link>https://github.com/mdn/content/issues/33175</link>
