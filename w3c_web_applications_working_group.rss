@@ -242,43 +242,6 @@ console.log(checkAliasedEvents())"><pre class="notranslate"><span class="pl-k">c
 <p dir="auto">(By the way, if you actually paste that URL in a new tab the page is blank, so I suspect it just doesn't work)</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[appmanifest] Manifest::scope documentation incorrectly states that out-of-scope navigation happens in new browser context]]></title>
-            <link>https://github.com/mdn/content/issues/32948</link>
-            <guid>https://github.com/mdn/content/issues/32948</guid>
-            <pubDate>Wed, 03 Apr 2024 19:24:15 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/Manifest/scope" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Manifest/scope</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Top level description</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Contains this</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="If the user navigates outside the scope, it reverts to a normal web page inside a browser tab or window."><pre class="notranslate"><code class="notranslate">If the user navigates outside the scope, it reverts to a normal web page inside a browser tab or window.
-</code></pre></div>
-<p dir="auto">which is incorrect.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Should state something like</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="If the user navigates outside the scope, the PWA window shows a browser-specific UI to indicate to the user that the navigation is not part of the PWA."><pre class="notranslate"><code class="notranslate">If the user navigates outside the scope, the PWA window shows a browser-specific UI to indicate to the user that the navigation is not part of the PWA.
-</code></pre></div>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">See spec at <a href="https://w3c.github.io/manifest/#nav-scope" rel="nofollow">https://w3c.github.io/manifest/#nav-scope</a></p>
-<p dir="auto">The spec was updated in response to <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="292671087" data-permission-text="Title is private" data-url="https://github.com/w3c/manifest/issues/646" data-hovercard-type="issue" data-hovercard-url="/w3c/manifest/issues/646/hovercard" href="https://github.com/w3c/manifest/issues/646">w3c/manifest#646</a> so that the browsers no longer need to migrate to a non-PWA browsing context.</p>
-<p dir="auto">Chromium implementation (both Chrome/Edge) show a header in the existing window. See <a href="https://intercom.help/progressier/en/articles/6866740-how-do-the-scope-and-start_url-properties-of-a-pwa-manifest-work" rel="nofollow">https://intercom.help/progressier/en/articles/6866740-how-do-the-scope-and-start_url-properties-of-a-pwa-manifest-work</a> for some screenshots.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/manifest/scope</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/Manifest/scope" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Manifest/scope</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/manifest/scope/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/manifest/scope/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0c015b80f786ecc4547c3e37a70c7f6aafdfbf74/hovercard" href="https://github.com/mdn/content/commit/0c015b80f786ecc4547c3e37a70c7f6aafdfbf74"><tt>0c015b8</tt></a></li>
-<li>Document last modified: 2023-06-28T16:16:20.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html, dom, cssom-view-1, uievents, pointerlock-2, selection-api, page-visibility-2] Keydown, keyup, keypress pages should mention they work on document, body, etc]]></title>
             <link>https://github.com/mdn/content/issues/28561</link>
             <guid>https://github.com/mdn/content/issues/28561</guid>

@@ -16,8 +16,6 @@
   
 * [\[html, FileAPI\] Live examples using window.open are broken](https://github.com/mdn/content/issues/34350) (2024-06-22T21:35:10Z)
   
-* [\[appmanifest\] Manifest::scope documentation incorrectly states that out-of-scope navigation happens in new browser context](https://github.com/mdn/content/issues/32948) (2024-04-03T19:24:15Z)
-  
 * [\[html, dom, cssom-view-1, uievents, pointerlock-2, selection-api, page-visibility-2\] Keydown, keyup, keypress pages should mention they work on document, body, etc](https://github.com/mdn/content/issues/28561) (2023-08-14T20:14:56Z)
   
 * [\[selection-api\] Correct and split "How whitespace is handled by HTML, CSS, and in the DOM"](https://github.com/mdn/content/issues/28268) (2023-07-30T09:11:04Z)
