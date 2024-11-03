@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Update the type attribute row in the Attribute List table](https://github.com/mdn/content/issues/36630) (2024-11-03T12:49:45Z)
+  
 * [\[html\] What is the default option of a select element when none is selected?](https://github.com/mdn/content/issues/36573) (2024-10-30T12:05:02Z)
   
 * [\[html, performance-timeline-2, navigation-timing-2\] \[WebAPI\] Hide fragment directives from Navigation Timing API](https://github.com/mdn/content/issues/36546) (2024-10-28T22:56:25Z)
