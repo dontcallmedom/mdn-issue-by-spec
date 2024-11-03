@@ -4,25 +4,10 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Sun, 03 Nov 2024 01:18:44 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Oct 2024 12:05:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[html] Error on https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base]]></title>
-            <link>https://github.com/mdn/content/issues/36627</link>
-            <guid>https://github.com/mdn/content/issues/36627</guid>
-            <pubDate>Sun, 03 Nov 2024 01:18:44 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">On page <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base</a> ,<br>
-I believe the following to be incorrect.</p>
-<blockquote>
-<p dir="auto">In-page anchors</p>
-<p dir="auto">Links pointing to a fragment in the document — e.g. <a href="#some-id"> — are resolved with the , triggering an HTTP request to the base URL with the fragment attached.</a></p>
-<p dir="auto">For example, given  and this link: <a href="#anchor">To anchor</a>. The link points to <a href="https://example.com/#anchor" rel="nofollow">https://example.com/#anchor</a>.</p>
-</blockquote>
-<p dir="auto">I believe that fragment-only href's are unaffected by the base element, that <code class="notranslate">&lt;a href="#anchor"&gt;</code> will link internally to an anchor in the document in which it occurs.  If given <code class="notranslate">&lt;base href="https://example.com/"&gt;</code> in the document at <a href="https://elpmaxe.com/" rel="nofollow">https://elpmaxe.com/</a>, then I believe <code class="notranslate">&lt;a href="#anchor"&gt;</code> will link to <code class="notranslate">https://elpmaxe.com/#anchor</code> , not <code class="notranslate">https://examplecom/#anchor</code> .</p>
-<p dir="auto">Disclaimer: i am not an HTML Standard expert.</p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html] What is the default option of a select element when none is selected?]]></title>
             <link>https://github.com/mdn/content/issues/36573</link>
