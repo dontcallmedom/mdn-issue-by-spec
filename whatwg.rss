@@ -4,46 +4,10 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Wed, 06 Nov 2024 13:54:36 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 03 Nov 2024 12:49:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[html] Dialog: Closing via method="dialog" (or `formmethod`) does nothing]]></title>
-            <link>https://github.com/mdn/content/issues/36676</link>
-            <guid>https://github.com/mdn/content/issues/36676</guid>
-            <pubDate>Wed, 06 Nov 2024 13:54:36 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/close_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/close_event</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">The live example</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The <code class="notranslate">&lt;button&gt;Close via method="dialog"&lt;/button&gt;</code> does nothing on click</p>
-<p dir="auto">Firefox latest (132) and Chrome latest (130).</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">My understanding of <code class="notranslate">method="dialog"</code> forms and <code class="notranslate">formmethod="dialog"</code> buttons is that they close dialogs without form submission, however, the dialogs do not close.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">This happens on at least these examples/pages<br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog#handling_the_return_value_from_the_dialog" rel="nofollow">&lt;Dialog&gt; page</a> (<strong>"Cancel"</strong> button)<br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/returnValue#examples" rel="nofollow">returnValue page</a> (<strong>"(x)"</strong> button)</p>
-<p dir="auto">And I'm sure there can be more examples found.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">Semi-related, the same behaviour (of nothing happening) occurs in <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog#closing_a_dialog_with_a_required_form_input" rel="nofollow">this example</a> too, for two buttons.</p>
-<p dir="auto">I'd like to note, that I'm this has been the case for a few months now, but I never went to report it.<br>
-So it's not from the latest versions (or last ~15, I'd estimate).</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/htmldialogelement/close_event</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/close_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/close_event</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmldialogelement/close_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmldialogelement/close_event/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/981ab25c61986b40213d0c84131432438d5a7903/hovercard" href="https://github.com/mdn/content/commit/981ab25c61986b40213d0c84131432438d5a7903"><tt>981ab25</tt></a></li>
-<li>Document last modified: 2024-08-14T10:26:22.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html] Update the type attribute row in the Attribute List table]]></title>
             <link>https://github.com/mdn/content/issues/36630</link>
