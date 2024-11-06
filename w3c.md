@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[cssom-view-1\] scrollIntoView page doesn't describe what the start, center, end, or nearest argument values do.](https://github.com/mdn/content/issues/36679) (2024-11-06T16:38:02Z)
+  
 * [\[webauthn-3\] Webauthn: getClientExtensionResults() returns a AuthenticationExtensionsClientOutputs, not a Map](https://github.com/mdn/content/issues/36673) (2024-11-06T11:36:55Z)
   
 * [\[css-font-loading-3\] FontFace doc: sizeAdjust is missing](https://github.com/mdn/content/issues/36587) (2024-10-31T07:23:20Z)
