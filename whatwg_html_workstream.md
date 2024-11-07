@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
+  
 * [\[html\] What is the default option of a select element when none is selected?](https://github.com/mdn/content/issues/36573) (2024-10-30T12:05:02Z)
   
 * [\[html, performance-timeline-2, navigation-timing-2\] \[WebAPI\] Hide fragment directives from Navigation Timing API](https://github.com/mdn/content/issues/36546) (2024-10-28T22:56:25Z)
