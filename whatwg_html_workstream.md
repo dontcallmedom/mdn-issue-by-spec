@@ -2,6 +2,10 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Example using wrong MIME type](https://github.com/mdn/content/issues/36707) (2024-11-09T18:22:24Z)
+  
+* [\[html\] Example using wrong MIME](https://github.com/mdn/content/issues/36706) (2024-11-09T18:14:40Z)
+  
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
   
 * [\[html\] What is the default option of a select element when none is selected?](https://github.com/mdn/content/issues/36573) (2024-10-30T12:05:02Z)

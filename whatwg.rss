@@ -4,10 +4,87 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Thu, 07 Nov 2024 19:25:18 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 09 Nov 2024 18:22:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Example using wrong MIME type]]></title>
+            <link>https://github.com/mdn/content/issues/36707</link>
+            <guid>https://github.com/mdn/content/issues/36707</guid>
+            <pubDate>Sat, 09 Nov 2024 18:22:24 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Try it</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;embed type=&quot;video/webm&quot; src=&quot;/media/cc0-videos/flower.mp4&quot; width=&quot;250&quot; height=&quot;200&quot; /&gt;"><pre class="notranslate"><code class="notranslate">&lt;embed type="video/webm" src="/media/cc0-videos/flower.mp4" width="250" height="200" /&gt;
+</code></pre></div>
+<p dir="auto">The <code class="notranslate">type</code> and <code class="notranslate">src</code> attributes don't correspond.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Corresponding MIME type and src link.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">By the way, this is the second page in turn that I'm submitting the same kind of bug report about. The first one was for the page regarding the <code class="notranslate">&lt;object&gt;</code> tag.</p>
+<p dir="auto">This makes me think that this</p>
+<ul dir="auto">
+<li>
+<p dir="auto">either is not a bug (maybe MP4 files can be of the MIME type <code class="notranslate">video/webm</code>, but a quick Brave search for "mp4 webm" does not make that likely)</p>
+</li>
+<li>
+<p dir="auto">or could be a bug that is also affecting other pages than <code class="notranslate">&lt;object&gt;</code> and <code class="notranslate">&lt;embed&gt;</code>.</p>
+</li>
+</ul>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/element/embed</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/embed/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/embed/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b7955e77cd4293adf45ef23686df50b0305f02ad/hovercard" href="https://github.com/mdn/content/commit/b7955e77cd4293adf45ef23686df50b0305f02ad"><tt>b7955e7</tt></a></li>
+<li>Document last modified: 2024-07-25T21:13:49.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[html] Example using wrong MIME]]></title>
+            <link>https://github.com/mdn/content/issues/36706</link>
+            <guid>https://github.com/mdn/content/issues/36706</guid>
+            <pubDate>Sat, 09 Nov 2024 18:14:40 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Embed a video</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Example:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;object
+  type=&quot;video/mp4&quot;
+  data=&quot;https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm&quot;"><pre class="notranslate"><code class="notranslate">&lt;object
+  type="video/mp4"
+  data="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+</code></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Either <code class="notranslate">type="video/webm"</code> or a <code class="notranslate">data</code> URL to a .mp4 file.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/element/object</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/object/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/object/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/829db137a01feb14af7beaec178a3ea0118b4777/hovercard" href="https://github.com/mdn/content/commit/829db137a01feb14af7beaec178a3ea0118b4777"><tt>829db13</tt></a></li>
+<li>Document last modified: 2024-03-25T18:37:02.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, uievents] Inconsistency in dragover event timing information]]></title>
             <link>https://github.com/mdn/content/issues/36689</link>
