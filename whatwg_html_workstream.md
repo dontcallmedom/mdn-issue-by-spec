@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] The autocomplete nickname is not working in Google Chrome.](https://github.com/mdn/content/issues/36715) (2024-11-10T11:28:03Z)
+  
 * [\[html\] Example using wrong MIME](https://github.com/mdn/content/issues/36710) (2024-11-09T18:14:40Z)
   
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)

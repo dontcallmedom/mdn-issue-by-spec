@@ -4,10 +4,42 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Sat, 09 Nov 2024 18:14:40 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 10 Nov 2024 11:28:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] The autocomplete nickname is not working in Google Chrome.]]></title>
+            <link>https://github.com/mdn/content/issues/36715</link>
+            <guid>https://github.com/mdn/content/issues/36715</guid>
+            <pubDate>Sun, 10 Nov 2024 11:28:03 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">This documentation says that we can use "nickname" as the value of the "autocomplete" attribute in HTML inputs.</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">This documentation states that "nickname" can be used as a value for the <code class="notranslate">autocomplete</code> attribute in HTML input fields. However, when I try the following code:</p>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;input type=&quot;text&quot; autocomplete=&quot;nickname&quot;&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">input</span> <span class="pl-c1">type</span>="<span class="pl-s">text</span>" <span class="pl-c1">autocomplete</span>="<span class="pl-s">nickname</span>"<span class="pl-kos">&gt;</span></pre></div>
+<p dir="auto">Google Chrome's developer console displays an error, indicating that this <code class="notranslate">autocomplete</code> value is invalid.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I expected this value to work without triggering an issue.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/html/attributes/autocomplete</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/attributes/autocomplete/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/attributes/autocomplete/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/06b418a190b8e4a46682ab706d14984e7db34862/hovercard" href="https://github.com/mdn/content/commit/06b418a190b8e4a46682ab706d14984e7db34862"><tt>06b418a</tt></a></li>
+<li>Document last modified: 2024-09-11T03:36:25.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Example using wrong MIME]]></title>
             <link>https://github.com/mdn/content/issues/36710</link>
