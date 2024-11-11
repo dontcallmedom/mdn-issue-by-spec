@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[WebCryptoAPI\] PBKDF2 is dropped from deriveKey algorithm parameter](https://github.com/mdn/content/issues/36708) (2024-11-09T20:38:24Z)
-  
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
   
 * [\[cssom-view-1\] scrollIntoView page doesn't describe what the start, center, end, or nearest argument values do.](https://github.com/mdn/content/issues/36679) (2024-11-06T16:38:02Z)
