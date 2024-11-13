@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[dom\] DOM replaceChildren baseline date is wrong](https://github.com/mdn/content/issues/36776) (2024-11-13T19:20:14Z)
+  
 * [\[html\] The autocomplete nickname is not working in Google Chrome.](https://github.com/mdn/content/issues/36715) (2024-11-10T11:28:03Z)
   
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
