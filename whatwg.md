@@ -4,8 +4,6 @@
 
 * [\[html\] Android ignores off and none](https://github.com/mdn/content/issues/36795) (2024-11-14T22:06:04Z)
   
-* [\[html\] The autocomplete nickname is not working in Google Chrome.](https://github.com/mdn/content/issues/36715) (2024-11-10T11:28:03Z)
-  
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
   
 * [\[html\] What is the default option of a select element when none is selected?](https://github.com/mdn/content/issues/36573) (2024-10-30T12:05:02Z)
