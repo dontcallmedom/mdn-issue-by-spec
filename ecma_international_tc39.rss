@@ -4,68 +4,10 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Thu, 14 Nov 2024 14:44:12 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 03 Jul 2024 14:49:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript] Error description of formatRange causing RangeError]]></title>
-            <link>https://github.com/mdn/content/issues/36789</link>
-            <guid>https://github.com/mdn/content/issues/36789</guid>
-            <pubDate>Thu, 14 Nov 2024 14:44:12 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/formatRange" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/formatRange</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Exceptions</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError" rel="nofollow">RangeError</a><br>
-Thrown if startRange is less than endRange, or either value is NaN.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError" rel="nofollow">RangeError</a><br>
-Thrown if either value is NaN.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://tc39.es/ecma402/#sec-partitionnumberrangepattern" rel="nofollow">https://tc39.es/ecma402/#sec-partitionnumberrangepattern</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">The problem exists in: Intl.NumberFormat.prototype.formatRange<br>
-Intl.NumberFormat.prototype.formatRangeToParts<br>
-Intl.DateTimeFormat.prototype.formatRange<br>
-Intl.DateTimeFormat.prototype.formatRangeToParts</p>
-<p dir="auto">As far as I know, comparing the size of parameters will not cause RangeError. Another point worth noting is that in the DateTimeFormat related methods, Infinity or the following conditions will also generate NaN and eventually cause an error:</p>
-<blockquote>
-<p dir="auto">If abs(ℝ(time)) &gt; 8.64 × 10**15, return NaN.</p>
-</blockquote>
-<p dir="auto">However, I personally do not prefer to let developers know these</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[ecmascript] The first line is not correct.]]></title>
-            <link>https://github.com/mdn/content/issues/36766</link>
-            <guid>https://github.com/mdn/content/issues/36766</guid>
-            <pubDate>Wed, 13 Nov 2024 01:35:24 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/waitAsync" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/waitAsync</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">The Atomics.waitAsync() static method waits asynchronously on a shared memory location and returns a Promise.</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The Atomics.waitAsync() static method waits asynchronously on a shared memory location and returns a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" rel="nofollow">Promise</a>.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The Atomics.waitAsync() static method waits asynchronously on a shared memory location and returns an <strong>Object</strong>.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/atomics/waitasync</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/waitAsync" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/waitAsync</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/atomics/waitasync/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/atomics/waitasync/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/8421c0cd94fa5aa237c833ac6d24885edbc7d721/hovercard" href="https://github.com/mdn/content/commit/8421c0cd94fa5aa237c833ac6d24885edbc7d721"><tt>8421c0c</tt></a></li>
-<li>Document last modified: 2024-07-25T21:32:46.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[ecmascript, streams] ReadableStreamDefaultController: undocumented error conditions]]></title>
             <link>https://github.com/mdn/content/issues/34597</link>
