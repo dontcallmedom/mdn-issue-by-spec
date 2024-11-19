@@ -4,8 +4,6 @@
 
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
   
-* [\[html\] What is the default option of a select element when none is selected?](https://github.com/mdn/content/issues/36573) (2024-10-30T12:05:02Z)
-  
 * [\[html, performance-timeline-2, navigation-timing-2\] \[WebAPI\] Hide fragment directives from Navigation Timing API](https://github.com/mdn/content/issues/36546) (2024-10-28T22:56:25Z)
   
 * [\[html, wai-aria-1.2\] All \`ElementInternals\` docs for \`ARIAMixin\` properties are incorrect](https://github.com/mdn/content/issues/36508) (2024-10-26T03:40:30Z)
