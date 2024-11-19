@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] Form submission blocked](https://github.com/mdn/content/issues/36868) (2024-11-19T20:50:40Z)
-  
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
   
 * [\[html, performance-timeline-2, navigation-timing-2\] \[WebAPI\] Hide fragment directives from Navigation Timing API](https://github.com/mdn/content/issues/36546) (2024-10-28T22:56:25Z)
