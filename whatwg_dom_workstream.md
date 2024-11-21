@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[dom\] Still cannot access account lajak870@gmail.com ](https://github.com/mdn/content/issues/36909) (2024-11-21T20:18:50Z)
-  
 * [\[dom\] Range.extractContents() and Range.surroundContents() describe behaviour incorrectly](https://github.com/mdn/content/issues/35854) (2024-09-12T14:20:49Z)
   
 * [\[dom\] Range: isPointInRange() method, offset not explained](https://github.com/mdn/content/issues/35840) (2024-09-11T15:30:33Z)
