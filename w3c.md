@@ -4,8 +4,6 @@
 
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
   
-* [\[cssom-view-1\] scrollIntoView page doesn't describe what the start, center, end, or nearest argument values do.](https://github.com/mdn/content/issues/36679) (2024-11-06T16:38:02Z)
-  
 * [\[webauthn-3\] Webauthn: getClientExtensionResults() returns a AuthenticationExtensionsClientOutputs, not a Map](https://github.com/mdn/content/issues/36673) (2024-11-06T11:36:55Z)
   
 * [\[css-font-loading-3\] FontFace doc: sizeAdjust is missing](https://github.com/mdn/content/issues/36587) (2024-10-31T07:23:20Z)
