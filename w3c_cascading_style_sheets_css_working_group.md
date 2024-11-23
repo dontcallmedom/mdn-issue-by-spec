@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-images-3\] \`mdn.svg\` files not loading](https://github.com/mdn/content/issues/36935) (2024-11-23T03:04:32Z)
+  
 * [\[css-font-loading-3\] FontFace doc: sizeAdjust is missing](https://github.com/mdn/content/issues/36587) (2024-10-31T07:23:20Z)
   
 * [\[css-pseudo-4\] Add new information about recent CSS inheritance changes with CSS selection and highlight pseudo-classes](https://github.com/mdn/content/issues/36458) (2024-10-23T11:07:23Z)
