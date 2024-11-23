@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[dom, clipboard-apis\] Unclear Web API Event Properties](https://github.com/mdn/content/issues/36940) (2024-11-23T17:51:28Z)
+  
 * [\[css-images-3\] \`mdn.svg\` files not loading](https://github.com/mdn/content/issues/36935) (2024-11-23T03:04:32Z)
   
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)

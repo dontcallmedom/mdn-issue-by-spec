@@ -4,10 +4,45 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Fri, 22 Nov 2024 20:58:39 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 23 Nov 2024 17:51:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[dom, clipboard-apis] Unclear Web API Event Properties]]></title>
+            <link>https://github.com/mdn/content/issues/36940</link>
+            <guid>https://github.com/mdn/content/issues/36940</guid>
+            <pubDate>Sat, 23 Nov 2024 17:51:28 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/copy_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/copy_event</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Introduction</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Each <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" rel="nofollow"><code class="notranslate">Event</code></a> has these three boolean properties: <code class="notranslate">bubbles</code>, <code class="notranslate">cancelable</code>, and <code class="notranslate">composed</code>, which contain fairly useful information for developers.</p>
+<p dir="auto">Some of the documentation for events, like the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/copy_event" rel="nofollow"><code class="notranslate">Element.copy</code></a> documentation, mentions the value of these properties:</p>
+<blockquote>
+<p dir="auto">This event <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Event_bubbling" rel="nofollow">bubbles</a>, is <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/cancelable" rel="nofollow">cancelable</a> and is <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/composed" rel="nofollow">composed</a>.</p>
+</blockquote>
+<p dir="auto">The associated <a href="https://w3c.github.io/clipboard-apis/#clipboard-event-copy" rel="nofollow">W3C spec</a> also mentions it.</p>
+<p dir="auto">Unfortunately, this is the exception, and most event documentation doesn't mention any of the three. A smaller number of documentation pages mention one or two of the three, at most. This is true for MDN, W3C, and WHATWG.</p>
+<p dir="auto">It would be great if the documentation could have some standardized way of conveying this information for all events.</p>
+<p dir="auto">But since this covers a large number of events, can I please get some guidance on how I might find or derive this information for any given event?</p>
+<p dir="auto">I tried a quick approach to testing within a browser:</p>
+<div class="highlight highlight-source-ts notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const event = new SomeEvent('someevent')
+console.log(`${event.type} cancelable: ${event.cancelable}`)
+console.log(`${event.type} bubbles: ${event.bubbles}`)
+console.log(`${event.type} composed: ${event.composed}`)"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">event</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-smi">SomeEvent</span><span class="pl-kos">(</span><span class="pl-s">'someevent'</span><span class="pl-kos">)</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`<span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-c1">type</span><span class="pl-kos">}</span></span> cancelable: <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-c1">cancelable</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">)</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`<span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-c1">type</span><span class="pl-kos">}</span></span> bubbles: <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-c1">bubbles</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">)</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`<span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-c1">type</span><span class="pl-kos">}</span></span> composed: <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-c1">composed</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">)</span></pre></div>
+<p dir="auto">This doesn't help, because the three properties are still set to their default values of <code class="notranslate">false</code>. I tested for a few properties and stopped when seeing the same results that conflicted with the documentation pages that did mention the information. I imagine the only way to get accurate results using this kind of test is to manufacture a situation in which the specified event is fired, but I'm hoping for a more direct approach.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I would have liked to see the information regarding cancellation, bubbling, and whether an event is composed mentioned on all events, like it is for the <code class="notranslate">copy</code>, <code class="notranslate">cut</code>, and <code class="notranslate">paste</code> events.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Missing documentation for AudioSession]]></title>
             <link>https://github.com/mdn/content/issues/36932</link>
