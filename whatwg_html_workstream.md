@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] enterkeyhint="go" shows "Open" as example label instead of "Go"](https://github.com/mdn/content/issues/36941) (2024-11-24T02:49:03Z)
+  
 * [\[html\] Missing documentation for AudioSession](https://github.com/mdn/content/issues/36932) (2024-11-22T20:58:39Z)
   
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
