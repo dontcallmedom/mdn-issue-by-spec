@@ -10,8 +10,6 @@
   
 * [\[css-font-loading-3\] FontFace doc: sizeAdjust is missing](https://github.com/mdn/content/issues/36587) (2024-10-31T07:23:20Z)
   
-* [\[html, performance-timeline-2, navigation-timing-2\] \[WebAPI\] Hide fragment directives from Navigation Timing API](https://github.com/mdn/content/issues/36546) (2024-10-28T22:56:25Z)
-  
 * [\[referrer-policy\] Add information to Referrer-Policy docs about how it can affect the Origin header](https://github.com/mdn/content/issues/36543) (2024-10-28T18:04:13Z)
   
 * [\[html, wai-aria-1.2\] All \`ElementInternals\` docs for \`ARIAMixin\` properties are incorrect](https://github.com/mdn/content/issues/36508) (2024-10-26T03:40:30Z)
