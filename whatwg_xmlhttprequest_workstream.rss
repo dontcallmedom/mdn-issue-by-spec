@@ -4,10 +4,42 @@
         <title>WHATWG XMLHttpRequest Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_xmlhttprequest_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG XMLHttpRequest Workstream</description>
-        <lastBuildDate>Sun, 29 Jan 2023 01:52:09 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 24 Nov 2024 07:56:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[xhr] Strange compatibility between the forEach method and the delete method of the FormData interface]]></title>
+            <link>https://github.com/mdn/content/issues/36943</link>
+            <guid>https://github.com/mdn/content/issues/36943</guid>
+            <pubDate>Sun, 24 Nov 2024 07:56:23 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/FormData/delete" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FormData/delete</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">I discovered a strange compatibility issue between the forEach method and the delete method of the FormData interface</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">No</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I tried to delete an item in FormData if it was empty, but strangely, if I didn't use the delete method inside forEach, it could iterate through all the empty items. However, if I used the delete method within forEach, it failed to iterate through all the empty items.<br>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/98216285/389256499-b5df3df5-e22f-4ebc-9089-5186eb7fcda0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzI0MzU0MzcsIm5iZiI6MTczMjQzNTEzNywicGF0aCI6Ii85ODIxNjI4NS8zODkyNTY0OTktYjVkZjNkZjUtZTIyZi00ZWJjLTkwODktNTE4NmViN2ZjZGEwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDExMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMTI0VDA3NTg1N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWMzMGI0YjAyZjI1MzhkNzI5ZDY5OWJhMTc1ZWRhZmQ5OTIzMThjMmUwZjJmMDYxMWFiZWI3NzcwMzc0ZGViMzQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.0-JnR_SQ81smmRoB-zdUPuxDX2VDGwavzq1-8SUDVLM"><img src="https://private-user-images.githubusercontent.com/98216285/389256499-b5df3df5-e22f-4ebc-9089-5186eb7fcda0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzI0MzU0MzcsIm5iZiI6MTczMjQzNTEzNywicGF0aCI6Ii85ODIxNjI4NS8zODkyNTY0OTktYjVkZjNkZjUtZTIyZi00ZWJjLTkwODktNTE4NmViN2ZjZGEwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDExMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMTI0VDA3NTg1N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWMzMGI0YjAyZjI1MzhkNzI5ZDY5OWJhMTc1ZWRhZmQ5OTIzMThjMmUwZjJmMDYxMWFiZWI3NzcwMzc0ZGViMzQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.0-JnR_SQ81smmRoB-zdUPuxDX2VDGwavzq1-8SUDVLM" alt="Screenshot 2024-11-24 144124" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/98216285/389256504-6bcad68e-a0df-4d50-914f-a8d2ea13c50f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzI0MzU0MzcsIm5iZiI6MTczMjQzNTEzNywicGF0aCI6Ii85ODIxNjI4NS8zODkyNTY1MDQtNmJjYWQ2OGUtYTBkZi00ZDUwLTkxNGYtYThkMmVhMTNjNTBmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDExMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMTI0VDA3NTg1N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdjNTgwMmJiYmM5MzI3ZmU2NGM3MWI2M2MyNWYzZWJkNTE5NmE4NWQ0ZDFhM2QxZjIzZTZkZGI3MGIyZmJmNjgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.i8GkK3P_ulrS2JugiObrARVzSNumjct8A-RJnFI_GVI"><img src="https://private-user-images.githubusercontent.com/98216285/389256504-6bcad68e-a0df-4d50-914f-a8d2ea13c50f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzI0MzU0MzcsIm5iZiI6MTczMjQzNTEzNywicGF0aCI6Ii85ODIxNjI4NS8zODkyNTY1MDQtNmJjYWQ2OGUtYTBkZi00ZDUwLTkxNGYtYThkMmVhMTNjNTBmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDExMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMTI0VDA3NTg1N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdjNTgwMmJiYmM5MzI3ZmU2NGM3MWI2M2MyNWYzZWJkNTE5NmE4NWQ0ZDFhM2QxZjIzZTZkZGI3MGIyZmJmNjgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.i8GkK3P_ulrS2JugiObrARVzSNumjct8A-RJnFI_GVI" alt="Screenshot 2024-11-24 144036" style="max-width: 100%;"></a></p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/formdata/delete</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/FormData/delete" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FormData/delete</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/formdata/delete/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/formdata/delete/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2c641e08878722bf29fb784d58c61873ce4a133a/hovercard" href="https://github.com/mdn/content/commit/2c641e08878722bf29fb784d58c61873ce4a133a"><tt>2c641e0</tt></a></li>
+<li>Document last modified: 2024-03-06T05:58:29.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[xhr] xhr.abort is inaccurate]]></title>
             <link>https://github.com/mdn/content/issues/23961</link>

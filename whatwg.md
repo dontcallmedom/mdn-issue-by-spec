@@ -2,11 +2,9 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[xhr\] Strange compatibility between the forEach method and the delete method of the FormData interface](https://github.com/mdn/content/issues/36943) (2024-11-24T07:56:23Z)
+  
 * [\[html\] enterkeyhint="go" shows "Open" as example label instead of "Go"](https://github.com/mdn/content/issues/36941) (2024-11-24T02:49:03Z)
-  
-* [\[dom, clipboard-apis\] Unclear Web API Event Properties](https://github.com/mdn/content/issues/36940) (2024-11-23T17:51:28Z)
-  
-* [\[html\] Missing documentation for AudioSession](https://github.com/mdn/content/issues/36932) (2024-11-22T20:58:39Z)
   
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
   
