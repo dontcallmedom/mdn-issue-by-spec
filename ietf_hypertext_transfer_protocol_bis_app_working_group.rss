@@ -4,10 +4,44 @@
         <title>IETF Hypertext Transfer Protocol Bis APP Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ietf_hypertext_transfer_protocol_bis_app_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by IETF Hypertext Transfer Protocol Bis APP Working Group</description>
-        <lastBuildDate>Wed, 06 Nov 2024 20:23:14 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 25 Nov 2024 04:54:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[rfc7235] Incorrect WWW-Authenticate formats]]></title>
+            <link>https://github.com/mdn/content/issues/36961</link>
+            <guid>https://github.com/mdn/content/issues/36961</guid>
+            <pubDate>Mon, 25 Nov 2024 04:54:51 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/WWW-Authenticate" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/WWW-Authenticate</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Syntax</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">These formats do not confirm to RFC 9110:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="WWW-Authenticate: &lt;auth-scheme&gt; realm=&lt;realm&gt; token68
+WWW-Authenticate: &lt;auth-scheme&gt; realm=&lt;realm&gt; token68 auth-param1=auth-param1-token , ..., auth-paramN=auth-paramN-token
+WWW-Authenticate: &lt;auth-scheme&gt; realm=&lt;realm&gt; auth-param1=auth-param1-token, ..., auth-paramN=auth-paramN-token
+WWW-Authenticate: &lt;auth-scheme&gt; token68 auth-param1=auth-param1-token, ..., auth-paramN=auth-paramN-token"><pre class="notranslate"><code class="notranslate">WWW-Authenticate: &lt;auth-scheme&gt; realm=&lt;realm&gt; token68
+WWW-Authenticate: &lt;auth-scheme&gt; realm=&lt;realm&gt; token68 auth-param1=auth-param1-token , ..., auth-paramN=auth-paramN-token
+WWW-Authenticate: &lt;auth-scheme&gt; realm=&lt;realm&gt; auth-param1=auth-param1-token, ..., auth-paramN=auth-paramN-token
+WWW-Authenticate: &lt;auth-scheme&gt; token68 auth-param1=auth-param1-token, ..., auth-paramN=auth-paramN-token
+</code></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">They should not be documented.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Per <a href="https://datatracker.ietf.org/doc/html/rfc9110#name-www-authenticate" rel="nofollow">RFC 9110 section 11.6.1</a>, <code class="notranslate">WWW-Authenticate</code> header value is defined as:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="WWW-Authenticate = 1#challenge"><pre class="notranslate"><code class="notranslate">WWW-Authenticate = 1#challenge
+</code></pre></div>
+<p dir="auto">Where <code class="notranslate">challenge</code> is defined as (section 11.3):</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="challenge   = auth-scheme [ 1*SP ( token68 / #auth-param ) ]"><pre class="notranslate"><code class="notranslate">challenge   = auth-scheme [ 1*SP ( token68 / #auth-param ) ]
+</code></pre></div>
+<p dir="auto">If I'm reading this correctly, there can only be either a single token68 or a list of auth-param, and not both.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">It may also be helpful to document cases where there are multiple challenges in a single header:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="WWW-Authenticate: &lt;auth-scheme1&gt; auth-param1=token1, ..., auth-paramN=auth-paramN-token, &lt;auth-scheme2&gt; auth-param1=token1, ..., auth-paramN=auth-paramN-token"><pre class="notranslate"><code class="notranslate">WWW-Authenticate: &lt;auth-scheme1&gt; auth-param1=token1, ..., auth-paramN=auth-paramN-token, &lt;auth-scheme2&gt; auth-param1=token1, ..., auth-paramN=auth-paramN-token
+</code></pre></div>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[rfc7230] Content-Length information incomplete]]></title>
             <link>https://github.com/mdn/content/issues/36681</link>
