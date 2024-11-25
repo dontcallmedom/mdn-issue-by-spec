@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-images-3\] \`mdn.svg\` files not loading](https://github.com/mdn/content/issues/36935) (2024-11-23T03:04:32Z)
-  
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
   
 * [\[webauthn-3\] Webauthn: getClientExtensionResults() returns a AuthenticationExtensionsClientOutputs, not a Map](https://github.com/mdn/content/issues/36673) (2024-11-06T11:36:55Z)
