@@ -150,8 +150,6 @@
   
 * [\[uievents\] Content bug: Missing information about what WheelEvent.delta\* can be](https://github.com/mdn/content/issues/11811) (2022-01-07T12:25:45Z)
   
-* [\[css-fonts-5\] @font-face/font-weight: expand on \<font-weight-absolute\>{2} importance](https://github.com/mdn/content/issues/10910) (2021-12-01T18:54:16Z)
-  
 * [\[webrtc\] "Using DTMF" is using legacy APIs](https://github.com/mdn/content/issues/10020) (2021-10-22T18:00:50Z)
   
 * [\[service-workers-1, dom, cssom-view-1, notifications, pointerevents3\] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
