@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Multiple h1](https://github.com/mdn/content/issues/37042) (2024-12-01T17:42:15Z)
+  
 * [\[html\] The \`Location.hash\` property is also percent-encoded](https://github.com/mdn/content/issues/37003) (2024-11-27T15:24:38Z)
   
 * [\[html\] enterkeyhint="go" shows "Open" as example label instead of "Go"](https://github.com/mdn/content/issues/36941) (2024-11-24T02:49:03Z)
