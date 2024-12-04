@@ -8,8 +8,6 @@
   
 * [\[html\] The \`Location.hash\` property is also percent-encoded](https://github.com/mdn/content/issues/37003) (2024-11-27T15:24:38Z)
   
-* [\[html\] enterkeyhint="go" shows "Open" as example label instead of "Go"](https://github.com/mdn/content/issues/36941) (2024-11-24T02:49:03Z)
-  
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
   
 * [\[html, wai-aria-1.2\] All \`ElementInternals\` docs for \`ARIAMixin\` properties are incorrect](https://github.com/mdn/content/issues/36508) (2024-10-26T03:40:30Z)
