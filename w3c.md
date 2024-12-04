@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-logical-1\] All logical padding properties say the correspond to padding-top](https://github.com/mdn/content/issues/37082) (2024-12-03T22:23:02Z)
+* [\[css-logical-1\] padding-inline-start is said to correspond to padding-top in English](https://github.com/mdn/content/issues/37082) (2024-12-03T22:23:02Z)
   
 * [\[html, uievents\] Replace "the DOM load event" with "the window load event"](https://github.com/mdn/content/issues/37047) (2024-12-02T12:08:03Z)
   

@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-logical-1\] All logical padding properties say the correspond to padding-top](https://github.com/mdn/content/issues/37082) (2024-12-03T22:23:02Z)
+* [\[css-logical-1\] padding-inline-start is said to correspond to padding-top in English](https://github.com/mdn/content/issues/37082) (2024-12-03T22:23:02Z)
   
 * [\[css-font-loading-3\] FontFace doc: sizeAdjust is missing](https://github.com/mdn/content/issues/36587) (2024-10-31T07:23:20Z)
   
