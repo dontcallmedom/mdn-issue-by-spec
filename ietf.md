@@ -14,5 +14,3 @@
   
 * [\[rfc7233\] Content suggestion: http content-type multipart/\*](https://github.com/mdn/content/issues/19353) (2022-08-10T08:44:58Z)
   
-* [\[rfc7233\] Complete guide for using range requests to stream large files](https://github.com/mdn/content/issues/18237) (2022-07-11T21:53:18Z)
-  
