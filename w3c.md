@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[SVG11\] Reverse values and use case](https://github.com/mdn/content/issues/37124) (2024-12-06T18:25:10Z)
+  
 * [\[css-typed-om-2, cssom-1\] Add an alternative solution for computedStyleMap](https://github.com/mdn/content/issues/37087) (2024-12-04T09:12:21Z)
   
 * [\[html, uievents\] Replace "the DOM load event" with "the window load event"](https://github.com/mdn/content/issues/37047) (2024-12-02T12:08:03Z)
