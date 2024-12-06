@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Examples are Broken (Empty White Box)](https://github.com/mdn/content/issues/37126) (2024-12-06T19:37:33Z)
+  
 * [\[html, uievents\] Replace "the DOM load event" with "the window load event"](https://github.com/mdn/content/issues/37047) (2024-12-02T12:08:03Z)
   
 * [\[html\] Multiple h1](https://github.com/mdn/content/issues/37042) (2024-12-01T17:42:15Z)
