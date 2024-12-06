@@ -4,8 +4,6 @@
 
 * [\[css-typed-om-2, cssom-1\] Add an alternative solution for computedStyleMap](https://github.com/mdn/content/issues/37087) (2024-12-04T09:12:21Z)
   
-* [\[css-logical-1\] padding-inline-start is said to correspond to padding-top in English](https://github.com/mdn/content/issues/37082) (2024-12-03T22:23:02Z)
-  
 * [\[css-font-loading-3\] FontFace doc: sizeAdjust is missing](https://github.com/mdn/content/issues/36587) (2024-10-31T07:23:20Z)
   
 * [\[css-conditional-3\] Major Documentation Oversight -- What is MDN?](https://github.com/mdn/content/issues/37109) (2024-10-23T13:52:03Z)
