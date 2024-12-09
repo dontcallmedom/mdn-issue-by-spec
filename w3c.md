@@ -6,8 +6,6 @@
   
 * [\[css-typed-om-2, cssom-1\] Add an alternative solution for computedStyleMap](https://github.com/mdn/content/issues/37087) (2024-12-04T09:12:21Z)
   
-* [\[html, uievents\] Replace "the DOM load event" with "the window load event"](https://github.com/mdn/content/issues/37047) (2024-12-02T12:08:03Z)
-  
 * [\[FileAPI\] Support for dwg mime type](https://github.com/mdn/content/issues/36998) (2024-11-27T11:24:03Z)
   
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
