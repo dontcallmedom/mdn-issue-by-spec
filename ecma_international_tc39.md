@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[ecmascript\] Typo on Assignment page](https://github.com/mdn/content/issues/37151) (2024-12-09T18:46:03Z)
+  
 * [\[ecmascript\] Apparently obsolete warning about \`finally\` not being called when yielding rejected promises from a sync generator](https://github.com/mdn/content/issues/37038) (2024-12-01T10:22:47Z)
   
 * [\[ecmascript, streams\] ReadableStreamDefaultController: undocumented error conditions](https://github.com/mdn/content/issues/34597) (2024-07-03T14:49:56Z)
