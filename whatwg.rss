@@ -4,10 +4,41 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Sun, 01 Dec 2024 17:42:15 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 09 Dec 2024 16:12:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] MessagePort Examples  are for the Window.postMessage() API]]></title>
+            <link>https://github.com/mdn/content/issues/37149</link>
+            <guid>https://github.com/mdn/content/issues/37149</guid>
+            <pubDate>Mon, 09 Dec 2024 16:12:04 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/MessagePort/postMessage" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MessagePort/postMessage</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Example</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The examples seem to be for the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage" rel="nofollow">Window.postMessage() method</a>, rather than the similarly named MessagePort.postMessage() method.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Examples that use the arguments you can give to MessagePort.postMessage(), i.e. without the targetOrigin <code class="notranslate">"*"</code>.</p>
+<p dir="auto">It would be nice to have some examples of how to use <code class="notranslate">transfer</code> properly too, as it seems quite finicky. I think you need to both put it in the message, <em>and</em> put it in the transfer array.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/messageport/postmessage</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MessagePort/postMessage" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MessagePort/postMessage</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/messageport/postmessage/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/messageport/postmessage/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e0310b3f565d3147fa80d9e63ace41e0fc244fa6/hovercard" href="https://github.com/mdn/content/commit/e0310b3f565d3147fa80d9e63ace41e0fc244fa6"><tt>e0310b3</tt></a></li>
+<li>Document last modified: 2024-07-21T19:56:00.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Multiple h1]]></title>
             <link>https://github.com/mdn/content/issues/37042</link>
