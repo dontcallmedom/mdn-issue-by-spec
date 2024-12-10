@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[url\] URL: hash property percent encoding](https://github.com/mdn/content/issues/37165) (2024-12-10T16:54:54Z)
+  
 * [\[html\] MessagePort Examples  are for the Window.postMessage() API](https://github.com/mdn/content/issues/37149) (2024-12-09T16:12:04Z)
   
 * [\[html\] Multiple h1](https://github.com/mdn/content/issues/37042) (2024-12-01T17:42:15Z)
