@@ -948,14 +948,13 @@ Which tripped me off, anyways I don't know why that behavior is and would love t
 <p dir="auto">Chromium (Chrome, Edge 79+, Opera, Samsung Internet), Firefox</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">A section with a example involving the usage of a Encoded URI search param. Such as:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const url = new URL(&quot;https://example.com?search=1234&amp;param=my%20param&quot;);
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const url = new URL(&quot;https://example.com?search=1234&amp;param=my%20param&quot;);
 console.log(`Query string (before):\t ${url.search}`);
 url.searchParams.delete(&quot;search&quot;);
-console.log(`Query string (after):\t ${url.search}`); "><pre lang="js" class="notranslate"><code class="notranslate">const url = new URL("https://example.com?search=1234&amp;param=my%20param");
-console.log(`Query string (before):\t ${url.search}`);
-url.searchParams.delete("search");
-console.log(`Query string (after):\t ${url.search}`); 
-</code></pre></div>
+console.log(`Query string (after):\t ${url.search}`); "><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">url</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-c1">URL</span><span class="pl-kos">(</span><span class="pl-s">"https://example.com?search=1234&amp;param=my%20param"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`Query string (before):\t <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">url</span><span class="pl-kos">.</span><span class="pl-c1">search</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">url</span><span class="pl-kos">.</span><span class="pl-c1">searchParams</span><span class="pl-kos">.</span><span class="pl-en">delete</span><span class="pl-kos">(</span><span class="pl-s">"search"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">`Query string (after):\t <span class="pl-s1"><span class="pl-kos">${</span><span class="pl-s1">url</span><span class="pl-kos">.</span><span class="pl-c1">search</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">)</span><span class="pl-kos">;</span> </pre></div>
 <h3 dir="auto">Did you test this? If so, how?</h3>
 <p dir="auto">You can simply paste it on Firefox/Chromium console and get this output:</p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Query string (before):	 ?search=1234&amp;param=my%20param
@@ -996,7 +995,7 @@ Query string (after):	 ?param=my+param
 <p dir="auto">Also of interest is the content found in the <a href="https://html.spec.whatwg.org/multipage/indices.html#event-error:~:text=List%20of%20event%20handler%20content%20attributes" rel="nofollow">WHATWG HTML Standard</a> that lists the <code class="notranslate">body</code> specifically as an alias for a number of window events which clued me to the possibility that onerror would be one of these cases (along with that MDN notice above), even if it isn't explicitly listed as such on this page.</p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto">When running the following code we can get a fuller list of aliased events:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const checkAliasedEvents = (a = document.body, b = window) =&gt; {
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const checkAliasedEvents = (a = document.body, b = window) =&gt; {
     const aliases = []
 
     for (const key in a) {
@@ -1009,21 +1008,20 @@ Query string (after):	 ?param=my+param
     return aliases.sort()
 }
 
-console.log(checkAliasedEvents())"><pre lang="javascript" class="notranslate"><code class="notranslate">const checkAliasedEvents = (a = document.body, b = window) =&gt; {
-    const aliases = []
+console.log(checkAliasedEvents())"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-en">checkAliasedEvents</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">body</span><span class="pl-kos">,</span> <span class="pl-s1">b</span> <span class="pl-c1">=</span> <span class="pl-smi">window</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+    <span class="pl-k">const</span> <span class="pl-s1">aliases</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-kos">]</span>
 
-    for (const key in a) {
-        if (!key.startsWith('on')) continue;
-        if (a[key] !== b[key]) continue;
-        a[key] = () =&gt; {}
-        if (a[key] === b[key]) aliases.push(key)
-    }
+    <span class="pl-k">for</span> <span class="pl-kos">(</span><span class="pl-k">const</span> <span class="pl-s1">key</span> <span class="pl-k">in</span> <span class="pl-s1">a</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+        <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-c1">!</span><span class="pl-s1">key</span><span class="pl-kos">.</span><span class="pl-en">startsWith</span><span class="pl-kos">(</span><span class="pl-s">'on'</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-k">continue</span><span class="pl-kos">;</span>
+        <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">a</span><span class="pl-kos">[</span><span class="pl-s1">key</span><span class="pl-kos">]</span> <span class="pl-c1">!==</span> <span class="pl-s1">b</span><span class="pl-kos">[</span><span class="pl-s1">key</span><span class="pl-kos">]</span><span class="pl-kos">)</span> <span class="pl-k">continue</span><span class="pl-kos">;</span>
+        <span class="pl-s1">a</span><span class="pl-kos">[</span><span class="pl-s1">key</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span><span class="pl-kos">}</span>
+        <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">a</span><span class="pl-kos">[</span><span class="pl-s1">key</span><span class="pl-kos">]</span> <span class="pl-c1">===</span> <span class="pl-s1">b</span><span class="pl-kos">[</span><span class="pl-s1">key</span><span class="pl-kos">]</span><span class="pl-kos">)</span> <span class="pl-s1">aliases</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-s1">key</span><span class="pl-kos">)</span>
+    <span class="pl-kos">}</span>
 
-    return aliases.sort()
-}
+    <span class="pl-k">return</span> <span class="pl-s1">aliases</span><span class="pl-kos">.</span><span class="pl-en">sort</span><span class="pl-kos">(</span><span class="pl-kos">)</span>
+<span class="pl-kos">}</span>
 
-console.log(checkAliasedEvents())
-</code></pre></div>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-en">checkAliasedEvents</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span></pre></div>
 <p dir="auto">There are a few entries beyond <code class="notranslate">onerror</code>, that are listed when running the code above, that are not listed on the HTMLBodyElement page.</p>
 <p dir="auto">The list will only contain the events that the current browser actually supports, for example, the<code class="notranslate">ongamepadconnected</code> event  only showed up in Firefox, and not in Chrome. That being said, <code class="notranslate">onerror</code> showed up in both.</p>
 <h3 dir="auto">MDN metadata</h3>
