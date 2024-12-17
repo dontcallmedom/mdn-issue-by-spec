@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html, dom, cssom-view-1, pointerlock-2, selection-api, page-visibility-2\] Web APIs breadcrumb navigation should place interfaces below APIs](https://github.com/mdn/content/issues/37241) (2024-12-17T14:40:40Z)
-  
 * [\[FileAPI\] Support for dwg mime type](https://github.com/mdn/content/issues/36998) (2024-11-27T11:24:03Z)
   
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
