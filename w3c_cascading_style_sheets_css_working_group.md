@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[resize-observer-1\] Firefox compatibility notes missing](https://github.com/mdn/content/issues/37275) (2024-12-19T12:23:09Z)
-  
 * [\[cssom-1\] Example for CSSStyleDeclaration/setProperty doesn't work](https://github.com/mdn/content/issues/37268) (2024-12-19T00:02:32Z)
   
 * [\[css-typed-om-2, cssom-1\] Add an alternative solution for computedStyleMap](https://github.com/mdn/content/issues/37087) (2024-12-04T09:12:21Z)
