@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[cssom-1\] Example for CSSStyleDeclaration/setProperty doesn't work](https://github.com/mdn/content/issues/37268) (2024-12-19T00:02:32Z)
+  
 * [\[requestidlecallback\] timeRemaining() documentation should flag that it doesn't just count down](https://github.com/mdn/content/issues/37250) (2024-12-17T22:44:09Z)
   
 * [\[SVG11\] Reverse values and use case](https://github.com/mdn/content/issues/37124) (2024-12-06T18:25:10Z)
