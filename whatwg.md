@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[dom\] Appendchild is working with multiple node elements](https://github.com/mdn/content/issues/37358) (2024-12-24T10:39:22Z)
-  
 * [\[html\] Window: external property missing \`getHostEnvironmentValue\` entry](https://github.com/mdn/content/issues/37198) (2024-12-13T03:22:46Z)
   
 * [\[html\] Add documentation of new dialog light dismiss behaviors](https://github.com/mdn/content/issues/37196) (2024-12-13T00:40:54Z)
