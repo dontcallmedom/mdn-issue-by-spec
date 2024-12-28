@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[screen-orientation\] Example unable to be used for ScreenOrientation.lock](https://github.com/mdn/content/issues/37392) (2024-12-28T02:25:22Z)
+  
 * [\[FileAPI\] Support for dwg mime type](https://github.com/mdn/content/issues/36998) (2024-11-27T11:24:03Z)
   
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
