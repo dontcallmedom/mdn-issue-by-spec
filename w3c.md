@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[cssom-view-1\] Discrepancy in Screen.width definition: CSS pixels vs Physical pixels](https://github.com/mdn/content/issues/37397) (2024-12-28T12:22:44Z)
+  
 * [\[screen-orientation\] Example unable to be used for ScreenOrientation.lock](https://github.com/mdn/content/issues/37392) (2024-12-28T02:25:22Z)
   
 * [\[cssom-1\] Example for CSSStyleDeclaration/setProperty doesn't work](https://github.com/mdn/content/issues/37268) (2024-12-19T00:02:32Z)
