@@ -4,8 +4,6 @@
 
 * [\[html\] coords attribute values of area element](https://github.com/mdn/content/issues/37469) (2025-01-02T06:40:37Z)
   
-* [\[html\] Bad phrasing in explanation of JavaScript's property name of custom data attributes.](https://github.com/mdn/content/issues/37467) (2025-01-02T02:56:59Z)
-  
 * [\[html\] Window: external property missing \`getHostEnvironmentValue\` entry](https://github.com/mdn/content/issues/37198) (2024-12-13T03:22:46Z)
   
 * [\[html\] Add documentation of new dialog light dismiss behaviors](https://github.com/mdn/content/issues/37196) (2024-12-13T00:40:54Z)
