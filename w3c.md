@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-pseudo-4\] Outdated info about Firefox using opacity for placeholders](https://github.com/mdn/content/issues/37477) (2025-01-02T23:32:01Z)
+  
 * [\[cssom-view-1\] Discrepancy in Screen.width definition: CSS pixels vs Physical pixels](https://github.com/mdn/content/issues/37397) (2024-12-28T12:22:44Z)
   
 * [\[screen-orientation\] Example unable to be used for ScreenOrientation.lock](https://github.com/mdn/content/issues/37392) (2024-12-28T02:25:22Z)

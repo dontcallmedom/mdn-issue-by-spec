@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-pseudo-4\] Outdated info about Firefox using opacity for placeholders](https://github.com/mdn/content/issues/37477) (2025-01-02T23:32:01Z)
+  
 * [\[cssom-view-1\] Discrepancy in Screen.width definition: CSS pixels vs Physical pixels](https://github.com/mdn/content/issues/37397) (2024-12-28T12:22:44Z)
   
 * [\[cssom-1\] Example for CSSStyleDeclaration/setProperty doesn't work](https://github.com/mdn/content/issues/37268) (2024-12-19T00:02:32Z)
