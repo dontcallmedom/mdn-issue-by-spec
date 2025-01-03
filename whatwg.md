@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[dom, cssom-view-1, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] Missing "input" event](https://github.com/mdn/content/issues/37481) (2025-01-03T09:26:23Z)
+  
 * [\[html\] coords attribute values of area element](https://github.com/mdn/content/issues/37469) (2025-01-02T06:40:37Z)
   
 * [\[html\] Window: external property missing \`getHostEnvironmentValue\` entry](https://github.com/mdn/content/issues/37198) (2024-12-13T03:22:46Z)
