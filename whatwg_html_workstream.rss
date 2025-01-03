@@ -22,12 +22,12 @@
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">Please provide the code to obtain coordinates of image element and use it as basis to choose the coords attribute values of area elements in the map element.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-
-
-
-
-  
-  
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;!--HTML Example to Capture Click Coordinates--&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
   &lt;title&gt;Image Coordinate Capture&lt;/title&gt;
   &lt;style&gt;
     #myImage {
@@ -39,11 +39,12 @@
       font-family: Arial, sans-serif;
     }
   &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Click on the Image to Get Coordinates&lt;/h1&gt;
+  &lt;img id=&quot;myImage&quot; src=&quot;https://via.placeholder.com/600x400&quot; alt=&quot;Placeholder Image&quot;&gt;
+  &lt;div id=&quot;coords&quot;&gt;Coordinates will appear here.&lt;/div&gt;
 
-
-  <h1 dir="auto">Click on the Image to Get Coordinates</h1>
-  <p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/ae61f60819d0b1bd2522a6f36cff42ab8ad89d1be2d34f809370d3bc880c314d/68747470733a2f2f7669612e706c616365686f6c6465722e636f6d2f36303078343030"><img id="user-content-myimage" src="https://camo.githubusercontent.com/ae61f60819d0b1bd2522a6f36cff42ab8ad89d1be2d34f809370d3bc880c314d/68747470733a2f2f7669612e706c616365686f6c6465722e636f6d2f36303078343030" alt="Placeholder Image" data-canonical-src="https://via.placeholder.com/600x400" style="max-width: 100%;"></a></p>
-  <div id="user-content-coords" dir="auto">Coordinates will appear here.</div>
   &lt;script&gt;
     const img = document.getElementById('myImage');
     const coordsDisplay = document.getElementById('coords');
@@ -55,17 +56,17 @@
 
       coordsDisplay.textContent = `Clicked at: X=${x}, Y=${y}`;
 
-      // Example output for use in an  element
-      console.log(``);
+      // Example output for use in an &lt;area&gt; element
+      console.log(`&lt;area shape=&quot;rect&quot; coords=&quot;${x - 10},${y - 10},${x + 10},${y + 10}&quot; href=&quot;#&quot; alt=&quot;Clickable Region&quot;&gt;`);
     });
   &lt;/script&gt;
-
-
-
-
-
-  
-  
+&lt;/body&gt;
+&lt;/html&gt;"><pre class="notranslate"><code class="notranslate">&lt;!--HTML Example to Capture Click Coordinates--&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
   &lt;title&gt;Image Coordinate Capture&lt;/title&gt;
   &lt;style&gt;
     #myImage {
@@ -77,11 +78,12 @@
       font-family: Arial, sans-serif;
     }
   &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Click on the Image to Get Coordinates&lt;/h1&gt;
+  &lt;img id="myImage" src="https://via.placeholder.com/600x400" alt="Placeholder Image"&gt;
+  &lt;div id="coords"&gt;Coordinates will appear here.&lt;/div&gt;
 
-
-  <h1 dir="auto">Click on the Image to Get Coordinates</h1>
-  <p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/ae61f60819d0b1bd2522a6f36cff42ab8ad89d1be2d34f809370d3bc880c314d/68747470733a2f2f7669612e706c616365686f6c6465722e636f6d2f36303078343030"><img id="user-content-myimage" src="https://camo.githubusercontent.com/ae61f60819d0b1bd2522a6f36cff42ab8ad89d1be2d34f809370d3bc880c314d/68747470733a2f2f7669612e706c616365686f6c6465722e636f6d2f36303078343030" alt="Placeholder Image" data-canonical-src="https://via.placeholder.com/600x400" style="max-width: 100%;"></a></p>
-  <div id="user-content-coords" dir="auto">Coordinates will appear here.</div>
   &lt;script&gt;
     const img = document.getElementById('myImage');
     const coordsDisplay = document.getElementById('coords');
@@ -93,12 +95,91 @@
 
       coordsDisplay.textContent = `Clicked at: X=${x}, Y=${y}`;
 
-      // Example output for use in an  element
-      console.log(``);
+      // Example output for use in an &lt;area&gt; element
+      console.log(`&lt;area shape="rect" coords="${x - 10},${y - 10},${x + 10},${y + 10}" href="#" alt="Clickable Region"&gt;`);
     });
   &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Image Coordinate Capture&lt;/title&gt;
+  &lt;style&gt;
+    #myImage {
+      border: 2px solid #ccc;
+      max-width: 100%;
+    }
+    #coords {
+      margin-top: 20px;
+      font-family: Arial, sans-serif;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Click on the Image to Get Coordinates&lt;/h1&gt;
+  &lt;img id=&quot;myImage&quot; src=&quot;https://via.placeholder.com/600x400&quot; alt=&quot;Placeholder Image&quot;&gt;
+  &lt;div id=&quot;coords&quot;&gt;Coordinates will appear here.&lt;/div&gt;
 
+  &lt;script&gt;
+    const img = document.getElementById('myImage');
+    const coordsDisplay = document.getElementById('coords');
 
+    img.addEventListener('click', (event) =&gt; {
+      const rect = img.getBoundingClientRect(); // Get image's position
+      const x = Math.round(event.clientX - rect.left); // X coordinate
+      const y = Math.round(event.clientY - rect.top);  // Y coordinate
+
+      coordsDisplay.textContent = `Clicked at: X=${x}, Y=${y}`;
+
+      // Example output for use in an &lt;area&gt; element
+      console.log(`&lt;area shape=&quot;rect&quot; coords=&quot;${x - 10},${y - 10},${x + 10},${y + 10}&quot; href=&quot;#&quot; alt=&quot;Clickable Region&quot;&gt;`);
+    });
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;"><pre class="notranslate"><code class="notranslate">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Image Coordinate Capture&lt;/title&gt;
+  &lt;style&gt;
+    #myImage {
+      border: 2px solid #ccc;
+      max-width: 100%;
+    }
+    #coords {
+      margin-top: 20px;
+      font-family: Arial, sans-serif;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Click on the Image to Get Coordinates&lt;/h1&gt;
+  &lt;img id="myImage" src="https://via.placeholder.com/600x400" alt="Placeholder Image"&gt;
+  &lt;div id="coords"&gt;Coordinates will appear here.&lt;/div&gt;
+
+  &lt;script&gt;
+    const img = document.getElementById('myImage');
+    const coordsDisplay = document.getElementById('coords');
+
+    img.addEventListener('click', (event) =&gt; {
+      const rect = img.getBoundingClientRect(); // Get image's position
+      const x = Math.round(event.clientX - rect.left); // X coordinate
+      const y = Math.round(event.clientY - rect.top);  // Y coordinate
+
+      coordsDisplay.textContent = `Clicked at: X=${x}, Y=${y}`;
+
+      // Example output for use in an &lt;area&gt; element
+      console.log(`&lt;area shape="rect" coords="${x - 10},${y - 10},${x + 10},${y + 10}" href="#" alt="Clickable Region"&gt;`);
+    });
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">MDN metadata</h3>
