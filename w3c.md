@@ -8,8 +8,6 @@
   
 * [\[cssom-view-1\] Discrepancy in Screen.width definition: CSS pixels vs Physical pixels](https://github.com/mdn/content/issues/37397) (2024-12-28T12:22:44Z)
   
-* [\[screen-orientation\] Example unable to be used for ScreenOrientation.lock](https://github.com/mdn/content/issues/37392) (2024-12-28T02:25:22Z)
-  
 * [\[cssom-1\] Example for CSSStyleDeclaration/setProperty doesn't work](https://github.com/mdn/content/issues/37268) (2024-12-19T00:02:32Z)
   
 * [\[requestidlecallback\] timeRemaining() documentation should flag that it doesn't just count down](https://github.com/mdn/content/issues/37250) (2024-12-17T22:44:09Z)
