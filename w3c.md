@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[speech-api\] Bug when a number is repeated three times](https://github.com/mdn/content/issues/37497) (2025-01-04T15:28:42Z)
-  
 * [\[dom, cssom-view-1, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] Missing "input" event](https://github.com/mdn/content/issues/37481) (2025-01-03T09:26:23Z)
   
 * [\[css-pseudo-4\] Outdated info about Firefox using opacity for placeholders](https://github.com/mdn/content/issues/37477) (2025-01-02T23:32:01Z)
