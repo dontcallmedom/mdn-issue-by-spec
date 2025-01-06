@@ -4,8 +4,6 @@
 
 * [\[CSS21, css-display-3\] CSS+JS Accessibility best practices - hidden things section - is not promoting best practices](https://github.com/mdn/content/issues/37524) (2025-01-06T15:29:04Z)
   
-* [\[dom, cssom-view-1, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] Missing "input" event](https://github.com/mdn/content/issues/37481) (2025-01-03T09:26:23Z)
-  
 * [\[css-pseudo-4\] Outdated info about Firefox using opacity for placeholders](https://github.com/mdn/content/issues/37477) (2025-01-02T23:32:01Z)
   
 * [\[cssom-view-1\] Discrepancy in Screen.width definition: CSS pixels vs Physical pixels](https://github.com/mdn/content/issues/37397) (2024-12-28T12:22:44Z)
