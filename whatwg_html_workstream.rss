@@ -4,10 +4,48 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Thu, 02 Jan 2025 06:40:37 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Jan 2025 19:16:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html, selectors-4] :target matches the current "target element", not the url fragment]]></title>
+            <link>https://github.com/mdn/content/issues/37559</link>
+            <guid>https://github.com/mdn/content/issues/37559</guid>
+            <pubDate>Wed, 08 Jan 2025 19:16:55 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:target" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:target</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">the whole page</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The page explains that the <code class="notranslate">:target</code> pseudo-class</p>
+<blockquote>
+<p dir="auto">represents a unique element (the target element) with an <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id" rel="nofollow">id</a> matching the URL's fragment.</p>
+</blockquote>
+<p dir="auto">Throughout the rest of the page, the examples say that the selector will match if the URL has a fragment that matches an elements id. But the target element isn't always the element with an id matching the URL fragment. SPAs make use of <code class="notranslate">pushState</code>/<code class="notranslate">replaceState</code> for navigation and apparently the target element <strong>is not</strong> updated in response to these (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="131876439" data-permission-text="Title is private" data-url="https://github.com/whatwg/html/issues/639" data-hovercard-type="issue" data-hovercard-url="/whatwg/html/issues/639/hovercard?comment_id=1030914480&amp;comment_type=issue_comment" href="https://github.com/whatwg/html/issues/639#issuecomment-1030914480">whatwg/html#639 (comment)</a>) so <code class="notranslate">:target</code> will not always reflect the URL fragment.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I would expect the document to emphasize that the selector matches the "target element" and explain that it won't respond to changes in the URL.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<ul dir="auto">
+<li><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="131876439" data-permission-text="Title is private" data-url="https://github.com/whatwg/html/issues/639" data-hovercard-type="issue" data-hovercard-url="/whatwg/html/issues/639/hovercard" href="https://github.com/whatwg/html/issues/639">whatwg/html#639</a></li>
+<li><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1099426884" data-permission-text="Title is private" data-url="https://github.com/w3c/csswg-drafts/issues/6942" data-hovercard-type="issue" data-hovercard-url="/w3c/csswg-drafts/issues/6942/hovercard" href="https://github.com/w3c/csswg-drafts/issues/6942">w3c/csswg-drafts#6942</a></li>
+<li><a href="https://bugs.webkit.org/show_bug.cgi?id=83490" rel="nofollow">https://bugs.webkit.org/show_bug.cgi?id=83490</a></li>
+</ul>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/_colon_target</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:target" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:target</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_target/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_target/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/92447fec056cc89b7f28445851bea0c981fcbc12/hovercard" href="https://github.com/mdn/content/commit/92447fec056cc89b7f28445851bea0c981fcbc12"><tt>92447fe</tt></a></li>
+<li>Document last modified: 2024-10-08T17:50:08.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Mention how to obtain coordinates of image for area#coords]]></title>
             <link>https://github.com/mdn/content/issues/37469</link>

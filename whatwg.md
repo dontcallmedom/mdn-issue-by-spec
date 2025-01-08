@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, selectors-4\] :target matches the current "target element", not the url fragment](https://github.com/mdn/content/issues/37559) (2025-01-08T19:16:55Z)
+  
 * [\[html\] Mention how to obtain coordinates of image for area#coords](https://github.com/mdn/content/issues/37469) (2025-01-02T06:40:37Z)
   
 * [\[html\] Window: external property missing \`getHostEnvironmentValue\` entry](https://github.com/mdn/content/issues/37198) (2024-12-13T03:22:46Z)

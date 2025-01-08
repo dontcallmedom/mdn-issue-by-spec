@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, selectors-4\] :target matches the current "target element", not the url fragment](https://github.com/mdn/content/issues/37559) (2025-01-08T19:16:55Z)
+  
 * [\[CSS21, css-display-3\] CSS+JS Accessibility best practices - hidden things section - is not promoting best practices](https://github.com/mdn/content/issues/37524) (2025-01-06T15:29:04Z)
   
 * [\[css-pseudo-4\] Outdated info about Firefox using opacity for placeholders](https://github.com/mdn/content/issues/37477) (2025-01-02T23:32:01Z)
