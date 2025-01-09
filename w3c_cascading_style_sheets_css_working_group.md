@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-size-adjust-1\] Issue with CSS text-size-adjust Example](https://github.com/mdn/content/issues/37577) (2025-01-09T16:56:19Z)
-  
 * [\[html, css-writing-modes-4\] Guide / overview page for writing modes](https://github.com/mdn/content/issues/37571) (2025-01-09T10:50:41Z)
   
 * [\[html, selectors-4\] :target matches the current "target element", not the url fragment](https://github.com/mdn/content/issues/37559) (2025-01-08T19:16:55Z)
