@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[ecmascript\] parseint bug](https://github.com/mdn/content/issues/37585) (2025-01-10T08:51:12Z)
-  
 * [\[ecmascript\] Set operation Venn diagram images 404](https://github.com/mdn/content/issues/37390) (2024-12-27T21:33:58Z)
   
 * [\[ecmascript\] Apparently obsolete warning about \`finally\` not being called when yielding rejected promises from a sync generator](https://github.com/mdn/content/issues/37038) (2024-12-01T10:22:47Z)
