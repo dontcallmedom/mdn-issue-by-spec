@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-values-3\] royal ](https://github.com/mdn/content/issues/37622) (2025-01-12T18:48:23Z)
+  
 * [\[css-display-3, css-flexbox-1, mediaqueries-4, css-conditional-3\] Use "it" in 2 places on \`order\` page to avoid repetition](https://github.com/mdn/content/issues/37618) (2025-01-12T14:50:11Z)
   
 * [\[css-flexbox-1\] Slightly awkward sentences on \`flex-basis\` page](https://github.com/mdn/content/issues/37597) (2025-01-10T21:14:14Z)
