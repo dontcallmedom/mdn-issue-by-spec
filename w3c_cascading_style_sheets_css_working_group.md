@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-text-3\] \`white-space\` option lists are redundant and incomplete](https://github.com/mdn/content/issues/37649) (2025-01-14T16:54:42Z)
+  
 * [\[css-display-3, css-flexbox-1, mediaqueries-4, css-conditional-3\] Use "it" in 2 places on \`order\` page to avoid repetition](https://github.com/mdn/content/issues/37618) (2025-01-12T14:50:11Z)
   
 * [\[css-flexbox-1\] Slightly awkward sentences on \`flex-basis\` page](https://github.com/mdn/content/issues/37597) (2025-01-10T21:14:14Z)
