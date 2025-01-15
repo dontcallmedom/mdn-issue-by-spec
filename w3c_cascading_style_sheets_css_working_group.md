@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-text-3\] Outdated formal syntax for CSS \`white-space\` property](https://github.com/mdn/content/issues/37664) (2025-01-15T21:13:37Z)
+  
 * [\[css-text-3\] \`white-space\` option lists are redundant and incomplete](https://github.com/mdn/content/issues/37649) (2025-01-14T16:54:42Z)
   
 * [\[html, css-writing-modes-4\] Guide / overview page for writing modes](https://github.com/mdn/content/issues/37571) (2025-01-09T10:50:41Z)
