@@ -4,10 +4,6 @@
 
 * [\[css-text-3\] \`white-space\` option lists are redundant and incomplete](https://github.com/mdn/content/issues/37649) (2025-01-14T16:54:42Z)
   
-* [\[css-display-3, css-flexbox-1, mediaqueries-4, css-conditional-3\] Use "it" in 2 places on \`order\` page to avoid repetition](https://github.com/mdn/content/issues/37618) (2025-01-12T14:50:11Z)
-  
-* [\[css-flexbox-1\] Slightly awkward sentences on \`flex-basis\` page](https://github.com/mdn/content/issues/37597) (2025-01-10T21:14:14Z)
-  
 * [\[html, css-writing-modes-4\] Guide / overview page for writing modes](https://github.com/mdn/content/issues/37571) (2025-01-09T10:50:41Z)
   
 * [\[html, selectors-4\] :target matches the current "target element", not the url fragment](https://github.com/mdn/content/issues/37559) (2025-01-08T19:16:55Z)
