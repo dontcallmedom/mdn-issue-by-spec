@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Better documentation for labelling inputs](https://github.com/mdn/content/issues/37665) (2025-01-15T22:49:27Z)
+  
 * [\[html, css-writing-modes-4\] Guide / overview page for writing modes](https://github.com/mdn/content/issues/37571) (2025-01-09T10:50:41Z)
   
 * [\[html, selectors-4\] :target matches the current "target element", not the url fragment](https://github.com/mdn/content/issues/37559) (2025-01-08T19:16:55Z)
