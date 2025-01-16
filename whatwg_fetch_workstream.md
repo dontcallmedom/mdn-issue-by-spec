@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG Fetch Workstream. [![RSS feed for WHATWG Fetch Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[fetch\] Fix an example snippet](https://github.com/mdn/content/issues/37678) (2025-01-16T16:20:07Z)
+  
 * [\[html, fetch\] \`credentialless\` - explanation of "navigate" requests requiring \`Cross-Origin-Resource-Policy\` response header](https://github.com/mdn/content/issues/36503) (2024-10-25T17:04:26Z)
   
 * [\[fetch\] Explain what is a "forged redirect"](https://github.com/mdn/content/issues/36231) (2024-10-07T09:53:54Z)

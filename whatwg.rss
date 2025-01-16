@@ -4,10 +4,46 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Wed, 15 Jan 2025 22:49:27 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 Jan 2025 16:20:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[fetch] Fix an example snippet]]></title>
+            <link>https://github.com/mdn/content/issues/37678</link>
+            <guid>https://github.com/mdn/content/issues/37678</guid>
+            <pubDate>Thu, 16 Jan 2025 16:20:07 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Request/credentials" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Request/credentials</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">#examples</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const request = new Request(&quot;flowers.jpg&quot;);
+const request = request.request; // returns &quot;same-origin&quot; by default"><pre class="notranslate"><code class="notranslate">const request = new Request("flowers.jpg");
+const request = request.request; // returns "same-origin" by default
+</code></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const request = new Request(&quot;flowers.jpg&quot;);
+const request = request.credentials; // returns &quot;same-origin&quot; by default"><pre class="notranslate"><code class="notranslate">const request = new Request("flowers.jpg");
+const request = request.credentials; // returns "same-origin" by default
+</code></pre></div>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/request/credentials</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Request/credentials" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Request/credentials</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/request/credentials/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/request/credentials/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/121546ed0718e92b3f99ae99b1a45869ea68ebe7/hovercard" href="https://github.com/mdn/content/commit/121546ed0718e92b3f99ae99b1a45869ea68ebe7"><tt>121546e</tt></a></li>
+<li>Document last modified: 2024-10-08T19:30:56.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Better documentation for labelling inputs]]></title>
             <link>https://github.com/mdn/content/issues/37665</link>
