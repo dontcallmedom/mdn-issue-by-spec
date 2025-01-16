@@ -10,8 +10,6 @@
   
 * [\[input-events-2\] dataTransfer is null](https://github.com/mdn/content/issues/36276) (2024-10-09T03:33:08Z)
   
-* [\[cssom-view-1, uievents, pointerlock-2\] Element: click event \> Event type \> Note - needs to be updated (Firefox & Safari are fixed)](https://github.com/mdn/content/issues/36219) (2024-10-06T18:26:17Z)
-  
 * [\[html, dom, uievents\] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not](https://github.com/mdn/content/issues/35382) (2024-08-09T02:19:02Z)
   
 * [\[appmanifest\] IsStandaloneContent does not work with \`display: fullscreen\` in Chrome Android](https://github.com/mdn/content/issues/34928) (2024-07-19T15:53:57Z)
