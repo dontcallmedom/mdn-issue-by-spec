@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[intersection-observer\] Unclear content for the Intersection Observer API](https://github.com/mdn/content/issues/37756) (2025-01-22T17:41:11Z)
+  
 * [\[touch-events\] Baseline is misleading for mobile-only supported features (TouchEvent is only supported by Safari for iOS)](https://github.com/mdn/content/issues/37736) (2025-01-21T10:20:42Z)
   
 * [\[credential-management-1\] CredentialsContainer.get() may also throw when the action is cancelled](https://github.com/mdn/content/issues/37728) (2025-01-20T19:01:25Z)
