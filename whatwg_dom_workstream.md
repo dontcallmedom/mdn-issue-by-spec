@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[dom\] clarify how textContent behaves with CDATA sections.](https://github.com/mdn/content/issues/37770) (2025-01-23T11:01:01Z)
+  
 * [\[dom\] HTML nodeName and tagName properties of nodes are in upper case](https://github.com/mdn/content/issues/37744) (2025-01-21T21:56:31Z)
   
 * [\[dom\] Improve the JavaScript section on the data attributes page](https://github.com/mdn/content/issues/37715) (2025-01-19T14:30:20Z)
