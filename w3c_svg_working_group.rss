@@ -35,20 +35,33 @@
 <p dir="auto">Without this <code class="notranslate">&lt;![CDATA[</code>...<code class="notranslate">]]</code> encapsulation, your style rules won't be able to use the <code class="notranslate">&lt;</code>, <code class="notranslate">&gt;</code>, <code class="notranslate">&amp;</code>, and <code class="notranslate">"</code> characters which are used for <strong>selectors</strong>, strings or content inside strings !<br>
 What's worse is that, without this encapsulation, your SVG will be rejected by FireFox's XML-parser (with error), maybe other browsers too have not tried.</p>
 <p dir="auto">Perhaps Firefox and/or some specification should explicitly allow usage of those characters inside the contents of the SVG <code class="notranslate">&lt;style&gt;</code> tag without the need to "escape" them using char-entities like <code class="notranslate">&amp;amp;</code> for <code class="notranslate">&amp;</code>...</p>
-<p dir="auto">Example CSS that will trigger the parser-error on each nesting level, if im correct: <em>(Have only tested the <code class="notranslate">&amp;</code> one)</em></p>
-<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="selector1 {
-  &amp;#selector2 {
-    &gt; selector3 {
-      ...
+<p dir="auto">Example SVG that will trigger the parser-error on each nesting level, if im correct: <em>(Have only tested the <code class="notranslate">&amp;</code> one)</em></p>
+<div class="highlight highlight-text-xml-svg notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;svg&gt;
+  &lt;style&gt;
+    selector1 {
+      &amp;#selector2 {
+        &gt; selector3 {
+          ...
+        }
+      }
     }
-  }
-}"><pre class="notranslate"><span class="pl-ent">selector1</span> {
-  <span class="pl-ent">&amp;</span><span class="pl-kos">#</span><span class="pl-c1">selector2</span> {<span class="pl-ent"></span><span class="pl-c1"></span>
-    <span class="pl-c1">&gt;</span> <span class="pl-ent">selector3</span> {
-      ...
-    }
-  }
-}</pre></div>
+  &lt;/style&gt;
+  ...
+&lt;/svg&gt;"><pre class="notranslate">&lt;<span class="pl-ent">svg</span>&gt;
+  &lt;<span class="pl-ent">style</span>&gt;<span class="pl-s1"></span>
+<span class="pl-s1">    selector1 {</span>
+<span class="pl-s1">      &amp;#<span class="pl-c1">selector</span>2 {</span>
+<span class="pl-s1">        &gt; <span class="pl-c1">selector</span>3 {</span>
+<span class="pl-s1">          ...</span>
+<span class="pl-s1">        }</span>
+<span class="pl-s1">      }</span>
+<span class="pl-s1">    }</span>
+<span class="pl-s1"></span>  &lt;/<span class="pl-ent">style</span>&gt;
+  ...
+&lt;/<span class="pl-ent">svg</span>&gt;</pre></div>
+<ul dir="auto">
+<li>PS: Maybe good info to checkout also wrt. problems with external stylesheets in SVG: <a href="https://stackoverflow.com/staging-ground/79378292" rel="nofollow">https://stackoverflow.com/staging-ground/79378292</a></li>
+</ul>
 <h3 dir="auto">MDN metadata</h3>
 
 <details>
