@@ -4,8 +4,6 @@
 
 * [\[SVG11\] SVG examples should be written in proper XML syntax](https://github.com/mdn/content/issues/37761) (2025-01-22T23:39:56Z)
   
-* [\[intersection-observer\] Unclear content for the Intersection Observer API](https://github.com/mdn/content/issues/37756) (2025-01-22T17:41:11Z)
-  
 * [\[touch-events\] Baseline is misleading for mobile-only supported features (TouchEvent is only supported by Safari for iOS)](https://github.com/mdn/content/issues/37736) (2025-01-21T10:20:42Z)
   
 * [\[credential-management-1\] CredentialsContainer.get() may also throw when the action is cancelled](https://github.com/mdn/content/issues/37728) (2025-01-20T19:01:25Z)
