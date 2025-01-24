@@ -4,8 +4,6 @@
 
 * [\[html, css-writing-modes-4\] Guide / overview page for writing modes](https://github.com/mdn/content/issues/37571) (2025-01-09T10:50:41Z)
   
-* [\[html, selectors-4\] :target matches the current "target element", not the url fragment](https://github.com/mdn/content/issues/37559) (2025-01-08T19:16:55Z)
-  
 * [\[CSS21, css-display-3\] CSS+JS Accessibility best practices - hidden things section - is not promoting best practices](https://github.com/mdn/content/issues/37524) (2025-01-06T15:29:04Z)
   
 * [\[cssom-view-1\] Discrepancy in Screen.width definition: CSS pixels vs Physical pixels](https://github.com/mdn/content/issues/37397) (2024-12-28T12:22:44Z)
