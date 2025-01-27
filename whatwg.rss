@@ -4,10 +4,34 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Mon, 20 Jan 2025 14:02:21 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Jan 2025 23:28:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[url] Please doc unexpected behavior of the `URL.host` setter]]></title>
+            <link>https://github.com/mdn/content/issues/37834</link>
+            <guid>https://github.com/mdn/content/issues/37834</guid>
+            <pubDate>Mon, 27 Jan 2025 23:28:51 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/URL" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/URL/URL</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The URL.host property.</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">According to <a href="https://url.spec.whatwg.org/#dom-url-host" rel="nofollow">https://url.spec.whatwg.org/#dom-url-host</a>,</p>
+<blockquote>
+<p dir="auto">If the given value for the <a href="https://url.spec.whatwg.org/#dom-url-host" rel="nofollow">host</a> setter lacks a <a href="https://url.spec.whatwg.org/#url-port-string" rel="nofollow">port</a>, <a href="https://webidl.spec.whatwg.org/#this" rel="nofollow">this</a>’s <a href="https://url.spec.whatwg.org/#concept-url-url" rel="nofollow">URL</a>’s <a href="https://url.spec.whatwg.org/#concept-url-port" rel="nofollow">port</a> will not change. This can be unexpected as host getter does return a <a href="https://url.spec.whatwg.org/#url-port-string" rel="nofollow">URL-port string</a> so one might have assumed the setter to always "reset" both.</p>
+</blockquote>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I'd expect this to be documented on the <code class="notranslate">host</code> property.</p>
+<p dir="auto">This is a non-intuitive behavior, especially when setting <code class="notranslate">host</code> from a <code class="notranslate">Host</code> or <code class="notranslate">X-Forwarded-Host</code> header. Especially given that <code class="notranslate">.hostname</code> exists, which would seem to be the way to update the hostname without updating the port.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Yep!</p>
+<p dir="auto"><a href="https://url.spec.whatwg.org/#dom-url-host" rel="nofollow">https://url.spec.whatwg.org/#dom-url-host</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Thanks for MDN! ❤️</p>
+<p dir="auto">I'd make the PR myself, but I started reading your CONTRIBUTING.md and it's a bit long/involved for me to take on for this small of a change, so hopefully someone who already has all of that loaded into their head can pick this up. 😊</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] [HTML] Add `OffscreenCanvasRenderingContext2D` method `getContextAttributes`]]></title>
             <link>https://github.com/mdn/content/issues/37727</link>

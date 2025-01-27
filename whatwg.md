@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[url\] Please doc unexpected behavior of the \`URL.host\` setter](https://github.com/mdn/content/issues/37834) (2025-01-27T23:28:51Z)
+  
 * [\[html\] \[HTML\] Add \`OffscreenCanvasRenderingContext2D\` method \`getContextAttributes\`](https://github.com/mdn/content/issues/37727) (2025-01-20T14:02:21Z)
   
 * [\[dom\] Improve the JavaScript section on the data attributes page](https://github.com/mdn/content/issues/37715) (2025-01-19T14:30:20Z)
