@@ -42,8 +42,6 @@
   
 * [\[css-pseudo-4\] Add new information about recent CSS inheritance changes with CSS selection and highlight pseudo-classes](https://github.com/mdn/content/issues/36458) (2024-10-23T11:07:23Z)
   
-* [\[FileAPI\] No examples provided on using the FileReader API](https://github.com/mdn/content/issues/36443) (2024-10-22T14:44:17Z)
-  
 * [\[media-source\] SourceBuffer.appendBuffer() can cause an exception to be thrown because of QuotaExceeded](https://github.com/mdn/content/issues/36404) (2024-10-18T20:01:55Z)
   
 * [\[touch-events\] Note difference in how Touch.screenX/screenY, Touch.clientX/clientY and Touch.pageX/pageY handle zooming](https://github.com/mdn/content/issues/36326) (2024-10-14T10:01:23Z)
