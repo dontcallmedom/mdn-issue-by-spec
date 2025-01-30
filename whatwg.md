@@ -28,8 +28,6 @@
   
 * [\[url\] URL: hash property percent encoding](https://github.com/mdn/content/issues/37165) (2024-12-10T16:54:54Z)
   
-* [\[html\] Multiple h1](https://github.com/mdn/content/issues/37042) (2024-12-01T17:42:15Z)
-  
 * [\[html\] The \`Location.hash\` property is percent-encoded](https://github.com/mdn/content/issues/37003) (2024-11-27T15:24:38Z)
   
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
