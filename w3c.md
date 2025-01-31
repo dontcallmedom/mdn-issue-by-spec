@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[CSS21, css-display-3, css-contain-2\] Weird statement about display:none and visibility:hidden and the accessibility tree](https://github.com/mdn/content/issues/37894) (2025-01-31T09:23:43Z)
+  
 * [\[dom, selection-api\] I think "focus" does not belong here](https://github.com/mdn/content/issues/37889) (2025-01-30T21:15:34Z)
   
 * [\[uievents\] UIEvent and UI_Events pages have no cross-links](https://github.com/mdn/content/issues/37803) (2025-01-25T18:14:25Z)
