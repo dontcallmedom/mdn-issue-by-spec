@@ -6,5 +6,3 @@
   
 * [\[url\] URL: hash property percent encoding](https://github.com/mdn/content/issues/37165) (2024-12-10T16:54:54Z)
   
-* [\[url\] Using URLSearchParams.delete method changes the enconding of unrelated search params](https://github.com/mdn/content/issues/34896) (2024-07-17T13:22:45Z)
-  
