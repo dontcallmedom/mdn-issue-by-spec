@@ -20,7 +20,7 @@
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The demo if try...catch page is not completely working.<br>
 I changed the demo code like:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="try {
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="try {
   nonExistentFunction();
 } catch (error) {
   console.error(error);
@@ -29,16 +29,17 @@ I changed the demo code like:</p>
   throw error
 } finally {
   console.log(&quot;Finally&quot;)
-}"><pre class="notranslate"><span class="pl-k">try</span> <span class="pl-kos">{</span>
-  <span class="pl-en">nonExistentFunction</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span> <span class="pl-k">catch</span> <span class="pl-kos">(</span><span class="pl-s1">error</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">error</span><span class="pl-kos">(</span><span class="pl-s1">error</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-  <span class="pl-c">// Expected output: ReferenceError: nonExistentFunction is not defined</span>
-  <span class="pl-c">// (Note: the exact output may be browser-dependent)</span>
-  <span class="pl-k">throw</span> <span class="pl-s1">error</span>
-<span class="pl-kos">}</span> <span class="pl-k">finally</span> <span class="pl-kos">{</span>
-  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"Finally"</span><span class="pl-kos">)</span>
-<span class="pl-kos">}</span></pre></div>
+}"><pre lang="js" class="notranslate"><code class="notranslate">try {
+  nonExistentFunction();
+} catch (error) {
+  console.error(error);
+  // Expected output: ReferenceError: nonExistentFunction is not defined
+  // (Note: the exact output may be browser-dependent)
+  throw error
+} finally {
+  console.log("Finally")
+}
+</code></pre></div>
 <p dir="auto">Then clicked the button "Run".<br>
 Because of <code class="notranslate">throw error</code> in the <code class="notranslate">catch</code> block, the <code class="notranslate">console.log</code> in the <code class="notranslate">finally</code> block is not printed inside the box just below.</p>
 <h3 dir="auto">What did you expect to see?</h3>
