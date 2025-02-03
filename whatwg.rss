@@ -173,26 +173,21 @@ Because "focus" is associated with the end of the selection.</p>
 <p dir="auto">Please improve the JavaScript example by showing <code class="notranslate">querySelectorAll</code> in combination with a data attribute selector.</p>
 <p dir="auto">It is implicitly shown via the CSS section and mentioned on <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll#obtaining_a_list_of_matches" rel="nofollow">querySelectorAll</a> but having it explicitly in this section would be beneficial.</p>
 <h3 dir="auto">What did you expect to see?</h3>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="document.querySelectorAll('article[data-indexnumber=&quot;12314&quot;]')
-"><pre lang="javascript" class="notranslate"><code class="notranslate">document.querySelectorAll('article[data-indexnumber="12314"]')
-
-</code></pre></div>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="document.querySelectorAll('article[data-indexnumber=&quot;12314&quot;]')
+"><pre class="notranslate"><span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelectorAll</span><span class="pl-kos">(</span><span class="pl-s">'article[data-indexnumber="12314"]'</span><span class="pl-kos">)</span></pre></div>
 <p dir="auto">Maybe also a link to <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll" rel="nofollow">querySelectorAll</a>.</p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;ul id=&quot;something&quot;&gt;
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;ul id=&quot;something&quot;&gt;
   &lt;li data-id=&quot;1&quot;&gt;A
   &lt;li data-id=&quot;2&quot;&gt;B
   &lt;li data-id=&quot;3&quot;&gt;C
-&lt;/ul&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;ul id="something"&gt;
-  &lt;li data-id="1"&gt;A
-  &lt;li data-id="2"&gt;B
-  &lt;li data-id="3"&gt;C
-&lt;/ul&gt;
-</code></pre></div>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="document.querySelector('#something [data-id=&quot;2&quot;]')
-"><pre lang="javascript" class="notranslate"><code class="notranslate">document.querySelector('#something [data-id="2"]')
-
-</code></pre></div>
+&lt;/ul&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">ul</span> <span class="pl-c1">id</span>="<span class="pl-s">something</span>"<span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">li</span> <span class="pl-c1">data-id</span>="<span class="pl-s">1</span>"<span class="pl-kos">&gt;</span>A
+  <span class="pl-kos">&lt;</span><span class="pl-ent">li</span> <span class="pl-c1">data-id</span>="<span class="pl-s">2</span>"<span class="pl-kos">&gt;</span>B
+  <span class="pl-kos">&lt;</span><span class="pl-ent">li</span> <span class="pl-c1">data-id</span>="<span class="pl-s">3</span>"<span class="pl-kos">&gt;</span>C
+<span class="pl-kos">&lt;/</span><span class="pl-ent">ul</span><span class="pl-kos">&gt;</span></pre></div>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="document.querySelector('#something [data-id=&quot;2&quot;]')
+"><pre class="notranslate"><span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">'#something [data-id="2"]'</span><span class="pl-kos">)</span></pre></div>
 <p dir="auto">Is a very common pattern so having the selector shown will be beneficial.</p>]]></content:encoded>
         </item>
         <item>
@@ -586,25 +581,23 @@ Or, at least, closest to get it.</p>
 <p dir="auto">This is not true.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">The fragment is <a href="https://developer.mozilla.org/en-US/docs/Glossary/Percent-encoding" rel="nofollow">percent-encoded</a> plus some examples like:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const url = new URL(
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const url = new URL(
   &quot;https://developer.mozilla.org/en-US/docs/Web/API/URL/href#example one&quot;,
 );
-console.log(url.hash); // '#example%20one'"><pre lang="js" class="notranslate"><code class="notranslate">const url = new URL(
-  "https://developer.mozilla.org/en-US/docs/Web/API/URL/href#example one",
-);
-console.log(url.hash); // '#example%20one'
-</code></pre></div>
+console.log(url.hash); // '#example%20one'"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">url</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-c1">URL</span><span class="pl-kos">(</span>
+  <span class="pl-s">"https://developer.mozilla.org/en-US/docs/Web/API/URL/href#example one"</span><span class="pl-kos">,</span>
+<span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">url</span><span class="pl-kos">.</span><span class="pl-c1">hash</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// '#example%20one'</span></pre></div>
 <p dir="auto">The original <a href="https://github.com/mdn/content/blame/4356be9fd2085bdd3cbe4b524478021acbeb9489/files/en-us/web/api/url/hash/index.html#L15">spoke about percent decoding</a>, hard to know what the motivation was, but possibly:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const url = new URL(
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const url = new URL(
   &quot;https://developer.mozilla.org/en-US/docs/Web/API/URL/href#example%20one&quot;,
 );
 console.log(url.hash); // NOT '#example one'?
-console.log(url.hash); // '#example%20one'"><pre lang="js" class="notranslate"><code class="notranslate">const url = new URL(
-  "https://developer.mozilla.org/en-US/docs/Web/API/URL/href#example%20one",
-);
-console.log(url.hash); // NOT '#example one'?
-console.log(url.hash); // '#example%20one'
-</code></pre></div>
+console.log(url.hash); // '#example%20one'"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">url</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-c1">URL</span><span class="pl-kos">(</span>
+  <span class="pl-s">"https://developer.mozilla.org/en-US/docs/Web/API/URL/href#example%20one"</span><span class="pl-kos">,</span>
+<span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">url</span><span class="pl-kos">.</span><span class="pl-c1">hash</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// NOT '#example one'?</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">url</span><span class="pl-kos">.</span><span class="pl-c1">hash</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// '#example%20one'</span></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
