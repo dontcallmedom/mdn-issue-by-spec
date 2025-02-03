@@ -10,8 +10,6 @@
   
 * [\[SVG11\] SVG examples should be written in proper XML syntax](https://github.com/mdn/content/issues/37761) (2025-01-22T23:39:56Z)
   
-* [\[touch-events\] Baseline is misleading for mobile-only supported features (TouchEvent is only supported by Safari for iOS)](https://github.com/mdn/content/issues/37736) (2025-01-21T10:20:42Z)
-  
 * [\[credential-management-1\] CredentialsContainer.get() may also throw when the action is cancelled](https://github.com/mdn/content/issues/37728) (2025-01-20T19:01:25Z)
   
 * [\[html, css-writing-modes-4\] Guide / overview page for writing modes](https://github.com/mdn/content/issues/37571) (2025-01-09T10:50:41Z)
