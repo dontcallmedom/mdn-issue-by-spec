@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] What css calculation functions are supported in the sizes attribute of the html img tag](https://github.com/mdn/content/issues/37966) (2025-02-05T09:28:30Z)
+  
 * [\[html\] negative sWidth & sHeight optional arguments for 9-argument syntax does not flip image.](https://github.com/mdn/content/issues/37873) (2025-01-30T00:54:31Z)
   
 * [\[html\] Customizable select element](https://github.com/mdn/content/issues/37857) (2025-01-28T21:01:01Z)
