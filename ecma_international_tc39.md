@@ -4,8 +4,6 @@
 
 * [\[ecmascript\] Missing use case with class private identifiers](https://github.com/mdn/content/issues/37927) (2025-02-03T11:29:41Z)
   
-* [\[ecmascript\] Try...catch demo not logging finally if throwing](https://github.com/mdn/content/issues/37694) (2025-01-17T13:24:56Z)
-  
 * [\[ecmascript\] Apparently obsolete warning about \`finally\` not being called when yielding rejected promises from a sync generator](https://github.com/mdn/content/issues/37038) (2024-12-01T10:22:47Z)
   
 * [\[ecmascript, streams\] ReadableStreamDefaultController: undocumented error conditions](https://github.com/mdn/content/issues/34597) (2024-07-03T14:49:56Z)
