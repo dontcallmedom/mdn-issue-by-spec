@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[dom, selection-api\] I think "focus" does not belong here](https://github.com/mdn/content/issues/37889) (2025-01-30T21:15:34Z)
-  
 * [\[uievents\] UIEvent and UI_Events pages have no cross-links](https://github.com/mdn/content/issues/37803) (2025-01-25T18:14:25Z)
   
 * [\[FileAPI\] Support for dwg mime type](https://github.com/mdn/content/issues/36998) (2024-11-27T11:24:03Z)
