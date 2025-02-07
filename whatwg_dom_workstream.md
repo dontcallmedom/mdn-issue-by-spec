@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[dom\] preventDefault() Page - lowercase example does not prevent adding capital letters after selecting the shift key on an Android phone keyboard](https://github.com/mdn/content/issues/38028) (2025-02-07T15:32:16Z)
+  
 * [\[dom\] Improve the JavaScript section on the data attributes page](https://github.com/mdn/content/issues/37715) (2025-01-19T14:30:20Z)
   
 * [\[dom\] Range.extractContents() and Range.surroundContents() describe behaviour incorrectly](https://github.com/mdn/content/issues/35854) (2024-09-12T14:20:49Z)
