@@ -104,6 +104,8 @@
   
 * [\[html\] Create a \`form\` attribute page](https://github.com/mdn/content/issues/28375) (2023-08-03T18:28:41Z)
   
+* [\[html, selectors-4\] Remove or condense non-standard prefixed pseudos from the side navigation](https://github.com/mdn/content/issues/38018) (2023-07-19T00:44:36Z)
+  
 * [\[dom, cssom-view-1, uievents, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
   
 * [\[dom\] Event.preventDefault: Inaccessible example](https://github.com/mdn/content/issues/27478) (2023-06-22T14:18:14Z)
