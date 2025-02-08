@@ -38,8 +38,6 @@
   
 * [\[fetch\] Explain what is a "forged redirect"](https://github.com/mdn/content/issues/36231) (2024-10-07T09:53:54Z)
   
-* [\[html\] Subpar accessibility recommendation ](https://github.com/mdn/content/issues/36068) (2024-09-27T01:43:17Z)
-  
 * [\[html\] window.postMessage needs targetOrigin=\* for dataurl](https://github.com/mdn/content/issues/36039) (2024-09-25T08:53:00Z)
   
 * [\[dom\] Range.extractContents() and Range.surroundContents() describe behaviour incorrectly](https://github.com/mdn/content/issues/35854) (2024-09-12T14:20:49Z)
@@ -79,8 +77,6 @@
 * [\[html, FileAPI\] Live examples using window.open are broken](https://github.com/mdn/content/issues/34350) (2024-06-22T21:35:10Z)
   
 * [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
-  
-* [\[html\] label accessibility advice is misleading](https://github.com/mdn/content/issues/33283) (2024-04-26T14:13:16Z)
   
 * [\[html\] Video/Audio source event handling](https://github.com/mdn/content/issues/32784) (2024-03-21T15:30:15Z)
   
