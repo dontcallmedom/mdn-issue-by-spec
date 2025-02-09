@@ -122,8 +122,6 @@
   
 * [\[webrtc\] What is \`RTCPeerConnection.generateCertificate(..)\` good for?](https://github.com/mdn/content/issues/23993) (2023-01-30T20:28:26Z)
   
-* [\[push-api\] Subscriptions are lost after page reload](https://github.com/mdn/content/issues/23747) (2023-01-18T15:29:52Z)
-  
 * [\[webaudio\] BiquadFilterNode»Q: Incorrect range for Q?](https://github.com/mdn/content/issues/23592) (2023-01-13T01:05:43Z)
   
 * [\[orientation-event\] Explanation of X, y, z coordinates of DeviceMotionEvent.acceleration and DeviceMotionEvent.accelerationIncludingGravity is either completely wrong or extremely confusing (or both)](https://github.com/mdn/content/issues/22885) (2022-12-11T22:18:39Z)
