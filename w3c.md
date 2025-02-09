@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[uievents\] UIEvent and UI_Events pages have no cross-links](https://github.com/mdn/content/issues/37803) (2025-01-25T18:14:25Z)
-  
 * [\[SVG11\] SVG examples should be written in proper XML syntax](https://github.com/mdn/content/issues/37761) (2025-01-22T23:39:56Z)
   
 * [\[credential-management-1\] CredentialsContainer.get() may also throw when the action is cancelled](https://github.com/mdn/content/issues/37728) (2025-01-20T19:01:25Z)
