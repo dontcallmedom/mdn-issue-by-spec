@@ -176,8 +176,6 @@
   
 * [\[webaudio\] Content bug: AudioListener and attributes need better examples. ](https://github.com/mdn/content/issues/4468) (2021-04-26T03:22:48Z)
   
-* [\[orientation-event, compat\] Content bug: Improve device/screen orientation event doc](https://github.com/mdn/content/issues/4400) (2021-04-23T02:57:45Z)
-  
 * [\[presentation-api\] Presentation API docs need rewrite](https://github.com/mdn/content/issues/4025) (2021-04-12T01:16:00Z)
   
 * [\[webaudio\] Visualization for OscillatorNode](https://github.com/mdn/content/issues/1296) (2021-01-14T10:42:13Z)
