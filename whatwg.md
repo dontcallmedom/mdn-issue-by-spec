@@ -70,8 +70,6 @@
   
 * [\[ecmascript, streams\] ReadableStreamDefaultController: undocumented error conditions](https://github.com/mdn/content/issues/34597) (2024-07-03T14:49:56Z)
   
-* [\[html\] \<pre\> elements - problematic characters and auto replacement](https://github.com/mdn/content/issues/34545) (2024-07-01T23:43:33Z)
-  
 * [\[html\] Usage notes has misleading instructions for \`\<menu\>\` element](https://github.com/mdn/content/issues/34476) (2024-06-28T07:04:22Z)
   
 * [\[html, FileAPI\] Live examples using window.open are broken](https://github.com/mdn/content/issues/34350) (2024-06-22T21:35:10Z)

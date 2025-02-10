@@ -1420,29 +1420,6 @@ Thrown if the source object is not a ReadableStreamDefaultController.</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] <pre> elements - problematic characters and auto replacement]]></title>
-            <link>https://github.com/mdn/content/issues/34545</link>
-            <guid>https://github.com/mdn/content/issues/34545</guid>
-            <pubDate>Mon, 01 Jul 2024 23:43:33 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre#escaping_reserved_characters" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre#escaping_reserved_characters</a></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<ol dir="auto">
-<li>The terminology is imprecise. It refers to reserved characters, where in fact HTML refers to things that aren't allowed in particular contexts. For example you can happily use a <code class="notranslate">&lt;</code> as long as you don't use it in a way that a browser might interpret as a tag. Similarly <code class="notranslate">"</code> chars are allowed in many places, but not inside tag attributes that are defined using them. We should talk about problematic characters and explain this a bit better.</li>
-<li>Some characters are allowed in any context according to the spec, such as <code class="notranslate">&amp;</code> but can be misused - for example if used as the start of a character reference, the reference should be valid. Also, <a href="https://github.com/mdn/content/issues/34383#issuecomment-2200015123" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/34383/hovercard">anecdotally</a> some browsers complain if <code class="notranslate">&amp;</code> is used in pre and isn't followed by a character reference (that looks to be off-spec).</li>
-<li>The doc is focused on the use of <code class="notranslate">&lt;pre&gt;</code> to get layout you want, which is reasonable. But it doesn't cover the fact that the element can contain tags and have other formatting. A main use is not just layout of pretty images, but probably generating layout to syntax-highlight code - and that requires some use of tags etc.</li>
-<li>The section on <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre#escaping_reserved_characters" rel="nofollow">Escaping reserved characters</a> needs a little more nuance. Firstly to capture contexts when they are are not allows. Also, from <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2370832386" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/34383" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/34383/hovercard?comment_id=2200015123&amp;comment_type=issue_comment" href="https://github.com/mdn/content/issues/34383#issuecomment-2200015123">#34383 (comment)</a> to capture some concerns about automatic replacement of reserved characters. At high level this is again to note that what is reserved character depends on context, secondly that if you are going to do any form of replacement then &amp; has to be done first so that any "already replaced characters" are not double-replaced, and lastly note that because of all what needs to be escaped depends on context, generally a manual update is safer.</li>
-</ol>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">More nuance. Terminology to change from "reserved" to "problematic", or "special" characters.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">This came from a discussion in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2370832386" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/34383" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/34383/hovercard" href="https://github.com/mdn/content/issues/34383">#34383</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Usage notes has misleading instructions for `<menu>` element]]></title>
             <link>https://github.com/mdn/content/issues/34476</link>
             <guid>https://github.com/mdn/content/issues/34476</guid>
