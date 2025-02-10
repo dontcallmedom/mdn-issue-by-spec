@@ -6,8 +6,6 @@
   
 * [\[html\] Clarify image.decode() failure on lazy-loaded images](https://github.com/mdn/content/issues/38034) (2025-02-08T00:22:15Z)
   
-* [\[html\] \<option\> styling information possibly incorrect](https://github.com/mdn/content/issues/38024) (2025-02-07T12:13:53Z)
-  
 * [\[html\] negative sWidth & sHeight optional arguments for 9-argument syntax does not flip image.](https://github.com/mdn/content/issues/37873) (2025-01-30T00:54:31Z)
   
 * [\[html\] Customizable select element](https://github.com/mdn/content/issues/37857) (2025-01-28T21:01:01Z)
