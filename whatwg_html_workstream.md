@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] \[HTML\] Add \`colorType\` documentation to \`CanvasRenderingContext2DSettings\`](https://github.com/mdn/content/issues/38087) (2025-02-10T15:06:09Z)
+* [\[html\] Add \`colorType\` documentation to \`CanvasRenderingContext2DSettings\`](https://github.com/mdn/content/issues/38087) (2025-02-10T15:06:09Z)
   
 * [\[html\] Clarify image.decode() failure on lazy-loaded images](https://github.com/mdn/content/issues/38034) (2025-02-08T00:22:15Z)
   
