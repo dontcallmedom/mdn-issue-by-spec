@@ -4,10 +4,48 @@
         <title>IETF Hypertext Transfer Protocol Bis APP Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ietf_hypertext_transfer_protocol_bis_app_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by IETF Hypertext Transfer Protocol Bis APP Working Group</description>
-        <lastBuildDate>Wed, 06 Nov 2024 20:23:14 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 11 Feb 2025 08:25:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[rfc7230] chunked reports hex values for length]]></title>
+            <link>https://github.com/mdn/content/issues/38100</link>
+            <guid>https://github.com/mdn/content/issues/38100</guid>
+            <pubDate>Tue, 11 Feb 2025 08:25:25 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Transfer-Encoding" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Transfer-Encoding</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Response with chunked encoding</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">`HTTP/1.1 200 OK<br>
+Content-Type: text/plain<br>
+Transfer-Encoding: chunked</p>
+<p dir="auto">7\r\n<br>
+Mozilla\r\n<br>
+11\r\n<br>
+Developer Network\r\n<br>
+0\r\n<br>
+\r\n`</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">From what I understand from the proceeding documentation, <code class="notranslate">11</code> should be represented as <code class="notranslate">B</code>.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/http/headers/transfer-encoding</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Transfer-Encoding" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Transfer-Encoding</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/transfer-encoding/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/http/headers/transfer-encoding/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ed041385cf874deec203e820fd415bdcd6f98a19/hovercard" href="https://github.com/mdn/content/commit/ed041385cf874deec203e820fd415bdcd6f98a19"><tt>ed04138</tt></a></li>
+<li>Document last modified: 2024-12-09T16:05:46.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[rfc7230] Content-Length should mention other HTTP versions]]></title>
             <link>https://github.com/mdn/content/issues/36681</link>
