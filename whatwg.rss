@@ -189,72 +189,6 @@
 <p dir="auto"><em>No response</em></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] It seems to be unclear how to get an element's lang through inheritance]]></title>
-            <link>https://github.com/mdn/content/issues/37680</link>
-            <guid>https://github.com/mdn/content/issues/37680</guid>
-            <pubDate>Thu, 16 Jan 2025 17:41:21 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Inheritance</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">... or I didn't understand.</p>
-<p dir="auto">It reads: "If an element has no lang attribute, it will inherit the lang value set on its <a href="https://developer.mozilla.org/en-US/docs/Glossary/Node/DOM" rel="nofollow">parent node</a>, which in turn may inherit it from its parent, and so on."<br>
-It's not happening, at least the way I expect it to.<br>
-Descendants of an element with lang return a null lang property.<br>
-I understand that #text nodes have no lang, and this seems to cut the inheritance chain.<br>
-So I tried Element.closest('[lang]') and it also failed.</p>
-<p dir="auto">My nodes descend from a fragment, created from a page with lang at its . The fragment didn't come out with the page's lang, so I added it.<br>
-The descendants of the fragment don't seem to inherit its lang even after I brute-forced it.</p>
-<p dir="auto">StackOverflow has a number of developers wandering like zombies searching for the light.<br>
-I (one of those zombies) finally wrote a function to walk the hierarchy to do what I believed that closest() should do.</p>
-<p dir="auto">This is Chrome version 132.0.6834.83 (Official Build) (64-bit) in Ubuntu 22.04.5 LTS</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">I expected the descendants elements of one having lang set, to proudly return their ancestor's lang.<br>
-Or, at least, closest to get it.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">Select text and press the button</p>
-<p dir="auto">Cannot upload html &amp; js or 7z files  :-(</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const getNodeLang = ( node ) =&gt; {
-  let lang = node.lang;
-  while( ! lang &amp;&amp; node.parentNode ){
-    if( node.parentNode ){
-      node = node.parentNode;
-    } else {
-      return null;
-    }
-    lang = node.lang;
-  }
-  return lang;
-}"><pre class="notranslate"><code class="notranslate">const getNodeLang = ( node ) =&gt; {
-  let lang = node.lang;
-  while( ! lang &amp;&amp; node.parentNode ){
-    if( node.parentNode ){
-      node = node.parentNode;
-    } else {
-      return null;
-    }
-    lang = node.lang;
-  }
-  return lang;
-}
-</code></pre></div>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/html/global_attributes/lang</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/global_attributes/lang/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/global_attributes/lang/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/816cc4d4a5a318a23222946b6981bb92b499aebb/hovercard" href="https://github.com/mdn/content/commit/816cc4d4a5a318a23222946b6981bb92b499aebb"><tt>816cc4d</tt></a></li>
-<li>Document last modified: 2024-10-11T12:51:34.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Better documentation for labelling inputs]]></title>
             <link>https://github.com/mdn/content/issues/37665</link>
             <guid>https://github.com/mdn/content/issues/37665</guid>
@@ -1138,46 +1072,6 @@ Space characters, other than the whitespace separating the URL and the correspon
 <p dir="auto">Apologies for being such a pedant!</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Description of how inert of .showModal() works does not cover how it behaves with iframe]]></title>
-            <link>https://github.com/mdn/content/issues/35189</link>
-            <guid>https://github.com/mdn/content/issues/35189</guid>
-            <pubDate>Sat, 27 Jul 2024 22:31:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Missing section</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Needs more description or explanation of how inert works for use cases such as using .showModal() from inside an iframe.</p>
-<p dir="auto">Iframe usage has 2 main cases:</p>
-<ul dir="auto">
-<li>iframing another domain content</li>
-<li>Using iframe to scope a local content</li>
-</ul>
-<p dir="auto">In the case of domain content, I believe it is working correctly, but for using iframe to scope a local content, this isn't covered well. A good example of this is Storybook use case.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<ul dir="auto">
-<li>Having deeper explanation of how inert works for .showModal()</li>
-<li>Having explanation of how it works with iframe - ideally for both cases</li>
-<li>Having alternative solution presented for 2nd use case mentioned above (scoping local content)</li>
-</ul>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://matrix.to/#/!AGetWbsMpFPdSgUrbs:matrix.org/$CnD20n29QzpExnykMFkfG17F1ZKq8aEBRTk-vMNCBkA?via=matrix.org&amp;via=mozilla.org&amp;via=igalia.com" rel="nofollow">https://matrix.to/#/!AGetWbsMpFPdSgUrbs:matrix.org/$CnD20n29QzpExnykMFkfG17F1ZKq8aEBRTk-vMNCBkA?via=matrix.org&amp;via=mozilla.org&amp;via=igalia.com</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/htmldialogelement/showmodal</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmldialogelement/showmodal/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmldialogelement/showmodal/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b71d118ffc6d72b77efad9661110fcc9ede464eb/hovercard" href="https://github.com/mdn/content/commit/b71d118ffc6d72b77efad9661110fcc9ede464eb"><tt>b71d118</tt></a></li>
-<li>Document last modified: 2024-07-25T14:22:56.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html, SVG11] CanvasRenderingContext2D: drawImage() method: takes natural height and width into account docs incomplete.]]></title>
             <link>https://github.com/mdn/content/issues/35141</link>
             <guid>https://github.com/mdn/content/issues/35141</guid>
@@ -1292,38 +1186,6 @@ console.log(checkAliasedEvents())"><pre class="notranslate"><span class="pl-k">c
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlbodyelement/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlbodyelement/index.md</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/387d0d4d8690c0d2c9db1b85eae28ffea0f3ac1f/hovercard" href="https://github.com/mdn/content/commit/387d0d4d8690c0d2c9db1b85eae28ffea0f3ac1f"><tt>387d0d4</tt></a></li>
 <li>Document last modified: 2023-02-20T04:32:55.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[html] "escape inertness" mentioned but never explained how to]]></title>
-            <link>https://github.com/mdn/content/issues/34619</link>
-            <guid>https://github.com/mdn/content/issues/34619</guid>
-            <pubDate>Thu, 04 Jul 2024 10:02:29 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inert" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inert</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">The intro</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<blockquote>
-<p dir="auto">With the inert attribute, all of the element's flat tree descendants (such as modal <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" rel="nofollow"><code class="notranslate">&lt;dialog&gt;</code></a>s) that don't otherwise <strong>escape inertness</strong> are ignored.</p>
-</blockquote>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">An explanation of how to "escape inertness". Neither this page, nor any of the "See Also" explain how to "escape inertness". If one wish to make everything inert except a certain elements and it's children, I imagine you would apply inert to the document then escape it somehow...</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">Thanks, these docs are very helpful!</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/html/global_attributes/inert</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inert" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inert</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/global_attributes/inert/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/global_attributes/inert/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2f8e24c7de5cc12c7de0a830fcac4d7d31c9f787/hovercard" href="https://github.com/mdn/content/commit/2f8e24c7de5cc12c7de0a830fcac4d7d31c9f787"><tt>2f8e24c</tt></a></li>
-<li>Document last modified: 2024-05-15T03:47:41.000Z</li>
 </ul>
 </details>]]></content:encoded>
         </item>
