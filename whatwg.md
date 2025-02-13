@@ -10,8 +10,6 @@
   
 * [\[html\] Customizable select element](https://github.com/mdn/content/issues/37857) (2025-01-28T21:01:01Z)
   
-* [\[url\] Please doc unexpected behavior of the \`URL.host\` setter](https://github.com/mdn/content/issues/37834) (2025-01-27T23:28:51Z)
-  
 * [\[html\] \[HTML\] Add \`OffscreenCanvasRenderingContext2D\` method \`getContextAttributes\`](https://github.com/mdn/content/issues/37727) (2025-01-20T14:02:21Z)
   
 * [\[html\] Better documentation for labelling inputs](https://github.com/mdn/content/issues/37665) (2025-01-15T22:49:27Z)
@@ -23,10 +21,6 @@
 * [\[html\] Add documentation of new dialog light dismiss behaviors](https://github.com/mdn/content/issues/37196) (2024-12-13T00:40:54Z)
   
 * [\[html\] Add accessibility considerations to the HTML "autocomplete" attribute page](https://github.com/mdn/content/issues/37170) (2024-12-10T18:43:41Z)
-  
-* [\[url\] URL: hash property percent encoding](https://github.com/mdn/content/issues/37165) (2024-12-10T16:54:54Z)
-  
-* [\[html\] The \`Location.hash\` property is percent-encoded](https://github.com/mdn/content/issues/37003) (2024-11-27T15:24:38Z)
   
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
   
@@ -113,8 +107,6 @@
 * [\[fullscreen\] Using F11 to enter fullscreen mode doesn’t set fullscreenElement (it remains null) and document.exitFullscreen() doesn’t work](https://github.com/mdn/content/issues/13674) (2022-03-09T00:38:35Z)
   
 * [\[service-workers-1, dom, cssom-view-1, notifications, pointerevents3\] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
-  
-* [\[html\] Issue with "Location": does not mention IDN domain names at all](https://github.com/mdn/content/issues/8895) (2021-09-13T22:55:17Z)
   
 * [\[html, dom, WebIDL-1, cssom-view-1, FileAPI, uievents, pointerlock-2\] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   

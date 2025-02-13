@@ -22,8 +22,6 @@
   
 * [\[html\] Add accessibility considerations to the HTML "autocomplete" attribute page](https://github.com/mdn/content/issues/37170) (2024-12-10T18:43:41Z)
   
-* [\[html\] The \`Location.hash\` property is percent-encoded](https://github.com/mdn/content/issues/37003) (2024-11-27T15:24:38Z)
-  
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
   
 * [\[html, wai-aria-1.2\] All \`ElementInternals\` docs for \`ARIAMixin\` properties are incorrect](https://github.com/mdn/content/issues/36508) (2024-10-26T03:40:30Z)
@@ -85,8 +83,6 @@
 * [\[html\] Missing info of copying sessionStorage on creating new context](https://github.com/mdn/content/issues/18323) (2022-07-13T16:09:36Z)
   
 * [\[html, gamepad\] Double checking the gamepad docs are correct](https://github.com/mdn/content/issues/14874) (2022-04-11T03:02:09Z)
-  
-* [\[html\] Issue with "Location": does not mention IDN domain names at all](https://github.com/mdn/content/issues/8895) (2021-09-13T22:55:17Z)
   
 * [\[html, dom, WebIDL-1, cssom-view-1, FileAPI, uievents, pointerlock-2\] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
   
