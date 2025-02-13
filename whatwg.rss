@@ -484,36 +484,6 @@ Or, at least, closest to get it.</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Window: external property missing `getHostEnvironmentValue` entry]]></title>
-            <link>https://github.com/mdn/content/issues/37198</link>
-            <guid>https://github.com/mdn/content/issues/37198</guid>
-            <pubDate>Fri, 13 Dec 2024 03:22:46 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/external" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/external</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Instance methods</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Microsoft Edge implements a non-standard method on <code class="notranslate">External</code> object, called <code class="notranslate">getHostEnvironmentValue</code>, which is missing from <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/external#instance_methods" rel="nofollow">Instance methods</a> listed on MDN.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">I expected to see <code class="notranslate">getHostEnvironmentValue</code> on the table, with a note indicating it is Edge-exclusive.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/mt795399(v=vs.85)" rel="nofollow">Documentation Site</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">This method still exists on Edge 131.0.2903.86</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/window/external</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/external" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/external</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/external/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/external/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cc070123f72376faec06e36622c4fc723a75325f/hovercard" href="https://github.com/mdn/content/commit/cc070123f72376faec06e36622c4fc723a75325f"><tt>cc07012</tt></a></li>
-<li>Document last modified: 2023-04-08T06:57:07.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Add documentation of new dialog light dismiss behaviors]]></title>
             <link>https://github.com/mdn/content/issues/37196</link>
             <guid>https://github.com/mdn/content/issues/37196</guid>
@@ -1144,40 +1114,6 @@ Space characters, other than the whitespace separating the URL and the correspon
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto">Maybe we should do other changes to the event pages too—the event pages generally don't seem very informative and it's not easy to find a single, definitive guide to events in the web API references, discussing things like event IDL attributes, how the return value of <code class="notranslate">onXYZ</code> works, etc. If there does exist such a guide it should be linked everywhere. See also: <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2394150292" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/34684" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/34684/hovercard" href="https://github.com/mdn/content/issues/34684">#34684</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[dom] Element.shadowRoot should note browser shadow roots aren't accessible]]></title>
-            <link>https://github.com/mdn/content/issues/35286</link>
-            <guid>https://github.com/mdn/content/issues/35286</guid>
-            <pubDate>Fri, 02 Aug 2024 19:32:27 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Either the first, untitled section, or the "Value" section</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The Element.shadowRoot article might be more helpful if it explicitly notes that shadowRoot can't be used to access a shadow root added by a browser, like Chrome's shadow root on <code class="notranslate">&lt;video&gt;</code>.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">For example:</p>
-<blockquote>
-<p dir="auto"><code class="notranslate">Element.shadowRoot</code> cannot be used to access a shadow root added by a browser. For example, Google Chrome adds a shadow root on <code class="notranslate">&lt;video&gt;</code>, but it cannot be accessed with <code class="notranslate">Element.shadowRoot</code>.</p>
-</blockquote>
-<p dir="auto">Language like "user-agent", "native", or "shadow DOM" might also be appropriate, I'm not sure.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">I haven't found specific documentation that states the above, but it matches my experience, and <a href="https://stackoverflow.com/a/38736220/724752" rel="nofollow">this stack overflow answer</a> makes an argument that is persuasive to me.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/shadowroot</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/shadowroot/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/shadowroot/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/4558d208395a5b1df4db44b0c8ef4e9a0f8adbbf/hovercard" href="https://github.com/mdn/content/commit/4558d208395a5b1df4db44b0c8ef4e9a0f8adbbf"><tt>4558d20</tt></a></li>
-<li>Document last modified: 2024-06-19T05:39:51.000Z</li>
-</ul>
-</details>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[html] HTMLMediaElement.currentTime: precision seems different from Date.now]]></title>
@@ -2030,27 +1966,6 @@ They also suppose that this doesn't work, because sessionStorage is exclusive pe
 <li>Document last modified: 2023-04-07T00:39:15.000Z</li>
 </ul>
 </details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[xhr] xhr.abort is inaccurate]]></title>
-            <link>https://github.com/mdn/content/issues/23961</link>
-            <guid>https://github.com/mdn/content/issues/23961</guid>
-            <pubDate>Sun, 29 Jan 2023 01:52:09 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/abort" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/abort</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">"The XMLHttpRequest.abort() method aborts the request if it has already been sent. When a request is aborted, its <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/readyState" rel="nofollow">readyState</a> is changed to XMLHttpRequest.UNSENT (0) and the request's <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/status" rel="nofollow">status</a> code is set to 0."</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Compare to the spec, it's clear that this doesn't cover the second case:</p>
-<blockquote>
-<p dir="auto">If <a href="https://webidl.spec.whatwg.org/#this" rel="nofollow">this</a>’s <a href="https://xhr.spec.whatwg.org/#concept-xmlhttprequest-state" rel="nofollow">state</a> is opened with <a href="https://webidl.spec.whatwg.org/#this" rel="nofollow">this</a>’s <a href="https://xhr.spec.whatwg.org/#send-flag" rel="nofollow">send() flag</a> set, headers received, or loading, then run the <a href="https://xhr.spec.whatwg.org/#request-error-steps" rel="nofollow">request error steps</a> for <a href="https://webidl.spec.whatwg.org/#this" rel="nofollow">this</a> and <a href="https://xhr.spec.whatwg.org/#event-xhr-abort" rel="nofollow">abort</a>.</p>
-</blockquote>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[html] document-domain feature policy is being removed]]></title>

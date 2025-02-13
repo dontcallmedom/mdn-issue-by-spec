@@ -22,8 +22,6 @@
   
 * [\[html\] Mention how to obtain coordinates of image for area#coords](https://github.com/mdn/content/issues/37469) (2025-01-02T06:40:37Z)
   
-* [\[html\] Window: external property missing \`getHostEnvironmentValue\` entry](https://github.com/mdn/content/issues/37198) (2024-12-13T03:22:46Z)
-  
 * [\[html\] Add documentation of new dialog light dismiss behaviors](https://github.com/mdn/content/issues/37196) (2024-12-13T00:40:54Z)
   
 * [\[html\] Add accessibility considerations to the HTML "autocomplete" attribute page](https://github.com/mdn/content/issues/37170) (2024-12-10T18:43:41Z)
@@ -53,8 +51,6 @@
 * [\[html\] Whitespace is not insignificant in HTMLImageElement.srcset](https://github.com/mdn/content/issues/35492) (2024-08-17T15:44:16Z)
   
 * [\[html, dom, uievents\] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not](https://github.com/mdn/content/issues/35382) (2024-08-09T02:19:02Z)
-  
-* [\[dom\] Element.shadowRoot should note browser shadow roots aren't accessible](https://github.com/mdn/content/issues/35286) (2024-08-02T19:32:27Z)
   
 * [\[html\] HTMLMediaElement.currentTime: precision seems different from Date.now](https://github.com/mdn/content/issues/35239) (2024-07-30T09:34:47Z)
   
@@ -107,8 +103,6 @@
 * [\[html\] HTMLMediaElement: suspend: Improve wording on what it means to be suspended](https://github.com/mdn/content/issues/26625) (2023-05-07T04:43:55Z)
   
 * [\[html\] Image request fired as soon as src is set](https://github.com/mdn/content/issues/26560) (2023-05-03T17:23:34Z)
-  
-* [\[xhr\] xhr.abort is inaccurate](https://github.com/mdn/content/issues/23961) (2023-01-29T01:52:09Z)
   
 * [\[html\] document-domain feature policy is being removed](https://github.com/mdn/content/issues/22732) (2022-12-05T04:44:41Z)
   

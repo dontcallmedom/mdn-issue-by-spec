@@ -12,8 +12,6 @@
   
 * [\[html, dom, uievents\] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not](https://github.com/mdn/content/issues/35382) (2024-08-09T02:19:02Z)
   
-* [\[dom\] Element.shadowRoot should note browser shadow roots aren't accessible](https://github.com/mdn/content/issues/35286) (2024-08-02T19:32:27Z)
-  
 * [\[dom\] Chrome has XMLNS as default namespace](https://github.com/mdn/content/issues/29660) (2023-10-16T08:39:40Z)
   
 * [\[html, dom, cssom-view-1, uievents, pointerlock-2, selection-api, page-visibility-2\] Keydown, keyup, keypress pages should mention they work on document, body, etc](https://github.com/mdn/content/issues/28561) (2023-08-14T20:14:56Z)

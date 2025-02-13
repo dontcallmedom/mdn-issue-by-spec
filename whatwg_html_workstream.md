@@ -20,8 +20,6 @@
   
 * [\[html\] Mention how to obtain coordinates of image for area#coords](https://github.com/mdn/content/issues/37469) (2025-01-02T06:40:37Z)
   
-* [\[html\] Window: external property missing \`getHostEnvironmentValue\` entry](https://github.com/mdn/content/issues/37198) (2024-12-13T03:22:46Z)
-  
 * [\[html\] Add documentation of new dialog light dismiss behaviors](https://github.com/mdn/content/issues/37196) (2024-12-13T00:40:54Z)
   
 * [\[html\] Add accessibility considerations to the HTML "autocomplete" attribute page](https://github.com/mdn/content/issues/37170) (2024-12-10T18:43:41Z)
