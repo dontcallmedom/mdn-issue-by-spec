@@ -56,8 +56,6 @@
   
 * [\[appmanifest\] IsStandaloneContent does not work with \`display: fullscreen\` in Chrome Android](https://github.com/mdn/content/issues/34928) (2024-07-19T15:53:57Z)
   
-* [\[html, uievents\] \`onerror\` (and others) missing from HTMLBodyElement "Event Handlers" section](https://github.com/mdn/content/issues/34684) (2024-07-07T17:44:00Z)
-  
 * [\[cssom-view-1\] document.caretPositionFromPoint() API needs update](https://github.com/mdn/content/issues/34492) (2024-06-28T18:22:16Z)
   
 * [\[html, FileAPI\] Live examples using window.open are broken](https://github.com/mdn/content/issues/34350) (2024-06-22T21:35:10Z)
@@ -85,8 +83,6 @@
 * [\[cssom-view-1\] Include detailed information about scaling on window.devicePixelRatio reference page](https://github.com/mdn/content/issues/29682) (2023-10-17T10:43:43Z)
   
 * [\[webrtc\] RTCDataChannel bufferedamountlow event not sent if the threshold is 0?](https://github.com/mdn/content/issues/29087) (2023-09-13T08:47:28Z)
-  
-* [\[html, dom, cssom-view-1, uievents, pointerlock-2, selection-api, page-visibility-2\] Keydown, keyup, keypress pages should mention they work on document, body, etc](https://github.com/mdn/content/issues/28561) (2023-08-14T20:14:56Z)
   
 * [\[selection-api\] Correct and split "How whitespace is handled by HTML, CSS, and in the DOM"](https://github.com/mdn/content/issues/28268) (2023-07-30T09:11:04Z)
   
@@ -131,8 +127,6 @@
 * [\[css-align-3\] Content suggestion: display owns CSS shorthand property.](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
   
 * [\[IndexedDB-3\] indexedDB.deleteDatabase doc: Mention that deleting a database isn't completed until the upgradeNeeded result is closed](https://github.com/mdn/content/issues/20368) (2022-09-07T00:12:45Z)
-  
-* [\[html, cssom-view-1\] \[GEH\] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
   
 * [\[uievents\] Event references should list bubbles, cancelable, and composed values](https://github.com/mdn/content/issues/19590) (2022-08-15T13:38:07Z)
   

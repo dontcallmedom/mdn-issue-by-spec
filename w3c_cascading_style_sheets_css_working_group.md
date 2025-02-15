@@ -32,8 +32,6 @@
   
 * [\[cssom-view-1\] Include detailed information about scaling on window.devicePixelRatio reference page](https://github.com/mdn/content/issues/29682) (2023-10-17T10:43:43Z)
   
-* [\[html, dom, cssom-view-1, uievents, pointerlock-2, selection-api, page-visibility-2\] Keydown, keyup, keypress pages should mention they work on document, body, etc](https://github.com/mdn/content/issues/28561) (2023-08-14T20:14:56Z)
-  
 * [\[css-typed-om-2\] CSSMathNegate() constructor page is a stub](https://github.com/mdn/content/issues/28118) (2023-07-22T02:25:00Z)
   
 * [\[dom, cssom-view-1, uievents, pointerlock-2, pointerevents3, fullscreen, DOM-Parsing\] MouseDown & MouseUp event articles should compare them to PointerDown & PointerUp ](https://github.com/mdn/content/issues/27878) (2023-07-11T08:38:52Z)
@@ -43,8 +41,6 @@
 * [\[filter-effects-2\] feGaussianBlur needs guidance about setting height and width ](https://github.com/mdn/content/issues/24169) (2023-02-04T21:15:51Z)
   
 * [\[css-align-3\] Content suggestion: display owns CSS shorthand property.](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
-  
-* [\[html, cssom-view-1\] \[GEH\] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
   
 * [\[selectors-4\] \`:any-link\` privacy exception not explained](https://github.com/mdn/content/issues/17366) (2022-06-17T02:50:38Z)
   

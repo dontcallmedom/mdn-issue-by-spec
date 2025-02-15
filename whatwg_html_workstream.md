@@ -40,8 +40,6 @@
   
 * [\[html\] Improve \`messageerror\` example to show a case in which the event is fired](https://github.com/mdn/content/issues/35064) (2024-07-25T16:05:45Z)
   
-* [\[html, uievents\] \`onerror\` (and others) missing from HTMLBodyElement "Event Handlers" section](https://github.com/mdn/content/issues/34684) (2024-07-07T17:44:00Z)
-  
 * [\[html\] Usage notes has misleading instructions for \`\<menu\>\` element](https://github.com/mdn/content/issues/34476) (2024-06-28T07:04:22Z)
   
 * [\[html, FileAPI\] Live examples using window.open are broken](https://github.com/mdn/content/issues/34350) (2024-06-22T21:35:10Z)
@@ -60,10 +58,6 @@
   
 * [\[html\] Document img auto-sizes](https://github.com/mdn/content/issues/30596) (2023-11-28T10:39:06Z)
   
-* [\[html\] Document false negatives for navigator.onLine property ](https://github.com/mdn/content/issues/30402) (2023-11-20T10:49:44Z)
-  
-* [\[html, dom, cssom-view-1, uievents, pointerlock-2, selection-api, page-visibility-2\] Keydown, keyup, keypress pages should mention they work on document, body, etc](https://github.com/mdn/content/issues/28561) (2023-08-14T20:14:56Z)
-  
 * [\[html\] Create a \`form\` attribute page](https://github.com/mdn/content/issues/28375) (2023-08-03T18:28:41Z)
   
 * [\[html\] HTMLImageElement.srcset: sizes attribute doesn't need to be present](https://github.com/mdn/content/issues/27291) (2023-06-12T21:33:46Z)
@@ -77,8 +71,6 @@
 * [\[html, uievents\] Document.activeElement : The lack of HTMLAnchorElement and macOS on a case by case basis](https://github.com/mdn/content/issues/22338) (2022-11-16T13:47:01Z)
   
 * [\[html\] Add documentation for \<video posterloading=lazy\>](https://github.com/mdn/content/issues/21912) (2022-10-28T12:20:13Z)
-  
-* [\[html, cssom-view-1\] \[GEH\] The scroll event isn't referenced as firing on Window anymore](https://github.com/mdn/content/issues/19699) (2022-08-18T11:52:38Z)
   
 * [\[html\] Missing info of copying sessionStorage on creating new context](https://github.com/mdn/content/issues/18323) (2022-07-13T16:09:36Z)
   
