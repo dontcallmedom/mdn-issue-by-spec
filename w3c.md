@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[cssom-1\] Broken Link (404) for "DASH Adaptive Streaming for HTML 5 Video"](https://github.com/mdn/content/issues/38169) (2025-02-15T15:41:57Z)
-  
 * [\[SVG11\] SVG tutorial recommends deprecated custom font method](https://github.com/mdn/content/issues/38103) (2025-02-11T10:30:30Z)
   
 * [\[SVG11\] SVG examples should be written in proper XML syntax](https://github.com/mdn/content/issues/37761) (2025-01-22T23:39:56Z)
