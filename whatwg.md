@@ -88,8 +88,6 @@
   
 * [\[html\] document-domain feature policy is being removed](https://github.com/mdn/content/issues/22732) (2022-12-05T04:44:41Z)
   
-* [\[html, uievents\] Document.activeElement : The lack of HTMLAnchorElement and macOS on a case by case basis](https://github.com/mdn/content/issues/22338) (2022-11-16T13:47:01Z)
-  
 * [\[html\] Add documentation for \<video posterloading=lazy\>](https://github.com/mdn/content/issues/21912) (2022-10-28T12:20:13Z)
   
 * [\[html\] Missing info of copying sessionStorage on creating new context](https://github.com/mdn/content/issues/18323) (2022-07-13T16:09:36Z)
