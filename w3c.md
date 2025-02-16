@@ -58,8 +58,6 @@
   
 * [\[html, FileAPI\] Live examples using window.open are broken](https://github.com/mdn/content/issues/34350) (2024-06-22T21:35:10Z)
   
-* [\[css-color-4\] Interpolating colors from different spaces: analogous components](https://github.com/mdn/content/issues/34229) (2024-06-17T18:47:04Z)
-  
 * [\[webauthn-3\] Webauthn latest specs](https://github.com/mdn/content/issues/34167) (2024-06-14T14:21:13Z)
   
 * [\[hr-time-3\] What are the ramifications of \`performance.now()\` bugs?](https://github.com/mdn/content/issues/33760) (2024-05-26T19:52:08Z)

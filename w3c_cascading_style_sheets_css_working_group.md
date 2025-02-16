@@ -20,8 +20,6 @@
   
 * [\[cssom-view-1\] document.caretPositionFromPoint() API needs update](https://github.com/mdn/content/issues/34492) (2024-06-28T18:22:16Z)
   
-* [\[css-color-4\] Interpolating colors from different spaces: analogous components](https://github.com/mdn/content/issues/34229) (2024-06-17T18:47:04Z)
-  
 * [\[css-shadow-parts-1\] Incorrect statement about pseudo-elements needing to come last in a selector](https://github.com/mdn/content/issues/32971) (2024-04-05T20:16:52Z)
   
 * [\[css-backgrounds-4\] No information on border-color  \<stripes()\>](https://github.com/mdn/content/issues/32234) (2024-02-12T07:33:50Z)
