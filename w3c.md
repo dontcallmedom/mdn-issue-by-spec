@@ -4,8 +4,6 @@
 
 * [\[css-color-adjust-1\] CSS color-sheme article should mention HTML color-scheme value for meta element](https://github.com/mdn/content/issues/38182) (2025-02-16T17:49:46Z)
   
-* [\[SVG11\] SVG tutorial recommends deprecated custom font method](https://github.com/mdn/content/issues/38103) (2025-02-11T10:30:30Z)
-  
 * [\[SVG11\] SVG examples should be written in proper XML syntax](https://github.com/mdn/content/issues/37761) (2025-01-22T23:39:56Z)
   
 * [\[credential-management-1\] CredentialsContainer.get() may also throw when the action is cancelled](https://github.com/mdn/content/issues/37728) (2025-01-20T19:01:25Z)
@@ -77,8 +75,6 @@
 * [\[css-backgrounds-4\] No information on border-color  \<stripes()\>](https://github.com/mdn/content/issues/32234) (2024-02-12T07:33:50Z)
   
 * [\[selectors-4\] :blank is also a blank page pseudo-class](https://github.com/mdn/content/issues/31885) (2024-01-24T10:43:17Z)
-  
-* [\[cssom-view-1\] Include detailed information about scaling on window.devicePixelRatio reference page](https://github.com/mdn/content/issues/29682) (2023-10-17T10:43:43Z)
   
 * [\[webrtc\] RTCDataChannel bufferedamountlow event not sent if the threshold is 0?](https://github.com/mdn/content/issues/29087) (2023-09-13T08:47:28Z)
   

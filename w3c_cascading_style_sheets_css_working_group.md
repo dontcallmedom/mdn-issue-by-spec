@@ -28,8 +28,6 @@
   
 * [\[selectors-4\] :blank is also a blank page pseudo-class](https://github.com/mdn/content/issues/31885) (2024-01-24T10:43:17Z)
   
-* [\[cssom-view-1\] Include detailed information about scaling on window.devicePixelRatio reference page](https://github.com/mdn/content/issues/29682) (2023-10-17T10:43:43Z)
-  
 * [\[css-typed-om-2\] CSSMathNegate() constructor page is a stub](https://github.com/mdn/content/issues/28118) (2023-07-22T02:25:00Z)
   
 * [\[cssom-view-1\] Guide on reflow and performance optimizations](https://github.com/mdn/content/issues/26330) (2023-04-21T01:08:41Z)
