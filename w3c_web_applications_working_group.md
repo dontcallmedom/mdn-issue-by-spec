@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[FileAPI\] Support for dwg mime type](https://github.com/mdn/content/issues/36998) (2024-11-27T11:24:03Z)
-  
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
   
 * [\[input-events-2\] dataTransfer is null](https://github.com/mdn/content/issues/36276) (2024-10-09T03:33:08Z)
