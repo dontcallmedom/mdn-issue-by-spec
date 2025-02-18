@@ -4,5 +4,3 @@
 
 * [\[webauthn-3\] Webauthn: getClientExtensionResults() returns a AuthenticationExtensionsClientOutputs, not a Map](https://github.com/mdn/content/issues/36673) (2024-11-06T11:36:55Z)
   
-* [\[webauthn-3\] Webauthn latest specs](https://github.com/mdn/content/issues/34167) (2024-06-14T14:21:13Z)
-  
