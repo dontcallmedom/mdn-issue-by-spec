@@ -4,10 +4,42 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Wed, 19 Feb 2025 04:00:08 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 19 Feb 2025 17:20:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Return value specification for String.split() is wrong.]]></title>
+            <link>https://github.com/mdn/content/issues/38235</link>
+            <guid>https://github.com/mdn/content/issues/38235</guid>
+            <pubDate>Wed, 19 Feb 2025 17:20:41 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Return value</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">It says literally:</p>
+<p dir="auto">An <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" rel="nofollow">Array</a> of strings, split at each point where the separator occurs in the given string.</p>
+<p dir="auto">But this is wrong for a regex argument with groups. It cannot be that this is not mentioned here where the return value is specified, but only in some "examples". This is an absolutely important fact that must not be hidden in examples which the more intelligent readers do not read if they have already understood the abstract definitions. Please change the specification of the return value! It cost me hours because I had no clue that the result contains also the values of groups. I was totally desparated because not even the type was correct. The array contained undefined instead of strings because I used (\r)|(\n).</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">If the argument is a string, the return value is an array of strings into which the string has been split by the string in the argument. Otherwise, if the argument is a regexp, it depends if the regexp contains groups. If it does contain groups, the result is a sequence of the strings into which the original string has been split by the regexp and between these, for each group in the regexp. If a group in the regexp is not used because it is part of an alternative, and the other alternative does match, the array contains undefined for this group. See more details in the examples.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/string/split</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/string/split/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/string/split/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2982fcbb31c65f324a80fd9cec516a81d4793cd4/hovercard" href="https://github.com/mdn/content/commit/2982fcbb31c65f324a80fd9cec516a81d4793cd4"><tt>2982fcb</tt></a></li>
+<li>Document last modified: 2025-02-11T14:16:45.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] "Destructuring assignment": Need better introduction to object-destructuring syntax]]></title>
             <link>https://github.com/mdn/content/issues/38224</link>

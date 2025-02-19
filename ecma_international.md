@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International. [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[ecmascript\] Return value specification for String.split() is wrong.](https://github.com/mdn/content/issues/38235) (2025-02-19T17:20:41Z)
+  
 * [\[ecmascript\] "Destructuring assignment": Need better introduction to object-destructuring syntax](https://github.com/mdn/content/issues/38224) (2025-02-19T04:00:08Z)
   
 * [\[ecmascript\] Yielding rejected promises from a sync generator now properly closes the iterator](https://github.com/mdn/content/issues/37038) (2024-12-01T10:22:47Z)
