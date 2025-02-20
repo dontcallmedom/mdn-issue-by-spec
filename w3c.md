@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, uievents\] The page on the error event should explain that errors in promises trigger an unhandledrejection event instead](https://github.com/mdn/content/issues/38246) (2025-02-20T02:20:46Z)
+  
 * [\[css-color-adjust-1\] CSS color-sheme article should mention HTML color-scheme value for meta element](https://github.com/mdn/content/issues/38182) (2025-02-16T17:49:46Z)
   
 * [\[SVG11\] SVG examples should be written in proper XML syntax](https://github.com/mdn/content/issues/37761) (2025-01-22T23:39:56Z)

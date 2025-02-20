@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, uievents\] The page on the error event should explain that errors in promises trigger an unhandledrejection event instead](https://github.com/mdn/content/issues/38246) (2025-02-20T02:20:46Z)
+  
 * [\[html\] Add \`colorType\` documentation to \`CanvasRenderingContext2DSettings\`](https://github.com/mdn/content/issues/38087) (2025-02-10T15:06:09Z)
   
 * [\[html\] Clarify image.decode() failure on lazy-loaded images](https://github.com/mdn/content/issues/38034) (2025-02-08T00:22:15Z)

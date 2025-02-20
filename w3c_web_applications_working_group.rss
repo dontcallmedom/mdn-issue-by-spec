@@ -4,10 +4,126 @@
         <title>W3C Web Applications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_applications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Applications Working Group</description>
-        <lastBuildDate>Thu, 07 Nov 2024 19:25:18 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 20 Feb 2025 02:20:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html, uievents] The page on the error event should explain that errors in promises trigger an unhandledrejection event instead]]></title>
+            <link>https://github.com/mdn/content/issues/38246</link>
+            <guid>https://github.com/mdn/content/issues/38246</guid>
+            <pubDate>Thu, 20 Feb 2025 02:20:46 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/error_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/error_event</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The article on the <code class="notranslate">error</code> event states that the event is fired when script errors occur, and the article's code example demonstrates this using a script error. However, the article makes no mention of the fact that this only applies to errors in non-<code class="notranslate">async</code> JavaScript functions.</p>
+<p dir="auto">When an error halts execution of an <code class="notranslate">async</code> JavaScript function, this is treated as a rejection of the promise tied to the function's execution, with the error object being the rejection reason. If the async function has no handlers attached, then this triggers an <code class="notranslate">unhandledrejection</code> event. To catch errors that occur in async execution, then, you'd need something like this:</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="window.addEventListener(&quot;unhandledrejection&quot;, function(e) {
+   if (!(e instanceof Error))
+      return;
+   // do stuff here
+});"><pre class="notranslate"><span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"unhandledrejection"</span><span class="pl-kos">,</span> <span class="pl-k">function</span><span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+   <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-c1">!</span><span class="pl-kos">(</span><span class="pl-s1">e</span> <span class="pl-k">instanceof</span> <span class="pl-v">Error</span><span class="pl-kos">)</span><span class="pl-kos">)</span>
+      <span class="pl-k">return</span><span class="pl-kos">;</span>
+   <span class="pl-c">// do stuff here</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<ul dir="auto">
+<li>Up-front clarification of the fact that <code class="notranslate">error</code> is only for synchronous code and <code class="notranslate">unhandledrejection</code> is needed for errors in <code class="notranslate">async</code> code, preferably in one of those little red-colored boxes MDN uses for warnings and caveats.</li>
+<li>A link to <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/unhandledrejection_event" rel="nofollow">the latter's article</a> in the "See also" list.</li>
+</ul>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">GitHub doesn't allow uploading HTML files, so if you want a quick demonstration, here you go:</p>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;!doctype html&gt;
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;script&gt;
+window.addEventListener(&quot;error&quot;, function(e) {
+   console.group(&quot;Received ErrorEvent&quot;);
+   console.log(&quot;Error: &quot;, e.error);
+   console.groupEnd();
+});
+window.addEventListener(&quot;unhandledrejection&quot;, function(e) {
+   console.group(&quot;Received unhandledrejection event&quot;);
+   console.log(&quot;Reason: &quot;, e.reason);
+   console.groupEnd();
+});
+
+window.setTimeout(
+   function synchronous_thrower() {
+      throw new Error(&quot;Synchronous error, behind a timeout!&quot;);
+   },
+   1
+);
+
+(async function asynchronous_thrower() {
+   throw new Error(&quot;Asynchronous error!&quot;);
+})();
+
+window.setTimeout(
+   async function synchronous_thrower() {
+      throw new Error(&quot;Asynchronous error, behind a timeout!&quot;);
+   },
+   1
+);
+
+throw new Error(&quot;Synchronous error!&quot;);
+      &lt;/script&gt;
+   &lt;/body&gt;
+&lt;/html&gt;"><pre class="notranslate"><span class="pl-c1">&lt;!doctype html<span class="pl-kos">&gt;</span></span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span>
+   <span class="pl-kos">&lt;</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
+      <span class="pl-kos">&lt;</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span>
+<span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"error"</span><span class="pl-kos">,</span> <span class="pl-k">function</span><span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+   <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">group</span><span class="pl-kos">(</span><span class="pl-s">"Received ErrorEvent"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+   <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"Error: "</span><span class="pl-kos">,</span> <span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">error</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+   <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">groupEnd</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"unhandledrejection"</span><span class="pl-kos">,</span> <span class="pl-k">function</span><span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+   <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">group</span><span class="pl-kos">(</span><span class="pl-s">"Received unhandledrejection event"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+   <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"Reason: "</span><span class="pl-kos">,</span> <span class="pl-s1">e</span><span class="pl-kos">.</span><span class="pl-c1">reason</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+   <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">groupEnd</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+<span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-en">setTimeout</span><span class="pl-kos">(</span>
+   <span class="pl-k">function</span> <span class="pl-en">synchronous_thrower</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+      <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-v">Error</span><span class="pl-kos">(</span><span class="pl-s">"Synchronous error, behind a timeout!"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+   <span class="pl-kos">}</span><span class="pl-kos">,</span>
+   <span class="pl-c1">1</span>
+<span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+<span class="pl-kos">(</span><span class="pl-k">async</span> <span class="pl-k">function</span> <span class="pl-en">asynchronous_thrower</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+   <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-v">Error</span><span class="pl-kos">(</span><span class="pl-s">"Asynchronous error!"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+<span class="pl-smi">window</span><span class="pl-kos">.</span><span class="pl-en">setTimeout</span><span class="pl-kos">(</span>
+   <span class="pl-k">async</span> <span class="pl-k">function</span> <span class="pl-en">synchronous_thrower</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+      <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-v">Error</span><span class="pl-kos">(</span><span class="pl-s">"Asynchronous error, behind a timeout!"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+   <span class="pl-kos">}</span><span class="pl-kos">,</span>
+   <span class="pl-c1">1</span>
+<span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+<span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-v">Error</span><span class="pl-kos">(</span><span class="pl-s">"Synchronous error!"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+      <span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span>
+   <span class="pl-kos">&lt;/</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span></pre></div>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/window/error_event</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/error_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/error_event</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/error_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/error_event/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e472a1caa80ace5959961f741fec330a9e61b672/hovercard" href="https://github.com/mdn/content/commit/e472a1caa80ace5959961f741fec330a9e61b672"><tt>e472a1c</tt></a></li>
+<li>Document last modified: 2024-09-11T19:09:54.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, uievents] Inconsistency in dragover event timing information]]></title>
             <link>https://github.com/mdn/content/issues/36689</link>
