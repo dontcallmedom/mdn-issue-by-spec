@@ -1075,40 +1075,6 @@ Note: When <code class="notranslate">source</code> element specified, it (not vi
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Event not called for modification on sessionStorage]]></title>
-            <link>https://github.com/mdn/content/issues/30598</link>
-            <guid>https://github.com/mdn/content/issues/30598</guid>
-            <pubDate>Tue, 28 Nov 2023 11:28:49 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/storage_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/storage_event</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">First section</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">It is claimed that the storage event is also called on other tabs when the sessionStorage is changed.<br>
-A quick test shows that this is not true or there is missing information (such as the sessionStorage must have been cloned from the original one, etc.).</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Either the text should be fixed that sessionStorage doesn't cause the event to trigger or the circumstances need to be added in which cases this happens.<br>
-I was not able to get the storage event fired for sessionStorage (but it was pretty easy for localStorage).</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">Other people have the same problem, too:<br>
-<a href="https://stackoverflow.com/questions/10260108/how-do-i-bind-event-to-sessionstorage" rel="nofollow">https://stackoverflow.com/questions/10260108/how-do-i-bind-event-to-sessionstorage</a><br>
-They also suppose that this doesn't work, because sessionStorage is exclusive per tab.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/window/storage_event</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/storage_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/storage_event</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/storage_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/storage_event/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/f3d7279adacec6a00d66551fff1ad03a4dc45046/hovercard" href="https://github.com/mdn/content/commit/f3d7279adacec6a00d66551fff1ad03a4dc45046"><tt>f3d7279</tt></a></li>
-<li>Document last modified: 2023-10-12T17:16:07.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Document img auto-sizes]]></title>
             <link>https://github.com/mdn/content/issues/30596</link>
             <guid>https://github.com/mdn/content/issues/30596</guid>
@@ -1313,46 +1279,6 @@ They also suppose that this doesn't work, because sessionStorage is exclusive pe
 <p dir="auto"><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1422515390" data-permission-text="Title is private" data-url="https://github.com/whatwg/html/issues/8428" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/html/pull/8428/hovercard" href="https://github.com/whatwg/html/pull/8428">whatwg/html#8428</a></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[html] Missing info of copying sessionStorage on creating new context]]></title>
-            <link>https://github.com/mdn/content/issues/18323</link>
-            <guid>https://github.com/mdn/content/issues/18323</guid>
-            <pubDate>Wed, 13 Jul 2022 16:09:36 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">In the <a href="https://html.spec.whatwg.org/multipage/webstorage.html#the-sessionstorage-attribute" rel="nofollow">HTML Living standard - webstorage under sessionStorage getter</a> there is a note mentioning that there is a case when the content of the sessionStorage is copied to a new context. I think this edge case is not mentioned in the page, or not highlighted enough.<br>
-The only content which mentions this behavior is the following sentence:</p>
-<blockquote>
-<p dir="auto">Opening a page in a new tab or window creates a new session with the value of the top-level browsing context, which differs from how session cookies work.</p>
-</blockquote>
-<p dir="auto">I think this is ambiguous and does not highlight nor the copy of the content of the sessionStorage, nether the disconnect between the two sessionStorage and the "top-level browsing context" may not highlight the source of the copied sessionStorage as this is not a day-to-day expression devs may use.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">I would love to see a subsection dedicated to this behavior with the following content:</p>
-<ul dir="auto">
-<li>in what cases the content of sessionStorage copied (e.g. open a new page with <code class="notranslate">window.open</code>, iframes, etc)</li>
-<li>mentions the disconnect between the contents of the two sessionStorage, so if the subpage changes the copied content, it does not applies to the source page's content</li>
-<li>list the way of how to prevent the copy of sessionStorage (e.g. use noopener flag)</li>
-</ul>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">I love MDN, I love the content, I love what you did and do there. Keep up the good work!</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/window/sessionstorage</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/sessionstorage/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/sessionstorage/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cc1f5c3bd1a9976a0668eeee016f6afc144533b0/hovercard" href="https://github.com/mdn/content/commit/cc1f5c3bd1a9976a0668eeee016f6afc144533b0"><tt>cc1f5c3</tt></a></li>
-<li>Document last modified: 2022-06-03T04:32:25.000Z</li>
-</ul>
-</details>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[html, gamepad] Double checking the gamepad docs are correct]]></title>
