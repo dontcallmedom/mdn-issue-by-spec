@@ -4,10 +4,44 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Thu, 20 Feb 2025 02:20:46 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 22 Feb 2025 21:13:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] HTMLMediaElement currentTime throws only on audio element when out of range]]></title>
+            <link>https://github.com/mdn/content/issues/38291</link>
+            <guid>https://github.com/mdn/content/issues/38291</guid>
+            <pubDate>Sat, 22 Feb 2025 21:13:17 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/currentTime" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/currentTime</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">currentTime#Value</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Hello,</p>
+<p dir="auto">I think this document is missing an important part that setting current time out of expected range (ex; &gt;= duration)  will throw a "PIPELINE_ERROR_READ: FFmpegDemuxer: demuxer seek failed" error.<br>
+Also this only seems to happen for audio elements and not for video elements</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Something like<br>
+Warning: This property expects the value to be in the clip range and it will throw the following error if it's out of range... "PIPELINE_ERROR_READ: FFmpegDemuxer: demuxer seek failed"</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Sample code (for an audio with duration &lt; 5 sec):</p>
+<p dir="auto"><code class="notranslate">audioElement.currentTime=5;</code></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/htmlmediaelement/currenttime</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/currentTime" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/currentTime</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlmediaelement/currenttime/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlmediaelement/currenttime/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/3b5a1c0dfd59257c0a51052a9efa7b0108f8ecca/hovercard" href="https://github.com/mdn/content/commit/3b5a1c0dfd59257c0a51052a9efa7b0108f8ecca"><tt>3b5a1c0</tt></a></li>
+<li>Document last modified: 2024-07-04T22:52:34.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, uievents] The page on the error event should explain that errors in promises trigger an unhandledrejection event instead]]></title>
             <link>https://github.com/mdn/content/issues/38246</link>
