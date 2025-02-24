@@ -1173,44 +1173,6 @@ Thrown if the source object is not a ReadableStreamDefaultController.</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Usage notes has misleading instructions for `<menu>` element]]></title>
-            <link>https://github.com/mdn/content/issues/34476</link>
-            <guid>https://github.com/mdn/content/issues/34476</guid>
-            <pubDate>Fri, 28 Jun 2024 07:04:22 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Usage Notes</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The line <em>"The key difference is that <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" rel="nofollow"><code class="notranslate">&lt;ul&gt;</code></a> primarily contains items for display, while <code class="notranslate">&lt;menu&gt;</code> was intended for interactive items."</em> - is misleading.</p>
-<ul dir="auto">
-<li>Interactive items on a webpage can also be links. But HTML spec says that <code class="notranslate">&lt;menu&gt;</code> represents a toolbar: <em>"The <a href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-menu-element" rel="nofollow">menu</a> element is simply a semantic alternative to <a href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element" rel="nofollow">ul</a> to express an unordered list of commands (a "toolbar")."</em> Links are not commands, they are interactive elements.</li>
-<li>The problem is that if we say <em><code class="notranslate">&lt;menu&gt;</code> was intended for interactive items</em>, then we should be using <code class="notranslate">&lt;menu&gt;</code> instead of <code class="notranslate">&lt;ul&gt;</code> (or , maybe, <code class="notranslate">&lt;ol&gt;</code>) inside <code class="notranslate">&lt;nav&gt;</code> elements as it would be semantically appropriate - here, by <code class="notranslate">&lt;nav&gt;</code> I'm referring to the navigation bar which contains navigation links.</li>
-<li>If <code class="notranslate">&lt;menu&gt;</code> <strong>should</strong> be used inside <code class="notranslate">&lt;nav&gt;</code> then please update the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav#examples" rel="nofollow">examples</a> of <code class="notranslate">&lt;nav&gt;</code> element (MDN's documentation) by replacing <code class="notranslate">&lt;ul&gt;</code>s with <code class="notranslate">&lt;menu&gt;</code>s.</li>
-</ul>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Either the line <em>"The key difference is that <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" rel="nofollow"><code class="notranslate">&lt;ul&gt;</code></a> primarily contains items for display, while <code class="notranslate">&lt;menu&gt;</code> was intended for interactive items."</em> should be updated/corrected or the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav#examples" rel="nofollow">examples</a> of <code class="notranslate">&lt;nav&gt;</code> element be updated (as mentioned above).</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<ul dir="auto">
-<li><a href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-menu-element" rel="nofollow">HTML Spec for <code class="notranslate">&lt;menu&gt;</code> element</a></li>
-<li>Please have a look at the disagreeing comments in the approved answer and also the second answer of this Stackoverflow question: <a href="https://stackoverflow.com/questions/76332404/is-it-correct-to-use-the-menu-element-as-navigation" rel="nofollow">Is it correct to use the <code class="notranslate">&lt;menu&gt;</code> element as navigation?</a></li>
-</ul>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/html/element/menu</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/menu/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/menu/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/829db137a01feb14af7beaec178a3ea0118b4777/hovercard" href="https://github.com/mdn/content/commit/829db137a01feb14af7beaec178a3ea0118b4777"><tt>829db13</tt></a></li>
-<li>Document last modified: 2024-03-25T18:37:02.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html, mediacapture-streams] Unclear example of MediaStream: getTrackById() method]]></title>
             <link>https://github.com/mdn/content/issues/33310</link>
             <guid>https://github.com/mdn/content/issues/33310</guid>

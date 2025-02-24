@@ -54,8 +54,6 @@
   
 * [\[ecmascript, streams\] ReadableStreamDefaultController: undocumented error conditions](https://github.com/mdn/content/issues/34597) (2024-07-03T14:49:56Z)
   
-* [\[html\] Usage notes has misleading instructions for \`\<menu\>\` element](https://github.com/mdn/content/issues/34476) (2024-06-28T07:04:22Z)
-  
 * [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
   
 * [\[html\] Video/Audio source event handling](https://github.com/mdn/content/issues/32784) (2024-03-21T15:30:15Z)
