@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-masking-1, css-shapes-2\] Broken example for clit-path rect](https://github.com/mdn/content/issues/38299) (2025-02-24T06:47:52Z)
+  
 * [\[SVG11\] \<svg\> tag \<use xlink:href\> needs to be in the docs](https://github.com/mdn/content/issues/38298) (2025-02-24T06:37:09Z)
   
 * [\[mediacapture-streams\] MediaTrackCapabilities properties are string\[\]/boolean\[\]/DoubleRange/ULongRange, not ConstrainDOMString/ConstrainBoolean/ConstrainDouble/ConstrainULong](https://github.com/mdn/content/issues/38249) (2025-02-20T04:20:50Z)
