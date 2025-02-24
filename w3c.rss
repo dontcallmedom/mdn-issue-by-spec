@@ -4,10 +4,50 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Thu, 20 Feb 2025 04:20:50 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 24 Feb 2025 06:37:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[SVG11] <svg> tag <use xlink:href> needs to be in the docs]]></title>
+            <link>https://github.com/mdn/content/issues/38298</link>
+            <guid>https://github.com/mdn/content/issues/38298</guid>
+            <pubDate>Mon, 24 Feb 2025 06:37:09 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/SVG" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/SVG</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Make an article explicitly for embedding SVGs into an SVG tag. SVG tag is better than <a target="_blank" rel="noopener noreferrer" href=""><img style="max-width: 100%;"></a> tag for applying colors to other people's SVGs.</p>
+<p dir="auto">What's the first thing someone's going to do with HTML? Include someone else's SVG icon in their website. This information should be front and center in the SVG examples.</p>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;svg&gt;
+
+  &lt;use xlink:href=&quot;https://yourdomain.com/path/to/your-icon.svg#icon-name&quot; /&gt;
+
+&lt;/svg&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">svg</span><span class="pl-kos">&gt;</span>
+
+  <span class="pl-kos">&lt;</span><span class="pl-ent">use</span> <span class="pl-c1">xlink:href</span>="<span class="pl-s">https://yourdomain.com/path/to/your-icon.svg#icon-name</span>" <span class="pl-kos">/&gt;</span>
+
+<span class="pl-kos">&lt;/</span><span class="pl-ent">svg</span><span class="pl-kos">&gt;</span></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">An article explicitly for embedding SVGs into an SVG tag.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">AI, and some random dude on Reddit/StackOverflow</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Yeah, do it, because this is what people need to see. This is the true use case for SVGs. Few people will make their own. More people will embed someone else's.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/svg</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/SVG" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/SVG</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/svg/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/svg/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/d71da812ee94c20658cb1916a123a42254ea545c/hovercard" href="https://github.com/mdn/content/commit/d71da812ee94c20658cb1916a123a42254ea545c"><tt>d71da81</tt></a></li>
+<li>Document last modified: 2024-08-07T22:02:28.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[mediacapture-streams] MediaTrackCapabilities properties are string[]/boolean[]/DoubleRange/ULongRange, not ConstrainDOMString/ConstrainBoolean/ConstrainDouble/ConstrainULong]]></title>
             <link>https://github.com/mdn/content/issues/38249</link>
@@ -373,9 +413,9 @@ but the demo allows initial tab key press to go to the first tab, but then uses 
 <p dir="auto">Example in Result part</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">Example throws error:<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/76529048/397166202-7c0ec8fe-85a4-4007-96b4-340a056b6e9d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzgzMjIsIm5iZiI6MTc0MDM3ODAyMiwicGF0aCI6Ii83NjUyOTA0OC8zOTcxNjYyMDItN2MwZWM4ZmUtODVhNC00MDA3LTk2YjQtMzQwYTA1NmI2ZTlkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI0VDA2MjAyMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTlkMmQzNTgwYmJiM2VhZWI0ZGVhNDQ0OGFmNDhjNGU5MzgzYjM3OTE3YTUxMDE1ZTZmZDcyOTY0NDllYWRkNjcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.e06rhJxPyPCiixaJ2w8njrOceyk6AbDTqCeuGDc_aNs"><img src="https://private-user-images.githubusercontent.com/76529048/397166202-7c0ec8fe-85a4-4007-96b4-340a056b6e9d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzgzMjIsIm5iZiI6MTc0MDM3ODAyMiwicGF0aCI6Ii83NjUyOTA0OC8zOTcxNjYyMDItN2MwZWM4ZmUtODVhNC00MDA3LTk2YjQtMzQwYTA1NmI2ZTlkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI0VDA2MjAyMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTlkMmQzNTgwYmJiM2VhZWI0ZGVhNDQ0OGFmNDhjNGU5MzgzYjM3OTE3YTUxMDE1ZTZmZDcyOTY0NDllYWRkNjcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.e06rhJxPyPCiixaJ2w8njrOceyk6AbDTqCeuGDc_aNs" alt="image" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/76529048/397166202-7c0ec8fe-85a4-4007-96b4-340a056b6e9d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzk2NTgsIm5iZiI6MTc0MDM3OTM1OCwicGF0aCI6Ii83NjUyOTA0OC8zOTcxNjYyMDItN2MwZWM4ZmUtODVhNC00MDA3LTk2YjQtMzQwYTA1NmI2ZTlkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI0VDA2NDIzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU4M2NlZmE5MDU4M2MwZDUwYmJmMmE2NTBmZmEwMmNkZDNlOTljYjhlNjY0MmUwODI0ODUyMmRkOTMwZjE2OWMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.2zlSLotSa0JNtyj6egN5i63YTcyMtKMSZ9nvT3ykfUg"><img src="https://private-user-images.githubusercontent.com/76529048/397166202-7c0ec8fe-85a4-4007-96b4-340a056b6e9d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzk2NTgsIm5iZiI6MTc0MDM3OTM1OCwicGF0aCI6Ii83NjUyOTA0OC8zOTcxNjYyMDItN2MwZWM4ZmUtODVhNC00MDA3LTk2YjQtMzQwYTA1NmI2ZTlkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI0VDA2NDIzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU4M2NlZmE5MDU4M2MwZDUwYmJmMmE2NTBmZmEwMmNkZDNlOTljYjhlNjY0MmUwODI0ODUyMmRkOTMwZjE2OWMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.2zlSLotSa0JNtyj6egN5i63YTcyMtKMSZ9nvT3ykfUg" alt="image" style="max-width: 100%;"></a><br>
 It used to work on on edge: chromium 129.0.2792.65:<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/76529048/397166487-278e7bbd-3a36-44e1-82a7-67be715ef00b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzgzMjIsIm5iZiI6MTc0MDM3ODAyMiwicGF0aCI6Ii83NjUyOTA0OC8zOTcxNjY0ODctMjc4ZTdiYmQtM2EzNi00NGUxLTgyYTctNjdiZTcxNWVmMDBiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI0VDA2MjAyMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTEyMGJmMTIyYTk4MzE3ZGVhZDQxYjUzYTIyZThhNTRkNWRhNjFmM2I5NTI1OWNjZTYyYTQxMjk4MGNjODY3NjkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.CiJHxHLA3DPXb9q6xP5J6XTGV8i5oitjjPwG1OJrIT0"><img src="https://private-user-images.githubusercontent.com/76529048/397166487-278e7bbd-3a36-44e1-82a7-67be715ef00b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzgzMjIsIm5iZiI6MTc0MDM3ODAyMiwicGF0aCI6Ii83NjUyOTA0OC8zOTcxNjY0ODctMjc4ZTdiYmQtM2EzNi00NGUxLTgyYTctNjdiZTcxNWVmMDBiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI0VDA2MjAyMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTEyMGJmMTIyYTk4MzE3ZGVhZDQxYjUzYTIyZThhNTRkNWRhNjFmM2I5NTI1OWNjZTYyYTQxMjk4MGNjODY3NjkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.CiJHxHLA3DPXb9q6xP5J6XTGV8i5oitjjPwG1OJrIT0" alt="image" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/76529048/397166487-278e7bbd-3a36-44e1-82a7-67be715ef00b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzk2NTgsIm5iZiI6MTc0MDM3OTM1OCwicGF0aCI6Ii83NjUyOTA0OC8zOTcxNjY0ODctMjc4ZTdiYmQtM2EzNi00NGUxLTgyYTctNjdiZTcxNWVmMDBiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI0VDA2NDIzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY5NWQ4OWM2ZjFmNjM5YTI5NDMxYmM5ZjlhYTQ1M2Q0YzY2OWI4NWY1NGYzZjYzYjUxNTlhOTg1ZjY2ZWVkOTgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.XUY9kqaBRGg57P6_NBAJAPYOnXyLLopcwIwtdastre8"><img src="https://private-user-images.githubusercontent.com/76529048/397166487-278e7bbd-3a36-44e1-82a7-67be715ef00b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzk2NTgsIm5iZiI6MTc0MDM3OTM1OCwicGF0aCI6Ii83NjUyOTA0OC8zOTcxNjY0ODctMjc4ZTdiYmQtM2EzNi00NGUxLTgyYTctNjdiZTcxNWVmMDBiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI0VDA2NDIzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY5NWQ4OWM2ZjFmNjM5YTI5NDMxYmM5ZjlhYTQ1M2Q0YzY2OWI4NWY1NGYzZjYzYjUxNTlhOTg1ZjY2ZWVkOTgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.XUY9kqaBRGg57P6_NBAJAPYOnXyLLopcwIwtdastre8" alt="image" style="max-width: 100%;"></a></p>
 <p dir="auto">I am not sure whether the issue is related to iframes or something else, but the example doesn't work.</p>
 <p dir="auto">PS: Console error differs across browsers, firefox throws TypeError: stylesheet is undefined; while Chromium throws TypeError: Cannot read properties of undefined (reading 'cssRules')</p>
 <h3 dir="auto">What did you expect to see?</h3>
@@ -604,7 +644,7 @@ document.ondragover = ((e) =&gt; {
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">description of the <code class="notranslate">sizeAdjust</code> property</p>
 <p dir="auto">It does exist, see<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzgzMjIsIm5iZiI6MTc0MDM3ODAyMiwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI0VDA2MjAyMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE3NjZhZGU3NWNlYmE0Yjc3ZDNlMGZiNTRmOWM4MjIyZmFhN2JjMzhlOGY4OTgxMjZkNDhiNjNiMDhjZGFkOTMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.SChgOJcF_eXQmhkbSkf7pdjOveUiyyjhNyKAXKENuTI"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzgzMjIsIm5iZiI6MTc0MDM3ODAyMiwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI0VDA2MjAyMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE3NjZhZGU3NWNlYmE0Yjc3ZDNlMGZiNTRmOWM4MjIyZmFhN2JjMzhlOGY4OTgxMjZkNDhiNjNiMDhjZGFkOTMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.SChgOJcF_eXQmhkbSkf7pdjOveUiyyjhNyKAXKENuTI" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzk2NTgsIm5iZiI6MTc0MDM3OTM1OCwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI0VDA2NDIzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTBiY2YxZTdkMTRkZWFmM2UxN2Q3MjE5ZGE0M2UyMWJlMWRiODQ1MWM0YjAwYjgwYjBhODA4MTRmNDc0NjMxNzYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.sIC2JBhywpaFjC1fskAZWica2FFBAj6-kB-4_EkdNIM"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzk2NTgsIm5iZiI6MTc0MDM3OTM1OCwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI0VDA2NDIzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTBiY2YxZTdkMTRkZWFmM2UxN2Q3MjE5ZGE0M2UyMWJlMWRiODQ1MWM0YjAwYjgwYjBhODA4MTRmNDc0NjMxNzYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.sIC2JBhywpaFjC1fskAZWica2FFBAj6-kB-4_EkdNIM" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
@@ -904,7 +944,7 @@ However, Touch.screenX/screenY uses the some kind of screen-space CSS pixels. If
 <h3 dir="auto">What specific section or headline is this issue about?</h3>
 <p dir="auto">Note</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/74136983/357833812-01417b70-90b4-4c1f-a6ff-33e7f80ab690.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzgzMjAsIm5iZiI6MTc0MDM3ODAyMCwicGF0aCI6Ii83NDEzNjk4My8zNTc4MzM4MTItMDE0MTdiNzAtOTBiNC00YzFmLWE2ZmYtMzNlN2Y4MGFiNjkwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI0VDA2MjAyMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTcxYWI1MGQ3MjYxYTM4NzQxMjA5MWNmY2MyOGE1NjFhMjNlYTY4NGQ4YzlkYzY2OGVkNDUxODZhNWM1MDE2MzkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.n_Wj8kZyKOwVzKoTSHXrDCjuh6GQ1qqM9sroCzM65Cg"><img src="https://private-user-images.githubusercontent.com/74136983/357833812-01417b70-90b4-4c1f-a6ff-33e7f80ab690.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzgzMjAsIm5iZiI6MTc0MDM3ODAyMCwicGF0aCI6Ii83NDEzNjk4My8zNTc4MzM4MTItMDE0MTdiNzAtOTBiNC00YzFmLWE2ZmYtMzNlN2Y4MGFiNjkwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI0VDA2MjAyMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTcxYWI1MGQ3MjYxYTM4NzQxMjA5MWNmY2MyOGE1NjFhMjNlYTY4NGQ4YzlkYzY2OGVkNDUxODZhNWM1MDE2MzkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.n_Wj8kZyKOwVzKoTSHXrDCjuh6GQ1qqM9sroCzM65Cg" alt="image" style="max-width: 100%;"></a><br>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/74136983/357833812-01417b70-90b4-4c1f-a6ff-33e7f80ab690.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzk2NTYsIm5iZiI6MTc0MDM3OTM1NiwicGF0aCI6Ii83NDEzNjk4My8zNTc4MzM4MTItMDE0MTdiNzAtOTBiNC00YzFmLWE2ZmYtMzNlN2Y4MGFiNjkwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI0VDA2NDIzNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE0YTY4ODdkNTE3OWUyN2QxMjVjMzVkNWZhN2RlNTVlNTIwNWM4YzhhMWFjZTNkYWQ0NDU5Nzg4N2EzNTY3OWYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.zGwcwW_bzU7PhzSQivLHOZMOWL6ZXM-ezBbI_4M28Ls"><img src="https://private-user-images.githubusercontent.com/74136983/357833812-01417b70-90b4-4c1f-a6ff-33e7f80ab690.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzk2NTYsIm5iZiI6MTc0MDM3OTM1NiwicGF0aCI6Ii83NDEzNjk4My8zNTc4MzM4MTItMDE0MTdiNzAtOTBiNC00YzFmLWE2ZmYtMzNlN2Y4MGFiNjkwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI0VDA2NDIzNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE0YTY4ODdkNTE3OWUyN2QxMjVjMzVkNWZhN2RlNTVlNTIwNWM4YzhhMWFjZTNkYWQ0NDU5Nzg4N2EzNTY3OWYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.zGwcwW_bzU7PhzSQivLHOZMOWL6ZXM-ezBbI_4M28Ls" alt="image" style="max-width: 100%;"></a><br>
 The note says we can get a fractional value for <code class="notranslate">scrollWidth</code> using <code class="notranslate">getBoundingClientRect</code>, but I didn't see this property in <code class="notranslate">getBoundingClientRect</code>.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">Either delete the note or provide the correct method to get a fractional value.</p>
@@ -1069,9 +1109,9 @@ Which tripped me off, anyways I don't know why that behavior is and would love t
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I expected to understand when <code class="notranslate">performance.now()</code> should/shouldn't be used because of these bugs.</p>
 <p dir="auto">I also expected to find a definition for "sleep," but when I search for that word there are no articles with that title:</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/373675/333905620-332ddc0b-642e-4912-aed8-af2abb400b2a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzgzMTksIm5iZiI6MTc0MDM3ODAxOSwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjIwLTMzMmRkYzBiLTY0MmUtNDkxMi1hZWQ4LWFmMmFiYjQwMGIyYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIyNFQwNjIwMTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03YWFhOWZjZDQyNzc5MGQ5YTlkMDk2YzEzYmJmYWIyNTk2YzlhNDYxNzg5YTc0ZjFlMWRiNjQwOGNkZjlhNmU5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.WuVdWcDoHAbXSfeHhM_UsBiEDqZLo47irDz2Hbz5U7M"><img src="https://private-user-images.githubusercontent.com/373675/333905620-332ddc0b-642e-4912-aed8-af2abb400b2a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzgzMTksIm5iZiI6MTc0MDM3ODAxOSwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjIwLTMzMmRkYzBiLTY0MmUtNDkxMi1hZWQ4LWFmMmFiYjQwMGIyYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIyNFQwNjIwMTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03YWFhOWZjZDQyNzc5MGQ5YTlkMDk2YzEzYmJmYWIyNTk2YzlhNDYxNzg5YTc0ZjFlMWRiNjQwOGNkZjlhNmU5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.WuVdWcDoHAbXSfeHhM_UsBiEDqZLo47irDz2Hbz5U7M" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/373675/333905620-332ddc0b-642e-4912-aed8-af2abb400b2a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzk2NTYsIm5iZiI6MTc0MDM3OTM1NiwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjIwLTMzMmRkYzBiLTY0MmUtNDkxMi1hZWQ4LWFmMmFiYjQwMGIyYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIyNFQwNjQyMzZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01MGZmYjc1YTY5NzhhZmVkNWMzNjk3ZDcyOTVhMTdkNDgxOTkwODZhNzA5MjRlYzIxMDk4MDA1NTJjNWYyMGNhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.wmy18rgKEgeJWQPhPoFUintzYDV8hS9o4PZQLEarzCg"><img src="https://private-user-images.githubusercontent.com/373675/333905620-332ddc0b-642e-4912-aed8-af2abb400b2a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzk2NTYsIm5iZiI6MTc0MDM3OTM1NiwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjIwLTMzMmRkYzBiLTY0MmUtNDkxMi1hZWQ4LWFmMmFiYjQwMGIyYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIyNFQwNjQyMzZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01MGZmYjc1YTY5NzhhZmVkNWMzNjk3ZDcyOTVhMTdkNDgxOTkwODZhNzA5MjRlYzIxMDk4MDA1NTJjNWYyMGNhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.wmy18rgKEgeJWQPhPoFUintzYDV8hS9o4PZQLEarzCg" alt="image" style="max-width: 100%;"></a></p>
 <p dir="auto">And when I submit the search, there are results, but none of them seem relevant:</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/373675/333905637-56f3c600-2f17-449a-aa2e-5237de87b844.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzgzMTksIm5iZiI6MTc0MDM3ODAxOSwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjM3LTU2ZjNjNjAwLTJmMTctNDQ5YS1hYTJlLTUyMzdkZTg3Yjg0NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIyNFQwNjIwMTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02YTM0NmEzNWZiZWQ4NmJiMDc2ZjFjZDBkZDEzMDM3YWQxYzk2NGJkZDIwNTY2OTJmMTZhOWE1MGJlMTBlYWQxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.7IsHn31KcK-E3EJIEvZSZ43t_-UQQWea0QaqFqIvAP8"><img src="https://private-user-images.githubusercontent.com/373675/333905637-56f3c600-2f17-449a-aa2e-5237de87b844.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzgzMTksIm5iZiI6MTc0MDM3ODAxOSwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjM3LTU2ZjNjNjAwLTJmMTctNDQ5YS1hYTJlLTUyMzdkZTg3Yjg0NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIyNFQwNjIwMTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02YTM0NmEzNWZiZWQ4NmJiMDc2ZjFjZDBkZDEzMDM3YWQxYzk2NGJkZDIwNTY2OTJmMTZhOWE1MGJlMTBlYWQxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.7IsHn31KcK-E3EJIEvZSZ43t_-UQQWea0QaqFqIvAP8" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/373675/333905637-56f3c600-2f17-449a-aa2e-5237de87b844.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzk2NTYsIm5iZiI6MTc0MDM3OTM1NiwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjM3LTU2ZjNjNjAwLTJmMTctNDQ5YS1hYTJlLTUyMzdkZTg3Yjg0NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIyNFQwNjQyMzZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02OWIxYmI4YTFmM2YzNmY4MWQ0YmZhMThkMTAzOGVhN2VhMmUzMzM5MDA2ODc0YjQ2OWM0ZTVjZGNhZTk5MDRkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Z0ca48pHgs6hhQSobxu_j8okIV-wM0mYi4eJmcMoYaY"><img src="https://private-user-images.githubusercontent.com/373675/333905637-56f3c600-2f17-449a-aa2e-5237de87b844.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAzNzk2NTYsIm5iZiI6MTc0MDM3OTM1NiwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjM3LTU2ZjNjNjAwLTJmMTctNDQ5YS1hYTJlLTUyMzdkZTg3Yjg0NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIyNFQwNjQyMzZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02OWIxYmI4YTFmM2YzNmY4MWQ0YmZhMThkMTAzOGVhN2VhMmUzMzM5MDA2ODc0YjQ2OWM0ZTVjZGNhZTk5MDRkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Z0ca48pHgs6hhQSobxu_j8okIV-wM0mYi4eJmcMoYaY" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">n/a</p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
@@ -1265,66 +1305,6 @@ Which tripped me off, anyways I don't know why that behavior is and would love t
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/pseudo-elements/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/pseudo-elements/index.md</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ceb7507408b15730166596ea3b2de282c4edae1f/hovercard" href="https://github.com/mdn/content/commit/ceb7507408b15730166596ea3b2de282c4edae1f"><tt>ceb7507</tt></a></li>
 <li>Document last modified: 2023-07-26T12:42:34.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[css-backgrounds-4] No information on border-color  <stripes()>]]></title>
-            <link>https://github.com/mdn/content/issues/32234</link>
-            <guid>https://github.com/mdn/content/issues/32234</guid>
-            <pubDate>Mon, 12 Feb 2024 07:33:50 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-color" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-color</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">No examples, or compatibility data on  &lt;stripes()&gt;</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Examples of usage of stripes</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://drafts.csswg.org/css-images-4/#stripes" rel="nofollow">https://drafts.csswg.org/css-images-4/#stripes</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/border-right-color</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-color" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-color</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/border-right-color/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/border-right-color/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/1c4eb0bfb5f72a26fcc21a83fac91aa3e66c2fb8/hovercard" href="https://github.com/mdn/content/commit/1c4eb0bfb5f72a26fcc21a83fac91aa3e66c2fb8"><tt>1c4eb0b</tt></a></li>
-<li>Document last modified: 2024-01-02T16:00:45.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[selectors-4] :blank is also a blank page pseudo-class]]></title>
-            <link>https://github.com/mdn/content/issues/31885</link>
-            <guid>https://github.com/mdn/content/issues/31885</guid>
-            <pubDate>Wed, 24 Jan 2024 10:43:17 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:blank" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:blank</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">No mention of blank page pseudo-class</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Usage examples for blank page pseudo-class</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://drafts.csswg.org/css-page/#blank-pseudo" rel="nofollow">https://drafts.csswg.org/css-page/#blank-pseudo</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/css/_colon_blank</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:blank" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:blank</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_blank/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_blank/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/5fea7c9593f5e4b4ef13ec65064acf1eabf01e4e/hovercard" href="https://github.com/mdn/content/commit/5fea7c9593f5e4b4ef13ec65064acf1eabf01e4e"><tt>5fea7c9</tt></a></li>
-<li>Document last modified: 2023-02-21T06:49:52.000Z</li>
 </ul>
 </details>]]></content:encoded>
         </item>

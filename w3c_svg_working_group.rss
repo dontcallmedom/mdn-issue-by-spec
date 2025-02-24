@@ -4,10 +4,50 @@
         <title>W3C SVG Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_svg_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C SVG Working Group</description>
-        <lastBuildDate>Wed, 22 Jan 2025 23:39:56 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 24 Feb 2025 06:37:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[SVG11] <svg> tag <use xlink:href> needs to be in the docs]]></title>
+            <link>https://github.com/mdn/content/issues/38298</link>
+            <guid>https://github.com/mdn/content/issues/38298</guid>
+            <pubDate>Mon, 24 Feb 2025 06:37:09 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/SVG" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/SVG</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Make an article explicitly for embedding SVGs into an SVG tag. SVG tag is better than <a target="_blank" rel="noopener noreferrer" href=""><img style="max-width: 100%;"></a> tag for applying colors to other people's SVGs.</p>
+<p dir="auto">What's the first thing someone's going to do with HTML? Include someone else's SVG icon in their website. This information should be front and center in the SVG examples.</p>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;svg&gt;
+
+  &lt;use xlink:href=&quot;https://yourdomain.com/path/to/your-icon.svg#icon-name&quot; /&gt;
+
+&lt;/svg&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">svg</span><span class="pl-kos">&gt;</span>
+
+  <span class="pl-kos">&lt;</span><span class="pl-ent">use</span> <span class="pl-c1">xlink:href</span>="<span class="pl-s">https://yourdomain.com/path/to/your-icon.svg#icon-name</span>" <span class="pl-kos">/&gt;</span>
+
+<span class="pl-kos">&lt;/</span><span class="pl-ent">svg</span><span class="pl-kos">&gt;</span></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">An article explicitly for embedding SVGs into an SVG tag.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">AI, and some random dude on Reddit/StackOverflow</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Yeah, do it, because this is what people need to see. This is the true use case for SVGs. Few people will make their own. More people will embed someone else's.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/svg</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/SVG" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/SVG</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/svg/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/svg/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/d71da812ee94c20658cb1916a123a42254ea545c/hovercard" href="https://github.com/mdn/content/commit/d71da812ee94c20658cb1916a123a42254ea545c"><tt>d71da81</tt></a></li>
+<li>Document last modified: 2024-08-07T22:02:28.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[SVG11] SVG examples should be written in proper XML syntax]]></title>
             <link>https://github.com/mdn/content/issues/37761</link>
