@@ -44,6 +44,8 @@
   
 * [\[html\] Video/Audio source event handling](https://github.com/mdn/content/issues/32784) (2024-03-21T15:30:15Z)
   
+* [\[html\] Example HTML Dialog ](https://github.com/mdn/content/issues/38325) (2024-02-25T09:35:11Z)
+  
 * [\[html\] HTMLMediaElement/textTracks example video does not load](https://github.com/mdn/content/issues/32262) (2024-02-13T22:47:24Z)
   
 * [\[html\] HTML \<iframe\>: allow attribute needs stand-alone topic](https://github.com/mdn/content/issues/32188) (2024-02-09T06:10:46Z)
@@ -51,6 +53,8 @@
 * [\[html\] WebSocket constructor example should demonstrate waiting for connection or handling connection failure](https://github.com/mdn/content/issues/31768) (2024-01-17T18:55:09Z)
   
 * [\[html\] Document img auto-sizes](https://github.com/mdn/content/issues/30596) (2023-11-28T10:39:06Z)
+  
+* [\[html\] Article element in a wrong implementation](https://github.com/mdn/content/issues/38324) (2023-09-13T12:53:45Z)
   
 * [\[html\] Create a \`form\` attribute page](https://github.com/mdn/content/issues/28375) (2023-08-03T18:28:41Z)
   
