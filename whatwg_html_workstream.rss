@@ -4,41 +4,10 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Tue, 25 Feb 2025 10:50:10 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 20 Feb 2025 02:20:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[html] Fieldset result incorrect]]></title>
-            <link>https://github.com/mdn/content/issues/38319</link>
-            <guid>https://github.com/mdn/content/issues/38319</guid>
-            <pubDate>Tue, 25 Feb 2025 10:50:10 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">#disabled_fieldset</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The result shown was for the previous section and was not disabled</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The disabled fieldset example</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/106680285/416645213-4fe8efe8-182b-4bc6-a124-34ecf8058dfe.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA0OTQxOTcsIm5iZiI6MTc0MDQ5Mzg5NywicGF0aCI6Ii8xMDY2ODAyODUvNDE2NjQ1MjEzLTRmZThlZmU4LTE4MmItNGJjNi1hMTI0LTM0ZWNmODA1OGRmZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIyNVQxNDMxMzdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lOTJlMGNiZjE0ZDIzYjU4ZTg1Y2E5MDBlNTU2NmE5ODQyODYwMzVhMjJhODIxMjMzYjRlZDZjMDYxNjQ4MWIxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.rC8hSXeCRsjVVV1pEpY0MvK8XAIscHfftMz1FYGfStw"><img src="https://private-user-images.githubusercontent.com/106680285/416645213-4fe8efe8-182b-4bc6-a124-34ecf8058dfe.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA0OTQxOTcsIm5iZiI6MTc0MDQ5Mzg5NywicGF0aCI6Ii8xMDY2ODAyODUvNDE2NjQ1MjEzLTRmZThlZmU4LTE4MmItNGJjNi1hMTI0LTM0ZWNmODA1OGRmZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIyNVQxNDMxMzdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lOTJlMGNiZjE0ZDIzYjU4ZTg1Y2E5MDBlNTU2NmE5ODQyODYwMzVhMjJhODIxMjMzYjRlZDZjMDYxNjQ4MWIxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.rC8hSXeCRsjVVV1pEpY0MvK8XAIscHfftMz1FYGfStw" alt="Image" style="max-width: 100%;"></a><br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/106680285/416645214-66d1c572-83cd-4b8d-88d7-44a9c2d7eb84.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA0OTQxOTcsIm5iZiI6MTc0MDQ5Mzg5NywicGF0aCI6Ii8xMDY2ODAyODUvNDE2NjQ1MjE0LTY2ZDFjNTcyLTgzY2QtNGI4ZC04OGQ3LTQ0YTljMmQ3ZWI4NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIyNVQxNDMxMzdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lZTRhZTRiZTQ1MmQzZmYyY2FkMDVlNDc5OWE0MDYxMmJmN2MwYTkwMDdkM2EwZWEzNzBlM2E3YjNjNDYyOTUzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.miCTxN6EwY-rKIS8gDzjhjKD8upnHJNya4mwAutQrkQ"><img src="https://private-user-images.githubusercontent.com/106680285/416645214-66d1c572-83cd-4b8d-88d7-44a9c2d7eb84.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA0OTQxOTcsIm5iZiI6MTc0MDQ5Mzg5NywicGF0aCI6Ii8xMDY2ODAyODUvNDE2NjQ1MjE0LTY2ZDFjNTcyLTgzY2QtNGI4ZC04OGQ3LTQ0YTljMmQ3ZWI4NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIyNVQxNDMxMzdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lZTRhZTRiZTQ1MmQzZmYyY2FkMDVlNDc5OWE0MDYxMmJmN2MwYTkwMDdkM2EwZWEzNzBlM2E3YjNjNDYyOTUzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.miCTxN6EwY-rKIS8gDzjhjKD8upnHJNya4mwAutQrkQ" alt="Image" style="max-width: 100%;"></a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/html/element/fieldset</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/fieldset/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/html/element/fieldset/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/8b02826c79b090b5af0d68ae1ef39f932a66a7f1/hovercard" href="https://github.com/mdn/content/commit/8b02826c79b090b5af0d68ae1ef39f932a66a7f1"><tt>8b02826</tt></a></li>
-<li>Document last modified: 2025-02-24T14:16:57.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html, uievents] The page on the error event should explain that errors in promises trigger an unhandledrejection event instead]]></title>
             <link>https://github.com/mdn/content/issues/38246</link>
