@@ -8,8 +8,6 @@
   
 * [\[SVG11\] SVG examples should be written in proper XML syntax](https://github.com/mdn/content/issues/37761) (2025-01-22T23:39:56Z)
   
-* [\[credential-management-1\] CredentialsContainer.get() may also throw when the action is cancelled](https://github.com/mdn/content/issues/37728) (2025-01-20T19:01:25Z)
-  
 * [\[html, css-writing-modes-4\] Guide / overview page for writing modes](https://github.com/mdn/content/issues/37571) (2025-01-09T10:50:41Z)
   
 * [\[CSS21, css-display-3\] CSS+JS Accessibility best practices - hidden things section - is not promoting best practices](https://github.com/mdn/content/issues/37524) (2025-01-06T15:29:04Z)
