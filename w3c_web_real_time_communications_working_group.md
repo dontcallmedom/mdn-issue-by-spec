@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Real-Time Communications Working Group. [![RSS feed for W3C Web Real-Time Communications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[mediacapture-fromelement\] audio.captureStream does not exist in firefox](https://github.com/mdn/content/issues/38347) (2025-02-26T19:51:36Z)
+  
 * [\[mediacapture-streams\] MediaTrackCapabilities properties are string\[\]/boolean\[\]/DoubleRange/ULongRange, not ConstrainDOMString/ConstrainBoolean/ConstrainDouble/ConstrainULong](https://github.com/mdn/content/issues/38249) (2025-02-20T04:20:50Z)
   
 * [\[webrtc\] webrtc: Call createDataChannel after createOffer](https://github.com/mdn/content/issues/35932) (2024-09-18T12:11:30Z)
