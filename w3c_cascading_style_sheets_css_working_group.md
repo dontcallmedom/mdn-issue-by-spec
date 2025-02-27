@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-shadow-parts-1\] ::part() documentation gives the false impression that :last-child and friends are usable on shadow parts](https://github.com/mdn/content/issues/38367) (2025-02-27T18:22:49Z)
+  
 * [\[css-sizing-3\] Syntax section erroneously includes \`minmax\` as value](https://github.com/mdn/content/issues/38346) (2025-02-26T16:28:35Z)
   
 * [\[css-color-adjust-1\] CSS color-sheme article should mention HTML color-scheme value for meta element](https://github.com/mdn/content/issues/38182) (2025-02-16T17:49:46Z)
