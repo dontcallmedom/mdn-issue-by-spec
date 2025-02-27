@@ -4,8 +4,6 @@
 
 * [\[css-shadow-parts-1\] ::part() documentation gives the false impression that :last-child and friends are usable on shadow parts](https://github.com/mdn/content/issues/38367) (2025-02-27T18:22:49Z)
   
-* [\[css-sizing-3\] Syntax section erroneously includes \`minmax\` as value](https://github.com/mdn/content/issues/38346) (2025-02-26T16:28:35Z)
-  
 * [\[mediacapture-streams\] MediaTrackCapabilities properties are string\[\]/boolean\[\]/DoubleRange/ULongRange, not ConstrainDOMString/ConstrainBoolean/ConstrainDouble/ConstrainULong](https://github.com/mdn/content/issues/38249) (2025-02-20T04:20:50Z)
   
 * [\[css-color-adjust-1\] CSS color-sheme article should mention HTML color-scheme value for meta element](https://github.com/mdn/content/issues/38182) (2025-02-16T17:49:46Z)

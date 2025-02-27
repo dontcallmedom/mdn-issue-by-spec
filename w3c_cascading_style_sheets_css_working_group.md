@@ -4,8 +4,6 @@
 
 * [\[css-shadow-parts-1\] ::part() documentation gives the false impression that :last-child and friends are usable on shadow parts](https://github.com/mdn/content/issues/38367) (2025-02-27T18:22:49Z)
   
-* [\[css-sizing-3\] Syntax section erroneously includes \`minmax\` as value](https://github.com/mdn/content/issues/38346) (2025-02-26T16:28:35Z)
-  
 * [\[css-color-adjust-1\] CSS color-sheme article should mention HTML color-scheme value for meta element](https://github.com/mdn/content/issues/38182) (2025-02-16T17:49:46Z)
   
 * [\[html, css-writing-modes-4\] Guide / overview page for writing modes](https://github.com/mdn/content/issues/37571) (2025-01-09T10:50:41Z)
