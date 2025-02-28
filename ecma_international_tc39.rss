@@ -22,51 +22,48 @@
 <p dir="auto">The main issues, as I see it, are...</p>
 <h3 dir="auto">The Syntax section is an overwhelming wall of possible forms</h3>
 <p dir="auto">Especially since every form is effectively doubled. For instance, i'm not convinced it's helpful to present <em>both</em> of these in their entirety:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const [a, b] = array;
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const [a, b] = array;
 const [a, , b] = array;
 const [a = aDefault, b] = array;
 const [a, b, ...rest] = array;
 const [a, , b, ...rest] = array;
 const [a, b, ...{ pop, push }] = array;
-const [a, b, ...[c, d]] = array;"><pre lang="js" class="notranslate"><code class="notranslate">const [a, b] = array;
-const [a, , b] = array;
-const [a = aDefault, b] = array;
-const [a, b, ...rest] = array;
-const [a, , b, ...rest] = array;
-const [a, b, ...{ pop, push }] = array;
-const [a, b, ...[c, d]] = array;
-</code></pre></div>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="let a, b, a1, b1, c, d, rest, pop, push;
+const [a, b, ...[c, d]] = array;"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-kos">[</span><span class="pl-s1">a</span><span class="pl-kos">,</span> <span class="pl-s1">b</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-s1">array</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-kos">[</span><span class="pl-s1">a</span><span class="pl-kos">,</span> <span class="pl-kos">,</span> <span class="pl-s1">b</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-s1">array</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-kos">[</span><span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-s1">aDefault</span><span class="pl-kos">,</span> <span class="pl-s1">b</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-s1">array</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-kos">[</span><span class="pl-s1">a</span><span class="pl-kos">,</span> <span class="pl-s1">b</span><span class="pl-kos">,</span> ...<span class="pl-s1">rest</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-s1">array</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-kos">[</span><span class="pl-s1">a</span><span class="pl-kos">,</span> <span class="pl-kos">,</span> <span class="pl-s1">b</span><span class="pl-kos">,</span> ...<span class="pl-s1">rest</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-s1">array</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-kos">[</span><span class="pl-s1">a</span><span class="pl-kos">,</span> <span class="pl-s1">b</span><span class="pl-kos">,</span> ...<span class="pl-kos">{</span> pop<span class="pl-kos">,</span> push <span class="pl-kos">}</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-s1">array</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-kos">[</span><span class="pl-s1">a</span><span class="pl-kos">,</span> <span class="pl-s1">b</span><span class="pl-kos">,</span> ...<span class="pl-kos">[</span><span class="pl-s1">c</span><span class="pl-kos">,</span> <span class="pl-s1">d</span><span class="pl-kos">]</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-s1">array</span><span class="pl-kos">;</span></pre></div>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="let a, b, a1, b1, c, d, rest, pop, push;
 [a, b] = array;
 [a, , b] = array;
 [a = aDefault, b] = array;
 [a, b, ...rest] = array;
 [a, , b, ...rest] = array;
 [a, b, ...{ pop, push }] = array;
-[a, b, ...[c, d]] = array;"><pre lang="js" class="notranslate"><code class="notranslate">let a, b, a1, b1, c, d, rest, pop, push;
-[a, b] = array;
-[a, , b] = array;
-[a = aDefault, b] = array;
-[a, b, ...rest] = array;
-[a, , b, ...rest] = array;
-[a, b, ...{ pop, push }] = array;
-[a, b, ...[c, d]] = array;
-</code></pre></div>
+[a, b, ...[c, d]] = array;"><pre class="notranslate"><span class="pl-k">let</span> <span class="pl-s1">a</span><span class="pl-kos">,</span> <span class="pl-s1">b</span><span class="pl-kos">,</span> <span class="pl-s1">a1</span><span class="pl-kos">,</span> <span class="pl-s1">b1</span><span class="pl-kos">,</span> <span class="pl-s1">c</span><span class="pl-kos">,</span> <span class="pl-s1">d</span><span class="pl-kos">,</span> <span class="pl-s1">rest</span><span class="pl-kos">,</span> <span class="pl-s1">pop</span><span class="pl-kos">,</span> <span class="pl-s1">push</span><span class="pl-kos">;</span>
+<span class="pl-kos">[</span><span class="pl-s1">a</span><span class="pl-kos">,</span> <span class="pl-s1">b</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-s1">array</span><span class="pl-kos">;</span>
+<span class="pl-kos">[</span><span class="pl-s1">a</span><span class="pl-kos">,</span> <span class="pl-kos">,</span> <span class="pl-s1">b</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-s1">array</span><span class="pl-kos">;</span>
+<span class="pl-kos">[</span><span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-s1">aDefault</span><span class="pl-kos">,</span> <span class="pl-s1">b</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-s1">array</span><span class="pl-kos">;</span>
+<span class="pl-kos">[</span><span class="pl-s1">a</span><span class="pl-kos">,</span> <span class="pl-s1">b</span><span class="pl-kos">,</span> ...<span class="pl-s1">rest</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-s1">array</span><span class="pl-kos">;</span>
+<span class="pl-kos">[</span><span class="pl-s1">a</span><span class="pl-kos">,</span> <span class="pl-kos">,</span> <span class="pl-s1">b</span><span class="pl-kos">,</span> ...<span class="pl-s1">rest</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-s1">array</span><span class="pl-kos">;</span>
+<span class="pl-kos">[</span><span class="pl-s1">a</span><span class="pl-kos">,</span> <span class="pl-s1">b</span><span class="pl-kos">,</span> ...<span class="pl-kos">{</span> pop<span class="pl-kos">,</span> push <span class="pl-kos">}</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-s1">array</span><span class="pl-kos">;</span>
+<span class="pl-kos">[</span><span class="pl-s1">a</span><span class="pl-kos">,</span> <span class="pl-s1">b</span><span class="pl-kos">,</span> ...<span class="pl-kos">[</span><span class="pl-s1">c</span><span class="pl-kos">,</span> <span class="pl-s1">d</span><span class="pl-kos">]</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-s1">array</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">A similar redundant pair is presented for object-destructuring syntax.</p>
 <h3 dir="auto">The object-destructuring examples makes logical leaps that may not be as obvious as they're assumed to be</h3>
 <p dir="auto">For instance, in this example:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const obj = { a: 1, b: { c: 2 } };
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const obj = { a: 1, b: { c: 2 } };
 const {
   a,
   b: { c: d },
 } = obj;
-// Two variables are bound: `a` and `d`"><pre lang="js" class="notranslate"><code class="notranslate">const obj = { a: 1, b: { c: 2 } };
-const {
-  a,
-  b: { c: d },
-} = obj;
-// Two variables are bound: `a` and `d`
-</code></pre></div>
+// Two variables are bound: `a` and `d`"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">obj</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span> <span class="pl-c1">a</span>: <span class="pl-c1">1</span><span class="pl-kos">,</span> <span class="pl-c1">b</span>: <span class="pl-kos">{</span> <span class="pl-c1">c</span>: <span class="pl-c1">2</span> <span class="pl-kos">}</span> <span class="pl-kos">}</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-kos">{</span>
+  a<span class="pl-kos">,</span>
+  <span class="pl-c1">b</span>: <span class="pl-kos">{</span> <span class="pl-c1">c</span>: <span class="pl-s1">d</span> <span class="pl-kos">}</span><span class="pl-kos">,</span>
+<span class="pl-kos">}</span> <span class="pl-c1">=</span> <span class="pl-s1">obj</span><span class="pl-kos">;</span>
+<span class="pl-c">// Two variables are bound: `a` and `d`</span></pre></div>
 <p dir="auto">...it's never even explicitly mentioned that <code class="notranslate">a</code> will have the value <code class="notranslate">1</code> and <code class="notranslate">d</code> will have the value <code class="notranslate">2</code>, much less how property names and values are mapped to variable names in object-destructuring syntax.</p>
 <h3 dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#assigning_to_new_variable_names" rel="nofollow">Assigning to new variable names</a> is only explained much, MUCH farther down the page</h3>
 <p dir="auto">Eventually, the docs do cover that...</p>
@@ -76,7 +73,7 @@ const {
 <p dir="auto">But even that seems out of left field, because it's <strong>NEVER ONCE</strong> mentioned that object-destructuring by default creates variables with the <em>same</em> name as the object property! (And the early example involving <code class="notranslate">a</code> and <code class="notranslate">d</code> (above) already demonstrated the "assigning to a different variable name" case, just without providing any explanation for what was going on.)</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think it would benefit readers, particularly less experienced ones, to present more detailed explanations, earlier in the documentation, of the process by which object destructuring maps variable names. In other words, explanations that take the reader through these equivalencies:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="// These two statements are exactly equivalent methods to 
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="// These two statements are exactly equivalent methods to 
 // define the const variables a=1 and b=2.
 // The first is merely a shorthand for the second.
 const {a, b} = {a: 1, b: 2}
@@ -94,26 +91,25 @@ const {e: e, f: f} = {e: 1, f: {g: 2}}
 
 // These are also exactly equivalent
 const [x, y, z] = [1, 2, 3]
-const {0: x, 1: y, 2: z} = [1, 2, 3]"><pre lang="js" class="notranslate"><code class="notranslate">// These two statements are exactly equivalent methods to 
-// define the const variables a=1 and b=2.
-// The first is merely a shorthand for the second.
-const {a, b} = {a: 1, b: 2}
-const {a: a, b: b} = {a: 1, b: 2}
+const {0: x, 1: y, 2: z} = [1, 2, 3]"><pre class="notranslate"><span class="pl-c">// These two statements are exactly equivalent methods to </span>
+<span class="pl-c">// define the const variables a=1 and b=2.</span>
+<span class="pl-c">// The first is merely a shorthand for the second.</span>
+<span class="pl-k">const</span> <span class="pl-kos">{</span>a<span class="pl-kos">,</span> b<span class="pl-kos">}</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span><span class="pl-c1">a</span>: <span class="pl-c1">1</span><span class="pl-kos">,</span> <span class="pl-c1">b</span>: <span class="pl-c1">2</span><span class="pl-kos">}</span>
+<span class="pl-k">const</span> <span class="pl-kos">{</span><span class="pl-c1">a</span>: <span class="pl-s1">a</span><span class="pl-kos">,</span> <span class="pl-c1">b</span>: <span class="pl-s1">b</span><span class="pl-kos">}</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span><span class="pl-c1">a</span>: <span class="pl-c1">1</span><span class="pl-kos">,</span> <span class="pl-c1">b</span>: <span class="pl-c1">2</span><span class="pl-kos">}</span>
 
 
-// These two are similarly equivalent (both define e=1, g=2)
-const {e, f: {g}} = {e: 1, f: {g: 2}}
-const {e: e, f: {g: g}} = {e: 1, f: {g: 2}}
+<span class="pl-c">// These two are similarly equivalent (both define e=1, g=2)</span>
+<span class="pl-k">const</span> <span class="pl-kos">{</span>e<span class="pl-kos">,</span> <span class="pl-c1">f</span>: <span class="pl-kos">{</span>g<span class="pl-kos">}</span><span class="pl-kos">}</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span><span class="pl-c1">e</span>: <span class="pl-c1">1</span><span class="pl-kos">,</span> <span class="pl-c1">f</span>: <span class="pl-kos">{</span><span class="pl-c1">g</span>: <span class="pl-c1">2</span><span class="pl-kos">}</span><span class="pl-kos">}</span>
+<span class="pl-k">const</span> <span class="pl-kos">{</span><span class="pl-c1">e</span>: <span class="pl-s1">e</span><span class="pl-kos">,</span> <span class="pl-c1">f</span>: <span class="pl-kos">{</span><span class="pl-c1">g</span>: <span class="pl-s1">g</span><span class="pl-kos">}</span><span class="pl-kos">}</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span><span class="pl-c1">e</span>: <span class="pl-c1">1</span><span class="pl-kos">,</span> <span class="pl-c1">f</span>: <span class="pl-kos">{</span><span class="pl-c1">g</span>: <span class="pl-c1">2</span><span class="pl-kos">}</span><span class="pl-kos">}</span>
 
-// These, OTOH, both define e=1, f={g: 2}
-const {e, f} = {e: 1, f: {g: 2}}
-const {e: e, f: f} = {e: 1, f: {g: 2}}
+<span class="pl-c">// These, OTOH, both define e=1, f={g: 2}</span>
+<span class="pl-k">const</span> <span class="pl-kos">{</span>e<span class="pl-kos">,</span> f<span class="pl-kos">}</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span><span class="pl-c1">e</span>: <span class="pl-c1">1</span><span class="pl-kos">,</span> <span class="pl-c1">f</span>: <span class="pl-kos">{</span><span class="pl-c1">g</span>: <span class="pl-c1">2</span><span class="pl-kos">}</span><span class="pl-kos">}</span>
+<span class="pl-k">const</span> <span class="pl-kos">{</span><span class="pl-c1">e</span>: <span class="pl-s1">e</span><span class="pl-kos">,</span> <span class="pl-c1">f</span>: <span class="pl-s1">f</span><span class="pl-kos">}</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span><span class="pl-c1">e</span>: <span class="pl-c1">1</span><span class="pl-kos">,</span> <span class="pl-c1">f</span>: <span class="pl-kos">{</span><span class="pl-c1">g</span>: <span class="pl-c1">2</span><span class="pl-kos">}</span><span class="pl-kos">}</span>
 
 
-// These are also exactly equivalent
-const [x, y, z] = [1, 2, 3]
-const {0: x, 1: y, 2: z} = [1, 2, 3]
-</code></pre></div>
+<span class="pl-c">// These are also exactly equivalent</span>
+<span class="pl-k">const</span> <span class="pl-kos">[</span><span class="pl-s1">x</span><span class="pl-kos">,</span> <span class="pl-s1">y</span><span class="pl-kos">,</span> <span class="pl-s1">z</span><span class="pl-kos">]</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-c1">1</span><span class="pl-kos">,</span> <span class="pl-c1">2</span><span class="pl-kos">,</span> <span class="pl-c1">3</span><span class="pl-kos">]</span>
+<span class="pl-k">const</span> <span class="pl-kos">{</span><span class="pl-c1">0</span>: <span class="pl-s1">x</span><span class="pl-kos">,</span> <span class="pl-c1">1</span>: <span class="pl-s1">y</span><span class="pl-kos">,</span> <span class="pl-c1">2</span>: <span class="pl-s1">z</span><span class="pl-kos">}</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-c1">1</span><span class="pl-kos">,</span> <span class="pl-c1">2</span><span class="pl-kos">,</span> <span class="pl-c1">3</span><span class="pl-kos">]</span></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
