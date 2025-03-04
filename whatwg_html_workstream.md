@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Contradictory informations on \<b\> tag and using stylsheet.](https://github.com/mdn/content/issues/38438) (2025-03-04T08:36:11Z)
+  
 * [\[html\] Setting HTMLCanvasElement.width also resets context properties](https://github.com/mdn/content/issues/38339) (2025-02-26T13:35:24Z)
   
 * [\[html\] Add \`colorType\` documentation to \`CanvasRenderingContext2DSettings\`](https://github.com/mdn/content/issues/38087) (2025-02-10T15:06:09Z)
