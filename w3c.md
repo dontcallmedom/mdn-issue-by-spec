@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[pointerevents3\] Example for setPointerCapture does not work on Chrome for Android](https://github.com/mdn/content/issues/38468) (2025-03-05T17:10:32Z)
+  
 * [\[css-shadow-parts-1\] ::part() documentation gives the false impression that :last-child and friends are usable on shadow parts](https://github.com/mdn/content/issues/38367) (2025-02-27T18:22:49Z)
   
 * [\[mediacapture-streams\] MediaTrackCapabilities properties are string\[\]/boolean\[\]/DoubleRange/ULongRange, not ConstrainDOMString/ConstrainBoolean/ConstrainDouble/ConstrainULong](https://github.com/mdn/content/issues/38249) (2025-02-20T04:20:50Z)
