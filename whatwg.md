@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[dom\] Missing some info](https://github.com/mdn/content/issues/38483) (2025-03-06T05:45:36Z)
+  
 * [\[html\] Setting HTMLCanvasElement.width also resets context properties](https://github.com/mdn/content/issues/38339) (2025-02-26T13:35:24Z)
   
 * [\[html\] Add \`colorType\` documentation to \`CanvasRenderingContext2DSettings\`](https://github.com/mdn/content/issues/38087) (2025-02-10T15:06:09Z)
