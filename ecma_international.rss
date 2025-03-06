@@ -4,10 +4,40 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Wed, 19 Feb 2025 04:00:08 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 06 Mar 2025 14:21:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Object destructuring with rest]]></title>
+            <link>https://github.com/mdn/content/issues/38490</link>
+            <guid>https://github.com/mdn/content/issues/38490</guid>
+            <pubDate>Thu, 06 Mar 2025 14:21:53 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Rest property</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">In earlier versions of this article (I found a quote of it at <a href="https://stackoverflow.com/questions/54141003/what-properties-will-rest-skip-in-object-destructuring#answer-54141665" rel="nofollow">Stackoverflow</a>) you wrote that the rest property of object destructuring receives the remaining <strong>own enumerable</strong> properties of the destructured object. These are two important informations: only it's <strong>own</strong> properties (not inherited) and only <strong>enumerable</strong> properties (i.E. not the length of an array) are copied.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Please add this again.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/operators/destructuring_assignment</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/destructuring_assignment/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/destructuring_assignment/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2982fcbb31c65f324a80fd9cec516a81d4793cd4/hovercard" href="https://github.com/mdn/content/commit/2982fcbb31c65f324a80fd9cec516a81d4793cd4"><tt>2982fcb</tt></a></li>
+<li>Document last modified: 2025-02-11T14:16:45.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] "Destructuring assignment": Need better introduction to object-destructuring syntax]]></title>
             <link>https://github.com/mdn/content/issues/38224</link>
