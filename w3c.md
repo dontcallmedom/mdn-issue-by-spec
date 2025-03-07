@@ -132,8 +132,6 @@
   
 * [\[svg-animations, SVG11\] Issue with "\<animate\>": Firefox is inconsistent in rendering svg - graphic](https://github.com/mdn/content/issues/8551) (2021-09-02T04:54:48Z)
   
-* [\[html, dom, WebIDL-1, cssom-view-1, FileAPI, uievents, pointerlock-2\] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
-  
 * [\[service-workers-1\] Issue with "ServiceWorkerContainer.register()": may be advisable to check for an existing registration](https://github.com/mdn/content/issues/7138) (2021-07-21T16:35:44Z)
   
 * [\[webaudio\] Content bug: AudioListener and attributes need better examples. ](https://github.com/mdn/content/issues/4468) (2021-04-26T03:22:48Z)

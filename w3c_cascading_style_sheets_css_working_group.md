@@ -38,5 +38,3 @@
   
 * [\[service-workers-1, dom, cssom-view-1, notifications, pointerevents3\] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
-* [\[html, dom, WebIDL-1, cssom-view-1, FileAPI, uievents, pointerlock-2\] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
-  

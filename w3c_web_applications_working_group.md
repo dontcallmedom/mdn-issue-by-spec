@@ -26,5 +26,3 @@
   
 * [\[uievents\] Content bug: Missing information about what WheelEvent.delta\* can be](https://github.com/mdn/content/issues/11811) (2022-01-07T12:25:45Z)
   
-* [\[html, dom, WebIDL-1, cssom-view-1, FileAPI, uievents, pointerlock-2\] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
-  

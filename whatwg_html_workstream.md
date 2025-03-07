@@ -66,7 +66,5 @@
   
 * [\[html, gamepad\] Double checking the gamepad docs are correct](https://github.com/mdn/content/issues/14874) (2022-04-11T03:02:09Z)
   
-* [\[html, dom, WebIDL-1, cssom-view-1, FileAPI, uievents, pointerlock-2\] Remove alert() from live samples](https://github.com/mdn/content/issues/7566) (2021-08-03T21:17:44Z)
-  
 * [\[html\] CustomElementRegistry needs updating](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
   
