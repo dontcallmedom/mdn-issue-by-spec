@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-shadow-parts-1\] ::part() documentation gives the false impression that :last-child and friends are usable on shadow parts](https://github.com/mdn/content/issues/38367) (2025-02-27T18:22:49Z)
-  
 * [\[html, css-writing-modes-4\] Guide / overview page for writing modes](https://github.com/mdn/content/issues/37571) (2025-01-09T10:50:41Z)
   
 * [\[CSS21, css-display-3\] CSS+JS Accessibility best practices - hidden things section - is not promoting best practices](https://github.com/mdn/content/issues/37524) (2025-01-06T15:29:04Z)
