@@ -18,8 +18,6 @@
   
 * [\[webgl1\] SharedArrayBuffer is not usable as a source data parameter.](https://github.com/mdn/content/issues/30749) (2023-12-03T05:06:20Z)
   
-* [\[WEBGL_depth_texture\] Example code on WEBGL_depth_texture gives GL_INVALID_VALUE when run in WebGL 2](https://github.com/mdn/content/issues/30130) (2023-11-08T19:14:29Z)
-  
 * [\[webgl2\] srcOffset and srcLength not documented for WebGL2RenderingContext.uniform](https://github.com/mdn/content/issues/20225) (2022-09-02T00:42:19Z)
   
 * [\[OVR_multiview2\] WebXR guide material tracking issue](https://github.com/mdn/content/issues/7276) (2021-07-26T07:39:35Z)
