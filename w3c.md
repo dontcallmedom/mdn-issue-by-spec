@@ -86,8 +86,6 @@
   
 * [\[webaudio\] interrupted state not listed as a valid state value, but an example of interrupted state was given](https://github.com/mdn/content/issues/26129) (2023-04-11T18:49:59Z)
   
-* [\[webrtc\] The new restartIce() method should replace the old "iceRestart" parameter in the documentation consistently.](https://github.com/mdn/content/issues/25732) (2023-03-29T09:34:05Z)
-  
 * [\[webaudio\] AnalyserNode::getFloatTimeDomainData() doesn't specify the encoding of the waveform](https://github.com/mdn/content/issues/25571) (2023-03-23T14:41:18Z)
   
 * [\[screen-capture\] MediaDevices#getDisplayMedia(): systemAudio is misleading](https://github.com/mdn/content/issues/25307) (2023-03-14T03:38:33Z)
@@ -121,8 +119,6 @@
 * [\[cssom-view-1\] Issue with "Document: scroll event": Example using rAF in scroll-event callbacks is outdated, and anti-performance](https://github.com/mdn/content/issues/12701) (2022-02-04T00:25:49Z)
   
 * [\[uievents\] Content bug: Missing information about what WheelEvent.delta\* can be](https://github.com/mdn/content/issues/11811) (2022-01-07T12:25:45Z)
-  
-* [\[webrtc\] "Using DTMF" is using legacy APIs](https://github.com/mdn/content/issues/10020) (2021-10-22T18:00:50Z)
   
 * [\[service-workers-1, dom, cssom-view-1, notifications, pointerevents3\] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
