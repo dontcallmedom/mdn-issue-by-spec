@@ -117,17 +117,6 @@
                 "name": "greggman",
                 "url": "https://github.com/greggman"
             }
-        },
-        {
-            "id": "https://github.com/mdn/content/issues/11811",
-            "content_html": "<h2 dir=\"auto\">What page(s) did you find the problem on?</h2>\n<p dir=\"auto\"><a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent</a><br>\n<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent/deltaX\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent/deltaX</a><br>\n<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent/deltaY\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent/deltaY</a><br>\n<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent/deltaZ\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent/deltaZ</a><br>\n<a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent/deltaMode\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent/deltaMode</a></p>\n<h2 dir=\"auto\">What is the problem?</h2>\n\n<p dir=\"auto\">Missing information described in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"296193663\" data-permission-text=\"Title is private\" data-url=\"https://github.com/w3c/uievents/issues/181\" data-hovercard-type=\"issue\" data-hovercard-url=\"/w3c/uievents/issues/181/hovercard?comment_id=392648065&amp;comment_type=issue_comment\" href=\"https://github.com/w3c/uievents/issues/181#issuecomment-392648065\">w3c/uievents#181 (comment)</a><br>\nAnd the change in Firefox caused by <a href=\"https://groups.google.com/g/mozilla.dev.platform/c/fUXLgaSoeLI\" rel=\"nofollow\">Intent to ship: Return pixel deltas in wheel event if deltaMode is not checked by authors</a>, that modify the behavior to the following, decided per event:</p>\n<ul dir=\"auto\">\n<li>\n<p dir=\"auto\">If <code class=\"notranslate\">deltaMode</code> has been accessed, then the original delta mode and deltas are reported.</p>\n</li>\n<li>\n<p dir=\"auto\">If <code class=\"notranslate\">deltaMode</code> has <em>not</em> been accessed, and it's <code class=\"notranslate\">DOM_DELTA_LINE</code>, accessing any of the deltas cause the event to always report <code class=\"notranslate\">DOM_DELTA_PIXELS</code>, and the deltas get converted to pixels using the <code class=\"notranslate\">font-size</code> of the target element.</p>\n</li>\n</ul>\n<p dir=\"auto\">For more information see:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"296193663\" data-permission-text=\"Title is private\" data-url=\"https://github.com/w3c/uievents/issues/181\" data-hovercard-type=\"issue\" data-hovercard-url=\"/w3c/uievents/issues/181/hovercard\" href=\"https://github.com/w3c/uievents/issues/181\">w3c/uievents#181</a></li>\n<li><a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1392460\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=1392460</a></li>\n</ul>",
-            "url": "https://github.com/mdn/content/issues/11811",
-            "title": "[uievents] Content bug: Missing information about what WheelEvent.delta* can be",
-            "date_modified": "2022-01-07T12:25:45.000Z",
-            "author": {
-                "name": "ziadkh0",
-                "url": "https://github.com/ziadkh0"
-            }
         }
     ]
 }
