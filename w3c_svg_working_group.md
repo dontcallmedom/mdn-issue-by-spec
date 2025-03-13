@@ -12,5 +12,3 @@
   
 * [\[SVG11\] Issue with "SVGSVGElement": In FF an unset viewBox property means viewBox.baseVal = null. For Chrome it is an SVGRect initialized to 0.](https://github.com/mdn/content/issues/8907) (2021-09-14T14:00:23Z)
   
-* [\[svg-animations, SVG11\] Issue with "\<animate\>": Firefox is inconsistent in rendering svg - graphic](https://github.com/mdn/content/issues/8551) (2021-09-02T04:54:48Z)
-  
