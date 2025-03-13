@@ -20,6 +20,8 @@
   
 * [\[cssom-view-1\] document.caretPositionFromPoint() API needs update](https://github.com/mdn/content/issues/34492) (2024-06-28T18:22:16Z)
   
+* [\[css-backgrounds-4\] background-clip example using text-shadow is unnecessary](https://github.com/mdn/content/issues/38596) (2024-04-13T11:28:40Z)
+  
 * [\[css-shadow-parts-1\] Incorrect statement about pseudo-elements needing to come last in a selector](https://github.com/mdn/content/issues/32971) (2024-04-05T20:16:52Z)
   
 * [\[css-typed-om-2\] CSSMathNegate() constructor page is a stub](https://github.com/mdn/content/issues/28118) (2023-07-22T02:25:00Z)
@@ -37,4 +39,6 @@
 * [\[cssom-view-1\] Issue with "Document: scroll event": Example using rAF in scroll-event callbacks is outdated, and anti-performance](https://github.com/mdn/content/issues/12701) (2022-02-04T00:25:49Z)
   
 * [\[service-workers-1, dom, cssom-view-1, notifications, pointerevents3\] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
+  
+* [\[css-lists-3\] counter-reset interactive example is confusing](https://github.com/mdn/content/issues/38600) (2021-06-23T22:25:29Z)
   

@@ -60,6 +60,8 @@
   
 * [\[webxr\] Explanation of \`bounded-floor\`/\`local\`/\`local-floor\` needs improvement](https://github.com/mdn/content/issues/33111) (2024-04-16T04:22:18Z)
   
+* [\[css-backgrounds-4\] background-clip example using text-shadow is unnecessary](https://github.com/mdn/content/issues/38596) (2024-04-13T11:28:40Z)
+  
 * [\[css-shadow-parts-1\] Incorrect statement about pseudo-elements needing to come last in a selector](https://github.com/mdn/content/issues/32971) (2024-04-05T20:16:52Z)
   
 * [\[webrtc\] RTCDataChannel bufferedamountlow event not sent if the threshold is 0?](https://github.com/mdn/content/issues/29087) (2023-09-13T08:47:28Z)
@@ -123,6 +125,8 @@
 * [\[svg-animations, SVG11\] Issue with "\<animate\>": Firefox is inconsistent in rendering svg - graphic](https://github.com/mdn/content/issues/8551) (2021-09-02T04:54:48Z)
   
 * [\[service-workers-1\] Issue with "ServiceWorkerContainer.register()": may be advisable to check for an existing registration](https://github.com/mdn/content/issues/7138) (2021-07-21T16:35:44Z)
+  
+* [\[css-lists-3\] counter-reset interactive example is confusing](https://github.com/mdn/content/issues/38600) (2021-06-23T22:25:29Z)
   
 * [\[webaudio\] Content bug: AudioListener and attributes need better examples. ](https://github.com/mdn/content/issues/4468) (2021-04-26T03:22:48Z)
   
