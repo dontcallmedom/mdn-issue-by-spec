@@ -52,7 +52,7 @@
   
 * [\[html\] Improve \`messageerror\` example to show a case in which the event is fired](https://github.com/mdn/content/issues/35064) (2024-07-25T16:05:45Z)
   
-* [\[ecmascript, streams\] ReadableStreamDefaultController: undocumented error conditions](https://github.com/mdn/content/issues/34597) (2024-07-03T14:49:56Z)
+* [\[streams, ecmascript\] ReadableStreamDefaultController: undocumented error conditions](https://github.com/mdn/content/issues/34597) (2024-07-03T14:49:56Z)
   
 * [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
   

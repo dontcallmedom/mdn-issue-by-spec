@@ -4,7 +4,5 @@
 
 * [\[ecmascript\] Yielding rejected promises from a sync generator now properly closes the iterator](https://github.com/mdn/content/issues/37038) (2024-12-01T10:22:47Z)
   
-* [\[ecmascript, streams\] ReadableStreamDefaultController: undocumented error conditions](https://github.com/mdn/content/issues/34597) (2024-07-03T14:49:56Z)
-  
-* [\[ecmascript\] Need a page on Execution context](https://github.com/mdn/content/issues/5006) (2021-05-14T18:14:38Z)
+* [\[streams, ecmascript\] ReadableStreamDefaultController: undocumented error conditions](https://github.com/mdn/content/issues/34597) (2024-07-03T14:49:56Z)
   
