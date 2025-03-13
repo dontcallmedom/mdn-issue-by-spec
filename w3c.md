@@ -14,8 +14,6 @@
   
 * [\[requestidlecallback\] timeRemaining() documentation should flag that it doesn't just count down](https://github.com/mdn/content/issues/37250) (2024-12-17T22:44:09Z)
   
-* [\[SVG11\] Reverse values and use case](https://github.com/mdn/content/issues/37124) (2024-12-06T18:25:10Z)
-  
 * [\[css-typed-om-2, cssom-1\] Add an alternative solution for computedStyleMap](https://github.com/mdn/content/issues/37087) (2024-12-04T09:12:21Z)
   
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)

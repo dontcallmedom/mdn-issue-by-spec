@@ -4,8 +4,6 @@
 
 * [\[SVG11\] SVG examples should be written in proper XML syntax](https://github.com/mdn/content/issues/37761) (2025-01-22T23:39:56Z)
   
-* [\[SVG11\] Reverse values and use case](https://github.com/mdn/content/issues/37124) (2024-12-06T18:25:10Z)
-  
 * [\[html, SVG11\] CanvasRenderingContext2D: drawImage() method: takes natural height and width into account docs incomplete.](https://github.com/mdn/content/issues/35141) (2024-07-26T10:10:58Z)
   
 * [\[SVG11\] Inconsistency with experimental status of textPath attribute method](https://github.com/mdn/content/issues/24079) (2023-02-01T16:11:22Z)
