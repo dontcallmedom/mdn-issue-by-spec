@@ -4,40 +4,10 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Wed, 26 Feb 2025 13:35:24 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 10 Feb 2025 15:06:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[html] Setting HTMLCanvasElement.width also resets context properties]]></title>
-            <link>https://github.com/mdn/content/issues/38339</link>
-            <guid>https://github.com/mdn/content/issues/38339</guid>
-            <pubDate>Wed, 26 Feb 2025 13:35:24 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/width" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/width</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Second paragraph</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The text states that the drawing buffer is reset after setting the width (or height, that article is also affected). However, all of the properties in the context are also reset to their default value, not just the drawing buffer. When I read this, I assumed that the canvas would be blanked, but properties like <code class="notranslate">fontKerning</code> would not be reset to <code class="notranslate">auto</code></p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">It should be clear that the whole context is reset, not just the drawing buffer.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-set-bitmap-dimensions" rel="nofollow">https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-set-bitmap-dimensions</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/htmlcanvaselement/width</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/width" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/width</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlcanvaselement/width/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlcanvaselement/width/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/c16ab7959173ec929df57d3916f8f4dbce485709/hovercard" href="https://github.com/mdn/content/commit/c16ab7959173ec929df57d3916f8f4dbce485709"><tt>c16ab79</tt></a></li>
-<li>Document last modified: 2024-06-17T23:51:58.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html] Add `colorType` documentation to `CanvasRenderingContext2DSettings`]]></title>
             <link>https://github.com/mdn/content/issues/38087</link>
