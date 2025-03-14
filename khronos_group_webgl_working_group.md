@@ -20,5 +20,3 @@
   
 * [\[webgl2\] srcOffset and srcLength not documented for WebGL2RenderingContext.uniform](https://github.com/mdn/content/issues/20225) (2022-09-02T00:42:19Z)
   
-* [\[OVR_multiview2\] WebXR guide material tracking issue](https://github.com/mdn/content/issues/7276) (2021-07-26T07:39:35Z)
-  
