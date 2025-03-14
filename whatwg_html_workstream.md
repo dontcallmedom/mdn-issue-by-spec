@@ -40,6 +40,8 @@
   
 * [\[html\] Improve \`messageerror\` example to show a case in which the event is fired](https://github.com/mdn/content/issues/35064) (2024-07-25T16:05:45Z)
   
+* [\[html\] submit event live example is missing \`allow-forms\` sandbox attribute](https://github.com/mdn/content/issues/38645) (2024-07-11T06:32:27Z)
+  
 * [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
   
 * [\[html\] Video/Audio source event handling](https://github.com/mdn/content/issues/32784) (2024-03-21T15:30:15Z)
