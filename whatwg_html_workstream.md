@@ -60,8 +60,6 @@
   
 * [\[html\] HTMLImageElement.srcset: sizes attribute doesn't need to be present](https://github.com/mdn/content/issues/27291) (2023-06-12T21:33:46Z)
   
-* [\[html\] lineJoin page could use an example where you can experiment with the different types](https://github.com/mdn/content/issues/38597) (2023-05-26T16:37:42Z)
-  
 * [\[html\] Image request fired as soon as src is set](https://github.com/mdn/content/issues/26560) (2023-05-03T17:23:34Z)
   
 * [\[html\] document-domain feature policy is being removed](https://github.com/mdn/content/issues/22732) (2022-12-05T04:44:41Z)
