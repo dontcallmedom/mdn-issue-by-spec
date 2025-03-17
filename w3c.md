@@ -10,8 +10,6 @@
   
 * [\[CSS21, css-display-3\] CSS+JS Accessibility best practices - hidden things section - is not promoting best practices](https://github.com/mdn/content/issues/37524) (2025-01-06T15:29:04Z)
   
-* [\[cssom-1\] Example for CSSStyleDeclaration/setProperty doesn't work](https://github.com/mdn/content/issues/37268) (2024-12-19T00:02:32Z)
-  
 * [\[requestidlecallback\] timeRemaining() documentation should flag that it doesn't just count down](https://github.com/mdn/content/issues/37250) (2024-12-17T22:44:09Z)
   
 * [\[css-typed-om-2, cssom-1\] Add an alternative solution for computedStyleMap](https://github.com/mdn/content/issues/37087) (2024-12-04T09:12:21Z)

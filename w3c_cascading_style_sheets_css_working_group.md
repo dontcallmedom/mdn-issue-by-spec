@@ -6,8 +6,6 @@
   
 * [\[CSS21, css-display-3\] CSS+JS Accessibility best practices - hidden things section - is not promoting best practices](https://github.com/mdn/content/issues/37524) (2025-01-06T15:29:04Z)
   
-* [\[cssom-1\] Example for CSSStyleDeclaration/setProperty doesn't work](https://github.com/mdn/content/issues/37268) (2024-12-19T00:02:32Z)
-  
 * [\[css-typed-om-2, cssom-1\] Add an alternative solution for computedStyleMap](https://github.com/mdn/content/issues/37087) (2024-12-04T09:12:21Z)
   
 * [\[css-font-loading-3\] FontFace doc: sizeAdjust is missing](https://github.com/mdn/content/issues/36587) (2024-10-31T07:23:20Z)
