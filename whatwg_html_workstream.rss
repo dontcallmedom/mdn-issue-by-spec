@@ -4,10 +4,45 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Mon, 10 Feb 2025 15:06:09 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 17 Mar 2025 03:06:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Mention that the :autofill pseudo-class doesn't work in all cases in Firefox]]></title>
+            <link>https://github.com/mdn/content/issues/38676</link>
+            <guid>https://github.com/mdn/content/issues/38676</guid>
+            <pubDate>Mon, 17 Mar 2025 03:06:29 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Try it</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The 'try it' demo doesn't seem to work in Firefox</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Either a note about why it doesn't work or a demo that does work</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">This demo was mentioned here: <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1923525" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=1923525</a><br>
+Specifically someone mentioned that:</p>
+<blockquote>
+<p dir="auto">Yeah, autofill matches only with user / password / etc autofill</p>
+</blockquote>
+<p dir="auto">So I think the <code class="notranslate">:autofill</code> pseudo-class simply doesn't work for any other fields</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/_colon_autofill</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_autofill/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/_colon_autofill/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/33a12980eb49cc795a41f15ec7a0181270ad3048/hovercard" href="https://github.com/mdn/content/commit/33a12980eb49cc795a41f15ec7a0181270ad3048"><tt>33a1298</tt></a></li>
+<li>Document last modified: 2025-03-03T12:35:03.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Add `colorType` documentation to `CanvasRenderingContext2DSettings`]]></title>
             <link>https://github.com/mdn/content/issues/38087</link>
@@ -822,7 +857,7 @@ Which tripped me off, anyways I don't know why that behavior is and would love t
 <h3 dir="auto">Operating system</h3>
 <p dir="auto">Windows</p>
 <h3 dir="auto">Screenshot</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIxNzkxODAsIm5iZiI6MTc0MjE3ODg4MCwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzE3VDAyMzQ0MFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTE4YzBjMzRlNDljYzEyNWEzYzI2OGM0M2QxMTgwMTg2YzMwNGRlMzUwZjhlYmNjNTYzODkwM2JmMWUzNGJlMjQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.NqLTmqONqF9jA18_Ows3g4VQwkhMObPty_GhpRUljWY"><img src="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIxNzkxODAsIm5iZiI6MTc0MjE3ODg4MCwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzE3VDAyMzQ0MFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTE4YzBjMzRlNDljYzEyNWEzYzI2OGM0M2QxMTgwMTg2YzMwNGRlMzUwZjhlYmNjNTYzODkwM2JmMWUzNGJlMjQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.NqLTmqONqF9jA18_Ows3g4VQwkhMObPty_GhpRUljWY" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIxODE4NTMsIm5iZiI6MTc0MjE4MTU1MywicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzE3VDAzMTkxM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTBjZDRlODRjNjYwNTZjNTE4ZjFjNzdlOTEzYmU3M2RiZTQ4NWVhOTQyYmU3N2Y4MjkzZTdmNDQxNTI3ZTJlNTMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.ziF4NqxxWAMhH3w3hrEuL7MElCc_GRuMshnlUnnaLX4"><img src="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIxODE4NTMsIm5iZiI6MTc0MjE4MTU1MywicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzE3VDAzMTkxM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTBjZDRlODRjNjYwNTZjNTE4ZjFjNzdlOTEzYmU3M2RiZTQ4NWVhOTQyYmU3N2Y4MjkzZTdmNDQxNTI3ZTJlNTMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.ziF4NqxxWAMhH3w3hrEuL7MElCc_GRuMshnlUnnaLX4" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Anything else?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Validations</h3>
