@@ -10,8 +10,6 @@
   
 * [\[webrtc\] RTCDataChannel bufferedamountlow event not sent if the threshold is 0?](https://github.com/mdn/content/issues/29087) (2023-09-13T08:47:28Z)
   
-* [\[webrtc\] usernameFragment Examples section contains method that does not exist](https://github.com/mdn/content/issues/28171) (2023-07-25T13:19:31Z)
-  
 * [\[webrtc\] Incorrectly states that RTCRtpTransceiver.mid is null until negotiation is completed.](https://github.com/mdn/content/issues/27502) (2023-06-23T10:39:29Z)
   
 * [\[webrtc\] api.RTCDataChannel.send - Wrong or obsolete exception list](https://github.com/mdn/content/issues/30909) (2023-05-16T11:38:12Z)
