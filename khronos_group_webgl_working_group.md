@@ -16,7 +16,5 @@
   
 * [\[webgl2, webgl1\] \`texSubImage2D\` documentation does not document the \`source\`, \`srcOffset\` parameters](https://github.com/mdn/content/issues/31787) (2024-01-18T18:45:51Z)
   
-* [\[webgl1\] SharedArrayBuffer is not usable as a source data parameter.](https://github.com/mdn/content/issues/30749) (2023-12-03T05:06:20Z)
-  
 * [\[webgl2\] srcOffset and srcLength not documented for WebGL2RenderingContext.uniform](https://github.com/mdn/content/issues/20225) (2022-09-02T00:42:19Z)
   
