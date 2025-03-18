@@ -4,40 +4,10 @@
         <title>Khronos Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/khronos_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Khronos Group</description>
-        <lastBuildDate>Sat, 05 Oct 2024 19:14:07 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 07 Aug 2024 18:39:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[webgl2, webgl1] WebGL2RenderingContext: uniform[1234][uif][v]() method doesn't mention typed arrays for f or i variants]]></title>
-            <link>https://github.com/mdn/content/issues/36208</link>
-            <guid>https://github.com/mdn/content/issues/36208</guid>
-            <pubDate>Sat, 05 Oct 2024 19:14:07 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/uniform" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/uniform</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><code class="notranslate">WebGL2RenderingContext: uniform[1234][uif][v]()</code> method</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The <code class="notranslate">data</code> parameter is documented as only supporting <code class="notranslate">Number</code> (for non-<code class="notranslate">v</code> variants) or <code class="notranslate">Uint32Array</code> (for <code class="notranslate">uv</code> variants). This appears incomplete.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">My expectation (and the apparent behavior of the function in practice) is that it also accepts <code class="notranslate">Float32Array</code> for <code class="notranslate">fv</code> variants and <code class="notranslate">Int32Array</code> for <code class="notranslate">iv</code> variants.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">The WebGL variant of the function includes the extra array types: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/uniform" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/uniform</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/webgl2renderingcontext/uniform</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/uniform" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/uniform</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/uniform/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/uniform/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2b942f0d8f84641c233d701cb5d1f4e6c23120ff/hovercard" href="https://github.com/mdn/content/commit/2b942f0d8f84641c233d701cb5d1f4e6c23120ff"><tt>2b942f0</tt></a></li>
-<li>Document last modified: 2024-09-28T05:28:22.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[webgl1] mention that `gl.clear(gl.DEPTH_BUFFER_BIT)` has no effect when `gl.depthMask()` has been set to `false`]]></title>
             <link>https://github.com/mdn/content/issues/35362</link>
@@ -223,7 +193,7 @@ Create a WebGLBuffer object and initialize it with a buffer object name as if by
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[webgl2, webgl1] `texSubImage2D` documentation does not document the `source`, `srcOffset` parameters]]></title>
+            <title><![CDATA[[webgl1, webgl2] `texSubImage2D` documentation does not document the `source`, `srcOffset` parameters]]></title>
             <link>https://github.com/mdn/content/issues/31787</link>
             <guid>https://github.com/mdn/content/issues/31787</guid>
             <pubDate>Thu, 18 Jan 2024 18:45:51 GMT</pubDate>
@@ -249,36 +219,6 @@ Create a WebGLBuffer object and initialize it with a buffer object name as if by
 <li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webglrenderingcontext/texsubimage2d/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/webglrenderingcontext/texsubimage2d/index.md</a></li>
 <li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/eda49877b9078b24cd18f794470e5e225add9b94/hovercard" href="https://github.com/mdn/content/commit/eda49877b9078b24cd18f794470e5e225add9b94"><tt>eda4987</tt></a></li>
 <li>Document last modified: 2023-04-08T06:46:30.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[webgl2] srcOffset and srcLength not documented for WebGL2RenderingContext.uniform]]></title>
-            <link>https://github.com/mdn/content/issues/20225</link>
-            <guid>https://github.com/mdn/content/issues/20225</guid>
-            <pubDate>Fri, 02 Sep 2022 00:42:19 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/uniform" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/uniform</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Parameters</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The <code class="notranslate">srcOffset</code> and <code class="notranslate">srcLength</code> parameters aren't explained.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Explanation of whether these are byte offsets, array indices, etc.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">I like turtles.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/webgl2renderingcontext/uniform</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/uniform" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/uniform</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/uniform/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl2renderingcontext/uniform/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/22432fdd83e50053c00eb26aefb3e9c7e6477bce/hovercard" href="https://github.com/mdn/content/commit/22432fdd83e50053c00eb26aefb3e9c7e6477bce"><tt>22432fd</tt></a></li>
-<li>Document last modified: 2022-06-03T04:12:52.000Z</li>
 </ul>
 </details>]]></content:encoded>
         </item>
