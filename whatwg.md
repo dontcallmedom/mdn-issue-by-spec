@@ -26,8 +26,6 @@
   
 * [\[html, wai-aria-1.2\] All \`ElementInternals\` docs for \`ARIAMixin\` properties are incorrect](https://github.com/mdn/content/issues/36508) (2024-10-26T03:40:30Z)
   
-* [\[fetch\] Explain what is a "forged redirect"](https://github.com/mdn/content/issues/36231) (2024-10-07T09:53:54Z)
-  
 * [\[html\] window.postMessage needs targetOrigin=\* for dataurl](https://github.com/mdn/content/issues/36039) (2024-09-25T08:53:00Z)
   
 * [\[dom\] Range.extractContents() and Range.surroundContents() describe behaviour incorrectly](https://github.com/mdn/content/issues/35854) (2024-09-12T14:20:49Z)
