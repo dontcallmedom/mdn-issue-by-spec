@@ -2,10 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-pseudo-4\] font properties don't all work on ::marker](https://github.com/mdn/content/issues/38708) (2025-03-19T00:16:17Z)
-  
-* [\[css-overflow-3\] Non-standard CSS properties \`text-overflow: \<string\>\` and \`text-overflow: clip clip\` are both Mozilla-specific. Needs a warning in their text.](https://github.com/mdn/content/issues/38697) (2025-03-18T13:56:34Z)
-  
 * [\[mediacapture-streams\] MediaTrackCapabilities properties are string\[\]/boolean\[\]/DoubleRange/ULongRange, not ConstrainDOMString/ConstrainBoolean/ConstrainDouble/ConstrainULong](https://github.com/mdn/content/issues/38249) (2025-02-20T04:20:50Z)
   
 * [\[SVG11\] SVG examples should be written in proper XML syntax](https://github.com/mdn/content/issues/37761) (2025-01-22T23:39:56Z)
