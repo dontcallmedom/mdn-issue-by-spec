@@ -26,14 +26,6 @@
   
 * [\[html\] window.postMessage needs targetOrigin=\* for dataurl](https://github.com/mdn/content/issues/36039) (2024-09-25T08:53:00Z)
   
-* [\[dom\] Range.extractContents() and Range.surroundContents() describe behaviour incorrectly](https://github.com/mdn/content/issues/35854) (2024-09-12T14:20:49Z)
-  
-* [\[dom\] Range: isPointInRange() method, offset not explained](https://github.com/mdn/content/issues/35840) (2024-09-11T15:30:33Z)
-  
-* [\[dom\] Range: comparePoint() method return not actually explained](https://github.com/mdn/content/issues/35830) (2024-09-11T09:07:39Z)
-  
-* [\[dom\] Range: compareBoundaryPoints() method examples and explanation unclear](https://github.com/mdn/content/issues/35829) (2024-09-11T08:59:47Z)
-  
 * [\[html\] Missing documentation that SharedArrayBuffers not compatible with MessagePort](https://github.com/mdn/content/issues/35561) (2024-08-23T01:58:03Z)
   
 * [\[html\] Whitespace is not insignificant in HTMLImageElement.srcset](https://github.com/mdn/content/issues/35492) (2024-08-17T15:44:16Z)
