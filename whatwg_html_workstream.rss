@@ -4,42 +4,10 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Sat, 22 Mar 2025 08:09:49 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 10 Feb 2025 15:06:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[html] Reference to .port not working and undefined]]></title>
-            <link>https://github.com/mdn/content/issues/38765</link>
-            <guid>https://github.com/mdn/content/issues/38765</guid>
-            <pubDate>Sat, 22 Mar 2025 08:09:49 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">At some point the document show an example with that line:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="    myWorker.port.postMessage([first.value, second.value]);"><pre class="notranslate">    <span class="pl-s1">myWorker</span><span class="pl-kos">.</span><span class="pl-c1">port</span><span class="pl-kos">.</span><span class="pl-en">postMessage</span><span class="pl-kos">(</span><span class="pl-kos">[</span><span class="pl-s1">first</span><span class="pl-kos">.</span><span class="pl-c1">value</span><span class="pl-kos">,</span> <span class="pl-s1">second</span><span class="pl-kos">.</span><span class="pl-c1">value</span><span class="pl-kos">]</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
-<p dir="auto">The reference to <code class="notranslate">.port</code> attribute is not working, and there's no reference to where this <code class="notranslate">port</code> came from.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">A working example</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/worker/postmessage</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/worker/postmessage/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/worker/postmessage/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/875215de95e76ff145fc85902d32c1142a1ccf53/hovercard" href="https://github.com/mdn/content/commit/875215de95e76ff145fc85902d32c1142a1ccf53"><tt>875215d</tt></a></li>
-<li>Document last modified: 2024-12-31T09:04:40.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html] Add `colorType` documentation to `CanvasRenderingContext2DSettings`]]></title>
             <link>https://github.com/mdn/content/issues/38087</link>
@@ -822,7 +790,7 @@ Which tripped me off, anyways I don't know why that behavior is and would love t
 <h3 dir="auto">Operating system</h3>
 <p dir="auto">Windows</p>
 <h3 dir="auto">Screenshot</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDI2NjU5OTQsIm5iZiI6MTc0MjY2NTY5NCwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzIyVDE3NDgxNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNhMjFjMTNiNmM4NTNjOTEyMTEwNzRkMmE2YzZjOWE4OGU4NjhhYmExYTFmNmYxMDRlYWI1MTA1ZTg0MWJhMWYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.ltMuW7SiZlLVDTkPt0R_mL7MfQ2RAfl5VZkzSj2J1gM"><img src="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDI2NjU5OTQsIm5iZiI6MTc0MjY2NTY5NCwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzIyVDE3NDgxNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNhMjFjMTNiNmM4NTNjOTEyMTEwNzRkMmE2YzZjOWE4OGU4NjhhYmExYTFmNmYxMDRlYWI1MTA1ZTg0MWJhMWYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.ltMuW7SiZlLVDTkPt0R_mL7MfQ2RAfl5VZkzSj2J1gM" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDI2NjY2MTUsIm5iZiI6MTc0MjY2NjMxNSwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzIyVDE3NTgzNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWMxZDkxYTBlMGRhMjNmNjFjYjI0NDJmYTJhODcwOTg3OWNlOTRmMThmOThkYjRiZTM1MGZmZTNkODc3OTllOTAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.kqTtYonsDc9IvLvmlySdjDNt420Qjh8nYUrv1TxvWCk"><img src="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDI2NjY2MTUsIm5iZiI6MTc0MjY2NjMxNSwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzIyVDE3NTgzNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWMxZDkxYTBlMGRhMjNmNjFjYjI0NDJmYTJhODcwOTg3OWNlOTRmMThmOThkYjRiZTM1MGZmZTNkODc3OTllOTAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.kqTtYonsDc9IvLvmlySdjDNt420Qjh8nYUrv1TxvWCk" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Anything else?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Validations</h3>
