@@ -4,10 +4,79 @@
         <title>W3C Internationalization Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_internationalization_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Internationalization Working Group</description>
-        <lastBuildDate>Mon, 07 Feb 2022 04:15:29 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 26 Mar 2025 19:24:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[encoding] WritableStreamAPI example typo]]></title>
+            <link>https://github.com/mdn/content/issues/38824</link>
+            <guid>https://github.com/mdn/content/issues/38824</guid>
+            <pubDate>Wed, 26 Mar 2025 19:24:13 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Using_writable_streams#writing" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Using_writable_streams#writing</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Writing example</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">TextEncoder::encode method does not have parameters and returns Uint8Array</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const encoder = new TextEncoder();
+const encoded = encoder.encode(message, { stream: true }); // does not have stream parameter"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">encoder</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">TextEncoder</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-s1">encoded</span> <span class="pl-c1">=</span> <span class="pl-s1">encoder</span><span class="pl-kos">.</span><span class="pl-en">encode</span><span class="pl-kos">(</span><span class="pl-s1">message</span><span class="pl-kos">,</span> <span class="pl-kos">{</span> <span class="pl-c1">stream</span>: <span class="pl-c1">true</span> <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// does not have stream parameter</span></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="sendMessages([&quot;Hello, world.&quot;], writableStream);
+
+async function sendMessage(messages, writableStream) {
+  // defaultWriter is of type WritableStreamDefaultWriter
+  const defaultWriter = writableStream.getWriter();
+  const encoder = new TextEncoder();
+  // TODO: close stream in case of encoder error
+  const chunks = messages.map((it) =&gt; encoder.encode(it));
+  chunks.forEach((chunk) =&gt; {       
+       try {
+           await defaultWriter.write(chunk);
+           console.log(&quot;Chunk written to sink.&quot;);
+       } catch(error) {
+           console.error(&quot;Chunk error:&quot;, error);
+       }
+  });
+  // Call ready again to ensure that all chunks are written
+  //   before closing the writer.
+  try {
+     await defaultWriter.ready;
+     console.log(&quot;All chunks written.&quot;);
+  } catch(error) {
+      console.error(&quot;Stream error:&quot;, error);
+   }
+}"><pre class="notranslate"><span class="pl-en">sendMessages</span><span class="pl-kos">(</span><span class="pl-kos">[</span><span class="pl-s">"Hello, world."</span><span class="pl-kos">]</span><span class="pl-kos">,</span> <span class="pl-s1">writableStream</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+<span class="pl-k">async</span> <span class="pl-k">function</span> <span class="pl-en">sendMessage</span><span class="pl-kos">(</span><span class="pl-s1">messages</span><span class="pl-kos">,</span> <span class="pl-s1">writableStream</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-c">// defaultWriter is of type WritableStreamDefaultWriter</span>
+  <span class="pl-k">const</span> <span class="pl-s1">defaultWriter</span> <span class="pl-c1">=</span> <span class="pl-s1">writableStream</span><span class="pl-kos">.</span><span class="pl-en">getWriter</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-k">const</span> <span class="pl-s1">encoder</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">TextEncoder</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-c">// TODO: close stream in case of encoder error</span>
+  <span class="pl-k">const</span> <span class="pl-s1">chunks</span> <span class="pl-c1">=</span> <span class="pl-s1">messages</span><span class="pl-kos">.</span><span class="pl-en">map</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">it</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-s1">encoder</span><span class="pl-kos">.</span><span class="pl-en">encode</span><span class="pl-kos">(</span><span class="pl-s1">it</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-s1">chunks</span><span class="pl-kos">.</span><span class="pl-en">forEach</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">chunk</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>       
+       <span class="pl-k">try</span> <span class="pl-kos">{</span>
+           <span class="pl-k">await</span> <span class="pl-s1">defaultWriter</span><span class="pl-kos">.</span><span class="pl-en">write</span><span class="pl-kos">(</span><span class="pl-s1">chunk</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+           <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"Chunk written to sink."</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+       <span class="pl-kos">}</span> <span class="pl-k">catch</span><span class="pl-kos">(</span><span class="pl-s1">error</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+           <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">error</span><span class="pl-kos">(</span><span class="pl-s">"Chunk error:"</span><span class="pl-kos">,</span> <span class="pl-s1">error</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+       <span class="pl-kos">}</span>
+  <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-c">// Call ready again to ensure that all chunks are written</span>
+  <span class="pl-c">//   before closing the writer.</span>
+  <span class="pl-k">try</span> <span class="pl-kos">{</span>
+     <span class="pl-k">await</span> <span class="pl-s1">defaultWriter</span><span class="pl-kos">.</span><span class="pl-c1">ready</span><span class="pl-kos">;</span>
+     <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"All chunks written."</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span> <span class="pl-k">catch</span><span class="pl-kos">(</span><span class="pl-s1">error</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+      <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">error</span><span class="pl-kos">(</span><span class="pl-s">"Stream error:"</span><span class="pl-kos">,</span> <span class="pl-s1">error</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+   <span class="pl-kos">}</span>
+<span class="pl-kos">}</span></pre></div>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder/encode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder/encode</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[encoding] Content suggestion: ImageDecoder & ImageTrackList how-to/tutorial]]></title>
             <link>https://github.com/mdn/content/issues/12791</link>
