@@ -8,8 +8,6 @@
   
 * [\[html\] negative sWidth & sHeight optional arguments for 9-argument syntax does not flip image.](https://github.com/mdn/content/issues/37873) (2025-01-30T00:54:31Z)
   
-* [\[html\] Customizable select element](https://github.com/mdn/content/issues/37857) (2025-01-28T21:01:01Z)
-  
 * [\[html\] \[HTML\] Add \`OffscreenCanvasRenderingContext2D\` method \`getContextAttributes\`](https://github.com/mdn/content/issues/37727) (2025-01-20T14:02:21Z)
   
 * [\[html\] Better documentation for labelling inputs](https://github.com/mdn/content/issues/37665) (2025-01-15T22:49:27Z)
