@@ -32,8 +32,6 @@
   
 * [\[html\] HTMLMediaElement.currentTime: precision seems different from Date.now](https://github.com/mdn/content/issues/35239) (2024-07-30T09:34:47Z)
   
-* [\[html, SVG11\] CanvasRenderingContext2D: drawImage() method: takes natural height and width into account docs incomplete.](https://github.com/mdn/content/issues/35141) (2024-07-26T10:10:58Z)
-  
 * [\[html\] Improve \`messageerror\` example to show a case in which the event is fired](https://github.com/mdn/content/issues/35064) (2024-07-25T16:05:45Z)
   
 * [\[html\] submit event live example is missing \`allow-forms\` sandbox attribute](https://github.com/mdn/content/issues/38645) (2024-07-11T06:32:27Z)
