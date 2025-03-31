@@ -92,7 +92,7 @@
   
 * [\[webrtc\] What is \`RTCPeerConnection.generateCertificate(..)\` good for?](https://github.com/mdn/content/issues/23993) (2023-01-30T20:28:26Z)
   
-* [\[css-align-3\] Content suggestion: display owns CSS shorthand property.](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
+* [\[css-align-3\] New section to link from longhand to shorthand property](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
   
 * [\[IndexedDB-3\] indexedDB.deleteDatabase doc: Mention that deleting a database isn't completed until the upgradeNeeded result is closed](https://github.com/mdn/content/issues/20368) (2022-09-07T00:12:45Z)
   

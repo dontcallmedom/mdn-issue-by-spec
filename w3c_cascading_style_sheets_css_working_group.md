@@ -30,7 +30,7 @@
   
 * [\[filter-effects-2\] feGaussianBlur needs guidance about setting height and width ](https://github.com/mdn/content/issues/24169) (2023-02-04T21:15:51Z)
   
-* [\[css-align-3\] Content suggestion: display owns CSS shorthand property.](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
+* [\[css-align-3\] New section to link from longhand to shorthand property](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
   
 * [\[selectors-4\] \`:any-link\` privacy exception not explained](https://github.com/mdn/content/issues/17366) (2022-06-17T02:50:38Z)
   
