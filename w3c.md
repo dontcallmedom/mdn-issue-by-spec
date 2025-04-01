@@ -4,8 +4,6 @@
 
 * [\[SVG11, filter-effects-2\] SVG: Restructuring to newer format](https://github.com/mdn/content/issues/38860) (2025-03-30T01:32:54Z)
   
-* [\[encoding\] WritableStreamAPI example typo](https://github.com/mdn/content/issues/38824) (2025-03-26T19:24:13Z)
-  
 * [\[cssom-view-1\] Update getComposedRanges parameters](https://github.com/mdn/content/issues/38810) (2025-03-25T22:46:08Z)
   
 * [\[mediacapture-streams\] MediaTrackCapabilities properties are string\[\]/boolean\[\]/DoubleRange/ULongRange, not ConstrainDOMString/ConstrainBoolean/ConstrainDouble/ConstrainULong](https://github.com/mdn/content/issues/38249) (2025-02-20T04:20:50Z)
