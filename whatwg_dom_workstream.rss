@@ -4,41 +4,10 @@
         <title>WHATWG DOM Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_dom_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG DOM Workstream</description>
-        <lastBuildDate>Sun, 06 Apr 2025 08:28:36 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 09 Aug 2024 02:19:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[dom] DOMTokenList.toggle() page should be a bit more exacting]]></title>
-            <link>https://github.com/mdn/content/issues/38994</link>
-            <guid>https://github.com/mdn/content/issues/38994</guid>
-            <pubDate>Sun, 06 Apr 2025 08:28:36 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">force</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<blockquote>
-<p dir="auto"><code class="notranslate">force</code> (Optional)<br>
- If included, turns the toggle into a one way-only operation. If set to <code class="notranslate">false</code>, then <code class="notranslate">token</code> will only be removed, but not added. If set to <code class="notranslate">true</code>, then <code class="notranslate">token</code> will only be added, but not removed.</p>
-</blockquote>
-<p dir="auto">Problem: ambiguous as to what happens if a non-boolean value is passed in as <code class="notranslate">force</code>, or most importantly if null or undefined is.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">something like this seems most(?) accurate whilst still being succinct and fairly easy to understand:</p>
-<blockquote>
-<p dir="auto"><code class="notranslate">force</code> (Optional)<br>
- If not <code class="notranslate">undefined</code>, turns the toggle into a one way-only operation. If [[falsy]], then <code class="notranslate">token</code> will only be removed, but not added. If [[truthy]], then <code class="notranslate">token</code> will only be added, but not removed.</p>
-</blockquote>
-<p dir="auto">well, perhaps the wikilinks to truthy/falsy are "too advanced"? i don't know.<br>
-anyway, the most important part is clarifying the "parameter not specified vs parameter undefined" question</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">only tested across Firefox (v137) and Edg[sic] (v135.who.cares) tho probably also true in other chromiums, and pale moon, Safari, etc etc &amp; so forth. i assume. idk</p>
-<p dir="auto">it is unclear, to me at least, if this is de facto or de jure as the specification (assuming i have the right link...) seems shockingly loose.<br>
-<a href="https://dom.spec.whatwg.org/#dom-domtokenlist-toggle" rel="nofollow">https://dom.spec.whatwg.org/#dom-domtokenlist-toggle</a><br>
-is "not given" DOM Spec term of art for "undefined" and "true" and "false" likewise terms of art for truthy/falsy, or is the DOM Spec really this loosey-goosey?</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">i am so tired. i am so tired of browsers. i am so tired of software. why are computers</p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html, dom, uievents] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not]]></title>
             <link>https://github.com/mdn/content/issues/35382</link>
