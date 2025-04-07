@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Add Float16Array-backed ImageData support](https://github.com/mdn/content/issues/39023) (2025-04-07T12:17:34Z)
+  
 * [\[html\] The \`\<template\>\` tag says it permitted content has "No restrictions", but that is not the case](https://github.com/mdn/content/issues/38984) (2025-04-05T07:12:02Z)
   
 * [\[html\] HTMLImageElement.alt example contains no JS](https://github.com/mdn/content/issues/38897) (2025-03-31T22:24:57Z)
