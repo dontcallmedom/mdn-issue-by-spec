@@ -4,66 +4,10 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Mon, 07 Apr 2025 12:06:15 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 01 Dec 2024 10:22:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript] Question: Could one here use `transfer()` to release the previous ArrayBuffer?]]></title>
-            <link>https://github.com/mdn/content/issues/39021</link>
-            <guid>https://github.com/mdn/content/issues/39021</guid>
-            <pubDate>Mon, 07 Apr 2025 12:06:15 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/GPUBuffer" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/GPUBuffer</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">About the <code class="notranslate">.slice(0)</code> in the code snippet</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The code in the website is:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="// map staging buffer to read results back to JS
-await stagingBuffer.mapAsync(
-  GPUMapMode.READ,
-  0, // Offset
-  BUFFER_SIZE, // Length
-);
-
-const copyArrayBuffer = stagingBuffer.getMappedRange(0, BUFFER_SIZE);
-const data = copyArrayBuffer.slice(0);
-stagingBuffer.unmap();
-console.log(new Float32Array(data));"><pre class="notranslate"><span class="pl-c">// map staging buffer to read results back to JS</span>
-<span class="pl-k">await</span> <span class="pl-s1">stagingBuffer</span><span class="pl-kos">.</span><span class="pl-en">mapAsync</span><span class="pl-kos">(</span>
-  <span class="pl-v">GPUMapMode</span><span class="pl-kos">.</span><span class="pl-c1">READ</span><span class="pl-kos">,</span>
-  <span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-c">// Offset</span>
-  <span class="pl-c1">BUFFER_SIZE</span><span class="pl-kos">,</span> <span class="pl-c">// Length</span>
-<span class="pl-kos">)</span><span class="pl-kos">;</span>
-
-<span class="pl-k">const</span> <span class="pl-s1">copyArrayBuffer</span> <span class="pl-c1">=</span> <span class="pl-s1">stagingBuffer</span><span class="pl-kos">.</span><span class="pl-en">getMappedRange</span><span class="pl-kos">(</span><span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-c1">BUFFER_SIZE</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-k">const</span> <span class="pl-s1">data</span> <span class="pl-c1">=</span> <span class="pl-s1">copyArrayBuffer</span><span class="pl-kos">.</span><span class="pl-en">slice</span><span class="pl-kos">(</span><span class="pl-c1">0</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-s1">stagingBuffer</span><span class="pl-kos">.</span><span class="pl-en">unmap</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-k">new</span> <span class="pl-v">Float32Array</span><span class="pl-kos">(</span><span class="pl-s1">data</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">I am wondering whether <code class="notranslate">.transfer()</code> isn't more useful (although I understand that this is a relatively new feature.)</p>
-<p dir="auto">I'd be unsure whether in this case we need <a href="https://developer.mozilla.org/en-US/docs/Web/API/GPUBuffer/unmap" rel="nofollow"><code class="notranslate">.unmap</code></a> though since:</p>
-<blockquote>
-<p dir="auto">When unmap() is called, any <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer" rel="nofollow">ArrayBuffer</a>s created via <a href="https://developer.mozilla.org/en-US/docs/Web/API/GPUBuffer/getMappedRange" rel="nofollow">GPUBuffer.getMappedRange()</a> are detached.</p>
-</blockquote>
-<p dir="auto">may end up erroring?</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">I'd appreciate any help understanding this case since I find the interaction between arraybuffers and gpu buffers a little bit confusing up to now.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/gpubuffer</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/GPUBuffer" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/GPUBuffer</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/gpubuffer/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/gpubuffer/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/153807f839ecfc45fd73ef12f92cc8e8012eb004/hovercard" href="https://github.com/mdn/content/commit/153807f839ecfc45fd73ef12f92cc8e8012eb004"><tt>153807f</tt></a></li>
-<li>Document last modified: 2024-09-25T06:06:38.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[ecmascript] Yielding rejected promises from a sync generator now properly closes the iterator]]></title>
             <link>https://github.com/mdn/content/issues/37038</link>
