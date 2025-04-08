@@ -4,41 +4,10 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Tue, 08 Apr 2025 06:10:14 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 07 Apr 2025 12:17:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[streams] Clarify that the buffer is transferred by ReadableStreamBYOBReader.read()]]></title>
-            <link>https://github.com/mdn/content/issues/39034</link>
-            <guid>https://github.com/mdn/content/issues/39034</guid>
-            <pubDate>Tue, 08 Apr 2025 06:10:14 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamBYOBReader/read" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamBYOBReader/read</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Not entirely sure, maybe the top section</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">There is no mention that the passed <code class="notranslate">ArrayBuffer</code> will be transferred.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The page should probably clarify that the <code class="notranslate">ArrayBuffer</code> passed along the view will get transferred by the call to <code class="notranslate">read()</code>, making it unavailable until the actual read operation returns, where it can be gotten back from <code class="notranslate">value.buffer</code> as is being done in the example section.</p>
-<p dir="auto">I must admit I'm not sure how it should be presented though, hence this issue rather than a PR.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">If you follow the path from <a href="https://streams.spec.whatwg.org/#byob-reader-read" rel="nofollow">https://streams.spec.whatwg.org/#byob-reader-read</a>, you end up at <a href="https://streams.spec.whatwg.org/#readable-byte-stream-controller-pull-into" rel="nofollow">https://streams.spec.whatwg.org/#readable-byte-stream-controller-pull-into</a> where step 10 will transfer the <code class="notranslate">ArrayBuffer</code>.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/readablestreambyobreader/read</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamBYOBReader/read" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamBYOBReader/read</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/readablestreambyobreader/read/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/readablestreambyobreader/read/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/3fcc43c9a6dd8e2eac385da0496586105256a468/hovercard" href="https://github.com/mdn/content/commit/3fcc43c9a6dd8e2eac385da0496586105256a468"><tt>3fcc43c</tt></a></li>
-<li>Document last modified: 2025-04-03T13:42:39.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html] Add Float16Array-backed ImageData support]]></title>
             <link>https://github.com/mdn/content/issues/39023</link>
@@ -877,7 +846,7 @@ Space characters, other than the whitespace separating the URL and the correspon
 <h3 dir="auto">Operating system</h3>
 <p dir="auto">Windows</p>
 <h3 dir="auto">Screenshot</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxMjc2NjgsIm5iZiI6MTc0NDEyNzM2OCwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDA4VDE1NDkyOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTkzMDIxNjA2MDRlYzRiNzUwZWVjYTZlMjdjMmUwZmEyZGE4Yjk1ZmY0MGZiM2ZkOWQwODdkYzVjZTc4N2U2OGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.bUr7rz8wGvhyhBkO7EM08uv2VjtkQQpzHpRVHur_WwE"><img src="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxMjc2NjgsIm5iZiI6MTc0NDEyNzM2OCwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDA4VDE1NDkyOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTkzMDIxNjA2MDRlYzRiNzUwZWVjYTZlMjdjMmUwZmEyZGE4Yjk1ZmY0MGZiM2ZkOWQwODdkYzVjZTc4N2U2OGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.bUr7rz8wGvhyhBkO7EM08uv2VjtkQQpzHpRVHur_WwE" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxMjgyOTksIm5iZiI6MTc0NDEyNzk5OSwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDA4VDE1NTk1OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU4Yzk3MWZlOTc3NjM5NWYzYWE2ODBhZjE5NDdjMzFlNDFkMDI2NGY0MjZlMWQ1MjgwZDQ0ZmU0NTYxMzVmYTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.3sUXXtQ4b4wiUFdcO8v9AlNysl7sqc4yQcjgiwguY-k"><img src="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxMjgyOTksIm5iZiI6MTc0NDEyNzk5OSwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDA4VDE1NTk1OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU4Yzk3MWZlOTc3NjM5NWYzYWE2ODBhZjE5NDdjMzFlNDFkMDI2NGY0MjZlMWQ1MjgwZDQ0ZmU0NTYxMzVmYTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.3sUXXtQ4b4wiUFdcO8v9AlNysl7sqc4yQcjgiwguY-k" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Anything else?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Validations</h3>
