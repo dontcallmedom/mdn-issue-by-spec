@@ -4,10 +4,36 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Sun, 01 Dec 2024 10:22:47 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 09 Apr 2025 10:40:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecma-402] Replace "islamic" examples with "islamic-umalqura" examples]]></title>
+            <link>https://github.com/mdn/content/issues/39050</link>
+            <guid>https://github.com/mdn/content/issues/39050</guid>
+            <pubDate>Wed, 09 Apr 2025 10:40:51 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">As documented in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2976111879" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/39012" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/39012/hovercard" href="https://github.com/mdn/content/pull/39012">#39012</a> , the calendar <code class="notranslate">islamic</code> means unspecified algorithm and in practice doesn't match a known non-software Hijri calendar variant. Yet, there are pages that use unqualified <code class="notranslate">islamic</code> calendar in examples:</p>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDate/compare" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDate/compare</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDate/withCalendar" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDate/withCalendar</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainYearMonth/compare" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainYearMonth/compare</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal/ZonedDateTime/withCalendar" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal/ZonedDateTime/withCalendar</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDateTime/withCalendar" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDateTime/withCalendar</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDate/toString" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDate/toString</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDateTime/compare" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDateTime/compare</a></p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">These pages should use <code class="notranslate">islamic-umalqura</code> instead to use a specific well-known variant.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">See <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2976111879" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/39012" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/39012/hovercard" href="https://github.com/mdn/content/pull/39012">#39012</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Yielding rejected promises from a sync generator now properly closes the iterator]]></title>
             <link>https://github.com/mdn/content/issues/37038</link>
