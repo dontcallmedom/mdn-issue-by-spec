@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Mention Firefox Anti-fingerprinting on \`getImageData()\` page](https://github.com/mdn/content/issues/39084) (2025-04-11T18:49:23Z)
+  
 * [\[dom\] Section Events and listing the selectstart event missing in page contents](https://github.com/mdn/content/issues/39049) (2025-04-09T09:02:14Z)
   
 * [\[html\] Add Float16Array-backed ImageData support](https://github.com/mdn/content/issues/39023) (2025-04-07T12:17:34Z)

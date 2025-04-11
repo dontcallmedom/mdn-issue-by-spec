@@ -4,10 +4,43 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Wed, 09 Apr 2025 09:02:14 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 11 Apr 2025 18:49:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Mention Firefox Anti-fingerprinting on `getImageData()` page]]></title>
+            <link>https://github.com/mdn/content/issues/39084</link>
+            <guid>https://github.com/mdn/content/issues/39084</guid>
+            <pubDate>Fri, 11 Apr 2025 18:49:23 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The page for <code class="notranslate">CanvasRenderingContext2D.getImageData()</code> does not mention that the result may be influenced by anti-fingerprinting, e.g. <a href="https://support.mozilla.org/en-US/kb/firefox-protection-against-fingerprinting" rel="nofollow">Firefox's protection against fingerprinting</a>:</p>
+<blockquote>
+<p dir="auto">Random data is introduced to background images when the image is read back by the website. If a website merely renders data to the background, it will render without alteration. Although typically this does not happen, if the website reads the image data in the background (and potentially displays it to you again), it will have subtle noise that may affect how the image is displayed.</p>
+</blockquote>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">It would be useful for web developers that use this feature, to mention this potential impact of anti-fingerprinting on the page.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">This was originally reported in <a href="https://github.com/mdn/browser-compat-data/issues/26256#issuecomment-2797565202" data-hovercard-type="issue" data-hovercard-url="/mdn/browser-compat-data/issues/26256/hovercard">this BCD issue</a>.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/canvasrenderingcontext2d/getimagedata</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/canvasrenderingcontext2d/getimagedata/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/canvasrenderingcontext2d/getimagedata/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e9b6cd1b7fa8612257b72b2a85a96dd7d45c0200/hovercard" href="https://github.com/mdn/content/commit/e9b6cd1b7fa8612257b72b2a85a96dd7d45c0200"><tt>e9b6cd1</tt></a></li>
+<li>Document last modified: 2025-04-10T14:56:07.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[dom] Section Events and listing the selectstart event missing in page contents]]></title>
             <link>https://github.com/mdn/content/issues/39049</link>
@@ -876,7 +909,7 @@ Space characters, other than the whitespace separating the URL and the correspon
 <h3 dir="auto">Operating system</h3>
 <p dir="auto">Windows</p>
 <h3 dir="auto">Screenshot</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQzOTczMjksIm5iZiI6MTc0NDM5NzAyOSwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MTElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDExVDE4NDM0OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTgyMmJlMjJjOGNlYmI4MTY3ZWNhMTYxMmU3OTZlMTZlNTA5MTJiNWRkZjIwZWUxYjUyYTU0Yjk4ODAwYzk2YTImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.9z0VPAuv-nr8A7kWz33zWiH6O7JFsSWkM5yiBPo5QGc"><img src="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQzOTczMjksIm5iZiI6MTc0NDM5NzAyOSwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MTElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDExVDE4NDM0OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTgyMmJlMjJjOGNlYmI4MTY3ZWNhMTYxMmU3OTZlMTZlNTA5MTJiNWRkZjIwZWUxYjUyYTU0Yjk4ODAwYzk2YTImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.9z0VPAuv-nr8A7kWz33zWiH6O7JFsSWkM5yiBPo5QGc" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQzOTc5NjgsIm5iZiI6MTc0NDM5NzY2OCwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MTElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDExVDE4NTQyOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWU0YjI4M2M5NTRlNjMzY2RkZTIyMTVlMDRhZWY2NjU4NzcxOTRlZTE2ZWQxYTIxYjgxNDZiMmY0MjI4M2QzYmImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.GpAVwu91Okr4c5mxpNB5nJtEAqRrffPYdE-ubH7h9Lo"><img src="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQzOTc5NjgsIm5iZiI6MTc0NDM5NzY2OCwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MTElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDExVDE4NTQyOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWU0YjI4M2M5NTRlNjMzY2RkZTIyMTVlMDRhZWY2NjU4NzcxOTRlZTE2ZWQxYTIxYjgxNDZiMmY0MjI4M2QzYmImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.GpAVwu91Okr4c5mxpNB5nJtEAqRrffPYdE-ubH7h9Lo" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Anything else?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Validations</h3>
