@@ -4,10 +4,50 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Wed, 16 Apr 2025 09:43:51 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Apr 2025 01:59:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[xhr] Host Permissions CORS contradiction]]></title>
+            <link>https://github.com/mdn/content/issues/39168</link>
+            <guid>https://github.com/mdn/content/issues/39168</guid>
+            <pubDate>Thu, 17 Apr 2025 01:59:02 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Host Permissions</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">On <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions#host_permissions" rel="nofollow">the permissions page</a> There is the line under host permissions that says:</p>
+<blockquote>
+<p dir="auto">The extra privileges include:<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" rel="nofollow">XMLHttpRequest</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" rel="nofollow">fetch</a> access to those origins without cross-origin restrictions (even for requests made from content scripts)</p>
+</blockquote>
+<p dir="auto">But on the <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/host_permissions#format" rel="nofollow">host permissions page</a> the same section says:</p>
+<blockquote>
+<p dir="auto">The extra privileges include:<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" rel="nofollow">XMLHttpRequest</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" rel="nofollow">fetch</a> access to those origins without cross-origin restrictions (though not for requests from content scripts, as was the case in Manifest V2).</p>
+</blockquote>
+<p dir="auto">Which contradicts the other page for what content scripts can do</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Consistent language between pages</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/mozilla/add-ons/webextensions/manifest.json/permissions</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/mozilla/add-ons/webextensions/manifest.json/permissions/index.md">https://github.com/mdn/content/blob/main/files/en-us/mozilla/add-ons/webextensions/manifest.json/permissions/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/af98ab1715ff54825888ef1f7f13d6e3e3bf90b8/hovercard" href="https://github.com/mdn/content/commit/af98ab1715ff54825888ef1f7f13d6e3e3bf90b8"><tt>af98ab1</tt></a></li>
+<li>Document last modified: 2025-04-07T15:34:20.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] window/close: clarify when a window is opened by script]]></title>
             <link>https://github.com/mdn/content/issues/39154</link>
@@ -896,7 +936,7 @@ Space characters, other than the whitespace separating the URL and the correspon
 <h3 dir="auto">Operating system</h3>
 <p dir="auto">Windows</p>
 <h3 dir="auto">Screenshot</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQ4NTI4MTgsIm5iZiI6MTc0NDg1MjUxOCwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDE3VDAxMTUxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTkxMDQzOWEzOWIzNmNlZWQ5N2QyNmE3N2QyZjc1MzUzYzc2Zjc2NjFjMGQ1YzBjY2Q0MWE5NWFiOWQ2ZTZhYjAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.sZ1rMjFC6dQRtW7RrR4SKlXPui4JzEkJjkJEzW86OkY"><img src="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQ4NTI4MTgsIm5iZiI6MTc0NDg1MjUxOCwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDE3VDAxMTUxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTkxMDQzOWEzOWIzNmNlZWQ5N2QyNmE3N2QyZjc1MzUzYzc2Zjc2NjFjMGQ1YzBjY2Q0MWE5NWFiOWQ2ZTZhYjAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.sZ1rMjFC6dQRtW7RrR4SKlXPui4JzEkJjkJEzW86OkY" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQ4NTgxMzcsIm5iZiI6MTc0NDg1NzgzNywicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDE3VDAyNDM1N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTBiNzRlMzZhYzViODliZjVjNzJkNmNjN2UwZTkwYTdhNTk5Nzg0MjA5NzcwMTQ0MGQxNjk0MDQzNDE0ZWM4MTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.nUG6aj-NP6fqNOx6hyXPluFqUWxpIdgOT24TEFaWFwQ"><img src="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQ4NTgxMzcsIm5iZiI6MTc0NDg1NzgzNywicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDE3VDAyNDM1N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTBiNzRlMzZhYzViODliZjVjNzJkNmNjN2UwZTkwYTdhNTk5Nzg0MjA5NzcwMTQ0MGQxNjk0MDQzNDE0ZWM4MTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.nUG6aj-NP6fqNOx6hyXPluFqUWxpIdgOT24TEFaWFwQ" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Anything else?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Validations</h3>
