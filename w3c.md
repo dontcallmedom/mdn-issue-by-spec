@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[clipboard-apis\] Clipboard Write canvas content to clipboard example not working in safari](https://github.com/mdn/content/issues/39174) (2025-04-17T08:59:34Z)
+  
 * [\[SVG11, filter-effects-2\] SVG: Restructuring to newer format](https://github.com/mdn/content/issues/38860) (2025-03-30T01:32:54Z)
   
 * [\[cssom-view-1\] Update getComposedRanges parameters](https://github.com/mdn/content/issues/38810) (2025-03-25T22:46:08Z)
