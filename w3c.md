@@ -56,8 +56,6 @@
   
 * [\[webxr\] Explanation of \`bounded-floor\`/\`local\`/\`local-floor\` needs improvement](https://github.com/mdn/content/issues/33111) (2024-04-16T04:22:18Z)
   
-* [\[css-backgrounds-4\] background-clip example using text-shadow is unnecessary](https://github.com/mdn/content/issues/38596) (2024-04-13T11:28:40Z)
-  
 * [\[css-shadow-parts-1\] Incorrect statement about pseudo-elements needing to come last in a selector](https://github.com/mdn/content/issues/32971) (2024-04-05T20:16:52Z)
   
 * [\[webrtc\] RTCDataChannel bufferedamountlow event not sent if the threshold is 0?](https://github.com/mdn/content/issues/29087) (2023-09-13T08:47:28Z)
