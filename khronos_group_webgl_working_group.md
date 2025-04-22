@@ -4,8 +4,6 @@
 
 * [\[EXT_color_buffer_half_float\] internalformat docs wrong.](https://github.com/mdn/content/issues/39136) (2025-04-15T12:53:13Z)
   
-* [\[webgl1, webgl2\] Missing description of behaviour with null](https://github.com/mdn/content/issues/38997) (2025-04-06T10:47:24Z)
-  
 * [\[webgl1\] mention that \`gl.clear(gl.DEPTH_BUFFER_BIT)\` has no effect when \`gl.depthMask()\` has been set to \`false\`](https://github.com/mdn/content/issues/35362) (2024-08-07T18:39:11Z)
   
 * [\[webgl1\] WebGLRenderingContext.createBuffer() may return \`null\`.](https://github.com/mdn/content/issues/33471) (2024-05-07T14:47:46Z)
