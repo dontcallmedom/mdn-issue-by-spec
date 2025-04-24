@@ -4,10 +4,42 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Wed, 16 Apr 2025 09:43:51 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Apr 2025 15:57:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Misleading Note about the DataTransfer: files property]]></title>
+            <link>https://github.com/mdn/content/issues/39267</link>
+            <guid>https://github.com/mdn/content/issues/39267</guid>
+            <pubDate>Thu, 24 Apr 2025 15:57:01 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/files" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/files</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The note</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto">Note: The files property of <a href="https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer" rel="nofollow">DataTransfer</a> objects can only be accessed from within the drop event. For all other events, the files property will be empty — because its underlying data store will be in a <a href="https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store" rel="nofollow">protected mode</a>.</p>
+</blockquote>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Note: The files property of <a href="https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer" rel="nofollow">DataTransfer</a> objects can only be accessed from within the Drag and Drop API's drop and the Clipboard_API's paste event. For all other events, the files property will be empty — because its underlying data store will be in a <a href="https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store" rel="nofollow">protected mode</a>.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/datatransfer/files</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/files" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/files</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/datatransfer/files/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/datatransfer/files/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/be8f7f155a48e11b30c240f8731afb1845f85378/hovercard" href="https://github.com/mdn/content/commit/be8f7f155a48e11b30c240f8731afb1845f85378"><tt>be8f7f1</tt></a></li>
+<li>Document last modified: 2024-07-26T03:28:38.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] window/close: clarify when a window is opened by script]]></title>
             <link>https://github.com/mdn/content/issues/39154</link>
@@ -896,7 +928,7 @@ Space characters, other than the whitespace separating the URL and the correspon
 <h3 dir="auto">Operating system</h3>
 <p dir="auto">Windows</p>
 <h3 dir="auto">Screenshot</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDU1MTAwODUsIm5iZiI6MTc0NTUwOTc4NSwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDI0VDE1NDk0NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTE1ZDIxMmMxMDQ4NGFmODQ5OTY5ZDU1MzU5NTQ1NTExNzBkMWY5MTliYjUwNzAwODU0NzYyMzY1NWMzY2U3ZGYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.VYvudnkZa_yF6n9QC9h7tST7zPqzOPwHqbx08Yv6v4o"><img src="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDU1MTAwODUsIm5iZiI6MTc0NTUwOTc4NSwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDI0VDE1NDk0NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTE1ZDIxMmMxMDQ4NGFmODQ5OTY5ZDU1MzU5NTQ1NTExNzBkMWY5MTliYjUwNzAwODU0NzYyMzY1NWMzY2U3ZGYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.VYvudnkZa_yF6n9QC9h7tST7zPqzOPwHqbx08Yv6v4o" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDU1MTA3MTEsIm5iZiI6MTc0NTUxMDQxMSwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDI0VDE2MDAxMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI5ZmMyN2VjMThjMTM0NDMyZGFkMmZjYzVhZWEwMzY4ZWZmN2FmNzU4YTYzNjM5ZmMzN2JiNTU4ZWQ2MDFhYTMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.vWJVNv8VJd-m_ygt-X14ZikmbVsnwfA7l9lLW9s6bxo"><img src="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDU1MTA3MTEsIm5iZiI6MTc0NTUxMDQxMSwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDI0VDE2MDAxMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI5ZmMyN2VjMThjMTM0NDMyZGFkMmZjYzVhZWEwMzY4ZWZmN2FmNzU4YTYzNjM5ZmMzN2JiNTU4ZWQ2MDFhYTMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.vWJVNv8VJd-m_ygt-X14ZikmbVsnwfA7l9lLW9s6bxo" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Anything else?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Validations</h3>
