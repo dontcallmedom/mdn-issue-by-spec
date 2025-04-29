@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-animations-2\] Incoherent info for \`animation-duration\`](https://github.com/mdn/content/issues/39317) (2025-04-28T17:07:18Z)
-  
 * [\[mediaqueries-4, css-conditional-3\] CSS Demo fails color blind a11y](https://github.com/mdn/content/issues/39201) (2025-04-20T06:59:18Z)
   
 * [\[SVG11, filter-effects-2\] SVG: Restructuring to newer format](https://github.com/mdn/content/issues/38860) (2025-03-30T01:32:54Z)
