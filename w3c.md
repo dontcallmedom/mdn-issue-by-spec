@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[encrypted-media\] Wrong parameters described for MediaKeySession/generateRequest](https://github.com/mdn/content/issues/39341) (2025-04-30T18:48:29Z)
+  
 * [\[mediaqueries-4, css-conditional-3\] CSS Demo fails color blind a11y](https://github.com/mdn/content/issues/39201) (2025-04-20T06:59:18Z)
   
 * [\[SVG11, filter-effects-2\] SVG: Restructuring to newer format](https://github.com/mdn/content/issues/38860) (2025-03-30T01:32:54Z)

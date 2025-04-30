@@ -4,10 +4,41 @@
         <title>W3C HTML Media Extensions Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_html_media_extensions_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C HTML Media Extensions Working Group</description>
-        <lastBuildDate>Fri, 18 Oct 2024 20:01:55 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Apr 2025 18:48:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[encrypted-media] Wrong parameters described for MediaKeySession/generateRequest]]></title>
+            <link>https://github.com/mdn/content/issues/39341</link>
+            <guid>https://github.com/mdn/content/issues/39341</guid>
+            <pubDate>Wed, 30 Apr 2025 18:48:29 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySession/generateRequest" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySession/generateRequest</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">It is stated in the article that generateRequest() method takes no parameters, however, in W3C Recommendation of 18 September 2017 it is explicitly stated that generateRequest() method takes two arguments: initDataType and initData. They are neither optional, nor nullable. The article should be fixed by adding info about these two arguments.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I expected to see info about two arguments that generateRequest() actually takes.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">W3C Recommendation 18 September 2017<br>
+<a href="https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysession-generaterequest" rel="nofollow">https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysession-generaterequest</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/mediakeysession/generaterequest</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySession/generateRequest" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySession/generateRequest</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/mediakeysession/generaterequest/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/mediakeysession/generaterequest/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ba9a6bebd0e7bf1dd6b5c4eed156d8f1748ade0f/hovercard" href="https://github.com/mdn/content/commit/ba9a6bebd0e7bf1dd6b5c4eed156d8f1748ade0f"><tt>ba9a6be</tt></a></li>
+<li>Document last modified: 2024-06-17T11:12:50.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[media-source] SourceBuffer.appendBuffer() can cause an exception to be thrown because of QuotaExceeded]]></title>
             <link>https://github.com/mdn/content/issues/36404</link>
