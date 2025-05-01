@@ -4,8 +4,6 @@
 
 * [\[mediaqueries-4, css-conditional-3\] CSS Demo fails color blind a11y](https://github.com/mdn/content/issues/39201) (2025-04-20T06:59:18Z)
   
-* [\[SVG11, filter-effects-2\] SVG: Restructuring to newer format](https://github.com/mdn/content/issues/38860) (2025-03-30T01:32:54Z)
-  
 * [\[CSS21, css-display-3\] CSS+JS Accessibility best practices - hidden things section - is not promoting best practices](https://github.com/mdn/content/issues/37524) (2025-01-06T15:29:04Z)
   
 * [\[css-font-loading-3\] FontFace doc: sizeAdjust is missing](https://github.com/mdn/content/issues/36587) (2024-10-31T07:23:20Z)
