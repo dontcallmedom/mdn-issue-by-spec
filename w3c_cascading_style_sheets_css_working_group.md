@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[mediaqueries-4, css-conditional-3\] CSS Demo fails color blind a11y](https://github.com/mdn/content/issues/39201) (2025-04-20T06:59:18Z)
-  
 * [\[CSS21, css-display-3\] CSS+JS Accessibility best practices - hidden things section - is not promoting best practices](https://github.com/mdn/content/issues/37524) (2025-01-06T15:29:04Z)
   
 * [\[css-font-loading-3\] FontFace doc: sizeAdjust is missing](https://github.com/mdn/content/issues/36587) (2024-10-31T07:23:20Z)
