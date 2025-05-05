@@ -133,7 +133,7 @@
 <p dir="auto">Additional, the "Permitted Content" section should be changed to make the <code class="notranslate">DocumentFragment</code> restrictions more evident.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">Minimal example that works in both FF and Chrome:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;!DOCTYPE html&gt;
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;!DOCTYPE html&gt;
 &lt;body&gt;
   &lt;p&gt;hello&lt;/p&gt;
   &lt;template&gt;
@@ -141,18 +141,17 @@
       &lt;title&gt;this is the title&lt;/title&gt;
     &lt;/head&gt;
   &lt;/template&gt;
-&lt;/body&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;!DOCTYPE html&gt;
-&lt;body&gt;
-  &lt;p&gt;hello&lt;/p&gt;
-  &lt;template&gt;
-    &lt;head&gt;
-      &lt;title&gt;this is the title&lt;/title&gt;
-    &lt;/head&gt;
-  &lt;/template&gt;
-&lt;/body&gt;
-</code></pre></div>
+&lt;/body&gt;"><pre class="notranslate"><span class="pl-c1">&lt;!DOCTYPE html<span class="pl-kos">&gt;</span></span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>hello<span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">template</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
+      <span class="pl-kos">&lt;</span><span class="pl-ent">title</span><span class="pl-kos">&gt;</span>this is the title<span class="pl-kos">&lt;/</span><span class="pl-ent">title</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;/</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;/</span><span class="pl-ent">template</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span></pre></div>
 <p dir="auto">produces:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;html&gt;
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;html&gt;
   &lt;head&gt;&lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;hello&lt;/p&gt;
@@ -161,17 +160,16 @@
       &lt;title&gt;this is the title&lt;/title&gt;
     &lt;/template&gt;
   &lt;/body&gt;
-&lt;/html&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;html&gt;
-  &lt;head&gt;&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;hello&lt;/p&gt;
+&lt;/html&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>hello<span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>
 
-    &lt;template&gt;
-      &lt;title&gt;this is the title&lt;/title&gt;
-    &lt;/template&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre></div>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">template</span><span class="pl-kos">&gt;</span>
+      <span class="pl-kos">&lt;</span><span class="pl-ent">title</span><span class="pl-kos">&gt;</span>this is the title<span class="pl-kos">&lt;/</span><span class="pl-ent">title</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;/</span><span class="pl-ent">template</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;/</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span></pre></div>
 <p dir="auto">, stripping the <code class="notranslate">&lt;head&gt;</code> that was initially in my template.</p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>
@@ -930,7 +928,7 @@ Space characters, other than the whitespace separating the URL and the correspon
 <h3 dir="auto">Operating system</h3>
 <p dir="auto">Windows</p>
 <h3 dir="auto">Screenshot</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDY0NDU0MzIsIm5iZiI6MTc0NjQ0NTEzMiwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTA1VDExMzg1MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQ3MmViZjRmOGM5ZjgzMDQ1YzYzNDE4YWU2OTk5MjAxYWZjYzBlMzZlNDNjMjNhNzE4NzNiOGJhMWM3MTNlNGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.jI1RsAsvY8UzTVIPRHhqOGy6yF8CfjktQznXtv60-9o"><img src="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDY0NDU0MzIsIm5iZiI6MTc0NjQ0NTEzMiwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTA1VDExMzg1MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQ3MmViZjRmOGM5ZjgzMDQ1YzYzNDE4YWU2OTk5MjAxYWZjYzBlMzZlNDNjMjNhNzE4NzNiOGJhMWM3MTNlNGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.jI1RsAsvY8UzTVIPRHhqOGy6yF8CfjktQznXtv60-9o" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDY0NDYwNTQsIm5iZiI6MTc0NjQ0NTc1NCwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTA1VDExNDkxNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWUzMjk5MjJkMjI2ZDY1ZDZiOTE3MjQzZDQ5MGM3M2JjY2Q5YmQ3MDdhOWEzZTI1OWIwMjJlYTlmODA3NmM4MmImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0._-UAlRmzz5bvmoYkmM6AEjUErwd0gzCYbUxAgH6clOk"><img src="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDY0NDYwNTQsIm5iZiI6MTc0NjQ0NTc1NCwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTA1VDExNDkxNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWUzMjk5MjJkMjI2ZDY1ZDZiOTE3MjQzZDQ5MGM3M2JjY2Q5YmQ3MDdhOWEzZTI1OWIwMjJlYTlmODA3NmM4MmImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0._-UAlRmzz5bvmoYkmM6AEjUErwd0gzCYbUxAgH6clOk" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Anything else?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Validations</h3>
