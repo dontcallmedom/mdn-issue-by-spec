@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Performance Working Group. [![RSS feed for W3C Web Performance Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[navigation-timing-2\] Error informig about reloaded page.](https://github.com/mdn/content/issues/39436) (2025-05-07T12:47:44Z)
+  
 * [\[requestidlecallback\] timeRemaining() documentation should flag that it doesn't just count down](https://github.com/mdn/content/issues/37250) (2024-12-17T22:44:09Z)
   
 * [\[hr-time-3\] What are the ramifications of \`performance.now()\` bugs?](https://github.com/mdn/content/issues/33760) (2024-05-26T19:52:08Z)

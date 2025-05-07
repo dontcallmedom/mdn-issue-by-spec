@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[navigation-timing-2\] Error informig about reloaded page.](https://github.com/mdn/content/issues/39436) (2025-05-07T12:47:44Z)
+  
 * [\[css-fonts-5\] font-size-adjust documentation is misleading](https://github.com/mdn/content/issues/39367) (2025-05-02T11:43:00Z)
   
 * [\[mediacapture-streams\] MediaTrackCapabilities properties are string\[\]/boolean\[\]/DoubleRange/ULongRange, not ConstrainDOMString/ConstrainBoolean/ConstrainDouble/ConstrainULong](https://github.com/mdn/content/issues/38249) (2025-02-20T04:20:50Z)
