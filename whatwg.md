@@ -62,8 +62,6 @@
   
 * [\[fetch\] Missing Request constructor duplex option](https://github.com/mdn/content/issues/31735) (2024-01-16T01:34:58Z)
   
-* [\[html\] Document img auto-sizes](https://github.com/mdn/content/issues/30596) (2023-11-28T10:39:06Z)
-  
 * [\[dom\] Chrome has XMLNS as default namespace](https://github.com/mdn/content/issues/29660) (2023-10-16T08:39:40Z)
   
 * [\[html\] Article element in a wrong implementation](https://github.com/mdn/content/issues/38324) (2023-09-13T12:53:45Z)

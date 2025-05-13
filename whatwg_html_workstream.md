@@ -56,8 +56,6 @@
   
 * [\[html\] WebSocket constructor example should demonstrate waiting for connection or handling connection failure](https://github.com/mdn/content/issues/31768) (2024-01-17T18:55:09Z)
   
-* [\[html\] Document img auto-sizes](https://github.com/mdn/content/issues/30596) (2023-11-28T10:39:06Z)
-  
 * [\[html\] Article element in a wrong implementation](https://github.com/mdn/content/issues/38324) (2023-09-13T12:53:45Z)
   
 * [\[html\] Create a \`form\` attribute page](https://github.com/mdn/content/issues/28375) (2023-08-03T18:28:41Z)
