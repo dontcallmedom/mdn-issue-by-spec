@@ -4,10 +4,43 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Sun, 01 Dec 2024 10:22:47 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 15 May 2025 11:12:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Hello! x++;]]></title>
+            <link>https://github.com/mdn/content/issues/39532</link>
+            <guid>https://github.com/mdn/content/issues/39532</guid>
+            <pubDate>Thu, 15 May 2025 11:12:05 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">x++;</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment#description" rel="nofollow">Description</a><br>
+The ++ operator is overloaded for two types of operands: number and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt" rel="nofollow">BigInt</a>. It first <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Data_structures#numeric_coercion" rel="nofollow">coerces the operand to a numeric value</a> and tests the type of it. It performs BigInt increment if the operand becomes a BigInt; otherwise, it performs number increment.</p>
+<p dir="auto">If used postfix, with operator after operand (for example, x++), the increment operator increments and returns the value before incrementing.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I think, we can change here as:<br>
+"If used postfix, with operator after operand (for example, x++), the increment operator returns the value before incrementing, and then increments it."</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/operators/increment</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/increment/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/increment/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/702cd9e4d2834e13aea345943efc8d0c03d92ec9/hovercard" href="https://github.com/mdn/content/commit/702cd9e4d2834e13aea345943efc8d0c03d92ec9"><tt>702cd9e</tt></a></li>
+<li>Document last modified: 2025-04-03T04:30:55.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Yielding rejected promises from a sync generator now properly closes the iterator]]></title>
             <link>https://github.com/mdn/content/issues/37038</link>
