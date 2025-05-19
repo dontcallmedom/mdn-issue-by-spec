@@ -4,10 +4,40 @@
         <title>W3C Service Workers Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_service_workers_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Service Workers Working Group</description>
-        <lastBuildDate>Thu, 16 Sep 2021 10:09:38 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 19 May 2025 06:30:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[service-workers-1] Wrong return value described for ServiceWorkerRegistration.update()]]></title>
+            <link>https://github.com/mdn/content/issues/39571</link>
+            <guid>https://github.com/mdn/content/issues/39571</guid>
+            <pubDate>Mon, 19 May 2025 06:30:38 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/update" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/update</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">ServiceWorkerRegistration.update() returns <code class="notranslate">Promise&lt;void&gt;</code>, and not <code class="notranslate">Promise&lt;ServiceWorkerRegistration&gt;</code> as described. Maybe wrong copy &amp; paste from ServiceWorkerContainer.register()?</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A description when the Promise is fulfilled or rejected.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/serviceworkerregistration/update</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/update" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/update</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkerregistration/update/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkerregistration/update/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/4de6f76bbfd76229db78ffb7d52cf6b4cb9f31f8/hovercard" href="https://github.com/mdn/content/commit/4de6f76bbfd76229db78ffb7d52cf6b4cb9f31f8"><tt>4de6f76</tt></a></li>
+<li>Document last modified: 2024-03-06T06:23:15.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[service-workers-1, dom, cssom-view-1, notifications, pointerevents3] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()]]></title>
             <link>https://github.com/mdn/content/issues/8977</link>

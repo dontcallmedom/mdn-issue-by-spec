@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[service-workers-1\] Wrong return value described for ServiceWorkerRegistration.update()](https://github.com/mdn/content/issues/39571) (2025-05-19T06:30:38Z)
+  
 * [\[WebCryptoAPI\] Clarify 'extractable' parameter behavior when 'SubtleCrypto.generateKey' is used with asymmetric key algorithms](https://github.com/mdn/content/issues/39493) (2025-05-12T21:11:50Z)
   
 * [\[selection-api\] \`Selection.anchorNode\` page doesn't mention it could be \`null\`](https://github.com/mdn/content/issues/39455) (2025-05-08T10:39:17Z)
