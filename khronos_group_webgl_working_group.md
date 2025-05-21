@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Khronos Group WebGL Working Group. [![RSS feed for Khronos Group WebGL Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[webgl1, webgl2\] Missing newline before WebGL2-specific information](https://github.com/mdn/content/issues/39605) (2025-05-21T21:59:20Z)
+  
 * [\[EXT_color_buffer_half_float\] internalformat docs wrong.](https://github.com/mdn/content/issues/39136) (2025-04-15T12:53:13Z)
   
 * [\[webgl1\] mention that \`gl.clear(gl.DEPTH_BUFFER_BIT)\` has no effect when \`gl.depthMask()\` has been set to \`false\`](https://github.com/mdn/content/issues/35362) (2024-08-07T18:39:11Z)
