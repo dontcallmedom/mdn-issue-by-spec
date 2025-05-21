@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] DataTransfer: files is also accessible in paste event](https://github.com/mdn/content/issues/39267) (2025-04-24T15:57:01Z)
-  
 * [\[html\] window/close: clarify when a window is opened by script](https://github.com/mdn/content/issues/39154) (2025-04-16T09:43:51Z)
   
 * [\[html\] Mention Firefox Anti-fingerprinting on \`getImageData()\` page](https://github.com/mdn/content/issues/39084) (2025-04-11T18:49:23Z)
