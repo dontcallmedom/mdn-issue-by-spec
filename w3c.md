@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-backgrounds-4\] Grammar inconsistency in box-shadow syntax example: | vs. &&](https://github.com/mdn/content/issues/39659) (2025-05-24T10:39:15Z)
+  
 * [\[WebCryptoAPI\] Clarify 'extractable' parameter behavior when 'SubtleCrypto.generateKey' is used with asymmetric key algorithms](https://github.com/mdn/content/issues/39493) (2025-05-12T21:11:50Z)
   
 * [\[css-fonts-5\] font-size-adjust documentation is misleading](https://github.com/mdn/content/issues/39367) (2025-05-02T11:43:00Z)
