@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, selectors-4\] No "readonly" attribute in \`:read-only\` samle code](https://github.com/mdn/content/issues/39719) (2025-05-28T09:46:00Z)
+  
 * [\[fetch\] \`fetch()\`: What cookies are sent when \`"credentials": "include"\` and \`"cookies"\` are set?](https://github.com/mdn/content/issues/39561) (2025-05-18T21:35:46Z)
   
 * [\[xhr\] Host Permissions CORS contradiction](https://github.com/mdn/content/issues/39168) (2025-04-17T01:59:02Z)

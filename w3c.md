@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, selectors-4\] No "readonly" attribute in \`:read-only\` samle code](https://github.com/mdn/content/issues/39719) (2025-05-28T09:46:00Z)
+  
 * [\[css-backgrounds-4\] Grammar inconsistency in box-shadow syntax example: | vs. &&](https://github.com/mdn/content/issues/39659) (2025-05-24T10:39:15Z)
   
 * [\[WebCryptoAPI\] Clarify 'extractable' parameter behavior when 'SubtleCrypto.generateKey' is used with asymmetric key algorithms](https://github.com/mdn/content/issues/39493) (2025-05-12T21:11:50Z)
