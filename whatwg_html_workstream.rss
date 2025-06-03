@@ -865,48 +865,6 @@ Space characters, other than the whitespace separating the URL and the correspon
 <p dir="auto"><em>No response</em></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] submit event live example is missing `allow-forms` sandbox attribute]]></title>
-            <link>https://github.com/mdn/content/issues/38645</link>
-            <guid>https://github.com/mdn/content/issues/38645</guid>
-            <pubDate>Thu, 11 Jul 2024 06:32:27 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">Summary</h3>
-<p dir="auto">The result is not operating.</p>
-<h3 dir="auto">URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event</a></p>
-<h3 dir="auto">Reproduction steps</h3>
-<ol dir="auto">
-<li>Type to text field.</li>
-<li>Click submit button.</li>
-<li>There is no printing but error message in console.</li>
-</ol>
-<h3 dir="auto">Expected behavior</h3>
-<p dir="auto">The result can print text.</p>
-<h3 dir="auto">Actual behavior</h3>
-<ol dir="auto">
-<li>Type to text field.</li>
-<li>Click submit button.</li>
-<li>The text is printed under the submit button.</li>
-</ol>
-<h3 dir="auto">Device</h3>
-<p dir="auto">Desktop</p>
-<h3 dir="auto">Browser</h3>
-<p dir="auto">Edge</p>
-<h3 dir="auto">Browser version</h3>
-<p dir="auto">Stable</p>
-<h3 dir="auto">Operating system</h3>
-<p dir="auto">Windows</p>
-<h3 dir="auto">Screenshot</h3>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDg5Njk5ODgsIm5iZiI6MTc0ODk2OTY4OCwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA2MDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNjAzVDE2NTQ0OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPThjMTVjY2QwM2E5MzBmMmQ1YzcxZjkyYjQ0NmM1ZTNkYjlmYTMxYmY0OWNhMGM3OGRiYThmMjI4YzRiMDY0MTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.0ySYdnWKp0mFQAgAg8zi8oDGele27wISjL4RshCE1IM"><img src="https://private-user-images.githubusercontent.com/11507165/347705748-6004772c-2fe1-44d6-bc73-f03120eedbc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDg5Njk5ODgsIm5iZiI6MTc0ODk2OTY4OCwicGF0aCI6Ii8xMTUwNzE2NS8zNDc3MDU3NDgtNjAwNDc3MmMtMmZlMS00NGQ2LWJjNzMtZjAzMTIwZWVkYmMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA2MDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNjAzVDE2NTQ0OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPThjMTVjY2QwM2E5MzBmMmQ1YzcxZjkyYjQ0NmM1ZTNkYjlmYTMxYmY0OWNhMGM3OGRiYThmMjI4YzRiMDY0MTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.0ySYdnWKp0mFQAgAg8zi8oDGele27wISjL4RshCE1IM" alt="image" style="max-width: 100%;"></a></p>
-<h3 dir="auto">Anything else?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Validations</h3>
-<ul class="contains-task-list">
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> I have read the <a href="https://www.mozilla.org/en-US/about/governance/policies/participation/" rel="nofollow">Community Participation Guidelines</a>.</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> I have verified that there isn't <a href="https://github.com/mdn/yari/issues">already an issue</a> that reports the same bug to avoid creating a duplicate.</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> I have checked that this is a concrete bug. For Q&amp;A open a <a href="https://github.com/orgs/mdn/discussions/categories/platform">GitHub Discussion</a>.</li>
-</ul>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html, mediacapture-streams] Unclear example of MediaStream: getTrackById() method]]></title>
             <link>https://github.com/mdn/content/issues/33310</link>
             <guid>https://github.com/mdn/content/issues/33310</guid>
