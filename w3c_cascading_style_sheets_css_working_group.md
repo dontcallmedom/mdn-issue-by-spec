@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-typed-om-2\] What is a "double integer"?](https://github.com/mdn/content/issues/39762) (2025-06-03T10:09:36Z)
+  
 * [\[css-backgrounds-4\] Grammar inconsistency in box-shadow syntax example: | vs. &&](https://github.com/mdn/content/issues/39659) (2025-05-24T10:39:15Z)
   
 * [\[css-fonts-5\] font-size-adjust documentation is misleading](https://github.com/mdn/content/issues/39367) (2025-05-02T11:43:00Z)
