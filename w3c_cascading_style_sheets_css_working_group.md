@@ -14,9 +14,7 @@
   
 * [\[css-pseudo-4\] File selector can be styled](https://github.com/mdn/content/issues/36090) (2024-09-28T18:18:41Z)
   
-* [\[cssom-view-1\] document.caretPositionFromPoint() API needs update](https://github.com/mdn/content/issues/34492) (2024-06-28T18:22:16Z)
-  
-* [\[css-color-adjust-1\] Document \<meta name="color-scheme"\>](https://github.com/mdn/content/issues/39431) (2024-05-25T16:19:37Z)
+* [\[css-color-adjust-1\] Standalone article for \<meta name="color-scheme"\>](https://github.com/mdn/content/issues/39431) (2024-05-25T16:19:37Z)
   
 * [\[css-shadow-parts-1\] Incorrect statement about pseudo-elements needing to come last in a selector](https://github.com/mdn/content/issues/32971) (2024-04-05T20:16:52Z)
   
