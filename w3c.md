@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[compression\] CompressionStream and DecompressionStream supports "brotli" codec in Safari 18.4 and later](https://github.com/mdn/content/issues/39813) (2025-06-06T00:19:54Z)
-  
 * [\[css-typed-om-2\] What is a "double integer"?](https://github.com/mdn/content/issues/39762) (2025-06-03T10:09:36Z)
   
 * [\[css-backgrounds-4\] Grammar inconsistency in box-shadow syntax example: | vs. &&](https://github.com/mdn/content/issues/39659) (2025-05-24T10:39:15Z)
