@@ -4,8 +4,6 @@
 
 * [\[compression\] CompressionStream and DecompressionStream supports "brotli" codec in Safari 18.4 and later](https://github.com/mdn/content/issues/39813) (2025-06-06T00:19:54Z)
   
-* [\[SVG11\] SVG \`\<path\>\` element page is missing link to SVGPathElement](https://github.com/mdn/content/issues/39788) (2025-06-04T12:27:43Z)
-  
 * [\[css-typed-om-2\] What is a "double integer"?](https://github.com/mdn/content/issues/39762) (2025-06-03T10:09:36Z)
   
 * [\[css-backgrounds-4\] Grammar inconsistency in box-shadow syntax example: | vs. &&](https://github.com/mdn/content/issues/39659) (2025-05-24T10:39:15Z)
