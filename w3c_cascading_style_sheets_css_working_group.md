@@ -36,5 +36,3 @@
   
 * [\[service-workers-1, dom, cssom-view-1, notifications, pointerevents3\] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
-* [\[css-lists-3\] counter-reset interactive example is confusing](https://github.com/mdn/content/issues/38600) (2021-06-23T22:25:29Z)
-  

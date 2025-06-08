@@ -116,8 +116,6 @@
   
 * [\[service-workers-1\] Issue with "ServiceWorkerContainer.register()": may be advisable to check for an existing registration](https://github.com/mdn/content/issues/7138) (2021-07-21T16:35:44Z)
   
-* [\[css-lists-3\] counter-reset interactive example is confusing](https://github.com/mdn/content/issues/38600) (2021-06-23T22:25:29Z)
-  
 * [\[webaudio\] Content bug: AudioListener and attributes need better examples. ](https://github.com/mdn/content/issues/4468) (2021-04-26T03:22:48Z)
   
 * [\[presentation-api\] Presentation API docs need rewrite](https://github.com/mdn/content/issues/4025) (2021-04-12T01:16:00Z)
