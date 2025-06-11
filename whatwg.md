@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] How to use form name?](https://github.com/mdn/content/issues/39891) (2025-06-11T01:30:52Z)
+  
 * [\[fetch\] \`fetch()\`: What cookies are sent when \`"credentials": "include"\` and \`"cookies"\` are set?](https://github.com/mdn/content/issues/39561) (2025-05-18T21:35:46Z)
   
 * [\[xhr\] Host Permissions CORS contradiction](https://github.com/mdn/content/issues/39168) (2025-04-17T01:59:02Z)
