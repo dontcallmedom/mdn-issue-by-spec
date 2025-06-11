@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[dom\] Update parameter name for createDocumentType() from qualifiedName to name](https://github.com/mdn/content/issues/39897) (2025-06-11T08:33:26Z)
+  
 * [\[html, requestidlecallback, css-backgrounds-4\] HTML global attribute vs. attribute titles are not consistent](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
   
 * [\[html\] Named forms are available as properties on \`document\`](https://github.com/mdn/content/issues/39891) (2025-06-11T01:30:52Z)
