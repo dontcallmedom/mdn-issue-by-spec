@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html, requestidlecallback, css-backgrounds-4\] Page titles are not consistant](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
+* [\[html, requestidlecallback, css-backgrounds-4\] HTML global attribute vs. attribute titles are not consistent](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
   
 * [\[html\] How to use form name?](https://github.com/mdn/content/issues/39891) (2025-06-11T01:30:52Z)
   

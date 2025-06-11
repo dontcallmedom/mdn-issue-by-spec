@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html, requestidlecallback, css-backgrounds-4\] Page titles are not consistant](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
+* [\[html, requestidlecallback, css-backgrounds-4\] HTML global attribute vs. attribute titles are not consistent](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
   
 * [\[css-typed-om-2\] What is a "double integer"?](https://github.com/mdn/content/issues/39762) (2025-06-03T10:09:36Z)
   
