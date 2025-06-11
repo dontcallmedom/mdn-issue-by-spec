@@ -48,8 +48,6 @@
   
 * [\[hr-time-3\] What are the ramifications of \`performance.now()\` bugs?](https://github.com/mdn/content/issues/33760) (2024-05-26T19:52:08Z)
   
-* [\[css-color-adjust-1\] Standalone article for \<meta name="color-scheme"\>](https://github.com/mdn/content/issues/39431) (2024-05-25T16:19:37Z)
-  
 * [\[periodic-background-sync\] periodicSync needs "periodic-background-sync" permission](https://github.com/mdn/content/issues/33692) (2024-05-21T08:55:15Z)
   
 * [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
