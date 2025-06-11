@@ -4,7 +4,7 @@
 
 * [\[html, requestidlecallback, css-backgrounds-4\] HTML global attribute vs. attribute titles are not consistent](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
   
-* [\[html\] How to use form name?](https://github.com/mdn/content/issues/39891) (2025-06-11T01:30:52Z)
+* [\[html\] Named forms are available as properties on \`document\`](https://github.com/mdn/content/issues/39891) (2025-06-11T01:30:52Z)
   
 * [\[fetch\] \`fetch()\`: What cookies are sent when \`"credentials": "include"\` and \`"cookies"\` are set?](https://github.com/mdn/content/issues/39561) (2025-05-18T21:35:46Z)
   
