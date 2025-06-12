@@ -6,8 +6,6 @@
   
 * [\[dom\] Update parameter name for createDocumentType() from qualifiedName to name](https://github.com/mdn/content/issues/39897) (2025-06-11T08:33:26Z)
   
-* [\[html, requestidlecallback, css-backgrounds-4\] Reference page titles are not consistent and need improvements](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
-  
 * [\[html\] Named forms are available as properties on \`document\`](https://github.com/mdn/content/issues/39891) (2025-06-11T01:30:52Z)
   
 * [\[fetch\] \`fetch()\`: What cookies are sent when \`"credentials": "include"\` and \`"cookies"\` are set?](https://github.com/mdn/content/issues/39561) (2025-05-18T21:35:46Z)
