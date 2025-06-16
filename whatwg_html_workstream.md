@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] \`cancelAnimationFrame\` is not worker-only API but is marked so](https://github.com/mdn/content/issues/39951) (2025-06-16T09:41:52Z)
+  
 * [\[html, requestidlecallback, css-backgrounds-4\] Reference page titles are not consistent and need improvements](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
   
 * [\[html\] Named forms are available as properties on \`document\`](https://github.com/mdn/content/issues/39891) (2025-06-11T01:30:52Z)
