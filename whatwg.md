@@ -6,8 +6,6 @@
   
 * [\[dom\] Node: lookupPrefix() method's example now outputs null](https://github.com/mdn/content/issues/39912) (2025-06-12T09:17:30Z)
   
-* [\[dom\] Update parameter name for createDocumentType() from qualifiedName to name](https://github.com/mdn/content/issues/39897) (2025-06-11T08:33:26Z)
-  
 * [\[html, requestidlecallback, css-backgrounds-4\] Reference page titles are not consistent and need improvements](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
   
 * [\[html\] Named forms are available as properties on \`document\`](https://github.com/mdn/content/issues/39891) (2025-06-11T01:30:52Z)
