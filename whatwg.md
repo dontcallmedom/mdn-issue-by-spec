@@ -4,8 +4,6 @@
 
 * [\[dom\] Page Node.removeChild is missing section "Return value"](https://github.com/mdn/content/issues/40019) (2025-06-22T10:44:13Z)
   
-* [\[url\] URLSearchParams sort is by code units, not code points](https://github.com/mdn/content/issues/39946) (2025-06-15T11:22:19Z)
-  
 * [\[dom\] Node: lookupPrefix() method's example now outputs null](https://github.com/mdn/content/issues/39912) (2025-06-12T09:17:30Z)
   
 * [\[html, requestidlecallback, css-backgrounds-4\] Reference page titles are not consistent and need improvements](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
