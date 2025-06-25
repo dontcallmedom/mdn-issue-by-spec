@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-display-3\] \[CSS\] Ambiguous comment for display: none and display: contents](https://github.com/mdn/content/issues/40076) (2025-06-25T10:31:30Z)
+* [\[css-display-3\] Ambiguous comment for display: none and display: contents](https://github.com/mdn/content/issues/40076) (2025-06-25T10:31:30Z)
   
 * [\[html, requestidlecallback, css-backgrounds-4\] Reference page titles are not consistent and need improvements](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
   
