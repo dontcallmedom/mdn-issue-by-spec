@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[dom\] Page Node.removeChild is missing section "Return value"](https://github.com/mdn/content/issues/40019) (2025-06-22T10:44:13Z)
-  
 * [\[dom\] Node: lookupPrefix() method's example now outputs null](https://github.com/mdn/content/issues/39912) (2025-06-12T09:17:30Z)
   
 * [\[html, dom, uievents\] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not](https://github.com/mdn/content/issues/35382) (2024-08-09T02:19:02Z)
