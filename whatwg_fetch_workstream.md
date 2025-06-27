@@ -4,5 +4,3 @@
 
 * [\[fetch\] \`fetch()\`: What cookies are sent when \`"credentials": "include"\` and \`"cookies"\` are set?](https://github.com/mdn/content/issues/39561) (2025-05-18T21:35:46Z)
   
-* [\[fetch\] Missing Request constructor duplex option](https://github.com/mdn/content/issues/31735) (2024-01-16T01:34:58Z)
-  
