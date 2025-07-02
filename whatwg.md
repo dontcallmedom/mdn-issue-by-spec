@@ -22,13 +22,9 @@
   
 * [\[html\] HTMLImageElement.alt example contains no JS](https://github.com/mdn/content/issues/38897) (2025-03-31T22:24:57Z)
   
-* [\[html\] Add \`colorType\` documentation to \`CanvasRenderingContext2DSettings\`](https://github.com/mdn/content/issues/38087) (2025-02-10T15:06:09Z)
-  
 * [\[html\] Clarify image.decode() failure on lazy-loaded images](https://github.com/mdn/content/issues/38034) (2025-02-08T00:22:15Z)
   
 * [\[html\] negative sWidth & sHeight optional arguments for 9-argument syntax does not flip image.](https://github.com/mdn/content/issues/37873) (2025-01-30T00:54:31Z)
-  
-* [\[html\] \[HTML\] Add \`OffscreenCanvasRenderingContext2D\` method \`getContextAttributes\`](https://github.com/mdn/content/issues/37727) (2025-01-20T14:02:21Z)
   
 * [\[html\] Better documentation for labelling inputs](https://github.com/mdn/content/issues/37665) (2025-01-15T22:49:27Z)
   
