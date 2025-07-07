@@ -4,10 +4,42 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Wed, 11 Jun 2025 04:16:02 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 07 Jul 2025 11:52:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[geometry-1] DOMRect.toJSON method name/text is misleading]]></title>
+            <link>https://github.com/mdn/content/issues/40230</link>
+            <guid>https://github.com/mdn/content/issues/40230</guid>
+            <pubDate>Mon, 07 Jul 2025 11:52:23 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">DOMRect.toJSON</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The text "<em>Returns a JSON representation of the DOMRectReadOnly object</em>" for <code class="notranslate">DOMRect.toJSON</code> (actually the <code class="notranslate">toJSON</code> method of <code class="notranslate">DOMRectReadOnly</code>) is misleading.</p>
+<p dir="auto">The method does <em>not</em> return the DOMRect instance as Javascript String Object Notation (so a string), but a plain Object.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I expect calling <code class="notranslate">DOMRect.toJSON()</code> will return a JSON string.</p>
+<p dir="auto">But, trying to use the <code class="notranslate">DOMRect.toJSON</code> return value as actual JSON throws a <code class="notranslate">SyntaxError</code>.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">The mentioned text can be found in <a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly#instance_methods" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly#instance_methods</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Either the aforementioned <em>text</em>, the <em>method name</em> (<code class="notranslate">toJSON</code>) or the <em>method return value</em> should be changed imho.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/domrectreadonly</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/domrectreadonly/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/domrectreadonly/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/9f09d944bca13b61293b4cc93cb52011c6134b0d/hovercard" href="https://github.com/mdn/content/commit/9f09d944bca13b61293b4cc93cb52011c6134b0d"><tt>9f09d94</tt></a></li>
+<li>Document last modified: 2024-11-16T01:07:04.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, requestidlecallback, css-backgrounds-4] Reference page titles are not consistent and need improvements]]></title>
             <link>https://github.com/mdn/content/issues/39894</link>
@@ -190,7 +222,7 @@ but the demo allows initial tab key press to go to the first tab, but then uses 
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">description of the <code class="notranslate">sizeAdjust</code> property</p>
 <p dir="auto">It does exist, see<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTE4ODg5OTEsIm5iZiI6MTc1MTg4ODY5MSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzA3VDExNDQ1MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWJkMzY2OTI5MDZiMzYxYTdiMmQwODc1MzgzYmE0MzY0MzY4MjgwM2QwMWJiZmVjY2UzMDk5MDUyYzE1NWFmZDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.sLOBgiDpko15GS_AN9VqcQ9GpKNk3XQIwT5eo9lR_rw"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTE4ODg5OTEsIm5iZiI6MTc1MTg4ODY5MSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzA3VDExNDQ1MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWJkMzY2OTI5MDZiMzYxYTdiMmQwODc1MzgzYmE0MzY0MzY4MjgwM2QwMWJiZmVjY2UzMDk5MDUyYzE1NWFmZDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.sLOBgiDpko15GS_AN9VqcQ9GpKNk3XQIwT5eo9lR_rw" style="max-width: 100%; height: auto;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTE4ODk2MTEsIm5iZiI6MTc1MTg4OTMxMSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzA3VDExNTUxMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTkyMGFmN2MyNGMxZDk3NDJlZGI1Y2VjMDk2MDYxYWM3M2YyZWYwYTBhYzcxYjhlYmJjMDNhMzljY2YzMTk4N2ImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.w6DqwI-Aff9x6qrx--jN6OFfJRWAfR9NKqXDgEsrC4o"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTE4ODk2MTEsIm5iZiI6MTc1MTg4OTMxMSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzA3VDExNTUxMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTkyMGFmN2MyNGMxZDk3NDJlZGI1Y2VjMDk2MDYxYWM3M2YyZWYwYTBhYzcxYjhlYmJjMDNhMzljY2YzMTk4N2ImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.w6DqwI-Aff9x6qrx--jN6OFfJRWAfR9NKqXDgEsrC4o" style="max-width: 100%; height: auto;"></a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
