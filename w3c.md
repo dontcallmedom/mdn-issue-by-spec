@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[SVG11, geometry-1\] \`SVGPointList\` article suggests that it's widely adopted without gotchas](https://github.com/mdn/content/issues/40292) (2025-07-10T08:52:08Z)
+* [\[SVG11, geometry-1\] \`SVGPointList\` cannot contain DOMPoint in browsers](https://github.com/mdn/content/issues/40292) (2025-07-10T08:52:08Z)
   
 * [\[WebIDL-1\] QuotaExceededError is being upgraded to a standalone error type](https://github.com/mdn/content/issues/40244) (2025-07-08T04:51:26Z)
   

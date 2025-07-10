@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[SVG11, geometry-1\] \`SVGPointList\` article suggests that it's widely adopted without gotchas](https://github.com/mdn/content/issues/40292) (2025-07-10T08:52:08Z)
+* [\[SVG11, geometry-1\] \`SVGPointList\` cannot contain DOMPoint in browsers](https://github.com/mdn/content/issues/40292) (2025-07-10T08:52:08Z)
   
 * [\[geometry-1\] DOMRect.toJSON method description is misleading](https://github.com/mdn/content/issues/40230) (2025-07-07T11:52:23Z)
   
