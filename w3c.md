@@ -92,7 +92,7 @@
   
 * [\[filter-effects-2\] feGaussianBlur needs guidance about setting height and width ](https://github.com/mdn/content/issues/24169) (2023-02-04T21:15:51Z)
   
-* [\[SVG11\] Inconsistency with experimental status of textPath attribute method](https://github.com/mdn/content/issues/24079) (2023-02-01T16:11:22Z)
+* [\[SVG11\] textPath attribute method doesn't seem to have an effect](https://github.com/mdn/content/issues/24079) (2023-02-01T16:11:22Z)
   
 * [\[webrtc\] What is \`RTCPeerConnection.generateCertificate(..)\` good for?](https://github.com/mdn/content/issues/23993) (2023-01-30T20:28:26Z)
   
