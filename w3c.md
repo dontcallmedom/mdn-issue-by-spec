@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[screen-orientation\] Screen orientation unlock](https://github.com/mdn/content/issues/40363) (2025-07-14T21:48:31Z)
+  
 * [\[css-logical-1, css-values-3, css-sizing-3\] @container size queries aren't clear about which box size is used](https://github.com/mdn/content/issues/40306) (2025-07-10T17:34:54Z)
   
 * [\[SVG11, geometry-1\] \`SVGPointList\` cannot contain DOMPoint in browsers](https://github.com/mdn/content/issues/40292) (2025-07-10T08:52:08Z)
