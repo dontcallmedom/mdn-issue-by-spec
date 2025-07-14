@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[url\] Docs for URL:hostname property incorrectly describe behavior as "percent-encoded"](https://github.com/mdn/content/issues/40341) (2025-07-13T15:58:10Z)
-  
 * [\[fetch\] "speculationrules" request destination missing](https://github.com/mdn/content/issues/40289) (2025-07-10T05:12:29Z)
   
 * [\[dom\] Improve technical accuracy and clarity in \`AbortController\` reference page](https://github.com/mdn/content/issues/40122) (2025-06-28T15:01:14Z)
