@@ -4,10 +4,61 @@
         <title>WHATWG DOM Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_dom_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG DOM Workstream</description>
-        <lastBuildDate>Sat, 28 Jun 2025 15:01:14 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 15 Jul 2025 04:32:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[dom] HTML element, attribute, and doctype name validation rules are changing]]></title>
+            <link>https://github.com/mdn/content/issues/40366</link>
+            <guid>https://github.com/mdn/content/issues/40366</guid>
+            <pubDate>Tue, 15 Jul 2025 04:32:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute#exceptions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute#exceptions</a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">In</p>
+<ul dir="auto">
+<li><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1227114016" data-permission-text="Title is private" data-url="https://github.com/whatwg/dom/issues/1079" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/dom/pull/1079/hovercard" href="https://github.com/whatwg/dom/pull/1079">whatwg/dom#1079</a></li>
+<li><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1263558481" data-permission-text="Title is private" data-url="https://github.com/whatwg/html/issues/7991" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/html/pull/7991/hovercard" href="https://github.com/whatwg/html/pull/7991">whatwg/html#7991</a></li>
+<li><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3230719017" data-permission-text="Title is private" data-url="https://github.com/whatwg/html/issues/11453" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/html/pull/11453/hovercard" href="https://github.com/whatwg/html/pull/11453">whatwg/html#11453</a></li>
+</ul>
+<p dir="auto">we are changing the rules for validating various nodes.</p>
+<p dir="auto">This should affect:</p>
+<ul dir="auto">
+<li><code class="notranslate">createAttribute()</code></li>
+<li><code class="notranslate">createAttributeNS()</code></li>
+<li><code class="notranslate">setAttribute()</code></li>
+<li><code class="notranslate">setAttributeNS()</code></li>
+<li><code class="notranslate">toggleAttribute()</code></li>
+<li><code class="notranslate">createElement()</code></li>
+<li><code class="notranslate">createElementNS()</code></li>
+<li><code class="notranslate">createDocument()</code></li>
+<li><code class="notranslate">createDocumentType()</code></li>
+<li><code class="notranslate">customElements</code>: <code class="notranslate">define()</code>, <code class="notranslate">whenDefined()</code></li>
+<li><code class="notranslate">dataset</code>'s named property setter</li>
+</ul>
+<p dir="auto">I am not sure how many of these are documented on MDN. I found one, for <code class="notranslate">setAttribute()</code>, linked here. It might be good to search for all links to <a href="https://www.w3.org/TR/xml/#dt-name" rel="nofollow">XML Name</a>.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Links to the new definitions in <a href="https://dom.spec.whatwg.org/#namespaces" rel="nofollow">https://dom.spec.whatwg.org/#namespaces</a> .</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/element/setattribute</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/element/setattribute/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/element/setattribute/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/bcc977bc3e79a87edd64cd9ef977b515f63daa2c/hovercard" href="https://github.com/mdn/content/commit/bcc977bc3e79a87edd64cd9ef977b515f63daa2c"><tt>bcc977b</tt></a></li>
+<li>Document last modified: 2025-07-04T17:14:36.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[dom] Improve technical accuracy and clarity in `AbortController` reference page]]></title>
             <link>https://github.com/mdn/content/issues/40122</link>
@@ -57,7 +108,7 @@
 </ul>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto">please share your thought.  If anything needs to be changed, Happy to update it. Thanks in advance...</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/12285999/460236471-5c0272a0-fdc3-4191-8b34-4905a6f67550.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTI1NTM5NTAsIm5iZiI6MTc1MjU1MzY1MCwicGF0aCI6Ii8xMjI4NTk5OS80NjAyMzY0NzEtNWMwMjcyYTAtZmRjMy00MTkxLThiMzQtNDkwNWE2ZjY3NTUwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MTUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzE1VDA0MjczMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNmYjE5ZjQzYTMyODBhZDBlMTU1NjhkMGNjOTkzNTVjNjRjNmMyNjM2NWJiNWRmM2I3ZjcwMDM1NDNjNTA3NjkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.FA95vTNidLGZNedpwlfyEVKWbF2wetmqoFMwrsk0mtw"><img src="https://private-user-images.githubusercontent.com/12285999/460236471-5c0272a0-fdc3-4191-8b34-4905a6f67550.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTI1NTM5NTAsIm5iZiI6MTc1MjU1MzY1MCwicGF0aCI6Ii8xMjI4NTk5OS80NjAyMzY0NzEtNWMwMjcyYTAtZmRjMy00MTkxLThiMzQtNDkwNWE2ZjY3NTUwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MTUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzE1VDA0MjczMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNmYjE5ZjQzYTMyODBhZDBlMTU1NjhkMGNjOTkzNTVjNjRjNmMyNjM2NWJiNWRmM2I3ZjcwMDM1NDNjNTA3NjkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.FA95vTNidLGZNedpwlfyEVKWbF2wetmqoFMwrsk0mtw" alt="Image" style="max-width: 100%;"></a></p>]]></content:encoded>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/12285999/460236471-5c0272a0-fdc3-4191-8b34-4905a6f67550.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTI1NTU4MzQsIm5iZiI6MTc1MjU1NTUzNCwicGF0aCI6Ii8xMjI4NTk5OS80NjAyMzY0NzEtNWMwMjcyYTAtZmRjMy00MTkxLThiMzQtNDkwNWE2ZjY3NTUwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MTUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzE1VDA0NTg1NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWY2ZTc4NzViZWQyNzE1YjIyZjM4Y2NjZjRlNTUwMzc3OTU2NzRjMjBjYWY0NTkxM2VjYTRlZDUzZWY2MmU5YjMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.5xLzo5gXVrLXG2Tp4EVWiNA0z-EfFQJMI3xur-bmjw8"><img src="https://private-user-images.githubusercontent.com/12285999/460236471-5c0272a0-fdc3-4191-8b34-4905a6f67550.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTI1NTU4MzQsIm5iZiI6MTc1MjU1NTUzNCwicGF0aCI6Ii8xMjI4NTk5OS80NjAyMzY0NzEtNWMwMjcyYTAtZmRjMy00MTkxLThiMzQtNDkwNWE2ZjY3NTUwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MTUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzE1VDA0NTg1NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWY2ZTc4NzViZWQyNzE1YjIyZjM4Y2NjZjRlNTUwMzc3OTU2NzRjMjBjYWY0NTkxM2VjYTRlZDUzZWY2MmU5YjMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.5xLzo5gXVrLXG2Tp4EVWiNA0z-EfFQJMI3xur-bmjw8" alt="Image" style="max-width: 100%;"></a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[dom] Node: lookupPrefix() method's example now outputs null]]></title>
