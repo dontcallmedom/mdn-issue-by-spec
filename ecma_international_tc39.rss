@@ -4,52 +4,10 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Mon, 14 Jul 2025 11:13:06 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 01 Dec 2024 10:22:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript] Grammatical ambiguity in .then() return value description]]></title>
-            <link>https://github.com/mdn/content/issues/40352</link>
-            <guid>https://github.com/mdn/content/issues/40352</guid>
-            <pubDate>Mon, 14 Jul 2025 11:13:06 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Return value</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">"Returns a new <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" rel="nofollow">Promise</a> immediately. This new promise is always pending when returned, regardless of the current promise's status.</p>
-<p dir="auto">One of the onFulfilled and onRejected handlers will be executed to handle the current promise's fulfillment or rejection. The call always happens asynchronously, even when the current promise is already settled. The behavior of the returned promise (call it p) depends on the handler's execution result, following a specific set of rules. If the handler function:</p>
-<p dir="auto">returns a value: p gets fulfilled with the returned value as its value.<br>
-doesn't return anything: p gets fulfilled with undefined as its value.<br>
-throws an error: p gets rejected with the thrown error as its value.<br>
-returns an already fulfilled promise: p gets fulfilled with that promise's value as its value.<br>
-returns an already rejected promise: p gets rejected with that promise's value as its value.<br>
-returns another pending promise: p is pending and becomes fulfilled/rejected with that promise's value as its value immediately after that promise becomes fulfilled/rejected."</p>
-<p dir="auto">In the second paragraph the phrase "the returned promise (call it p)" can be grammatically ambigious. As its a noun phrase, it can either mean 'p' is returned by .then() pointing back to the only returned promise in the previous context as antecedent or it can imply the handlers have returned a promise 'p' where its acts as noun to introduce the promise returned by the handler. And both are grammatically valid, which can create ambiguity.<br>
-In the later case where 'p' can grammatically mean the promise returned by handler, the sentence will be read as "The behavior of the returned promise (call it p) by handler depends on the handler's execution result, following a specific set of rules". It can be a circular sentence but its still grammatically valid , as behaviour of promise by handler can be a term and the handler execution result i.e a promise now can be another term.</p>
-<p dir="auto">Also the terms used can be inconsistent, as the promise returned by .then() is said to be "new promise" repeatedly, and the promise is on which .then() is attached is termed as "current promise".<br>
-The introduction of term "returned promise" without it being specified can create confusion and ambiguity.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">It would be better to specify directly to whom the returned promise 'p' belongs to, instead of needing to imply what it belongs to.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">(<a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/9a771cdf71361a2d7528fa729e1512461a97db28/hovercard" href="https://github.com/mdn/content/commit/9a771cdf71361a2d7528fa729e1512461a97db28"><tt>9a771cd</tt></a>)<br>
-In above link it can be seen from and onwards line 54, it was directly specified that behaviour of promise returned by .then() is depend upon the handler execution result. Its easier to understand and direct.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/promise/then</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/promise/then/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/promise/then/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/544b843570cb08d1474cfc5ec03ffb9f4edc0166/hovercard" href="https://github.com/mdn/content/commit/544b843570cb08d1474cfc5ec03ffb9f4edc0166"><tt>544b843</tt></a></li>
-<li>Document last modified: 2025-07-10T09:07:55.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[ecmascript] Yielding rejected promises from a sync generator now properly closes the iterator]]></title>
             <link>https://github.com/mdn/content/issues/37038</link>
