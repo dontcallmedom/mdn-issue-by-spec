@@ -20,6 +20,8 @@
   
 * [\[WebCryptoAPI\] Clarify 'extractable' parameter behavior when 'SubtleCrypto.generateKey' is used with asymmetric key algorithms](https://github.com/mdn/content/issues/39493) (2025-05-12T21:11:50Z)
   
+* [\[css-fonts-5\] font-size-adjust does not only affect fallback font](https://github.com/mdn/content/issues/39367) (2025-05-02T11:43:00Z)
+  
 * [\[mediacapture-streams\] MediaTrackCapabilities properties are string\[\]/boolean\[\]/DoubleRange/ULongRange, not ConstrainDOMString/ConstrainBoolean/ConstrainDouble/ConstrainULong](https://github.com/mdn/content/issues/38249) (2025-02-20T04:20:50Z)
   
 * [\[SVG11\] SVG examples should be written in proper XML syntax](https://github.com/mdn/content/issues/37761) (2025-01-22T23:39:56Z)
