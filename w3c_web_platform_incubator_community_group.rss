@@ -4,94 +4,10 @@
         <title>W3C Web Platform Incubator Community Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_platform_incubator_community_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Platform Incubator Community Group</description>
-        <lastBuildDate>Tue, 15 Jul 2025 12:34:44 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Oct 2024 18:22:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[webusb] Incorrect parameters for USB API requestDevice method]]></title>
-            <link>https://github.com/mdn/content/issues/40372</link>
-            <guid>https://github.com/mdn/content/issues/40372</guid>
-            <pubDate>Tue, 15 Jul 2025 12:34:44 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/USB/requestDevice" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/USB/requestDevice</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Parameters</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The current documentation on MDN incorrectly states the USB <code class="notranslate">requestDevice</code> method takes an array of filters as the only parameter. However, the <code class="notranslate">requestDevice</code> method takes an object with a property <code class="notranslate">filters</code> which is an array.</p>
-<p dir="auto">Current version (minus some bits to make viewable here.)</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="## Syntax
-
-requestDevice(filters)
-
-### Parameters
-
-- `filters`
-  - : An array of filter objects for possible devices you would like to pair. Each filter
-    object can have the following properties:
-    - `vendorId`
-    - `productId`
-    - `classCode`
-    - `subclassCode`
-    - `protocolCode`
-    - `serialNumber`"><pre class="notranslate"><code class="notranslate">## Syntax
-
-requestDevice(filters)
-
-### Parameters
-
-- `filters`
-  - : An array of filter objects for possible devices you would like to pair. Each filter
-    object can have the following properties:
-    - `vendorId`
-    - `productId`
-    - `classCode`
-    - `subclassCode`
-    - `protocolCode`
-    - `serialNumber`
-</code></pre></div>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Corrected version (minus some bits to make viewable here.)</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="## Syntax
-
-requestDevice(options)
-
-### Parameters
-- `options`
-  - : An object that sets options for selecting an appropriate device.
-    The available options are:
-    - `filters`
-      - : An array of filter objects for possible devices you would like to pair. Each filter
-        object can have the following properties:
-        - `vendorId`
-        - `productId`
-        - `classCode`
-        - `subclassCode`
-        - `protocolCode`
-        - `serialNumber`"><pre class="notranslate"><code class="notranslate">## Syntax
-
-requestDevice(options)
-
-### Parameters
-- `options`
-  - : An object that sets options for selecting an appropriate device.
-    The available options are:
-    - `filters`
-      - : An array of filter objects for possible devices you would like to pair. Each filter
-        object can have the following properties:
-        - `vendorId`
-        - `productId`
-        - `classCode`
-        - `subclassCode`
-        - `protocolCode`
-        - `serialNumber`
-</code></pre></div>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">The correct parameters can be seen on the below link that confirms this issue.<br>
-<a href="https://wicg.github.io/webusb/#enumeration" rel="nofollow">Device Enumeration</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">I will push a pull request to fix this shortly.</p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[file-system-access] Broken example code for DataTransferItem.getAsFileSystemHandle()]]></title>
             <link>https://github.com/mdn/content/issues/36496</link>

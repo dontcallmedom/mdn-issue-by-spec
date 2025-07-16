@@ -4,94 +4,10 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Tue, 15 Jul 2025 12:34:44 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Jul 2025 21:48:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[webusb] Incorrect parameters for USB API requestDevice method]]></title>
-            <link>https://github.com/mdn/content/issues/40372</link>
-            <guid>https://github.com/mdn/content/issues/40372</guid>
-            <pubDate>Tue, 15 Jul 2025 12:34:44 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/USB/requestDevice" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/USB/requestDevice</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Parameters</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The current documentation on MDN incorrectly states the USB <code class="notranslate">requestDevice</code> method takes an array of filters as the only parameter. However, the <code class="notranslate">requestDevice</code> method takes an object with a property <code class="notranslate">filters</code> which is an array.</p>
-<p dir="auto">Current version (minus some bits to make viewable here.)</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="## Syntax
-
-requestDevice(filters)
-
-### Parameters
-
-- `filters`
-  - : An array of filter objects for possible devices you would like to pair. Each filter
-    object can have the following properties:
-    - `vendorId`
-    - `productId`
-    - `classCode`
-    - `subclassCode`
-    - `protocolCode`
-    - `serialNumber`"><pre class="notranslate"><code class="notranslate">## Syntax
-
-requestDevice(filters)
-
-### Parameters
-
-- `filters`
-  - : An array of filter objects for possible devices you would like to pair. Each filter
-    object can have the following properties:
-    - `vendorId`
-    - `productId`
-    - `classCode`
-    - `subclassCode`
-    - `protocolCode`
-    - `serialNumber`
-</code></pre></div>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Corrected version (minus some bits to make viewable here.)</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="## Syntax
-
-requestDevice(options)
-
-### Parameters
-- `options`
-  - : An object that sets options for selecting an appropriate device.
-    The available options are:
-    - `filters`
-      - : An array of filter objects for possible devices you would like to pair. Each filter
-        object can have the following properties:
-        - `vendorId`
-        - `productId`
-        - `classCode`
-        - `subclassCode`
-        - `protocolCode`
-        - `serialNumber`"><pre class="notranslate"><code class="notranslate">## Syntax
-
-requestDevice(options)
-
-### Parameters
-- `options`
-  - : An object that sets options for selecting an appropriate device.
-    The available options are:
-    - `filters`
-      - : An array of filter objects for possible devices you would like to pair. Each filter
-        object can have the following properties:
-        - `vendorId`
-        - `productId`
-        - `classCode`
-        - `subclassCode`
-        - `protocolCode`
-        - `serialNumber`
-</code></pre></div>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">The correct parameters can be seen on the below link that confirms this issue.<br>
-<a href="https://wicg.github.io/webusb/#enumeration" rel="nofollow">Device Enumeration</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">I will push a pull request to fix this shortly.</p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[screen-orientation] ScreenOrientation.unlock exceptions description inaccurate]]></title>
             <link>https://github.com/mdn/content/issues/40363</link>
@@ -688,7 +604,7 @@ document.ondragover = ((e) =&gt; {
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">description of the <code class="notranslate">sizeAdjust</code> property</p>
 <p dir="auto">It does exist, see<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTI2NDQyNjYsIm5iZiI6MTc1MjY0Mzk2NiwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzE2VDA1MzI0NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTMzZWZlOTg0Yjk2ZGQ2NmVlODY1YmViZGNmMmNkMDI4YWViOTFmYTA2YmQxZWMwOWJkMzE0ODU5ODljNzc4ZGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.YeZc4Vl2XdEl1mLfv9L4kmX8V8mWh52QfdblIVvcPIk"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTI2NDQyNjYsIm5iZiI6MTc1MjY0Mzk2NiwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzE2VDA1MzI0NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTMzZWZlOTg0Yjk2ZGQ2NmVlODY1YmViZGNmMmNkMDI4YWViOTFmYTA2YmQxZWMwOWJkMzE0ODU5ODljNzc4ZGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.YeZc4Vl2XdEl1mLfv9L4kmX8V8mWh52QfdblIVvcPIk" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTI2NDU0NjgsIm5iZiI6MTc1MjY0NTE2OCwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzE2VDA1NTI0OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTlkZGU5YTlhNzIwMjZhMzEwNTQwNmYyMjA4MDcwNGQyNGU4MzY5NjA1ZDQ2YmIyYTM5MmIyYzFkOTE5Nzg1ZWImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.LR868T2lXpi5mwtTD5b1PbWo1AOR2DLaG1zxHORdxX8"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTI2NDU0NjgsIm5iZiI6MTc1MjY0NTE2OCwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzE2VDA1NTI0OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTlkZGU5YTlhNzIwMjZhMzEwNTQwNmYyMjA4MDcwNGQyNGU4MzY5NjA1ZDQ2YmIyYTM5MmIyYzFkOTE5Nzg1ZWImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.LR868T2lXpi5mwtTD5b1PbWo1AOR2DLaG1zxHORdxX8" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
@@ -1066,9 +982,9 @@ However, Touch.screenX/screenY uses the some kind of screen-space CSS pixels. If
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I expected to understand when <code class="notranslate">performance.now()</code> should/shouldn't be used because of these bugs.</p>
 <p dir="auto">I also expected to find a definition for "sleep," but when I search for that word there are no articles with that title:</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/373675/333905620-332ddc0b-642e-4912-aed8-af2abb400b2a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTI2NDQyNjQsIm5iZiI6MTc1MjY0Mzk2NCwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjIwLTMzMmRkYzBiLTY0MmUtNDkxMi1hZWQ4LWFmMmFiYjQwMGIyYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcxNlQwNTMyNDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kNjUxZWU3NjhiOGRlOTQxNDg1NTYyNmU0N2FmY2ZkOWJiNzg2NjE2MDQ3ZTQ4MjE5YzAxNzRjM2Q3MjZjMTg1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Je-Rm8Uk-KD-2Xlg1PBQhKmNMw-fxdkK2vYtTrijyMA"><img src="https://private-user-images.githubusercontent.com/373675/333905620-332ddc0b-642e-4912-aed8-af2abb400b2a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTI2NDQyNjQsIm5iZiI6MTc1MjY0Mzk2NCwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjIwLTMzMmRkYzBiLTY0MmUtNDkxMi1hZWQ4LWFmMmFiYjQwMGIyYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcxNlQwNTMyNDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kNjUxZWU3NjhiOGRlOTQxNDg1NTYyNmU0N2FmY2ZkOWJiNzg2NjE2MDQ3ZTQ4MjE5YzAxNzRjM2Q3MjZjMTg1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Je-Rm8Uk-KD-2Xlg1PBQhKmNMw-fxdkK2vYtTrijyMA" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/373675/333905620-332ddc0b-642e-4912-aed8-af2abb400b2a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTI2NDU0NjYsIm5iZiI6MTc1MjY0NTE2NiwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjIwLTMzMmRkYzBiLTY0MmUtNDkxMi1hZWQ4LWFmMmFiYjQwMGIyYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcxNlQwNTUyNDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNDU5OWY3OWU0NDk3ODY3YWEwZTIzMTZhMDI4NjhlNjQwNzI2OGQyMzhjODhjZWU1ZTY2YjZlMmE0MDRkODAxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.s4QCxPGyQ0HHtljpxDua-0-31RSH5bV0nIcvz2Op2CE"><img src="https://private-user-images.githubusercontent.com/373675/333905620-332ddc0b-642e-4912-aed8-af2abb400b2a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTI2NDU0NjYsIm5iZiI6MTc1MjY0NTE2NiwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjIwLTMzMmRkYzBiLTY0MmUtNDkxMi1hZWQ4LWFmMmFiYjQwMGIyYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcxNlQwNTUyNDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNDU5OWY3OWU0NDk3ODY3YWEwZTIzMTZhMDI4NjhlNjQwNzI2OGQyMzhjODhjZWU1ZTY2YjZlMmE0MDRkODAxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.s4QCxPGyQ0HHtljpxDua-0-31RSH5bV0nIcvz2Op2CE" alt="image" style="max-width: 100%;"></a></p>
 <p dir="auto">And when I submit the search, there are results, but none of them seem relevant:</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/373675/333905637-56f3c600-2f17-449a-aa2e-5237de87b844.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTI2NDQyNjQsIm5iZiI6MTc1MjY0Mzk2NCwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjM3LTU2ZjNjNjAwLTJmMTctNDQ5YS1hYTJlLTUyMzdkZTg3Yjg0NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcxNlQwNTMyNDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04ZTc2ODBlY2I4N2U3MmJjMTVmY2YwMTlhMWJhYzkyOWExZDNiZmQ5MTA1ZDM5YjYwNzYzZWM1OTkwOGMwNTc0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.R8kGdimdnA_JMzyn8Byun_stpQPWNzmXw0FCPv3GCV8"><img src="https://private-user-images.githubusercontent.com/373675/333905637-56f3c600-2f17-449a-aa2e-5237de87b844.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTI2NDQyNjQsIm5iZiI6MTc1MjY0Mzk2NCwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjM3LTU2ZjNjNjAwLTJmMTctNDQ5YS1hYTJlLTUyMzdkZTg3Yjg0NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcxNlQwNTMyNDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04ZTc2ODBlY2I4N2U3MmJjMTVmY2YwMTlhMWJhYzkyOWExZDNiZmQ5MTA1ZDM5YjYwNzYzZWM1OTkwOGMwNTc0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.R8kGdimdnA_JMzyn8Byun_stpQPWNzmXw0FCPv3GCV8" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/373675/333905637-56f3c600-2f17-449a-aa2e-5237de87b844.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTI2NDU0NjYsIm5iZiI6MTc1MjY0NTE2NiwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjM3LTU2ZjNjNjAwLTJmMTctNDQ5YS1hYTJlLTUyMzdkZTg3Yjg0NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcxNlQwNTUyNDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jNDEyNmU0MDVjNzUwNjUxNDM1Y2ZhN2JiZGJlOGY5OWNkZDQ4ZjNmOTk4ZGU2ZTI4YjgwOGRjOGVkZGYyM2FkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.zQIKf_PQ66W1X9DuTTAeDWph7H2nDKzwU3x07ug1YRw"><img src="https://private-user-images.githubusercontent.com/373675/333905637-56f3c600-2f17-449a-aa2e-5237de87b844.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTI2NDU0NjYsIm5iZiI6MTc1MjY0NTE2NiwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjM3LTU2ZjNjNjAwLTJmMTctNDQ5YS1hYTJlLTUyMzdkZTg3Yjg0NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcxNlQwNTUyNDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jNDEyNmU0MDVjNzUwNjUxNDM1Y2ZhN2JiZGJlOGY5OWNkZDQ4ZjNmOTk4ZGU2ZTI4YjgwOGRjOGVkZGYyM2FkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.zQIKf_PQ66W1X9DuTTAeDWph7H2nDKzwU3x07ug1YRw" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">n/a</p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
