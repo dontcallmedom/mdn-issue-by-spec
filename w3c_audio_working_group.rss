@@ -28,18 +28,17 @@
 <ol dir="auto">
 <li>Change the sample code to init the sounds after clicking Start e.g.</li>
 </ol>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="function toggleSound(toggleButton) {
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function toggleSound(toggleButton) {
   if (!init) {
     initSound();
     init = true;
   }
-///...."><pre lang="js" class="notranslate"><code class="notranslate">function toggleSound(toggleButton) {
-  if (!init) {
-    initSound();
-    init = true;
-  }
-///....
-</code></pre></div>
+///...."><pre class="notranslate"><span class="pl-k">function</span> <span class="pl-en">toggleSound</span><span class="pl-kos">(</span><span class="pl-s1">toggleButton</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-c1">!</span><span class="pl-s1">init</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    <span class="pl-en">initSound</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-s1">init</span> <span class="pl-c1">=</span> <span class="pl-c1">true</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span>
+<span class="pl-c">///....</span><span class="pl-kos"></span></pre></div>
 <ol start="2" dir="auto">
 <li>Move the example to StackBlitz with as a complete example instead of linking to multiple codepen script files that hide part of the example.</li>
 </ol>
