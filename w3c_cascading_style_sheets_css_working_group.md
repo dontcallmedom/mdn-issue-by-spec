@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-text-3\] Is "white-space: wrap;" valid?](https://github.com/mdn/content/issues/40460) (2025-07-20T18:26:42Z)
+  
 * [\[css-logical-1, css-values-3, css-sizing-3\] @container size queries aren't clear about which box size is used](https://github.com/mdn/content/issues/40306) (2025-07-10T17:34:54Z)
   
 * [\[SVG11, geometry-1\] \`SVGPointList\` cannot contain DOMPoint in browsers](https://github.com/mdn/content/issues/40292) (2025-07-10T08:52:08Z)
