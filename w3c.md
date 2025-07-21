@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-text-3\] Is "white-space: wrap;" valid?](https://github.com/mdn/content/issues/40460) (2025-07-20T18:26:42Z)
-  
 * [\[webusb\] USB.requestDevice new \`exclusionFilters\` option](https://github.com/mdn/content/issues/40372) (2025-07-15T12:34:44Z)
   
 * [\[screen-orientation\] ScreenOrientation.unlock exceptions description inaccurate](https://github.com/mdn/content/issues/40363) (2025-07-14T21:48:31Z)
