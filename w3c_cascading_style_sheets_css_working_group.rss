@@ -46,41 +46,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[SVG11, geometry-1] `SVGPointList` cannot contain DOMPoint in browsers]]></title>
-            <link>https://github.com/mdn/content/issues/40292</link>
-            <guid>https://github.com/mdn/content/issues/40292</guid>
-            <pubDate>Thu, 10 Jul 2025 08:52:08 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/SVGPointList" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/SVGPointList</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<blockquote>
-<p dir="auto">The SVGPointList interface represents a list of <a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint" rel="nofollow">DOMPoint</a> objects.</p>
-</blockquote>
-<p dir="auto">If I try to add a <code class="notranslate">DOMPoint</code> to <code class="notranslate">SVGPointList</code> in Firefox, I get this error:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Uncaught TypeError: SVGPointList.insertItemBefore: Argument 1 does not implement interface SVGPoint."><pre class="notranslate"><code class="notranslate">Uncaught TypeError: SVGPointList.insertItemBefore: Argument 1 does not implement interface SVGPoint.
-</code></pre></div>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">I'm not sure... The issue is quite subtle. <code class="notranslate">SVGPointList</code> accepting <code class="notranslate">DOMPoint</code>s is an SVG 2 feature, while SVG 2 is not in a very good place in general. It's definitely not surprising that some SVG 2 feature is missing from browsers. I think that the article should either list the gotchas <em>or</em> document both SVG 1.1 and SVG 2.0 behaviors, I'm not experienced enough with MDN practices to decide what's the proper way forward.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/svgpointlist</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/SVGPointList" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/SVGPointList</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/svgpointlist/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/svgpointlist/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/43a8839abdfb01d4388f11a028582bec4e7ead18/hovercard" href="https://github.com/mdn/content/commit/43a8839abdfb01d4388f11a028582bec4e7ead18"><tt>43a8839</tt></a></li>
-<li>Document last modified: 2025-06-08T10:11:23.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[geometry-1] DOMRect.toJSON method description is misleading]]></title>
             <link>https://github.com/mdn/content/issues/40230</link>
             <guid>https://github.com/mdn/content/issues/40230</guid>
@@ -295,7 +260,7 @@ but the demo allows initial tab key press to go to the first tab, but then uses 
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">description of the <code class="notranslate">sizeAdjust</code> property</p>
 <p dir="auto">It does exist, see<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMwOTc4ODYsIm5iZiI6MTc1MzA5NzU4NiwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzIxVDExMzMwNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg3ZmIzOTg1OGQ4MGMwYzNjZjM3YmE5NzVhZGIyODYwY2U2ZjdlMmVhOTVjOTFhNDg1ODNkNDU0Yjk0Njk5Y2UmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.UUPxBtLr-FdlLRGtbOcxIUwRucRI4cNUZ3eTBsIbgNQ"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMwOTc4ODYsIm5iZiI6MTc1MzA5NzU4NiwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzIxVDExMzMwNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg3ZmIzOTg1OGQ4MGMwYzNjZjM3YmE5NzVhZGIyODYwY2U2ZjdlMmVhOTVjOTFhNDg1ODNkNDU0Yjk0Njk5Y2UmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.UUPxBtLr-FdlLRGtbOcxIUwRucRI4cNUZ3eTBsIbgNQ" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMwOTg4MjEsIm5iZiI6MTc1MzA5ODUyMSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzIxVDExNDg0MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWU4ODlkOWQ0MjgxZTU3MjE5NDQxOTE0OGY1NDJlNzIzNThlMjFiNGNlZmU0NTNiY2Q4YzU4ZDY0OGRjNzc5MTMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.aqGX2cqQVh_9auNmotQ5Ln6Lx5RhFEQ8EiaaIrm0mFk"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMwOTg4MjEsIm5iZiI6MTc1MzA5ODUyMSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzIxVDExNDg0MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWU4ODlkOWQ0MjgxZTU3MjE5NDQxOTE0OGY1NDJlNzIzNThlMjFiNGNlZmU0NTNiY2Q4YzU4ZDY0OGRjNzc5MTMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.aqGX2cqQVh_9auNmotQ5Ln6Lx5RhFEQ8EiaaIrm0mFk" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>

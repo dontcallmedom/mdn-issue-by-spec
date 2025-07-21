@@ -4,8 +4,6 @@
 
 * [\[css-logical-1, css-values-3, css-sizing-3\] @container size queries aren't clear about which box size is used](https://github.com/mdn/content/issues/40306) (2025-07-10T17:34:54Z)
   
-* [\[SVG11, geometry-1\] \`SVGPointList\` cannot contain DOMPoint in browsers](https://github.com/mdn/content/issues/40292) (2025-07-10T08:52:08Z)
-  
 * [\[geometry-1\] DOMRect.toJSON method description is misleading](https://github.com/mdn/content/issues/40230) (2025-07-07T11:52:23Z)
   
 * [\[html, requestidlecallback, css-backgrounds-4\] Reference page titles are not consistent and need improvements](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)

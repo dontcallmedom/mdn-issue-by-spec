@@ -8,8 +8,6 @@
   
 * [\[css-logical-1, css-values-3, css-sizing-3\] @container size queries aren't clear about which box size is used](https://github.com/mdn/content/issues/40306) (2025-07-10T17:34:54Z)
   
-* [\[SVG11, geometry-1\] \`SVGPointList\` cannot contain DOMPoint in browsers](https://github.com/mdn/content/issues/40292) (2025-07-10T08:52:08Z)
-  
 * [\[WebIDL-1\] QuotaExceededError is being upgraded to a standalone error type](https://github.com/mdn/content/issues/40244) (2025-07-08T04:51:26Z)
   
 * [\[geometry-1\] DOMRect.toJSON method description is misleading](https://github.com/mdn/content/issues/40230) (2025-07-07T11:52:23Z)
