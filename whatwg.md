@@ -12,8 +12,6 @@
   
 * [\[xhr\] Host Permissions CORS contradiction](https://github.com/mdn/content/issues/39168) (2025-04-17T01:59:02Z)
   
-* [\[html\] window/close: clarify when a window is opened by script](https://github.com/mdn/content/issues/39154) (2025-04-16T09:43:51Z)
-  
 * [\[html\] Mention Firefox Anti-fingerprinting on \`getImageData()\` page](https://github.com/mdn/content/issues/39084) (2025-04-11T18:49:23Z)
   
 * [\[html\] The \`\<template\>\` tag says it permitted content has "No restrictions", but that is not the case](https://github.com/mdn/content/issues/38984) (2025-04-05T07:12:02Z)

@@ -63,23 +63,6 @@ It's giving off "ceci n'est pas une pipe" vibes (edited)</p>
 <p dir="auto">With a fixed format in place, titles can be linted.</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] window/close: clarify when a window is opened by script]]></title>
-            <link>https://github.com/mdn/content/issues/39154</link>
-            <guid>https://github.com/mdn/content/issues/39154</guid>
-            <pubDate>Wed, 16 Apr 2025 09:43:51 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/close" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/close</a></p>
-<h3 dir="auto">Issue</h3>
-<p dir="auto">Browsers allow windows to be script-closable when they were opened by web content rather than script and we are working on updating the spec (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2985216225" data-permission-text="Title is private" data-url="https://github.com/whatwg/html/issues/11208" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/html/pull/11208/hovercard" href="https://github.com/whatwg/html/pull/11208">whatwg/html#11208</a>). MDN currently states they are script-closable when opened using <code class="notranslate">window.open()</code>, but link navigations or form submissions can also create script-closable windows.</p>
-<p dir="auto">Windows that are not opened by web content include those opened using the browser UI, as well as <code class="notranslate">Ctrl+Click</code>, <code class="notranslate">Shift+Click</code> or middle clicks on links. This is not part of the HTML spec, but I tested it on Chrome, Firefox and Safari.</p>
-<p dir="auto">In addition, the session history check might not be too relevant to web developers (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="181168654" data-permission-text="Title is private" data-url="https://github.com/whatwg/html/issues/1866" data-hovercard-type="issue" data-hovercard-url="/whatwg/html/issues/1866/hovercard?comment_id=2788880617&amp;comment_type=issue_comment" href="https://github.com/whatwg/html/issues/1866#issuecomment-2788880617">whatwg/html#1866 (comment)</a>), we could put less emphasis on it. For me, this check was difficult to understand given there is no reference for <code class="notranslate">session history</code>. We could point to <a href="https://developer.mozilla.org/en-US/docs/Web/API/History/length" rel="nofollow">History: length</a>, I believe it's the same concept. Though the pages on <code class="notranslate">History</code> also don't make it completely clear what falls under session history. For example, navigations of embedded iframes will increase the history length of the top level page.</p>
-<p dir="auto"><code class="notranslate">window.close()</code> can also be blocked through an <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event" rel="nofollow">beforeunload</a> handler.</p>
-<h3 dir="auto">See also</h3>
-<p dir="auto"><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2985216225" data-permission-text="Title is private" data-url="https://github.com/whatwg/html/issues/11208" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/html/pull/11208/hovercard" href="https://github.com/whatwg/html/pull/11208">whatwg/html#11208</a><br>
-<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="181168654" data-permission-text="Title is private" data-url="https://github.com/whatwg/html/issues/1866" data-hovercard-type="issue" data-hovercard-url="/whatwg/html/issues/1866/hovercard" href="https://github.com/whatwg/html/issues/1866">whatwg/html#1866</a><br>
-<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1316857" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=1316857</a></p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Mention Firefox Anti-fingerprinting on `getImageData()` page]]></title>
             <link>https://github.com/mdn/content/issues/39084</link>
             <guid>https://github.com/mdn/content/issues/39084</guid>
