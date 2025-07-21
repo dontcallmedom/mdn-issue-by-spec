@@ -84,8 +84,6 @@
   
 * [\[cssom-view-1\] Guide on reflow and performance optimizations](https://github.com/mdn/content/issues/26330) (2023-04-21T01:08:41Z)
   
-* [\[webaudio\] interrupted state not listed as a valid state value, but an example of interrupted state was given](https://github.com/mdn/content/issues/26129) (2023-04-11T18:49:59Z)
-  
 * [\[webaudio\] AnalyserNode::getFloatTimeDomainData() doesn't specify the encoding of the waveform](https://github.com/mdn/content/issues/25571) (2023-03-23T14:41:18Z)
   
 * [\[screen-capture\] MediaDevices#getDisplayMedia(): systemAudio is misleading](https://github.com/mdn/content/issues/25307) (2023-03-14T03:38:33Z)
