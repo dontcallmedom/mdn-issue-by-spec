@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[intersection-observer\] IntersectionObserver.rootMargin can only be in pixels or percentage](https://github.com/mdn/content/issues/40515) (2025-07-24T04:07:08Z)
+* [\[intersection-observer\] IntersectionObserver rootMargin option can only be in pixels or percentage](https://github.com/mdn/content/issues/40515) (2025-07-24T04:07:08Z)
   
 * [\[screen-orientation\] ScreenOrientation.unlock exceptions description inaccurate](https://github.com/mdn/content/issues/40363) (2025-07-14T21:48:31Z)
   

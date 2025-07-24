@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[intersection-observer\] IntersectionObserver.rootMargin can only be in pixels or percentage](https://github.com/mdn/content/issues/40515) (2025-07-24T04:07:08Z)
+* [\[intersection-observer\] IntersectionObserver rootMargin option can only be in pixels or percentage](https://github.com/mdn/content/issues/40515) (2025-07-24T04:07:08Z)
   
 * [\[css-backgrounds-4\] box-shadow comments in Syntax section less helpful now](https://github.com/mdn/content/issues/40500) (2025-07-22T09:16:06Z)
   
