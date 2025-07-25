@@ -4,10 +4,45 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Sun, 01 Dec 2024 10:22:47 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 25 Jul 2025 12:42:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Clarify effects of timezone changes in Date.setDate()]]></title>
+            <link>https://github.com/mdn/content/issues/40531</link>
+            <guid>https://github.com/mdn/content/issues/40531</guid>
+            <pubDate>Fri, 25 Jul 2025 12:42:02 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setDate" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setDate</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Description</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">I think the docs could be clearer about what happens to a <code class="notranslate">Date</code> object when you shift it over a net timezone difference (e.g. the beginning or end of DST). True, it already states:</p>
+<blockquote>
+<p dir="auto">The setDate() method of <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date" rel="nofollow">Date</a> instances changes the day of the month for this date according to local time</p>
+</blockquote>
+<p dir="auto">But this is not a terribly clear description. In particular, it is not obvious what "according to local time" means. To someone struggling with unexpected effects - in this case, the difference between new and old timestamps being too short or too long -, this phrasing provides very little insight or help on what to do different.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">In the Description, we might add something like this:</p>
+<p dir="auto">If the update moves the target date over a net timezone shift (e.g. over the beginning or end of Daylight Savings Time), <code class="notranslate">setDate</code> preserves local time: the hours value will be the same before and after the update. By extension, this means that the difference between the new and the old timestamp may vary. If you need to shift a date by a fixed amount of time, use {{{jsxref("Date.prototype.setUTCDate()")}} instead.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">I am willing to make this change in all affected methods and submit it as a pull request. But since this affects multiple pages, I would like some sort of confirmation that such a change would be welcomed before investing the work.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/date/setutcdate</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCDate" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCDate</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/date/setutcdate/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/date/setutcdate/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/544b843570cb08d1474cfc5ec03ffb9f4edc0166/hovercard" href="https://github.com/mdn/content/commit/544b843570cb08d1474cfc5ec03ffb9f4edc0166"><tt>544b843</tt></a></li>
+<li>Document last modified: 2025-07-10T09:07:55.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Yielding rejected promises from a sync generator now properly closes the iterator]]></title>
             <link>https://github.com/mdn/content/issues/37038</link>
