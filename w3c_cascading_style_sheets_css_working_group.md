@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-transforms-1\] Safari does not support \`transform-box\` within some, possibly all, SVG elements](https://github.com/mdn/content/issues/40561) (2025-07-29T03:49:42Z)
+  
 * [\[css-backgrounds-4\] box-shadow comments in Syntax section less helpful now](https://github.com/mdn/content/issues/40500) (2025-07-22T09:16:06Z)
   
 * [\[geometry-1\] DOMRect.toJSON method description is misleading](https://github.com/mdn/content/issues/40230) (2025-07-07T11:52:23Z)
