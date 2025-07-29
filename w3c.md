@@ -4,8 +4,6 @@
 
 * [\[css-transforms-1\] Safari does not support \`transform-box\` within some, possibly all, SVG elements](https://github.com/mdn/content/issues/40561) (2025-07-29T03:49:42Z)
   
-* [\[intersection-observer\] IntersectionObserver rootMargin option can only be in pixels or percentage](https://github.com/mdn/content/issues/40515) (2025-07-24T04:07:08Z)
-  
 * [\[css-backgrounds-4\] box-shadow comments in Syntax section less helpful now](https://github.com/mdn/content/issues/40500) (2025-07-22T09:16:06Z)
   
 * [\[webusb\] USB.requestDevice new \`exclusionFilters\` option](https://github.com/mdn/content/issues/40372) (2025-07-15T12:34:44Z)
