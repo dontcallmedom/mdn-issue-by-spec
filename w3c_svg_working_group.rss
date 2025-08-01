@@ -18,17 +18,19 @@
 <h3 dir="auto">What specific section or headline is this issue about?</h3>
 <p dir="auto">Description and Example</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;style&gt;
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;style&gt;
 ...
-&lt;/style&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
+&lt;/style&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;style&gt;
 ...
-<span class="pl-kos">&lt;/</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span></pre></div>
+&lt;/style&gt;
+</code></pre></div>
 <h3 dir="auto">What did you expect to see?</h3>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;style&gt;&lt;![CDATA[
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;style&gt;&lt;![CDATA[
 ...
-]]&lt;/style&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>&lt;![<span class="pl-ent">CDATA</span>[
+]]&lt;/style&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;style&gt;&lt;![CDATA[
 ...
-]]<span class="pl-kos">&lt;/</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span></pre></div>
+]]&lt;/style&gt;
+</code></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><a href="https://www.w3.org/TR/SVG11/styling.html#StyleElementExample" rel="nofollow">https://www.w3.org/TR/SVG11/styling.html#StyleElementExample</a></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
@@ -36,7 +38,7 @@
 What's worse is that, without this encapsulation, your SVG will be rejected by FireFox's XML-parser (with error), maybe other browsers too have not tried.</p>
 <p dir="auto">Perhaps Firefox and/or some specification should explicitly allow usage of those characters inside the contents of the SVG <code class="notranslate">&lt;style&gt;</code> tag without the need to "escape" them using char-entities like <code class="notranslate">&amp;amp;</code> for <code class="notranslate">&amp;</code>...</p>
 <p dir="auto">Example SVG that will trigger the parser-error on each nesting level, if im correct: <em>(Have only tested the <code class="notranslate">&amp;</code> one)</em></p>
-<div class="highlight highlight-text-xml-svg notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;svg&gt;
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;svg&gt;
   &lt;style&gt;
     selector1 {
       &amp;#selector2 {
@@ -47,18 +49,19 @@ What's worse is that, without this encapsulation, your SVG will be rejected by F
     }
   &lt;/style&gt;
   ...
-&lt;/svg&gt;"><pre class="notranslate">&lt;<span class="pl-ent">svg</span>&gt;
-  &lt;<span class="pl-ent">style</span>&gt;<span class="pl-s1"></span>
-<span class="pl-s1">    selector1 {</span>
-<span class="pl-s1">      &amp;#<span class="pl-c1">selector</span>2 {</span>
-<span class="pl-s1">        &gt; <span class="pl-c1">selector</span>3 {</span>
-<span class="pl-s1">          ...</span>
-<span class="pl-s1">        }</span>
-<span class="pl-s1">      }</span>
-<span class="pl-s1">    }</span>
-<span class="pl-s1"></span>  &lt;/<span class="pl-ent">style</span>&gt;
+&lt;/svg&gt;"><pre lang="svg" class="notranslate"><code class="notranslate">&lt;svg&gt;
+  &lt;style&gt;
+    selector1 {
+      &amp;#selector2 {
+        &gt; selector3 {
+          ...
+        }
+      }
+    }
+  &lt;/style&gt;
   ...
-&lt;/<span class="pl-ent">svg</span>&gt;</pre></div>
+&lt;/svg&gt;
+</code></pre></div>
 <ul dir="auto">
 <li>PS: Maybe good info to checkout also wrt. problems with external stylesheets in SVG: <a href="https://stackoverflow.com/staging-ground/79378292" rel="nofollow">https://stackoverflow.com/staging-ground/79378292</a></li>
 </ul>
