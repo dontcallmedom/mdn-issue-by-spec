@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[filter-effects-2\] Backdrop Image and Backdrop Root are not mentioned and it causes confusion.](https://github.com/mdn/content/issues/40602) (2025-08-03T06:46:17Z)
+  
 * [\[css-transforms-1\] Safari does not support \`transform-box\` within some, possibly all, SVG elements](https://github.com/mdn/content/issues/40561) (2025-07-29T03:49:42Z)
   
 * [\[css-backgrounds-4\] box-shadow comments in Syntax section less helpful now](https://github.com/mdn/content/issues/40500) (2025-07-22T09:16:06Z)

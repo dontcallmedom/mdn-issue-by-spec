@@ -4,10 +4,88 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Tue, 29 Jul 2025 03:49:42 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 03 Aug 2025 06:46:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[filter-effects-2] Backdrop Image and Backdrop Root are not mentioned and it causes confusion.]]></title>
+            <link>https://github.com/mdn/content/issues/40602</link>
+            <guid>https://github.com/mdn/content/issues/40602</guid>
+            <pubDate>Sun, 03 Aug 2025 06:46:17 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">First description of the backdrop-filter</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto">"to the area behind an element"</p>
+</blockquote>
+<p dir="auto">This is statement in the first paragraph is not correct</p>
+<p dir="auto">According to the specification the filter is applied to the area behind the element up until the nearest ancestor Backdrop Root element.</p>
+<p dir="auto">So that in this example:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;div style=&quot;background-color:red&quot;&gt; &lt;!-- grand-parent --&gt;
+  &lt;div style=&quot;color: yellow; will-change:opacity&quot;&gt; &lt;!-- nearest ancestor Backdrop Root --&gt;
+    Yellow Text
+    &lt;div style=&quot;backdrop-filter: blur(2px); position:absolute;top:0;left:0;&quot;&gt;&lt;/div&gt; &lt;!-- element with backdrop filter
+  &lt;/div&gt;
+&lt;/div&gt;"><pre class="notranslate"><code class="notranslate">&lt;div style="background-color:red"&gt; &lt;!-- grand-parent --&gt;
+  &lt;div style="color: yellow; will-change:opacity"&gt; &lt;!-- nearest ancestor Backdrop Root --&gt;
+    Yellow Text
+    &lt;div style="backdrop-filter: blur(2px); position:absolute;top:0;left:0;"&gt;&lt;/div&gt; &lt;!-- element with backdrop filter
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div>
+<p dir="auto">In this case only yellow text pixels will be blurrred and NOT red pixels of the grand-parent.</p>
+<p dir="auto">I think we should at least mention it, because it was not clear for me when I've encountered "bug" with not all behind pixels being blurred.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">What we can add:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="NOTE: Filter do not applies to the pixels which are behind the element with &quot;backdrop-filter&quot; property in case if they are produced by elements outside
+of the nearest backdrop root ancestor of the element with &quot;backdrop-filter&quot;.
+
+The Backdrop Root element:
+    - The root element of the document (HTML).
+    - An element with a filter property other than &quot;none&quot;.
+    - An element with an opacity value less than 1.
+    - An element with mask, mask-image, mask-border, or clip-path properties with values other than “none”.
+    - An element with a backdrop-filter value other than &quot;none&quot;.
+    - An element with a mix-blend-mode value other than &quot;normal&quot;.
+    - An element with a will-change value specifying any property that would create a Backdrop Root on non-initial value.
+
+"><pre class="notranslate"><code class="notranslate">NOTE: Filter do not applies to the pixels which are behind the element with "backdrop-filter" property in case if they are produced by elements outside
+of the nearest backdrop root ancestor of the element with "backdrop-filter".
+
+The Backdrop Root element:
+    - The root element of the document (HTML).
+    - An element with a filter property other than "none".
+    - An element with an opacity value less than 1.
+    - An element with mask, mask-image, mask-border, or clip-path properties with values other than “none”.
+    - An element with a backdrop-filter value other than "none".
+    - An element with a mix-blend-mode value other than "normal".
+    - An element with a will-change value specifying any property that would create a Backdrop Root on non-initial value.
+
+
+</code></pre></div>
+<p dir="auto">And maybe some example:<br>
+<a href="https://jsfiddle.net/xer31ywj/" rel="nofollow">https://jsfiddle.net/xer31ywj/</a></p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Specification of the backdrop filter:<br>
+<a href="https://drafts.fxtf.org/filter-effects-2/#BackdropRoot" rel="nofollow">https://drafts.fxtf.org/filter-effects-2/#BackdropRoot</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/backdrop-filter</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/backdrop-filter/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/backdrop-filter/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0cc9980e3b21c83d1800a428bc402ae1865326b2/hovercard" href="https://github.com/mdn/content/commit/0cc9980e3b21c83d1800a428bc402ae1865326b2"><tt>0cc9980</tt></a></li>
+<li>Document last modified: 2025-07-14T14:43:58.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-transforms-1] Safari does not support `transform-box` within some, possibly all, SVG elements]]></title>
             <link>https://github.com/mdn/content/issues/40561</link>
@@ -393,7 +471,7 @@ but the demo allows initial tab key press to go to the first tab, but then uses 
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">description of the <code class="notranslate">sizeAdjust</code> property</p>
 <p dir="auto">It does exist, see<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTQyMDMyNDUsIm5iZiI6MTc1NDIwMjk0NSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODAzVDA2MzU0NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI5YmExYzYzOWEwMWZkZmEyMTliOTNkYjE3ODlhOTIzZGVkMWY1OTZhOTA2NDlhMjZmY2JlMzhiMDc3MTQzOTkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.UgZU2r0xSLizYlggSuIl3jVHypm_wP1bFwPIF4nMj9E"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTQyMDMyNDUsIm5iZiI6MTc1NDIwMjk0NSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODAzVDA2MzU0NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI5YmExYzYzOWEwMWZkZmEyMTliOTNkYjE3ODlhOTIzZGVkMWY1OTZhOTA2NDlhMjZmY2JlMzhiMDc3MTQzOTkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.UgZU2r0xSLizYlggSuIl3jVHypm_wP1bFwPIF4nMj9E" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTQyMDQ0ODMsIm5iZiI6MTc1NDIwNDE4MywicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODAzVDA2NTYyM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFjMzFhMGZmYWQyZjdiNmJjOWJkZmNkYjAxNmQwYTc5ZWFhNmU5NTFhNDAwMmNiYTk5MWU1OWMwMDEyMjJiNGYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.cqdqgCJLqtM8QPByRsVSbsLXONZhHIrqG59HUGXejLE"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTQyMDQ0ODMsIm5iZiI6MTc1NDIwNDE4MywicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODAzVDA2NTYyM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFjMzFhMGZmYWQyZjdiNmJjOWJkZmNkYjAxNmQwYTc5ZWFhNmU5NTFhNDAwMmNiYTk5MWU1OWMwMDEyMjJiNGYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.cqdqgCJLqtM8QPByRsVSbsLXONZhHIrqG59HUGXejLE" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
