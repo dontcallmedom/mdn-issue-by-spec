@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-fonts-5\] font-weight: same font weight of bold and bolder](https://github.com/mdn/content/issues/40636) (2025-08-05T08:53:31Z)
-  
 * [\[uievents\] Javascript Keydown does not work on iPad/iPhone with external Keyboard](https://github.com/mdn/content/issues/40635) (2025-08-05T08:34:27Z)
   
 * [\[cookie-store\] CookieStore get() method return object should only support name and value](https://github.com/mdn/content/issues/40616) (2025-08-04T11:10:38Z)
