@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[uievents\] Javascript Keydown does not work on iPad/iPhone with external Keyboard](https://github.com/mdn/content/issues/40635) (2025-08-05T08:34:27Z)
+  
 * [\[screen-orientation\] ScreenOrientation.unlock exceptions description inaccurate](https://github.com/mdn/content/issues/40363) (2025-07-14T21:48:31Z)
   
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
