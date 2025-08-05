@@ -4,10 +4,34 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Tue, 05 Aug 2025 17:41:23 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 05 Aug 2025 18:31:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html, ecmascript] Conflicting definitions of ImageData constructor]]></title>
+            <link>https://github.com/mdn/content/issues/40639</link>
+            <guid>https://github.com/mdn/content/issues/40639</guid>
+            <pubDate>Tue, 05 Aug 2025 18:31:19 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ImageData/ImageData#syntax" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ImageData/ImageData#syntax</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Syntax</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">There are conflicting informations on the constructor of <code class="notranslate">ImageData</code>:</p>
+<ul dir="auto">
+<li><a href="https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagedataarray" rel="nofollow">WhatWG implies</a> that <a href="https://webidl.spec.whatwg.org/#idl-Float16Array" rel="nofollow"><code class="notranslate">Float16Array</code></a> is a valid as data in the interface - thus the constructor should certainly allow that</li>
+<li>The IDL of a <a href="https://source.chromium.org/chromium/chromium/src/+/refs/tags/139.0.7258.9:third_party/blink/renderer/core/html/canvas/image_data.idl" rel="nofollow">recent Chromium</a> also allows this. It's available since <a href="https://source.chromium.org/chromium/chromium/src/+/refs/tags/137.0.7104.0:third_party/blink/renderer/core/html/canvas/image_data.idl" rel="nofollow">137</a></li>
+<li>MDN only list <code class="notranslate">Uint8ClampedArray</code> as being a valid data type.</li>
+</ul>
+<p dir="auto"><strong>Note</strong>: There also is the <a href="https://developer.mozilla.org/en-US/docs/Web/API/ImageData" rel="nofollow">Overview page</a> which also only mentions <code class="notranslate">data</code> being types as <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray" rel="nofollow"><code class="notranslate">Uint8ClampedArray</code></a></p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">MDN being in sync with the WhatWG spec.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] syntax error in example 1]]></title>
             <link>https://github.com/mdn/content/issues/40638</link>
