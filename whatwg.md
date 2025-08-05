@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] syntax error in example 1](https://github.com/mdn/content/issues/40638) (2025-08-05T17:41:23Z)
+  
 * [\[dom\] HTML element, attribute, and doctype name validation rules are changing](https://github.com/mdn/content/issues/40366) (2025-07-15T04:32:47Z)
   
 * [\[dom\] Node: lookupPrefix() method's example now outputs null](https://github.com/mdn/content/issues/39912) (2025-06-12T09:17:30Z)
