@@ -34,7 +34,7 @@
   
 * [\[css-align-3\] New section to link from longhand to shorthand property](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
   
-* [\[selectors-4\] \`:any-link\` privacy exception not explained](https://github.com/mdn/content/issues/17366) (2022-06-17T02:50:38Z)
+* [\[selectors-4\] \`:any-link\` matching \`\<link\>\` should not be described as "privacy"](https://github.com/mdn/content/issues/17366) (2022-06-17T02:50:38Z)
   
 * [\[web-animations-2, css-animations-2\] Issue with "Element.animate()": wrong scenario mentioned](https://github.com/mdn/content/issues/13487) (2022-03-04T07:40:26Z)
   
