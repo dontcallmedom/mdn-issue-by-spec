@@ -4,8 +4,6 @@
 
 * [\[filter-effects-2\] Backdrop Root concept undocumented](https://github.com/mdn/content/issues/40602) (2025-08-03T06:46:17Z)
   
-* [\[css-transforms-1\] Safari does not support \`transform-box\` within some, possibly all, SVG elements](https://github.com/mdn/content/issues/40561) (2025-07-29T03:49:42Z)
-  
 * [\[css-backgrounds-4\] Rethink description comment format in CSS syntax boxes](https://github.com/mdn/content/issues/40500) (2025-07-22T09:16:06Z)
   
 * [\[geometry-1\] DOMRect.toJSON method description is misleading](https://github.com/mdn/content/issues/40230) (2025-07-07T11:52:23Z)
@@ -33,8 +31,6 @@
 * [\[filter-effects-2\] feGaussianBlur needs guidance about setting height and width ](https://github.com/mdn/content/issues/24169) (2023-02-04T21:15:51Z)
   
 * [\[css-align-3\] New section to link from longhand to shorthand property](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
-  
-* [\[selectors-4\] \`:any-link\` matching \`\<link\>\` should not be described as "privacy"](https://github.com/mdn/content/issues/17366) (2022-06-17T02:50:38Z)
   
 * [\[web-animations-2, css-animations-2\] Issue with "Element.animate()": wrong scenario mentioned](https://github.com/mdn/content/issues/13487) (2022-03-04T07:40:26Z)
   

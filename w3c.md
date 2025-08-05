@@ -2,13 +2,9 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[uievents\] Javascript Keydown does not work on iPad/iPhone with external Keyboard](https://github.com/mdn/content/issues/40635) (2025-08-05T08:34:27Z)
-  
 * [\[cookie-store\] CookieStore get() method return object should only support name and value](https://github.com/mdn/content/issues/40616) (2025-08-04T11:10:38Z)
   
 * [\[filter-effects-2\] Backdrop Root concept undocumented](https://github.com/mdn/content/issues/40602) (2025-08-03T06:46:17Z)
-  
-* [\[css-transforms-1\] Safari does not support \`transform-box\` within some, possibly all, SVG elements](https://github.com/mdn/content/issues/40561) (2025-07-29T03:49:42Z)
   
 * [\[css-backgrounds-4\] Rethink description comment format in CSS syntax boxes](https://github.com/mdn/content/issues/40500) (2025-07-22T09:16:06Z)
   
@@ -101,8 +97,6 @@
 * [\[uievents\] Event references should list bubbles, cancelable, and composed values](https://github.com/mdn/content/issues/19590) (2022-08-15T13:38:07Z)
   
 * [\[WebCryptoAPI\] Precise max length for encoding algorithm](https://github.com/mdn/content/issues/18045) (2022-07-06T14:47:35Z)
-  
-* [\[selectors-4\] \`:any-link\` matching \`\<link\>\` should not be described as "privacy"](https://github.com/mdn/content/issues/17366) (2022-06-17T02:50:38Z)
   
 * [\[html, gamepad\] Double checking the gamepad docs are correct](https://github.com/mdn/content/issues/14874) (2022-04-11T03:02:09Z)
   
