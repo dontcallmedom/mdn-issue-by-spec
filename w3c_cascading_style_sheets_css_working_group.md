@@ -6,13 +6,11 @@
   
 * [\[css-transforms-1\] Safari does not support \`transform-box\` within some, possibly all, SVG elements](https://github.com/mdn/content/issues/40561) (2025-07-29T03:49:42Z)
   
-* [\[css-backgrounds-4\] box-shadow comments in Syntax section less helpful now](https://github.com/mdn/content/issues/40500) (2025-07-22T09:16:06Z)
+* [\[css-backgrounds-4\] Rethink description comment format in CSS syntax boxes](https://github.com/mdn/content/issues/40500) (2025-07-22T09:16:06Z)
   
 * [\[geometry-1\] DOMRect.toJSON method description is misleading](https://github.com/mdn/content/issues/40230) (2025-07-07T11:52:23Z)
   
 * [\[html, requestidlecallback, css-backgrounds-4\] Reference page titles are not consistent and need improvements](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
-  
-* [\[css-backgrounds-4\] Grammar inconsistency in box-shadow syntax example: | vs. &&](https://github.com/mdn/content/issues/39659) (2025-05-24T10:39:15Z)
   
 * [\[css-fonts-5\] font-size-adjust does not only affect fallback font](https://github.com/mdn/content/issues/39367) (2025-05-02T11:43:00Z)
   
