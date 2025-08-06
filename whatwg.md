@@ -2,9 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html, ecmascript\] Conflicting definitions of ImageData constructor](https://github.com/mdn/content/issues/40639) (2025-08-05T18:31:19Z)
-  
-* [\[html\] syntax error in example 1](https://github.com/mdn/content/issues/40638) (2025-08-05T17:41:23Z)
+* [\[html, ecmascript\] ImageData constructor now accepts \`Float16Array\` as data](https://github.com/mdn/content/issues/40639) (2025-08-05T18:31:19Z)
   
 * [\[dom\] HTML element, attribute, and doctype name validation rules are changing](https://github.com/mdn/content/issues/40366) (2025-07-15T04:32:47Z)
   
