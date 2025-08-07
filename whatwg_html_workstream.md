@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] example results are not achieved with JS code](https://github.com/mdn/content/issues/40665) (2025-08-07T20:44:32Z)
+  
 * [\[html, ecmascript\] ImageData constructor now accepts \`Float16Array\` as data](https://github.com/mdn/content/issues/40639) (2025-08-05T18:31:19Z)
   
 * [\[html, requestidlecallback, css-backgrounds-4\] Reference page titles are not consistent and need improvements](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
