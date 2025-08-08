@@ -4,10 +4,94 @@
         <title>WHATWG DOM Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_dom_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG DOM Workstream</description>
-        <lastBuildDate>Tue, 15 Jul 2025 04:32:47 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 08 Aug 2025 04:41:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[dom] Issues with Event timeStamp documentation]]></title>
+            <link>https://github.com/mdn/content/issues/40673</link>
+            <guid>https://github.com/mdn/content/issues/40673</guid>
+            <pubDate>Fri, 08 Aug 2025 04:41:43 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/timeStamp" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Event/timeStamp</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Says</p>
+<blockquote>
+<p dir="auto">The value is a <a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMHighResTimeStamp" rel="nofollow">DOMHighResTimeStamp</a> accurate to 5 microseconds (0.005 ms)</p>
+</blockquote>
+<p dir="auto">It's unclear what is even trying to be communicated.  Looking at what the link says ("DOMHighResTimeStamp types are coarsened"), it appears that values should be rounded to the nearest 0.005 in isolated contexts or rounded to 0.100 in non-isolated contexts.  This simply isn't the case (see more details below).  Thus it appears that this is false:</p>
+<blockquote>
+<p dir="auto">The value is a <a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMHighResTimeStamp" rel="nofollow">DOMHighResTimeStamp</a></p>
+</blockquote>
+<p dir="auto">It's just a number that may or may not meet the definitions of that type.  If it's going to be, one day, then it would be good to note that it is not yet.  (As it says <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" rel="nofollow">here</a>: "work is underway to change this to be a <a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMHighResTimeStamp" rel="nofollow">DOMHighResTimeStamp</a> instead.")</p>
+<p dir="auto">Says</p>
+<blockquote>
+<p dir="auto">the value of <code class="notranslate">privacy.resistFingerprinting.reduceTimerPrecision.microseconds</code></p>
+</blockquote>
+<p dir="auto">Should be 1/1000 this value.  We're talking about milliseconds.</p>
+<p dir="auto">Likewise</p>
+<blockquote>
+<p dir="auto">or <code class="notranslate">privacy.resistFingerprinting.reduceTimerPrecision.microseconds</code></p>
+</blockquote>
+<p dir="auto">1/1000 of this, because the value in milliseconds is being discussed.</p>
+<p dir="auto">Says</p>
+<blockquote>
+<p dir="auto">will always be a multiple of 2, or a multiple of 100 (or ...</p>
+</blockquote>
+<p dir="auto">No.  With <code class="notranslate">privacy.resistFingerprinting</code> and <code class="notranslate">privacy.resistFingerprinting.reduceTimerPrecision.microseconds</code> at default of 1000, it's a number, usually with 3 decimal places, not always an integer like in the examples and as assumed in this statement.  (Because of this fact, it's confusing to speak of reduced precision.  There's precision more-or-less to the microsecond.  Perhaps the accuracy is reduced, not the apparent precision.)</p>
+<p dir="auto">That's the case until <code class="notranslate">privacy.resistFingerprinting.reduceTimerPrecision.microseconds</code> reaches about 16667 (or 16670 with fewer rounding errors); then the precision is a multiple of 1/1000 the value set, but all values of <code class="notranslate">privacy.resistFingerprinting.reduceTimerPrecision.microseconds</code> below this number do not produce any reliable multiples.</p>
+<p dir="auto">Says</p>
+<blockquote>
+<p dir="auto">the precision will be 100ms</p>
+</blockquote>
+<p dir="auto">Also says</p>
+<blockquote>
+<p dir="auto">a multiple of 100</p>
+</blockquote>
+<p dir="auto">Seems to assume the default of <code class="notranslate">privacy.resistFingerprinting.reduceTimerPrecision.microseconds</code> is 100000, but it's 1000.</p>
+<p dir="auto">Says</p>
+<blockquote>
+<p dir="auto">the precision will be 100ms or the value of <code class="notranslate">privacy.resistFingerprinting.reduceTimerPrecision.microseconds</code>, whichever is larger.</p>
+</blockquote>
+<p dir="auto">No, as described above, the precision starts at values around 16667 and greater (equivalent to 16.667 ms), and at lower values, there is no apparent reduction in precision.  But according to this ("whichever is larger"), the precision would never be finer than 100 ms, regardless of the value.</p>
+<p dir="auto">Says</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="// reduced time precision with `privacy.resistFingerprinting` enabled
+event.timeStamp;
+// Might be:
+// 53500
+// 58900
+// 64400
+// …"><pre class="notranslate"><code class="notranslate">// reduced time precision with `privacy.resistFingerprinting` enabled
+event.timeStamp;
+// Might be:
+// 53500
+// 58900
+// 64400
+// …
+</code></pre></div>
+<p dir="auto">It might be, but probably not, since 100000 is not the default.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">More accurate descriptions would be nice.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/event/timestamp</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/timeStamp" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Event/timeStamp</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/event/timestamp/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/event/timestamp/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/3b5a1c0dfd59257c0a51052a9efa7b0108f8ecca/hovercard" href="https://github.com/mdn/content/commit/3b5a1c0dfd59257c0a51052a9efa7b0108f8ecca"><tt>3b5a1c0</tt></a></li>
+<li>Document last modified: 2024-07-04T22:52:34.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[dom] HTML element, attribute, and doctype name validation rules are changing]]></title>
             <link>https://github.com/mdn/content/issues/40366</link>
