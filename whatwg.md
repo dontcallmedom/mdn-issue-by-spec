@@ -4,8 +4,6 @@
 
 * [\[dom\] Issues with Event timeStamp documentation](https://github.com/mdn/content/issues/40673) (2025-08-08T04:41:43Z)
   
-* [\[html\] example results are not achieved with JS code](https://github.com/mdn/content/issues/40665) (2025-08-07T20:44:32Z)
-  
 * [\[html, ecmascript\] ImageData constructor now accepts \`Float16Array\` as data](https://github.com/mdn/content/issues/40639) (2025-08-05T18:31:19Z)
   
 * [\[dom\] HTML element, attribute, and doctype name validation rules are changing](https://github.com/mdn/content/issues/40366) (2025-07-15T04:32:47Z)
