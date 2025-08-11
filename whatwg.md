@@ -22,8 +22,6 @@
   
 * [\[html\] Clarify image.decode() failure on lazy-loaded images](https://github.com/mdn/content/issues/38034) (2025-02-08T00:22:15Z)
   
-* [\[html\] negative sWidth & sHeight optional arguments for 9-argument syntax does not flip image.](https://github.com/mdn/content/issues/37873) (2025-01-30T00:54:31Z)
-  
 * [\[html\] Better documentation for labelling inputs](https://github.com/mdn/content/issues/37665) (2025-01-15T22:49:27Z)
   
 * [\[html\] Add documentation of new dialog light dismiss behaviors](https://github.com/mdn/content/issues/37196) (2024-12-13T00:40:54Z)
