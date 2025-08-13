@@ -126,7 +126,7 @@ The Backdrop Root element:
 <h3 dir="auto">What specific section or headline is this issue about?</h3>
 <p dir="auto">Syntax</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="/* Keyword values */
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="/* Keyword values */
 box-shadow: none;
 
 /* A color and two length values */
@@ -148,31 +148,32 @@ box-shadow: inset 5em 1em gold;
 /* Any number of shadows, separated by commas */
 box-shadow:
   3px 3px red inset,
-  -1em 0 0.4em olive;"><pre class="notranslate"><span class="pl-c">/* Keyword values */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> none;
+  -1em 0 0.4em olive;"><pre lang="css" class="notranslate"><code class="notranslate">/* Keyword values */
+box-shadow: none;
 
-<span class="pl-c">/* A color and two length values */</span>
-<span class="pl-c">/* &lt;color&gt; | &lt;length&gt; | &lt;length&gt; */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> red <span class="pl-c1">60<span class="pl-smi">px</span></span> <span class="pl-c1">-16<span class="pl-smi">px</span></span>;
+/* A color and two length values */
+/* &lt;color&gt; | &lt;length&gt; | &lt;length&gt; */
+box-shadow: red 60px -16px;
 
-<span class="pl-c">/* Three length values and a color */</span>
-<span class="pl-c">/* &lt;length&gt; | &lt;length&gt; | &lt;length&gt; | &lt;color&gt; */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> <span class="pl-c1">10<span class="pl-smi">px</span></span> <span class="pl-c1">5<span class="pl-smi">px</span></span> <span class="pl-c1">5<span class="pl-smi">px</span></span> black;
+/* Three length values and a color */
+/* &lt;length&gt; | &lt;length&gt; | &lt;length&gt; | &lt;color&gt; */
+box-shadow: 10px 5px 5px black;
 
-<span class="pl-c">/* Four length values and a color */</span>
-<span class="pl-c">/* &lt;length&gt; | &lt;length&gt; | &lt;length&gt; | &lt;length&gt; | &lt;color&gt; */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> <span class="pl-c1">2<span class="pl-smi">px</span></span> <span class="pl-c1">2<span class="pl-smi">px</span></span> <span class="pl-c1">2<span class="pl-smi">px</span></span> <span class="pl-c1">1<span class="pl-smi">px</span></span> <span class="pl-en">rgb</span>(<span class="pl-c1">0</span> <span class="pl-c1">0</span> <span class="pl-c1">0</span> <span class="pl-c1">/</span> <span class="pl-c1">20<span class="pl-smi">%</span></span>);
+/* Four length values and a color */
+/* &lt;length&gt; | &lt;length&gt; | &lt;length&gt; | &lt;length&gt; | &lt;color&gt; */
+box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
 
-<span class="pl-c">/* inset, length values, and a color */</span>
-<span class="pl-c">/* &lt;inset&gt; | &lt;length&gt; | &lt;length&gt; | &lt;color&gt; */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> inset <span class="pl-c1">5<span class="pl-smi">em</span></span> <span class="pl-c1">1<span class="pl-smi">em</span></span> gold;
+/* inset, length values, and a color */
+/* &lt;inset&gt; | &lt;length&gt; | &lt;length&gt; | &lt;color&gt; */
+box-shadow: inset 5em 1em gold;
 
-<span class="pl-c">/* Any number of shadows, separated by commas */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span>
-  <span class="pl-c1">3<span class="pl-smi">px</span></span> <span class="pl-c1">3<span class="pl-smi">px</span></span> red inset<span class="pl-kos">,</span>
-  <span class="pl-c1">-1<span class="pl-smi">em</span></span> <span class="pl-c1">0</span> <span class="pl-c1">0.4<span class="pl-smi">em</span></span> olive;</pre></div>
+/* Any number of shadows, separated by commas */
+box-shadow:
+  3px 3px red inset,
+  -1em 0 0.4em olive;
+</code></pre></div>
 <h3 dir="auto">What did you expect to see?</h3>
-<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="/* Keyword values */
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="/* Keyword values */
 box-shadow: none;
 
 /* offset-x | offset-y | color */
@@ -190,25 +191,26 @@ box-shadow: inset 5em 1em gold;
 /* Any number of shadows, separated by commas */
 box-shadow:
   3px 3px red,
-  -1em 0 0.4em olive;"><pre class="notranslate"><span class="pl-c">/* Keyword values */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> none;
+  -1em 0 0.4em olive;"><pre lang="css" class="notranslate"><code class="notranslate">/* Keyword values */
+box-shadow: none;
 
-<span class="pl-c">/* offset-x | offset-y | color */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> <span class="pl-c1">60<span class="pl-smi">px</span></span> <span class="pl-c1">-16<span class="pl-smi">px</span></span> teal;
+/* offset-x | offset-y | color */
+box-shadow: 60px -16px teal;
 
-<span class="pl-c">/* offset-x | offset-y | blur-radius | color */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> <span class="pl-c1">10<span class="pl-smi">px</span></span> <span class="pl-c1">5<span class="pl-smi">px</span></span> <span class="pl-c1">5<span class="pl-smi">px</span></span> black;
+/* offset-x | offset-y | blur-radius | color */
+box-shadow: 10px 5px 5px black;
 
-<span class="pl-c">/* offset-x | offset-y | blur-radius | spread-radius | color */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> <span class="pl-c1">2<span class="pl-smi">px</span></span> <span class="pl-c1">2<span class="pl-smi">px</span></span> <span class="pl-c1">2<span class="pl-smi">px</span></span> <span class="pl-c1">1<span class="pl-smi">px</span></span> <span class="pl-en">rgba</span>(<span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-c1">0.2</span>);
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
-<span class="pl-c">/* inset | offset-x | offset-y | color */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> inset <span class="pl-c1">5<span class="pl-smi">em</span></span> <span class="pl-c1">1<span class="pl-smi">em</span></span> gold;
+/* inset | offset-x | offset-y | color */
+box-shadow: inset 5em 1em gold;
 
-<span class="pl-c">/* Any number of shadows, separated by commas */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span>
-  <span class="pl-c1">3<span class="pl-smi">px</span></span> <span class="pl-c1">3<span class="pl-smi">px</span></span> red<span class="pl-kos">,</span>
-  <span class="pl-c1">-1<span class="pl-smi">em</span></span> <span class="pl-c1">0</span> <span class="pl-c1">0.4<span class="pl-smi">em</span></span> olive;</pre></div>
+/* Any number of shadows, separated by commas */
+box-shadow:
+  3px 3px red,
+  -1em 0 0.4em olive;
+</code></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">I am trying to learn HTML &amp; CSS and I noticed that the syntax examples for <code class="notranslate">box-shadow</code> were updated around 2023 in this <a href="https://github.com/mdn/content/pull/29013" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/29013/hovercard">PR</a> to use generic descriptors like <code class="notranslate">&lt;length&gt;</code> and <code class="notranslate">&lt;color&gt;</code>, instead of the earlier more explicit syntax annotations such as:</p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="/* offset-x | offset-y | blur-radius | spread-radius | color */"><pre class="notranslate"><code class="notranslate">/* offset-x | offset-y | blur-radius | spread-radius | color */
@@ -435,7 +437,7 @@ but the demo allows initial tab key press to go to the first tab, but then uses 
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">description of the <code class="notranslate">sizeAdjust</code> property</p>
 <p dir="auto">It does exist, see<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTUwNDMyNTgsIm5iZiI6MTc1NTA0Mjk1OCwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODEyVDIzNTU1OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWZiOGM3ODY2MjIxYjIzN2YzYjQxY2MyYWJmYmJlMTkxNjI0MGNmY2ExOTE5MDRlYmUzMDhlMTBiYWNiYTE1YzAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.lp7vsS1aqO5-BV6bGkBmEp_WGqzIY_hkhNndnbF6m1Q"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTUwNDMyNTgsIm5iZiI6MTc1NTA0Mjk1OCwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODEyVDIzNTU1OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWZiOGM3ODY2MjIxYjIzN2YzYjQxY2MyYWJmYmJlMTkxNjI0MGNmY2ExOTE5MDRlYmUzMDhlMTBiYWNiYTE1YzAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.lp7vsS1aqO5-BV6bGkBmEp_WGqzIY_hkhNndnbF6m1Q" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTUwNTAwMzYsIm5iZiI6MTc1NTA0OTczNiwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODEzVDAxNDg1NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWZhYzk0OGVmNGE3NDg4MTIyYThmNjU2OThmMTc4MDQwODM4NjVmNzEzZmQ4ODNlYzdhYTcxNDBiNmM0MzNkODkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Ra6zwR9yiUe9EZyN0pD8UQqSfww6SQdS6AAJ7DhYlGI"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTUwNTAwMzYsIm5iZiI6MTc1NTA0OTczNiwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODEzVDAxNDg1NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWZhYzk0OGVmNGE3NDg4MTIyYThmNjU2OThmMTc4MDQwODM4NjVmNzEzZmQ4ODNlYzdhYTcxNDBiNmM0MzNkODkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Ra6zwR9yiUe9EZyN0pD8UQqSfww6SQdS6AAJ7DhYlGI" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
