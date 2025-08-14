@@ -10,8 +10,6 @@
   
 * [\[appmanifest\] IsStandaloneContent does not work with \`display: fullscreen\` in Chrome Android](https://github.com/mdn/content/issues/34928) (2024-07-19T15:53:57Z)
   
-* [\[selection-api\] Correct and split "How whitespace is handled by HTML, CSS, and in the DOM"](https://github.com/mdn/content/issues/28268) (2023-07-30T09:11:04Z)
-  
 * [\[IndexedDB-3\] "Using IndexedDB" guide seems to be out of sync with the more specific documentation](https://github.com/mdn/content/issues/27330) (2023-06-14T18:17:39Z)
   
 * [\[IndexedDB-3\] versionchange is super important and hardly is given any attention](https://github.com/mdn/content/issues/26639) (2023-05-08T06:47:05Z)
