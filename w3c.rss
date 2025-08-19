@@ -133,7 +133,7 @@ The Backdrop Root element:
 <h3 dir="auto">What specific section or headline is this issue about?</h3>
 <p dir="auto">Syntax</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="/* Keyword values */
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="/* Keyword values */
 box-shadow: none;
 
 /* A color and two length values */
@@ -155,31 +155,32 @@ box-shadow: inset 5em 1em gold;
 /* Any number of shadows, separated by commas */
 box-shadow:
   3px 3px red inset,
-  -1em 0 0.4em olive;"><pre class="notranslate"><span class="pl-c">/* Keyword values */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> none;
+  -1em 0 0.4em olive;"><pre lang="css" class="notranslate"><code class="notranslate">/* Keyword values */
+box-shadow: none;
 
-<span class="pl-c">/* A color and two length values */</span>
-<span class="pl-c">/* &lt;color&gt; | &lt;length&gt; | &lt;length&gt; */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> red <span class="pl-c1">60<span class="pl-smi">px</span></span> <span class="pl-c1">-16<span class="pl-smi">px</span></span>;
+/* A color and two length values */
+/* &lt;color&gt; | &lt;length&gt; | &lt;length&gt; */
+box-shadow: red 60px -16px;
 
-<span class="pl-c">/* Three length values and a color */</span>
-<span class="pl-c">/* &lt;length&gt; | &lt;length&gt; | &lt;length&gt; | &lt;color&gt; */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> <span class="pl-c1">10<span class="pl-smi">px</span></span> <span class="pl-c1">5<span class="pl-smi">px</span></span> <span class="pl-c1">5<span class="pl-smi">px</span></span> black;
+/* Three length values and a color */
+/* &lt;length&gt; | &lt;length&gt; | &lt;length&gt; | &lt;color&gt; */
+box-shadow: 10px 5px 5px black;
 
-<span class="pl-c">/* Four length values and a color */</span>
-<span class="pl-c">/* &lt;length&gt; | &lt;length&gt; | &lt;length&gt; | &lt;length&gt; | &lt;color&gt; */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> <span class="pl-c1">2<span class="pl-smi">px</span></span> <span class="pl-c1">2<span class="pl-smi">px</span></span> <span class="pl-c1">2<span class="pl-smi">px</span></span> <span class="pl-c1">1<span class="pl-smi">px</span></span> <span class="pl-en">rgb</span>(<span class="pl-c1">0</span> <span class="pl-c1">0</span> <span class="pl-c1">0</span> <span class="pl-c1">/</span> <span class="pl-c1">20<span class="pl-smi">%</span></span>);
+/* Four length values and a color */
+/* &lt;length&gt; | &lt;length&gt; | &lt;length&gt; | &lt;length&gt; | &lt;color&gt; */
+box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
 
-<span class="pl-c">/* inset, length values, and a color */</span>
-<span class="pl-c">/* &lt;inset&gt; | &lt;length&gt; | &lt;length&gt; | &lt;color&gt; */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> inset <span class="pl-c1">5<span class="pl-smi">em</span></span> <span class="pl-c1">1<span class="pl-smi">em</span></span> gold;
+/* inset, length values, and a color */
+/* &lt;inset&gt; | &lt;length&gt; | &lt;length&gt; | &lt;color&gt; */
+box-shadow: inset 5em 1em gold;
 
-<span class="pl-c">/* Any number of shadows, separated by commas */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span>
-  <span class="pl-c1">3<span class="pl-smi">px</span></span> <span class="pl-c1">3<span class="pl-smi">px</span></span> red inset<span class="pl-kos">,</span>
-  <span class="pl-c1">-1<span class="pl-smi">em</span></span> <span class="pl-c1">0</span> <span class="pl-c1">0.4<span class="pl-smi">em</span></span> olive;</pre></div>
+/* Any number of shadows, separated by commas */
+box-shadow:
+  3px 3px red inset,
+  -1em 0 0.4em olive;
+</code></pre></div>
 <h3 dir="auto">What did you expect to see?</h3>
-<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="/* Keyword values */
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="/* Keyword values */
 box-shadow: none;
 
 /* offset-x | offset-y | color */
@@ -197,25 +198,26 @@ box-shadow: inset 5em 1em gold;
 /* Any number of shadows, separated by commas */
 box-shadow:
   3px 3px red,
-  -1em 0 0.4em olive;"><pre class="notranslate"><span class="pl-c">/* Keyword values */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> none;
+  -1em 0 0.4em olive;"><pre lang="css" class="notranslate"><code class="notranslate">/* Keyword values */
+box-shadow: none;
 
-<span class="pl-c">/* offset-x | offset-y | color */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> <span class="pl-c1">60<span class="pl-smi">px</span></span> <span class="pl-c1">-16<span class="pl-smi">px</span></span> teal;
+/* offset-x | offset-y | color */
+box-shadow: 60px -16px teal;
 
-<span class="pl-c">/* offset-x | offset-y | blur-radius | color */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> <span class="pl-c1">10<span class="pl-smi">px</span></span> <span class="pl-c1">5<span class="pl-smi">px</span></span> <span class="pl-c1">5<span class="pl-smi">px</span></span> black;
+/* offset-x | offset-y | blur-radius | color */
+box-shadow: 10px 5px 5px black;
 
-<span class="pl-c">/* offset-x | offset-y | blur-radius | spread-radius | color */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> <span class="pl-c1">2<span class="pl-smi">px</span></span> <span class="pl-c1">2<span class="pl-smi">px</span></span> <span class="pl-c1">2<span class="pl-smi">px</span></span> <span class="pl-c1">1<span class="pl-smi">px</span></span> <span class="pl-en">rgba</span>(<span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-c1">0.2</span>);
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
-<span class="pl-c">/* inset | offset-x | offset-y | color */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> inset <span class="pl-c1">5<span class="pl-smi">em</span></span> <span class="pl-c1">1<span class="pl-smi">em</span></span> gold;
+/* inset | offset-x | offset-y | color */
+box-shadow: inset 5em 1em gold;
 
-<span class="pl-c">/* Any number of shadows, separated by commas */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span>
-  <span class="pl-c1">3<span class="pl-smi">px</span></span> <span class="pl-c1">3<span class="pl-smi">px</span></span> red<span class="pl-kos">,</span>
-  <span class="pl-c1">-1<span class="pl-smi">em</span></span> <span class="pl-c1">0</span> <span class="pl-c1">0.4<span class="pl-smi">em</span></span> olive;</pre></div>
+/* Any number of shadows, separated by commas */
+box-shadow:
+  3px 3px red,
+  -1em 0 0.4em olive;
+</code></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">I am trying to learn HTML &amp; CSS and I noticed that the syntax examples for <code class="notranslate">box-shadow</code> were updated around 2023 in this <a href="https://github.com/mdn/content/pull/29013" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/29013/hovercard">PR</a> to use generic descriptors like <code class="notranslate">&lt;length&gt;</code> and <code class="notranslate">&lt;color&gt;</code>, instead of the earlier more explicit syntax annotations such as:</p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="/* offset-x | offset-y | blur-radius | spread-radius | color */"><pre class="notranslate"><code class="notranslate">/* offset-x | offset-y | blur-radius | spread-radius | color */
@@ -775,7 +777,7 @@ document.ondragover = ((e) =&gt; {
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">description of the <code class="notranslate">sizeAdjust</code> property</p>
 <p dir="auto">It does exist, see<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2Mzg0NjEsIm5iZiI6MTc1NTYzODE2MSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODE5VDIxMTYwMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM5M2E2NmZiMjg3M2EwYmJjNDhiNTcxNmNhZmM3NDU1OTBlOTkwMmMxY2I2ZDI2OTc0NjA4ZjdjNTM2Mzg1ODEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.1o9LerzGWhaoIQvD77pmKFg_Es83A-V4pdE4tmTXgKk"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2Mzg0NjEsIm5iZiI6MTc1NTYzODE2MSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODE5VDIxMTYwMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM5M2E2NmZiMjg3M2EwYmJjNDhiNTcxNmNhZmM3NDU1OTBlOTkwMmMxY2I2ZDI2OTc0NjA4ZjdjNTM2Mzg1ODEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.1o9LerzGWhaoIQvD77pmKFg_Es83A-V4pdE4tmTXgKk" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2MzkzOTQsIm5iZiI6MTc1NTYzOTA5NCwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODE5VDIxMzEzNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM5MjhhNTI5N2M4YWNkMjVkNzgwZjJjYWRmNzgwODMzYzIyNTk3ZDJhMThlOGYyOGI5YTAwNGFiMDc5MTAxNjkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.RzNBMlQQqJsgmF53koc654KmLdJ5o-kYtzVVMVVeQ3w"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2MzkzOTQsIm5iZiI6MTc1NTYzOTA5NCwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODE5VDIxMzEzNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM5MjhhNTI5N2M4YWNkMjVkNzgwZjJjYWRmNzgwODMzYzIyNTk3ZDJhMThlOGYyOGI5YTAwNGFiMDc5MTAxNjkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.RzNBMlQQqJsgmF53koc654KmLdJ5o-kYtzVVMVVeQ3w" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
@@ -1135,9 +1137,9 @@ However, Touch.screenX/screenY uses the some kind of screen-space CSS pixels. If
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I expected to understand when <code class="notranslate">performance.now()</code> should/shouldn't be used because of these bugs.</p>
 <p dir="auto">I also expected to find a definition for "sleep," but when I search for that word there are no articles with that title:</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/373675/333905620-332ddc0b-642e-4912-aed8-af2abb400b2a.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2Mzg0NjEsIm5iZiI6MTc1NTYzODE2MSwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjIwLTMzMmRkYzBiLTY0MmUtNDkxMi1hZWQ4LWFmMmFiYjQwMGIyYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgxOVQyMTE2MDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iMDQ0Njk3NjRhNWI3MzFmN2Y5YjllMDdhYzg0MzViMTgzOWUwNWJkYTUzMTQ0Nzk3Njg5MmE0OTFjMTcxZTQ4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.nCDFmztcUyi9OzCObPc3xD3d58AA5BHoi3QQ0qPIjuk"><img src="https://private-user-images.githubusercontent.com/373675/333905620-332ddc0b-642e-4912-aed8-af2abb400b2a.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2Mzg0NjEsIm5iZiI6MTc1NTYzODE2MSwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjIwLTMzMmRkYzBiLTY0MmUtNDkxMi1hZWQ4LWFmMmFiYjQwMGIyYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgxOVQyMTE2MDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iMDQ0Njk3NjRhNWI3MzFmN2Y5YjllMDdhYzg0MzViMTgzOWUwNWJkYTUzMTQ0Nzk3Njg5MmE0OTFjMTcxZTQ4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.nCDFmztcUyi9OzCObPc3xD3d58AA5BHoi3QQ0qPIjuk" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/373675/333905620-332ddc0b-642e-4912-aed8-af2abb400b2a.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2MzkzOTQsIm5iZiI6MTc1NTYzOTA5NCwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjIwLTMzMmRkYzBiLTY0MmUtNDkxMi1hZWQ4LWFmMmFiYjQwMGIyYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgxOVQyMTMxMzRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00M2YxMjU2YjIyZGZiMTUzNjYzOWJjMGE0NWQ2YWZmNWMyMjgwYzk2MGU2Mjc3MDQxN2NiNTljNGQyMjUxZDMyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.1yYw9GiEP-48Yk8C7K37bjXyBM8hq1Bueq5N1j1gp24"><img src="https://private-user-images.githubusercontent.com/373675/333905620-332ddc0b-642e-4912-aed8-af2abb400b2a.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2MzkzOTQsIm5iZiI6MTc1NTYzOTA5NCwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjIwLTMzMmRkYzBiLTY0MmUtNDkxMi1hZWQ4LWFmMmFiYjQwMGIyYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgxOVQyMTMxMzRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00M2YxMjU2YjIyZGZiMTUzNjYzOWJjMGE0NWQ2YWZmNWMyMjgwYzk2MGU2Mjc3MDQxN2NiNTljNGQyMjUxZDMyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.1yYw9GiEP-48Yk8C7K37bjXyBM8hq1Bueq5N1j1gp24" alt="image" style="max-width: 100%;"></a></p>
 <p dir="auto">And when I submit the search, there are results, but none of them seem relevant:</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/373675/333905637-56f3c600-2f17-449a-aa2e-5237de87b844.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2Mzg0NjEsIm5iZiI6MTc1NTYzODE2MSwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjM3LTU2ZjNjNjAwLTJmMTctNDQ5YS1hYTJlLTUyMzdkZTg3Yjg0NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgxOVQyMTE2MDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jMTlhMzY2ZTFjODc0NGUyMDg0ZWE2Y2U2ZTAwNTkzM2ExYjMzZDMyODhmMWM4YzU3Nzk1OGY2ZTdhYjEwZjJjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9._4W837HrWckLejqyAXq3JiOIBQOd2wOhV-fQwCq4nOs"><img src="https://private-user-images.githubusercontent.com/373675/333905637-56f3c600-2f17-449a-aa2e-5237de87b844.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2Mzg0NjEsIm5iZiI6MTc1NTYzODE2MSwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjM3LTU2ZjNjNjAwLTJmMTctNDQ5YS1hYTJlLTUyMzdkZTg3Yjg0NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgxOVQyMTE2MDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jMTlhMzY2ZTFjODc0NGUyMDg0ZWE2Y2U2ZTAwNTkzM2ExYjMzZDMyODhmMWM4YzU3Nzk1OGY2ZTdhYjEwZjJjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9._4W837HrWckLejqyAXq3JiOIBQOd2wOhV-fQwCq4nOs" alt="image" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/373675/333905637-56f3c600-2f17-449a-aa2e-5237de87b844.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2MzkzOTQsIm5iZiI6MTc1NTYzOTA5NCwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjM3LTU2ZjNjNjAwLTJmMTctNDQ5YS1hYTJlLTUyMzdkZTg3Yjg0NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgxOVQyMTMxMzRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01MTBlYzg4NzhhYWQwMTQ0MTJmNzZjMWZjOGJjZWRiYWJlMzNhMDg4MGI5ZTFiYmEyNGU0N2Y0MzVlOTRlODljJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.PYya3xyccAz9yMeUx41xTgdBgZib1QvfmKPRaarwCgg"><img src="https://private-user-images.githubusercontent.com/373675/333905637-56f3c600-2f17-449a-aa2e-5237de87b844.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2MzkzOTQsIm5iZiI6MTc1NTYzOTA5NCwicGF0aCI6Ii8zNzM2NzUvMzMzOTA1NjM3LTU2ZjNjNjAwLTJmMTctNDQ5YS1hYTJlLTUyMzdkZTg3Yjg0NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgxOVQyMTMxMzRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01MTBlYzg4NzhhYWQwMTQ0MTJmNzZjMWZjOGJjZWRiYWJlMzNhMDg4MGI5ZTFiYmEyNGU0N2Y0MzVlOTRlODljJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.PYya3xyccAz9yMeUx41xTgdBgZib1QvfmKPRaarwCgg" alt="image" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">n/a</p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
