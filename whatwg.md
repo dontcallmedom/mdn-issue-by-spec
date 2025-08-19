@@ -4,8 +4,6 @@
 
 * [\[dom\] Issues with Event timeStamp documentation](https://github.com/mdn/content/issues/40673) (2025-08-08T04:41:43Z)
   
-* [\[html, ecmascript\] ImageData constructor now accepts \`Float16Array\` as data](https://github.com/mdn/content/issues/40639) (2025-08-05T18:31:19Z)
-  
 * [\[dom\] HTML element, attribute, and doctype name validation rules are changing](https://github.com/mdn/content/issues/40366) (2025-07-15T04:32:47Z)
   
 * [\[dom\] Node: lookupPrefix() method's example now outputs null](https://github.com/mdn/content/issues/39912) (2025-06-12T09:17:30Z)
