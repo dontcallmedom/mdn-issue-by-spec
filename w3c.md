@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[selectors-4\] Include an example of using :has to select a parent element](https://github.com/mdn/content/issues/40697) (2025-08-11T18:43:00Z)
-  
 * [\[cookie-store\] CookieStore get() method return object should only support name and value](https://github.com/mdn/content/issues/40616) (2025-08-04T11:10:38Z)
   
 * [\[filter-effects-2\] Backdrop Root concept undocumented](https://github.com/mdn/content/issues/40602) (2025-08-03T06:46:17Z)
