@@ -4,10 +4,49 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Sun, 03 Aug 2025 06:46:17 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 20 Aug 2025 12:48:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[filter-effects-2, css-color-4] Documentation about Backdrop Root's is lacking]]></title>
+            <link>https://github.com/mdn/content/issues/40813</link>
+            <guid>https://github.com/mdn/content/issues/40813</guid>
+            <pubDate>Wed, 20 Aug 2025 12:48:55 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/opacity" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/opacity</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Opacity article should IMO mention that using opacity with a value that's not 1 (or ANY value if it's in a forwards-filling animation) makes the element a backdrop-root and will break <code class="notranslate">backdrop-filter: blur()</code> on elements stacked about it.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A link to an article about backdrop roots and a notice that <code class="notranslate">opacity</code> makes the current element one</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<ol dir="auto">
+<li><a href="https://stackoverflow.com/questions/60997948/backdrop-filter-not-working-for-nested-elements-in-chrome/64754474#64754474" rel="nofollow">https://stackoverflow.com/questions/60997948/backdrop-filter-not-working-for-nested-elements-in-chrome/64754474#64754474</a></li>
+<li><a href="https://issues.chromium.org/issues/41475939" rel="nofollow">https://issues.chromium.org/issues/41475939</a></li>
+<li><a href="https://drafts.fxtf.org/filter-effects-2/#BackdropRoot" rel="nofollow">https://drafts.fxtf.org/filter-effects-2/#BackdropRoot</a></li>
+</ol>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter</a> should also mention the concept of backdrop roots and how horribly unintuitive it is.</p>
+<p dir="auto">Why can't backdrop-filter just work the way one expects it to, when stacking elements 😭</p>
+<p dir="auto">For example, I can't animate "opacity" on this element when opening the modal</p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/4047180/480018524-7d96a71f-7627-462c-a86c-69ed3796c790.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2OTU1NTgsIm5iZiI6MTc1NTY5NTI1OCwicGF0aCI6Ii80MDQ3MTgwLzQ4MDAxODUyNC03ZDk2YTcxZi03NjI3LTQ2MmMtYTg2Yy02OWVkMzc5NmM3OTAucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDgyMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTA4MjBUMTMwNzM4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YjE3Y2JmMDdlY2Y4ZTM1MTVlNzlhYjA5NTVlZDI3ZTYzYWM4MWRmNmU2NjE4MTZhYmNjN2I4ZGUxYTM1ZmFjZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.pyWMFfuLNtUWVC3GyNtPg3BfJ_upFGmYTQ_aC6VXyeM"><img width="2000" height="1397" alt="Image" src="https://private-user-images.githubusercontent.com/4047180/480018524-7d96a71f-7627-462c-a86c-69ed3796c790.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2OTU1NTgsIm5iZiI6MTc1NTY5NTI1OCwicGF0aCI6Ii80MDQ3MTgwLzQ4MDAxODUyNC03ZDk2YTcxZi03NjI3LTQ2MmMtYTg2Yy02OWVkMzc5NmM3OTAucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDgyMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTA4MjBUMTMwNzM4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YjE3Y2JmMDdlY2Y4ZTM1MTVlNzlhYjA5NTVlZDI3ZTYzYWM4MWRmNmU2NjE4MTZhYmNjN2I4ZGUxYTM1ZmFjZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.pyWMFfuLNtUWVC3GyNtPg3BfJ_upFGmYTQ_aC6VXyeM" style="max-width: 100%; height: auto; max-height: 1397px;"></a>
+<p dir="auto">Because it breaks the frosted-glass effect<br>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/4047180/480018663-d05a965d-4af7-44ed-a004-19a659ed55de.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2OTU1NTgsIm5iZiI6MTc1NTY5NTI1OCwicGF0aCI6Ii80MDQ3MTgwLzQ4MDAxODY2My1kMDVhOTY1ZC00YWY3LTQ0ZWQtYTAwNC0xOWE2NTllZDU1ZGUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDgyMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTA4MjBUMTMwNzM4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9N2MzMjU4OWJiMDM4MmM2OGFjNzdkMTkwYmUzNDE5MWZmNTY0NWNkNTI3YWY1MjQzNWQ3MmJmMDk2ZGZhM2MwZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.clD799jwDdcHVOM5PebmlZR0kRnI8ybGu_bqpvzLBic"><img width="399" height="859" alt="Image" src="https://private-user-images.githubusercontent.com/4047180/480018663-d05a965d-4af7-44ed-a004-19a659ed55de.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2OTU1NTgsIm5iZiI6MTc1NTY5NTI1OCwicGF0aCI6Ii80MDQ3MTgwLzQ4MDAxODY2My1kMDVhOTY1ZC00YWY3LTQ0ZWQtYTAwNC0xOWE2NTllZDU1ZGUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDgyMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTA4MjBUMTMwNzM4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9N2MzMjU4OWJiMDM4MmM2OGFjNzdkMTkwYmUzNDE5MWZmNTY0NWNkNTI3YWY1MjQzNWQ3MmJmMDk2ZGZhM2MwZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.clD799jwDdcHVOM5PebmlZR0kRnI8ybGu_bqpvzLBic" style="max-width: 100%; height: auto; max-height: 859px;"></a></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/opacity</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/opacity" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/opacity</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/opacity/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/opacity/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0cc9980e3b21c83d1800a428bc402ae1865326b2/hovercard" href="https://github.com/mdn/content/commit/0cc9980e3b21c83d1800a428bc402ae1865326b2"><tt>0cc9980</tt></a></li>
+<li>Document last modified: 2025-07-14T14:43:58.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[filter-effects-2] Backdrop Root concept undocumented]]></title>
             <link>https://github.com/mdn/content/issues/40602</link>
@@ -405,7 +444,7 @@ but the demo allows initial tab key press to go to the first tab, but then uses 
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">description of the <code class="notranslate">sizeAdjust</code> property</p>
 <p dir="auto">It does exist, see<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2OTMwODgsIm5iZiI6MTc1NTY5Mjc4OCwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIwVDEyMjYyOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTUyNWJjOWNiNWU1YmZkNzI2NjgxMDcxYTdmZTZjZjFkYzUxN2QzMWJiNDg3NTBlZGVkOTJiNjY0NGZjZjAzYTUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.vODldIcEXTrLNbDkJgVMl31TIwc2EV2HWGp7_0iSgW0"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2OTMwODgsIm5iZiI6MTc1NTY5Mjc4OCwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIwVDEyMjYyOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTUyNWJjOWNiNWU1YmZkNzI2NjgxMDcxYTdmZTZjZjFkYzUxN2QzMWJiNDg3NTBlZGVkOTJiNjY0NGZjZjAzYTUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.vODldIcEXTrLNbDkJgVMl31TIwc2EV2HWGp7_0iSgW0" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2OTU1NTMsIm5iZiI6MTc1NTY5NTI1MywicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIwVDEzMDczM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTUzNmI0ZTM4OTM5YTc1NTU0ZTJjZjExMzIxNWQ4NGIwYjc1ZjZmYzU3NTI0OTk1ZDQxZmZkZjc0ZjczYWZhMGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.aDC_SFacnirPwfe6kd4B45eRAA9xZjd2lps0dEHSF28"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2OTU1NTMsIm5iZiI6MTc1NTY5NTI1MywicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIwVDEzMDczM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTUzNmI0ZTM4OTM5YTc1NTU0ZTJjZjExMzIxNWQ4NGIwYjc1ZjZmYzU3NTI0OTk1ZDQxZmZkZjc0ZjczYWZhMGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.aDC_SFacnirPwfe6kd4B45eRAA9xZjd2lps0dEHSF28" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
