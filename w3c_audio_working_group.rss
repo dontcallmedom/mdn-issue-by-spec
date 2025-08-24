@@ -4,50 +4,10 @@
         <title>W3C Audio Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_audio_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Audio Working Group</description>
-        <lastBuildDate>Fri, 18 Mar 2022 14:35:29 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 26 Apr 2021 03:22:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[webaudio] "ConvolverNode": provide a simpler example that I can adapt to more complex examples (connecting it to another node does not work)]]></title>
-            <link>https://github.com/mdn/content/issues/14022</link>
-            <guid>https://github.com/mdn/content/issues/14022</guid>
-            <pubDate>Fri, 18 Mar 2022 14:35:29 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode</a></p>
-<h4 dir="auto">What information was incorrect, unhelpful, or incomplete?</h4>
-<p dir="auto">The convolver node doesn't seem to work when connected to another node directly</p>
-<h4 dir="auto">Specific section or headline?</h4>
-<p dir="auto">The example section, it's only for samples</p>
-<h4 dir="auto">What did you expect to see?</h4>
-<p dir="auto">to see a simpler example that i can adapt to more complex examples</p>
-<h4 dir="auto">Did you test this? If so, how?</h4>
-<p dir="auto">I'm trying to create an emulation of a eurorack module.</p>
-<p dir="auto">I'm failing to connect the convolver node to the enveloppe output.</p>
-<p dir="auto">The convolver node doesn't seem to work for any oscillator also</p>
-<p dir="auto">I expected it to be because of the fact that the buffer is null which seemed a weird design at first but I tried it and it also didn't work.</p>
-<p dir="auto">I was expecting the code to run like this:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const osc = ctx.createOscillator();
-const reverb = ctx.createConvolver();
-reverb.buffer = ctx.createBuffer(1, ctx.sampleRate, ctx.sampleRate);
-osc.connect(reverb).connect(ctx.destination);"><pre class="notranslate"><code class="notranslate">const osc = ctx.createOscillator();
-const reverb = ctx.createConvolver();
-reverb.buffer = ctx.createBuffer(1, ctx.sampleRate, ctx.sampleRate);
-osc.connect(reverb).connect(ctx.destination);
-</code></pre></div>
-<p dir="auto">this js fiddle contains my code. <a href="http://jsfiddle.net/5ndbfypj/7/" rel="nofollow">http://jsfiddle.net/5ndbfypj/7/</a></p>
-<p dir="auto">i've connected both the convolver node and the nvelop output to the context's destination.</p>
-
-<details>
-<summary>MDN Content page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/convolvernode</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/convolvernode/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/convolvernode/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/caaae4e675413aa1c44054883d7e1baa3fa910ff/hovercard" href="https://github.com/mdn/content/commit/caaae4e675413aa1c44054883d7e1baa3fa910ff"><tt>caaae4e</tt></a></li>
-<li>Document last modified: 2022-02-03T16:33:06.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[webaudio] Content bug: AudioListener and attributes need better examples. ]]></title>
             <link>https://github.com/mdn/content/issues/4468</link>
