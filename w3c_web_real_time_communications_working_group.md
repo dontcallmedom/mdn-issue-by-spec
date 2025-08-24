@@ -12,5 +12,3 @@
   
 * [\[screen-capture\] MediaDevices#getDisplayMedia(): systemAudio is misleading](https://github.com/mdn/content/issues/25307) (2023-03-14T03:38:33Z)
   
-* [\[webrtc\] What is \`RTCPeerConnection.generateCertificate(..)\` good for?](https://github.com/mdn/content/issues/23993) (2023-01-30T20:28:26Z)
-  
