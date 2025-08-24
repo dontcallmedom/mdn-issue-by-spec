@@ -100,8 +100,6 @@
   
 * [\[encoding\] Content suggestion: ImageDecoder & ImageTrackList how-to/tutorial](https://github.com/mdn/content/issues/12791) (2022-02-07T04:15:29Z)
   
-* [\[cssom-view-1\] Issue with "Document: scroll event": Example using rAF in scroll-event callbacks is outdated, and anti-performance](https://github.com/mdn/content/issues/12701) (2022-02-04T00:25:49Z)
-  
 * [\[service-workers-1, dom, cssom-view-1, notifications, pointerevents3\] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
 * [\[SVG11\] "SVGSVGElement.viewBox.baseVal": when viewBox unset, it is null in FF but a 0-SVGRect in Chrome](https://github.com/mdn/content/issues/8907) (2021-09-14T14:00:23Z)
