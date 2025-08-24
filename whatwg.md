@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[dom\] Issues with Event timeStamp documentation](https://github.com/mdn/content/issues/40673) (2025-08-08T04:41:43Z)
+* [\[dom\] Event timeStamp accuracy description is misleading](https://github.com/mdn/content/issues/40673) (2025-08-08T04:41:43Z)
   
 * [\[dom\] HTML element, attribute, and doctype name validation rules are changing](https://github.com/mdn/content/issues/40366) (2025-07-15T04:32:47Z)
   
