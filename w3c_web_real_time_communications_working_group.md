@@ -8,7 +8,5 @@
   
 * [\[webrtc\] Incorrectly states that RTCRtpTransceiver.mid is null until negotiation is completed.](https://github.com/mdn/content/issues/27502) (2023-06-23T10:39:29Z)
   
-* [\[webrtc\] api.RTCDataChannel.send - Wrong or obsolete exception list](https://github.com/mdn/content/issues/30909) (2023-05-16T11:38:12Z)
-  
 * [\[screen-capture\] MediaDevices#getDisplayMedia(): systemAudio is misleading](https://github.com/mdn/content/issues/25307) (2023-03-14T03:38:33Z)
   
