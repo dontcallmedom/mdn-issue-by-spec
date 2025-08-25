@@ -524,39 +524,6 @@ A string reflecting the <a href="https://developer.mozilla.org/en-US/docs/Web/Ac
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] window.postMessage needs targetOrigin=* for dataurl]]></title>
-            <link>https://github.com/mdn/content/issues/36039</link>
-            <guid>https://github.com/mdn/content/issues/36039</guid>
-            <pubDate>Wed, 25 Sep 2024 08:53:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Security concerns</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<blockquote>
-<p dir="auto">Always specify an exact target origin, not *, when you use postMessage to dispatch data to other windows.</p>
-</blockquote>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Add <code class="notranslate">data:</code>, I guess?</p>
-<p dir="auto">I tried with iframe.src=dataurl, and I realized I need <code class="notranslate">"*"</code>.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/window/postmessage</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/postmessage/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/postmessage/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/1a48b6abdd27e168c78edcf04a7a9f6a8e0fdc15/hovercard" href="https://github.com/mdn/content/commit/1a48b6abdd27e168c78edcf04a7a9f6a8e0fdc15"><tt>1a48b6a</tt></a></li>
-<li>Document last modified: 2024-08-27T04:49:15.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Missing documentation that SharedArrayBuffers not compatible with MessagePort]]></title>
             <link>https://github.com/mdn/content/issues/35561</link>
             <guid>https://github.com/mdn/content/issues/35561</guid>

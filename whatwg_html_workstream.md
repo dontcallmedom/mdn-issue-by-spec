@@ -18,8 +18,6 @@
   
 * [\[html, wai-aria-1.2\] All \`ElementInternals\` docs for \`ARIAMixin\` properties are incorrect](https://github.com/mdn/content/issues/36508) (2024-10-26T03:40:30Z)
   
-* [\[html\] window.postMessage needs targetOrigin=\* for dataurl](https://github.com/mdn/content/issues/36039) (2024-09-25T08:53:00Z)
-  
 * [\[html\] Missing documentation that SharedArrayBuffers not compatible with MessagePort](https://github.com/mdn/content/issues/35561) (2024-08-23T01:58:03Z)
   
 * [\[html\] Whitespace is not insignificant in HTMLImageElement.srcset](https://github.com/mdn/content/issues/35492) (2024-08-17T15:44:16Z)
