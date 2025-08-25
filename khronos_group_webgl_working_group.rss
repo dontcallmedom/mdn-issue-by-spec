@@ -4,44 +4,10 @@
         <title>Khronos Group WebGL Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/khronos_group_webgl_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Khronos Group WebGL Working Group</description>
-        <lastBuildDate>Wed, 07 Aug 2024 18:39:11 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 10 Apr 2024 15:10:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[webgl1] mention that `gl.clear(gl.DEPTH_BUFFER_BIT)` has no effect when `gl.depthMask()` has been set to `false`]]></title>
-            <link>https://github.com/mdn/content/issues/35362</link>
-            <guid>https://github.com/mdn/content/issues/35362</guid>
-            <pubDate>Wed, 07 Aug 2024 18:39:11 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/clear" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/clear</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">When you call <code class="notranslate">gl.depthMask(false)</code> any attempt to clear the depth buffer seems to fail. This isn't mentioned anywhere and I spend a good couple of hours figuring out what was going on.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">More clear information about under what conditions clearing doesn't do anything.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://registry.khronos.org/OpenGL-Refpages/gl4/html/glClear.xhtml" rel="nofollow">The opengl spec</a> states:</p>
-<blockquote>
-<p dir="auto">The pixel ownership test, the scissor test, dithering, and the buffer writemasks affect the operation of glClear.</p>
-</blockquote>
-<p dir="auto">But it doesn't specifically mention how these affect the operation. The only thing that ended up helping me was <a href="https://stackoverflow.com/a/75818325/3625298" rel="nofollow">https://stackoverflow.com/a/75818325/3625298</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/webglrenderingcontext/clear</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/clear" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/clear</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webglrenderingcontext/clear/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/webglrenderingcontext/clear/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/8a9085b96d0135920be9b281d4500ff72a7a8369/hovercard" href="https://github.com/mdn/content/commit/8a9085b96d0135920be9b281d4500ff72a7a8369"><tt>8a9085b</tt></a></li>
-<li>Document last modified: 2024-03-11T23:58:09.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[webgl1] compressedTexImage2D does not support a form with 6 arguments]]></title>
             <link>https://github.com/mdn/content/issues/33026</link>
