@@ -22,7 +22,7 @@
   
 * [\[selectors-4\] Add CSS \`:has()\` selector performance tips](https://github.com/mdn/content/issues/40280) (2024-07-20T17:16:05Z)
   
-* [\[css-shadow-parts-1\] Incorrect statement about pseudo-elements needing to come last in a selector](https://github.com/mdn/content/issues/32971) (2024-04-05T20:16:52Z)
+* [\[css-shadow-parts-1\] Pseudo-elements may now be followed by pseudo-classes](https://github.com/mdn/content/issues/32971) (2024-04-05T20:16:52Z)
   
 * [\[css-typed-om-2\] CSS Typed OM pages have stub examples sections](https://github.com/mdn/content/issues/28118) (2023-07-22T02:25:00Z)
   
@@ -33,6 +33,4 @@
 * [\[css-align-3\] New section to link from longhand to shorthand property](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
   
 * [\[web-animations-2, css-animations-2\] Issue with "Element.animate()": wrong scenario mentioned](https://github.com/mdn/content/issues/13487) (2022-03-04T07:40:26Z)
-  
-* [\[service-workers-1, dom, cssom-view-1, notifications, pointerevents3\] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   

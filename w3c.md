@@ -46,7 +46,7 @@
   
 * [\[webrtc\] webrtc: Call createDataChannel after createOffer](https://github.com/mdn/content/issues/35932) (2024-09-18T12:11:30Z)
   
-* [\[html, dom, uievents\] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not](https://github.com/mdn/content/issues/35382) (2024-08-09T02:19:02Z)
+* [\[html, uievents, dom\] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not](https://github.com/mdn/content/issues/35382) (2024-08-09T02:19:02Z)
   
 * [\[selectors-4\] Add CSS \`:has()\` selector performance tips](https://github.com/mdn/content/issues/40280) (2024-07-20T17:16:05Z)
   
@@ -60,7 +60,7 @@
   
 * [\[webxr\] Explanation of \`bounded-floor\`/\`local\`/\`local-floor\` needs improvement](https://github.com/mdn/content/issues/33111) (2024-04-16T04:22:18Z)
   
-* [\[css-shadow-parts-1\] Incorrect statement about pseudo-elements needing to come last in a selector](https://github.com/mdn/content/issues/32971) (2024-04-05T20:16:52Z)
+* [\[css-shadow-parts-1\] Pseudo-elements may now be followed by pseudo-classes](https://github.com/mdn/content/issues/32971) (2024-04-05T20:16:52Z)
   
 * [\[css-typed-om-2\] CSS Typed OM pages have stub examples sections](https://github.com/mdn/content/issues/28118) (2023-07-22T02:25:00Z)
   
@@ -95,8 +95,6 @@
 * [\[web-animations-2, css-animations-2\] Issue with "Element.animate()": wrong scenario mentioned](https://github.com/mdn/content/issues/13487) (2022-03-04T07:40:26Z)
   
 * [\[encoding\] Content suggestion: ImageDecoder & ImageTrackList how-to/tutorial](https://github.com/mdn/content/issues/12791) (2022-02-07T04:15:29Z)
-  
-* [\[service-workers-1, dom, cssom-view-1, notifications, pointerevents3\] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
 * [\[SVG11\] "SVGSVGElement.viewBox.baseVal": when viewBox unset, it is null in FF but a 0-SVGRect in Chrome](https://github.com/mdn/content/issues/8907) (2021-09-14T14:00:23Z)
   

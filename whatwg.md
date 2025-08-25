@@ -32,7 +32,7 @@
   
 * [\[html\] Whitespace is not insignificant in HTMLImageElement.srcset](https://github.com/mdn/content/issues/35492) (2024-08-17T15:44:16Z)
   
-* [\[html, dom, uievents\] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not](https://github.com/mdn/content/issues/35382) (2024-08-09T02:19:02Z)
+* [\[html, uievents, dom\] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not](https://github.com/mdn/content/issues/35382) (2024-08-09T02:19:02Z)
   
 * [\[html\] HTMLMediaElement.currentTime: precision seems different from Date.now](https://github.com/mdn/content/issues/35239) (2024-07-30T09:34:47Z)
   
@@ -57,8 +57,6 @@
 * [\[html\] Image request fired as soon as src is set](https://github.com/mdn/content/issues/26560) (2023-05-03T17:23:34Z)
   
 * [\[html, gamepad\] Double checking the gamepad docs are correct](https://github.com/mdn/content/issues/14874) (2022-04-11T03:02:09Z)
-  
-* [\[service-workers-1, dom, cssom-view-1, notifications, pointerevents3\] Page titles should reflect usage: crypto.getRandomValues instead of Crypto: getRandomValues()](https://github.com/mdn/content/issues/8977) (2021-09-16T10:09:38Z)
   
 * [\[html\] CustomElementRegistry needs updating](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
   
