@@ -50,8 +50,6 @@
   
 * [\[appmanifest\] IsStandaloneContent does not work with \`display: fullscreen\` in Chrome Android](https://github.com/mdn/content/issues/34928) (2024-07-19T15:53:57Z)
   
-* [\[hr-time-3\] What are the ramifications of \`performance.now()\` bugs?](https://github.com/mdn/content/issues/33760) (2024-05-26T19:52:08Z)
-  
 * [\[periodic-background-sync\] periodicSync needs "periodic-background-sync" permission](https://github.com/mdn/content/issues/33692) (2024-05-21T08:55:15Z)
   
 * [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
