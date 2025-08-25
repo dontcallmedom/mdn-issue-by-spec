@@ -43,41 +43,6 @@
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[webgl1] WebGLRenderingContext.createBuffer() may return `null`.]]></title>
-            <link>https://github.com/mdn/content/issues/33471</link>
-            <guid>https://github.com/mdn/content/issues/33471</guid>
-            <pubDate>Tue, 07 May 2024 14:47:46 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/createBuffer" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/createBuffer</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Return value</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The return value</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The fact that it may return <code class="notranslate">null</code> and preferably also why it may return <code class="notranslate">null</code>.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">The [WebGL specification](<a href="https://registry.khronos.org/webgl/specs/latest/1.0/#5.14.5:~:text=error%20is%20generated.-,WebGLBuffer%3F%20createBuffer(),-(OpenGL%20ES)" rel="nofollow">https://registry.khronos.org/webgl/specs/latest/1.0/#5.14.5:~:text=error%20is%20generated.-,WebGLBuffer%3F%20createBuffer(),-(OpenGL%20ES)</a> only says:</p>
-<blockquote>
-<p dir="auto">WebGLBuffer? createBuffer()<br>
-Create a WebGLBuffer object and initialize it with a buffer object name as if by calling glGenBuffers.</p>
-</blockquote>
-<p dir="auto">It never mentions the reason for its return type and I couldn't find anything on <a href="https://github.com/KhronosGroup/WebGL/issues?q=createBuffer">the WebGL issue tracker</a> either.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/webglrenderingcontext/createbuffer</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/createBuffer" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/createBuffer</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webglrenderingcontext/createbuffer/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/webglrenderingcontext/createbuffer/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/eda49877b9078b24cd18f794470e5e225add9b94/hovercard" href="https://github.com/mdn/content/commit/eda49877b9078b24cd18f794470e5e225add9b94"><tt>eda4987</tt></a></li>
-<li>Document last modified: 2023-04-08T06:46:30.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[webgl1] compressedTexImage2D does not support a form with 6 arguments]]></title>
             <link>https://github.com/mdn/content/issues/33026</link>
             <guid>https://github.com/mdn/content/issues/33026</guid>
