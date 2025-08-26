@@ -10,8 +10,6 @@
   
 * [\[html\] Clarify image.decode() failure on lazy-loaded images](https://github.com/mdn/content/issues/38034) (2025-02-08T00:22:15Z)
   
-* [\[html\] Add documentation of new dialog light dismiss behaviors](https://github.com/mdn/content/issues/37196) (2024-12-13T00:40:54Z)
-  
 * [\[html\] Add accessibility considerations to the HTML "autocomplete" attribute page](https://github.com/mdn/content/issues/37170) (2024-12-10T18:43:41Z)
   
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
