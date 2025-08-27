@@ -102,5 +102,3 @@
   
 * [\[presentation-api\] Presentation API docs need rewrite](https://github.com/mdn/content/issues/4025) (2021-04-12T01:16:00Z)
   
-* [\[webaudio\] Visualization for OscillatorNode](https://github.com/mdn/content/issues/1296) (2021-01-14T10:42:13Z)
-  
