@@ -4,46 +4,10 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Sat, 30 Aug 2025 06:41:23 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 26 Aug 2025 19:28:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[geometry-1] DOMMatrix.scale() ignores origin parameters if zoom parameters are 1]]></title>
-            <link>https://github.com/mdn/content/issues/40946</link>
-            <guid>https://github.com/mdn/content/issues/40946</guid>
-            <pubDate>Sat, 30 Aug 2025 06:41:23 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrixReadOnly/scale" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrixReadOnly/scale</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">If we scale about an origin would we not expect the origin to be taken into account even if the scale is 1.</p>
-<p dir="auto">for example,</p>
-<p dir="auto">new DOMMatrix().scale(1, 1, 1, 10, 40, 0)</p>
-<p dir="auto">produces,</p>
-<p dir="auto">DOMMatrix {a: 1, b: 0, c: 0, d: 1, e: 0, f: 0}</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">new DOMMatrix().scale(1, 1, 1, 10, 40, 0)</p>
-<p dir="auto">should look like,</p>
-<p dir="auto">DOMMatrix {a: 1, b: 0, c: 0, d: 1, e: -10, f: -40 }</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/dommatrixreadonly/scale</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrixReadOnly/scale" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrixReadOnly/scale</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/dommatrixreadonly/scale/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/dommatrixreadonly/scale/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/d0e6d8d712a33b9d3c7a9fb9a8ba85d4dd1b7002/hovercard" href="https://github.com/mdn/content/commit/d0e6d8d712a33b9d3c7a9fb9a8ba85d4dd1b7002"><tt>d0e6d8d</tt></a></li>
-<li>Document last modified: 2025-02-02T01:20:45.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[cssom-1] CSSViewTransitionRule undocumented]]></title>
             <link>https://github.com/mdn/content/issues/40896</link>
@@ -480,7 +444,7 @@ but the demo allows initial tab key press to go to the first tab, but then uses 
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">description of the <code class="notranslate">sizeAdjust</code> property</p>
 <p dir="auto">It does exist, see<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTY1Njk4NjcsIm5iZiI6MTc1NjU2OTU2NywicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MzAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODMwVDE1NTkyN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk5Mzg5OWZiNTAxNTllZDdkOTg5YTQzZTUzMDdlMzE4YWJlZmNkMDY3OWRjNTdlNDcxOGU3N2Y0YjgxMWE0ZDAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.JI0t1tR1NU7_h-N0IDANYXocca909TajuSBsuBKAw_8"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTY1Njk4NjcsIm5iZiI6MTc1NjU2OTU2NywicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MzAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODMwVDE1NTkyN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk5Mzg5OWZiNTAxNTllZDdkOTg5YTQzZTUzMDdlMzE4YWJlZmNkMDY3OWRjNTdlNDcxOGU3N2Y0YjgxMWE0ZDAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.JI0t1tR1NU7_h-N0IDANYXocca909TajuSBsuBKAw_8" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTY1NzE2NDQsIm5iZiI6MTc1NjU3MTM0NCwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MzAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODMwVDE2MjkwNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWMyN2QyZGRkNTIzMzE3ZDRmZjM2YzdkZDQyMjY0MWVmNDU4MDgwM2MwZThmNjY5YWI1N2U2YThiOTY5NjJjNTAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.xXim5Dn2mImWnXxXXFx2Qy6AFnNAlW2t35YCbO30vzI"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTY1NzE2NDQsIm5iZiI6MTc1NjU3MTM0NCwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MzAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODMwVDE2MjkwNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWMyN2QyZGRkNTIzMzE3ZDRmZjM2YzdkZDQyMjY0MWVmNDU4MDgwM2MwZThmNjY5YWI1N2U2YThiOTY5NjJjNTAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.xXim5Dn2mImWnXxXXFx2Qy6AFnNAlW2t35YCbO30vzI" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
