@@ -880,13 +880,14 @@ Space characters, other than the whitespace separating the URL and the correspon
 <p dir="auto">Example</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The first js comment is correct for the current version of Firefox, but incorrect for Chrome Version 117.0.5938.149:</p>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="  result[0].value = aHtmlElt.isDefaultNamespace(&quot;&quot;); // true
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="  result[0].value = aHtmlElt.isDefaultNamespace(&quot;&quot;); // true
   result[1].value = aHtmlElt.isDefaultNamespace(&quot;http://www.w3.org/2000/svg&quot;); // false
   result[2].value = aSvgElt.isDefaultNamespace(&quot;&quot;); // false
-  result[3].value = aSvgElt.isDefaultNamespace(&quot;http://www.w3.org/2000/svg&quot;); // true"><pre class="notranslate">  <span class="pl-s1">result</span><span class="pl-kos">[</span><span class="pl-c1">0</span><span class="pl-kos">]</span><span class="pl-kos">.</span><span class="pl-c1">value</span> <span class="pl-c1">=</span> <span class="pl-s1">aHtmlElt</span><span class="pl-kos">.</span><span class="pl-en">isDefaultNamespace</span><span class="pl-kos">(</span><span class="pl-s">""</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// true</span>
-  <span class="pl-s1">result</span><span class="pl-kos">[</span><span class="pl-c1">1</span><span class="pl-kos">]</span><span class="pl-kos">.</span><span class="pl-c1">value</span> <span class="pl-c1">=</span> <span class="pl-s1">aHtmlElt</span><span class="pl-kos">.</span><span class="pl-en">isDefaultNamespace</span><span class="pl-kos">(</span><span class="pl-s">"http://www.w3.org/2000/svg"</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// false</span>
-  <span class="pl-s1">result</span><span class="pl-kos">[</span><span class="pl-c1">2</span><span class="pl-kos">]</span><span class="pl-kos">.</span><span class="pl-c1">value</span> <span class="pl-c1">=</span> <span class="pl-s1">aSvgElt</span><span class="pl-kos">.</span><span class="pl-en">isDefaultNamespace</span><span class="pl-kos">(</span><span class="pl-s">""</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// false</span>
-  <span class="pl-s1">result</span><span class="pl-kos">[</span><span class="pl-c1">3</span><span class="pl-kos">]</span><span class="pl-kos">.</span><span class="pl-c1">value</span> <span class="pl-c1">=</span> <span class="pl-s1">aSvgElt</span><span class="pl-kos">.</span><span class="pl-en">isDefaultNamespace</span><span class="pl-kos">(</span><span class="pl-s">"http://www.w3.org/2000/svg"</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// true</span></pre></div>
+  result[3].value = aSvgElt.isDefaultNamespace(&quot;http://www.w3.org/2000/svg&quot;); // true"><pre lang="js" class="notranslate"><code class="notranslate">  result[0].value = aHtmlElt.isDefaultNamespace(""); // true
+  result[1].value = aHtmlElt.isDefaultNamespace("http://www.w3.org/2000/svg"); // false
+  result[2].value = aSvgElt.isDefaultNamespace(""); // false
+  result[3].value = aSvgElt.isDefaultNamespace("http://www.w3.org/2000/svg"); // true
+</code></pre></div>
 <p dir="auto">In current Chrome, the default namespace is the XMLNS namespace.</p>
 <p dir="auto">This might also necessitate changing the following note at the top of the page:</p>
 <blockquote>
@@ -925,7 +926,7 @@ Space characters, other than the whitespace separating the URL and the correspon
 <p dir="auto">each day’s forecast (<code class="notranslate">&lt;article class="day-forecast"&gt;</code>) doesn’t make sense on its own and is too dependent on the main forecast (<code class="notranslate">&lt;article class="forecast"&gt;</code>), then it might not be appropriate to use the <code class="notranslate">&lt;article&gt;</code> tag for the individual day forecasts.</p>
 <p dir="auto">Instead, you can put the name of the city in each sub article but this lead to lots of repetition, so you could consider using the <code class="notranslate">&lt;section&gt;</code> tag for each day’s forecast, as it is used to group related content. If the individual forecasts are not intended to stand alone and are part of a larger whole (the main forecast), then the <code class="notranslate">&lt;section&gt;</code> tag would be more appropriate.</p>
 <h3 dir="auto">What did you expect to see?</h3>
-<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;article class=&quot;forecast&quot;&gt;
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;article class=&quot;forecast&quot;&gt;
   &lt;h1&gt;Weather forecast for Seattle&lt;/h1&gt;
   &lt;section class=&quot;day-forecast&quot;&gt;
     &lt;h2&gt;03 March 2018&lt;/h2&gt;
@@ -939,21 +940,22 @@ Space characters, other than the whitespace separating the URL and the correspon
     &lt;h2&gt;05 March 2018&lt;/h2&gt;
     &lt;p&gt;Heavy rain.&lt;/p&gt;
   &lt;/section&gt;
-&lt;/article&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">article</span> <span class="pl-c1">class</span>="<span class="pl-s">forecast</span>"<span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>Weather forecast for Seattle<span class="pl-kos">&lt;/</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;</span><span class="pl-ent">section</span> <span class="pl-c1">class</span>="<span class="pl-s">day-forecast</span>"<span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">h2</span><span class="pl-kos">&gt;</span>03 March 2018<span class="pl-kos">&lt;/</span><span class="pl-ent">h2</span><span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>Rain.<span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;/</span><span class="pl-ent">section</span><span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;</span><span class="pl-ent">section</span> <span class="pl-c1">class</span>="<span class="pl-s">day-forecast</span>"<span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">h2</span><span class="pl-kos">&gt;</span>04 March 2018<span class="pl-kos">&lt;/</span><span class="pl-ent">h2</span><span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>Periods of rain.<span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;/</span><span class="pl-ent">section</span><span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;</span><span class="pl-ent">section</span> <span class="pl-c1">class</span>="<span class="pl-s">day-forecast</span>"<span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">h2</span><span class="pl-kos">&gt;</span>05 March 2018<span class="pl-kos">&lt;/</span><span class="pl-ent">h2</span><span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>Heavy rain.<span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>
-  <span class="pl-kos">&lt;/</span><span class="pl-ent">section</span><span class="pl-kos">&gt;</span>
-<span class="pl-kos">&lt;/</span><span class="pl-ent">article</span><span class="pl-kos">&gt;</span></pre></div>
+&lt;/article&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;article class="forecast"&gt;
+  &lt;h1&gt;Weather forecast for Seattle&lt;/h1&gt;
+  &lt;section class="day-forecast"&gt;
+    &lt;h2&gt;03 March 2018&lt;/h2&gt;
+    &lt;p&gt;Rain.&lt;/p&gt;
+  &lt;/section&gt;
+  &lt;section class="day-forecast"&gt;
+    &lt;h2&gt;04 March 2018&lt;/h2&gt;
+    &lt;p&gt;Periods of rain.&lt;/p&gt;
+  &lt;/section&gt;
+  &lt;section class="day-forecast"&gt;
+    &lt;h2&gt;05 March 2018&lt;/h2&gt;
+    &lt;p&gt;Heavy rain.&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/article&gt;
+</code></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
