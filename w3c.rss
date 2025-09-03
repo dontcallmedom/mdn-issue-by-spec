@@ -4,10 +4,48 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Tue, 26 Aug 2025 19:28:43 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 03 Sep 2025 11:43:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[credential-management-1] FederatedCredential() options missing]]></title>
+            <link>https://github.com/mdn/content/issues/40996</link>
+            <guid>https://github.com/mdn/content/issues/40996</guid>
+            <pubDate>Wed, 03 Sep 2025 11:43:34 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/FederatedCredential/FederatedCredential" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FederatedCredential/FederatedCredential</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/FederatedCredential/FederatedCredential#parameters" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FederatedCredential/FederatedCredential#parameters</a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The Parameters section is missing some options (see <a href="https://w3c.github.io/webappsec-credential-management/#dom-federatedcredential-federatedcredential" rel="nofollow">spec</a>):</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> name</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> iconURL</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> origin</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Completed task" checked=""> provider</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> protocol</li>
+</ul>
+<p dir="auto">Note: The page also calls the parameter <code class="notranslate">init</code>, whereas it's called <code class="notranslate">data</code> in <a href="https://w3c.github.io/webappsec-credential-management/#federatedcredential-interface" rel="nofollow">the spec</a>.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I expected to see these options documented.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Noticed while reviewing <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3375273909" data-permission-text="Title is private" data-url="https://github.com/mdn/browser-compat-data/issues/27733" data-hovercard-type="pull_request" data-hovercard-url="/mdn/browser-compat-data/pull/27733/hovercard" href="https://github.com/mdn/browser-compat-data/pull/27733">mdn/browser-compat-data#27733</a>.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/federatedcredential/federatedcredential</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/FederatedCredential/FederatedCredential" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FederatedCredential/FederatedCredential</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/federatedcredential/federatedcredential/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/federatedcredential/federatedcredential/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/3e543cdfe8dddfb4774a64bf3decdcbab42a4111/hovercard" href="https://github.com/mdn/content/commit/3e543cdfe8dddfb4774a64bf3decdcbab42a4111"><tt>3e543cd</tt></a></li>
+<li>Document last modified: 2025-06-23T16:41:39.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[cssom-1] CSSViewTransitionRule undocumented]]></title>
             <link>https://github.com/mdn/content/issues/40896</link>
@@ -784,7 +822,7 @@ document.ondragover = ((e) =&gt; {
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">description of the <code class="notranslate">sizeAdjust</code> property</p>
 <p dir="auto">It does exist, see<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTY4OTk2NzUsIm5iZiI6MTc1Njg5OTM3NSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA5MDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwOTAzVDExMzYxNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRhOWIzYjQ1Y2YyMTZhNjU4MTE0NTA0M2I2YjdhNDQzMjQyMTUxYTE0MjFhNjIxMjZmY2Y5YzNlMjU0YTMxMzgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.dVXm_Vr4YBJa4rwYDkk_vkrD8FbaDGw4nk9xhNF4d2s"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTY4OTk2NzUsIm5iZiI6MTc1Njg5OTM3NSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA5MDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwOTAzVDExMzYxNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRhOWIzYjQ1Y2YyMTZhNjU4MTE0NTA0M2I2YjdhNDQzMjQyMTUxYTE0MjFhNjIxMjZmY2Y5YzNlMjU0YTMxMzgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.dVXm_Vr4YBJa4rwYDkk_vkrD8FbaDGw4nk9xhNF4d2s" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTY5MDAzMDEsIm5iZiI6MTc1NjkwMDAwMSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA5MDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwOTAzVDExNDY0MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNjOGI1NGFhNjQ1ZTVmMmM0ZTU5M2NlMDU5YzdkYzQzOTNmZjA0YzYyYjI4MTAxYzQxNTZhZWM2MDZjOTBlOTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.kiIJvBtd9feFdux1oiHMtIWsto9rYML9OkuTaCsEBt0"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTY5MDAzMDEsIm5iZiI6MTc1NjkwMDAwMSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA5MDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwOTAzVDExNDY0MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNjOGI1NGFhNjQ1ZTVmMmM0ZTU5M2NlMDU5YzdkYzQzOTNmZjA0YzYyYjI4MTAxYzQxNTZhZWM2MDZjOTBlOTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.kiIJvBtd9feFdux1oiHMtIWsto9rYML9OkuTaCsEBt0" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
