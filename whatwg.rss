@@ -4,80 +4,10 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Wed, 03 Sep 2025 12:35:42 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 31 Aug 2025 01:05:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[html] Inconsistent read-only property labeling across DOM interfaces]]></title>
-            <link>https://github.com/mdn/content/issues/40998</link>
-            <guid>https://github.com/mdn/content/issues/40998</guid>
-            <pubDate>Wed, 03 Sep 2025 12:35:42 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFieldSetElement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLFieldSetElement</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Instance Properties</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto"><strong>Missing read-only indicators in element page:</strong></p>
-<ul dir="auto">
-<li><code class="notranslate">HTMLFieldSetElement.validationMessage</code></li>
-<li><code class="notranslate">HTMLFieldSetElement.validity</code></li>
-<li><code class="notranslate">HTMLFieldSetElement.willValidate</code></li>
-<li><code class="notranslate">HTMLMediaElement.audioTracks</code></li>
-<li></li>
-</ul>
-<p dir="auto"><strong>Incorrectly labeled as read-only in property page:</strong></p>
-<ul dir="auto">
-<li><code class="notranslate">HTMLTableCellElement.colSpan</code>: reads <code class="notranslate">The colSpan readonly property of the HTMLTableCellElement</code></li>
-<li><code class="notranslate">HTMLTableCellElement.rowSpan</code>: reads <code class="notranslate">The rowSpan readonly property of the HTMLTableCellElement</code></li>
-<li><code class="notranslate">HTMLTableColElement.span</code>: reads <code class="notranslate">The span readonly property of the HTMLTableColElement</code></li>
-</ul>
-<h5 dir="auto">Evidence</h5>
-<p dir="auto">The table span properties contradict themselves by:</p>
-<ol dir="auto">
-<li>Describing the property as "read-only" in the opening sentence</li>
-<li>Showing working JavaScript examples that set the property (<code class="notranslate">cell.colSpan += 1</code>)</li>
-<li>Including notes about setter behavior ("When setting a new value, the value is clamped...")</li>
-</ol>
-<h5 dir="auto">Proposed Solution</h5>
-<ul dir="auto">
-<li>Remove "read-only" text and <code class="notranslate">{{ReadOnlyInline}}</code> from table span properties</li>
-<li>Add <code class="notranslate">{{ReadOnlyInline}}</code> macro to genuinely read-only properties</li>
-</ul>
-<h3 dir="auto">What did you expect to see?</h3>
-<h4 dir="auto"><code class="notranslate">HTMLFieldSetElement</code> Page:</h4>
-<ul dir="auto">
-<li><code class="notranslate">validationMessage</code>: with the read-only marker</li>
-<li><code class="notranslate">validity</code>: with the read-only marker</li>
-<li><code class="notranslate">willValidate</code>: with the read-only marker</li>
-<li></li>
-</ul>
-<h4 dir="auto"><code class="notranslate">HTMLMediaElement</code> Page:</h4>
-<ul dir="auto">
-<li><code class="notranslate">audioTracks</code>: with the read-only marker</li>
-<li></li>
-</ul>
-<h4 dir="auto"><code class="notranslate">HTMLTableCellElement.colSpan</code> Page:</h4>
-<ul dir="auto">
-<li><code class="notranslate">The colSpan property of the HTMLTableCellElement</code> omitting <code class="notranslate">read-only</code></li>
-</ul>
-<h4 dir="auto"><code class="notranslate">HTMLTableCellElement.rowSpan</code> Page:</h4>
-<ul dir="auto">
-<li><code class="notranslate">The rowSpan property of the HTMLTableCellElement</code> omitting <code class="notranslate">read-only</code></li>
-</ul>
-<h4 dir="auto"><code class="notranslate">HTMLTableColElement.span</code> Page:</h4>
-<ul dir="auto">
-<li><code class="notranslate">The span property of the HTMLTableColElement</code> omitting <code class="notranslate">read-only</code></li>
-</ul>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFieldSetElement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLFieldSetElement</a><br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement</a></p>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement/colSpan" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement/colSpan</a><br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement/rowSpan" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement/rowSpan</a><br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableColElement/span" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableColElement/span</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html] inline scripts are executed _before_ DOMContentLoaded]]></title>
             <link>https://github.com/mdn/content/issues/40950</link>

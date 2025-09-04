@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] Inconsistent read-only property labeling across DOM interfaces](https://github.com/mdn/content/issues/40998) (2025-09-03T12:35:42Z)
-  
 * [\[html\] inline scripts are executed \_before\_ DOMContentLoaded](https://github.com/mdn/content/issues/40950) (2025-08-31T01:05:24Z)
   
 * [\[html, requestidlecallback, css-backgrounds-4\] Reference page titles are not consistent and need improvements](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
