@@ -4,8 +4,6 @@
 
 * [\[css-shapes-2\] \`\<basic-shape\>\` CSS demo header shows as \`\&lt;basic-shape\&gt;\`](https://github.com/mdn/content/issues/41014) (2025-09-04T09:34:24Z)
   
-* [\[css-lists-3\] list-style-position: HTML error in example](https://github.com/mdn/content/issues/41011) (2025-09-04T04:30:53Z)
-  
 * [\[credential-management-1\] FederatedCredential() options missing](https://github.com/mdn/content/issues/40996) (2025-09-03T11:43:34Z)
   
 * [\[cssom-1\] CSSViewTransitionRule undocumented](https://github.com/mdn/content/issues/40896) (2025-08-26T19:28:43Z)
@@ -35,8 +33,6 @@
 * [\[requestidlecallback\] timeRemaining() documentation should flag that it doesn't just count down](https://github.com/mdn/content/issues/37250) (2024-12-17T22:44:09Z)
   
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
-  
-* [\[webauthn-3\] Webauthn: getClientExtensionResults() returns a AuthenticationExtensionsClientOutputs, not a Map](https://github.com/mdn/content/issues/36673) (2024-11-06T11:36:55Z)
   
 * [\[css-font-loading-3\] FontFace doc: sizeAdjust is missing](https://github.com/mdn/content/issues/36587) (2024-10-31T07:23:20Z)
   

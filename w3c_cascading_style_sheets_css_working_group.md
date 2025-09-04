@@ -4,8 +4,6 @@
 
 * [\[css-shapes-2\] \`\<basic-shape\>\` CSS demo header shows as \`\&lt;basic-shape\&gt;\`](https://github.com/mdn/content/issues/41014) (2025-09-04T09:34:24Z)
   
-* [\[css-lists-3\] list-style-position: HTML error in example](https://github.com/mdn/content/issues/41011) (2025-09-04T04:30:53Z)
-  
 * [\[cssom-1\] CSSViewTransitionRule undocumented](https://github.com/mdn/content/issues/40896) (2025-08-26T19:28:43Z)
   
 * [\[filter-effects-2\] Backdrop Root concept undocumented](https://github.com/mdn/content/issues/40602) (2025-08-03T06:46:17Z)
