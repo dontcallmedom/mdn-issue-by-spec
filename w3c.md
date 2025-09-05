@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-shapes-2\] \`\<basic-shape\>\` CSS demo header shows as \`\&lt;basic-shape\&gt;\`](https://github.com/mdn/content/issues/41014) (2025-09-04T09:34:24Z)
-  
 * [\[credential-management-1\] FederatedCredential() options missing](https://github.com/mdn/content/issues/40996) (2025-09-03T11:43:34Z)
   
 * [\[cssom-1\] CSSViewTransitionRule undocumented](https://github.com/mdn/content/issues/40896) (2025-08-26T19:28:43Z)
