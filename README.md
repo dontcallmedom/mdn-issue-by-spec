@@ -5,8 +5,6 @@ This repository collects information on MDN Web Docs issues and group them based
 
 * [Ecma International](ecma_international.md): 1 issues [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ecma_international.rss)
 * [Ecma International TC39](ecma_international_tc39.md): 1 issues [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ecma_international_tc39.rss)
-* [IETF](ietf.md): 1 issues [![RSS feed for IETF-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ietf.rss)
-* [IETF Hypertext Transfer Protocol Bis APP Working Group](ietf_hypertext_transfer_protocol_bis_app_working_group.md): 1 issues [![RSS feed for IETF Hypertext Transfer Protocol Bis APP Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ietf_hypertext_transfer_protocol_bis_app_working_group.rss)
 * [W3C](w3c.md): 51 issues [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c.rss)
 * [W3C Accessible Rich Internet Applications Working Group](w3c_accessible_rich_internet_applications_working_group.md): 1 issues [![RSS feed for W3C Accessible Rich Internet Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_accessible_rich_internet_applications_working_group.rss)
 * [W3C Audio Working Group](w3c_audio_working_group.md): 1 issues [![RSS feed for W3C Audio Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_audio_working_group.rss)
