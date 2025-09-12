@@ -30,7 +30,7 @@
   
 * [\[CSS21, css-display-3\] CSS+JS Accessibility best practices - hidden things section - is not promoting best practices](https://github.com/mdn/content/issues/37524) (2025-01-06T15:29:04Z)
   
-* [\[html, SVG11\] \[WebAPI\] Implement Trusted Types support for \`document.write()\`/\`document.writeln()\`](https://github.com/mdn/content/issues/37518) (2025-01-06T12:21:47Z)
+* [\[html, service-workers-1, SVG11\] \[WebAPI\] Implement Trusted Types support for \`document.write()\`/\`document.writeln()\`](https://github.com/mdn/content/issues/37518) (2025-01-06T12:21:47Z)
   
 * [\[requestidlecallback\] timeRemaining() documentation should flag that it doesn't just count down](https://github.com/mdn/content/issues/37250) (2024-12-17T22:44:09Z)
   

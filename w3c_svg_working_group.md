@@ -4,7 +4,7 @@
 
 * [\[SVG11\] SVG examples should be written in proper XML syntax](https://github.com/mdn/content/issues/37761) (2025-01-22T23:39:56Z)
   
-* [\[html, SVG11\] \[WebAPI\] Implement Trusted Types support for \`document.write()\`/\`document.writeln()\`](https://github.com/mdn/content/issues/37518) (2025-01-06T12:21:47Z)
+* [\[html, service-workers-1, SVG11\] \[WebAPI\] Implement Trusted Types support for \`document.write()\`/\`document.writeln()\`](https://github.com/mdn/content/issues/37518) (2025-01-06T12:21:47Z)
   
 * [\[SVG11\] textPath attribute method doesn't seem to have an effect](https://github.com/mdn/content/issues/24079) (2023-02-01T16:11:22Z)
   

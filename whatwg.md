@@ -18,7 +18,7 @@
   
 * [\[html\] Clarify image.decode() failure on lazy-loaded images](https://github.com/mdn/content/issues/38034) (2025-02-08T00:22:15Z)
   
-* [\[html, SVG11\] \[WebAPI\] Implement Trusted Types support for \`document.write()\`/\`document.writeln()\`](https://github.com/mdn/content/issues/37518) (2025-01-06T12:21:47Z)
+* [\[html, service-workers-1, SVG11\] \[WebAPI\] Implement Trusted Types support for \`document.write()\`/\`document.writeln()\`](https://github.com/mdn/content/issues/37518) (2025-01-06T12:21:47Z)
   
 * [\[html\] Add accessibility considerations to the HTML "autocomplete" attribute page](https://github.com/mdn/content/issues/37170) (2024-12-10T18:43:41Z)
   
