@@ -755,7 +755,7 @@ but the demo allows initial tab key press to go to the first tab, but then uses 
 </li>
 <li><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1940044" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=1940044</a> <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerContainer/register" rel="nofollow"><code class="notranslate">ServiceWorkerContainer.register()</code></a> - TrustedScriptURL
 <ul class="contains-task-list">
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> BCD</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Completed task" checked=""> BCD <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3408790407" data-permission-text="Title is private" data-url="https://github.com/mdn/browser-compat-data/issues/27836" data-hovercard-type="pull_request" data-hovercard-url="/mdn/browser-compat-data/pull/27836/hovercard" href="https://github.com/mdn/browser-compat-data/pull/27836">mdn/browser-compat-data#27836</a></li>
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> Docs</li>
 </ul>
 </li>
@@ -763,10 +763,11 @@ but the demo allows initial tab key press to go to the first tab, but then uses 
 <p dir="auto">Note these ones for 137</p>
 <ul dir="auto">
 <li>
-<p dir="auto"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1944504" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=1944504</a></p>
+<p dir="auto"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1944504" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=1944504</a> onmessage and onreadystatechange attributes</p>
 <ul class="contains-task-list">
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> BCD</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> Docs<br>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> Docs</li>
+<li>[ ]<br>
 These for 138</li>
 </ul>
 </li>
@@ -898,7 +899,7 @@ document.ondragover = ((e) =&gt; {
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">description of the <code class="notranslate">sizeAdjust</code> property</p>
 <p dir="auto">It does exist, see<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTc2NTY0NjIsIm5iZiI6MTc1NzY1NjE2MiwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA5MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwOTEyVDA1NDkyMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE2ZTdiMzM1YTU4N2UwMTRlNGQ2YzQzMGQyZTUzYjQ4MTg4NzNkZDY4OWVhYTAyYTgzOTljYmY1N2JmMGI1Y2UmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.f4b5TAHC-5RS0zocQ2ndTdHrljkuGlP5oDbqhf_rhhU"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTc2NTY0NjIsIm5iZiI6MTc1NzY1NjE2MiwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA5MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwOTEyVDA1NDkyMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE2ZTdiMzM1YTU4N2UwMTRlNGQ2YzQzMGQyZTUzYjQ4MTg4NzNkZDY4OWVhYTAyYTgzOTljYmY1N2JmMGI1Y2UmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.f4b5TAHC-5RS0zocQ2ndTdHrljkuGlP5oDbqhf_rhhU" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTc2NTcwNzgsIm5iZiI6MTc1NzY1Njc3OCwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA5MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwOTEyVDA1NTkzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQ5ODI3OTU2ZTdmNDNlM2UyOTkxODBiMDQzM2YwMDNlNWVmOTA4NGMxMmIzMDVjYTQzMzc0YWY1NmVmYTI1OTUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.CTGCTuF7Qco8NPNIcjQm0v9v47WUpQQuSbyBNi2TjjU"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTc2NTcwNzgsIm5iZiI6MTc1NzY1Njc3OCwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA5MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwOTEyVDA1NTkzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQ5ODI3OTU2ZTdmNDNlM2UyOTkxODBiMDQzM2YwMDNlNWVmOTA4NGMxMmIzMDVjYTQzMzc0YWY1NmVmYTI1OTUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.CTGCTuF7Qco8NPNIcjQm0v9v47WUpQQuSbyBNi2TjjU" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
