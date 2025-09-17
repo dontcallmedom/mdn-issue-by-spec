@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-grid-3\] Confusing/misleading example](https://github.com/mdn/content/issues/41176) (2025-09-17T15:17:35Z)
+  
 * [\[css-fonts-5\] font-family: emoji is no longer on a standards track](https://github.com/mdn/content/issues/41093) (2025-09-10T16:16:19Z)
   
 * [\[compositing-2\] mix-blend-mode does not blend the element with its background but with its backdrop](https://github.com/mdn/content/issues/41078) (2025-09-09T17:29:09Z)

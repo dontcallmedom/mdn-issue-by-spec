@@ -4,10 +4,57 @@
         <title>W3C Cascading Style Sheets (CSS) Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_cascading_style_sheets_css_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group</description>
-        <lastBuildDate>Wed, 10 Sep 2025 16:16:19 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 17 Sep 2025 15:17:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[css-grid-3] Confusing/misleading example]]></title>
+            <link>https://github.com/mdn/content/issues/41176</link>
+            <guid>https://github.com/mdn/content/issues/41176</guid>
+            <pubDate>Wed, 17 Sep 2025 15:17:35 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/grid</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Syntax</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">In the syntax examples, there are two examples that I believe are misleading. They are similar examples, one for repeating rows, and one for repeating columns.</p>
+<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="/* &lt;'grid-template-rows'&gt; /
+   [ auto-flow &amp;&amp; dense? ] &lt;'grid-auto-columns'&gt;? values */
+grid: repeat(3, 200px) / auto-flow 300px;
+
+/* [ auto-flow &amp;&amp; dense? ] &lt;'grid-auto-rows'&gt;? /
+   &lt;'grid-template-columns'&gt; values */
+grid: auto-flow 300px / repeat(3, 200px);"><pre class="notranslate"><span class="pl-c">/* &lt;'grid-template-rows'&gt; /</span>
+<span class="pl-c">   [ auto-flow &amp;&amp; dense? ] &lt;'grid-auto-columns'&gt;? values */</span>
+<span class="pl-c1">grid</span><span class="pl-kos">:</span> <span class="pl-en">repeat</span>(<span class="pl-c1">3</span><span class="pl-kos">,</span> <span class="pl-c1">200<span class="pl-smi">px</span></span>) <span class="pl-c1">/</span> auto-flow <span class="pl-c1">300<span class="pl-smi">px</span></span>;
+
+<span class="pl-c">/* [ auto-flow &amp;&amp; dense? ] &lt;'grid-auto-rows'&gt;? /</span>
+<span class="pl-c">   &lt;'grid-template-columns'&gt; values */</span>
+<span class="pl-c1">grid</span><span class="pl-kos">:</span> auto-flow <span class="pl-c1">300<span class="pl-smi">px</span></span> <span class="pl-c1">/</span> <span class="pl-en">repeat</span>(<span class="pl-c1">3</span><span class="pl-kos">,</span> <span class="pl-c1">200<span class="pl-smi">px</span></span>);</pre></div>
+<p dir="auto">The 3rd example in each uses of those sections (which I've isolated above), uses <code class="notranslate">repeat(3, [line1 line2 line3] 200px);</code>. When reading this, I believe most people would assume this will name the lines "line1", "line2", "line3" respectively, but instead, it assigns all three names to each of the lines. Using the repeat with multiple line names doesn't have much practical value (that I can think of).</p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/25749407/490625432-4d479248-96e4-4f95-ad53-beee61696bbd.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTgxMjMxMDgsIm5iZiI6MTc1ODEyMjgwOCwicGF0aCI6Ii8yNTc0OTQwNy80OTA2MjU0MzItNGQ0NzkyNDgtOTZlNC00Zjk1LWFkNTMtYmVlZTYxNjk2YmJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA5MTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwOTE3VDE1MjY0OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWVhODcwMTg0OWVkMDZkNjQyYzY1MDFhYzc5MGUwMmM0OGU1MGYzYTIxMDllM2U0ZjNkZTM2MjcxN2IzNWQwYzAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.yUR7HnD82mJFWKFI-fKV4XfzQjT_-qKH-GwWHHOFtQI"><img width="2000" height="484" alt="Image" src="https://private-user-images.githubusercontent.com/25749407/490625432-4d479248-96e4-4f95-ad53-beee61696bbd.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTgxMjMxMDgsIm5iZiI6MTc1ODEyMjgwOCwicGF0aCI6Ii8yNTc0OTQwNy80OTA2MjU0MzItNGQ0NzkyNDgtOTZlNC00Zjk1LWFkNTMtYmVlZTYxNjk2YmJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA5MTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwOTE3VDE1MjY0OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWVhODcwMTg0OWVkMDZkNjQyYzY1MDFhYzc5MGUwMmM0OGU1MGYzYTIxMDllM2U0ZjNkZTM2MjcxN2IzNWQwYzAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.yUR7HnD82mJFWKFI-fKV4XfzQjT_-qKH-GwWHHOFtQI" style="max-width: 100%; height: auto; max-height: 484px;"></a>
+<p dir="auto">.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I think it would be best to remove the name entirely, because having the same name across each column isn't very useful in my opinion, but there might be use cases I'm missing, in which case having a single line name would make more sense.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">I set up <a href="https://codepen.io/kevinpowell/pen/YPwKEJG/52a328b44dc712924d2c60524108b248?editors=0100" rel="nofollow">a demo of it here</a>. Using Chrome's devtools, you can see the line names for each column are "line1 line2 line3".</p>
+<p dir="auto">Here is a screenshot showing it: <a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/25749407/490626434-b8890992-8bdc-4cc9-a508-149ec118486c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTgxMjMxMDgsIm5iZiI6MTc1ODEyMjgwOCwicGF0aCI6Ii8yNTc0OTQwNy80OTA2MjY0MzQtYjg4OTA5OTItOGJkYy00Y2M5LWE1MDgtMTQ5ZWMxMTg0ODZjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA5MTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwOTE3VDE1MjY0OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTA1Y2YzZWFjOGU5NjI1MWU2MjVjNmRkMWYxMjI5Y2JkYzk4YTIxZmIxZTNlM2E2Njk3Y2I0OTJlMTg4ZmUzMWUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.nU98F99kOvkMqY5DOQIhDXq29oUtz39t-JxlOsplddE"><img width="2000" height="484" alt="Image" src="https://private-user-images.githubusercontent.com/25749407/490626434-b8890992-8bdc-4cc9-a508-149ec118486c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTgxMjMxMDgsIm5iZiI6MTc1ODEyMjgwOCwicGF0aCI6Ii8yNTc0OTQwNy80OTA2MjY0MzQtYjg4OTA5OTItOGJkYy00Y2M5LWE1MDgtMTQ5ZWMxMTg0ODZjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA5MTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwOTE3VDE1MjY0OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTA1Y2YzZWFjOGU5NjI1MWU2MjVjNmRkMWYxMjI5Y2JkYzk4YTIxZmIxZTNlM2E2Njk3Y2I0OTJlMTg4ZmUzMWUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.nU98F99kOvkMqY5DOQIhDXq29oUtz39t-JxlOsplddE" style="max-width: 100%; height: auto; max-height: 484px;"></a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/css/grid</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/grid</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/css/grid/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/css/grid/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0cc9980e3b21c83d1800a428bc402ae1865326b2/hovercard" href="https://github.com/mdn/content/commit/0cc9980e3b21c83d1800a428bc402ae1865326b2"><tt>0cc9980</tt></a></li>
+<li>Document last modified: 2025-07-14T14:43:58.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[css-fonts-5] font-family: emoji is no longer on a standards track]]></title>
             <link>https://github.com/mdn/content/issues/41093</link>
@@ -505,7 +552,7 @@ but the demo allows initial tab key press to go to the first tab, but then uses 
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">description of the <code class="notranslate">sizeAdjust</code> property</p>
 <p dir="auto">It does exist, see<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTgxMjE0MjMsIm5iZiI6MTc1ODEyMTEyMywicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA5MTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwOTE3VDE0NTg0M1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY0OTgwZDhmN2M3MDNmMTJjMTkxZWI4NmNmZGE3OTMwNzYxZDU2OWM5NWZlNjZhNjM5NTBiYzJjNDAzNWJhOTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.mebEYFMrNY2EGD0h2isCwN9MlSqpJwWZux6urXXpH80"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTgxMjE0MjMsIm5iZiI6MTc1ODEyMTEyMywicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA5MTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwOTE3VDE0NTg0M1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY0OTgwZDhmN2M3MDNmMTJjMTkxZWI4NmNmZGE3OTMwNzYxZDU2OWM5NWZlNjZhNjM5NTBiYzJjNDAzNWJhOTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.mebEYFMrNY2EGD0h2isCwN9MlSqpJwWZux6urXXpH80" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTgxMjMxMDUsIm5iZiI6MTc1ODEyMjgwNSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA5MTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwOTE3VDE1MjY0NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTgxMDRhMGJjZjk1NmI5N2FiOTFmMTZhZDFkYmYwN2I1MGE1YzMzYzE1YjgwN2JkY2VjMjNhMjFmYWUxZmRmNzkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.W3-k7jl_if0elhmffwwpnSx-6jUKON4fcpyvZTlq4kg"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTgxMjMxMDUsIm5iZiI6MTc1ODEyMjgwNSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA5MTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwOTE3VDE1MjY0NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTgxMDRhMGJjZjk1NmI5N2FiOTFmMTZhZDFkYmYwN2I1MGE1YzMzYzE1YjgwN2JkY2VjMjNhMjFmYWUxZmRmNzkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.W3-k7jl_if0elhmffwwpnSx-6jUKON4fcpyvZTlq4kg" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
