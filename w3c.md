@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[CSS21\] Unexpected CSS visibility animation type](https://github.com/mdn/content/issues/41197) (2025-09-18T10:29:41Z)
+  
 * [\[css-grid-3\] Confusing/misleading example](https://github.com/mdn/content/issues/41176) (2025-09-17T15:17:35Z)
   
 * [\[css-fonts-5\] font-family: emoji is no longer on a standards track](https://github.com/mdn/content/issues/41093) (2025-09-10T16:16:19Z)
