@@ -5,10 +5,10 @@ This repository collects information on MDN Web Docs issues and group them based
 
 * [Ecma International](ecma_international.md): 1 issues [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ecma_international.rss)
 * [Ecma International TC39](ecma_international_tc39.md): 1 issues [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ecma_international_tc39.rss)
-* [W3C](w3c.md): 53 issues [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c.rss)
+* [W3C](w3c.md): 54 issues [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c.rss)
 * [W3C Accessible Rich Internet Applications Working Group](w3c_accessible_rich_internet_applications_working_group.md): 1 issues [![RSS feed for W3C Accessible Rich Internet Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_accessible_rich_internet_applications_working_group.rss)
 * [W3C Audio Working Group](w3c_audio_working_group.md): 1 issues [![RSS feed for W3C Audio Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_audio_working_group.rss)
-* [W3C Cascading Style Sheets (CSS) Working Group](w3c_cascading_style_sheets_css_working_group.md): 19 issues [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_cascading_style_sheets_css_working_group.rss)
+* [W3C Cascading Style Sheets (CSS) Working Group](w3c_cascading_style_sheets_css_working_group.md): 20 issues [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_cascading_style_sheets_css_working_group.rss)
 * [W3C HTML Media Extensions Working Group](w3c_html_media_extensions_working_group.md): 1 issues [![RSS feed for W3C HTML Media Extensions Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_html_media_extensions_working_group.rss)
 * [W3C Immersive Web Working Group](w3c_immersive_web_working_group.md): 1 issues [![RSS feed for W3C Immersive Web Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_immersive_web_working_group.rss)
 * [W3C Internationalization Working Group](w3c_internationalization_working_group.md): 1 issues [![RSS feed for W3C Internationalization Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_internationalization_working_group.rss)

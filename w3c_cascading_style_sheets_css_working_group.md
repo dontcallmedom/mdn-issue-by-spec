@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[css-fonts-5\] \[CSS\] demo for font-variant-numeric does not show all values](https://github.com/mdn/content/issues/41198) (2025-09-18T11:12:13Z)
+  
 * [\[CSS21\] Unexpected CSS visibility animation type](https://github.com/mdn/content/issues/41197) (2025-09-18T10:29:41Z)
   
 * [\[css-grid-3\] Confusing/misleading example](https://github.com/mdn/content/issues/41176) (2025-09-17T15:17:35Z)
