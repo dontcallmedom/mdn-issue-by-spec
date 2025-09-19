@@ -22,8 +22,6 @@
   
 * [\[webusb\] USB.requestDevice new \`exclusionFilters\` option](https://github.com/mdn/content/issues/40372) (2025-07-15T12:34:44Z)
   
-* [\[screen-orientation\] ScreenOrientation.unlock exceptions description inaccurate](https://github.com/mdn/content/issues/40363) (2025-07-14T21:48:31Z)
-  
 * [\[geometry-1\] DOMRect.toJSON method description is misleading](https://github.com/mdn/content/issues/40230) (2025-07-07T11:52:23Z)
   
 * [\[html, requestidlecallback, css-backgrounds-4\] Reference page titles are not consistent and need improvements](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
