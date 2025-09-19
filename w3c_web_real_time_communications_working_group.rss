@@ -4,10 +4,46 @@
         <title>W3C Web Real-Time Communications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_real_time_communications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Real-Time Communications Working Group</description>
-        <lastBuildDate>Wed, 18 Sep 2024 12:11:30 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Sep 2025 21:03:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[mediacapture-streams] mediaconstrtraints video.deviceid no longer obeys 'ideal' device constraints on chromium-based browsers]]></title>
+            <link>https://github.com/mdn/content/issues/41220</link>
+            <guid>https://github.com/mdn/content/issues/41220</guid>
+            <pubDate>Fri, 19 Sep 2025 21:03:12 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Another non-number constraint is the deviceId constraint. If you have a deviceId from mediaDevices.enumerateDevices(), you can use it to request a specific device:</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">getUserMedia({<br>
+video: {<br>
+deviceId: myPreferredCameraDeviceId,<br>
+},<br>
+});</p>
+<p dir="auto">Chromium based browsers no longer use the ideal (or unspecificied) deviceId video constraint, you can only select 'exact' deviceId as the preferred camera will be ignored in favor of whichever camera was selected in the preferences section..</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">An indication that ideal (or unspecified) deviceId requests are no longer honored</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">See: <a href="https://issues.chromium.org/issues/438606278" rel="nofollow">https://issues.chromium.org/issues/438606278</a></p>
+<p dir="auto">Marked as 'wont fix'</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/mediadevices/getusermedia</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/mediadevices/getusermedia/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/mediadevices/getusermedia/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/3e543cdfe8dddfb4774a64bf3decdcbab42a4111/hovercard" href="https://github.com/mdn/content/commit/3e543cdfe8dddfb4774a64bf3decdcbab42a4111"><tt>3e543cd</tt></a></li>
+<li>Document last modified: 2025-06-23T16:41:39.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[webrtc] webrtc: Call createDataChannel after createOffer]]></title>
             <link>https://github.com/mdn/content/issues/35932</link>

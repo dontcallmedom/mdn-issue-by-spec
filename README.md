@@ -5,7 +5,7 @@ This repository collects information on MDN Web Docs issues and group them based
 
 * [Ecma International](ecma_international.md): 1 issues [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ecma_international.rss)
 * [Ecma International TC39](ecma_international_tc39.md): 1 issues [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ecma_international_tc39.rss)
-* [W3C](w3c.md): 53 issues [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c.rss)
+* [W3C](w3c.md): 54 issues [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c.rss)
 * [W3C Accessible Rich Internet Applications Working Group](w3c_accessible_rich_internet_applications_working_group.md): 1 issues [![RSS feed for W3C Accessible Rich Internet Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_accessible_rich_internet_applications_working_group.rss)
 * [W3C Audio Working Group](w3c_audio_working_group.md): 1 issues [![RSS feed for W3C Audio Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_audio_working_group.rss)
 * [W3C Cascading Style Sheets (CSS) Working Group](w3c_cascading_style_sheets_css_working_group.md): 20 issues [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_cascading_style_sheets_css_working_group.rss)
@@ -21,7 +21,7 @@ This repository collects information on MDN Web Docs issues and group them based
 * [W3C Web Events Working Group](w3c_web_events_working_group.md): 1 issues [![RSS feed for W3C Web Events Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_web_events_working_group.rss)
 * [W3C Web Performance Working Group](w3c_web_performance_working_group.md): 3 issues [![RSS feed for W3C Web Performance Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_web_performance_working_group.rss)
 * [W3C Web Platform Incubator Community Group](w3c_web_platform_incubator_community_group.md): 3 issues [![RSS feed for W3C Web Platform Incubator Community Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_web_platform_incubator_community_group.rss)
-* [W3C Web Real-Time Communications Working Group](w3c_web_real_time_communications_working_group.md): 4 issues [![RSS feed for W3C Web Real-Time Communications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_web_real_time_communications_working_group.rss)
+* [W3C Web Real-Time Communications Working Group](w3c_web_real_time_communications_working_group.md): 5 issues [![RSS feed for W3C Web Real-Time Communications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_web_real_time_communications_working_group.rss)
 * [WHATWG](whatwg.md): 26 issues [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](whatwg.rss)
 * [WHATWG DOM Workstream](whatwg_dom_workstream.md): 5 issues [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](whatwg_dom_workstream.rss)
 * [WHATWG HTML Workstream](whatwg_html_workstream.md): 21 issues [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](whatwg_html_workstream.rss)

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[mediacapture-streams\] mediaconstrtraints video.deviceid no longer obeys 'ideal' device constraints on chromium-based browsers](https://github.com/mdn/content/issues/41220) (2025-09-19T21:03:12Z)
+  
 * [\[css-fonts-5\] \[CSS\] demo for font-variant-numeric does not show all values](https://github.com/mdn/content/issues/41198) (2025-09-18T11:12:13Z)
   
 * [\[CSS21\] Unexpected CSS visibility animation type](https://github.com/mdn/content/issues/41197) (2025-09-18T10:29:41Z)
