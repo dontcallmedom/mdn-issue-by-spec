@@ -36,7 +36,7 @@
   
 * [\[CSS21, css-display-3\] CSS+JS Accessibility best practices - hidden things section - is not promoting best practices](https://github.com/mdn/content/issues/37524) (2025-01-06T15:29:04Z)
   
-* [\[html, service-workers-1, SVG11\] \[WebAPI\] Implement Trusted Types support for \`document.write()\`/\`document.writeln()\`](https://github.com/mdn/content/issues/37518) (2025-01-06T12:21:47Z)
+* [\[html, SVG11, service-workers-1\] \[WebAPI\] Implement Trusted Types support for \`document.write()\`/\`document.writeln()\`](https://github.com/mdn/content/issues/37518) (2025-01-06T12:21:47Z)
   
 * [\[requestidlecallback\] timeRemaining() documentation should flag that it doesn't just count down](https://github.com/mdn/content/issues/37250) (2024-12-17T22:44:09Z)
   
@@ -103,8 +103,6 @@
 * [\[encoding\] Content suggestion: ImageDecoder & ImageTrackList how-to/tutorial](https://github.com/mdn/content/issues/12791) (2022-02-07T04:15:29Z)
   
 * [\[SVG11\] "SVGSVGElement.viewBox.baseVal": when viewBox unset, it is null in FF but a 0-SVGRect in Chrome](https://github.com/mdn/content/issues/8907) (2021-09-14T14:00:23Z)
-  
-* [\[service-workers-1\] Issue with "ServiceWorkerContainer.register()": may be advisable to check for an existing registration](https://github.com/mdn/content/issues/7138) (2021-07-21T16:35:44Z)
   
 * [\[webaudio\] Content bug: AudioListener and attributes need better examples. ](https://github.com/mdn/content/issues/4468) (2021-04-26T03:22:48Z)
   
