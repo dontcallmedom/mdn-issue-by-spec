@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[mediasession\] MediaSession code samples inexplicable](https://github.com/mdn/content/issues/41250) (2025-09-22T17:37:24Z)
+  
 * [\[css-fonts-5\] Add a note to discourage the abuse of \`system-ui\` in articles, documents, and blogs](https://github.com/mdn/content/issues/41244) (2025-09-22T12:51:28Z)
   
 * [\[mediacapture-streams\] mediaconstrtraints video.deviceid no longer obeys 'ideal' device constraints on chromium-based browsers](https://github.com/mdn/content/issues/41220) (2025-09-19T21:03:12Z)

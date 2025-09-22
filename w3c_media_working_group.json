@@ -1,0 +1,23 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "W3C Media Working Group-relevant MDN issues",
+    "home_page_url": "https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_media_working_group.rss",
+    "description": "Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Media Working Group",
+    "author": {
+        "name": "mdn-issue-by-spec",
+        "url": "https://github.com/dontcallmedom/mdn-issue-by-spec"
+    },
+    "items": [
+        {
+            "id": "https://github.com/mdn/content/issues/41250",
+            "content_html": "<h3 dir=\"auto\">MDN URL</h3>\n<p dir=\"auto\"><a href=\"https://developer.mozilla.org/en-US/docs/Web/API/MediaSession\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/MediaSession</a></p>\n<h3 dir=\"auto\">What specific section or headline is this issue about?</h3>\n<p dir=\"auto\">Examples:  Setting up action for a music handler</p>\n<h3 dir=\"auto\">What information was incorrect, unhelpful, or incomplete?</h3>\n<p dir=\"auto\">A)    '// pause out audio'  --&gt;  '// pause our audio'</p>\n<p dir=\"auto\">B)   There are two lines (four, if you include the comment) that I found incomprehensible.  Here is one:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"     updateStatus(allMeta[index], &quot;Action: play  |  Track is playing…&quot;);\"><pre class=\"notranslate\"><code class=\"notranslate\">     updateStatus(allMeta[index], \"Action: play  |  Track is playing…\");\n</code></pre></div>\n<p dir=\"auto\">Codewise, 'updateStatus', 'allMeta' and 'index' are all undefined.  Furthermore there are no mentions of those words anywhere else on the page.  I assume they had been defined in the past and the relevant code was removed.</p>\n<h3 dir=\"auto\">What did you expect to see?</h3>\n<p dir=\"auto\">The three undefined variables should be fulsomely explained, with relevant lines of code,  - or -<br>\nThe two offending lines (plus comments) should be removed from the page.</p>\n<p dir=\"auto\">The example makes sense without those lines although the example would be enriched if the updateStatus function was explained.</p>\n<h3 dir=\"auto\">Do you have any supporting links, references, or citations?</h3>\n<p dir=\"auto\"><em>No response</em></p>\n<h3 dir=\"auto\">Do you have anything more you want to share?</h3>\n<p dir=\"auto\">You guys do excellent work.  Thank you.</p>\n<p dir=\"auto\">As it happens, I am curious about the \"updateStatus\" function if it changes the user-visible display.  I will try to figure it out on my own.</p>\n<h3 dir=\"auto\">MDN metadata</h3>\n\n<details>\n<summary>Page report details</summary>\n<ul dir=\"auto\">\n<li>Folder: <code class=\"notranslate\">en-us/web/api/mediasession</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/MediaSession\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/MediaSession</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/api/mediasession/index.md\">https://github.com/mdn/content/blob/main/files/en-us/web/api/mediasession/index.md</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/d22284cbba8b64afd6ad8c965d4ac2c927c59550/hovercard\" href=\"https://github.com/mdn/content/commit/d22284cbba8b64afd6ad8c965d4ac2c927c59550\"><tt>d22284c</tt></a></li>\n<li>Document last modified: 2025-07-12T03:04:39.000Z</li>\n</ul>\n</details>",
+            "url": "https://github.com/mdn/content/issues/41250",
+            "title": "[mediasession] MediaSession code samples inexplicable",
+            "date_modified": "2025-09-22T17:37:24.000Z",
+            "author": {
+                "name": "briantbutton",
+                "url": "https://github.com/briantbutton"
+            }
+        }
+    ]
+}

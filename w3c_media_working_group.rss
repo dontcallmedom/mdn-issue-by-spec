@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>W3C Media Working Group-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_media_working_group.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Media Working Group</description>
+        <lastBuildDate>Mon, 22 Sep 2025 17:37:24 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[mediasession] MediaSession code samples inexplicable]]></title>
+            <link>https://github.com/mdn/content/issues/41250</link>
+            <guid>https://github.com/mdn/content/issues/41250</guid>
+            <pubDate>Mon, 22 Sep 2025 17:37:24 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaSession" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MediaSession</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Examples:  Setting up action for a music handler</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">A)    '// pause out audio'  --&gt;  '// pause our audio'</p>
+<p dir="auto">B)   There are two lines (four, if you include the comment) that I found incomprehensible.  Here is one:</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="     updateStatus(allMeta[index], &quot;Action: play  |  Track is playing…&quot;);"><pre class="notranslate"><code class="notranslate">     updateStatus(allMeta[index], "Action: play  |  Track is playing…");
+</code></pre></div>
+<p dir="auto">Codewise, 'updateStatus', 'allMeta' and 'index' are all undefined.  Furthermore there are no mentions of those words anywhere else on the page.  I assume they had been defined in the past and the relevant code was removed.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The three undefined variables should be fulsomely explained, with relevant lines of code,  - or -<br>
+The two offending lines (plus comments) should be removed from the page.</p>
+<p dir="auto">The example makes sense without those lines although the example would be enriched if the updateStatus function was explained.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">You guys do excellent work.  Thank you.</p>
+<p dir="auto">As it happens, I am curious about the "updateStatus" function if it changes the user-visible display.  I will try to figure it out on my own.</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/mediasession</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaSession" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MediaSession</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/mediasession/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/mediasession/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/d22284cbba8b64afd6ad8c965d4ac2c927c59550/hovercard" href="https://github.com/mdn/content/commit/d22284cbba8b64afd6ad8c965d4ac2c927c59550"><tt>d22284c</tt></a></li>
+<li>Document last modified: 2025-07-12T03:04:39.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
