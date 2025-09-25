@@ -4,10 +4,50 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Thu, 25 Sep 2025 05:36:49 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 25 Sep 2025 16:42:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] "ReferenceError: can't access lexical declaration 'lightMix' before initialization"]]></title>
+            <link>https://github.com/mdn/content/issues/41294</link>
+            <guid>https://github.com/mdn/content/issues/41294</guid>
+            <pubDate>Thu, 25 Sep 2025 16:42:36 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Live demo</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The demo is blank and says</p>
+<p dir="auto">"ReferenceError: can't access lexical declaration 'lightMix' before initialization"</p>
+<p dir="auto">I believe moving the function calls to the bottom fixes it</p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="lightMix();
+colorSphere();
+runComposite();"><pre class="notranslate"><code class="notranslate">lightMix();
+colorSphere();
+runComposite();
+</code></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Demo when i moved the function calls shows the correct demo</p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/6511937/494025255-032d4592-e5af-4dca-a9a5-a28f43e610e4.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTg4MTkyNjQsIm5iZiI6MTc1ODgxODk2NCwicGF0aCI6Ii82NTExOTM3LzQ5NDAyNTI1NS0wMzJkNDU5Mi1lNWFmLTRkY2EtYTlhNS1hMjhmNDNlNjEwZTQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDkyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTA5MjVUMTY0OTI0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDk3Mjk5Zjk3NWU1YWNlMjhhMTRiOTBiNjczNjE3Zjg2ZTc0MjVmYjEzMDI1NGE4ZTU2ZjBjMzU1Yjk1ZTIxMSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.352RlQr-HqwtXXjLLyB1VsHcP4U1bucnHwx2ToLiO9Y"><img width="1858" height="917" alt="Image" src="https://private-user-images.githubusercontent.com/6511937/494025255-032d4592-e5af-4dca-a9a5-a28f43e610e4.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTg4MTkyNjQsIm5iZiI6MTc1ODgxODk2NCwicGF0aCI6Ii82NTExOTM3LzQ5NDAyNTI1NS0wMzJkNDU5Mi1lNWFmLTRkY2EtYTlhNS1hMjhmNDNlNjEwZTQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDkyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTA5MjVUMTY0OTI0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDk3Mjk5Zjk3NWU1YWNlMjhhMTRiOTBiNjczNjE3Zjg2ZTc0MjVmYjEzMDI1NGE4ZTU2ZjBjMzU1Yjk1ZTIxMSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.352RlQr-HqwtXXjLLyB1VsHcP4U1bucnHwx2ToLiO9Y" style="max-width: 100%; height: auto; max-height: 917px;"></a>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Screenshot of the error</p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/6511937/494025447-5e4142aa-9cbc-4ea8-918a-64765b8da544.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTg4MTkyNjQsIm5iZiI6MTc1ODgxODk2NCwicGF0aCI6Ii82NTExOTM3LzQ5NDAyNTQ0Ny01ZTQxNDJhYS05Y2JjLTRlYTgtOTE4YS02NDc2NWI4ZGE1NDQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDkyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTA5MjVUMTY0OTI0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OWNhNDA3OWJkMDRiYjYzZjAyNmIxZmYyYWYwNTc1ZGM3ZWE2ZjQwZDM5ODY1MDQ3ZjI5MjQ2NTIwMjdiN2EyOSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.Rt_jCvfuhyE7bnL2W46O6b1jN9YCL5Mri6HPbjpMgM8"><img width="1858" height="917" alt="Image" src="https://private-user-images.githubusercontent.com/6511937/494025447-5e4142aa-9cbc-4ea8-918a-64765b8da544.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTg4MTkyNjQsIm5iZiI6MTc1ODgxODk2NCwicGF0aCI6Ii82NTExOTM3LzQ5NDAyNTQ0Ny01ZTQxNDJhYS05Y2JjLTRlYTgtOTE4YS02NDc2NWI4ZGE1NDQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDkyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTA5MjVUMTY0OTI0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OWNhNDA3OWJkMDRiYjYzZjAyNmIxZmYyYWYwNTc1ZGM3ZWE2ZjQwZDM5ODY1MDQ3ZjI5MjQ2NTIwMjdiN2EyOSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.Rt_jCvfuhyE7bnL2W46O6b1jN9YCL5Mri6HPbjpMgM8" style="max-width: 100%; height: auto; max-height: 917px;"></a>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">I am using Firefox 143.0.1</p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/canvasrenderingcontext2d/globalcompositeoperation</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/canvasrenderingcontext2d/globalcompositeoperation/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/canvasrenderingcontext2d/globalcompositeoperation/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/116577234db1d6275c74a8bb879fce54d944f4ed/hovercard" href="https://github.com/mdn/content/commit/116577234db1d6275c74a8bb879fce54d944f4ed"><tt>1165772</tt></a></li>
+<li>Document last modified: 2025-09-11T16:42:02.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] DataTransfer.setData: is it writable after dragstart?]]></title>
             <link>https://github.com/mdn/content/issues/41284</link>
