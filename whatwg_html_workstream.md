@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] "ReferenceError: can't access lexical declaration 'lightMix' before initialization"](https://github.com/mdn/content/issues/41294) (2025-09-25T16:42:36Z)
-  
 * [\[html\] DataTransfer.setData: is it writable after dragstart?](https://github.com/mdn/content/issues/41284) (2025-09-25T05:36:49Z)
   
 * [\[html, requestidlecallback, css-backgrounds-4\] Reference page titles are not consistent and need improvements](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
