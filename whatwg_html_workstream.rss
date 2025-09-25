@@ -4,10 +4,45 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Wed, 11 Jun 2025 04:16:02 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 25 Sep 2025 05:36:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] DataTransfer.setData: is it writable after dragstart?]]></title>
+            <link>https://github.com/mdn/content/issues/41284</link>
+            <guid>https://github.com/mdn/content/issues/41284</guid>
+            <pubDate>Thu, 25 Sep 2025 05:36:49 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/setData" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/setData</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Prelliminary section.</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">I would need clarification on this but I don’t think that <code class="notranslate">DataTransfer.setData()</code> can be used on, say, the <code class="notranslate">dragover</code> function.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">There is a note for <a href="https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/clearData" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/clearData</a> which reads:</p>
+<blockquote>
+<p dir="auto">Note: This method can only be used in the handler for the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dragstart_event" rel="nofollow">dragstart</a> event, because that's the only time the drag operation's data store is writable.</p>
+</blockquote>
+<p dir="auto">That would imply that it would apply to other data writing operations. Perhaps it can be added to this page as well?</p>
+<p dir="auto">I’m happy to do this myself if someone can clarify whether this is the case.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/datatransfer/setdata</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/setData" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/setData</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/datatransfer/setdata/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/datatransfer/setdata/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ade5e1ca5c5c57d5cb53beb994bede7b20181233/hovercard" href="https://github.com/mdn/content/commit/ade5e1ca5c5c57d5cb53beb994bede7b20181233"><tt>ade5e1c</tt></a></li>
+<li>Document last modified: 2025-07-14T08:45:15.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html, requestidlecallback, css-backgrounds-4] Reference page titles are not consistent and need improvements]]></title>
             <link>https://github.com/mdn/content/issues/39894</link>
