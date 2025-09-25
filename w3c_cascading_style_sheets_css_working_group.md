@@ -6,8 +6,6 @@
   
 * [\[css-fonts-5\] \[CSS\] demo for font-variant-numeric does not show all values](https://github.com/mdn/content/issues/41198) (2025-09-18T11:12:13Z)
   
-* [\[CSS21\] Unexpected CSS visibility animation type](https://github.com/mdn/content/issues/41197) (2025-09-18T10:29:41Z)
-  
 * [\[css-grid-3\] Confusing/misleading example](https://github.com/mdn/content/issues/41176) (2025-09-17T15:17:35Z)
   
 * [\[css-fonts-5\] font-family: emoji is no longer on a standards track](https://github.com/mdn/content/issues/41093) (2025-09-10T16:16:19Z)
