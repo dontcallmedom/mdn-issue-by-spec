@@ -4,8 +4,6 @@
 
 * [\[mediasession\] MediaSession code samples inexplicable](https://github.com/mdn/content/issues/41250) (2025-09-22T17:37:24Z)
   
-* [\[css-fonts-5\] Add a note to discourage the abuse of \`system-ui\` in articles, documents, and blogs](https://github.com/mdn/content/issues/41244) (2025-09-22T12:51:28Z)
-  
 * [\[mediacapture-streams\] mediaconstrtraints video.deviceid no longer obeys 'ideal' device constraints on chromium-based browsers](https://github.com/mdn/content/issues/41220) (2025-09-19T21:03:12Z)
   
 * [\[css-fonts-5\] \[CSS\] demo for font-variant-numeric does not show all values](https://github.com/mdn/content/issues/41198) (2025-09-18T11:12:13Z)
