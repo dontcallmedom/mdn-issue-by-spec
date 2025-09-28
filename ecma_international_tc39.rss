@@ -4,47 +4,10 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Sat, 27 Sep 2025 20:01:02 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 01 Dec 2024 10:22:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript] Misleading intro]]></title>
-            <link>https://github.com/mdn/content/issues/41315</link>
-            <guid>https://github.com/mdn/content/issues/41315</guid>
-            <pubDate>Sat, 27 Sep 2025 20:01:02 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The introduction for <code class="notranslate">Array.prototype.every()</code> stating that</p>
-<blockquote>
-<p dir="auto">The <code class="notranslate">every()</code> method of <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" rel="nofollow">Array</a> instances tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.</p>
-</blockquote>
-<p dir="auto">might mislead developers into thinking the entire array is always iterated. While this is clarified later, it might be worthwhile to mention the critical performance feature of short-circuiting right away.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The <strong><code class="notranslate">every()</code></strong> method of {{jsxref("Array")}} tests whether all array elements pass a provided function's test. It's highly efficient because it short-circuits, immediately returning false upon finding the first element that fails.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">From <a href="https://tc39.es/ecma262/#sec-array.prototype.every" rel="nofollow">https://tc39.es/ecma262/#sec-array.prototype.every</a></p>
-<blockquote>
-<p dir="auto"><code class="notranslate">every</code> calls <code class="notranslate">callback</code> once for each element present in the array, in ascending order, until it finds one where <code class="notranslate">callback</code> returns <code class="notranslate">false</code></p>
-</blockquote>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/global_objects/array/every</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/array/every/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/global_objects/array/every/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/544b843570cb08d1474cfc5ec03ffb9f4edc0166/hovercard" href="https://github.com/mdn/content/commit/544b843570cb08d1474cfc5ec03ffb9f4edc0166"><tt>544b843</tt></a></li>
-<li>Document last modified: 2025-07-10T09:07:55.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[ecmascript] Yielding rejected promises from a sync generator now properly closes the iterator]]></title>
             <link>https://github.com/mdn/content/issues/37038</link>
