@@ -60,8 +60,6 @@
   
 * [\[periodic-background-sync\] periodicSync needs "periodic-background-sync" permission](https://github.com/mdn/content/issues/33692) (2024-05-21T08:55:15Z)
   
-* [\[html, mediacapture-streams\] Unclear example of MediaStream: getTrackById() method](https://github.com/mdn/content/issues/33310) (2024-04-29T11:34:54Z)
-  
 * [\[webxr\] Explanation of \`bounded-floor\`/\`local\`/\`local-floor\` needs improvement](https://github.com/mdn/content/issues/33111) (2024-04-16T04:22:18Z)
   
 * [\[css-shadow-parts-1\] Pseudo-elements may now be followed by pseudo-classes](https://github.com/mdn/content/issues/32971) (2024-04-05T20:16:52Z)
