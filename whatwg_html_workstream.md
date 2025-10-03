@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] Example for "Using frames from a video" does not appear to make sense](https://github.com/mdn/content/issues/41387) (2025-10-03T17:01:19Z)
+* [\[html\] Example for "Using frames from a video" doesn't make sense](https://github.com/mdn/content/issues/41387) (2025-10-03T17:01:19Z)
   
 * [\[html\] DataTransfer.setData: is it writable after dragstart?](https://github.com/mdn/content/issues/41284) (2025-09-25T05:36:49Z)
   
