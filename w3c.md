@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-multicol-2\] missing compatiblity for "column-span: \<integer \[1,∞\]\>"](https://github.com/mdn/content/issues/41436) (2025-10-08T10:12:53Z)
-  
 * [\[css-conditional-3, css-color-4\] \`contrast-color()\` - Contradictory information on contrast guaruntees](https://github.com/mdn/content/issues/41422) (2025-10-07T12:51:49Z)
   
 * [\[uievents\] Missing keydown exceptions](https://github.com/mdn/content/issues/41393) (2025-10-04T20:12:19Z)
