@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Platform Incubator Community Group. [![RSS feed for W3C Web Platform Incubator Community Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[background-sync\] SyncManager and other Background Synchronization APIs should be marked "Experimental"](https://github.com/mdn/content/issues/41455) (2025-10-09T18:05:44Z)
+* [\[background-sync\] Background Synchronization APIs should be marked non-standard](https://github.com/mdn/content/issues/41455) (2025-10-09T18:05:44Z)
   
 * [\[cookie-store\] CookieStore get() method return object should only support name and value](https://github.com/mdn/content/issues/40616) (2025-08-04T11:10:38Z)
   
