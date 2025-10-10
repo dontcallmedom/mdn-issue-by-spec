@@ -54,8 +54,6 @@
   
 * [\[html, wai-aria-1.2\] All \`ElementInternals\` docs for \`ARIAMixin\` properties are incorrect](https://github.com/mdn/content/issues/36508) (2024-10-26T03:40:30Z)
   
-* [\[media-source\] SourceBuffer.appendBuffer() can cause an exception to be thrown because of QuotaExceeded](https://github.com/mdn/content/issues/36404) (2024-10-18T20:01:55Z)
-  
 * [\[touch-events\] Note difference in how Touch.screenX/screenY, Touch.clientX/clientY and Touch.pageX/pageY handle zooming](https://github.com/mdn/content/issues/36326) (2024-10-14T10:01:23Z)
   
 * [\[css-pseudo-4\] File selector can be styled](https://github.com/mdn/content/issues/36090) (2024-09-28T18:18:41Z)
