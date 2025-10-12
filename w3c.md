@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[service-workers-1\] Very misleading example for window focus from notification / service worker](https://github.com/mdn/content/issues/41483) (2025-10-12T20:28:49Z)
+  
 * [\[service-workers-1\] Client URL does not change upon subsequent navigation](https://github.com/mdn/content/issues/41482) (2025-10-12T20:12:57Z)
   
 * [\[uievents\] Missing keydown exceptions](https://github.com/mdn/content/issues/41393) (2025-10-04T20:12:19Z)
