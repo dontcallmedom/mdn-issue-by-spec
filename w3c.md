@@ -20,8 +20,6 @@
   
 * [\[compositing-2\] mix-blend-mode does not blend the element with its background but with its backdrop](https://github.com/mdn/content/issues/41078) (2025-09-09T17:29:09Z)
   
-* [\[cssom-1\] CSSViewTransitionRule undocumented](https://github.com/mdn/content/issues/40896) (2025-08-26T19:28:43Z)
-  
 * [\[cookie-store\] CookieStore get() method return object should only support name and value](https://github.com/mdn/content/issues/40616) (2025-08-04T11:10:38Z)
   
 * [\[filter-effects-2\] Backdrop Root concept undocumented](https://github.com/mdn/content/issues/40602) (2025-08-03T06:46:17Z)

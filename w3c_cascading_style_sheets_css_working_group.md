@@ -10,8 +10,6 @@
   
 * [\[compositing-2\] mix-blend-mode does not blend the element with its background but with its backdrop](https://github.com/mdn/content/issues/41078) (2025-09-09T17:29:09Z)
   
-* [\[cssom-1\] CSSViewTransitionRule undocumented](https://github.com/mdn/content/issues/40896) (2025-08-26T19:28:43Z)
-  
 * [\[filter-effects-2\] Backdrop Root concept undocumented](https://github.com/mdn/content/issues/40602) (2025-08-03T06:46:17Z)
   
 * [\[css-backgrounds-4\] Rethink description comment format in CSS syntax boxes](https://github.com/mdn/content/issues/40500) (2025-07-22T09:16:06Z)
