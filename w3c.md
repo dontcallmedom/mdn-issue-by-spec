@@ -6,7 +6,7 @@
   
 * [\[service-workers-1\] Client URL does not change upon subsequent navigation](https://github.com/mdn/content/issues/41482) (2025-10-12T20:12:57Z)
   
-* [\[uievents\] Missing keydown exceptions](https://github.com/mdn/content/issues/41393) (2025-10-04T20:12:19Z)
+* [\[uievents\] There are more keydowns that don't constitute user activation](https://github.com/mdn/content/issues/41393) (2025-10-04T20:12:19Z)
   
 * [\[cssom-1\] CSSStyleDeclaration.setProperty example fails because of wrong styleSheets index](https://github.com/mdn/content/issues/41379) (2025-10-03T02:14:18Z)
   
