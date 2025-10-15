@@ -4,8 +4,6 @@
 
 * [\[cssom-1\] CSSStyleDeclaration.setProperty example fails because of wrong styleSheets index](https://github.com/mdn/content/issues/41379) (2025-10-03T02:14:18Z)
   
-* [\[css-fonts-5\] \[CSS\] demo for font-variant-numeric does not show all values](https://github.com/mdn/content/issues/41198) (2025-09-18T11:12:13Z)
-  
 * [\[css-grid-3\] Confusing/misleading example](https://github.com/mdn/content/issues/41176) (2025-09-17T15:17:35Z)
   
 * [\[compositing-2\] mix-blend-mode does not blend the element with its background but with its backdrop](https://github.com/mdn/content/issues/41078) (2025-09-09T17:29:09Z)
