@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] Unclear why one would prefer one OffscreenCanvas rendering approach over another](https://github.com/mdn/content/issues/41562) (2025-10-16T15:26:21Z)
-  
 * [\[html\] The figure doesn't show the direction of rotation](https://github.com/mdn/content/issues/41549) (2025-10-16T00:30:25Z)
   
 * [\[html\] Example for "Using frames from a video" doesn't make sense](https://github.com/mdn/content/issues/41387) (2025-10-03T17:01:19Z)
