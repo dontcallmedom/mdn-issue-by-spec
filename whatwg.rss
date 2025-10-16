@@ -4,10 +4,50 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Fri, 03 Oct 2025 17:01:19 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 Oct 2025 00:30:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] The figure doesn't show the direction of rotation]]></title>
+            <link>https://github.com/mdn/content/issues/41549</link>
+            <guid>https://github.com/mdn/content/issues/41549</guid>
+            <pubDate>Thu, 16 Oct 2025 00:30:25 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/rotate" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/rotate</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Syntax</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The function <code class="notranslate">rotate(angle)</code> rotates (presumably) "in clockwise direction".<br>
+However, the angle shown in the diagram has arrows in both directions.<br>
+[Also the angle is suddenly called <code class="notranslate">alpha</code> instead of <code class="notranslate">angle</code>.]</p>
+<p dir="auto">However, since the coordinate system uses a flipped y-axis,<br>
+it is no longer obvious which way "in clockwise direction" is.</p>
+<p dir="auto">The explanation and diagram needs to match.<br>
+One way of getting rid of "clockwise" is to talk about rotating the x-axis towards the y-axis<br>
+in the direction where the rotation is least.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">An angle indication with only one arrow.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Wikiepedia has a pate on "angular displacement".</p>
+<p dir="auto"><a href="https://en.wikipedia.org/wiki/Angular_displacement" rel="nofollow">https://en.wikipedia.org/wiki/Angular_displacement</a></p>
+<p dir="auto">Note that they are using a standard, righthanded coordinate system,<br>
+so their "clockwise" doesn't match yours "clockwise".</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/canvasrenderingcontext2d/rotate</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/rotate" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/rotate</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/canvasrenderingcontext2d/rotate/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/canvasrenderingcontext2d/rotate/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/a7265fc3effa7c25b9997135104370c057a65293/hovercard" href="https://github.com/mdn/content/commit/a7265fc3effa7c25b9997135104370c057a65293"><tt>a7265fc</tt></a></li>
+<li>Document last modified: 2025-09-25T16:11:52.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Example for "Using frames from a video" doesn't make sense]]></title>
             <link>https://github.com/mdn/content/issues/41387</link>
