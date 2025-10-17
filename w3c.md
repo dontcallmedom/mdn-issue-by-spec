@@ -8,8 +8,6 @@
   
 * [\[uievents\] There are more keydowns that don't constitute user activation](https://github.com/mdn/content/issues/41393) (2025-10-04T20:12:19Z)
   
-* [\[cssom-1\] CSSStyleDeclaration.setProperty example fails because of wrong styleSheets index](https://github.com/mdn/content/issues/41379) (2025-10-03T02:14:18Z)
-  
 * [\[mediasession\] MediaSession code samples inexplicable](https://github.com/mdn/content/issues/41250) (2025-09-22T17:37:24Z)
   
 * [\[mediacapture-streams\] mediaconstrtraints video.deviceid no longer obeys 'ideal' device constraints on chromium-based browsers](https://github.com/mdn/content/issues/41220) (2025-09-19T21:03:12Z)
