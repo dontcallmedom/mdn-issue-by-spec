@@ -4,10 +4,54 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Thu, 16 Oct 2025 00:30:25 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 19 Oct 2025 00:50:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Caret position not mentioned or demonstrated for setSelectionRange()]]></title>
+            <link>https://github.com/mdn/content/issues/41590</link>
+            <guid>https://github.com/mdn/content/issues/41590</guid>
+            <pubDate>Sun, 19 Oct 2025 00:50:03 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/setSelectionRange" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/setSelectionRange</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Caret position not mentioned or demonstrated for setSelectionRange()</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The setSelectionRange() method allows moving the caret to a position within a form field element yet the word caret is not mentioned even once on this page, forget about a simple demonstration.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<ol dir="auto">
+<li>
+<p dir="auto">The ability to move the caret for form fields should be mentioned within the first sentence for the setSelectionRange() method.</p>
+</li>
+<li>
+<p dir="auto">A basic example to move caret to second position would demonstrate something clear (versus start or end).</p>
+</li>
+</ol>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;input id=&quot;test&quot; type=&quot;text&quot; value=&quot;123456&quot; /&gt;
+
+document.getElementById('test').setSelectionRange(2,2);"><pre class="notranslate"><code class="notranslate">&lt;input id="test" type="text" value="123456" /&gt;
+
+document.getElementById('test').setSelectionRange(2,2);
+</code></pre></div>
+<p dir="auto">People learn best through multiple iterations, allowing them to easily set the position (0,1,2,3, etc) would help people grasp what is going on much quicker.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/htmlinputelement/setselectionrange</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/setSelectionRange" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/setSelectionRange</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlinputelement/setselectionrange/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlinputelement/setselectionrange/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/76d6c2c2bcca61d0d14ed464356716090097bc7a/hovercard" href="https://github.com/mdn/content/commit/76d6c2c2bcca61d0d14ed464356716090097bc7a"><tt>76d6c2c</tt></a></li>
+<li>Document last modified: 2025-07-30T17:14:37.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] The figure doesn't show the direction of rotation]]></title>
             <link>https://github.com/mdn/content/issues/41549</link>
