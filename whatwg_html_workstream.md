@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, uievents, dom\] Information missing about using the load property will overwrite earlier values](https://github.com/mdn/content/issues/41593) (2025-10-19T18:40:01Z)
+  
 * [\[html\] Caret position not mentioned or demonstrated for setSelectionRange()](https://github.com/mdn/content/issues/41590) (2025-10-19T00:50:03Z)
   
 * [\[html\] The figure doesn't show the direction of rotation](https://github.com/mdn/content/issues/41549) (2025-10-16T00:30:25Z)

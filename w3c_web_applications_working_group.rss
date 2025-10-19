@@ -4,10 +4,41 @@
         <title>W3C Web Applications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_applications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Applications Working Group</description>
-        <lastBuildDate>Sat, 04 Oct 2025 20:12:19 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 19 Oct 2025 18:40:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html, uievents, dom] Information missing about using the load property will overwrite earlier values]]></title>
+            <link>https://github.com/mdn/content/issues/41593</link>
+            <guid>https://github.com/mdn/content/issues/41593</guid>
+            <pubDate>Sun, 19 Oct 2025 18:40:01 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Syntax, Examples</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The page suggests that it makes no difference if you use addEventListener (with "load") or onload. But, as I understand it, you can use addEventListener multiple times and all code will run whereas if you set onload more than once, only the last function will run due to overwriting.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A "Note" and perhaps comments in the examples.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://stackoverflow.com/questions/21298282/what-happens-if-multiple-scripts-set-window-onload" rel="nofollow">https://stackoverflow.com/questions/21298282/what-happens-if-multiple-scripts-set-window-onload</a><br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/window/load_event</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/load_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/load_event/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/116577234db1d6275c74a8bb879fce54d944f4ed/hovercard" href="https://github.com/mdn/content/commit/116577234db1d6275c74a8bb879fce54d944f4ed"><tt>1165772</tt></a></li>
+<li>Document last modified: 2025-09-11T16:42:02.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[uievents] There are more keydowns that don't constitute user activation]]></title>
             <link>https://github.com/mdn/content/issues/41393</link>
