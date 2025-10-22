@@ -6,8 +6,6 @@
   
 * [\[html\] The figure doesn't show the direction of rotation](https://github.com/mdn/content/issues/41549) (2025-10-16T00:30:25Z)
   
-* [\[html\] Example for "Using frames from a video" doesn't make sense](https://github.com/mdn/content/issues/41387) (2025-10-03T17:01:19Z)
-  
 * [\[html\] DataTransfer.setData: is it writable after dragstart?](https://github.com/mdn/content/issues/41284) (2025-09-25T05:36:49Z)
   
 * [\[dom\] Event timeStamp accuracy description is misleading](https://github.com/mdn/content/issues/40673) (2025-08-08T04:41:43Z)

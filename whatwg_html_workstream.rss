@@ -93,58 +93,6 @@ so their "clockwise" doesn't match yours "clockwise".</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Example for "Using frames from a video" doesn't make sense]]></title>
-            <link>https://github.com/mdn/content/issues/41387</link>
-            <guid>https://github.com/mdn/content/issues/41387</guid>
-            <pubDate>Fri, 03 Oct 2025 17:01:19 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Using_images" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Using_images</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Using frames from a video</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The example in the section "Using frames from a video" (<a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Using_images#using_frames_from_a_video" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Using_images#using_frames_from_a_video</a>) does not make sense. The section reads:</p>
-<blockquote>
-<p dir="auto">You can also use frames from a video being presented by a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/video" rel="nofollow"></a> element (even if the video is not visible). For example, if you have a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/video" rel="nofollow"></a> element with the ID "myVideo", you can do this:</p>
-</blockquote>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="function getMyVideo() {
-  const canvas = document.getElementById(&quot;canvas&quot;);
-  const ctx = canvas.getContext(&quot;2d&quot;);
-  return document.getElementById(&quot;myVideo&quot;);
-}"><pre class="notranslate"><code class="notranslate">function getMyVideo() {
-  const canvas = document.getElementById("canvas");
-  const ctx = canvas.getContext("2d");
-  return document.getElementById("myVideo");
-}
-</code></pre></div>
-<blockquote>
-<p dir="auto">This returns the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement" rel="nofollow">HTMLVideoElement</a> object for the video, which, as covered earlier, can be used as an image source for the canvas.</p>
-</blockquote>
-<p dir="auto">Multiple problems:</p>
-<ul dir="auto">
-<li>the first two lines in the getMyVideo function are dead code. They do not contribute to the return value of the function, nor do they have a useful side effect</li>
-<li>The remaining last line simply returns the video element. The text following the exmples states that it may be used as source for the canvas, but no example is given to demonstrate how</li>
-<li>The whole section was supposed to be about getting frames from the video, and using those as source. No code is given that even extracts frames.</li>
-</ul>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Practical example that gets the video element, code that extracts frames at particular timestamps, and code that shows how to use those frames as source for the canvas.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">I'm trying to find out how to do this, I was hoping MDN would tell me. I don't have supporting info, else I'd give it.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">Love MDN! Very very rarely run into an issue, I hope my feedback will help to make this better.</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/canvas_api/tutorial/using_images</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Using_images" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Using_images</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/canvas_api/tutorial/using_images/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/canvas_api/tutorial/using_images/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b4d7275e992575d765bd1f504c28c0a64e1d0632/hovercard" href="https://github.com/mdn/content/commit/b4d7275e992575d765bd1f504c28c0a64e1d0632"><tt>b4d7275</tt></a></li>
-<li>Document last modified: 2025-09-21T07:40:09.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] DataTransfer.setData: is it writable after dragstart?]]></title>
             <link>https://github.com/mdn/content/issues/41284</link>
             <guid>https://github.com/mdn/content/issues/41284</guid>
