@@ -10,8 +10,6 @@
   
 * [\[mediasession\] MediaSession code samples inexplicable](https://github.com/mdn/content/issues/41250) (2025-09-22T17:37:24Z)
   
-* [\[mediacapture-streams\] mediaconstrtraints video.deviceid no longer obeys 'ideal' device constraints on chromium-based browsers](https://github.com/mdn/content/issues/41220) (2025-09-19T21:03:12Z)
-  
 * [\[css-grid-3\] Confusing/misleading example](https://github.com/mdn/content/issues/41176) (2025-09-17T15:17:35Z)
   
 * [\[compositing-2\] mix-blend-mode does not blend the element with its background but with its backdrop](https://github.com/mdn/content/issues/41078) (2025-09-09T17:29:09Z)
