@@ -80,16 +80,15 @@ This event is fired continuously when an element or text selection is being drag
 <p dir="auto">See "What information was incorrect, unhelpful, or incomplete?" section above for inline links to references.</p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto">I did a quick test with the following code (Chrome, Safari, Firefox on macOS; Chrome, Firefox on Linux), and saw values in the range 0...50, with the exception of Firefox on Linux where the event does not fire if the mouse is stationary (this seems like a bug).</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="let lastDragTime = 0;
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="let lastDragTime = 0;
 document.ondragover = ((e) =&gt; {
   console.log(performance.now() - lastDragTime);
   lastDragTime = performance.now();
-});"><pre lang="javascript" class="notranslate"><code class="notranslate">let lastDragTime = 0;
-document.ondragover = ((e) =&gt; {
-  console.log(performance.now() - lastDragTime);
-  lastDragTime = performance.now();
-});
-</code></pre></div>
+});"><pre class="notranslate"><span class="pl-k">let</span> <span class="pl-s1">lastDragTime</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span><span class="pl-kos">;</span>
+<span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">ondragover</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">performance</span><span class="pl-kos">.</span><span class="pl-en">now</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">-</span> <span class="pl-s1">lastDragTime</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-s1">lastDragTime</span> <span class="pl-c1">=</span> <span class="pl-s1">performance</span><span class="pl-kos">.</span><span class="pl-en">now</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">This seems to match closest with the statement "every 50 ms WHEN mouse is not moving ELSE much faster between 5 ms (slow movement) and 1ms (fast movement) approximately" found in <a href="https://developer.mozilla.org/en-US/docs/Web/API/DragEvent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DragEvent</a></p>
 <p dir="auto">Based on this test information, I think it would make most sense to update the information in the <code class="notranslate">dragover</code> event page to match the note in the DragEvent page, and to add an additional note that typical browser timing behavior is different from the spec. However, I would really like some extra eyes on whether I read the spec correctly, since I could be interpreting it wrong.</p>
 <p dir="auto">Thank you!</p>

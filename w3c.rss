@@ -161,13 +161,13 @@ grid: auto-flow 300px / repeat(3, 200px);"><pre class="notranslate"><span class=
 <span class="pl-c">   &lt;'grid-template-columns'&gt; values */</span>
 <span class="pl-c1">grid</span><span class="pl-kos">:</span> auto-flow <span class="pl-c1">300<span class="pl-smi">px</span></span> <span class="pl-c1">/</span> <span class="pl-en">repeat</span>(<span class="pl-c1">3</span><span class="pl-kos">,</span> <span class="pl-c1">200<span class="pl-smi">px</span></span>);</pre></div>
 <p dir="auto">The 3rd example in each uses of those sections (which I've isolated above), uses <code class="notranslate">repeat(3, [line1 line2 line3] 200px);</code>. When reading this, I believe most people would assume this will name the lines "line1", "line2", "line3" respectively, but instead, it assigns all three names to each of the lines. Using the repeat with multiple line names doesn't have much practical value (that I can think of).</p>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/25749407/490625432-4d479248-96e4-4f95-ad53-beee61696bbd.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE1NDMwMzUsIm5iZiI6MTc2MTU0MjczNSwicGF0aCI6Ii8yNTc0OTQwNy80OTA2MjU0MzItNGQ0NzkyNDgtOTZlNC00Zjk1LWFkNTMtYmVlZTYxNjk2YmJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI3VDA1MjUzNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI4YWYxNjFjZTM5ODViNGE1ZTI2NTIxY2ExMTE2MjU3MmZhOTJjOTUwY2UwYmYyYjdlMzhmNGQ1OGRmNDJlOGImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.GrwST02rIOfJfCb4-ZQmAN_MU8aGJVUvU-j6vrDx-Z0"><img width="2000" height="484" alt="Image" src="https://private-user-images.githubusercontent.com/25749407/490625432-4d479248-96e4-4f95-ad53-beee61696bbd.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE1NDMwMzUsIm5iZiI6MTc2MTU0MjczNSwicGF0aCI6Ii8yNTc0OTQwNy80OTA2MjU0MzItNGQ0NzkyNDgtOTZlNC00Zjk1LWFkNTMtYmVlZTYxNjk2YmJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI3VDA1MjUzNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI4YWYxNjFjZTM5ODViNGE1ZTI2NTIxY2ExMTE2MjU3MmZhOTJjOTUwY2UwYmYyYjdlMzhmNGQ1OGRmNDJlOGImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.GrwST02rIOfJfCb4-ZQmAN_MU8aGJVUvU-j6vrDx-Z0" style="max-width: 100%; height: auto; max-height: 484px;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/25749407/490625432-4d479248-96e4-4f95-ad53-beee61696bbd.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE1NDQwNjYsIm5iZiI6MTc2MTU0Mzc2NiwicGF0aCI6Ii8yNTc0OTQwNy80OTA2MjU0MzItNGQ0NzkyNDgtOTZlNC00Zjk1LWFkNTMtYmVlZTYxNjk2YmJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI3VDA1NDI0NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTJkY2NmYWU4MDNkZDI1MzY4OTBhMGE3Y2U4YjYxZjZjYWZlNTE4YzgzZGRjYjA5ODAwYmVmNmYxMTZmMTVhODcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Q3pNwPRNAK_Q2TTNpx1KcDvawm1PvpjHGaR3uh63Gag"><img width="2000" height="484" alt="Image" src="https://private-user-images.githubusercontent.com/25749407/490625432-4d479248-96e4-4f95-ad53-beee61696bbd.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE1NDQwNjYsIm5iZiI6MTc2MTU0Mzc2NiwicGF0aCI6Ii8yNTc0OTQwNy80OTA2MjU0MzItNGQ0NzkyNDgtOTZlNC00Zjk1LWFkNTMtYmVlZTYxNjk2YmJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI3VDA1NDI0NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTJkY2NmYWU4MDNkZDI1MzY4OTBhMGE3Y2U4YjYxZjZjYWZlNTE4YzgzZGRjYjA5ODAwYmVmNmYxMTZmMTVhODcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Q3pNwPRNAK_Q2TTNpx1KcDvawm1PvpjHGaR3uh63Gag" style="max-width: 100%; height: auto; max-height: 484px;"></a>
 <p dir="auto">.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think it would be best to remove the name entirely, because having the same name across each column isn't very useful in my opinion, but there might be use cases I'm missing, in which case having a single line name would make more sense.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">I set up <a href="https://codepen.io/kevinpowell/pen/YPwKEJG/52a328b44dc712924d2c60524108b248?editors=0100" rel="nofollow">a demo of it here</a>. Using Chrome's devtools, you can see the line names for each column are "line1 line2 line3".</p>
-<p dir="auto">Here is a screenshot showing it: <a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/25749407/490626434-b8890992-8bdc-4cc9-a508-149ec118486c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE1NDMwMzUsIm5iZiI6MTc2MTU0MjczNSwicGF0aCI6Ii8yNTc0OTQwNy80OTA2MjY0MzQtYjg4OTA5OTItOGJkYy00Y2M5LWE1MDgtMTQ5ZWMxMTg0ODZjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI3VDA1MjUzNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg2ODIzNzZkZjEwZjMwMGFlMjdiZjUzNWUyNWM5NmE5ZWU4YjRkZWIyYzcwMjhhMDdhZDBhNDk1NWEwMzFmMzkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.daughhZYFKbCj1XPnDKmUCS8mqIsznOEot4TUVhVFpM"><img width="2000" height="484" alt="Image" src="https://private-user-images.githubusercontent.com/25749407/490626434-b8890992-8bdc-4cc9-a508-149ec118486c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE1NDMwMzUsIm5iZiI6MTc2MTU0MjczNSwicGF0aCI6Ii8yNTc0OTQwNy80OTA2MjY0MzQtYjg4OTA5OTItOGJkYy00Y2M5LWE1MDgtMTQ5ZWMxMTg0ODZjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI3VDA1MjUzNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg2ODIzNzZkZjEwZjMwMGFlMjdiZjUzNWUyNWM5NmE5ZWU4YjRkZWIyYzcwMjhhMDdhZDBhNDk1NWEwMzFmMzkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.daughhZYFKbCj1XPnDKmUCS8mqIsznOEot4TUVhVFpM" style="max-width: 100%; height: auto; max-height: 484px;"></a></p>
+<p dir="auto">Here is a screenshot showing it: <a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/25749407/490626434-b8890992-8bdc-4cc9-a508-149ec118486c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE1NDQwNjYsIm5iZiI6MTc2MTU0Mzc2NiwicGF0aCI6Ii8yNTc0OTQwNy80OTA2MjY0MzQtYjg4OTA5OTItOGJkYy00Y2M5LWE1MDgtMTQ5ZWMxMTg0ODZjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI3VDA1NDI0NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU4ZThiY2Y5NzM4M2NiZjA1ZGI4Mzg1ZDllZWNlNDM5Mjk0MThmMGMxMzBlYzM0NzE4ZDJhMzg4M2E5YWJmODEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.2vqDx9RHm16MqJMr_w1dE_ECtBEybU3NAg2XZgnQSlo"><img width="2000" height="484" alt="Image" src="https://private-user-images.githubusercontent.com/25749407/490626434-b8890992-8bdc-4cc9-a508-149ec118486c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE1NDQwNjYsIm5iZiI6MTc2MTU0Mzc2NiwicGF0aCI6Ii8yNTc0OTQwNy80OTA2MjY0MzQtYjg4OTA5OTItOGJkYy00Y2M5LWE1MDgtMTQ5ZWMxMTg0ODZjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI3VDA1NDI0NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU4ZThiY2Y5NzM4M2NiZjA1ZGI4Mzg1ZDllZWNlNDM5Mjk0MThmMGMxMzBlYzM0NzE4ZDJhMzg4M2E5YWJmODEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.2vqDx9RHm16MqJMr_w1dE_ECtBEybU3NAg2XZgnQSlo" style="max-width: 100%; height: auto; max-height: 484px;"></a></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">MDN metadata</h3>
@@ -675,19 +675,17 @@ Uses the ratio of x-height (height of lowercase "x" in a font) to font size (asp
 <h3 dir="auto">What specific section or headline is this issue about?</h3>
 <p dir="auto">Description and Example</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;style&gt;
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;style&gt;
 ...
-&lt;/style&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;style&gt;
+&lt;/style&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>
 ...
-&lt;/style&gt;
-</code></pre></div>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span></pre></div>
 <h3 dir="auto">What did you expect to see?</h3>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;style&gt;&lt;![CDATA[
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;style&gt;&lt;![CDATA[
 ...
-]]&lt;/style&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;style&gt;&lt;![CDATA[
+]]&lt;/style&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span>&lt;![<span class="pl-ent">CDATA</span>[
 ...
-]]&lt;/style&gt;
-</code></pre></div>
+]]<span class="pl-kos">&lt;/</span><span class="pl-ent">style</span><span class="pl-kos">&gt;</span></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><a href="https://www.w3.org/TR/SVG11/styling.html#StyleElementExample" rel="nofollow">https://www.w3.org/TR/SVG11/styling.html#StyleElementExample</a></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
@@ -695,7 +693,7 @@ Uses the ratio of x-height (height of lowercase "x" in a font) to font size (asp
 What's worse is that, without this encapsulation, your SVG will be rejected by FireFox's XML-parser (with error), maybe other browsers too have not tried.</p>
 <p dir="auto">Perhaps Firefox and/or some specification should explicitly allow usage of those characters inside the contents of the SVG <code class="notranslate">&lt;style&gt;</code> tag without the need to "escape" them using char-entities like <code class="notranslate">&amp;amp;</code> for <code class="notranslate">&amp;</code>...</p>
 <p dir="auto">Example SVG that will trigger the parser-error on each nesting level, if im correct: <em>(Have only tested the <code class="notranslate">&amp;</code> one)</em></p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;svg&gt;
+<div class="highlight highlight-text-xml-svg notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;svg&gt;
   &lt;style&gt;
     selector1 {
       &amp;#selector2 {
@@ -706,19 +704,18 @@ What's worse is that, without this encapsulation, your SVG will be rejected by F
     }
   &lt;/style&gt;
   ...
-&lt;/svg&gt;"><pre lang="svg" class="notranslate"><code class="notranslate">&lt;svg&gt;
-  &lt;style&gt;
-    selector1 {
-      &amp;#selector2 {
-        &gt; selector3 {
-          ...
-        }
-      }
-    }
-  &lt;/style&gt;
+&lt;/svg&gt;"><pre class="notranslate">&lt;<span class="pl-ent">svg</span>&gt;
+  &lt;<span class="pl-ent">style</span>&gt;<span class="pl-s1"></span>
+<span class="pl-s1">    selector1 {</span>
+<span class="pl-s1">      &amp;#<span class="pl-c1">selector</span>2 {</span>
+<span class="pl-s1">        &gt; <span class="pl-c1">selector</span>3 {</span>
+<span class="pl-s1">          ...</span>
+<span class="pl-s1">        }</span>
+<span class="pl-s1">      }</span>
+<span class="pl-s1">    }</span>
+<span class="pl-s1"></span>  &lt;/<span class="pl-ent">style</span>&gt;
   ...
-&lt;/svg&gt;
-</code></pre></div>
+&lt;/<span class="pl-ent">svg</span>&gt;</pre></div>
 <ul dir="auto">
 <li>PS: Maybe good info to checkout also wrt. problems with external stylesheets in SVG: <a href="https://stackoverflow.com/staging-ground/79378292" rel="nofollow">https://stackoverflow.com/staging-ground/79378292</a></li>
 </ul>
@@ -865,18 +862,16 @@ but the demo allows initial tab key press to go to the first tab, but then uses 
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1928932" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=1928932</a> see <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1928932#c21" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=1928932#c21</a>. If CSP enabled, this
 <ul class="contains-task-list">
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> enforces TT for assignment of script to text -
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="let script = document.createElement(&quot;script&quot;);
-script.text = &quot;/* arbitrary JS code */&quot;; "><pre lang="js" class="notranslate"><code class="notranslate">let script = document.createElement("script");
-script.text = "/* arbitrary JS code */"; 
-</code></pre></div>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="let script = document.createElement(&quot;script&quot;);
+script.text = &quot;/* arbitrary JS code */&quot;; "><pre class="notranslate"><span class="pl-k">let</span> <span class="pl-s1">script</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createElement</span><span class="pl-kos">(</span><span class="pl-s">"script"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">script</span><span class="pl-kos">.</span><span class="pl-c1">text</span> <span class="pl-c1">=</span> <span class="pl-s">"/* arbitrary JS code */"</span><span class="pl-kos">;</span> </pre></div>
 </li>
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> Check at the script execution part for cases where script is about to be executed because there are cases other than direct assignment of text, where the API does not lend itself to TT (read above link). I think action here is to update TT docs to make it clear these kinds of check exist.
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="let script = document.createElement(&quot;script&quot;);
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="let script = document.createElement(&quot;script&quot;);
 script.appendChild(document.createTextNode(&quot;/* arbitrary JS code */&quot;));
-document.body.appendChild(script);"><pre lang="js" class="notranslate"><code class="notranslate">let script = document.createElement("script");
-script.appendChild(document.createTextNode("/* arbitrary JS code */"));
-document.body.appendChild(script);
-</code></pre></div>
+document.body.appendChild(script);"><pre class="notranslate"><span class="pl-k">let</span> <span class="pl-s1">script</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createElement</span><span class="pl-kos">(</span><span class="pl-s">"script"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">script</span><span class="pl-kos">.</span><span class="pl-en">appendChild</span><span class="pl-kos">(</span><span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createTextNode</span><span class="pl-kos">(</span><span class="pl-s">"/* arbitrary JS code */"</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">body</span><span class="pl-kos">.</span><span class="pl-en">appendChild</span><span class="pl-kos">(</span><span class="pl-s1">script</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 </li>
 </ul>
 </li>
@@ -958,16 +953,15 @@ This event is fired continuously when an element or text selection is being drag
 <p dir="auto">See "What information was incorrect, unhelpful, or incomplete?" section above for inline links to references.</p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto">I did a quick test with the following code (Chrome, Safari, Firefox on macOS; Chrome, Firefox on Linux), and saw values in the range 0...50, with the exception of Firefox on Linux where the event does not fire if the mouse is stationary (this seems like a bug).</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="let lastDragTime = 0;
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="let lastDragTime = 0;
 document.ondragover = ((e) =&gt; {
   console.log(performance.now() - lastDragTime);
   lastDragTime = performance.now();
-});"><pre lang="javascript" class="notranslate"><code class="notranslate">let lastDragTime = 0;
-document.ondragover = ((e) =&gt; {
-  console.log(performance.now() - lastDragTime);
-  lastDragTime = performance.now();
-});
-</code></pre></div>
+});"><pre class="notranslate"><span class="pl-k">let</span> <span class="pl-s1">lastDragTime</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span><span class="pl-kos">;</span>
+<span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">ondragover</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">e</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">performance</span><span class="pl-kos">.</span><span class="pl-en">now</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">-</span> <span class="pl-s1">lastDragTime</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-s1">lastDragTime</span> <span class="pl-c1">=</span> <span class="pl-s1">performance</span><span class="pl-kos">.</span><span class="pl-en">now</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <p dir="auto">This seems to match closest with the statement "every 50 ms WHEN mouse is not moving ELSE much faster between 5 ms (slow movement) and 1ms (fast movement) approximately" found in <a href="https://developer.mozilla.org/en-US/docs/Web/API/DragEvent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DragEvent</a></p>
 <p dir="auto">Based on this test information, I think it would make most sense to update the information in the <code class="notranslate">dragover</code> event page to match the note in the DragEvent page, and to add an additional note that typical browser timing behavior is different from the spec. However, I would really like some extra eyes on whether I read the spec correctly, since I could be interpreting it wrong.</p>
 <p dir="auto">Thank you!</p>
@@ -998,7 +992,7 @@ document.ondragover = ((e) =&gt; {
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">description of the <code class="notranslate">sizeAdjust</code> property</p>
 <p dir="auto">It does exist, see<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE1NDMwMzAsIm5iZiI6MTc2MTU0MjczMCwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI3VDA1MjUzMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU3MzEwMmZmY2UzNzJlZDE2OGQxZTA1YzZhYWNkYWYxMzJkZGEzNDE5NDdiN2Y1MTY0MjBkYTAwNDE5NzNmNTMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.DawKeOji6n0PIeF4GtljsPdK5ZczLwfbUW6msrZXEtQ"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE1NDMwMzAsIm5iZiI6MTc2MTU0MjczMCwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI3VDA1MjUzMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU3MzEwMmZmY2UzNzJlZDE2OGQxZTA1YzZhYWNkYWYxMzJkZGEzNDE5NDdiN2Y1MTY0MjBkYTAwNDE5NzNmNTMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.DawKeOji6n0PIeF4GtljsPdK5ZczLwfbUW6msrZXEtQ" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE1NDQwNjQsIm5iZiI6MTc2MTU0Mzc2NCwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI3VDA1NDI0NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRlOTY4MzliMmQ5MGZjYmZlNDNjMGI5ZTdjYjkxMzQ3ZDM4MWYxZDQzMzk5NjJjMGVhZDkwMDJhODI3M2U0YzEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.wEaiANoC0Aq2vqnwCwoejL5ea2D03hyUkBmr0zpk23g"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE1NDQwNjQsIm5iZiI6MTc2MTU0Mzc2NCwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI3VDA1NDI0NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRlOTY4MzliMmQ5MGZjYmZlNDNjMGI5ZTdjYjkxMzQ3ZDM4MWYxZDQzMzk5NjJjMGVhZDkwMDJhODI3M2U0YzEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.wEaiANoC0Aq2vqnwCwoejL5ea2D03hyUkBmr0zpk23g" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
