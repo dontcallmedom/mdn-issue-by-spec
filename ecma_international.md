@@ -4,7 +4,5 @@
 
 * [\[ecmascript\] Map.prototype.has() refers to WeakMap instead of Map instance](https://github.com/mdn/content/issues/41721) (2025-10-28T16:11:48Z)
   
-* [\[ecmascript\] \`null\`: mention unusual \`typeof\` value on page](https://github.com/mdn/content/issues/41717) (2025-10-28T01:03:37Z)
-  
 * [\[ecmascript\] Yielding rejected promises from a sync generator now properly closes the iterator](https://github.com/mdn/content/issues/37038) (2024-12-01T10:22:47Z)
   
