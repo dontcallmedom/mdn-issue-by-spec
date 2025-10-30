@@ -46,7 +46,7 @@
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto">I thought that the Exceptions could be the same as for Response .json instance method: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Response/json#exceptions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Response/json#exceptions</a></p>
 <p dir="auto">But it seems like <code class="notranslate">AbortError</code> should not be there, because even if you abort signal, exceptions are not thrown in any runtimes(chrome, safari, deno, bun, node) I tested with this code:</p>
-<div class="highlight highlight-source-ts notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const controller = new AbortController();
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const controller = new AbortController();
 const request = new Request(&quot;https://google.com&quot;, {
   method: &quot;POST&quot;,
   body: &quot;{}&quot;,
@@ -54,15 +54,16 @@ const request = new Request(&quot;https://google.com&quot;, {
 });
 
 controller.abort();
-request.json().then(() =&gt; console.log(&quot;Success&quot;));"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">controller</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">AbortController</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-k">const</span> <span class="pl-s1">request</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Request</span><span class="pl-kos">(</span><span class="pl-s">"https://google.com"</span><span class="pl-kos">,</span> <span class="pl-kos">{</span>
-  <span class="pl-c1">method</span>: <span class="pl-s">"POST"</span><span class="pl-kos">,</span>
-  <span class="pl-c1">body</span>: <span class="pl-s">"{}"</span><span class="pl-kos">,</span>
-  <span class="pl-c1">signal</span>: <span class="pl-s1">controller</span><span class="pl-kos">.</span><span class="pl-c1">signal</span><span class="pl-kos">,</span>
-<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+request.json().then(() =&gt; console.log(&quot;Success&quot;));"><pre lang="ts" class="notranslate"><code class="notranslate">const controller = new AbortController();
+const request = new Request("https://google.com", {
+  method: "POST",
+  body: "{}",
+  signal: controller.signal,
+});
 
-<span class="pl-s1">controller</span><span class="pl-kos">.</span><span class="pl-en">abort</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-s1">request</span><span class="pl-kos">.</span><span class="pl-en">json</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"Success"</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>]]></content:encoded>
+controller.abort();
+request.json().then(() =&gt; console.log("Success"));
+</code></pre></div>]]></content:encoded>
         </item>
     </channel>
 </rss>
