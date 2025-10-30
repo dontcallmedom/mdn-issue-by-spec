@@ -4,10 +4,40 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Sun, 26 Oct 2025 16:06:33 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 30 Oct 2025 16:56:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[dom] cloneNode parameter default value]]></title>
+            <link>https://github.com/mdn/content/issues/41749</link>
+            <guid>https://github.com/mdn/content/issues/41749</guid>
+            <pubDate>Thu, 30 Oct 2025 16:56:32 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Parameters</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The information provided about the parameter says what happens if <code class="notranslate">true</code> or <code class="notranslate">false</code> is provided, but not what happens with the subtree if there is no parameter provided (it is noted that the parameter is optional).</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">An indication that if no parameter is provided it is the same as passing <code class="notranslate">false</code>. I'm afraid I don't know if that should be shown as a default, or what the correct way of showing this on MDN is.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://dom.spec.whatwg.org/#ref-for-dom-node-clonenode%E2%91%A0" rel="nofollow">https://dom.spec.whatwg.org/#ref-for-dom-node-clonenode%E2%91%A0</a> - Notes the default is <code class="notranslate">false</code>.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/node/clonenode</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/node/clonenode/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/node/clonenode/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/a84b606ffd77c40a7306be6c932a74ab9ce6ab96/hovercard" href="https://github.com/mdn/content/commit/a84b606ffd77c40a7306be6c932a74ab9ce6ab96"><tt>a84b606</tt></a></li>
+<li>Document last modified: 2025-06-24T06:12:11.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[fetch] Web API Request json() method does not list the Exceptions]]></title>
             <link>https://github.com/mdn/content/issues/41689</link>
