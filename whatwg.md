@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Path2: Example is confusing (or not adequately explained)](https://github.com/mdn/content/issues/41793) (2025-11-03T17:14:28Z)
+  
 * [\[fetch\] Web API Request json() method does not list the Exceptions](https://github.com/mdn/content/issues/41689) (2025-10-26T16:06:33Z)
   
 * [\[html\] Caret position not mentioned or demonstrated for setSelectionRange()](https://github.com/mdn/content/issues/41590) (2025-10-19T00:50:03Z)
