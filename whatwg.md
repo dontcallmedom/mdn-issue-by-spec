@@ -4,8 +4,6 @@
 
 * [\[html\] Path2: Example is confusing (or not adequately explained)](https://github.com/mdn/content/issues/41793) (2025-11-03T17:14:28Z)
   
-* [\[fetch\] Web API Request json() method does not list the Exceptions](https://github.com/mdn/content/issues/41689) (2025-10-26T16:06:33Z)
-  
 * [\[html\] Caret position not mentioned or demonstrated for setSelectionRange()](https://github.com/mdn/content/issues/41590) (2025-10-19T00:50:03Z)
   
 * [\[html\] The figure doesn't show the direction of rotation](https://github.com/mdn/content/issues/41549) (2025-10-16T00:30:25Z)
