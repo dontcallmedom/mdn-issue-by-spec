@@ -4,10 +4,41 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Fri, 07 Nov 2025 04:50:14 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 21 Nov 2025 17:38:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Update uses of `PredefinedColorSpace` to include `srgb-linear` and `display-p3-linear`]]></title>
+            <link>https://github.com/mdn/content/issues/42050</link>
+            <guid>https://github.com/mdn/content/issues/42050</guid>
+            <pubDate>Fri, 21 Nov 2025 17:38:23 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getContextAttributes#colorspace" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getContextAttributes#colorspace</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">colorSpace</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">In <a href="https://github.com/whatwg/html/pull/11529" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/html/pull/11529/hovercard">this PR</a> that is landing presently, we are adding two more entries to the <code class="notranslate">PredefinedColorSpace</code> enum.</p>
+<p dir="auto">MDN doesn't currently have a page for <code class="notranslate">PredefinedColorSpace</code>. Rather, each instance where it is used lists all possible enum values.</p>
+<p dir="auto">I believe that the exhaustive list is:</p>
+<ul dir="auto">
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext#colorspace" rel="nofollow">HTMLCanvasElement getContext</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getContextAttributes#colorspace" rel="nofollow">2D canvas getContextAttributes</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/unpackColorSpace" rel="nofollow">WebGL unpackColorSpace</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/drawingBufferColorSpace" rel="nofollow">WebGL drawingBufferColorSpace</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ImageData/colorSpace" rel="nofollow">ImageData attribute</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ImageData/ImageData#colorspace" rel="nofollow">ImageData constructor</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/GPUDevice/importExternalTexture#colorspace" rel="nofollow">WebGPU importExternalTexture</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/GPUQueue/copyExternalImageToTexture#colorspace" rel="nofollow">WebGPU copyExternalImageToTexture</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/GPUCanvasContext/configure#colorspace" rel="nofollow">WebGPU canvas configuration</a></li>
+</ul>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Each instance just includes <code class="notranslate">srgb</code> and <code class="notranslate">display-p3</code>. The spaces <code class="notranslate">srgb-linear</code> and <code class="notranslate">display-p3-linear</code> need to be added.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[streams] Provide a better description for CompressionStream: readable property]]></title>
             <link>https://github.com/mdn/content/issues/41833</link>

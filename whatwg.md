@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Update uses of \`PredefinedColorSpace\` to include \`srgb-linear\` and \`display-p3-linear\`](https://github.com/mdn/content/issues/42050) (2025-11-21T17:38:23Z)
+  
 * [\[streams\] Provide a better description for CompressionStream: readable property](https://github.com/mdn/content/issues/41833) (2025-11-07T04:50:14Z)
   
 * [\[html\] Path2: Example is confusing (or not adequately explained)](https://github.com/mdn/content/issues/41793) (2025-11-03T17:14:28Z)
