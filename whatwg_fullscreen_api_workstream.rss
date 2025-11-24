@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>WHATWG Fullscreen API Workstream-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_fullscreen_api_workstream.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG Fullscreen API Workstream</description>
+        <lastBuildDate>Mon, 24 Nov 2025 16:28:07 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[fullscreen] Mention different behavior when fullscreen is toggled by the browser]]></title>
+            <link>https://github.com/mdn/content/issues/42091</link>
+            <guid>https://github.com/mdn/content/issues/42091</guid>
+            <pubDate>Mon, 24 Nov 2025 16:28:07 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/fullscreenElement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/fullscreenElement</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Document: fullscreenElement property</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The description reads (emphasis mine):</p>
+<blockquote>
+<p dir="auto">The Document.fullscreenElement read-only property returns the Element that is currently being presented in fullscreen mode in this document, or <em><strong>null if fullscreen mode is not currently in use</strong></em>.</p>
+</blockquote>
+<p dir="auto">I think it is a bit deceiving, because if fullscreen is enabled by the browser after a user presses F11 (on Chromium), the property is null as well.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I think that it would be helpful to mention that the behavior when fullscreen is toggled by the browser (when F11 is pressed) is different than that when fullscreen is toggled programmatically (using the Fullscreen API).</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/document/fullscreenelement</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/fullscreenElement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/fullscreenElement</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/document/fullscreenelement/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/document/fullscreenelement/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e9b6cd1b7fa8612257b72b2a85a96dd7d45c0200/hovercard" href="https://github.com/mdn/content/commit/e9b6cd1b7fa8612257b72b2a85a96dd7d45c0200"><tt>e9b6cd1</tt></a></li>
+<li>Document last modified: 2025-04-10T14:56:07.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
