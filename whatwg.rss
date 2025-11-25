@@ -4,43 +4,10 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Tue, 25 Nov 2025 04:14:56 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 21 Nov 2025 17:38:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[dom] ClassList can be edited]]></title>
-            <link>https://github.com/mdn/content/issues/42099</link>
-            <guid>https://github.com/mdn/content/issues/42099</guid>
-            <pubDate>Tue, 25 Nov 2025 04:14:56 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/classList</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The page information states that classList is read only but that's not correct. In all modern browsers that I've tried the property can be edited directly.<br>
-<code class="notranslate">const tryMe = document.getElementById("someId"); tryMe.classList = "some-class another-class" -&gt; class="some-class another-class"</code></p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Suggest the words <strong>is a read-only property</strong> in the first paragraph is changed to <strong>is a property</strong>.<br>
-And an example added that shows how to replace the entire classList content with new by setting it directly<br>
-<code class="notranslate">div.classList  = "foo another-class"</code></p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/element/classlist</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/classList</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/element/classlist/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/element/classlist/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/702cd9e4d2834e13aea345943efc8d0c03d92ec9/hovercard" href="https://github.com/mdn/content/commit/702cd9e4d2834e13aea345943efc8d0c03d92ec9"><tt>702cd9e</tt></a></li>
-<li>Document last modified: 2025-04-03T04:30:55.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html] Update uses of `PredefinedColorSpace` to include `srgb-linear` and `display-p3-linear`]]></title>
             <link>https://github.com/mdn/content/issues/42050</link>
