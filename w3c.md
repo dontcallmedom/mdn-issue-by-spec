@@ -4,8 +4,6 @@
 
 * [\[credential-management-1\] FedCM API's description of the returned IdentityCredential is inaccurate](https://github.com/mdn/content/issues/42025) (2025-11-19T20:58:58Z)
   
-* [\[webauthn-3\] Mix up of links for WebAuthn authenticator responses](https://github.com/mdn/content/issues/41937) (2025-11-13T22:47:47Z)
-  
 * [\[web-animations-2\] \`getComputedTiming()\` progress prop has incorrect description](https://github.com/mdn/content/issues/41789) (2025-11-03T10:02:45Z)
   
 * [\[selectors-4\] \`::-webkit-details-marker\` undocumented; example has invalid syntax](https://github.com/mdn/content/issues/41744) (2025-10-30T08:57:32Z)
