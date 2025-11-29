@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[css-conditional-3\] العرق](https://github.com/mdn/content/issues/42168) (2025-11-29T17:46:42Z)
-  
 * [\[credential-management-1\] FedCM API's description of the returned IdentityCredential is inaccurate](https://github.com/mdn/content/issues/42025) (2025-11-19T20:58:58Z)
   
 * [\[web-animations-2\] \`getComputedTiming()\` progress prop has incorrect description](https://github.com/mdn/content/issues/41789) (2025-11-03T10:02:45Z)
