@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[webaudio\] Wording around DynamicsCompressorNode use-cases is oversimplified / partially misleading](https://github.com/mdn/content/issues/42171) (2025-11-30T10:49:45Z)
+  
 * [\[credential-management-1\] FedCM API's description of the returned IdentityCredential is inaccurate](https://github.com/mdn/content/issues/42025) (2025-11-19T20:58:58Z)
   
 * [\[web-animations-2\] \`getComputedTiming()\` progress prop has incorrect description](https://github.com/mdn/content/issues/41789) (2025-11-03T10:02:45Z)

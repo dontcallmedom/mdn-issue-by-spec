@@ -4,10 +4,50 @@
         <title>W3C Audio Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_audio_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Audio Working Group</description>
-        <lastBuildDate>Mon, 26 Apr 2021 03:22:48 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 30 Nov 2025 10:49:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[webaudio] Wording around DynamicsCompressorNode use-cases is oversimplified / partially misleading]]></title>
+            <link>https://github.com/mdn/content/issues/42171</link>
+            <guid>https://github.com/mdn/content/issues/42171</guid>
+            <pubDate>Sun, 30 Nov 2025 10:49:45 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The description</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The current documentation for DynamicsCompressorNode includes this sentence:</p>
+<p dir="auto">“...in order to help prevent clipping and distortion that can occur when multiple sounds are played and multiplexed together at once.”</p>
+<p dir="auto">While this is partially correct, it oversimplifies the role of compression in music and sound design.</p>
+<p dir="auto">In practice:</p>
+<p dir="auto">Compression is not only used to prevent clipping or distortion.</p>
+<p dir="auto">Compressors are commonly used creatively to introduce saturation, clipping, pumping, or other audible effects.</p>
+<p dir="auto">In many production contexts, compression is applied for tone shaping, dynamic consistency, aesthetic coloration, or intentional distortion, not just to avoid peak overloads.</p>
+<p dir="auto">The sentence as written implies the purpose of a compressor is mainly corrective, rather than corrective and creative. It might be helpful to update the wording to reflect the broader set of use-cases.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Something like:</p>
+<p dir="auto">“... while it can be used to help prevent clipping and manage peaks when many sounds are combined, it is also commonly used creatively in music and game audio for tone shaping, adding character, or even intentionally introducing distortion.”</p>
+<p dir="auto">This keeps the technical meaning intact while representing the range of real-world uses more accurately.</p>
+<p dir="auto">Thanks for maintaining the documentation!</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/dynamicscompressornode</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/dynamicscompressornode/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/dynamicscompressornode/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/a4fcf79b60471db6f148fa4ba36f2cdeafbbeb70/hovercard" href="https://github.com/mdn/content/commit/a4fcf79b60471db6f148fa4ba36f2cdeafbbeb70"><tt>a4fcf79</tt></a></li>
+<li>Document last modified: 2025-10-30T21:49:49.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[webaudio] Content bug: AudioListener and attributes need better examples. ]]></title>
             <link>https://github.com/mdn/content/issues/4468</link>
