@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[streams\] WritableStream.abort() has incorrect return type](https://github.com/mdn/content/issues/42173) (2025-11-30T20:55:58Z)
-  
 * [\[html\] Poor choice of canvas id](https://github.com/mdn/content/issues/42155) (2025-11-27T23:12:59Z)
   
 * [\[html\] Update uses of \`PredefinedColorSpace\` to include \`srgb-linear\` and \`display-p3-linear\`](https://github.com/mdn/content/issues/42050) (2025-11-21T17:38:23Z)
