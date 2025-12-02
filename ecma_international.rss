@@ -19,9 +19,9 @@
 <p dir="auto">Thenables</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">Currently it only has a test using a sync function impl.</p>
-<p dir="auto">We knows the real <code class="notranslate">Promise</code>'s <code class="notranslate">then</code> always returns a Promise, so, to implement it manually, should we also return a Thenable or Promise? The answer is absolutely no.</p>
+<p dir="auto">We knows the real <code class="notranslate">Promise</code>'s <code class="notranslate">then</code> always returns a Promise, so, to implement it manually, should we also return a Thenable/Promise or even just use async function as impl?</p>
 <h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto"><code class="notranslate">Thenable.then</code>'s return value is always ignored. We should never wrap error into its return value, otherwise the error won't be caught by <code class="notranslate">Promise</code>'s Thenable object handler.<br>
+<p dir="auto"><code class="notranslate">Thenable.then</code>'s return value is always ignored by <code class="notranslate">Promise</code>. We should never wrap error into its return value without calling <code class="notranslate">onRej</code>, otherwise the error won't be caught by <code class="notranslate">Promise</code>'s Thenable object handler.<br>
 Errors in Thenable must be a sync <code class="notranslate">throw</code> or manual <code class="notranslate">onRej()</code> call.</p>
 <p dir="auto"><code class="notranslate">async function</code> always automatically wraps errors into returned Promise, so <code class="notranslate">async function</code> should never be used as well.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
