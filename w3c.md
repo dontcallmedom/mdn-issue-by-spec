@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[service-workers-1\] FetchEvent.replacesClientId removed from all browsers for 2+ years](https://github.com/mdn/content/issues/42195) (2025-12-02T09:18:10Z)
+  
 * [\[webaudio\] Wording around DynamicsCompressorNode use-cases is oversimplified / partially misleading](https://github.com/mdn/content/issues/42171) (2025-11-30T10:49:45Z)
   
 * [\[credential-management-1\] FedCM API's description of the returned IdentityCredential is inaccurate](https://github.com/mdn/content/issues/42025) (2025-11-19T20:58:58Z)
