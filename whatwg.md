@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[streams\] Doesn't make sense to add \`value\` to \`para.textContent\` when \`done\` is \`true\`, i.e. \`value\` is guaranteed to be \`undefined\`](https://github.com/mdn/content/issues/42242) (2025-12-05T11:02:17Z)
+  
 * [\[html\] Document that iframe referrerpolicy can influence location.ancestorOrigins and windowclient.ancestorOrigins](https://github.com/mdn/content/issues/42231) (2025-12-04T14:29:25Z)
   
 * [\[html\] Poor choice of canvas id](https://github.com/mdn/content/issues/42155) (2025-11-27T23:12:59Z)
