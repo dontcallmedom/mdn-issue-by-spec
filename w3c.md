@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[hr-time-3, ecmascript\] Fix: CORP does not enable SharedArrayBuffer](https://github.com/mdn/content/issues/42236) (2025-12-05T03:19:41Z)
+  
 * [\[cssom-view-1\] Make it clear that scroll and scrollTo are the same](https://github.com/mdn/content/issues/42222) (2025-12-03T17:32:23Z)
   
 * [\[screen-capture\] displaySurface in getDisplayMedia no longer supported on safari](https://github.com/mdn/content/issues/42218) (2025-12-03T14:11:50Z)

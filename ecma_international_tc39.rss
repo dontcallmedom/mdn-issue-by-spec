@@ -4,10 +4,44 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Tue, 02 Dec 2025 05:11:12 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 05 Dec 2025 03:19:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[hr-time-3, ecmascript] Fix: CORP does not enable SharedArrayBuffer]]></title>
+            <link>https://github.com/mdn/content/issues/42236</link>
+            <guid>https://github.com/mdn/content/issues/42236</guid>
+            <pubDate>Fri, 05 Dec 2025 03:19:41 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/CORP" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/CORP</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Examples</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">I believe SharedArrayBuffer is enabled by COOP + COEP, not CORP and CORP only affects resources, not the enabling of SharedArrayBuffer itself.</p>
+<p dir="auto"><strong>Affected text:</strong></p>
+<p dir="auto">Instruct browsers to allow cross-origin resource access, including access to features with unthrottled timers (such as <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer" rel="nofollow">SharedArrayBuffer</a> objects or <a href="https://developer.mozilla.org/en-US/docs/Web/API/Performance/now" rel="nofollow">Performance.now()</a>):</p>
+<div class="highlight highlight-source-httpspec notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="Cross-Origin-Resource-Policy: same-origin
+Cross-Origin-Embedder-Policy: require-corp"><pre class="notranslate"><span class="pl-s"><span class="pl-v">Cross-Origin-Resource-Policy:</span> same-origin</span>
+<span class="pl-s"><span class="pl-v">Cross-Origin-Embedder-Policy:</span> require-corp</span></pre></div>
+<p dir="auto">This also permits such resources to be embedded.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">To enable SharedArrayBuffer and performance.now(), the document must be cross-origin isolated environment. Include the following headers on the document:</p>
+<div class="highlight highlight-source-httpspec notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="Cross-Origin-Opener-Policy: same-origin
+Cross-Origin-Embedder-Policy: require-corp"><pre class="notranslate"><span class="pl-s"><span class="pl-v">Cross-Origin-Opener-Policy:</span> same-origin</span>
+<span class="pl-s"><span class="pl-v">Cross-Origin-Embedder-Policy:</span> require-corp</span></pre></div>
+<p dir="auto">A page using <code class="notranslate">Cross-Origin-Embedder-Policy</code>: <code class="notranslate">require-corp</code> may only load resources that explicitly allow being embedded.<br>
+Resources can opt in using either:</p>
+<p dir="auto"><strong>Cross-Origin-Resource-Policy (CORP):</strong></p>
+<div class="highlight highlight-source-httpspec notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="Cross-Origin-Resource-Policy: cross-origin"><pre class="notranslate"><span class="pl-s"><span class="pl-v">Cross-Origin-Resource-Policy:</span> cross-origin</span></pre></div>
+<p dir="auto"><strong>or CORS:</strong></p>
+<div class="highlight highlight-source-httpspec notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="Access-Control-Allow-Origin: https://example.com"><pre class="notranslate"><span class="pl-s"><span class="pl-v">Access-Control-Allow-Origin:</span> https://example.com</span></pre></div>
+<p dir="auto">CORP and CORS do not themselves enable SharedArrayBuffer they only allow resources to be loaded under COEP so that isolation is maintained.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">Please suggest if there any improvements are needed to the proposed text, if everything looks good, I would be happy to open a pull to update the documentation.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[ecmascript] Thenable.then() implementation MUST be non-async]]></title>
             <link>https://github.com/mdn/content/issues/42193</link>
