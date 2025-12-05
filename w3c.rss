@@ -21,21 +21,25 @@
 <p dir="auto">I believe SharedArrayBuffer is enabled by COOP + COEP, not CORP and CORP only affects resources, not the enabling of SharedArrayBuffer itself.</p>
 <p dir="auto"><strong>Affected text:</strong></p>
 <p dir="auto">Instruct browsers to allow cross-origin resource access, including access to features with unthrottled timers (such as <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer" rel="nofollow">SharedArrayBuffer</a> objects or <a href="https://developer.mozilla.org/en-US/docs/Web/API/Performance/now" rel="nofollow">Performance.now()</a>):</p>
-<div class="highlight highlight-source-httpspec notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="Cross-Origin-Resource-Policy: same-origin
-Cross-Origin-Embedder-Policy: require-corp"><pre class="notranslate"><span class="pl-s"><span class="pl-v">Cross-Origin-Resource-Policy:</span> same-origin</span>
-<span class="pl-s"><span class="pl-v">Cross-Origin-Embedder-Policy:</span> require-corp</span></pre></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Cross-Origin-Resource-Policy: same-origin
+Cross-Origin-Embedder-Policy: require-corp"><pre lang="http" class="notranslate"><code class="notranslate">Cross-Origin-Resource-Policy: same-origin
+Cross-Origin-Embedder-Policy: require-corp
+</code></pre></div>
 <p dir="auto">This also permits such resources to be embedded.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">To enable SharedArrayBuffer and performance.now(), the document must be cross-origin isolated environment. Include the following headers on the document:</p>
-<div class="highlight highlight-source-httpspec notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="Cross-Origin-Opener-Policy: same-origin
-Cross-Origin-Embedder-Policy: require-corp"><pre class="notranslate"><span class="pl-s"><span class="pl-v">Cross-Origin-Opener-Policy:</span> same-origin</span>
-<span class="pl-s"><span class="pl-v">Cross-Origin-Embedder-Policy:</span> require-corp</span></pre></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Cross-Origin-Opener-Policy: same-origin
+Cross-Origin-Embedder-Policy: require-corp"><pre lang="http" class="notranslate"><code class="notranslate">Cross-Origin-Opener-Policy: same-origin
+Cross-Origin-Embedder-Policy: require-corp
+</code></pre></div>
 <p dir="auto">A page using <code class="notranslate">Cross-Origin-Embedder-Policy</code>: <code class="notranslate">require-corp</code> may only load resources that explicitly allow being embedded.<br>
 Resources can opt in using either:</p>
 <p dir="auto"><strong>Cross-Origin-Resource-Policy (CORP):</strong></p>
-<div class="highlight highlight-source-httpspec notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="Cross-Origin-Resource-Policy: cross-origin"><pre class="notranslate"><span class="pl-s"><span class="pl-v">Cross-Origin-Resource-Policy:</span> cross-origin</span></pre></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Cross-Origin-Resource-Policy: cross-origin"><pre lang="http" class="notranslate"><code class="notranslate">Cross-Origin-Resource-Policy: cross-origin
+</code></pre></div>
 <p dir="auto"><strong>or CORS:</strong></p>
-<div class="highlight highlight-source-httpspec notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="Access-Control-Allow-Origin: https://example.com"><pre class="notranslate"><span class="pl-s"><span class="pl-v">Access-Control-Allow-Origin:</span> https://example.com</span></pre></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Access-Control-Allow-Origin: https://example.com"><pre lang="http" class="notranslate"><code class="notranslate">Access-Control-Allow-Origin: https://example.com
+</code></pre></div>
 <p dir="auto">CORP and CORS do not themselves enable SharedArrayBuffer they only allow resources to be loaded under COEP so that isolation is maintained.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
@@ -398,27 +402,28 @@ The two offending lines (plus comments) should be removed from the page.</p>
 <p dir="auto">Syntax</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">In the syntax examples, there are two examples that I believe are misleading. They are similar examples, one for repeating rows, and one for repeating columns.</p>
-<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="/* &lt;'grid-template-rows'&gt; /
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="/* &lt;'grid-template-rows'&gt; /
    [ auto-flow &amp;&amp; dense? ] &lt;'grid-auto-columns'&gt;? values */
 grid: repeat(3, 200px) / auto-flow 300px;
 
 /* [ auto-flow &amp;&amp; dense? ] &lt;'grid-auto-rows'&gt;? /
    &lt;'grid-template-columns'&gt; values */
-grid: auto-flow 300px / repeat(3, 200px);"><pre class="notranslate"><span class="pl-c">/* &lt;'grid-template-rows'&gt; /</span>
-<span class="pl-c">   [ auto-flow &amp;&amp; dense? ] &lt;'grid-auto-columns'&gt;? values */</span>
-<span class="pl-c1">grid</span><span class="pl-kos">:</span> <span class="pl-en">repeat</span>(<span class="pl-c1">3</span><span class="pl-kos">,</span> <span class="pl-c1">200<span class="pl-smi">px</span></span>) <span class="pl-c1">/</span> auto-flow <span class="pl-c1">300<span class="pl-smi">px</span></span>;
+grid: auto-flow 300px / repeat(3, 200px);"><pre lang="css" class="notranslate"><code class="notranslate">/* &lt;'grid-template-rows'&gt; /
+   [ auto-flow &amp;&amp; dense? ] &lt;'grid-auto-columns'&gt;? values */
+grid: repeat(3, 200px) / auto-flow 300px;
 
-<span class="pl-c">/* [ auto-flow &amp;&amp; dense? ] &lt;'grid-auto-rows'&gt;? /</span>
-<span class="pl-c">   &lt;'grid-template-columns'&gt; values */</span>
-<span class="pl-c1">grid</span><span class="pl-kos">:</span> auto-flow <span class="pl-c1">300<span class="pl-smi">px</span></span> <span class="pl-c1">/</span> <span class="pl-en">repeat</span>(<span class="pl-c1">3</span><span class="pl-kos">,</span> <span class="pl-c1">200<span class="pl-smi">px</span></span>);</pre></div>
+/* [ auto-flow &amp;&amp; dense? ] &lt;'grid-auto-rows'&gt;? /
+   &lt;'grid-template-columns'&gt; values */
+grid: auto-flow 300px / repeat(3, 200px);
+</code></pre></div>
 <p dir="auto">The 3rd example in each uses of those sections (which I've isolated above), uses <code class="notranslate">repeat(3, [line1 line2 line3] 200px);</code>. When reading this, I believe most people would assume this will name the lines "line1", "line2", "line3" respectively, but instead, it assigns all three names to each of the lines. Using the repeat with multiple line names doesn't have much practical value (that I can think of).</p>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/25749407/490625432-4d479248-96e4-4f95-ad53-beee61696bbd.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ5MTM3OTEsIm5iZiI6MTc2NDkxMzQ5MSwicGF0aCI6Ii8yNTc0OTQwNy80OTA2MjU0MzItNGQ0NzkyNDgtOTZlNC00Zjk1LWFkNTMtYmVlZTYxNjk2YmJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjA1VDA1NDQ1MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTVjMTQwNGQzMTM3M2NkMTkyNjRjZTdkMzM5N2U3ZDczNTZjZmI5MzZlMDAwZjE0YWViNmM4NjZkMzNkOTRhYWUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Ng6ZtPINZ2ESsalbkEdFNx-3o3YKEHHBr6pO90e3DiM"><img width="2000" height="484" alt="Image" src="https://private-user-images.githubusercontent.com/25749407/490625432-4d479248-96e4-4f95-ad53-beee61696bbd.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ5MTM3OTEsIm5iZiI6MTc2NDkxMzQ5MSwicGF0aCI6Ii8yNTc0OTQwNy80OTA2MjU0MzItNGQ0NzkyNDgtOTZlNC00Zjk1LWFkNTMtYmVlZTYxNjk2YmJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjA1VDA1NDQ1MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTVjMTQwNGQzMTM3M2NkMTkyNjRjZTdkMzM5N2U3ZDczNTZjZmI5MzZlMDAwZjE0YWViNmM4NjZkMzNkOTRhYWUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Ng6ZtPINZ2ESsalbkEdFNx-3o3YKEHHBr6pO90e3DiM" style="max-width: 100%; height: auto; max-height: 484px;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/25749407/490625432-4d479248-96e4-4f95-ad53-beee61696bbd.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ5MTQ0MDksIm5iZiI6MTc2NDkxNDEwOSwicGF0aCI6Ii8yNTc0OTQwNy80OTA2MjU0MzItNGQ0NzkyNDgtOTZlNC00Zjk1LWFkNTMtYmVlZTYxNjk2YmJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjA1VDA1NTUwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI5ODg0MDkzNDRmZWEyNDk1YjI0YWE3ZGZhYzQ1YjdmNDVmZmVjYTAzZjc1ODFkMjI2ZTA3YWM2NTZjOGM0MjgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.UooA1Em-3vlAqSrlbJM_4T_4LWbMGflE6swUhVWWJFU"><img width="2000" height="484" alt="Image" src="https://private-user-images.githubusercontent.com/25749407/490625432-4d479248-96e4-4f95-ad53-beee61696bbd.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ5MTQ0MDksIm5iZiI6MTc2NDkxNDEwOSwicGF0aCI6Ii8yNTc0OTQwNy80OTA2MjU0MzItNGQ0NzkyNDgtOTZlNC00Zjk1LWFkNTMtYmVlZTYxNjk2YmJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjA1VDA1NTUwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI5ODg0MDkzNDRmZWEyNDk1YjI0YWE3ZGZhYzQ1YjdmNDVmZmVjYTAzZjc1ODFkMjI2ZTA3YWM2NTZjOGM0MjgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.UooA1Em-3vlAqSrlbJM_4T_4LWbMGflE6swUhVWWJFU" style="max-width: 100%; height: auto; max-height: 484px;"></a>
 <p dir="auto">.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I think it would be best to remove the name entirely, because having the same name across each column isn't very useful in my opinion, but there might be use cases I'm missing, in which case having a single line name would make more sense.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">I set up <a href="https://codepen.io/kevinpowell/pen/YPwKEJG/52a328b44dc712924d2c60524108b248?editors=0100" rel="nofollow">a demo of it here</a>. Using Chrome's devtools, you can see the line names for each column are "line1 line2 line3".</p>
-<p dir="auto">Here is a screenshot showing it: <a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/25749407/490626434-b8890992-8bdc-4cc9-a508-149ec118486c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ5MTM3OTEsIm5iZiI6MTc2NDkxMzQ5MSwicGF0aCI6Ii8yNTc0OTQwNy80OTA2MjY0MzQtYjg4OTA5OTItOGJkYy00Y2M5LWE1MDgtMTQ5ZWMxMTg0ODZjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjA1VDA1NDQ1MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY3ZDdlZjRlNzU4ODUyNjgyNDYyMDJkMzFhY2QxMTlkMmEwMzg5YmJmMGUwNzIzNjczYWNiM2ZkNzE3NTBiNTUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.-PwRchdSHqhefPT2Ens19G95FfLHdwwqeT8d_q8QLzI"><img width="2000" height="484" alt="Image" src="https://private-user-images.githubusercontent.com/25749407/490626434-b8890992-8bdc-4cc9-a508-149ec118486c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ5MTM3OTEsIm5iZiI6MTc2NDkxMzQ5MSwicGF0aCI6Ii8yNTc0OTQwNy80OTA2MjY0MzQtYjg4OTA5OTItOGJkYy00Y2M5LWE1MDgtMTQ5ZWMxMTg0ODZjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjA1VDA1NDQ1MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY3ZDdlZjRlNzU4ODUyNjgyNDYyMDJkMzFhY2QxMTlkMmEwMzg5YmJmMGUwNzIzNjczYWNiM2ZkNzE3NTBiNTUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.-PwRchdSHqhefPT2Ens19G95FfLHdwwqeT8d_q8QLzI" style="max-width: 100%; height: auto; max-height: 484px;"></a></p>
+<p dir="auto">Here is a screenshot showing it: <a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/25749407/490626434-b8890992-8bdc-4cc9-a508-149ec118486c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ5MTQ0MDksIm5iZiI6MTc2NDkxNDEwOSwicGF0aCI6Ii8yNTc0OTQwNy80OTA2MjY0MzQtYjg4OTA5OTItOGJkYy00Y2M5LWE1MDgtMTQ5ZWMxMTg0ODZjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjA1VDA1NTUwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI5NTczNmI3MjY0OTM3MTlkMzZjODczMzM3OTg0ZGUzZDY3OTdmZWY4ZDcwNzBkNWRlOTQ5MGY2MGI4YjVkM2ImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.zOULI5ZcCdufui7UO7or2j1dQXKawvtKeDeA3SerzZk"><img width="2000" height="484" alt="Image" src="https://private-user-images.githubusercontent.com/25749407/490626434-b8890992-8bdc-4cc9-a508-149ec118486c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ5MTQ0MDksIm5iZiI6MTc2NDkxNDEwOSwicGF0aCI6Ii8yNTc0OTQwNy80OTA2MjY0MzQtYjg4OTA5OTItOGJkYy00Y2M5LWE1MDgtMTQ5ZWMxMTg0ODZjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjA1VDA1NTUwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI5NTczNmI3MjY0OTM3MTlkMzZjODczMzM3OTg0ZGUzZDY3OTdmZWY4ZDcwNzBkNWRlOTQ5MGY2MGI4YjVkM2ImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.zOULI5ZcCdufui7UO7or2j1dQXKawvtKeDeA3SerzZk" style="max-width: 100%; height: auto; max-height: 484px;"></a></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">MDN metadata</h3>
@@ -559,7 +564,7 @@ The Backdrop Root element:
 <h3 dir="auto">What specific section or headline is this issue about?</h3>
 <p dir="auto">Syntax</p>
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="/* Keyword values */
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="/* Keyword values */
 box-shadow: none;
 
 /* A color and two length values */
@@ -581,31 +586,32 @@ box-shadow: inset 5em 1em gold;
 /* Any number of shadows, separated by commas */
 box-shadow:
   3px 3px red inset,
-  -1em 0 0.4em olive;"><pre class="notranslate"><span class="pl-c">/* Keyword values */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> none;
+  -1em 0 0.4em olive;"><pre lang="css" class="notranslate"><code class="notranslate">/* Keyword values */
+box-shadow: none;
 
-<span class="pl-c">/* A color and two length values */</span>
-<span class="pl-c">/* &lt;color&gt; | &lt;length&gt; | &lt;length&gt; */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> red <span class="pl-c1">60<span class="pl-smi">px</span></span> <span class="pl-c1">-16<span class="pl-smi">px</span></span>;
+/* A color and two length values */
+/* &lt;color&gt; | &lt;length&gt; | &lt;length&gt; */
+box-shadow: red 60px -16px;
 
-<span class="pl-c">/* Three length values and a color */</span>
-<span class="pl-c">/* &lt;length&gt; | &lt;length&gt; | &lt;length&gt; | &lt;color&gt; */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> <span class="pl-c1">10<span class="pl-smi">px</span></span> <span class="pl-c1">5<span class="pl-smi">px</span></span> <span class="pl-c1">5<span class="pl-smi">px</span></span> black;
+/* Three length values and a color */
+/* &lt;length&gt; | &lt;length&gt; | &lt;length&gt; | &lt;color&gt; */
+box-shadow: 10px 5px 5px black;
 
-<span class="pl-c">/* Four length values and a color */</span>
-<span class="pl-c">/* &lt;length&gt; | &lt;length&gt; | &lt;length&gt; | &lt;length&gt; | &lt;color&gt; */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> <span class="pl-c1">2<span class="pl-smi">px</span></span> <span class="pl-c1">2<span class="pl-smi">px</span></span> <span class="pl-c1">2<span class="pl-smi">px</span></span> <span class="pl-c1">1<span class="pl-smi">px</span></span> <span class="pl-en">rgb</span>(<span class="pl-c1">0</span> <span class="pl-c1">0</span> <span class="pl-c1">0</span> <span class="pl-c1">/</span> <span class="pl-c1">20<span class="pl-smi">%</span></span>);
+/* Four length values and a color */
+/* &lt;length&gt; | &lt;length&gt; | &lt;length&gt; | &lt;length&gt; | &lt;color&gt; */
+box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
 
-<span class="pl-c">/* inset, length values, and a color */</span>
-<span class="pl-c">/* &lt;inset&gt; | &lt;length&gt; | &lt;length&gt; | &lt;color&gt; */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> inset <span class="pl-c1">5<span class="pl-smi">em</span></span> <span class="pl-c1">1<span class="pl-smi">em</span></span> gold;
+/* inset, length values, and a color */
+/* &lt;inset&gt; | &lt;length&gt; | &lt;length&gt; | &lt;color&gt; */
+box-shadow: inset 5em 1em gold;
 
-<span class="pl-c">/* Any number of shadows, separated by commas */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span>
-  <span class="pl-c1">3<span class="pl-smi">px</span></span> <span class="pl-c1">3<span class="pl-smi">px</span></span> red inset<span class="pl-kos">,</span>
-  <span class="pl-c1">-1<span class="pl-smi">em</span></span> <span class="pl-c1">0</span> <span class="pl-c1">0.4<span class="pl-smi">em</span></span> olive;</pre></div>
+/* Any number of shadows, separated by commas */
+box-shadow:
+  3px 3px red inset,
+  -1em 0 0.4em olive;
+</code></pre></div>
 <h3 dir="auto">What did you expect to see?</h3>
-<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="/* Keyword values */
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="/* Keyword values */
 box-shadow: none;
 
 /* offset-x | offset-y | color */
@@ -623,25 +629,26 @@ box-shadow: inset 5em 1em gold;
 /* Any number of shadows, separated by commas */
 box-shadow:
   3px 3px red,
-  -1em 0 0.4em olive;"><pre class="notranslate"><span class="pl-c">/* Keyword values */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> none;
+  -1em 0 0.4em olive;"><pre lang="css" class="notranslate"><code class="notranslate">/* Keyword values */
+box-shadow: none;
 
-<span class="pl-c">/* offset-x | offset-y | color */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> <span class="pl-c1">60<span class="pl-smi">px</span></span> <span class="pl-c1">-16<span class="pl-smi">px</span></span> teal;
+/* offset-x | offset-y | color */
+box-shadow: 60px -16px teal;
 
-<span class="pl-c">/* offset-x | offset-y | blur-radius | color */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> <span class="pl-c1">10<span class="pl-smi">px</span></span> <span class="pl-c1">5<span class="pl-smi">px</span></span> <span class="pl-c1">5<span class="pl-smi">px</span></span> black;
+/* offset-x | offset-y | blur-radius | color */
+box-shadow: 10px 5px 5px black;
 
-<span class="pl-c">/* offset-x | offset-y | blur-radius | spread-radius | color */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> <span class="pl-c1">2<span class="pl-smi">px</span></span> <span class="pl-c1">2<span class="pl-smi">px</span></span> <span class="pl-c1">2<span class="pl-smi">px</span></span> <span class="pl-c1">1<span class="pl-smi">px</span></span> <span class="pl-en">rgba</span>(<span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-c1">0</span><span class="pl-kos">,</span> <span class="pl-c1">0.2</span>);
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
-<span class="pl-c">/* inset | offset-x | offset-y | color */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span> inset <span class="pl-c1">5<span class="pl-smi">em</span></span> <span class="pl-c1">1<span class="pl-smi">em</span></span> gold;
+/* inset | offset-x | offset-y | color */
+box-shadow: inset 5em 1em gold;
 
-<span class="pl-c">/* Any number of shadows, separated by commas */</span>
-<span class="pl-c1">box-shadow</span><span class="pl-kos">:</span>
-  <span class="pl-c1">3<span class="pl-smi">px</span></span> <span class="pl-c1">3<span class="pl-smi">px</span></span> red<span class="pl-kos">,</span>
-  <span class="pl-c1">-1<span class="pl-smi">em</span></span> <span class="pl-c1">0</span> <span class="pl-c1">0.4<span class="pl-smi">em</span></span> olive;</pre></div>
+/* Any number of shadows, separated by commas */
+box-shadow:
+  3px 3px red,
+  -1em 0 0.4em olive;
+</code></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto">I am trying to learn HTML &amp; CSS and I noticed that the syntax examples for <code class="notranslate">box-shadow</code> were updated around 2023 in this <a href="https://github.com/mdn/content/pull/29013" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/29013/hovercard">PR</a> to use generic descriptors like <code class="notranslate">&lt;length&gt;</code> and <code class="notranslate">&lt;color&gt;</code>, instead of the earlier more explicit syntax annotations such as:</p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="/* offset-x | offset-y | blur-radius | spread-radius | color */"><pre class="notranslate"><code class="notranslate">/* offset-x | offset-y | blur-radius | spread-radius | color */
@@ -1243,7 +1250,7 @@ document.ondragover = ((e) =&gt; {
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">description of the <code class="notranslate">sizeAdjust</code> property</p>
 <p dir="auto">It does exist, see<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ5MTM3ODksIm5iZiI6MTc2NDkxMzQ4OSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjA1VDA1NDQ0OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFlNmE4MjBiNzUwZWQ2YjE5MDFmYTlkYjRlYWIyODBiNjAwNTBkZjk2YTBkOGRiNWM3ZmQyOTE4NWExNmE3NWImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.3101Np44gsmmGRT6m-vE9Vj-cHvGnrM3zA4ZG3_Oej8"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ5MTM3ODksIm5iZiI6MTc2NDkxMzQ4OSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjA1VDA1NDQ0OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFlNmE4MjBiNzUwZWQ2YjE5MDFmYTlkYjRlYWIyODBiNjAwNTBkZjk2YTBkOGRiNWM3ZmQyOTE4NWExNmE3NWImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.3101Np44gsmmGRT6m-vE9Vj-cHvGnrM3zA4ZG3_Oej8" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ5MTQ0MDQsIm5iZiI6MTc2NDkxNDEwNCwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjA1VDA1NTUwNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdmNzQxN2Q0YzdkYjEyOWZkZWY2YTdhNWNkNmZkYWI2YzAxMmZlNDk5MTc2ZWFjNjAyNDJjMzdlNzY3MTdkNjkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.-V5GEwd0cFrYiIudxm1dhHlh-fSgjtAIVBGQM6lGRwI"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ5MTQ0MDQsIm5iZiI6MTc2NDkxNDEwNCwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjA1VDA1NTUwNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdmNzQxN2Q0YzdkYjEyOWZkZWY2YTdhNWNkNmZkYWI2YzAxMmZlNDk5MTc2ZWFjNjAyNDJjMzdlNzY3MTdkNjkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.-V5GEwd0cFrYiIudxm1dhHlh-fSgjtAIVBGQM6lGRwI" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
