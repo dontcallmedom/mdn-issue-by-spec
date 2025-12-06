@@ -5,6 +5,8 @@ This repository collects information on MDN Web Docs issues and group them based
 
 * [Ecma International](ecma_international.md): 3 issues [![RSS feed for Ecma International-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ecma_international.rss)
 * [Ecma International TC39](ecma_international_tc39.md): 3 issues [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](ecma_international_tc39.rss)
+* [Khronos Group](khronos_group.md): 1 issues [![RSS feed for Khronos Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](khronos_group.rss)
+* [Khronos Group WebGL Working Group](khronos_group_webgl_working_group.md): 1 issues [![RSS feed for Khronos Group WebGL Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](khronos_group_webgl_working_group.rss)
 * [W3C](w3c.md): 57 issues [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c.rss)
 * [W3C Accessible Rich Internet Applications Working Group](w3c_accessible_rich_internet_applications_working_group.md): 1 issues [![RSS feed for W3C Accessible Rich Internet Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_accessible_rich_internet_applications_working_group.rss)
 * [W3C Audio Working Group](w3c_audio_working_group.md): 2 issues [![RSS feed for W3C Audio Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)](w3c_audio_working_group.rss)
