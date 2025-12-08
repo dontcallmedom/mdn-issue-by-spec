@@ -4,59 +4,10 @@
         <title>Ecma International TC39-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international_tc39.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International TC39</description>
-        <lastBuildDate>Mon, 08 Dec 2025 17:14:15 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 05 Dec 2025 03:19:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[ecmascript] 1q2q]]></title>
-            <link>https://github.com/mdn/content/issues/42300</link>
-            <guid>https://github.com/mdn/content/issues/42300</guid>
-            <pubDate>Mon, 08 Dec 2025 17:14:15 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">azure:identity:info EnvironmentCredential =&gt; Found the following environment variables:  azure:identity:verbose EnvironmentCredential =&gt; AZURE_CLIENT_SEND_CERTIFICATE_CHAIN: undefined; sendCertificateChain: false azure:identity:info WorkloadIdentityCredential =&gt; Found the following environment variables: azure:identity:warning DefaultAzureCredential =&gt; Skipped createDefaultWorkloadIdentityCredential because of an error creating the credential: CredentialUnavailableError: WorkloadIdentityCredential: is unavailable. clientId is a required parameter. In DefaultAzureCredential and ManagedIdentityCredential, this can be provided as an environment variable - "AZURE_CLIENT_ID".         See the troubleshooting guide for more information: <a href="https://aka.ms/azsdk/js/identity/workloadidentitycredential/troubleshoot" rel="nofollow">https://aka.ms/azsdk/js/identity/workloadidentitycredential/troubleshoot</a> azure:identity:info ManagedIdentityCredential =&gt; Using DefaultToImds managed identity. azure:identity:warning DefaultAzureCredential =&gt; Skipped createDefaultBrokerCredential because of an error creating the credential: Error: Broker for WAM was requested, but no plugin was configured or no authentication record was found. You must install the @azure/identity-broker plugin package (npm install --save @azure/identity-broker) and enable it by importing <code class="notranslate">useIdentityPlugin</code> from <code class="notranslate">@azure/identity</code> and calling useIdentityPlugin(nativeBrokerPlugin) before using enableBroker. azure:identity:info DefaultAzureCredential =&gt; getToken() =&gt; Skipping createDefaultWorkloadIdentityCredential, reason: WorkloadIdentityCredential: is unavailable. clientId is a required parameter. In DefaultAzureCredential and ManagedIdentityCredential, this can be provided as an environment variable - "AZURE_CLIENT_ID".         See the troubleshooting guide for more information: <a href="https://aka.ms/azsdk/js/identity/workloadidentitycredential/troubleshoot" rel="nofollow">https://aka.ms/azsdk/js/identity/workloadidentitycredential/troubleshoot</a> azure:identity:info ManagedIdentityCredential =&gt; getToken() =&gt; Using the MSAL provider for Managed Identity. azure:identity:info ManagedIdentityCredential - Token Exchange =&gt; ManagedIdentityCredential - Token Exchange: Unavailable. The environment variables needed are: AZURE_CLIENT_ID (or the client ID sent through the parameters), AZURE_TENANT_ID and AZURE_FEDERATED_TOKEN_FILE azure:identity:info ManagedIdentityCredential =&gt; getToken() =&gt; MSAL Identity source: DefaultToImds azure:identity:info ManagedIdentityCredential =&gt; getToken() =&gt; Using the IMDS endpoint to probe for availability. azure:identity:info ManagedIdentityCredential - IMDS =&gt; ManagedIdentityCredential - IMDS: Pinging the Azure IMDS endpoint azure:identity:verbose ManagedIdentityCredential - IMDS =&gt; ManagedIdentityCredential - IMDS: Caught error RestError: connect ENETUNREACH 169.254.169.254:80 azure:identity:info ManagedIdentityCredential - IMDS =&gt; ManagedIdentityCredential - IMDS: The Azure IMDS endpoint is unavailable azure:identity:error ManagedIdentityCredential =&gt; getToken() =&gt; ERROR. Scopes: <a href="https://storage.azure.com/.default" rel="nofollow">https://storage.azure.com/.default</a>. Error message: Attempted to use the IMDS endpoint, but it is not available.. azure:identity:info AzureCliCredential =&gt; getToken() =&gt; Using the scope <a href="https://storage.azure.com/.default" rel="nofollow">https://storage.azure.com/.default</a> azure:identity:info AzureCliCredential =&gt; getToken() =&gt; expires_on is available and is valid, using it azure:identity:info AzureCliCredential =&gt; getToken() =&gt; SUCCESS. Scopes: <a href="https://storage.azure.com/.default" rel="nofollow">https://storage.azure.com/.default</a>.</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">azure:identity:info EnvironmentCredential =&gt; Found the following environment variables:<br>
-azure:identity:verbose EnvironmentCredential =&gt; AZURE_CLIENT_SEND_CERTIFICATE_CHAIN: undefined; sendCertificateChain: false<br>
-azure:identity:info WorkloadIdentityCredential =&gt; Found the following environment variables:<br>
-azure:identity:warning DefaultAzureCredential =&gt; Skipped createDefaultWorkloadIdentityCredential because of an error creating the credential: CredentialUnavailableError: WorkloadIdentityCredential: is unavailable. clientId is a required parameter. In DefaultAzureCredential and ManagedIdentityCredential, this can be provided as an environment variable - "AZURE_CLIENT_ID".<br>
-See the troubleshooting guide for more information: <a href="https://aka.ms/azsdk/js/identity/workloadidentitycredential/troubleshoot" rel="nofollow">https://aka.ms/azsdk/js/identity/workloadidentitycredential/troubleshoot</a><br>
-azure:identity:info ManagedIdentityCredential =&gt; Using DefaultToImds managed identity.<br>
-azure:identity:warning DefaultAzureCredential =&gt; Skipped createDefaultBrokerCredential because of an error creating the credential: Error: Broker for WAM was requested, but no plugin was configured or no authentication record was found. You must install the @azure/identity-broker plugin package (npm install --save @azure/identity-broker) and enable it by importing <code class="notranslate">useIdentityPlugin</code> from <code class="notranslate">@azure/identity</code> and calling useIdentityPlugin(nativeBrokerPlugin) before using enableBroker.<br>
-azure:identity:info DefaultAzureCredential =&gt; getToken() =&gt; Skipping createDefaultWorkloadIdentityCredential, reason: WorkloadIdentityCredential: is unavailable. clientId is a required parameter. In DefaultAzureCredential and ManagedIdentityCredential, this can be provided as an environment variable - "AZURE_CLIENT_ID".<br>
-See the troubleshooting guide for more information: <a href="https://aka.ms/azsdk/js/identity/workloadidentitycredential/troubleshoot" rel="nofollow">https://aka.ms/azsdk/js/identity/workloadidentitycredential/troubleshoot</a><br>
-azure:identity:info ManagedIdentityCredential =&gt; getToken() =&gt; Using the MSAL provider for Managed Identity.<br>
-azure:identity:info ManagedIdentityCredential - Token Exchange =&gt; ManagedIdentityCredential - Token Exchange: Unavailable. The environment variables needed are: AZURE_CLIENT_ID (or the client ID sent through the parameters), AZURE_TENANT_ID and AZURE_FEDERATED_TOKEN_FILE<br>
-azure:identity:info ManagedIdentityCredential =&gt; getToken() =&gt; MSAL Identity source: DefaultToImds<br>
-azure:identity:info ManagedIdentityCredential =&gt; getToken() =&gt; Using the IMDS endpoint to probe for availability.<br>
-azure:identity:info ManagedIdentityCredential - IMDS =&gt; ManagedIdentityCredential - IMDS: Pinging the Azure IMDS endpoint<br>
-azure:identity:verbose ManagedIdentityCredential - IMDS =&gt; ManagedIdentityCredential - IMDS: Caught error RestError: connect ENETUNREACH 169.254.169.254:80<br>
-azure:identity:info ManagedIdentityCredential - IMDS =&gt; ManagedIdentityCredential - IMDS: The Azure IMDS endpoint is unavailable<br>
-azure:identity:error ManagedIdentityCredential =&gt; getToken() =&gt; ERROR. Scopes: <a href="https://storage.azure.com/.default" rel="nofollow">https://storage.azure.com/.default</a>. Error message: Attempted to use the IMDS endpoint, but it is not available..<br>
-azure:identity:info AzureCliCredential =&gt; getToken() =&gt; Using the scope <a href="https://storage.azure.com/.default" rel="nofollow">https://storage.azure.com/.default</a><br>
-azure:identity:info AzureCliCredential =&gt; getToken() =&gt; expires_on is available and is valid, using it<br>
-azure:identity:info AzureCliCredential =&gt; getToken() =&gt; SUCCESS. Scopes: <a href="https://storage.azure.com/.default" rel="nofollow">https://storage.azure.com/.default</a>.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Aa</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/javascript/reference/statements/for-await...of</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/for-await...of/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/for-await...of/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/a4fcf79b60471db6f148fa4ba36f2cdeafbbeb70/hovercard" href="https://github.com/mdn/content/commit/a4fcf79b60471db6f148fa4ba36f2cdeafbbeb70"><tt>a4fcf79</tt></a></li>
-<li>Document last modified: 2025-10-30T21:49:49.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[hr-time-3, ecmascript] Fix: CORP does not enable SharedArrayBuffer]]></title>
             <link>https://github.com/mdn/content/issues/42236</link>
