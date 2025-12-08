@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[cssom-1\] Doc suggestion for CSSStyleSheets](https://github.com/mdn/content/issues/42302) (2025-12-08T20:33:29Z)
+  
 * [\[cssom-view-1\] Make it clear that scroll and scrollTo are the same](https://github.com/mdn/content/issues/42222) (2025-12-03T17:32:23Z)
   
 * [\[web-animations-2\] \`getComputedTiming()\` progress prop has incorrect description](https://github.com/mdn/content/issues/41789) (2025-11-03T10:02:45Z)
