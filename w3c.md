@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[cssom-1\] Doc suggestion for CSSStyleSheets](https://github.com/mdn/content/issues/42302) (2025-12-08T20:33:29Z)
+* [\[cssom-1\] Mention how one can apply a CSSStyleSheet to the document](https://github.com/mdn/content/issues/42302) (2025-12-08T20:33:29Z)
   
 * [\[hr-time-3, ecmascript\] Fix: CORP does not enable SharedArrayBuffer](https://github.com/mdn/content/issues/42236) (2025-12-05T03:19:41Z)
   
