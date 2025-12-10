@@ -4,10 +4,28 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Fri, 05 Dec 2025 11:02:17 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 08 Dec 2025 01:17:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Correct Calculation]]></title>
+            <link>https://github.com/mdn/content/issues/42339</link>
+            <guid>https://github.com/mdn/content/issues/42339</guid>
+            <pubDate>Mon, 08 Dec 2025 01:17:16 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Syntax-Return value-Warning</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Note, however, that it would take ~500 days to reach the issue when rendering at 60Hz with 100 calls to per frame.0nullrequestAnimationFrame()</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Note, however, that it would take ~8 days to reach the issue when rendering at 60Hz with 100 calls to per frame.0nullrequestAnimationFrame()</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">4,294,967,296 ÷ 6000 ÷ 60 ÷ 60 ÷ 24 ≈ 8.27</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[streams] Doesn't make sense to add `value` to `para.textContent` when `done` is `true`, i.e. `value` is guaranteed to be `undefined`]]></title>
             <link>https://github.com/mdn/content/issues/42242</link>
