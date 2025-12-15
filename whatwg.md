@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] Correct Calculation](https://github.com/mdn/content/issues/42339) (2025-12-08T01:17:16Z)
-  
 * [\[streams\] Doesn't make sense to add \`value\` to \`para.textContent\` when \`done\` is \`true\`, i.e. \`value\` is guaranteed to be \`undefined\`](https://github.com/mdn/content/issues/42242) (2025-12-05T11:02:17Z)
   
 * [\[html\] Document that iframe referrerpolicy can influence location.ancestorOrigins and windowclient.ancestorOrigins](https://github.com/mdn/content/issues/42231) (2025-12-04T14:29:25Z)
