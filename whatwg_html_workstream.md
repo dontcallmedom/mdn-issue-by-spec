@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] For clarity, explicitly connect "these Boolean properties" to "validity states"](https://github.com/mdn/content/issues/42457) (2025-12-18T13:11:26Z)
+  
 * [\[html\] Document that iframe referrerpolicy can influence location.ancestorOrigins and windowclient.ancestorOrigins](https://github.com/mdn/content/issues/42231) (2025-12-04T14:29:25Z)
   
 * [\[html\] Poor choice of canvas id](https://github.com/mdn/content/issues/42155) (2025-11-27T23:12:59Z)
