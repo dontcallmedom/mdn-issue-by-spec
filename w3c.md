@@ -4,8 +4,6 @@
 
 * [\[speech-api\] The first few seconds do not get heard.](https://github.com/mdn/content/issues/42376) (2025-12-12T21:50:46Z)
   
-* [\[cssom-1\] Mention how one can apply a CSSStyleSheet to the document](https://github.com/mdn/content/issues/42302) (2025-12-08T20:33:29Z)
-  
 * [\[hr-time-3, ecmascript\] Fix: CORP does not enable SharedArrayBuffer](https://github.com/mdn/content/issues/42236) (2025-12-05T03:19:41Z)
   
 * [\[cssom-view-1\] Make it clear that scroll and scrollTo are the same](https://github.com/mdn/content/issues/42222) (2025-12-03T17:32:23Z)
@@ -15,8 +13,6 @@
 * [\[service-workers-1\] FetchEvent.replacesClientId removed from all browsers for 2+ years](https://github.com/mdn/content/issues/42195) (2025-12-02T09:18:10Z)
   
 * [\[webaudio\] Wording around DynamicsCompressorNode use-cases is oversimplified / partially misleading](https://github.com/mdn/content/issues/42171) (2025-11-30T10:49:45Z)
-  
-* [\[credential-management-1\] FedCM API's description of the returned IdentityCredential is inaccurate](https://github.com/mdn/content/issues/42025) (2025-11-19T20:58:58Z)
   
 * [\[web-animations-2\] \`getComputedTiming()\` progress prop has incorrect description](https://github.com/mdn/content/issues/41789) (2025-11-03T10:02:45Z)
   
