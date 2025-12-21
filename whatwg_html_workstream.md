@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] until-found should be listed as a separate row in the BCD table](https://github.com/mdn/content/issues/42484) (2025-12-20T19:38:04Z)
-  
 * [\[html\] For clarity, explicitly connect "these Boolean properties" to "validity states"](https://github.com/mdn/content/issues/42457) (2025-12-18T13:11:26Z)
   
 * [\[html\] Document that iframe referrerpolicy can influence location.ancestorOrigins and windowclient.ancestorOrigins](https://github.com/mdn/content/issues/42231) (2025-12-04T14:29:25Z)
