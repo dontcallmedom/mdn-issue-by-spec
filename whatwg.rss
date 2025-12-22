@@ -4,10 +4,42 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Thu, 18 Dec 2025 13:11:26 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 22 Dec 2025 22:10:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[notifications] showNotification has too many options!]]></title>
+            <link>https://github.com/mdn/content/issues/42499</link>
+            <guid>https://github.com/mdn/content/issues/42499</guid>
+            <pubDate>Mon, 22 Dec 2025 22:10:35 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/showNotification" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/showNotification</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">parameters</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Currently there are 3 way that you can set images to your notification, <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/showNotification#badge" rel="nofollow"><code class="notranslate">badge</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/showNotification#icon" rel="nofollow"><code class="notranslate">icon</code></a> and also <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/showNotification#image" rel="nofollow"><code class="notranslate">image</code></a></p>
+<p dir="auto">It's confusing to have so many option to choose from.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I want to have a image schema of where all the bells and whistles goes where in the notification, how it's going to look like on different devices.</p>
+<p dir="auto">A real live demo would be super useful to see and test how it's going to behave.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjY0NDIxODUsIm5iZiI6MTc2NjQ0MTg4NSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MTIyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTEyMjJUMjIxODA1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDBkYWQyMTU1Y2MxOTNlY2Q5NjIwYjkwZGMwM2ZhZGU3ZGRiMTg1YTFmNzhmY2M1NzIyMGNmZWExMTUxZmRjYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.Nf1mOT_NtxPBzcldxjouaJ5-B7lcpzAWTPt-Flhzr8w"><img width="1536" height="1024" alt="Image" src="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjY0NDIxODUsIm5iZiI6MTc2NjQ0MTg4NSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MTIyMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTEyMjJUMjIxODA1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDBkYWQyMTU1Y2MxOTNlY2Q5NjIwYjkwZGMwM2ZhZGU3ZGRiMTg1YTFmNzhmY2M1NzIyMGNmZWExMTUxZmRjYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.Nf1mOT_NtxPBzcldxjouaJ5-B7lcpzAWTPt-Flhzr8w" style="max-width: 100%; height: auto; max-height: 1024px;"></a>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/serviceworkerregistration/shownotification</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/showNotification" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/showNotification</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkerregistration/shownotification/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/serviceworkerregistration/shownotification/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/e7bc0ed5466f5834641d75d416fa81886cf6b37e/hovercard" href="https://github.com/mdn/content/commit/e7bc0ed5466f5834641d75d416fa81886cf6b37e"><tt>e7bc0ed</tt></a></li>
+<li>Document last modified: 2025-09-24T12:28:15.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] For clarity, explicitly connect "these Boolean properties" to "validity states"]]></title>
             <link>https://github.com/mdn/content/issues/42457</link>
