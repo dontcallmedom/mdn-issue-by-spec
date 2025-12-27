@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[cssom-view-1, dom, DOM-Parsing\] Range interface documentation has incorrect inheritance description](https://github.com/mdn/content/issues/42547) (2025-12-27T01:37:05Z)
+  
 * [\[cssom-1\] Css rule is missing MARGIN_RULE](https://github.com/mdn/content/issues/42494) (2025-12-22T07:32:21Z)
   
 * [\[hr-time-3, ecmascript\] Fix: CORP does not enable SharedArrayBuffer](https://github.com/mdn/content/issues/42236) (2025-12-05T03:19:41Z)

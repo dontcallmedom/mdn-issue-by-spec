@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[cssom-view-1, dom, DOM-Parsing\] Range interface documentation has incorrect inheritance description](https://github.com/mdn/content/issues/42547) (2025-12-27T01:37:05Z)
+  
 * [\[notifications\] showNotification has too many options!](https://github.com/mdn/content/issues/42499) (2025-12-22T22:10:35Z)
   
 * [\[html\] For clarity, explicitly connect "these Boolean properties" to "validity states"](https://github.com/mdn/content/issues/42457) (2025-12-18T13:11:26Z)

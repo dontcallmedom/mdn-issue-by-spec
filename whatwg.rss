@@ -4,10 +4,41 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Mon, 22 Dec 2025 22:10:35 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 27 Dec 2025 01:37:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[cssom-view-1, dom, DOM-Parsing] Range interface documentation has incorrect inheritance description]]></title>
+            <link>https://github.com/mdn/content/issues/42547</link>
+            <guid>https://github.com/mdn/content/issues/42547</guid>
+            <pubDate>Sat, 27 Dec 2025 01:37:05 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Range" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Range</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Instance Properties</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The Instance Properties section of the Range interface says that "There are no inherited properties."</p>
+<p dir="auto">Compare this to the Static Range page which says "The properties below are inherited from its parent interface, AbstractRange"</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I expected to see the Range interface documentation correctly indicate that it inherits its properties from its parent interface AbstractRange, as is done in the similar StaticRange interface.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/range</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Range" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Range</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/range/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/range/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/2937558d5ed1e03d7f60b2de71dd9c17f490166e/hovercard" href="https://github.com/mdn/content/commit/2937558d5ed1e03d7f60b2de71dd9c17f490166e"><tt>2937558</tt></a></li>
+<li>Document last modified: 2023-02-19T10:03:58.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[notifications] showNotification has too many options!]]></title>
             <link>https://github.com/mdn/content/issues/42499</link>
@@ -24,7 +55,7 @@
 <p dir="auto">I want to have a image schema of where all the bells and whistles goes where in the notification, how it's going to look like on different devices.</p>
 <p dir="auto">A real live demo would be super useful to see and test how it's going to behave.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjY3OTM2NTcsIm5iZiI6MTc2Njc5MzM1NywicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MTIyNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTEyMjZUMjM1NTU3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NmVmODBlNTFjNDU2NWRlNTRjOGEwZTk0ZWUzMzFiNDBmYTdjN2Q3ODlhZDA0ZTEwZjA0MGQ0NTE1ODc5YWQzZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.Az3qYb22bEYJbeyJ6cXyxbc7EM8BL1oLIV2auIe9R4M"><img width="1536" height="1024" alt="Image" src="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjY3OTM2NTcsIm5iZiI6MTc2Njc5MzM1NywicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MTIyNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTEyMjZUMjM1NTU3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NmVmODBlNTFjNDU2NWRlNTRjOGEwZTk0ZWUzMzFiNDBmYTdjN2Q3ODlhZDA0ZTEwZjA0MGQ0NTE1ODc5YWQzZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.Az3qYb22bEYJbeyJ6cXyxbc7EM8BL1oLIV2auIe9R4M" style="max-width: 100%; height: auto; max-height: 1024px;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjY4MDAzNTksIm5iZiI6MTc2NjgwMDA1OSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MTIyNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTEyMjdUMDE0NzM5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZmQyNjE0MWZlOTAxZTVlMGE1MTI5MjdkMDQ2N2FmMGRkOTQ4ZGI3MGM4MzVhYjk2OTE1YjIwMWYyNjdjYzIyYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.D30vtGvznz20msyuOQPwLGXJV6Y53JeKuC0rfh6ATDQ"><img width="1536" height="1024" alt="Image" src="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjY4MDAzNTksIm5iZiI6MTc2NjgwMDA1OSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MTIyNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTEyMjdUMDE0NzM5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZmQyNjE0MWZlOTAxZTVlMGE1MTI5MjdkMDQ2N2FmMGRkOTQ4ZGI3MGM4MzVhYjk2OTE1YjIwMWYyNjdjYzIyYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.D30vtGvznz20msyuOQPwLGXJV6Y53JeKuC0rfh6ATDQ" style="max-width: 100%; height: auto; max-height: 1024px;"></a>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">MDN metadata</h3>
