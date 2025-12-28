@@ -6,8 +6,6 @@
   
 * [\[cssom-1\] Css rule is missing MARGIN_RULE](https://github.com/mdn/content/issues/42494) (2025-12-22T07:32:21Z)
   
-* [\[cssom-view-1\] Make it clear that scroll and scrollTo are the same](https://github.com/mdn/content/issues/42222) (2025-12-03T17:32:23Z)
-  
 * [\[web-animations-2\] \`getComputedTiming()\` progress prop has incorrect description](https://github.com/mdn/content/issues/41789) (2025-11-03T10:02:45Z)
   
 * [\[selectors-4\] \`::-webkit-details-marker\` undocumented; example has invalid syntax](https://github.com/mdn/content/issues/41744) (2025-10-30T08:57:32Z)
