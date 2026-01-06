@@ -4,10 +4,48 @@
         <title>W3C Web Applications Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_applications_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Applications Working Group</description>
-        <lastBuildDate>Sat, 27 Dec 2025 13:37:51 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 06 Jan 2026 19:46:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[IndexedDB-3] Incorrect information of IDBRequest error event bubling]]></title>
+            <link>https://github.com/mdn/content/issues/42650</link>
+            <guid>https://github.com/mdn/content/issues/42650</guid>
+            <pubDate>Tue, 06 Jan 2026 19:46:06 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/error_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/error_event</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">In the article it states that "This event is not cancelable and does not bubble."<br>
+However, the spec states that:</p>
+<blockquote>
+<p dir="auto">To fire an error event at a request, run these steps:<br>
+...<br>
+Set event’s <a href="https://dom.spec.whatwg.org/#dom-event-bubbles" rel="nofollow">bubbles</a> and <a href="https://dom.spec.whatwg.org/#dom-event-cancelable" rel="nofollow">cancelable</a> attributes to true.</p>
+</blockquote>
+<p dir="auto"><a href="https://w3c.github.io/IndexedDB/#fire-error-event" rel="nofollow">https://w3c.github.io/IndexedDB/#fire-error-event</a></p>
+<p dir="auto">Also tested with latest chrome, the actual implementation is in line with the spec.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The event is cancelable and does bubble.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/idbrequest/error_event</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/error_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/error_event</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/idbrequest/error_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/idbrequest/error_event/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/f5e710f5c620c8d3c8b179f3b062d6bbdc8389ec/hovercard" href="https://github.com/mdn/content/commit/f5e710f5c620c8d3c8b179f3b062d6bbdc8389ec"><tt>f5e710f</tt></a></li>
+<li>Document last modified: 2025-05-02T03:02:32.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[uievents] focusin / focusout missing compatibility information]]></title>
             <link>https://github.com/mdn/content/issues/42550</link>

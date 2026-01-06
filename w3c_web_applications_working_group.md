@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[IndexedDB-3\] Incorrect information of IDBRequest error event bubling](https://github.com/mdn/content/issues/42650) (2026-01-06T19:46:06Z)
+  
 * [\[uievents\] focusin / focusout missing compatibility information](https://github.com/mdn/content/issues/42550) (2025-12-27T13:37:51Z)
   
 * [\[uievents\] There are more keydowns that don't constitute user activation](https://github.com/mdn/content/issues/41393) (2025-10-04T20:12:19Z)
