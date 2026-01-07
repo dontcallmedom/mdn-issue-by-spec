@@ -4,8 +4,6 @@
 
 * [\[cssom-view-1, dom, DOM-Parsing\] Range interface documentation has incorrect inheritance description](https://github.com/mdn/content/issues/42547) (2025-12-27T01:37:05Z)
   
-* [\[cssom-1\] Css rule is missing MARGIN_RULE](https://github.com/mdn/content/issues/42494) (2025-12-22T07:32:21Z)
-  
 * [\[web-animations-2\] \`getComputedTiming()\` progress prop has incorrect description](https://github.com/mdn/content/issues/41789) (2025-11-03T10:02:45Z)
   
 * [\[selectors-4\] \`::-webkit-details-marker\` undocumented; example has invalid syntax](https://github.com/mdn/content/issues/41744) (2025-10-30T08:57:32Z)
