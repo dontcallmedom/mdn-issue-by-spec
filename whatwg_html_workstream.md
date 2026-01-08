@@ -4,8 +4,6 @@
 
 * [\[html\] Clarify parent-side DOM access with allow-same-origin in \<iframe\> sandbox](https://github.com/mdn/content/issues/42633) (2026-01-05T16:11:46Z)
   
-* [\[html\] For clarity, explicitly connect "these Boolean properties" to "validity states"](https://github.com/mdn/content/issues/42457) (2025-12-18T13:11:26Z)
-  
 * [\[html\] Document that iframe referrerpolicy can influence location.ancestorOrigins and windowclient.ancestorOrigins](https://github.com/mdn/content/issues/42231) (2025-12-04T14:29:25Z)
   
 * [\[html\] Poor choice of canvas id](https://github.com/mdn/content/issues/42155) (2025-11-27T23:12:59Z)
