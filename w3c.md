@@ -22,8 +22,6 @@
   
 * [\[service-workers-1\] Client URL does not change upon subsequent navigation](https://github.com/mdn/content/issues/41482) (2025-10-12T20:12:57Z)
   
-* [\[uievents\] There are more keydowns that don't constitute user activation](https://github.com/mdn/content/issues/41393) (2025-10-04T20:12:19Z)
-  
 * [\[mediasession\] MediaSession code samples inexplicable](https://github.com/mdn/content/issues/41250) (2025-09-22T17:37:24Z)
   
 * [\[css-grid-3\] Confusing/misleading example](https://github.com/mdn/content/issues/41176) (2025-09-17T15:17:35Z)
