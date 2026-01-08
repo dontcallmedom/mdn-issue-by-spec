@@ -6,7 +6,7 @@
   
 * [\[cssom-view-1, dom, DOM-Parsing\] Range interface documentation has incorrect inheritance description](https://github.com/mdn/content/issues/42547) (2025-12-27T01:37:05Z)
   
-* [\[notifications\] showNotification has too many options!](https://github.com/mdn/content/issues/42499) (2025-12-22T22:10:35Z)
+* [\[notifications\] showNotification: clarify difference between badge, icon, and image](https://github.com/mdn/content/issues/42499) (2025-12-22T22:10:35Z)
   
 * [\[html\] For clarity, explicitly connect "these Boolean properties" to "validity states"](https://github.com/mdn/content/issues/42457) (2025-12-18T13:11:26Z)
   
