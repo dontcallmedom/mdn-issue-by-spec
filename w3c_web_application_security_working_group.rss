@@ -4,10 +4,50 @@
         <title>W3C Web Application Security Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_application_security_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Application Security Working Group</description>
-        <lastBuildDate>Mon, 28 Oct 2024 18:04:13 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 09 Jan 2026 04:28:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[credential-management-1] Abort throws a string when abort reason is provided]]></title>
+            <link>https://github.com/mdn/content/issues/42698</link>
+            <guid>https://github.com/mdn/content/issues/42698</guid>
+            <pubDate>Fri, 09 Jan 2026 04:28:17 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/CredentialsContainer/get" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CredentialsContainer/get</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Exceptions</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">It would be useful to add a passage explaining that when a signal passed to <code class="notranslate">get</code> is aborted with a reason, then the exception thrown is a string matching the reason provided.</p>
+<p dir="auto">e.g.</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="signal = new AbortController();
+navigator.credentials
+  .get({ otp: { transport: [&quot;sms&quot;] }, signal: signal.signal })
+  .catch((err) =&gt; console.error(typeof err)); // prints `&quot;string&quot;`
+signal.abort(&quot;reason&quot;);"><pre class="notranslate"><span class="pl-s1">signal</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">AbortController</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">navigator</span><span class="pl-kos">.</span><span class="pl-c1">credentials</span>
+  <span class="pl-kos">.</span><span class="pl-en">get</span><span class="pl-kos">(</span><span class="pl-kos">{</span> <span class="pl-c1">otp</span>: <span class="pl-kos">{</span> <span class="pl-c1">transport</span>: <span class="pl-kos">[</span><span class="pl-s">"sms"</span><span class="pl-kos">]</span> <span class="pl-kos">}</span><span class="pl-kos">,</span> <span class="pl-c1">signal</span>: <span class="pl-s1">signal</span><span class="pl-kos">.</span><span class="pl-c1">signal</span> <span class="pl-kos">}</span><span class="pl-kos">)</span>
+  <span class="pl-kos">.</span><span class="pl-en">catch</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">err</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">error</span><span class="pl-kos">(</span><span class="pl-k">typeof</span> <span class="pl-s1">err</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// prints `"string"`</span>
+<span class="pl-s1">signal</span><span class="pl-kos">.</span><span class="pl-en">abort</span><span class="pl-kos">(</span><span class="pl-s">"reason"</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/credentialscontainer/get</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CredentialsContainer/get" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CredentialsContainer/get</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/credentialscontainer/get/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/credentialscontainer/get/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/798f5efbce403e2366323afea025e5729b902e46/hovercard" href="https://github.com/mdn/content/commit/798f5efbce403e2366323afea025e5729b902e46"><tt>798f5ef</tt></a></li>
+<li>Document last modified: 2025-12-19T00:53:07.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[referrer-policy] Add information to Referrer-Policy docs about how it can affect the Origin header]]></title>
             <link>https://github.com/mdn/content/issues/36543</link>
