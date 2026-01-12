@@ -4,10 +4,28 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Mon, 05 Jan 2026 16:11:46 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 12 Jan 2026 19:29:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[cssom-view-1, dom, DOM-Parsing] Range, StaticRange: deduplicate content from AbstractRange]]></title>
+            <link>https://github.com/mdn/content/issues/42760</link>
+            <guid>https://github.com/mdn/content/issues/42760</guid>
+            <pubDate>Mon, 12 Jan 2026 19:29:30 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Range" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Range</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Instance properties</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">These interfaces document properties like <code class="notranslate">endContainer</code> and <code class="notranslate">endOffset</code>, but these are already defined on <code class="notranslate">AbstractRange</code>, and aren't overridden by the subclasses.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Per MDN conventions, this means they should be documented once on <code class="notranslate">AbstractRange</code>, and noted on each subclass's landing page as "Also inherits properties from its parent interface, <code class="notranslate">AbstractRange</code>". Which means <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3764202011" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/42547" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/42547/hovercard" href="https://github.com/mdn/content/issues/42547">#42547</a> and <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3796810814" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/42707" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/42707/hovercard" href="https://github.com/mdn/content/pull/42707">#42707</a> have to be redone.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://dom.spec.whatwg.org/#interface-staticrange" rel="nofollow">https://dom.spec.whatwg.org/#interface-staticrange</a> and <a href="https://dom.spec.whatwg.org/#interface-range" rel="nofollow">https://dom.spec.whatwg.org/#interface-range</a> do not define these properties</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Clarify parent-side DOM access with allow-same-origin in <iframe> sandbox]]></title>
             <link>https://github.com/mdn/content/issues/42633</link>
@@ -49,7 +67,7 @@ The specification distinguishes between the "sandboxed origin browsing context f
 <p dir="auto">I want to have a image schema of where all the bells and whistles goes where in the notification, how it's going to look like on different devices.</p>
 <p dir="auto">A real live demo would be super useful to see and test how it's going to behave.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjgyNDY0MDUsIm5iZiI6MTc2ODI0NjEwNSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDExMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAxMTJUMTkyODI1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Yjk5MTg5ZDY5M2NhNjJjMjc1OTkzNDQ3YTk0MTA4MWQzMDgwOTc1MWI0OTA2YjRlOGFjZTRkMWUwNzdlYTI3OSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.gPm7n1Lfs6nN85Teq_wF4HcQBPjRIKImPgbjIL32cAo"><img width="1536" height="1024" alt="Image" src="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjgyNDY0MDUsIm5iZiI6MTc2ODI0NjEwNSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDExMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAxMTJUMTkyODI1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Yjk5MTg5ZDY5M2NhNjJjMjc1OTkzNDQ3YTk0MTA4MWQzMDgwOTc1MWI0OTA2YjRlOGFjZTRkMWUwNzdlYTI3OSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.gPm7n1Lfs6nN85Teq_wF4HcQBPjRIKImPgbjIL32cAo" style="max-width: 100%; height: auto; max-height: 1024px;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjgyNDczMDEsIm5iZiI6MTc2ODI0NzAwMSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDExMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAxMTJUMTk0MzIxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTE5NDE4NjE4NjQxMzA3Y2YyZmY2MmE5OWM2ZmU4OWVjZDhiNzM3Yjg4ZGM4NmEwYWNmMWMwNzA3OTAwNTgwNiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.0SeC29C4dlfyg0N1994D1wz4rZAPmrG4VD3eyRmb2x8"><img width="1536" height="1024" alt="Image" src="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjgyNDczMDEsIm5iZiI6MTc2ODI0NzAwMSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDExMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAxMTJUMTk0MzIxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTE5NDE4NjE4NjQxMzA3Y2YyZmY2MmE5OWM2ZmU4OWVjZDhiNzM3Yjg4ZGM4NmEwYWNmMWMwNzA3OTAwNTgwNiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.0SeC29C4dlfyg0N1994D1wz4rZAPmrG4VD3eyRmb2x8" style="max-width: 100%; height: auto; max-height: 1024px;"></a>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">MDN metadata</h3>

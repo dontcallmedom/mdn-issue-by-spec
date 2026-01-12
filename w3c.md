@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[cssom-view-1, dom, DOM-Parsing\] Range, StaticRange: deduplicate content from AbstractRange](https://github.com/mdn/content/issues/42760) (2026-01-12T19:29:30Z)
+  
 * [\[credential-management-1\] Abort throws a string when abort reason is provided](https://github.com/mdn/content/issues/42698) (2026-01-09T04:28:17Z)
   
 * [\[IndexedDB-3\] Incorrect information of IDBRequest error event bubling](https://github.com/mdn/content/issues/42650) (2026-01-06T19:46:06Z)
