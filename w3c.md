@@ -6,8 +6,6 @@
   
 * [\[IndexedDB-3\] Incorrect information of IDBRequest error event bubling](https://github.com/mdn/content/issues/42650) (2026-01-06T19:46:06Z)
   
-* [\[cssom-view-1, dom, DOM-Parsing\] Range interface documentation has incorrect inheritance description](https://github.com/mdn/content/issues/42547) (2025-12-27T01:37:05Z)
-  
 * [\[hr-time-3, ecmascript\] Fix: CORP does not enable SharedArrayBuffer](https://github.com/mdn/content/issues/42236) (2025-12-05T03:19:41Z)
   
 * [\[screen-capture\] displaySurface in getDisplayMedia no longer supported on safari](https://github.com/mdn/content/issues/42218) (2025-12-03T14:11:50Z)

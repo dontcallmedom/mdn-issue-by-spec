@@ -4,8 +4,6 @@
 
 * [\[html\] Clarify parent-side DOM access with allow-same-origin in \<iframe\> sandbox](https://github.com/mdn/content/issues/42633) (2026-01-05T16:11:46Z)
   
-* [\[cssom-view-1, dom, DOM-Parsing\] Range interface documentation has incorrect inheritance description](https://github.com/mdn/content/issues/42547) (2025-12-27T01:37:05Z)
-  
 * [\[notifications\] showNotification: clarify difference between badge, icon, and image](https://github.com/mdn/content/issues/42499) (2025-12-22T22:10:35Z)
   
 * [\[html\] Document that iframe referrerpolicy can influence location.ancestorOrigins and windowclient.ancestorOrigins](https://github.com/mdn/content/issues/42231) (2025-12-04T14:29:25Z)
