@@ -21,21 +21,25 @@
 <p dir="auto">I believe SharedArrayBuffer is enabled by COOP + COEP, not CORP and CORP only affects resources, not the enabling of SharedArrayBuffer itself.</p>
 <p dir="auto"><strong>Affected text:</strong></p>
 <p dir="auto">Instruct browsers to allow cross-origin resource access, including access to features with unthrottled timers (such as <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer" rel="nofollow">SharedArrayBuffer</a> objects or <a href="https://developer.mozilla.org/en-US/docs/Web/API/Performance/now" rel="nofollow">Performance.now()</a>):</p>
-<div class="highlight highlight-source-httpspec notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="Cross-Origin-Resource-Policy: same-origin
-Cross-Origin-Embedder-Policy: require-corp"><pre class="notranslate"><span class="pl-s"><span class="pl-v">Cross-Origin-Resource-Policy:</span> same-origin</span>
-<span class="pl-s"><span class="pl-v">Cross-Origin-Embedder-Policy:</span> require-corp</span></pre></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Cross-Origin-Resource-Policy: same-origin
+Cross-Origin-Embedder-Policy: require-corp"><pre lang="http" class="notranslate"><code class="notranslate">Cross-Origin-Resource-Policy: same-origin
+Cross-Origin-Embedder-Policy: require-corp
+</code></pre></div>
 <p dir="auto">This also permits such resources to be embedded.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">To enable SharedArrayBuffer and performance.now(), the document must be cross-origin isolated environment. Include the following headers on the document:</p>
-<div class="highlight highlight-source-httpspec notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="Cross-Origin-Opener-Policy: same-origin
-Cross-Origin-Embedder-Policy: require-corp"><pre class="notranslate"><span class="pl-s"><span class="pl-v">Cross-Origin-Opener-Policy:</span> same-origin</span>
-<span class="pl-s"><span class="pl-v">Cross-Origin-Embedder-Policy:</span> require-corp</span></pre></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Cross-Origin-Opener-Policy: same-origin
+Cross-Origin-Embedder-Policy: require-corp"><pre lang="http" class="notranslate"><code class="notranslate">Cross-Origin-Opener-Policy: same-origin
+Cross-Origin-Embedder-Policy: require-corp
+</code></pre></div>
 <p dir="auto">A page using <code class="notranslate">Cross-Origin-Embedder-Policy</code>: <code class="notranslate">require-corp</code> may only load resources that explicitly allow being embedded.<br>
 Resources can opt in using either:</p>
 <p dir="auto"><strong>Cross-Origin-Resource-Policy (CORP):</strong></p>
-<div class="highlight highlight-source-httpspec notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="Cross-Origin-Resource-Policy: cross-origin"><pre class="notranslate"><span class="pl-s"><span class="pl-v">Cross-Origin-Resource-Policy:</span> cross-origin</span></pre></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Cross-Origin-Resource-Policy: cross-origin"><pre lang="http" class="notranslate"><code class="notranslate">Cross-Origin-Resource-Policy: cross-origin
+</code></pre></div>
 <p dir="auto"><strong>or CORS:</strong></p>
-<div class="highlight highlight-source-httpspec notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="Access-Control-Allow-Origin: https://example.com"><pre class="notranslate"><span class="pl-s"><span class="pl-v">Access-Control-Allow-Origin:</span> https://example.com</span></pre></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Access-Control-Allow-Origin: https://example.com"><pre lang="http" class="notranslate"><code class="notranslate">Access-Control-Allow-Origin: https://example.com
+</code></pre></div>
 <p dir="auto">CORP and CORS do not themselves enable SharedArrayBuffer they only allow resources to be loaded under COEP so that isolation is maintained.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
@@ -61,7 +65,7 @@ Errors in Thenable must be a sync <code class="notranslate">throw</code> or manu
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const syncErr = {
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const syncErr = {
   then() {
     throw new Error;
   }
@@ -76,22 +80,23 @@ Promise.resolve(syncErr).catch(() =&gt; {
 });
 Promise.resolve(asyncErr).catch(() =&gt; {
   console.log(&quot;caught async err&quot;);
-});"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">syncErr</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span>
-  <span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-    <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-v">Error</span><span class="pl-kos">;</span>
-  <span class="pl-kos">}</span>
-<span class="pl-kos">}</span><span class="pl-kos">;</span>
-<span class="pl-k">const</span> <span class="pl-s1">asyncErr</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span>
-  <span class="pl-k">async</span> <span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-    <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-v">Error</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-  <span class="pl-kos">}</span>
-<span class="pl-kos">}</span><span class="pl-kos">;</span>
-<span class="pl-v">Promise</span><span class="pl-kos">.</span><span class="pl-en">resolve</span><span class="pl-kos">(</span><span class="pl-s1">syncErr</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">catch</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"caught sync err"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-v">Promise</span><span class="pl-kos">.</span><span class="pl-en">resolve</span><span class="pl-kos">(</span><span class="pl-s1">asyncErr</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">catch</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
-  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"caught async err"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+});"><pre lang="js" class="notranslate"><code class="notranslate">const syncErr = {
+  then() {
+    throw new Error;
+  }
+};
+const asyncErr = {
+  async then() {
+    throw new Error();
+  }
+};
+Promise.resolve(syncErr).catch(() =&gt; {
+  console.log("caught sync err");
+});
+Promise.resolve(asyncErr).catch(() =&gt; {
+  console.log("caught async err");
+});
+</code></pre></div>
 <p dir="auto">async error is leaked.</p>
 <h3 dir="auto">MDN metadata</h3>
 
