@@ -20,16 +20,15 @@
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">It would be useful to add a passage explaining that when a signal passed to <code class="notranslate">get</code> is aborted with a reason, then the exception thrown is a string matching the reason provided.</p>
 <p dir="auto">e.g.</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="signal = new AbortController();
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="signal = new AbortController();
 navigator.credentials
   .get({ otp: { transport: [&quot;sms&quot;] }, signal: signal.signal })
   .catch((err) =&gt; console.error(typeof err)); // prints `&quot;string&quot;`
-signal.abort(&quot;reason&quot;);"><pre lang="js" class="notranslate"><code class="notranslate">signal = new AbortController();
-navigator.credentials
-  .get({ otp: { transport: ["sms"] }, signal: signal.signal })
-  .catch((err) =&gt; console.error(typeof err)); // prints `"string"`
-signal.abort("reason");
-</code></pre></div>
+signal.abort(&quot;reason&quot;);"><pre class="notranslate"><span class="pl-s1">signal</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">AbortController</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">navigator</span><span class="pl-kos">.</span><span class="pl-c1">credentials</span>
+  <span class="pl-kos">.</span><span class="pl-en">get</span><span class="pl-kos">(</span><span class="pl-kos">{</span> <span class="pl-c1">otp</span>: <span class="pl-kos">{</span> <span class="pl-c1">transport</span>: <span class="pl-kos">[</span><span class="pl-s">"sms"</span><span class="pl-kos">]</span> <span class="pl-kos">}</span><span class="pl-kos">,</span> <span class="pl-c1">signal</span>: <span class="pl-s1">signal</span><span class="pl-kos">.</span><span class="pl-c1">signal</span> <span class="pl-kos">}</span><span class="pl-kos">)</span>
+  <span class="pl-kos">.</span><span class="pl-en">catch</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">err</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">error</span><span class="pl-kos">(</span><span class="pl-k">typeof</span> <span class="pl-s1">err</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// prints `"string"`</span>
+<span class="pl-s1">signal</span><span class="pl-kos">.</span><span class="pl-en">abort</span><span class="pl-kos">(</span><span class="pl-s">"reason"</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
