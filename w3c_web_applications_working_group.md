@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[IndexedDB-3\] Improve the description of IDBFactory.deleteDatabase and mention blocked state](https://github.com/mdn/content/issues/42779) (2026-01-14T21:32:58Z)
+  
 * [\[IndexedDB-3\] Incorrect information of IDBRequest error event bubling](https://github.com/mdn/content/issues/42650) (2026-01-06T19:46:06Z)
   
 * [\[html, uievents\] Inconsistency in dragover event timing information](https://github.com/mdn/content/issues/36689) (2024-11-07T19:25:18Z)
