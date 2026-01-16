@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] Google free, download A to Z muvi, and mp3 song, eg daunlord](https://github.com/mdn/content/issues/42799) (2026-01-16T19:16:07Z)
-  
 * [\[html\] Clarify parent-side DOM access with allow-same-origin in \<iframe\> sandbox](https://github.com/mdn/content/issues/42633) (2026-01-05T16:11:46Z)
   
 * [\[html\] Document that iframe referrerpolicy can influence location.ancestorOrigins and windowclient.ancestorOrigins](https://github.com/mdn/content/issues/42231) (2025-12-04T14:29:25Z)
