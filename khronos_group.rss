@@ -4,10 +4,45 @@
         <title>Khronos Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/khronos_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Khronos Group</description>
-        <lastBuildDate>Sat, 06 Dec 2025 08:52:10 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 19 Jan 2026 21:45:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[WEBGL_lose_context] Should mention being recommended mechanism to drop underlying graphics resources]]></title>
+            <link>https://github.com/mdn/content/issues/42833</link>
+            <guid>https://github.com/mdn/content/issues/42833</guid>
+            <pubDate>Mon, 19 Jan 2026 21:45:22 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WEBGL_lose_context/loseContext" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WEBGL_lose_context/loseContext</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The document talks about it being a debugging tool to simulate losing the context, however it can also be used for freeing graphics resources.</p>
+<p dir="auto">The <a href="https://registry.khronos.org/webgl/extensions/WEBGL_lose_context/" rel="nofollow">specification</a> mentions for <code class="notranslate">loseContext()</code>:</p>
+<blockquote>
+<p dir="auto">Implementations should destroy the underlying graphics context and all graphics resources when this method is called. This is the recommended mechanism for applications to programmatically halt their use of the WebGL API.</p>
+</blockquote>
+<p dir="auto">This should probably be incorporated into the page.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Mentioning that this is the recommended mechanism to programmatically drop graphics resources and stop using WebGL API.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/webgl_lose_context/losecontext</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WEBGL_lose_context/loseContext" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WEBGL_lose_context/loseContext</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl_lose_context/losecontext/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/webgl_lose_context/losecontext/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/f71683f74da0078d9371c4d0c1ff9d3898fc7b59/hovercard" href="https://github.com/mdn/content/commit/f71683f74da0078d9371c4d0c1ff9d3898fc7b59"><tt>f71683f</tt></a></li>
+<li>Document last modified: 2025-09-19T15:38:24.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[webgl1, webgl2, OES_texture_float] Clarify the information about available texture format and its properties in WebGL 2 context]]></title>
             <link>https://github.com/mdn/content/issues/42269</link>
