@@ -6,6 +6,8 @@
   
 * [\[IndexedDB-3\] Improve the description of IDBFactory.deleteDatabase and mention blocked state](https://github.com/mdn/content/issues/42779) (2026-01-14T21:32:58Z)
   
+* [\[html, picture-in-picture\] "Document: exitPictureInPicture() method" Examples has a problem](https://github.com/mdn/content/issues/42846) (2026-01-14T17:37:24Z)
+  
 * [\[cssom-view-1, dom, DOM-Parsing\] Range, StaticRange: deduplicate content from AbstractRange](https://github.com/mdn/content/issues/42760) (2026-01-12T19:29:30Z)
   
 * [\[credential-management-1\] Abort throws a string when abort reason is provided](https://github.com/mdn/content/issues/42698) (2026-01-09T04:28:17Z)
