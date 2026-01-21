@@ -6,7 +6,5 @@
   
 * [\[hr-time-3, ecmascript\] Fix: CORP does not enable SharedArrayBuffer](https://github.com/mdn/content/issues/42236) (2025-12-05T03:19:41Z)
   
-* [\[ecmascript\] Thenable.then() implementation MUST be non-async](https://github.com/mdn/content/issues/42193) (2025-12-02T05:11:12Z)
-  
 * [\[ecmascript\] Yielding rejected promises from a sync generator now properly closes the iterator](https://github.com/mdn/content/issues/37038) (2024-12-01T10:22:47Z)
   
