@@ -28,8 +28,6 @@
   
 * [\[html, requestidlecallback, css-backgrounds-4\] Reference page titles are not consistent and need improvements](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
   
-* [\[xhr\] Host Permissions CORS contradiction](https://github.com/mdn/content/issues/39168) (2025-04-17T01:59:02Z)
-  
 * [\[html\] Mention Firefox Anti-fingerprinting on \`getImageData()\` page](https://github.com/mdn/content/issues/39084) (2025-04-11T18:49:23Z)
   
 * [\[html\] Clarify image.decode() failure on lazy-loaded images](https://github.com/mdn/content/issues/38034) (2025-02-08T00:22:15Z)
