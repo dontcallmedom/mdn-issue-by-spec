@@ -4,8 +4,6 @@
 
 * [\[html, picture-in-picture\] "Document: exitPictureInPicture() method" Examples has a problem](https://github.com/mdn/content/issues/42846) (2026-01-14T17:37:24Z)
   
-* [\[cssom-view-1, dom, DOM-Parsing\] Range, StaticRange: deduplicate content from AbstractRange](https://github.com/mdn/content/issues/42760) (2026-01-12T19:29:30Z)
-  
 * [\[notifications\] showNotification: clarify difference between badge, icon, and image](https://github.com/mdn/content/issues/42499) (2025-12-22T22:10:35Z)
   
 * [\[html\] Document that iframe referrerpolicy can influence location.ancestorOrigins and windowclient.ancestorOrigins](https://github.com/mdn/content/issues/42231) (2025-12-04T14:29:25Z)

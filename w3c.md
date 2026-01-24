@@ -8,8 +8,6 @@
   
 * [\[html, picture-in-picture\] "Document: exitPictureInPicture() method" Examples has a problem](https://github.com/mdn/content/issues/42846) (2026-01-14T17:37:24Z)
   
-* [\[cssom-view-1, dom, DOM-Parsing\] Range, StaticRange: deduplicate content from AbstractRange](https://github.com/mdn/content/issues/42760) (2026-01-12T19:29:30Z)
-  
 * [\[IndexedDB-3\] Incorrect information of IDBRequest error event bubling](https://github.com/mdn/content/issues/42650) (2026-01-06T19:46:06Z)
   
 * [\[hr-time-3, ecmascript\] Fix: CORP does not enable SharedArrayBuffer](https://github.com/mdn/content/issues/42236) (2025-12-05T03:19:41Z)
