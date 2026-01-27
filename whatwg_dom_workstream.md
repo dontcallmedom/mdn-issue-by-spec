@@ -8,3 +8,5 @@
   
 * [\[html, uievents, dom\] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not](https://github.com/mdn/content/issues/35382) (2024-08-09T02:19:02Z)
   
+* [\[dom\] api.Node.isConnected - Attr.isConnected is always false](https://github.com/mdn/content/issues/42933) (2024-01-26T01:04:37Z)
+  
