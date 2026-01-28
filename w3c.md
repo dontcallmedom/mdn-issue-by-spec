@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[hr-time-3\] performance.now() has different, potentially code-breaking, behaviour between browsers, that is left undocumented](https://github.com/mdn/content/issues/42952) (2026-01-28T16:45:15Z)
+  
 * [\[beacon\] navigator.sendBeacon() page doesn't mention payload limit](https://github.com/mdn/content/issues/42932) (2026-01-27T11:03:20Z)
   
 * [\[uievents\] remove can indeed trigger blur](https://github.com/mdn/content/issues/42801) (2026-01-16T19:35:23Z)
