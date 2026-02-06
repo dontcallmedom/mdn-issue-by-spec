@@ -30,7 +30,7 @@ console.log(url.href); // Logs: 'https://developer.mozilla.org/en-US/docs/Web/AP
 <p dir="auto">the logs of url.href should include a trailing /.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">This is what actually happens:</p>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/141652591/545225395-1158b518-4898-43a8-8e5b-44c118086a14.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzAzNjIyNDQsIm5iZiI6MTc3MDM2MTk0NCwicGF0aCI6Ii8xNDE2NTI1OTEvNTQ1MjI1Mzk1LTExNThiNTE4LTQ4OTgtNDNhOC04ZTViLTQ0YzExODA4NmExNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMjA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDIwNlQwNzEyMjRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lODZiM2EwMTYzMTE5ZDI5ODFlM2I1NThkMzRmYTIyNGE5MzI5YTExOGYxNDE0YTE3NzhiYjkzN2ZjZjExMjk4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.3kpMC4uwCMRH0vx8xXYnGrNWEekNxc0b5TUMwK3yErU"><img width="346" height="79" alt="Image" src="https://private-user-images.githubusercontent.com/141652591/545225395-1158b518-4898-43a8-8e5b-44c118086a14.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzAzNjIyNDQsIm5iZiI6MTc3MDM2MTk0NCwicGF0aCI6Ii8xNDE2NTI1OTEvNTQ1MjI1Mzk1LTExNThiNTE4LTQ4OTgtNDNhOC04ZTViLTQ0YzExODA4NmExNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMjA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDIwNlQwNzEyMjRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lODZiM2EwMTYzMTE5ZDI5ODFlM2I1NThkMzRmYTIyNGE5MzI5YTExOGYxNDE0YTE3NzhiYjkzN2ZjZjExMjk4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.3kpMC4uwCMRH0vx8xXYnGrNWEekNxc0b5TUMwK3yErU" style="max-width: 100%; height: auto; max-height: 79px;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/141652591/545225395-1158b518-4898-43a8-8e5b-44c118086a14.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzAzNjQ5MTcsIm5iZiI6MTc3MDM2NDYxNywicGF0aCI6Ii8xNDE2NTI1OTEvNTQ1MjI1Mzk1LTExNThiNTE4LTQ4OTgtNDNhOC04ZTViLTQ0YzExODA4NmExNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMjA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDIwNlQwNzU2NTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iNzA1MmZhOWM2MmJiZjM0NzM4ODA5NGI3ZmE2ODE5MmQwMmZmNWRkM2ZjMGUwYzZhYzFiMTMyY2NlNTA5OTI0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.NWSfIbDC20dDTkVygFPI9OI-LOsw5M9Iv52W9CI6zTU"><img width="346" height="79" alt="Image" src="https://private-user-images.githubusercontent.com/141652591/545225395-1158b518-4898-43a8-8e5b-44c118086a14.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzAzNjQ5MTcsIm5iZiI6MTc3MDM2NDYxNywicGF0aCI6Ii8xNDE2NTI1OTEvNTQ1MjI1Mzk1LTExNThiNTE4LTQ4OTgtNDNhOC04ZTViLTQ0YzExODA4NmExNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMjA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDIwNlQwNzU2NTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iNzA1MmZhOWM2MmJiZjM0NzM4ODA5NGI3ZmE2ODE5MmQwMmZmNWRkM2ZjMGUwYzZhYzFiMTMyY2NlNTA5OTI0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.NWSfIbDC20dDTkVygFPI9OI-LOsw5M9Iv52W9CI6zTU" style="max-width: 100%; height: auto; max-height: 79px;"></a>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
@@ -84,7 +84,7 @@ Link for the actual event name: <a href="https://developer.mozilla.org/en-US/doc
 <p dir="auto">I want to have a image schema of where all the bells and whistles goes where in the notification, how it's going to look like on different devices.</p>
 <p dir="auto">A real live demo would be super useful to see and test how it's going to behave.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzAzNjIyNDMsIm5iZiI6MTc3MDM2MTk0MywicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDIwNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAyMDZUMDcxMjIzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YmU4NjUwYWViNjgzMDlmN2ZiMzUyZjNjZDg3YTkwNDZkZGM4ZmY5NTI1ZDg4NjQwNTk4ODFkMzk4NTk2YTIwOSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.thAXjF7DyZ4U2QMI6FhrgaRYSJa6HnYJvWvotOn3YCk"><img width="1536" height="1024" alt="Image" src="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzAzNjIyNDMsIm5iZiI6MTc3MDM2MTk0MywicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDIwNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAyMDZUMDcxMjIzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YmU4NjUwYWViNjgzMDlmN2ZiMzUyZjNjZDg3YTkwNDZkZGM4ZmY5NTI1ZDg4NjQwNTk4ODFkMzk4NTk2YTIwOSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.thAXjF7DyZ4U2QMI6FhrgaRYSJa6HnYJvWvotOn3YCk" style="max-width: 100%; height: auto; max-height: 1024px;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzAzNjQ5MTUsIm5iZiI6MTc3MDM2NDYxNSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDIwNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAyMDZUMDc1NjU1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTUyMGU5MWM1ZjVjMzAyZDQ5NWIzZDcwYjRkYzEwMzk5YTJlMDk4NzViOTAyMmRjZjkyMGUzZGI5ODM0MDJkYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.vYPCssN8hkQHXtcqF1V4iNVoAjejs2AMzZOhNEsGlGs"><img width="1536" height="1024" alt="Image" src="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzAzNjQ5MTUsIm5iZiI6MTc3MDM2NDYxNSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDIwNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAyMDZUMDc1NjU1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTUyMGU5MWM1ZjVjMzAyZDQ5NWIzZDcwYjRkYzEwMzk5YTJlMDk4NzViOTAyMmRjZjkyMGUzZGI5ODM0MDJkYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.vYPCssN8hkQHXtcqF1V4iNVoAjejs2AMzZOhNEsGlGs" style="max-width: 100%; height: auto; max-height: 1024px;"></a>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">MDN metadata</h3>
@@ -819,16 +819,15 @@ A string reflecting the <a href="https://developer.mozilla.org/en-US/docs/Web/Ac
 <p dir="auto">I expected the <code class="notranslate">isConnected</code> property on Attr nodes to return the same results as it's <code class="notranslate">ownerElement</code>.</p>
 <h3 dir="auto">Did you test this? If so, how?</h3>
 <p dir="auto">I tested in Chrome 121.0.6167.86 and Firefox 122.0.</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="const element = document.createElement('div');
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const element = document.createElement('div');
 element.setAttribute('class', 'test');
 const attribute = element.getAttributeNode('class');
 document.body.append(element);
-console.log(attribute.isConnected, attribute.ownerElement.isConnected); // false true"><pre lang="js" class="notranslate"><code class="notranslate">const element = document.createElement('div');
-element.setAttribute('class', 'test');
-const attribute = element.getAttributeNode('class');
-document.body.append(element);
-console.log(attribute.isConnected, attribute.ownerElement.isConnected); // false true
-</code></pre></div>
+console.log(attribute.isConnected, attribute.ownerElement.isConnected); // false true"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">element</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">createElement</span><span class="pl-kos">(</span><span class="pl-s">'div'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-s1">element</span><span class="pl-kos">.</span><span class="pl-en">setAttribute</span><span class="pl-kos">(</span><span class="pl-s">'class'</span><span class="pl-kos">,</span> <span class="pl-s">'test'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-s1">attribute</span> <span class="pl-c1">=</span> <span class="pl-s1">element</span><span class="pl-kos">.</span><span class="pl-en">getAttributeNode</span><span class="pl-kos">(</span><span class="pl-s">'class'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">body</span><span class="pl-kos">.</span><span class="pl-en">append</span><span class="pl-kos">(</span><span class="pl-s1">element</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">attribute</span><span class="pl-kos">.</span><span class="pl-c1">isConnected</span><span class="pl-kos">,</span> <span class="pl-s1">attribute</span><span class="pl-kos">.</span><span class="pl-c1">ownerElement</span><span class="pl-kos">.</span><span class="pl-c1">isConnected</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// false true</span></pre></div>
 <p dir="auto">I would expect <code class="notranslate">true true</code></p>
 <h3 dir="auto">Can you link to any release notes, bugs, pull requests, or MDN pages related to this?</h3>
 <ul dir="auto">
@@ -900,7 +899,7 @@ console.log(attribute.isConnected, attribute.ownerElement.isConnected); // false
 <p dir="auto">each day’s forecast (<code class="notranslate">&lt;article class="day-forecast"&gt;</code>) doesn’t make sense on its own and is too dependent on the main forecast (<code class="notranslate">&lt;article class="forecast"&gt;</code>), then it might not be appropriate to use the <code class="notranslate">&lt;article&gt;</code> tag for the individual day forecasts.</p>
 <p dir="auto">Instead, you can put the name of the city in each sub article but this lead to lots of repetition, so you could consider using the <code class="notranslate">&lt;section&gt;</code> tag for each day’s forecast, as it is used to group related content. If the individual forecasts are not intended to stand alone and are part of a larger whole (the main forecast), then the <code class="notranslate">&lt;section&gt;</code> tag would be more appropriate.</p>
 <h3 dir="auto">What did you expect to see?</h3>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="&lt;article class=&quot;forecast&quot;&gt;
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;article class=&quot;forecast&quot;&gt;
   &lt;h1&gt;Weather forecast for Seattle&lt;/h1&gt;
   &lt;section class=&quot;day-forecast&quot;&gt;
     &lt;h2&gt;03 March 2018&lt;/h2&gt;
@@ -914,22 +913,21 @@ console.log(attribute.isConnected, attribute.ownerElement.isConnected); // false
     &lt;h2&gt;05 March 2018&lt;/h2&gt;
     &lt;p&gt;Heavy rain.&lt;/p&gt;
   &lt;/section&gt;
-&lt;/article&gt;"><pre lang="html" class="notranslate"><code class="notranslate">&lt;article class="forecast"&gt;
-  &lt;h1&gt;Weather forecast for Seattle&lt;/h1&gt;
-  &lt;section class="day-forecast"&gt;
-    &lt;h2&gt;03 March 2018&lt;/h2&gt;
-    &lt;p&gt;Rain.&lt;/p&gt;
-  &lt;/section&gt;
-  &lt;section class="day-forecast"&gt;
-    &lt;h2&gt;04 March 2018&lt;/h2&gt;
-    &lt;p&gt;Periods of rain.&lt;/p&gt;
-  &lt;/section&gt;
-  &lt;section class="day-forecast"&gt;
-    &lt;h2&gt;05 March 2018&lt;/h2&gt;
-    &lt;p&gt;Heavy rain.&lt;/p&gt;
-  &lt;/section&gt;
-&lt;/article&gt;
-</code></pre></div>
+&lt;/article&gt;"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">article</span> <span class="pl-c1">class</span>="<span class="pl-s">forecast</span>"<span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>Weather forecast for Seattle<span class="pl-kos">&lt;/</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">section</span> <span class="pl-c1">class</span>="<span class="pl-s">day-forecast</span>"<span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">h2</span><span class="pl-kos">&gt;</span>03 March 2018<span class="pl-kos">&lt;/</span><span class="pl-ent">h2</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>Rain.<span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;/</span><span class="pl-ent">section</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">section</span> <span class="pl-c1">class</span>="<span class="pl-s">day-forecast</span>"<span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">h2</span><span class="pl-kos">&gt;</span>04 March 2018<span class="pl-kos">&lt;/</span><span class="pl-ent">h2</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>Periods of rain.<span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;/</span><span class="pl-ent">section</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">section</span> <span class="pl-c1">class</span>="<span class="pl-s">day-forecast</span>"<span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">h2</span><span class="pl-kos">&gt;</span>05 March 2018<span class="pl-kos">&lt;/</span><span class="pl-ent">h2</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>Heavy rain.<span class="pl-kos">&lt;/</span><span class="pl-ent">p</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;/</span><span class="pl-ent">section</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">article</span><span class="pl-kos">&gt;</span></pre></div>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
