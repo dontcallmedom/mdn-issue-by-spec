@@ -44,22 +44,24 @@ try {
 <p dir="auto">If control flow reaches a <code class="notranslate">return</code> statement in the <code class="notranslate">try</code> block and no <code class="notranslate">return</code> statement is present in the <code class="notranslate">finally</code> block, all statements in the <code class="notranslate">finally</code> block are still executed before the function returns the value associated with this statement.</p>
 <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function doIt() {
   try {
-    return 1;
+    return 1; // evaluated first
   } finally {
-    console.log(&quot;enter finally&quot;); // this is executed
+    console.log(&quot;enter finally&quot;); // executed after
+    // the function now returns 1
   }
 }
 doIt(); // returns 1"><pre class="notranslate"><span class="pl-k">function</span> <span class="pl-en">doIt</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
   <span class="pl-k">try</span> <span class="pl-kos">{</span>
-    <span class="pl-k">return</span> <span class="pl-c1">1</span><span class="pl-kos">;</span>
+    <span class="pl-k">return</span> <span class="pl-c1">1</span><span class="pl-kos">;</span> <span class="pl-c">// evaluated first</span>
   <span class="pl-kos">}</span> <span class="pl-k">finally</span> <span class="pl-kos">{</span>
-    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"enter finally"</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// this is executed</span>
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"enter finally"</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// executed after</span>
+    <span class="pl-c">// the function now returns 1</span>
   <span class="pl-kos">}</span>
 <span class="pl-kos">}</span>
 <span class="pl-en">doIt</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// returns 1</span></pre></div>
 <p dir="auto">It is generally a bad idea to use control flow statements (return, throw, break, continue) in the <code class="notranslate">finally</code> block. The <code class="notranslate">finally</code> block always runs after the <code class="notranslate">try</code> and <code class="notranslate">catch</code> blocks, even if they exit because of a control flow statement. If <code class="notranslate">finally</code> itself contains a control flow statement, it takes precedence over the one from <code class="notranslate">try</code> or <code class="notranslate">catch</code>. This means it can change a returned value or replace a thrown exception. For this reason, the <code class="notranslate">finally</code> block should generally be reserved for cleanup code.</p>
 <p dir="auto">The following examples illustrate how this happens in practice.</p>
-<p dir="auto">If control flow reaches two <code class="notranslate">return</code> statements (possibly in the <code class="notranslate">try</code> and <code class="notranslate">finally</code> blocks or in the <code class="notranslate">catch</code> and <code class="notranslate">finally</code> blocks), both statements are executed in the correct order (which matters in the case of side effects). Only the function's returned value will be the one associated with the last <code class="notranslate">return</code> statement executed (which is the one in the <code class="notranslate">finally</code> block).</p>
+<p dir="auto">If control flow reaches two <code class="notranslate">return</code> statements (possibly in the <code class="notranslate">try</code> and <code class="notranslate">finally</code> blocks or in the <code class="notranslate">catch</code> and <code class="notranslate">finally</code> blocks), both statements are evaluated in the correct order (which matters in the case of side effects). Only the function's returned value will be the one associated with the last <code class="notranslate">return</code> statement evaluated (which is the one in the <code class="notranslate">finally</code> block).</p>
 <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function doIt() {
   let order = '';
   try {
