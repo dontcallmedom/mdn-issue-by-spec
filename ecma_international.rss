@@ -4,10 +4,116 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Fri, 05 Dec 2025 03:19:41 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 13 Feb 2026 16:14:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Clarify execution order of control flow statements with finally]]></title>
+            <link>https://github.com/mdn/content/issues/43122</link>
+            <guid>https://github.com/mdn/content/issues/43122</guid>
+            <pubDate>Fri, 13 Feb 2026 16:14:22 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The finally block</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The third bullet point states: “Immediately before the execution of a control-flow statement (return, throw, break, continue) in the try block or catch block that would exit the block.” However, if control flow reaches a return statement in the try block, that statement is still executed (including any side effects it may produce). The finally block runs afterward, but it does not prevent the return statement itself from being evaluated. Only if the finally block contains its own return statement does it override the previous one, causing the function to return the value associated with the return statement in finally.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<h3 dir="auto">The finally block</h3>
+<p dir="auto">The <code class="notranslate">finally</code> block contains statements to execute after the <code class="notranslate">try</code> block and <code class="notranslate">catch</code> block(s) execute, but before the statements following the <code class="notranslate">try...catch...finally</code> block. Control flow will always enter the <code class="notranslate">finally</code> block, which can proceed in one of the following ways:</p>
+<ul dir="auto">
+<li>Immediately after the control flow exits the <code class="notranslate">try</code> block in a <code class="notranslate">try...finally</code> construct (e.g., after the last statement or a <code class="notranslate">throw</code> or <code class="notranslate">return</code> statement);</li>
+<li>Immediately after the control flow exits the <code class="notranslate">catch</code> block in a <code class="notranslate">try...catch...finally</code> construct;</li>
+<li>Immediately after the control flow exits the <code class="notranslate">try</code> block in a <code class="notranslate">try...catch...finally</code> construct, unless it exits via a <code class="notranslate">throw</code> statement (in which case control flow enters the <code class="notranslate">catch</code> block first);</li>
+</ul>
+<p dir="auto">The following example shows one use case for the <code class="notranslate">finally</code> block. The code opens a file and then executes statements that use the file; the <code class="notranslate">finally</code> block makes sure the file always closes after it is used even if an exception was thrown.</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="openMyFile();
+try {
+  // tie up a resource
+  writeMyFile(theData);
+} finally {
+  closeMyFile(); // always close the resource
+}"><pre class="notranslate"><span class="pl-en">openMyFile</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-k">try</span> <span class="pl-kos">{</span>
+  <span class="pl-c">// tie up a resource</span>
+  <span class="pl-en">writeMyFile</span><span class="pl-kos">(</span><span class="pl-s1">theData</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span> <span class="pl-k">finally</span> <span class="pl-kos">{</span>
+  <span class="pl-en">closeMyFile</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// always close the resource</span>
+<span class="pl-kos">}</span></pre></div>
+<p dir="auto">If control flow reaches a <code class="notranslate">return</code> statement in the <code class="notranslate">try</code> block and no <code class="notranslate">return</code> statement is present in the <code class="notranslate">finally</code> block, all statements in the <code class="notranslate">finally</code> block are still executed before the function returns the value associated with this statement.</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function doIt() {
+  try {
+    return 1;
+  } finally {
+    console.log(&quot;enter finally&quot;); // this is executed
+  }
+}
+doIt(); // returns 1"><pre class="notranslate"><span class="pl-k">function</span> <span class="pl-en">doIt</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-k">try</span> <span class="pl-kos">{</span>
+    <span class="pl-k">return</span> <span class="pl-c1">1</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span> <span class="pl-k">finally</span> <span class="pl-kos">{</span>
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"enter finally"</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// this is executed</span>
+  <span class="pl-kos">}</span>
+<span class="pl-kos">}</span>
+<span class="pl-en">doIt</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// returns 1</span></pre></div>
+<p dir="auto">It is generally a bad idea to use control flow statements (return, throw, break, continue) in the <code class="notranslate">finally</code> block. The <code class="notranslate">finally</code> block always runs after the <code class="notranslate">try</code> and <code class="notranslate">catch</code> blocks, even if they exit because of a control flow statement. If <code class="notranslate">finally</code> itself contains a control flow statement, it takes precedence over the one from <code class="notranslate">try</code> or <code class="notranslate">catch</code>. This means it can change a returned value or replace a thrown exception. For this reason, the <code class="notranslate">finally</code> block should generally be reserved for cleanup code.</p>
+<p dir="auto">The following examples illustrate how this happens in practice.</p>
+<p dir="auto">If control flow reaches two <code class="notranslate">return</code> statements (possibly in the <code class="notranslate">try</code> and <code class="notranslate">finally</code> blocks or in the <code class="notranslate">catch</code> and <code class="notranslate">finally</code> blocks), both statements are executed in the correct order (which matters in the case of side effects). Only the function's returned value will be the one associated with the last <code class="notranslate">return</code> statement executed (which is the one in the <code class="notranslate">finally</code> block).</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function doIt() {
+  let order = '';
+  try {
+    return order = order + 'return try, ';
+  } finally {
+    return order = order + 'return finally.';
+  }
+}
+doIt(); // returns 'return try, return finally.'"><pre class="notranslate"><span class="pl-k">function</span> <span class="pl-en">doIt</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-k">let</span> <span class="pl-s1">order</span> <span class="pl-c1">=</span> <span class="pl-s">''</span><span class="pl-kos">;</span>
+  <span class="pl-k">try</span> <span class="pl-kos">{</span>
+    <span class="pl-k">return</span> <span class="pl-s1">order</span> <span class="pl-c1">=</span> <span class="pl-s1">order</span> <span class="pl-c1">+</span> <span class="pl-s">'return try, '</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span> <span class="pl-k">finally</span> <span class="pl-kos">{</span>
+    <span class="pl-k">return</span> <span class="pl-s1">order</span> <span class="pl-c1">=</span> <span class="pl-s1">order</span> <span class="pl-c1">+</span> <span class="pl-s">'return finally.'</span><span class="pl-kos">;</span>
+  <span class="pl-kos">}</span>
+<span class="pl-kos">}</span>
+<span class="pl-en">doIt</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// returns 'return try, return finally.'</span></pre></div>
+<p dir="auto">The same applies to other control flow statements (<code class="notranslate">throw</code>, <code class="notranslate">break</code>, <code class="notranslate">continue</code>).</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function doIt() {
+  try {
+    throw 'try'; // makes control flow enter the `catch` block
+  } catch {
+    throw 'catch'; // makes control flow enter the `finally` block
+  } finally {
+    throw 'finally'; // changes the thrown value from 'catch' to 'finally'
+  }
+}
+doIt(); // throws 'finally'"><pre class="notranslate"><span class="pl-k">function</span> <span class="pl-en">doIt</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-k">try</span> <span class="pl-kos">{</span>
+    <span class="pl-k">throw</span> <span class="pl-s">'try'</span><span class="pl-kos">;</span> <span class="pl-c">// makes control flow enter the `catch` block</span>
+  <span class="pl-kos">}</span> <span class="pl-k">catch</span> <span class="pl-kos">{</span>
+    <span class="pl-k">throw</span> <span class="pl-s">'catch'</span><span class="pl-kos">;</span> <span class="pl-c">// makes control flow enter the `finally` block</span>
+  <span class="pl-kos">}</span> <span class="pl-k">finally</span> <span class="pl-kos">{</span>
+    <span class="pl-k">throw</span> <span class="pl-s">'finally'</span><span class="pl-kos">;</span> <span class="pl-c">// changes the thrown value from 'catch' to 'finally'</span>
+  <span class="pl-kos">}</span>
+<span class="pl-kos">}</span>
+<span class="pl-en">doIt</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// throws 'finally'</span></pre></div>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/statements/try...catch</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/try...catch/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/statements/try...catch/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/fad67be4431d8e6c2a89ac880735233aa76c41d4/hovercard" href="https://github.com/mdn/content/commit/fad67be4431d8e6c2a89ac880735233aa76c41d4"><tt>fad67be</tt></a></li>
+<li>Document last modified: 2025-07-08T13:18:45.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[hr-time-3, ecmascript] Fix: CORP does not enable SharedArrayBuffer]]></title>
             <link>https://github.com/mdn/content/issues/42236</link>
