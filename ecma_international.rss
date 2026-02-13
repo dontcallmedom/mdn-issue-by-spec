@@ -34,12 +34,14 @@ try {
   writeMyFile(theData);
 } finally {
   closeMyFile(); // always close the resource
+  // any uncaught exception is propagated here
 }"><pre class="notranslate"><span class="pl-en">openMyFile</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 <span class="pl-k">try</span> <span class="pl-kos">{</span>
   <span class="pl-c">// tie up a resource</span>
   <span class="pl-en">writeMyFile</span><span class="pl-kos">(</span><span class="pl-s1">theData</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
 <span class="pl-kos">}</span> <span class="pl-k">finally</span> <span class="pl-kos">{</span>
   <span class="pl-en">closeMyFile</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// always close the resource</span>
+  <span class="pl-c">// any uncaught exception is propagated here</span>
 <span class="pl-kos">}</span></pre></div>
 <p dir="auto">If control flow reaches a <code class="notranslate">return</code> statement in the <code class="notranslate">try</code> block and no <code class="notranslate">return</code> statement is present in the <code class="notranslate">finally</code> block, all statements in the <code class="notranslate">finally</code> block are still executed before the function returns the value associated with this statement.</p>
 <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function doIt() {
@@ -63,22 +65,26 @@ doIt(); // returns 1"><pre class="notranslate"><span class="pl-k">function</span
 <p dir="auto">The following examples illustrate how this happens in practice.</p>
 <p dir="auto">If control flow reaches two <code class="notranslate">return</code> statements (possibly in the <code class="notranslate">try</code> and <code class="notranslate">finally</code> blocks or in the <code class="notranslate">catch</code> and <code class="notranslate">finally</code> blocks), both statements are evaluated in the correct order (which matters in the case of side effects). Only the function's returned value will be the one associated with the last <code class="notranslate">return</code> statement evaluated (which is the one in the <code class="notranslate">finally</code> block).</p>
 <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function doIt() {
-  let order = '';
+  let order = ['z'];
   try {
-    return order = order + 'return try, ';
+    order.push('try');
+    return order.sort(); // 'z' is now after 'try'
   } finally {
-    return order = order + 'return finally.';
+    order.push('finally');
+    return order; // overrides previously returned value
   }
 }
-doIt(); // returns 'return try, return finally.'"><pre class="notranslate"><span class="pl-k">function</span> <span class="pl-en">doIt</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
-  <span class="pl-k">let</span> <span class="pl-s1">order</span> <span class="pl-c1">=</span> <span class="pl-s">''</span><span class="pl-kos">;</span>
+doIt(); // returns ['try', 'z', 'finally']"><pre class="notranslate"><span class="pl-k">function</span> <span class="pl-en">doIt</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-k">let</span> <span class="pl-s1">order</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-s">'z'</span><span class="pl-kos">]</span><span class="pl-kos">;</span>
   <span class="pl-k">try</span> <span class="pl-kos">{</span>
-    <span class="pl-k">return</span> <span class="pl-s1">order</span> <span class="pl-c1">=</span> <span class="pl-s1">order</span> <span class="pl-c1">+</span> <span class="pl-s">'return try, '</span><span class="pl-kos">;</span>
+    <span class="pl-s1">order</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-s">'try'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-k">return</span> <span class="pl-s1">order</span><span class="pl-kos">.</span><span class="pl-en">sort</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// 'z' is now after 'try'</span>
   <span class="pl-kos">}</span> <span class="pl-k">finally</span> <span class="pl-kos">{</span>
-    <span class="pl-k">return</span> <span class="pl-s1">order</span> <span class="pl-c1">=</span> <span class="pl-s1">order</span> <span class="pl-c1">+</span> <span class="pl-s">'return finally.'</span><span class="pl-kos">;</span>
+    <span class="pl-s1">order</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-s">'finally'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-k">return</span> <span class="pl-s1">order</span><span class="pl-kos">;</span> <span class="pl-c">// overrides previously returned value</span>
   <span class="pl-kos">}</span>
 <span class="pl-kos">}</span>
-<span class="pl-en">doIt</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// returns 'return try, return finally.'</span></pre></div>
+<span class="pl-en">doIt</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// returns ['try', 'z', 'finally']</span></pre></div>
 <p dir="auto">The same applies to other control flow statements (<code class="notranslate">throw</code>, <code class="notranslate">break</code>, <code class="notranslate">continue</code>).</p>
 <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="function doIt() {
   try {
