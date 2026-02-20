@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[ambient-light\] #enable-generic-sensor-extra-classes no longer exists](https://github.com/mdn/content/issues/43176) (2026-02-20T19:50:33Z)
-  
 * [\[hr-time-3\] performance.now() may return non-integers in some browsers](https://github.com/mdn/content/issues/42952) (2026-01-28T16:45:15Z)
   
 * [\[beacon\] navigator.sendBeacon() page doesn't mention payload limit](https://github.com/mdn/content/issues/42932) (2026-01-27T11:03:20Z)
