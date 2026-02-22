@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Cryptography Working Group. [![RSS feed for W3C Web Cryptography Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[WebCryptoAPI\] crypto.subtle.deriveKey and web wrokers](https://github.com/mdn/content/issues/43192) (2026-02-22T16:55:38Z)
+* [\[WebCryptoAPI\] crypto.subtle.deriveKey and web workers](https://github.com/mdn/content/issues/43192) (2026-02-22T16:55:38Z)
   
 * [\[WebCryptoAPI\] Clarify 'extractable' parameter behavior when 'SubtleCrypto.generateKey' is used with asymmetric key algorithms](https://github.com/mdn/content/issues/39493) (2025-05-12T21:11:50Z)
   
