@@ -4,10 +4,51 @@
         <title>WHATWG DOM Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_dom_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG DOM Workstream</description>
-        <lastBuildDate>Fri, 08 Aug 2025 04:41:43 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Feb 2026 14:48:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[dom] Missing scoped custom element registries docs]]></title>
+            <link>https://github.com/mdn/content/issues/43237</link>
+            <guid>https://github.com/mdn/content/issues/43237</guid>
+            <pubDate>Tue, 24 Feb 2026 14:48:40 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/CustomElementRegistry" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/CustomElementRegistry</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Multiple</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">Scoped custom element registries are very useful for consumers of web components, especially for those who use their own component libraries, or that import 3rd-party libraries.</p>
+<p dir="auto">Today, all components are registered into a single, global registry, which means that two different components can't use the same tagname (like <code class="notranslate">&lt;fancy-button&gt;</code>) without the page breaking.</p>
+<p dir="auto">Scoped custom element registries allow consumers to <em>scope</em> different custom elements to different documents, elements, or shadow roots.</p>
+<p dir="auto">This is useful, for example, when importing a 3rd-party component library, or when testing multiple versions of the same library side by side.</p>
+<p dir="auto">The scoped custom element registry feature is documented partially on MDN:</p>
+<ul dir="auto">
+<li>Existing docs:
+<ul dir="auto">
+<li><code class="notranslate">CustomElementRegistry()</code> constructor: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/CustomElementRegistry" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/CustomElementRegistry</a></li>
+<li><code class="notranslate">initialize()</code> method, to scope an element, shadow root, or document to a registry: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/initialize" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/initialize</a></li>
+<li><code class="notranslate">shadowrootcustomelementregistry</code> attribute, for scoping a registry to a declarative shadow DOM: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/template#shadowrootcustomelementregistry" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/template#shadowrootcustomelementregistry</a></li>
+</ul>
+</li>
+</ul>
+<p dir="auto">The following docs (at least) seem to be missing:</p>
+<ul dir="auto">
+<li>Missing docs:
+<ul dir="auto">
+<li>The <code class="notranslate">customElementRegistry</code> option for the <code class="notranslate">attachShadow()</code> method: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow</a> does not mention it</li>
+<li>The <code class="notranslate">customElementRegistry</code> option for the <code class="notranslate">document.createElement()</code> method:</li>
+<li>The <code class="notranslate">shadowrootcustomelementregistry</code> attribute on <code class="notranslate">&lt;template&gt;</code> elements: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement#options" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement#options</a> does not mention it.</li>
+</ul>
+</li>
+</ul>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Adequate docs for the missing pieces listed above.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto">These APIs are shipping in Edge and Chrome 146.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[dom] Event timeStamp accuracy description is misleading]]></title>
             <link>https://github.com/mdn/content/issues/40673</link>
