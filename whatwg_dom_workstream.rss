@@ -26,9 +26,10 @@
 <ul dir="auto">
 <li>Existing docs:
 <ul dir="auto">
-<li><code class="notranslate">CustomElementRegistry()</code> constructor: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/CustomElementRegistry" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/CustomElementRegistry</a></li>
-<li><code class="notranslate">initialize()</code> method, to scope an element, shadow root, or document to a registry: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/initialize" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/initialize</a></li>
-<li><code class="notranslate">shadowrootcustomelementregistry</code> attribute, for scoping a registry to a declarative shadow DOM: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/template#shadowrootcustomelementregistry" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/template#shadowrootcustomelementregistry</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/CustomElementRegistry" rel="nofollow"><code class="notranslate">CustomElementRegistry()</code> constructor</a>, to create a new registry.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/initialize" rel="nofollow"><code class="notranslate">initialize()</code> method</a>, to scope an element, shadow root, or document to a registry.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/template#shadowrootcustomelementregistry" rel="nofollow"><code class="notranslate">shadowrootcustomelementregistry</code> attribute</a>, for scoping a registry to a declarative shadow DOM.</li>
+<li><a href="https://developer.mozilla.org/docs/Web/API/Element/customElementRegistry" rel="nofollow"><code class="notranslate">customElementRegistry</code> property on DOM elements</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/customElementRegistry" rel="nofollow">documents</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/customElementRegistry" rel="nofollow">shadow roots</a>, to check which registry is a <em>thing</em> associated to.</li>
 </ul>
 </li>
 </ul>
@@ -37,8 +38,7 @@
 <li>Missing docs:
 <ul dir="auto">
 <li>The <code class="notranslate">customElementRegistry</code> option for the <code class="notranslate">attachShadow()</code> method: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow</a> does not mention it</li>
-<li>The <code class="notranslate">customElementRegistry</code> option for the <code class="notranslate">document.createElement()</code> method:</li>
-<li>The <code class="notranslate">shadowrootcustomelementregistry</code> attribute on <code class="notranslate">&lt;template&gt;</code> elements: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement#options" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement#options</a> does not mention it.</li>
+<li>The <code class="notranslate">customElementRegistry</code> option for the <code class="notranslate">document.createElement()</code> method: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement#options" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement#options</a> does not mention it.</li>
 </ul>
 </li>
 </ul>
@@ -47,7 +47,7 @@
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto">These APIs are shipping in Edge and Chrome 146.</p>]]></content:encoded>
+<p dir="auto">I think scoped custom element registries are already supported in Safari, and coming to Edge and Chrome 146. Not sure when individual pieces of the API shipped.</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[dom] Event timeStamp accuracy description is misleading]]></title>
