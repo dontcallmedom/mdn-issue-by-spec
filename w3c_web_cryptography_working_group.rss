@@ -4,40 +4,10 @@
         <title>W3C Web Cryptography Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_cryptography_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Cryptography Working Group</description>
-        <lastBuildDate>Sun, 22 Feb 2026 16:55:38 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 12 May 2025 21:11:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[WebCryptoAPI] crypto.subtle.deriveKey and web workers]]></title>
-            <link>https://github.com/mdn/content/issues/43192</link>
-            <guid>https://github.com/mdn/content/issues/43192</guid>
-            <pubDate>Sun, 22 Feb 2026 16:55:38 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/deriveKey" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/deriveKey</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">'crypto.subtle.deriveKey' doens't return a usable object</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">since ''crypto.subtle' is supported in web workers. on a function call within a web worker it only returns a string '[object CryptoKey]' the very same method in a vanilla script returns the actual 'CryptoKey' object. what am i doing wrong?</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">the actual 'CryptoKey' object.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">yeah, but the project isn't finished yet.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><code class="notranslate">function genkey(){ this.algo={name:'AES-GCM',length:256};this.iterations=4e5;this.hash='SHA-512'; this.name='PBKDF2';this.salt=headUp('FreedomToThePeople'); this.generate=async function(prime,that={}){ return new Promise(async(resolve)=&gt;{ let d;for(d of Object.keys(that))this[d]=that[d];this.salt=prime.salt; key=await crypto.subtle.importKey('raw',prime.iv,{name:this.name},false,['deriveKey']); key=await crypto.subtle.deriveKey(this,key,this.algo,false,['encrypt','decrypt']); return resolve({prime:prime,key:key}) }) } }</code> why does this not work in a web worker?</p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/subtlecrypto/derivekey</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/deriveKey" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/deriveKey</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/subtlecrypto/derivekey/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/subtlecrypto/derivekey/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/63774786a6abccda8e70ad62429aa39571aba878/hovercard" href="https://github.com/mdn/content/commit/63774786a6abccda8e70ad62429aa39571aba878"><tt>6377478</tt></a></li>
-<li>Document last modified: 2025-09-17T00:31:06.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[WebCryptoAPI] Clarify 'extractable' parameter behavior when 'SubtleCrypto.generateKey' is used with asymmetric key algorithms]]></title>
             <link>https://github.com/mdn/content/issues/39493</link>
