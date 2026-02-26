@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Web Storage API documentation pages fail to mention state partitioning](https://github.com/mdn/content/issues/43255) (2026-02-26T10:43:03Z)
+  
 * [\[dom\] Missing scoped custom element registries docs](https://github.com/mdn/content/issues/43237) (2026-02-24T14:48:40Z)
   
 * [\[url\] Mention \`URL.href\` adds a trailing slash if \`pathname\` is empty](https://github.com/mdn/content/issues/43017) (2026-02-04T20:42:04Z)

@@ -4,10 +4,41 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Tue, 24 Feb 2026 14:48:40 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Feb 2026 10:43:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Web Storage API documentation pages fail to mention state partitioning]]></title>
+            <link>https://github.com/mdn/content/issues/43255</link>
+            <guid>https://github.com/mdn/content/issues/43255</guid>
+            <pubDate>Thu, 26 Feb 2026 10:43:03 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The documentation specifies that localStorage is keyed by document origin only. This was true when the storage API was first introduced, but it is no longer accurate; these days localStorage is also keyed by top-level site using the <a href="https://developer.mozilla.org/en-US/docs/Web/Privacy/Guides/State_Partitioning" rel="nofollow">State Partitioning</a> mechanism. The page on localStorage makes no mention of this, which is very misleading to anyone not already familiar with state partitioning.</p>
+<p dir="auto">The same problem applies to the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API</a> pages.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">The web storage API introduction page, and the pages on the localStorage and sessionStorage objects themselves, should mention the state partitioning mechanism. Claims like "localStorage is partitioned by origin only" are <em>incorrect</em> in 2026.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/window/localstorage</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/localstorage/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/localstorage/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/ca26363fcc6fc861103d40ac0205e5c5b79eb2fa/hovercard" href="https://github.com/mdn/content/commit/ca26363fcc6fc861103d40ac0205e5c5b79eb2fa"><tt>ca26363</tt></a></li>
+<li>Document last modified: 2025-11-30T02:30:55.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[dom] Missing scoped custom element registries docs]]></title>
             <link>https://github.com/mdn/content/issues/43237</link>
@@ -71,7 +102,7 @@ console.log(url.href); // Logs: 'https://developer.mozilla.org/en-US/docs/Web/AP
 <p dir="auto">the logs of url.href should include a trailing /.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">This is what actually happens:</p>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/141652591/545225395-1158b518-4898-43a8-8e5b-44c118086a14.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzIxMDAzMjcsIm5iZiI6MTc3MjEwMDAyNywicGF0aCI6Ii8xNDE2NTI1OTEvNTQ1MjI1Mzk1LTExNThiNTE4LTQ4OTgtNDNhOC04ZTViLTQ0YzExODA4NmExNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMjI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDIyNlQxMDAwMjdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jY2RjMDE2MGFhMWIxNGM1MjJmZmM0ZWUyMDZiMGI3OWUzMDA5ZjIxZmMyZmJmNTRlNzhjNWIyZDcxYWU4MDU0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.wOz2UMwGNBAU1P4eNUJ9wUxWlJXUGVfaitlmapi53q0"><img width="346" height="79" alt="Image" src="https://private-user-images.githubusercontent.com/141652591/545225395-1158b518-4898-43a8-8e5b-44c118086a14.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzIxMDAzMjcsIm5iZiI6MTc3MjEwMDAyNywicGF0aCI6Ii8xNDE2NTI1OTEvNTQ1MjI1Mzk1LTExNThiNTE4LTQ4OTgtNDNhOC04ZTViLTQ0YzExODA4NmExNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMjI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDIyNlQxMDAwMjdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jY2RjMDE2MGFhMWIxNGM1MjJmZmM0ZWUyMDZiMGI3OWUzMDA5ZjIxZmMyZmJmNTRlNzhjNWIyZDcxYWU4MDU0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.wOz2UMwGNBAU1P4eNUJ9wUxWlJXUGVfaitlmapi53q0" style="max-width: 100%; height: auto; max-height: 79px;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/141652591/545225395-1158b518-4898-43a8-8e5b-44c118086a14.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzIxMDM3MzAsIm5iZiI6MTc3MjEwMzQzMCwicGF0aCI6Ii8xNDE2NTI1OTEvNTQ1MjI1Mzk1LTExNThiNTE4LTQ4OTgtNDNhOC04ZTViLTQ0YzExODA4NmExNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMjI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDIyNlQxMDU3MTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iMjViMDZiNjk1MTlhOGRjZjEyMDJhYmY2YzRiMDc3NjExNDY1ODZlNmQyZGFiZTVlZTI0ZDIwZDQ2ZjBhODg3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.OZlmdjnNI0WUzGSR0ulAu3GbUjpnljRfxxL_zNgYPuA"><img width="346" height="79" alt="Image" src="https://private-user-images.githubusercontent.com/141652591/545225395-1158b518-4898-43a8-8e5b-44c118086a14.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzIxMDM3MzAsIm5iZiI6MTc3MjEwMzQzMCwicGF0aCI6Ii8xNDE2NTI1OTEvNTQ1MjI1Mzk1LTExNThiNTE4LTQ4OTgtNDNhOC04ZTViLTQ0YzExODA4NmExNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMjI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDIyNlQxMDU3MTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iMjViMDZiNjk1MTlhOGRjZjEyMDJhYmY2YzRiMDc3NjExNDY1ODZlNmQyZGFiZTVlZTI0ZDIwZDQ2ZjBhODg3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.OZlmdjnNI0WUzGSR0ulAu3GbUjpnljRfxxL_zNgYPuA" style="max-width: 100%; height: auto; max-height: 79px;"></a>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
@@ -125,7 +156,7 @@ Link for the actual event name: <a href="https://developer.mozilla.org/en-US/doc
 <p dir="auto">I want to have a image schema of where all the bells and whistles goes where in the notification, how it's going to look like on different devices.</p>
 <p dir="auto">A real live demo would be super useful to see and test how it's going to behave.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzIxMDAzMjUsIm5iZiI6MTc3MjEwMDAyNSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDIyNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAyMjZUMTAwMDI1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MjQ0Y2E0NzMyZTI4ZjI2YWFlZmExMjkwZGNiMGQyMWU0ZGEzNzk1NzhkODQ1Yzc3ZTcxZjQwNzJjNDc4ZTM1MSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.jCLjOGYDusOjV3Zk3As9pfZgjOVco9a6e0PCFxbOSpo"><img width="1536" height="1024" alt="Image" src="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzIxMDAzMjUsIm5iZiI6MTc3MjEwMDAyNSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDIyNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAyMjZUMTAwMDI1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MjQ0Y2E0NzMyZTI4ZjI2YWFlZmExMjkwZGNiMGQyMWU0ZGEzNzk1NzhkODQ1Yzc3ZTcxZjQwNzJjNDc4ZTM1MSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.jCLjOGYDusOjV3Zk3As9pfZgjOVco9a6e0PCFxbOSpo" style="max-width: 100%; height: auto; max-height: 1024px;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzIxMDM3MjksIm5iZiI6MTc3MjEwMzQyOSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDIyNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAyMjZUMTA1NzA5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZGRlYjMwNDhkOTJkYTNmY2Q3MWFjYWMxZWMyZWViMDFlNTczZGIwZmRmODc1MGQwYjhhYzkyYmI0ZTFhMmFkMSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.uGtTZjRNqhDMltMtiOSE7FVNhjYO5SNStWyY_3D4oAQ"><img width="1536" height="1024" alt="Image" src="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzIxMDM3MjksIm5iZiI6MTc3MjEwMzQyOSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDIyNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAyMjZUMTA1NzA5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZGRlYjMwNDhkOTJkYTNmY2Q3MWFjYWMxZWMyZWViMDFlNTczZGIwZmRmODc1MGQwYjhhYzkyYmI0ZTFhMmFkMSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.uGtTZjRNqhDMltMtiOSE7FVNhjYO5SNStWyY_3D4oAQ" style="max-width: 100%; height: auto; max-height: 1024px;"></a>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">MDN metadata</h3>
