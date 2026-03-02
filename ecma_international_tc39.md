@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by Ecma International TC39. [![RSS feed for Ecma International TC39-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[ecmascript\] In the linked page language of the given sentence needs to be more specific it sounds misleading/don't make sense](https://github.com/mdn/content/issues/43306) (2026-03-02T07:15:09Z)
+* [\[ecmascript\] In the linked page language of the given sentence needs to be more specific it sounds misleading/doesn't make sense](https://github.com/mdn/content/issues/43306) (2026-03-02T07:15:09Z)
   
 * [\[ecmascript\] Clarify execution order of control flow statements with finally](https://github.com/mdn/content/issues/43122) (2026-02-13T16:14:22Z)
   
