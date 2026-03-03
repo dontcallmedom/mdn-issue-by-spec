@@ -20,8 +20,6 @@
   
 * [\[web-animations-2\] \`getComputedTiming()\` progress prop has incorrect description](https://github.com/mdn/content/issues/41789) (2025-11-03T10:02:45Z)
   
-* [\[selectors-4\] \`::-webkit-details-marker\` undocumented; example has invalid syntax](https://github.com/mdn/content/issues/41744) (2025-10-30T08:57:32Z)
-  
 * [\[service-workers-1\] Very misleading example for window focus from notification / service worker](https://github.com/mdn/content/issues/41483) (2025-10-12T20:28:49Z)
   
 * [\[service-workers-1\] Client URL does not change upon subsequent navigation](https://github.com/mdn/content/issues/41482) (2025-10-12T20:12:57Z)

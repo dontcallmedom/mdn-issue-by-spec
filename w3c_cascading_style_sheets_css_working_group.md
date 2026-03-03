@@ -4,8 +4,6 @@
 
 * [\[web-animations-2\] \`getComputedTiming()\` progress prop has incorrect description](https://github.com/mdn/content/issues/41789) (2025-11-03T10:02:45Z)
   
-* [\[selectors-4\] \`::-webkit-details-marker\` undocumented; example has invalid syntax](https://github.com/mdn/content/issues/41744) (2025-10-30T08:57:32Z)
-  
 * [\[css-grid-3\] Confusing/misleading example](https://github.com/mdn/content/issues/41176) (2025-09-17T15:17:35Z)
   
 * [\[compositing-2\] mix-blend-mode does not blend the element with its background but with its backdrop](https://github.com/mdn/content/issues/41078) (2025-09-09T17:29:09Z)
