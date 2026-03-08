@@ -4,10 +4,44 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Thu, 26 Feb 2026 10:43:03 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 08 Mar 2026 13:46:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Dated claim that "Safari always emit a popstate event on page load"]]></title>
+            <link>https://github.com/mdn/content/issues/43368</link>
+            <guid>https://github.com/mdn/content/issues/43368</guid>
+            <pubDate>Sun, 08 Mar 2026 13:46:23 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/popstate_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/popstate_event</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The history stack</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The fourth paragraph reads</p>
+<blockquote>
+<p dir="auto">Browsers tend to handle the popstate event differently on page load. Chrome (prior to v34) and Safari always emit a popstate event on page load, but Firefox doesn't.</p>
+</blockquote>
+<p dir="auto">The claim about "Safari always emit a popstate event on page load" does not seem to be true anymore. Or at least I tried to reproduce with this <a href="https://gist.github.com/johanrd/9c50a26195b18f2f2c4fc45cb6abad26">gist</a> on Safari 26.3 and 15.3 and was not able to reproduce.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A specific version where safari changed the behavior (like stated with Chrome 34)</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Chrome fixed this in v34 (<a href="https://bugs.chromium.org/p/chromium/issues/detail?id=63040" rel="nofollow">https://bugs.chromium.org/p/chromium/issues/detail?id=63040</a>). Firefox never had the bug since v4 (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=592084" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=592084</a>). No specific WebKit commit was found.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/window/popstate_event</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/popstate_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/popstate_event</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/popstate_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/popstate_event/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/f5e710f5c620c8d3c8b179f3b062d6bbdc8389ec/hovercard" href="https://github.com/mdn/content/commit/f5e710f5c620c8d3c8b179f3b062d6bbdc8389ec"><tt>f5e710f</tt></a></li>
+<li>Document last modified: 2025-05-02T03:02:32.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Web Storage API documentation pages fail to mention state partitioning]]></title>
             <link>https://github.com/mdn/content/issues/43255</link>
@@ -102,7 +136,7 @@ console.log(url.href); // Logs: 'https://developer.mozilla.org/en-US/docs/Web/AP
 <p dir="auto">the logs of url.href should include a trailing /.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">This is what actually happens:</p>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/141652591/545225395-1158b518-4898-43a8-8e5b-44c118086a14.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzI5NzU0OTEsIm5iZiI6MTc3Mjk3NTE5MSwicGF0aCI6Ii8xNDE2NTI1OTEvNTQ1MjI1Mzk1LTExNThiNTE4LTQ4OTgtNDNhOC04ZTViLTQ0YzExODA4NmExNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMzA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDMwOFQxMzA2MzFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mNDdjYjhiNWFkZGE4ZWQxNDMwYzU0NDNhNzU0Mzg3ZDJmOWE0NjA2YzMyNTFmMWU1YWZmNmZjZDRiMmNjMzBlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.uDNALnhISkz5U3QqgSgpLkSO0pU9gUar8odqsbwhkHw"><img width="346" height="79" alt="Image" src="https://private-user-images.githubusercontent.com/141652591/545225395-1158b518-4898-43a8-8e5b-44c118086a14.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzI5NzU0OTEsIm5iZiI6MTc3Mjk3NTE5MSwicGF0aCI6Ii8xNDE2NTI1OTEvNTQ1MjI1Mzk1LTExNThiNTE4LTQ4OTgtNDNhOC04ZTViLTQ0YzExODA4NmExNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMzA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDMwOFQxMzA2MzFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mNDdjYjhiNWFkZGE4ZWQxNDMwYzU0NDNhNzU0Mzg3ZDJmOWE0NjA2YzMyNTFmMWU1YWZmNmZjZDRiMmNjMzBlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.uDNALnhISkz5U3QqgSgpLkSO0pU9gUar8odqsbwhkHw" style="max-width: 100%; height: auto; max-height: 79px;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/141652591/545225395-1158b518-4898-43a8-8e5b-44c118086a14.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzI5Nzc5ODAsIm5iZiI6MTc3Mjk3NzY4MCwicGF0aCI6Ii8xNDE2NTI1OTEvNTQ1MjI1Mzk1LTExNThiNTE4LTQ4OTgtNDNhOC04ZTViLTQ0YzExODA4NmExNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMzA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDMwOFQxMzQ4MDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yYTI0NzU2YmZlYTBlMDU0NDRmMDFjMTAyZjEzZDhjMDA2OWUxY2EzMmNhMGRmNzdiMWMwNDU3NTIwNjA2Y2IzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ccgi5X5hDYB91_qxsCy9gr0W0tX3ElOdMTiJN0wf53U"><img width="346" height="79" alt="Image" src="https://private-user-images.githubusercontent.com/141652591/545225395-1158b518-4898-43a8-8e5b-44c118086a14.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzI5Nzc5ODAsIm5iZiI6MTc3Mjk3NzY4MCwicGF0aCI6Ii8xNDE2NTI1OTEvNTQ1MjI1Mzk1LTExNThiNTE4LTQ4OTgtNDNhOC04ZTViLTQ0YzExODA4NmExNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMzA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDMwOFQxMzQ4MDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yYTI0NzU2YmZlYTBlMDU0NDRmMDFjMTAyZjEzZDhjMDA2OWUxY2EzMmNhMGRmNzdiMWMwNDU3NTIwNjA2Y2IzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ccgi5X5hDYB91_qxsCy9gr0W0tX3ElOdMTiJN0wf53U" style="max-width: 100%; height: auto; max-height: 79px;"></a>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
@@ -156,7 +190,7 @@ Link for the actual event name: <a href="https://developer.mozilla.org/en-US/doc
 <p dir="auto">I want to have a image schema of where all the bells and whistles goes where in the notification, how it's going to look like on different devices.</p>
 <p dir="auto">A real live demo would be super useful to see and test how it's going to behave.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzI5NzU0OTEsIm5iZiI6MTc3Mjk3NTE5MSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDMwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAzMDhUMTMwNjMxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MDhkM2I1ZDc1NmJlZmZiNGEwNTNiYzQ5YzBkZDMwYzk0NDVkNjc4MzE5Yjk4NzM4N2ZlNTU0MzllZGNmNGYwZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.jrphTT6-vaJqlgI4Qj5D_4zJnBgGzeHlC7u3PmDnetw"><img width="1536" height="1024" alt="Image" src="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzI5NzU0OTEsIm5iZiI6MTc3Mjk3NTE5MSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDMwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAzMDhUMTMwNjMxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MDhkM2I1ZDc1NmJlZmZiNGEwNTNiYzQ5YzBkZDMwYzk0NDVkNjc4MzE5Yjk4NzM4N2ZlNTU0MzllZGNmNGYwZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.jrphTT6-vaJqlgI4Qj5D_4zJnBgGzeHlC7u3PmDnetw" style="max-width: 100%; height: auto; max-height: 1024px;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzI5Nzc5ODAsIm5iZiI6MTc3Mjk3NzY4MCwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDMwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAzMDhUMTM0ODAwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9M2FmOTFhODkxZjU4ODM1OTFmNTVkODkyMmUxYmU3ZGIyYTMyYmYzM2RlZWFmMmM1YWFjMGRiNWMwYzgzOTM2OSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.Al4O5jCiwaaOsKVqJwqB6FdOrcqZ4GBgtqmiuVb8WcY"><img width="1536" height="1024" alt="Image" src="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzI5Nzc5ODAsIm5iZiI6MTc3Mjk3NzY4MCwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDMwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAzMDhUMTM0ODAwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9M2FmOTFhODkxZjU4ODM1OTFmNTVkODkyMmUxYmU3ZGIyYTMyYmYzM2RlZWFmMmM1YWFjMGRiNWMwYzgzOTM2OSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.Al4O5jCiwaaOsKVqJwqB6FdOrcqZ4GBgtqmiuVb8WcY" style="max-width: 100%; height: auto; max-height: 1024px;"></a>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">MDN metadata</h3>
