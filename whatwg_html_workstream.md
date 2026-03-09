@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, FileAPI\] \`FileList\` is not iterable but example suggested using \`for...of\`](https://github.com/mdn/content/issues/43378) (2026-03-09T09:03:16Z)
+  
 * [\[html\] Dated claim that "Safari always emit a popstate event on page load"](https://github.com/mdn/content/issues/43368) (2026-03-08T13:46:23Z)
   
 * [\[html\] Web Storage API documentation pages fail to mention state partitioning](https://github.com/mdn/content/issues/43255) (2026-02-26T10:43:03Z)

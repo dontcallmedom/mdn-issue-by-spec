@@ -4,10 +4,45 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Sun, 08 Mar 2026 13:46:23 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 09 Mar 2026 09:03:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html, FileAPI] `FileList` is not iterable but example suggested using `for...of`]]></title>
+            <link>https://github.com/mdn/content/issues/43378</link>
+            <guid>https://github.com/mdn/content/issues/43378</guid>
+            <pubDate>Mon, 09 Mar 2026 09:03:16 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/FileList" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FileList</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/FileList#logging_filenames" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FileList#logging_filenames</a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The standard mentions nothing about <code class="notranslate">FileList</code> being iterable, but the example suggests using <code class="notranslate">for...of</code> on it.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Either:</p>
+<ul dir="auto">
+<li>The loop should use the index <code class="notranslate">for (let i = 0; fileInput.files.length; ++i)</code>.</li>
+<li><code class="notranslate">FileList</code> should be converted to an <code class="notranslate">Array</code> before looping <code class="notranslate">for (const file of Array.from(fileInput.files))</code>.</li>
+</ul>
+<p dir="auto">Maybe there should be a note mentioning that the <code class="notranslate">FileList</code> interface is "at-risk" too? I'm not sure what are the implications of that.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://w3c.github.io/FileAPI/#filelist-section" rel="nofollow">https://w3c.github.io/FileAPI/#filelist-section</a></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/filelist</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/FileList" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/FileList</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/filelist/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/filelist/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/cfa628aedb53a83b315943ef19fa6c73298fb7d5/hovercard" href="https://github.com/mdn/content/commit/cfa628aedb53a83b315943ef19fa6c73298fb7d5"><tt>cfa628a</tt></a></li>
+<li>Document last modified: 2024-06-21T18:41:27.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Dated claim that "Safari always emit a popstate event on page load"]]></title>
             <link>https://github.com/mdn/content/issues/43368</link>
@@ -136,7 +171,7 @@ console.log(url.href); // Logs: 'https://developer.mozilla.org/en-US/docs/Web/AP
 <p dir="auto">the logs of url.href should include a trailing /.</p>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">This is what actually happens:</p>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/141652591/545225395-1158b518-4898-43a8-8e5b-44c118086a14.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzMwNDUwMzEsIm5iZiI6MTc3MzA0NDczMSwicGF0aCI6Ii8xNDE2NTI1OTEvNTQ1MjI1Mzk1LTExNThiNTE4LTQ4OTgtNDNhOC04ZTViLTQ0YzExODA4NmExNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMzA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDMwOVQwODI1MzFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kODFlNjUyOTFmMDc3YjUwNWFlZTlkMzhjY2IyODZiMjg0MTk5ZjYxMjJkZDUzMWYxZDA0NjFhZmE5NTNiODc3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.CvSCKlDwpFUQnyKYAUexsaYAaVvMh1hKkh4-b8nPerU"><img width="346" height="79" alt="Image" src="https://private-user-images.githubusercontent.com/141652591/545225395-1158b518-4898-43a8-8e5b-44c118086a14.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzMwNDUwMzEsIm5iZiI6MTc3MzA0NDczMSwicGF0aCI6Ii8xNDE2NTI1OTEvNTQ1MjI1Mzk1LTExNThiNTE4LTQ4OTgtNDNhOC04ZTViLTQ0YzExODA4NmExNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMzA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDMwOVQwODI1MzFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kODFlNjUyOTFmMDc3YjUwNWFlZTlkMzhjY2IyODZiMjg0MTk5ZjYxMjJkZDUzMWYxZDA0NjFhZmE5NTNiODc3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.CvSCKlDwpFUQnyKYAUexsaYAaVvMh1hKkh4-b8nPerU" style="max-width: 100%; height: auto; max-height: 79px;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/141652591/545225395-1158b518-4898-43a8-8e5b-44c118086a14.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzMwNDc1NDgsIm5iZiI6MTc3MzA0NzI0OCwicGF0aCI6Ii8xNDE2NTI1OTEvNTQ1MjI1Mzk1LTExNThiNTE4LTQ4OTgtNDNhOC04ZTViLTQ0YzExODA4NmExNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMzA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDMwOVQwOTA3MjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wZjQ0MDJlMGEyYTJmMTUzYTMwZGIxY2NjODdjODU1OWQ2MTc4NzFiZDNjYWZhOTMxOTU1NDU4NTQyNWQ4OTg2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ekdBX0hPR5PnyH2jjqbdnpx9iZ9Y_PjLfKpa1tNP2cs"><img width="346" height="79" alt="Image" src="https://private-user-images.githubusercontent.com/141652591/545225395-1158b518-4898-43a8-8e5b-44c118086a14.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzMwNDc1NDgsIm5iZiI6MTc3MzA0NzI0OCwicGF0aCI6Ii8xNDE2NTI1OTEvNTQ1MjI1Mzk1LTExNThiNTE4LTQ4OTgtNDNhOC04ZTViLTQ0YzExODA4NmExNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMzA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDMwOVQwOTA3MjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wZjQ0MDJlMGEyYTJmMTUzYTMwZGIxY2NjODdjODU1OWQ2MTc4NzFiZDNjYWZhOTMxOTU1NDU4NTQyNWQ4OTg2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ekdBX0hPR5PnyH2jjqbdnpx9iZ9Y_PjLfKpa1tNP2cs" style="max-width: 100%; height: auto; max-height: 79px;"></a>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
@@ -190,7 +225,7 @@ Link for the actual event name: <a href="https://developer.mozilla.org/en-US/doc
 <p dir="auto">I want to have a image schema of where all the bells and whistles goes where in the notification, how it's going to look like on different devices.</p>
 <p dir="auto">A real live demo would be super useful to see and test how it's going to behave.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzMwNDUwMzEsIm5iZiI6MTc3MzA0NDczMSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDMwOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAzMDlUMDgyNTMxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NWRjYTFjNmM5YmY2NzMxZTI2Nzc2ZWU0ODBiNjgyZjE5ZDY1MjZhMjZlMDU5OGEwYzVhZjNhYjkyYzI4NTVmMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.8VyQMxFRJvBl5c31n5OxZX8NGMEz5XDlRz25WxxUkeQ"><img width="1536" height="1024" alt="Image" src="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzMwNDUwMzEsIm5iZiI6MTc3MzA0NDczMSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDMwOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAzMDlUMDgyNTMxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NWRjYTFjNmM5YmY2NzMxZTI2Nzc2ZWU0ODBiNjgyZjE5ZDY1MjZhMjZlMDU5OGEwYzVhZjNhYjkyYzI4NTVmMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.8VyQMxFRJvBl5c31n5OxZX8NGMEz5XDlRz25WxxUkeQ" style="max-width: 100%; height: auto; max-height: 1024px;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzMwNDc1NDgsIm5iZiI6MTc3MzA0NzI0OCwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDMwOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAzMDlUMDkwNzI4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Y2MzM2Q0OTFiYmY3YmIzMGYxNDAyMzdkZjM4MjI2YTVkNDRhOTZiZjA0ZmMyNTAwOTFjNzYyYjQ0Y2FiYWMzNiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.p_z9FIbBbxMeU1YhirWa2kjAo775Bqv3nq_2QBT1__g"><img width="1536" height="1024" alt="Image" src="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzMwNDc1NDgsIm5iZiI6MTc3MzA0NzI0OCwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDMwOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAzMDlUMDkwNzI4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Y2MzM2Q0OTFiYmY3YmIzMGYxNDAyMzdkZjM4MjI2YTVkNDRhOTZiZjA0ZmMyNTAwOTFjNzYyYjQ0Y2FiYWMzNiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.p_z9FIbBbxMeU1YhirWa2kjAo775Bqv3nq_2QBT1__g" style="max-width: 100%; height: auto; max-height: 1024px;"></a>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">MDN metadata</h3>
