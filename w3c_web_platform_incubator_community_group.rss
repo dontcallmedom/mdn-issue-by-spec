@@ -4,10 +4,33 @@
         <title>W3C Web Platform Incubator Community Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_platform_incubator_community_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Platform Incubator Community Group</description>
-        <lastBuildDate>Mon, 04 Aug 2025 11:10:38 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 08 Jan 2026 15:37:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[cookie-store] Change arguments to CookieStoreManager's subscribe method]]></title>
+            <link>https://github.com/mdn/content/issues/43382</link>
+            <guid>https://github.com/mdn/content/issues/43382</guid>
+            <pubDate>Thu, 08 Jan 2026 15:37:49 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">Proposal</h3>
+<p dir="auto">Update documentation to reflect changes in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3612646671" data-permission-text="Title is private" data-url="https://github.com/whatwg/cookiestore/issues/291" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/cookiestore/pull/291/hovercard?comment_id=3723024282&amp;comment_type=issue_comment" href="https://github.com/whatwg/cookiestore/pull/291#issuecomment-3723024282">whatwg/cookiestore#291 (comment)</a></p>
+<p dir="auto">The PR changes the arguments of <code class="notranslate">subscribe(name, url)</code>. <code class="notranslate">name</code> is now optional and matches to every available cookie in the service worker scope if omitted. The <code class="notranslate">url</code> of the subscription should default to be the service worker's scope url if omitted.</p>
+<h3 dir="auto">Browser support</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Tasks</h3>
+<ul dir="auto">
+<li>[ ]</li>
+</ul>
+<h3 dir="auto">Dependencies</h3>
+<ul dir="auto">
+<li>[ ]</li>
+</ul>
+<h3 dir="auto">Additional information</h3>
+<p dir="auto">this information should be on <a href="https://developer.mozilla.org/en-US/docs/Web/API/CookieStoreManager/subscribe" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CookieStoreManager/subscribe</a></p>
+<h3 dir="auto">Are you willing to support this work?</h3>
+<p dir="auto">can write/review</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[cookie-store] CookieStore get() method return object should only support name and value]]></title>
             <link>https://github.com/mdn/content/issues/40616</link>

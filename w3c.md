@@ -12,6 +12,8 @@
   
 * [\[html, picture-in-picture\] "Document: exitPictureInPicture() method" Examples has a problem](https://github.com/mdn/content/issues/42846) (2026-01-14T17:37:24Z)
   
+* [\[cookie-store\] Change arguments to CookieStoreManager's subscribe method](https://github.com/mdn/content/issues/43382) (2026-01-08T15:37:49Z)
+  
 * [\[hr-time-3, ecmascript\] Fix: CORP does not enable SharedArrayBuffer](https://github.com/mdn/content/issues/42236) (2025-12-05T03:19:41Z)
   
 * [\[screen-capture\] displaySurface in getDisplayMedia no longer supported on safari](https://github.com/mdn/content/issues/42218) (2025-12-03T14:11:50Z)
