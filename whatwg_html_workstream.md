@@ -4,8 +4,6 @@
 
 * [\[html, FileAPI\] \`FileList\` is not iterable but example suggested using \`for...of\`](https://github.com/mdn/content/issues/43378) (2026-03-09T09:03:16Z)
   
-* [\[html\] Dated claim that "Safari always emit a popstate event on page load"](https://github.com/mdn/content/issues/43368) (2026-03-08T13:46:23Z)
-  
 * [\[html\] Web Storage API documentation pages fail to mention state partitioning](https://github.com/mdn/content/issues/43255) (2026-02-26T10:43:03Z)
   
 * [\[html, picture-in-picture\] "Document: exitPictureInPicture() method" Examples has a problem](https://github.com/mdn/content/issues/42846) (2026-01-14T17:37:24Z)

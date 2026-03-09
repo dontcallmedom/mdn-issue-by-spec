@@ -4,8 +4,6 @@
 
 * [\[html, FileAPI\] \`FileList\` is not iterable but example suggested using \`for...of\`](https://github.com/mdn/content/issues/43378) (2026-03-09T09:03:16Z)
   
-* [\[html\] Dated claim that "Safari always emit a popstate event on page load"](https://github.com/mdn/content/issues/43368) (2026-03-08T13:46:23Z)
-  
 * [\[html\] Web Storage API documentation pages fail to mention state partitioning](https://github.com/mdn/content/issues/43255) (2026-02-26T10:43:03Z)
   
 * [\[dom\] Missing scoped custom element registries docs](https://github.com/mdn/content/issues/43237) (2026-02-24T14:48:40Z)
