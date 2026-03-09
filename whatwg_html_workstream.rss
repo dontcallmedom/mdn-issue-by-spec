@@ -22,7 +22,7 @@
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">Either:</p>
 <ul dir="auto">
-<li>The loop should use the index <code class="notranslate">for (let i = 0; fileInput.files.length; ++i)</code>.</li>
+<li>The loop should use the index <code class="notranslate">for (let i = 0; i &lt; fileInput.files.length; ++i)</code>.</li>
 <li><code class="notranslate">FileList</code> should be converted to an <code class="notranslate">Array</code> before looping <code class="notranslate">for (const file of Array.from(fileInput.files))</code>.</li>
 </ul>
 <p dir="auto">Maybe there should be a note mentioning that the <code class="notranslate">FileList</code> interface is "at-risk" too? I'm not sure what are the implications of that.</p>
