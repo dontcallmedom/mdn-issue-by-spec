@@ -4,10 +4,45 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Fri, 05 Dec 2025 03:19:41 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 14 Mar 2026 17:29:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] lexical `this` is mentioned but the associated example doesn't demonstrate it]]></title>
+            <link>https://github.com/mdn/content/issues/43441</link>
+            <guid>https://github.com/mdn/content/issues/43441</guid>
+            <pubDate>Sat, 14 Mar 2026 17:29:03 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">#functions_are_called_with_the_global_this</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">This text:</p>
+<blockquote>
+<p dir="auto">You can use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions" rel="nofollow">arrow functions</a> to adopt the <code class="notranslate">this</code> of the function in which <code class="notranslate">setTimeout()</code> is called (arrow functions have a lexical <code class="notranslate">this</code>).</p>
+<p dir="auto">You can test this with the following code.</p>
+</blockquote>
+<p dir="auto">is followed by an example that doesn't demonstrate what's claimed. It does work around the problem the section is talking about, but the arrow functions in the example could be replaced with <code class="notranslate">function</code> expressions and the behavior wouldn't change, because lexical <code class="notranslate">this</code> isn't used.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Either the text shouldn't imply the example uses a special feature of arrow functions, or the example should demonstrate that feature.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/window/setinterval</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/setinterval/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/setinterval/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/21ed9a1338b207e8a39064583c19d9f720235235/hovercard" href="https://github.com/mdn/content/commit/21ed9a1338b207e8a39064583c19d9f720235235"><tt>21ed9a1</tt></a></li>
+<li>Document last modified: 2025-12-30T02:28:58.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[hr-time-3, ecmascript] Fix: CORP does not enable SharedArrayBuffer]]></title>
             <link>https://github.com/mdn/content/issues/42236</link>
