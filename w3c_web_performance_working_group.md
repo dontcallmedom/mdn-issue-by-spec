@@ -4,8 +4,6 @@
 
 * [\[hr-time-3\] performance.now() may return non-integers in some browsers](https://github.com/mdn/content/issues/42952) (2026-01-28T16:45:15Z)
   
-* [\[beacon\] navigator.sendBeacon() page doesn't mention payload limit](https://github.com/mdn/content/issues/42932) (2026-01-27T11:03:20Z)
-  
 * [\[hr-time-3, ecmascript\] Fix: CORP does not enable SharedArrayBuffer](https://github.com/mdn/content/issues/42236) (2025-12-05T03:19:41Z)
   
 * [\[html, requestidlecallback, css-backgrounds-4\] Reference page titles are not consistent and need improvements](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)

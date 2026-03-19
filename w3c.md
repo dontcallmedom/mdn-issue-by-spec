@@ -4,8 +4,6 @@
 
 * [\[hr-time-3\] performance.now() may return non-integers in some browsers](https://github.com/mdn/content/issues/42952) (2026-01-28T16:45:15Z)
   
-* [\[beacon\] navigator.sendBeacon() page doesn't mention payload limit](https://github.com/mdn/content/issues/42932) (2026-01-27T11:03:20Z)
-  
 * [\[IndexedDB-3\] Improve the description of IDBFactory.deleteDatabase and mention blocked state](https://github.com/mdn/content/issues/42779) (2026-01-14T21:32:58Z)
   
 * [\[html, picture-in-picture\] "Document: exitPictureInPicture() method" Examples has a problem](https://github.com/mdn/content/issues/42846) (2026-01-14T17:37:24Z)
