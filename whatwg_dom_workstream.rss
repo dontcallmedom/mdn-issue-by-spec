@@ -4,10 +4,35 @@
         <title>WHATWG DOM Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_dom_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG DOM Workstream</description>
-        <lastBuildDate>Tue, 24 Feb 2026 14:48:40 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Mar 2026 21:09:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[dom] Misleading sentence in dispatchEvent() page]]></title>
+            <link>https://github.com/mdn/content/issues/43519</link>
+            <guid>https://github.com/mdn/content/issues/43519</guid>
+            <pubDate>Sun, 22 Mar 2026 21:09:08 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/dispatchEvent" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/dispatchEvent</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Unlike "native" events, which are fired by the browser and invoke event handlers asynchronously via the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Execution_model" rel="nofollow">event loop</a>,</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">I think this sentence:</p>
+<blockquote>
+<p dir="auto">Unlike "native" events, which are fired by the browser and invoke event handlers asynchronously via the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Execution_model" rel="nofollow">event loop</a></p>
+</blockquote>
+<p dir="auto">Is misleading.</p>
+<p dir="auto">AFAIK, Native events puts "dispatchEvent" calls on the event loop. Once those are called, the rest is still synchronous, meaning: the event handling itself run synchronously, including checking for registered event handlers and running them - synchronously.</p>
+<p dir="auto">The way that sentence is phrased, could be interpreted as though the event handler functions themselves run "asynchronously" - or are put on the Event Loop - but they are registered/saved on the element implementing EventTarget - and run "from there".</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Maybe:<br>
+Unlike "native" events, which are fired by the browser and invoke dispatchEvent asynchronously via the [event loop]</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[dom] Missing scoped custom element registries docs]]></title>
             <link>https://github.com/mdn/content/issues/43237</link>

@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG DOM Workstream. [![RSS feed for WHATWG DOM Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[dom\] Misleading sentence in dispatchEvent() page](https://github.com/mdn/content/issues/43519) (2026-03-22T21:09:08Z)
+  
 * [\[dom\] Missing scoped custom element registries docs](https://github.com/mdn/content/issues/43237) (2026-02-24T14:48:40Z)
   
 * [\[dom\] Event timeStamp accuracy description is misleading](https://github.com/mdn/content/issues/40673) (2025-08-08T04:41:43Z)
