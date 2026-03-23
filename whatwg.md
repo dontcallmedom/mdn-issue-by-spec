@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] console.log(document.title); // "Hello World!" document.title = "Goodbye World!"; // Page title changed console.log(document.title); // "Goodbye World!"](https://github.com/mdn/content/issues/43529) (2026-03-23T11:01:07Z)
+  
 * [\[dom\] Misleading sentence in dispatchEvent() page](https://github.com/mdn/content/issues/43519) (2026-03-22T21:09:08Z)
   
 * [\[html\] Web Storage API documentation pages fail to mention state partitioning](https://github.com/mdn/content/issues/43255) (2026-02-26T10:43:03Z)
