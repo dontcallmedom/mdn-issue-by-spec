@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[cssom-view-1, dom, pointerevents3, pointerlock-2, fullscreen, DOM-Parsing\] \[WebAPI\] Refine short-title of event pages](https://github.com/mdn/content/issues/43568) (2026-03-24T16:11:53Z)
+  
 * [\[hr-time-3\] performance.now() may return non-integers in some browsers](https://github.com/mdn/content/issues/42952) (2026-01-28T16:45:15Z)
   
 * [\[IndexedDB-3\] Improve the description of IDBFactory.deleteDatabase and mention blocked state](https://github.com/mdn/content/issues/42779) (2026-01-14T21:32:58Z)
