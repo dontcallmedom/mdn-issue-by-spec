@@ -4,5 +4,3 @@
 
 * [\[url\] api.URLSearchParams.sort - Encoded parameters' values get decoded and viceversa](https://github.com/mdn/content/issues/43595) (2026-03-27T10:23:28Z)
   
-* [\[url\] Mention \`URL.href\` adds a trailing slash if \`pathname\` is empty](https://github.com/mdn/content/issues/43017) (2026-02-04T20:42:04Z)
-  
