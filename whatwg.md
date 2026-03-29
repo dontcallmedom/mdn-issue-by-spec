@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] \`CanvasRenderingContext2D.canvas\` can't be null](https://github.com/mdn/content/issues/43612) (2026-03-29T02:37:27Z)
-  
 * [\[url\] api.URLSearchParams.sort - Encoded parameters' values get decoded and viceversa](https://github.com/mdn/content/issues/43595) (2026-03-27T10:23:28Z)
   
 * [\[cssom-view-1, dom, pointerevents3, pointerlock-2, fullscreen, DOM-Parsing\] Refine short-title of WebAPI event pages](https://github.com/mdn/content/issues/43568) (2026-03-24T16:11:53Z)
