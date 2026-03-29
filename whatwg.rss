@@ -4,10 +4,58 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Fri, 27 Mar 2026 10:23:28 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 29 Mar 2026 02:37:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] MDN docs `CanvasRenderingContext2D.canvas` as nullable, but is it actually?]]></title>
+            <link>https://github.com/mdn/content/issues/43612</link>
+            <guid>https://github.com/mdn/content/issues/43612</guid>
+            <pubDate>Sun, 29 Mar 2026 02:37:27 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/canvas" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/canvas</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The main description.</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto">The <code class="notranslate">CanvasRenderingContext2D.canvas</code> property, part of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API" rel="nofollow">Canvas API</a>, is a read-only reference to the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement" rel="nofollow"><code class="notranslate">HTMLCanvasElement</code></a> object that is associated with a given context. <strong>It might be <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null" rel="nofollow"><code class="notranslate">null</code></a> if there is no associated <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/canvas" rel="nofollow"><code class="notranslate">&lt;canvas&gt;</code></a> element.</strong></p>
+</blockquote>
+<p dir="auto">(emphasis mine), the emphasized bit.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">And explanation as to the circumstances which would cause <code class="notranslate">null</code>.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Reading <a href="https://html.spec.whatwg.org/multipage/canvas.html#2d-context-creation-algorithm" rel="nofollow">the linked standard</a> from that page, I'm not seeing <em>any</em> circumstance in which <code class="notranslate">.canvas</code> can be <code class="notranslate">null</code>.</p>
+<p dir="auto">Specifically, according to the cited standards, the property is initialized as:</p>
+<blockquote>
+<p dir="auto">The 2D context creation algorithm, which is passed a <em>target</em> (a <a href="https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-element" rel="nofollow"><code class="notranslate">canvas</code></a> element) and <em>options</em>, consists of running these steps:</p>
+</blockquote>
+<blockquote>
+<ol start="3" dir="auto">
+<li>Initialize context's <a href="https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-canvas" rel="nofollow"><code class="notranslate">canvas</code></a> attribute to point to <em>target</em>.</li>
+</ol>
+</blockquote>
+<p dir="auto"><em>Target</em>, AFAICT, is always a canvas element. Even if we search for where the "2d context creation algorithm" is invoked, it is only from <a href="https://html.spec.whatwg.org/multipage/canvas.html#dom-canvas-getcontext" rel="nofollow"><code class="notranslate">getContext()</code></a>, and there, <em>target</em> would never be <code class="notranslate">null</code>.</p>
+<p dir="auto">Further, the spec states,</p>
+<blockquote>
+<p dir="auto">The <code class="notranslate">canvas</code> attribute must return the value it was initialized to when the object was created.</p>
+</blockquote>
+<p dir="auto">I.e., it thus cannot subsequently become <code class="notranslate">null</code>.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/canvasrenderingcontext2d/canvas</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/canvas" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/canvas</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/canvasrenderingcontext2d/canvas/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/canvasrenderingcontext2d/canvas/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/a7265fc3effa7c25b9997135104370c057a65293/hovercard" href="https://github.com/mdn/content/commit/a7265fc3effa7c25b9997135104370c057a65293"><tt>a7265fc</tt></a></li>
+<li>Document last modified: 2025-09-25T16:11:52.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[url] api.URLSearchParams.sort - Encoded parameters' values get decoded and viceversa]]></title>
             <link>https://github.com/mdn/content/issues/43595</link>
@@ -94,7 +142,7 @@ u.searchParams.sort();
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzQ3NDI3NTEsIm5iZiI6MTc3NDc0MjQ1MSwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMzI5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDMyOVQwMDAwNTFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01ODJlOTUxMzAzZjU3NGU3MTE5ODk5ZWFhMGUyOGZjNmY4Y2NhODlhMjZkMTRjMWY0MzBiZTg1YzI0MzZiNmI0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.2HAFYKD-Aw_WST9f_aQAYE6OzQSeKyDl2Y2VsUvjTUI"><img width="898" height="85" alt="Image" src="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzQ3NDI3NTEsIm5iZiI6MTc3NDc0MjQ1MSwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMzI5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDMyOVQwMDAwNTFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01ODJlOTUxMzAzZjU3NGU3MTE5ODk5ZWFhMGUyOGZjNmY4Y2NhODlhMjZkMTRjMWY0MzBiZTg1YzI0MzZiNmI0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.2HAFYKD-Aw_WST9f_aQAYE6OzQSeKyDl2Y2VsUvjTUI" style="max-width: 100%; height: auto; max-height: 85px;"></a>]]></content:encoded>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzQ3NTUzMzEsIm5iZiI6MTc3NDc1NTAzMSwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMzI5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDMyOVQwMzMwMzFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hN2M1YzE0N2QwZTZkYzc1YmI4Y2FiOGExZGYxZjQ1MDBjNDVlNTgzOTliYWRiZmI4MDBlMmE1NjdhY2E5ZmJjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.jPjxfckZ50QbVhBG--wzyTZii0IwWxrNcqt-hPC3AM8"><img width="898" height="85" alt="Image" src="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzQ3NTUzMzEsIm5iZiI6MTc3NDc1NTAzMSwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMzI5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDMyOVQwMzMwMzFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hN2M1YzE0N2QwZTZkYzc1YmI4Y2FiOGExZGYxZjQ1MDBjNDVlNTgzOTliYWRiZmI4MDBlMmE1NjdhY2E5ZmJjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.jPjxfckZ50QbVhBG--wzyTZii0IwWxrNcqt-hPC3AM8" style="max-width: 100%; height: auto; max-height: 85px;"></a>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[dom] Misleading sentence in dispatchEvent() page]]></title>
@@ -236,7 +284,7 @@ Link for the actual event name: <a href="https://developer.mozilla.org/en-US/doc
 <p dir="auto">I want to have a image schema of where all the bells and whistles goes where in the notification, how it's going to look like on different devices.</p>
 <p dir="auto">A real live demo would be super useful to see and test how it's going to behave.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzQ3NDI3NDksIm5iZiI6MTc3NDc0MjQ0OSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDMyOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAzMjlUMDAwMDQ5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OTk0MmU0NmIzOTBlMjFjMTZlMTQ2MmM0Y2Y4ODc4NWYyN2NlMzJhOGE1NWZjMTFlMGQ4NDg0ODQ4NjM0ZjczYyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.STRxJYGndmideYfiz6pEr18ApSdb7Ojy9jKXw_ndMoI"><img width="1536" height="1024" alt="Image" src="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzQ3NDI3NDksIm5iZiI6MTc3NDc0MjQ0OSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDMyOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAzMjlUMDAwMDQ5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OTk0MmU0NmIzOTBlMjFjMTZlMTQ2MmM0Y2Y4ODc4NWYyN2NlMzJhOGE1NWZjMTFlMGQ4NDg0ODQ4NjM0ZjczYyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.STRxJYGndmideYfiz6pEr18ApSdb7Ojy9jKXw_ndMoI" style="max-width: 100%; height: auto; max-height: 1024px;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzQ3NTUzMjgsIm5iZiI6MTc3NDc1NTAyOCwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDMyOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAzMjlUMDMzMDI4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ODhhNjU4MjFjMzVlZjNiZjJkYWYyNzEzZjhhMjg0ZjU3ZjBmNTQ2ZTY0MDEwMjM1OTIyOTBkNmU5NGFjMTZhYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.H634yJYfoixR0XyAyYSRtlEnd6MasRMRrodMLQdfbmE"><img width="1536" height="1024" alt="Image" src="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzQ3NTUzMjgsIm5iZiI6MTc3NDc1NTAyOCwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDMyOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAzMjlUMDMzMDI4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ODhhNjU4MjFjMzVlZjNiZjJkYWYyNzEzZjhhMjg0ZjU3ZjBmNTQ2ZTY0MDEwMjM1OTIyOTBkNmU5NGFjMTZhYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.H634yJYfoixR0XyAyYSRtlEnd6MasRMRrodMLQdfbmE" style="max-width: 100%; height: auto; max-height: 1024px;"></a>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">MDN metadata</h3>

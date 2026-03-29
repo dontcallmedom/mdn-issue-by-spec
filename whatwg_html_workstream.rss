@@ -4,10 +4,58 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Thu, 26 Feb 2026 10:43:03 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 29 Mar 2026 02:37:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] MDN docs `CanvasRenderingContext2D.canvas` as nullable, but is it actually?]]></title>
+            <link>https://github.com/mdn/content/issues/43612</link>
+            <guid>https://github.com/mdn/content/issues/43612</guid>
+            <pubDate>Sun, 29 Mar 2026 02:37:27 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/canvas" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/canvas</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">The main description.</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<blockquote>
+<p dir="auto">The <code class="notranslate">CanvasRenderingContext2D.canvas</code> property, part of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API" rel="nofollow">Canvas API</a>, is a read-only reference to the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement" rel="nofollow"><code class="notranslate">HTMLCanvasElement</code></a> object that is associated with a given context. <strong>It might be <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null" rel="nofollow"><code class="notranslate">null</code></a> if there is no associated <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/canvas" rel="nofollow"><code class="notranslate">&lt;canvas&gt;</code></a> element.</strong></p>
+</blockquote>
+<p dir="auto">(emphasis mine), the emphasized bit.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">And explanation as to the circumstances which would cause <code class="notranslate">null</code>.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">Reading <a href="https://html.spec.whatwg.org/multipage/canvas.html#2d-context-creation-algorithm" rel="nofollow">the linked standard</a> from that page, I'm not seeing <em>any</em> circumstance in which <code class="notranslate">.canvas</code> can be <code class="notranslate">null</code>.</p>
+<p dir="auto">Specifically, according to the cited standards, the property is initialized as:</p>
+<blockquote>
+<p dir="auto">The 2D context creation algorithm, which is passed a <em>target</em> (a <a href="https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-element" rel="nofollow"><code class="notranslate">canvas</code></a> element) and <em>options</em>, consists of running these steps:</p>
+</blockquote>
+<blockquote>
+<ol start="3" dir="auto">
+<li>Initialize context's <a href="https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-canvas" rel="nofollow"><code class="notranslate">canvas</code></a> attribute to point to <em>target</em>.</li>
+</ol>
+</blockquote>
+<p dir="auto"><em>Target</em>, AFAICT, is always a canvas element. Even if we search for where the "2d context creation algorithm" is invoked, it is only from <a href="https://html.spec.whatwg.org/multipage/canvas.html#dom-canvas-getcontext" rel="nofollow"><code class="notranslate">getContext()</code></a>, and there, <em>target</em> would never be <code class="notranslate">null</code>.</p>
+<p dir="auto">Further, the spec states,</p>
+<blockquote>
+<p dir="auto">The <code class="notranslate">canvas</code> attribute must return the value it was initialized to when the object was created.</p>
+</blockquote>
+<p dir="auto">I.e., it thus cannot subsequently become <code class="notranslate">null</code>.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/canvasrenderingcontext2d/canvas</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/canvas" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/canvas</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/canvasrenderingcontext2d/canvas/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/canvasrenderingcontext2d/canvas/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/a7265fc3effa7c25b9997135104370c057a65293/hovercard" href="https://github.com/mdn/content/commit/a7265fc3effa7c25b9997135104370c057a65293"><tt>a7265fc</tt></a></li>
+<li>Document last modified: 2025-09-25T16:11:52.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Web Storage API documentation pages fail to mention state partitioning]]></title>
             <link>https://github.com/mdn/content/issues/43255</link>
