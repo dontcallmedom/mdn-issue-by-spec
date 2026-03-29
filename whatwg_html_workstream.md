@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] MDN docs \`CanvasRenderingContext2D.canvas\` as nullable, but is it actually?](https://github.com/mdn/content/issues/43612) (2026-03-29T02:37:27Z)
+* [\[html\] \`CanvasRenderingContext2D.canvas\` can't be null](https://github.com/mdn/content/issues/43612) (2026-03-29T02:37:27Z)
   
 * [\[html\] Web Storage API documentation pages fail to mention state partitioning](https://github.com/mdn/content/issues/43255) (2026-02-26T10:43:03Z)
   
