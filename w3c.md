@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[performance-timeline-2\] PerformanceObserver.observe(): compatibility table is misleading — does not distinguish Level 1 (entryTypes) vs Level 2 (type+buffered) syntax, caused production breakage](https://github.com/mdn/content/issues/43635) (2026-03-31T09:10:04Z)
+  
 * [\[service-workers-1\] Description of "transfer" parameter hard to understand](https://github.com/mdn/content/issues/43570) (2026-03-25T04:20:12Z)
   
 * [\[cssom-view-1, dom, pointerevents3, pointerlock-2, fullscreen, DOM-Parsing\] Refine short-title of WebAPI event pages](https://github.com/mdn/content/issues/43568) (2026-03-24T16:11:53Z)
