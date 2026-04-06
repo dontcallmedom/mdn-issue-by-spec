@@ -4,8 +4,6 @@
 
 * [\[orientation-event\] DeviceOrientationEvent is deprecated on Firefox, but this isn't mentioned on the page](https://github.com/mdn/content/issues/43681) (2026-04-06T19:24:56Z)
   
-* [\[mediasession\] Mismatched compatibility statuses](https://github.com/mdn/content/issues/43680) (2026-04-06T18:37:32Z)
-  
 * [\[SVG11\] Use w3c domain for SVG 2 spec links](https://github.com/mdn/content/issues/43676) (2026-04-06T13:15:13Z)
   
 * [\[performance-timeline-2\] PerformanceObserver.observe(): compatibility table is misleading — does not distinguish Level 1 (entryTypes) vs Level 2 (type+buffered) syntax, caused production breakage](https://github.com/mdn/content/issues/43635) (2026-03-31T09:10:04Z)
