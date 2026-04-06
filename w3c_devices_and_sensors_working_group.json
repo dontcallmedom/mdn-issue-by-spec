@@ -1,0 +1,23 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "W3C Devices and Sensors Working Group-relevant MDN issues",
+    "home_page_url": "https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_devices_and_sensors_working_group.rss",
+    "description": "Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Devices and Sensors Working Group",
+    "author": {
+        "name": "mdn-issue-by-spec",
+        "url": "https://github.com/dontcallmedom/mdn-issue-by-spec"
+    },
+    "items": [
+        {
+            "id": "https://github.com/mdn/content/issues/43681",
+            "content_html": "<h3 dir=\"auto\">MDN URL</h3>\n<p dir=\"auto\"><a href=\"https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent</a></p>\n<h3 dir=\"auto\">What specific section or headline is this issue about?</h3>\n<p dir=\"auto\">Browser compatibility</p>\n<h3 dir=\"auto\">What information was incorrect, unhelpful, or incomplete?</h3>\n<p dir=\"auto\">The MDN page for <code class=\"notranslate\">DeviceOrientationEvent</code> has outdated compatibility information for Firefox on desktop. My browser shows that it's deprecated and non-functional (see below for details), but the page says it's still supported and fully compatible.</p>\n<h3 dir=\"auto\">What did you expect to see?</h3>\n<p dir=\"auto\">The compatibility table should say that Firefox does not support the device orientation API and that it is deprecated.</p>\n<h3 dir=\"auto\">Do you have any supporting links, references, or citations?</h3>\n<p dir=\"auto\">When I copy and paste the example code in the <code class=\"notranslate\">DeviceOrientationEvent</code> page into my Firefox (version 149.0.0.0, Windows 11) dev tools console, I get a warning saying <code class=\"notranslate\">Use of the orientation sensor is deprecated.</code>. This lines up sites using it not working on Firefox, for example tilting the device to pour the teapot at <a href=\"https://www.google.com/teapot\" rel=\"nofollow\">google.com/teapot</a>. This is even with the <code class=\"notranslate\">device.sensors.orientation.enabled</code> flag in <code class=\"notranslate\">about:config</code> enabled, so it really does seem to be <em>fully</em> deprecated and completely non-functional in Firefox, at least for Windows.</p>\n<p dir=\"auto\">This seems to have been the case for a few years, according to <a href=\"https://stackoverflow.com/questions/51110881/use-of-deviceorientation-events-in-firefox-give-warning\" rel=\"nofollow\">this Stack Overflow thread</a>.</p>\n<h3 dir=\"auto\">Do you have anything more you want to share?</h3>\n<p dir=\"auto\"><em>No response</em></p>\n<h3 dir=\"auto\">MDN metadata</h3>\n\n<details>\n<summary>Page report details</summary>\n<ul dir=\"auto\">\n<li>Folder: <code class=\"notranslate\">en-us/web/api/deviceorientationevent</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/api/deviceorientationevent/index.md\">https://github.com/mdn/content/blob/main/files/en-us/web/api/deviceorientationevent/index.md</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/bcfc05aac40b47aecad69d44c54e33bf5f9b4e41/hovercard\" href=\"https://github.com/mdn/content/commit/bcfc05aac40b47aecad69d44c54e33bf5f9b4e41\"><tt>bcfc05a</tt></a></li>\n<li>Document last modified: 2026-02-09T18:04:48.000Z</li>\n</ul>\n</details>",
+            "url": "https://github.com/mdn/content/issues/43681",
+            "title": "[orientation-event] DeviceOrientationEvent is deprecated on Firefox, but this isn't mentioned on the page",
+            "date_modified": "2026-04-06T19:24:56.000Z",
+            "author": {
+                "name": "leandrumartin",
+                "url": "https://github.com/leandrumartin"
+            }
+        }
+    ]
+}
