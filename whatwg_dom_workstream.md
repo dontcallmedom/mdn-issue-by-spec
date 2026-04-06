@@ -6,8 +6,6 @@
   
 * [\[dom\] Misleading sentence in dispatchEvent() page](https://github.com/mdn/content/issues/43519) (2026-03-22T21:09:08Z)
   
-* [\[dom\] Missing scoped custom element registries docs](https://github.com/mdn/content/issues/43237) (2026-02-24T14:48:40Z)
-  
 * [\[dom\] Event timeStamp accuracy description is misleading](https://github.com/mdn/content/issues/40673) (2025-08-08T04:41:43Z)
   
 * [\[dom\] HTML element, attribute, and doctype name validation rules are changing](https://github.com/mdn/content/issues/40366) (2025-07-15T04:32:47Z)
