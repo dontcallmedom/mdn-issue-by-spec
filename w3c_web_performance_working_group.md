@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Performance Working Group. [![RSS feed for W3C Web Performance Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[reporting-1\] Reporting: there's no complete list possible report types (or named reporting endpoints)](https://github.com/mdn/content/issues/43688) (2026-04-07T11:37:09Z)
+  
 * [\[performance-timeline-2\] PerformanceObserver.observe(): compatibility table is misleading — does not distinguish Level 1 (entryTypes) vs Level 2 (type+buffered) syntax, caused production breakage](https://github.com/mdn/content/issues/43635) (2026-03-31T09:10:04Z)
   
 * [\[hr-time-3\] performance.now() may return non-integers in some browsers](https://github.com/mdn/content/issues/42952) (2026-01-28T16:45:15Z)
