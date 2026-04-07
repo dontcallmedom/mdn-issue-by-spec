@@ -4,8 +4,6 @@
 
 * [\[reporting-1\] Reporting: there's no complete list of possible report types (or named reporting endpoints)](https://github.com/mdn/content/issues/43688) (2026-04-07T11:37:09Z)
   
-* [\[performance-timeline-2\] PerformanceObserver.observe(): compatibility table is misleading — does not distinguish Level 1 (entryTypes) vs Level 2 (type+buffered) syntax, caused production breakage](https://github.com/mdn/content/issues/43635) (2026-03-31T09:10:04Z)
-  
 * [\[service-workers-1\] Description of "transfer" parameter hard to understand](https://github.com/mdn/content/issues/43570) (2026-03-25T04:20:12Z)
   
 * [\[cssom-view-1, dom, pointerevents3, pointerlock-2, fullscreen, DOM-Parsing\] Refine short-title of WebAPI event pages](https://github.com/mdn/content/issues/43568) (2026-03-24T16:11:53Z)
