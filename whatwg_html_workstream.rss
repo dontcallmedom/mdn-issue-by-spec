@@ -72,26 +72,6 @@ This might be implied through "The OffscreenCanvas allocates a new image for its
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html, picture-in-picture] "Document: exitPictureInPicture() method" Examples has a problem]]></title>
-            <link>https://github.com/mdn/content/issues/42846</link>
-            <guid>https://github.com/mdn/content/issues/42846</guid>
-            <pubDate>Wed, 14 Jan 2026 17:37:24 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Link for the problem: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/exitPictureInPicture#examples" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/exitPictureInPicture#examples</a></p>
-<p dir="auto">It says:</p>
-<blockquote>
-<p dir="auto">if you want to track which video on your page is currently playing in picture-in-picture mode, you should listen to the <code class="notranslate">enterpictureinpicture</code> and <code class="notranslate">exitpictureinpicture</code> events on the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement" rel="nofollow">HTMLVideoElement</a> element(s) in question.</p>
-</blockquote>
-<p dir="auto">But the event <code class="notranslate">exitpictureinpicture</code> does not exist, thus it does not work.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The correct event name is <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/leavepictureinpicture_event" rel="nofollow">leavepictureinpicture</a>.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">Link for the problem: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/exitPictureInPicture#examples" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document/exitPictureInPicture#examples</a><br>
-Link for the actual event name: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/leavepictureinpicture_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/leavepictureinpicture_event</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Document that iframe referrerpolicy can influence location.ancestorOrigins and windowclient.ancestorOrigins]]></title>
             <link>https://github.com/mdn/content/issues/42231</link>
             <guid>https://github.com/mdn/content/issues/42231</guid>
