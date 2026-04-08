@@ -4,42 +4,10 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Tue, 07 Apr 2026 11:25:33 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Mar 2026 16:11:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[html] transferToImageBitmap misses information that the "image in the OffscreenCanvas object is replaced with a new blank image."]]></title>
-            <link>https://github.com/mdn/content/issues/43687</link>
-            <guid>https://github.com/mdn/content/issues/43687</guid>
-            <pubDate>Tue, 07 Apr 2026 11:25:33 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas/transferToImageBitmap" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas/transferToImageBitmap</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Intro, probably, since it is about a side effect, not a return value</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The pages does not inform that: "The image in the <a href="https://html.spec.whatwg.org/multipage/canvas.html#offscreencanvas" rel="nofollow">OffscreenCanvas</a> object is replaced with a new blank image." (citing the spec).<br>
-This might be implied through "The OffscreenCanvas allocates a new image for its subsequent rendering.", but if it is, it is hard to understand (what doe "allocate" imply, what is the "new image"? etc.)</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">A text like: "The OffscreenCanvas.transferToImageBitmap() method creates an ImageBitmap object from the most recently rendered image of the OffscreenCanvas. <strong>The image in the OffscreenCanvas object is replaced with a new blank image.</strong>" (using <a href="https://html.spec.whatwg.org/multipage/canvas.html#dom-offscreencanvas-transfertoimagebitmap-dev:~:text=The%20image%20in%20the%20OffscreenCanvas%20object%20is%20replaced%20with%20a%20new%20blank%20image" rel="nofollow">the sentence from the spec</a>)</p>
-<p dir="auto">Potential addition: "If you do not want to replace the OffscreenCanvas content but just copy its content to another canvas element, you can use the other canvas’ drawImage method."</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/offscreencanvas/transfertoimagebitmap</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas/transferToImageBitmap" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas/transferToImageBitmap</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/offscreencanvas/transfertoimagebitmap/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/offscreencanvas/transfertoimagebitmap/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/46dd9c0c1635e8abd73040c1a71cc0ed3c27cd50/hovercard" href="https://github.com/mdn/content/commit/46dd9c0c1635e8abd73040c1a71cc0ed3c27cd50"><tt>46dd9c0</tt></a></li>
-<li>Document last modified: 2024-11-22T20:26:52.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[cssom-view-1, dom, pointerevents3, pointerlock-2, fullscreen, DOM-Parsing] Refine short-title of WebAPI event pages]]></title>
             <link>https://github.com/mdn/content/issues/43568</link>
@@ -70,7 +38,7 @@ This might be implied through "The OffscreenCanvas allocates a new image for its
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzU2NzA5NzgsIm5iZiI6MTc3NTY3MDY3OCwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQwOFQxNzUxMThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jOWIwODI3OGZlNjQ5MmQ3ZDVlMmY2MzRjYTVkYTY5ODRkZDNiYWE0NWJhY2I5NDU2OWM1NDI5MzUyMTY3NDQ4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.0q8b2rt3HiuHPu1ygbdsWTXWmliDig5GQdeqXS5xAYk"><img width="898" height="85" alt="Image" src="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzU2NzA5NzgsIm5iZiI6MTc3NTY3MDY3OCwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQwOFQxNzUxMThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jOWIwODI3OGZlNjQ5MmQ3ZDVlMmY2MzRjYTVkYTY5ODRkZDNiYWE0NWJhY2I5NDU2OWM1NDI5MzUyMTY3NDQ4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.0q8b2rt3HiuHPu1ygbdsWTXWmliDig5GQdeqXS5xAYk" style="max-width: 100%; height: auto; max-height: 85px;"></a>]]></content:encoded>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzU2NzUxMTYsIm5iZiI6MTc3NTY3NDgxNiwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQwOFQxOTAwMTZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00NTFiMWM0YjZlNTE2Y2Y4OGFjMWViYmM5YTJmYzQ0NTNhZGUxZjg2MTZjN2I2NWUxODQ5M2FjODBkODdlNjg3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.U7hs5iWNIHXMVi-8Ux38YikpGUddAawdpMUOSIwMoFE"><img width="898" height="85" alt="Image" src="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzU2NzUxMTYsIm5iZiI6MTc3NTY3NDgxNiwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQwOFQxOTAwMTZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00NTFiMWM0YjZlNTE2Y2Y4OGFjMWViYmM5YTJmYzQ0NTNhZGUxZjg2MTZjN2I2NWUxODQ5M2FjODBkODdlNjg3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.U7hs5iWNIHXMVi-8Ux38YikpGUddAawdpMUOSIwMoFE" style="max-width: 100%; height: auto; max-height: 85px;"></a>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[dom] Misleading sentence in dispatchEvent() page]]></title>
@@ -144,7 +112,7 @@ Unlike "native" events, which are fired by the browser and invoke dispatchEvent 
 <p dir="auto">I want to have a image schema of where all the bells and whistles goes where in the notification, how it's going to look like on different devices.</p>
 <p dir="auto">A real live demo would be super useful to see and test how it's going to behave.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzU2NzA5NzYsIm5iZiI6MTc3NTY3MDY3NiwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDQwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjA0MDhUMTc1MTE2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MzU5MjMyZGVlMzdlNTQ2NGZiNzBlNTVlYzc3NDUwMzBlNWI4NzExMWNjMDEwYjJlNDZhYTUxMDAxZDhlYmQ1MyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.Ws1wxRPMxDx8aZBg-8M59g9uHvVmbJjHmuZvh7Fvu_E"><img width="1536" height="1024" alt="Image" src="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzU2NzA5NzYsIm5iZiI6MTc3NTY3MDY3NiwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDQwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjA0MDhUMTc1MTE2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MzU5MjMyZGVlMzdlNTQ2NGZiNzBlNTVlYzc3NDUwMzBlNWI4NzExMWNjMDEwYjJlNDZhYTUxMDAxZDhlYmQ1MyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.Ws1wxRPMxDx8aZBg-8M59g9uHvVmbJjHmuZvh7Fvu_E" style="max-width: 100%; height: auto; max-height: 1024px;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzU2NzUxMTEsIm5iZiI6MTc3NTY3NDgxMSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDQwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjA0MDhUMTkwMDExWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTBkNTk4ZjcwNTU4ZjhlZmQwNTNlZDE1ZDg4NzI4YzA3NzI2YzRjNDhlMTZlYmUwOTFhYzk5M2M1ZmFlMmViYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.5z_cLPdLnPbWrFk9XbHOS30NP3MGSG8c_7fw2w5jAHU"><img width="1536" height="1024" alt="Image" src="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzU2NzUxMTEsIm5iZiI6MTc3NTY3NDgxMSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDQwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjA0MDhUMTkwMDExWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTBkNTk4ZjcwNTU4ZjhlZmQwNTNlZDE1ZDg4NzI4YzA3NzI2YzRjNDhlMTZlYmUwOTFhYzk5M2M1ZmFlMmViYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.5z_cLPdLnPbWrFk9XbHOS30NP3MGSG8c_7fw2w5jAHU" style="max-width: 100%; height: auto; max-height: 1024px;"></a>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">MDN metadata</h3>

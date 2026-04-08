@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] transferToImageBitmap misses information that the "image in the OffscreenCanvas object is replaced with a new blank image."](https://github.com/mdn/content/issues/43687) (2026-04-07T11:25:33Z)
-  
 * [\[html\] Web Storage API documentation pages fail to mention state partitioning](https://github.com/mdn/content/issues/43255) (2026-02-26T10:43:03Z)
   
 * [\[html\] Document that iframe referrerpolicy can influence location.ancestorOrigins and windowclient.ancestorOrigins](https://github.com/mdn/content/issues/42231) (2025-12-04T14:29:25Z)
