@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[uievents\] Incorrect term("label") usage in the "What is Javascript" module page](https://github.com/mdn/content/issues/43729) (2026-04-10T08:37:56Z)
-  
 * [\[reporting-1\] Reporting: there's no complete list of possible report types (or named reporting endpoints)](https://github.com/mdn/content/issues/43688) (2026-04-07T11:37:09Z)
   
 * [\[service-workers-1\] Description of "transfer" parameter hard to understand](https://github.com/mdn/content/issues/43570) (2026-03-25T04:20:12Z)
