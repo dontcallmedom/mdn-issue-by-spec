@@ -54,7 +54,5 @@
   
 * [\[html\] Image request fired as soon as src is set](https://github.com/mdn/content/issues/26560) (2023-05-03T17:23:34Z)
   
-* [\[html, gamepad\] Double checking the gamepad docs are correct](https://github.com/mdn/content/issues/14874) (2022-04-11T03:02:09Z)
-  
 * [\[html\] Custom element constructor \`disabledFeatures\` property undocumented](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
   
