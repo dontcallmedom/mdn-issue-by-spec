@@ -4,10 +4,45 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Thu, 26 Feb 2026 10:43:03 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 15 Apr 2026 21:11:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] detecting MIME type of file is done by extension]]></title>
+            <link>https://github.com/mdn/content/issues/43803</link>
+            <guid>https://github.com/mdn/content/issues/43803</guid>
+            <pubDate>Wed, 15 Apr 2026 21:11:15 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/DataTransferItem/type" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DataTransferItem/type</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">I've done a few tests and it seems that when the DataTransferItem concerns a file (like during a drag and drop event).<br>
+The type value is set by detecting the MIME type of the file.<br>
+This detection is done based on the extension.<br>
+I'm assuming this <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types/Common_types" rel="nofollow">list</a> shows all (or almost all) of the mappings from extension to MIME type.<br>
+This results in a file with an uncommon extension having the type <code class="notranslate">""</code> even if in the metadata of the file it has a MIME type of <code class="notranslate">"text/plain"</code></p>
+<p dir="auto">The way the MIME type is detected might be good information to put on this page so that people know what to expect when working with uncommon file types. I'm also not sure if this is how it works in every browser and on every system as I've only tested it with Firefox and Edge. I am also assuming that the detection is done by extension because the browser can't(?) read the metadata of the file.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Some documentation about how the MIME type of a file is detected and set to the type property. (And how it might differ per browser / environments)</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">I've used <a href="https://jsfiddle.net/408gkvLx/" rel="nofollow">https://jsfiddle.net/408gkvLx/</a> to test this by dragging a file to the red square. Then changing the extension and dragging the same file to the red.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/datatransferitem/type</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/DataTransferItem/type" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/DataTransferItem/type</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/datatransferitem/type/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/datatransferitem/type/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/b5437b737639d6952d18b95ebd1045ed73e4bfa7/hovercard" href="https://github.com/mdn/content/commit/b5437b737639d6952d18b95ebd1045ed73e4bfa7"><tt>b5437b7</tt></a></li>
+<li>Document last modified: 2025-05-27T11:11:59.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Web Storage API documentation pages fail to mention state partitioning]]></title>
             <link>https://github.com/mdn/content/issues/43255</link>
