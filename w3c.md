@@ -28,8 +28,6 @@
   
 * [\[mediasession\] MediaSession code samples inexplicable](https://github.com/mdn/content/issues/41250) (2025-09-22T17:37:24Z)
   
-* [\[css-grid-3\] Confusing/misleading example](https://github.com/mdn/content/issues/41176) (2025-09-17T15:17:35Z)
-  
 * [\[compositing-2\] mix-blend-mode does not blend the element with its background but with its backdrop](https://github.com/mdn/content/issues/41078) (2025-09-09T17:29:09Z)
   
 * [\[cookie-store\] CookieStore get() method return object should only support name and value](https://github.com/mdn/content/issues/40616) (2025-08-04T11:10:38Z)
