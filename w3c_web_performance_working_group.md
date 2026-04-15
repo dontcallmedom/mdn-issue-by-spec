@@ -4,8 +4,6 @@
 
 * [\[reporting-1\] Reporting: there's no complete list of possible report types (or named reporting endpoints)](https://github.com/mdn/content/issues/43688) (2026-04-07T11:37:09Z)
   
-* [\[hr-time-3\] performance.now() may return non-integers in some browsers](https://github.com/mdn/content/issues/42952) (2026-01-28T16:45:15Z)
-  
 * [\[hr-time-3, ecmascript\] Fix: CORP does not enable SharedArrayBuffer](https://github.com/mdn/content/issues/42236) (2025-12-05T03:19:41Z)
   
 * [\[html, requestidlecallback, css-backgrounds-4\] Reference page titles are not consistent and need improvements](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)

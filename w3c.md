@@ -6,8 +6,6 @@
   
 * [\[cssom-view-1, dom, pointerevents3, pointerlock-2, fullscreen, DOM-Parsing\] Refine short-title of WebAPI event pages](https://github.com/mdn/content/issues/43568) (2026-03-24T16:11:53Z)
   
-* [\[hr-time-3\] performance.now() may return non-integers in some browsers](https://github.com/mdn/content/issues/42952) (2026-01-28T16:45:15Z)
-  
 * [\[IndexedDB-3\] Improve the description of IDBFactory.deleteDatabase and mention blocked state](https://github.com/mdn/content/issues/42779) (2026-01-14T21:32:58Z)
   
 * [\[cookie-store\] Change arguments to CookieStoreManager's subscribe method](https://github.com/mdn/content/issues/43382) (2026-01-08T15:37:49Z)
