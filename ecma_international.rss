@@ -4,10 +4,40 @@
         <title>Ecma International-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/ecma_international.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by Ecma International</description>
-        <lastBuildDate>Fri, 05 Dec 2025 03:19:41 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 Apr 2026 07:10:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[ecmascript] Addition of `String` and `BigInt` improperly marked as invalid in examples]]></title>
+            <link>https://github.com/mdn/content/issues/43807</link>
+            <guid>https://github.com/mdn/content/issues/43807</guid>
+            <pubDate>Thu, 16 Apr 2026 07:10:38 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition#addition_using_bigints" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition#addition_using_bigints</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Addition using BigInts</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto"><code class="notranslate">String</code>s take priority over <code class="notranslate">BigInt</code>s as described in the "Description" part of the page, hence it's valid and doesn't throw a <code class="notranslate">TypeError</code> at runtime.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto"><code class="notranslate">"1" + 2n</code> doesn't throw a <code class="notranslate">TypeError</code>, so it shouldn't be there or should be replaced with a proper invalid example.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">In the same page. <code class="notranslate">console.log("1" + 2n)</code> also runs in the playground.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/javascript/reference/operators/addition</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/addition/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/javascript/reference/operators/addition/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/fad67be4431d8e6c2a89ac880735233aa76c41d4/hovercard" href="https://github.com/mdn/content/commit/fad67be4431d8e6c2a89ac880735233aa76c41d4"><tt>fad67be</tt></a></li>
+<li>Document last modified: 2025-07-08T13:18:45.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[hr-time-3, ecmascript] Fix: CORP does not enable SharedArrayBuffer]]></title>
             <link>https://github.com/mdn/content/issues/42236</link>
