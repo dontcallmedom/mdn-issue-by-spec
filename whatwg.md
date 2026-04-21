@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] wrong method in example](https://github.com/mdn/content/issues/43885) (2026-04-21T06:39:20Z)
+  
 * [\[dom\] element.getAttribute(): Mention how HTML character entities get decoded?](https://github.com/mdn/content/issues/43825) (2026-04-17T00:56:00Z)
   
 * [\[html\] detecting MIME type of file is done by extension](https://github.com/mdn/content/issues/43803) (2026-04-15T21:11:15Z)
