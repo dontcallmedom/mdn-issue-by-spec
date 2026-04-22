@@ -4,10 +4,72 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Tue, 07 Apr 2026 11:37:09 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 22 Apr 2026 14:51:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[resource-timing-2] PerformanceResourceTiming.startTime vs PerformanceResourceTiming.fetchStart]]></title>
+            <link>https://github.com/mdn/content/issues/43903</link>
+            <guid>https://github.com/mdn/content/issues/43903</guid>
+            <pubDate>Wed, 22 Apr 2026 14:51:17 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Timestamps</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The image shown on <a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming" rel="nofollow">PerformanceResourceTiming</a><br>
+distinguishes between <code class="notranslate">startTime</code> and <code class="notranslate">fetchStart</code>. However, the text above the image states that these values are the same.</p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/12775440/582061775-bb069341-7621-4acc-b132-0d2ffc7054b5.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzY4NzE1MTgsIm5iZiI6MTc3Njg3MTIxOCwicGF0aCI6Ii8xMjc3NTQ0MC81ODIwNjE3NzUtYmIwNjkzNDEtNzYyMS00YWNjLWIxMzItMGQyZmZjNzA1NGI1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA0MjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNDIyVDE1MjAxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk5NzRlYzdmMjg4YjQ3YzBmZWQ2M2YwZDQ2YjM1ZDgwZDBjZmVmMzJlYjcxYmYwYmVhYzFkMzI1NWE5NzFmY2QmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.J4pdoHuQLpOBFnezGJXVqtphSALOF9vbV8FR3DawYU8"><img width="1016" height="653" alt="Image" src="https://private-user-images.githubusercontent.com/12775440/582061775-bb069341-7621-4acc-b132-0d2ffc7054b5.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzY4NzE1MTgsIm5iZiI6MTc3Njg3MTIxOCwicGF0aCI6Ii8xMjc3NTQ0MC81ODIwNjE3NzUtYmIwNjkzNDEtNzYyMS00YWNjLWIxMzItMGQyZmZjNzA1NGI1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA0MjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNDIyVDE1MjAxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk5NzRlYzdmMjg4YjQ3YzBmZWQ2M2YwZDQ2YjM1ZDgwZDBjZmVmMzJlYjcxYmYwYmVhYzFkMzI1NWE5NzFmY2QmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.J4pdoHuQLpOBFnezGJXVqtphSALOF9vbV8FR3DawYU8" style="max-width: 100%; height: auto; max-height: 653px;; aspect-ratio: 1016 / 653; background-color: var(--bgColor-muted); border-radius: 6px; display: block" class="js-gh-image-fallback"></a>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">I am not sure which statement is correct.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/performanceresourcetiming</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/performanceresourcetiming/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/performanceresourcetiming/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/40fa68f80d38ba7142d47f52cdd0960325d63a44/hovercard" href="https://github.com/mdn/content/commit/40fa68f80d38ba7142d47f52cdd0960325d63a44"><tt>40fa68f</tt></a></li>
+<li>Document last modified: 2026-04-04T16:17:46.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[hr-time-3] Synchronizing time between contexts requires a warning/caveat called out]]></title>
+            <link>https://github.com/mdn/content/issues/43901</link>
+            <guid>https://github.com/mdn/content/issues/43901</guid>
+            <pubDate>Wed, 22 Apr 2026 14:06:58 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Performance/timeOrigin" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Performance/timeOrigin</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Synchronizing time between contexts</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">If you have a page open on a MacBook, close the lid (MacOS pauses monotonic clock here), then open it back up, <em>then</em> a worker is spawned, now the worker and main context perf clocks have drift that cannot be reconciled without both comparing to Date.now() which then reduces precision and has its own class of bugs (NTP/etc)</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">This needs to be called out or the whole concept of synchronizing time between contexts needs to be removed as it is a source of bugs.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/performance/timeorigin</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Performance/timeOrigin" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Performance/timeOrigin</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/performance/timeorigin/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/performance/timeorigin/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/3e543cdfe8dddfb4774a64bf3decdcbab42a4111/hovercard" href="https://github.com/mdn/content/commit/3e543cdfe8dddfb4774a64bf3decdcbab42a4111"><tt>3e543cd</tt></a></li>
+<li>Document last modified: 2025-06-23T16:41:39.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[reporting-1] Reporting: there's no complete list of possible report types (or named reporting endpoints)]]></title>
             <link>https://github.com/mdn/content/issues/43688</link>
@@ -76,7 +138,7 @@
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzY4NjY2NjcsIm5iZiI6MTc3Njg2NjM2NywicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQyMlQxMzU5MjdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jYjUyNjk1ZGMwYzlhMjVkYmE2Nzc3ZjdkNjQ4NjYxYzM2ODkwYWViY2Q1ZDBlOGYxZmJiYWUyZDE3NzU2ZDEwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.MffeHjdGzS_KMoFhDPMZU1bnnNH8vHE-mzOyC_QEW2s"><img width="898" height="85" alt="Image" src="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzY4NjY2NjcsIm5iZiI6MTc3Njg2NjM2NywicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQyMlQxMzU5MjdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jYjUyNjk1ZGMwYzlhMjVkYmE2Nzc3ZjdkNjQ4NjYxYzM2ODkwYWViY2Q1ZDBlOGYxZmJiYWUyZDE3NzU2ZDEwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.MffeHjdGzS_KMoFhDPMZU1bnnNH8vHE-mzOyC_QEW2s" style="max-width: 100%; height: auto; max-height: 85px;; aspect-ratio: 898 / 85; background-color: var(--bgColor-muted); border-radius: 6px; display: block" class="js-gh-image-fallback"></a>]]></content:encoded>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzY4NzE1MTgsIm5iZiI6MTc3Njg3MTIxOCwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQyMlQxNTIwMThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMGE2MGFlNDEwNjRmZDZjOWI1Yjg2YTE1ZTA3MzhiMzc5OWUwNDM4ZWJlZjU3YTc1ZTljZjljYTJlNTI1N2YyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.zpt4h1SECEpRJHSgygRvuPNaA7KjKqf5XsM-bTM3EzA"><img width="898" height="85" alt="Image" src="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzY4NzE1MTgsIm5iZiI6MTc3Njg3MTIxOCwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQyMlQxNTIwMThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMGE2MGFlNDEwNjRmZDZjOWI1Yjg2YTE1ZTA3MzhiMzc5OWUwNDM4ZWJlZjU3YTc1ZTljZjljYTJlNTI1N2YyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.zpt4h1SECEpRJHSgygRvuPNaA7KjKqf5XsM-bTM3EzA" style="max-width: 100%; height: auto; max-height: 85px;; aspect-ratio: 898 / 85; background-color: var(--bgColor-muted); border-radius: 6px; display: block" class="js-gh-image-fallback"></a>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[IndexedDB-3] Improve the description of IDBFactory.deleteDatabase and mention blocked state]]></title>
@@ -1008,7 +1070,7 @@ document.ondragover = ((e) =&gt; {
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">description of the <code class="notranslate">sizeAdjust</code> property</p>
 <p dir="auto">It does exist, see<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzY4NjY2NjMsIm5iZiI6MTc3Njg2NjM2MywicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA0MjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNDIyVDEzNTkyM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTUwYjdlYzExYzg5MTk4OTRhNWQzMzEwOGQ0MjkzN2RlYjIzNDRjNzgyOTBjYmZlYjA2ODNiOWJhYjZlZmY0ZDAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.LbTNVCruq3mAMqSmso7Adh-RCYiqv-NSxLRVqfWxvhE"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzY4NjY2NjMsIm5iZiI6MTc3Njg2NjM2MywicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA0MjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNDIyVDEzNTkyM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTUwYjdlYzExYzg5MTk4OTRhNWQzMzEwOGQ0MjkzN2RlYjIzNDRjNzgyOTBjYmZlYjA2ODNiOWJhYjZlZmY0ZDAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.LbTNVCruq3mAMqSmso7Adh-RCYiqv-NSxLRVqfWxvhE" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzY4NzE1MTEsIm5iZiI6MTc3Njg3MTIxMSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA0MjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNDIyVDE1MjAxMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWU5YjdkNDBmODI3NDkxMzJlYzEzODcxNjlhMjk2MDc5MTlhZDZjZmU3NzRiNWRhNDQ3YjY3OGFlMjMxMTgxNjQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.VGb94ZjLFdyNj6H32BNFH6D3FKL-QFp8-Q9CcDlBwIM"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzY4NzE1MTEsIm5iZiI6MTc3Njg3MTIxMSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA0MjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNDIyVDE1MjAxMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWU5YjdkNDBmODI3NDkxMzJlYzEzODcxNjlhMjk2MDc5MTlhZDZjZmU3NzRiNWRhNDQ3YjY3OGFlMjMxMTgxNjQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.VGb94ZjLFdyNj6H32BNFH6D3FKL-QFp8-Q9CcDlBwIM" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
