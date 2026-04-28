@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[cssom-view-1\] Container option is not a standard option in scrollIntoView()](https://github.com/mdn/content/issues/43949) (2026-04-28T10:01:10Z)
+  
 * [\[webaudio\] OscillatorNode intro: listing more waveform types would help readers unfamiliar with "sine"](https://github.com/mdn/content/issues/43925) (2026-04-24T13:28:18Z)
   
 * [\[resource-timing-2\] PerformanceResourceTiming.startTime vs PerformanceResourceTiming.fetchStart](https://github.com/mdn/content/issues/43903) (2026-04-22T14:51:17Z)
