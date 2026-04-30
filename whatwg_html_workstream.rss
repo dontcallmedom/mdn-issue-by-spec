@@ -4,10 +4,54 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Mon, 27 Apr 2026 18:20:44 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 30 Apr 2026 11:30:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Form submission event triggers]]></title>
+            <link>https://github.com/mdn/content/issues/43972</link>
+            <guid>https://github.com/mdn/content/issues/43972</guid>
+            <pubDate>Thu, 30 Apr 2026 11:30:08 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Intro</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">This section</p>
+<blockquote>
+<p dir="auto">The submit event fires when:</p>
+<ul dir="auto">
+<li>the user clicks a <a href="https://developer.mozilla.org/en-US/docs/Glossary/Submit_button" rel="nofollow">submit button</a>,</li>
+<li>the user presses Enter while editing a field (e.g., <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/text" rel="nofollow"></a>) in a form,</li>
+<li>a script calls the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/requestSubmit" rel="nofollow">form.requestSubmit()</a> method</li>
+</ul>
+</blockquote>
+<p dir="auto">Doesn't give a complete overview.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">As far as I know, point 2 is correct when</p>
+<ol dir="auto">
+<li>user presses Enter and there is a single field (with or without a button[type=submit])</li>
+<li>uses presser Enter and there are more than a field, but there is also a button[type=submit]</li>
+</ol>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">It's field-tested, I don't know whether it's documented behavior or or just common practice.<br>
+Either way, I'd pinpoint it.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/htmlformelement/submit_event</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlformelement/submit_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlformelement/submit_event/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/6ba4f3b350be482ba22726f31bbcf8ad3c92a9c6/hovercard" href="https://github.com/mdn/content/commit/6ba4f3b350be482ba22726f31bbcf8ad3c92a9c6"><tt>6ba4f3b</tt></a></li>
+<li>Document last modified: 2025-10-01T13:56:32.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] contextmenu is a Pointer Event]]></title>
             <link>https://github.com/mdn/content/issues/43946</link>

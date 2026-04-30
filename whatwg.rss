@@ -4,10 +4,54 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Mon, 27 Apr 2026 18:20:44 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 30 Apr 2026 11:30:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Form submission event triggers]]></title>
+            <link>https://github.com/mdn/content/issues/43972</link>
+            <guid>https://github.com/mdn/content/issues/43972</guid>
+            <pubDate>Thu, 30 Apr 2026 11:30:08 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Intro</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">This section</p>
+<blockquote>
+<p dir="auto">The submit event fires when:</p>
+<ul dir="auto">
+<li>the user clicks a <a href="https://developer.mozilla.org/en-US/docs/Glossary/Submit_button" rel="nofollow">submit button</a>,</li>
+<li>the user presses Enter while editing a field (e.g., <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/text" rel="nofollow"></a>) in a form,</li>
+<li>a script calls the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/requestSubmit" rel="nofollow">form.requestSubmit()</a> method</li>
+</ul>
+</blockquote>
+<p dir="auto">Doesn't give a complete overview.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">As far as I know, point 2 is correct when</p>
+<ol dir="auto">
+<li>user presses Enter and there is a single field (with or without a button[type=submit])</li>
+<li>uses presser Enter and there are more than a field, but there is also a button[type=submit]</li>
+</ol>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto">It's field-tested, I don't know whether it's documented behavior or or just common practice.<br>
+Either way, I'd pinpoint it.</p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/htmlformelement/submit_event</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlformelement/submit_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlformelement/submit_event/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/6ba4f3b350be482ba22726f31bbcf8ad3c92a9c6/hovercard" href="https://github.com/mdn/content/commit/6ba4f3b350be482ba22726f31bbcf8ad3c92a9c6"><tt>6ba4f3b</tt></a></li>
+<li>Document last modified: 2025-10-01T13:56:32.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] contextmenu is a Pointer Event]]></title>
             <link>https://github.com/mdn/content/issues/43946</link>
@@ -173,7 +217,7 @@ This results in a file with an uncommon extension having the type <code class="n
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzc1NDcxMTAsIm5iZiI6MTc3NzU0NjgxMCwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQzMFQxMTAwMTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mZjY3NDM2ZGM5OTZlOGNiNTI3MjJjMWUwOWRjYmJiZjVjMzA5NDhhYjI1ZDZjOTQxZGViYTM3Y2Q3YjRjYzIwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.qs7EU8SbHX__UBNJDT2s2pzSLue83-LchkmNLZ_6LgE"><img width="898" height="85" alt="Image" src="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzc1NDcxMTAsIm5iZiI6MTc3NzU0NjgxMCwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQzMFQxMTAwMTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mZjY3NDM2ZGM5OTZlOGNiNTI3MjJjMWUwOWRjYmJiZjVjMzA5NDhhYjI1ZDZjOTQxZGViYTM3Y2Q3YjRjYzIwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.qs7EU8SbHX__UBNJDT2s2pzSLue83-LchkmNLZ_6LgE" style="max-width: 100%; height: auto; max-height: 85px;; aspect-ratio: 898 / 85; background-color: var(--bgColor-muted); border-radius: 6px; display: block" class="js-gh-image-fallback"></a>]]></content:encoded>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzc1NTE4NTAsIm5iZiI6MTc3NzU1MTU1MCwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQzMFQxMjE5MTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yMjVlNmVlZDE2YmY2NWExZGM0OTJiMDJhZjc2OWQxZTk3NWQyYTU1MTk0ZTg4ODEwMjFhMzgwYzM1NzNkNjVjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.OskiVUqVm3loX9lNuyUTZ6CffqAt2zDZs8N9LHbNn1g"><img width="898" height="85" alt="Image" src="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzc1NTE4NTAsIm5iZiI6MTc3NzU1MTU1MCwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQzMFQxMjE5MTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yMjVlNmVlZDE2YmY2NWExZGM0OTJiMDJhZjc2OWQxZTk3NWQyYTU1MTk0ZTg4ODEwMjFhMzgwYzM1NzNkNjVjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.OskiVUqVm3loX9lNuyUTZ6CffqAt2zDZs8N9LHbNn1g" style="max-width: 100%; height: auto; max-height: 85px;; aspect-ratio: 898 / 85; background-color: var(--bgColor-muted); border-radius: 6px; display: block" class="js-gh-image-fallback"></a>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[dom] Misleading sentence in dispatchEvent() page]]></title>
@@ -247,7 +291,7 @@ Unlike "native" events, which are fired by the browser and invoke dispatchEvent 
 <p dir="auto">I want to have a image schema of where all the bells and whistles goes where in the notification, how it's going to look like on different devices.</p>
 <p dir="auto">A real live demo would be super useful to see and test how it's going to behave.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzc1NDcxMDgsIm5iZiI6MTc3NzU0NjgwOCwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDQzMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjA0MzBUMTEwMDA4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YmNiNzkwNzY0ZTExZDU1OWE0Y2I3NmM0NjgwZmZmNWIxMWRlMjM4MGJhMTRiYTAwZTFhYWQ3MGQ0MjFkZjMwZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.mGj69iI3yEORLbiHcAx5ItWT_oXK9du0t54s7g4SW30"><img width="1536" height="1024" alt="Image" src="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzc1NDcxMDgsIm5iZiI6MTc3NzU0NjgwOCwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDQzMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjA0MzBUMTEwMDA4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YmNiNzkwNzY0ZTExZDU1OWE0Y2I3NmM0NjgwZmZmNWIxMWRlMjM4MGJhMTRiYTAwZTFhYWQ3MGQ0MjFkZjMwZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.mGj69iI3yEORLbiHcAx5ItWT_oXK9du0t54s7g4SW30" style="max-width: 100%; height: auto; max-height: 1024px;; aspect-ratio: 1536 / 1024; background-color: var(--bgColor-muted); border-radius: 6px; display: block" class="js-gh-image-fallback"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzc1NTE4NDgsIm5iZiI6MTc3NzU1MTU0OCwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDQzMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjA0MzBUMTIxOTA4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTdmZWJiOGY1MTAyNzk4NGQwYmYxYTJmOWQ1YzAyNWUzOTIyMGRjYzYxYWRhZDJiMDc4OWNmYmFlZjY5NTc1MyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.vZm4Dcp-lRPOBzNHI4GvOyGvxGOfT6UvGy6tbHaIjFg"><img width="1536" height="1024" alt="Image" src="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzc1NTE4NDgsIm5iZiI6MTc3NzU1MTU0OCwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDQzMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjA0MzBUMTIxOTA4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTdmZWJiOGY1MTAyNzk4NGQwYmYxYTJmOWQ1YzAyNWUzOTIyMGRjYzYxYWRhZDJiMDc4OWNmYmFlZjY5NTc1MyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.vZm4Dcp-lRPOBzNHI4GvOyGvxGOfT6UvGy6tbHaIjFg" style="max-width: 100%; height: auto; max-height: 1024px;; aspect-ratio: 1536 / 1024; background-color: var(--bgColor-muted); border-radius: 6px; display: block" class="js-gh-image-fallback"></a>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">MDN metadata</h3>
