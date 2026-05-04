@@ -62,6 +62,8 @@
   
 * [\[html\] Article element in a wrong implementation](https://github.com/mdn/content/issues/38324) (2023-09-13T12:53:45Z)
   
+* [\[html\] Cannot download with the "Download my painting" button; CSP error: “blocked the loading of a resource at data:image/png;base64”](https://github.com/mdn/content/issues/43998) (2023-07-21T02:38:19Z)
+  
 * [\[html\] Image request fired as soon as src is set](https://github.com/mdn/content/issues/26560) (2023-05-03T17:23:34Z)
   
 * [\[html\] Custom element constructor \`disabledFeatures\` property undocumented](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
