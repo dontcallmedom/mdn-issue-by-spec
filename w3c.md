@@ -6,8 +6,6 @@
   
 * [\[cssom-view-1\] Container option is not a standard option in scrollIntoView()](https://github.com/mdn/content/issues/43949) (2026-04-28T10:01:10Z)
   
-* [\[webaudio\] OscillatorNode intro: listing more waveform types would help readers unfamiliar with "sine"](https://github.com/mdn/content/issues/43925) (2026-04-24T13:28:18Z)
-  
 * [\[resource-timing-2\] PerformanceResourceTiming.startTime vs PerformanceResourceTiming.fetchStart](https://github.com/mdn/content/issues/43903) (2026-04-22T14:51:17Z)
   
 * [\[hr-time-3\] Synchronizing time between contexts requires a warning/caveat called out](https://github.com/mdn/content/issues/43901) (2026-04-22T14:06:58Z)
