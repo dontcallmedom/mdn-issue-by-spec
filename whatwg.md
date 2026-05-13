@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[dom\] Compat table refers me to missing implementation notes.](https://github.com/mdn/content/issues/44102) (2026-05-13T02:42:11Z)
+  
 * [\[html\] Form submission event triggers](https://github.com/mdn/content/issues/43972) (2026-04-30T11:30:08Z)
   
 * [\[html\] contextmenu is a Pointer Event](https://github.com/mdn/content/issues/43946) (2026-04-27T18:20:44Z)
