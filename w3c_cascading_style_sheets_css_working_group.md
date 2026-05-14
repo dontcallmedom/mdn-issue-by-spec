@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[cssom-view-1\] scrollTo object parameters described as deltas](https://github.com/mdn/content/issues/44098) (2026-05-12T21:07:44Z)
-  
 * [\[cssom-view-1\] \`scrollBy\` and \`scrollTo\` now return promises](https://github.com/mdn/content/issues/43999) (2026-05-04T12:37:35Z)
   
 * [\[cssom-view-1\] Container option is not a standard option in scrollIntoView()](https://github.com/mdn/content/issues/43949) (2026-04-28T10:01:10Z)
