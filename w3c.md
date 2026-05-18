@@ -22,8 +22,6 @@
   
 * [\[service-workers-1\] FetchEvent.replacesClientId removed from all browsers for 2+ years](https://github.com/mdn/content/issues/42195) (2025-12-02T09:18:10Z)
   
-* [\[webaudio\] Wording around DynamicsCompressorNode use-cases is oversimplified / partially misleading](https://github.com/mdn/content/issues/42171) (2025-11-30T10:49:45Z)
-  
 * [\[web-animations-2\] \`getComputedTiming()\` progress prop has incorrect description](https://github.com/mdn/content/issues/41789) (2025-11-03T10:02:45Z)
   
 * [\[service-workers-1\] Very misleading example for window focus from notification / service worker](https://github.com/mdn/content/issues/41483) (2025-10-12T20:28:49Z)
