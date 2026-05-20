@@ -719,38 +719,6 @@ A string reflecting the <a href="https://developer.mozilla.org/en-US/docs/Web/Ac
 <p dir="auto"><em>No response</em></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] WebSocket constructor example should demonstrate waiting for connection or handling connection failure]]></title>
-            <link>https://github.com/mdn/content/issues/31768</link>
-            <guid>https://github.com/mdn/content/issues/31768</guid>
-            <pubDate>Wed, 17 Jan 2024 18:55:09 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/WebSocket" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/WebSocket</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Multiple pages</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">From the description here, the <code class="notranslate">WebSocket</code> constructor gives me a WebSocket instance that has started connecting to the server but may not have completed this yet. Also, the <code class="notranslate">send()</code> method should fail if the socket is still connecting. And there's the <code class="notranslate">open</code> event that tells me that the connection has been opened.</p>
-<p dir="auto">Yet, none of the examples use any of it, they just create a new instance and send right away. This makes it completely blurry, how connection failures are handled. Is there always <em>either</em> an <code class="notranslate">open</code> or a <code class="notranslate">close</code> event and should I wait for any of these before using the socket instance? Or will the constructor actually block until the connection is either opened or failed?</p>
-<p dir="auto">More description is needed to make clear what really happens and how this thing should be used in production code.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">See above.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/websocket/websocket</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/WebSocket" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/WebSocket</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/websocket/websocket/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/websocket/websocket/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/eda49877b9078b24cd18f794470e5e225add9b94/hovercard" href="https://github.com/mdn/content/commit/eda49877b9078b24cd18f794470e5e225add9b94"><tt>eda4987</tt></a></li>
-<li>Document last modified: 2023-04-08T06:46:30.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Article element in a wrong implementation]]></title>
             <link>https://github.com/mdn/content/issues/38324</link>
             <guid>https://github.com/mdn/content/issues/38324</guid>
