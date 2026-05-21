@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>W3C HTML Media Extensions Working Group-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_html_media_extensions_working_group.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C HTML Media Extensions Working Group</description>
+        <lastBuildDate>Thu, 21 May 2026 11:14:51 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[encrypted-media] MediaKeySystemConfiguration page is missing label and sessionTypes members]]></title>
+            <link>https://github.com/mdn/content/issues/44211</link>
+            <guid>https://github.com/mdn/content/issues/44211</guid>
+            <pubDate>Thu, 21 May 2026 11:14:51 GMT</pubDate>
+            <content:encoded><![CDATA[<p dir="auto"><strong>MDN URL:</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySystemConfiguration" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/MediaKeySystemConfiguration</a></p>
+<p dir="auto"><strong>What specific section or headline is this issue about?</strong><br>
+Properties / Members</p>
+<p dir="auto"><strong>What information was incorrect, unhelpful, or incomplete?</strong><br>
+The page is missing two of the seven dictionary members: <code class="notranslate">label</code> and <code class="notranslate">sessionTypes</code>.</p>
+<p dir="auto"><strong>What did you expect to see?</strong></p>
+<ul dir="auto">
+<li><code class="notranslate">label</code> — optional <code class="notranslate">DOMString</code> (default <code class="notranslate">""</code>), preserved as-is in the object returned by <code class="notranslate">MediaKeySystemAccess.getConfiguration()</code></li>
+<li><code class="notranslate">sessionTypes</code> — <code class="notranslate">sequence&lt;DOMString&gt;</code> indicating required session types (e.g. <code class="notranslate">"temporary"</code>, <code class="notranslate">"persistent-license"</code>)</li>
+</ul>
+<p dir="auto"><strong>Do you have any supporting links, references, or citations?</strong><br>
+Spec: <a href="https://www.w3.org/TR/encrypted-media/#mediakeysystemconfiguration-dictionary" rel="nofollow">https://www.w3.org/TR/encrypted-media/#mediakeysystemconfiguration-dictionary</a></p>
+<p dir="auto"><strong>Do you have anything more you want to share?</strong><br>
+The <a href="https://www.w3.org/media-wg/" rel="nofollow">W3C Media Working Group</a> is happy to help if needed.</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
