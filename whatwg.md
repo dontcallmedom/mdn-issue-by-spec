@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[dom\] Unclear wording in the web api docs for Element.closest](https://github.com/mdn/content/issues/44265) (2026-05-26T19:54:19Z)
-  
 * [\[html\] HTMLMediaElement abort event: unclear example](https://github.com/mdn/content/issues/44222) (2026-05-22T14:33:08Z)
   
 * [\[html\] Form submission event triggers](https://github.com/mdn/content/issues/43972) (2026-04-30T11:30:08Z)
