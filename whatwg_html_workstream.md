@@ -16,8 +16,6 @@
   
 * [\[html\] Web Storage API documentation pages fail to mention state partitioning](https://github.com/mdn/content/issues/43255) (2026-02-26T10:43:03Z)
   
-* [\[html\] Document that iframe referrerpolicy can influence location.ancestorOrigins and windowclient.ancestorOrigins](https://github.com/mdn/content/issues/42231) (2025-12-04T14:29:25Z)
-  
 * [\[html\] Poor choice of canvas id](https://github.com/mdn/content/issues/42155) (2025-11-27T23:12:59Z)
   
 * [\[html\] Update uses of \`PredefinedColorSpace\` to include \`srgb-linear\` and \`display-p3-linear\`](https://github.com/mdn/content/issues/42050) (2025-11-21T17:38:23Z)
