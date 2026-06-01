@@ -4,10 +4,40 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Fri, 29 May 2026 12:42:46 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 01 Jun 2026 19:08:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] document.frames doesn't exist]]></title>
+            <link>https://github.com/mdn/content/issues/44330</link>
+            <guid>https://github.com/mdn/content/issues/44330</guid>
+            <pubDate>Mon, 01 Jun 2026 19:08:40 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/target" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/target</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/target#examples" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/target#examples</a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="myForm.target = document.frames[1].name;"><pre class="notranslate"><span class="pl-s1">myForm</span><span class="pl-kos">.</span><span class="pl-c1">target</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-c1">frames</span><span class="pl-kos">[</span><span class="pl-c1">1</span><span class="pl-kos">]</span><span class="pl-kos">.</span><span class="pl-c1">name</span><span class="pl-kos">;</span></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="myForm.target = document.querySelector(&quot;iframe&quot;).name;"><pre class="notranslate"><span class="pl-s1">myForm</span><span class="pl-kos">.</span><span class="pl-c1">target</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">"iframe"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-c1">name</span><span class="pl-kos">;</span></pre></div>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/htmlformelement/target</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/target" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/target</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlformelement/target/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmlformelement/target/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/a3d9f61a8990ba7b53bda9748d1f26a9e9810b18/hovercard" href="https://github.com/mdn/content/commit/a3d9f61a8990ba7b53bda9748d1f26a9e9810b18"><tt>a3d9f61</tt></a></li>
+<li>Document last modified: 2023-04-07T00:39:15.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Remove "methods" row from HTML technical summary]]></title>
             <link>https://github.com/mdn/content/issues/44298</link>
