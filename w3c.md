@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, cssom-1\] Site-wide: Examples with outdated HTML containing submittable forms can break](https://github.com/mdn/content/issues/44347) (2026-06-03T19:55:48Z)
+  
 * [\[cssom-view-1\] \`scrollBy\` and \`scrollTo\` now return promises](https://github.com/mdn/content/issues/43999) (2026-05-04T12:37:35Z)
   
 * [\[cssom-view-1\] Container option is not a standard option in scrollIntoView()](https://github.com/mdn/content/issues/43949) (2026-04-28T10:01:10Z)

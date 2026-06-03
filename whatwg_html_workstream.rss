@@ -4,10 +4,29 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Fri, 29 May 2026 12:42:46 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 03 Jun 2026 19:55:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html, cssom-1] Site-wide: Examples with outdated HTML containing submittable forms can break]]></title>
+            <link>https://github.com/mdn/content/issues/44347</link>
+            <guid>https://github.com/mdn/content/issues/44347</guid>
+            <pubDate>Wed, 03 Jun 2026 19:55:48 GMT</pubDate>
+            <content:encoded><![CDATA[<p dir="auto">I first noticed this with the "Updating border style" example at <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style#updating_border_style" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style#updating_border_style</a> (and opened <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4582967319" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/44346" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/44346/hovercard" href="https://github.com/mdn/content/pull/44346">#44346</a> to fix that one page), but subsequent investigation revealed this to be a more widespread issue.</p>
+<p dir="auto">If an example's demo HTML contains a <code class="notranslate">&lt;form&gt;</code> element (which many legacy examples do, if they use <code class="notranslate">&lt;button&gt;</code>, <code class="notranslate">&lt;input&gt;</code> or other elements previously restricted to use in HTML forms), and that form is <em>submittable</em> (the child elements have <code class="notranslate">id</code> attributes), then activating those elements will break the demo, because a form submission is attempted and the playground <code class="notranslate">runner.html</code> returns a 400 Bad Request error, crashing the example (all rendered output vanishes).</p>
+<p dir="auto">This can also be seen at <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event#examples" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event#examples</a> . Although the input field does demonstrate the <code class="notranslate">beforeunload</code> functionality properly, because the form is submittable (the <code class="notranslate">&lt;input&gt;</code> has an <code class="notranslate">id=</code> attribute), it will break if navigation is triggered.</p>
+<h3 dir="auto">Steps to reproduce</h3>
+<ol dir="auto">
+<li>Navigate to <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event#examples" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event#examples</a> and scroll down to the rendered output containing an input field.</li>
+<li>Enter some text into the input field</li>
+<li>Press <kbd>Enter</kbd>, triggering the <code class="notranslate">beforeunload</code> unsaved-changes alert</li>
+<li>Click "Leave" (or whatever button signals acceptance of the navigation attempt)</li>
+<li>The example will crash (the input field disappears, leaving a blank white box), because a form submission was attempted and got a 400 response from the playground server.</li>
+</ol>
+<p dir="auto"><em>Heavily modified from a comment originally posted by <a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/ferdnyc/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ferdnyc">@ferdnyc</a> in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4582967319" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/44346" data-hovercard-type="pull_request" data-hovercard-url="/mdn/content/pull/44346/hovercard?comment_id=4616096392&amp;comment_type=issue_comment" href="https://github.com/mdn/content/pull/44346#issuecomment-4616096392">#44346 (comment)</a></em></p>
+<p dir="auto">It would be good to go through the rest of the site's content and find all of the other examples with submittable forms, as they'll all be broken the same way. (<code class="notranslate">&lt;form&gt;</code> elements wrapped around demo controls amount to superfluous noise at least 90% of the time, anyway. They're a legacy holdout from the pre-HTML5 web, and it's better if they're removed wherever possible just to make the examples more focused.)</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Remove "methods" row from HTML technical summary]]></title>
             <link>https://github.com/mdn/content/issues/44298</link>
