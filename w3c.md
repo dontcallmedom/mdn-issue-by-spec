@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[compression\] CompressionStream Browser Compatibility Update](https://github.com/mdn/content/issues/44390) (2026-06-08T21:22:24Z)
+  
 * [\[html, cssom-1\] Form submission causes playground iframe to lose runner state and become unusable.](https://github.com/mdn/content/issues/44384) (2026-06-04T13:47:57Z)
   
 * [\[html, cssom-1\] Site-wide: Examples with outdated HTML containing submittable forms can break](https://github.com/mdn/content/issues/44347) (2026-06-03T19:55:48Z)
