@@ -30,8 +30,6 @@
   
 * [\[mediasession\] MediaSession code samples inexplicable](https://github.com/mdn/content/issues/41250) (2025-09-22T17:37:24Z)
   
-* [\[compositing-2\] mix-blend-mode does not blend the element with its background but with its backdrop](https://github.com/mdn/content/issues/41078) (2025-09-09T17:29:09Z)
-  
 * [\[cookie-store\] CookieStore get() method return object should only support name and value](https://github.com/mdn/content/issues/40616) (2025-08-04T11:10:38Z)
   
 * [\[css-backgrounds-4\] Rethink description comment format in CSS syntax boxes](https://github.com/mdn/content/issues/40500) (2025-07-22T09:16:06Z)
@@ -71,8 +69,6 @@
 * [\[periodic-background-sync\] periodicSync needs "periodic-background-sync" permission](https://github.com/mdn/content/issues/33692) (2024-05-21T08:55:15Z)
   
 * [\[webxr\] Explanation of \`bounded-floor\`/\`local\`/\`local-floor\` needs improvement](https://github.com/mdn/content/issues/33111) (2024-04-16T04:22:18Z)
-  
-* [\[css-shadow-parts-1\] Pseudo-elements may now be followed by pseudo-classes](https://github.com/mdn/content/issues/32971) (2024-04-05T20:16:52Z)
   
 * [\[css-typed-om-2\] CSS Typed OM pages have stub examples sections](https://github.com/mdn/content/issues/28118) (2023-07-22T02:25:00Z)
   

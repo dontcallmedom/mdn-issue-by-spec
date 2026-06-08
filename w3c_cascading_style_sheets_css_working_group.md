@@ -14,8 +14,6 @@
   
 * [\[web-animations-2\] \`getComputedTiming()\` progress prop has incorrect description](https://github.com/mdn/content/issues/41789) (2025-11-03T10:02:45Z)
   
-* [\[compositing-2\] mix-blend-mode does not blend the element with its background but with its backdrop](https://github.com/mdn/content/issues/41078) (2025-09-09T17:29:09Z)
-  
 * [\[css-backgrounds-4\] Rethink description comment format in CSS syntax boxes](https://github.com/mdn/content/issues/40500) (2025-07-22T09:16:06Z)
   
 * [\[geometry-1\] DOMRect.toJSON method description is misleading](https://github.com/mdn/content/issues/40230) (2025-07-07T11:52:23Z)
@@ -29,8 +27,6 @@
 * [\[css-font-loading-3\] FontFace doc: sizeAdjust is missing](https://github.com/mdn/content/issues/36587) (2024-10-31T07:23:20Z)
   
 * [\[css-pseudo-4\] File selector can be styled](https://github.com/mdn/content/issues/36090) (2024-09-28T18:18:41Z)
-  
-* [\[css-shadow-parts-1\] Pseudo-elements may now be followed by pseudo-classes](https://github.com/mdn/content/issues/32971) (2024-04-05T20:16:52Z)
   
 * [\[css-typed-om-2\] CSS Typed OM pages have stub examples sections](https://github.com/mdn/content/issues/28118) (2023-07-22T02:25:00Z)
   
