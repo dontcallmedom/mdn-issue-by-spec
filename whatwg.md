@@ -60,8 +60,6 @@
   
 * [\[html\] HTML \<iframe\>: allow attribute needs stand-alone topic](https://github.com/mdn/content/issues/32188) (2024-02-09T06:10:46Z)
   
-* [\[dom\] api.Node.isConnected - Attr.isConnected is always false](https://github.com/mdn/content/issues/42933) (2024-01-26T01:04:37Z)
-  
 * [\[html\] Article element in a wrong implementation](https://github.com/mdn/content/issues/38324) (2023-09-13T12:53:45Z)
   
 * [\[html\] Cannot download with the "Download my painting" button; CSP error: “blocked the loading of a resource at data:image/png;base64”](https://github.com/mdn/content/issues/43998) (2023-07-21T02:38:19Z)
