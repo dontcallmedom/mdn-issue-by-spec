@@ -1,0 +1,23 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "WHATWG Streams Workstream-relevant MDN issues",
+    "home_page_url": "https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_streams_workstream.rss",
+    "description": "Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG Streams Workstream",
+    "author": {
+        "name": "mdn-issue-by-spec",
+        "url": "https://github.com/dontcallmedom/mdn-issue-by-spec"
+    },
+    "items": [
+        {
+            "id": "https://github.com/mdn/content/issues/44486",
+            "content_html": "<h3 dir=\"auto\">MDN URL</h3>\n<p dir=\"auto\"><a href=\"https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultController/desiredSize\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultController/desiredSize</a></p>\n<h3 dir=\"auto\">What specific section or headline is this issue about?</h3>\n<p dir=\"auto\"><em>No response</em></p>\n<h3 dir=\"auto\">What information was incorrect, unhelpful, or incomplete?</h3>\n<blockquote>\n<p dir=\"auto\">#Value<br>\nAn integer. Note that this can be negative if the queue is over-full.</p>\n</blockquote>\n<h3 dir=\"auto\">What did you expect to see?</h3>\n<p dir=\"auto\">This is wrong for two reasons:</p>\n<ol dir=\"auto\">\n<li><code class=\"notranslate\">desiredSize</code> can be <code class=\"notranslate\">null</code> in the case of an errored stream.</li>\n<li><code class=\"notranslate\">desiredSize</code> can be a non-integer, in the case of a custom queuing strategy.</li>\n</ol>\n<h3 dir=\"auto\">Do you have any supporting links, references, or citations?</h3>\n<p dir=\"auto\"><em>No response</em></p>\n<h3 dir=\"auto\">Do you have anything more you want to share?</h3>\n<p dir=\"auto\"><em>No response</em></p>\n<h3 dir=\"auto\">MDN metadata</h3>\n\n<details>\n<summary>Page report details</summary>\n<ul dir=\"auto\">\n<li>Folder: <code class=\"notranslate\">en-us/web/api/readablestreamdefaultcontroller/desiredsize</code></li>\n<li>MDN URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultController/desiredSize\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultController/desiredSize</a></li>\n<li>GitHub URL: <a href=\"https://github.com/mdn/content/blob/main/files/en-us/web/api/readablestreamdefaultcontroller/desiredsize/index.md\">https://github.com/mdn/content/blob/main/files/en-us/web/api/readablestreamdefaultcontroller/desiredsize/index.md</a></li>\n<li>Last commit: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/00f46adb5616d826821d63b11eac285faf1cf4a5/hovercard\" href=\"https://github.com/mdn/content/commit/00f46adb5616d826821d63b11eac285faf1cf4a5\"><tt>00f46ad</tt></a></li>\n<li>Document last modified: 2024-10-16T07:58:28.000Z</li>\n</ul>\n</details>",
+            "url": "https://github.com/mdn/content/issues/44486",
+            "title": "[streams] ReadableStream `desiredSize` is not always an integer",
+            "date_modified": "2026-06-16T14:40:37.000Z",
+            "author": {
+                "name": "rotu",
+                "url": "https://github.com/rotu"
+            }
+        }
+    ]
+}
