@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[dom\] Document the default value of \`resultType\`](https://github.com/mdn/content/issues/44495) (2026-06-17T12:08:59Z)
+  
 * [\[streams\] ReadableStream \`desiredSize\` is not always an integer](https://github.com/mdn/content/issues/44486) (2026-06-16T14:40:37Z)
   
 * [\[html\] pushState() and navigations and history navigation rate limiting no longer throws](https://github.com/mdn/content/issues/44477) (2026-06-15T16:42:56Z)
