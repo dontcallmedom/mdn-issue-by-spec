@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] navigator.javaEnabled() in the doc is not deprecated](https://github.com/mdn/content/issues/44652) (2026-07-06T14:05:48Z)
-  
 * [\[html, uievents\] A \`load\` event listener/handler must "atomically" accompany its element](https://github.com/mdn/content/issues/44591) (2026-06-28T15:39:35Z)
   
 * [\[html\] pushState() and navigations and history navigation rate limiting no longer throws](https://github.com/mdn/content/issues/44477) (2026-06-15T16:42:56Z)
