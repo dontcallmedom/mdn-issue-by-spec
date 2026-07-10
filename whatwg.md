@@ -24,8 +24,6 @@
   
 * [\[cssom-view-1, dom, pointerevents3, pointerlock-2, fullscreen, DOM-Parsing\] Refine short-title of WebAPI event pages](https://github.com/mdn/content/issues/43568) (2026-03-24T16:11:53Z)
   
-* [\[dom\] Misleading sentence in dispatchEvent() page](https://github.com/mdn/content/issues/43519) (2026-03-22T21:09:08Z)
-  
 * [\[html\] Web Storage API documentation pages fail to mention state partitioning](https://github.com/mdn/content/issues/43255) (2026-02-26T10:43:03Z)
   
 * [\[notifications\] showNotification: clarify difference between badge, icon, and image](https://github.com/mdn/content/issues/42499) (2025-12-22T22:10:35Z)

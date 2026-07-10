@@ -4,8 +4,6 @@
 
 * [\[cssom-view-1, dom, pointerevents3, pointerlock-2, fullscreen, DOM-Parsing\] Refine short-title of WebAPI event pages](https://github.com/mdn/content/issues/43568) (2026-03-24T16:11:53Z)
   
-* [\[dom\] Misleading sentence in dispatchEvent() page](https://github.com/mdn/content/issues/43519) (2026-03-22T21:09:08Z)
-  
 * [\[dom\] Event timeStamp accuracy description is misleading](https://github.com/mdn/content/issues/40673) (2025-08-08T04:41:43Z)
   
 * [\[dom\] HTML element, attribute, and doctype name validation rules are changing](https://github.com/mdn/content/issues/40366) (2025-07-15T04:32:47Z)
