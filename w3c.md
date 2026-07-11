@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[selection-api\] Clarify Document:selectionchange behavior and the difference from the same event fired for input and textarea](https://github.com/mdn/content/issues/44680) (2026-07-11T13:29:28Z)
+  
 * [\[webrtc\] Wrong definition of an interface](https://github.com/mdn/content/issues/44656) (2026-07-07T13:15:59Z)
   
 * [\[html, uievents\] A \`load\` event listener/handler must "atomically" accompany its element](https://github.com/mdn/content/issues/44591) (2026-06-28T15:39:35Z)
