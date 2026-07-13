@@ -4,8 +4,6 @@
 
 * [\[selection-api\] Clarify Document:selectionchange behavior and the difference from the same event fired for input and textarea](https://github.com/mdn/content/issues/44680) (2026-07-11T13:29:28Z)
   
-* [\[webrtc\] Wrong definition of an interface](https://github.com/mdn/content/issues/44656) (2026-07-07T13:15:59Z)
-  
 * [\[html, uievents\] A \`load\` event listener/handler must "atomically" accompany its element](https://github.com/mdn/content/issues/44591) (2026-06-28T15:39:35Z)
   
 * [\[SVG11\] fix: \`pointer-events: none\` description still says "never" after partial fix in #33633](https://github.com/mdn/content/issues/44565) (2026-06-24T07:08:07Z)

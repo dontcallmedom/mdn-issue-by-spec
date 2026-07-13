@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Real-Time Communications Working Group. [![RSS feed for W3C Web Real-Time Communications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[webrtc\] Wrong definition of an interface](https://github.com/mdn/content/issues/44656) (2026-07-07T13:15:59Z)
-  
 * [\[screen-capture\] displaySurface in getDisplayMedia no longer supported on safari](https://github.com/mdn/content/issues/42218) (2025-12-03T14:11:50Z)
   
 * [\[webrtc\] webrtc: Call createDataChannel after createOffer](https://github.com/mdn/content/issues/35932) (2024-09-18T12:11:30Z)
