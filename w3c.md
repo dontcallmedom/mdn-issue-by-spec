@@ -4,8 +4,6 @@
 
 * [\[html, uievents\] A \`load\` event listener/handler must "atomically" accompany its element](https://github.com/mdn/content/issues/44591) (2026-06-28T15:39:35Z)
   
-* [\[SVG11\] fix: \`pointer-events: none\` description still says "never" after partial fix in #33633](https://github.com/mdn/content/issues/44565) (2026-06-24T07:08:07Z)
-  
 * [\[html, cssom-1\] Form submission causes playground iframe to lose runner state and become unusable.](https://github.com/mdn/content/issues/44384) (2026-06-04T13:47:57Z)
   
 * [\[html, cssom-1\] Site-wide: Examples with outdated HTML containing submittable forms can break](https://github.com/mdn/content/issues/44347) (2026-06-03T19:55:48Z)
