@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Performance Working Group. [![RSS feed for W3C Web Performance Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[beacon\] Is 'Use pagehide as a fallback' clause steel needed?](https://github.com/mdn/content/issues/44927) (2026-07-27T08:17:18Z)
+  
 * [\[resource-timing-2\] PerformanceResourceTiming.startTime vs PerformanceResourceTiming.fetchStart](https://github.com/mdn/content/issues/43903) (2026-04-22T14:51:17Z)
   
 * [\[hr-time-3\] Synchronizing time between contexts requires a warning/caveat called out](https://github.com/mdn/content/issues/43901) (2026-04-22T14:06:58Z)

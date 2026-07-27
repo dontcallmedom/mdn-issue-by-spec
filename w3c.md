@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[beacon\] Is 'Use pagehide as a fallback' clause steel needed?](https://github.com/mdn/content/issues/44927) (2026-07-27T08:17:18Z)
+  
 * [\[serial\] Availability displays differ for Chrome support of navigator.serial](https://github.com/mdn/content/issues/44856) (2026-07-20T18:25:09Z)
   
 * [\[cssom-view-1\] image.x and image.y properties are unrelated to table-column styling](https://github.com/mdn/content/issues/44780) (2026-07-18T03:54:43Z)
