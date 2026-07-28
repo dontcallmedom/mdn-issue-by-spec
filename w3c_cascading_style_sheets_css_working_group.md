@@ -34,7 +34,5 @@
   
 * [\[cssom-view-1\] Guide on reflow and performance optimizations](https://github.com/mdn/content/issues/26330) (2023-04-21T01:08:41Z)
   
-* [\[filter-effects-2\] feGaussianBlur needs guidance about setting height and width ](https://github.com/mdn/content/issues/24169) (2023-02-04T21:15:51Z)
-  
 * [\[css-align-3\] New section to link from longhand to shorthand property](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
   

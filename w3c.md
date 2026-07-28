@@ -90,8 +90,6 @@
   
 * [\[screen-capture\] MediaDevices#getDisplayMedia(): systemAudio is misleading](https://github.com/mdn/content/issues/25307) (2023-03-14T03:38:33Z)
   
-* [\[filter-effects-2\] feGaussianBlur needs guidance about setting height and width ](https://github.com/mdn/content/issues/24169) (2023-02-04T21:15:51Z)
-  
 * [\[SVG11\] textPath attribute method doesn't seem to have an effect](https://github.com/mdn/content/issues/24079) (2023-02-01T16:11:22Z)
   
 * [\[css-align-3\] New section to link from longhand to shorthand property](https://github.com/mdn/content/issues/20793) (2022-09-16T06:36:39Z)
