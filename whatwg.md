@@ -60,8 +60,6 @@
   
 * [\[html\] Improve \`messageerror\` example to show a case in which the event is fired](https://github.com/mdn/content/issues/35064) (2024-07-25T16:05:45Z)
   
-* [\[html\] HTML \<iframe\>: allow attribute needs stand-alone topic](https://github.com/mdn/content/issues/32188) (2024-02-09T06:10:46Z)
-  
 * [\[html\] Article element in a wrong implementation](https://github.com/mdn/content/issues/38324) (2023-09-13T12:53:45Z)
   
 * [\[html\] Cannot download with the "Download my painting" button; CSP error: “blocked the loading of a resource at data:image/png;base64”](https://github.com/mdn/content/issues/43998) (2023-07-21T02:38:19Z)
