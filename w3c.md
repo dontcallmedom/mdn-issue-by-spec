@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[speech-api\] unspokenPunctuation is no longer a preview feature on Chrome 151](https://github.com/mdn/content/issues/44969) (2026-07-30T13:48:45Z)
+  
 * [\[beacon\] Is 'Use pagehide as a fallback' clause still needed?](https://github.com/mdn/content/issues/44927) (2026-07-27T08:17:18Z)
   
 * [\[serial\] Availability displays differ for Chrome support of navigator.serial](https://github.com/mdn/content/issues/44856) (2026-07-20T18:25:09Z)
