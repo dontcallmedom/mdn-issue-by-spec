@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] HTMLTableElement insertRow() has inaccurate description of default behavior](https://github.com/mdn/content/issues/44987) (2026-08-01T14:36:51Z)
+  
 * [\[html, uievents\] A \`load\` event listener/handler must "atomically" accompany its element](https://github.com/mdn/content/issues/44591) (2026-06-28T15:39:35Z)
   
 * [\[streams\] ReadableStream \`desiredSize\` is not always an integer](https://github.com/mdn/content/issues/44486) (2026-06-16T14:40:37Z)
