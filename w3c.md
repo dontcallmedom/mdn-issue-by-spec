@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[visual-viewport\] Broken Link to Live Example](https://github.com/mdn/content/issues/45033) (2026-08-06T00:40:39Z)
-  
 * [\[beacon\] Is 'Use pagehide as a fallback' clause still needed?](https://github.com/mdn/content/issues/44927) (2026-07-27T08:17:18Z)
   
 * [\[serial\] Availability displays differ for Chrome support of navigator.serial](https://github.com/mdn/content/issues/44856) (2026-07-20T18:25:09Z)
