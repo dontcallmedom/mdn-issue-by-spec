@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[uievents\] No idea where to report this so im starting here.](https://github.com/mdn/content/issues/45056) (2026-08-08T10:04:27Z)
+  
 * [\[cssom-view-1\] No Browser Implements screenX, screenY according to the spec](https://github.com/mdn/content/issues/45048) (2026-08-07T14:29:34Z)
   
 * [\[beacon\] Is 'Use pagehide as a fallback' clause still needed?](https://github.com/mdn/content/issues/44927) (2026-07-27T08:17:18Z)
