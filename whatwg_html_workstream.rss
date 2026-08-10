@@ -4,10 +4,34 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Sat, 01 Aug 2026 14:36:51 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 10 Aug 2026 06:05:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Clarify that `CustomElementRegistry.define()` triggers a read of `static observedAttributes`]]></title>
+            <link>https://github.com/mdn/content/issues/45065</link>
+            <guid>https://github.com/mdn/content/issues/45065</guid>
+            <pubDate>Mon, 10 Aug 2026 06:05:17 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Description, <a href="https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define#description" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define#description</a></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">As per <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="160268489" data-permission-text="Title is private" data-url="https://github.com/whatwg/html/issues/1422" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/html/pull/1422/hovercard" href="https://github.com/whatwg/html/pull/1422">whatwg/html#1422</a> , which was written 10 years ago</p>
+<p dir="auto">if attributeChangedCallback is detected, the browser then performs a Get on the constructor for the observedAttributes property.</p>
+<p dir="auto"><a href="https://html.spec.whatwg.org/multipage/custom-elements.html#dom-customelementregistry-define" rel="nofollow">https://html.spec.whatwg.org/multipage/custom-elements.html#dom-customelementregistry-define</a><br>
+Step - 14.5</p>
+<p dir="auto">Found this while debugging the source code of Lit - <a href="https://github.com/lit/lit/blob/c42ee1e96b8fd61f7256f61d715daef572e76e52/packages/reactive-element/src/reactive-element.ts#L659">https://github.com/lit/lit/blob/c42ee1e96b8fd61f7256f61d715daef572e76e52/packages/reactive-element/src/reactive-element.ts#L659</a></p>
+<p dir="auto">I think documenting, this behaviour will be helpful for web developers,<br>
+can I send a PR ?</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A small note, the description actually doesnt say anything about <code class="notranslate">observedAtrributes</code> static property</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] HTMLTableElement insertRow() has inaccurate description of default behavior]]></title>
             <link>https://github.com/mdn/content/issues/44987</link>
@@ -200,7 +224,7 @@
 <h3 dir="auto">Operating system</h3>
 <p dir="auto">Windows</p>
 <h3 dir="auto">Screenshot</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/191742106/602876174-c2932408-8e35-4b28-a660-216fc143c435.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODYzNDE5ODQsIm5iZiI6MTc4NjM0MTY4NCwicGF0aCI6Ii8xOTE3NDIxMDYvNjAyODc2MTc0LWMyOTMyNDA4LThlMzUtNGIyOC1hNjYwLTIxNmZjMTQzYzQzNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwODEwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDgxMFQwNjAxMjRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lOWU4MDIyOGUzOGZmZGU5ZDJhZDZlNmVmMzRkODMwZWE1ZWYwNjFmMGEwMGE4MjEwZmQ3MmJiYmUxZjAzYWFiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.Rx23-gY9mHEjrWffftLlnUEfydtedblnJMGWQI-v0Fg"><img width="1707" height="934" alt="Image" src="https://private-user-images.githubusercontent.com/191742106/602876174-c2932408-8e35-4b28-a660-216fc143c435.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODYzNDE5ODQsIm5iZiI6MTc4NjM0MTY4NCwicGF0aCI6Ii8xOTE3NDIxMDYvNjAyODc2MTc0LWMyOTMyNDA4LThlMzUtNGIyOC1hNjYwLTIxNmZjMTQzYzQzNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwODEwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDgxMFQwNjAxMjRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lOWU4MDIyOGUzOGZmZGU5ZDJhZDZlNmVmMzRkODMwZWE1ZWYwNjFmMGEwMGE4MjEwZmQ3MmJiYmUxZjAzYWFiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.Rx23-gY9mHEjrWffftLlnUEfydtedblnJMGWQI-v0Fg" style="max-width: 100%; height: auto; max-height: 934px;; aspect-ratio: 1707 / 934; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/191742106/602876174-c2932408-8e35-4b28-a660-216fc143c435.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODYzNDkwMTcsIm5iZiI6MTc4NjM0ODcxNywicGF0aCI6Ii8xOTE3NDIxMDYvNjAyODc2MTc0LWMyOTMyNDA4LThlMzUtNGIyOC1hNjYwLTIxNmZjMTQzYzQzNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwODEwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDgxMFQwNzU4MzdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02YjYwMTZkNjg1YWQyNmFjMGVkNGZiNzI0YjgxMjM2YzBlYjI1ZmZiZWZjYmE4NGU4NzEyMjkwNzAzMGUwZTc2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.jk43JT_JokDPmWEYhczp-WTmC_9yhm4p_LgiutqcHCU"><img width="1707" height="934" alt="Image" src="https://private-user-images.githubusercontent.com/191742106/602876174-c2932408-8e35-4b28-a660-216fc143c435.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODYzNDkwMTcsIm5iZiI6MTc4NjM0ODcxNywicGF0aCI6Ii8xOTE3NDIxMDYvNjAyODc2MTc0LWMyOTMyNDA4LThlMzUtNGIyOC1hNjYwLTIxNmZjMTQzYzQzNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwODEwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDgxMFQwNzU4MzdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02YjYwMTZkNjg1YWQyNmFjMGVkNGZiNzI0YjgxMjM2YzBlYjI1ZmZiZWZjYmE4NGU4NzEyMjkwNzAzMGUwZTc2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.jk43JT_JokDPmWEYhczp-WTmC_9yhm4p_LgiutqcHCU" style="max-width: 100%; height: auto; max-height: 934px;; aspect-ratio: 1707 / 934; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>
 <h2 dir="auto">Additional notes</h2>
 <p dir="auto">The examples identified in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4583183827" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/44347" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/44347/hovercard" href="https://github.com/mdn/content/issues/44347">#44347</a> expose this behavior, but the issue appears to affect any playground example containing a submittable form. Since the problem occurs when the playground iframe navigates away from its original <code class="notranslate">runner.html</code> URL and loses the required playground state parameters, future examples containing valid HTML forms may encounter the same issue even if current content is updated.</p>
 <h3 dir="auto">Validations</h3>
