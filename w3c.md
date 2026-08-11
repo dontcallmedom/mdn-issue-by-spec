@@ -38,8 +38,6 @@
   
 * [\[service-workers-1\] FetchEvent.replacesClientId removed from all browsers for 2+ years](https://github.com/mdn/content/issues/42195) (2025-12-02T09:18:10Z)
   
-* [\[web-animations-2\] \`getComputedTiming()\` progress prop has incorrect description](https://github.com/mdn/content/issues/41789) (2025-11-03T10:02:45Z)
-  
 * [\[mediasession\] MediaSession code samples inexplicable](https://github.com/mdn/content/issues/41250) (2025-09-22T17:37:24Z)
   
 * [\[cookie-store\] CookieStore get() method return object should only support name and value](https://github.com/mdn/content/issues/40616) (2025-08-04T11:10:38Z)
