@@ -8,8 +8,6 @@
   
 * [\[beacon\] Is 'Use pagehide as a fallback' clause still needed?](https://github.com/mdn/content/issues/44927) (2026-07-27T08:17:18Z)
   
-* [\[cssom-view-1\] image.x and image.y properties are unrelated to table-column styling](https://github.com/mdn/content/issues/44780) (2026-07-18T03:54:43Z)
-  
 * [\[html, uievents\] A \`load\` event listener/handler must "atomically" accompany its element](https://github.com/mdn/content/issues/44591) (2026-06-28T15:39:35Z)
   
 * [\[html, cssom-1\] Form submission causes playground iframe to lose runner state and become unusable.](https://github.com/mdn/content/issues/44384) (2026-06-04T13:47:57Z)

@@ -38,8 +38,6 @@
   
 * [\[html, css-backgrounds-4, requestidlecallback\] Reference page titles are not consistent and need improvements](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
   
-* [\[html\] Mention Firefox Anti-fingerprinting on \`getImageData()\` page](https://github.com/mdn/content/issues/39084) (2025-04-11T18:49:23Z)
-  
 * [\[html\] Clarify image.decode() failure on lazy-loaded images](https://github.com/mdn/content/issues/38034) (2025-02-08T00:22:15Z)
   
 * [\[html\] Missing documentation for AudioSession](https://github.com/mdn/content/issues/36932) (2024-11-22T20:58:39Z)
