@@ -8,8 +8,6 @@
   
 * [\[html, cssom-1\] Site-wide: Examples with outdated HTML containing submittable forms can break](https://github.com/mdn/content/issues/44347) (2026-06-03T19:55:48Z)
   
-* [\[cssom-view-1\] \`scrollBy\` and \`scrollTo\` now return promises](https://github.com/mdn/content/issues/43999) (2026-05-04T12:37:35Z)
-  
 * [\[cssom-view-1, dom, pointerevents3, pointerlock-2, fullscreen, DOM-Parsing\] Refine short-title of WebAPI event pages](https://github.com/mdn/content/issues/43568) (2026-03-24T16:11:53Z)
   
 * [\[css-backgrounds-4\] Rethink description comment format in CSS syntax boxes](https://github.com/mdn/content/issues/40500) (2025-07-22T09:16:06Z)

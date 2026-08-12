@@ -14,8 +14,6 @@
   
 * [\[html, cssom-1\] Site-wide: Examples with outdated HTML containing submittable forms can break](https://github.com/mdn/content/issues/44347) (2026-06-03T19:55:48Z)
   
-* [\[cssom-view-1\] \`scrollBy\` and \`scrollTo\` now return promises](https://github.com/mdn/content/issues/43999) (2026-05-04T12:37:35Z)
-  
 * [\[resource-timing-2\] PerformanceResourceTiming.startTime vs PerformanceResourceTiming.fetchStart](https://github.com/mdn/content/issues/43903) (2026-04-22T14:51:17Z)
   
 * [\[hr-time-3\] Synchronizing time between contexts requires a warning/caveat called out](https://github.com/mdn/content/issues/43901) (2026-04-22T14:06:58Z)
