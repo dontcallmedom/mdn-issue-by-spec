@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Sidebar on Window page shows "Document Object Model (DOM)" group, which is misleading](https://github.com/mdn/content/issues/45123) (2026-08-13T22:20:11Z)
+  
 * [\[html\] Clarify that \`CustomElementRegistry.define()\` triggers a read of \`static observedAttributes\`](https://github.com/mdn/content/issues/45065) (2026-08-10T06:05:17Z)
   
 * [\[html\] HTMLTableElement insertRow() has inaccurate description of default behavior](https://github.com/mdn/content/issues/44987) (2026-08-01T14:36:51Z)
