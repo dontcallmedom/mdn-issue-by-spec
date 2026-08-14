@@ -14,7 +14,7 @@
   
 * [\[html\] pushState() and navigations and history navigation rate limiting no longer throws](https://github.com/mdn/content/issues/44477) (2026-06-15T16:42:56Z)
   
-* [\[html\] No screen reader information](https://github.com/mdn/content/issues/44395) (2026-06-09T12:18:46Z)
+* [\[html\] ElementInternals.labels: No screen reader information](https://github.com/mdn/content/issues/44395) (2026-06-09T12:18:46Z)
   
 * [\[html, cssom-1\] Form submission causes playground iframe to lose runner state and become unusable.](https://github.com/mdn/content/issues/44384) (2026-06-04T13:47:57Z)
   
@@ -26,7 +26,7 @@
   
 * [\[html\] Cannot prevent cancel when user presses Escape twice](https://github.com/mdn/content/issues/43943) (2026-04-27T12:23:34Z)
   
-* [\[html\] detecting MIME type of file is done by extension](https://github.com/mdn/content/issues/43803) (2026-04-15T21:11:15Z)
+* [\[html\] Detecting dragged file type is done by extension](https://github.com/mdn/content/issues/43803) (2026-04-15T21:11:15Z)
   
 * [\[cssom-view-1, dom, pointerevents3, pointerlock-2, fullscreen, DOM-Parsing\] Refine short-title of WebAPI event pages](https://github.com/mdn/content/issues/43568) (2026-03-24T16:11:53Z)
   
@@ -63,8 +63,6 @@
 * [\[html\] Improve \`messageerror\` example to show a case in which the event is fired](https://github.com/mdn/content/issues/35064) (2024-07-25T16:05:45Z)
   
 * [\[html\] Article element in a wrong implementation](https://github.com/mdn/content/issues/38324) (2023-09-13T12:53:45Z)
-  
-* [\[html\] Cannot download with the "Download my painting" button; CSP error: “blocked the loading of a resource at data:image/png;base64”](https://github.com/mdn/content/issues/43998) (2023-07-21T02:38:19Z)
   
 * [\[html\] Image request fired as soon as src is set](https://github.com/mdn/content/issues/26560) (2023-05-03T17:23:34Z)
   
