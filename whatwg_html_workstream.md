@@ -14,8 +14,6 @@
   
 * [\[html\] ElementInternals.labels: No screen reader information](https://github.com/mdn/content/issues/44395) (2026-06-09T12:18:46Z)
   
-* [\[html, cssom-1\] Form submission causes playground iframe to lose runner state and become unusable.](https://github.com/mdn/content/issues/44384) (2026-06-04T13:47:57Z)
-  
 * [\[html, cssom-1\] Site-wide: Examples with outdated HTML containing submittable forms can break](https://github.com/mdn/content/issues/44347) (2026-06-03T19:55:48Z)
   
 * [\[html\] Form submission event triggers](https://github.com/mdn/content/issues/43972) (2026-04-30T11:30:08Z)

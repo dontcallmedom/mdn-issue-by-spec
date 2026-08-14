@@ -10,8 +10,6 @@
   
 * [\[html, uievents\] A \`load\` event listener/handler must "atomically" accompany its element](https://github.com/mdn/content/issues/44591) (2026-06-28T15:39:35Z)
   
-* [\[html, cssom-1\] Form submission causes playground iframe to lose runner state and become unusable.](https://github.com/mdn/content/issues/44384) (2026-06-04T13:47:57Z)
-  
 * [\[html, cssom-1\] Site-wide: Examples with outdated HTML containing submittable forms can break](https://github.com/mdn/content/issues/44347) (2026-06-03T19:55:48Z)
   
 * [\[resource-timing-2\] PerformanceResourceTiming.startTime vs PerformanceResourceTiming.fetchStart](https://github.com/mdn/content/issues/43903) (2026-04-22T14:51:17Z)

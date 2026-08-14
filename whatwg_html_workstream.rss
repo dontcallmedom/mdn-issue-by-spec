@@ -195,67 +195,6 @@ can I send a PR ?</p>
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html, cssom-1] Form submission causes playground iframe to lose runner state and become unusable.]]></title>
-            <link>https://github.com/mdn/content/issues/44384</link>
-            <guid>https://github.com/mdn/content/issues/44384</guid>
-            <pubDate>Thu, 04 Jun 2026 13:47:57 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">Summary</h3>
-<p dir="auto">While investigating <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4583183827" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/44347" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/44347/hovercard" href="https://github.com/mdn/content/issues/44347">#44347</a>, I noticed that the behavior appears to originate from the playground infrastructure rather than any specific example.</p>
-<p dir="auto">If a playground example contains a submittable <code class="notranslate">&lt;form&gt;</code>, submitting the form causes the iframe to navigate away from the rendered example. The navigation replaces the playground's required query parameters with form data, resulting in an error page and leaving the example unusable.</p>
-<h3 dir="auto">Related</h3>
-<ul dir="auto">
-<li><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4583183827" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/44347" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/44347/hovercard" href="https://github.com/mdn/content/issues/44347">#44347</a></li>
-</ul>
-<p dir="auto">The following examples mentioned in that issue exhibit this behavior:</p>
-<ul dir="auto">
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style#updating_border_style" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style#updating_border_style</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event#examples" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event#examples</a></li>
-</ul>
-<h3 dir="auto">Reproduction</h3>
-<ol dir="auto">
-<li>Open an MDN page containing a playground example with a submittable <code class="notranslate">&lt;form&gt;</code>.</li>
-<li>Interact with the example and enter data into one of its form fields.</li>
-<li>Submit the form (for example, by pressing Enter while focused on a text input).</li>
-<li>Observe that the playground iframe navigates away from the rendered example and displays an error page.</li>
-</ol>
-<h3 dir="auto">Observed behavior</h3>
-<p dir="auto">Before form submission, the playground iframe is loaded from a URL similar to:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content=".../runner.html?uuid=&lt;uuid&gt;&amp;state=&lt;state&gt;"><pre lang="text" class="notranslate"><code class="notranslate">.../runner.html?uuid=&lt;uuid&gt;&amp;state=&lt;state&gt;
-</code></pre></div>
-<p dir="auto">After form submission, the iframe navigates to:</p>
-<div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content=".../runner.html?name=&lt;value&gt;"><pre lang="text" class="notranslate"><code class="notranslate">.../runner.html?name=&lt;value&gt;
-</code></pre></div>
-<p dir="auto">The original playground parameters (<code class="notranslate">uuid</code> and <code class="notranslate">state</code>) are replaced by the submitted form data.</p>
-<p dir="auto">As a result, the playground can no longer render the example:</p>
-<ul dir="auto">
-<li>Production returns <code class="notranslate">400 Bad Request</code>.</li>
-<li>Local development returns <code class="notranslate">404 Not Found</code>.</li>
-</ul>
-<p dir="auto">Although the responses differ, the result is the same: the rendered example disappears and can no longer be interacted with.</p>
-<h3 dir="auto">Expected behavior</h3>
-<p dir="auto">Submitting a form within a playground example should either prevent the default frame navigation entirely, or preserve the required uuid and state query parameters so the runner doesn't crash.</p>
-<h3 dir="auto">Actual behavior</h3>
-<p dir="auto">Submitting a form causes the playground iframe to navigate away from its original runner.html URL. During navigation, the required playground query parameters (uuid and state) are replaced by the submitted form data. The resulting request can no longer render the example, causing the iframe to display an error page (400 Bad Request in production, 404 Not Found locally) and the rendered example disappears.</p>
-<h3 dir="auto">Device</h3>
-<p dir="auto">Laptop</p>
-<h3 dir="auto">Browser</h3>
-<p dir="auto">Firefox</p>
-<h3 dir="auto">Browser version</h3>
-<p dir="auto">Stable</p>
-<h3 dir="auto">Operating system</h3>
-<p dir="auto">Windows</p>
-<h3 dir="auto">Screenshot</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/191742106/602876174-c2932408-8e35-4b28-a660-216fc143c435.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODY3MzIxNDIsIm5iZiI6MTc4NjczMTg0MiwicGF0aCI6Ii8xOTE3NDIxMDYvNjAyODc2MTc0LWMyOTMyNDA4LThlMzUtNGIyOC1hNjYwLTIxNmZjMTQzYzQzNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwODE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDgxNFQxODI0MDJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kYzVkOWVhMGRlMTkyOTU0MzRjMjhhNDE2NTE1YTQwNmY2ZmM5NmJkZDNjMzY2YWRlMzNmOThkYzdiMmQ5MmJjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.g3e8nOoJbo5ZTUKRH-D7Jugw1tnz3_ah07coXn9FE-0"><img width="1707" height="934" alt="Image" src="https://private-user-images.githubusercontent.com/191742106/602876174-c2932408-8e35-4b28-a660-216fc143c435.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODY3MzIxNDIsIm5iZiI6MTc4NjczMTg0MiwicGF0aCI6Ii8xOTE3NDIxMDYvNjAyODc2MTc0LWMyOTMyNDA4LThlMzUtNGIyOC1hNjYwLTIxNmZjMTQzYzQzNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwODE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDgxNFQxODI0MDJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kYzVkOWVhMGRlMTkyOTU0MzRjMjhhNDE2NTE1YTQwNmY2ZmM5NmJkZDNjMzY2YWRlMzNmOThkYzdiMmQ5MmJjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.g3e8nOoJbo5ZTUKRH-D7Jugw1tnz3_ah07coXn9FE-0" style="max-width: 100%; height: auto; max-height: 934px;; aspect-ratio: 1707 / 934; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>
-<h2 dir="auto">Additional notes</h2>
-<p dir="auto">The examples identified in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="4583183827" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/44347" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/44347/hovercard" href="https://github.com/mdn/content/issues/44347">#44347</a> expose this behavior, but the issue appears to affect any playground example containing a submittable form. Since the problem occurs when the playground iframe navigates away from its original <code class="notranslate">runner.html</code> URL and loses the required playground state parameters, future examples containing valid HTML forms may encounter the same issue even if current content is updated.</p>
-<h3 dir="auto">Validations</h3>
-<ul class="contains-task-list">
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Completed task" checked=""> I have read the <a href="https://www.mozilla.org/en-US/about/governance/policies/participation/" rel="nofollow">Community Participation Guidelines</a>.</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Completed task" checked=""> I have verified that there isn't <a href="https://github.com/mdn/yari/issues">already an issue</a> that reports the same bug to avoid creating a duplicate.</li>
-<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Completed task" checked=""> I have checked that this is a concrete bug. For Q&amp;A open a <a href="https://github.com/orgs/mdn/discussions/categories/platform">GitHub Discussion</a>.</li>
-</ul>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html, cssom-1] Site-wide: Examples with outdated HTML containing submittable forms can break]]></title>
             <link>https://github.com/mdn/content/issues/44347</link>
             <guid>https://github.com/mdn/content/issues/44347</guid>
