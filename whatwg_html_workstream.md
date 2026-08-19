@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] The upgrade step of custom elements are missing in the \`define\` page ?](https://github.com/mdn/content/issues/45241) (2026-08-19T13:07:46Z)
+  
 * [\[html\] Sidebar on Window page shows "Document Object Model (DOM)" group, which is misleading](https://github.com/mdn/content/issues/45123) (2026-08-13T22:20:11Z)
   
 * [\[html\] Clarify that \`CustomElementRegistry.define()\` triggers a read of \`static observedAttributes\`](https://github.com/mdn/content/issues/45065) (2026-08-10T06:05:17Z)
