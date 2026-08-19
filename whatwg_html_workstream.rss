@@ -815,6 +815,51 @@ A string reflecting the <a href="https://developer.mozilla.org/en-US/docs/Web/Ac
 <p dir="auto"><em>No response</em></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[[html] Add description and recommendation about unicode LTR and RTL marks]]></title>
+            <link>https://github.com/mdn/content/issues/45248</link>
+            <guid>https://github.com/mdn/content/issues/45248</guid>
+            <pubDate>Fri, 19 Apr 2024 14:56:10 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">Proposal</h3>
+<p dir="auto">Add description and recommendation about unicode LEFT-TO-RIGHT MARK (<a href="https://unicode-explorer.com/c/200E" rel="nofollow">U+200E</a>) and RIGHT-TO-LEFT MARK (<a href="https://unicode-explorer.com/c/200F" rel="nofollow">U+200F</a>) to <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdo" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdo</a>.</p>
+<ul dir="auto">
+<li>when to use and not to use</li>
+<li>pros and cons vs &lt;bdo&gt; and &lt;bdi&gt;</li>
+<li>accessibility concerns?</li>
+<li></li>
+</ul>
+<h3 dir="auto">Browser support</h3>
+<p dir="auto">Firefox</p>
+<h3 dir="auto">Tasks</h3>
+<ul dir="auto">
+<li>[ ]</li>
+</ul>
+<h3 dir="auto">Dependencies</h3>
+<ul dir="auto">
+<li>[ ]</li>
+</ul>
+<h3 dir="auto">Additional information</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Are you willing to support this work?</h3>
+<p dir="auto">I can provide reviews from the perspective of a learner - but my motivation for the topic is that I myself am not a subject matter expert, and maybe like to read about this subject at a source I trust, like MDN is.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[html] document inheritance of HTML directionality and language and its relationship to shadow DOM]]></title>
+            <link>https://github.com/mdn/content/issues/45249</link>
+            <guid>https://github.com/mdn/content/issues/45249</guid>
+            <pubDate>Fri, 06 Oct 2023 12:28:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">Proposal</h3>
+<p dir="auto">In <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1913810629" data-permission-text="Title is private" data-url="https://github.com/whatwg/html/issues/9796" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/html/pull/9796/hovercard" href="https://github.com/whatwg/html/pull/9796">whatwg/html#9796</a> the inheritance of directionality and language in HTML is being specified more clearly, including how it works with shadow DOM.  (The summary is that it largely inherits on the node tree, not the flattened tree, but a shadow root and any slot elements inherit from the shadow host.)</p>
+<p dir="auto">Right now neither <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir</a> nor <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang</a> even mentions that these concepts are inherited when they're not specified.  It seems like that should probably be described a little bit.  And probably the interaction with Shadow DOM should be mentioned, although maybe in a shadow DOM article rather than in the lang/dir pages.</p>
+<h3 dir="auto">Task list</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Additional information</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Are you willing to support this work?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Depends on</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[[html] Article element in a wrong implementation]]></title>
             <link>https://github.com/mdn/content/issues/38324</link>
             <guid>https://github.com/mdn/content/issues/38324</guid>

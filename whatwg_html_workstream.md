@@ -50,6 +50,10 @@
   
 * [\[html\] Improve \`messageerror\` example to show a case in which the event is fired](https://github.com/mdn/content/issues/35064) (2024-07-25T16:05:45Z)
   
+* [\[html\] Add description and recommendation about unicode LTR and RTL marks](https://github.com/mdn/content/issues/45248) (2024-04-19T14:56:10Z)
+  
+* [\[html\] document inheritance of HTML directionality and language and its relationship to shadow DOM](https://github.com/mdn/content/issues/45249) (2023-10-06T12:28:00Z)
+  
 * [\[html\] Article element in a wrong implementation](https://github.com/mdn/content/issues/38324) (2023-09-13T12:53:45Z)
   
 * [\[html\] Image request fired as soon as src is set](https://github.com/mdn/content/issues/26560) (2023-05-03T17:23:34Z)

@@ -6,3 +6,5 @@
   
 * [\[ecmascript\] Yielding rejected promises from a sync generator now properly closes the iterator](https://github.com/mdn/content/issues/37038) (2024-12-01T10:22:47Z)
   
+* [\[ecmascript\] Glossary: Page about "deep equal" comparison of values](https://github.com/mdn/content/issues/45250) (2024-04-16T13:26:02Z)
+  
