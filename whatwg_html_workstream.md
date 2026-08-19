@@ -8,8 +8,6 @@
   
 * [\[html\] Clarify that \`CustomElementRegistry.define()\` triggers a read of \`static observedAttributes\`](https://github.com/mdn/content/issues/45065) (2026-08-10T06:05:17Z)
   
-* [\[html\] HTMLTableElement insertRow() has inaccurate description of default behavior](https://github.com/mdn/content/issues/44987) (2026-08-01T14:36:51Z)
-  
 * [\[html, uievents\] A \`load\` event listener/handler must "atomically" accompany its element](https://github.com/mdn/content/issues/44591) (2026-06-28T15:39:35Z)
   
 * [\[html\] pushState() and navigations and history navigation rate limiting no longer throws](https://github.com/mdn/content/issues/44477) (2026-06-15T16:42:56Z)

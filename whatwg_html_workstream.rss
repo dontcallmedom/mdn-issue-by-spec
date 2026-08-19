@@ -74,39 +74,6 @@ can I send a PR ?</p>
 <p dir="auto"><em>No response</em></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] HTMLTableElement insertRow() has inaccurate description of default behavior]]></title>
-            <link>https://github.com/mdn/content/issues/44987</link>
-            <guid>https://github.com/mdn/content/issues/44987</guid>
-            <pubDate>Sat, 01 Aug 2026 14:36:51 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/insertRow" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/insertRow</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Intro, second paragraph</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<blockquote>
-<p dir="auto">If a table has multiple &lt;tbody&gt; elements, by default, the new row is inserted into the last &lt;tbody&gt;.</p>
-</blockquote>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">According to the <a href="https://html.spec.whatwg.org/multipage/tables.html#dom-table-insertrow" rel="nofollow">spec</a>, that is only true if table.rows is empty.  Otherwise, the table section into which the &lt;tr&gt; is inserted depends on the index.  insertRow(i) inserts the new row into the parent of the table.rows[i] element.  If the index is -1 or equal to the number of rows in table.rows, it is inserted into the parent of the last row.</p>
-<p dir="auto">I dug into this while debugging some JavaScript that was using table.insertRow(-1) to populate the body of a pre-existing HTML table which had a &lt;thead&gt; with one row and an empty &lt;tbody&gt;.  According to the MDN docs, it should have appended the row to the &lt;tbody&gt;, but it was in fact appending it to the &lt;thead&gt;.  But on reading the spec, it seems like Firefox is doing the right thing.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://html.spec.whatwg.org/multipage/tables.html#dom-table-insertrow" rel="nofollow">https://html.spec.whatwg.org/multipage/tables.html#dom-table-insertrow</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/htmltableelement/insertrow</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/insertRow" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/insertRow</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/htmltableelement/insertrow/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/htmltableelement/insertrow/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/0b5859108411e47d228a4bb9f30a5556ab17f63c/hovercard" href="https://github.com/mdn/content/commit/0b5859108411e47d228a4bb9f30a5556ab17f63c"><tt>0b58591</tt></a></li>
-<li>Document last modified: 2025-11-03T18:14:11.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html, uievents] A `load` event listener/handler must "atomically" accompany its element]]></title>
             <link>https://github.com/mdn/content/issues/44591</link>
             <guid>https://github.com/mdn/content/issues/44591</guid>
