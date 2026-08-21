@@ -29,27 +29,6 @@ ik , this exists <a href="https://developer.mozilla.org/en-US/docs/Web/API/Custo
 <p dir="auto"><em>No response</em></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Sidebar on Window page shows "Document Object Model (DOM)" group, which is misleading]]></title>
-            <link>https://github.com/mdn/content/issues/45123</link>
-            <guid>https://github.com/mdn/content/issues/45123</guid>
-            <pubDate>Thu, 13 Aug 2026 22:20:11 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">The left sidebar navigation (group heading "Document Object Model (DOM)")</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The sidebar on the Window page displays "Document Object Model (DOM)" as the group heading. However, Window is not defined by the DOM Standard (<a href="https://dom.spec.whatwg.org/" rel="nofollow">https://dom.spec.whatwg.org/</a>), it's defined by the HTML Standard (<a href="https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-window-object" rel="nofollow">https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-window-object</a>). The DOM Standard's own list of interfaces does not include Window (see <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model#dom_interfaces" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model#dom_interfaces</a>).</p>
-<p dir="auto">This creates confusion for anyone comparing the sidebar grouping against the actual specifications, since it implies Window belongs to the DOM spec when it does not.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Either a group label that doesn't imply DOM Standard ownership (e.g. "HTML DOM API" or similar), or some clarification distinguishing the DOM Standard from the broader "DOM" concept as used colloquially.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">HTML Standard, Window object: <a href="https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-window-object" rel="nofollow">https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-window-object</a><br>
-DOM Standard interfaces list: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model#dom_interfaces" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model#dom_interfaces</a><br>
-Related discussion on grouping extended interfaces: <a href="https://github.com/orgs/mdn/discussions/796">https://github.com/orgs/mdn/discussions/796</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Clarify that `CustomElementRegistry.define()` triggers a read of `static observedAttributes`]]></title>
             <link>https://github.com/mdn/content/issues/45065</link>
             <guid>https://github.com/mdn/content/issues/45065</guid>

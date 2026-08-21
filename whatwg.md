@@ -4,8 +4,6 @@
 
 * [\[html\] The upgrade step of custom elements are missing in the \`define\` page ?](https://github.com/mdn/content/issues/45241) (2026-08-19T13:07:46Z)
   
-* [\[html\] Sidebar on Window page shows "Document Object Model (DOM)" group, which is misleading](https://github.com/mdn/content/issues/45123) (2026-08-13T22:20:11Z)
-  
 * [\[html\] Clarify that \`CustomElementRegistry.define()\` triggers a read of \`static observedAttributes\`](https://github.com/mdn/content/issues/45065) (2026-08-10T06:05:17Z)
   
 * [\[html, uievents\] A \`load\` event listener/handler must "atomically" accompany its element](https://github.com/mdn/content/issues/44591) (2026-06-28T15:39:35Z)
