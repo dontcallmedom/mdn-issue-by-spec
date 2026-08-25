@@ -8,3 +8,5 @@
   
 * [\[ecmascript\] Glossary: Page about "deep equal" comparison of values](https://github.com/mdn/content/issues/45250) (2024-04-16T13:26:02Z)
   
+* [\[ecmascript\] Article about module support in web extensions](https://github.com/mdn/content/issues/45317) (2023-04-17T05:55:06Z)
+  

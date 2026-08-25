@@ -40,6 +40,17 @@
                 "name": "eliot-akira",
                 "url": "https://github.com/eliot-akira"
             }
+        },
+        {
+            "id": "https://github.com/mdn/content/issues/45317",
+            "content_html": "<h3 dir=\"auto\">What would you like to see added to BCD?</h3>\n<h3 dir=\"auto\">Preamble</h3>\n<p dir=\"auto\">The identical proposal applies to both <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import\" rel=\"nofollow\">import</a> &amp;  <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import\" rel=\"nofollow\">import()</a>. If required, I can split them into 2 topics.</p>\n<h3 dir=\"auto\">Details</h3>\n<p dir=\"auto\">The following relevant data would be beneficial to have in BCD (as finding the data requires going through many pages).</p>\n<ul dir=\"auto\">\n<li>Available in workers (already listed in both) ✔️</li>\n<li>Available in background service worker (MV3)</li>\n<li>Available in background event page (MV3)</li>\n<li>Available in background scripts (MV2)<br>\nAvailable by loading background script as module via a background page</li>\n<li>Available in content script</li>\n</ul>\n<p dir=\"auto\">Also relevant to:</p>\n<ul dir=\"auto\">\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/background\" rel=\"nofollow\">background</a></li>\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/content_scripts\" rel=\"nofollow\">content_scripts</a></li>\n</ul>\n<h3 dir=\"auto\">Reference</h3>\n<p dir=\"auto\"><a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1775574\" rel=\"nofollow\">Support type: \"module\" (background service worker as a ES module)</a><br>\n<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1811443\" rel=\"nofollow\">Support type: \"module\" (event page, not background service worker)</a><br>\n<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1451545\" rel=\"nofollow\">Support loading content scripts as ES6 modules</a><br>\n<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1536094\" rel=\"nofollow\">Dynamic module import doesn't work in webextension content scripts</a><br>\n<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1803950\" rel=\"nofollow\">Dynamic import fails in content script in MV3 extension</a></p>\n<h3 dir=\"auto\">How impactful do you think this enhancement will be?</h3>\n<p dir=\"auto\">Provide additional data as per aforementioned</p>\n<h3 dir=\"auto\">Do you have anything more you want to share?</h3>\n<p dir=\"auto\"><em>No response</em></p>",
+            "url": "https://github.com/mdn/content/issues/45317",
+            "title": "[ecmascript] Article about module support in web extensions",
+            "date_modified": "2023-04-17T05:55:06.000Z",
+            "author": {
+                "name": "erosman",
+                "url": "https://github.com/erosman"
+            }
         }
     ]
 }
