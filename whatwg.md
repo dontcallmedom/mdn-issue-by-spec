@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[dom\] Add Processing Instructions guide](https://github.com/mdn/content/issues/45309) (2026-08-25T11:33:22Z)
+  
 * [\[html\] The upgrade step of custom elements are missing in the \`define\` page ?](https://github.com/mdn/content/issues/45241) (2026-08-19T13:07:46Z)
   
 * [\[html\] Clarify that \`CustomElementRegistry.define()\` triggers a read of \`static observedAttributes\`](https://github.com/mdn/content/issues/45065) (2026-08-10T06:05:17Z)
