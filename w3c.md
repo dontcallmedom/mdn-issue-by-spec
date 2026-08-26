@@ -34,7 +34,7 @@
   
 * [\[webusb\] USB.requestDevice new \`exclusionFilters\` option](https://github.com/mdn/content/issues/40372) (2025-07-15T12:34:44Z)
   
-* [\[geometry-1\] DOMRect.toJSON method description is misleading](https://github.com/mdn/content/issues/40230) (2025-07-07T11:52:23Z)
+* [\[geometry-1\] Web APIs' toJSON() method description is misleading](https://github.com/mdn/content/issues/40230) (2025-07-07T11:52:23Z)
   
 * [\[html, css-backgrounds-4, requestidlecallback\] Reference page titles are not consistent and need improvements](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
   

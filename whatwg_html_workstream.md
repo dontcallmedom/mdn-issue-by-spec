@@ -52,7 +52,7 @@
   
 * [\[html\] Article element in a wrong implementation](https://github.com/mdn/content/issues/38324) (2023-09-13T12:53:45Z)
   
-* [\[html\] selectionStart and selectionEnd](https://github.com/mdn/content/issues/45314) (2023-07-06T09:02:07Z)
+* [\[html\] Add See also items for \`selectionStart\` and \`selectionEnd\`](https://github.com/mdn/content/issues/45314) (2023-07-06T09:02:07Z)
   
 * [\[html\] Image request fired as soon as src is set](https://github.com/mdn/content/issues/26560) (2023-05-03T17:23:34Z)
   

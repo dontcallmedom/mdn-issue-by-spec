@@ -10,7 +10,7 @@
   
 * [\[css-backgrounds-4\] Rethink description comment format in CSS syntax boxes](https://github.com/mdn/content/issues/40500) (2025-07-22T09:16:06Z)
   
-* [\[geometry-1\] DOMRect.toJSON method description is misleading](https://github.com/mdn/content/issues/40230) (2025-07-07T11:52:23Z)
+* [\[geometry-1\] Web APIs' toJSON() method description is misleading](https://github.com/mdn/content/issues/40230) (2025-07-07T11:52:23Z)
   
 * [\[html, css-backgrounds-4, requestidlecallback\] Reference page titles are not consistent and need improvements](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
   
