@@ -24,8 +24,6 @@
   
 * [\[hr-time-3, ecmascript\] Fix: CORP does not enable SharedArrayBuffer](https://github.com/mdn/content/issues/42236) (2025-12-05T03:19:41Z)
   
-* [\[screen-capture\] displaySurface in getDisplayMedia no longer supported on safari](https://github.com/mdn/content/issues/42218) (2025-12-03T14:11:50Z)
-  
 * [\[service-workers-1\] FetchEvent.replacesClientId removed from all browsers for 2+ years](https://github.com/mdn/content/issues/42195) (2025-12-02T09:18:10Z)
   
 * [\[mediasession\] MediaSession code samples inexplicable](https://github.com/mdn/content/issues/41250) (2025-09-22T17:37:24Z)
