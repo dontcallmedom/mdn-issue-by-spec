@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[cookie-store\] Removed features are labeled as experimental, giving the wrong impression](https://github.com/mdn/content/issues/45364) (2026-08-28T06:26:31Z)
+  
 * [\[uievents\] KeyboardEvent: ctrlKey false on key up of the control key](https://github.com/mdn/content/issues/45056) (2026-08-08T10:04:27Z)
   
 * [\[cssom-view-1\] No Browser Implements screenX, screenY according to the spec](https://github.com/mdn/content/issues/45048) (2026-08-07T14:29:34Z)
@@ -27,8 +29,6 @@
 * [\[service-workers-1\] FetchEvent.replacesClientId removed from all browsers for 2+ years](https://github.com/mdn/content/issues/42195) (2025-12-02T09:18:10Z)
   
 * [\[mediasession\] MediaSession code samples inexplicable](https://github.com/mdn/content/issues/41250) (2025-09-22T17:37:24Z)
-  
-* [\[cookie-store\] CookieStore get() method return object should only support name and value](https://github.com/mdn/content/issues/40616) (2025-08-04T11:10:38Z)
   
 * [\[css-backgrounds-4\] Rethink description comment format in CSS syntax boxes](https://github.com/mdn/content/issues/40500) (2025-07-22T09:16:06Z)
   

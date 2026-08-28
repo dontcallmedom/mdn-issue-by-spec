@@ -16,8 +16,6 @@
   
 * [\[html\] Form submission event triggers](https://github.com/mdn/content/issues/43972) (2026-04-30T11:30:08Z)
   
-* [\[html\] contextmenu is a Pointer Event](https://github.com/mdn/content/issues/43946) (2026-04-27T18:20:44Z)
-  
 * [\[html\] Cannot prevent cancel when user presses Escape twice](https://github.com/mdn/content/issues/43943) (2026-04-27T12:23:34Z)
   
 * [\[html\] Detecting dragged file type is done by extension](https://github.com/mdn/content/issues/43803) (2026-04-15T21:11:15Z)
