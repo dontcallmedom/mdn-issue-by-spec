@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG HTML Workstream. [![RSS feed for WHATWG HTML Workstream-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html\] Document scopedcustomelementregistry and its HTMLElement reflection](https://github.com/mdn/content/issues/45383) (2026-08-28T23:26:43Z)
+  
 * [\[html\] The upgrade step of custom elements are missing in the \`define\` page ?](https://github.com/mdn/content/issues/45241) (2026-08-19T13:07:46Z)
   
 * [\[html\] Clarify that \`CustomElementRegistry.define()\` triggers a read of \`static observedAttributes\`](https://github.com/mdn/content/issues/45065) (2026-08-10T06:05:17Z)
@@ -14,7 +16,7 @@
   
 * [\[html, cssom-1\] Site-wide: Examples with outdated HTML containing submittable forms can break](https://github.com/mdn/content/issues/44347) (2026-06-03T19:55:48Z)
   
-* [\[html\] Form submission event triggers](https://github.com/mdn/content/issues/43972) (2026-04-30T11:30:08Z)
+* [\[html\] Form submission event triggering condition on Enter](https://github.com/mdn/content/issues/43972) (2026-04-30T11:30:08Z)
   
 * [\[html\] Cannot prevent cancel when user presses Escape twice](https://github.com/mdn/content/issues/43943) (2026-04-27T12:23:34Z)
   

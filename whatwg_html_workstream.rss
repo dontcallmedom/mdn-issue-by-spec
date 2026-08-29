@@ -4,10 +4,35 @@
         <title>WHATWG HTML Workstream-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg_html_workstream.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG HTML Workstream</description>
-        <lastBuildDate>Wed, 19 Aug 2026 13:07:46 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 28 Aug 2026 23:26:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] Document scopedcustomelementregistry and its HTMLElement reflection]]></title>
+            <link>https://github.com/mdn/content/issues/45383</link>
+            <guid>https://github.com/mdn/content/issues/45383</guid>
+            <pubDate>Fri, 28 Aug 2026 23:26:43 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry</a></p>
+<h3 dir="auto">What information is incomplete?</h3>
+<p dir="auto">The HTML Standard is adding the <code class="notranslate">scopedcustomelementregistry</code> global content attribute and the reflecting <code class="notranslate">HTMLElement.scopedCustomElementRegistry</code> IDL attribute.</p>
+<p dir="auto">The content attribute affects HTML parser creation: the element and its parsed subtree begin with a null custom element registry so a scoped <code class="notranslate">CustomElementRegistry</code> can claim the subtree later through <code class="notranslate">initialize()</code>. Changing the attribute after element creation does not change the assigned registry. The IDL attribute reflects as a <code class="notranslate">DOMString</code> for future extensibility.</p>
+<h3 dir="auto">What should be documented?</h3>
+<ul dir="auto">
+<li>The <code class="notranslate">scopedcustomelementregistry</code> global attribute.</li>
+<li><code class="notranslate">HTMLElement.scopedCustomElementRegistry</code> string reflection.</li>
+<li>Parser-only behavior and the relationship to <code class="notranslate">CustomElementRegistry.initialize()</code>.</li>
+<li>Serialization behavior at custom element registry boundaries.</li>
+<li>Browser compatibility once implementations adopt the final specification.</li>
+</ul>
+<h3 dir="auto">References</h3>
+<ul dir="auto">
+<li>HTML specification PR: <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="3706163049" data-permission-text="Title is private" data-url="https://github.com/whatwg/html/issues/12000" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/html/pull/12000/hovercard" href="https://github.com/whatwg/html/pull/12000">whatwg/html#12000</a></li>
+<li>DOM infrastructure PR: <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5262028291" data-permission-text="Title is private" data-url="https://github.com/whatwg/dom/issues/1500" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/dom/pull/1500/hovercard" href="https://github.com/whatwg/dom/pull/1500">whatwg/dom#1500</a></li>
+<li>Web Platform Tests PR: <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="5251789290" data-permission-text="Title is private" data-url="https://github.com/web-platform-tests/wpt/issues/62206" data-hovercard-type="pull_request" data-hovercard-url="/web-platform-tests/wpt/pull/62206/hovercard" href="https://github.com/web-platform-tests/wpt/pull/62206">web-platform-tests/wpt#62206</a></li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] The upgrade step of custom elements are missing in the `define` page ?]]></title>
             <link>https://github.com/mdn/content/issues/45241</link>
@@ -180,7 +205,7 @@ can I send a PR ?</p>
 <p dir="auto">It would be good to go through the rest of the site's content and find all of the other examples with submittable forms, as they'll all be broken the same way. (<code class="notranslate">&lt;form&gt;</code> elements wrapped around demo controls amount to superfluous noise at least 90% of the time, anyway. They're a legacy holdout from the pre-HTML5 web, and it's better if they're removed wherever possible just to make the examples more focused.)</p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Form submission event triggers]]></title>
+            <title><![CDATA[[html] Form submission event triggering condition on Enter]]></title>
             <link>https://github.com/mdn/content/issues/43972</link>
             <guid>https://github.com/mdn/content/issues/43972</guid>
             <pubDate>Thu, 30 Apr 2026 11:30:08 GMT</pubDate>
