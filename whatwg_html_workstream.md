@@ -54,7 +54,5 @@
   
 * [\[html\] Add See also items for \`selectionStart\` and \`selectionEnd\`](https://github.com/mdn/content/issues/45314) (2023-07-06T09:02:07Z)
   
-* [\[html\] Image request fired as soon as src is set](https://github.com/mdn/content/issues/26560) (2023-05-03T17:23:34Z)
-  
 * [\[html\] Custom element constructor \`disabledFeatures\` property undocumented](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
   

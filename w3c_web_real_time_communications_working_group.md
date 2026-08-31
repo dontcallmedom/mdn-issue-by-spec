@@ -6,5 +6,3 @@
   
 * [\[webrtc\] Incorrectly states that RTCRtpTransceiver.mid is null until negotiation is completed.](https://github.com/mdn/content/issues/27502) (2023-06-23T10:39:29Z)
   
-* [\[screen-capture\] MediaDevices#getDisplayMedia(): systemAudio is misleading](https://github.com/mdn/content/issues/25307) (2023-03-14T03:38:33Z)
-  
