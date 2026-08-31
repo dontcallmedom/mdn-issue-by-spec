@@ -30,8 +30,6 @@
   
 * [\[html\] The figure doesn't show the direction of rotation](https://github.com/mdn/content/issues/41549) (2025-10-16T00:30:25Z)
   
-* [\[html\] DataTransfer.setData: is it writable after dragstart?](https://github.com/mdn/content/issues/41284) (2025-09-25T05:36:49Z)
-  
 * [\[html, css-backgrounds-4, requestidlecallback\] Reference page titles are not consistent and need improvements](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
   
 * [\[html\] Clarify image.decode() failure on lazy-loaded images](https://github.com/mdn/content/issues/38034) (2025-02-08T00:22:15Z)
@@ -51,8 +49,6 @@
 * [\[html\] document inheritance of HTML directionality and language and its relationship to shadow DOM](https://github.com/mdn/content/issues/45249) (2023-10-06T12:28:00Z)
   
 * [\[html\] Article element in a wrong implementation](https://github.com/mdn/content/issues/38324) (2023-09-13T12:53:45Z)
-  
-* [\[html\] Add See also items for \`selectionStart\` and \`selectionEnd\`](https://github.com/mdn/content/issues/45314) (2023-07-06T09:02:07Z)
   
 * [\[html\] Custom element constructor \`disabledFeatures\` property undocumented](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
   

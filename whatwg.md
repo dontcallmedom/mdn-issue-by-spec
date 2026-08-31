@@ -38,8 +38,6 @@
   
 * [\[html\] The figure doesn't show the direction of rotation](https://github.com/mdn/content/issues/41549) (2025-10-16T00:30:25Z)
   
-* [\[html\] DataTransfer.setData: is it writable after dragstart?](https://github.com/mdn/content/issues/41284) (2025-09-25T05:36:49Z)
-  
 * [\[dom\] Event timeStamp accuracy description is misleading](https://github.com/mdn/content/issues/40673) (2025-08-08T04:41:43Z)
   
 * [\[dom\] HTML element, attribute, and doctype name validation rules are changing](https://github.com/mdn/content/issues/40366) (2025-07-15T04:32:47Z)
@@ -63,8 +61,6 @@
 * [\[html\] document inheritance of HTML directionality and language and its relationship to shadow DOM](https://github.com/mdn/content/issues/45249) (2023-10-06T12:28:00Z)
   
 * [\[html\] Article element in a wrong implementation](https://github.com/mdn/content/issues/38324) (2023-09-13T12:53:45Z)
-  
-* [\[html\] Add See also items for \`selectionStart\` and \`selectionEnd\`](https://github.com/mdn/content/issues/45314) (2023-07-06T09:02:07Z)
   
 * [\[html\] Custom element constructor \`disabledFeatures\` property undocumented](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
   
