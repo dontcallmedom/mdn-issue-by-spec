@@ -4,5 +4,3 @@
 
 * [\[webrtc\] webrtc: Call createDataChannel after createOffer](https://github.com/mdn/content/issues/35932) (2024-09-18T12:11:30Z)
   
-* [\[webrtc\] Incorrectly states that RTCRtpTransceiver.mid is null until negotiation is completed.](https://github.com/mdn/content/issues/27502) (2023-06-23T10:39:29Z)
-  

@@ -64,8 +64,6 @@
   
 * [\[css-typed-om-2\] CSS Typed OM pages have stub examples sections](https://github.com/mdn/content/issues/28118) (2023-07-22T02:25:00Z)
   
-* [\[webrtc\] Incorrectly states that RTCRtpTransceiver.mid is null until negotiation is completed.](https://github.com/mdn/content/issues/27502) (2023-06-23T10:39:29Z)
-  
 * [\[IndexedDB-3\] "Using IndexedDB" guide seems to be out of sync with the more specific documentation](https://github.com/mdn/content/issues/27330) (2023-06-14T18:17:39Z)
   
 * [\[IndexedDB-3\] versionchange is super important and hardly is given any attention](https://github.com/mdn/content/issues/26639) (2023-05-08T06:47:05Z)
