@@ -6,5 +6,3 @@
   
 * [\[webusb\] USB.requestDevice new \`exclusionFilters\` option](https://github.com/mdn/content/issues/40372) (2025-07-15T12:34:44Z)
   
-* [\[periodic-background-sync\] periodicSync needs "periodic-background-sync" permission](https://github.com/mdn/content/issues/33692) (2024-05-21T08:55:15Z)
-  
