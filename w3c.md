@@ -6,8 +6,6 @@
   
 * [\[uievents\] KeyboardEvent: ctrlKey false on key up of the control key](https://github.com/mdn/content/issues/45056) (2026-08-08T10:04:27Z)
   
-* [\[cssom-view-1\] No Browser Implements screenX, screenY according to the spec](https://github.com/mdn/content/issues/45048) (2026-08-07T14:29:34Z)
-  
 * [\[beacon\] Is 'Use pagehide as a fallback' clause still needed?](https://github.com/mdn/content/issues/44927) (2026-07-27T08:17:18Z)
   
 * [\[html, uievents\] A \`load\` event listener/handler must "atomically" accompany its element](https://github.com/mdn/content/issues/44591) (2026-06-28T15:39:35Z)
