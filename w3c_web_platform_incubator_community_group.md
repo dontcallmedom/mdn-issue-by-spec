@@ -2,5 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Platform Incubator Community Group. [![RSS feed for W3C Web Platform Incubator Community Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[entries-api\] Incorrect information about \`\<input type="file" webkitdirectory\>\`?](https://github.com/mdn/content/issues/45466) (2026-09-02T20:12:02Z)
+  
 * [\[webusb\] USB.requestDevice new \`exclusionFilters\` option](https://github.com/mdn/content/issues/40372) (2025-07-15T12:34:44Z)
   
