@@ -20,8 +20,6 @@
   
 * [\[html, cssom-1\] Site-wide: Examples with outdated HTML containing submittable forms can break](https://github.com/mdn/content/issues/44347) (2026-06-03T19:55:48Z)
   
-* [\[html\] Form submission event triggering condition on Enter](https://github.com/mdn/content/issues/43972) (2026-04-30T11:30:08Z)
-  
 * [\[html\] Cannot prevent cancel when user presses Escape twice](https://github.com/mdn/content/issues/43943) (2026-04-27T12:23:34Z)
   
 * [\[html\] Detecting dragged file type is done by extension](https://github.com/mdn/content/issues/43803) (2026-04-15T21:11:15Z)
