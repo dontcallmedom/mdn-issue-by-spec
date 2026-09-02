@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[cookie-store\] Removed features are labeled as experimental, giving the wrong impression](https://github.com/mdn/content/issues/45364) (2026-08-28T06:26:31Z)
-  
 * [\[uievents\] KeyboardEvent: ctrlKey false on key up of the control key](https://github.com/mdn/content/issues/45056) (2026-08-08T10:04:27Z)
   
 * [\[beacon\] Is 'Use pagehide as a fallback' clause still needed?](https://github.com/mdn/content/issues/44927) (2026-07-27T08:17:18Z)
