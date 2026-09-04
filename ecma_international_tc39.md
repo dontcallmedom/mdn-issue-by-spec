@@ -4,7 +4,5 @@
 
 * [\[hr-time-3, ecmascript\] Fix: CORP does not enable SharedArrayBuffer](https://github.com/mdn/content/issues/42236) (2025-12-05T03:19:41Z)
   
-* [\[ecmascript\] Glossary: Page about "deep equal" comparison of values](https://github.com/mdn/content/issues/45250) (2024-04-16T13:26:02Z)
-  
 * [\[ecmascript\] Article about module support in web extensions](https://github.com/mdn/content/issues/45317) (2023-04-17T05:55:06Z)
   
