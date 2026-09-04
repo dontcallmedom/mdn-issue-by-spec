@@ -44,5 +44,7 @@
   
 * [\[html\] Article element in a wrong implementation](https://github.com/mdn/content/issues/38324) (2023-09-13T12:53:45Z)
   
+* [\[html\] Document deprecation of unload event](https://github.com/mdn/content/issues/45502) (2023-09-04T14:33:56Z)
+  
 * [\[html\] Custom element constructor \`disabledFeatures\` property undocumented](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
   
