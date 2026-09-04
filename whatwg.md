@@ -12,8 +12,6 @@
   
 * [\[html, uievents\] A \`load\` event listener/handler must "atomically" accompany its element](https://github.com/mdn/content/issues/44591) (2026-06-28T15:39:35Z)
   
-* [\[streams\] ReadableStream \`desiredSize\` is not always an integer](https://github.com/mdn/content/issues/44486) (2026-06-16T14:40:37Z)
-  
 * [\[html\] pushState() and navigations and history navigation rate limiting no longer throws](https://github.com/mdn/content/issues/44477) (2026-06-15T16:42:56Z)
   
 * [\[html\] ElementInternals.labels: No screen reader information](https://github.com/mdn/content/issues/44395) (2026-06-09T12:18:46Z)

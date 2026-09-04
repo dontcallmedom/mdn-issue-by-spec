@@ -4,10 +4,43 @@
         <title>W3C Web Cryptography Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_cryptography_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Cryptography Working Group</description>
-        <lastBuildDate>Wed, 06 Jul 2022 14:47:35 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 04 Sep 2026 14:36:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[WebCryptoAPI] [WebAPI] Make the length parameter of crypto.subtle.deriveBits [EnforceRange]]]></title>
+            <link>https://github.com/mdn/content/issues/45507</link>
+            <guid>https://github.com/mdn/content/issues/45507</guid>
+            <pubDate>Fri, 04 Sep 2026 14:36:50 GMT</pubDate>
+            <content:encoded><![CDATA[<div class="markdown-alert markdown-alert-important" dir="auto"><p class="markdown-alert-title" dir="auto"><svg data-component="Octicon" class="octicon octicon-report mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p><p dir="auto">This issue will be worked on by MDN's core team of writers. If you want to contribute, please see the <a href="https://github.com/orgs/mdn/projects/25" gh:project-mention="{&quot;owner&quot;:&quot;mdn&quot;,&quot;number&quot;:&quot;25&quot;,&quot;view&quot;:null,&quot;status_update_id&quot;:null}">contributor board</a> for issues where we're accepting pull requests.</p>
+</div>
+<h2 dir="auto">Acceptance criteria</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> The listed features are documented sufficiently on MDN</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> BCD is updated</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> Interactive example and data repos are updated if appropriate</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> The content has been reviewed as needed</li>
+</ul>
+<h3 dir="auto">For folks helping with Firefox related documentation</h3>
+<div class="markdown-alert markdown-alert-note" dir="auto"><p class="markdown-alert-title" dir="auto"><svg data-component="Octicon" class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p><p dir="auto">Release notes are now generated at the beginning of the cycle, so a review is all that should be needed for the task. Obviously if there is a gap, fill it.</p>
+</div>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> Set bugs to <code class="notranslate">dev-doc-complete</code></li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> Review/add entry to Firefox release notes for enabled/preview features</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> Add/remove entry to Firefox experimental features page for preference/released features</li>
+</ul>
+<h2 dir="auto">Features to document</h2>
+<p dir="auto">The Exceptions section <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/deriveBits#exceptions" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/deriveBits#exceptions</a> documents <code class="notranslate">OperationError</code> for a bad <code class="notranslate">length</code> and no <code class="notranslate">TypeError</code>. Out-of-range values now throw synchronously instead of rejecting, so the exceptions list needs updating.</p>
+<h2 dir="auto">Related Gecko bugs</h2>
+<ul dir="auto">
+<li><a href="https://bugzil.la/2065212" rel="nofollow">Bug 2065212</a> — Make the length parameter of crypto.subtle.deriveBits [EnforceRange]</li>
+</ul>
+<h2 dir="auto">Other</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" aria-label="Incomplete task"> Check content open issues to see if any pertain to the subject matter. If there are any that can be closed because of the work, do so. If there are any that can be fixed relatively quickly because of the knowledge from completing this issue and you have time, feel free to go ahead and fix them.</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[WebCryptoAPI] Precise max length for encoding algorithm]]></title>
             <link>https://github.com/mdn/content/issues/18045</link>
