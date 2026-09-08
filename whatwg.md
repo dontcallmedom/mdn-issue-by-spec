@@ -20,8 +20,6 @@
   
 * [\[html\] Cannot prevent cancel when user presses Escape twice](https://github.com/mdn/content/issues/43943) (2026-04-27T12:23:34Z)
   
-* [\[html\] Detecting dragged file type is done by extension](https://github.com/mdn/content/issues/43803) (2026-04-15T21:11:15Z)
-  
 * [\[cssom-view-1, dom, pointerevents3, pointerlock-2, fullscreen, DOM-Parsing\] Refine short-title of WebAPI event pages](https://github.com/mdn/content/issues/43568) (2026-03-24T16:11:53Z)
   
 * [\[html\] Web Storage API documentation pages fail to mention state partitioning](https://github.com/mdn/content/issues/43255) (2026-02-26T10:43:03Z)
@@ -47,8 +45,6 @@
 * [\[html\] Improve \`messageerror\` example to show a case in which the event is fired](https://github.com/mdn/content/issues/35064) (2024-07-25T16:05:45Z)
   
 * [\[html\] Add description and recommendation about unicode LTR and RTL marks](https://github.com/mdn/content/issues/45248) (2024-04-19T14:56:10Z)
-  
-* [\[html\] document inheritance of HTML directionality and language and its relationship to shadow DOM](https://github.com/mdn/content/issues/45249) (2023-10-06T12:28:00Z)
   
 * [\[html\] Article element in a wrong implementation](https://github.com/mdn/content/issues/38324) (2023-09-13T12:53:45Z)
   

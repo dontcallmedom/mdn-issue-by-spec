@@ -44,8 +44,6 @@
   
 * [\[touch-events\] Note difference in how Touch.screenX/screenY, Touch.clientX/clientY and Touch.pageX/pageY handle zooming](https://github.com/mdn/content/issues/36326) (2024-10-14T10:01:23Z)
   
-* [\[webrtc\] webrtc: Call createDataChannel after createOffer](https://github.com/mdn/content/issues/35932) (2024-09-18T12:11:30Z)
-  
 * [\[html, uievents, dom\] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not](https://github.com/mdn/content/issues/35382) (2024-08-09T02:19:02Z)
   
 * [\[appmanifest\] IsStandaloneContent does not work with \`display: fullscreen\` in Chrome Android](https://github.com/mdn/content/issues/34928) (2024-07-19T15:53:57Z)
