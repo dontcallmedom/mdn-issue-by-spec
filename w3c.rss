@@ -4,10 +4,263 @@
         <title>W3C-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C</description>
-        <lastBuildDate>Fri, 04 Sep 2026 14:36:50 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 09 Sep 2026 17:17:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[service-workers-1] Error in Cache Web API example snippet]]></title>
+            <link>https://github.com/mdn/content/issues/45595</link>
+            <guid>https://github.com/mdn/content/issues/45595</guid>
+            <pubDate>Wed, 09 Sep 2026 17:17:56 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Cache" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Cache</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Example snippet</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">At the point where the example snippet uses <code class="notranslate">cache.put(event.request, response.clone());</code>, <code class="notranslate">cache</code> is not in scope.</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const CACHE_VERSION = 1;
+const CURRENT_CACHES = {
+  font: `font-cache-v${CACHE_VERSION}`,
+};
+
+self.addEventListener(&quot;activate&quot;, (event) =&gt; {
+  // Delete all caches that aren't named in CURRENT_CACHES.
+  // While there is only one cache in this example, the same logic
+  // will handle the case where there are multiple versioned caches.
+  const expectedCacheNamesSet = new Set(Object.values(CURRENT_CACHES));
+  event.waitUntil(
+    caches.keys().then((cacheNames) =&gt;
+      Promise.all(
+        cacheNames.map((cacheName) =&gt; {
+          if (!expectedCacheNamesSet.has(cacheName)) {
+            // If this cache name isn't present in the set of
+            // &quot;expected&quot; cache names, then delete it.
+            console.log(&quot;Deleting out of date cache:&quot;, cacheName);
+            return caches.delete(cacheName);
+          }
+          return undefined;
+        }),
+      ),
+    ),
+  );
+});
+
+self.addEventListener(&quot;fetch&quot;, (event) =&gt; {
+  console.log(&quot;Handling fetch event for&quot;, event.request.url);
+
+  event.respondWith(
+    caches
+      .open(CURRENT_CACHES.font)
+      .then((cache) =&gt; cache.match(event.request))
+      .then((response) =&gt; {
+        if (response) {
+          // If there is an entry in the cache for event.request,
+          // then response will be defined and we can just return it.
+          // Note that in this example, only font resources are cached.
+          console.log(&quot; Found response in cache:&quot;, response);
+
+          return response;
+        }
+
+        // Otherwise, if there is no entry in the cache for event.request,
+        // response will be undefined, and we need to fetch() the resource.
+        console.log(
+          &quot; No response for %s found in cache. About to fetch &quot; +
+            &quot;from network…&quot;,
+          event.request.url,
+        );
+
+        // We call .clone() on the request since we might use it
+        // in a call to cache.put() later on.
+        // Both fetch() and cache.put() &quot;consume&quot; the request,
+        // so we need to make a copy.
+        // (see https://developer.mozilla.org/en-US/docs/Web/API/Request/clone)
+        return fetch(event.request.clone()).then((response) =&gt; {
+          console.log(
+            &quot;  Response for %s from network is: %O&quot;,
+            event.request.url,
+            response,
+          );
+
+          if (
+            response.status &lt; 400 &amp;&amp;
+            response.headers.has(&quot;content-type&quot;) &amp;&amp;
+            response.headers.get(&quot;content-type&quot;).match(/^font\//i)
+          ) {
+            // This avoids caching responses that we know are errors
+            // (i.e. HTTP status code of 4xx or 5xx).
+            // We also only want to cache responses that correspond
+            // to fonts, i.e. have a Content-Type response header that
+            // starts with &quot;font/&quot;.
+            // Note that for opaque filtered responses
+            // https://fetch.spec.whatwg.org/#concept-filtered-response-opaque
+            // we can't access to the response headers, so this check will
+            // always fail and the font won't be cached.
+            // All of the Google Web Fonts are served from a domain that
+            // supports CORS, so that isn't an issue here.
+            // It is something to keep in mind if you're attempting
+            // to cache other resources from a cross-origin
+            // domain that doesn't support CORS, though!
+            console.log(&quot;  Caching the response to&quot;, event.request.url);
+            // We call .clone() on the response to save a copy of it
+            // to the cache. By doing so, we get to keep the original
+            // response object which we will return back to the controlled
+            // page.
+            // https://developer.mozilla.org/en-US/docs/Web/API/Request/clone
+            cache.put(event.request, response.clone());
+          } else {
+            console.log(&quot;  Not caching the response to&quot;, event.request.url);
+          }
+
+          // Return the original response object, which will be used to
+          // fulfill the resource request.
+          return response;
+        });
+      })
+      .catch((error) =&gt; {
+        // This catch() will handle exceptions that arise from the match()
+        // or fetch() operations.
+        // Note that a HTTP error response (e.g. 404) will NOT trigger
+        // an exception.
+        // It will return a normal response object that has the appropriate
+        // error code set.
+        console.error(&quot;  Error in fetch handler:&quot;, error);
+
+        throw error;
+      }),
+  );
+});"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-c1">CACHE_VERSION</span> <span class="pl-c1">=</span> <span class="pl-c1">1</span><span class="pl-kos">;</span>
+<span class="pl-k">const</span> <span class="pl-c1">CURRENT_CACHES</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span>
+  <span class="pl-c1">font</span>: <span class="pl-s">`font-cache-v<span class="pl-s1"><span class="pl-kos">${</span><span class="pl-c1">CACHE_VERSION</span><span class="pl-kos">}</span></span>`</span><span class="pl-kos">,</span>
+<span class="pl-kos">}</span><span class="pl-kos">;</span>
+
+<span class="pl-s1">self</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"activate"</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-c">// Delete all caches that aren't named in CURRENT_CACHES.</span>
+  <span class="pl-c">// While there is only one cache in this example, the same logic</span>
+  <span class="pl-c">// will handle the case where there are multiple versioned caches.</span>
+  <span class="pl-k">const</span> <span class="pl-s1">expectedCacheNamesSet</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Set</span><span class="pl-kos">(</span><span class="pl-v">Object</span><span class="pl-kos">.</span><span class="pl-en">values</span><span class="pl-kos">(</span><span class="pl-c1">CURRENT_CACHES</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+  <span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-en">waitUntil</span><span class="pl-kos">(</span>
+    <span class="pl-s1">caches</span><span class="pl-kos">.</span><span class="pl-en">keys</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">cacheNames</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span>
+      <span class="pl-v">Promise</span><span class="pl-kos">.</span><span class="pl-en">all</span><span class="pl-kos">(</span>
+        <span class="pl-s1">cacheNames</span><span class="pl-kos">.</span><span class="pl-en">map</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">cacheName</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+          <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-c1">!</span><span class="pl-s1">expectedCacheNamesSet</span><span class="pl-kos">.</span><span class="pl-en">has</span><span class="pl-kos">(</span><span class="pl-s1">cacheName</span><span class="pl-kos">)</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+            <span class="pl-c">// If this cache name isn't present in the set of</span>
+            <span class="pl-c">// "expected" cache names, then delete it.</span>
+            <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"Deleting out of date cache:"</span><span class="pl-kos">,</span> <span class="pl-s1">cacheName</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+            <span class="pl-k">return</span> <span class="pl-s1">caches</span><span class="pl-kos">.</span><span class="pl-en">delete</span><span class="pl-kos">(</span><span class="pl-s1">cacheName</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+          <span class="pl-kos">}</span>
+          <span class="pl-k">return</span> <span class="pl-c1">undefined</span><span class="pl-kos">;</span>
+        <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">,</span>
+      <span class="pl-kos">)</span><span class="pl-kos">,</span>
+    <span class="pl-kos">)</span><span class="pl-kos">,</span>
+  <span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+<span class="pl-s1">self</span><span class="pl-kos">.</span><span class="pl-en">addEventListener</span><span class="pl-kos">(</span><span class="pl-s">"fetch"</span><span class="pl-kos">,</span> <span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"Handling fetch event for"</span><span class="pl-kos">,</span> <span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-c1">request</span><span class="pl-kos">.</span><span class="pl-c1">url</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+  <span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-en">respondWith</span><span class="pl-kos">(</span>
+    <span class="pl-s1">caches</span>
+      <span class="pl-kos">.</span><span class="pl-en">open</span><span class="pl-kos">(</span><span class="pl-c1">CURRENT_CACHES</span><span class="pl-kos">.</span><span class="pl-c1">font</span><span class="pl-kos">)</span>
+      <span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">cache</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-s1">cache</span><span class="pl-kos">.</span><span class="pl-en">match</span><span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-c1">request</span><span class="pl-kos">)</span><span class="pl-kos">)</span>
+      <span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">response</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+        <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">response</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+          <span class="pl-c">// If there is an entry in the cache for event.request,</span>
+          <span class="pl-c">// then response will be defined and we can just return it.</span>
+          <span class="pl-c">// Note that in this example, only font resources are cached.</span>
+          <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">" Found response in cache:"</span><span class="pl-kos">,</span> <span class="pl-s1">response</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+          <span class="pl-k">return</span> <span class="pl-s1">response</span><span class="pl-kos">;</span>
+        <span class="pl-kos">}</span>
+
+        <span class="pl-c">// Otherwise, if there is no entry in the cache for event.request,</span>
+        <span class="pl-c">// response will be undefined, and we need to fetch() the resource.</span>
+        <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span>
+          <span class="pl-s">" No response for %s found in cache. About to fetch "</span> <span class="pl-c1">+</span>
+            <span class="pl-s">"from network…"</span><span class="pl-kos">,</span>
+          <span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-c1">request</span><span class="pl-kos">.</span><span class="pl-c1">url</span><span class="pl-kos">,</span>
+        <span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+        <span class="pl-c">// We call .clone() on the request since we might use it</span>
+        <span class="pl-c">// in a call to cache.put() later on.</span>
+        <span class="pl-c">// Both fetch() and cache.put() "consume" the request,</span>
+        <span class="pl-c">// so we need to make a copy.</span>
+        <span class="pl-c">// (see https://developer.mozilla.org/en-US/docs/Web/API/Request/clone)</span>
+        <span class="pl-k">return</span> <span class="pl-en">fetch</span><span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-c1">request</span><span class="pl-kos">.</span><span class="pl-en">clone</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">response</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+          <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span>
+            <span class="pl-s">"  Response for %s from network is: %O"</span><span class="pl-kos">,</span>
+            <span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-c1">request</span><span class="pl-kos">.</span><span class="pl-c1">url</span><span class="pl-kos">,</span>
+            <span class="pl-s1">response</span><span class="pl-kos">,</span>
+          <span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+          <span class="pl-k">if</span> <span class="pl-kos">(</span>
+            <span class="pl-s1">response</span><span class="pl-kos">.</span><span class="pl-c1">status</span> <span class="pl-c1">&lt;</span> <span class="pl-c1">400</span> <span class="pl-c1">&amp;&amp;</span>
+            <span class="pl-s1">response</span><span class="pl-kos">.</span><span class="pl-c1">headers</span><span class="pl-kos">.</span><span class="pl-en">has</span><span class="pl-kos">(</span><span class="pl-s">"content-type"</span><span class="pl-kos">)</span> <span class="pl-c1">&amp;&amp;</span>
+            <span class="pl-s1">response</span><span class="pl-kos">.</span><span class="pl-c1">headers</span><span class="pl-kos">.</span><span class="pl-en">get</span><span class="pl-kos">(</span><span class="pl-s">"content-type"</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">match</span><span class="pl-kos">(</span><span class="pl-pds"><span class="pl-c1">/</span><span class="pl-cce">^</span><span class="pl-s">f</span><span class="pl-s">o</span><span class="pl-s">n</span><span class="pl-s">t</span><span class="pl-cce">\/</span><span class="pl-c1">/</span>i</span><span class="pl-kos">)</span>
+          <span class="pl-kos">)</span> <span class="pl-kos">{</span>
+            <span class="pl-c">// This avoids caching responses that we know are errors</span>
+            <span class="pl-c">// (i.e. HTTP status code of 4xx or 5xx).</span>
+            <span class="pl-c">// We also only want to cache responses that correspond</span>
+            <span class="pl-c">// to fonts, i.e. have a Content-Type response header that</span>
+            <span class="pl-c">// starts with "font/".</span>
+            <span class="pl-c">// Note that for opaque filtered responses</span>
+            <span class="pl-c">// https://fetch.spec.whatwg.org/#concept-filtered-response-opaque</span>
+            <span class="pl-c">// we can't access to the response headers, so this check will</span>
+            <span class="pl-c">// always fail and the font won't be cached.</span>
+            <span class="pl-c">// All of the Google Web Fonts are served from a domain that</span>
+            <span class="pl-c">// supports CORS, so that isn't an issue here.</span>
+            <span class="pl-c">// It is something to keep in mind if you're attempting</span>
+            <span class="pl-c">// to cache other resources from a cross-origin</span>
+            <span class="pl-c">// domain that doesn't support CORS, though!</span>
+            <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"  Caching the response to"</span><span class="pl-kos">,</span> <span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-c1">request</span><span class="pl-kos">.</span><span class="pl-c1">url</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+            <span class="pl-c">// We call .clone() on the response to save a copy of it</span>
+            <span class="pl-c">// to the cache. By doing so, we get to keep the original</span>
+            <span class="pl-c">// response object which we will return back to the controlled</span>
+            <span class="pl-c">// page.</span>
+            <span class="pl-c">// https://developer.mozilla.org/en-US/docs/Web/API/Request/clone</span>
+            <span class="pl-s1">cache</span><span class="pl-kos">.</span><span class="pl-en">put</span><span class="pl-kos">(</span><span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-c1">request</span><span class="pl-kos">,</span> <span class="pl-s1">response</span><span class="pl-kos">.</span><span class="pl-en">clone</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+          <span class="pl-kos">}</span> <span class="pl-k">else</span> <span class="pl-kos">{</span>
+            <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"  Not caching the response to"</span><span class="pl-kos">,</span> <span class="pl-s1">event</span><span class="pl-kos">.</span><span class="pl-c1">request</span><span class="pl-kos">.</span><span class="pl-c1">url</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+          <span class="pl-kos">}</span>
+
+          <span class="pl-c">// Return the original response object, which will be used to</span>
+          <span class="pl-c">// fulfill the resource request.</span>
+          <span class="pl-k">return</span> <span class="pl-s1">response</span><span class="pl-kos">;</span>
+        <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+      <span class="pl-kos">}</span><span class="pl-kos">)</span>
+      <span class="pl-kos">.</span><span class="pl-en">catch</span><span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">error</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+        <span class="pl-c">// This catch() will handle exceptions that arise from the match()</span>
+        <span class="pl-c">// or fetch() operations.</span>
+        <span class="pl-c">// Note that a HTTP error response (e.g. 404) will NOT trigger</span>
+        <span class="pl-c">// an exception.</span>
+        <span class="pl-c">// It will return a normal response object that has the appropriate</span>
+        <span class="pl-c">// error code set.</span>
+        <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">error</span><span class="pl-kos">(</span><span class="pl-s">"  Error in fetch handler:"</span><span class="pl-kos">,</span> <span class="pl-s1">error</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+        <span class="pl-k">throw</span> <span class="pl-s1">error</span><span class="pl-kos">;</span>
+      <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">,</span>
+  <span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">A working example snippet.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">MDN metadata</h3>
+
+<details>
+<summary>Page report details</summary>
+<ul dir="auto">
+<li>Folder: <code class="notranslate">en-us/web/api/cache</code></li>
+<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Cache" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Cache</a></li>
+<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/cache/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/cache/index.md</a></li>
+<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/4a0413ef319179b7d0d833c42a156629544c8248/hovercard" href="https://github.com/mdn/content/commit/4a0413ef319179b7d0d833c42a156629544c8248"><tt>4a0413e</tt></a></li>
+<li>Document last modified: 2025-05-23T12:39:21.000Z</li>
+</ul>
+</details>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[WebCryptoAPI] [WebAPI] Make the length parameter of crypto.subtle.deriveBits [EnforceRange]]]></title>
             <link>https://github.com/mdn/content/issues/45507</link>
@@ -179,7 +432,7 @@
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">The image shown on <a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming" rel="nofollow">PerformanceResourceTiming</a><br>
 distinguishes between <code class="notranslate">startTime</code> and <code class="notranslate">fetchStart</code>. However, the text above the image states that these values are the same.</p>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/12775440/582061775-bb069341-7621-4acc-b132-0d2ffc7054b5.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODg5NjMyMjYsIm5iZiI6MTc4ODk2MjkyNiwicGF0aCI6Ii8xMjc3NTQ0MC81ODIwNjE3NzUtYmIwNjkzNDEtNzYyMS00YWNjLWIxMzItMGQyZmZjNzA1NGI1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA5MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwOTA5VDE0MDg0NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWEyZjMyYzI4ZTc2OTU1MTg4YzU5MjM4YzljNzIyYzc2YmFlZmU4MDhhZjYzYmIzN2M3OTVlODQxMzUwMDg2M2YmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.H2fi1ekcYcHMZjpaAI-RNMh39Z_QoLPdgqzksFPj8Ts"><img width="1016" height="653" alt="Image" src="https://private-user-images.githubusercontent.com/12775440/582061775-bb069341-7621-4acc-b132-0d2ffc7054b5.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODg5NjMyMjYsIm5iZiI6MTc4ODk2MjkyNiwicGF0aCI6Ii8xMjc3NTQ0MC81ODIwNjE3NzUtYmIwNjkzNDEtNzYyMS00YWNjLWIxMzItMGQyZmZjNzA1NGI1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA5MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwOTA5VDE0MDg0NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWEyZjMyYzI4ZTc2OTU1MTg4YzU5MjM4YzljNzIyYzc2YmFlZmU4MDhhZjYzYmIzN2M3OTVlODQxMzUwMDg2M2YmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.H2fi1ekcYcHMZjpaAI-RNMh39Z_QoLPdgqzksFPj8Ts" style="max-width: 100%; height: auto; max-height: 653px;; aspect-ratio: 1016 / 653; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/12775440/582061775-bb069341-7621-4acc-b132-0d2ffc7054b5.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODg5NzY0NTAsIm5iZiI6MTc4ODk3NjE1MCwicGF0aCI6Ii8xMjc3NTQ0MC81ODIwNjE3NzUtYmIwNjkzNDEtNzYyMS00YWNjLWIxMzItMGQyZmZjNzA1NGI1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA5MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwOTA5VDE3NDkxMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI4NTRkZWFhNzczMmNkNjE4MzgzOTE5YjdmYjRlNDU5NzhjY2U2MTg5M2EyZjJkZGFmMjYwNjJhY2M2NmE2ZWYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.FoRmO6Yrg7D9AWQuQIFBsxGPMPBFGe_DX9DWtYNscxo"><img width="1016" height="653" alt="Image" src="https://private-user-images.githubusercontent.com/12775440/582061775-bb069341-7621-4acc-b132-0d2ffc7054b5.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODg5NzY0NTAsIm5iZiI6MTc4ODk3NjE1MCwicGF0aCI6Ii8xMjc3NTQ0MC81ODIwNjE3NzUtYmIwNjkzNDEtNzYyMS00YWNjLWIxMzItMGQyZmZjNzA1NGI1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA5MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwOTA5VDE3NDkxMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI4NTRkZWFhNzczMmNkNjE4MzgzOTE5YjdmYjRlNDU5NzhjY2U2MTg5M2EyZjJkZGFmMjYwNjJhY2M2NmE2ZWYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.FoRmO6Yrg7D9AWQuQIFBsxGPMPBFGe_DX9DWtYNscxo" style="max-width: 100%; height: auto; max-height: 653px;; aspect-ratio: 1016 / 653; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">I am not sure which statement is correct.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
@@ -267,7 +520,7 @@ distinguishes between <code class="notranslate">startTime</code> and <code class
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODg5NjMyMjQsIm5iZiI6MTc4ODk2MjkyNCwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwOTA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDkwOVQxNDA4NDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kZDU5NzYyZjYzZTk1MWI2YjQ1OTYwOTE0ZmQ2NDM5ZTVjNDE4NGZlZGI3YjgyNTM5MDk0YzU5MTg0ZGNhMjhhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.DUc8uTkRo9STTQOWCFnXZwSAI4bHV25dCLVvxwydeqo"><img width="898" height="85" alt="Image" src="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODg5NjMyMjQsIm5iZiI6MTc4ODk2MjkyNCwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwOTA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDkwOVQxNDA4NDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kZDU5NzYyZjYzZTk1MWI2YjQ1OTYwOTE0ZmQ2NDM5ZTVjNDE4NGZlZGI3YjgyNTM5MDk0YzU5MTg0ZGNhMjhhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.DUc8uTkRo9STTQOWCFnXZwSAI4bHV25dCLVvxwydeqo" style="max-width: 100%; height: auto; max-height: 85px;; aspect-ratio: 898 / 85; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>]]></content:encoded>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODg5NzY0NDgsIm5iZiI6MTc4ODk3NjE0OCwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwOTA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDkwOVQxNzQ5MDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zNDUyYjM1ZjIwYmIxNzQ1MWQxOWVjODU5MTE4ZGMxMmIxODM2YTQ0MDQ1MTViZDBkZjkxMmY0NTU3Y2Y4N2JiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.FdqWCUH3V0Ajjaib-fQu-qGPyI4k0SZEh0Fq5Qs23MQ"><img width="898" height="85" alt="Image" src="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODg5NzY0NDgsIm5iZiI6MTc4ODk3NjE0OCwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwOTA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDkwOVQxNzQ5MDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zNDUyYjM1ZjIwYmIxNzQ1MWQxOWVjODU5MTE4ZGMxMmIxODM2YTQ0MDQ1MTViZDBkZjkxMmY0NTU3Y2Y4N2JiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.FdqWCUH3V0Ajjaib-fQu-qGPyI4k0SZEh0Fq5Qs23MQ" style="max-width: 100%; height: auto; max-height: 85px;; aspect-ratio: 898 / 85; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[IndexedDB-3] Improve the description of IDBFactory.deleteDatabase and mention blocked state]]></title>
@@ -841,7 +1094,7 @@ but the demo allows initial tab key press to go to the first tab, but then uses 
 <h3 dir="auto">What did you expect to see?</h3>
 <p dir="auto">description of the <code class="notranslate">sizeAdjust</code> property</p>
 <p dir="auto">It does exist, see<br>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODg5NjMyMjEsIm5iZiI6MTc4ODk2MjkyMSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA5MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwOTA5VDE0MDg0MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWRkYmVhMmRiZDRkYjMxZTU0ZjlmZTgyYmYyYmYzNjdkNjlkMzVkYWExN2MxNDA3OGM0NjVhMjE2NGU5N2RmM2EmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.Qt3rqZ0FuJq6dGK1NKn8Qxm17uVCCnrQnowFbkJE09s"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODg5NjMyMjEsIm5iZiI6MTc4ODk2MjkyMSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA5MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwOTA5VDE0MDg0MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWRkYmVhMmRiZDRkYjMxZTU0ZjlmZTgyYmYyYmYzNjdkNjlkMzVkYWExN2MxNDA3OGM0NjVhMjE2NGU5N2RmM2EmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.Qt3rqZ0FuJq6dGK1NKn8Qxm17uVCCnrQnowFbkJE09s" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODg5NzY0NDUsIm5iZiI6MTc4ODk3NjE0NSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA5MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwOTA5VDE3NDkwNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg5OTAxZTZlNDFmZDZlZDFkYmJmNzdhYzc5NjUyMWZjZjIzZTc5NTg3ZmNhNDQzOTQ4MzE0OTQ1MDM0YzczZTcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.ylq-uVFkMdHO4Kt_XnfQCPQAiGWsqdthlRSgMCCYsTc"><img width="497" alt="Screenshot 2024-10-31 at 12 23 55 AM" src="https://private-user-images.githubusercontent.com/51308/381861733-327781c5-05ac-46b5-a71d-bd3faf0cef2d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODg5NzY0NDUsIm5iZiI6MTc4ODk3NjE0NSwicGF0aCI6Ii81MTMwOC8zODE4NjE3MzMtMzI3NzgxYzUtMDVhYy00NmI1LWE3MWQtYmQzZmFmMGNlZjJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA5MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwOTA5VDE3NDkwNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg5OTAxZTZlNDFmZDZlZDFkYmJmNzdhYzc5NjUyMWZjZjIzZTc5NTg3ZmNhNDQzOTQ4MzE0OTQ1MDM0YzczZTcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.ylq-uVFkMdHO4Kt_XnfQCPQAiGWsqdthlRSgMCCYsTc" style="max-width: 100%;"></a></p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
