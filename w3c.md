@@ -4,8 +4,6 @@
 
 * [\[service-workers-1\] Error in Cache Web API example snippet](https://github.com/mdn/content/issues/45595) (2026-09-09T17:17:56Z)
   
-* [\[WebCryptoAPI\] \[WebAPI\] Make the length parameter of crypto.subtle.deriveBits \[EnforceRange\]](https://github.com/mdn/content/issues/45507) (2026-09-04T14:36:50Z)
-  
 * [\[entries-api\] \`webkitdirectory\` of \`\<input type="file"\>\` is now standard](https://github.com/mdn/content/issues/45466) (2026-09-02T20:12:02Z)
   
 * [\[beacon\] Is 'Use pagehide as a fallback' clause still needed?](https://github.com/mdn/content/issues/44927) (2026-07-27T08:17:18Z)
