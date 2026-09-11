@@ -54,30 +54,6 @@ ik , this exists <a href="https://developer.mozilla.org/en-US/docs/Web/API/Custo
 <p dir="auto"><em>No response</em></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Clarify that `CustomElementRegistry.define()` triggers a read of `static observedAttributes`]]></title>
-            <link>https://github.com/mdn/content/issues/45065</link>
-            <guid>https://github.com/mdn/content/issues/45065</guid>
-            <pubDate>Mon, 10 Aug 2026 06:05:17 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Description, <a href="https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define#description" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define#description</a></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">As per <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="160268489" data-permission-text="Title is private" data-url="https://github.com/whatwg/html/issues/1422" data-hovercard-type="pull_request" data-hovercard-url="/whatwg/html/pull/1422/hovercard" href="https://github.com/whatwg/html/pull/1422">whatwg/html#1422</a> , which was written 10 years ago</p>
-<p dir="auto">if attributeChangedCallback is detected, the browser then performs a Get on the constructor for the observedAttributes property.</p>
-<p dir="auto"><a href="https://html.spec.whatwg.org/multipage/custom-elements.html#dom-customelementregistry-define" rel="nofollow">https://html.spec.whatwg.org/multipage/custom-elements.html#dom-customelementregistry-define</a><br>
-Step - 14.5</p>
-<p dir="auto">Found this while debugging the source code of Lit - <a href="https://github.com/lit/lit/blob/c42ee1e96b8fd61f7256f61d715daef572e76e52/packages/reactive-element/src/reactive-element.ts#L659">https://github.com/lit/lit/blob/c42ee1e96b8fd61f7256f61d715daef572e76e52/packages/reactive-element/src/reactive-element.ts#L659</a></p>
-<p dir="auto">I think documenting, this behaviour will be helpful for web developers,<br>
-can I send a PR ?</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">A small note, the description actually doesnt say anything about <code class="notranslate">observedAtrributes</code> static property</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html, uievents] A `load` event listener/handler must "atomically" accompany its element]]></title>
             <link>https://github.com/mdn/content/issues/44591</link>
             <guid>https://github.com/mdn/content/issues/44591</guid>
@@ -639,7 +615,7 @@ A string reflecting the <a href="https://developer.mozilla.org/en-US/docs/Web/Ac
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Document deprecation of unload event]]></title>
+            <title><![CDATA[[html] Document Chrome's deprecation of unload event]]></title>
             <link>https://github.com/mdn/content/issues/45502</link>
             <guid>https://github.com/mdn/content/issues/45502</guid>
             <pubDate>Mon, 04 Sep 2023 14:33:56 GMT</pubDate>

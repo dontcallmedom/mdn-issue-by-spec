@@ -10,8 +10,6 @@
   
 * [\[html\] The upgrade step of custom elements are missing in the \`define\` page ?](https://github.com/mdn/content/issues/45241) (2026-08-19T13:07:46Z)
   
-* [\[html\] Clarify that \`CustomElementRegistry.define()\` triggers a read of \`static observedAttributes\`](https://github.com/mdn/content/issues/45065) (2026-08-10T06:05:17Z)
-  
 * [\[html, uievents\] A \`load\` event listener/handler must "atomically" accompany its element](https://github.com/mdn/content/issues/44591) (2026-06-28T15:39:35Z)
   
 * [\[html\] pushState() and navigations and history navigation rate limiting no longer throws](https://github.com/mdn/content/issues/44477) (2026-06-15T16:42:56Z)
@@ -50,7 +48,7 @@
   
 * [\[html\] Article element in a wrong implementation](https://github.com/mdn/content/issues/38324) (2023-09-13T12:53:45Z)
   
-* [\[html\] Document deprecation of unload event](https://github.com/mdn/content/issues/45502) (2023-09-04T14:33:56Z)
+* [\[html\] Document Chrome's deprecation of unload event](https://github.com/mdn/content/issues/45502) (2023-09-04T14:33:56Z)
   
 * [\[html\] Custom element constructor \`disabledFeatures\` property undocumented](https://github.com/mdn/content/issues/6617) (2021-07-06T07:29:36Z)
   
