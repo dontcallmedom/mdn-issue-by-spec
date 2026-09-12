@@ -18,8 +18,6 @@
   
 * [\[service-workers-1\] FetchEvent.replacesClientId removed from all browsers for 2+ years](https://github.com/mdn/content/issues/42195) (2025-12-02T09:18:10Z)
   
-* [\[mediasession\] MediaSession code samples inexplicable](https://github.com/mdn/content/issues/41250) (2025-09-22T17:37:24Z)
-  
 * [\[css-backgrounds-4\] Rethink description comment format in CSS syntax boxes](https://github.com/mdn/content/issues/40500) (2025-07-22T09:16:06Z)
   
 * [\[webusb\] USB.requestDevice new \`exclusionFilters\` option](https://github.com/mdn/content/issues/40372) (2025-07-15T12:34:44Z)
