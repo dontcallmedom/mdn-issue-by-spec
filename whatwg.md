@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, cssom-view-1, dom, pointerlock-2, cssom-1, page-visibility-2, selection-api\] adoptedStyleSheets accepts "constructed CSSStyleSheet", not necessarily via the constructor](https://github.com/mdn/content/issues/45668) (2026-09-13T02:20:58Z)
+  
 * [\[xhr\] FormData and its iterable methods (keys, entries, values) should mention possibility of duplicate keys](https://github.com/mdn/content/issues/45582) (2026-09-08T21:19:59Z)
   
 * [\[html\] Document scopedcustomelementregistry and its HTMLElement reflection](https://github.com/mdn/content/issues/45383) (2026-08-28T23:26:43Z)
