@@ -58,8 +58,6 @@
   
 * [\[uievents\] Event references should list bubbles, cancelable, and composed values](https://github.com/mdn/content/issues/19590) (2022-08-15T13:38:07Z)
   
-* [\[WebCryptoAPI\] Precise max length for encoding algorithm](https://github.com/mdn/content/issues/18045) (2022-07-06T14:47:35Z)
-  
 * [\[hr-time-3, performance-timeline-2, resource-timing-2, user-timing-2\] Topic on setting HTTP priority of resource requests](https://github.com/mdn/content/issues/14803) (2022-04-08T02:53:08Z)
   
 * [\[encoding\] Content suggestion: ImageDecoder & ImageTrackList how-to/tutorial](https://github.com/mdn/content/issues/12791) (2022-02-07T04:15:29Z)
