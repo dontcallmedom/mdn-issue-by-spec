@@ -2,10 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html, cssom-view-1, dom, pointerlock-2, cssom-1, page-visibility-2, selection-api\] adoptedStyleSheets accepts "constructed CSSStyleSheet", not necessarily via the constructor](https://github.com/mdn/content/issues/45668) (2026-09-13T02:20:58Z)
-  
-* [\[xhr\] FormData and its iterable methods (keys, entries, values) should mention possibility of duplicate keys](https://github.com/mdn/content/issues/45582) (2026-09-08T21:19:59Z)
-  
 * [\[html\] Document scopedcustomelementregistry and its HTMLElement reflection](https://github.com/mdn/content/issues/45383) (2026-08-28T23:26:43Z)
   
 * [\[dom\] Add Processing Instructions guide](https://github.com/mdn/content/issues/45309) (2026-08-25T11:33:22Z)
@@ -15,8 +11,6 @@
 * [\[html, uievents\] A \`load\` event listener/handler must "atomically" accompany its element](https://github.com/mdn/content/issues/44591) (2026-06-28T15:39:35Z)
   
 * [\[html\] pushState() and navigations and history navigation rate limiting no longer throws](https://github.com/mdn/content/issues/44477) (2026-06-15T16:42:56Z)
-  
-* [\[html\] ElementInternals.labels: No screen reader information](https://github.com/mdn/content/issues/44395) (2026-06-09T12:18:46Z)
   
 * [\[html, cssom-1\] Site-wide: Examples with outdated HTML containing submittable forms can break](https://github.com/mdn/content/issues/44347) (2026-06-03T19:55:48Z)
   
