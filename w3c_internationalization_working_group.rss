@@ -4,10 +4,73 @@
         <title>W3C Internationalization Working Group-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_internationalization_working_group.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Internationalization Working Group</description>
-        <lastBuildDate>Mon, 07 Feb 2022 04:15:29 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 15 Sep 2026 12:16:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[encoding] TextDecoder example should mention all BufferSource inputs: ArrayBuffer, DataView, and all TypedArrays including Uint32Array]]></title>
+            <link>https://github.com/mdn/content/issues/45717</link>
+            <guid>https://github.com/mdn/content/issues/45717</guid>
+            <pubDate>Tue, 15 Sep 2026 12:16:06 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto">Examples section, "Representing text with typed arrays" subsection</p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">The "Representing text with typed arrays" example only lists <code class="notranslate">Uint8Array</code>, <code class="notranslate">Int8Array</code>, <code class="notranslate">Uint16Array</code>, <code class="notranslate">Int16Array</code>, and <code class="notranslate">Int32Array</code>.</p>
+<p dir="auto">It omits <code class="notranslate">Uint32Array</code>, and does not mention that <code class="notranslate">TextDecoder.decode()</code> accepts any <code class="notranslate">BufferSource</code>, which also includes <code class="notranslate">ArrayBuffer</code> and <code class="notranslate">DataView</code>. This makes the example incomplete and may imply that these types are not supported.</p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Please update the example and/or surrounding text to mention that <code class="notranslate">TextDecoder.decode()</code> accepts a <code class="notranslate">BufferSource</code>, including <code class="notranslate">ArrayBuffer</code>, <code class="notranslate">DataView</code>, and all <code class="notranslate">TypedArray</code> types (such as <code class="notranslate">Uint32Array</code>).</p>
+<p dir="auto">For example:</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const decoder = new TextDecoder();
+
+// Uint32Array
+const u32arr = new Uint32Array([3081674992]);
+console.log(decoder.decode(u32arr)); // 𠮷
+
+// ArrayBuffer
+console.log(decoder.decode(u32arr.buffer)); // 𠮷
+
+// DataView
+console.log(decoder.decode(new DataView(u32arr.buffer))); // 𠮷
+
+### Do you have any supporting links, references, or citations?
+
+- WHATWG Encoding Standard: `TextDecoder` and its `decode()` method accept a `BufferSource`.
+  https://encoding.spec.whatwg.org/#interface-textdecoder
+
+- Web IDL: `BufferSource` is defined as `(ArrayBufferView or ArrayBuffer)`. `ArrayBufferView` includes `DataView` and all `TypedArray` types, such as `Uint32Array`.
+  https://webidl.spec.whatwg.org/#BufferSource
+
+
+### Do you have anything more you want to share?
+
+_No response_"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">decoder</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">TextDecoder</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+
+<span class="pl-c">// Uint32Array</span>
+<span class="pl-k">const</span> <span class="pl-s1">u32arr</span> <span class="pl-c1">=</span> <span class="pl-k">new</span> <span class="pl-v">Uint32Array</span><span class="pl-kos">(</span><span class="pl-kos">[</span><span class="pl-c1">3081674992</span><span class="pl-kos">]</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">decoder</span><span class="pl-kos">.</span><span class="pl-en">decode</span><span class="pl-kos">(</span><span class="pl-s1">u32arr</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// 𠮷</span>
+
+<span class="pl-c">// ArrayBuffer</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">decoder</span><span class="pl-kos">.</span><span class="pl-en">decode</span><span class="pl-kos">(</span><span class="pl-s1">u32arr</span><span class="pl-kos">.</span><span class="pl-c1">buffer</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// 𠮷</span>
+
+<span class="pl-c">// DataView</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">decoder</span><span class="pl-kos">.</span><span class="pl-en">decode</span><span class="pl-kos">(</span><span class="pl-k">new</span> <span class="pl-v">DataView</span><span class="pl-kos">(</span><span class="pl-s1">u32arr</span><span class="pl-kos">.</span><span class="pl-c1">buffer</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// 𠮷</span>
+
+### <span class="pl-v">Do</span> <span class="pl-s1">you</span> <span class="pl-s1">have</span> <span class="pl-s1">any</span> <span class="pl-s1">supporting</span> <span class="pl-s1">links</span><span class="pl-kos">,</span> <span class="pl-s1">references</span><span class="pl-kos">,</span> <span class="pl-s1">or</span> <span class="pl-s1">citations</span>?
+
+<span class="pl-c1">-</span> <span class="pl-c1">WHATWG</span> <span class="pl-v">Encoding</span> <span class="pl-v">Standard</span>: <span class="pl-s">`TextDecoder`</span> <span class="pl-s1">and</span> <span class="pl-s1">its</span> <span class="pl-s">`decode()`</span> <span class="pl-s1">method</span> <span class="pl-s1">accept</span> <span class="pl-s1">a</span> <span class="pl-s">`BufferSource`</span><span class="pl-kos">.</span>
+  <span class="pl-c1">https</span>:<span class="pl-c">//encoding.spec.whatwg.org/#interface-textdecoder</span>
+
+<span class="pl-c1">-</span> <span class="pl-v">Web</span> <span class="pl-c1">IDL</span>: <span class="pl-s">`BufferSource`</span> <span class="pl-s1">is</span> <span class="pl-s1">defined</span> <span class="pl-k">as</span> <span class="pl-s">`(ArrayBufferView or ArrayBuffer)`</span><span class="pl-kos">.</span> `<span class="pl-en">ArrayBufferView</span><span class="pl-s">` includes `</span><span class="pl-v">DataView</span><span class="pl-s">` and all `</span><span class="pl-kos"></span><span class="pl-v">TypedArray</span><span class="pl-s">` types, such as `</span><span class="pl-kos"></span><span class="pl-v">Uint32Array</span>`<span class="pl-kos">.</span>
+  <span class="pl-s1">https</span>:<span class="pl-c">//webidl.spec.whatwg.org/#BufferSource</span>
+
+
+### <span class="pl-v">Do</span> <span class="pl-s1">you</span> <span class="pl-s1">have</span> <span class="pl-s1">anything</span> <span class="pl-s1">more</span> <span class="pl-s1">you</span> <span class="pl-s1">want</span> <span class="pl-s1">to</span> <span class="pl-s1">share</span>?
+
+<span class="pl-s1">_No</span> <span class="pl-s1">response_</span></pre></div>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[encoding] Content suggestion: ImageDecoder & ImageTrackList how-to/tutorial]]></title>
             <link>https://github.com/mdn/content/issues/12791</link>
