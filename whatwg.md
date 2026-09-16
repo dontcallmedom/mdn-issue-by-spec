@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[xhr\] 명의도용 검거부탁합니다](https://github.com/mdn/content/issues/45733) (2026-09-16T11:46:50Z)
-  
 * [\[html\] Document scopedcustomelementregistry and its HTMLElement reflection](https://github.com/mdn/content/issues/45383) (2026-08-28T23:26:43Z)
   
 * [\[dom\] Add Processing Instructions guide](https://github.com/mdn/content/issues/45309) (2026-08-25T11:33:22Z)
