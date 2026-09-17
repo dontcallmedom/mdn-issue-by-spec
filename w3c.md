@@ -62,8 +62,6 @@
   
 * [\[encoding\] Content suggestion: ImageDecoder & ImageTrackList how-to/tutorial](https://github.com/mdn/content/issues/12791) (2022-02-07T04:15:29Z)
   
-* [\[SVG11\] "SVGSVGElement.viewBox.baseVal": when viewBox unset, it is null in FF but a 0-SVGRect in Chrome](https://github.com/mdn/content/issues/8907) (2021-09-14T14:00:23Z)
-  
 * [\[webaudio\] Content bug: AudioListener and attributes need better examples. ](https://github.com/mdn/content/issues/4468) (2021-04-26T03:22:48Z)
   
 * [\[presentation-api\] Presentation API docs need rewrite](https://github.com/mdn/content/issues/4025) (2021-04-12T01:16:00Z)

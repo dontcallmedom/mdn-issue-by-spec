@@ -6,5 +6,3 @@
   
 * [\[SVG11\] textPath attribute method doesn't seem to have an effect](https://github.com/mdn/content/issues/24079) (2023-02-01T16:11:22Z)
   
-* [\[SVG11\] "SVGSVGElement.viewBox.baseVal": when viewBox unset, it is null in FF but a 0-SVGRect in Chrome](https://github.com/mdn/content/issues/8907) (2021-09-14T14:00:23Z)
-  
