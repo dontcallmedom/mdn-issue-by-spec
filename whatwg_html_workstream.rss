@@ -471,29 +471,6 @@ A string reflecting the <a href="https://developer.mozilla.org/en-US/docs/Web/Ac
 <p dir="auto">Maybe we should do other changes to the event pages too—the event pages generally don't seem very informative and it's not easy to find a single, definitive guide to events in the web API references, discussing things like event IDL attributes, how the return value of <code class="notranslate">onXYZ</code> works, etc. If there does exist such a guide it should be linked everywhere. See also: <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="2394150292" data-permission-text="Title is private" data-url="https://github.com/mdn/content/issues/34684" data-hovercard-type="issue" data-hovercard-url="/mdn/content/issues/34684/hovercard" href="https://github.com/mdn/content/issues/34684">#34684</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html] Improve `messageerror` example to show a case in which the event is fired]]></title>
-            <link>https://github.com/mdn/content/issues/35064</link>
-            <guid>https://github.com/mdn/content/issues/35064</guid>
-            <pubDate>Thu, 25 Jul 2024 16:05:45 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Worker/messageerror_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Worker/messageerror_event</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Example</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">I was trying to figure out what code can cause a <code class="notranslate">messageerror</code> event, and after failing to figure it out by myself I decided to go read on MDN.</p>
-<p dir="auto">Unfortunately MDN is very vague: it says that the error is fired when something cannot be deserialized, but it does not actually say in which case something can fail being deserialized.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The example should have to different threads:</p>
-<ul dir="auto">
-<li>the main thread <code class="notranslate">postMessage</code>s something to the worker thread</li>
-<li>the worker thread fails to deserialize it and fires the <code class="notranslate">messageerror</code> event</li>
-</ul>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[[html] Add description and recommendation about unicode LTR and RTL marks]]></title>
             <link>https://github.com/mdn/content/issues/45248</link>
             <guid>https://github.com/mdn/content/issues/45248</guid>
