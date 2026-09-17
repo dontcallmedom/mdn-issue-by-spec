@@ -28,8 +28,6 @@
   
 * [\[html\] The figure doesn't show the direction of rotation](https://github.com/mdn/content/issues/41549) (2025-10-16T00:30:25Z)
   
-* [\[dom\] HTML element, attribute, and doctype name validation rules are changing](https://github.com/mdn/content/issues/40366) (2025-07-15T04:32:47Z)
-  
 * [\[html, css-backgrounds-4, requestidlecallback\] Reference page titles are not consistent and need improvements](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
   
 * [\[html\] Clarify image.decode() failure on lazy-loaded images](https://github.com/mdn/content/issues/38034) (2025-02-08T00:22:15Z)
