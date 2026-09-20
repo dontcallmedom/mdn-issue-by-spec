@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[html, uievents\] Improve description of \`focus\` and \`blur\` events fired on \`window\`](https://github.com/mdn/content/issues/45791) (2026-09-20T15:26:29Z)
+  
 * [\[beacon\] Is 'Use pagehide as a fallback' clause still needed?](https://github.com/mdn/content/issues/44927) (2026-07-27T08:17:18Z)
   
 * [\[html, uievents\] A \`load\` event listener/handler must "atomically" accompany its element](https://github.com/mdn/content/issues/44591) (2026-06-28T15:39:35Z)
