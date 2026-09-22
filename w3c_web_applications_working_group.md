@@ -4,7 +4,7 @@
 
 * [\[html, uievents\] Improve description of \`focus\` and \`blur\` events fired on \`window\`](https://github.com/mdn/content/issues/45791) (2026-09-20T15:26:29Z)
   
-* [\[html, uievents\] A \`load\` event listener/handler must "atomically" accompany its element](https://github.com/mdn/content/issues/44591) (2026-06-28T15:39:35Z)
+* [\[html, uievents\] HTMLElement \`load\` event listeners may not fire if the script executes too late](https://github.com/mdn/content/issues/44591) (2026-06-28T15:39:35Z)
   
 * [\[cssom-view-1, dom, pointerevents3, pointerlock-2, fullscreen, DOM-Parsing\] Refine short-title of WebAPI event pages](https://github.com/mdn/content/issues/43568) (2026-03-24T16:11:53Z)
   

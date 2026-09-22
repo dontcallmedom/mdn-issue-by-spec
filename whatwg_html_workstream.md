@@ -8,7 +8,7 @@
   
 * [\[html\] The upgrade step of custom elements are missing in the \`define\` page ?](https://github.com/mdn/content/issues/45241) (2026-08-19T13:07:46Z)
   
-* [\[html, uievents\] A \`load\` event listener/handler must "atomically" accompany its element](https://github.com/mdn/content/issues/44591) (2026-06-28T15:39:35Z)
+* [\[html, uievents\] HTMLElement \`load\` event listeners may not fire if the script executes too late](https://github.com/mdn/content/issues/44591) (2026-06-28T15:39:35Z)
   
 * [\[html\] pushState() and navigations and history navigation rate limiting no longer throws](https://github.com/mdn/content/issues/44477) (2026-06-15T16:42:56Z)
   
