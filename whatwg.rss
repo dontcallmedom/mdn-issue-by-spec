@@ -4,38 +4,10 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Sun, 20 Sep 2026 15:26:29 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 28 Aug 2026 23:26:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[html, uievents] Improve description of `focus` and `blur` events fired on `window`]]></title>
-            <link>https://github.com/mdn/content/issues/45791</link>
-            <guid>https://github.com/mdn/content/issues/45791</guid>
-            <pubDate>Sun, 20 Sep 2026 15:26:29 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window#focus_events" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window#focus_events</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The <code class="notranslate">blur</code> and <code class="notranslate">focus</code> events fired on <code class="notranslate">window</code> are briefly described as:</p>
-<blockquote>
-<p dir="auto">blur: Fired when an element has lost focus.<br>
-focus: Fired when an element has gained focus.</p>
-</blockquote>
-<p dir="auto">in:<br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/Window#focus_events" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window#focus_events</a><br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/blur_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/blur_event</a><br>
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/focus_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/focus_event</a></p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">something like:</p>
-<p dir="auto">blur: Fired when the window has lost focus.<br>
-focus: Fired when the window has gained focus.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://html.spec.whatwg.org/multipage/interaction.html#focus-update-steps:~:text=To%20fire%20a%20focus%20event%20named%20e%20at%20an%20element%20or%20a%20Window%20object%20target%20given%20a%20related%20target%20relatedTarget%3A" rel="nofollow">https://html.spec.whatwg.org/multipage/interaction.html#focus-update-steps:~:text=To%20fire%20a%20focus%20event%20named%20e%20at%20an%20element%20or%20a%20Window%20object%20target%20given%20a%20related%20target%20relatedTarget%3A</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html] Document scopedcustomelementregistry and its HTMLElement reflection]]></title>
             <link>https://github.com/mdn/content/issues/45383</link>
@@ -100,50 +72,6 @@ ik , this exists <a href="https://developer.mozilla.org/en-US/docs/Web/API/Custo
 <p dir="auto"><a href="https://html.spec.whatwg.org/multipage/custom-elements.html#dom-customelementregistry-define" rel="nofollow">https://html.spec.whatwg.org/multipage/custom-elements.html#dom-customelementregistry-define</a> step 18</p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[html, uievents] HTMLElement `load` event listeners may not fire if the script executes too late]]></title>
-            <link>https://github.com/mdn/content/issues/44591</link>
-            <guid>https://github.com/mdn/content/issues/44591</guid>
-            <pubDate>Sun, 28 Jun 2026 15:39:35 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/load_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/load_event</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">The article <a href="https://web.dev/learn/performance/understanding-the-critical-path" rel="nofollow">"Understand the critical path"</a> states:</p>
-<blockquote>
-<p dir="auto">As soon as the browser gets any portion of a page's HTML, the browser starts processing it. The browser can then—and often does—decide to render it well before receiving the rest of a page's HTML.</p>
-</blockquote>
-<p dir="auto">Indeed, Chrome starts rendering HTML (and executing JS, as far as I recall) before receiving all the HTML code.</p>
-<p dir="auto">Therefore, by the time a <code class="notranslate">&lt;script&gt;</code> starts executing that adds a <code class="notranslate">load</code> event handler or listener to an element that was defined outside that <code class="notranslate">&lt;script&gt;</code> tag, the element might already have been rendered and the <code class="notranslate">load</code> event might have occurred. In those cases, the handler/listener will never get invoked, which might violate the dev's assumptions in other code and lead to bugs. The provided example actually contains such a bug.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">Mention this subtlety and state that an element and its <code class="notranslate">load</code> event handler or listener must be defined in the same HTML tag (to not get separated into different rendering stages):</p>
-<ul dir="auto">
-<li>either <code class="notranslate">&lt;img onload=</code>...<code class="notranslate">&gt;</code></li>
-<li>or a <code class="notranslate">&lt;script&gt;</code> tag within which the element is dynamically created as well as the handler/listener attached</li>
-<li>or a <code class="notranslate">&lt;script&gt;</code> tag (for adding the handler/listener) nested in the element's tag (unless the element is a <a href="https://developer.mozilla.org/en-US/docs/Glossary/Void_element" rel="nofollow">void element</a>)</li>
-</ul>
-<p dir="auto">Remove the bug from the example accordingly.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-<p dir="auto">Should be <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/load_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/load_event</a> below instead<br>
-<s></s></p><s>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/window/load_event</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/load_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/load_event/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/09d8ff096be97b28ea415fc4c68fb1cff0ff8af9/hovercard" href="https://github.com/mdn/content/commit/09d8ff096be97b28ea415fc4c68fb1cff0ff8af9"><tt>09d8ff0</tt></a></li>
-<li>Document last modified: 2026-04-06T19:43:24.000Z</li>
-</ul>
-</details>
-</s>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[html] pushState() and navigations and history navigation rate limiting no longer throws]]></title>
@@ -254,7 +182,7 @@ ik , this exists <a href="https://developer.mozilla.org/en-US/docs/Web/API/Custo
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTAzNjQxNzksIm5iZiI6MTc5MDM2Mzg3OSwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwOTI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDkyNVQxOTE3NTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mZWQ5MDhlNDE3YzU2MjZmNWY0YmU2YTA0NDhiYzIxOTZjZTYxNjNjODAwYmQ5MGMxNDQ0NzI4MmY1OTk0NzRkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.Flinf-BHTqh826dyaUadDVGG_zyA3KHvtXkEQUhNotY"><img width="898" height="85" alt="Image" src="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTAzNjQxNzksIm5iZiI6MTc5MDM2Mzg3OSwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwOTI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDkyNVQxOTE3NTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mZWQ5MDhlNDE3YzU2MjZmNWY0YmU2YTA0NDhiYzIxOTZjZTYxNjNjODAwYmQ5MGMxNDQ0NzI4MmY1OTk0NzRkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.Flinf-BHTqh826dyaUadDVGG_zyA3KHvtXkEQUhNotY" style="max-width: 100%; height: auto; max-height: 85px;; aspect-ratio: 898 / 85; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>]]></content:encoded>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTAzNzU3NDEsIm5iZiI6MTc5MDM3NTQ0MSwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwOTI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDkyNVQyMjMwNDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05NWExZWYzMjdjNjMzMzc3NzdkYmVlY2YxM2M1YzQ2YmFjN2I1OWJjYmI2ZmIwMTk5MTRkMDliYTM3ZTYyNDdkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ._gx9Xzs_GKv7sr4Op-1wVTM-bJOiAep6avVd8SALrHQ"><img width="898" height="85" alt="Image" src="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTAzNzU3NDEsIm5iZiI6MTc5MDM3NTQ0MSwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwOTI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDkyNVQyMjMwNDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05NWExZWYzMjdjNjMzMzc3NzdkYmVlY2YxM2M1YzQ2YmFjN2I1OWJjYmI2ZmIwMTk5MTRkMDliYTM3ZTYyNDdkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ._gx9Xzs_GKv7sr4Op-1wVTM-bJOiAep6avVd8SALrHQ" style="max-width: 100%; height: auto; max-height: 85px;; aspect-ratio: 898 / 85; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[html] Web Storage API documentation pages fail to mention state partitioning]]></title>
@@ -303,7 +231,7 @@ ik , this exists <a href="https://developer.mozilla.org/en-US/docs/Web/API/Custo
 <p dir="auto">I want to have a image schema of where all the bells and whistles goes where in the notification, how it's going to look like on different devices.</p>
 <p dir="auto">A real live demo would be super useful to see and test how it's going to behave.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTAzNjQxODAsIm5iZiI6MTc5MDM2Mzg4MCwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDkyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjA5MjVUMTkxODAwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YWUwNTJlY2YzYjZkYTQ2OGY5Y2VlNGQyNzgyYTM5M2VkODM4ZTdjMjIyNDc1ZTQwNDZlNmU1MTY4ZjIzNjViMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.IQz4GUOmeygRU0wXYHuS0d8BG3BQDyHUJs20_8SWWfU"><img width="1536" height="1024" alt="Image" src="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTAzNjQxODAsIm5iZiI6MTc5MDM2Mzg4MCwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDkyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjA5MjVUMTkxODAwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YWUwNTJlY2YzYjZkYTQ2OGY5Y2VlNGQyNzgyYTM5M2VkODM4ZTdjMjIyNDc1ZTQwNDZlNmU1MTY4ZjIzNjViMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.IQz4GUOmeygRU0wXYHuS0d8BG3BQDyHUJs20_8SWWfU" style="max-width: 100%; height: auto; max-height: 1024px;; aspect-ratio: 1536 / 1024; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTAzNzU3NDEsIm5iZiI6MTc5MDM3NTQ0MSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDkyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjA5MjVUMjIzMDQxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjI2MDg1YjQyM2E3ZTU5ZWZlYmVlNThlODdiNzkzMDI2MTNiMjk3YzhlYTdkM2I2ZmM4OGUxNGVhMTFmNmJmNCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.LoOeT7zTocQE1JaZc1BvvyWznXEOHwS-anXDudaQ0mk"><img width="1536" height="1024" alt="Image" src="https://private-user-images.githubusercontent.com/1148376/529412806-120e3081-7be9-4b7d-98c1-b242c30e34ee.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTAzNzU3NDEsIm5iZiI6MTc5MDM3NTQ0MSwicGF0aCI6Ii8xMTQ4Mzc2LzUyOTQxMjgwNi0xMjBlMzA4MS03YmU5LTRiN2QtOThjMS1iMjQyYzMwZTM0ZWUucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDkyNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjA5MjVUMjIzMDQxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZjI2MDg1YjQyM2E3ZTU5ZWZlYmVlNThlODdiNzkzMDI2MTNiMjk3YzhlYTdkM2I2ZmM4OGUxNGVhMTFmNmJmNCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.LoOeT7zTocQE1JaZc1BvvyWznXEOHwS-anXDudaQ0mk" style="max-width: 100%; height: auto; max-height: 1024px;; aspect-ratio: 1536 / 1024; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">MDN metadata</h3>
@@ -565,7 +493,7 @@ A string reflecting the <a href="https://developer.mozilla.org/en-US/docs/Web/Ac
 </details>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[[html, uievents, dom] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not]]></title>
+            <title><![CDATA[[uievents, html, dom] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not]]></title>
             <link>https://github.com/mdn/content/issues/35382</link>
             <guid>https://github.com/mdn/content/issues/35382</guid>
             <pubDate>Fri, 09 Aug 2024 02:19:02 GMT</pubDate>
@@ -668,16 +596,6 @@ A string reflecting the <a href="https://developer.mozilla.org/en-US/docs/Web/Ac
 <li>Document last modified: 2023-04-13T06:13:15.000Z</li>
 </ul>
 </details>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[html] Custom element constructor `disabledFeatures` property undocumented]]></title>
-            <link>https://github.com/mdn/content/issues/6617</link>
-            <guid>https://github.com/mdn/content/issues/6617</guid>
-            <pubDate>Tue, 06 Jul 2021 07:29:36 GMT</pubDate>
-            <content:encoded><![CDATA[<p dir="auto">I've been documenting ElementInternals, in the process of this I think that the documentation we have for custom elements may need some updating. In particular I noticed that <a href="https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry</a> includes no information about the disable internals, or disable shadow booleans.</p>
-<p dir="auto"><a href="https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-disable-internals" rel="nofollow">https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-disable-internals</a></p>
-<p dir="auto">I think it would probably be worth someone taking a look at this content and seeing what else needs updating.</p>
-<p dir="auto">Once updated it would be good to link this to the information about attachInternals in /Web/API/Element/attachInternals</p>]]></content:encoded>
         </item>
     </channel>
 </rss>
