@@ -8,8 +8,6 @@
   
 * [\[uievents, html, dom\] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not](https://github.com/mdn/content/issues/35382) (2024-08-09T02:19:02Z)
   
-* [\[appmanifest\] IsStandaloneContent does not work with \`display: fullscreen\` in Chrome Android](https://github.com/mdn/content/issues/34928) (2024-07-19T15:53:57Z)
-  
 * [\[IndexedDB-3\] "Using IndexedDB" guide seems to be out of sync with the more specific documentation](https://github.com/mdn/content/issues/27330) (2023-06-14T18:17:39Z)
   
 * [\[IndexedDB-3\] versionchange is super important and hardly is given any attention](https://github.com/mdn/content/issues/26639) (2023-05-08T06:47:05Z)

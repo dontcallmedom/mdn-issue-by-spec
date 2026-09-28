@@ -36,5 +36,3 @@
   
 * [\[html\] Add description and recommendation about unicode LTR and RTL marks](https://github.com/mdn/content/issues/45248) (2024-04-19T14:56:10Z)
   
-* [\[html\] Article element in a wrong implementation](https://github.com/mdn/content/issues/38324) (2023-09-13T12:53:45Z)
-  

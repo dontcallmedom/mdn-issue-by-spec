@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[cssom-1\] \`sheet\` attribute is typed as \`StyleSheet\` but the CSSOM spec defines it as \`CSSStyleSheet\`](https://github.com/mdn/content/issues/45867) (2026-09-27T23:46:04Z)
-  
 * [\[beacon\] Is 'Use pagehide as a fallback' clause still needed?](https://github.com/mdn/content/issues/44927) (2026-07-27T08:17:18Z)
   
 * [\[html, cssom-1\] Site-wide: Examples with outdated HTML containing submittable forms can break](https://github.com/mdn/content/issues/44347) (2026-06-03T19:55:48Z)
@@ -33,8 +31,6 @@
 * [\[touch-events\] Note difference in how Touch.screenX/screenY, Touch.clientX/clientY and Touch.pageX/pageY handle zooming](https://github.com/mdn/content/issues/36326) (2024-10-14T10:01:23Z)
   
 * [\[uievents, html, dom\] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not](https://github.com/mdn/content/issues/35382) (2024-08-09T02:19:02Z)
-  
-* [\[appmanifest\] IsStandaloneContent does not work with \`display: fullscreen\` in Chrome Android](https://github.com/mdn/content/issues/34928) (2024-07-19T15:53:57Z)
   
 * [\[webxr\] Explanation of \`bounded-floor\`/\`local\`/\`local-floor\` needs improvement](https://github.com/mdn/content/issues/33111) (2024-04-16T04:22:18Z)
   
