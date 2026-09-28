@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Cascading Style Sheets (CSS) Working Group. [![RSS feed for W3C Cascading Style Sheets (CSS) Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[cssom-view-1, dom, pointerevents3, pointerlock-2, fullscreen, DOM-Parsing, css-shadow-parts-1\] Element.part should have label read-only](https://github.com/mdn/content/issues/45860) (2026-09-27T07:54:15Z)
+* [\[cssom-1\] \`sheet\` attribute is typed as \`StyleSheet\` but the CSSOM spec defines it as \`CSSStyleSheet\`](https://github.com/mdn/content/issues/45867) (2026-09-27T23:46:04Z)
   
 * [\[html, cssom-1\] Site-wide: Examples with outdated HTML containing submittable forms can break](https://github.com/mdn/content/issues/44347) (2026-06-03T19:55:48Z)
   
