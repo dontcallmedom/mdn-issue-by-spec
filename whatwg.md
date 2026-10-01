@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[cssom-view-1, html, dom, pointerlock-2, page-visibility-2, selection-api\] Event reference table: 17 anchor links point to sections that no longer exist](https://github.com/mdn/content/issues/45946) (2026-10-01T14:28:58Z)
+  
 * [\[html\] Document scopedcustomelementregistry and its HTMLElement reflection](https://github.com/mdn/content/issues/45383) (2026-08-28T23:26:43Z)
   
 * [\[dom\] Add Processing Instructions guide](https://github.com/mdn/content/issues/45309) (2026-08-25T11:33:22Z)
