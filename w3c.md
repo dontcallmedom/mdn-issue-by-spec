@@ -18,8 +18,6 @@
   
 * [\[geometry-1\] Web APIs' toJSON() method description is misleading](https://github.com/mdn/content/issues/40230) (2025-07-07T11:52:23Z)
   
-* [\[html, css-backgrounds-4, requestidlecallback\] Reference page titles are not consistent and need improvements](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
-  
 * [\[SVG11\] SVG examples should be written in proper XML syntax](https://github.com/mdn/content/issues/37761) (2025-01-22T23:39:56Z)
   
 * [\[CSS21, css-display-3\] CSS+JS Accessibility best practices - hidden things section - is not promoting best practices](https://github.com/mdn/content/issues/37524) (2025-01-06T15:29:04Z)

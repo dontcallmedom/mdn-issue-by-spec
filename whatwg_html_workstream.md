@@ -20,8 +20,6 @@
   
 * [\[html\] The figure doesn't show the direction of rotation](https://github.com/mdn/content/issues/41549) (2025-10-16T00:30:25Z)
   
-* [\[html, css-backgrounds-4, requestidlecallback\] Reference page titles are not consistent and need improvements](https://github.com/mdn/content/issues/39894) (2025-06-11T04:16:02Z)
-  
 * [\[html\] Clarify image.decode() failure on lazy-loaded images](https://github.com/mdn/content/issues/38034) (2025-02-08T00:22:15Z)
   
 * [\[html, wai-aria-1.2\] All \`ElementInternals\` docs for \`ARIAMixin\` properties are incorrect](https://github.com/mdn/content/issues/36508) (2024-10-26T03:40:30Z)
