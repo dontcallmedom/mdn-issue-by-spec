@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[webaudio\] GainNode examples uses an invalid option](https://github.com/mdn/content/issues/46078) (2026-10-09T16:22:19Z)
+  
 * [\[beacon\] Is 'Use pagehide as a fallback' clause still needed?](https://github.com/mdn/content/issues/44927) (2026-07-27T08:17:18Z)
   
 * [\[html, cssom-1\] Site-wide: Examples with outdated HTML containing submittable forms can break](https://github.com/mdn/content/issues/44347) (2026-06-03T19:55:48Z)
