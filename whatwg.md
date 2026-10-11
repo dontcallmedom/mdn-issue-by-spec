@@ -18,8 +18,6 @@
   
 * [\[html\] Web Storage API documentation pages fail to mention state partitioning](https://github.com/mdn/content/issues/43255) (2026-02-26T10:43:03Z)
   
-* [\[notifications\] showNotification: clarify difference between badge, icon, and image](https://github.com/mdn/content/issues/42499) (2025-12-22T22:10:35Z)
-  
 * [\[html\] Update uses of \`PredefinedColorSpace\` to include \`srgb-linear\` and \`display-p3-linear\`](https://github.com/mdn/content/issues/42050) (2025-11-21T17:38:23Z)
   
 * [\[html\] Caret position not mentioned or demonstrated for setSelectionRange()](https://github.com/mdn/content/issues/41590) (2025-10-19T00:50:03Z)
