@@ -4,8 +4,6 @@
 
 * [\[webaudio\] GainNode examples uses an invalid option](https://github.com/mdn/content/issues/46078) (2026-10-09T16:22:19Z)
   
-* [\[beacon\] Is 'Use pagehide as a fallback' clause still needed?](https://github.com/mdn/content/issues/44927) (2026-07-27T08:17:18Z)
-  
 * [\[html, cssom-1\] Site-wide: Examples with outdated HTML containing submittable forms can break](https://github.com/mdn/content/issues/44347) (2026-06-03T19:55:48Z)
   
 * [\[reporting-1\] Reporting: there's no complete list of possible report types (or named reporting endpoints)](https://github.com/mdn/content/issues/43688) (2026-04-07T11:37:09Z)
