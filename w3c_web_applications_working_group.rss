@@ -38,44 +38,7 @@
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTE5MjYzNzYsIm5iZiI6MTc5MTkyNjA3NiwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAxM1QyMTE0MzZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mMjMyOWU0NDRhNWEwMzI2MmM4YTBlNGUxMzU5MWIxZDU2Y2M0NDRjNGMzNjgxMmY5ZjI3NmJmZjhlYTZjYTJlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.SNEVLet_iqSv5F8J5nIl-_ZYMp4ry1GIYh_DvGZ0k_s"><img width="898" height="85" alt="Image" src="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTE5MjYzNzYsIm5iZiI6MTc5MTkyNjA3NiwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAxM1QyMTE0MzZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mMjMyOWU0NDRhNWEwMzI2MmM4YTBlNGUxMzU5MWIxZDU2Y2M0NDRjNGMzNjgxMmY5ZjI3NmJmZjhlYTZjYTJlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.SNEVLet_iqSv5F8J5nIl-_ZYMp4ry1GIYh_DvGZ0k_s" style="max-width: 100%; height: auto; max-height: 85px;; aspect-ratio: 898 / 85; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[IndexedDB-3] Improve the description of IDBFactory.deleteDatabase and mention blocked state]]></title>
-            <link>https://github.com/mdn/content/issues/42779</link>
-            <guid>https://github.com/mdn/content/issues/42779</guid>
-            <pubDate>Wed, 14 Jan 2026 21:32:58 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory/deleteDatabase" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory/deleteDatabase</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Description, Syntax (Return value), Examples</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<p dir="auto">Information was incomplete.</p>
-<p dir="auto">As pointed out here: <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=2006245" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=2006245</a> that the deleteDatabase operation can be blocked because of active db connections. We current do not mention about this blocked state there at all. Even though we have specified that this request would return IDBOpenDBRequest and in the description of IDBOpenDBRequest we do talk about 'blocked' state and explain what block means here but this could very common scenario and probably it's worth to explicitly mention this blocked state in the explanation of deleteDatabase itself. We should probably also mention that during this blocked state, no new IDBFactory operations on the same database could or should be performed.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<ol dir="auto">
-<li>Explicitly mention 'blocked' state  in the deleteDatabase description and what could lead to it. It would even be better to have an example.</li>
-<li>Place a suggestion that it's a good idea to close db before calling deleteDatabase or all active connections should be closed from the versionchange handler or else the operation could get blocked.</li>
-<li>Mention that during this blocked state no new IDBFactory operation on the same db would succeed.</li>
-<li>Also, mention that IDBDatabase during this blocked state on any already active connections would continue to operate as normal.</li>
-</ol>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto">We already talk about this blocked state/event here: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest/blocked_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest/blocked_event</a><br>
-Link to specification is also good.</p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/idbfactory/deletedatabase</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory/deleteDatabase" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory/deleteDatabase</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/idbfactory/deletedatabase/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/idbfactory/deletedatabase/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/a4fcf79b60471db6f148fa4ba36f2cdeafbbeb70/hovercard" href="https://github.com/mdn/content/commit/a4fcf79b60471db6f148fa4ba36f2cdeafbbeb70"><tt>a4fcf79</tt></a></li>
-<li>Document last modified: 2025-10-30T21:49:49.000Z</li>
-</ul>
-</details>]]></content:encoded>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTE5Mzc1MDQsIm5iZiI6MTc5MTkzNzIwNCwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAxNFQwMDIwMDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNjk2NTMzYjA0MTcyN2M1ZWEyNTBhY2Q1YmJkOWZlZDE2NDZlMzU5YzNiZmMwNmRiM2Q4ODU5YTY4ZDU0YmM3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.dOE6eZeaoCE1H2GgBqei-YvYrWlXbNUZjSmNa0486NE"><img width="898" height="85" alt="Image" src="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTE5Mzc1MDQsIm5iZiI6MTc5MTkzNzIwNCwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAxNFQwMDIwMDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNjk2NTMzYjA0MTcyN2M1ZWEyNTBhY2Q1YmJkOWZlZDE2NDZlMzU5YzNiZmMwNmRiM2Q4ODU5YTY4ZDU0YmM3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.dOE6eZeaoCE1H2GgBqei-YvYrWlXbNUZjSmNa0486NE" style="max-width: 100%; height: auto; max-height: 85px;; aspect-ratio: 898 / 85; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[uievents, html, dom] Event pages: claim (or imply) that onXYZ and addEventListener are equivalent but they are not]]></title>
