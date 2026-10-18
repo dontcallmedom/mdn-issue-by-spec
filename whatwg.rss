@@ -4,10 +4,29 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Fri, 28 Aug 2026 23:26:43 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 18 Oct 2026 09:31:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[[html] NavigateEvent.sourceElement should mention null for cross-origin initiators]]></title>
+            <link>https://github.com/mdn/content/issues/46189</link>
+            <guid>https://github.com/mdn/content/issues/46189</guid>
+            <pubDate>Sun, 18 Oct 2026 09:31:34 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/NavigateEvent/sourceElement" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/NavigateEvent/sourceElement</a></p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">sourceElement is also null when the initiating element is in a cross-origin document. It would be worth noting that the way <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/frameElement" rel="nofollow">Window.frameElement</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/contentDocument" rel="nofollow">HTMLIFrameElement.contentDocument</a> do.</p>
+<p dir="auto">WPT: <a href="https://github.com/web-platform-tests/wpt/blob/master/navigation-api/navigate-event/sourceElement-cross-origin.sub.html">https://github.com/web-platform-tests/wpt/blob/master/navigation-api/navigate-event/sourceElement-cross-origin.sub.html</a></p>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">See above</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[html] Document scopedcustomelementregistry and its HTMLElement reflection]]></title>
             <link>https://github.com/mdn/content/issues/45383</link>
@@ -143,7 +162,7 @@
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTIzMDA1MDgsIm5iZiI6MTc5MjMwMDIwOCwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAxOFQwNTEwMDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lN2ZlNTAwNzZkNjgzZGJhNmNkNzRhNzkyZGVmZGY4OGNmZWY2M2MyYmUzNjc4YjM0OTQxNGIyOGM4ODE5Y2IwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.mahsgj98LRV8nhpmc7xd2Ld7IzrMY4mueapdcaa8IsQ"><img width="898" height="85" alt="Image" src="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTIzMDA1MDgsIm5iZiI6MTc5MjMwMDIwOCwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAxOFQwNTEwMDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lN2ZlNTAwNzZkNjgzZGJhNmNkNzRhNzkyZGVmZGY4OGNmZWY2M2MyYmUzNjc4YjM0OTQxNGIyOGM4ODE5Y2IwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.mahsgj98LRV8nhpmc7xd2Ld7IzrMY4mueapdcaa8IsQ" style="max-width: 100%; height: auto; max-height: 85px;; aspect-ratio: 898 / 85; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>]]></content:encoded>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTIzMTY1NjMsIm5iZiI6MTc5MjMxNjI2MywicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAxOFQwOTM3NDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zN2U5ZTcxNTRiY2IwNzJhZWY1MTEyMDNmY2Q1YzljYmI0MmRlMDU3YTQ4ODE1MWNiZjc3MDBkYTRhYzc2YTI1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.UAh65-HQ3RmUxaZ9HwFHh5b8mOTy0R5PlToxXKQvRz4"><img width="898" height="85" alt="Image" src="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTIzMTY1NjMsIm5iZiI6MTc5MjMxNjI2MywicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAxOFQwOTM3NDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zN2U5ZTcxNTRiY2IwNzJhZWY1MTEyMDNmY2Q1YzljYmI0MmRlMDU3YTQ4ODE1MWNiZjc3MDBkYTRhYzc2YTI1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.UAh65-HQ3RmUxaZ9HwFHh5b8mOTy0R5PlToxXKQvRz4" style="max-width: 100%; height: auto; max-height: 85px;; aspect-ratio: 898 / 85; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[html] Web Storage API documentation pages fail to mention state partitioning]]></title>
