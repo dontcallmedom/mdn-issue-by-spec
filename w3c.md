@@ -8,8 +8,6 @@
   
 * [\[cssom-view-1, dom, pointerevents3, pointerlock-2, fullscreen, DOM-Parsing\] Refine short-title of WebAPI event pages](https://github.com/mdn/content/issues/43568) (2026-03-24T16:11:53Z)
   
-* [\[hr-time-3, ecmascript\] Fix: CORP does not enable SharedArrayBuffer](https://github.com/mdn/content/issues/42236) (2025-12-05T03:19:41Z)
-  
 * [\[css-backgrounds-4\] Rethink description comment format in CSS syntax boxes](https://github.com/mdn/content/issues/40500) (2025-07-22T09:16:06Z)
   
 * [\[geometry-1\] Web APIs' toJSON() method description is misleading](https://github.com/mdn/content/issues/40230) (2025-07-07T11:52:23Z)

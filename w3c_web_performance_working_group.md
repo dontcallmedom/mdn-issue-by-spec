@@ -4,7 +4,5 @@
 
 * [\[reporting-1\] Reporting: there's no complete list of possible report types (or named reporting endpoints)](https://github.com/mdn/content/issues/43688) (2026-04-07T11:37:09Z)
   
-* [\[hr-time-3, ecmascript\] Fix: CORP does not enable SharedArrayBuffer](https://github.com/mdn/content/issues/42236) (2025-12-05T03:19:41Z)
-  
 * [\[hr-time-3, performance-timeline-2, resource-timing-2, user-timing-2\] Topic on setting HTTP priority of resource requests](https://github.com/mdn/content/issues/14803) (2022-04-08T02:53:08Z)
   
