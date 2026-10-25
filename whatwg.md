@@ -2,8 +2,6 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by WHATWG. [![RSS feed for WHATWG-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[html\] Firefox does allow bfcache for pages with beforeunload listeners](https://github.com/mdn/content/issues/46214) (2026-10-20T13:26:55Z)
-  
 * [\[html\] NavigateEvent.sourceElement should mention null for cross-origin initiators](https://github.com/mdn/content/issues/46189) (2026-10-18T09:31:34Z)
   
 * [\[html\] Document scopedcustomelementregistry and its HTMLElement reflection](https://github.com/mdn/content/issues/45383) (2026-08-28T23:26:43Z)

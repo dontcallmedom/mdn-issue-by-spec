@@ -4,43 +4,10 @@
         <title>WHATWG-relevant MDN issues</title>
         <link>https://dontcallmedom.github.io/mdn-issue-by-spec/whatwg.rss</link>
         <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by WHATWG</description>
-        <lastBuildDate>Tue, 20 Oct 2026 13:26:55 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 18 Oct 2026 09:31:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[[html] Firefox does allow bfcache for pages with beforeunload listeners]]></title>
-            <link>https://github.com/mdn/content/issues/46214</link>
-            <guid>https://github.com/mdn/content/issues/46214</guid>
-            <pubDate>Tue, 20 Oct 2026 13:26:55 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
-<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event</a></p>
-<h3 dir="auto">What specific section or headline is this issue about?</h3>
-<p dir="auto">Usage notes</p>
-<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
-<blockquote>
-<p dir="auto">In Firefox, beforeunload is not compatible with the <a href="https://web.dev/articles/bfcache" rel="nofollow">back/forward cache</a> (bfcache): that is, Firefox will not place pages in the bfcache if they have beforeunload listeners, and this is bad for performance.</p>
-</blockquote>
-<p dir="auto">This isn't true anymore, see <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1837045" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=1837045</a>.</p>
-<h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">The section can be removed.</p>
-<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
-<p dir="auto"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1837045" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=1837045</a> and <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1741671" rel="nofollow">https://bugzilla.mozilla.org/show_bug.cgi?id=1741671</a></p>
-<h3 dir="auto">Do you have anything more you want to share?</h3>
-<p dir="auto"><em>No response</em></p>
-<h3 dir="auto">MDN metadata</h3>
-
-<details>
-<summary>Page report details</summary>
-<ul dir="auto">
-<li>Folder: <code class="notranslate">en-us/web/api/window/beforeunload_event</code></li>
-<li>MDN URL: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event</a></li>
-<li>GitHub URL: <a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/window/beforeunload_event/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/window/beforeunload_event/index.md</a></li>
-<li>Last commit: <a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/mdn/content/commit/bf3b0f3217d5d5a6957e9e17f863ece19d939d20/hovercard" href="https://github.com/mdn/content/commit/bf3b0f3217d5d5a6957e9e17f863ece19d939d20"><tt>bf3b0f3</tt></a></li>
-<li>Document last modified: 2026-10-14T12:11:21.000Z</li>
-</ul>
-</details>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[[html] NavigateEvent.sourceElement should mention null for cross-origin initiators]]></title>
             <link>https://github.com/mdn/content/issues/46189</link>
@@ -195,7 +162,7 @@
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTI5NjUyMDgsIm5iZiI6MTc5Mjk2NDkwOCwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAyNVQyMTQ4MjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zNTE0YTIwMDJiNDM0MDA2Y2JkZTczNDYzYzhkZTRlZDlmMmUyYmRkMjA4MmE0ZWJhZDJhMmUxZjEzNTE5ZDExJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.6qa2FqOxSIs2vU28-ek62b8JuxNZ2GcMWwNtQLal27U"><img width="898" height="85" alt="Image" src="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTI5NjUyMDgsIm5iZiI6MTc5Mjk2NDkwOCwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAyNVQyMTQ4MjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zNTE0YTIwMDJiNDM0MDA2Y2JkZTczNDYzYzhkZTRlZDlmMmUyYmRkMjA4MmE0ZWJhZDJhMmUxZjEzNTE5ZDExJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.6qa2FqOxSIs2vU28-ek62b8JuxNZ2GcMWwNtQLal27U" style="max-width: 100%; height: auto; max-height: 85px;; aspect-ratio: 898 / 85; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>]]></content:encoded>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTI5NzE3MjgsIm5iZiI6MTc5Mjk3MTQyOCwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAyNVQyMzM3MDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mZTZjN2Q4ZTFhMjcxYzJjZDY2OTllN2EzMzU2NDkzOTU0OTdlN2QwZTAxM2I0YTQxYzg4YjJiMzYwMWFjMDg5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.Og8_u1yz07AO5D94hMrXbvAWrTLZbjrmejkMZU0e_5g"><img width="898" height="85" alt="Image" src="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTI5NzE3MjgsIm5iZiI6MTc5Mjk3MTQyOCwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAyNVQyMzM3MDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mZTZjN2Q4ZTFhMjcxYzJjZDY2OTllN2EzMzU2NDkzOTU0OTdlN2QwZTAxM2I0YTQxYzg4YjJiMzYwMWFjMDg5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.Og8_u1yz07AO5D94hMrXbvAWrTLZbjrmejkMZU0e_5g" style="max-width: 100%; height: auto; max-height: 85px;; aspect-ratio: 898 / 85; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[html] Web Storage API documentation pages fail to mention state partitioning]]></title>
