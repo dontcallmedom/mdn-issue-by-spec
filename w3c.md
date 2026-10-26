@@ -2,6 +2,8 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[WebCryptoAPI\] SubtleCrypto.deriveKey(): Parameter name mismatch in description](https://github.com/mdn/content/issues/46269) (2026-10-26T14:55:00Z)
+  
 * [\[webaudio\] GainNode examples uses an invalid option](https://github.com/mdn/content/issues/46078) (2026-10-09T16:22:19Z)
   
 * [\[reporting-1\] Reporting: there's no complete list of possible report types (or named reporting endpoints)](https://github.com/mdn/content/issues/43688) (2026-04-07T11:37:09Z)

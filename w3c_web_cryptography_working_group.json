@@ -1,0 +1,23 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "W3C Web Cryptography Working Group-relevant MDN issues",
+    "home_page_url": "https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_cryptography_working_group.rss",
+    "description": "Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Cryptography Working Group",
+    "author": {
+        "name": "mdn-issue-by-spec",
+        "url": "https://github.com/dontcallmedom/mdn-issue-by-spec"
+    },
+    "items": [
+        {
+            "id": "https://github.com/mdn/content/issues/46269",
+            "content_html": "<h3 dir=\"auto\">MDN URL</h3>\n<p dir=\"auto\"><a href=\"https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/deriveKey\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/deriveKey</a></p>\n<h3 dir=\"auto\">What specific section or headline is this issue about?</h3>\n<p dir=\"auto\">Parameters &gt; keyUsages</p>\n<h3 dir=\"auto\">What information was incorrect, unhelpful, or incomplete?</h3>\n<p dir=\"auto\">The parameter <code class=\"notranslate\">derivedKeyAlgorithm</code> was renamed to <code class=\"notranslate\">derivedKeyType</code> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3410908471\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/41112\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/41112/hovercard\" href=\"https://github.com/mdn/content/pull/41112\">#41112</a>, but this reference was missed:</p>\n<blockquote>\n<p dir=\"auto\">Note that the key usages must be allowed by the algorithm set in <code class=\"notranslate\">derivedKeyAlgorithm</code>.</p>\n</blockquote>\n<h3 dir=\"auto\">What did you expect to see?</h3>\n<p dir=\"auto\">The parameter name in the note should be <code class=\"notranslate\">derivedKeyType</code> instead of <code class=\"notranslate\">derivedKeyAlgorithm</code>, matching the current syntax definition:</p>\n<blockquote>\n<p dir=\"auto\">Note that the key usages must be allowed by the algorithm set in <code class=\"notranslate\">derivedKeyType</code>.</p>\n</blockquote>\n<h3 dir=\"auto\">Do you have any supporting links, references, or citations?</h3>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3410908471\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/41112\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/41112/hovercard\" href=\"https://github.com/mdn/content/pull/41112\">#41112</a></li>\n</ul>\n<h3 dir=\"auto\">Do you have anything more you want to share?</h3>\n<p dir=\"auto\"><em>No response</em></p>",
+            "url": "https://github.com/mdn/content/issues/46269",
+            "title": "[WebCryptoAPI] SubtleCrypto.deriveKey(): Parameter name mismatch in description",
+            "date_modified": "2026-10-26T14:55:00.000Z",
+            "author": {
+                "name": "a01sa01to",
+                "url": "https://github.com/a01sa01to"
+            }
+        }
+    ]
+}
