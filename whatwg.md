@@ -18,8 +18,6 @@
   
 * [\[html\] Update uses of \`PredefinedColorSpace\` to include \`srgb-linear\` and \`display-p3-linear\`](https://github.com/mdn/content/issues/42050) (2025-11-21T17:38:23Z)
   
-* [\[html\] Caret position not mentioned or demonstrated for setSelectionRange()](https://github.com/mdn/content/issues/41590) (2025-10-19T00:50:03Z)
-  
 * [\[html\] The figure doesn't show the direction of rotation](https://github.com/mdn/content/issues/41549) (2025-10-16T00:30:25Z)
   
 * [\[html\] Update document.domain / Origin-Agent-Cluster docs for new default](https://github.com/mdn/content/issues/46194) (2025-02-18T03:24:07Z)
