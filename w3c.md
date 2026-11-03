@@ -12,8 +12,6 @@
   
 * [\[CSS21, css-display-3\] CSS+JS Accessibility best practices - hidden things section - is not promoting best practices](https://github.com/mdn/content/issues/37524) (2025-01-06T15:29:04Z)
   
-* [\[css-font-loading-3\] FontFace doc: sizeAdjust is missing](https://github.com/mdn/content/issues/36587) (2024-10-31T07:23:20Z)
-  
 * [\[html, wai-aria-1.2\] All \`ElementInternals\` docs for \`ARIAMixin\` properties are incorrect](https://github.com/mdn/content/issues/36508) (2024-10-26T03:40:30Z)
   
 * [\[touch-events\] Note difference in how Touch.screenX/screenY, Touch.clientX/clientY and Touch.pageX/pageY handle zooming](https://github.com/mdn/content/issues/36326) (2024-10-14T10:01:23Z)
