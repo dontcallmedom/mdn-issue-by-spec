@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>W3C Web Real-Time Communications Working Group-relevant MDN issues</title>
+        <link>https://dontcallmedom.github.io/mdn-issue-by-spec/w3c_web_real_time_communications_working_group.rss</link>
+        <description>Issue filed on MDN Web Docs related to pages attached to technologies developed by W3C Web Real-Time Communications Working Group</description>
+        <lastBuildDate>Thu, 05 Nov 2026 12:07:08 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[[webrtc-stats, webrtc] Some RTC pages reference missing BCD identifiers]]></title>
+            <link>https://github.com/mdn/content/issues/46383</link>
+            <guid>https://github.com/mdn/content/issues/46383</guid>
+            <pubDate>Thu, 05 Nov 2026 12:07:08 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 dir="auto">MDN URL</h3>
+<p dir="auto"><a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidatePairStats/availableIncomingBitrate" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidatePairStats/availableIncomingBitrate</a> etc</p>
+<h3 dir="auto">What specific section or headline is this issue about?</h3>
+<p dir="auto"><em>No response</em></p>
+<h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
+<p dir="auto">There are 8 pages that point to BCD data removed 3 years ago in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1583537901" data-permission-text="Title is private" data-url="https://github.com/mdn/browser-compat-data/issues/18910" data-hovercard-type="pull_request" data-hovercard-url="/mdn/browser-compat-data/pull/18910/hovercard" href="https://github.com/mdn/browser-compat-data/pull/18910">mdn/browser-compat-data#18910</a>, with a warning like this:</p>
+<blockquote>
+<p dir="auto">No compatibility data found for <code class="notranslate">api.RTCStatsReport.type_candidate-pair.availableIncomingBitrate</code>.</p>
+</blockquote>
+<h3 dir="auto">What did you expect to see?</h3>
+<p dir="auto">Probably the pages shouldn't exist.</p>
+<h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
+<p dir="auto"><a href="https://caugner.github.io/mdn-flawless/#category=templ-bcd-missing&amp;locale=en-US&amp;file=web%2Fapi%2Frtc" rel="nofollow">8 issues — live view</a></p>
+<p dir="auto"><strong>Filters:</strong></p>
+<ul dir="auto">
+<li>category: <code class="notranslate">templ-bcd-missing</code></li>
+<li>locale: <code class="notranslate">en-US</code></li>
+<li>file: <code class="notranslate">web/api/rtc</code></li>
+</ul>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>File</th>
+<th>Slug</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcicecandidatepairstats/availableincomingbitrate/index.md?plain=1#L33C1-L33C11">content/files/en-us/web/api/rtcicecandidatepairstats/availableincomingbitrate/index.md:33:1</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidatePairStats/availableIncomingBitrate" rel="nofollow">Web/API/RTCIceCandidatePairStats/availableIncomingBitrate</a></td>
+<td>Unknown browser-compat entry: api.RTCStatsReport.type_candidate-pair.availableIncomingBitrate</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcicecandidatepairstats/readable/index.md?plain=1#L35C1-L35C11">content/files/en-us/web/api/rtcicecandidatepairstats/readable/index.md:35:1</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidatePairStats/readable" rel="nofollow">Web/API/RTCIceCandidatePairStats/readable</a></td>
+<td>Unknown browser-compat entry: api.RTCStatsReport.type_candidate-pair.readable</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcicecandidatepairstats/selected/index.md?plain=1#L55C1-L55C11">content/files/en-us/web/api/rtcicecandidatepairstats/selected/index.md:55:1</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidatePairStats/selected" rel="nofollow">Web/API/RTCIceCandidatePairStats/selected</a></td>
+<td>Unknown browser-compat entry: api.RTCStatsReport.type_candidate-pair.selected</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcicecandidatepairstats/writable/index.md?plain=1#L39C1-L39C11">content/files/en-us/web/api/rtcicecandidatepairstats/writable/index.md:39:1</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidatePairStats/writable" rel="nofollow">Web/API/RTCIceCandidatePairStats/writable</a></td>
+<td>Unknown browser-compat entry: api.RTCStatsReport.type_candidate-pair.writable</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcicecandidatestats/deleted/index.md?plain=1#L82C1-L82C11">content/files/en-us/web/api/rtcicecandidatestats/deleted/index.md:82:1</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidateStats/deleted" rel="nofollow">Web/API/RTCIceCandidateStats/deleted</a></td>
+<td>Unknown browser-compat entry: api.RTCStatsReport.type_local-candidate.deleted</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcicecandidatestats/relayprotocol/index.md?plain=1#L41C1-L41C11">content/files/en-us/web/api/rtcicecandidatestats/relayprotocol/index.md:41:1</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidateStats/relayProtocol" rel="nofollow">Web/API/RTCIceCandidateStats/relayProtocol</a></td>
+<td>Unknown browser-compat entry: api.RTCStatsReport.type_local-candidate.relayProtocol</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcicecandidatestats/url/index.md?plain=1#L32C1-L32C11">content/files/en-us/web/api/rtcicecandidatestats/url/index.md:32:1</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidateStats/url" rel="nofollow">Web/API/RTCIceCandidateStats/url</a></td>
+<td>Unknown browser-compat entry: api.RTCStatsReport.type_local-candidate.url</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/rtcicetransport/component/index.md?plain=1#L28C1-L28C11">content/files/en-us/web/api/rtcicetransport/component/index.md:28:1</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/API/RTCIceTransport/component" rel="nofollow">Web/API/RTCIceTransport/component</a></td>
+<td>Unknown browser-compat entry: api.RTCIceTransport.component</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h3 dir="auto">Do you have anything more you want to share?</h3>
+<p dir="auto"><em>No response</em></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
