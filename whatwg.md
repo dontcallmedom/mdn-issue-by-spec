@@ -10,8 +10,6 @@
   
 * [\[html\] pushState() and navigations and history navigation rate limiting no longer throws](https://github.com/mdn/content/issues/44477) (2026-06-15T16:42:56Z)
   
-* [\[html\] Cannot prevent cancel when user presses Escape twice](https://github.com/mdn/content/issues/43943) (2026-04-27T12:23:34Z)
-  
 * [\[cssom-view-1, dom, pointerevents3, pointerlock-2, fullscreen, DOM-Parsing\] Refine short-title of WebAPI event pages](https://github.com/mdn/content/issues/43568) (2026-03-24T16:11:53Z)
   
 * [\[html\] Web Storage API documentation pages fail to mention state partitioning](https://github.com/mdn/content/issues/43255) (2026-02-26T10:43:03Z)
