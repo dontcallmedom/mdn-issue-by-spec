@@ -2,6 +2,10 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[gamepad, gamepad-extensions\] \[WebAPI\] Deprecate nonstandard gamepad attributes](https://github.com/mdn/content/issues/46660) (2026-11-23T11:59:48Z)
+  
+* [\[uievents\] \[WebAPI\] Pages don't receive Mouse 4](https://github.com/mdn/content/issues/46655) (2026-11-23T11:59:16Z)
+  
 * [\[webrtc-stats, webrtc\] Some RTC pages reference missing BCD identifiers](https://github.com/mdn/content/issues/46383) (2026-11-05T12:07:08Z)
   
 * [\[reporting-1\] Reporting: there's no complete list of possible report types (or named reporting endpoints)](https://github.com/mdn/content/issues/43688) (2026-04-07T11:37:09Z)

@@ -2,6 +2,10 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C Web Applications Working Group. [![RSS feed for W3C Web Applications Working Group-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
+* [\[gamepad, gamepad-extensions\] \[WebAPI\] Deprecate nonstandard gamepad attributes](https://github.com/mdn/content/issues/46660) (2026-11-23T11:59:48Z)
+  
+* [\[uievents\] \[WebAPI\] Pages don't receive Mouse 4](https://github.com/mdn/content/issues/46655) (2026-11-23T11:59:16Z)
+  
 * [\[cssom-view-1, dom, pointerevents3, pointerlock-2, fullscreen, DOM-Parsing\] Refine short-title of WebAPI event pages](https://github.com/mdn/content/issues/43568) (2026-03-24T16:11:53Z)
   
 * [\[IndexedDB-3\] "Using IndexedDB" guide seems to be out of sync with the more specific documentation](https://github.com/mdn/content/issues/27330) (2023-06-14T18:17:39Z)
