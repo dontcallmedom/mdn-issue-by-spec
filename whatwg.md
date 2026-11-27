@@ -16,8 +16,6 @@
   
 * [\[html\] Update uses of \`PredefinedColorSpace\` to include \`srgb-linear\` and \`display-p3-linear\`](https://github.com/mdn/content/issues/42050) (2025-11-21T17:38:23Z)
   
-* [\[html\] Clarify image.decode() failure on lazy-loaded images](https://github.com/mdn/content/issues/38034) (2025-02-08T00:22:15Z)
-  
 * [\[html, wai-aria-1.2\] All \`ElementInternals\` docs for \`ARIAMixin\` properties are incorrect](https://github.com/mdn/content/issues/36508) (2024-10-26T03:40:30Z)
   
 * [\[html\] Add description and recommendation about unicode LTR and RTL marks](https://github.com/mdn/content/issues/45248) (2024-04-19T14:56:10Z)
