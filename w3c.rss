@@ -9,7 +9,7 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[[webauthn-3] Web API: algorithms EdDSA (-8) and ES256 (-7) are deprecated]]></title>
+            <title><![CDATA[[webauthn-3] Web API: special note about algorithms EdDSA (-8) and ES256 (-7)]]></title>
             <link>https://github.com/mdn/content/issues/46722</link>
             <guid>https://github.com/mdn/content/issues/46722</guid>
             <pubDate>Thu, 26 Nov 2026 10:48:12 GMT</pubDate>
@@ -20,63 +20,18 @@
 <h3 dir="auto">What information was incorrect, unhelpful, or incomplete?</h3>
 <p dir="auto">At the moment the documentation recommends the deprecated algorithms EdDSA (-8), and ES256 (-7):</p>
 <blockquote>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/6052909/720034220-f8fc6564-e5e1-4e36-815b-052511c3a127.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTU4NjM0MzYsIm5iZiI6MTc5NTg2MzEzNiwicGF0aCI6Ii82MDUyOTA5LzcyMDAzNDIyMC1mOGZjNjU2NC1lNWUxLTRlMzYtODE1Yi0wNTI1MTFjM2ExMjcucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MTEyOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjExMjhUMTA1MjE2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NzBjOWUwMDAyMTU3MGNiMTcxYTY5ODFmOThmZmRkZGE1NTM3MWJiMTI0OGYwMzU0NDAzYTkzZDA2NzY1YjFiYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.qLuOnA0rTjgRGwWr6-9fZXI0qPAkO73l6xyac8ROqI4"><img width="745" height="286" alt="image" src="https://private-user-images.githubusercontent.com/6052909/720034220-f8fc6564-e5e1-4e36-815b-052511c3a127.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTU4NjM0MzYsIm5iZiI6MTc5NTg2MzEzNiwicGF0aCI6Ii82MDUyOTA5LzcyMDAzNDIyMC1mOGZjNjU2NC1lNWUxLTRlMzYtODE1Yi0wNTI1MTFjM2ExMjcucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MTEyOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjExMjhUMTA1MjE2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NzBjOWUwMDAyMTU3MGNiMTcxYTY5ODFmOThmZmRkZGE1NTM3MWJiMTI0OGYwMzU0NDAzYTkzZDA2NzY1YjFiYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.qLuOnA0rTjgRGwWr6-9fZXI0qPAkO73l6xyac8ROqI4" style="max-width: 100%; height: auto; max-height: 286px;; aspect-ratio: 745 / 286; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/6052909/720034220-f8fc6564-e5e1-4e36-815b-052511c3a127.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTU4OTEyNTksIm5iZiI6MTc5NTg5MDk1OSwicGF0aCI6Ii82MDUyOTA5LzcyMDAzNDIyMC1mOGZjNjU2NC1lNWUxLTRlMzYtODE1Yi0wNTI1MTFjM2ExMjcucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MTEyOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjExMjhUMTgzNTU5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZWYyNWQzMDU2ZmJlYjBjMWU0N2RhZGUyNDE1NDkzYTE3YjZjMTMxMTI5MmE2NjE2OTU2ZDQ3NjVhODU5NTgxNCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.cb6qjMMCwzP0PCRAa1efW_ePbMVcvDAB5KPDE9FXzSI"><img width="745" height="286" alt="image" src="https://private-user-images.githubusercontent.com/6052909/720034220-f8fc6564-e5e1-4e36-815b-052511c3a127.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTU4OTEyNTksIm5iZiI6MTc5NTg5MDk1OSwicGF0aCI6Ii82MDUyOTA5LzcyMDAzNDIyMC1mOGZjNjU2NC1lNWUxLTRlMzYtODE1Yi0wNTI1MTFjM2ExMjcucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MTEyOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjExMjhUMTgzNTU5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZWYyNWQzMDU2ZmJlYjBjMWU0N2RhZGUyNDE1NDkzYTE3YjZjMTMxMTI5MmE2NjE2OTU2ZDQ3NjVhODU5NTgxNCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.cb6qjMMCwzP0PCRAa1efW_ePbMVcvDAB5KPDE9FXzSI" style="max-width: 100%; height: auto; max-height: 286px;; aspect-ratio: 745 / 286; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>
 <p dir="auto"><a href="https://github.com/mdn/content/blob/main/files/en-us/web/api/publickeycredentialcreationoptions/index.md">https://github.com/mdn/content/blob/main/files/en-us/web/api/publickeycredentialcreationoptions/index.md</a></p>
 </blockquote>
-<p dir="auto">The problem is that these algorithms EdDSA (-8), and ES256 (-7) are deprecated by the authority (COSE):</p>
+<p dir="auto">A potential problem is that these algorithms EdDSA (-8), and ES256 (-7) are deprecated by the authority (COSE):</p>
 <blockquote>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/6052909/720034741-ad3050d7-6d1f-4559-9767-e113dbfdcec6.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTU4NjM0MzYsIm5iZiI6MTc5NTg2MzEzNiwicGF0aCI6Ii82MDUyOTA5LzcyMDAzNDc0MS1hZDMwNTBkNy02ZDFmLTQ1NTktOTc2Ny1lMTEzZGJmZGNlYzYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MTEyOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjExMjhUMTA1MjE2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MjRiNmE5MDg3OTlkYzMzMjFjOWJiZGViMDk4NTllZWY4YWEyNzgzOGE5NDZkYTA0YTkxYThlYzNlMWU4YmFkMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.fn0x_nIBlBw_Fn-udgaeBpLCE0b9CwhweWtk2UbYeCQ"><img width="1426" height="43" alt="image" src="https://private-user-images.githubusercontent.com/6052909/720034741-ad3050d7-6d1f-4559-9767-e113dbfdcec6.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTU4NjM0MzYsIm5iZiI6MTc5NTg2MzEzNiwicGF0aCI6Ii82MDUyOTA5LzcyMDAzNDc0MS1hZDMwNTBkNy02ZDFmLTQ1NTktOTc2Ny1lMTEzZGJmZGNlYzYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MTEyOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjExMjhUMTA1MjE2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MjRiNmE5MDg3OTlkYzMzMjFjOWJiZGViMDk4NTllZWY4YWEyNzgzOGE5NDZkYTA0YTkxYThlYzNlMWU4YmFkMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.fn0x_nIBlBw_Fn-udgaeBpLCE0b9CwhweWtk2UbYeCQ" style="max-width: 100%; height: auto; max-height: 43px;; aspect-ratio: 1426 / 43; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/6052909/720034741-ad3050d7-6d1f-4559-9767-e113dbfdcec6.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTU4OTEyNTksIm5iZiI6MTc5NTg5MDk1OSwicGF0aCI6Ii82MDUyOTA5LzcyMDAzNDc0MS1hZDMwNTBkNy02ZDFmLTQ1NTktOTc2Ny1lMTEzZGJmZGNlYzYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MTEyOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjExMjhUMTgzNTU5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZmYwOWU0NjVjMDVjYTgxNjQxNDgxZGUwZDk0NDczMmVmMDNjNzRmMmM0YTk3ZTQ5MGMwZDM5ZjdjZDE5MDg4ZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.y7IkgnS9hTD1VohfyBAsBw9QxrdYo3R36sGhsOKDiCs"><img width="1426" height="43" alt="image" src="https://private-user-images.githubusercontent.com/6052909/720034741-ad3050d7-6d1f-4559-9767-e113dbfdcec6.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTU4OTEyNTksIm5iZiI6MTc5NTg5MDk1OSwicGF0aCI6Ii82MDUyOTA5LzcyMDAzNDc0MS1hZDMwNTBkNy02ZDFmLTQ1NTktOTc2Ny1lMTEzZGJmZGNlYzYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MTEyOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjExMjhUMTgzNTU5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZmYwOWU0NjVjMDVjYTgxNjQxNDgxZGUwZDk0NDczMmVmMDNjNzRmMmM0YTk3ZTQ5MGMwZDM5ZjdjZDE5MDg4ZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.y7IkgnS9hTD1VohfyBAsBw9QxrdYo3R36sGhsOKDiCs" style="max-width: 100%; height: auto; max-height: 43px;; aspect-ratio: 1426 / 43; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>
 <ul dir="auto">
 <li><a href="https://www.iana.org/assignments/cose#algorithms" rel="nofollow">https://www.iana.org/assignments/cose#algorithms</a></li>
 </ul>
 </blockquote>
 <h3 dir="auto">What did you expect to see?</h3>
-<p dir="auto">We should probably just remove these lines:</p>
-<p dir="auto"></p><div class="Box Box--condensed my-2">
-  <div class="Box-header f6">
-    <p class="mb-0 text-bold">
-      <a href="https://github.com/mdn/content/blob/51f9f1329e9d05233d39daaa9d5e4f89d77e57b5/files/en-us/web/api/publickeycredentialcreationoptions/index.md?plain=1#L125">content/files/en-us/web/api/publickeycredentialcreationoptions/index.md</a>
-    </p>
-    <p class="mb-0 color-fg-muted">
-         Line 125
-      in
-      <a data-pjax="true" class="commit-tease-sha Link--inTextBlock" href="/mdn/content/commit/51f9f1329e9d05233d39daaa9d5e4f89d77e57b5">51f9f13</a>
-    </p>
-  </div>
-  <div itemprop="text" class="Box-body p-0 blob-wrapper blob-wrapper-embedded data">
-    <table class="highlight tab-size mb-0 js-file-line-container" data-tab-size="8" data-paste-markdown-skip="">
-
-        <tbody><tr class="border-0">
-          <td id="L125" class="blob-num border-0 tmp-px-3 py-0 color-bg-default" data-line-number="125"></td>
-          <td id="LC125" class="blob-code border-0 tmp-px-3 py-0 color-bg-default blob-code-inner js-file-line"> <span class="pl-v">-</span> <span class="pl-s">`</span><span class="pl-c1">-8</span><span class="pl-s">`</span>: EdDSA </td>
-        </tr>
-    </tbody></table>
-  </div>
-</div>
-<p></p>
-<p dir="auto"></p><div class="Box Box--condensed my-2">
-  <div class="Box-header f6">
-    <p class="mb-0 text-bold">
-      <a href="https://github.com/mdn/content/blob/51f9f1329e9d05233d39daaa9d5e4f89d77e57b5/files/en-us/web/api/publickeycredentialcreationoptions/index.md?plain=1#L126">content/files/en-us/web/api/publickeycredentialcreationoptions/index.md</a>
-    </p>
-    <p class="mb-0 color-fg-muted">
-         Line 126
-      in
-      <a data-pjax="true" class="commit-tease-sha Link--inTextBlock" href="/mdn/content/commit/51f9f1329e9d05233d39daaa9d5e4f89d77e57b5">51f9f13</a>
-    </p>
-  </div>
-  <div itemprop="text" class="Box-body p-0 blob-wrapper blob-wrapper-embedded data">
-    <table class="highlight tab-size mb-0 js-file-line-container" data-tab-size="8" data-paste-markdown-skip="">
-
-        <tbody><tr class="border-0">
-          <td id="L126" class="blob-num border-0 tmp-px-3 py-0 color-bg-default" data-line-number="126"></td>
-          <td id="LC126" class="blob-code border-0 tmp-px-3 py-0 color-bg-default blob-code-inner js-file-line"> <span class="pl-v">-</span> <span class="pl-s">`</span><span class="pl-c1">-7</span><span class="pl-s">`</span>: ES256 </td>
-        </tr>
-    </tbody></table>
-  </div>
-</div>
-<p></p>
-<p dir="auto">P.S. I'm not aware how the market is replacing these... so I believe we should just remove these from the doc. Thanks for your thoughts!</p>
+<p dir="auto">An extra note about the situation.</p>
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
@@ -306,7 +261,7 @@
 <h3 dir="auto">Do you have any supporting links, references, or citations?</h3>
 <p dir="auto"><em>No response</em></p>
 <h3 dir="auto">Do you have anything more you want to share?</h3>
-<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTU4NjM0MzUsIm5iZiI6MTc5NTg2MzEzNSwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMTI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTEyOFQxMDUyMTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jMjExY2RlM2U5MTVlNGIwYzdlMGM5NzhiNWQ0ZDE3OTViOTA3OWYxMjg5MjdhMWE3NjQzOWJlMjNkMjMwNWY1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.ndy_LSeiVuwX-Q4m-rcMA6iL3oSM8fVPC9G4q_qGOlM"><img width="898" height="85" alt="Image" src="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTU4NjM0MzUsIm5iZiI6MTc5NTg2MzEzNSwicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMTI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTEyOFQxMDUyMTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jMjExY2RlM2U5MTVlNGIwYzdlMGM5NzhiNWQ0ZDE3OTViOTA3OWYxMjg5MjdhMWE3NjQzOWJlMjNkMjMwNWY1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.ndy_LSeiVuwX-Q4m-rcMA6iL3oSM8fVPC9G4q_qGOlM" style="max-width: 100%; height: auto; max-height: 85px;; aspect-ratio: 898 / 85; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>]]></content:encoded>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTU4OTEyNTcsIm5iZiI6MTc5NTg5MDk1NywicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMTI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTEyOFQxODM1NTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lOTRhZTA2NzhhZjVjNzg5NGM4NjEzNGM2NjJhMzRmMDJhMTE2YjE4ZmEzZTRjMDIwNzY2OGM1ZDAzOTYxNjIzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.bvDluh9tfbHdbOd7CWyPqAE0Vw9FeXOgXraFi1Un7Eo"><img width="898" height="85" alt="Image" src="https://private-user-images.githubusercontent.com/495429/568506780-11ec2595-308d-4a1a-9a0b-56fe1ae2d9c2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTU4OTEyNTcsIm5iZiI6MTc5NTg5MDk1NywicGF0aCI6Ii80OTU0MjkvNTY4NTA2NzgwLTExZWMyNTk1LTMwOGQtNGExYS05YTBiLTU2ZmUxYWUyZDljMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMTI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTEyOFQxODM1NTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lOTRhZTA2NzhhZjVjNzg5NGM4NjEzNGM2NjJhMzRmMDJhMTE2YjE4ZmEzZTRjMDIwNzY2OGM1ZDAzOTYxNjIzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.bvDluh9tfbHdbOd7CWyPqAE0Vw9FeXOgXraFi1Un7Eo" style="max-width: 100%; height: auto; max-height: 85px;; aspect-ratio: 898 / 85; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback"></a>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[[css-backgrounds-4] Rethink description comment format in CSS syntax boxes]]></title>

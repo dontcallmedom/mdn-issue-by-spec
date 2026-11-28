@@ -2,7 +2,7 @@
 
 [Issues filed on MDN Web Docs](https://github.com/mdn/content/issues) related to pages attached to technologies developed by W3C. [![RSS feed for W3C-relevant issues](https://www.w3.org/QA/2007/04/feed_icon)]([object Object].rss)
 
-* [\[webauthn-3\] Web API: algorithms EdDSA (-8) and ES256 (-7) are deprecated](https://github.com/mdn/content/issues/46722) (2026-11-26T10:48:12Z)
+* [\[webauthn-3\] Web API: special note about algorithms EdDSA (-8) and ES256 (-7)](https://github.com/mdn/content/issues/46722) (2026-11-26T10:48:12Z)
   
 * [\[gamepad, gamepad-extensions\] \[WebAPI\] Deprecate nonstandard gamepad attributes](https://github.com/mdn/content/issues/46660) (2026-11-23T11:59:48Z)
   
